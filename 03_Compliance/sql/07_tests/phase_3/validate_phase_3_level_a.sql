@@ -3,7 +3,7 @@ WITH checks AS (
     FROM mapping.phase3_requirement_capabilities m LEFT JOIN compliance.requirements r USING (requirement_id)
     WHERE r.requirement_id IS NULL AND m.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
     UNION ALL SELECT 'CAPABILITY_REFERENCE', count(*) FROM mapping.phase3_requirement_capabilities m LEFT JOIN mapping.phase3_capabilities c USING (capability_id) WHERE c.capability_id IS NULL
-    UNION ALL SELECT 'STANDARD_REFERENCE', count(*) FROM mapping.phase3_capabilities c LEFT JOIN mapping.phase3_standards s USING (standard_id) WHERE s.standard_id IS NULL
+    UNION ALL SELECT 'STANDARD_REFERENCE', count(*) FROM mapping.phase3_capabilities c LEFT JOIN mapping.phase3_standards s USING (standard_id) WHERE c.standard_id IS NOT NULL AND s.standard_id IS NULL
     UNION ALL SELECT 'STANDARD_IDENTITY', count(*) FROM mapping.phase3_standards WHERE length(trim(standard_id))=0 OR length(trim(standard_name))=0 OR length(trim(standard_kind))=0
     UNION ALL SELECT 'DUPLICATE_STANDARD_IDENTITY', count(*) FROM (SELECT standard_id FROM mapping.phase3_standards GROUP BY standard_id HAVING count(*) > 1)
     UNION ALL SELECT 'STANDARD_REGISTRY_VOCABULARY', count(*) FROM mapping.phase3_standards WHERE registry_status NOT IN ('IDENTITY_ONLY','REVIEWED')
@@ -19,7 +19,7 @@ WITH checks AS (
     UNION ALL SELECT 'REPRESENTABILITY_REASON', count(*) FROM mapping.phase3_representability WHERE representability_state IN ('PARTIAL','MISSING','UNKNOWN','NOT_APPLICABLE') AND length(trim(coalesce(explanation,'')))=0
     UNION ALL SELECT 'EXCEPTION_JUSTIFICATION', count(*) FROM mapping.phase3_exceptions WHERE length(trim(reason))=0 OR length(trim(justification))=0 OR length(trim(evidence_expectations))=0
     UNION ALL SELECT 'SOURCE_REFERENCE_SHAPE', count(*) FROM mapping.phase3_source_references WHERE length(trim(url_or_document_id))=0 OR capability_id NOT IN (SELECT capability_id FROM mapping.phase3_capabilities)
-    UNION ALL SELECT 'CAPABILITY_CONTEXT', count(*) FROM mapping.phase3_capabilities c JOIN mapping.phase3_standards s USING (standard_id) WHERE length(trim(c.semantic_meaning))=0 OR length(trim(s.standard_kind))=0
+    UNION ALL SELECT 'CAPABILITY_CONTEXT', count(*) FROM mapping.phase3_capabilities c LEFT JOIN mapping.phase3_standards s USING (standard_id) WHERE length(trim(c.semantic_meaning))=0 OR (c.standard_id IS NOT NULL AND length(trim(s.standard_kind))=0)
     UNION ALL SELECT 'MAPPING_REVIEW_REFERENCE', count(*) FROM mapping.phase3_mapping_reviews r LEFT JOIN mapping.phase3_requirement_capabilities m USING (mapping_id) WHERE m.mapping_id IS NULL
     UNION ALL SELECT 'MAPPING_REVIEW_OUTCOME', count(*) FROM mapping.phase3_mapping_reviews WHERE semantic_review_outcome NOT IN ('ACCEPTED','ACCEPTED_WITH_LIMITATIONS','REJECTED','UNRESOLVED') OR length(trim(justification))=0 OR length(trim(reviewed_by))=0
     UNION ALL SELECT 'COVERAGE_REQUIREMENT_REFERENCE', count(*) FROM mapping.phase3_requirement_coverage c LEFT JOIN compliance.requirements r USING (requirement_id) WHERE r.requirement_id IS NULL

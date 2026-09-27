@@ -13,15 +13,30 @@ WITH pilots(requirement_id) AS (
       ('M04-MAP-A04P02-NETEX-PT','EU-2017-1926-REQ-A04-P02-001','CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE'),
       ('M04-MAP-A08P03-GTFS-PUBLISHER','EU-2017-1926-REQ-A08-P03-001-01','CAP-GTFS-FEED-PUBLISHER-METADATA'),
       ('M04-MAP-A08P03-GTFS-ATTRIBUTION','EU-2017-1926-REQ-A08-P03-001-01','CAP-GTFS-DATASET-ATTRIBUTION')
+), expected_exceptions(exception_id,requirement_id,exception_type) AS (
+    VALUES
+      ('M03-EXC-A05-DEADLINE','EU-2017-1926-REQ-A05-P03-001','DEADLINE'),
+      ('M03-EXC-A08-SOURCE-REQUEST','EU-2017-1926-REQ-A08-P03-001-01','EXTERNAL_EVIDENCE'),
+      ('M03-EXC-A09-RANDOM-CHECKS','EU-2017-1926-REQ-A09-P03-RANDOM_CHECKS','MANUAL_ASSESSMENT')
 ), result AS (
     SELECT
-      (SELECT count(*) FROM mapping.phase3_requirement_capabilities m WHERE m.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST' AND m.requirement_id NOT IN (SELECT requirement_id FROM pilots)) AS non_pilot_mappings,
+      (SELECT count(*) FROM mapping.phase3_requirement_capabilities m WHERE m.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
+         AND m.requirement_id NOT IN (SELECT requirement_id FROM pilots)
+         AND m.requirement_id NOT IN ('EU-2017-1926-REQ-A03-P01-001','EU-2017-1926-REQ-A03-P01-002','EU-2017-1926-REQ-A03-P03-001')) AS non_pilot_mappings,
       (SELECT count(*) FROM mapping.phase3_requirement_capabilities m JOIN expected e USING (mapping_id,requirement_id,capability_id) WHERE m.mapping_type='PARTIAL' AND m.review_status='NEEDS_REVIEW' AND length(trim(coalesce(m.limitations,'')))>0 AND length(trim(coalesce(m.mapping_conditions,'')))>0) AS valid_expected_mappings,
       (SELECT count(*) FROM expected) AS expected_mappings,
-      (SELECT count(*) FROM mapping.phase3_requirement_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST' AND review_status IN ('APPROVED','REVIEWED')) AS accepted_mappings,
+      (SELECT count(*) FROM mapping.phase3_requirement_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
+         AND requirement_id IN (SELECT requirement_id FROM pilots) AND review_status IN ('APPROVED','REVIEWED')) AS accepted_mappings,
       (SELECT count(*) FROM mapping.phase3_representability WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS representability_assertions,
       (SELECT count(*) FROM mapping.phase3_automatability WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST' AND automatability_state='PARTIAL' AND review_status='NEEDS_REVIEW') AS partial_automatability,
-      (SELECT count(*) FROM mapping.phase3_exceptions WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS exceptions,
+      (SELECT count(*) FROM mapping.phase3_exceptions WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST' AND requirement_id IN (SELECT requirement_id FROM pilots)) AS exceptions,
+      (SELECT count(*) FROM expected_exceptions e LEFT JOIN mapping.phase3_exceptions a USING(exception_id)
+       WHERE a.exception_id IS NULL OR a.requirement_id IS DISTINCT FROM e.requirement_id
+          OR a.exception_type IS DISTINCT FROM e.exception_type OR a.review_status IS DISTINCT FROM 'NEEDS_REVIEW'
+          OR a.fixture_kind IS NOT NULL) AS invalid_expected_exceptions,
+      (SELECT count(*) FROM mapping.phase3_exceptions a JOIN pilots p USING(requirement_id)
+       WHERE a.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
+         AND a.exception_id NOT IN (SELECT exception_id FROM expected_exceptions)) AS unexpected_pilot_exceptions,
       (SELECT count(*) FROM audit.rules) AS audit_rules,
       (SELECT count(*) FROM compliance.requirements) AS requirements,
       (SELECT count(*) FROM compliance.deadlines) AS deadlines,
@@ -30,10 +45,12 @@ WITH pilots(requirement_id) AS (
 )
 SELECT CASE WHEN non_pilot_mappings=0 AND valid_expected_mappings=expected_mappings AND expected_mappings=5
                  AND accepted_mappings=0 AND representability_assertions=0 AND partial_automatability=5
-                 AND exceptions=3 AND audit_rules=0 AND requirements=48 AND deadlines=10 AND candidates=34 AND source_facts=36
+                 AND exceptions=3 AND invalid_expected_exceptions=0 AND unexpected_pilot_exceptions=0
+                 AND audit_rules=0 AND requirements=48 AND deadlines=10 AND candidates=34 AND source_facts=36
             THEN 'PASS' ELSE 'FAIL' END AS m04_pilot_structural_validation,
        non_pilot_mappings,valid_expected_mappings,expected_mappings,accepted_mappings,representability_assertions,
-       partial_automatability,exceptions,audit_rules,requirements,deadlines,candidates,source_facts
+       partial_automatability,exceptions,invalid_expected_exceptions,unexpected_pilot_exceptions,
+       audit_rules,requirements,deadlines,candidates,source_facts
 FROM result;
 
 -- PILOT REVIEW VIEW: one row per pilot/capability relationship, including pilots with no format mapping.

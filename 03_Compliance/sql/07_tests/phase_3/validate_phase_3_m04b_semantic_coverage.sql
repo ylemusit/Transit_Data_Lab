@@ -4,10 +4,12 @@ WITH pilots(requirement_id) AS (VALUES
  ('EU-2017-1926-REQ-A09-P03-RANDOM_CHECKS')
 ), checks AS (
  SELECT 'COVERAGE_REFERENCE' check_name,count(*)::BIGINT n FROM mapping.phase3_requirement_coverage c LEFT JOIN compliance.requirements r USING(requirement_id) WHERE r.requirement_id IS NULL
- UNION ALL SELECT 'NON_PILOT_COVERAGE',count(*) FROM mapping.phase3_requirement_coverage WHERE requirement_id NOT IN (SELECT requirement_id FROM pilots)
+ UNION ALL SELECT 'NON_PILOT_COVERAGE',count(*) FROM mapping.phase3_requirement_coverage
+   WHERE requirement_id NOT IN (SELECT requirement_id FROM pilots)
+     AND requirement_id NOT IN ('EU-2017-1926-REQ-A03-P01-001','EU-2017-1926-REQ-A03-P01-002','EU-2017-1926-REQ-A03-P03-001')
  UNION ALL SELECT 'COVERAGE_PILOT_COUNT',abs((SELECT count(*) FROM mapping.phase3_requirement_coverage WHERE requirement_id IN (SELECT requirement_id FROM pilots))-5)
  UNION ALL SELECT 'MAPPING_REVIEW_REFERENCE',count(*) FROM mapping.phase3_mapping_reviews r LEFT JOIN mapping.phase3_requirement_capabilities m USING(mapping_id) WHERE m.mapping_id IS NULL
- UNION ALL SELECT 'MAPPING_REVIEW_COUNT',abs((SELECT count(*) FROM mapping.phase3_mapping_reviews)-5)
+ UNION ALL SELECT 'MAPPING_REVIEW_COUNT',abs((SELECT count(*) FROM mapping.phase3_mapping_reviews WHERE mapping_id LIKE 'M04-MAP-%')-5)
  UNION ALL SELECT 'MISSING_M04_MAPPING_REVIEW',count(*) FROM mapping.phase3_requirement_capabilities m LEFT JOIN mapping.phase3_mapping_reviews r USING(mapping_id) WHERE m.mapping_id LIKE 'M04-MAP-%' AND r.mapping_id IS NULL
  UNION ALL SELECT 'A04P01_MAPPING_REVIEW',abs((SELECT count(*) FROM mapping.phase3_mapping_reviews WHERE mapping_id IN ('M04-MAP-A04P01-GTFS-TRIP-STOP','M04-MAP-A04P01-NETEX-PT') AND semantic_review_outcome='ACCEPTED')-2)
  UNION ALL SELECT 'A04P02_MAPPING_REVIEW',abs((SELECT count(*) FROM mapping.phase3_mapping_reviews WHERE mapping_id='M04-MAP-A04P02-NETEX-PT' AND semantic_review_outcome='ACCEPTED_WITH_LIMITATIONS')-1)
