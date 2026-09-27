@@ -7,9 +7,9 @@ Actualizado: 2026-09-27. Sustituye únicamente las afirmaciones operativas obsol
 | Elemento | Estado comprobado |
 | --- | --- |
 | Proyecto global | Transit Data Lab, siete áreas conceptuales incluyendo Business. |
-| Raíz local | Rama main; HEAD `3c122f48ce4425c2e34313a2a65dcb9218bc77f5`. |
-| Baseline raíz | `tdl-baseline-v0.1` apunta a ese HEAD. No es la versión del producto Desktop. |
-| Remoto raíz | `https://github.com/ylemusit/Transit_Data_Lab.git`; main y etiqueta anunciados coinciden con la baseline local. |
+| Raíz local | Rama main; el estado operativo se comprueba en Git y no se fija aquí un SHA de HEAD que quedaría obsoleto al publicar. Baseline validada antes del checkpoint M05B: `8358cfa7974c5b65e193dcba0f1da544ae786211`. |
+| Baseline raíz | `tdl-baseline-v0.1` apunta a la baseline histórica `3c122f48ce4425c2e34313a2a65dcb9218bc77f5`; no representa el HEAD actual ni la versión del producto Desktop. |
+| Remoto raíz | `https://github.com/ylemusit/Transit_Data_Lab.git`; el HEAD remoto de `main` se verifica al publicar cada checkpoint. |
 | Remoto Desktop | `https://github.com/ylemusit/GTFS-Explorer-Desktop.git`; historia independiente del contenedor. |
 | Baseline Desktop | `v0.2.2` → `85c700587ffec06d73d84825e1951fb73259b62c`, local y remota. |
 | HEAD Desktop | `38e0e96dbeabaf00d53ed4d85509e5a4ce0b06fd`: commit documental posterior al release. |
@@ -25,7 +25,7 @@ Desktop tiene 20 entradas locales de estado, incluidas modificaciones de código
 | --- | --- |
 | 01_Research_Standards | Estructura planificada, sin implementación observada en la baseline. |
 | 02_Data_Engineering | GTFS raw implementado; sentinel de integridad; core, validation y analysis pendientes. GTFS-RT, NeTEx y SIRI planificados. |
-| 03_Compliance | Phase 1 y Phase 2 FROZEN; 92 provisions, 36 source facts, 48 requirements, 10 deadlines. Phase 3 IN_PROGRESS; M04 conserva 5 relaciones y 5 registros de automatización `PARTIAL`, todos con workflow `NEEDS_REVIEW`; 0 assertions de representabilidad y 0 audit.rules. M04B registra 5 revisiones semánticas de mapping separadas de 5 decisiones de cobertura persistidas para el piloto. A05 y A09 usan rutas procedimentales sin mappings técnicos; las decisiones aceptan limitaciones y no son conclusiones de cumplimiento jurídico. Baseline semántica M04/M04B publicada; siguiente actividad: expansión controlada por familia, pendiente de plan humano. |
+| 03_Compliance | Phase 1 y Phase 2 FROZEN; 92 provisions, 36 source facts, 48 requirements, 10 deadlines. Phase 3 IN_PROGRESS; M04 conserva 5 relaciones y 5 registros de automatización `PARTIAL`, todos con workflow `NEEDS_REVIEW`; 0 assertions de representabilidad y 0 audit.rules. M04B registra 5 revisiones semánticas de mapping separadas de 5 decisiones de cobertura persistidas para el piloto. A05 y A09 usan rutas procedimentales sin mappings técnicos; las decisiones aceptan limitaciones y no son conclusiones de cumplimiento jurídico. `PHASE3_FAMILY_BASELINE_V1` establece 9 familias y 48 membresías primarias (41 HIGH, 7 MEDIUM, 0 LOW); rol `PLANNING_METADATA`, M01 `M01_NOT_RECOVERABLE`. B01 está listo como lote recomendado; no requiere investigación de perfiles antes de B01. Siguiente actividad: M06-B01, sin crear mappings en M05B. |
 | 04_Interoperability | Mappings pendientes; no se presupone conversión 1:1. |
 | 05_Audits | Estructura planificada; evidencia de 20 operadores ubicada en GTFS_Lab. |
 | 06_Products | Desktop, Engineering, Artifacts y backups separados del índice raíz. Desktop baseline 0.2.2 protegida. |

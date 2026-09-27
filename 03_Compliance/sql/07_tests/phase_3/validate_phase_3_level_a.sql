@@ -26,6 +26,10 @@ WITH checks AS (
     UNION ALL SELECT 'COVERAGE_VOCABULARY', count(*) FROM mapping.phase3_requirement_coverage WHERE coverage_state NOT IN ('ESTABLISHED','PARTIAL','UNRESOLVED','NOT_APPLICABLE','NONE_IDENTIFIED') OR semantic_review_outcome NOT IN ('ACCEPTED','ACCEPTED_WITH_LIMITATIONS','REJECTED','UNRESOLVED') OR review_status NOT IN ('REVIEWED','NEEDS_REVIEW')
     UNION ALL SELECT 'COVERAGE_REQUIRED_CONTEXT', count(*) FROM mapping.phase3_requirement_coverage WHERE length(trim(justification))=0 OR length(trim(identified_paths))=0 OR length(trim(reviewed_by))=0 OR length(trim(reviewed_against_baseline))=0
     UNION ALL SELECT 'DUPLICATE_REQUIREMENT_COVERAGE', count(*) FROM (SELECT requirement_id FROM mapping.phase3_requirement_coverage GROUP BY requirement_id HAVING count(*)>1)
+    UNION ALL SELECT 'FAMILY_REFERENCE', count(*) FROM mapping.phase3_requirement_families m LEFT JOIN mapping.phase3_families f USING (family_id) WHERE f.family_id IS NULL
+    UNION ALL SELECT 'FAMILY_CLASSIFICATION_METADATA', count(*) FROM mapping.phase3_requirement_families
+      WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
+        AND (length(trim(coalesce(classification_reason,'')))=0 OR coalesce(classification_confidence,'') NOT IN ('HIGH','MEDIUM','LOW'))
 ), totals AS (
     SELECT (SELECT count(*) FROM mapping.phase3_requirement_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS mappings,
            (SELECT count(*) FROM mapping.phase3_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS capabilities,
