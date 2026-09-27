@@ -4,7 +4,7 @@
 
 Este archivo rige el trabajo dentro de `07_Business`. El área Business está físicamente aislada y se ocupa de su documentación empresarial. No autoriza modificaciones fuera de este directorio.
 
-La fase actual es **BUSINESS PHASE 3 — MARKET EVIDENCE**, **IN_PROGRESS**, con baseline de capacidades V1 FROZEN. El estado operativo se mantiene en BUSINESS_STATUS.md y las autorizaciones en 01_Governance/DECISION_LOG.md. Stage 1 sigue INCOMPLETE y su gate NOT_REACHED; Stage 2 no autorizado. No iniciar ni cerrar fases o gates sin autorización expresa.
+La fase actual es **BUSINESS PHASE 3 — MARKET EVIDENCE**, **IN_PROGRESS**, con baseline de capacidades V1 FROZEN. El estado operativo se mantiene en BUSINESS_STATUS.md y las autorizaciones en 01_Governance/DECISION_LOG.md. Stage 1 = COMPLETE / APPROVED (BUS-DEC-025); Stage 2A = COMPLETE. La autorización explícita del usuario del 2026-09-27 cubre Stage 2B — auditoría documental, simulaciones sintéticas, identificación de organizaciones/roles/canales públicos y preparación del paquete de gate. No autoriza contacto externo, entrevistas ni envíos: EXTERNAL_CONTACT permanece NOT_AUTHORIZED hasta decisión humana expresa. No iniciar ejecución de entrevistas ni otros gates sin autorización expresa.
 
 ## Fuentes técnicas de verdad
 
@@ -48,7 +48,7 @@ El objetivo empresarial inicial es explorar la futura comercialización de servi
 
 Una tarea exclusivamente Business no autoriza modificaciones fuera de `07_Business`. La revisión global de alineación autorizada por el usuario puede leer documentación técnica y corregir gobierno vigente, preservando baselines y evidencias. No habilita desarrollo técnico ni ejecución de nuevas fases empresariales.
 
-La investigación de mercado previa está registrada; no ampliar investigación ni iniciar entrevistas, pilotos, contactos, pricing, oferta o publicación sin autorización específica. No cambiar capacidades congeladas para acomodarlas a documentación nueva. Aplicar 03_Market/RESOURCE_USAGE_POLICY.md para controles de recursos: no hash global ni ejecución automática de verify_market.py. No hacer commit. Las restricciones iniciales de Phase 1 se interpretan como históricas, conforme a las autorizaciones posteriores registradas.
+La investigación de mercado previa está registrada. Solo el diseño de customer discovery está autorizado por BUS-DEC-026; no iniciar entrevistas, pilotos, contacto, pricing, oferta o publicación sin autorización específica. No cambiar capacidades congeladas para acomodarlas a documentación nueva. Aplicar 03_Market/RESOURCE_USAGE_POLICY.md para controles de recursos: no hash global ni ejecución automática de verify_market.py. No hacer commit. Las restricciones iniciales de Phase 1 se interpretan como históricas, conforme a las autorizaciones posteriores registradas.
 
 ## Autoría
 

@@ -89,3 +89,21 @@ Fuente: autorización explícita del usuario «AUTORIZADO — BUSINESS MASTER RO
 | BUS-DEC-024 | APPROVED (amendment y reevaluación, no gate) | Denominar Stage 1 DESK MARKET DISCOVERY / EVIDENCE BASELINE e incorporar al roadmap S1-ENTRY-01–03 y S1-EXIT-01–12 obligatorios, calidad/independencia/diversidad, prioridad de fuentes y trazabilidad regulatoria. Reevaluar primero las 36 fichas y corpus existente sin investigación externa adicional; usar PASS/FAIL/INSUFFICIENT_EVIDENCE/NOT_APPLICABLE justificado sin omitir obligatorios. Si hay carencias, crear STAGE_1_EVIDENCE_GAP_PLAN con los cinco campos autorizados; solo si todos pasan declarar COMPLETE/READY_FOR_HUMAN_GATE con gate PENDING_HUMAN_DECISION, nunca aprobado por el agente. No modificar V1/producto, iniciar Stage 2, contactar terceros, entrevistar, fijar pricing, afirmar validación comercial o hacer commit. |
 
 Resultado del agente, no decisión aprobada: [reevaluación](../03_Market/STAGE_1_CRITERIA_REEVALUATION.md) = 14 PASS / 1 INSUFFICIENT_EVIDENCE (S1-EXIT-09). STAGE_1_EXECUTION = INCOMPLETE; GATE_READINESS = NOT_READY_FOR_HUMAN_GATE; STAGE_1_GATE = NOT_REACHED. [Plan de gaps](../03_Market/STAGE_1_EVIDENCE_GAP_PLAN.md). Ausencia de criterios resuelta; tercer gap externo insuficientemente delimitado. No investigación nueva ni cambios ASM. Esperar decisión humana, Stage 2 NOT AUTHORIZED; Phase 3 IN_PROGRESS y V1 FROZEN. Verificación documental en stage_1_amendment, separada de los resultados históricos.
+
+## HUMAN GATE — Stage 1 — 2026-09-27
+
+Fuente: decisión explícita del usuario **HUMAN GATE DECISION — STAGE 1: APPROVE**. La aprobación se limita a que existe evidencia documental suficiente para justificar avanzar hacia investigación primaria del mercado. No constituye validación de mercado ni autorización de Stage 2.
+
+| ID | Estado | Decisión |
+| --- | --- | --- |
+| BUS-DEC-025 | APPROVED (HUMAN GATE Stage 1) | STAGE_1_EXECUTION = COMPLETE; STAGE_1_GATE = APPROVED. La evaluación vigente registra 15/15 criterios PASS ([reevaluación](../03_Market/STAGE_1_CRITERIA_REEVALUATION.md)); evidencia, alcance y limitaciones quedan resumidos en [cierre Stage 1](../03_Market/STAGE_1_CLOSURE.md). BUSINESS_PHASE_3 = IN_PROGRESS; BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN. STAGE_2 = NOT_STARTED y STAGE_2_AUTHORIZATION = NOT_YET_GRANTED. La aprobación solo justifica avanzar hacia investigación primaria; no valida product-market fit, demanda, willingness to pay, buyer, pricing, servicio, oportunidad comercial ni viabilidad económica. |
+
+## Autorización exclusiva — Stage 2A Customer Discovery Design — 2026-09-27
+
+Fuente: autorización explícita del usuario «AUTHORIZED — BUSINESS MASTER ROADMAP STAGE 2A — CUSTOMER DISCOVERY DESIGN». Revisa el estado temporal de BUS-DEC-025/Stage 1: Stage 1 continúa COMPLETE / APPROVED, pero Stage 2A queda autorizado solo para diseño. No habilita contacto externo ni ejecución de entrevistas.
+
+| ID | Estado | Decisión autorizada |
+|---|---|---|
+| BUS-DEC-026 | APPROVED (alcance de diseño exclusivamente) | Diseñar customer discovery en `03_Market/customer_discovery/` con README y siete artefactos; cubrir RQ-01–20, cohortes/roles, guía, captura, matriz de todas las BUS-ASM, GAP-001/002/005, evidencia negativa, muestra y gate previo. Actualizar gobierno/estado necesario. STAGE_2 = IN_PROGRESS solo en diseño; STAGE_2A = AUTHORIZED; EXTERNAL_CONTACT = NOT_AUTHORIZED. No entrevistar, buscar individuos, outreach, vender, fijar precio, pilotar, modificar producto ni alterar V1 FROZEN. Esperar revisión humana y autorización explícita antes de cualquier contacto. |
+
+Resultado documental del agente: diseño Stage 2A completado en [customer_discovery](../03_Market/customer_discovery/README.md). No hay resultados ni cambios a BUS-ASM. STAGE_2 no queda validado ni completado; no se aprueba ningún gate.

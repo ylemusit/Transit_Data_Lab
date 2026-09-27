@@ -1,6 +1,6 @@
 # Market evidence register
 
-Consulta: **2026-09-27**, Europe/Madrid. **36 entradas aceptadas**, cada una restringida a la afirmación descrita; aceptación no significa validación comercial o comprobación de rendimiento. Fuentes principales: contratación pública española/TED, BOE, EUR-Lex, organismos, documentación técnica y proveedores. No se usan directorios comerciales para aceptar importes.
+Consulta: **2026-09-27**, Europe/Madrid. **39 entradas aceptadas**, cada una restringida a la afirmación descrita; aceptación no significa validación comercial o comprobación de rendimiento. Fuentes principales: contratación pública española/TED, BOE, EUR-Lex, organismos, documentación técnica y proveedores. No se usan directorios comerciales para aceptar importes.
 
 Fiabilidad evalúa la fuente para esa afirmación: alta para publicación oficial/documentación propia, media para oferta declarada. La cobertura puede ser parcial incluso con fuente alta. Fecha de fuente no es fecha de consulta. “Sin fecha” no se inventa. CAP-xxx en campos es TDL-CAP-xxx de V1; relación inferida, no capacidad ampliada.
 
@@ -619,5 +619,58 @@ Navegación: [segmentos](CUSTOMER_SEGMENTS.md), [problemas](PROBLEM_REGISTER.md)
 | Relación capability | TDL-CAP-009 / TDL-CAP-019 |
 | Limitaciones | No adjudicación ni importe contractual aceptado; título 24000000 no se interpreta como presupuesto. |
 | Conservación | Lectura web oficial/documentación del proveedor; sin copia local íntegra |
+
+Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## MKT-EVD-037
+
+| Campo | Valor |
+| --- | --- |
+| Tipo | ESTUDIO INSTITUCIONAL / INVESTIGACIÓN |
+| Descripción | El informe presenta métodos y métricas para medir la exactitud temporal GTFS-RT y espacial GTFS Schedule contrastando predicciones y ubicaciones programadas con patrones reales de vehículos; identifica divergencia entre servicio planificado y prestado como objeto medible. |
+| Fuente | [Mineta Transportation Institute, San José State University](https://scholarworks.sjsu.edu/mti_publications/506/) |
+| Localizador | Resumen institucional, líneas/epígrafes Description; DOI 10.31979/mti.2024.2017; PDF Research Brief enlazado |
+| Fecha fuente | 08/2024 |
+| Fecha consulta | 2026-09-27 |
+| Geografía | Estados Unidos; método basado en GTFS/GTFS-RT, sin extrapolar incidencia a España |
+| Fiabilidad | Alta para el alcance y conclusión del informe institucional; estudio, no estimación de prevalencia de mercado |
+| Relación problema | PROB-011 |
+| Relación capability | TDL-CAP-003 / TDL-CAP-004 / TDL-CAP-019 (relación conceptual únicamente; V1 no demuestra medición contra operación real) |
+| Limitaciones | Resumen y PDF enlazado consultados; descarga del PDF devolvió 403. No usar para afirmar prevalencia, compra ni errores de operador español. |
+| Conservación | Ficha de fuente y extracto de consulta en [registro de investigación](evidence/S1_EXIT_09_TARGETED_RESEARCH.md); sin copia íntegra del PDF. |
+
+## MKT-EVD-038
+
+| Campo | Valor |
+| --- | --- |
+| Tipo | DOCUMENTACIÓN DE ALTERNATIVA PÚBLICA |
+| Descripción | California publica informes mensuales generados con instancia de MobilityData GTFS Validator; describe resumen de operaciones representadas/miscodificadas, avisos del validador y campos recomendados, compartibles con proveedores. |
+| Fuente | [Cal-ITP / Caltrans, California GTFS Quality Dashboard](https://reports.dds.dot.ca.gov/) |
+| Localizador | About GTFS data / How to use this website / How to use these reports |
+| Fecha fuente | Dashboard dinámico; archivo de informes desde junio de 2022 hasta agosto de 2026 en la consulta |
+| Fecha consulta | 2026-09-27 |
+| Geografía | California, Estados Unidos |
+| Fiabilidad | Alta para la descripción publicada del alcance; no benchmark funcional independiente |
+| Relación problema | PROB-011 |
+| Relación capability | TDL-CAP-003 / TDL-CAP-019, solo como alternativas/comparadores |
+| Limitaciones | El alcance publicado habla de feeds, reglas y operaciones representadas; no se afirma que el servicio carezca de otras funciones. La página no documenta comparación de la operación programada frente a patrones observados GPS/RT para métricas de exactitud. No extrapolar fuera de California. |
+| Conservación | Ficha de fuente y extracto de consulta en [registro de investigación](evidence/S1_EXIT_09_TARGETED_RESEARCH.md). |
+
+## MKT-EVD-039
+
+| Campo | Valor |
+| --- | --- |
+| Tipo | DOCUMENTACIÓN TÉCNICA DE ALTERNATIVA |
+| Descripción | MobilityData Canonical GTFS Schedule Validator evalúa GTFS Schedule Reference y Best Practices y emite notices INFO/WARNING/ERROR con severidades y reglas declaradas. |
+| Fuente | [MobilityData, Validation Rules and Metadata](https://gtfs-validator.mobilitydata.org/rules.html) |
+| Localizador | Introduction, Severities y notice catalogue |
+| Fecha fuente | Página dinámica, snapshot consultado 2026-09-27 |
+| Fecha consulta | 2026-09-27 |
+| Geografía | Global |
+| Fiabilidad | Alta para el alcance declarado por el mantenedor |
+| Relación problema | PROB-011 |
+| Relación capability | TDL-CAP-003 / TDL-CAP-004 |
+| Limitaciones | Evalúa referencia Schedule y mejores prácticas; el texto publicado no documenta cotejo con patrones reales de operación. Esto es una comparación de alcance publicado, no afirmación de incapacidad absoluta ni evaluación de toda herramienta/proveedor. |
+| Conservación | Ficha de fuente y extracto de consulta en [registro de investigación](evidence/S1_EXIT_09_TARGETED_RESEARCH.md). |
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

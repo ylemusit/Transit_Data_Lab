@@ -40,3 +40,13 @@ Búsquedas por sitios propios/documentación: enRoute, Trillium, Ito, GeoActio, 
 `scope_before.json` guarda hashes de archivos fuera de Business antes de autoría/investigación persistida (snapshot inicial tardó y terminó antes de crear documentos); `verification.json` compara después y comprueba hashes integrantes/descriptor V1, documentos, enlaces/IDs y límites. Sin rerun técnico, commit o contacto.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## Investigación dirigida S1-EXIT-09 — 2026-09-27
+
+Autorizada exclusivamente para resolver S1-EXIT-09. Consultas: GTFS data accuracy real world schedule vs observed operation; Assessing GTFS Accuracy; documentación de reglas MobilityData; informes públicos de calidad GTFS Cal-ITP; indicadores PAN y NAP España. Fuentes y evaluación completas: [S1_EXIT_09_TARGETED_RESEARCH.md](S1_EXIT_09_TARGETED_RESEARCH.md).
+
+Aceptados MKT-EVD-037/038/039: estudio Mineta Transportation Institute sobre métricas de exactitud programada-real; alcance publicado de los informes Cal-ITP y del validador MobilityData. GAP-CANDIDATE-005 delimitado a medir exactitud espacio-temporal GTFS contra posiciones/patrones observados. Confianza MEDIUM; sin prevalencia ni demanda española. El gap pertenece al mercado como potencial residual de alcance documentado, no a una incapacidad absoluta de alternativas ni a una promesa TDL.
+
+Revisados pero no usados para sostener un gap: indicadores PAN Francia demuestran que ya existe monitorización de disponibilidad/conformidad/frescura; ficha NAP ID 963 muestra errores y calidad declarada desconocida, pero un registro dinámico aislado no permite generalizar; páginas de validación/publicación RT y estudio Calgary tampoco se usan como soporte principal. PDF MTI devolvió 403; se consultó resumen institucional y se registró la limitación.
+
+Stop condition satisfecha con el tercer POTENTIAL GAP; no búsqueda de un cuarto. No contactos, entrevistas, Stage 2, producto técnico, cambio de V1 o commit.

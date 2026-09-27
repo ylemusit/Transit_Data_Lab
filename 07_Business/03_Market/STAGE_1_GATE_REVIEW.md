@@ -2,13 +2,13 @@
 
 Fecha: 2026-09-27. Autoridad: [BUSINESS_MASTER_ROADMAP.md](../01_Governance/BUSINESS_MASTER_ROADMAP.md) y autorización del usuario «AUTORIZADO — BUSINESS MASTER ROADMAP — STAGE 1 ONLY».
 
-STAGE_1_EXECUTION = INCOMPLETE
+STAGE_1_EXECUTION = COMPLETE
 
-GATE_READINESS = NOT_READY_FOR_HUMAN_GATE
+GATE_READINESS = READY_FOR_HUMAN_GATE
 
-HUMAN_GATE_DECISION = PENDING. Stage 2 = NOT AUTHORIZED. BUSINESS PHASE 3 = IN_PROGRESS. BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN.
+HUMAN_GATE_DECISION = APPROVED (BUS-DEC-025, 2026-09-27). Stage 2 = NOT_STARTED; STAGE_2_AUTHORIZATION = NOT_YET_GRANTED. BUSINESS PHASE 3 = IN_PROGRESS. BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN.
 
-La revisión documental acotada está preparada. No se certifica la finalización de Stage 1: el roadmap no enumera criterios de entrada/salida ni evidencia requerida específica. No se incorporan criterios nuevos por interpretación. El humano debe resolver esta carencia antes de evaluar cumplimiento del gate. El PASS anterior de commercial validation readiness no sustituye este gate.
+La revisión inicial citada debajo es histórica. La reevaluación vigente incorpora BUS-DEC-024 y la investigación externa autorizada exclusivamente para S1-EXIT-09. Stage 1 está completo para decisión humana: 15/15 criterios PASS; gate PENDING. No se afirma aprobación humana ni se autoriza Stage 2. El PASS de commercial validation readiness tampoco sustituye este gate.
 
 ## 1. Objetivo de Stage 1
 
@@ -24,7 +24,7 @@ UNKNOWN — El roadmap no contiene una lista de criterios de entrada de Stage 1 
 
 FACT — Lectura del roadmap, reglas Business, gobierno, baseline y documentos de discovery. Reutilización de los resultados íntegros persistidos de mercado y readiness, ambos con exit code 0; sin rerun de verificadores históricos. Revisión de límites de capacidades, candidato PROB-001, hipótesis y separación de etapas. Preparación de este review y de un [anexo de evidencia](STAGE_1_EVIDENCE_REUSE.md) con las 36 fichas documentales existentes. Actualización acotada de estado y registro de autorización.
 
-FACT — No investigación externa nueva, contacto, entrevistas, emails, leads activos, pilotos, precios, cambios técnicos, cambios de V1 o commit. No se ejecutan actividades de Stage 2 ni el diseño de pilotos de Stage 4. Los apartados futuros del plan existente permanecen como documentación previa, sin ejecución ni nueva aprobación.
+FACT — En la revisión inicial: no investigación externa nueva, contacto, entrevistas, emails, leads activos, pilotos, precios, cambios técnicos, cambios de V1 o commit. No se ejecutan actividades de Stage 2 ni el diseño de pilotos de Stage 4. Los apartados futuros del plan existente permanecen como documentación previa, sin ejecución ni nueva aprobación.
 
 ## 4. Evidencias utilizadas
 
@@ -121,14 +121,28 @@ Preparación heredada, no ejecución autorizada: comprobar último caso estátic
 
 FACT — El roadmap exige entrevistas reales para Stage 2; el diseño no las sustituye. Stage 2 no debe darse por capaz de validar todas las cuestiones comerciales pendientes: Problem / Solution Fit Assessment, Pilot Evidence, Commercial Validation y Offer & Pricing tienen etapas posteriores propias. Sin piloto, WTP, pricing o conclusiones PMF incorporadas a esta preparación. El humano delimitará la autorización concreta antes de cualquier contacto.
 
-## 15. Recomendación procedimental y decisión humana
+## 15. Recomendación procedimental y decisión humana — revisión inicial (histórica)
 
-GATE_READINESS = NOT_READY_FOR_HUMAN_GATE
+GATE_READINESS = READY_FOR_HUMAN_GATE
 
-STAGE_1_EXECUTION = INCOMPLETE
+STAGE_1_EXECUTION = COMPLETE
 
 Recomendación basada en la carencia de criterios, no en falta de demanda demostrada. Hay documentación disponible para que el humano resuelva la carencia y decida REWORK / HOLD / STOP, o defina los requisitos para posterior revisión. El agente no elige ni registra APPROVE. Stage 2 sigue NOT AUTHORIZED; se espera decisión humana, sin commit.
 
 Verificación limitada: documentos concretos, enlaces locales y resultados completos previos; sin hash global, rerun histórico, nueva comprobación de vigencia externa ni nueva certificación de integridad de V1. Git contiene archivos untracked agrupados; diff vacío no demuestra inmutabilidad global.
+
+Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## Resolución posterior del HUMAN GATE — 2026-09-27
+
+Estado anterior: documento preparado para revisión; sus resultados históricos se conservan. La decisión humana posterior fue **APPROVE**, registrada como BUS-DEC-025. La reevaluación vigente acredita 15/15 criterios PASS. STAGE_1_EXECUTION = COMPLETE; STAGE_1_GATE = APPROVED; BUSINESS_PHASE_3 = IN_PROGRESS; BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN; STAGE_2 = NOT_STARTED; STAGE_2_AUTHORIZATION = NOT_YET_GRANTED. El significado y las limitaciones constan en el [cierre documental](STAGE_1_CLOSURE.md). No iniciar Stage 2 ni inferir validación comercial de esta decisión.
+
+## Actualización vigente — reevaluación S1-EXIT-09, 2026-09-27
+
+La carencia del criterio S1-EXIT-09 queda resuelta por GAP-CANDIDATE-005, sustentado por MKT-EVD-037/038/039. La evaluación detallada y las limitaciones están en [STAGE_1_CRITERIA_REEVALUATION](STAGE_1_CRITERIA_REEVALUATION.md) y [el registro de investigación dirigida](evidence/S1_EXIT_09_TARGETED_RESEARCH.md).
+
+Resultado de la revisión antes de la decisión humana: 15 PASS / 0 FAIL / 0 INSUFFICIENT_EVIDENCE / 0 NOT_APPLICABLE. STAGE_1_EXECUTION = COMPLETE. GATE_READINESS = READY_FOR_HUMAN_GATE. HUMAN_GATE_DECISION = PENDING en ese momento. La resolución posterior APPROVE está registrada al final de este documento y en BUS-DEC-025. BUSINESS PHASE 3 = IN_PROGRESS. BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN. Stage 2 = NOT_STARTED; autorización NOT_YET_GRANTED.
+
+Este resultado prepara el material para decisión humana; no aprueba el gate, no valida demanda/PMF/WTP ni cambia el producto técnico. No se modificó V1; no se contactó a terceros y no se hizo commit.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

@@ -2,7 +2,7 @@
 
 Área documental destinada a gobernar la exploración empresarial de Transit Data Lab, actualmente **WORKING NAME**. No se afirma que este nombre sea marca registrada, nombre societario definitivo o denominación jurídicamente disponible; requiere verificación formal antes de una decisión definitiva de marca.
 
-Business Phase 3 — Market Evidence está IN_PROGRESS, con baseline de capacidades V1 FROZEN. Stage 1 sigue INCOMPLETE por S1-EXIT-09; su gate NOT_REACHED y Stage 2 no autorizado. El objetivo empresarial es explorar una futura comercialización relacionada con calidad, validación, auditoría y compliance de datos de transporte público, sujeta a capacidades técnicamente demostradas. No se dan por probadas la demanda o la viabilidad comercial.
+Business Phase 3 — Market Evidence está IN_PROGRESS, con baseline de capacidades V1 FROZEN. Stage 1 = COMPLETE y su gate = APPROVED por decisión humana BUS-DEC-025, con 15/15 criterios PASS y tres POTENTIAL GAP documentados. Autorización expresa posterior BUS-DEC-026 habilita exclusivamente Stage 2A — Customer Discovery Design. STAGE_2 = IN_PROGRESS (diseño); STAGE_2A = AUTHORIZED; EXTERNAL_CONTACT = NOT_AUTHORIZED. No hay entrevistas ni resultados. Esta autorización no valida demanda, buyer, willingness to pay, pricing, servicio, product-market fit, oportunidad comercial o viabilidad económica.
 
 ## Relación con el proyecto técnico
 
@@ -21,7 +21,12 @@ Cualquier futura presentación comercial de una capacidad como existente exigir�
 | [BUSINESS_MASTER_ROADMAP.md](01_Governance/BUSINESS_MASTER_ROADMAP.md) | Stages y gates humanos, separados de las Business Phases. |
 | [BUSINESS_CAPABILITY_BASELINE_V1.md](02_Capabilities/BUSINESS_CAPABILITY_BASELINE_V1.md) | Inventario congelado y límites técnicos. |
 | [STAGE_1_CRITERIA_REEVALUATION.md](03_Market/STAGE_1_CRITERIA_REEVALUATION.md) | Resultado vigente del contraste de criterios. |
+| [STAGE_1_CLOSURE.md](03_Market/STAGE_1_CLOSURE.md) | Cierre documental Stage 1 y alcance de la decisión humana. |
 | [STAGE_1_EVIDENCE_GAP_PLAN.md](03_Market/STAGE_1_EVIDENCE_GAP_PLAN.md) | Carencia pendiente y siguiente decisión humana. |
+| [Diseño Stage 2A](03_Market/customer_discovery/README.md) | Investigación primaria diseñada; sin contactos ni entrevistas. |
+| [Contact Gate V2](03_Market/customer_discovery/STAGE_2B_CONTACT_GATE.md) | Estado de la rework de privacidad y gate previo; contacto no autorizado. |
+| [Privacy Notice V2](03_Market/customer_discovery/PRIVACY_NOTICE_V2.md) | Aviso propuesto en dos capas, pendiente de completar canal y revisión. |
+| [Registro mínimo de tratamiento](03_Market/customer_discovery/RESEARCH_DATA_PROCESSING_RECORD.md) | Borrador de responsabilidad proactiva para la investigación personal. |
 
 ## Desarrollo progresivo
 

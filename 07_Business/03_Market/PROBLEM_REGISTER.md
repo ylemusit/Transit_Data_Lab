@@ -14,6 +14,7 @@ Consulta 2026-09-27. HECHO OBSERVADO = resultado publicado o contexto explícito
 | PROB-008 | Digitalizar, actualizar y corregir datos de movilidad; Ley arts. 85/86 y anexo I, UE arts. 6/8/9 | Titulares de servicios e infraestructura; suministro verificable | EXIGENCIA LEGAL; incumplimiento individual no investigado | TDL-CAP-009/010/011/012; infraestructura probatoria, sin auditoría jurídica completa |
 | PROB-009 | Localización, rutas y accesibilidad forman parte de los datos exigidos; Ley anexo I.1/3; reglas gratuitas MobilityData | Operadores, estaciones y autoridades; representar oferta utilizable | EXIGENCIA LEGAL + estándar/reglas técnicas; no incidencia española cuantificada | TDL-CAP-004/016/019; GIS pendiente; sin verificación física de accesibilidad |
 | PROB-010 | Arquitectura de información al viajero antigua requiere renovación; Wiltshire II.1.4, MKT-EVD-010 | Ayuntamiento, operadores y viajeros | HECHO OBSERVADO según comprador + NECESIDAD CONTRATADA | TDL-CAP-004/019, conexión débil; sin RTPI |
+| PROB-011 | Medir exactitud espacial/temporal del servicio programado frente a movimientos observados; estudio MTI 2024, MKT-EVD-037 | Agencias y reutilizadores; detectar divergencia entre plan y servicio observado | NECESIDAD/MÉTODO DOCUMENTADO institucionalmente; una metodología no prueba incidencia general ni contratación | No existe capability V1 acreditada para comparación GPS/RT. MobilityData y Cal-ITP publican validación/informes con otro alcance (MKT-EVD-038/039); el límite se infiere solo de su documentación publicada. |
 
 ## Lo que la evidencia permite concluir
 
@@ -22,3 +23,5 @@ Existen compras de generación/mantenimiento y exigencias de calidad, publicaci�
 La observación francesa es instantánea: snapshot local SNCF muestra 46 advertencias estáticas y 383 errores en Trip Updates; el índice web consultado mostraba 580. Ambos momentos difieren. No sumar ni trasladar estas cifras a España; no reproducir el hallazgo histórico enum Bizkaibus invalidado como defecto del mercado. Los validadores pueden cambiar de reglas/versiones y producir falsos positivos.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+La evidencia nueva MKT-EVD-037 documenta un método para estimar diferencias espaciales y temporales entre GTFS y operación observada usando datos públicos GTFS/GTFS-RT. Es una necesidad investigable, no una tasa de errores ni prevalencia española. Los MKT-EVD-038/039 describen alternativas de informes/validación: los alcances consultados no documentan ese cotejo específico; no se concluye que otras funciones estén ausentes.

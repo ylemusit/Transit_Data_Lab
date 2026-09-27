@@ -29,9 +29,9 @@ Desktop tiene 20 entradas locales de estado, incluidas modificaciones de código
 | 04_Interoperability | Mappings pendientes; no se presupone conversión 1:1. |
 | 05_Audits | Estructura planificada; evidencia de 20 operadores ubicada en GTFS_Lab. |
 | 06_Products | Desktop, Engineering, Artifacts y backups separados del índice raíz. Desktop baseline 0.2.2 protegida. |
-| 07_Business | V1 FROZEN; Business Phase 3 IN_PROGRESS. Stage 1 INCOMPLETE, S1-EXIT-09 INSUFFICIENT_EVIDENCE, gate NOT_REACHED; Stage 2 no autorizado. |
+| 07_Business | V1 FROZEN; Business Phase 3 IN_PROGRESS. Stage 1 COMPLETE / APPROVED (15/15). Stage 2A COMPLETE; autorización explícita del usuario del 2026-09-27 completó Stage 2B documental: auditoría, simulaciones sintéticas, seis objetivos y canales públicos, borrador y paquete. `CONTACT_GATE_READINESS = READY_FOR_CONTACT_GATE`; contacto externo NOT_AUTHORIZED hasta decisión humana. Sin entrevistas. |
 
-Los PASS previos de market evidence y validation readiness son documentales. No contradicen el gate Stage 1 pendiente. MARKET_VALIDATED = NO, DEMAND_VALIDATED = NO, WILLINGNESS_TO_PAY = NO, DIFFERENTIATION = UNPROVEN.
+Los PASS previos de market evidence y validation readiness son documentales. El approval de Stage 1 tampoco valida el mercado: MARKET_VALIDATED = NO, DEMAND_VALIDATED = NO, WILLINGNESS_TO_PAY = NO, DIFFERENTIATION = UNPROVEN.
 
 ## Integridad y pendientes
 

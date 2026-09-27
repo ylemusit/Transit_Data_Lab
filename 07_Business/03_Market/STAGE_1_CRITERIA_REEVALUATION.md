@@ -1,14 +1,14 @@
 # Stage 1 — reevaluación de criterios aprobados
 
-Fecha: 2026-09-27. Autoridad: [amendment del roadmap](../01_Governance/BUSINESS_MASTER_ROADMAP.md), BUS-DEC-024. Primera reevaluación exclusivamente del corpus existente; NEW_EXTERNAL_RESEARCH = NO; NEW_EXTERNAL_EVIDENCE = 0.
+Fecha: 2026-09-27. Autoridad: [amendment del roadmap](../01_Governance/BUSINESS_MASTER_ROADMAP.md), BUS-DEC-024, y autorización expresa de investigación dirigida S1-EXIT-09. Se conserva debajo la primera reevaluación del corpus como histórico; esta reevaluación actualiza exclusivamente S1-EXIT-09 con evidencia externa nueva.
 
-STAGE_1_EXECUTION = INCOMPLETE
+STAGE_1_EXECUTION = COMPLETE
 
-GATE_READINESS = NOT_READY_FOR_HUMAN_GATE
+GATE_READINESS = READY_FOR_HUMAN_GATE
 
-STAGE_1_GATE = NOT_REACHED
+STAGE_1_GATE = APPROVED
 
-Stage 2 = NOT AUTHORIZED. Business Phase 3 = IN_PROGRESS. BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN. No gate aprobado por el agente. Se espera decisión humana sobre la carencia documentada, sin ejecutar investigación adicional.
+Stage 2 = NOT_STARTED. STAGE_2_AUTHORIZATION = NOT_YET_GRANTED. Business Phase 3 = IN_PROGRESS. BUSINESS_CAPABILITY_BASELINE_V1 = FROZEN. El criterio bloqueante S1-EXIT-09 pasa tras investigación dirigida. La decisión humana APPROVE está registrada en BUS-DEC-025; el alcance es exclusivamente documental y no autoriza Stage 2. Véase [cierre Stage 1](STAGE_1_CLOSURE.md).
 
 ## Método y trazabilidad
 
@@ -31,12 +31,12 @@ Los PASS siguientes evalúan requisitos documentales concretos y suficiencia par
 | S1-EXIT-06 | PASS | TOOL-001 MobilityData Canonical GTFS Schedule Validator, MKT-EVD-020/021/022; [README conservado](evidence/mobilitydata_readme.txt), Apache-2.0, reportes HTML/JSON. | Ninguno para alternativa documentada; sin ejecución/benchmark ni superioridad TDL. |
 | S1-EXIT-07 | PASS | [Regulación](REGULATORY_DEMAND.md): OBL-001 art. 85.1/5; OBL-003 art. 86.1; OBL-004 anexo I.1.f. MKT-EVD-011/012, BOE conservado, tres localizadores distintos. Clasificación de cinco categorías debajo. | Ninguno para tres requisitos trazables; no exige tres leyes. No dictamen de vigencia/aplicabilidad ni uso de extractos UE incompletos como soporte único. |
 | S1-EXIT-08 | PASS | [Matriz](MARKET_GAPS.md): TDL-CAP-001→PROB-006 (008/031); 002→005/007 (002/005/030); 003→001/003 (007/018/020); 004→001/006 (008/031); 011→007/008 (002/013). Los cinco figuran EXISTING en V1; matriz contiene once. | Ninguno para vínculo conceptual documentado; límites Asturias, revisión humana y SQL conservados. No servicios ni encaje demostrados. |
-| S1-EXIT-09 | INSUFFICIENT_EVIDENCE | [Gaps existentes](MARKET_GAPS.md): GAP-001 y GAP-002 son POTENTIAL GAP externos con alternativas identificadas. GAP-003 es principalmente interno; GAP-004 no delimita una parte posiblemente no resuelta por alternativas multiformato. | Solo dos contrastes externos suficientemente delimitados. Falta un tercero; cuatro etiquetas no acreditan cobertura del criterio. [Plan](STAGE_1_EVIDENCE_GAP_PLAN.md). |
+| S1-EXIT-09 | PASS | GAP-001/002 del corpus previo y GAP-005 tras investigación dirigida: necesidad documentada de medir exactitud espacial/temporal entre oferta GTFS y operación observada (MKT-EVD-037); límites de alcance publicados de MobilityData/Cal-ITP (MKT-EVD-038/039). GAP-003 no externo; GAP-004 no contado. | Tres POTENTIAL GAP externos delimitados; no oportunidad comercial. El tercero acredita necesidad/método y una comparación explícita del alcance publicado, no prevalencia, exclusividad, carencia universal o compra. [Evaluación](evidence/S1_EXIT_09_TARGETED_RESEARCH.md). |
 | S1-EXIT-10 | PASS | [ASM](../01_Governance/ASSUMPTIONS_REGISTER.md) y §6 de [revisión inicial](STAGE_1_GATE_REVIEW.md): 001–003 PARTIALLY_SUPPORTED; 004–008 UNTESTED. Revisión explícita debajo. | Ninguno para revisión; demanda/WTP/buyer/pricing siguen sin validar y requieren evidencia primaria o fases posteriores. |
 | S1-EXIT-11 | PASS | [Guía](CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md), [plan](MARKET_VALIDATION_PLAN.md), §14 de revisión inicial y objetivos/preguntas debajo. | Ninguno para diseño de investigación; entrevistas reales ausentes y no autorizadas. |
 | S1-EXIT-12 | PASS | Límites del corpus revisado, matriz, ASM y revisión inicial: ninguna conclusión positiva de PMF/demanda/WTP/buyer/pricing validados por Stage 1. | Ninguno para este control; términos de validación figuran como exclusiones o diseño futuro, sin validación comercial. |
 
-Resultado: 14 PASS / 0 FAIL / 1 INSUFFICIENT_EVIDENCE / 0 NOT_APPLICABLE. Todos los criterios son obligatorios; no se usa NOT_APPLICABLE para omitir ninguno.
+Resultado actualizado: 15 PASS / 0 FAIL / 0 INSUFFICIENT_EVIDENCE / 0 NOT_APPLICABLE. Los otros 14 criterios mantienen el resultado anterior; solo S1-EXIT-09 se reevaluó. Todos son obligatorios.
 
 ## Suficiencia por familia y clasificación regulatoria
 
@@ -60,8 +60,9 @@ FACT — Contratación se cuenta por expediente: TUVISA 2022; ATTG E3/2019/01; N
 | GAP-002 | POTENTIAL GAP — contado | PROB-001 hallazgos publicados (017/018) y contratos de corrección (002/007). Hipótesis: interpretación de hallazgos específicos fuera del reporte gratuito. MobilityData/PAN y proveedores son alternativas (019–023/025/029). Utilidad incremental y tarea residual no demostradas. |
 | GAP-003 | No contado como gap externo | Corpus/engine/mapping incompletos de TDL describen carencia propia. Necesidad normativa sí observada, pero no se delimita una carencia potencial distinta de alternativas externas. |
 | GAP-004 | POTENTIAL GAP — no contado por evidencia insuficiente | Coherencia estático/RT/multiconsumidor requerida (002/007/030), ya ofrecida por plataformas multiformato. El corpus no delimita un problema residual o diferencia de cobertura para construir un tercer contraste externo suficiente. TDL no acredita RT/NeTEx/SIRI. |
+| GAP-005 | POTENTIAL GAP — contado tras investigación dirigida | Comparación de exactitud GTFS programada con movimientos reales (MKT-EVD-037); el alcance publicado de MobilityData/Cal-ITP cubre validator/feed e informes, sin documentar ese cotejo GPS/RT específico (038/039). Es un límite documental, no incapacidad absoluta. Confianza MEDIUM |
 
-ASSUMPTION — Los dos gaps contados son preguntas de discovery, no déficits demostrados de competidores ni oportunidades validadas. UNKNOWN — Un tercer gap externo suficientemente delimitado. No se exige validación primaria del gap para Stage 1; falta su delimitación documental, no una entrevista para certificar oportunidad comercial.
+ASSUMPTION — Los tres POTENTIAL GAP contados son preguntas de discovery, no déficits demostrados de competidores ni oportunidades validadas. UNKNOWN — La frecuencia, impacto y utilidad incremental en organizaciones concretas. No se exige validación primaria del gap para Stage 1; la suficiencia evaluada es documental.
 
 ## Hipótesis afectadas: revisión sin cambios
 
@@ -96,6 +97,14 @@ La [guía existente](CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md) establece neutralida
 
 FACT — Primera ejecución: [STAGE_1_GATE_REVIEW](STAGE_1_GATE_REVIEW.md), INCOMPLETE por ausencia de criterios; verificación histórica conservada en stage_1_review. Amendment resuelve esa ausencia y esta reevaluación identifica una carencia distinta en S1-EXIT-09. No borra ni recalifica el intento anterior.
 
-Escrituras exclusivamente Business: roadmap, DECISION_LOG, BUSINESS_STATUS, este informe, plan de gaps y paquete de verificación. Sin investigación externa nueva, producto técnico, baseline, ASM, contactos, entrevistas, pilotos, pricing o commit. [Verificación acotada](stage_1_amendment/verification.json) y [exit code](stage_1_amendment/exit_code.txt): estructura, IDs, referencias y coherencia; no aprobación humana ni nueva certificación global. Git agrupa untracked y diff vacío no demuestra inmutabilidad global. No hash global ni rerun histórico.
+Escrituras de la primera reevaluación exclusivamente Business. En la actualización posterior se autorizó y ejecutó investigación externa solo para S1-EXIT-09; producto técnico, baseline y ASM no se modificaron. Sin contactos, entrevistas, pilotos, pricing o commit. [Verificación acotada](stage_1_amendment/verification.json) y [exit code](stage_1_amendment/exit_code.txt): estructura, IDs, referencias y coherencia; no aprobación humana ni nueva certificación global. Git agrupa untracked y diff vacío no demuestra inmutabilidad global. No hash global ni rerun histórico.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## Reevaluación dirigida — S1-EXIT-09, 2026-09-27
+
+FACT — Investigación externa autorizada exclusivamente para S1-EXIT-09. La evaluación de [GAP-CANDIDATE-005](evidence/S1_EXIT_09_TARGETED_RESEARCH.md) clasifica el candidato SUPPORTED, confianza MEDIUM: necesidad/método y frontera de alcance documentadas por fuentes institucionales/técnicas; la necesidad potencial no cubierta queda acotada a la comparación de exactitud programada-real que no figura en los informes/funciones descritos en las páginas de alternativas revisadas. No se afirma que ninguna alternativa pueda hacerlo.
+
+Se aceptan MKT-EVD-037/038/039 en el registro. Se revisan y no se usan para apoyar un gap: indicadores continuos del PAN francés, que muestran que existe monitorización de disponibilidad/conformidad/frescura; una ficha individual NAP España que declara información de calidad desconocida y muestra errores del validador, insuficiente para generalizar una carencia o su alcance de mercado. Detalle, consultas, límites y criterios de descarte en el registro de investigación.
+
+S1-EXIT-09 = PASS. Resultado agregado: 15 PASS / 0 FAIL / 0 INSUFFICIENT_EVIDENCE / 0 NOT_APPLICABLE. STAGE_1_EXECUTION = COMPLETE; GATE_READINESS = READY_FOR_HUMAN_GATE; STAGE_1_GATE = APPROVED por decisión humana BUS-DEC-025. Stage 2 = NOT_STARTED; STAGE_2_AUTHORIZATION = NOT_YET_GRANTED. Business Phase 3 permanece IN_PROGRESS. V1 permanece FROZEN; no se modificó producto técnico.

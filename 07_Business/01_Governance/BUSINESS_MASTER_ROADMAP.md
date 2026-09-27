@@ -19,11 +19,7 @@ Cada HUMAN GATE exige una decisión humana explícita para continuar y su regist
 
 ## Situación actual
 
-Hay preparación documental relevante para **Stage 1** en [MARKET_VALIDATION_PLAN.md](../03_Market/MARKET_VALIDATION_PLAN.md), [CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md](../03_Market/CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md) y [COMMERCIAL_VALIDATION_EVIDENCE_MODEL.md](../03_Market/COMMERCIAL_VALIDATION_EVIDENCE_MODEL.md). La revisión de readiness está documentada en [BUSINESS_PHASE_3_VALIDATION_GATE.md](../03_Market/BUSINESS_PHASE_3_VALIDATION_GATE.md).
-
-Esto no declara Stage 1 completado ni su HUMAN GATE aprobado. **Stage 2 no autorizado:** no entrevistas reales ejecutadas ni customer validation disponible. El diseño preliminar de experimentos existente tampoco declara completado Stage 4 ni autoriza Stage 5.
-
-Siguiente decisión humana: revisar la [reevaluación contra los criterios aprobados](../03_Market/STAGE_1_CRITERIA_REEVALUATION.md) y, si hay carencias, el [STAGE_1_EVIDENCE_GAP_PLAN](../03_Market/STAGE_1_EVIDENCE_GAP_PLAN.md). Stage 2 no autorizado. No outreach por la mera adopción o modificación del roadmap.
+Stage 1 está COMPLETE y su HUMAN GATE APPROVED por BUS-DEC-025; véanse la [reevaluación](../03_Market/STAGE_1_CRITERIA_REEVALUATION.md) y el [cierre](../03_Market/STAGE_1_CLOSURE.md). El usuario autorizó después exclusivamente Stage 2A — Customer Discovery Design (BUS-DEC-026). El diseño está en [customer_discovery](../03_Market/customer_discovery/README.md). STAGE_2 = IN_PROGRESS únicamente para diseño; no hay entrevistas reales ni customer validation. EXTERNAL_CONTACT = NOT_AUTHORIZED. No se inicia Stage 3, piloto, pricing u otra etapa.
 
 ## Amendment aprobado — Stage 1 (2026-09-27)
 
