@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "4f07d431e21c550b",
+    "type": "split",
+    "children": [
+      {
+        "id": "6cb19214c077a812",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f834ba0f4fbeb3b3",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "GTFS_NeTEx_Historia_Roadmap.canvas",
+                "viewState": {
+                  "x": 1880,
+                  "y": 6265,
+                  "zoom": -3.4855641678377633
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "GTFS_NeTEx_Historia_Roadmap"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3ff49f3e07be4590",
+    "type": "split",
+    "children": [
+      {
+        "id": "fd609e31e2d40e78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e559945f8a2937dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "d4dbc0fe11e5e6b6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "a31b71d02878555c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9fb4b98e85200c15",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9d182101862ebdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95c39fabaa112ec0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "GTFS_NeTEx_Historia_Roadmap.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes"
+            }
+          },
+          {
+            "id": "3e8acb7f30381f66",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Sin título 1.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes"
+            }
+          },
+          {
+            "id": "a586a50ed62929a2",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "ff30793696c70636",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "9e2d5caf9a18639e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "GTFS_NeTEx_Historia_Roadmap.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "f834ba0f4fbeb3b3",
+  "lastOpenFiles": [
+    "ALL.canvas",
+    "GTFS_NeTEx_Historia_Roadmap.canvas",
+    "Sin título.md",
+    "Sin título 1.base",
+    "LEY ESPAÑOL Y EUROPEA DE MOVILIDAD.md",
+    "Sin título.base",
+    "SETUP NeTEx/SETUP NeTEx.md",
+    "SETUP NeTEx",
+    "CATALOGO MAESTRO GTFS/CATALOGO MAESTRO GTFS.md",
+    "CATALOGO MAESTRO GTFS"
+  ]
+}

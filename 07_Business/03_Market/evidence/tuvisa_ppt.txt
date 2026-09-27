@@ -1,0 +1,379 @@
+PAGE 1
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+Página 1 de 11 
+Agirrelanda, s/n 
+01013 Vitoria-Gasteiz 
+Tel.:  945 16 10 54 
+tuvisa@vitoria-gasteiz.org 
+www.vitoria-gasteiz.org 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PLIEGO DE PRESCRIPCIONES TÉCNICAS PARTICULARES QUE 
+HAN DE REGIR 
+EL CONTRATO DE SERVICIOS DE DESARROLLO, DESPLIEGUE 
+Y VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN 
+LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 2
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+2 
+ 
+ 
+ 
+ 
+ 
+PLIEGO DE PRESCRIPCIONES TÉCNICAS 
+ 
+ 
+Contenido 
+0. CONTEXTO...................................................................................................... 3 
+1. OBJETO Y ALCANCE...................................................................................... 3 
+2. METODOLOGÍA............................................................................................... 6 
+3. ACUERDO DEL NIVEL  DE SERVICIO ........................................................... 7 
+4. EQUIPO DE TRABAJO .................................................................................... 9 
+5. LA OFERTA DEBE INCLUIR.......................................................................... 10 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 3
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+3 
+ 
+ 
+0. CONTEXTO  
+ 
+Transportes Urbanos de Vitoria, S.A., en adelante TUVISA, tiene como objetivo 
+integrar un sistema de transporte sostenible, capaz de informar a la población de la oferta 
+de transporte público de manera integral y con calidad.  
+TUVISA hace unos años comenzó a generar una serie de archivos de intercambio de 
+información denominados GTFS para publicar la oferta de transporte público mediante 
+especificaciones generales del suministro de datos para el transporte público.  
+Durante estos años se ha conseguido un grado de automatización de la información 
+muy alto estableciendo una arquitectura de comunicaciones entre los proveedores del 
+servicio de ayuda a explotación.  
+Además, para divulgar esta información, el AYUNTAMIENTO DE VITORIA-GASTEIZ 
+dispone de una base de datos donde ofrece información estática y dinámica de este modo 
+de transporte y mediante App ofrece el servicio de un planificador de transporte. Es más, 
+los datos de transporte público también se ofrecen en Open data a través del Gobierno 
+Vasco que también es alimentado de este mismo canal. A través de este contrato se 
+pretende contratar la completa generación, despliegue y validación de estos datos en 
+formato GTFS, GTFS-RT, SIRI y NETEX para los próximos cuatro años. 
+1. OBJETO Y ALCANCE  
+ 
+1.1 Generación de archivos GTFS, GTFS-RT, SIRI Y NETEX 
+ 
+La Especificación general de feeds de transporte público define un formato común 
+para los horarios de transporte público y la información geográfica asociada a ellos. Los 
+"feeds" permiten que las empresas de transporte público publiquen sus datos de 
+transporte y que los programadores escriban aplicaciones que consuman esos datos de 
+manera interoperable. 
+La empresa adjudicataria debe generar todos los ficheros necesarios para TUVISA. 
+ 
+PAGE 4
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+4 
+ 
+ 
+La empresa adjudicataria detallará en su oferta técnica como realiza estos ajustes y 
+las comprobaciones necesarias a realizar. 
+Periodicidad de creación/actualización: al menos semanal. 
+Canal de publicación: el adjudicatario tendrá que publicar los feeds desde el portal de 
+partners de Google y proveer de estos datos para que sean accesibles para TUVISA en 
+cualquier momento. 
+Además, la empresa adjudicataria debe crear y enviar periódicamente los feed a 
+Google, Ayuntamiento de Vitoria-Gasteiz y Moveuskadi simultáneamente de tal forma que 
+la información publicada en el Open Data del Gobierno Vasco sea la que se esté 
+enviando a Google. La empresa adjudicataria detallará en su oferta técnica como realiza 
+este proceso. 
+Tras la recuperación de los feed por parte de Google se genera un informe de 
+validación donde se describen errores y advertencias. Ninguno de los feed creados por el 
+adjudicatario en la fecha de creación de este documento debe contener errores. 
+La empresa adjudicataria remitirá o dará acceso a TUVISA a dicho informe. Si se 
+generan errores durante más de 6 veces en un año, se considerará falta grave. Si se 
+generan más de 10 faltas en un año se considerará falta muy grave. 
+ 
+1.2 Vincular la información con el tiempo real 
+ 
+Además de la información estática, existe la posición y otros datos en tiempo real. El 
+adjudicatario, deberá vincular ambos tipos de información (real y dinámica) manteniendo 
+los códigos de parada u otros que sean necesarios para que esta información se 
+considere correcta y coherente.  
+El adjudicatario detallará en su oferta técnica como realizar los controles, filtros y 
+procedimientos necesarios cara a garantizar la integridad de los datos. 
+ 
+PAGE 5
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+5 
+ 
+ 
+1.3 Real Time GTFS 
+ 
+GTFS en tiempo real es una especificación de feed que permite que las empresas de 
+transporte público proporcionen actualizaciones en tiempo real sobre su flota a los 
+programadores de la aplicación. Es una extensión de GTFS (Especificación general de 
+feeds de transporte público), un formato de datos abierto para los horarios de transporte 
+público y la información geográfica asociada.  
+La especificación es compatible actualmente con los siguientes tipos de información:  
+ Actualizaciones de viaje: retrasos, cancelaciones, cambios de ruta.  
+ Alertas d el servicio: traslados de paradas o eventos imprevistos que afectan una 
+estación, ruta o toda la red. 
+ Posiciones del vehículo: información sobre los vehículos, incluidos la ubicación y el 
+nivel de congestión. 
+ 
+Con fecha 30 de Octubre, el adjudicatario debe estar preparado para publicar 
+todos los ficheros de los GTFS y GTFS-RT. Su posterior conversión a los formatos 
+SIRI Y NETEX tiene fecha límite 15 de Noviembre. 
+Para ello el adjudicatario explicará en su oferta técnica qué cambios se pretenden 
+realizar y como los plantea realizarlos. Primeramente, deberá entregar un documento que 
+contemple los cambios necesarios a realizar. 
+Estos cambios por realizar vendrán acompañados de un cronograma que detalle por 
+días los diferentes avances necesarios en los ficheros. 
+ 
+ 
+ 
+ 
+PAGE 6
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+6 
+ 
+ 
+1.4 Modelos de datos de estándares europeos 
+ 
+La Directiva 2010/40/UE del Parlamento Europeo y del Consejo, de 7 de julio de 
+2010, por la que se establece el marco para la implantación de los sistemas de transporte 
+inteligentes en el sector del transporte por carretera y para las interfaces con otros modos 
+de transporte, ponen el foco de los sistemas ITS en el usuario y en la interoperabilidad de 
+los sistemas como mecanismos de desarrollo.  
+Atendiendo al marco normativo y recomendaciones de la Comisión Europea, el 
+modelo de datos asociado TUVISA debe estar alineado con los estándares que se 
+recogen a continuación:  
+ 
+ NeTEx EN 16614 Public transport - Network and Timetable Exchange  
+ SIRI EN 15531 Public Transport - Service Interface for real-time Information  
+En este contrato también se plantea la propia generación de los datos en tales 
+estándares.  
+El resultado esperado por TUVISA en lo que a este punto se refiere, es disponer de 
+los datos en los formatos correspondientes SIRI y NeTEx para una posible futura 
+implementación o publicación de datos en estos formatos. El adjudicatario será el 
+responsable de desplegar y validar estos formatos en el momento que TUVISA lo solicite 
+durante la etapa de monitorización de los datos. 
+ 
+2. METODOLOGÍA  
+ 
+El licitador en su oferta deberá especificar la metodología a emplear.  
+Se requiere de una vigilancia del conjunto de datos. Conviene tener en cuenta que en 
+la red de datos de TUVISA existen constantes cambios en la red y en los servicios.  
+ 
+PAGE 7
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+7 
+ 
+ 
+Todos estos cambios deben tener un reflejo en los GTFS generados de la manera 
+más ágil posible.  
+Deberá especificar si los controles que efectúa son automáticos y/o manuales y qué 
+se pretende detectar con cada tipo de control. En el caso de controles manuales, señalará 
+las horas de personas en atender los cambios y como se realizarán. 
+Para tal efecto, el licitador deberá proporcionar una bolsa de 30 horas para las 
+labores de vigilancia y supervisión de los datos. 
+ 
+3. ACUERDO DEL NIVEL DE SERVICIO  
+ 
+El ANS es documento que define la relación entre TUVISA y la empresa adjudicataria 
+y que debe: proporcionar un marco de medición y control del nivel de desempeño de los 
+servicios. 
+Con el objetivo de controlar la facturación de los servicios prestados es necesario:  
+ Registro de los servicios prestados.  
+ Aceptación del responsable del ANS de TUVISA de los resultados del servicio por 
+parte del adjudicatario.  
+ 
+Con el objeto de monitorizar la calidad del servicio prestado es necesario: 
+ Definir los niveles de calidad en la prestación de cada uno de los servicios.  
+ Monitorizar y medir en base a indicadores objetivos asignados a cada uno de los 
+servicios.  
+ Control el nivel de desempeño en la prestación de los servicios del ANS en función 
+de los indicadores.  
+ 
+PAGE 8
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+8 
+ 
+ 
+El adjudicatario, dentro de sus tareas deberá encargarse de lo siguientes puntos.  
+• Corrección de errores. 
+• Soporte técnico. 
+• Monitorización de los servicios. 
+• Documentar debidamente los cambios.  
+ 
+En cuanto a cualquier cambio ante problemas, el adjudicatario deberá:  
+1. Analizar el cambio, estimar y planificar su resolución. 
+2. Resolver el problema: programación, re-configuración, etc  
+3. Realizar informes de control y seguimiento.  
+4. Elaborar la documentación requerida por TUVISA para instalar los cambios.  
+5. Hacer el seguimiento del problema una vez corregido. 
+ 
+Respecto a estas tareas, el adjudicatario, mensualmente facilitará un informe/listado 
+de los defectos corregidos de entre aquellos registrados y los cambios en las 
+configuraciones realizadas. En el informe se incluirán datos que faciliten la medición del 
+rendimiento de corrección de defectos tales como:  
+ Tiempo de Respuesta:  Tiempo transcurrido desde el alta de la petición hasta que 
+ésta se acepta. 
+ Tiempo de resolución:  Tiempo transcurrido desde que se acepta la petición hasta 
+que ésta se resuelve satisfactoriamente.  
+ 
+ 
+ 
+PAGE 9
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+9 
+ 
+ 
+El informe incluirá un resumen del tipo: 
+ 
+Para la supervisión de la correcta generación de archivos el objetivo para el indicador 
+de servicio es que un 95% de los defectos sean corregidos en un tiempo según la 
+siguiente tabla. 
+ 
+Adicionalmente se incluirá un informe detallado de aquellos defectos que lleven un 
+tiempo excesivo (más de 15 días) sin ser solucionados. 
+En el caso de la documentación, TUVISA valorará la calidad de la documentación 
+entregada, no aceptándola en caso de no superar el mínimo exigible. 
+4. EQUIPO DE TRABAJO  
+ 
+El equipo de trabajo propuesto por los licitadores al menos debe formarse por 
+personal suficiente compuesto de estos perfiles: 
+ Coordinador de proyecto (responsable e intercomunicador único para 
+TUVISA)  
+i. Preferible con perfil de estudios superiores o grado con al menos 5 
+años de experiencia. 
+ Gestor Técnico de Sistemas/Datos 
+i. Preferible con perfil de estudios superiores o grado con al menos 3 
+años de experiencia. 
+PAGE 10
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+10 
+ 
+ 
+5. LA OFERTA DEBE INCLUIR  
+ 
+La oferta debe incluir una memoria técnica, que enviará en papel y algunos de los 
+siguientes soportes electrónicos (USB, CD o DVD). 
+Dicha memoria técnica contendrá al menos los siguientes apartados  
+ Generación de archivos GTFS:  
+o Alcance y metodología  
+o Diagramas de procesos  
+o Validación semanal; controles a establecer. 
+ Vincular la información con el tiempo real.  
+o Alcance y metodología  
+o Diagramas de procesos  
+o Validación semanal: controles a establecer. 
+ Real Time GTFS:  
+o Alcance y metodología.  
+o Diagramas de procesos.  
+o Controles a establecer para una mejor calidad de datos.  
+o Cambios a introducir en origen de los datos o en BBDD.  
+ Modelos de datos de estándares europeos SIRI y NeTEx. 
+o Cambios a introducir en origen de los datos de los operadores. 
+o Alcance y metodología. 
+o Diagramas de procesos.  
+o Controles a establecer para una mejor calidad de datos.  
+ 
+PAGE 11
+ 
+Baldintza tekniko berezien zehaztapena 
+Pliego de condiciones técnicas particulares 2022-14L T 
+ 
+ 
+11 
+ 
+ 
+6. VALORACIÓN  
+ 
+La puntuación máxima es de 100 puntos. La puntuación máxima a alcanzar por 
+precio son 75 puntos; los otros 25 puntos se podrán obtener con los criterios subjetivos 
+que a continuación se establecen. 
+-  Generación de archivos GTFS: hasta 10 puntos 
+-  Vincular la información con el tiempo real: hasta 5 puntos 
+-  Real Time GTFS: hasta 5 puntos 
+-  SIRI y NeTEx: hasta 5 puntos 
+ 

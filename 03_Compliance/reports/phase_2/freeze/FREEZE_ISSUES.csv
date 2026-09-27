@@ -1,0 +1,8 @@
+issue,classification
+Annex 1.3 B-I/D-I unresolved source fidelity anomalies,NON_BLOCKING_KNOWN_LIMITATION
+7 PARTIAL external dependencies; interpretation pending,NON_BLOCKING_KNOWN_LIMITATION
+No format mapping,NON_BLOCKING_KNOWN_LIMITATION
+No audit rules,NON_BLOCKING_KNOWN_LIMITATION
+Textual fidelity not certified,NON_BLOCKING_KNOWN_LIMITATION
+Human legal decisions require manual replay; Gate 1/2 report generators are not standalone scripts,NON_BLOCKING_KNOWN_LIMITATION
+Phase 1 master and Phase 2 pre-materialization mutable assertions mismatch the later state; intact historical evidence preserved,HISTORICAL

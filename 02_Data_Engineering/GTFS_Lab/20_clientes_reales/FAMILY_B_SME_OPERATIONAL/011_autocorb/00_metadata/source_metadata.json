@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "011",
+    "operator_display_name":  "Autocares Autocorb",
+    "operator_slug":  "autocorb",
+    "family":  "FAMILY_B_SME_OPERATIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/011_autocorb/02_sources/gtfs_schedule/original/20260907_160010_BUS_Autocorb.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "5C139120F8424B69DD98024CBEDA9A2A3F0F694772E14CB795E20F154663C23B"
+                         },
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/011_autocorb/01_nap_snapshot/Autocorb.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "5E0D8581141B8A55E8DDACE7A89B676FEFAE2FF8302B904B0F262217238EB5F6"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

@@ -1,0 +1,244 @@
+
+2022-OJS197-560078-en
+
+560078-2022 - ResultSee the notice on TED website 
+
+560078-2022
+
+560078-2022 - ResultItaly-Rome: Data capture services
+OJ S 197/2022 12/10/2022
+Contract award notice
+Services
+
+Legal Basis:
+Directive 2014/24/EU
+
+Section I: Contracting authority
+
+I.1. 
+
+Name and addresses
+Official name: Roma Servizi per la Mobilità S.r.l.
+Postal address: Via di Vigna Murata 60
+Town: Roma
+NUTS code: IT Italia
+Postal code: 00143
+Country: Italy
+Contact person: Giovanni Di Folco
+E-mail: giovanni.difolco@romamobilita.it
+Telephone: +39 0646956808
+Fax: +39 0646956801
+Internet address(es): 
+Main address: http://www.romamobilita.it
+Address of the buyer profile: https://eproc.romamobilita.it
+
+I.4. 
+
+Type of the contracting authority
+Body governed by public law
+
+I.5. 
+
+Main activity
+Other activity: Mobilità/Trasporti Pubblici
+
+Section II: Object
+
+II.1. 
+
+Scope of the procurement
+
+II.1.1. 
+
+Title
+
+Sviluppo software GTFS e relativa  Manutenzione - CIG: 9072480F53 CUI: S10735431008202100014.
+
+II.1.2. 
+
+Main CPV code
+72313000 Data capture services
+
+II.1.3. 
+
+Type of contract
+Services
+
+II.1.4. 
+
+Short description
+
+Gara europea a procedura telematica aperta, ai sensi del combinato disposto di cui agli artt. 58 e 60 del D. Lgs. n. 50/2016 e ss. mm. ii. e 2, comma 2, del D.L. 16 luglio 2020 n. 76 - convertito con modifiche nella legge 11 settembre 2020 n. 120, modificato con legge n. 108/2021 -, per l’appalto relativo all’affidamento dello sviluppo di un sistema software in grado di acquisire, conservare, elaborare e trasferire i dati in formato GTFS e relativa manutenzione.
+
+II.1.6. 
+
+Information about lots
+This contract is divided into lots: no
+
+II.1.7. 
+
+Total value of the procurement
+Value excluding VAT: 188 873,75 EUR
+
+II.2. 
+
+Description
+
+II.2.2. 
+
+Additional CPV code(s)
+72267000 Software maintenance and repair services
+
+II.2.3. 
+
+Place of performance
+
+NUTS code: ITI43 Roma
+Main site or place of performance: 
+roma
+
+II.2.4. 
+
+Description of the procurement
+
+sviluppo di software in grado di acquisire, conservare, elaborare e trasferire i dati in formato GTFS e garantire il relativo servizio di manutenzione per tutta la durata del servizio di TPL in relazione al quale il software va realizzato.
+
+II.2.5. 
+
+Award criteria
+
+Quality criterion - Name: Offerta tecnica / Weighting: 70
+Price - Weighting: 30
+
+II.2.11. 
+
+Information about options
+Options: no
+
+II.2.13. 
+
+Information about European Union funds
+The procurement is related to a project and/or programme financed by European Union funds: no
+
+II.2.14. 
+
+Additional information
+
+si rinvia ai documenti di gara
+
+Section IV: Procedure
+
+IV.1. 
+
+Description
+
+IV.1.1. 
+
+Type of procedure
+Open procedure
+
+IV.1.3. 
+
+Information about a framework agreement or a dynamic purchasing system
+
+IV.1.8. 
+
+Information about the Government Procurement Agreement (GPA)
+The procurement is covered by the Government Procurement Agreement: yes
+
+IV.2. 
+
+Administrative information
+
+IV.2.1. 
+
+Previous publication concerning this procedure
+Notice number in the OJ S: 2022/S 028-071572
+
+IV.2.8. 
+
+Information about termination of dynamic purchasing system
+
+IV.2.9. 
+
+Information about termination of call for competition in the form of a prior information notice
+
+Section V: Award of contract
+
+Title: 
+
+Sviluppo software GTFS e relativa  Manutenzione - CIG: 9072480F53 CUI: S10735431008202100014.
+
+A contract/lot is awarded: yes
+
+V.2. 
+
+Award of contract
+
+V.2.1. 
+
+Date of conclusion of the contract
+29/09/2022
+
+V.2.2. 
+
+Information about tenders
+Number of tenders received: 3
+The contract has been awarded to a group of economic operators: no
+
+V.2.3. 
+
+Name and address of the contractor
+Official name: BIGO SOLUTIONS SRL
+Postal address: Via Borgosesia 30
+Town: TORINO
+NUTS code: IT Italia
+Postal code: 10145
+Country: Italy
+Internet address: www.bigosolutions.it
+The contractor is an SME: yes
+
+V.2.4. 
+
+Information on value of the contract/lot
+
+Initial estimated total value of the contract/lot: 285 000,00 EUR
+Total value of the contract/lot: 188 873,75 EUR
+
+V.2.5. 
+
+Information about subcontracting
+
+Section VI: Complementary information
+
+VI.3. 
+
+Additional information
+
+1) Il Responsabile del Procedimento per Fase di Affidamento, ex art. 31, comma 10, del D. Lgs. n. 50/2016 e ss. mm. e ii. (nel seguito, anche Codice) è l’Avv. Sabrina Cornacchia, tel. 06.4695.6803, pec: sabrina.cornacchia@pec.romamobilita.it. Il Responsabile del Procedimento per le Fasi di Progettazione e di Esecuzione, ex art. 31, comma 10, del Codice, è l’Ing. Luca Avarello, tel. 06.4695.7776 fax 06.4695.7707, pec: luca.avarello@pec.romamobilita.it.
+
+VI.4. 
+
+Procedures for review
+
+VI.4.1. 
+
+Review body
+Official name: TAR del Lazio – Via Flaminia n° 189 – 00196 Roma.
+Postal address: Via Flaminia 189
+Town: roma
+Postal code: 00196
+Country: Italy
+
+VI.4.3. 
+
+Review procedure
+
+Precise information on deadline(s) for review procedures: 
+
+avverso gli atti della presente procedura è ammesso ricorso al Tribunale Amministrativo Regionale per il Lazio ai sensi e per le forme di cui al D.lgs. n. 104/2010 e s.m.i..
+
+VI.5. 
+
+Date of dispatch of this notice
+07/10/2022

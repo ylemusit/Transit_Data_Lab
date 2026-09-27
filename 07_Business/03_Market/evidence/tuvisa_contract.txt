@@ -1,0 +1,321 @@
+PAGE 1
+
+ 
+
+CONTRATO DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y 
+VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX 
+
+Exp. 2022- 14LT 
+
+REUNIDOS 
+
+ De una parte, Dª. María José Ajuriaguerra Uribe, con D.N.I. 15.371.125-H, en 
+calidad de Gerente, actuando en nombre y representación de Transportes Urbanos de 
+Vitoria-Gasteiz, S.A., en adelante TUVISA, con domicilio social en C/ Agirrelanda, 2, 
+01013. 
+
+ De otra parte, D. Íñigo de Loyola Odriozola Lerchundi, con D.N.I. 72.487.194-
+A actuando en nombre y representación de DATIK Información Inteligente S.L. , en 
+adelante DATIK, con C.I.F. B20989562, y con domicilio social en Paseo Mikeletegi, 56, 
+Edificio B8-1º, Donostia - San Sebastián.  
+
+ANTECEDENTES 
+PRIMERO. En Consejo de Administración de TUVISA de 29 de marzo de 2022 fue 
+aprobada la licitación para la contratación  de los SERVICIOS DE DESARROLLO, 
+DESPLIEGUE Y VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS 
+FORMATOS GTFS, GTFS-RT, SIRI Y NETEX. 
+
+ 
+SEGUNDO: Llevado a cabo el procedimiento de selección de la adjudicataria, tuvo lugar 
+la adjudicación a favor de DATIK, mediante Acuerdo del Consejo de Administración de 
+la sociedad de fecha 26 de mayo de 2022. 
+
+ 
+TERCERO. Una vez adjudicado el contrato, y transcurrido el plazo legal preceptivo 
+desde la notificación de la adjudicación, se va a proceder a formalizar el mismo mediante 
+la firma del presente documento de carácter privado, con el clausulado que a  
+continuación se especifica. 
+
+CLÁUSULAS DEL CONTRATO 
+
+1ª) Objeto del contrato 
+
+El objeto del contrato es la contratación del servicio de desarrollo, despliegue y 
+validación de datos de transporte avanzados en los formatos  GTFS, GTFS-RT, SIRI Y 
+NETEX. 
+PAGE 2
+
+ 
+
+2ª) Naturaleza del contrato y régimen jurídico  
+
+El contrato, de carácter privado, se regirá: 
+
+a) En cuanto a su preparación y adjudicación, y por los pliegos que han regido la 
+contratación, en lo no previsto en los mismos, por la LCSP, y por las 
+disposiciones que la desarrollen o modifiquen, d e conformidad con el art. 26.3 
+LCSP. 
+b) En cuanto a sus efectos y extinción, el contrato se regirá por las normas de 
+derecho privado y por los pliegos que han regido la contratación, todo ello sin 
+perjuicio de lo expuesto en el art. 319 LCSP. 
+
+3ª) Contraprestación 
+
+La contraprestación por los servicios objeto del presente contrato asciende, IVA 
+excluido, a 31.866,25 €.  El IVA es de 6.691,91 €, con lo que el precio del contrato con 
+IVA asciende a 38.558,16 €.  
+El abono se realizará mediante prorratas mensuales durante la vigencia total del 
+contrato, mediante transferencia bancaria, previa remisión de factura a TUVISA, en los 
+términos que se indican, en el plazo máximo de 30 días desde su visado y visto bueno 
+por el Responsable del Contrato. 
+ No procede revisión de precios, ni se realizarán abonos a cuenta. 
+
+ Las facturas irán dirigidas a:  
+TRANSPORTES URBANOS DE VITORIA S.A. 
+C/ AGIRRELANDA, 2     
+01013 VITORIA-GASTEIZ (ÁLAVA) 
+CIF: A01005230 
+
+ 
+4ª) Duración del contrato   
+
+  
+El contrato tendrá una duración de 4 años desde la formalización  del contrato, 
+contando como período de generación, despliegue y validación desde el primer día del 
+contrato. 
+Con fecha 30 de octubre de 2022, el adjudicatario debe estar preparado para 
+publicar todos los ficheros de los GTFS y GTFS -RT. Su posterior conversión a los 
+formatos SIRI Y NETEX tiene fecha límite 15 de noviembre de 2022. 
+No cabe posibilidad de prórroga. 
+
+No obstante lo establecido anteriormente, cuando al vencimiento del contrato no 
+se hubiera formalizado el nuevo contrato que garantice la continuidad de la prestación 
+a realizar por la adjudicataria como consecuencia de incidencias resultantes de 
+acontecimientos imprevisibles para el órgano de contratación producidas en el 
+procedimiento de adjudicación y existan razones de interés público para no interrumpir 
+PAGE 3
+
+ 
+la prestación, se podrá prorrogar el contrato originario hasta que comience la ejecución 
+del nuevo contrato y en todo caso por un periodo máximo de nueve meses, sin modificar 
+las restantes condiciones del contrato, siempre que el anuncio de licitación del nuevo 
+contrato se haya publicado con una antelación mínima de tres meses respecto de la 
+fecha de finalización del contrato. 
+
+5ª) Coordinación y seguimiento  
+ TUVISA podrá inspeccionar al personal y su trabajo en todo lo que a la ejecución 
+del contrato se refiere, y comprobar el servicio efectuado. 
+
+6ª) Garantía Definitiva 
+
+ DATIK ha realizado transferenc ia como garantía definitiva por un importe de 
+1.593,32 euros. 
+
+Esta garantía a favor de TUVISA responderá del cumplimiento del contrato y será 
+devuelta a la terminación del plazo del contrato, una vez cumplidas todas las 
+obligaciones o garantías asumidas en el mismo: si la adjudicataria está exenta de 
+responsabilidad, se procederá a la devolución del importe. 
+
+7ª) Seguro de Responsabilidad Civil 
+
+Será obligación de la adjudicataria indemnizar los daños y perjuicios que se causen 
+como consecuencia de las operaciones que requiera la ejecución del contrato, de 
+conformidad con lo dispuesto en el artículo 196 de la LCSP. A tal efecto, tendrá contratada 
+una Póliza de Seguro que cubre la responsabilidad civil en que pudiera incidir cualquiera 
+de sus trabajadores en el desarrollo de su trabajo, hasta un importe de 3.000.000 € por 
+siniestro. 
+
+Asimismo, la adjudicataria/contratista se obliga a reparar los daños y responder por 
+aquellos riesgos que no queden garantizados en las pólizas de seguro, a fin de llevar a 
+buen término la actividad conforme las obligaciones y responsabilidades asumidas en el 
+contrato. La contratación de las pólizas no eximirá ni limitará las obligaciones y 
+responsabilidades de la adjudicataria derivadas del contrato. 
+
+8ª) Cesión del contrato y subcontratación 
+
+Cesión. No se admitirá la cesión del contrato y, en caso de producirse, será causa de 
+resolución del mismo.  
+
+Subcontratación. Si la adjudicataria tuviera necesidad de subcontratar partes 
+específicas del contrato, lo pondrá en conocimiento de TUVISA con anterioridad, 
+identificando las condiciones técnicas de la subcontratación. En todo caso se precisará 
+consentimiento expreso de TUVISA en el supuesto de que se pretenda subcontratar 
+parte de sus servicios, y será ésta quien fije sus límites y exija al subcontratista las 
+necesarias garantías. En cualquier caso, los subcontratistas quedarán sólo obligados 
+PAGE 4
+
+ 
+frente al contratista principal, quien asumirá la total responsabilidad de la ejecución del 
+servicio con arreglo a los términos del contrato.  En todo caso, dicha subcontratación 
+estará sometida a lo dispuesto en los arts. 215 a 217 de LCSP. 
+
+Sucesión de la adjudicataria durante la ejecución del contrato: en los casos de fusión de 
+empresas en las que participe la contratista, continuará el contrato vigente con la entidad 
+absorbente o con la resulta nte de la fusión, que quedará subrogada en todos los 
+derechos y obligaciones dimanantes del mismo. Igualmente, en los supuestos de 
+escisión, aportación o transmisión de empresas o ramas de actividad de las mismas, 
+continuará el contrato con la entidad resu ltante o beneficiaria, que quedará subrogada 
+en los derechos y obligaciones dimanantes del mismo, siempre que tenga la solvencia 
+exigida al acordarse la adjudicación. 
+
+9ª) Modificación del contrato 
+
+El Órgano de Contratación no prevé modificaciones en el contrato. 
+
+ 
+10ª) Penalidades e indemnización de daños y perjuicios 
+
+ Se considerarán incumplimientos contractuales a efectos de este contrato;  
+
+✓ Incumplimiento del convenio colectivo de aplicación 
+✓ Incumplimiento de las condiciones especiales de ejecución (cláusula 15) 
+✓ Ejecución incorrecta o defectuosa del servicio, a juicio del Responsable del 
+Contrato. 
+✓ Incumplimiento de la remisión de los partes de trabajo diariamente. 
+
+ Las penalidades a imponer serán acordes con la gravedad del incumplimiento, y 
+tendrán un máximo económico del 10% del precio de adjudicación sin IVA. 
+
+ La imposición de las penas por incumplimientos corresponderá al Órgano de 
+Contratación, previa la instrucción del oportuno expediente y a propuesta de l a 
+responsable del contrato. El acuerdo del Órgano de Contratación será inmediatamente 
+ejecutivo. 
+ Al iniciarse la instrucción del expediente, TUVISA deberá notificarlo a la 
+adjudicataria y darle audiencia para que presente las alegaciones que estime oportunas. 
+ Las penas pecuniarias se aplicarán mediante deducción del abono de la factura 
+correspondiente. 
+ El total de las penas pecuniarias impuestas no podrá superar el 50 por cien del 
+precio del contrato. 
+
+PAGE 5
+
+ 
+11ª) Confidencialidad, protección de datos personales y seguridad de la 
+información 
+La contratista deberá respetar el carácter confidencial de aquella información a la que 
+tenga acceso con ocasión de la ejecución del contrato a la que se le hubiese dado el 
+referido carácter en los pliegos o en el contrato, o que por su propia naturaleza deba ser 
+tratada como tal. Este deber se mantendrá durante un plazo de cinco años desde el 
+conocimiento de esa información. 
+La Contratista se verá obligada a guardar las normas vigentes sobre Copyright, 
+propiedad intelectual y documentación clasificada o de difusión restringida que, por 
+necesidades del contrato, se vea obligado a manejar. 
+Todos los datos manejados por la empresa adjudicataria a causa de la prestación de los 
+trabajos serán propiedad de TUVISA, sin que la empresa adjudicataria pueda utilizarlos 
+con un fin distinto al que figura en el contrato. La empresa adjudicataria quedará obligada 
+al cumplimiento de la legislación vigente en relación a Protección de Datos de Carácter 
+Personal. 
+De modo especial, la Contratista deberá cumplir con las siguientes premisas: 
+
+• Guardar la debida confidencialidad y secreto sobre los hechos, informa ciones, 
+conocimientos, documentos y otros elementos a los que tenga acceso con 
+motivo de la prestación del servicio, sin que pueda conservar copia o utilizarlos 
+para cualquier finalidad, incurriendo en caso contrario en las responsabilidades 
+previstas en la legislación vigente. 
+• Informar a sus empleados de que sólo pueden tratar la información de TUVISA 
+para cumplir los servicios objeto de este pliego y también de la obligación de no 
+hacer públicos, ceder o enajenar cuantos datos conozcan. 
+• Incluir una cláusula de confidencialidad y secreto en los términos descritos, en 
+los contratos laborales que suscriban las personas destinadas a la prestación 
+del servicio objeto del presente pliego. 
+• Dado que durante la realización de los servicios, los empleados podrían te ner 
+acceso a la información TUVISA y/o Ayuntamiento de Vitoria -Gasteiz  en sus 
+locales y sistemas de información, la empresa adjudicataria, al igual que el 
+personal, se someterán a los documentos de seguridad vigentes en la 
+Administración para cada uno de los ficheros a los que tenga acceso, e 
+igualmente a las especificaciones e instrucciones de los responsables de 
+seguridad en materia de protección de datos de cada uno de los agentes 
+municipales afectados. 
+
+Cualquier tratamiento de datos de carácter person al que, durante la vigencia del 
+contrato, la contratista lleve a cabo en el marco de sus actividades, deberá entenderse 
+realizado por su propia cuenta y decisión, como Responsable de dicho tratamiento, 
+asumiendo en todo caso el cumplimiento de las obligaciones que se deriven para ella de 
+lo previsto en la legislación española y europea en materia de Protección de Datos de 
+Carácter Personal, como consecuencia de dicho tratamiento. 
+
+ 
+
+PAGE 6
+
+ 
+12ª) Resolución del contrato   
+
+TUVISA podrá rescindir unilateralmente el contrato en cualquier momento por 
+incumplimiento de las obligaciones del mismo, o por desacuerdo con el nivel del servicio.  
+Para ello deberá comunicar al contratista la rescisión y su causa por escrito con 
+preaviso de quince días y éste tendrá derecho a audiencia. Ambas partes convienen 
+que la opinión subjetiva de TUVISA respecto al nivel del servicio será causa suficiente 
+para la resolución del contrato, sin otro requisito y sin derecho a indemnización alguna. 
+  Constituyen causa de resolución del contractual, las siguientes; 
+
+✓ La concurrencia de alguna de las causas previstas en los artículos 211 de la 
+LCSP, dando lugar a los efectos previstos en el artículo 213. 
+✓ La concurrencia de las causas señaladas en el artícu lo 313.1 LCSP con los 
+efectos de los apartados 2 y 3 del citado artículo. 
+✓ El supuesto en que las penas pecuniarias impuestas superaran el 50 por cien del 
+precio del contrato. 
+✓ Incumplimiento de las condiciones especiales de ejecución 
+✓ La no contratación de un seguro de responsabilidad civil. 
+✓ El incumplimiento de las obligaciones esenciales del contrato. 
+✓ En el supuesto que se incumpla en 3 o más ocasiones la obligación de entrega 
+de los partes de trabajo diariamente. 
+
+ 
+Si por cualquier motivo hubiera necesidad de resolver el Contrato por causa 
+imputable a TUVISA esta abonará a la adjudicataria los trabajos realizados. 
+Si la resolución del contrato se produjera por causa imputable a la adjudicataria, 
+ésta perderá la fianza, en concepto de indemnización por los daños y perjuicios sufridos. 
+En todo caso la adjudicataria vendrá obligada a mantener el servicio en las mismas 
+condiciones hasta que se tramite, adjudique y entre en funcionamiento una nueva 
+contrata. 
+
+ 
+13ª) Juzgados y Tribunales 
+
+ TUVISA, interpretará los contratos en que intervenga y resolverá las dudas que 
+ofrezca su cumplimiento. Los acuerdos que adopte serán inmediatamente ejecutivos, 
+sin perjuicio del derecho de la Empresa adjudicataria a obtener en vía jurisdiccional la 
+declaración que proceda sobre inteligencia de lo pactado, si no se conformase con lo 
+resuelto por la Empresa. 
+
+ Tanto TUVISA como la Empresa adjudicataria aceptarán la jurisdicción de los 
+Juzgados y Tribunales de Vitoria -Gasteiz, para cualquier litigio que en relación c on la 
+contratación pueda originarse, renunciando la adjudicataria a cualquier otro fuero de 
+cualquier orden que pudiera corresponderle.  
+
+ En cuanto a los actos de preparación y adjudicación del contrato será de 
+aplicación lo previsto en la Ley de Contrato s del Sector Público Ley 9/2017 de 8 de 
+noviembre. Serán competencia del orden jurisdiccional contencioso -administrativo las 
+cuestiones relativas a la preparación y a la adjudicación. 
+PAGE 7
+
+ 
+
+ Los efectos y extinción de los contratos celebrados por TUVISA como po der 
+adjudicador (artículo 319-1º LCSP) se regirán por las normas de derecho privado, en 
+concreto por el Código Civil; con excepción de las modificaciones contractuales y las 
+causas y el procedimiento previstos para la resolución del contrato que son las 
+expresamente recogidas en la LCSP. 
+
+ 
+En Vitoria-Gasteiz, a 1 de julio de 2022. 
+
+ 
+DATIK TUVISA 
+
+ 
+
+ 
+
+D. ÍÑIGO DE LOYOLA ODRIOZOLA 
+LERCHUNDI 
+
+ 
+
+ 
+
+Dª. MARIA JOSÉ AJURIAGUERRA URIBE 
+
+ 

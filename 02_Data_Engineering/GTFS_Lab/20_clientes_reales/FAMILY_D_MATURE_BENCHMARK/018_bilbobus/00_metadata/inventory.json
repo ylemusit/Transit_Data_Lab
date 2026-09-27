@@ -1,0 +1,33 @@
+{
+    "gtfs_schedule":  {
+                          "zip_present":  true,
+                          "extracted_present":  true,
+                          "files":  [
+                                        "agency.txt",
+                                        "calendar.txt",
+                                        "calendar_dates.txt",
+                                        "fare_attributes.txt",
+                                        "fare_rules.txt",
+                                        "feed_info.txt",
+                                        "levels.txt",
+                                        "routes.txt",
+                                        "shapes.txt",
+                                        "stop_times.txt",
+                                        "stops.txt",
+                                        "trips.txt"
+                                    ]
+                      },
+    "gtfs_realtime":  {
+                          "present":  false
+                      },
+    "netex":  {
+                  "present":  false
+              },
+    "siri":  {
+                 "present":  false
+             },
+    "nap_snapshot":  {
+                         "present":  true,
+                         "file":  "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/01_nap_snapshot/bilbobus.png"
+                     }
+}

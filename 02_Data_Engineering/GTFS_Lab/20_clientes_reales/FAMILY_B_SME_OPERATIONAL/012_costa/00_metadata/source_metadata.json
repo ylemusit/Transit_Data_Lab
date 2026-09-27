@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "012",
+    "operator_display_name":  "Autocares Costa",
+    "operator_slug":  "costa",
+    "family":  "FAMILY_B_SME_OPERATIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/012_costa/02_sources/gtfs_schedule/original/20250630_160003_Autocares_Costa.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "DA2D07F8D0E2DBAD98F4A6B05B927ED1A2F3F660A61054B7FD6401418CAD5EB7"
+                         },
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/012_costa/01_nap_snapshot/costa.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "91D32BD0D7053544483D070A41D171B4F9D8EB96C65B7A15E38F4686E47BC643"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

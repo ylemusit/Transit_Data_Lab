@@ -1,0 +1,43 @@
+{
+    "benchmark_id":  "020",
+    "operator_display_name":  "Kbus",
+    "operator_slug":  "kbus",
+    "family":  "FAMILY_D_MATURE_BENCHMARK",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/020_kbus/02_sources/gtfs_schedule/original/20250530_060158_Bus_Barakaldo.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "65130FD01470593CD2E234177F3C4CB810154D0B8E13FBEE3AA91F1973072ACE"
+                         },
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/020_kbus/01_nap_snapshot/kbus.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "574CFF1C0FF61DC4FA93F87D5B48AFC23CD156B65691A486ECB488E690F005E3"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad.",
+                  "Correspondencia fÃ­sica del ZIP Bus_Barakaldo con el snapshot kbus.png; pendiente de confirmaciÃ³n documental adicional."
+              ]
+}

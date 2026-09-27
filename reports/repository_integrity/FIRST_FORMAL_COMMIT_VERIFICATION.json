@@ -1,0 +1,257 @@
+{
+  "timestamp_utc": "2026-09-27T03:23:15.378274+00:00",
+  "verification_result": "PASS_FOR_BLOCKED_STATE",
+  "project_consolidation": "BLOCKED",
+  "root_git_alignment": "FAIL",
+  "commit_blockers": 1,
+  "secret_blocker": true,
+  "first_formal_commit": "BLOCKED",
+  "local_baseline_tag": "BLOCKED",
+  "files_staged": 0,
+  "previous_commits": 0,
+  "initial_potential_files": 1045,
+  "preexisting_candidates": 824,
+  "final_candidates": 832,
+  "new_artifacts": [
+    "REPOSITORY_POLICY.md",
+    "PROJECT_STRUCTURE.md",
+    "BACKUP_AND_RECOVERY.md",
+    "PROJECT_SNAPSHOT_V0.1.md",
+    "reports/repository_integrity/FIRST_FORMAL_COMMIT_AUDIT.md",
+    "reports/repository_integrity/FIRST_FORMAL_COMMIT_MANIFEST.csv",
+    "reports/repository_integrity/FIRST_FORMAL_COMMIT_FINDINGS.csv",
+    "reports/repository_integrity/FIRST_FORMAL_COMMIT_VERIFICATION.json"
+  ],
+  "modified_files": [
+    ".gitignore"
+  ],
+  "moved_files": 0,
+  "deleted_files": 0,
+  "resource_guard_triggered": true,
+  "repository_wide_content_hash": false,
+  "initial_large_recursive_git_ignored_scan": true,
+  "text_scan_files": 767,
+  "text_scan_bytes": 25010134,
+  "new_artifact_review_bytes": 216332,
+  "postcommit_verification": "NOT_APPLICABLE",
+  "remote_push_performed": false,
+  "previous_verification_attempt": {
+    "result": "INCOMPLETE",
+    "reason": "UnicodeDecodeError: Windows cp1252 default reading UTF-8 new artifacts",
+    "correction": "explicit UTF-8 decoding; no source changes"
+  },
+  "checks": [
+    {
+      "check": "frozen root bytes project_baseline.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "frozen root bytes PROJECT_CURRENT_STATE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "GTFS hash recorded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Phase1 hash recorded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "Phase2 hash recorded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze provisions_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze source_facts_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze requirements_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze deadlines_count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze gate_1_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "freeze gate_2_status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "V1 CAPABILITY_REGISTER.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "V1 EVIDENCE_INDEX.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "V1 CAPABILITY_GAPS.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "V1 aggregate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all 229 exclusion samples ignored",
+      "passed": true,
+      "detail": 229
+    },
+    {
+      "check": "12 legal PDFs eligible",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "empty index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no commit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no tag",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no remote",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nested HEAD 06_Products/GTFS Explorer/GTFS Explorer Artifacts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nested HEAD 06_Products/GTFS Explorer/GTFS Explorer Backups/restore_test_v0.2.2_20260924T161533Z_02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nested HEAD 06_Products/GTFS Explorer/GTFS Explorer Desktop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nested HEAD 06_Products/GTFS Explorer/GTFS Explorer Engineering",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present REPOSITORY_POLICY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact REPOSITORY_POLICY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present PROJECT_STRUCTURE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact PROJECT_STRUCTURE.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present BACKUP_AND_RECOVERY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact BACKUP_AND_RECOVERY.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present PROJECT_SNAPSHOT_V0.1.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact PROJECT_SNAPSHOT_V0.1.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present reports/repository_integrity/FIRST_FORMAL_COMMIT_AUDIT.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact reports/repository_integrity/FIRST_FORMAL_COMMIT_AUDIT.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present reports/repository_integrity/FIRST_FORMAL_COMMIT_MANIFEST.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact reports/repository_integrity/FIRST_FORMAL_COMMIT_MANIFEST.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "artifact present reports/repository_integrity/FIRST_FORMAL_COMMIT_FINDINGS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no JWT values in artifact reports/repository_integrity/FIRST_FORMAL_COMMIT_FINDINGS.csv",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "credential blocker references retained",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limitations": [
+    "No database/feed/PDF rehash or technical test rerun",
+    "Nested worktrees not recursively inspected",
+    "No current independent full backup certified",
+    "No credential validity testing",
+    "core.autocrlf true; future frozen-text Git bytes policy pending"
+  ]
+}

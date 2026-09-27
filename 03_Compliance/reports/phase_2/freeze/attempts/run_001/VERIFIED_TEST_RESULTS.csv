@@ -1,0 +1,14 @@
+suite,status,checks,exit_code,provenance
+test_phase_1_invariants,PASS,22,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_phase_1_master,EXPECTED_HISTORICAL_STATE_MISMATCH,25,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_master_structure,PASS,22,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_1_1,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_1_2,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_1_3,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_1_4,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_2_1,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_2_2,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_eu_2017_1926_annex_2_3,PASS,9,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_phase_2_master,EXPECTED_HISTORICAL_STATE_MISMATCH,28,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_phase_2_pre_materialization_gate,EXPECTED_HISTORICAL_STATE_MISMATCH,55,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified
+test_phase_2_post_materialization_gate,PASS,387,0,Live DB exact match to DATABASE_AFTER.json; protected SQL/output hashes verified

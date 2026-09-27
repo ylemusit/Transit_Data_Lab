@@ -1,0 +1,8 @@
+[{"test":"ALL_EIGHT_VALUES_MATCH_APPROVED_PROPOSAL","status":"PASS"},
+{"test":"TARGET_DOCUMENT_VALID","status":"PASS"},
+{"test":"TARGET_ID_UNIQUE","status":"PASS"},
+{"test":"TARGET_LEGAL_REFERENCE","status":"PASS"},
+{"test":"TARGET_PROVISION_VALID","status":"PASS"},
+{"test":"TARGET_SOURCE_URI_PRESENT","status":"PASS"},
+{"test":"TARGET_TEXT_NONEMPTY","status":"PASS"},
+{"test":"TARGET_VERSION_DATE_PRESENT","status":"PASS"}]

@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "009",
+    "operator_display_name":  "Autocares Medina",
+    "operator_slug":  "medina",
+    "family":  "FAMILY_B_SME_OPERATIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/009_medina/02_sources/gtfs_schedule/original/20250916_080004_AUTOCARES_MEDINA.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "0C588CA4A7547B36777F9AAF8A997AE35307D4ED74AC0CEE04E8FF543C8F40F8"
+                         },
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/009_medina/01_nap_snapshot/Medina.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "DE37EA6A05CF119FD0B55DE9C687B04EA1D3B84FCBA3A842D43C35CF6EB3F117"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

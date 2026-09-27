@@ -1,0 +1,42 @@
+[
+  {
+    "name": "uk_guidance",
+    "url": "https://www.gov.uk/guidance/publish-bus-open-data",
+    "resolved_url": "https://www.gov.uk/guidance/publish-bus-open-data",
+    "consulted": "2026-09-27",
+    "sha256": "78220a1e0bf2e8f3a5a0b5cebaa0185262bca67fb8ebc33d9653d0d86d7ec4ff",
+    "bytes": 85345,
+    "file": "uk_guidance.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "uk_regulation",
+    "url": "https://www.legislation.gov.uk/uksi/2020/749/contents/made",
+    "resolved_url": "https://www.legislation.gov.uk/uksi/2020/749/contents/made",
+    "consulted": "2026-09-27",
+    "sha256": "c78906c848dc4b91be0c8e32d888f9b391f368c4ee01ad6c28da516ad719953f",
+    "bytes": 31785,
+    "file": "uk_regulation.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "placsp_43_22",
+    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?DocumentIdParam=49bd1667-6f07-4e9a-aa3f-124a144f2ab3&cmpntname=GetDocumentsById&source=library&srv=cmpnt",
+    "resolved_url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?DocumentIdParam=49bd1667-6f07-4e9a-aa3f-124a144f2ab3&cmpntname=GetDocumentsById&source=library&srv=cmpnt",
+    "consulted": "2026-09-27",
+    "sha256": "0a3afacb507136ca610ac4749bf43a7e088490a17c5e4906a7576a896d40c2ee",
+    "bytes": 966152,
+    "file": "placsp_43_22.pdf",
+    "status": "SAVED"
+  },
+  {
+    "name": "northamerica_511",
+    "url": "https://511.org/open-data/transit",
+    "resolved_url": "https://511.org/open-data/transit",
+    "consulted": "2026-09-27",
+    "sha256": "ec697e9c1beb7f060e92ae2fc63e23416c82468f90fdaf754f4154416babcd88",
+    "bytes": 65961,
+    "file": "northamerica_511.html",
+    "status": "SAVED"
+  }
+]

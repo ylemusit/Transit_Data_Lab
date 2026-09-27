@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "006",
+    "operator_display_name":  "Autocares Rafael Nadal",
+    "operator_slug":  "rafael_nadal",
+    "family":  "FAMILY_A_SMALL_BASIC",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/006_rafael_nadal/02_sources/gtfs_schedule/original/20250320_121835_Autocares_Rafael_Nadal.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "F94D6F6A37EE802BA168E22ED33358D60D93022C183EE9A3307E13A2EF9F6E7A"
+                         },
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/006_rafael_nadal/01_nap_snapshot/Rafael Nadal.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "E9B13D2AC9B0D662A1C8888F5A4FB0F0288B062DE877BC435DBD6B7E22ED912A"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

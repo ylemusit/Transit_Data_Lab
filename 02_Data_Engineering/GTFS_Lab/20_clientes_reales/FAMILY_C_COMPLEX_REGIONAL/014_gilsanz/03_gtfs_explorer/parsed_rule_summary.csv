@@ -1,0 +1,2 @@
+rule_id,severity,category,file,field,message_key,occurrence_count,distinct_detail_rows,evidence_source
+GTFS_AGENCY_TXT_AGENCY_URL_REQUIRED,ERROR,FIELD,agency.txt,agency_url,validation.required_value_missing,1,1,informe-validacion.html:issues

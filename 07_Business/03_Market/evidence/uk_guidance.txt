@@ -1,0 +1,980 @@
+
+
+  
+
+    Publish bus open data - GOV.UK
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+          
+
+  
+
+    
+
+      
+
+        
+Cookies on GOV.UK
+
+          
+
+We use some essential cookies to make this website work.
+We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.
+We also use cookies set by other sites to help us deliver content from their services.
+
+You have accepted additional cookies. You can change your cookie settings at any time.
+
+You have rejected additional cookies. You can change your cookie settings at any time.
+
+      
+
+    
+
+      
+
+  Accept additional cookies
+
+      
+
+  Reject additional cookies
+
+      View cookies
+
+    
+
+      
+          Hide cookie message
+
+    
+
+      Skip to main content
+
+      
+
+  
+
+    
+
+        
+
+  GOV.UK
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  
+
+      
+
+        Navigation menu
+
+      
+
+                    Menu
+
+        
+          Menu
+
+      
+
+        
+
+            
+
+              
+
+                Services and information
+
+              
+
+                      Benefits
+
+                    
+
+                      Births, death, marriages and care
+
+                    
+
+                      Business and self-employed
+
+                    
+
+                      Childcare and parenting
+
+                    
+
+                      Citizenship and living in the UK
+
+                    
+
+                      Crime, justice and the law
+
+                    
+
+                      Disabled people
+
+                    
+
+                      Driving and transport
+
+                    
+
+                      Education and learning
+
+                    
+
+                      Employing people
+
+                    
+
+                      Environment and countryside
+
+                    
+
+                      Housing and local services
+
+                    
+
+                      Money and tax
+
+                    
+
+                      Passports, travel and living abroad
+
+                    
+
+                      Visas and immigration
+
+                    
+
+                      Working, jobs and pensions
+
+                    
+
+            
+
+            
+
+              
+
+                Government activity
+
+              
+
+                      Departments
+
+Departments, agencies and public bodies
+
+                    
+
+                      News
+
+News stories, speeches, letters and notices
+
+                    
+
+                      Guidance and regulation
+
+Detailed guidance, regulations and rules
+
+                    
+
+                      Research and statistics
+
+Reports, analysis and official statistics
+
+                    
+
+                      Policy papers and consultations
+
+Consultations and strategy
+
+                    
+
+                      Transparency
+
+Data, Freedom of Information releases and corporate reports
+
+              
+
+        
+
+        
+
+            Search GOV.UK
+
+          
+
+  
+
+          
+            ×
+
+        
+
+            Search GOV.UK
+
+          
+
+  
+
+      
+
+        
+
+          
+
+            Search
+
+          
+
+            
+
+              
+
+  
+
+    Search GOV.UK
+
+    
+
+      
+
+    
+
+      
+        Search
+
+  
+
+    
+
+            
+
+        
+
+  
+
+        
+
+      
+
+  
+
+      
+
+    
+
+  
+
+          Home
+
+        
+
+          Transport
+
+        
+
+          Local transport
+
+        
+
+          Buses
+
+        
+
+          Bus operators
+
+  
+
+    
+
+    
+
+      
+
+  
+
+    
+
+      
+    Guidance
+
+  
+
+    Publish bus open data
+
+  
+
+  
+
+  
+
+  
+
+        
+
+    Bus operators and local authorities in England must use this service to publish bus timetable, location and fares data.
+
+  
+
+  
+
+    
+
+        
+
+    
+        From:
+
+          Department for Transport
+
+        
+        Published:
+        28 January 2020
+        Last updated:
+
+          31 May 2022
+            — 
+              See all updates
+
+        
+
+    
+
+    
+
+  
+
+  
+
+    
+
+  Get emails about this page
+
+  
+
+      
+
+    
+
+      Applies to England
+
+      
+
+      
+
+          
+
+      Contents
+
+    
+
+          
+          Register to start publishing on the Bus Open Data Service
+
+        
+
+          
+          Who must publish bus data
+
+        
+
+          
+          Publishing your bus data
+
+        
+
+          
+          How to publish location data
+
+        
+
+          
+          How to publish fares data
+
+        
+
+          
+          Helping others to use your data
+
+        
+
+          
+          Contacts
+
+    
+
+      
+
+      
+
+  
+
+  Print this page
+
+      
+
+    
+
+Register to start publishing on the Bus Open Data Service
+
+If you run a local bus service in England you should have received an email inviting you to register for an account.
+
+If you’ve not received an email, or you’re a new operator, contact the Help Desk.
+
+Once you’ve registered, you’ll be able to access publish your bus data.
+
+Who must publish bus data
+
+All operators who run local bus services in England outside London must publish their data. This includes operators of cross-border services such as those running into and outside of London and Wales – or Scotland into England.
+
+Community bus operators with exemptions under Section 19 or 22 of the Transport Act 1985 do not currently have to publish their data.
+
+This includes:
+
+  
+coach services
+
+tour services
+
+unregistered dedicated school services or those services which have been voluntarily registered as a dedicated school service
+
+However, tour services are not exempt if they take any passengers on point-to-point journeys rather than a full tour. All other local bus services are in scope for data publication.
+
+Publishing your bus data
+
+How to publish timetables data
+
+All data must be published using the latest version of the TransXChange PTI profile. The detailed documentation describing the PTI profile is held on the PTI website.
+
+TransXChange is the UK standard for exchanging bus schedules and related data. The TransXChange web pages provide an overview on TransXChange, including the TransXChange 2.4 schema, which explains the technical rules for producing TransXChange.
+
+The easiest ways to produce TransXChange are to use:
+
+  
+your existing timetabling software
+
+our TransXChange tool
+
+TransXChange tool
+
+The TransXChange tool enables you to produce PTI compliant TransXChange bus timetable data.
+
+Download the 
+  TransXchange tool for Windows  (17.3 MB).
+
+If you require a version for Mac or Libre Office, or if you need additional support, contact support@busopendataservice.atlassian.net.
+
+How to publish location data
+
+We recommend that you contact your electronic ticket machine (ETM) supplier and ask them to share the automatic vehicle location (AVL) feed. They should be expecting your request and will know the information you will need.
+
+Once you have this information, use BODS to publish this feed.
+
+How to publish fares data
+
+Operators who have ETM suppliers can also talk with them about hosted NeTEx solutions, or they can use the free ‘Create fares data’ service to produce data in NeTEx standard format.
+
+Helping others to use your data
+
+The bus open data service will provide bus timetable, vehicle location and fares data for every local bus service in England.
+
+The ‘Find bus data’ service explains how you can use access and use this data.
+
+We’ll expect application developers and researchers to access the data once it’s been published on BODS. It’ll be important to maintain the data you’ve published to ensure that journey planning applications are accurate and improve passenger experience.
+
+Consumers will also be able to give feedback to you about the quality of your data to help improve and maintain it.
+
+Contacts
+
+To get in touch, email us at busopendata@dft.gov.uk.
+
+      
+
+    
+Updates to this page
+
+Published 28 January 2020
+      Last updated 31 May 2022
+        — 
+
+          Show all updates
+
+        
+
+          
+
+                31 May 2022
+
+Latest version of the TransXchange tool added.
+
+              
+
+                30 November 2021
+
+Latest version of the TransXchange tool added.
+
+              
+
+                28 June 2021
+
+Updated how to publish bus timetables data and added the latest version of the TransXChange tool.
+
+              
+
+                25 November 2020
+
+The guidance has been updated to reflect changes to the Bus Open Data Service.
+
+              
+
+                28 January 2020
+
+First published.
+
+          
+
+  
+
+      Sign up for emails or print this page
+
+  
+
+  
+
+    
+
+  Get emails about this page
+
+  
+
+  
+
+  Print this page
+
+      
+
+        
+
+          
+
+    
+
+    
+    Contents
+
+        
+
+  
+
+  
+
+      
+
+      
+
+        Related content
+
+      
+
+    
+Detailed guidance
+
+  
+
+Find and use bus open data
+
+  
+
+  
+
+    
+
+        
+
+      
+
+      
+
+    
+Explore the topic
+
+  
+
+Bus operators
+
+Bus passenger experience
+
+Bus services, routes and timetables
+
+  
+
+    
+
+    
+
+  
+
+      
+
+          
+
+  
+
+  
+
+    
+
+      
+
+        
+Is this page useful?
+
+          
+
+            
+              Maybe
+
+          
+
+            
+              Yes this page is useful
+
+          
+
+            
+              No this page is not useful
+
+        
+
+    
+
+    
+
+      Thank you for your feedback
+
+    
+
+      
+        Report a problem with this page
+
+  
+
+  
+
+  
+
+    
+
+      
+
+      
+
+      
+Help us improve GOV.UK
+
+Do not include personal or financial information like your National Insurance number or credit card details.
+
+      
+
+        This field is for robots only. Please leave blank
+
+      
+
+      
+
+    
+  What were you doing?
+
+  
+
+     
+
+      
+
+    
+  What went wrong?
+
+  
+
+     
+
+      
+
+        
+
+  Send
+
+        
+
+  Cancel
+
+      
+
+  
+
+ 
+
+  
+
+    
+
+      
+
+      
+Help us improve GOV.UK
+
+        To help us improve GOV.UK, we’d like to know more about your visit today.
+        Please fill in this survey (opens in a new tab and requires JavaScript).
+
+      
+
+        
+
+  Cancel
+
+      
+
+  
+
+      
+
+        
+
+    
+
+        
+
+        
+
+        
+
+        
+
+        
+
+    
+
+            
+
+              
+Services and information
+
+                      
+
+                        Benefits
+
+                      
+
+                        Births, death, marriages and care
+
+                      
+
+                        Business and self-employed
+
+                      
+
+                        Childcare and parenting
+
+                      
+
+                        Citizenship and living in the UK
+
+                      
+
+                        Crime, justice and the law
+
+                      
+
+                        Disabled people
+
+                      
+
+                        Driving and transport
+
+                      
+
+                        Education and learning
+
+                      
+
+                        Employing people
+
+                      
+
+                        Environment and countryside
+
+                      
+
+                        Housing and local services
+
+                      
+
+                        Money and tax
+
+                      
+
+                        Passports, travel and living abroad
+
+                      
+
+                        Visas and immigration
+
+                      
+
+                        Working, jobs and pensions
+
+                
+
+            
+
+              
+Government activity
+
+                      
+
+                        Departments
+
+                      
+
+                        News
+
+                      
+
+                        Guidance and regulation
+
+                      
+
+                        Research and statistics
+
+                      
+
+                        Policy papers and consultations
+
+                      
+
+                        Transparency
+
+                      
+
+                        How government works
+
+                      
+
+                        Get involved
+
+                
+
+      
+
+      
+
+      
+
+          
+Support links
+
+              
+
+                Help
+
+              
+
+                Privacy
+
+              
+
+                Cookies
+
+              
+
+                Accessibility statement
+
+              
+
+                Contact
+
+              
+
+                Terms and conditions
+
+              
+
+                Rhestr o Wasanaethau Cymraeg
+
+              
+
+                Government Digital Service
+
+          
+
+            
+
+          
+            All content is available under the Open Government Licence v3.0, except where otherwise stated
+
+      
+
+        © Crown copyright
+
+    
+
+    
+

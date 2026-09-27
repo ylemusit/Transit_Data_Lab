@@ -1,0 +1,38 @@
+# Regulatory demand
+
+Consulta: 2026-09-27. Registro documental de requisitos; no dictamen, certificación o auditoría de cumplimiento de un sujeto. Ley española consultada en texto original y consolidado BOE, última actualización indicada 21/03/2026. UE: texto modificador 2024/490 mediante extractos oficiales localizados; descarga del PDF/consolidado falló. No se certifica exhaustividad de vigencia ni se inventan plazos de categorías no comprobadas. Fuente/locators en MKT-EVD-011–014 y 033–035.
+
+## Obligaciones verificables
+
+| OBL-ID | Norma / artículo | Sujeto / dato | Formato | Actualización / plazo | Obligación verificable / relación TDL |
+| --- | --- | --- | --- | --- | --- |
+| OBL-001 | Ley 9/2025 art. 85.1,4,5; anexo I.1 | Operadores, autoridades y demás participantes; datos de servicios programados digitalizados | Estandarizado, accesible e interoperable, conforme anexo | Información actualizada; no se fija cadencia universal en segundos | Disponibilidad gratuita/no discriminatoria e información de acceso al Ministerio; CAP-009/010/011 pueden estructurar evidencias, no comprobar obligación por sí solos |
+| OBL-002 | Ley art. 85.2 | Participantes con datos estáticos anexo I.1.c no digitales | Acceso electrónico/soporte digital con condiciones del art. 85.1 | Antes de 01/01/2027 | Digitalización de ese subconjunto; no plazo universal para todo dato dinámico ni licencia obligatoria de software TDL; CAP-001/004 relación conceptual |
+| OBL-003 | Ley art. 86.1,2,4; anexo I.3 | Titulares/gestores de estaciones, terminales y equipamientos; andenes, accesibilidad, conexiones y servicios | Estandarizado/interoperable y formato autorizado correspondiente | Actualizado; no digitales I.3.c antes de 01/01/2027 | Disponibilidad/acceso a datos y digitalización; CAP-009/011/016, sin comprobación de instalaciones en campo |
+| OBL-004 | Ley anexo I.1.c–h | Responsables de datos programados: rutas/paradas/horarios/tarifas/accesibilidad, tiempo real y retrasos/cancelaciones históricos según alcance europeo remitido | NeTEx, GTFS, SIRI, DATEX II o GTFS Realtime según corresponda; alternativas autorizadas | Actualizar cuando cambien; corregir inexactos sin demora | Internet/protocolo estándar, autenticación cuando proceda para descarga automática; topónimos oficiales y textos al menos castellano; CAP-002/004/018 conexión limitada |
+| OBL-005 | Ley anexo I.2 / I.3 | Servicios a demanda (incluye transbordador) e infraestructuras; disponibilidad/localización/tarifas/accesibilidad o características del equipamiento | Formatos estandarizados o alternativos autorizados; no imponer GTFS a todas las categorías | Cambio oportuno/corrección sin demora | Provisión por Internet; CAP-009/011 como trazabilidad de revisión, sin cobertura técnica de estos modos |
+| OBL-006 | Ley art. 90 | Ministerio gestor del Punto de Acceso Nacional; información multimodal recibida | Plataforma única, requisitos mínimos de calidad, al menos castellano | Sin intervalo universal fijado en el artículo | Publicación integrada y acceso normalmente libre/gratuito, con posibles supuestos de precio público por orden; CAP-019 solo comparación piloto, no homologación NAP |
+| OBL-007 | Reglamento (UE) 2017/1926 art. 3, sustituido por 2024/490 art. 1.3 | Estado miembro crea NAP; titulares facilitan metadatos acordados | Punto único para datos estáticos, históricos, observados y dinámicos del anexo | Incluye actualizaciones; no confundir creación NAP con obligación de contratar tercero | Accesibilidad/localización de datos; CAP-009/010/011 potencial para registrar requisitos, con límites de baseline |
+| OBL-008 | Reglamento arts. 4/5, sustituidos por 2024/490 art. 1.4 | Titulares; datos por modo/categoría del anexo | Estáticos: NeTEx y especificaciones ferroviarias/aéreas aplicables o formato demostrablemente compatible/interoperable; dinámicos: SIRI/especificaciones aplicables o equivalente demostrable; perfiles UE/nacionales | Art. 5.3: 2.1 RTE-T global 01/12/2025; 2.2 RTE-T global 01/12/2026; resto de red 2.1/2.2 01/12/2028 | No GTFS automáticamente equivalente al marco UE por aparecer aceptado en España. Calendario histórico/observado no reconstruido íntegramente; CAP-010 acotado al materializado, sin conversión/mapping |
+| OBL-009 | Reglamento art. 6.2 actualizado por 2024/490 | Titulares; cambios en datos pertinentes estáticos/históricos/observados/dinámicos | Acceso NAP conforme arts. 3/8 | Plazo que permita reutilización fiable/efectiva | Actualización y disponibilidad; CAP-002/012 tienen relación probatoria, sin monitor de feeds |
+| OBL-010 | Reglamento art. 8.1 actualizado por 2024/490 | Datos/metadatos, información sobre calidad | Acceso no discriminatorio para intercambio/reutilización | Exactos y actualizados; mínimos de calidad acordados por Estados y partes ITS | No inventar umbral de “cero errores” europeo; CAP-003/004 inspección parcial, no auditoría general |
+| OBL-011 | Reglamento art. 9 actualizado por 2024/490 | Estados evalúan; titulares/proveedores de información pueden recibir requerimiento | Descripción de datos/calidad/reutilización, servicios, declaración con justificantes, licencias/acuerdos | A solicitud de autoridad; comprobaciones aleatorias | Demanda de evidencia documental; CAP-009/010/011/012 no generan una declaración certificada ni justificantes integrales |
+| OBL-012 | Public Service Vehicles (Open Data) (England) Regulations 2020, SI 2020/749; guía DfT | Operadores de servicios locales en Inglaterra y autoridades según alcance/exenciones | Guía operativa: TransXChange para horarios; SIRI-VM localización; NeTEx tarifas | Guía: plazos 2020/2021/2023; actualización acorde al dato; no regla española | Publicar datos pertinentes. Guía no estatutaria distingue perfiles técnicos de norma. TDL no acredita esos formatos; CAP-009/011 solo método documental |
+
+En esta tabla `CAP-xxx` abrevia **TDL-CAP-xxx**. Relaciones inferidas, sin añadir capacidades a V1. Los datos de una norma no prueban que el dato exista ya, que se incumpla la obligación o que haya presupuesto para una auditoría independiente.
+
+## Clasificación separada
+
+| Categoría | Fuente / alcance | Tratamiento |
+| --- | --- | --- |
+| OBLIGACIÓN LEGAL | Ley arts. 85/86/90 y anexo; Reglamento artículos operativos; SI inglés | Requisito por sujeto/dato/territorio, sujeto a aplicabilidad concreta |
+| RECOMENDACIÓN | Reglamento 2024/490 considerando 12: cooperación en definiciones e indicadores | Considerando contextual; las obligaciones operativas se anclan en art. 8, sin convertir todo considerando en deber autónomo |
+| BEST PRACTICE | GTFS publicación/buenas prácticas; MobilityData incorpora reglas de buenas prácticas | Orientación de calidad; warning no es incumplimiento legal automático |
+| ESTÁNDAR TÉCNICO | NeTEx/SIRI, perfiles Francia (MKT-EVD-033/034), perfil Entur (035), GTFS | Contrato/norma puede incorporarlo; existencia del estándar por sí sola no obliga a toda empresa |
+| REQUISITO CONTRACTUAL | Ausencia de errores, envío semanal, SLA TUVISA | Exigencia de ese expediente; no obligación universal |
+
+## Incertidumbres que no se ocultan
+
+No se ha elaborado dictamen de interacción entre derecho español/europeo, criterios ministeriales de aceptación actuales, eventuales órdenes modificadoras del anexo, sanciones o aplicabilidad concreta por operador. No se adopta la aceptación GTFS del NAP como prueba de equivalencia técnica completa con NeTEx. No se confunde el NAP multimodal de Transportes con el punto de tráfico de DGT. Compliance V1 usa fuente consolidada de 2024 y mantiene dependencias parciales/anomalías: esta investigación no actualiza su corpus, engine o vigencia.
+
+Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

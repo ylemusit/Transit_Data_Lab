@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-09-27T01:18:24.849175+00:00",
+  "sha256": "1926a19ab7a779fcb4bdb256499a2e703696f92460c458b4f757bc9668141871",
+  "checks": {
+    "Phase_1_FROZEN": true,
+    "Phase_2_FROZEN": true,
+    "counts_correct": true,
+    "Compliance_SHA_correct": true,
+    "GTFS_SHA_correct": true,
+    "GTFS_state_preserved": true,
+    "GTFS_future_layers_pending": true,
+    "Phase_3_NOT_STARTED": true,
+    "negative_assertions_preserved": true,
+    "no_legal_assessment_claim": true
+  }
+}

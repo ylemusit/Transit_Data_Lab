@@ -1,0 +1,5 @@
+timestamp=2026-09-23T16:06:08.9351004+02:00
+absolute_executable_path=C:\Users\yeiso\Desktop\GTFS_Explorer_RC002_Canonical\GTFS-Explorer\GTFS Explorer.exe
+sha256=d154fe2131922765ad464852866b95268cbc92020b525cdda5a9affeadbde2e7
+file_version=0.2.1.0
+product_version=0.2.1.0

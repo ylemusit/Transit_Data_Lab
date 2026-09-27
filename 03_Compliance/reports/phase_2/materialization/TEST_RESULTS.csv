@@ -1,0 +1,14 @@
+suite,status,checks,failed_checks
+test_phase_1_invariants,PASS,22,[]
+test_phase_1_master,EXPECTED_HISTORICAL_STATE_MISMATCH,25,"[{""test"": ""22_REQUIREMENTS_NOT_DERIVED_YET"", ""status"": ""FAIL"", ""expected"": 0, ""actual"": 48}, {""test"": ""PHASE_1_CORPUS_INTEGRITY"", ""status"": ""FAIL""}]"
+test_eu_2017_1926_master_structure,PASS,22,[]
+test_eu_2017_1926_annex_1_1,PASS,9,[]
+test_eu_2017_1926_annex_1_2,PASS,9,[]
+test_eu_2017_1926_annex_1_3,PASS,9,[]
+test_eu_2017_1926_annex_1_4,PASS,9,[]
+test_eu_2017_1926_annex_2_1,PASS,9,[]
+test_eu_2017_1926_annex_2_2,PASS,9,[]
+test_eu_2017_1926_annex_2_3,PASS,9,[]
+test_phase_2_master,EXPECTED_HISTORICAL_STATE_MISMATCH,28,"[{""test"": ""23_REQUIREMENTS_FROM_APPROVED_CANDIDATES_ONLY"", ""status"": ""FAIL"", ""expected"": 0, ""actual"": 45}]"
+test_phase_2_pre_materialization_gate,EXPECTED_HISTORICAL_STATE_MISMATCH,55,"[{""test"": ""23_REQUIREMENTS_FROM_APPROVED_CANDIDATES_ONLY"", ""status"": ""FAIL"", ""expected"": 0, ""actual"": 45}, {""test"": ""31_REQUIREMENTS_CURRENT"", ""status"": ""FAIL"", ""expected"": 3, ""actual"": 48}, {""test"": ""32_DEADLINES_CURRENT"", ""status"": ""FAIL"", ""expected"": 1, ""actual"": 10}]"
+test_phase_2_post_materialization_gate,PASS,387,[]

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "project_id": "068c6d75-f3f5-45a7-b34c-7e08102739ac",
+  "name": "run_004_gtfs023_candidate001",
+  "status": "READY",
+  "feed": {
+    "feed_id": "f5bca5ac-0a1f-41f6-bdf8-498d41a2129c",
+    "manifest_sha256": "48f96a07133e58e50e64d9398c9e8dc4b6b0534dd9c0579624cee41ab5a4b9ec"
+  },
+  "references": {
+    "database": "data.duckdb",
+    "cache": "cache",
+    "reports": "reports"
+  }
+}

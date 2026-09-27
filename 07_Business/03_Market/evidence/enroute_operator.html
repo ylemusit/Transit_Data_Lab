@@ -1,0 +1,2370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Des solutions de gestion des données pour les Opérateur de Transport Public - enRoute
+      
+    </title>
+    <meta name="description" content="
+      
+        Alimentez facilement vos systèmes avec des données de qualité.
+      
+    " />
+    <meta property="og:title" content="
+      
+        Des solutions de gestion des données pour les Opérateur de Transport Public - enRoute
+      
+    " />
+    <meta property="og:description" content="
+      
+        Alimentez facilement vos systèmes avec des données de qualité.
+      
+    " />
+    <meta property="og:image" content="
+      
+        /fr/assets/images/logo/enroute-2020.png
+      
+    ">
+    <link rel="stylesheet" href="/fr/assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script defer data-domain="enroute.mobi" src="https://plausible.io/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/fr/assets/js/main.js"></script>
+  </head>
+
+  <body class="antialiased" x-data="{ isOpen : false, mainNav : false}">
+    <div class="mobile-overlay" :class="{ 'active': isOpen === true }"></div>
+    <header class="fixed top-0 w-full flex flex-col z-100">
+      <div class="flex flex-col pt-5 w-full bg-white max-md:max-w-full" :class="{ 'bg-none': isOpen === true }">
+        <nav class="container flex flex-wrap gap-5 justify-between self-center w-full max-w-[1035px] max-md:max-w-full px-5">
+          <div class="flex gap-10 my-auto text-lg font-bold text-enroute-blue">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="/fr/">
+                <img class="block lg:hidden h-10 w-auto" src="/assets/images/logo/enroute-2020.svg" alt="Company logo">
+                <img class="hidden lg:block h-10 w-auto" src="/assets/images/logo/enroute-2020.svg" alt="Company logo">
+              </a>
+            </div>
+            <div class="hidden md:flex relative items-center my-auto cursor-pointer" @click="mainNav = true" @keydown.escape=" mainNav = false">
+              <span class="text-base">Vous êtes</span>
+              <img loading="lazy" src="/assets/images/icon/arrow-menu.svg" class="ml-4 transition-transform transform duration-200 " :class="{ 'rotate-180': mainNav }" alt="" />
+            </div>
+            <nav class="flex flex-col absolute mt-8 w-full text-base font-semibold text-enroute-blue shadow-xl" x-show="mainNav" @click.away=" mainNav = false">
+              <ul class="flex flex-col absolute top-16 left-10 items-start px-8 pt-3 pb-7 bg-blue-50 rounded-2xl fill-blue-50 shadow-xl">
+                
+                  <li>
+                      <a href="/fr/pta" class="block w-full mt-3.5 hover:bg-gradient-to-r from-pink-500 to-violet-500 hover:text-transparent bg-clip-text">Autorité Organisatrice de Mobilités</a>
+                  </li>
+                  
+                    <li class="shrink-0 self-stretch mt-3 h-px border border-zinc-300 border-solid opacity-60" aria-hidden="true"></li>
+                  
+                
+                  <li>
+                      <a href="/fr/operator" class="block w-full mt-3.5 hover:bg-gradient-to-r from-yellow-300 to-orange-500 hover:text-transparent bg-clip-text">Opérateur de Transport Public</a>
+                  </li>
+                  
+                    <li class="shrink-0 self-stretch mt-3 h-px border border-zinc-300 border-solid opacity-60" aria-hidden="true"></li>
+                  
+                
+                  <li>
+                      <a href="/fr/nap" class="block w-full mt-3.5 hover:bg-gradient-to-r from-cyan-300 to-blue-700 hover:text-transparent bg-clip-text">Point d'Accès National</a>
+                  </li>
+                  
+                
+              </ul>
+          </nav>
+          </div>
+          <div class="hidden md:flex flex-wrap gap-7 items-center max-md:max-w-full">
+            <a href="/fr/contact" class="flex gap-3.5 justify-center items-center self-stretch px-6 py-4 text-base font-semibold text-enroute-blue border-2 border-enroute-blue border-solid rounded-[59px] transform transition hover:bg-enroute-blue hover:text-white group duration-300 ease-in-out max-md:px-5">
+              <span>Demander une démo</span>
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15px] stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="/fr/company" class="self-stretch my-auto text-lg font-bold text-enroute-blue">Equipe</a>
+            <a href="/fr/news" class="self-stretch my-auto text-lg font-bold text-enroute-blue">Blog</a>
+            
+              <a href="/operator/" >
+                <img class="object-contain shrink-0 self-stretch my-auto aspect-[1.16] w-[37px]" src="/assets/images/flag_eng.png" alt="language_flag">
+              </a>
+            
+          </div>
+          <div class="inset-y-0 right-0 size-12 flex items-center toggle md:hidden bg-enroute-blue rounded-full">
+            <div @click=" isOpen = true" @keydown.escape=" isOpen = false" id="nav-icon4" :class="{ 'open': isOpen === true }">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <div class="mt-5 w-full bg-enroute-blue border border-enroute-blue border-solid min-h-[1px] max-md:max-w-full"></div>
+      </div>
+    </header>
+
+    <!-- mobile navbar -->
+    <div class="mobile-navbar">
+      <!-- navbar wrapper -->
+      <div class="navbar-wrapper fixed top-0 left-0 h-full bg-white z-110 w-64 shadow-lg pt-5 px-5 flex flex-col md:hidden" x-show="isOpen" @click.away=" isOpen = false" x-transition:enter="transition duration-300 -ml-64" x-transition:enter-start="" x-transition:enter-end="transform translate-x-64" x-transition:leave="transition duration-300" x-transition:enter-start="" x-transition:leave-end="transform -translate-x-64">
+        <ul class="divide-y">
+          <li>
+            <a href="/fr/">
+              <img class="block h-8 w-auto mb-5" src="/assets/images/logo/enroute-2020.svg" alt="Workflow">
+            </a>
+          </li>
+          
+            <li>
+              <a href="/fr/pta" class="my-4 inline-block active font-bold text-enroute-blue">Autorité Organisatrice de Mobilités</a>
+            </li>
+          
+            <li>
+              <a href="/fr/operator" class="my-4 inline-block active font-bold text-enroute-blue">Opérateur de Transport Public</a>
+            </li>
+          
+            <li>
+              <a href="/fr/nap" class="my-4 inline-block active font-bold text-enroute-blue">Point d'Accès National</a>
+            </li>
+          
+          <li>
+            <a href="/fr/company" class="my-4 inline-block active font-bold text-enroute-blue">Equipe</a>
+          </li>
+          <li>
+            <a href="/fr/news" class="my-4 inline-block active font-bold text-enroute-blue">Blog</a>
+          </li>
+          <li>
+            <a href="/fr/contact" class="mt-8 mb-4 w-full text-center font-semibold cta inline-block bg-enroute-blue hover:bg-opacity-70 px-3 py-3 rounded-3xl text-white">Demander une démo</a>
+          </li>
+        </ul>
+        
+            <a href="/operator/" >
+              <img class="h-12 w-auto py-2" src="/assets/images/flag_eng.png" alt="language_flag">
+            </a>
+        
+        <div class="flex flex-col mt-auto self-start">
+          <div class="flex justify-around items-center -mb-3 z-20">
+            <img class="h-10" src="/assets/images/logo/chouette-icon.svg" alt="">
+            <img class="h-10 -mb-3" src="/assets/images/logo/ara-icon.svg" alt="">
+          </div>
+          <img class="h-10 z-10" src="/assets/images/buble-mobile-nav.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end mobile navbar -->
+</html>
+ <section class="py-12 md:py-24 mt-20 container mx-auto text-white overflow-hidden flex max-md:flex-col items-center max-xl:px-5">
+  <div class="flex flex-col justify-center  bg-gradient-to-bl from-yellow-300 to-orange-500 py-12 md:py-16 lg:py-24 px-8 rounded-t-xl w-full md:w-1/2 md:rounded-b-xl" >
+    
+      <div class="flex items-center mb-4 space-x-3 bg-white bg-opacity-25 px-4 rounded-3xl w-full md:w-3/4">
+        <img src="/assets/images/hero/v2/icon-operator.svg" class="size-14">
+        <span class="text-xl text-white font-semibold">Opérateur de Transport Public</span>
+      </div>
+    
+    <h1 class="text-3xl lg:text-5xl leading-tight font-bold mb-8">Alimentez facilement vos systèmes avec des données de qualité</h1>
+    
+    
+      <a href="/fr/contact" class="flex self-start items-center bg-white text-enroute-blue font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transform transition hover:scale-105 duration-300 ease-in-out">
+        Demander une démo
+        <img src="/assets/images/hero/v2/arrow.svg" class="ml-2 w-4 h-4">
+      </a>
+    
+  </div>
+
+  <div class="flex max-md:justify-center relative w-full bg-light-blue rounded-b-xl md:w-1/2 md:ml-12 md:bg-transparent">
+    <img src="/assets/images/hero/v2/operator.png" alt="City transportation" class="object-cover xl:w-4/5 py-14 md:py-0">
+  </div>
+</section>
+
+
+
+<section class="overflow-hidden max-xl:px-5">
+  <!-- Carousel Section -->
+<section class="container mx-auto relative">
+  <div class="absolute top-0 bottom-0 left-0 w-1/12 bg-gradient-to-r from-white to-transparent pointer-events-none z-10"></div>
+  <div class="absolute top-0 bottom-0 right-0 w-1/12 bg-gradient-to-l from-white to-transparent pointer-events-none z-10"></div>
+
+  <div class="swiper swiper-logos">
+    <div class="swiper-wrapper flex items-center">
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/ratp-cap-saclay.svg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/dkbus.svg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/blablabus.svg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/irigo.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/ratp-cap-mantois.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/tao.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/transvilles.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/ratp-cap-bievre.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/lignes-azur.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+      <div class="swiper-slide flex justify-center">
+        <img src="/assets/images/carousel/bibus.jpg" class="object-contain" alt="logo" />
+      </div>
+    
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.swiper-logos', {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      loop: true,
+      speed: 8000,
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  });
+</script>
+</section>
+
+<section class="md:py-24 overflow-hidden max-xl:px-5">
+  <div x-data="{
+  selectedIndex: 0,
+  loopActive: false,
+  intervalId: null,  <!-- Variable pour garder l'ID de l'intervalle -->
+  startLoop() {
+    if (this.intervalId) {
+      clearInterval(this.intervalId);  <!-- Supprimer l'intervalle précédent s'il existe -->
+    }
+    this.loopActive = true;
+    this.intervalId = setInterval(() => {
+      if (this.loopActive) {
+        this.selectedIndex = (this.selectedIndex + 1) % 6;
+      }
+    }, 3000);
+  },
+  stopLoop() {
+    this.loopActive = false;
+    if (this.intervalId) {
+      clearInterval(this.intervalId);  <!-- Nettoyer l'intervalle existant -->
+      this.intervalId = null;  <!-- Réinitialiser l'ID de l'intervalle -->
+    }
+  },
+  stopLoopOnHover() {
+    this.stopLoop();  <!-- Arrêter la boucle lors du hover -->
+  },
+  startLoopOnLeave() {
+    if (!this.intervalId) {  <!-- Démarrer la boucle uniquement si elle est arrêtée -->
+      this.startLoop();
+    }
+  }
+}"
+x-init="startLoop"
+class="hidden xl:grid container mx-auto grid-cols-1 xl:grid-cols-[minmax(0,464px)_1fr] gap-5 2xl:gap-10 max-md:flex-col">
+
+<div class="flex flex-col w-full max-md:ml-0 max-md:w-full flex-grow xl:max-w-[482px]">
+  <div class="flex flex-col px-8 pt-6 pb-10 mx-auto w-full h-full text-base font-semibold text-enroute-blue bg-blue-50 rounded-2xl max-md:px-5 max-md:max-w-full">
+    <h2 class="self-start text-3xl font-lato font-black mb-8">Cas d'usage</h2>
+    <nav>
+      <ul class="list-none p-0">
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 0,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 0
+            }"
+            @click="selectedIndex = 0; stopLoop()"
+            @mouseenter="selectedIndex = 0; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Automatisez la gestion de vos données</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 0}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+          <li class="shrink-0 my-3 max-w-full h-px bg-enroute-blue border border-enroute-blue border-solid max-md:ml-2.5" aria-hidden="true"></li>
+        
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 1,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 1
+            }"
+            @click="selectedIndex = 1; stopLoop()"
+            @mouseenter="selectedIndex = 1; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Diffusez vos données pour l'info voyageurs</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 1}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+          <li class="shrink-0 my-3 max-w-full h-px bg-enroute-blue border border-enroute-blue border-solid max-md:ml-2.5" aria-hidden="true"></li>
+        
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 2,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 2
+            }"
+            @click="selectedIndex = 2; stopLoop()"
+            @mouseenter="selectedIndex = 2; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Agrégez les données de votre réseau</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 2}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+          <li class="shrink-0 my-3 max-w-full h-px bg-enroute-blue border border-enroute-blue border-solid max-md:ml-2.5" aria-hidden="true"></li>
+        
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 3,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 3
+            }"
+            @click="selectedIndex = 3; stopLoop()"
+            @mouseenter="selectedIndex = 3; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Consultez et manipulez vos données</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 3}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+          <li class="shrink-0 my-3 max-w-full h-px bg-enroute-blue border border-enroute-blue border-solid max-md:ml-2.5" aria-hidden="true"></li>
+        
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 4,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 4
+            }"
+            @click="selectedIndex = 4; stopLoop()"
+            @mouseenter="selectedIndex = 4; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Gérez les perturbations</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 4}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+          <li class="shrink-0 my-3 max-w-full h-px bg-enroute-blue border border-enroute-blue border-solid max-md:ml-2.5" aria-hidden="true"></li>
+        
+        
+        <li>
+          <button
+            :class="{
+              'bg-enroute-blue text-white': selectedIndex === 5,
+              'hover:bg-enroute-blue hover:text-white hover:cursor-pointer bg-white': selectedIndex !== 5
+            }"
+            @click="selectedIndex = 5; stopLoop()"
+            @mouseenter="selectedIndex = 5; stopLoopOnHover()"
+            @mouseleave="startLoopOnLeave()"
+            class="flex justify-center items-center px-6 py-4 transition rounded-[59px] w-full max-md:px-5 max-md:ml-2.5 group">
+            <span class="flex-auto text-base w-[295px]">Monitorez vos systèmes de données</span>
+            <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+            :class="{'stroke-white': selectedIndex === 5}"
+            class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+              <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+              <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </li>
+        
+        
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="flex flex-col max-md:ml-0 max-md:w-full w-full flex-grow">
+  
+  <div
+    x-show="selectedIndex === 0"
+    :style="selectedIndex === 0 ? 'background-color: #DFE1FF80;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Import et collecte des données théoriques et temps réel
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Contrôle, mise en qualité et mise en cohérence des données
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator1_01.svg" class="object-contain lg:absolute -top-28 left-24" />
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Enrichissement des données
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Saisie des données d'offre théoriques si besoin
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Agrégation des données et création d'un référentiel unique
+            </p>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Publication vers vos systèmes et ceux de vos partenaires
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div
+    x-show="selectedIndex === 1"
+    :style="selectedIndex === 1 ? 'background-color: #FDD1FF33;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator2_01.svg" class="object-contain max-h-[430px]" />
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Collecte et publication multi-formats : GTFS / NeTEx / GTFS-RT / SIRI / SIRI Lite
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div
+    x-show="selectedIndex === 2"
+    :style="selectedIndex === 2 ? 'background-color: #FF9B0D1A;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="grid grid-cols-2">
+          <div class="flex flex-col relative  max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator3_01.svg" class="object-contain max-h-[445px]" />
+          
+          </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Création d’un référentiel de données unifié et cohérent _ théorique et temps-reel.
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div
+    x-show="selectedIndex === 3"
+    :style="selectedIndex === 3 ? 'background-color: #5ED5DE1A;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator4_01.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Saisie des données d'offre dans l'interface orientée métier
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator4_02.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              API de consultation des données théoriques brutes
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator4_03.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Historisation de vos données théoriques et temps réel
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div
+    x-show="selectedIndex === 4"
+    :style="selectedIndex === 4 ? 'background-color: #F4CD0B1A;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator5_01.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Collecte et diffusion des perturbations (GTFS-RT et SIRI)
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator5_02.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Saisie des perturbations planifiées dans Chouette SaaS
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator5_03.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Saisie et diffusion des perturbations imprévues dans Ara SaaS
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div
+    x-show="selectedIndex === 5"
+    :style="selectedIndex === 5 ? 'background-color: #00AFBC1A;' : ''"
+    class="flex flex-col justify-center items-center p-7 mx-auto w-full h-full rounded-2xl max-md:px-5 max-md:py-24 max-md:max-w-full">
+    <div class="w-5/6 max-md:max-w-full">
+      <div class="flex gap-3 flex-col">
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator6_01.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Système d'alerte sur la disponibilité des flux temps-réel.
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center">
+          <div class="flex flex-col relative w-1/2 max-md:ml-0 max-md:w-full">
+          
+            <img loading="lazy" src="/assets/images/usecases/operator6_02.svg" class="object-contain max-w-[154px] max-h-[154px]" />
+          
+          </div>
+          
+            <div class="flex flex-col -mr-1 max-md:ml-0 max-md:w-full">
+              <img loading="lazy" src="/assets/images/usecases/usecases-border.svg" class="w-96" />
+            </div>
+          
+          <div class="flex w-full self-stretch p-3 my-auto font-semibold bg-white rounded-2xl max-md:px-5 max-md:mt-8">
+            <p class="text-lg font-semibold text-ellipsis text-neutral-700">
+              Dashboard
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+<section class="xl:hidden block py-12 overflow-hidden">
+  <div class="container mx-auto flex flex-col text-base font-semibold text-blue-900 rounded-2xl">
+    <h2 class="w-full text-2xl leading-none">
+      Cas d'usage
+    </h2>
+    <div x-data="{ openIndex: null }">
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 0 ? null : 0">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Automatisez la gestion de vos données
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 0 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 0" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Import et collecte des données théoriques et temps réel
+                </p>
+              </div>
+            
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Contrôle, mise en qualité et mise en cohérence des données
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator1_01.svg" class="object-contain mt-12 lg:absolute -top-28 left-24" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Enrichissement des données
+                </p>
+              </div>
+            
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Saisie des données d'offre théoriques si besoin
+                </p>
+              </div>
+            
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Agrégation des données et création d'un référentiel unique
+                </p>
+              </div>
+            
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Publication vers vos systèmes et ceux de vos partenaires
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 1 ? null : 1">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Diffusez vos données pour l'info voyageurs
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 1 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 1" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator2_01.svg" class="object-contain mt-12 max-h-[430px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Collecte et publication multi-formats : GTFS / NeTEx / GTFS-RT / SIRI / SIRI Lite
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 2 ? null : 2">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Agrégez les données de votre réseau
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 2 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 2" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator3_01.svg" class="object-contain mt-12 max-h-[445px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Création d’un référentiel de données unifié et cohérent _ théorique et temps-reel.
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 3 ? null : 3">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Consultez et manipulez vos données
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 3 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 3" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator4_01.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Saisie des données d'offre dans l'interface orientée métier
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator4_02.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  API de consultation des données théoriques brutes
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator4_03.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Historisation de vos données théoriques et temps réel
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 4 ? null : 4">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Gérez les perturbations
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 4 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 4" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator5_01.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Collecte et diffusion des perturbations (GTFS-RT et SIRI)
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator5_02.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Saisie des perturbations planifiées dans Chouette SaaS
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator5_03.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Saisie et diffusion des perturbations imprévues dans Ara SaaS
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+        <div class="relative flex flex-col bg-light-blue rounded-2xl mt-6">
+          <div class="relative px-4 py-4 flex justify-between items-center" @click="openIndex = openIndex === 5 ? null : 5">
+            <h3 class="font-semibold text-base sm:text-xl">
+              Monitorez vos systèmes de données
+            </h3>
+            <div class="flex justify-center items-center bg-white size-12 md:size-16 rounded-full z-10 shadow-md cursor-pointer">
+              <img
+                loading="lazy"
+                src="/assets/images/icon/big-arrow-down.svg"
+                :class="{ 'rotate-180': openIndex === 5 }"
+                class="object-contain shrink-0 aspect-[0.89] w-[20px] transition-transform transform"
+                alt="Toggle"
+              />
+            </div>
+          </div>
+          <div x-show="openIndex === 5" x-transition class="flex flex-col items-center justify-center px-4 pb-4 z-10">
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator6_01.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Système d'alerte sur la disponibilité des flux temps-réel.
+                </p>
+              </div>
+            
+              
+                <img loading="lazy" src="/assets/images/usecases/operator6_02.svg" class="object-contain mt-12 max-w-[154px] max-h-[154px]" />
+              
+              <div class="flex items-center w-full self-stretch p-3 mt-4 font-semibold bg-white rounded-2xl">
+                <img loading="lazy" src="/assets/images/icon/check_black.svg" class="size-3.5 mr-3"/>
+                <p class="text-base font-semibold text-ellipsis text-neutral-700">
+                  Dashboard
+                </p>
+              </div>
+            
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+</section>
+
+<section class="py-12 bg-light-blue overflow-hidden">
+  <section class="flex flex-col container mx-auto">
+  <div class="relative flex flex-col w-full">
+    <div class="flex gap-5 px-5 justify-evenly md:justify-between w-full max-md:max-w-full">
+      <h2
+        class="text-3xl md:text-5xl font-black font-lato md:tracking-wider text-enroute-blue leading-[55px] max-md:max-w-full max-md:leading-[49px]">
+        Des opérateurs de transport majeurs nous font confiance
+      </h2>
+      <nav class="hidden md:flex gap-5 items-center self-start mt-2 relative">
+        <div id="prevButton"
+          class="flex items-center self-stretch my-auto h-[74px] w-[74px]">
+          <img loading="lazy"
+            src="/assets/images/icon/carousel-back.svg"
+            class="object-contain self-stretch my-auto w-[74px]" />
+        </div>
+        <div id="nextButton"
+          class="flex items-center self-stretch my-auto h-[74px] w-[74px]">
+          <img loading="lazy"
+            src="/assets/images/icon/carousel-next.svg"
+            class="object-contain self-stretch my-auto w-[74px]" />
+        </div>
+      </nav>
+    </div>
+
+    <div class="swiper-cards relative mb-6 overflow-hidden lg:mb-0 md:mt-14">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#FFE1AC">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/lignes-azur.svg"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Chouette SaaS et Ara SaaS déployés à Nice
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                Régie Ligne d’Azur s’appuie sur les solutions de enRoute pour la gestion de ses données de mobilités théoriques et temps réel.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#C2EDDC">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/ratp-cap-saclay.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                RATP CAP déploie Chouette SaaS et Ara SaaS sur le réseau de Saclay, avec une approche Groupe
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                <strong>La couverture fonctionnelle et les interfaces offertes</strong> permettent aux acteurs de terrain d'alimenter les systèmes consommateurs de données internes et externes.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#8B7F6F">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/tao.jpg"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  <img src="/assets/images/logo/keolis-icon.png"
+                    alt="logo-keolis"
+                    class="h-4" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Chouette SaaS et Ara SaaS déployés à Orléans
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                enRoute accompagne Keolis et Orléans Métropole pour la gestion des données de mobilités théoriques et temps réel du réseau Tao.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#C4DBFB">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/dk-bus.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  
+                  
+                  <img src="/assets/images/logo/transdev-icon.png"
+                    alt="logo-transdev"
+                    class="h-6" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                DK’BUS prend le contrôle de ses données avec Chouette SaaS et Ara SaaS
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                L’information voyageurs et l’open data sont au cœur du projet porté par les acteurs dunkerquois du transport public.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#BEECF1">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/tac.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+                  <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                    
+                    <img src="/assets/images/logo/flag-french.png" alt="Flag French" class="h-6"/>
+                    
+                    
+                    
+                    
+                    
+                    
+                    <img src="/assets/images/logo/flag-switzerland.png" alt="Flag Switzerland" class="h-6"/>
+                    
+                  </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  
+                  <img src="/assets/images/logo/ratp-dev-icon.svg"
+                    alt="logo-ratp"
+                    class="h-6" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Chouette SaaS et Ara SaaS déployés à Annemasse pour diffuser la donnée temps réel et alimenter les Transports Publics Genevois
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                RATP Dev et Annemasse Agglo s’appuient sur les outils de enRoute pour la gestion des données de mobilités temps réel du réseau TAC.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#FF595A">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/blablabus.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                </div>
+                
+              </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Blablabus (anciennement Ouibus) s’est appuyé sur Chouette Saas pour gérer son offre de transport de cars inter-urbains
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                Gestion du référentiel de données théoriques pour l'offre de transport des cars inter-urbains en France et en Europe à partir de Chouette SaaS.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#F5EE98">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/irigo.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  
+                  <img src="/assets/images/logo/ratp-dev-icon.svg"
+                    alt="logo-ratp"
+                    class="h-6" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Chouette SaaS et Ara SaaS déployés à Angers
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                RATP Dev et Angers Métropole prennent le contrôle des données de mobilités temps réel du réseau Irigo.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#7F8614">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/bibus.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  
+                  <img src="/assets/images/logo/ratp-dev-icon.svg"
+                    alt="logo-ratp"
+                    class="h-6" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Ara SaaS déployé à Brest
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                enRoute accompagne RATP Dev pour la gestion des données temps réel du réseau Bibus à Brest.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#FFE9A2">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/transvilles.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+                <div
+                  class="flex flex-wrap items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10 mt-3.5 min-h-10">
+                  
+                  <img src="/assets/images/logo/keolis-icon.png"
+                    alt="logo-keolis"
+                    class="h-4" />
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                  
+                </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                Ara SaaS déployé à Valenciennes
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                Keolis s’appuie sur Ara SaaS pour la gestion des données temps réel du réseau Transvilles à Valenciennes.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#C2EDDC">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/ratp-cap-bievre.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                RATP CAP déploie Chouette SaaS et Ara SaaS sur le réseau de Bièvre, avec une approche Groupe
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                Les <strong>processus de déploiement</strong> de Chouette SaaS et Ara SaaS sont coordonnés au niveau groupe et déclinés dans chaque filiale selon le contexte local.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+        <div class="swiper-slide px-5 pb-8">
+          <article class="flex overflow-hidden flex-col grow w-full bg-white rounded-2xl shadow-lg max-md:pb-24 max-md:mt-10 min-h-[570px]">
+            <div class="flex flex-col justify-center items-center px-12 py-14 h-40 max-md:px-5"
+              style="background-color:#C2EDDC">
+              <img loading="lazy"
+                src="/assets/images/logo/cards/ratp-cap-mantois.png"
+                class="object-cover max-h-28" />
+            </div>
+            <div class="flex flex-col px-4 mt-5 w-full">
+              <div class="flex gap-3.5 self-start text-2xl leading-none text-black whitespace-nowrap">
+                <div class="flex items-center gap-2.5 py-2 px-3 rounded-lg bg-enroute-blue bg-opacity-10">
+                  
+                  <img src="/assets/images/logo/chouette-icon.svg"
+                    alt="logo-chouette"
+                    class="h-7" />
+                  
+                  
+                  
+                  
+                  <img src="/assets/images/logo/ara-icon.svg"
+                    alt="logo-ara"
+                    class="h-7" />
+                  
+                </div>
+                
+              </div>
+              
+
+              <h3 class="mt-4 text-2xl font-semibold leading-7 text-enroute-blue max-md:mr-2.5">
+                RATP CAP déploie Chouette SaaS et Ara SaaS sur le réseau du Mantois, avec une approche Groupe
+              </h3>
+              <p class="mt-3.5 text-base text-neutral-600">
+                Les <strong>exigences techniques et la performance</strong> sont au cœur des attentes de RATP CAP pour les solutions de gestion des données.
+              </p>
+            </div>
+          </article>
+        </div>
+        
+      </div>
+    </div>
+    <div class="swiper-pagination pagination-cards md:!-bottom-6"></div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper-cards', {
+      loop: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '#nextButton',
+        prevEl: '#prevButton',
+      },
+      pagination: {
+        el: ".pagination-cards",
+        clickable: true
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 15
+        },
+      },
+    });
+  });
+</script>
+</section>
+
+<section class="py-12 md:py-24 overflow-hidden max-xl:px-5">
+  <section class="flex flex-col relative container mx-auto">
+  <div class="flex gap-5 justify-evenly md:justify-between w-full max-md:max-w-full">
+    <h2 class="text-3xl md:text-5xl font-black font-lato md:tracking-wider text-enroute-blue leading-[55px] max-md:max-w-full max-md:leading-[49px]">
+        Pourquoi les autorités organisatrices<br> de mobilités nous choisissent ?
+    </h2>
+    <nav class="hidden md:flex gap-5 items-center self-start mt-2 relative">
+        <div id="prevButtonTestimonial"
+          class="flex items-center self-stretch my-auto h-[74px] w-[74px]">
+          <img loading="lazy"
+            src="/assets/images/icon/carousel-back.svg"
+            class="object-contain self-stretch my-auto w-[74px]" />
+        </div>
+        <div id="nextButtonTestimonial"
+          class="flex items-center self-stretch my-auto h-[74px] w-[74px]">
+          <img loading="lazy"
+            src="/assets/images/icon/carousel-next.svg"
+            class="object-contain self-stretch my-auto w-[74px]" />
+        </div>
+      </nav>
+  </div>
+  <div class="swiper-testimonials flex gap-8 items-start mt-10 mb-16 md:mb-0 w-full overflow-hidden max-md:max-w-full">
+    <div class="swiper-wrapper">
+    
+        
+        <div class="swiper-slide">
+            <article class="relative flex flex-col text-base lg:h-[360px] max-md:max-w-full">
+                <blockquote class="flex flex-col justify-between p-10 bg-blue-50 rounded-2xl h-full">
+                    <p class="self-stretch text-xl lg:text-2xl leading-7 font-semibold text-neutral-700 max-md:max-w-full">
+                        L’IV et la gestion des données : tout le monde en parle, personne n’en fait vraiment. Là on peut vraiment gérer le mode run et l’exploitation, mettre en place des process, des outils et de la responsabilisation
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-lg">Responsable Process Industriels Groupe</p>
+                        <p class="text-neutral-700 text-lg font-semibold">Opérateur de transport Public Majeur</p>
+                    </div>
+                    
+                        <img loading="lazy" src="/assets/images/shape/testimonial-pink.svg" class="hidden md:flex absolute bottom-0 right-0" />
+                    
+                </blockquote>
+            </article>
+        </div>
+    
+        
+        <div class="swiper-slide">
+            <article class="relative flex flex-col text-base lg:h-[360px] max-md:max-w-full">
+                <blockquote class="flex flex-col justify-between p-10 bg-blue-50 rounded-2xl h-full">
+                    <p class="self-stretch text-xl lg:text-2xl leading-7 font-semibold text-neutral-700 max-md:max-w-full">
+                        Chouette répond vraiment aux besoins. Le mode SaaS est très apprécié car les évolutions sont gratuites. On n’a pas besoin de se poser de question sur les conformités des normes NeTEx et GTFS car Chouette suit ce qui est dit dessus. Et il n’y a jamais de problème de performance.
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-lg">DSI Opérateur Régie</p>
+                        <p class="text-neutral-700 text-lg font-semibold">Métropole de 600 000 habitants</p>
+                    </div>
+                    
+                        <img loading="lazy" src="/assets/images/shape/testimonial-yellow.svg" class="hidden md:flex absolute bottom-0 right-0" />
+                    
+                </blockquote>
+            </article>
+        </div>
+    
+        
+        <div class="swiper-slide">
+            <article class="relative flex flex-col text-base lg:h-[360px] max-md:max-w-full">
+                <blockquote class="flex flex-col justify-between p-10 bg-blue-50 rounded-2xl h-full">
+                    <p class="self-stretch text-xl lg:text-2xl leading-7 font-semibold text-neutral-700 max-md:max-w-full">
+                        On a retenu Ara parce qu’on a aimé le contact avec l’équipe enRoute, la rapidité et la clarté des échanges. Aussi la facilité d’utilisation du produit; la configuration a été directement faite à distance, on a eu juste à dire ok/pas ok pour nous.
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-lg">DSI Opérateur DSP</p>
+                        <p class="text-neutral-700 text-lg font-semibold">Agglo de 200 000 habitants</p>
+                    </div>
+                    
+                        <img loading="lazy" src="/assets/images/shape/testimonial-pink.svg" class="hidden md:flex absolute bottom-0 right-0" />
+                    
+                </blockquote>
+            </article>
+        </div>
+    
+        
+        <div class="swiper-slide">
+            <article class="relative flex flex-col text-base lg:h-[360px] max-md:max-w-full">
+                <blockquote class="flex flex-col justify-between p-10 bg-blue-50 rounded-2xl h-full">
+                    <p class="self-stretch text-xl lg:text-2xl leading-7 font-semibold text-neutral-700 max-md:max-w-full">
+                        Il y a régulièrement des nouvelles fonctionnalités pour Chouette et Ara. Par exemple la gestion des perturbations avec la possibilité de les éditer
+                    </p>
+                    <div class="mt-6">
+                        <p class="text-lg">Chef de projet Groupe sur l’information voyageur</p>
+                        <p class="text-neutral-700 text-lg font-semibold">Opérateur de transport Public Majeur</p>
+                    </div>
+                    
+                        <img loading="lazy" src="/assets/images/shape/testimonial-yellow.svg" class="hidden md:flex absolute bottom-0 right-0" />
+                    
+                </blockquote>
+            </article>
+        </div>
+    
+    </div>
+  </div>
+  <div class="swiper-pagination pagination-testimonials md:!-bottom-14"></div>
+</section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.swiper-testimonials', {
+        loop: false,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: '#nextButtonTestimonial',
+          prevEl: '#prevButtonTestimonial',
+        },
+        pagination: {
+          el: ".pagination-testimonials",
+          clickable: true
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          }
+        },
+      });
+    });
+</script>
+</section>
+
+<section class="pb-24 max-xl:px-5">
+  <div class="flex flex-col container mx-auto">
+    <h2 class="text-center text-5xl font-black font-lato md:tracking-wider text-enroute-blue leading-[55px] max-md:max-w-full max-md:text-4xl max-md:leading-[49px] mb-12">
+      Dites-nous en plus sur vos<br> cas d'usage
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 container mx-auto md:gap-5 font-semibold">
+  <div class="hidden md:flex flex-col justify-end pt-11 pl-10 text-2xl leading-7 text-white bg-enroute-blue rounded-2xl max-md:max-w-full">
+    <h2 class="self-start max-md:max-w-full">
+      Prenez rendez-vous pour une présentation de nos solutions adaptée à votre situation !
+    </h2>
+    <img loading="lazy" src="/assets/images/contact_img_01.png" class="object-contain mt-12 w-full rounded-2xl aspect-[1.64] max-md:max-w-full" alt="Illustration représentant une présentation de solutions" />
+  </div>
+  <div class="flex justify-center overflow-hidden z-0 flex-col px-4 md:px-8 py-7 bg-blue-50 rounded-2xl">
+    <nav class="breadcrumb-nav flex flex-wrap gap-2 self-start max-md:ml-1.5">
+      
+        <div class="flex gap-1 whitespace-nowrap breadcrumb-item opacity-100 ">
+          <img loading="lazy" src="/assets/images/icon/breadcrumb-line.svg" class="object-contain shrink-0 my-auto aspect-[17.86] fill-enroute-blue stroke-[0.714px] stroke-enroute-blue w-[18px]" alt="" />
+          <span class="basis-auto">1. Profil</span>
+        </div>
+      
+        <div class="flex gap-1 whitespace-nowrap breadcrumb-item opacity-50 ">
+          <img loading="lazy" src="/assets/images/icon/breadcrumb-line.svg" class="object-contain shrink-0 my-auto aspect-[17.86] fill-enroute-blue stroke-[0.714px] stroke-enroute-blue w-[18px]" alt="" />
+          <span class="basis-auto">2. Cas d'usage</span>
+        </div>
+      
+        <div class="flex gap-1 whitespace-nowrap breadcrumb-item opacity-50 ">
+          <img loading="lazy" src="/assets/images/icon/breadcrumb-line.svg" class="object-contain shrink-0 my-auto aspect-[17.86] fill-enroute-blue stroke-[0.714px] stroke-enroute-blue w-[18px]" alt="" />
+          <span class="basis-auto">3. Coordonnées</span>
+        </div>
+      
+    </nav>
+
+    <form id="stepsForm" action="https://formspree.io/f/myzyqoqd" method="POST">
+      
+      <div id="step-1" class="flex flex-col items-center ">
+        
+          <h3 class="self-start mt-7 text-3xl font-bold font-lato text-enroute-blue">Vous êtes ?</h3>
+        
+        
+          
+            <div class="flex overflow-hidden gap-5 my-6 justify-between w-full bg-white rounded-full group hover:bg-enroute-blue hover:text-white">
+              <label class="flex gap-5 px-5 py-2.5 items-center w-full cursor-pointer">
+                
+                  <img loading="lazy" src="/assets/images/hero/v2/icon-aom.svg" class="object-contain shrink-0 aspect-[0.89] w-[31px]" alt="" />
+                
+                <span class="flex-auto my-auto text-normal md:text-xl leading-5">Autorité Organisatrice de Mobilités</span>
+                <input type="radio" name="profile" value="aom" class="sr-only next-step-radio" />
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                  <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                  <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+                </svg>
+              </label>
+            </div>
+          
+            <div class="shrink-0 h-px bg-enroute-blue border border-enroute-blue border-solid w-full max-md:mr-0.5"></div>
+          
+          
+          
+          
+          
+        
+          
+            <div class="flex overflow-hidden gap-5 my-6 justify-between w-full bg-white rounded-full group hover:bg-enroute-blue hover:text-white">
+              <label class="flex gap-5 px-5 py-2.5 items-center w-full cursor-pointer">
+                
+                  <img loading="lazy" src="/assets/images/hero/v2/icon-operator.svg" class="object-contain shrink-0 aspect-[0.89] w-[31px]" alt="" />
+                
+                <span class="flex-auto my-auto text-normal md:text-xl leading-5">Opérateur de Transport Public</span>
+                <input type="radio" name="profile" value="operator" class="sr-only next-step-radio" />
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                  <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                  <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+                </svg>
+              </label>
+            </div>
+          
+            <div class="shrink-0 h-px bg-enroute-blue border border-enroute-blue border-solid w-full max-md:mr-0.5"></div>
+          
+          
+          
+          
+          
+        
+          
+            <div class="flex overflow-hidden gap-5 my-6 justify-between w-full bg-white rounded-full group hover:bg-enroute-blue hover:text-white">
+              <label class="flex gap-5 px-5 py-2.5 items-center w-full cursor-pointer">
+                
+                  <img loading="lazy" src="/assets/images/hero/v2/icon-pan.svg" class="object-contain shrink-0 aspect-[0.89] w-[31px]" alt="" />
+                
+                <span class="flex-auto my-auto text-normal md:text-xl leading-5">Point d'Accès National</span>
+                <input type="radio" name="profile" value="pan" class="sr-only next-step-radio" />
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                  <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                  <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+                </svg>
+              </label>
+            </div>
+          
+            <div class="shrink-0 h-px bg-enroute-blue border border-enroute-blue border-solid w-full max-md:mr-0.5"></div>
+          
+          
+          
+          
+          
+        
+          
+            <div class="flex overflow-hidden gap-5 my-6 justify-between w-full bg-white rounded-full group hover:bg-enroute-blue hover:text-white">
+              <label class="flex gap-5 px-5 py-2.5 items-center w-full cursor-pointer">
+                
+                <span class="flex-auto my-auto text-normal md:text-xl leading-5">Autre</span>
+                <input type="radio" name="profile" value="other" class="sr-only next-step-radio" />
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                  <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                  <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+                </svg>
+              </label>
+            </div>
+          
+          
+          
+          
+          
+        
+        
+        
+      </div>
+      
+      <div id="step-2" class="flex flex-col items-center hidden">
+        
+          <h3 class="self-start mt-7 text-3xl font-bold font-lato text-enroute-blue">Quelles sont vos problématiques ?</h3>
+        
+        
+          
+          
+
+            
+              <div id="aom_usecase" class="w-full hidden">
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_acilitate_the_governance_of_your_data"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Faciliter la gouvernance de vos données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_empower_data_producers"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Responsabiliser les producteurs de données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_aggregate_data_from_your_territory"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Agréger les données de votre territoire</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_make_your_data_live_over_time"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Faites vivre vos données dans la durée</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_publish_your_data_in_open_data"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Publiez vos données en Open Data</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="aom_stream_your_data_to_third-party_systems"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Diffuser vos données vers des systèmes tiers</span>
+                  </label>
+                </div>
+              
+              </div>
+            
+
+            
+
+            
+          
+          
+          
+        
+          
+          
+
+            
+
+            
+              <div id="operator_usecase" class="w-full hidden">
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_automate_data_management"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Automatiser la gestion de vos données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_stream_data_for_passenger_information"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Diffuser vos données pour l'info voyageurs</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_aggregate_the_data_of_your_transport_network"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Agréger les données de votre réseau</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_visualize_and_act_on_your_data"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Consulter et manipuler vos données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_manage_disruptions_information"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Gérer les perturbations</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="operator_monitor_your_data_systems"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Monitorer vos systèmes de données</span>
+                  </label>
+                </div>
+              
+              </div>
+            
+
+            
+          
+          
+          
+        
+          
+          
+
+            
+
+            
+
+            
+              <div id="pan_usecase" class="w-full hidden">
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="pan_make_data_sharing_easy"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Faciliter l’ouverture des données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="pan_give_access_to_data_management_tools"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Offrir des outils à l’écosystème</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="pan_validate_data"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Valider les données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="pan_convert_data"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Convertir les données</span>
+                  </label>
+                </div>
+              
+                <div class="flex overflow-hidden gap-5 my-6 justify-between px-5 w-full bg-white rounded-full">
+                  <label class="flex items-center gap-3 px-5 ml-2.5 py-2.5 font-semibold cursor-pointer">
+                    <input type="checkbox" class="sr-only peer" name="usecases" value="pan_manage_an_open_data_portal"  />
+                    <span class="flex shrink-0 my-auto rounded border border-enroute-blue border-solid h-[15px] w-[15px] peer-checked:bg-enroute-blue"></span>
+                    <span class="flex-auto leading-5">Gérer un portail open data</span>
+                  </label>
+                </div>
+              
+              </div>
+            
+          
+          
+          
+        
+        
+        <button type="button" onclick="nextStep()" class="flex gap-3.5 justify-center items-center self-end px-6 py-4 mt-8 font-semibold whitespace-nowrap bg-white rounded-[59px] transform transition hover:bg-enroute-blue hover:text-white group duration-300 ease-in-out max-md:px-5">
+          <span>Suivant</span>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15px] stroke-2 stroke-enroute-blue group-hover:stroke-white">
+            <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+            <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+          </svg>
+        </button>
+        
+        
+      </div>
+      
+      <div id="step-3" class="flex flex-col items-center hidden">
+        
+          <h3 class="self-start mt-7 text-3xl font-bold font-lato text-enroute-blue">Quelles sont vos coordonnées ?</h3>
+        
+        
+          
+          
+          
+          <div class="form-fields w-full">
+            <label for="email" class="block mt-10 ml-7 max-md:mt-10 max-md:ml-2.5">Adresse e-mail</label>
+            <input type="email" id="email" name="email" placeholder="john@exemple.com" required class="w-full px-5 py-2.5 mt-1.5 text-black bg-white rounded-[100px] max-md:mr-0.5 max-md:max-w-full" />
+
+            <!-- <label for="country" class="block mt-4 ml-7 max-md:ml-2.5">Pays</label>
+            <select id="country" class="flex gap-5 justify-between px-5 py-2.5 mt-1.5 w-full bg-white rounded-[100px] max-md:mr-0.5 max-md:max-w-full">
+              
+                <option>France</option>
+              
+                <option>Espagne</option>
+              
+            </select> -->
+
+            <label for="organization" class="block mt-4 ml-7 text-enroute-blue text-opacity-50 max-md:ml-2.5">
+              Organisation (facultatif)
+            </label>
+            <input type="text" id="organization" name="organization" placeholder="Mon Entreprise" class="w-full px-5 py-2.5 mt-1.5 text-black bg-white rounded-[100px] max-md:mr-0.5 max-md:max-w-full" />
+
+            <label for="appointment" class="block mt-3.5 ml-7 text-enroute-blue text-opacity-50 max-md:ml-2.5">
+              Rendez-vous (facultatif)
+            </label>
+            <input type="text" id="appointment" name="appointment" placeholder="Indiquez 1 ou 2 créneaux de 30 minutes." class="w-full px-5 py-2.5 mt-2 text-black bg-white rounded-[100px] max-md:mr-0.5 max-md:max-w-full" />
+
+            <label for="additional-info" class="block mt-4 ml-7 text-enroute-blue text-opacity-50 max-md:ml-2.5">
+              Quelque chose à ajouter ? (facultatif)
+            </label>
+            <textarea id="additional-info" name="additional-info" placeholder="Parlez-nous de vos besoins en gestion de données de mobilité et posez-nous vos questions pour qu’on prépare au mieux notre rendez-vous." class="w-full px-5 pt-4 pb-12 mt-1.5 text-black bg-white rounded-2xl max-md:mr-0.5 max-md:max-w-full"></textarea>
+          </div>
+          
+          
+        
+        
+        
+        <button class="flex gap-3.5 justify-center items-center self-end px-6 py-4 mt-8 font-semibold whitespace-nowrap text-white bg-enroute-blue rounded-[59px] max-md:px-5">
+          <span>Envoyez</span>
+          <img loading="lazy" src="/assets/images/icon/arrow-right-white.svg" alt="" class="object-contain shrink-0 self-stretch my-auto aspect-[1.07] w-[15px]" />
+        </button>
+        <p id="my-form-status"></p>
+        
+      </div>
+      
+      <div id="step-4" class="flex flex-col items-center hidden">
+        
+        
+          
+          
+          
+          
+          <div class="flex flex-col items-center max-w-full w-[293px] text-center text-enroute-blue">
+            <img
+              loading="lazy"
+              src="/assets/images/icon/green-check.svg"
+              class="object-contain aspect-square w-[46px]"
+            />
+            <h3 class="mt-1.5 text-3xl font-lato">Merci !</h3>
+            <p class="self-stretch mt-2.5">
+              Nous vous contacterons dans les plus brefs délais pour convenir d’un rendez-vous, parmi les créneaux horaires proposés
+            </p>
+            <a
+              href="/fr/"
+              class="mt-5 font-semibold underline decoration-auto decoration-solid underline-offset-auto"
+            >
+            Revenir à la page d’accueil
+            </a>
+          </div>
+        
+        
+        
+        
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+<script>
+  let currentStep = 1;
+  const totalStepsData = [{"title":"Vous êtes ?","step_number":1,"collection":[{"img":"icon-aom.svg","txt":"Autorité Organisatrice de Mobilités","value":"aom","radio":true},{"img":"icon-operator.svg","txt":"Opérateur de Transport Public","value":"operator","radio":true},{"img":"icon-pan.svg","txt":"Point d'Accès National","value":"pan","radio":true},{"txt":"Autre","value":"other","radio":true}]},{"title":"Quelles sont vos problématiques ?","step_number":2,"collection":[{"aom":[{"txt":"Faciliter la gouvernance de vos données","value":"aom_acilitate_the_governance_of_your_data"},{"txt":"Responsabiliser les producteurs de données","value":"aom_empower_data_producers"},{"txt":"Agréger les données de votre territoire","value":"aom_aggregate_data_from_your_territory"},{"txt":"Faites vivre vos données dans la durée","value":"aom_make_your_data_live_over_time"},{"txt":"Publiez vos données en Open Data","value":"aom_publish_your_data_in_open_data"},{"txt":"Diffuser vos données vers des systèmes tiers","value":"aom_stream_your_data_to_third-party_systems"}]},{"operator":[{"txt":"Automatiser la gestion de vos données","value":"operator_automate_data_management"},{"txt":"Diffuser vos données pour l'info voyageurs","value":"operator_stream_data_for_passenger_information"},{"txt":"Agréger les données de votre réseau","value":"operator_aggregate_the_data_of_your_transport_network"},{"txt":"Consulter et manipuler vos données","value":"operator_visualize_and_act_on_your_data"},{"txt":"Gérer les perturbations","value":"operator_manage_disruptions_information"},{"txt":"Monitorer vos systèmes de données","value":"operator_monitor_your_data_systems"}]},{"pan":[{"txt":"Faciliter l’ouverture des données","value":"pan_make_data_sharing_easy"},{"txt":"Offrir des outils à l’écosystème","value":"pan_give_access_to_data_management_tools"},{"txt":"Valider les données","value":"pan_validate_data"},{"txt":"Convertir les données","value":"pan_convert_data"},{"txt":"Gérer un portail open data","value":"pan_manage_an_open_data_portal"}]}]},{"title":"Quelles sont vos coordonnées ?","step_number":3,"collection":[{"email":"Adresse e-mail","country":"Pays","country_list":[{"country_name":"France"},{"country_name":"Espagne"}],"organisation":"Organisation (facultatif)","organisation_placeholder":"Mon Entreprise","appointment":"Rendez-vous (facultatif)","appointment_placeholder":"Indiquez 1 ou 2 créneaux de 30 minutes.","txt":"Quelque chose à ajouter ? (facultatif)","txt_placeholder":"Parlez-nous de vos besoins en gestion de données de mobilité et posez-nous vos questions pour qu’on prépare au mieux notre rendez-vous."}]},{"step_number":4,"collection":[{"content":"Nous vous contacterons dans les plus brefs délais pour convenir d’un rendez-vous, parmi les créneaux horaires proposés","title_end":"Merci !","link":"Revenir à la page d’accueil"}]}];
+  const totalSteps = totalStepsData.length;
+
+  // État du formulaire
+  const formState = {};
+
+  // Fonction pour passer à l'étape suivante
+  function nextStep() {
+    // Cacher l'étape actuelle
+    const currentSection = document.getElementById(`step-${currentStep}`);
+    currentSection.classList.add("hidden");
+
+    // Incrémenter l'étape
+    currentStep++;
+
+    // Afficher la prochaine étape
+    if (currentStep <= totalSteps) {
+      const nextSection = document.getElementById(`step-${currentStep}`);
+      nextSection.classList.remove("hidden");
+      updateBreadcrumb();
+    }
+
+    if (currentStep == 4) {
+      const breadcrumbNav = document.querySelector(".breadcrumb-nav");
+      breadcrumbNav.classList.add("hidden");
+    }
+  }
+
+  // Mettre à jour l'état du breadcrumb
+  function updateBreadcrumb() {
+    const breadcrumbItems = document.querySelectorAll(".breadcrumb-item");
+    breadcrumbItems.forEach((item, index) => {
+      // Appliquer l'opacité en fonction de l'étape
+      if (index < currentStep) {
+          item.classList.add('opacity-100');
+          item.classList.remove('opacity-50');
+        } else {
+          item.classList.add('opacity-50');
+          item.classList.remove('opacity-100');
+        }
+    });
+  }
+
+  // Attacher les événements nécessaires aux boutons radio du step 1
+  document.querySelectorAll(".next-step-radio").forEach(radio => {
+    radio.addEventListener("change", () => {
+        const selectedValue = radio.value;
+        // Logique spécifique pour le choix de l'étape
+        if (selectedValue === "aom") {
+            document.getElementById("aom_usecase").classList.remove("hidden");
+            nextStep();
+        } else if (selectedValue === "operator") {
+            document.getElementById("operator_usecase").classList.remove("hidden");
+            nextStep();
+        } else if (selectedValue === "pan") {
+            document.getElementById("pan_usecase").classList.remove("hidden");
+            nextStep();
+        } else if (selectedValue === "other") {
+          // Passer directement à l'étape 4
+          currentStep = 3;
+          const currentSection = document.getElementById(`step-${currentStep - 2}`);
+          currentSection.classList.add("hidden");
+          const nextSection = document.getElementById(`step-${currentStep}`);
+          nextSection.classList.remove("hidden");
+          updateBreadcrumb();
+      }
+    });
+  });
+</script>
+
+
+<script>
+  var form = document.getElementById("stepsForm");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        form.reset()
+        nextStep()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
+
+  </div>
+</section> <footer class="flex overflow-hidden flex-col justify-center items-center px-16 py-14 bg-enroute-blue max-md:px-5">
+    <section class="container">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 max-md:flex-col">
+        <section class="flex flex-col max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col items-start w-full text-sm text-white max-md:mt-10">
+            <img
+              loading="lazy"
+              src="/assets/images/logo/enroute-2020-blanc.svg"
+              alt="enRoute company logo"
+              class="object-contain aspect-[2.1] w-[100px]"
+            />
+            <h2 class="self-stretch text-lg mt-3 font-bold leading-6">
+                Les transports publics et les mobilités partagées répondent aux enjeux sociaux et environnementaux auxquels nous sommes confrontés.
+            </h2>
+            <p class="mt-3 leading-6 text-lg max-md:mr-1">
+                Chez enRoute, notre but est de faire de ces modes de transport le socle des mobilités urbaines, inter-urbaines et rurales, en permettant à nos clients de prendre le contrôle de leurs données.
+            </p>
+            <h3 class="mt-6 text-xl font-bold">Notre actualité</h3>
+            <a href="https://fr.linkedin.com/company/enroutemobi" target="_blank" class="my-3 flex items-center text-enroute-chouette-green hover:text-gray-100 text-lg font-medium duration-700">
+                <img class="block h-5 mr-2" src="/assets/images/linkedin.svg" alt="linkedin" />
+                <p>linkedin.com/enRoute</p>
+                <svg class="h-6 w-6 text-enroute-chouette-green ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="https://twitter.com/enRoute_mobi" target="_blank" class="flex items-center text-enroute-chouette-green hover:text-gray-100 text-lg font-medium duration-700">
+                    <img class="block h-5 mr-2" src="/assets/images/twitter.svg" alt="twitter" />
+                    <p>@enRoute_mobi</p>
+                    <svg class="h-6 w-6 text-enroute-chouette-green ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+            </a>
+          </article>
+        </section>
+        <section class="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow items-start text-white max-md:mt-10">
+            <div class="w-full max-w-[286px]">
+                <a href="https://chouette.enroute.mobi/" target="_blank" class="flex justify-center y-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 duration-700">
+                    <img class="p-3 h-20 w-52" src="/assets/images/logo/logo-chouette-2020-saas.svg" alt="logo" />
+                </a>
+                <a href="https://ara.enroute.mobi/" target="_blank" class="flex justify-center mt-4 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 duration-700">
+                    <img class="p-3 h-20 w-52" src="/assets/images/logo/logo-ara-2020-saas.svg" alt="logo" />
+                </a>
+                <div class="p-3 h-28 mt-8 rounded-full bg-white bg-opacity-70 flex flex-col md:flex-row md:h-20 flex-wrap md:flex-nowrap justify-around items-center hover:bg-opacity-90 duration-700">
+                    <a class="mr-0 sm:mr-6" href="https://enroute.atlassian.net/wiki/spaces/PUBLIC/overview" target="_blank">
+                        <img class="w-24 block" src="/assets/images/logo/confluence-blue.svg" alt="logo" />
+                    </a>
+                    <a href="https://bitbucket.org/enroute-mobi/" target="_blank">
+                        <img class="w-24 block" src="/assets/images/tools/bitbucket.svg" alt="logo" />
+                    </a>
+                </div>
+            </div>
+            <h3 class="mt-9 text-xl font-bold">Nous contacter</h3>
+            <address class="mt-5 text-lg leading-6 not-italic">
+              enRoute
+              <br />
+              Paris
+              <br />
+              <a href="tel:+33188337484" class="hover:text-cyan-500 duration-700">+33 1 88 33 74 84</a>
+            </address>
+          </article>
+        </section>
+        <section class="flex flex-col max-md:ml-0 max-md:w-full">
+          <nav class="flex flex-col grow items-start text-base text-cyan-500 max-md:mt-10">
+            <h3 class="font-bold text-xl text-white mb-2">Vous êtes ?</h3>
+            <ul class="list-none p-0">
+                
+                    <li class="mb-2"><a href="/fr/operator" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Opérateur de Transport Public</a></li>
+                
+                    <li class="mb-2"><a href="/fr/pta" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Autorité Organisatrice de Mobilités</a></li>
+                
+                    <li class="mb-2"><a href="/fr/nap" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Point d’Accès National</a></li>
+                
+            </ul>
+            <h3 class="mt-10 mb-2 font-bold text-xl text-white">Nos Solutions</h3>
+            <ul class="list-none p-0">
+              <li><a href="/fr/chouette" class="text-lg hover:text-gray-100 duration-700">Chouette SaaS</a></li>
+              <li class="mt-2"><a href="/fr/ara" class="text-lg hover:text-gray-100 duration-700">Ara SaaS</a></li>
+            </ul>
+            <ul class="list-none p-0 mt-10">
+                
+                    <li class="mb-2"><a href="/fr/company" class="leading-none text-lg hover:text-gray-100 duration-700">Equipe</a></li>
+                
+                    <li class="mb-2"><a href="/fr/legals" class="leading-none text-lg hover:text-gray-100 duration-700">Mentions légales</a></li>
+                
+                    <li class="mb-2"><a href="/fr/contact" class="leading-none text-lg hover:text-gray-100 duration-700">Contact</a></li>
+                
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

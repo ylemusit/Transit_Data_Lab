@@ -1,0 +1,182 @@
+[
+  {
+    "id": "MKT-EVD-001",
+    "source_key": "tuvisa_notice",
+    "description": "TUVISA adjudica generación/despliegue/validación multiformato a Datik por 31.866,25 EUR sin IVA."
+  },
+  {
+    "id": "MKT-EVD-002",
+    "source_key": "tuvisa_ppt",
+    "description": "Actualización semanal, coherencia estático/RT, vigilancia, informes, soporte y SLA."
+  },
+  {
+    "id": "MKT-EVD-003",
+    "source_key": "tuvisa_pcap",
+    "description": "Criterios 75 precio y 25 técnicos; condiciones administrativas."
+  },
+  {
+    "id": "MKT-EVD-004",
+    "source_key": "tuvisa_propuesta",
+    "description": "Oferta Datik, 22 puntos técnicos, cero precio; total de cuatro años."
+  },
+  {
+    "id": "MKT-EVD-005",
+    "source_key": "tuvisa_contract",
+    "description": "Importe total, prorratas, cuatro años desde formalización y hitos 2022."
+  },
+  {
+    "id": "MKT-EVD-006",
+    "source_key": "attg_notice",
+    "description": "ATTG E3/2019/01 adjudica mantenimiento/generación GTFS a Ingartek por 60.000 EUR."
+  },
+  {
+    "id": "MKT-EVD-007",
+    "source_key": "attg_ppt",
+    "description": "Cambios en 17 operadores, mantenimiento y coherencia; hoja de ruta europea."
+  },
+  {
+    "id": "MKT-EVD-008",
+    "source_key": "ctm_document",
+    "description": "CTM OB202317 evalúa plataforma BI/RT, adquisición programable GTFS y trazabilidad."
+  },
+  {
+    "id": "MKT-EVD-009",
+    "source_key": "puglia_purchase",
+    "description": "RAP evolución NeTEx nivel 3, estimación 149.710 EUR sin IVA, 12 meses."
+  },
+  {
+    "id": "MKT-EVD-010",
+    "source_key": "wiltshire_award",
+    "description": "Modernización RTPI adjudicada r2p; aviso publica rango de ofertas."
+  },
+  {
+    "id": "MKT-EVD-011",
+    "source_key": "ley9_consolidated",
+    "description": "Deberes de provisión/actualización/corrección, digitalización y acceso NAP."
+  },
+  {
+    "id": "MKT-EVD-012",
+    "source_key": "boe_original",
+    "description": "Texto oficial original de Ley 9/2025, contrastado con consolidado en apartados de datos."
+  },
+  {
+    "id": "MKT-EVD-013",
+    "source_key": "eu_2024_490",
+    "description": "Reforma 2017/1926: NAP, formatos, dinámicos, calidad, actualización y justificantes."
+  },
+  {
+    "id": "MKT-EVD-014",
+    "source_key": "uk_regulation",
+    "description": "SI 2020/749 y guía DfT regulan publicación de datos de bus en Inglaterra."
+  },
+  {
+    "id": "MKT-EVD-015",
+    "source_key": "nap_catalog",
+    "description": "Catálogo NAP España incluye bus, ferroviario y marítimo."
+  },
+  {
+    "id": "MKT-EVD-016",
+    "source_key": "moveuskadi",
+    "description": "Índices oficiales de datos GTFS, RT, SIRI y NeTEx de Euskadi."
+  },
+  {
+    "id": "MKT-EVD-017",
+    "source_key": "france_stats",
+    "description": "PAN publica indicadores de validez/frescura y calidad de GTFS/NeTEx."
+  },
+  {
+    "id": "MKT-EVD-018",
+    "source_key": "france_sncf",
+    "description": "SNCF publica GTFS/NeTEx/RT/SIRI Lite; hallazgos de validación visibles."
+  },
+  {
+    "id": "MKT-EVD-019",
+    "source_key": "france_news",
+    "description": "PAN integra MobilityData y reportes NeTEx XSD/perfiles."
+  },
+  {
+    "id": "MKT-EVD-020",
+    "source_key": "mobilitydata_readme",
+    "description": "Validador GTFS Schedule Apache-2.0, interfaces y reportes HTML/JSON."
+  },
+  {
+    "id": "MKT-EVD-021",
+    "source_key": "mobilitydata_rules",
+    "description": "Catálogo de notices por severidad, reglas de referencia/buenas prácticas."
+  },
+  {
+    "id": "MKT-EVD-022",
+    "source_key": "mobilitydata_web",
+    "description": "Interfaz de validación gratuita de ZIP/URL y política de almacenamiento publicada."
+  },
+  {
+    "id": "MKT-EVD-023",
+    "source_key": "rt_validator",
+    "description": "Proyecto separado de validación GTFS Realtime."
+  },
+  {
+    "id": "MKT-EVD-024",
+    "source_key": "otp_formats",
+    "description": "OpenTripPlanner documenta soporte y límites NeTEx/SIRI."
+  },
+  {
+    "id": "MKT-EVD-025",
+    "source_key": "enroute_chouette",
+    "description": "Chouette SaaS: colección, edición, controles, historial y publicación GTFS/NeTEx."
+  },
+  {
+    "id": "MKT-EVD-026",
+    "source_key": "skedgo",
+    "description": "Consumo de GTFS/GBFS para MaaS, APIs/SDKs e integración."
+  },
+  {
+    "id": "MKT-EVD-027",
+    "source_key": "nommon",
+    "description": "Oferta de software/servicios de analítica y modelización de movilidad."
+  },
+  {
+    "id": "MKT-EVD-028",
+    "source_key": "trillium_terms",
+    "description": "Términos de creación/validación y mantenimiento GTFS con suscripción anual."
+  },
+  {
+    "id": "MKT-EVD-029",
+    "source_key": "ito_quality",
+    "description": "Plataforma de calidad, revisión humana y corrección downstream anunciadas."
+  },
+  {
+    "id": "MKT-EVD-030",
+    "source_key": "ted_nantes_award",
+    "description": "Okina adjudicataria de plataforma multiformato Nantes: 795.310 EUR con opciones."
+  },
+  {
+    "id": "MKT-EVD-031",
+    "source_key": "ted_rome_award",
+    "description": "BIGO Solutions, software GTFS y mantenimiento, 188.873,75 EUR sin IVA."
+  },
+  {
+    "id": "MKT-EVD-032",
+    "source_key": "placsp_43_22",
+    "description": "Alicante exige generación GTFS/RT/NeTEx/SIRI dentro de concesión bus."
+  },
+  {
+    "id": "MKT-EVD-033",
+    "source_key": "siri_france",
+    "description": "Perfil francés SIRI define convenciones e interfaces técnicas."
+  },
+  {
+    "id": "MKT-EVD-034",
+    "source_key": "netex_france",
+    "description": "Perfil francés NeTEx v2.4, elementos comunes e intercambio."
+  },
+  {
+    "id": "MKT-EVD-035",
+    "source_key": "entur_siri",
+    "description": "Perfil noruego trata corrección, completitud y frescura de datos SIRI."
+  },
+  {
+    "id": "MKT-EVD-036",
+    "source_key": "bods_notice",
+    "description": "DfT anuncia intención de contratación de soporte BODS."
+  }
+]

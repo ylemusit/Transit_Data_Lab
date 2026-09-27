@@ -1,0 +1,15 @@
+rule_id,severity,category,file,field,message_key,occurrence_count,distinct_detail_rows,evidence_source
+GTFS_BP_STOP_WITHOUT_STOP_TIMES,NOTICE,BEST_PRACTICE,stops.txt,stop_id,validation.best_practice_stop_without_stop_times,1,1,informe-validacion.html:issues
+GTFS_BP_TRIP_WITHOUT_SHAPE,NOTICE,BEST_PRACTICE,trips.txt,shape_id,validation.best_practice_trip_without_shape,22,22,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 10,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 11,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 12,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 13,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 14,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 15,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 5,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 6,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 7,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 8,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_EXTRA_HEADER,NOTICE,SCHEMA,stop_times.txt,Unnamed: 9,validation.extra_header,1,1,informe-validacion.html:issues
+GTFS_SHAPE_GEOMETRY_INVALID,ERROR,GEOMETRY,shapes.txt,shape_id,validation.shape_geometry_invalid,22,22,informe-validacion.html:issues

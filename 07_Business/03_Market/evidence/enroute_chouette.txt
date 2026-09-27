@@ -1,0 +1,1187 @@
+
+
+  
+
+    
+
+    
+
+        Chouette SaaS : gestion de vos données de mobilités théoriques ! - enRoute
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+            
+
+              
+
+                
+
+            
+
+              Vous êtes
+
+            
+
+              
+
+                  
+
+                      Autorité Organisatrice de Mobilités
+
+                  
+
+                  
+
+                  
+
+                      Opérateur de Transport Public
+
+                  
+
+                  
+
+                  
+
+                      Point d'Accès National
+
+                  
+
+              
+
+          
+
+            
+              Demander une démo
+
+                
+
+              
+
+            Equipe
+            Blog
+
+              
+
+              
+
+          
+
+            
+
+              
+
+              
+
+          
+
+        
+
+      
+
+    
+
+      
+
+        
+
+            
+
+            
+
+          
+
+              Autorité Organisatrice de Mobilités
+
+          
+
+              Opérateur de Transport Public
+
+          
+
+              Point d'Accès National
+
+          
+
+            Equipe
+
+          
+
+            Blog
+
+          
+
+            Demander une démo
+
+        
+
+            
+
+            
+
+        
+
+          
+
+            
+
+          
+
+        
+
+    
+
+ 
+
+  
+
+  
+
+  
+
+  
+
+      
+
+        
+
+    
+
+  
+
+  
+
+      
+
+        
+
+    
+
+  
+
+  
+
+      
+
+        
+
+    
+
+  
+
+  
+
+    
+
+    
+
+    
+
+      
+
+      
+
+      
+Chouette SaaS
+
+Pour la gestion de vos données théoriques 
+ Une interface simple et intuitive, un accès rapide, une gestion automatisée et multi formats en collecte et en publication (GTFS, NeTEx avec plusieurs profils, Neptune…).
+
+      
+
+        Demander une démo
+
+      
+
+  
+
+    
+
+      
+
+      
+
+  
+
+  
+
+    
+
+      Gestion des données théoriques
+
+    
+
+      Cas d’usage régional
+
+    
+
+      
+
+        
+
+          
+
+            1
+
+          
+
+            Automatisez
+ la collecte des données
+ & facilitez la saisie
+
+          
+Collectez les données théoriques depuis les outils de planification de trafic et de services (Hastus, Heurès, Pégase…) ou depuis l’open data. Vous pouvez également saisir de l’offre de mobilités directement dans l’interface de Chouette SaaS.
+
+          
+
+            
+
+Multi-formats en collecte : GTFS, NeTEx (plusieurs profils), Neptune, saisie…
+
+          
+
+          
+
+            
+
+              
+
+Réseau
+ partenaire
+
+            
+
+              
+
+Réseau
+ publieur
+ open-data
+
+            
+
+              
+
+Petit réseau
+ saisie direct
+
+            
+
+              
+
+Saisie pour un
+ évènement,
+ une navette…
+
+            
+
+          
+
+      
+
+      
+
+        
+
+          
+
+            2
+
+          
+
+            Contrôlez
+& agrégez
+ les données
+
+          
+Paramétrez les jeux de contrôle de la donnée selon vos règles métier. Vous créez un référentiel de données théoriques unifié pour votre territoire.
+
+          
+
+            
+
+Vous pouvez mettre à jour le référentiel unifié avec la fréquence que vous souhaitez (mois, hebdo, quotidien...).
+
+          
+
+          
+
+        
+
+      
+
+        
+
+          
+
+            3
+
+          
+
+            Gérez la publication
+ de vos données
+
+          
+Vous publiez vos données de manière simple et automatisée (API) vers vos systèmes ou ceux de vos partenaires.
+
+            
+
+          
+
+            
+
+Multi-formats en publication : GTFS, NeTEx (plusieurs profils)
+
+          
+
+          
+
+            
+
+              
+
+Calculateur
+ d’itinéraire
+
+            
+
+              
+
+Open
+ data
+
+            
+
+              
+
+Réutilisateurs
+ & partenaires
+
+            
+
+          
+
+      
+
+    
+
+  
+
+  
+
+    Les points forts de Chouette SaaS
+
+  
+
+  
+
+      
+
+        
+
+          
+
+        
+
+          
+
+            Un seul outil
+
+          
+
+            pour la gestion de vos
+ données théoriques
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          Contrôles
+ paramétrables
+
+      
+
+        
+
+          Versionnement et historisation
+ des données théoriques
+
+      
+
+        
+
+          Design IHM avec
+ une approche métier
+
+      
+
+  
+
+      
+
+        
+
+          
+
+        
+
+          
+
+            Une IHM simple
+
+          
+
+            et intuitive
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          
+
+      
+
+        
+
+          
+
+      
+
+        
+
+          Automatisation des processus de collecte des données
+
+      
+
+  
+
+      
+
+        
+
+          
+
+        
+
+          
+
+            Un accès rapide
+
+          
+
+            et opéré en mode SaaS
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          Chaine complète
+ de gestion des données
+ théoriques
+
+      
+
+        
+
+          
+
+      
+
+        
+
+          Workflow et espace
+ de travail pour chaque
+ contributeur
+
+      
+
+  
+
+      
+
+        
+
+          
+
+        
+
+          
+
+            Multi-formats en collecte en publication
+
+          
+
+            GTFS, NeTEx, Neptune
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+      
+
+        
+
+        
+
+      
+
+        
+
+      
+
+        
+
+          Automatisation
+ des publications
+
+      
+
+        
+
+          Gestion des
+ calendriers
+
+      
+
+        
+
+          Consultation des données
+ brutes avec une API GraphQL
+
+      
+
+  
+
+  
+
+  
+
+    Une interface utilisateur
+ riche et fonctionnelle
+
+  
+
+    
+
+      
+
+        Chouette SaaS permet d’automatiser la gestion des référentiels de données théoriques à travers les fonctionnalités suivantes :
+
+      
+
+          
+Assurer indépendamment la collecte des données, par des fichiers GTFS, Neptune ou NeTEx;
+
+          
+Agréger les différentes offres de chaque producteur pour créer une offre globale. Historiser l’ensemble des offres et assurer un retour arrière en un clic;
+
+          
+Gérer l’ensemble des données théoriques : arrêts et leurs hiérarchies, lignes, et leurs transporteurs, courses et leurs calendriers de circulation, mais aussi missions, correspondances, tracés, temps de parcours, interdiction de trafic locale, etc;
+
+          
+Impliquer les partenaires producteurs de données en leur donnant accès à un espace de travail permettant de travailler en équipe et en toute sécurité sur l’offre en cours de préparation;
+
+          
+Visualiser, saisir ou modifier l’ensemble de l’offre;
+
+          
+Intégrer les nouvelles données aux données existante sans contrainte de période;
+
+          
+Définir les règles qui doivent être respectées par les données et assurer qu’elles sont respectées à chaque étape pour chaque producteur;
+
+          
+Publier automatiquement tout ou partie des données en GTFS ou NeTEx, quelque soit le format d’origine et mettre à disposition les données publiées sur des APIs de publication privée ou publique;
+
+          
+Transmettre automatiquement les données publiées vers d’autres outils et intégrer les données grâce à l’API Chouette GraphQL;
+
+          
+Administrer l’ensemble des fonctionnalités en quelques clics depuis l’interface utilisateur.
+
+      
+
+    
+
+      
+
+      Demandez une démo
+
+    
+
+  
+
+  
+
+    Une offre complète de service
+
+  
+
+    
+
+      Un socle SaaS
+
+    
+
+      
+
+          
+
+            Mise à disposition
+ des technologies
+
+        
+
+        
+
+      
+
+          
+
+            Gestion de
+ l’infrastructure
+
+        
+
+        
+
+      
+
+          
+
+            Niveau de services
+ contractuel
+
+        
+
+        
+
+    
+
+  
+
+  
+
+    
+
+      Un budget simple et prévisible
+
+    
+
+      Le montant de l’abonnement mensuel dépend de 2
+ paramètres parfaitement transparents :
+
+    
+
+      
+le nombre de courses dans l’offre agrégée
+
+      
+la fréquence de mise à jour du référentiel de données
+ théoriques (quotidien, hebdomadaire, mensuel, trimestriel...)
+
+    
+
+  
+
+    
+      Estimez votre tarif
+
+  
+
+  
+
+  
+
+    Des services d’accompagnement dédiés
+ pour les clients SaaS qui le souhaitent
+
+  
+
+  
+
+    
+
+      
+
+        
+
+          
+
+            
+
+        
+
+          
+
+            
+
+            
+
+          
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+          
+
+            Accompagnement
+ mise en œuvre
+
+          
+
+          
+
+          
+
+            
+
+Analyse des besoins
+
+              
+Identification des cas d'usages ciblés
+
+              
+Paramétrages
+
+              
+Assistance intégration SI et tests
+
+              
+Formation
+
+          
+
+          
+
+          
+
+          
+
+        
+
+        
+
+      
+
+    
+
+      
+
+        
+
+          
+
+            
+
+        
+
+          
+
+            
+
+            
+
+          
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+          
+
+            Accompagnement
+ exploitation
+
+          
+
+          
+
+          
+
+            
+
+Petites évolutions
+
+              
+Points réguliers sur l’intégration,les performances et paramétrages
+
+              
+Présentation de nouvelles fonctionnalités
+
+              
+Support renforcé
+
+          
+
+          
+
+          
+
+          
+
+        
+
+        
+
+      
+
+    
+
+      
+
+        
+
+          
+
+            
+
+        
+
+          
+
+            
+
+            
+
+          
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+          
+
+            Evolutions
+ fonctionnelles
+
+          
+
+          
+
+          
+
+            
+
+Identification des évolutions
+
+              
+Définition des livrables et du calendrier de réalisation
+
+              
+Développements logiciels
+
+          
+
+          
+
+          
+
+          
+
+        
+
+        
+
+      
+
+    
+
+  
+
+  
+
+  
+
+    Deux solutions parfaitement intégrées
+ pour optimiser vos données temps réel
+
+  
+
+    
+
+      
+
+          
+
+            
+
+              Gestion des données
+              théoriques
+
+          
+
+        
+
+          Chouette SaaS
+
+      
+
+  
+
+    
+
+      
+
+    
+
+      Synchronisation des
+ référentiels de données
+ théoriques et temps-réel
+
+  
+
+    
+
+      
+
+          
+
+            
+
+              Gestion des données
+
+              temps réel
+
+          
+
+        
+
+          Ara SaaS
+
+      
+
+  
+
+ 
+
+      
+
+        
+
+            
+
+                Les transports publics et les mobilités partagées répondent aux enjeux sociaux et environnementaux auxquels nous sommes confrontés.
+
+            
+
+                Chez enRoute, notre but est de faire de ces modes de transport le socle des mobilités urbaines, inter-urbaines et rurales, en permettant à nos clients de prendre le contrôle de leurs données.
+
+            
+Notre actualité
+
+                
+
+linkedin.com/enRoute
+
+                    
+
+            
+
+                    
+
+@enRoute_mobi
+
+                        
+
+            
+
+        
+
+          
+
+                
+
+                
+
+                    
+
+                
+
+                    
+
+                    
+
+                        
+
+                
+
+            
+Nous contacter
+
+              enRoute
+
+              Paris
+
+              +33 1 88 33 74 84
+
+          
+
+        
+
+            
+Vous êtes ?
+
+                
+
+Opérateur de Transport Public
+
+                    
+Autorité Organisatrice de Mobilités
+
+                    
+Point d’Accès National
+
+            
+
+Nos Solutions
+
+              
+Chouette SaaS
+
+Ara SaaS
+
+            
+
+                    
+Equipe
+
+                    
+Mentions légales
+
+                    
+Contact
+
+            
+
+        
+
+    
+

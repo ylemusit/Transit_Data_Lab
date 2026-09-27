@@ -1,0 +1,337 @@
+[
+  {
+    "benchmark_id": "002",
+    "operator": "Ancebus",
+    "product_version": "0.2.1",
+    "run_id": "e403acfe-4c56-411f-be4f-750c2b6c4e89:structure",
+    "filter": {
+      "severities": null,
+      "categories": null
+    },
+    "full_unfiltered_evidence": true,
+    "files": [
+      {
+        "name": "data.duckdb",
+        "size_bytes": 20721664,
+        "sha256": "9aae58cee286fe90d812ac8c10b47614f486908a291a8a3f9a2a9ebb615c610b"
+      },
+      {
+        "name": "data.duckdb.editor-pre-migration.bak",
+        "size_bytes": 2895872,
+        "sha256": "d50541bb395407c2fd262826d05390652c898c4f876ee8fe8ab8f49335eba6d3"
+      },
+      {
+        "name": "gtfs-export-route-VACL018-VACL060-service-HIJUELAS-VACL018_WEEKDAY-VACL060_SERVICE-json-spreadsheet-safe.csv",
+        "size_bytes": 194,
+        "sha256": "689d7817e647dedeb803a00219eac5afe553834f887387a70ee54037969ef380"
+      },
+      {
+        "name": "gtfs-export-route-VACL018-VACL060-service-HIJUELAS-VACL018_WEEKDAY-VACL060_SERVICE-json-spreadsheet-safe.csv.manifest.json",
+        "size_bytes": 382,
+        "sha256": "ddc19eb56bb002db1db837cdce61d017b477367610a42d8c091aa849375580e2"
+      },
+      {
+        "name": "gtfs-export-route-VACL018-VACL060-service-HIJUELAS-VACL018_WEEKDAY-VACL060_SERVICE-json.json",
+        "size_bytes": 20167,
+        "sha256": "48299cc478d7082c61f120eb78509be879c2493d49d10e8165d1d3812e427ef1"
+      },
+      {
+        "name": "gtfs-export-route-VACL018-VACL060-service-HIJUELAS-VACL018_WEEKDAY-VACL060_SERVICE-json.json.manifest.json",
+        "size_bytes": 234,
+        "sha256": "d5c36dfff2880bfdc145fbba0836514f4ecd27ae8b9041d8835717134b6ce121"
+      },
+      {
+        "name": "informe-validacion.html",
+        "size_bytes": 11780,
+        "sha256": "e4fcf77f40d4b2a726354692f26f9b966f97b710e3afe3c3fbdd45a8d57c2e27"
+      },
+      {
+        "name": "informe-validacion.html.manifest.json",
+        "size_bytes": 165,
+        "sha256": "3937b8dac1ca57cc2594f9fc5fe1c9e5592d1d4d298238742fb5e1222adc3a78"
+      },
+      {
+        "name": "project.json",
+        "size_bytes": 380,
+        "sha256": "05fbbf0526fe02b157fbfe0627ad30f3694f93c7a416c4d78f342aeca9e6d5eb"
+      }
+    ],
+    "source_integrity": {
+      "original_zip": "FAMILY_A_SMALL_BASIC/002_ancebus/02_sources/gtfs_schedule/original/20250523_100004_Ancebus.zip",
+      "original_zip_sha256_current": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "original_zip_sha256_recorded": "42BF756A88336DACB085EC49DBDD0F019FD37AFE7C7E5C24C1D8D2C1DF0DE27D",
+      "original_zip_hash_unchanged": true,
+      "extracted_file_count": 6,
+      "working_copy_directories": [
+        "FAMILY_A_SMALL_BASIC/002_ancebus/05_working_copy"
+      ],
+      "working_copy_file_paths": []
+    }
+  },
+  {
+    "benchmark_id": "005",
+    "operator": "Viagón",
+    "product_version": "0.2.1",
+    "run_id": "fcae88c4-3ff5-4361-9289-5dec3896efe8:structure",
+    "filter": {
+      "severities": null,
+      "categories": null
+    },
+    "full_unfiltered_evidence": true,
+    "files": [
+      {
+        "name": "Captura de pantalla 2026-09-22 200259.png",
+        "size_bytes": 78772,
+        "sha256": "62d63721bf6f59e4311d153838ffb6325f34a43928db03e3490cfe7e10d626bd"
+      },
+      {
+        "name": "data.duckdb",
+        "size_bytes": 20721664,
+        "sha256": "fb95b29e73d959b4cc049678db0da7097b82e79e9f94a062839f122981d1d3a2"
+      },
+      {
+        "name": "data.duckdb.editor-pre-migration.bak",
+        "size_bytes": 2895872,
+        "sha256": "d578288cc8fe3d240635fb10bb3d1289b2d8eb921d5d5fb8d39702420f0efdeb"
+      },
+      {
+        "name": "gtfs-export-route-AECL118-VACL070_1-VACL070_2-VACL070_3-VACL072_1-VACL072_2-VACL072_3-VACL072_4-VACL072_5-VACL072_6-VACL072_7-6a65269b.json",
+        "size_bytes": 80060,
+        "sha256": "9ebf40383fa86033e7b5eb3b01ad33864bd255ddc5b5ccbb79384c74521883d3"
+      },
+      {
+        "name": "gtfs-export-route-AECL118-VACL070_1-VACL070_2-VACL070_3-VACL072_1-VACL072_2-VACL072_3-VACL072_4-VACL072_5-VACL072_6-VACL072_7-6a65269b.json.manifest.json",
+        "size_bytes": 281,
+        "sha256": "1d5c1061bf124893f47b5005455e7fcafe99d3698dd7bbaf2935b1c0939ba431"
+      },
+      {
+        "name": "informe-validacion.html",
+        "size_bytes": 51194,
+        "sha256": "d239a8085f425af2b05ea57f3bf9c1fbe61af3b0a95b63fb0dd16d75dabe9177"
+      },
+      {
+        "name": "informe-validacion.html.manifest.json",
+        "size_bytes": 165,
+        "sha256": "291dfda2ade4d1ec0f65e8ea88e130947fbc171d0ee252aa04f879739e85582f"
+      },
+      {
+        "name": "project.json",
+        "size_bytes": 380,
+        "sha256": "f2fa3cd09c32294a13ce65ce0317126f6cbf92e843ca0ec49f4b688597ea7f38"
+      }
+    ],
+    "source_integrity": {
+      "original_zip": "FAMILY_A_SMALL_BASIC/005_viagon/02_sources/gtfs_schedule/original/20250604_080004_Viagon_Autocares.zip",
+      "original_zip_sha256_current": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "original_zip_sha256_recorded": "F35192F9AC9F91E39F10357DAD6CC88EBDFFDEEDFC3BF4053B383D09636DE100",
+      "original_zip_hash_unchanged": true,
+      "extracted_file_count": 6,
+      "working_copy_directories": [
+        "FAMILY_A_SMALL_BASIC/005_viagon/05_working_copy"
+      ],
+      "working_copy_file_paths": []
+    }
+  },
+  {
+    "benchmark_id": "014",
+    "operator": "Gilsanz",
+    "product_version": "0.2.1",
+    "run_id": "32f00f4e-2328-4720-aebf-38acd351ef64:structure",
+    "filter": {
+      "severities": null,
+      "categories": null
+    },
+    "full_unfiltered_evidence": true,
+    "files": [
+      {
+        "name": "Captura de pantalla 2026-09-22 200511.png",
+        "size_bytes": 79196,
+        "sha256": "222b858e9d1b28956eab6e610a6afa938ea2502621c055136ef9b52d5d6f6856"
+      },
+      {
+        "name": "data.duckdb",
+        "size_bytes": 24915968,
+        "sha256": "022bc61efb6e63c2d311d76a145f97f0d0b078c987f8dc5fe24bb975e95d50e3"
+      },
+      {
+        "name": "data.duckdb.editor-pre-migration.bak",
+        "size_bytes": 2895872,
+        "sha256": "00091c981496b623425373981c7529a17d42502f28660c1d45a404246ac9e6d7"
+      },
+      {
+        "name": "gtfs-export-route-009632-009633-009634-009635-009636-009637-009638-009640-009641-009642-009643-009644-009645-009646-009647-009-726d1dfe.json",
+        "size_bytes": 4802682,
+        "sha256": "3883e5cf9e6c407caaf68099d23210d1d97966c6f23db005acefb76d1aba1736"
+      },
+      {
+        "name": "gtfs-export-route-009632-009633-009634-009635-009636-009637-009638-009640-009641-009642-009643-009644-009645-009646-009647-009-726d1dfe.json.manifest.json",
+        "size_bytes": 284,
+        "sha256": "343d0cf838aeafaab0121994001528f68bafde02dac10e2056c31de31671dae0"
+      },
+      {
+        "name": "informe-validacion.html",
+        "size_bytes": 1887,
+        "sha256": "9b6608dd6cf64787a32c75e762be813abd9f72e0cfb7f7ba223dc150e32ab4a9"
+      },
+      {
+        "name": "informe-validacion.html.manifest.json",
+        "size_bytes": 164,
+        "sha256": "5720abe654356a390cf47ad668b3b20e537084bd20673a5998d87a55d92d2f4e"
+      },
+      {
+        "name": "project.json",
+        "size_bytes": 380,
+        "sha256": "d5f7ac0866c5687a7b32804e86dcbcc47161547b5ca6cc50c53518f3a0568fac"
+      }
+    ],
+    "source_integrity": {
+      "original_zip": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/02_sources/gtfs_schedule/original/20260527_110752_Empresa_Gilsanz.zip",
+      "original_zip_sha256_current": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "original_zip_sha256_recorded": "DA9DAA4F60D798FC45B3A71EF81926E447A1EAA6C061CDDF96C34EA3388272F9",
+      "original_zip_hash_unchanged": true,
+      "extracted_file_count": 10,
+      "working_copy_directories": [
+        "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/05_working_copy"
+      ],
+      "working_copy_file_paths": []
+    }
+  },
+  {
+    "benchmark_id": "019",
+    "operator": "Bizkaibus",
+    "product_version": "0.2.1",
+    "run_id": "70cdab72-6664-493e-b459-a1ce4c7abb4e:structure",
+    "filter": {
+      "severities": null,
+      "categories": null
+    },
+    "full_unfiltered_evidence": true,
+    "files": [
+      {
+        "name": "Captura de pantalla 2026-09-22 204236.png",
+        "size_bytes": 80708,
+        "sha256": "502711dd4f4788207aea53c8908dd9e43181fdafbe7e0a7e38b989f8c5667e53"
+      },
+      {
+        "name": "data.duckdb",
+        "size_bytes": 208678912,
+        "sha256": "893978a20237ad853fd354312916beaee746cd37316d296d973f8429f85bd293"
+      },
+      {
+        "name": "data.duckdb.editor-pre-migration.bak",
+        "size_bytes": 2895872,
+        "sha256": "266afd19ab43d56668838cddad47cb6516df31a53180093fc6312f8efd54d0ea"
+      },
+      {
+        "name": "gtfs-export-route-2151-2153-2161-2162-2163-2164-2166-2312-2314-2315-2316-2318-2321-2322-2324-2326-2336-2610-2611-3115-3122-312-0a3f43b9.json",
+        "size_bytes": 69265148,
+        "sha256": "82c9dbaef58d32cdb70c8e60da7f625fa8f334d526e0bfeef7014e147b7aa48e"
+      },
+      {
+        "name": "gtfs-export-route-2151-2153-2161-2162-2163-2164-2166-2312-2314-2315-2316-2318-2321-2322-2324-2326-2336-2610-2611-3115-3122-312-0a3f43b9.json.manifest.json",
+        "size_bytes": 285,
+        "sha256": "639fafc09c37eb824fef3f7cd6907672bcb44e771f2d09ae6d298c4cf0cab360"
+      },
+      {
+        "name": "gtfs-export-route-2151-2153-2161-2162-2163-2164-2166-2312-2314-2315-2316-2318-2321-2322-2324-2326-2336-2610-2611-3115-3122-3129-2d500b52.zip",
+        "size_bytes": 18390746,
+        "sha256": "0e6fa0b777c744fdc8fa8fa3925e90d1e391f92f47fde1d32fea9abbe4c20f2b"
+      },
+      {
+        "name": "gtfs-export-route-2151-2153-2161-2162-2163-2164-2166-2312-2314-2315-2316-2318-2321-2322-2324-2326-2336-2610-2611-3115-3122-3129-2d500b52.zip.manifest.json",
+        "size_bytes": 493,
+        "sha256": "a143749ac468658af8dcb12f79a2b272972af44a5c1198df5539b890c89361ce"
+      },
+      {
+        "name": "informe-validacion.html",
+        "size_bytes": 103218958,
+        "sha256": "49811aa1aaf67ce28c0678ce4f8a9b2578d48ea20f51e853ff9435c435a1cd98"
+      },
+      {
+        "name": "informe-validacion.html.manifest.json",
+        "size_bytes": 169,
+        "sha256": "f33ac84b58661b1b620efda090d634c5a37f55d69d03dbf3f874a486a4215e84"
+      },
+      {
+        "name": "project.json",
+        "size_bytes": 380,
+        "sha256": "4e70652687fb958b9e99f8a53a657031e16c1cea32b1bf9d1b92884a22f4a8a1"
+      }
+    ],
+    "source_integrity": {
+      "original_zip": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/02_sources/gtfs_schedule/original/20260910_060014_Euskadi_Bizkaibus.zip",
+      "original_zip_sha256_current": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "original_zip_sha256_recorded": "E15D963BA3DC774E47B4F9F46DBD954ECE6A720D49A71BFC22A104A12027BD73",
+      "original_zip_hash_unchanged": true,
+      "extracted_file_count": 12,
+      "working_copy_directories": [
+        "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/05_working_copy"
+      ],
+      "working_copy_file_paths": []
+    }
+  },
+  {
+    "benchmark_id": "020",
+    "operator": "Kbus",
+    "product_version": "0.2.1",
+    "run_id": "3c2717db-3bea-475f-979e-917092952dd9:structure",
+    "filter": {
+      "severities": null,
+      "categories": null
+    },
+    "full_unfiltered_evidence": true,
+    "files": [
+      {
+        "name": "Captura de pantalla 2026-09-22 200709.png",
+        "size_bytes": 79293,
+        "sha256": "a13cfbcfeae412f8481597f7d5e131a093be77782f1484fc6394c6a24ce7914d"
+      },
+      {
+        "name": "data.duckdb",
+        "size_bytes": 23343104,
+        "sha256": "a65f87d48bbfaa976f2b2bd5cfd0bf137c5842187ba8584b55e65f4ae1e30075"
+      },
+      {
+        "name": "data.duckdb.editor-pre-migration.bak",
+        "size_bytes": 2895872,
+        "sha256": "2ac5097713ba34b228d89b4959aeb13324cb99ee12e1c00ef549c02cc4a5804b"
+      },
+      {
+        "name": "gtfs-export-route-AH-H-L2-L3-service-1-2-json.json",
+        "size_bytes": 1284917,
+        "sha256": "8de77f94cac49559d070dd06211afc7ce75a63adf69a9aa6de2d19d1a9608048"
+      },
+      {
+        "name": "gtfs-export-route-AH-H-L2-L3-service-1-2-json.json.manifest.json",
+        "size_bytes": 194,
+        "sha256": "42245ad3f7ec9328e260775b11bffe26f41c042f414080f8b065a801b91af848"
+      },
+      {
+        "name": "informe-validacion.html",
+        "size_bytes": 630340,
+        "sha256": "d67c57a206e0d052bdbd78cdd3bde1a1eacd41681f3547bb6341253ef46e7d5f"
+      },
+      {
+        "name": "informe-validacion.html.manifest.json",
+        "size_bytes": 166,
+        "sha256": "22c15f172042235bd792af66b3b15a5298e2edf403fff2a554b0cc1d07a78197"
+      },
+      {
+        "name": "project.json",
+        "size_bytes": 380,
+        "sha256": "e67332bb5e009e937fdb25a70fab26f7a477c96bcc5cd4ebff514829afd9abc4"
+      }
+    ],
+    "source_integrity": {
+      "original_zip": "FAMILY_D_MATURE_BENCHMARK/020_kbus/02_sources/gtfs_schedule/original/20250530_060158_Bus_Barakaldo.zip",
+      "original_zip_sha256_current": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "original_zip_sha256_recorded": "65130FD01470593CD2E234177F3C4CB810154D0B8E13FBEE3AA91F1973072ACE",
+      "original_zip_hash_unchanged": true,
+      "extracted_file_count": 11,
+      "working_copy_directories": [
+        "FAMILY_D_MATURE_BENCHMARK/020_kbus/05_working_copy"
+      ],
+      "working_copy_file_paths": []
+    }
+  }
+]

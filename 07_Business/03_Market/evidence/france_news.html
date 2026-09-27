@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ministère des Transports">
+    <meta name="csrf" content="FTxYBQljHAQBM142DxUJPUAfHAYEMxghdX35JNFRdp4t_z8broIkCblr">
+
+
+
+    <meta name="description" content="Rendre disponible, valoriser et améliorer les données transports">
+    <title>Nouvelles fonctionnalités</title>
+
+    <meta property="og:title" content="Nouvelles fonctionnalités">
+    <meta property="og:image" content="https://transport.data.gouv.fr/images/transport-social-share-65fc4c760aa8fe71c7ae5e5bcd370981.png?vsn=d">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rendre disponible, valoriser et améliorer les données transports">
+    <meta property="og:locale" content="fr">
+
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="Nouvelles fonctionnalités">
+    <meta property="twitter:image" content="https://transport.data.gouv.fr/images/transport-social-share-65fc4c760aa8fe71c7ae5e5bcd370981.png?vsn=d">
+    <meta property="twitter:description" content="Rendre disponible, valoriser et améliorer les données transports">
+
+    <link rel="stylesheet" media="all" href="/css/app-379b618f185b3a36fb75a2558a0c0b35.css?vsn=d">
+    <link rel="alternate" type="application/atom+xml" href="https://transport.data.gouv.fr/atom.xml" title="Resources feed">
+    <link type="text/plain" rel="author" href="https://transport.data.gouv.fr/humans.txt">
+
+      <!-- Polyfill for css grid-->
+      <script type="text/javascript">
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+          document.write('<script src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"><\/script>');
+          document.write('<script src="https://unpkg.com/url-polyfill@1.0.14/url-polyfill.js"><\/script>');
+        }
+      </script>
+      <!-- Matomo -->
+      <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setCookieDomain", "*.transport.data.gouv.fr"]);
+        _paq.push(["setDomains", "*.transport.data.gouv.fr"]);
+        _paq.push(["HeatmapSessionRecording::disable"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+        window._paq = _paq;
+        (function() {
+          var u="//stats.data.gouv.fr/";
+          _paq.push(["setTrackerUrl", u+"matomo.php"]);
+          _paq.push(["setSiteId", "58"]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName("script")[0];
+          g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"matomo.js"; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+    <header class="navbar">
+  <div class="navbar__container">
+    <a href="/" class="navbar__home">
+      <img alt="transport.data.gouv.fr" class="navbar__logo-mariane" src="/images/logo-ministere-transports-2026-03.png">
+      <img alt="transport.data.gouv.fr" class="navbar__logo-black" src="/images/logo-black.svg">
+    </a>
+    <nav>
+      <a href="#menu" class="nav__hamburger" aria-label="Fermer le menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="menu">
+        <a id="close-menu" href="#" aria-label="Fermer le menu">
+          <i class="fas icon--times-circle"></i>&nbsp
+        </a>
+        <ul class="nav__links top-nav-links">
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Données
+              <div class="dropdown-content">
+                <a href="/datasets">Toutes les données</a>
+                <a href="/explore">Carte d&#39;exploration des données</a>
+                <a href="/explore/gtfs-stops">Carte nationale des arrêts GTFS</a>
+                <a href="/reuses">Réutilisations</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="https://doc.transport.data.gouv.fr">Documentation</a>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Outils
+              <div class="dropdown-content">
+                <a href="/validation">Vérifier la qualité d&#39;un fichier ou d&#39;un flux</a>
+                <a href="/tools/gtfs_diff">Comparer deux GTFS</a>
+                <a href="/tools/siri-querier">Générateur de requêtes SIRI</a>
+
+                <a href="https://mtes-mct.github.io/alm-docs/" target="_blank">Accèslibre Mobilités</a>
+                <a href="https://status.transport.data.gouv.fr" target="_blank">État des services</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="/stats">Statistiques</a>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Réglementation
+              <div class="dropdown-content">
+                <a href="https://normes.transport.data.gouv.fr" target="_blank">Normes</a>
+                <a href="https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/declaration-de-conformite" target="_blank">Déclaration de conformité</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              À propos
+              <div class="dropdown-content">
+                <a href="/missions">Nos missions</a>
+                <a href="/nouveautes">Nouvelles fonctionnalités</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="https://blog.transport.data.gouv.fr">Blog</a>
+          </li>
+
+            <li class="nav__item">
+              <a class="navigation__link navigation__link--login" href="/login/explanation?redirect_path=%2Fnouveautes%3Flocale%3Dfr">
+                <i class="icon icon--login" aria-hidden="true"></i>
+                <span>Se connecter</span>
+              </a>
+            </li>
+
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+
+                <img src="/images/icons/fr-7be6995ec50bd9a89ae2d963e23cd4ea.png?vsn=d" alt="Français" height="18px">
+
+              <div class="dropdown-content languages">
+                <a href="/nouveautes?locale=fr">Français</a>
+                <a href="/nouveautes?locale=en">English</a>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main class="layout-main">
+
+      <section class="single-page section section-grey">
+  <div class="container documentation">
+    <nav class="side-pane" role="navigation">
+      <li class="side-pane__title">
+        <h3>
+Nouveautés du PAN</h3>
+      </li>
+      <ul class="side-pane__menu">
+
+
+          <li class="side-pane__dropdown unfolded">
+            <a>Février 2026</a>
+            <ul class="side-pane__submenu">
+              <li>
+                <a href="#-netex">🚌 NeTEx</a>
+              </li><li>
+                <a href="#-irve">⚡ IRVE</a>
+              </li><li>
+                <a href="#-recherche">🔍 Recherche</a>
+              </li><li>
+                <a href="#-produit">📦 Produit</a>
+              </li><li>
+                <a href="#-ops">⚙️ Ops</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="side-pane__dropdown folded">
+            <a>Janvier 2026</a>
+            <ul class="side-pane__submenu">
+              <li>
+                <a href="#-consolidation-irve-infrastructures-de-recharge-de-vhicules-lectriques">⚡️ Consolidation IRVE (Infrastructures de Recharge de Véhicules Électriques)</a>
+              </li><li>
+                <a href="#-recherche-et-navigation">🔍 Recherche et Navigation</a>
+              </li><li>
+                <a href="#-espaces-utilisateurs-producteur-rutilisateur">👤 Espaces Utilisateurs (Producteur &amp; Réutilisateur)</a>
+              </li><li>
+                <a href="#-statistiques-et-reporting">📊 Statistiques et Reporting</a>
+              </li><li>
+                <a href="#-validation-netex">🇪🇺 Validation NeTEx</a>
+              </li><li>
+                <a href="#-technique-et-backend">⚙️ Technique et Backend</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="side-pane__dropdown folded">
+            <a>Décembre 2025</a>
+            <ul class="side-pane__submenu">
+              <li>
+                <a href="#-irve">⚡️ IRVE</a>
+              </li><li>
+                <a href="#-espace-producteur-exprience-utilisateur">🚀 Espace Producteur &amp; Expérience Utilisateur</a>
+              </li><li>
+                <a href="#-recherche">🔍 Recherche</a>
+              </li><li>
+                <a href="#-validation-qualit-des-donnes">🛠 Validation &amp; Qualité des Données</a>
+              </li><li>
+                <a href="#-proxy-flux-temps-rel">🔌 Proxy &amp; Flux Temps Réel</a>
+              </li><li>
+                <a href="#-notifications-backoffice">📧 Notifications &amp; Backoffice</a>
+              </li><li>
+                <a href="#-technique-infrastructure">⚙️ Technique &amp; Infrastructure</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="side-pane__dropdown folded">
+            <a>Novembre 2025</a>
+            <ul class="side-pane__submenu">
+              <li>
+                <a href="#-nouvelles-fonctionnalits">🚀 Nouvelles fonctionnalités</a>
+              </li><li>
+                <a href="#-amliorations-techniques-performance">🛠️ Améliorations techniques &amp; Performance</a>
+              </li><li>
+                <a href="#-interface-exprience-utilisateur">📈 Interface &amp; Expérience Utilisateur</a>
+              </li><li>
+                <a href="#-corrections-maintenance">🐞 Corrections &amp; Maintenance</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li class="side-pane__dropdown folded">
+            <a>Octobre 2025</a>
+            <ul class="side-pane__submenu">
+              <li>
+                <a href="#-gtfs-fares-v2">🎫 GTFS Fares V2</a>
+              </li><li>
+                <a href="#-gtfs-diff">🔍 GTFS diff</a>
+              </li><li>
+                <a href="#-gtfs-flex">🚏 GTFS Flex</a>
+              </li><li>
+                <a href="#-rutilisations">♻️ Réutilisations</a>
+              </li><li>
+                <a href="#-irve">⚡ IRVE</a>
+              </li><li>
+                <a href="#-divisions-administratives-couverture-spatiale">🗺️ Divisions administratives &amp; couverture spatiale</a>
+              </li><li>
+                <a href="#-responsables-lgaux">⚖️ Responsables légaux</a>
+              </li><li>
+                <a href="#-performance">🚀 Performance</a>
+              </li><li>
+                <a href="#-maintenance-technique">🛠️ Maintenance technique</a>
+              </li>
+            </ul>
+          </li>
+
+      </ul>
+    </nav>
+    <article class="panel">
+
+        <h1 id="nouveauts-du-pan"><a href="#nouveauts-du-pan" class="anchor">#</a> 
+Nouveautés du PAN</h1><p>
+Retrouvez sur cette page les principales nouveautés chaque mois.</p><h2 id="fvrier-2026"><a href="#fvrier-2026" class="anchor">#</a> 
+Février 2026</h2><h3 id="-netex"><a href="#-netex" class="anchor">#</a> 
+🚌 NeTEx</h3><ul><li>
+Identification et notification aux producteurs des ressources NeTEx expirées ;  </li><li>
+Extraction et affichage de métadonnées dont les modes de transports, les réseaux et les dates de validité d’une ressource NeTEx ;  </li><li>
+Rapport de validation: erreurs XSD regroupées par message ;  </li><li>
+Téléchargement du rapport de validation ;  </li><li>
+Corrections &amp; maintenance.  </li></ul><h3 id="-irve"><a href="#-irve" class="anchor">#</a> 
+⚡ IRVE</h3><ul><li>
+Validateur IRVE : autoriser plusieurs espaces dans les coordonnées ;  </li><li>
+Consolidation :    <ul><li>
+Consolidation IRVE : création et publication du fichier dédoublonné ;      </li><li>
+Renommage du rapport de consolidation IRVE ;      </li><li>
+Suppression des pdc avec id_pdc_itinerance “non concerné” de la consolidation IRVE dédoublonnée ;      </li><li>
+Consolidation IRVE Remontée d’informations supplémentaires ;      </li><li>
+Identification des datasets présents dans le consolidé datagouv et non chez nous.      </li></ul></li></ul><h3 id="-recherche"><a href="#-recherche" class="anchor">#</a> 
+🔍 Recherche</h3><ul><li>
+Optimisation : recherche en mémoire ;  </li><li>
+Recherche par sous-type avec index en mémoire.  </li></ul><h3 id="-produit"><a href="#-produit" class="anchor">#</a> 
+📦 Produit</h3><ul><li>
+Rapport opérationnel (suivi global + détaillé) ;  </li><li>
+Ajout d’un menu de navigation dans le détail d’une ressource ;  </li><li>
+Conversion GeoJSON moins mise en avant ;  </li><li>
+Les ressources GTFS Flex expirées d’un dataset sont désormais identifiées comme telles.  </li></ul><h3 id="-ops"><a href="#-ops" class="anchor">#</a> 
+⚙️ Ops</h3><ul><li>
+Montée de version PostgreSQL (de 14 à 18) ;  </li><li>
+Actualisation de la configuration ZFE ;  </li><li>
+Ajout de la Suisse dans administrative_division.  </li></ul><h2 id="janvier-2026"><a href="#janvier-2026" class="anchor">#</a> 
+Janvier 2026</h2><h3 id="-consolidation-irve-infrastructures-de-recharge-de-vhicules-lectriques"><a href="#-consolidation-irve-infrastructures-de-recharge-de-vhicules-lectriques" class="anchor">#</a> 
+⚡️ Consolidation IRVE (Infrastructures de Recharge de Véhicules Électriques)</h3><ul><li><strong>Amélioration du processus PAN</strong> : Optimisation du script de consolidation pour la production, incluant un pré-processing des fichiers avant validation.  </li><li><strong>Qualité des données</strong> : Transformation systématique en UTF-8, gestion des tabulations dans les coordonnées et autorisation des espaces pour les coordonnées XY.  </li><li><strong>Monitoring et Reporting</strong> : Mise en place d’un reporting actionnable pour identifier les points de charge (PDC) manquants et ajout de logs détaillés au début des jobs.  </li><li><strong>Export et Performance</strong> : Possibilité d’exporter la base de données IRVE et ajustement des paramètres de parallélisation et de timeout.  </li></ul><h3 id="-recherche-et-navigation"><a href="#-recherche-et-navigation" class="anchor">#</a> 
+🔍 Recherche et Navigation</h3><ul><li><strong>Recherche par sous-types</strong> : Nouveau filtre permettant de chercher par sous-type de données dans le catalogue.  </li><li><strong>Autocomplete</strong> : Amélioration de l’ordre des résultats et du comportement de la touche “Entrée”.  </li><li><strong>Fil d’ariane</strong> : Mise à jour de la navigation dans l’Espace Producteur pour une meilleure expérience utilisateur.  </li></ul><h3 id="-espaces-utilisateurs-producteur-rutilisateur"><a href="#-espaces-utilisateurs-producteur-rutilisateur" class="anchor">#</a> 
+👤 Espaces Utilisateurs (Producteur &amp; Réutilisateur)</h3><ul><li><strong>Gestion des problèmes urgents</strong> : Affichage des problèmes dans l’espace réutilisateur, ajout de dates de validité et possibilité de trier les colonnes.  </li><li><strong>UX/UI</strong> : Ajustement de l’affichage des informations importantes et ajout d’un menu interactif pour les nouveautés.  </li><li><strong>Discussions</strong> : Amélioration du scroll lors du chargement et liens directs vers les discussions sans réponse.  </li></ul><h3 id="-statistiques-et-reporting"><a href="#-statistiques-et-reporting" class="anchor">#</a> 
+📊 Statistiques et Reporting</h3><ul><li><strong>Visualisation</strong> : Affichage des statistiques de téléchargement sur l’année courante et précédente avec ajout de boutons d’accès rapide en haut de page.  </li></ul><h3 id="-validation-netex"><a href="#-validation-netex" class="anchor">#</a> 
+🇪🇺 Validation NeTEx</h3><ul><li>
+Quelques règles spécifiques au profil France sont désormais implémentées.  </li></ul><h3 id="-technique-et-backend"><a href="#-technique-et-backend" class="anchor">#</a> 
+⚙️ Technique et Backend</h3><ul><li><strong>Proxy S3/HTTP</strong> : Mise en place d’un cache sur disque avec vérification ETag pour optimiser les performances de téléchargement.  </li><li><strong>Maintenance</strong> : Correction de la gestion de la taille des hypertables TimescaleDB et mises à jour majeures des dépendances (Phoenix, LiveView, Explorer).  </li><li><strong>Tâches asynchrones</strong> : Refactorisation des jobs d’expiration de données et de notification d’indisponibilité des ressources (avec gestion des tentatives).  </li></ul><h2 id="dcembre-2025"><a href="#dcembre-2025" class="anchor">#</a> 
+Décembre 2025</h2><h3 id="-irve"><a href="#-irve" class="anchor">#</a> 
+⚡️ IRVE</h3><ul><li>
+Consolidation IRVE brute v2 : validation simple, insert en base, pas de dédoublonnage  </li></ul><h3 id="-espace-producteur-exprience-utilisateur"><a href="#-espace-producteur-exprience-utilisateur" class="anchor">#</a> 
+🚀 Espace Producteur &amp; Expérience Utilisateur</h3><ul><li><strong>Refonte fonctionnelle :</strong> Ajout de statistiques de téléchargement (avec export CSV), gestion des discussions sans réponse et affichage des indicateurs de validité.  </li><li><strong>Améliorations UI/UX :</strong> Migration de formulaires vers <strong>LiveView</strong>, refonte du CSS, ajout d’icônes et mise en place de pastilles de notification pour les problèmes urgents.  </li></ul><h3 id="-recherche"><a href="#-recherche" class="anchor">#</a> 
+🔍 Recherche</h3><ul><li><strong>Recherche &amp; Autocomplete :</strong> Amélioration de la recherche par format de données et par offre de transport. Ajout de raccourcis clavier et de la recherche par adresse sur les cartes d’exploration.  </li></ul><h3 id="-validation-qualit-des-donnes"><a href="#-validation-qualit-des-donnes" class="anchor">#</a> 
+🛠 Validation &amp; Qualité des Données</h3><ul><li><strong>Standard GTFS :</strong> Intégration du validateur <strong>MobilityData</strong> et support des extensions <strong>GTFS-Flex</strong> et Fares v2.  </li><li><strong>Performance technique :</strong> Passage au <strong>stockage binaire</strong> pour les résultats de validation NeTEx et optimisation des validateurs JSON Schema et TableSchema.  </li></ul><h3 id="-proxy-flux-temps-rel"><a href="#-proxy-flux-temps-rel" class="anchor">#</a> 
+🔌 Proxy &amp; Flux Temps Réel</h3><ul><li><strong>Proxy Unlock :</strong> Support des flux <strong>GBFS</strong> en plus des <strong>GTFS-RT</strong> avec un meilleur suivi des métriques dans le backoffice.  </li></ul><h3 id="-notifications-backoffice"><a href="#-notifications-backoffice" class="anchor">#</a> 
+📧 Notifications &amp; Backoffice</h3><ul><li><strong>Communication :</strong> Intégration du <strong>DSFR</strong> (Design System de l’État) pour les e-mails et ajout d’un outil de prévisualisation dans le Backoffice.  </li></ul><h3 id="-technique-infrastructure"><a href="#-technique-infrastructure" class="anchor">#</a> 
+⚙️ Technique &amp; Infrastructure</h3><ul><li><strong>Mises à jour :</strong> Montée de version vers <strong>Elixir 1.19.4</strong> et mise à jour des dépendances critiques.  </li><li><strong>Optimisations base de données :</strong> Amélioration des plans d’exécution PostgreSQL, ajout d’index de performance et réduction de l’empreinte mémoire pour les grosses ressources.  </li><li><strong>Maintenance :</strong> Suppression de CircleCI et réorganisation du code source (déplacement de l’application <code class="inline">datagouvfr</code>).  </li></ul><h2 id="novembre-2025"><a href="#novembre-2025" class="anchor">#</a> 
+Novembre 2025</h2><h3 id="-nouvelles-fonctionnalits"><a href="#-nouvelles-fonctionnalits" class="anchor">#</a> 
+🚀 Nouvelles fonctionnalités</h3><ul><li><strong>Gestion PASSIM</strong> : Importation des offres PASSIM et renseignement des autorités organisatrices de la mobilité (AOM) associées.  </li><li><strong>Validation IRVE</strong> : Optimisation majeure de la validation des données IRVE via un pipeline DataFrame vectorisé pour de meilleures performances.  </li><li><strong>API &amp; Tags</strong> : Ajout de la possibilité d’utiliser des <code class="inline">custom_tags</code> via l’API.  </li><li><strong>Export Backoffice</strong> : Ajout des informations relatives aux offres de mobilité dans les exports BO.  </li><li><strong>Données géographiques</strong> : Mise à jour administrative 2025 pour les EPCI, les communes et les AOM.  </li></ul><h3 id="-amliorations-techniques-performance"><a href="#-amliorations-techniques-performance" class="anchor">#</a> 
+🛠️ Améliorations techniques &amp; Performance</h3><ul><li><strong>Maintenance Base de données</strong> : Passage d’un <code class="inline">VACUUM FULL</code> quotidien (au lieu de hebdomadaire) pour optimiser les performances disque.  </li><li><strong>Validation</strong> : Nouveau système de stockage des résultats synthétiques de validation et utilisation de <code class="inline">MultiValidation.digest</code>.  </li><li><strong>Nettoyage automatique</strong> : Introduction de nouveaux jobs de nettoyage (<code class="inline">CleanMultiValidationJob</code>, <code class="inline">CleanOnDemandValidationJob</code>) et correction du cleanup des conversions NeTEx.  </li><li><strong>Optimisation des logs</strong> : Réduction du volume global des logs pour une meilleure lisibilité.  </li><li><strong>Stabilité CI</strong> : Mise en place de contournements pour éviter les deadlocks lors des tests d’intégration.  </li><li><strong>Simplification du modèle</strong> : Suppression définitive des colonnes obsolètes <code class="inline">aom_id</code>, <code class="inline">region_id</code> et de la table <code class="inline">dataset_communes</code> au profit de la couverture spatiale.  </li></ul><h3 id="-interface-exprience-utilisateur"><a href="#-interface-exprience-utilisateur" class="anchor">#</a> 
+📈 Interface &amp; Expérience Utilisateur</h3><ul><li><strong>Gestion des AOM</strong> : Affichage du nombre de ressources sur la page AOM et amélioration du sélecteur de responsables légaux pour retirer une AOM depuis les offres.  </li><li><strong>Notifications</strong> : Correction de la page de notifications pour les producteurs.  </li></ul><h3 id="-corrections-maintenance"><a href="#-corrections-maintenance" class="anchor">#</a> 
+🐞 Corrections &amp; Maintenance</h3><ul><li><strong>Sécurité</strong> : Mise à jour de la dépendance <code class="inline">js-yaml</code> (4.1.1).  </li><li><strong>Robustesse</strong> : Amélioration de la stabilité de plusieurs tests (LEZ, expiration des notifications, validations à la demande).  </li></ul><h2 id="octobre-2025"><a href="#octobre-2025" class="anchor">#</a> 
+Octobre 2025</h2><h3 id="-gtfs-fares-v2"><a href="#-gtfs-fares-v2" class="anchor">#</a> 
+🎫 GTFS Fares V2</h3><ul><li>
+Validateur GTFS : Support de fares V2  </li><li>
+Détails d’un GTFS : infos si fares v2  </li></ul><h3 id="-gtfs-diff"><a href="#-gtfs-diff" class="anchor">#</a> 
+🔍 GTFS diff</h3><ul><li>
+GTFS Diff explications supplémentaires pour agency.txt  </li><li>
+GTFS-Diff - ajout primary keys pour fare_rules  </li></ul><h3 id="-gtfs-flex"><a href="#-gtfs-flex" class="anchor">#</a> 
+🚏 GTFS Flex</h3><ul><li>
+Lien vers validateur GTFS-Flex dans nouvel onglet  </li><li>
+GTFS-Flex : change règle de détection  </li></ul><h3 id="-rutilisations"><a href="#-rutilisations" class="anchor">#</a> 
+♻️ Réutilisations</h3><ul><li>
+Page réutilisations : modifications des traductions  </li><li>
+Réutilisations : lien vers Espace réutilisateur  </li><li>
+Modification contraste de la couleur verte des réutilisateurs  </li><li>
+Correction couleur des images pour réutilisateurs  </li><li>
+Accueil : suppression des logos des réutilisateurs  </li><li>
+Accueil : infos réutilisateurs  </li><li>
+Ajustements UX pour réutilisateurs  </li></ul><h3 id="-irve"><a href="#-irve" class="anchor">#</a> 
+⚡ IRVE</h3><ul><li>
+Stockage des fichiers IRVE valides et leurs points de charge en base de données  </li><li>
+Primitives pour la validation des IRVE statiques  </li></ul><h3 id="-divisions-administratives-couverture-spatiale"><a href="#-divisions-administratives-couverture-spatiale" class="anchor">#</a> 
+🗺️ Divisions administratives &amp; couverture spatiale</h3><ul><li>
+Rajout de Monaco à la table des divisions administratives  </li><li>
+Page stats en utilisant la couverture spatiale  </li><li>
+DB.Dataset.count_coach : utilise couverture spatiale  </li><li>
+Mise à jour 2025 pour Commune et EPCI  </li><li>
+Supprime aom_id et region_id de dataset  </li></ul><h3 id="-responsables-lgaux"><a href="#-responsables-lgaux" class="anchor">#</a> 
+⚖️ Responsables légaux</h3><ul><li>
+Retravaille AOMSController avec responsables légaux  </li><li>
+StatsHandler : utilise uniquement responsables légaux  </li><li>
+AOMs avec données : uniquement responsables légaux  </li></ul><h3 id="-performance"><a href="#-performance" class="anchor">#</a> 
+🚀 Performance</h3><ul><li>
+Temps de chargement des résultats de validation  </li></ul><h3 id="-maintenance-technique"><a href="#-maintenance-technique" class="anchor">#</a> 
+🛠️ Maintenance technique</h3><ul><li>
+Stabilisation de quelques tests  </li><li>
+Resource#details: Suppression double binding MultiValidation  </li><li>
+Ops test : ajout de Sendgrid dans les SPF  </li><li>
+Mise à jour Cachex v4  </li><li>
+Mise à jour des dépendances  </li></ul>
+
+    </article>
+  </div>
+</section>
+
+<script nonce="ziEua54hOeV98Q">
+  const dropdowns = document.querySelectorAll('.side-pane__dropdown');
+
+  dropdowns.forEach(dropdown => {
+    dropdown.addEventListener('click', function(event) {
+    const dropdown = event.target.closest('.side-pane__dropdown');
+    if (!dropdown) return;
+
+    const isSubmenuClick = event.target.closest('.side-pane__submenu');
+
+    dropdowns.forEach(div => {
+      if (div == dropdown) return;
+      div.classList.remove('unfolded');
+      div.classList.add('folded');
+    });
+
+    if (!isSubmenuClick) {
+      dropdown.classList.toggle('unfolded');
+      dropdown.classList.toggle('folded');
+    }
+  });
+  });
+
+  const sections = document.querySelectorAll('h3[id]');
+  const navLinks = document.querySelectorAll('.side-pane__submenu a');
+  let isScrollingManual = false;
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      isScrollingManual = true;
+
+      navLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+
+      // Reset the flag after the smooth scroll finishes (approx 1s)
+      setTimeout(() => {
+        isScrollingManual = false;
+      }, 1000);
+    });
+  });
+
+  const options = {
+    root: null, // use the browser viewport
+    rootMargin: '-50% 0px -50% 0px', // trigger when section is in the top-ish area
+    threshold: 0
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    if (isScrollingManual) return; // Skip updating if we just clicked a link
+
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+
+        navLinks.forEach(link => link.classList.remove('active'));
+
+        const activeLink = document.querySelector(`.side-pane__submenu a[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+
+          history.replaceState(null, null, `#${id}`);
+
+          // Ensure only the parent month (dropdown) is unfolded
+          document.querySelectorAll('.side-pane__dropdown').forEach(div => {
+            div.classList.remove('unfolded');
+            div.classList.add('folded');
+          });
+
+          const parentDropdown = activeLink.closest('.side-pane__dropdown');
+          if (parentDropdown) {
+            parentDropdown.classList.remove('folded');
+            parentDropdown.classList.add('unfolded');
+          }
+        }
+      }
+    });
+  }, options);
+
+  sections.forEach(section => observer.observe(section));
+</script>
+    </main>
+
+    <footer class="footer" id="footer">
+  <a href="#mail_form" class="mail__button" aria-label="Demander de l’aide">
+    <i class="fas icon--envelope"></i>
+    <span>Demander de l’aide</span>
+  </a>
+  <div class="modal__backdrop" id="mail_form">
+    <div class="footer__contact">
+      <a class="footer__contact--close" href="#" aria-label="Fermer le formulaire">
+        <i class="fas icon--times-circle"></i>
+      </a>
+<form action="/send_mail" method="post"><input name="_csrf_token" type="hidden" hidden value="FTxYBQljHAQBM142DxUJPUAfHAYEMxghdX35JNFRdp4t_z8broIkCblr">
+        <h3>Contact</h3>
+        <p>
+          Avez-vous lu notre <a href="https://doc.transport.data.gouv.fr" target="_blank">documentation en ligne</a> ? Votre réponse est probablement présente.
+        </p>
+<label for="email">
+          Adresse email<div class="form__group"><input id="email" name="email" required type="email"></div>
+</label>
+<label class="pt-12" for="user_type">
+          Je suis <div class="form__group"><select id="user_type" name="user_type" required><option disabled selected value="">Sélectionnez un choix</option><option value="data-producer">Producteur de données</option><option value="data-reuser">Réutilisateur de données</option><option value="other">Autre</option></select></div>
+</label>
+<label class="pt-12" for="question_type">
+          Ma question est à propos <div class="form__group"><select id="question_type" name="question_type" required><option disabled selected value="">Sélectionnez un choix</option><option value="website">Le site web transport.data.gouv.fr</option><option value="data-not-found">Des données que je ne trouve pas</option><option value="technical-support">Un besoin de support technique</option><option value="legal-requirements">Des informations réglementaires</option><option value="other">Autre</option></select></div>
+</label>
+        <div class="form__group"><input autocomplete="off" class="form-special-field" id="name" name="name" placeholder="your name" tabindex="-1" type="text"></div>
+<label class="pt-12" for="subject">
+          Sujet<div class="form__group"><input id="subject" name="subject" required type="text"></div>
+</label>
+<label class="pt-12" for="question">
+          Question<div class="form__group"><textarea id="question" name="question" required>
+</textarea></div>
+</label>
+        <div class="form__group"><button class="button" type="submit">Envoyer un email</button></div>
+</form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__logo">
+      <a class="ministere-link" href="https://www.ecologie.gouv.fr">Ministère des Transports</a>
+      <a href="/"><img alt="transport.data.gouv.fr" src="/images/logo-footer.svg"></a>
+    </div>
+    <ul class="footer__links">
+      <li>
+        <a class="footer__link footer__link--contact" href="#mail_form">
+          Nous contacter
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://doc.transport.data.gouv.fr/outils/outils-disponibles-sur-le-pan/api">
+          API
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://doc.transport.data.gouv.fr/le-point-d-acces-national/generalites/le-point-dacces-national">
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://github.com/etalab/transport-site/">
+          Code source
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="/legal">
+          Mentions légales
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="/budget">
+          Budget
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="/accessibilite">
+          Accessibilité : non conforme
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+  <script defer type="text/javascript" src="/js/app-32f138810734ad798f1318d149d03ccb.js?vsn=d"></script>
+</html>

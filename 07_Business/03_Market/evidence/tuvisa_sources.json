@@ -1,0 +1,26 @@
+[
+  {
+    "name": "tuvisa_ppt",
+    "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroPorIdFichero?idFichero=962030&R01HNoPortal=true",
+    "sha256": "c20a8d6bb9ba8339891857a46b81f9743399659c5bef4670a7caf39e2b11370a",
+    "bytes": 578091
+  },
+  {
+    "name": "tuvisa_pcap",
+    "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroPorIdFichero?idFichero=962031&R01HNoPortal=true",
+    "sha256": "91de6cf4c9c8544b1b94323c9dc03a176943ef9951f28fce78c27b2b6c9abcae",
+    "bytes": 940514
+  },
+  {
+    "name": "tuvisa_propuesta",
+    "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroPorIdFichero?idFichero=1184691&R01HNoPortal=true",
+    "sha256": "d7d9c779ab38fb38ab602bf2563f6388048f73d23f7190164778836e83a153f8",
+    "bytes": 354596
+  },
+  {
+    "name": "tuvisa_memoria",
+    "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroPorIdFichero?idFichero=4470361&R01HNoPortal=true",
+    "sha256": "be88cdead0965b1e18a4b370c0a85cce20de3e8429889736d39abd0d5a3203d9",
+    "bytes": 388622
+  }
+]

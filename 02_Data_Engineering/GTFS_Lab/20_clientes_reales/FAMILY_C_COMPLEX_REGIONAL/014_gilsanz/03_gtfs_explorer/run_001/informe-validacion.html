@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Informe de validación GTFS Explorer</title></head><body><h1>Informe de validación GTFS Explorer</h1><pre>{
+  &quot;schema_version&quot;: &quot;1.0.0&quot;,
+  &quot;report_type&quot;: &quot;gtfs-explorer.validation&quot;,
+  &quot;batch&quot;: {
+    &quot;id&quot;: &quot;32f00f4e-2328-4720-aebf-38acd351ef64:structure&quot;,
+    &quot;feed_id&quot;: &quot;990ad4a7-62a5-49a2-8be2-b6cac4a70382&quot;,
+    &quot;state&quot;: &quot;INVALID&quot;,
+    &quot;total_issue_count&quot;: 1,
+    &quot;stored_issue_count&quot;: 1,
+    &quot;omitted_issue_count&quot;: 0
+  },
+  &quot;filter&quot;: {
+    &quot;severities&quot;: null,
+    &quot;categories&quot;: null
+  },
+  &quot;summary_by_severity&quot;: {
+    &quot;FATAL&quot;: 0,
+    &quot;ERROR&quot;: 1,
+    &quot;WARNING&quot;: 0,
+    &quot;NOTICE&quot;: 0
+  },
+  &quot;issues&quot;: [
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_AGENCY_TXT_AGENCY_URL_REQUIRED&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;FIELD&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;agency.txt&quot;,
+        &quot;row&quot;: 2,
+        &quot;field&quot;: &quot;agency_url&quot;,
+        &quot;entity_type&quot;: &quot;agency&quot;,
+        &quot;entity_id&quot;: &quot;&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.required_value_missing&quot;,
+        &quot;parameters&quot;: {
+          &quot;source&quot;: &quot;https://gtfs.org/documentation/schedule/reference/#agencytxt&quot;,
+          &quot;value&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_AGENCY_TXT_AGENCY_URL_REQUIRED&quot;,
+      &quot;occurrence_count&quot;: 1
+    }
+  ]
+}</pre></body></html>

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "checks": {
+    "freeze_hashes": true,
+    "artifact_manifest": true,
+    "protected_originals": true,
+    "db_before_after": true,
+    "GTFS_live": true,
+    "JSON_validation": true,
+    "formal_hash_references": true,
+    "outputs_exist": true,
+    "no_index_no_commits": true,
+    "git_status": true,
+    "suite_evidence": true
+  },
+  "note": "Initial supplementary verifier mistook empty refs directories for commits. Original exit code 1 preserved; corrected check inspects files. No product discrepancy and no test rerun.",
+  "files_created_in_promotion_manifest": 99
+}

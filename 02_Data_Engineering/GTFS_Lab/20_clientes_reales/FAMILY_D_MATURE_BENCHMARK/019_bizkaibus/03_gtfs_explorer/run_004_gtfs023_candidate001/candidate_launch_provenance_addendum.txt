@@ -1,0 +1,11 @@
+evidence_type=NEW_CANDIDATE_LAUNCH_PROVENANCE
+note=This file documents this launch only. It does not replace or rewrite earlier run_004 provenance.
+timestamp=2026-09-24T01:45:54.1751676+02:00
+formal_candidate_id=GTFS-023-CANDIDATE-001
+physical_alias=GTFS023-C1
+build_attempt=ATTEMPT-002
+absolute_executable_path=C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\GTFS Explorer Artifacts\acceptance-builds\GTFS-023-CANDIDATE-001-ATTEMPT-002\artifact-inspection\GTFS-Explorer\GTFS Explorer.exe
+sha256=8ea4a367baeef61381380f42edb44619c9d8bb97c1961754775c289bf588a357
+file_version=0.2.1.0
+product_version=0.2.1.0
+workspace=C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\20_clientes_reales\FAMILY_D_MATURE_BENCHMARK\019_bizkaibus\03_gtfs_explorer\run_004_gtfs023_candidate001

@@ -1,0 +1,34 @@
+{
+    "gtfs_schedule":  {
+                          "zip_present":  true,
+                          "extracted_present":  true,
+                          "files":  [
+                                        "agency.txt",
+                                        "calendar.txt",
+                                        "calendar_dates.txt",
+                                        "fare_attributes.txt",
+                                        "fare_rules.txt",
+                                        "feed_info.txt",
+                                        "frequencies.txt",
+                                        "routes.txt",
+                                        "shapes.txt",
+                                        "stop_times.txt",
+                                        "stops.txt",
+                                        "transfers.txt",
+                                        "trips.txt"
+                                    ]
+                      },
+    "gtfs_realtime":  {
+                          "present":  false
+                      },
+    "netex":  {
+                  "present":  false
+              },
+    "siri":  {
+                 "present":  false
+             },
+    "nap_snapshot":  {
+                         "present":  true,
+                         "file":  "FAMILY_B_SME_OPERATIONAL/008_baraza/01_nap_snapshot/Baraza.png"
+                     }
+}

@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "013",
+    "operator_display_name":  "Autocares LÃ¡zara",
+    "operator_slug":  "lazara",
+    "family":  "FAMILY_C_COMPLEX_REGIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/013_lazara/02_sources/gtfs_schedule/original/20250529_100032_Autocares_Lazara.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "B8957128CAD1C91EB8B3020514CDFA3B2EDA0A6C56949B03544CB076D4B22790"
+                         },
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/013_lazara/01_nap_snapshot/lazara.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "B3AC53C446E6D0E50E8A05A9853B3752631D129B0ABAFDD6BC2B2D18973DB7F1"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

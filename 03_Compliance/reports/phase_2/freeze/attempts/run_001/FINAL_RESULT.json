@@ -1,0 +1,94 @@
+{
+  "PHASE_2_FINAL_FREEZE_REVIEW": "FAIL",
+  "DB_SHA_BEFORE": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "DB_SHA_AFTER": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "DB_CHANGED_DURING_FREEZE_REVIEW": "NO",
+  "provisions": 92,
+  "source_facts": 36,
+  "requirements": 48,
+  "deadlines": 10,
+  "approved_materialized_reconciliation": "48/48",
+  "missing": 0,
+  "duplicates": 0,
+  "orphans": 0,
+  "conflicts": 0,
+  "explicit_dates": 10,
+  "functional_timing_expressions": 5,
+  "external_schedule_references": 1,
+  "external_PARTIAL_dependencies": 7,
+  "unresolved_interpretive_issues": 0,
+  "mapping_format_coverage": 0,
+  "audit_rules": 0,
+  "phase_1_invariant_result": "PASS (22/22)",
+  "structural_result": "PASS (22/22)",
+  "annex_result": "PASS (7 suites, 63/63)",
+  "legal_hashes_result": "PASS (10/10)",
+  "post_materialization_gate_result": "PASS (387/387)",
+  "test_verification_method": "Complete persisted outputs and exit_code=0; exact live snapshot, protected SQL and corpus provenance; no suite reruns",
+  "reproducibility_status": "CONTROLLED_REPLAY_WITH_MANUAL_HUMAN_DECISIONS",
+  "authoritative_artifact_count": 271,
+  "known_limitations": [
+    {
+      "issue": "Annex 1.3 B-I/D-I unresolved source fidelity anomalies",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "7 PARTIAL external dependencies; interpretation pending",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "No format mapping",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "No audit rules",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Textual fidelity not certified",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Human legal decisions require manual replay; Gate 1/2 report generators are not standalone scripts",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Phase 1 master and Phase 2 pre-materialization mutable assertions mismatch the later state; intact historical evidence preserved",
+      "classification": "HISTORICAL"
+    }
+  ],
+  "blocking_issues": [
+    "REPRODUCTION_COVERAGE"
+  ],
+  "FREEZE_BLOCKERS": 1,
+  "freeze_candidate_manifest_created": "NO",
+  "current_state_proposal_created": "NO",
+  "READY_FOR_PHASE_2_BASELINE_PROMOTION": "NO",
+  "git_status_before": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+  "git_status_after": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+  "git_status_equal": true,
+  "baseline_promoted": false,
+  "phase_2_frozen": false,
+  "phase_3_started": false,
+  "files_created": [
+    "03_Compliance/reports/phase_2/freeze/APPROVED_MATERIALIZED_RECONCILIATION.csv",
+    "03_Compliance/reports/phase_2/freeze/DATABASE_READ_ONLY_SNAPSHOT.json",
+    "03_Compliance/reports/phase_2/freeze/FILES_CREATED.csv",
+    "03_Compliance/reports/phase_2/freeze/FINAL_RESULT.json",
+    "03_Compliance/reports/phase_2/freeze/FREEZE_ISSUES.csv",
+    "03_Compliance/reports/phase_2/freeze/GIT_STATUS_AFTER.txt",
+    "03_Compliance/reports/phase_2/freeze/GIT_STATUS_BEFORE.txt",
+    "03_Compliance/reports/phase_2/freeze/LEGAL_SOURCE_HASH_CHECKS.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_ARTIFACT_INVENTORY.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_DEADLINES.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_FREEZE_REVIEW.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_FREEZE_REVIEW.md",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_REQUIREMENTS.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_SOURCE_FACTS.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_REPRODUCIBILITY_MATRIX.csv",
+    "03_Compliance/reports/phase_2/freeze/PROTECTED_FILE_HASHES_BEFORE.json",
+    "03_Compliance/reports/phase_2/freeze/SHA256_BEFORE_AFTER.json",
+    "03_Compliance/reports/phase_2/freeze/VERIFIED_TEST_RESULTS.csv",
+    "03_Compliance/reports/phase_2/freeze/review_phase_2_freeze.py"
+  ]
+}

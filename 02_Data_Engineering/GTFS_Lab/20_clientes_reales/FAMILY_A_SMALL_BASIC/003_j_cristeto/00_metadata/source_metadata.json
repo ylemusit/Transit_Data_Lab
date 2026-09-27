@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "003",
+    "operator_display_name":  "Autocares J. Cristeto",
+    "operator_slug":  "j_cristeto",
+    "family":  "FAMILY_A_SMALL_BASIC",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/003_j_cristeto/02_sources/gtfs_schedule/original/20251119_070003_Autocares_Cristeto.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "70B14647471462975B9B646D738B76C2F27454D8D9F49311BB31289A888E411A"
+                         },
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/003_j_cristeto/01_nap_snapshot/Cristeto.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "0EAC81F828A5D5B9D5CC01694141E95869DB394326091AFE4410B529CFF6A3DF"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

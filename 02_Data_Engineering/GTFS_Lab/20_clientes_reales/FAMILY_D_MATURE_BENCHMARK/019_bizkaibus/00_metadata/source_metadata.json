@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "019",
+    "operator_display_name":  "Bizkaibus",
+    "operator_slug":  "bizkaibus",
+    "family":  "FAMILY_D_MATURE_BENCHMARK",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/02_sources/gtfs_schedule/original/20260910_060014_Euskadi_Bizkaibus.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "E15D963BA3DC774E47B4F9F46DBD954ECE6A720D49A71BFC22A104A12027BD73"
+                         },
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/01_nap_snapshot/bizkaibus.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "09D83B7759D3F68039A542926D861346C68F9C5EAB659C622E8A0A7425120C6D"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

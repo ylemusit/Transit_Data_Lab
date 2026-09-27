@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "007",
+    "operator_display_name":  "PÃ©rez Cubero",
+    "operator_slug":  "perez_cubero",
+    "family":  "FAMILY_A_SMALL_BASIC",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/007_perez_cubero/02_sources/gtfs_schedule/original/20260320_090030_Perez_Cubero.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "81EF87BFE4C8500DC9F4B48F75AE2992131EB86E566FB4A60C73EA54431A9F1A"
+                         },
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/007_perez_cubero/01_nap_snapshot/Perez Cubero.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "2332C83DF1B4E6AB5EA0E48E340808306F275E2B6D57EFAD84AD1A2F32E4E65D"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

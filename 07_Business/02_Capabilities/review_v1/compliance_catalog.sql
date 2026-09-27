@@ -1,0 +1,1 @@
+SELECT table_schema,table_name FROM information_schema.tables ORDER BY 1,2;

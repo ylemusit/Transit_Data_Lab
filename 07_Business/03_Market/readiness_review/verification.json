@@ -1,0 +1,210 @@
+{
+  "result": "PASS",
+  "date": "2026-09-27T02:52:20.077248+00:00",
+  "checks": [
+    {
+      "name": "10 canonical problems, unique and no inventions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Required CSV schemas",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "36 accepted evidence IDs retained and individually traceable",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Each evidence has existing source, locator, limits and review index",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Problem counts are unique IDs and preserve canonical evidence links",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "8 procurement cases accounted for once in classification table",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Procurement values and boundaries preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Only 11 authoritative EXISTING capabilities mapped, states unchanged by review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "4 original potential gaps accounted for",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No levels 5/6; no forced level 4",
+      "passed": true,
+      "detail": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 7,
+        "4": 0,
+        "5": 0,
+        "6": 0
+      }
+    },
+    {
+      "name": "Candidate conditions and exhaustive YES/HOLD/NO",
+      "passed": true,
+      "detail": {
+        "YES": [
+          "PROB-001"
+        ],
+        "HOLD": [
+          "PROB-002",
+          "PROB-005",
+          "PROB-006",
+          "PROB-007",
+          "PROB-008",
+          "PROB-009"
+        ],
+        "NO": [
+          "PROB-003",
+          "PROB-004",
+          "PROB-010"
+        ]
+      }
+    },
+    {
+      "name": "Fit and differentiation controlled enums",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "8 assumptions retain authoritative status and proposed change NONE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Plan contains required 12 sections and five candidate definitions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All seven evidence definitions and seven evidence types",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No affirmative commercial validation or WTP/market claims",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Phase 3 ongoing, baseline FROZEN, Phase 4 not started",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Historical prior verification retained, not rerun",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Resource thresholds and hash prohibition documented",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Local document links exist (verification outputs checked after write)",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git status completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git diff_names completed",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "levels": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 7,
+    "4": 0,
+    "5": 0,
+    "6": 0
+  },
+  "candidates": {
+    "YES": [
+      "PROB-001"
+    ],
+    "HOLD": [
+      "PROB-002",
+      "PROB-005",
+      "PROB-006",
+      "PROB-007",
+      "PROB-008",
+      "PROB-009"
+    ],
+    "NO": [
+      "PROB-003",
+      "PROB-004",
+      "PROB-010"
+    ]
+  },
+  "resource_guard_triggered": "NO",
+  "new_external_research": "NO",
+  "repository_wide_hash": "NO",
+  "measured_verifier_unique_files_read": 18,
+  "measured_verifier_bytes_read": 182804,
+  "session_files_enumerated": null,
+  "session_bytes_read": null,
+  "session_elapsed_seconds": null,
+  "verifier_elapsed_seconds": 0.063,
+  "git": {
+    "status": {
+      "exit_code": 0,
+      "output": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? 07_Business/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+      "stderr": ""
+    },
+    "diff_names": {
+      "exit_code": 0,
+      "output": "",
+      "stderr": ""
+    }
+  },
+  "scope_limit": "Explicit Business write paths; no repeat of prior scope verification. Grouped untracked Git and historic manifests cannot certify global current immutability.",
+  "source_reads": {
+    "07_Business\\03_Market\\MARKET_PROBLEM_REGISTER.csv": 7291,
+    "07_Business\\03_Market\\COMMERCIAL_VALIDATION_READINESS.csv": 4949,
+    "07_Business\\03_Market\\MARKET_VALIDATION_PLAN.md": 6897,
+    "07_Business\\03_Market\\CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md": 3291,
+    "07_Business\\03_Market\\COMMERCIAL_VALIDATION_EVIDENCE_MODEL.md": 3848,
+    "07_Business\\03_Market\\BUSINESS_PHASE_3_VALIDATION_GATE.md": 24522,
+    "07_Business\\03_Market\\RESOURCE_USAGE_POLICY.md": 1845,
+    "07_Business\\03_Market\\PROBLEM_REGISTER.md": 4545,
+    "07_Business\\03_Market\\MARKET_EVIDENCE_REGISTER.md": 29264,
+    "07_Business\\03_Market\\evidence\\accepted_evidence.json": 6024,
+    "07_Business\\03_Market\\evidence\\verification.json": 5378,
+    "07_Business\\02_Capabilities\\CAPABILITY_REGISTER.md": 35827,
+    "07_Business\\02_Capabilities\\BUSINESS_CAPABILITY_BASELINE_V1.md": 6885,
+    "07_Business\\03_Market\\PROCUREMENT_EVIDENCE.md": 13774,
+    "07_Business\\03_Market\\MARKET_GAPS.md": 7752,
+    "07_Business\\01_Governance\\ASSUMPTIONS_REGISTER.md": 6683,
+    "07_Business\\BUSINESS_STATUS.md": 5373,
+    "07_Business\\01_Governance\\DECISION_LOG.md": 8656
+  }
+}

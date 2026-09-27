@@ -1,0 +1,1439 @@
+
+
+  
+
+    
+
+    
+
+    
+    Réseau SNCF TGV, Intercités et TER - Données (GTFS, NeTEx, SIRI Lite, gtfs-rt) ouvertes - France
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+
+      
+
+      
+
+  
+
+  
+
+  
+
+    
+
+      
+
+    
+
+        
+
+      
+
+        
+           
+
+        
+
+            
+              Données
+
+                Toutes les données
+                Carte d'exploration des données
+                Carte nationale des arrêts GTFS
+                Réutilisations
+
+            
+
+          
+
+            Documentation
+
+          
+
+            
+              Outils
+
+                Vérifier la qualité d'un fichier ou d'un flux
+                Comparer deux GTFS
+                Générateur de requêtes SIRI
+
+                Accèslibre Mobilités
+                État des services
+
+            
+
+          
+
+            Statistiques
+
+          
+
+            
+              Réglementation
+
+                Normes
+                Déclaration de conformité
+
+            
+
+          
+
+            
+              À propos
+
+                Nos missions
+                Nouvelles fonctionnalités
+
+            
+
+          
+
+            Blog
+
+            
+
+              
+
+                Se connecter
+
+            
+
+          
+
+            
+
+                
+
+              
+
+                Français
+                English
+
+            
+
+        
+
+    
+
+    
+
+      
+
+  
+
+      
+
+        
+
+        
+
+          
+
+        
+
+  
+
+  jeu de données
+
+Réseau SNCF TGV, Intercités et TER
+
+  
+
+    Espace réutilisateur
+
+  
+
+    
+
+      
+Description
+
+      
+
+        
+          Ressources (6)
+
+      
+
+        Indicateurs qualité
+
+      
+
+        Ressources communautaires
+
+      
+
+      
+
+  
+    Réutilisations
+
+  
+
+      
+
+        
+          Notifications envoyées (1)
+
+      
+
+        
+          Discussions 
+
+      
+
+        Ressources historisées
+
+    
+
+  
+
+    
+
+      
+
+        
+
+Horaires théoriques et en temps réel de la SNCF
+
+Théorique : les horaires des lignes TER, Intercités et TGV opérées par la SNCF Voyageurs pour les 151j à venir, sont fournis au format GTFS et au format NeTEx (qui est la norme technique européenne pour l’échange de données de transport). Les fichiers sont disponibles aux liens suivants :
+
+  
+
+pour le GTFS : https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip  
+
+pour le NeTEx : https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip  
+
+Temps réel : les horaires en temps réel sont fournis selon les deux standards GTFS RT et SIRI pour les horaires et les informations contextuelles sur un périmètre élargi comprenant notamment les TGV, les IC et TER (y compris les sociétés dédiées TER) :
+
+  
+
+GTFS-RT TU (Trip Updates) mis à jour toutes les 2 minutes pour les trains circulant dans les 60 prochaines minutes et GTFS-RT SA (Service Alerts) pour les circulations à venir  
+
+SIRI ET Lite (service “Situation eXchange”) mis à jour toutes les 2 minutes pour les trains circulant dans les 60 prochaines minutes et SIRI SX Lite (service “Situation eXchange”) pour les circulations à venir  
+
+Les fichiers sont disponibles aux liens suivants :
+
+  
+
+pour le GTFS-RT TU : https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates  
+
+pour le GTFS-RT SA : https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts  
+
+pour le SIRI ET LITE (version Béta) : https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable  
+
+pour le SIRI SX LITE : https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange  
+
+Quelques remarques techniques : 
+
+  
+
+Au niveau théorique : des mises à jour ont été effectuées sur les données GTFS : le plan de transport théorique intègre désormais à l’échelle nationale les adaptations connues la veille à 17h en cas de perturbations ou de mouvements sociaux.  
+
+Les flux en temps réel ne sont pas filtrés, et peuvent contenir un périmètre plus large que les TGV, IC et TER. Même si des informations concernant d’autres circulations peuvent être visibles, merci de vous référer aux jeux de données des autorités organisatrices compétentes, notamment Ile de France Mobilités pour les données en temps réel en Ile de France ou les différents temps réels des Régions quand elles existent. Le périmètre n’est garanti que pour TGV et IC  
+
+Pour les flux GTFS-RT SA et SIRI SX Lite : l’identifiant commun des circulations entre les différents flux est le numéro commercial du train, que vous trouverez dans <trip> pour le GTFS-RT SA et dans <VehiculeJourneyRef> dans le SIRI SX LITE. Ces flux ne comprennent que les informations valorisées à la course et ne comprennent pas les informations relatives à des périmètres (gares ou lignes du réseau, qui peuvent impacter plusieurs opérateurs).  
+
+·Ce jeu de données est une production SNCF Voyageurs contenant des éléments assemblés pour la communauté open data au-delà de ses obligations réglementaires. Il ne se substitue donc pas aux données officielles progressivement publiées par les autorités organisatrices régionales qui peuvent éventuellement comporter de petites divergences. Aussi, nous vous recommandons de plutôt consommer les données fournies par les Régions et IDFM.
+
+En cas de question, vous pouvez contacter l’équipe Open data SNCF Voyageurs à l’adresse suivante : Data_Office_Secretariat_General_SA_Voyageurs@sncf.fr
+
+      
+
+    
+
+      
+
+  
+
+Données statiques
+
+    
+
+      
+
+          
+
+  https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+  
+
+  
+
+  
+  26/09/2026
+
+  
+  28/02/2027
+
+  
+
+    
+
+  27/09/2026
+
+    Dernière modification du contenu
+
+    
+
+    
+
+      
+
+        
+          100%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+          À jour
+
+    
+
+    
+
+  
+
+    
+
+          46 avertissements
+
+      
+
+    lors de la validation
+
+  
+
+    
+
+      
+
+    
+
+      
+
+        
+
+          GTFS
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Télécharger
+
+          
+
+      
+
+  
+
+          
+
+  https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+  
+
+  
+
+  
+
+    
+
+  27/09/2026
+
+    Dernière modification du contenu
+
+    
+
+    
+
+      
+
+        
+          100%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+    
+
+    
+
+  
+
+    
+
+      
+
+    
+
+      
+
+        
+
+          NeTEx
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Télécharger
+
+          
+
+      
+
+  
+
+      
+
+  
+
+      
+
+  
+
+Données temps réel
+
+    
+
+      
+
+          
+
+  https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts
+
+  
+
+  
+
+  
+
+    
+
+  temps réel
+
+    
+
+    
+
+      
+
+        
+          100%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+    
+
+      
+
+            10 498 avertissements
+
+        
+
+      lors de la validation
+
+  
+
+    
+
+        Données présentes dans la ressource :
+
+            service_alerts
+
+        
+
+      
+
+    
+
+      
+
+        
+
+          gtfs-rt
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Lien vers l'API
+
+          
+
+      
+
+  
+
+          
+
+  https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates
+
+  
+
+  
+
+  
+
+    
+
+  temps réel
+
+    
+
+    
+
+      
+
+        
+          100%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+    
+
+      
+
+            383 erreurs
+
+        
+
+      lors de la validation
+
+  
+
+    
+
+        Données présentes dans la ressource :
+
+            trip_updates
+
+        
+
+      
+
+    
+
+      
+
+        
+
+          gtfs-rt
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Lien vers l'API
+
+          
+
+      
+
+  
+
+          
+
+  https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange
+
+  
+
+  
+
+  
+
+    
+
+  temps réel
+
+    
+
+    
+
+      
+
+        
+          99.9%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+    
+
+      
+
+        
+
+          SIRI Lite
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Lien vers l'API
+
+          
+
+      
+
+  
+
+          
+
+  https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable
+
+  
+
+  
+
+  
+
+    
+
+  temps réel
+
+    
+
+    
+
+      
+
+        
+          99.8%
+
+        Taux de disponibilité
+
+    
+
+  
+
+    
+
+  
+
+    
+
+      
+
+    
+
+      
+
+        
+
+          SIRI Lite
+
+      
+
+        
+
+            détails
+
+        
+
+          
+
+              Lien vers l'API
+
+          
+
+      
+
+  
+
+      
+
+  
+
+      
+
+      
+
+      
+
+  
+
+      Des versions précédentes des ressources de ce jeu de données sont disponibles dans la section Ressources historisées.
+
+  
+
+      
+
+  
+
+Documentation
+
+      Les producteurs peuvent partager dans cette section : charte graphique, documentation, etc. Utilisez le type documentation sur data.gouv.fr.
+
+    
+
+      
+
+      
+
+  
+
+      
+
+      
+
+  
+
+    
+    Vous réutilisez ce jeu de données ? Envoyez-nous un message afin que l’on puisse en discuter et mettre en avant votre réutilisation.
+
+      
+
+Indicateurs qualité
+
+    
+
+    Derniers indicateurs qualité
+
+      
+
+          Disponibilité
+
+          Conformité
+
+          Fraicheur
+
+      
+
+          99%
+
+          100%
+
+          100%
+
+      
+
+    
+
+      transport.data.gouv.fr calcule des indicateurs qualité de manière quotidienne afin de mieux appréhender les données publiées.  En savoir plus.
+
+  
+
+      
+
+Ressources communautaires
+
+    
+
+      Les réutilisateurs peuvent partager dans cette section les modifications apportées à une ressource, conformément à la clause de partage à l’identique (article 4.4) de la licence ODbL. Publiez votre ressource sur data.gouv.fr ou consultez la documentation.
+
+  
+
+  
+
+  
+
+    
+
+    
+
+  
+Réutilisations
+
+      
+
+        
+Chargement des réutilisations…
+
+    
+
+      
+
+Notifications envoyées
+
+    
+
+      transport.data.gouv.fr envoie automatiquement des notifications au producteur du jeu de données afin d'en améliorer la qualité. Les notifications suivantes ont été envoyées au cours des 90 derniers jours.
+
+    
+
+      
+
+          
+
+            Motif de notification
+            Détails
+            Date
+
+        
+
+          
+
+  Erreurs de validation
+
+  
+    https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates
+
+  05/09/2026 à 09h15 Europe/Paris
+
+        
+
+    
+
+      ℹ️ Si vous êtes producteur de données, vous pouvez personnaliser ces notifications depuis votre Espace producteur.
+
+  
+
+    
+
+Discussions
+
+        
+
+  
+
+    Chargement des discussions…
+
+          
+            Vous devez être identifié pour commencer une discussion.
+
+      
+
+    
+
+  
+Ressources historisées
+
+    
+
+      
+
+          
+
+            Fichier
+            Date de publication
+
+              
+                Période de validité
+
+            Format
+
+        
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              27/09/2026
+
+                  
+                    26/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              27/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              26/09/2026
+
+                  
+                    25/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              26/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              25/09/2026
+
+                  
+                    24/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              25/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              24/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              24/09/2026
+
+                  
+                    23/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              23/09/2026
+
+                  
+                    22/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              23/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              22/09/2026
+
+                  
+                    21/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              21/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              21/09/2026
+
+                  
+                    20/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              20/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              20/09/2026
+
+                  
+                    19/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              19/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              19/09/2026
+
+                  
+                    18/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              18/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              18/09/2026
+
+                  
+                    17/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              17/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              17/09/2026
+
+                  
+                    16/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              16/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              16/09/2026
+
+                  
+                    15/09/2026 au 28/02/2027
+
+              GTFS
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip
+
+              16/09/2026
+
+                  
+
+              NeTEx
+
+            
+
+              
+                https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip
+
+              15/09/2026
+
+                  
+                    14/09/2026 au 28/02/2027
+
+              GTFS
+
+        
+
+        
+
+          Affiche les 25 dernières ressources historisées.
+
+    
+
+      
+        Télécharger les ressources historisées
+
+    
+
+  
+
+    
+
+      
+
+  
+
+      
+
+        
+
+      
+
+        Données publiées par
+
+          
+            SNCF
+
+        
+
+      
+
+        
+          Données sous la responsabilité de
+
+        
+
+          Auvergne-Rhône-Alpes, Bourgogne-Franche-Comté, Bretagne, Centre-Val de Loire, Grand Est, Hauts-de-France, National, Normandie, Nouvelle-Aquitaine, Occitanie, Pays de la Loire, Provence-Alpes-Côte d’Azur
+
+            SNCF VOYAGEURS
+
+        
+
+      
+
+        
+          Offres de transport
+
+        
+
+            TER-SNCF Auvergne Rhône-Alpes
+
+            TER-SNCF Bourgogne Franche Comté
+
+            TER-SNCF Bretagne (BreizhGo)
+
+            TER-SNCF Centre-Val de Loire (Rémi)
+
+            TER-SNCF Fluo Grand Est
+
+            TER-SNCF Hauts de France
+
+            TER-SNCF Normandie
+
+            TER-SNCF Nouvelle Aquitaine
+
+            TER-SNCF Occitanie
+
+            TER-SNCF Pays de la Loire (Aléop)
+
+            TER-SNCF Sud Provence Alpes Côte d'Azur (Zou)
+
+        
+
+      
+
+        Type de données
+
+    
+
+    
+
+  
+    Transport public collectif
+
+      
+
+        Licence
+
+    ODbL
+
+        et 
+      Conditions Particulières d'utilisation
+
+      
+
+        
+        Récupérer des détails sur ce jeu de données via un appel à l'API
+
+      
+
+        
+        Voir sur data.gouv.fr
+
+      
+
+        
+          Mots-clefs
+
+        
+
+        
+
+            car
+
+            etoile-ferroviaire-damiens
+
+            gtfs
+
+            gtfs-rt
+
+            horaires
+
+            horaires-et-itineraires
+
+            inoui
+
+            intercites
+
+            loire-atlantique
+
+            netex
+
+            ouigo
+
+            siri-lite
+
+            sud-azur
+
+            temps-reel
+
+            ter
+
+            tgv
+
+            train
+
+        
+
+      
+
+        Couverture spatiale
+
+          France
+
+        
+
+      
+
+  
+
+    
+
+    
+
+    
+    Demander de l’aide
+
+  
+
+    
+
+      
+
+      
+
+        
+Contact
+
+          Avez-vous lu notre documentation en ligne ? Votre réponse est probablement présente.
+
+          Adresse email
+
+          Je suis 
+Sélectionnez un choixProducteur de donnéesRéutilisateur de donnéesAutre
+
+          Ma question est à propos 
+Sélectionnez un choixLe site web transport.data.gouv.frDes données que je ne trouve pasUn besoin de support techniqueDes informations réglementairesAutre
+
+        
+
+          Sujet
+
+          Question
+
+        
+Envoyer un email
+
+    
+
+  
+
+    
+
+      Ministère des Transports
+
+    
+
+      
+
+        
+          Nous contacter
+
+      
+
+        
+          API
+
+      
+
+        
+          FAQ
+
+      
+
+        
+          Code source
+
+      
+
+        
+          Mentions légales
+
+      
+
+        
+          Budget
+
+      
+
+        
+          Accessibilité : non conforme
+
+      
+
+  
+
+  
+

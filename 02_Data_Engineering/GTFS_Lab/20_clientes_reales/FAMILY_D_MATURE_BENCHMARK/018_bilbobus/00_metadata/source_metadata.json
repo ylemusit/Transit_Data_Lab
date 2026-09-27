@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "018",
+    "operator_display_name":  "Bilbobus",
+    "operator_slug":  "bilbobus",
+    "family":  "FAMILY_D_MATURE_BENCHMARK",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/02_sources/gtfs_schedule/original/20260922_060003_Euskadi_Bilbobus.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "70B770F7C5BB945DD472C4EC6FBBE564AEDD62C4A8CE96F717D8214A25BBDAEF"
+                         },
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/01_nap_snapshot/bilbobus.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "2A1ADF3714BDD25E2E13CEC9E8A79A11868B46B2DC50BA3154F53C4C0E04818C"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

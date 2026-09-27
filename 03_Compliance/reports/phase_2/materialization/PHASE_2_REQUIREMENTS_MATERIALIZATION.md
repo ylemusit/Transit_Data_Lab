@@ -1,0 +1,140 @@
+# Requirements materialization
+
+- REQUIREMENTS_MATERIALIZATION = PASS
+- PRE_WRITE_SHA = 0c119b4a75e6a0e7954480675cc625659fe65a1878f46dae1e496e0790d8ffec
+- POST_WRITE_SHA = 823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3
+- SHA_CHANGED = YES
+- final_approved_universe = 48
+- requirements_before = 3
+- requirements_reused = 3
+- requirements_inserted = 45
+- requirements_updated = 0
+- requirement_conflicts = 0
+- requirements_after = 48
+- deadlines_before = 1
+- deadlines_reused = 1
+- deadlines_inserted = 9
+- deadline_conflicts = 0
+- deadlines_after = 10
+- source_facts_before = 36
+- source_facts_after = 36
+- article_9_3_traceability = PASS
+- external_dependencies_PARTIAL = 7
+- functional_timing_requirements = 5
+- explicit_deadlines = 10
+- unauthorized_semantic_deltas = NO
+- rollback_occurred = NO
+- materialized_universe_count = 48
+- missing_requirements = 0
+- duplicate_requirements = 0
+- superseded_parents_materialized = NO
+- READY_FOR_PHASE_2_FINAL_FREEZE_REVIEW = YES
+
+Tests:
+- test_phase_1_invariants: PASS
+- test_phase_1_master: EXPECTED_HISTORICAL_STATE_MISMATCH
+- test_eu_2017_1926_master_structure: PASS
+- test_eu_2017_1926_annex_1_1: PASS
+- test_eu_2017_1926_annex_1_2: PASS
+- test_eu_2017_1926_annex_1_3: PASS
+- test_eu_2017_1926_annex_1_4: PASS
+- test_eu_2017_1926_annex_2_1: PASS
+- test_eu_2017_1926_annex_2_2: PASS
+- test_eu_2017_1926_annex_2_3: PASS
+- test_phase_2_master: EXPECTED_HISTORICAL_STATE_MISMATCH
+- test_phase_2_pre_materialization_gate: EXPECTED_HISTORICAL_STATE_MISMATCH
+- test_phase_2_post_materialization_gate: PASS
+
+Phase 2 remains open, not frozen. Phase 3 not started. No staging, commit or push.
+
+Git status:
+```text
+?? .gitignore
+?? 02_Data_Engineering/
+?? 03_Compliance/
+?? PROJECT_CURRENT_STATE.md
+?? project_baseline.json
+?? reports/
+```
+
+Autor: Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+
+Legal hashes = PASS (10/10). Execution/reporting corrections documented in EXECUTION_NOTES.md.
+
+## Files created
+
+- 03_Compliance/reports/phase_2/materialization/CONTROLLED_TRANSACTION.sql
+- 03_Compliance/reports/phase_2/materialization/DATABASE_AFTER.json
+- 03_Compliance/reports/phase_2/materialization/DATABASE_BEFORE.json
+- 03_Compliance/reports/phase_2/materialization/DEADLINE_MATERIALIZATION_PLAN.csv
+- 03_Compliance/reports/phase_2/materialization/DEADLINES_AFTER.csv
+- 03_Compliance/reports/phase_2/materialization/DEADLINES_BEFORE.csv
+- 03_Compliance/reports/phase_2/materialization/DISCOVERED_SCHEMA.json
+- 03_Compliance/reports/phase_2/materialization/EXECUTION_NOTES.md
+- 03_Compliance/reports/phase_2/materialization/EXISTING_REQUIREMENTS_RECONCILIATION.json
+- 03_Compliance/reports/phase_2/materialization/FINAL_RESULT.json
+- 03_Compliance/reports/phase_2/materialization/GIT_STATUS_AFTER.txt
+- 03_Compliance/reports/phase_2/materialization/GIT_STATUS_BEFORE.txt
+- 03_Compliance/reports/phase_2/materialization/MATERIALIZATION_POST_WRITE_STATE.json
+- 03_Compliance/reports/phase_2/materialization/MATERIALIZATION_PRE_WRITE_STATE.json
+- 03_Compliance/reports/phase_2/materialization/materialize_requirements.py
+- 03_Compliance/reports/phase_2/materialization/MATERIALIZED_REQUIREMENT_UNIVERSE.csv
+- 03_Compliance/reports/phase_2/materialization/PHASE_2_REQUIREMENTS_DATABASE_DELTA.md
+- 03_Compliance/reports/phase_2/materialization/PHASE_2_REQUIREMENTS_MATERIALIZATION.md
+- 03_Compliance/reports/phase_2/materialization/PRE_WRITE_DATABASE_BACKUP.duckdb
+- 03_Compliance/reports/phase_2/materialization/PREPARED_INSERTS.json
+- 03_Compliance/reports/phase_2/materialization/PROTECTED_FILE_HASHES.json
+- 03_Compliance/reports/phase_2/materialization/REQUIREMENT_ID_MAP.csv
+- 03_Compliance/reports/phase_2/materialization/REQUIREMENTS_AFTER.csv
+- 03_Compliance/reports/phase_2/materialization/REQUIREMENTS_BEFORE.csv
+- 03_Compliance/reports/phase_2/materialization/REQUIREMENTS_MATERIALIZATION_DRY_RUN.md
+- 03_Compliance/reports/phase_2/materialization/REQUIREMENTS_MATERIALIZATION_INPUT.csv
+- 03_Compliance/reports/phase_2/materialization/SOURCE_FACTS_AFTER.csv
+- 03_Compliance/reports/phase_2/materialization/SOURCE_FACTS_BEFORE.csv
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_1.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_1.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_1.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_2.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_2.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_2.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_3.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_3.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_3.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_4.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_4.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_1_4.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_1.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_1.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_1.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_2.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_2.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_2.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_3.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_3.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_annex_2_3.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_master_structure.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_master_structure.json
+- 03_Compliance/reports/phase_2/materialization/test_eu_2017_1926_master_structure.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_invariants.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_invariants.json
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_invariants.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_master.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_master.json
+- 03_Compliance/reports/phase_2/materialization/test_phase_1_master.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_master.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_master.json
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_master.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_post_materialization_gate.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_post_materialization_gate.json
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_post_materialization_gate.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_pre_materialization_gate.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_pre_materialization_gate.json
+- 03_Compliance/reports/phase_2/materialization/test_phase_2_pre_materialization_gate.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/TEST_RESULTS.csv
+- 03_Compliance/reports/phase_2/materialization/TRANSACTION.exit_code.txt
+- 03_Compliance/reports/phase_2/materialization/TRANSACTION.json
+- 03_Compliance/reports/phase_2/materialization/TRANSACTION.stderr.txt
+- 03_Compliance/reports/phase_2/materialization/TRANSACTION_STATUS.json
+- 03_Compliance/sql/07_tests/phase_2/test_phase_2_post_materialization_gate.sql
+- 03_Compliance/reports/phase_2/materialization/ARTIFACT_MANIFEST.csv

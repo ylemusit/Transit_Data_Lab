@@ -1,0 +1,3749 @@
+PAGE 1
+CONTRATACIÓN DE UN SERVICIO DE DISEÑO, DESARROLLO, PUESTA EN 
+MARCHA Y MANTENIMIENTO DE UN SISTEMA ANALÍTICO BASADO EN 
+BUSINESS INTELLIGENCE / BIG DATA / MACHINE LEARNING PARA EL 
+CONSORCIO DE TRANSPORTES DE MALLORCA
+EXPEDIENTE 202317
+CRITERIOS EVALUABLES MEDIANTE JUICIO DE VALOR
+Consorci de Transports de Mallorca 1
+
+PAGE 2
+Índice
+ 1 - Objeto del informe......................................................................................................3
+ 2 - Antecedentes...............................................................................................................3
+ 3 - Criterios de valoración de las ofertas presentadas.................................................3
+ 4 - Ofertas presentadas....................................................................................................5
+ 5 - Valoración de las ofertas presentadas......................................................................5
+ 5.1 - Requerimientos técnicos y de servicio.................................................................5
+ 5.1.1 - Alestis Consulting - Geoactio...........................................................................18
+ 5.2 - Criterios de valoración evaluables por juicio de valor......................................39
+ 5.2.1 - Alestis – Geoactio..............................................................................................44
+ 6 - Resultados del proceso de valoración....................................................................54
+Consorci de Transports de Mallorca 2
+
+PAGE 3
+ 1 - Objeto del informe
+El presente informe tiene como objeto valorar las ofertas presentadas para el 
+expediente OB202317 en lo que respecta a los criterios evaluables mediante 
+juicio de valor, tras la apertura del sobre 3 – Propuesta Técnica, conforme a los 
+criterios establecidos en el pliego de prescripciones administrativas del referido 
+expediente.
+ 2 - Antecedentes
+El expediente de contratación OB202317 tiene como objetivo la contratación del 
+desarrollo y puesta en marcha de una solución tecnológica que permita integrar 
+información disponible en el Consorcio de Transporte de Mallorca a partir de sus 
+sistemas —posicionamiento, ticketing, etc.—, de forma que proporcione 
+información tanto en tiempo real como en tiempo diferido a diferentes agentes y 
+stakeholders en relación con los servicios de transporte interurbano ofrecidos por 
+el CTM.
+Dada la especial relevancia sobre la disponibilidad y precisión de la información 
+en tiempo real de los servicios de transporte, se plantea como caso de uso 
+principal dar cobertura al cálculo de la estimación (predicción) de paso por parada 
+de los servicios de transporte ofrecidos por el CTM, información que deberá ser 
+democratizada tanto en tiempo real como en tiempo diferido para ser consumida 
+por aquellos agentes y usuarios interesados en esta.
+ 3 - Criterios de valoración de las ofertas presentadas
+El presente informe se circunscribe a la valoración de las ofertas presentadas en 
+lo que respecta a los criterios evaluables mediante juicio de valor. A tal efecto, en 
+el Pliego de Cláusulas Administrativas Particulares (PCAP) de este procedimiento, 
+se definían los siguientes criterios evaluables mediante juicio de valor.
+Consorci de Transports de Mallorca 3
+
+PAGE 4
+Criterio Descripción Ponderación
+Criterios evaluables mediante juicio de valor Hasta 45 puntos
+1. Calidad de la propuesta técnica Hasta 45 puntos
+1.1 Planteamiento y Diseño del servicio propuesto Hasta 20 puntos
+1.1.1 Entendimiento y adecuación de la propuesta al contexto del proyecto, 
+objetivos y propuesta de valor para el CTM. Hasta 2 puntos
+1.1.2
+Se valorará el planteamiento de la arquitectura propuesta por los 
+ofertantes, atendiendo a las diferentes soluciones, componentes y servicios 
+propuestos y su adecuación a los requerimientos expresados en el epígrafe 
+2 del Pliego de Prescripciones técnicas.
+Hasta 5 puntos
+1.1.3
+Se valorará el planteamiento y adecuación del servicio/solución propuesta 
+para dar cobertura a los requerimientos funcionales y casos de uso 
+descritos bajo el epígrafe 1. Del pliego de prescripciones técnicas.
+Hasta 5 puntos
+1.1.4
+Se valorará el grado de adecuación y planteamiento del algoritmo de cálculo 
+de la estimación predictiva de paso por parada, su fiabilidad, así como su 
+adecuación y robustez conforme al estado del arte en tecnologías y 
+capacidades de estimación predictiva. 
+Hasta 5 puntos
+1.1.5
+Adecuación de la solución técnica a los requerimientos en materia de 
+seguridad, así como los relativos a la capacidad y dimensionamiento de la 
+solución propuesta, incluyendo los entornos pre-productivos propuestos, 
+que deberán atender a las diferentes modalidades de prestación existentes.
+Hasta 3 puntos
+1.2 Gobierno y gestión del servicio Hasta 15 puntos
+1.2.1
+Se valorará el planteamiento y enfoque metodológico propuesto por el 
+ofertante para dar cobertura cada una de las fases requeridas proyecto de 
+diseño, desarrollo, implantación y posterior mantenimiento de la solución 
+propuesta, así como los diferentes entregables asociados a cada una de 
+ellas.
+Hasta 5 puntos
+1.2.2
+Se valorará la adecuación del plan de trabajo propuesto por los ofertantes 
+atendiendo a los principales hitos de valor del proyecto, el planteamiento 
+metodológico realizado, los recursos y la capacidad asociada a cada uno de 
+ellos, así como los planes de riesgo y mitigación propuestos.
+Hasta 3 puntos
+1.2.3
+Se valorará el planteamiento y enfoque del modelo de gobierno propuesto, 
+los diferentes elementos de los que este se compone (reuniones, 
+responsabilidades, criterios, principios, etc.)
+Hasta 4 puntos
+1.2.4
+Se valorará el planteamiento y la adecuación del plan de transferencia y 
+devolución del servicio conforme a los requerimientos establecidos por el 
+CTM en el pliego de prescripciones técnicas.
+Hasta 3 puntos
+1.3 Plan de formación y gestión del conocimiento Hasta 5 puntos
+1.3.1
+Se valorará el planteamiento y adecuación del plan de formación y gestión 
+del conocimiento propuesto por los ofertantes, su conveniente soporte 
+tecnológico, sesiones, recursos, etc. conforme a los requerimientos 
+expresados en el PPT.
+Hasta 5 puntos
+1.4 Servicio de administración, mantenimiento y evolución del servicio Hasta 5 puntos
+1.4.1
+Se valorará el planteamiento y enfoque metodológico, recursos, entregables 
+y tecnología de soporte a las actividades propuesto por el ofertante para 
+dar cobertura a los diferentes servicios de mantenimiento propuestos por el 
+CTM bajo el epígrafe 4. Del PPT.
+Hasta 5 puntos
+Consorci de Transports de Mallorca 4
+
+PAGE 5
+ 4 - Ofertas presentadas
+A la presente licitación ha concurrido la siguiente empresa:
+• Alestis Consulting - GeoActio
+La oferta presentada por esta empresa es conforme a los requerimientos 
+expresados en los pliegos de este procedimiento, por tanto, se considera 
+ADMITIDA.
+ 5 - Valoración de las ofertas presentadas
+ 5.1 - Requerimientos técnicos y de servicio
+Conforme a lo indicado en el pliego de prescripciones técnicas, se establecen una 
+serie de requerimientos técnicos, funcionales y de servicio a los que los ofertantes 
+deben dar cobertura en el ámbito de sus propuestas. Los mismos quedan 
+resumidos en la tabla descrita a continuación:
+1. Propuesta de valor para el CTM, objetivos propuestos
+• Entre los objetivos específicos de este proyecto se encuentran:
+• Contribuir a la estrategia de sostenibilidad impulsada por el Consorcio de Transportes de Mallorca 
+(CTM) al impulsar la utilización de los datos y su análisis en los procesos de toma de decisiones 
+relativos la planificación y consumo de los diferentes recursos de transporte.
+• Mejorar la eficiencia operativa de los procesos de planificación, control y operación de los servicios 
+de transporte CTM, al contar con una herramienta útil para la toma de decisiones a partir de los 
+datos —claros y precisos— y su posterior análisis.
+• Fomentar la innovación e integración de nuevos servicios y modelos de transporte —tanto público 
+como privado— al disponer de información precisa y en tiempo real sobre la disponibilidad y uso de 
+los medios de transporte ofrecidos por el CTM, que permita contribuir al desarrollo de nuevas 
+propuestas de valor (i.e., Mobility as a Service o MaaS).
+• Proporcionar información de valor para los usuarios —residentes— de los servicios de transporte 
+proporcionados por el CTM, precisa y de calidad, que favorezca la adopción y contribuya la 
+fidelización en la utilización de estos, contribuyendo de esta forma a los objetivos de sostenibilidad 
+propuestos.
+• Proporcionar información de valor para los usuarios —turistas— de los servicios de transporte 
+proporcionados por el CTM, que propicie una utilización preferente por parte de estos, y contribuya 
+a posicionar al CTM como un proveedor de servicios confiables y de calidad.
+El adjudicatario será responsable de proveer de cuantos medios materiales (equipamiento, licencias, acuerdos 
+contractuales y de colaboración, etc.) y humanos que sean necesarios para la prestación de los servicios de 
+consultoría, diseño, desarrollo, implantación, mantenimiento y soporte de la solución de inteligencia de 
+transporte basada en tecnologías cloud Big Data / Machine Learning (ML) y microservicios requerida para la 
+prestación de servicios analíticos objeto del alcance.
+Consorci de Transports de Mallorca 5
+
+PAGE 6
+2. Requerimientos en materia del cálculo de la estimación —predicción— del paso por parada
+2.1 Planteamiento del servicio propuesto.
+Los ofertantes deben presentar propuestas basadas en infraestructura y servicios cloud computing, conforme 
+a arquitecturas IaaS/PaaS, SaaS en modo suministro o SaaS en modo pago por uso, atendiendo al 
+planteamiento realizado por cada ofertante. Asimismo, será responsabilidad de los ofertantes considerar en 
+sus propuestas los servicios y licencias requeridos para el análisis, desarrollo, puesta en marcha y posterior 
+mantenimiento durante la vida del contrato.
+2.2 Necesidades relativas al caculo de la estimación —predicción— del paso por parada.
+Los ofertantes deberán justificar la solidez y precisión del modelo de estimación —predicción— del tiempo de 
+paso por parada de los diferentes recursos y servicios de transporte interurbano del CTM objeto del alcance. 
+Para valorar la capacidad predictiva del modelo de estimación, los ofertantes deberán atender al cálculo de 
+dos variables relativas a la fiabilidad de la predicción:
+• Error absoluto medio (MAE or mean average error) 
+• Error absoluto porcentual medio (MPAE or mean average error) 
+Los ofertantes deberán:
+1. Describir el modelo predictivo propuesto y sus componentes teóricos, justificando razonadamente su 
+propuesta de valor, las variables utilizadas así como el periodo mínimo de datos históricos requerido para 
+cada una de las variables requeridas.
+2.  Los ofertantes deberán indicar la frecuencia con la que el algoritmo / modelo propuesto calcula una nueva 
+predicción de paso por parada.
+3. Los ofertantes deberán indicar en sus propuestas la resolución máxima de los diferentes puntos de control 
+establecidos, que permita el análisis de la evolución de las diferentes variables monitorizadas.
+4. Los ofertantes deberán indicar en sus propuestas la fiabilidad predictiva que se comprometen a alcanzar en 
+el contexto de las necesidades planteadas por el CTM atendiendo a 2 casos de uso para cada uno de los hitos 
+del proyecto:
+— Cuando el usuario consulta la hora de paso estimada con 15 minutos de antelación respecto a la hora 
+teórica de llegada del bus a su parada, con un margen de error admisible de ±2 minutos.
+— Cuando el usuario consulta la hora de paso estimada con 8 minutos de antelación respecto a la hora teórica 
+de llegada del bus a su parada, con un margen de error admisible de ±1 minutos. (MVP+2 meses, la fiabilidad 
+debe ser igual o superior al 85%. Hito solución completa a proponer por el ofertante)
+La solución propuesta deberá permitir calcular la fiabilidad predictiva teniendo en consideración los 
+indicadores MAPE y MAE anteriormente descritos para —todas— las siguientes condiciones de servicio:
+• MAPE / MAE medio mensual. (agregado para todas las líneas)
+• MAPE / MAE medio diario (agregado para todas las líneas).
+• Valor máximo de MAPE / MAE para una línea medio mensual (todas las expediciones ambos sentidos).
+• Valor máximo de MAPE / MAE para una línea medio diario (todas las expediciones ambos sentidos).
+5. Los ofertantes deberán describir y justificar en sus propuestas la capacidad ofrecida —y tiempo de 
+respuesta— por su solución para adaptar sus predicciones a los siguientes casos especiales:
+• Congestión en ruta (velocidad media inferior a 25 Km/h)
+• Condiciones meteorológicas adversas severas.
+• Desvió de ruta debido a incidencias significativas.
+• Asignación de expediciones de refuerzo.
+Consorci de Transports de Mallorca 6
+
+PAGE 7
+3. Requerimientos funcionales y casos de uso
+3.1 Particularidades relativas a la panificación y operación de servicios. Se deberá describir el grado de 
+cumplimiento, planteamiento e impacto en los procesos de gestión de servicios.
+1. La solución propuesta por los ofertantes debe ofrecer mecanismos de asignación automática de los 
+vehículos a las diferentes expediciones en tiempo real ante la ausencia de eventos de registro y/o de 
+asignaciones por parte de los operadores de servicio.
+2. La solución propuesta por los ofertantes debe considerar la prestación de los servicios de transporte 
+interurbano haciendo uso de líneas circulares.
+3. La solución propuesta por los ofertantes debe considerar la prestación de los servicios de transporte 
+interurbano en los que ciertos tramos / segmentos de la línea se lleven a cabo de forma subterránea 
+(presencia de túneles) —opcional—
+4. La solución propuesta por los ofertantes debe considerar la presencia de intercambiadores dentro de sus 
+mecanismos de control de la prestación de los servicios y del cálculo de la estimación del paso por parada.
+5. Los ofertantes deberán asegurar que la solución propuesta permite discriminar adecuadamente la 
+presencia de líneas de ida y vuelta muy próximas.
+6. La solución propuesta por los ofertantes debe permitir discriminar adecuadamente entre paradas que se 
+encuentran muy próximas en el mismo itinerario.
+7. La solución propuesta por los ofertantes debe incluir mecanismos que permitan identificar aquellos 
+vehículos que se encuentran fuera de ruta, así como aquellos que se encuentran inactivos.
+8. La solución propuesta por los ofertantes debe incluir mecanismos que permitan discriminar 
+adecuadamente los saltos de parada.
+9. La solución propuesta por los ofertantes debe incluir mecanismos que permitan detectar errores y/o fallos 
+de calidad de las señales GPS obtenidas de los diferentes vehículos, proponiendo mecanismos correctivos 
+cuando sea necesario (opcional)
+3.2 Fuentes de información:
+— El ofertante deberá suscribir cuantos acuerdos de colaboración sean necesarios con aquellos agentes 
+privados y públicos para la adquisición, integración y posterior mantenimiento —que deberá ser asumido por 
+los ofertantes durante la vida del contrato— de aquellas fuentes de información adicionales a las disponibles 
+en el Consorcio de Transportes que sean requeridas para dar cobertura a los servicios y alcance propuesto en 
+el presente Pliego de Prescripciones Técnicas.
+— Los ofertantes deberán garantizar la adecuación de sus propuestas a las diferentes fuentes de información.
+— Los ofertantes deberán justificar la idoneidad de la información de las diferentes fuentes propuestas por el 
+CTM, describiendo cuantas fuentes de información adicional consideren necesarias para dar cobertura al 
+alcance establecido (coste, requerimientos de acceso, justificación)
+— Será responsabilidad de los diferentes ofertantes adquirir la información relativa a las diferentes fuentes 
+propiedad del CTM, adquiriendo la misma en aquellos puntos establecidos por el CTM y conforme a su 
+frecuencia y formato.
+— Los ofertantes deberán establecer mecanismos automáticos, incluyendo alertas y notificaciones, que 
+permitan supervisar la correcta eficacia y eficiencia de los procesos de ingesta de la información obtenida 
+desde las diferentes fuentes. Asimismo, deberán llevar a cabo cualquier modificación sobre las mismas, de ser 
+necesario, así como su mantenimiento correctivo y evolutivo.
+3.3 Uso de datos, explotación de la información:
+Consorci de Transports de Mallorca 7
+
+PAGE 8
+El Servicio Big Data propuesto debe permitir la notificación en tiempo real del estado de los diferentes 
+servicios de transporte así como el procesamiento complejo de datos históricos para generar valor a partir de 
+este tipo de información. Para ello:
+— Deberá poner en marcha servicios basados en web (aplicaciones web), que den cobertura a los 
+requerimientos de explotación analítica. El acceso a los servicios web será ilimitado.
+— Deberán considerar en sus propuestas la cobertura de los requerimientos descritos haciendo uso de 
+soluciones de explotación analítica con las capacidades adecuadas para ofrecer los servicios requeridos tanto 
+en tiempo real como diferido conforme a los requerimientos del CTM.
+— La solución propuesta por los ofertantes deberá permitir compartir información en tiempo real relativa a la 
+prestación de los diferentes servicios de transporte ofrecidos por el CTM haciendo uso de feeds basados en el 
+estándar GTFS-Real Time así como su integración con Google Maps.
+— La solución propuesta por los ofertantes deberá permitir información tanto en tiempo real como histórica 
+relativa a la prestación de los diferentes servicios de transporte ofrecidos por el CTM mediante la integración 
+vía API REST con otros servicios consumidores.
+3.3.1 Planificación de servicios interurbanos:
+1. La solución propuesta por los ofertantes debe permitir el análisis de los tiempos de recorrido reales versus 
+los tiempos de recorrido planificados de forma global, por cada sub-línea y expedición, así como los tiempos 
+entre paradas (obligatorio)
+2. La solución propuesta por los ofertantes debe permitir soportar la exportación de sugerencias de 
+planificación de tiempos de recorrido por sub-línea, expedición y parada a partir del análisis realizado de los 
+diferentes tiempos de recorrido (CSV/API) (obligatorio)
+3.3.2 Operación de servicios: seguimiento y control de la prestación:
+1. La solución propuesta por los ofertantes debe proporcionar estimaciones de paso por parada en tiempo 
+real, tanto para las expediciones en curso como para las siguientes planificadas (web, vía explotación analítica, 
+GTFS-RT y API) (Obligatorio)
+2. La solución propuesta por los ofertantes debe proporcionar estimaciones de ocupación de vehículos en 
+tiempo real, atendiendo a la capacidad de cada vehículo (web, vía explotación analítica, GTFS-RT y API) 
+(Opcional)
+3. La solución propuesta por los ofertantes debe proporcionar información detallada en tiempo real que 
+permita el control operativo de la prestación de los diferentes servicios de transporte (obligatorio)
+4. La solución propuesta en tiempo real que permita el control operativo de la prestación de los diferentes 
+servicios de transporte incluye información relativa a la ocupación (opcional)
+5. La solución propuesta en tiempo real que permita el control operativo incluye información relativa a 
+incidencias y cambios de servicio activas (opcional)
+6.  La solución propuesta por los ofertantes debe proporcionar información en tiempo real a los operadores 
+del servicio relativa al rendimiento en la prestación diferentes servicios de transporte ofrecido - puntualidad 
+(obligatorio)
+7. La solución propuesta por los ofertantes debe proporcionar información en tiempo real a los operadores 
+del servicio relativa al rendimiento en la prestación diferentes servicios de transporte ofrecido - ocupación 
+(opcional)
+8. La solución propuesta por los ofertantes debe proporcionar información histórica a los operadores del 
+servicio relativa al rendimiento en la prestación diferentes servicios de transporte ofrecido - puntualidad 
+(obligatorio)
+Consorci de Transports de Mallorca 8
+
+PAGE 9
+9. La solución propuesta por los ofertantes debe proporcionar información histórica a los operadores del 
+servicio relativa al rendimiento en la prestación diferentes servicios de transporte ofrecido - ocupación 
+(opcional)
+10. Los informes históricos relativos a la puntualidad en la prestación de los servicios de transporte deberán 
+tener en consideración aquellos ajustes y modificaciones en la prestación de servicios realizados, incluyendo 
+el tipo de modificación/ajuste realizado (opcional)
+11. La solución propuesta por los ofertantes deberá ofrecer información relativa a la evaluación de la precisión 
+del algoritmo de cálculo de las estimaciones de paso por parada (obligatorio)
+12. La solución propuesta por los ofertantes debe ofrecer información histórica relativa al análisis de la 
+velocidad de los vehículos en los diferentes segmentos entre las paradas que componen una ruta (distancia 
+mínima inferior a 50 m) (obligatorio)
+13. La solución propuesta por los ofertantes debe poder ofrecer información histórica relativa al tiempo de 
+subida y bajada de viajeros por parada (opcional)
+14. La solución propuesta por los ofertantes debe poder ofrecer información histórica relativa a la puntualidad 
+de los conductores y operadores o empresas concesionarias del servicio de transporte, así como del tiempo 
+de conducción de cada uno de ellos (obligatorio)
+3.3.3 Operación de servicios: ajustes e incidencias:
+1. La solución propuesta por los ofertantes debe permitir, de forma ágil, eficiente e intuitiva, llevar a cabo 
+modificaciones sobre los servicios inicialmente planificados a través de los servicios web ofrecidos al CTM-
+inclusión, exclusión y modificación— (obligatorio)
+2. Modificaciones de servicio – cancelaciones, servicios de refuerzo, desvíos, modificaciones de horario de 
+salida, exclusión de paradas (opcional)
+3. Las modificaciones de servicio propuestas deben permitir la creación y gestión de notificaciones y alertas 
+de servicio (opcional)
+4. Los informes históricos relativos a la prestación de los servicios de transporte interurbano del CTM, caso de 
+producirse, deberán reflejar información relativa a los ajustes e incidencias del servicio que han afectado a la 
+prestación del servicio (opcional)
+3.3.4 Operación de servicios: Alertas y notificaciones:
+1. La solución ofrecida por los ofertantes debe permitir establecer notificaciones a los diferentes 
+consumidores de los servicios de transporte —usuarios, aplicaciones y servicios— ante modificaciones sobre 
+los servicios inicialmente planificados, así como ante eventos o incidencias no planificados que puedan afectar 
+a los servicios de transporte de forma global/parcial —tiempo real, API REST, GTFS-RT Service Alerts (opcional)
+2.  La solución propuesta por los ofertantes debe permitir monitorizar de forma automática la disponibilidad y 
+la calidad de los feeds de datos requeridos para la prestación de los servicios requeridos, generando alertas 
+de servicio ante cualquier desviación respecto de los parámetros establecidos (obligatorio)
+3.3.5 Operación de servicios: Operación de servicios de transporte:
+1. La solución propuesta debe permitir asignar vehículos —atendiendo a los roles de los usuarios— a aquellos 
+servicios activos en los que no se encuentre ningún servicio asignado, ofreciendo al operador de la aplicación 
+información sobre la asignación previa recibida de los operadores del citado servicio, caso de existir - interfaz 
+de usuario, API, CSV (obligatorio)
+2. La solución propuesta debe permitir, de forma ágil, eficiente e intuitiva, modificar las asignaciones 
+Consorci de Transports de Mallorca 9
+
+PAGE 10
+(reasignación) de vehículos con respecto a la originalmente recibida de los operadores del servicio, en lo 
+relativo a cualquiera de sus atributos (obligatorio)
+3.3.6 Operación de servicios: Administración de datos de referencia:
+1. La solución propuesta por los ofertantes debe permitir la adquisición de ficheros GTFS de forma automática 
+y programable (obligatorio)
+2. La solución propuesta por los ofertantes debe permitir la asignación y modificación de expediciones por 
+parte de los operadores de servicio de forma automática (CSV y API) (obligatorio)
+3. La solución propuesta por los ofertantes debe permitir la asignación automática ante la ausencia de 
+información relativa a las asignaciones por parte de los operadores del servicio y / o de eventos de registro e 
+inicio del servicio recibidos desde el vehículo (obligatorio)
+3.3.7 Uso de datos: GTFS Real Time
+1. La solución propuesta por los ofertantes debe permitir compartir las predicciones de paso por parada 
+mediante el uso del estándar GTFS-RT (obligatorio)
+2. La solución propuesta por los ofertantes debe permitir compartir información sobre retrasos, cambios de 
+ruta o cancelaciones haciendo uso de feeds GTFS-RT Trip updates (obligatorio)
+3. La solución propuesta por los ofertantes debe permitir compartir información sobre la posición de 
+vehículos y el nivel de congestión en la ruta haciendo uso feeds GTFS-RT Vehicle positions (obligatorio)
+4. La solución propuesta por los ofertantes debe permitir compartir información sobre alertas relativas al 
+servicio de transportes haciendo uso feeds GTFS-RT Service Alerts (opcional)
+3.3.8 Uso de datos: Otros consumidores internos o externos al CTM
+1. La solución propuesta por los ofertantes debe permitir compartir información relativa a la prestación de los 
+servicios de transporte del CTM mediante el uso de API REST haciendo uso de formatos JSON, CSV y XML - 
+obligatorio
+2. Atendiendo al grado de cobertura de la funcionalidad opcional, se deberá ofrecer información relativa a la 
+ocupación, alertas y notificaciones y ajustes e incidencias —opcional—
+4. Requerimientos de arquitectura, técnicos y lógicos
+4.1 Solución técnica propuesta
+La solución propuesta para dar cobertura al Servicio Big Data debe basarse en una arquitectura de 
+microservicios que haga uso de capacidades Big Data / Inteligencia Artificial, dando cobertura a los 
+requerimientos funcionales, técnicos y de seguridad. Los ofertantes deberán:
+— Los ofertantes deberán tener en consideración aspectos relacionados con la conectividad de servicio / 
+gestión —vía VPN, red interna, etc.— desde las oficinas del CTM.
+— Proveer al CTM de una estimación del dimensionamiento de dicha plataforma, así como de las cargas de 
+trabajo estimadas por el adjudicatario.
+— Deberá incluir en su propuesta técnica y económica las necesidades de servicios cloud, atendiendo al 
+modelo propuesto, requeridas para la puesta en marcha de los diferentes entornos de trabajo.
+Consorci de Transports de Mallorca 10
+
+PAGE 11
+Atendiendo a la arquitectura propuesta se deberá considerar:
+1. Para aquellas soluciones basadas en IaaS/PaaS y SaaS en modo suministro que requieran dar cobertura a 
+un GAP funcional / técnico para dar cobertura al alcance propuesto por el CTM, los ofertantes deberán 
+recoger en sus propuestas un High Level Assesment (HLA) de los requerimientos funcionales (Epígrafe 1.), 
+técnicos (Epígrafe 2. apartado 5.1.) y no funcionales (Epígrafe 2. apartado 5.2.) que describa el planteamiento y 
+enfoque inicialmente propuesto por el ofertante. 
+2. Para aquellas soluciones basadas en SaaS en modo pago por uso —sin cesión de IP— o en modo suministro 
+que no requieran dar cobertura a un GAP funcional / técnico, se deberá describir la arquitectura lógica que 
+refleje los diferentes componentes de la solución así como una descripción funcional detallada de la lógica 
+implementada / soportada por cada uno de ellos.
+4.1.1 Generación de datos:
+— Los ofertantes deberán describir en sus propuestas en qué medida la solución Big Data propuesta da 
+soporte a la ingesta de datos de tipo no estructurado y tipo estructurado (ODBC, API REST, JDBC, JSON, 
+GEOJSON, XML, TXT, CSV, WMS, HTML5, XLS, XLSX, así como garantizar el acceso a bases de datos SQL/No-SQL, 
+servicios web y sistemas de ficheros de almacenamiento masivo)
+4.1.2 Ingesta de datos:
+— Los ofertantes deberán describir la solución propuesta para dar cobertura a la ingesta de datos en tiempo 
+real / diferido atendiendo a las diferentes fuentes de información, aplicando reglas de filtrado de esta 
+información, agregación, transformación y control de la calidad de los diferentes datos para su posterior 
+análisis de la información. Asimismo se deberá atender a la presencia de:
+— Servicios de secuenciación, procesamiento, diseño visual y control de flujos de datos y operaciones, así 
+como facilidades asociadas a proveer de una apropiada trazabilidad, control y seguimiento de los datos de las 
+diferentes fuentes de información. 
+— Establecimiento de políticas de seguridad a medida de los diferentes niveles de confidencialidad de la 
+información adquirida.
+4.1.3. Almacenamiento y análisis de datos— Data Lake:
+La solución de Data Lake propuesta debe cumplir con tres premisas fundamentales:
+— Proporcionar mecanismos de almacenamiento distribuido, que permita, de forma escalable y tolerante a 
+fallos, almacenar gran cantidad de datos tanto en formatos estructurados como no estructurados. Se debe 
+garantizar la existencia de mecanismos automáticos de replicación de datos y de mecanismos de 
+recuperación automática de la información en caso de fallos.
+— Proporcionar mecanismos de procesamiento distribuido con el rendimiento adecuado para dar cobertura a 
+las necesidades de negocio planteadas, asegurando la escalabilidad de este ante nuevas necesidades y la 
+capacidad de orquestar los diferentes procesos.
+— Proporcionar mecanismos que permitan acceder a los datos para consultar información tanto de forma 
+estructurada como abierta.
+— En función del nivel de procesamiento de la información en el Data Lake, este debe considerar tres posibles 
+niveles o estados de la información: staging, elaborados y archivados.
+Asimismo, se deberá ofrecer un DWH (SQL / NoSQL) que se constituya como el repositorio de información de 
+acuerdo con los requerimientos de negocio y, preparada para ser accesible de forma ágil y flexible desde los 
+diferentes consumidores con base en las necesidades específicas de cada uno de ellos, tanto en tiempo real 
+como en modo batch.
+Consorci de Transports de Mallorca 11
+
+PAGE 12
+Los ofertantes deberán justificar de forma razonada en sus propuestas la arquitectura de DWH y bases de 
+datos propuestas, atendiendo a:
+• Naturaleza y tipo de datos a gestionar.
+• Requerimientos en materia de rendimiento, tanto en relación con la ingesta y procesamiento de la 
+información como en relación con el análisis y explotación de la misma.
+• Requerimientos en materia de disponibilidad, seguridad, integridad, consistencia y persistencia de la 
+información.
+• Requerimientos en materia de escalabilidad y flexibilidad.
+• Requerimientos en materia de administración y mantenimiento de la solución propuesta.
+• Coste recurrente, incluyendo licencias.
+Se deberá atender asimismo a los mecanismos de aseguramiento de la calidad y la fiabilidad de los datos, 
+mediante el uso de herramientas de Data Quality y Master Data Management que permitan automatizar y 
+asegurar los procesos de revisión de datos, integración o unificación y eliminación de registros duplicados.El 
+DWH propuesto debe permitir la persistencia mediante la utilización de estructuras de almacenamiento de la 
+información (estrella, cubos, etc.) siempre que sea necesario.
+4.1.4 Data Lab:
+Será necesario que el adjudicatario tenga en consideración la puesta en marcha de una solución avanzada de 
+machine learning que permita el desarrollo y entrenamiento de modelos analíticos específicos y de soporte a 
+las actividades relacionadas con la ingeniería y ciencia de datos.  Será responsabilidad del ofertante 
+determinar la plataforma o frameworks a desplegar para dar cobertura a las siguientes necesidades:
+• Herramientas de etiquetado de datos que permitan generar data sets de entrenamiento.
+• Capacidades de tratamiento de datos que permitan la preparación de estos y el desarrollo de actividades de 
+feature engineering.
+• Amplio repertorio de algoritmos de machine learning, así como de modelos predefinidos de inteligencia 
+artificial.
+• Creación rápida de prototipos, así como la automatización de las labores de refresco y reentrenamiento de 
+los modelos.
+• Uso de mecanismos de procesamiento distribuido, así como de acceso a las diferentes capas de datos del 
+Data Lake y lectura de los formatos y datos de la capa de ingesta.
+• Mecanismo de asistencia y gestión del conocimiento que permitan favorecer el aprendizaje de los usuarios 
+del CTM.
+• Diseño visual y ágil.
+• Facilidades asociadas a la puesta en producción de los modelos y la actualización de estos en el sistema 
+productivo de IA, incluyendo la actualización de metadatos en el Data Hub.
+4.1.5 Capa de acceso a datos / Seguridad en el acceso a datos:
+Esta capa debe dar cobertura a dos necesidades fundamentales:
+• Gobierno y Gestión del Dato: Mediante el despliegue de herramientas que permitan aplicar y monitorizar las 
+políticas y estándares de gobierno del dato, entre los que se encuentra la gestión de metadatos, 
+almacenamiento de trazas y linaje, evaluación de impacto, etc.
+• Clasificación de datos y / o etiquetado de datos.
+• Control del acceso a los datos, así como de las políticas de seguridad y privacidad relativas a los mismos. 
+Consorci de Transports de Mallorca 12
+
+PAGE 13
+Amonificación y cifrado de datos.
+• Monitorización y auditoria.
+4.1.6 Uso de datos - Consumidores y clientes
+4.1.6.1 Aplicaciones y servicios web consumidores de información
+— Las ofertas realizadas por los diferentes ofertantes deben considerar el desarrollo de funcionalidades de 
+autoservicio de datos vía API Gateway que permita exponer vía API REST un conjunto de endpoints de 
+naturaleza tanto estática y dinámica, que permita ofrecer información en tiempo real. La misma debe 
+considerar los requerimientos en materia de seguridad (API-key) pudiendo aplicar reglas de filtrado por 
+consumidor.
+— El acceso a la información almacenada en el Data Lake o en el DWH, exponiendo servicios/mecanismos de 
+consulta a la información contenida en estos, cuya solución técnica dependerá de dichos requerimientos 
+(NoSQL, in-memory SQL, SQL) y del tipo y naturaleza de los datos a acceder.
+— El acceso a streams de información en tiempo real, una vez que estos han sido procesados por los 
+diferentes microservicios que componen la solución propuesta por los ofertantes, ya sea mediante la 
+suscripción a servicios de mensajería o, caso de encontrarse disponible, el acceso vía API a la información 
+requerida.
+4.1.6.2 Explotación analítica de la información
+— El ofertante deberá incluir dentro de su propuesta una plataforma de explotación y visualización de datos 
+—Tableau, Power BI o similar— (5 licencias) que permitan tanto la explotación y análisis de los datos como el 
+reporting y la generación de cuadros de mando, que permita el acceso a datos tanto en tiempo real como en 
+tiempo diferido.
+— Los ofertantes deberán considerar como parte de sus propuestas la capacitación y desarrollo de 
+competencias para llevar a cabo la explotación analítica de la información a partir de la solución seleccionada 
+por estos. Este plan formativo debe dotar a los usuarios seleccionados (máx. 8) de capacidades de explotación 
+avanzada de la información, haciendo uso de la solución implantada en el contexto del CTM.
+4.1.6.3. Herramientas de machine learning
+— Aquellas soluciones basadas en servicios ML/DL deberán ofrecer una solución que permitirá gestionar, 
+monitorizar y programar los diferentes modelos analíticos a lo largo del tiempo de forma que estos se 
+encuentren disponibles para los diferentes microservicios / servicios y consumidores. La misma:
+— Deberá soportar, de forma escalable, la computación distribuida, así como el análisis de información en 
+tiempo real.
+— Deberá exponer vía una API configurable y gestionable la información y datos obtenidos a partir de la 
+ejecución de los diferentes modelos analíticos a los diferentes servicios consumidores de esta.
+4.1.7 Servicios de Transporte Inteligente
+— Es responsabilidad de los ofertantes incluir en sus propuestas una solución basada en contenedores que dé 
+cobertura a aquellos microservicios a considerar dentro del alcance de la solución propuesta, así como 
+aquellas soluciones requeridas para su conveniente despliegue y orquestación, de forma que estos se 
+ejecuten directamente en la infraestructura del proveedor de servicios cloud propuesto. 
+— De forma complementaria y/o alternativa al desarrollo de microservicios, los ofertantes podrán considerar 
+la utilización de capacidades y funciones cloud específicas, de tipo serverless.
+4.2 Requerimientos no funcionales
+1. El adjudicatario del servicio deberá maximizar el uso de servicios cloud como parte de la solución 
+Consorci de Transports de Mallorca 13
+
+PAGE 14
+propuesta.
+2. Los diferentes componentes de la arquitectura propuesta deben garantizar una alta disponibilidad y 
+tolerancia a fallos del servicio ofrecido, indicando en sus propuestas el RTO/RPO objetivo así como los 
+mecanismos de copia de respaldo.
+3. Las empresas ofertantes deberán garantizar que la solución dispone de los mecanismos necesarios para 
+escalar horizontalmente en términos de capacidad de procesamiento hardware y software.
+4. La arquitectura propuesta por el ofertante deberá permitir el escalado dinámico de capacidad de los 
+recursos que la componen de forma automática (elasticidad)
+5. La solución propuesta por los ofertantes debe garantizar que la solución propuesta da cobertura a las 
+obligaciones requeridas para cumplimiento de lo dispuesto en el Esquema Nacional de Seguridad, ENS, (Real 
+Decreto 3/2010 de 8 enero) así como al tratamiento de datos personales (RGPD). Los datos deben ser 
+almacenados en un territorio de la UE.
+6. La solución propuesta debe asegurar un adecuado nivel de eficiencia operativa.
+7. La arquitectura propuesta debe garantizar elevados niveles de rendimiento, especialmente en relación con 
+los procesos de carga, procesamiento y explotación de la información en tiempo real. Se deberá proporcionar 
+información relativa a los tiempos máximos de ejecución de las diferentes operaciones.
+8. Los ofertantes deberán favorecer el uso de aplicaciones y soluciones basadas en productos Open-source a 
+excepción de las soluciones ofrecidas en materia de explotación de datos.
+4.3 Requerimientos en materia de entornos pre-productivos y productivos: Los ofertantes deberán tener en 
+consideración en sus propuestas la puesta en marcha de los siguientes entornos: desarrollo, preproducción y 
+producción, incluyendo cuantas aquellas licencias y herramientas sean necesarias para la prestación de los 
+servicios.
+4.4 Requerimientos en materia de seguridad
+1. El tratamiento seguro de la información, asegurando la consistencia e integridad de esta a lo largo del ciclo 
+de vida de los datos. Para ello, proporcionará mecanismos para el enmascaramiento de los datos.
+2. Los requerimientos en materia de cumplimiento normativo, en especial las obligaciones requeridas para 
+cumplimiento de lo dispuesto en el Esquema Nacional de Seguridad, ENS.
+3. El adjudicatario se compromete de forma específica a tratar como confidencial toda aquella información 
+responsabilidad del CTM a la que tenga acceso.
+4. La solución propuesta por los diferentes ofertantes debe garantizar una disponibilidad mínima de servicio 
+que de soporte al Servicio Big Data propuesto superior al 99,9% mensual, así como el cumplimiento de los 
+principios de alta disponibilidad y tolerancia a fallos con un RTO < 30 m y un RPO inferior a 1 h.
+5. La solución propuesta debe garantizar que el acceso al sistema se realiza a través de mecanismos de 
+autenticación basados en usuario/contraseña, integrando su solución con la existente en el CTM.
+6. Los ofertantes deberán respetar en su integridad el Reglamento (UE) 2016/679 del Parlamento Europeo y 
+del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas en lo que respecta al 
+tratamiento de datos personales (RGPD).
+4.5 Dimensionamiento de la solución propuesta: La empresa ofertante deberá llevar a cabo un 
+dimensionamiento de la solución propuesta para cada uno de los diferentes entornos propuestos.
+5. Gestión y gobierno del servicio. Planteamiento metodológico
+5.1 Necesidades en materia de gobierno y gestión del servicio
+Se requiere que el ofertante provea de un servicio de seguimiento, control, gobierno y comunicación de los 
+servicios que de cobertura a las actividades de: Diseño y mantenimiento del plan de trabajo del programa de 
+Consorci de Transports de Mallorca 14
+
+PAGE 15
+implantación, seguimiento y control de los hitos del plan, coordinación y control operativo de los recursos, 
+control económico, seguimiento y control del planteamiento metodológico, seguimiento de los avances del 
+proyecto, gestión de riesgos y planes de contingencia, sensibilización e involucración de interlocutores.
+5.2 Metodología propuesta
+Los ofertantes deberán describir en sus propuestas su planteamiento metodológico, dando cobertura a:
+—Metodología de gestión del ciclo de vida de la solución propuesta, que comprenda fases claramente 
+diferenciadas de captura de requerimientos, especificación, diseño, desarrollo y validación, integración y 
+despliegue.
+— Matriz de responsabilidades RACI de cada una de las actividades que componen las diferentes fases que 
+componen la metodología.
+— Entregables e índices de contenido relacionados con cada una de las fases y actividades que comprenden.
+— Metodología de seguimiento del proyecto, que comprenda los hitos de planificación, control y seguimiento 
+del mismo, así como las responsabilidades (RACI) entre el ofertante y el CTM, así como los entregables 
+asociados a la misma.
+— Los ofertantes deberán incluir en sus propuestas un plan tentativo de proyecto conforme a los 
+requerimientos funcionales y técnicos del CTM donde:
+ — Se muestre una planificación temporal del proyecto de acuerdo con el número de sprints tentativos para 
+dar cobertura a los diferentes requerimientos identificados, respetando o mejorando los hitos establecidos 
+por el CTM.
+— Una propuesta inicial a alto nivel del backlog de producto a partir de su interpretación de los 
+requerimientos expresados en el pliego.
+— MVP propuesto atendiendo a que este: Debe dar cobertura a un mínimo de un 75% de los servicios 
+transporte interurbano prestados por el CTM de Mallorca en cada una de las líneas y sublíneas objeto del 
+alcance; deberá ofrecer capacidades de explotación analítica de la información en tiempo real / diferido 
+mediante servicios (aplicaciones) web y herramientas de explotación analítica; debe dar cobertura al 100% de 
+los requerimientos funcionales, no funcionales y técnicos de carácter obligatorio; Debe disponer de una API 
+REST que permita ofrecer endpoints en tiempo real / diferido conforme a los requerimientos funcionales, no 
+funcionales y técnicos de carácter obligatorio; debe exponer feeds GTFS-RT para aquellos servicios objeto del 
+alcance;  debe ofrecer una fiabilidad de la predicción igual a superior al 85% en cada una de las líneas objeto ◦
+del alcance (fiabilidad media diaria por línea) atendiendo al caso de utilización en el que el usuario consulta la 
+hora de paso estimada con 8 minutos de antelación respecto a la hora teórica de llegada del bus a su parada, 
+con un margen de error admisible de ±1 minuto; debe ofrecer una fiabilidad de la predicción igual a superior 
+a la comprometida por estos en 4.4.2.3. referida al caso de uso en el que el usuario consulta la hora de paso 
+estimada con 15 minutos de antelación respecto a la hora teórica de llegada del bus a su parada, con un 
+margen de error admisible de ±2 minutos.
+— La metodología propuesta por los ofertantes debe tener en consideración que el CTM espera la entrega de 
+un proyecto “llave en mano”, que requiera la involucración de este de forma principal en aquellos procesos y 
+actividades relativas al diseño y toma de decisiones relativas al proyecto, así como en las actividades 
+relacionadas con el control y seguimiento de este.
+5.3 Gobierno del servicio
+— Los ofertantes deberán incluir una propuesta de modelo de gobierno de la prestación de los diferentes 
+servicios objeto del alcance del presente pliego de prescripciones técnicas.
+— El modelo propuesto por los ofertantes debe ser ágil y eficiente, así como eficaz en relación con los 
+objetivos propuestos.
+— El modelo de gobierno propuesto por los ofertantes debe describir con claridad:
+Consorci de Transports de Mallorca 15
+
+PAGE 16
+• Objetivo/s del mecanismo de gobierno (por ejemplo, stand up diaria).
+• Frecuencia del mecanismo de gobierno en cuestión.
+• Interlocutores involucrados en el mecanismo de gobierno.
+• Responsabilidades (matriz RACI) entre el CTM y el ofertante.
+• Inputs clave y entregables de cada uno de los mecanismos de gobierno.
+• Mecanismos de reporting, actas de reunión y compromiso de entrega de los mismos.
+• Indicadores de seguimiento a revisar durante el mecanismo de gobierno.
+5.4 Devolución del servicio
+Los ofertantes deberán describir en sus propuestas un plan de devolución del servicio que será activado 5 
+meses antes de la finalización del contrato y que dará cobertura, al menos, a las siguientes fases: Preparación 
+de la transición (3-4 semanas), ejecución de la transición (3 semanas), y cierre (2 semanas) atendiendo al 
+alcance descrito por el CTM para cada una de ellas. 
+5.5 Indicadores y niveles de servicio (SLA) comprometidos conforme a los requerimientos establecidos por el 
+CTM. Esquema de penalizaciones.
+6. Servicios de administración, mantenimiento y evolución requeridos
+6.1 Descripción de la necesidad
+Las propuestas deberá atender a las siguientes actividades de administración y mantenimiento de la solución 
+propuesta conforme al alcance establecido por el CTM:
+— Servicios de administración y mantenimiento, atendiendo al dimensionamiento planteado por el ofertante 
+y de acuerdo con los requerimientos y alcance del CTM.
+— Servicios de mantenimiento perfectivo, atendiendo a las prioridades definidas, al dimensionamiento 
+planteado por el ofertante y de acuerdo con los requerimientos y alcance del CTM.
+— Servicios de seguimiento económico de costes de servicios cloud.
+— Servicios de mantenimiento correctivo, atendiendo a las prioridades definidas, al dimensionamiento 
+planteado por el ofertante y de acuerdo con los requerimientos y alcance del CTM.
+— Servicios de mantenimiento evolutivo, atendiendo a la disponibilidad de 800 h para dar cobertura al alcance 
+establecido, atendiendo a las prioridades definidas, a la metodología propuesta, al dimensionamiento 
+planteado por el ofertante y de acuerdo con los requerimientos y alcance del CTM. 
+6.2 Modelo de prestación de los servicios de mantenimiento
+Los ofertantes deberán considerar en sus propuestas un modelo de gobierno de los servicios de 
+administración y mantenimiento de la solución que considere, al menos, las siguientes actividades bajo la 
+responsabilidad de un jefe de proyecto:
+Seguimiento de las actividades, de diferente naturaleza, desarrolladas sobre cada solución o plataforma a lo 
+largo del periodo de medida.
+• Revisión y priorización de las actividades/tareas pendientes en los diferentes backlogs.
+• Revisión y seguimiento de los diferentes niveles de servicio y KPI de las principales actividades.
+• Seguimiento y propuesta de actividades de mejora del servicio, así como de la calidad de la prestación de 
+este.
+• Toma de decisiones del servicio y escalado a otras estructuras de gobierno en caso de que sea requerido.
+6.3 Niveles de servicio relativos a la administración y mantenimiento de la solución propuesta (SLA) conforme 
+a los requerimientos establecidos por el CTM. Esquema de penalizaciones.
+Consorci de Transports de Mallorca 16
+
+PAGE 17
+7. Plan de formación y gestión del conocimiento
+7.1 Plan formativo
+— Los ofertantes deberán considerar, como parte de sus propuestas, la preparación y ejecución de un plan 
+formativo de carácter tanto técnico como funcional (usuario planificador y / u operador de los servicios de 
+transporte), impartido al personal del CTM en relación con las diferentes soluciones y componentes que 
+conforman el ecosistema analítico del Servicio Big Data propuesto.
+— El CTM espera que las propuestas de los diferentes ofertantes incluyan un plan formativo que describa 
+claramente:
+• Sesiones y contenido —índice— a impartir tanto en el ámbito funcional como técnico.
+• Duración de las sesiones y número de las mismas para cada contenido.
+• Número de asistentes y limitaciones, caso de existir.
+• Modalidad, indicando claramente si se trata de una formación presencial, online u offline.
+• Entregables y materiales generados. En este sentido, el CTM considera que los principales entregables de 
+esta actividad deben comprender, al menos, los siguientes elementos:
+• Videos demostrativos.
+• Documentación de soporte a las sesiones formativas.
+• Casos prácticos/de uso y data sets de prueba.
+7.2 Gestión del conocimiento
+— Los ofertantes deben considerar en sus propuestas la generación y el adecuado mantenimiento de 
+documentación descriptiva de la solución propuesta, tanto desde el punto de vista funcional, técnica, de 
+administración y de usuario.
+— Entre otros elementos / recursos documentales a considerar, el repositorio documental debe contener:
+• Documentación relativa a la especificación y diseño técnico y funcional de los diferentes servicios y 
+componentes de la solución.
+• Documentación y diagramas de arquitectura.
+• Documentación relativa a los mecanismos y procedimientos de seguridad implementados.
+• Manuales de usuario de las diferentes soluciones.
+• Manuales técnicos, de configuración, operación y de administración.
+• Materiales formativos multiformato generados en relación con los planes de formación establecidos.
+• Manual de instalación y despliegue de las diferentes soluciones
+— La solución propuesta debe permitir exportar los recursos de forma estandarizada.
+8. Plan de recursos
+— Los ofertantes describirán en sus propuestas la distribución del equipo de trabajo de acuerdo con la 
+propuesta de alcance descrita por el CTM, la dedicación estimada de estos al proyecto, así como los perfiles 
+profesionales y currículos vitae y títulos acreditativos de las personas que formarán el equipo.
+— Las propuestas deberán describir la estructura, jerarquías y relaciones establecidas entre los diferentes 
+roles del equipo de trabajo propuestos. 
+— Los ofertantes deberán indicar expresamente aquellos recursos de los propuestos que desarrollarán de 
+forma simultánea más de un rol entre los descritos.
+— Las propuestas de los ofertantes deberán justificar razonadamente la inclusión de nuevos roles o exclusión 
+de roles existentes en el contexto de la solución propuesta por estos.
+Consorci de Transports de Mallorca 17
+
+PAGE 18
+ 5.1.1 - Alestis Consulting - Geoactio
+Tras el análisis de la propuesta técnica recibida por parte de Alestis - Geoactio, la 
+misma plantea dar cobertura a los requerimientos técnicos, funcionales y de 
+servicio establecidos en el pliego de prescripciones técnicas conforme a lo 
+descrito a continuación:
+1. Propuesta de valor para el CTM, objetivos propuestos GeoActio (Alestis Consulting, S.L.)
+Entre los objetivos específicos de este proyecto se encuentran:
+• Contribuir a la estrategia de sostenibilidad impulsada por el 
+Consorcio de Transportes de Mallorca (CTM) al impulsar la 
+utilización de los datos y su análisis en los procesos de toma de 
+decisiones relativos la planificación y consumo de los diferentes 
+recursos de transporte.
+• Mejorar la eficiencia operativa de los procesos de planificación, 
+control y operación de los servicios de transporte CTM, al 
+contar con una herramienta útil para la toma de decisiones a 
+partir de los datos —claros y precisos— y su posterior análisis.
+• Fomentar la innovación e integración de nuevos servicios y 
+modelos de transporte —tanto público como privado— al 
+disponer de información precisa y en tiempo real sobre la 
+disponibilidad y uso de los medios de transporte ofrecidos por 
+el CTM, que permita contribuir al desarrollo de nuevas 
+propuestas de valor (i.e., Mobility as a Service o MaaS).
+• Proporcionar información de valor para los usuarios —
+residentes— de los servicios de transporte proporcionados por 
+el CTM, precisa y de calidad, que favorezca la adopción y 
+contribuya la fidelización en la utilización de estos, 
+contribuyendo de esta forma a los objetivos de sostenibilidad 
+propuestos.
+• Proporcionar información de valor para los usuarios —turistas
+— de los servicios de transporte proporcionados por el CTM, 
+que propicie una utilización preferente por parte de estos, y 
+contribuya a posicionar al CTM como un proveedor de servicios 
+confiables y de calidad.
+El adjudicatario será responsable de proveer de cuantos medios 
+materiales (equipamiento, licencias, acuerdos contractuales y de 
+colaboración, etc.) y humanos que sean necesarios para la 
+prestación de los servicios de consultoría, diseño, desarrollo, 
+implantación, mantenimiento y soporte de la solución de 
+inteligencia de transporte basada en tecnologías cloud Big Data / 
+Machine Learning (ML) y microservicios requerida para la 
+prestación de servicios analíticos objeto del alcance.
+Conforma a la propuesta de Geoactio, la compañía cuenta 
+con más de 15 años de experiencia en el ámbito de los 
+sistemas inteligentes de transportes, contando con 
+numerosas referencias de clientes tanto en el ámbito del 
+sector público (CRTM Madrid, ATM Barcelona, Gobierno de 
+Navarra, Gobierno Vasco, Xunta de Galicia, Gobierno de 
+Aragón, CTMAM Málaga, TUSSAM Sevilla, EMT Palma, 
+Guaguas Municipales) como privado (ALSA, MOVENTIS, 
+SAGALÉS, GRUPO RUIZ, GRUPO AVANZA, JIMÉNEZ).
+En el ámbito de la propuesta de valor y, de cara a 
+contribuir a los objetivos propuestos por el CTM en el 
+presente pliego, Geoactio destaca:
+— Conoce el contexto concreto del sector ITS mallorquín, 
+ya que ha participado en varios proyectos con algunos de 
+los principales agentes de la isla como EMT de Palma 
+(Plataforma de ticketing de Palma o ABT-EMV) o TUI.
+— Es proveedor tecnológico de los actuales operadores de 
+servicios de transporte interurbano del CTM (Moventis, 
+Sagalés-Caldentey y Grupo Ruiz)
+— Dispone de soluciones específicas que dan cobertura a 
+los requerimientos expresados por el CTM en su pliego de 
+prescripciones técnicas. 
+Por otro lado, la propuesta de Geoactio provee de una 
+solución SaaS que permite dar servicio a las tres tipologías 
+de servicio de transporte interurbano requeridas por el 
+CTM (autobús, metro y tren), teniendo en cuenta sus 
+peculiaridades y casuísticas concretas, atendiendo a las 
+particularidades, volumetrías y su variabilidad.
+Consorci de Transports de Mallorca 18
+
+PAGE 19
+2. Requerimientos en materia del cálculo de la estimación —
+predicción-del paso por parada GeoActio (Alestis Consulting, S.L.)
+2.1 Planteamiento del servicio propuesto.
+Los ofertantes deben presentar propuestas basadas en 
+infraestructura y servicios cloud computing, conforme a 
+arquitecturas IaaS/PaaS, SaaS en modo suministro o SaaS en modo 
+pago por uso, atendiendo al planteamiento realizado por cada 
+ofertante. Asimismo, será responsabilidad de los ofertantes 
+considerar en sus propuestas los servicios y licencias requeridos 
+para el análisis, desarrollo, puesta en marcha y posterior 
+mantenimiento durante la vida del contrato.
+2.2 Necesidades relativas al cálculo de la estimación —predicción— 
+del paso por parada.
+Los ofertantes deberán justificar la solidez y precisión del modelo 
+de estimación —predicción— del tiempo de paso por parada de los 
+diferentes recursos y servicios de transporte interurbano del CTM 
+objeto del alcance. Para valorar la capacidad predictiva del modelo 
+de estimación, los ofertantes deberán atender al cálculo de dos 
+variables relativas a la fiabilidad de la predicción:
+• Error absoluto medio (MAE or mean average error) 
+• Error absoluto porcentual medio (MPAE or mean average error) 
+Los ofertantes deberán:
+1. Describir el modelo predictivo propuesto y sus componentes 
+teóricos, justificando razonadamente su propuesta de valor, las 
+variables utilizadas así como el periodo mínimo de datos históricos 
+requerido para cada una de las variables requeridas.
+2.  Los ofertantes deberán indicar la frecuencia con la que el 
+algoritmo / modelo propuesto calcula una nueva predicción de 
+paso por parada.
+3. Los ofertantes deberán indicar en sus propuestas la resolución 
+máxima de los diferentes puntos de control establecidos, que 
+permita el análisis de la evolución de las diferentes variables 
+monitorizadas.
+4. Los ofertantes deberán indicar en sus propuestas la fiabilidad 
+predictiva que se comprometen a alcanzar en el contexto de las 
+necesidades planteadas por el CTM atendiendo a 2 casos de uso 
+para cada uno de los hitos del proyecto:
+• Cuando el usuario consulta la hora de paso estimada con 15 
+minutos de antelación respecto a la hora teórica de llegada del 
+bus a su parada, con un margen de error admisible de ±2 
+minutos.
+• Cuando el usuario consulta la hora de paso estimada con 8 
+minutos de antelación respecto a la hora teórica de llegada del 
+bus a su parada, con un margen de error admisible de ±1 
+minutos. (MVP+2 meses, la fiabilidad debe ser igual o superior 
+al 85%. Hito solución completa a proponer por el ofertante)
+La solución propuesta deberá permitir calcular la fiabilidad 
+predictiva teniendo en consideración los indicadores MAPE y MAE 
+2.1 La solución SaaS que se encuentra desarrollada por 
+GeoActio y que forma parte de esta propuesta tiene por 
+objetivo satisfacer los diferentes casos de uso en el sector 
+del Transporte Inteligente (ITS), considerando capacidades 
+de Big Data e Inteligencia artificial, que permitan a través 
+de diferentes microservicios y servicios, dar cobertura 
+tanto técnica como a nivel de negocio de los 
+requerimientos para el funcionamiento de acuerdo a 
+niveles de servicios óptimos. La Infraestructura cloud se 
+basa en la solución de Google Cloud Platform (GCP), 
+aprovechando Cloud Run para la implementación de 
+microservicios, garantizando flexibilidad y rendimiento. Se 
+adopta una arquitectura orientada a eventos para mejorar 
+la eficiencia en el procesamiento de datos y facilitar la 
+integración entre componentes haciendo uso de 
+mecanismos de escalado dinámico e implementación de 
+los microservicios objeto del alcance en contenedores, lo 
+que facilita la portabilidad de estos. 
+2.2 En relación con la solución propuesta por Geoactio, el 
+modelo de estimación predictivo utilizado hace uso de 
+herramientas de machine learning para el cálculo de 
+tiempos de viaje entre dos puntos, a partir de información 
+de datos históricos así como en tiempo real y de las 
+condiciones del entorno. Si bien la solución propuesta 
+describe diferentes variables que pueden ser tenidas en 
+consideración —incidencias, condiciones meteorológicas, 
+estilo de conducción, condiciones del tráfico, demanda del 
+servicio, etc.—, se aprecia una justificación subjetiva del 
+valor de cada uno de estos aspectos y su influencia en el 
+modelo propuesto. 
+No obstante, GeoActio propone hacer uso de información 
+relativa a la oferta de servicios planificada (GTFS), 
+geoposicionamiento de los vehículos (modo pull, cada 5 
+segundos), asignaciones de forma manual o 
+programática, autoasignaciones, así como información 
+procedente del pupitre de los vehículos (eventos). 
+Asimismo y, conforme al esquema propuesto de mejoras 
+al alcance, Geoactio deja abierta la posibilidad de integrar 
+información relativa al ticketing. Todas las fuentes de 
+información serán monitorizadas mediante Cloud Logging 
+y Cloud Monitoring.
+En relación con las fuentes de datos potencialmente 
+complementarias —condiciones de tráfico, 
+meteorológicas, posicionamiento del metro/tren—, 
+GeoActio asume la responsabilidad de valorar el 
+coste/beneficio de incorporar todas ellas en el modelo 
+propuesto, asumiendo su integración caso de ser 
+requerido por parte del CTM. Sin embargo, GeoActio no 
+Consorci de Transports de Mallorca 19
+
+PAGE 20
+anteriormente descritos para —todas— las siguientes condiciones 
+de servicio:
+• MAPE / MAE medio mensual. (agregado para todas las líneas)
+• MAPE / MAE medio diario (agregado para todas las líneas).
+• Valor máximo de MAPE / MAE para una línea medio mensual 
+(todas las expediciones ambos sentidos).
+• Valor máximo de MAPE / MAE para una línea medio diario 
+(todas las expediciones ambos sentidos).
+5. Los ofertantes deberán describir y justificar en sus propuestas la 
+capacidad ofrecida —y tiempo de respuesta— por su solución para 
+adaptar sus predicciones a los siguientes casos especiales:
+• Congestión en ruta (velocidad media inferior a 25 Km/h)
+• Condiciones meteorológicas adversas severas.
+• Desvió de ruta debido a incidencias significativas.
+• Asignación de expediciones de refuerzo.
+considera necesario integrar fuentes de datos adicionales 
+a las indicadas para alcanzar los objetivos de fiabilidad y 
+validez requeridos.
+El modelo de estimación predictiva se basa en un modelo 
+ML de aprendizaje supervisado que hace uso de dos 
+componentes: un componente de entrenamiento y 
+predicción, basado en aprendizaje supervisado a partir de 
+datos históricos, planificación, y atributos del día y del 
+servicio; y un componente de predicción. 
+El componente de entrenamiento requiere de un mínimo 
+de 10 días de histórico para ofrecer datos con la calidad 
+requerida y permite llevar a cabo ajustes relativos a la 
+calidad de los datos que sirven de entrenamiento, que 
+pueden ser de aplicación para cada línea de forma 
+independiente. Este componente atiende a datos de 
+demanda y condiciones del servicio, siendo responsable el 
+CTM de determinar si considera necesario que GeoActio 
+considere la variable conductor.
+En relación con el componente de predicción, este 
+componente refresca las estimaciones con información en 
+tiempo real para lo que se tienen en consideración 
+diferentes inputs: velocidad del autobús, retraso/adelanto 
+en el punto de control, tipología de parada, tiempos de 
+regulación de cabecera, tiempo de posicionamiento y 
+solapes de inicio/fin de expedición, así como la estimación 
+de las horas de paso por el punto de control. Este proceso 
+se lleva a cabo cada vez que se obtiene una posición GPS, 
+en este caso cada 5 segundos.
+La fiabilidad de la predicción será calculada atendiendo a 
+los indicadores MAPE y MAE propuestos por el CTM. Esta 
+será llevada a cabo por el componente “Arrival Time 
+Estimator Service” que incluye un proceso de 
+autoevaluación de la calidad que consiste en comparar la 
+estimación realizada a 2, 5, 8, 10, 15 y 30 minutos vista, 
+con la hora teórica de paso por parada (o la hora real 
+registrada). Esta información se genera de forma 
+automática para todos los pasos por parada, y se puede 
+consultar de forma agregada y desagregada. Para ello, la 
+solución propuesta por Geoactio permitirá el cálculo de: 
+• MAPE / MAE medio mensual. (agregado para todas las 
+líneas)
+• MAPE / MAE medio diario (agregado para todas las 
+líneas).
+• Valor máximo de MAPE / MAE para una línea medio 
+mensual (todas las expediciones en ambos sentidos).
+• Valor máximo de MAPE / MAE para una línea medio 
+diario (todas las expediciones en ambos sentidos).
+El cálculo de los indicadores se realizará referente al error 
+de la hora estimada vs. la hora de paso:
+Consorci de Transports de Mallorca 20
+
+PAGE 21
+• Error de la estimación, 8 minutos antes de la hora de 
+paso teórica (o real, si así se decide de mutuo acuerdo 
+con CTM).
+• Error de la estimación, 15 minutos antes de la hora de 
+paso teórica (o real, si así se decide de mutuo acuerdo 
+con CTM).
+La solución incorporará una interfaz de usuario amigable 
+para visualizar y monitorizar los indicadores descritos. 
+GeoActio se compromete a cumplir los niveles de 
+fiabilidad de la predicción atendiendo a los diferentes 
+hitos propuestos por el CTM.
+5. Condiciones especiales
+Si bien GeoActio indica en su oferta que su solución 
+adapta sus predicciones a los casos especiales 
+indicados por el CTM, no se describe ni justifica el 
+tiempo de respuesta/adaptación de la predicción de 
+tiempo por parada a cada uno de ellos.
+3. Requerimientos funcionales y casos de uso GeoActio (Alestis Consulting, S.L.)
+3.1 Particularidades relativas a la panificación y operación de 
+servicios. Se deberá describir el grado de cumplimiento, 
+planteamiento e impacto en los procesos de gestión de servicios.
+1. La solución propuesta por los ofertantes debe ofrecer 
+mecanismos de asignación automática de los vehículos a las 
+diferentes expediciones en tiempo real ante la ausencia de eventos 
+de registro y/o de asignaciones por parte de los operadores de 
+servicio.
+2. La solución propuesta por los ofertantes debe considerar la 
+prestación de los servicios de transporte interurbano haciendo uso 
+de líneas circulares.
+3. La solución propuesta por los ofertantes debe considerar la 
+prestación de los servicios de transporte interurbano en los que 
+ciertos tramos / segmentos de la línea se lleven a cabo de forma 
+subterránea (presencia de túneles) - opcional—
+4. La solución propuesta por los ofertantes debe considerar la 
+presencia de intercambiadores dentro de sus mecanismos de 
+control de la prestación de los servicios y del cálculo de la 
+estimación del paso por parada.
+5. Los ofertantes deberán asegurar que la solución propuesta 
+permite discriminar adecuadamente la presencia de líneas de ida y 
+vuelta muy próximas.
+6. La solución propuesta por los ofertantes debe permitir 
+discriminar adecuadamente entre paradas que se encuentran muy 
+próximas en el mismo itinerario.
+7. La solución propuesta por los ofertantes debe incluir 
+mecanismos que permitan identificar aquellos vehículos que se 
+encuentran fuera de ruta, así como aquellos que se encuentran 
+inactivos.
+8. La solución propuesta por los ofertantes debe incluir 
+mecanismos que permitan discriminar adecuadamente los saltos 
+de parada.
+9. La solución propuesta por los ofertantes debe incluir 
+3.1 Atendiendo a lo descrito bajo el epígrafe 1.3.3. 
+Procesado de datos en tiempo real así como en 1.3.3.1. la 
+propuesta de Geoactio da cobertura a los requerimientos 
+expresados por el CTM en relación con: Líneas de ida y 
+vuelta, Líneas circulares, líneas con final circular, línea con 
+paradas cercanas —en expediciones diferentes / en la 
+misma expedición—, intercambiadores, saltos de parada, 
+servicios no planificados, servicios de refuerzo y desvíos 
+de rutas. No obstante, los requerimientos 3 y 9, al ser de 
+carácter opcional, no se describen en la propuesta técnica 
+proporcionada.
+En relación con las asignaciones de las diferentes 
+expediciones y, atendiendo a lo descrito en el epígrafe 
+1.3.2.3. Ingesta y procesado de las asignaciones así como 
+en 1.2.2.6. Herramienta de asignación de la propuesta 
+técnica proporcionada por Geoactio, las asignaciones 
+podrán ser realizadas:
+• De forma programática, mediante el envío de los datos 
+al Web Service de asignaciones de la solución 
+propuesta.
+• De forma manual, mediante la importación de ficheros 
+csv.
+• De forma manual, Centro de Gestión, de una forma 
+amigable, a través de la propia interfaz de usuario
+Consorci de Transports de Mallorca 21
+
+PAGE 22
+mecanismos que permitan detectar errores y/o fallos de calidad de 
+las señales GPS obtenidas de los diferentes vehículos, proponiendo 
+mecanismos correctivos cuando sea necesario (opcional)
+3.2 Fuentes de información:
+• El ofertante deberá suscribir cuantos acuerdos de colaboración 
+sean necesarios con aquellos agentes privados y públicos para 
+la adquisición, integración y posterior mantenimiento —que 
+deberá ser asumido por los ofertantes durante la vida del 
+contrato— de aquellas fuentes de información adicionales a las 
+disponibles en el Consorcio de Transportes que sean requeridas 
+para dar cobertura a los servicios y alcance propuesto en el 
+presente Pliego de Prescripciones Técnicas.
+• Los ofertantes deberán garantizar la adecuación de sus 
+propuestas a las diferentes fuentes de información.
+• Los ofertantes deberán justificar la idoneidad de la información 
+de las diferentes fuentes propuestas por el CTM, describiendo 
+cuantas fuentes de información adicional consideren 
+necesarias para dar cobertura al alcance establecido (coste, 
+requerimientos de acceso, justificación)
+• Será responsabilidad de los diferentes ofertantes adquirir la 
+información relativa a las diferentes fuentes propiedad del 
+CTM, adquiriendo la misma en aquellos puntos establecidos 
+por el CTM y conforme a su frecuencia y formato.
+• Los ofertantes deberán establecer mecanismos automáticos, 
+incluyendo alertas y notificaciones, que permitan supervisar la 
+correcta eficacia y eficiencia de los procesos de ingesta de la 
+información obtenida desde las diferentes fuentes. Asimismo, 
+deberán llevar a cabo cualquier modificación sobre las mismas, 
+de ser necesario, así como su mantenimiento correctivo y 
+evolutivo.
+3.3 Uso de datos, explotación de la información:
+El Servicio Big Data propuesto debe permitir la notificación en 
+tiempo real del estado de los diferentes servicios de transporte así 
+como el procesamiento complejo de datos históricos para generar 
+valor a partir de este tipo de información. Para ello:
+• Deberá poner en marcha servicios basados en web 
+(aplicaciones web), que den cobertura a los requerimientos de 
+explotación analítica. El acceso a los servicios web será 
+ilimitado.
+• Deberán considerar en sus propuestas la cobertura de los 
+requerimientos descritos haciendo uso de soluciones de 
+explotación analítica con las capacidades adecuadas para 
+ofrecer los servicios requeridos tanto en tiempo real como 
+diferido conforme a los requerimientos del CTM.
+• La solución propuesta por los ofertantes deberá permitir 
+compartir información en tiempo real relativa a la prestación de 
+los diferentes servicios de transporte ofrecidos por el CTM 
+haciendo uso de feeds basados en el estándar GTFS-Real Time 
+así como su integración con Google Maps.
+• La solución propuesta por los ofertantes deberá permitir 
+información tanto en tiempo real como histórica relativa a la 
+3.2 Fuentes de información
+Atendiendo a lo descrito bajo el epígrafe 1.3.1. Fuentes de 
+Datos de la propuesta de Geoactio, la propuesta tiene en 
+consideración la integración de datos relativos a la 
+planificación de servicios del CTM a través de la ingesta de 
+los ficheros GTFS, datos GPS(AVL), ficheros de asignación y 
+eventos recibidos desde el pupitre de los vehículos. 
+Asimismo, Geoactio se compromete a valorar la idoneidad 
+y, caso que el CTM lo considere oportuno, la integración 
+de datos climatológicos, condiciones del tráfico y 
+posicionamiento del metro/tren mediante la integración 
+de información obtenida a partir de balizas o sensores del 
+sistema de señalización y control.
+En todos los casos, Geoactio se compromete a dar 
+cobertura a los requerimientos de adquisición, 
+tratamiento y supervisión de la información en aquellos 
+puntos de acceso establecidos por el CTM.
+3.3 Uso de datos, explotación de la información:
+Conforme a lo recogido en el epígrafe 1.2. Cumplimiento y 
+descripción de los requerimientos funcionales de la 
+propuesta de Geoactio da cobertura a los requerimientos 
+descritos mediante su aplicación web de control y gestión, 
+el módulo de reconocimiento de horas de paso por 
+parada, el módulo de estimación de tiempos de llegada, la 
+consola de administración Google Cloud Console 
+(incluyendo la solución BigQuery) así como una API que 
+ofrece información tanto en tiempo real como diferido. 
+Asimismo, como mejora al alcance del pliego, Geoactio 
+ofrece aplicaciones móviles iOS y Android que dan 
+cobertura a los principales requerimientos de información 
+en tiempo real.
+3.3.1 Planificación de servicios interurbanos: Atendiendo a 
+lo descrito en 1.2.2.1. Herramientas de planificación, la 
+solución propuesta por Geoactio da cobertura a los 
+requerimientos descritos.
+3.3.2 Operación de servicios: seguimiento y control de la 
+prestación: Atendiendo a lo descrito en 1.2.2.2. 
+Seguimiento y control operativo, así como en 1.2. 
+Cumplimiento y descripción de requerimientos 
+funcionales, la solución propuesta por GeoActio da 
+Consorci de Transports de Mallorca 22
+
+PAGE 23
+prestación de los diferentes servicios de transporte ofrecidos 
+por el CTM mediante la integración vía API REST con otros 
+servicios consumidores.
+3.3.1 Planificación de servicios interurbanos:
+1. La solución propuesta por los ofertantes debe permitir el análisis 
+de los tiempos de recorrido reales versus los tiempos de recorrido 
+planificados de forma global, por cada sub-línea y expedición, así 
+como los tiempos entre paradas (obligatorio)
+2. La solución propuesta por los ofertantes debe permitir soportar 
+la exportación de sugerencias de planificación de tiempos de 
+recorrido por sub-línea, expedición y parada a partir del análisis 
+realizado de los diferentes tiempos de recorrido (CSV/API) 
+(obligatorio)
+3.3.2 Operación de servicios: seguimiento y control de la 
+prestación:
+1. La solución propuesta por los ofertantes debe proporcionar 
+estimaciones de paso por parada en tiempo real, tanto para las 
+expediciones en curso como para las siguientes planificadas (web, 
+vía explotación analítica, GTFS-RT y API) (Obligatorio)
+2. La solución propuesta por los ofertantes debe proporcionar 
+estimaciones de ocupación de vehículos en tiempo real, 
+atendiendo a la capacidad de cada vehículo (web, vía explotación 
+analítica, GTFS-RT y API) (Opcional)
+3. La solución propuesta por los ofertantes debe proporcionar 
+información detallada en tiempo real que permita el control 
+operativo de la prestación de los diferentes servicios de transporte 
+(obligatorio)
+4. La solución propuesta en tiempo real que permita el control 
+operativo de la prestación de los diferentes servicios de transporte 
+incluye información relativa a la ocupación (opcional)
+5. La solución propuesta en tiempo real que permita el control 
+operativo incluye información relativa a incidencias y cambios de 
+servicio activas (opcional)
+6.  La solución propuesta por los ofertantes debe proporcionar 
+información en tiempo real a los operadores del servicio relativa al 
+rendimiento en la prestación diferentes servicios de transporte 
+ofrecido - puntualidad (obligatorio)
+7. La solución propuesta por los ofertantes debe proporcionar 
+información en tiempo real a los operadores del servicio relativa al 
+rendimiento en la prestación diferentes servicios de transporte 
+ofrecido - ocupación (opcional)
+8. La solución propuesta por los ofertantes debe proporcionar 
+información histórica a los operadores del servicio relativa al 
+rendimiento en la prestación diferentes servicios de transporte 
+ofrecido - puntualidad (obligatorio)
+9. La solución propuesta por los ofertantes debe proporcionar 
+información histórica a los operadores del servicio relativa al 
+rendimiento en la prestación diferentes servicios de transporte 
+ofrecido - ocupación (opcional)
+10. Los informes históricos relativos a la puntualidad en la 
+cobertura a los requerimientos obligatorios descritos en el 
+PPT. La cobertura de cada uno de los diferentes 
+requerimientos es descrita de forma detallada, excluyendo 
+aquellos de carácter opcional que forman parte de una 
+memoria aparte relativa a las mejoras al alcance.
+3.3.3 Operación de servicios: ajustes e 
+incidencias:Conforme a lo descrito en 1.2.2.3 Ajustes e 
+incidencias, GeoActio se compromete a desarrollar como 
+parte del alcance el requerimiento obligatorio expresado 
+en el PPT de forma que de manera manual o programada 
+se puedan crear nuevos servicios no planificados en GTFS, 
+añadir vehículos de refuerzo o añadir/quitar paradas en 
+expediciones / líneas. El resto de requerimientos - de 
+carácter opcional— no son descritos bajo este epígrafe, 
+formando parte de las mejoras al alcance, caso de que 
+GeoActio de cobertura a los mismos.
+3.3.4 Operación de servicios: Alertas y notificaciones: La 
+solución propuesta por GeoActio —conforme a lo descrito 
+en 1.2.2.4.— cuenta con un módulo de gestión de alertas y 
+notificaciones que permite notificar a aplicaciones 
+móviles, web, etc. vía la API de la solución propuesta en 
+tiempo real. No obstante, no permite las notificaciones 
+mediante GTFS-Service Alert, requerimiento opcional al 
+alcance.
+Por otro lado, conforme a lo indicado en 1.2.2.7. 
+Configuración, monitorización y alerting, la solución 
+permite monitorizar de forma automática la disponibilidad 
+y la calidad de los feeds de datos requeridos para la 
+prestación generando una alerta en caso de desviación 
+con respecto al patrón establecido (y dando cobertura al 
+requerimiento obligatorio establecido).
+3.3.5 Operación de servicios: Operación de servicios de 
+transporte y administración de datos de referencia: 
+Atendiendo a lo descrito en el epígrafe 1.2.2.6 
+Herramientas de asignación, se dan cobertura a los 
+Consorci de Transports de Mallorca 23
+
+PAGE 24
+prestación de los servicios de transporte deberán tener en 
+consideración aquellos ajustes y modificaciones en la prestación de 
+servicios realizados, incluyendo el tipo de modificación/ajuste 
+realizado (opcional)
+11. La solución propuesta por los ofertantes deberá ofrecer 
+información relativa a la evaluación de la precisión del algoritmo 
+de cálculo de las estimaciones de paso por parada (obligatorio)
+12. La solución propuesta por los ofertantes debe ofrecer 
+información histórica relativa al análisis de la velocidad de los 
+vehículos en los diferentes segmentos entre las paradas que 
+componen una ruta (distancia mínima inferior a 50 m) (obligatorio)
+13. La solución propuesta por los ofertantes debe poder ofrecer 
+información histórica relativa al tiempo de subida y bajada de 
+viajeros por parada (opcional)
+14. La solución propuesta por los ofertantes debe poder ofrecer 
+información histórica relativa a la puntualidad de los conductores y 
+operadores o empresas concesionarias del servicio de transporte, 
+así como del tiempo de conducción de cada uno de ellos 
+(obligatorio)
+3.3.3. Operación de servicios: ajustes e incidencias:
+1. La solución propuesta por los ofertantes debe permitir, de forma 
+ágil, eficiente e intuitiva, llevar a cabo modificaciones sobre los 
+servicios inicialmente planificados a través de los servicios web 
+ofrecidos al CTM-inclusión, exclusión y modificación— (obligatorio)
+2. Modificaciones de servicio— cancelaciones, servicios de 
+refuerzo, desvíos, modificaciones de horario de salida, exclusión de 
+paradas (opcional)
+3. Las modificaciones de servicio propuestas deben permitir la 
+creación y gestión de notificaciones y alertas de servicio (opcional)
+4. Los informes históricos relativos a la prestación de los servicios 
+de transporte interurbano del CTM, caso de producirse, deberán 
+reflejar información relativa a los ajustes e incidencias del servicio 
+que han afectado a la prestación del servicio (opcional)
+3.3.4 Operación de servicios: Alertas y notificaciones:
+1. La solución ofrecida por los ofertantes debe permitir establecer 
+notificaciones a los diferentes consumidores de los servicios de 
+transporte —usuarios, aplicaciones y servicios— ante 
+modificaciones sobre los servicios inicialmente planificados, así 
+como ante eventos o incidencias no planificados que puedan 
+afectar a los servicios de transporte de forma global/parcial —
+tiempo real, API REST, GTFS-RT Service Alerts (opcional)
+2.  La solución propuesta por los ofertantes debe permitir 
+monitorizar de forma automática la disponibilidad y la calidad de 
+los feeds de datos requeridos para la prestación de los servicios 
+requeridos, generando alertas de servicio ante cualquier 
+desviación respecto de los parámetros establecidos (obligatorio)
+3.3.5 Operación de servicios: Operación de servicios de transporte:
+1. La solución propuesta debe permitir asignar vehículos —
+atendiendo a los roles de los usuarios— a aquellos servicios activos 
+en los que no se encuentre ningún servicio asignado, ofreciendo al 
+operador de la aplicación información sobre la asignación previa 
+requerimientos obligatorios establecidos en el PPT 
+permitiendo la asignación manual (incluyendo vía fichero) 
+o programática de asignaciones, así como la reasignación 
+o asignación automática de expediciones sin disponer de 
+información de los operadores o eventos de registro 
+desde el vehículo.
+3.3.7 Uso de datos: GTFS Real Time: Conforme a lo 
+descrito en 1.2.5.1. la solución propuesta cuenta con una 
+API real time que permite obtener la estimación de 
+tiempos de paso por parada, la posición GPS y velocidad 
+de los vehículos, GTFS - RT Trip
+Updates, GTFS - RT Vehicle Position, así como avisos y 
+alertas y otros datos de interés. En lo relativo a GTFS-RT da 
+cobertura al 100% de requerimientos obligatorios 
+establecidos.
+3.3. Uso de datos: Otros consumidores internos o externos 
+al CTM: La solución SaaS incorpora una completa API REST 
+que permite acceder de forma programática a los datos 
+generados por el sistema, tanto históricos, como en 
+tiempo real y realizar operaciones CRUD (“Create, Read, 
+Update, Delete”). Esta solución ofrece acceso a diferentes 
+servicios: Planned Service Transport, Real Time Data, 
+Historical Data, Access Service y Configuration Service. Da 
+cobertura en consecuencia a los requerimientos 
+obligatorios establecidos.
+De forma general, la solución propuesta da cobertura 
+al 100% de los requerimientos funcionales establecidos 
+en el PPT. Aquellos requerimientos de carácter 
+opcional no se incluyen en el ámbito de la presente 
+valoración al no encontrarse recogidos en la memoria 
+de proyecto objeto de evaluación.
+Consorci de Transports de Mallorca 24
+
+PAGE 25
+recibida de los operadores del citado servicio, —caso de existir— 
+interfaz de usuario, API, CSV (obligatorio)
+2. La solución propuesta debe permitir, de forma ágil, eficiente e 
+intuitiva, modificar las asignaciones (reasignación) de vehículos con 
+respecto a la originalmente recibida de los operadores del servicio, 
+en lo relativo a cualquiera de sus atributos (obligatorio)
+3.3.6 Operación de servicios: Administración de datos de 
+referencia:
+1. La solución propuesta por los ofertantes debe permitir la 
+adquisición de ficheros GTFS de forma automática y programable 
+(obligatorio)
+2. La solución propuesta por los ofertantes debe permitir la 
+asignación y modificación de expediciones por parte de los 
+operadores de servicio de forma automática (CSV y API) 
+(obligatorio)
+3. La solución propuesta por los ofertantes debe permitir la 
+asignación automática ante la ausencia de información relativa a 
+las asignaciones por parte de los operadores del servicio y / o de 
+eventos de registro e inicio del servicio recibidos desde el vehículo 
+(obligatorio)
+3.3.7 Uso de datos: GTFS Real Time
+1. La solución propuesta por los ofertantes debe permitir 
+compartir las predicciones de paso por parada mediante el uso del 
+estándar GTFS-RT (obligatorio)
+2. La solución propuesta por los ofertantes debe permitir 
+compartir información sobre retrasos, cambios de ruta o 
+cancelaciones haciendo uso de feeds GTFS-RT Trip updates 
+(obligatorio)
+3. La solución propuesta por los ofertantes debe permitir 
+compartir información sobre la posición de vehículos y el nivel de 
+congestión en la ruta haciendo uso feeds GTFS-RT Vehicle positions 
+(obligatorio)
+4. La solución propuesta por los ofertantes debe permitir 
+compartir información sobre alertas relativas al servicio de 
+transportes haciendo uso feeds GTFS-RT Service Alerts (opcional)
+3.3.8 Uso de datos: Otros consumidores internos o externos al CTM
+1. La solución propuesta por los ofertantes debe permitir 
+compartir información relativa a la prestación de los servicios de 
+transporte del CTM mediante el uso de API REST haciendo uso de 
+formatos JSON, CSV y XML - obligatorio
+2. Atendiendo al grado de cobertura de la funcionalidad opcional, 
+se deberá ofrecer información relativa a la ocupación, alertas y 
+notificaciones y ajustes e incidencias – opcional
+4. Requerimientos de arquitectura, técnicos y lógicos GeoActio (Alestis Consulting, S.L.)
+4.1 Solución técnica propuesta
+La solución propuesta para dar cobertura al Servicio Big Data debe 
+basarse en una arquitectura de microservicios que haga uso de 
+4.1 Solución propuesta por GeoActio
+La solución propuesta por Geoactio se basa en una 
+arquitectura SaaS basada en la plataforma Google Cloud 
+Consorci de Transports de Mallorca 25
+
+PAGE 26
+capacidades Big Data / Inteligencia Artificial, dando cobertura a los 
+requerimientos funcionales, técnicos y de seguridad. Los 
+ofertantes deberán:
+• Los ofertantes deberán tener en consideración aspectos 
+relacionados con la conectividad de servicio / gestión —vía VPN, 
+red interna, etc.— desde las oficinas del CTM.
+• Proveer al CTM de una estimación del dimensionamiento de 
+dicha plataforma, así como de las cargas de trabajo estimadas 
+por el adjudicatario.
+• Deberá incluir en su propuesta técnica y económica las 
+necesidades de servicios cloud, atendiendo al modelo 
+propuesto, requeridas para la puesta en marcha de los 
+diferentes entornos de trabajo.
+Atendiendo a la arquitectura propuesta se deberá considerar:
+1. Para aquellas soluciones basadas en IaaS/PaaS y SaaS en modo 
+suministro que requieran dar cobertura a un GAP funcional / 
+técnico para dar cobertura al alcance propuesto por el CTM, los 
+ofertantes deberán recoger en sus propuestas un High Level 
+Assesment (HLA) de los requerimientos funcionales (Epígrafe 1.), 
+técnicos (Epígrafe 2. apartado 5.1.) y no funcionales (Epígrafe 2. 
+apartado 5.2.) que describa el planteamiento y enfoque 
+inicialmente propuesto por el ofertante. 
+2. Para aquellas soluciones basadas en SaaS en modo pago por 
+uso —sin cesión de IP— o en modo suministro que no requieran 
+dar cobertura a un GAP funcional / técnico, se deberá describir la 
+arquitectura lógica que refleje los diferentes componentes de la 
+solución así como una descripción funcional detallada de la lógica 
+implementada / soportada por cada uno de ellos.
+4.1.1 Generación de datos:
+Los ofertantes deberán describir en sus propuestas en qué medida 
+la solución Big Data propuesta da soporte a la ingesta de datos de 
+tipo no estructurado y tipo estructurado (ODBC, API REST, JDBC, 
+JSON, GEOJSON, XML, TXT, CSV, WMS, HTML5, XLS, XLSX, así como 
+garantizar el acceso a bases de datos SQL/No-SQL, servicios web y 
+sistemas de ficheros de almacenamiento masivo)
+4.1.2. Ingesta de datos:
+• Los ofertantes deberán describir la solución propuesta para dar 
+cobertura a la ingesta de datos en tiempo real / diferido 
+atendiendo a las diferentes fuentes de información, aplicando 
+reglas de filtrado de esta información, agregación, 
+transformación y control de la calidad de los diferentes datos 
+para su posterior análisis de la información. Asimismo se 
+deberá atender a la presencia de:
+• servicios de secuenciación, procesamiento, diseño visual y 
+control de flujos de datos y operaciones, así como facilidades 
+asociadas a proveer de una apropiada trazabilidad, control y 
+seguimiento de los datos de las diferentes fuentes de 
+información. 
+• establecimiento de políticas de seguridad a medida de los 
+diferentes niveles de confidencialidad de la información 
+Platform (GCP) sobre la que se dispone de un conjunto de 
+capacidades Big data e Inteligencia Artificial sobre la que 
+se desarrollan un conjunto servicios y microservicios que 
+permiten dar cobertura a los objetivos planteados por el 
+CTM en la solución ITS objeto del alcance. En este sentido, 
+la solución propuesta hace uso de arquitecturas 
+orientadas a eventos así como de microservicios basados 
+en contenedores, lo que permite la distribución de cargas 
+de trabajo, dando cobertura a los requerimientos no 
+funcionales relativos a la elasticidad. La arquitectura de 
+microservicios distingue 3 tipos: expuestos que, mediante 
+una API GW permiten compartir datos con consumidores, 
+ETL que da cobertura a la transformación y 
+enriquecimiento de la información a lo largo del proceso y, 
+recurrentes, que permiten generar información relevante 
+para los servicios ITS.
+Atendiendo a que se trata de una solución SaaS en modo 
+suministro, Geoactio incluye en su propuesta una 
+evaluación de los requerimientos funcionales (Epígrafe 1.), 
+técnicos (Epígrafe 2. apartado 5.1.) y no funcionales 
+(Epígrafe 2. apartado 5.2.) que da cobertura al 
+planteamiento y enfoque de GeoActio a los 
+requerimientos planteados. En este sentido y, atendiendo 
+a los requerimientos descritos en 5.2. y 5.5. del PPT:
+— Bajo el epígrafe 1.1.1.9, GeoActio describe de forma 
+razonada el nivel de cumplimiento de los requerimientos 
+No funcionales:
+— 1.1.1.9.1. Servicios Cloud: La solución propuesta da 
+cobertura a los requerimientos del CTM al hacer uso de 
+servicios Cloud de Google Platform, entre los que se 
+encuentran Google Cloud Run, Cloud Load Balancing y 
+CDN, Identity Platform y Cloud Armor, Cloud Storage, 
+BigQuery, Firestore y Real time Database, Cloud PubSub y 
+API Gateway, entre otros.
+— 1.1.1. 9.2. Tolerancia a fallos: La solución propuesta por 
+GeoActio destaca por su elevada disponibilidad, superior 
+al 99,9%, su RTO inferior a 30’ así como su RPO inferior a 1 
+hora. Sin embargo, pueden existir situaciones en las que 
+el respaldo requiera de la intervención manual, escenarios 
+no descritos en la propuesta de GeoActio. Por otro lado, 
+en relación con retención de datos y backup, se incluyen 
+backups diarios incrementales, backups semanales y 
+backups mensuales con un periodo de retención mínimo 
+de un
+año (12 meses).
+— 1.1.1.9.3. Escalabilidad: Los microservicios expuestos, 
+recurrentes y de ETL se diseñan con una perspectiva de 
+escalabilidad horizontal, garantizando que la solución 
+pueda adaptarse con facilidad a las demandas cambiantes 
+destaca por su capacidad de adaptación instantánea, 
+facilitando una gestión eficaz de los recursos sin 
+intervención manual. La implementación de los 
+Consorci de Transports de Mallorca 26
+
+PAGE 27
+adquirida.
+4.1.3 Almacenamiento y análisis de datos— Data Lake:
+La solución de Data Lake propuesta debe cumplir con tres 
+premisas fundamentales:
+• Proporcionar mecanismos de almacenamiento distribuido, que 
+permita, de forma escalable y tolerante a fallos, almacenar gran 
+cantidad de datos tanto en formatos estructurados como no 
+estructurados. Se debe garantizar la existencia de mecanismos 
+automáticos de replicación de datos y de mecanismos de 
+recuperación automática de la información en caso de fallos.
+• Proporcionar mecanismos de procesamiento distribuido con el 
+rendimiento adecuado para dar cobertura a las necesidades de 
+negocio planteadas, asegurando la escalabilidad de este ante 
+nuevas necesidades y la capacidad de orquestar los diferentes 
+procesos.
+• Proporcionar mecanismos que permitan acceder a los datos 
+para consultar información tanto de forma estructurada como 
+abierta.
+• En función del nivel de procesamiento de la información en el 
+Data Lake, este debe considerar tres posibles niveles o estados 
+de la información: staging, elaborados y archivados.
+Asimismo, se deberá ofrecer un DWH (SQL / NoSQL) que se 
+constituya como el repositorio de información de acuerdo con 
+los requerimientos de negocio y, preparada para ser accesible 
+de forma ágil y flexible desde los diferentes consumidores con 
+base en las necesidades específicas de cada uno de ellos, tanto 
+en tiempo real como en modo batch.
+Los ofertantes deberán justificar de forma razonada en sus 
+propuestas la arquitectura de DWH y bases de datos propuestas, 
+atendiendo a:
+• Naturaleza y tipo de datos a gestionar.
+• Requerimientos en materia de rendimiento, tanto en relación 
+con la ingesta y procesamiento de la información como en 
+relación con el análisis y explotación de la misma.
+• Requerimientos en materia de disponibilidad, seguridad, 
+integridad, consistencia y persistencia de la información.
+• Requerimientos en materia de escalabilidad y flexibilidad.
+• Requerimientos en materia de administración y mantenimiento 
+de la solución propuesta.
+• Coste recurrente, incluyendo licencias.
+Se deberá atender asimismo a los mecanismos de aseguramiento 
+de la calidad y la fiabilidad de los datos, mediante el uso de 
+herramientas de Data Quality y Master Data Management que 
+permitan automatizar y asegurar los procesos de revisión de datos, 
+integración o unificación y eliminación de registros duplicados.El 
+DWH propuesto debe permitir la persistencia mediante la 
+utilización de estructuras de almacenamiento de la información 
+(estrella, cubos, etc.) siempre que sea necesario.
+4.1.4 Data Lab:
+microservicios haciendo uso de Google Cloud Run permite 
+la adaptación instantánea, facilitando una gestión eficaz 
+de los recursos sin intervención manual.
+— 1.1.1.9.4. Elasticidad: La elasticidad de la solución viene 
+facilitada mediante el escalado dinámico de recursos, 
+aprovechando las capacidades inherentes a GCP, Google 
+Cloud Run y Storage. Los componentes se configuran para 
+ajustar automáticamente la capacidad de procesamiento y 
+almacenamiento, garantizando que se asignen recursos 
+de manera óptima en respuesta a las variaciones en la 
+demanda.
+— 1.1.1.9.5. Seguridad: La solución propuesta por 
+Geoactio cuenta con la certificación ENS nivel alto, 
+comprometiéndose una vez finalizada la devolución del 
+servicio a cumplir con un nivel de certificación ENS nivel 
+medio. Asimismo, Geoactio ofrece al CTM el uso de su 
+SIEM durante la vida del contrato. GeoActio plantea la 
+integración de la solución Google Identity Platform con 
+keycloack así como el uso de Cloud Armor para la 
+monitorización de alertas de seguridad, como parte del 
+alcance del servicio.
+— 1.1.1.9.6. Eficiencia Operativa: Los servicios expuestos 
+se diseñan para minimizar la intervención manual, 
+proporcionando así una experiencia eficiente tanto para 
+los consumidores como para los procesos de 
+administración y backoffice. 
+— 1.1.1.9.7. Rendimiento: La solución se compromete a 
+proporcionar altos niveles de rendimiento en todas las 
+fases de la operación. Los microservicios expuestos están 
+optimizados para ofrecer respuestas rápidas y eficientes a 
+las solicitudes de los usuarios y servicios. Asimismo se 
+plantea el uso de cloud load balancing y CDN para la 
+distribución eficiente del tráfico.
+— 1.1.1.9.8. Open-source: Los microservicios 
+especializados hacen uso del lenguaje de programación 
+Python y la librería Scikit Learn, mientras que el resto de 
+microservicios hace uso de una arquitectura se basa en 
+tecnologías Node.js y Typescript. Por su parte, la 
+arquitectura front end hace uso de React.js y Next.js. Estas 
+tecnologías se combinan con los diferentes recursos de la 
+solución GCP utilizada.
+— 1.1.1.9.9. Aplicaciones móviles: GeoActio incluye como 
+parte del alcance del proyecto el desarrollo de 
+aplicaciones móviles iOS y Android haciendo uso de 
+lenguaje Swift y Kotlin respectivamente.
+En relación con los requerimientos establecidos en 5.3. y 
+5.6. del PPT:
+• En relación con los requerimientos descritos en 5.6. y, 
+atendiendo a la solución SaaS propuesta por Geoactio, 
+bajo los epígrafes 1.1.4. (resumen de servicios y costes) 
+y 1.6. (dimensionamiento de la solución propuesta), 
+GeoActio proporciona una estimación de costes de 
+infraestructura cloud por vehículo y mes de servicio 
+Consorci de Transports de Mallorca 27
+
+PAGE 28
+Será necesario que el adjudicatario tenga en consideración la 
+puesta en marcha de una solución avanzada de machine learning 
+que permita el desarrollo y entrenamiento de modelos analíticos 
+específicos y de soporte a las actividades relacionadas con la 
+ingeniería y ciencia de datos.  Será responsabilidad del ofertante 
+determinar la plataforma o frameworks a desplegar para dar 
+cobertura a las siguientes necesidades:
+• Herramientas de etiquetado de datos que permitan generar 
+data sets de entrenamiento.
+• Capacidades de tratamiento de datos que permitan la 
+preparación de estos y el desarrollo de actividades de feature 
+engineering.
+• Amplio repertorio de algoritmos de machine learning, así como 
+de modelos predefinidos de inteligencia artificial.
+• Creación rápida de prototipos, así como la automatización de 
+las labores de refresco y reentrenamiento de los modelos.
+• Uso de mecanismos de procesamiento distribuido, así como de 
+acceso a las diferentes capas de datos del Data Lake y lectura 
+de los formatos y datos de la capa de ingesta.
+• Mecanismo de asistencia y gestión del conocimiento que 
+permitan favorecer el aprendizaje de los usuarios del CTM.
+• Diseño visual y ágil.
+• Facilidades asociadas a la puesta en producción de los modelos 
+y la actualización de estos en el sistema productivo de IA, 
+incluyendo la actualización de metadatos en el Data Hub.
+5.1.5. Capa de acceso a datos / Seguridad en el acceso a datos:
+Esta capa debe dar cobertura a dos necesidades fundamentales:
+• Gobierno y Gestión del Dato: Mediante el despliegue de 
+herramientas que permitan aplicar y monitorizar las políticas y 
+estándares de gobierno del dato, entre los que se encuentra la 
+gestión de metadatos, almacenamiento de trazas y linaje, 
+evaluación de impacto, etc.
+• Clasificación de datos y / o etiquetado de datos.
+• Control del acceso a los datos, así como de las políticas de 
+seguridad y privacidad relativas a los mismos. Amonificación y 
+cifrado de datos.
+• Monitorización y auditoria.
+4.1.6 Uso de datos - Consumidores y clientes
+4.1.6.1 Aplicaciones y servicios web consumidores de información
+• Las ofertas realizadas por los diferentes ofertantes deben 
+considerar el desarrollo de funcionalidades de autoservicio de 
+datos vía API Gateway que permita exponer vía API REST un 
+conjunto de endpoints de naturaleza tanto estática y dinámica, 
+que permita ofrecer información en tiempo real. La misma 
+debe considerar los requerimientos en materia de seguridad 
+(api-key) pudiendo aplicar reglas de filtrado por consumidor.
+• El acceso a la información almacenada en el Data Lake o en el 
+DWH, exponiendo servicios/mecanismos de consulta a la 
+información contenida en estos, cuya solución técnica 
+dependerá de dichos requerimientos (NoSQL, in-memory SQL, 
+SQL) y del tipo y naturaleza de los datos a acceder.
+para los dos años de contrato establecido. La misma se 
+estructura conforme a diferentes dimensiones —
+procesamiento, almacenamiento, analítica y tráfico— 
+no superando, conforme al compromiso de GeoActio, 
+el coste de 5 € por vehículo y mes. Los costes de año 1 
+y 2 son desglosados para los entornos productivos y 
+preproductivos. En relación con el dimensionamiento 
+de la solución propuesta, si bien Geoactio no describe 
+las hipótesis de recursos de infraestructura atendiendo 
+a diferentes escenarios de carga —al tratarse de una 
+solución de escalado dinámico— SI que describe las 
+diferentes variables que pueden influir en este, los 
+mecanismos de control y ajuste automático de las 
+capacidades así como las políticas de almacenamiento 
+y retención y archivo de la solución propuesta.
+• En lo relativo a entornos de preproducción y 
+producción, conforme a lo descrito en 1.5. Geoactio 
+plantea una solución caracterizada por la integración y 
+despliegue continuo de software (CI/CD) haciendo uso 
+de prácticas DevOps apoyada sobre tecnologías GitLab 
+y Terraform (IaC) para el desarrollo de infraestructura 
+como código así como el despliegue haciendo uso de 
+contenedores, lo que favorece la portabilidad y 
+replicación de la solución propuesta.
+En lo relativo a los requerimientos establecidos en 4.1 
+(4.1.1 a 4.1.7), orientados a la generación e ingesta de 
+datos, almacenamiento, análisis y procesamiento, data 
+lab, capa de acceso a datos /seguridad y gobierno, 
+explotación analítica de datos, herramientas de machine 
+learning y microservicios, cabe destacar:
+• Geoactio da cobertura a los requerimientos descritos 
+bajo los epígrafes 1.1.1.4. a 1.1.1.8.
+• Atendiendo a lo descrito bajo los referidos epígrafes, la 
+propuesta de GeoActio da cobertura a los 
+requerimientos establecidos en el PPT, si bien es 
+preciso destacar:
+• En relación con la explotación analítica de la 
+información, la propuesta no describe la herramienta 
+analítica propuesta y su interacción con BigQuery, 
+quedando este punto supeditado a las mejoras al 
+alcance del pliego. En esta misma línea, la propuesta 
+objeto de valoración no describe el plan formativo 
+asociado a la solución de explotación propuesta.
+• En relación con la solución Data Lab propuesta, se 
+propone hacer uso de Vertex IA para el desarrollo de 
+modelos de IA, feature engineering, así como el 
+tratamiento de datos.
+• La solución propuesta se basa en un entorno de base 
+de datos basado en las soluciones Google Firestore, 
+Real time Database y Big query.
+• Si bien la propuesta de Geoactio describe los 
+Consorci de Transports de Mallorca 28
+
+PAGE 29
+• El acceso a streams de información en tiempo real, una vez que 
+estos han sido procesados por los diferentes microservicios que 
+componen la solución propuesta por los ofertantes, ya sea 
+mediante la suscripción a servicios de mensajería o, caso de 
+encontrarse disponible, el acceso vía API a la información 
+requerida.
+4.1.6.2. Explotación analítica de la información
+• El ofertante deberá incluir dentro de su propuesta una 
+plataforma de explotación y visualización de datos – Tableau, 
+Power BI o similar— (5 licencias) que permitan tanto la 
+explotación y análisis de los datos como el reporting y la 
+generación de cuadros de mando, que permita el acceso a 
+datos tanto en tiempo real como en tiempo diferido.
+• Los ofertantes deberán considerar como parte de sus 
+propuestas la capacitación y desarrollo de competencias para 
+llevar a cabo la explotación analítica de la información a partir 
+de la solución seleccionada por estos. Este plan formativo debe 
+dotar a los usuarios seleccionados (máx. 8) de capacidades de 
+explotación avanzada de la información, haciendo uso de la 
+solución implantada en el contexto del CTM.
+4.1.6.3 Herramientas de machine learning
+• Aquellas soluciones basadas en servicios ML/DL deberán 
+ofrecer una solución que permitirá gestionar, monitorizar y 
+programar los diferentes modelos analíticos a lo largo del 
+tiempo de forma que estos se encuentren disponibles para los 
+diferentes microservicios / servicios y consumidores. La misma:
+• Deberá soportar, de forma escalable, la computación 
+distribuida, así como el análisis de información en tiempo real.
+• Deberá exponer vía una API configurable y gestionable la 
+información y datos obtenidos a partir de la ejecución de los 
+diferentes modelos analíticos a los diferentes servicios 
+consumidores de esta.
+4.1.7 Servicios de Transporte Inteligente
+• Es responsabilidad de los ofertantes incluir en sus propuestas 
+una solución basada en contenedores que dé cobertura a 
+aquellos microservicios a considerar dentro del alcance de la 
+solución propuesta, así como aquellas soluciones requeridas 
+para su conveniente despliegue y orquestación, de forma que 
+estos se ejecuten directamente en la infraestructura del 
+proveedor de servicios cloud propuesto. 
+• De forma complementaria y/o alternativa al desarrollo de 
+microservicios, los ofertantes podrán considerar la utilización 
+de capacidades y funciones cloud específicas, de tipo 
+serverless.
+4.2 Requerimientos no funcionales
+1. El adjudicatario del servicio deberá maximizar el uso de servicios 
+cloud como parte de la solución propuesta.
+2. Los diferentes componentes de la arquitectura propuesta deben 
+garantizar una alta disponibilidad y tolerancia a fallos del servicio 
+mecanismos de control de acceso al dato y seguridad 
+en el acceso, no describe los mecanismos de 
+gobierno y gestión del dato, que permitan aplicar y 
+monitorizar las políticas y estándares de gobierno 
+del dato, entre los que se encuentra la gestión de 
+metadatos, clasificación de datos, almacenamiento 
+de trazas y linaje, evaluación de impacto, etc.
+Consorci de Transports de Mallorca 29
+
+PAGE 30
+ofrecido, indicando en sus propuestas el RTO/RPO objetivo así 
+como los mecanismos de copia de respaldo.
+3. Las empresas ofertantes deberán garantizar que la solución 
+dispone de los mecanismos necesarios para escalar 
+horizontalmente en términos de capacidad de procesamiento 
+hardware y software.
+4. La arquitectura propuesta por el ofertante deberá permitir el 
+escalado dinámico de capacidad de los recursos que la componen 
+de forma automática (elasticidad)
+5. La solución propuesta por los ofertantes debe garantizar que la 
+solución propuesta da cobertura a las obligaciones requeridas para 
+cumplimiento de lo dispuesto en el Esquema Nacional de 
+Seguridad, ENS, (Real Decreto 3/2010 de 8 enero) así como al 
+tratamiento de datos personales (RGPD). Los datos deben ser 
+almacenados en un territorio de la UE.
+6. La solución propuesta debe asegurar un adecuado nivel de 
+eficiencia operativa.
+7. La arquitectura propuesta debe garantizar elevados niveles de 
+rendimiento, especialmente en relación con los procesos de carga, 
+procesamiento y explotación de la información en tiempo real. Se 
+deberá proporcionar información relativa a los tiempos máximos 
+de ejecución de las diferentes operaciones.
+8. Los ofertantes deberán favorecer el uso de aplicaciones y 
+soluciones basadas en productos Open-source a excepción de las 
+soluciones ofrecidas en materia de explotación de datos.
+4.3 Requerimientos en materia de entornos pre-productivos y 
+productivos: Los ofertantes deberán tener en consideración en sus 
+propuestas la puesta en marcha de los siguientes entornos: 
+desarrollo, preproducción y producción, incluyendo cuantas 
+aquellas licencias y herramientas sean necesarias para la 
+prestación de los servicios.
+4.4 Requerimientos en materia de seguridad
+1. El tratamiento seguro de la información, asegurando la 
+consistencia e integridad de esta a lo largo del ciclo de vida de los 
+datos. Para ello, proporcionará mecanismos para el 
+enmascaramiento de los datos.
+2. Los requerimientos en materia de cumplimiento normativo, en 
+especial las obligaciones requeridas para cumplimiento de lo 
+dispuesto en el Esquema Nacional de Seguridad, ENS.
+3. El adjudicatario se compromete de forma específica a tratar 
+como confidencial toda aquella información responsabilidad del 
+CTM a la que tenga acceso.
+4. La solución propuesta por los diferentes ofertantes debe 
+garantizar una disponibilidad mínima de servicio que de soporte al 
+Servicio Big Data propuesto superior al 99,9% mensual, así como el 
+cumplimiento de los principios de alta disponibilidad y tolerancia a 
+fallos con un RTO < 30 m y un RPO inferior a 1 h.
+5. La solución propuesta debe garantizar que el acceso al sistema 
+se realiza a través de mecanismos de autenticación basados en 
+usuario/contraseña, integrando su solución con la existente en el 
+CTM.
+Consorci de Transports de Mallorca 30
+
+PAGE 31
+6. Los ofertantes deberán respetar en su integridad el Reglamento 
+(UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril 
+de 2016 relativo a la protección de las personas físicas en lo que 
+respecta al tratamiento de datos personales (RGPD).
+4.5 Dimensionamiento de la solución propuesta: La empresa 
+ofertante deberá llevar a cabo un dimensionamiento de la solución 
+propuesta para cada uno de los diferentes entornos propuestos.
+5. Gestión y gobierno del servicio. Planteamiento metodológico GeoActio (Alestis Consulting, S.L.)
+5.1 Necesidades en materia de gobierno y gestión del servicio
+Se requiere que el ofertante provea de un servicio de seguimiento, 
+control, gobierno y comunicación de los servicios que de cobertura 
+a las actividades de: Diseño y mantenimiento del plan de trabajo 
+del programa de implantación, seguimiento y control de los hitos 
+del plan, coordinación y control operativo de los recursos, control 
+económico, seguimiento y control del planteamiento 
+metodológico, seguimiento de los avances del proyecto, gestión de 
+riesgos y planes de contingencia, sensibilización e involucración de 
+interlocutores.
+5.2 Metodología propuesta
+Los ofertantes deberán describir en sus propuestas su 
+planteamiento metodológico, dando cobertura a:
+• Metodología de gestión del ciclo de vida de la solución 
+propuesta, que comprenda fases claramente diferenciadas de 
+captura de requerimientos, especificación, diseño, desarrollo y 
+validación, integración y despliegue.
+• Matriz de responsabilidades RACI de cada una de las 
+actividades que componen las diferentes fases que componen 
+la metodología.
+• Entregables e índices de contenido relacionados con cada una 
+de las fases y actividades que comprenden.
+• Metodología de seguimiento del proyecto, que comprenda los 
+hitos de planificación, control y seguimiento del mismo, así 
+como las responsabilidades (RACI) entre el ofertante y el CTM, 
+así como los entregables asociados a la misma.
+• Los ofertantes deberán incluir en sus propuestas un plan 
+tentativo de proyecto conforme a los requerimientos 
+funcionales y técnicos del CTM donde:
+•  Se muestra una planificación temporal del proyecto de acuerdo 
+con el número de sprints tentativos para dar cobertura a los 
+diferentes requerimientos identificados, respetando o 
+mejorando los hitos establecidos por el CTM.
+•  Una propuesta inicial a alto nivel del backlog de producto a 
+partir de su interpretación de los requerimientos expresados en 
+el pliego.
+• MVP propuesto atendiendo a que este: Debe dar cobertura a un 
+mínimo de un 75% de los servicios transporte interurbano 
+prestados por el CTM de Mallorca en cada una de las líneas y 
+sublíneas objeto del alcance; deberá ofrecer capacidades de 
+explotación analítica de la información en tiempo real / diferido 
+mediante servicios (aplicaciones) web y herramientas de 
+5.1 Seguimiento y gobierno de la prestación, 6.2. 
+Metodología propuesta y 6.4. Gobierno del servicio
+Geoactio propone bajo su epígrafe 2.3. (Modelo de 
+Gobierno del servicio) un modelo de gestión del servicio 
+basado en el framework o mejores prácticas ITILv4 que da 
+cobertura a los diferentes procesos que componen el ciclo 
+de vida de los diferentes servicios (estrategia, diseño, 
+operación y transición de servicios). Los diferentes 
+procesos del framework ITILv4 son descritos de forma 
+somera en el contexto del proyecto de implantación del 
+sistema Big Data / Inteligencia artificial para el CTM. 
+En relación con el planteamiento metodológico 
+propuesto, GeoActio plantea un enfoque de desarrollo 
+ágil orientado a producto haciendo usa de prácticas 
+Kanban y Scrum. Las mismas son descritas, junto con sus 
+artefactos y compromisos, como parte de la propuesta 
+realizada por Geoactio. Asimismo, se indican los roles 
+clave de scrum máster y de product owner, que serán 
+llevados a cabo por el arquitecto de datos y por el analista 
+de los servicios de transporte respectivamente. Los 
+diferentes eventos scrum —sprint, planning, daily, etc.— 
+son descritos, así como aquellos aspectos de los mismos 
+en los que el CTM se verá involucrado.  Se propone hacer 
+uso de sprints de carácter quincenal. De la misma forma, 
+como se ha indicado con anterioridad, se refiere hacer uso 
+de la metodología de entrega de servicios ITILv4 así como 
+prácticas de desarrollo de software orientado a la calidad 
+—metodología de los doce factores así como el proceso de 
+validación y codificación segura, que hace uso del 
+software de análisis de calidad SonarLint— y de desarrollo 
+seguro. Geoactio describe los estándares de desarrollo 
+seguro de aplicaciones web y móviles en el contexto del 
+proyecto, así como los de integración continua.
+Esta metodología ágil propuesta, conforme a lo indicado 
+en 2.2. Plan de Proyecto y recursos, coexiste con el 
+planteamiento de gestión de proyectos basado en 
+PMBOK, para lo que Geoactio hará uso de la herramienta 
+Asana, que permite la gestión integrada de tareas y del 
+proyecto.
+Consorci de Transports de Mallorca 31
+
+PAGE 32
+explotación analítica; debe dar cobertura al 100% de los 
+requerimientos funcionales, no funcionales y técnicos de 
+carácter obligatorio; Debe disponer de una API REST que 
+permita ofrecer endpoints en tiempo real / diferido conforme a 
+los requerimientos funcionales, no funcionales y técnicos de 
+carácter obligatorio; debe exponer feeds GTFS-RT para aquellos 
+servicios objeto del alcance;  debe ofrecer una fiabilidad de la ◦
+predicción igual a superior al 85% en cada una de las líneas 
+objeto del alcance (fiabilidad media diaria por línea) atendiendo 
+al caso de utilización en el que el usuario consulta la hora de 
+paso estimada con 8 minutos de antelación respecto a la hora 
+teórica de llegada del bus a su parada, con un margen de error 
+admisible de ±1 minuto; debe ofrecer una fiabilidad de la 
+predicción igual a superior a la comprometida por estos en 
+4.4.2.3. referida al caso de uso en el que el usuario consulta la 
+hora de paso estimada con 15 minutos de antelación respecto a 
+la hora teórica de llegada del bus a su parada, con un margen 
+de error admisible de ±2 minutos.
+• La metodología propuesta por los ofertantes debe tener en 
+consideración que el CTM espera la entrega de un proyecto 
+“llave en mano”, que requiera la involucración de este de forma 
+principal en aquellos procesos y actividades relativas al diseño y 
+toma de decisiones relativas al proyecto, así como en las 
+actividades relacionadas con el control y seguimiento de este.
+5.3 Gobierno del servicio
+Los ofertantes deberán incluir una propuesta de modelo de 
+gobierno de la prestación de los diferentes servicios objeto del 
+alcance del presente pliego de prescripciones técnicas.
+• El modelo propuesto por los ofertantes debe ser ágil y eficiente, 
+así como eficaz en relación con los objetivos propuestos.
+• El modelo de gobierno propuesto por los ofertantes debe 
+describir con claridad:
+• Objetivo/s del mecanismo de gobierno (por ejemplo, stand 
+up diaria).
+• Frecuencia del mecanismo de gobierno en cuestión.
+• Interlocutores involucrados en el mecanismo de gobierno.
+• Responsabilidades (matriz RACI) entre el CTM y el ofertante.
+• Inputs clave y entregables de cada uno de los mecanismos 
+de gobierno.
+• Mecanismos de reporting, actas de reunión y compromiso 
+de entrega de los mismos.
+• Indicadores de seguimiento a revisar durante el mecanismo 
+de gobierno.
+5.4 Devolución del servicio
+Los ofertantes deberán describir en sus propuestas un plan de 
+devolución del servicio que será activado 5 meses antes de la 
+finalización del contrato y que dará cobertura, al menos, a las 
+siguientes fases: Preparación de la transición (3-4 semanas), 
+ejecución de la transición (3 semanas), y cierre (2 semanas) 
+atendiendo al alcance descrito por el CTM para cada una de ellas. 
+5.5 Indicadores y niveles de servicio (SLA) comprometidos 
+Sin embargo, más allá de describir de forma un tanto 
+inconexa estas metodologías y prácticas, que pueden 
+inferirse como complejas, no se describe/detalla su 
+aplicación práctica en el contexto del proyecto. En 
+consecuencia, el marco metodológico propuesto puede 
+interpretarse como conceptual, complejo y abstracto, si 
+bien se adecúa a prácticas que sin duda resultan de 
+interés para el CTM.
+Por otro lado, en relación con los entregables asociados al 
+servicio, bajo los epígrafes 2.2.2. y 2.2.4. se describen los 
+diferentes entregables —y su naturaleza— asociados al 
+servicio. En este sentido, Geoactio propone disponer de 
+un interlocutor como Responsable de Documentación 
+Técnica y Gestión Integrada, encargado de velar por la 
+calidad documental, centralizar todas las solicitudes y 
+comunicaciones respecto a la documentación generada en 
+el proyecto. Para el desarrollo de la documentación 
+asociada al proyecto, GeoActio propone hacer uso de 
+Google Docs, Docusaurus, OpenAPI /Swagger, etc.
+Cabe destacar que, en relación con el plan de proyecto, 
+Geoactio propone un plan tentativo de proyecto muy 
+detallado, indicando todas las tareas —a excepción de las 
+relativas a la puesta en marcha del servicio— en relación 
+con los hitos establecidos por el CTM, que GeoActio 
+respeta, así como un plan de riesgos inicial
+5.3 Gobierno del servicio
+En relación con el modelo de gobierno propuesto, 
+GeoActio plantea un esquema de Gobierno compuesto 
+por un Comité de Dirección conjunto con el CTM así como 
+un Comité de Seguimiento del proyecto. En ambos casos 
+se describen las funciones y objetivos del cada comité así 
+como los participantes a los mismos, tanto por parte del 
+CTM como por GeoActio. Uno de los roles clave 
+identificados por GeoActio es el de Jefe de Proyecto, cuya 
+contribución al gobierno se describe en términos de 
+responsabilidades. Asimismo, se indica la periodicidad, 
+entregables de cada uno de los comités de seguimiento 
+responsabilidades RACI de los diferentes comités / 
+equipos para cada una de las funciones en el alcance del 
+modelo de gobierno descrito.
+No se aprecia, sin embargo, que la planificación de 
+proyecto propuesta tenga en consideración las 
+actividades orientadas a la puesta en marcha del 
+modelo descrito.
+5.4 Devolución del servicio
+La propuesta realizada por Geoactio describe el plan de 
+devolución propuesto para el servicio (2.4.), que 
+comprende las diferentes fases: preparación de la 
+transición —que comprende la planificación detallada, 
+Consorci de Transports de Mallorca 32
+
+PAGE 33
+conforme a los requerimientos establecidos por el CTM. Esquema 
+de penalizaciones.
+proceso de transición, plan de transición, definición del 
+ámbito a transferir, análisis de la situación actual, niveles 
+de conocimiento y diseño del KTP—, la ejecución del KTP, 
+que comprende las fases de preparación y traspaso de la 
+operativa del servicio así como la fase de cierre del 
+proceso de transición (2 semanas). Cada una de las fases 
+es descrita en términos de tareas y responsables, 
+describiendo una matriz RACI que describe las diferentes 
+actividades relativas a la devolución y su responsabilidad.
+5.5 Niveles de servicio
+En relación con los niveles de servicio y, conforme a lo 
+descrito en 2.5. Niveles de servicio en materia de gestión 
+de proyecto y devolución del servicio GeoActio garantiza el 
+cumplimiento de los Acuerdos de Nivel de Servicio 
+(ANS/SLA)
+establecidos en el pliego, así como los informes de 
+seguimiento necesarios con una periodicidad mensual, 
+asumiendo las penalizaciones establecidas en caso de 
+incumplimiento de los mismos, siempre que dicho 
+incumplimiento dependa exclusivamente de la capacidad 
+de actuación de GeoActio y no venga generado por 
+bloqueos derivados de la falta de disponibilidad de datos 
+o sistemas externos ajenos a su control.
+6. Servicios de administración, mantenimiento y evolución 
+requeridos GeoActio (Alestis Consulting, S.L.)
+6.1 Descripción de la necesidad
+Las propuestas deberá atender a las siguientes actividades de 
+administración y mantenimiento de la solución propuesta 
+conforme al alcance establecido por el CTM:
+• Servicios de administración y mantenimiento, atendiendo al 
+dimensionamiento planteado por el ofertante y de acuerdo con 
+los requerimientos y alcance del CTM.
+• Servicios de mantenimiento perfectivo, atendiendo a las 
+prioridades definidas, al dimensionamiento planteado por el 
+ofertante y de acuerdo con los requerimientos y alcance del 
+CTM.
+• Servicios de seguimiento económico de costes de servicios 
+cloud.
+• Servicios de mantenimiento correctivo, atendiendo a las 
+prioridades definidas, al dimensionamiento planteado por el 
+ofertante y de acuerdo con los requerimientos y alcance del 
+CTM.
+• Servicios de mantenimiento evolutivo, atendiendo a la 
+disponibilidad de 800 h para dar cobertura al alcance 
+establecido, atendiendo a las prioridades definidas, a la 
+metodología propuesta, al dimensionamiento planteado por el 
+ofertante y de acuerdo con los requerimientos y alcance del 
+CTM. 
+6.2 Modelo de prestación de los servicios de mantenimiento
+6.1 Servicios de administración y mantenimiento
+La propuesta realizada por Geoactio describe las 
+diferentes actividades de mantenimiento objeto del 
+alcance conforme a los requerimientos expresados en el 
+pliego de prescripciones técnicas. En este sentido:
+• Recoge las actividades de mantenimiento perfectivo, 
+describiendo como parte del alcance actividades 
+orientadas a la actualización de componentes y 
+versiones de SW o a la optimización de desarrollos y 
+configuraciones. Las tareas objeto del alcance son 
+descritos, indicando los perfiles involucrados en la 
+prestación, horarios de servicio y esquema de 
+prioridades.
+• Describe las actividades relativas al seguimiento 
+económico de los servicios cloud, se describen las 
+capacidades soportadas por la solución propuesta —
+Cloud Billing— así como las actividades relativas al 
+análisis de coste, reporting y optimización del coste de 
+los servicios cloud. Se describen los roles perfiles 
+involucrados en la prestación, horarios de servicio y 
+modelo de relación y colaboración.
+• Da cobertura a las actividades de mantenimiento 
+correctivo, describiendo como parte del alcance las 
+actividades orientadas a la detección proactiva de 
+Consorci de Transports de Mallorca 33
+
+PAGE 34
+Los ofertantes deberán considerar en sus propuestas un modelo 
+de gobierno de los servicios de administración y mantenimiento de 
+la solución que considere, al menos, las siguientes actividades bajo 
+la responsabilidad de un jefe de proyecto:
+• Seguimiento de las actividades, de diferente naturaleza, 
+desarrolladas sobre cada solución o plataforma a lo largo del 
+periodo de medida.
+• Revisión y priorización de las actividades/tareas pendientes en 
+los diferentes backlogs.
+• Revisión y seguimiento de los diferentes niveles de servicio y 
+KPI de las principales actividades.
+• Seguimiento y propuesta de actividades de mejora del servicio, 
+así como de la calidad de la prestación de este.
+• Toma de decisiones del servicio y escalado a otras estructuras 
+de gobierno en caso de que sea requerido.
+6.3 Niveles de servicio relativos a la administración y 
+mantenimiento de la solución propuesta (SLA) conforme a los 
+requerimientos establecidos por el CTM. Esquema de 
+penalizaciones.
+incidencias, la atención y coordinación, la corrección de 
+defectos una vez validados, el análisis de incidencias 
+repetitivas así como el mantenimiento de la 
+documentación relacionada. Las tareas objeto del 
+alcance son descritos, indicando los perfiles 
+involucrados en la prestación, horarios de servicio y 
+esquema de prioridades para la gestión de incidencias. 
+Cabe destacar que, la propuesta de Geoactio recoge 
+los mecanismos técnicos eventualmente disponibles 
+para mitigar la posible caída del sistema y su 
+recuperación del sistema de manera sincronizada. 
+Asimismo, al dar cobertura a las aplicaciones móviles 
+iOS y Android, la propuesta da cobertura a las 
+siguientes actividades de mantenimiento: 
+actualizaciones a nuevas versiones de SO, adaptación y 
+redimensionamiento, actualizaciones periódicas para 
+novedades de OS, análisis de rendimiento, adaptación 
+del servicio y personalizaciones.
+• En relación con el mantenimiento evolutivo, al ser 
+objeto de una posible valoración como mejora al 
+alcance —atendiendo al incremento de la capacidad 
+requerida— este aspecto se describe en el sobre 3 
+como parte de las mejoras al alcance.
+6.2 Modelo de prestación de los servicios de 
+mantenimiento
+Para la prestación de los servicios de mantenimiento, 
+GeoActio plantea un enfoque basado en ITILv4:
+• Establecimiento de unos objetivos del modelo de 
+mantenimiento y administración.
+• Medidas preparatorias, que permitan definir el modelo 
+de servicio, definir la situación actual y alcance del 
+servicio, el modelo de gestión y seguimiento del 
+servicio —seguimiento y control de la calidad, informes 
+de seguimiento del servicio y SLA, identificación y 
+gestión de riesgos, configuración de herramientas y 
+test de automatización del servicio.
+• Procesos de mejora continua, orientados a la mejora 
+de la eficacia y eficiencia mediante el autoservicio, la 
+automatización, la resolución de problemas y las 
+consultas repetidas, así como la innovación.
+• Proceso de gestión de incidencias, para lo que 
+Geoactio proveerá de una herramienta de gestión de 
+tickets.
+El modelo de relación propuesto por Geoactio da 
+cobertura a las actividades/requerimientos descritos por 
+el CTM bajo el epígrafe 7.2. del PPT. El mismo se basa en la 
+premisa de que los equipos que desarrollan son los 
+mismos que implementan y mantienen, argumentando 
+que este asegura una alta cohesión y eficiencia en todas 
+las fases del proyecto, destacando los aspectos clave que 
+promueve esta prestación.
+Por otro lado, resulta preciso indicar que la propuesta de 
+Consorci de Transports de Mallorca 34
+
+PAGE 35
+Geoactio da cobertura al que, pero no al cómo. Es decir, 
+resulta genérico y no concreto, sin especificar como se 
+pretende dar cobertura —de forma general— a las 
+diferentes actividades descritas. El mismo, no obstante, se 
+incorpora dentro del plan de proyecto del proveedor.
+6.3 Niveles de servicio en relación con la administración y 
+mantenimiento
+En relación con los niveles de servicio y, conforme a lo 
+descrito en 4.4. Niveles de servicio en materia de 
+administración, mantenimiento y evolución del servicio, 
+GeoActio garantiza el cumplimiento de los Acuerdos de 
+Nivel de Servicio (ANS/SLA) establecidos en el pliego, así 
+como los informes de seguimiento necesarios con una 
+periodicidad mensual, asumiendo las penalizaciones 
+establecidas en caso de incumplimiento de los mismos, 
+siempre que dicho incumplimiento dependa 
+exclusivamente de la capacidad de actuación de GeoActio 
+y no venga generado por bloqueos derivados de la falta 
+de disponibilidad de datos o sistemas externos ajenos a su 
+control.
+7. Plan de formación y gestión del conocimiento GeoActio (Alestis Consulting, S.L.)
+7.1. Plan formativo
+• Los ofertantes deberán considerar, como parte de sus 
+propuestas, la preparación y ejecución de un plan formativo de 
+carácter tanto técnico como funcional (usuario planificador y / u 
+operador de los servicios de transporte), impartido al personal 
+del CTM en relación con las diferentes soluciones y 
+componentes que conforman el ecosistema analítico del 
+Servicio Big Data propuesto.
+• El CTM espera que las propuestas de los diferentes ofertantes 
+incluyan un plan formativo que describa claramente:
+• Sesiones y contenido —índice— a impartir tanto en el 
+ámbito funcional como técnico.
+• Duración de las sesiones y número de las mismas para cada 
+contenido.
+• Número de asistentes y limitaciones, caso de existir.
+• Modalidad, indicando claramente si se trata de una 
+formación presencial, online u offline.
+• Entregables y materiales generados. En este sentido, el CTM 
+considera que los principales entregables de esta actividad 
+deben comprender, al menos, los siguientes elementos:
+• Videos demostrativos.
+• Documentación de soporte a las sesiones formativas.
+• Casos prácticos/de uso y data sets de prueba.
+7.1. Plan formativo
+La propuesta de Geoactio en relación con el plan 
+formativo se estructura alrededor de los siguientes ejes:
+• Formación continua y adaptada, asegurando nuevos 
+cursos a medida que se introduzcan nuevas 
+funcionalidades o desplieguen nuevos componentes. 
+La misma se apoyará en los sprint review —donde se 
+llevará a cabo una revisión técnica exhaustiva de las 
+funcionalidades desarrolladas—, en los que se 
+atenderá a la participación activa y la formación 
+progresiva y colaborativa. Además de la formación 
+relativa al sprint review, al finalizar cada implantación 
+se dedicará una jornada formativa de 6 horas en 
+relación con el alcance objetivo.
+• Personalización, de forma que la formación se adapte 
+a las necesidades funcionales y/o técnicas de los 
+diferentes usuarios.
+• Objetivos claros.
+• Características, programa y logística detallada.
+• Modalidad virtual, salvo requerimiento expreso del 
+CTM.
+• Responsabilidad sobre la explotación, de forma que 
+GeoActio asuma la explotación de la solución hasta 
+que CTM sea autónomo.
+Además de la formación específica descrita, Geoactio 
+plantea formaciones específicas de 2 h (multimedia-
+remoto) con el siguiente alcance:
+• Centro de control (3 sesiones)
+• Aplicación móvil de usuario (1 sesión)
+Consorci de Transports de Mallorca 35
+
+PAGE 36
+7.2 Gestión del conocimiento
+• Los ofertantes deben considerar en sus propuestas la 
+generación y el adecuado mantenimiento de documentación 
+descriptiva de la solución propuesta, tanto desde el punto de 
+vista funcional, técnica, de administración y de usuario.
+• Entre otros elementos / recursos documentales a considerar, el 
+repositorio documental debe contener:
+• Documentación relativa a la especificación y diseño técnico 
+y funcional de los diferentes servicios y componentes de la 
+solución.
+• Documentación y diagramas de arquitectura.
+• Documentación relativa a los mecanismos y procedimientos 
+de seguridad implementados.
+• Manuales de usuario de las diferentes soluciones.
+• Manuales técnicos, de configuración, operación y de 
+administración.
+• Materiales formativos multiformato generados en relación 
+con los planes de formación establecidos.
+• Manual de instalación y despliegue de las diferentes 
+soluciones
+• La solución propuesta debe permitir exportar los recursos 
+de forma estandarizada.
+• Google Cloud Platform (3 sesiones)
+• Algoritmia (1 sesión)
+• Arquitectura (3 sesiones)
+Además de las sesiones indicadas, para las que se 
+plantean objetivos y contenidos concretos— Geoactio 
+plantea formación adicional a nivel de explotación de la 
+solución, si bien esta cuestión no se describe en la 
+propuesta. El material didáctico
+será de creación original de GeoActio, cediendo los 
+derechos de explotación mediante Creative Commons. El 
+material será entregado en formato editable y en papel en 
+aquellos cursos presenciales.
+A mayor abundamiento, Geoactio proporcionará al equipo 
+técnico del CTM acceso al paquete formativo Google Cloud 
+Platform así como laboratorios prácticos y Quicklabs de la 
+solución Google Cloud.
+7.2 Gestión del conocimiento
+En relación con el plan de gestión del conocimiento, la 
+propuesta de Geoactio propone la figura del Responsable 
+de Documentación Técnica y Gestión Integrada, 
+encargado de consolidar, estructurar, revisar y optimizar 
+toda la documentación producida, asegurando su 
+integración con la herramienta de gestión del proyecto 
+Asana. De forma complementaria, Geoactio propone la 
+implementación de una base de datos especializada que 
+sirva como repositorio centralizado para almacenar y 
+organizar
+de manera eficiente toda la documentación del proyecto, 
+haciendo uso de las soluciones GitLab y docusaurus.
+En relación con la documentación generada en el contexto 
+del proyecto y, conforme a lo descrito en 2.1.4. 
+Documentación, se da cobertura a la documentación 
+técnica y funcional relativa al ciclo de vida de la solución 
+propuesta (especificación, diseño, desarrollo, validación, 
+soporte y mantenimiento, auditoria).
+8. Plan de recursos GeoActio (Alestis Consulting, S.L.)
+• Los ofertantes describirán en sus propuestas la distribución del 
+equipo de trabajo de acuerdo con la propuesta de alcance 
+descrita por el CTM, la dedicación estimada de estos al 
+proyecto, así como los perfiles profesionales y currículos vitae y 
+títulos acreditativos de las personas que formarán el equipo.
+• Las propuestas deberán describir la estructura, jerarquías y 
+relaciones establecidas entre los diferentes roles del equipo de 
+Geoactio propone un equipo de trabajo compuesto por 16 
+perfiles: Jefe de Proyecto, Científico de Datos, Ingeniero de 
+Datos, Arquitecto de Datos, Arquitecto Big Data, Analista 
+Programador, Administrador de Sistemas Cloud, 
+Arquitecto de Cloud Microservicios, analista de negocio, 
+desarrollador móvil, Compliance y Protección de datos, 
+técnico de soporte, Analista de transporte, 
+Consorci de Transports de Mallorca 36
+
+PAGE 37
+trabajo propuestos. 
+• Los ofertantes deberán indicar expresamente aquellos recursos 
+de los propuestos que desarrollarán de forma simultánea más 
+de un rol entre los descritos.
+• Las propuestas de los ofertantes deberán justificar 
+razonadamente la inclusión de nuevos roles o exclusión de 
+roles existentes en el contexto de la solución propuesta por 
+estos.
+Documentación Técnica, Diseñador UI/UX, y Gestor del 
+cambio. No se evidencia que ninguno de los recursos 
+involucrados desarrolle más de un rol en el proyecto.
+A excepción de 3 perfiles de los propuestos, el resto de 
+perfiles involucrados tiene una dedicación superior al 30%. 
+Atendiendo a que se trata de una solución SaaS en modo 
+suministro, el n.º de perfiles y su dedicación sugiere un 
+sobredimensionamiento teórico de los recursos 
+involucrados en el proyecto. Cabe destacar que, al tratarse 
+de un proyecto llave en mano, esta cuestión resulta bajo el 
+ámbito de responsabilidad de Geoactio.
+Por último, bajo el Anexo I se describe los recursos 
+involucrados, su experiencia y su función en el ámbito del 
+proyecto. Cuestión que resulta complementaria a los CV 
+de los recursos, que forman parte de los currículos vitae y 
+títulos acreditativos, que forman parte de la 
+documentación de carácter administrativo.
+ 5.1.1.1 - Aspectos destacables de la propuesta de valor recibida
+Entre las principales ventajas identificadas en la propuesta de valor realizada por 
+GeoActio se encuentran:
+• GeoActio cuenta con numerosas referencias y casos de éxito que avalan su 
+experiencia en el desarrollo e implantación de soluciones ITS en servicios 
+de transporte.
+• Da cobertura a todos los requerimientos obligatorios expresados en el 
+pliego de prescripciones técnicas, tanto a nivel de arquitectura, como 
+funcional y técnico.
+• Las cuestiones técnicas, funcionales y relativas al modelo de estimación 
+predictiva son descritas de forma muy detallada y completa en la 
+propuesta realizada por GeoActio.
+• Geoactio —a expensas de valorar las posibles mejoras al alcance propuesto
+— incluye en el ámbito de sus propuestas la implantación de aplicaciones 
+móviles basadas en iOS y Android.
+Consorci de Transports de Mallorca 37
+
+PAGE 38
+• Si bien GeoActio garantiza el cumplimiento de los objetivos MAE/MAPE 
+establecidos en los diferentes hitos del proyecto haciendo uso de un 
+número reducido de fuentes de información, se muestra abierto a valorar 
+la mejora en términos de fiabilidad y calidad predictiva a la hora de 
+incorporar nuevas fuentes de datos (i.e. condiciones meteorológicas, 
+tráfico, eventos desde el vehículo, etc.) sin coste adicional para el CTM.
+• Se describe de forma sumamente detallada los aspectos relativos a los 
+planes formativos y de gestión del conocimiento.
+ 5.1.1.2 - Principales limitaciones
+Entre las principales limitaciones identificadas en la propuesta de valor realizada 
+por GeoActio se encuentran:
+• Si bien la propuesta resulta sumamente detallada en aquellos aspectos 
+técnicos y funcionales, resulta compleja, poco clara y en ocasiones poco 
+comprensible en aquellos aspectos relativos a la organización, 
+metodología y gobierno del servicio.
+• En línea con lo indicado anteriormente, el planteamiento metodológico 
+resulta académico y poco operativo. Al respecto, GeoActio plantea 
+diferentes metodologías para la gestión de la entrega de valor —SAFE, 
+Kanban, Scrum—, ITILv4, PmBOK, etc. que, si bien se constituyen las 
+mejores prácticas del mercado— deben ser convenientemente 
+particularizadas y adaptadas al contexto del CTM para asegurar una 
+adecuada eficiencia operativa y cumplir con los hitos y planteamiento 
+establecido.
+• La oferta realizada por GeoActio propone movilizar un total de 16 recursos 
+con un nivel de dedicación al proyecto medio-alto. Considerando que se 
+trata de una solución SaaS en modo suministro esta cantidad puede 
+considerarse como elevada. Si bien se trata de un aspecto al que el CTM 
+debe prestar atención —dada la complejidad añadida de trabajar con un 
+equipo de trabajo tan numeroso—, los ofertantes pueden movilizar 
+Consorci de Transports de Mallorca 38
+
+PAGE 39
+cuantos recursos consideren oportunos para dar cobertura al proyecto 
+conforme a los hitos y SLA establecidos.
+• El CTM debe atender a los siguientes aspectos que, si bien pueden inferirse 
+cubiertos en el ámbito de la propuesta técnica de Geoactio, son descritos 
+—conforme a la misma— en detalle en su propuesta de mejoras al alcance:
+◦ Herramienta de soporte a la explotación analítica de la información 
+propuesta, conforme a los requerimientos descritos en 5.1.6.2. del PPT.
+◦ Modelo de soporte evolutivo propuesto, conforme a los requerimientos 
+establecidos en el punto 7.1. del pliego de prescripciones técnicas.
+◦ Costes de infraestructura cloud durante los años de la prestación del 
+servicio que, si bien son descritos en la propuesta de Geoactio como 
+parte la estimación de dimensionamiento requerida en 5.6. deben ser 
+considerados como parte de su propuesta económico.
+ 5.2 - Criterios de valoración evaluables por juicio de valor
+Conforme a los requerimientos establecidos en el pliego de condiciones 
+administrativas, se establecen los siguientes criterios de valoración para aquellos 
+requerimientos basados en Juicio de Valor:
+1. Memoria justificativa Hasta 45 
+puntos
+1.1. Planteamiento y diseño del servicio propuesto Hasta 20 
+puntos
+1.1.1. Entendimiento y adecuación de la propuesta al contexto del proyecto, 
+objetivos y propuesta de valor para el CTM.
+Del análisis de cada propuesta se derivarán tres niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. La propuesta realizada no se alinea 
+con los objetivos o propuesta de valor esperada por el CTM, o bien 
+estos aspectos no quedan convenientemente descritos. 
+• Nivel 1  Adecuada: 2 puntos. El planteamiento realizado da →
+cobertura a los objetivos y propuesta de valor esperada por parte 
+del CTM, quedando estos aspectos convenientemente descritos y 
+argumentados.
+Hasta 2 
+puntos
+Consorci de Transports de Mallorca 39
+
+PAGE 40
+1.1.2.
+Se valorará el planteamiento de la arquitectura propuesta por los 
+ofertantes, atendiendo a las diferentes soluciones, componentes y 
+servicios propuestos y su adecuación a los requerimientos expresados 
+en el epígrafe 2 del Pliego de Prescripciones técnicas.
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos técnicos 
+no funcionales y de arquitectura descritos.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos técnicos no funcionales y de arquitectura 
+descritos o los mismos no son descritos y / o argumentados de 
+forma profesional.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura a los →
+requerimientos técnicos no funcionales y de arquitectura y objeto 
+del alcance, describiendo la cobertura de estos en su totalidad y 
+con un nivel adecuado de detalle.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura a los →
+requerimientos aportando mejoras sustanciales y / o un nivel de 
+detalle no requerido, siendo estas mejoras argumentadas y 
+redactadas de forma profesional.
+Hasta 5 
+puntos
+1.1.3. Se valorará el planteamiento y adecuación del servicio/solución 
+propuesta para dar cobertura a los requerimientos funcionales y casos 
+de uso descritos bajo el epígrafe 1. Del pliego de prescripciones 
+técnicas.
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos 
+funcionales y casos de uso descritos.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos funcionales y/o casos de uso descritos o los 
+mismos no son descritos y / o argumentados de forma profesional.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura a los →
+requerimientos funcionales y casos de uso objeto del alcance, 
+describiendo la cobertura de estos en su totalidad y con un nivel 
+adecuado de detalle.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura a los →
+requerimientos aportando mejoras sustanciales y / o un nivel de 
+detalle no requerido, siendo estas mejoras argumentadas y 
+redactadas de forma profesional.
+Hasta 5 
+puntos
+Consorci de Transports de Mallorca 40
+
+PAGE 41
+1.1.4.
+Se valorará el grado de adecuación y planteamiento del algoritmo de 
+cálculo de la estimación predictiva de paso por parada, su fiabilidad, 
+así como su adecuación y robustez conforme al estado del arte en 
+tecnologías y capacidades de estimación predictiva. 
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos descritos 
+en el pliego de prescripciones técnicas.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos descritos o los mismos no son descritos y / o 
+argumentados de forma profesional y/o sin alcanzar los objetivos 
+de flexibilidad, fiabilidad y robustez requeridos.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura a los →
+requerimientos planteados, descritos en su totalidad y con un nivel 
+adecuado de detalle.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura a los →
+requerimientos aportando mejoras sustanciales, especialmente en 
+términos de fiabilidad, robustez y flexibilidad, y / o un nivel de 
+detalle no requerido, siendo estas mejoras argumentadas y 
+redactadas de forma profesional.
+Hasta 5 
+puntos
+1.1.5.
+Adecuación de la solución técnica a los requerimientos en materia de 
+seguridad, así como los relativos a la capacidad y dimensionamiento 
+de la solución propuesta, incluyendo los entornos pre-productivos 
+propuestos, que deberán atender a las diferentes modalidades de 
+prestación existentes.
+Del análisis de cada propuesta se derivarán tres niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos a con el planteamiento y cobertura 
+de los requerimientos en materia de seguridad y/o capacidad y 
+dimensionamiento de los diferentes entornos de trabajo 
+propuestos.
+• Nivel 1  Adecuado: 2 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con los 
+requerimientos de seguridad y entornos de trabajo propuestos, su 
+dimensionamiento y capacidad, describiendo con claridad el grado 
+de cumplimiento de los diferentes requerimientos expresados por 
+el CTM.
+• Nivel 2  Excelente: 3 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con los 
+requerimientos de seguridad y entornos de trabajo propuestos, su 
+dimensionamiento y capacidad, presentando mejoras que 
+optimizan la eficacia y eficiencia de la gestión de estos o de su 
+capacidad/seguridad.
+Hasta 3 
+puntos
+1.2.
+Gobierno y gestión del servicio Hasta 15 
+puntos
+1.2.1. Se valorará el planteamiento y enfoque metodológico propuesto por el Hasta 5 
+Consorci de Transports de Mallorca 41
+
+PAGE 42
+ofertante para dar cobertura cada una de las fases requeridas 
+proyecto de diseño, desarrollo, implantación y posterior 
+mantenimiento de la solución propuesta, así como los diferentes 
+entregables asociados a cada una de ellas.
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos a la metodología y enfoque para la 
+entrega de los diferentes tipos de servicio objeto del alcance.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos en materia de planteamiento y enfoque 
+metodológico y entregables derivados de la prestación de los 
+servicios objeto del alcance, exhibiendo limitaciones en relación en 
+su descripción y/o alguna de las dimensiones del mismo.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el planteamiento y enfoque 
+metodológico y entregables, describiendo de forma clara las 
+diferentes dimensiones que componen el mismo.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el planteamiento y enfoque 
+metodológico para la entrega de los diferentes servicios objeto del 
+alcance, presentando un enfoque que mejora el alcance requerido, 
+aportando valor incremental al CTM.
+puntos
+1.2.2.
+Se valorará la adecuación del plan de trabajo propuesto por los 
+ofertantes atendiendo a los principales hitos de valor del proyecto, el 
+planteamiento metodológico realizado, los recursos y la capacidad 
+asociada a cada uno de ellos, así como los planes de riesgo y 
+mitigación propuestos.
+Del análisis de cada propuesta se derivarán tres niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se menciona, no se describe o 
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos a con el plan de trabajo propuesto, 
+sus recursos y dedicación así como la metodología de gestión y 
+seguimiento de este, así como de los riesgos del proyecto.
+• Nivel 1  Adecuado: 2 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con el plan de 
+trabajo propuesto, describiendo con claridad la metodología, 
+recursos, planes de gestión de riesgos, entregables y 
+responsabilidades tanto del ofertante como del CTM.
+• Nivel 2  Excelente: 3 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con el plan de 
+trabajo propuesto, describiendo con claridad la metodología, 
+recursos, entregables y responsabilidades tanto del ofertante como 
+del CTM, presentando mejoras que optimizan la eficacia y eficiencia 
+del mismo o reduzcan el riesgo derivado de este.
+Hasta 3 
+puntos
+1.2.3.
+Se valorará el planteamiento y enfoque del modelo de gobierno 
+propuesto, los diferentes elementos de los que este se compone 
+(reuniones, responsabilidades, criterios, principios, etc.)
+Hasta 4 
+puntos
+Consorci de Transports de Mallorca 42
+
+PAGE 43
+Del análisis de cada propuesta se derivarán tres niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se menciona, no se describe o →
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos al modelo de gestión y gobierno del 
+servicio.
+• Nivel 1  Adecuado: 2 puntos. La propuesta da cobertura a los →
+requerimientos en materia de gobierno y gestión del servicio, con 
+adecuados compromisos y planteamientos metodológicos para 
+ello.
+• Nivel 2  Excelente: 4 puntos. La propuesta da cobertura a los →
+requerimientos en materia de gobierno y gestión del servicio de 
+forma clara y con adecuados compromisos y planteamientos 
+metodológicos para ello, presentando mejoras que optimizan el 
+modelo propuesto y/o mejoran la eficiencia de este.
+1.2.4.
+Se valorará el planteamiento y la adecuación del plan de devolución 
+del servicio conforme a los requerimientos establecidos por el CTM en 
+el pliego de prescripciones técnicas.
+Del análisis de cada propuesta se derivarán tres niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se menciona, no se describe o →
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos al plan de devolución del servicio.
+• Nivel 1  Adecuado: 2 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con el plan de 
+devolución del servicio propuesto, describiendo con claridad la 
+metodología, recursos, entregables y responsabilidades tanto del 
+ofertante como del CTM.
+• Nivel 2  Excelente: 3 puntos. La propuesta da cobertura a los →
+requerimientos expresados en el PPT en relación con el plan de 
+devolución del servicio propuesto, describiendo con claridad la 
+metodología, recursos, entregables y responsabilidades tanto del 
+ofertante como del CTM, presentando mejoras que optimizan la 
+eficacia y eficiencia del mismo o reduzcan el riesgo derivado de 
+este.
+Hasta 3 
+puntos
+1.3.
+Plan de formación y gestión del conocimiento Hasta 5 
+puntos
+1.3.1.
+Se valorará el planteamiento y adecuación del plan de formación y 
+gestión del conocimiento propuesto por los ofertantes, su conveniente 
+soporte tecnológico, sesiones, recursos, etc. conforme a los 
+requerimientos expresados en el PPT.
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se menciona, no se describe o →
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos a la formación y gestión del 
+Hasta 5 
+puntos
+Consorci de Transports de Mallorca 43
+
+PAGE 44
+conocimiento requerido para la prestación de los servicios objeto 
+del alcance.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos en materia de formación continua y gestión del 
+conocimiento requerido para la prestación de los servicios objeto 
+del alcance, exhibiendo limitaciones en relación en su descripción 
+y/o en alguna de las dimensiones que lo componen.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el plan de formación y gestión del 
+conocimiento, describiendo de forma clara las diferentes 
+dimensiones del mismo.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el plan de formación y gestión del 
+conocimiento, presentando un enfoque que mejora el alcance 
+requerido, aportando valor incremental al CTM.
+1.4.
+Servicio de administración, mantenimiento y evolución del servicio Hasta 5 
+puntos
+1.4.1
+Se valorará el planteamiento y enfoque metodológico, recursos, 
+entregables y tecnología de soporte a las actividades propuesto por el 
+ofertante para dar cobertura a los diferentes servicios de 
+mantenimiento propuestos por el CTM bajo el epígrafe 4. Del pliego de 
+prescripciones técnicas.
+Del análisis de cada propuesta se derivarán cuatro niveles de 
+adecuación que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se menciona, no se describe o →
+explícitamente no se dan cobertura a los requerimientos 
+expresados en el PPT relativos a los servicios de administración, 
+mantenimiento y evolución del servicio.
+• Nivel 1  Aceptable: 2 puntos. La propuesta da cobertura parcial a →
+los requerimientos y planteamientos metodológicos requeridos 
+para dar cobertura a los servicios de administración, 
+mantenimiento y evolución del servicio, o bien exhibe una elevada 
+complejidad o ineficiencia operativa.
+• Nivel 2  Adecuada: 4 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el planteamiento metodológico 
+propuesto para la prestación de los servicios de administración, 
+mantenimiento y evolución del servicio.
+• Nivel 3  Excelente: 5 puntos. La propuesta da cobertura y describe→  
+de forma clara y detallada el planteamiento metodológico 
+propuesto para los servicios de administración, mantenimiento y 
+evolución del servicio, presentando mejoras que optimizan la 
+eficiencia del proceso y/o reducen la complejidad del mismo, 
+aportando valor incremental al CTM.
+Hasta 5 
+puntos
+Consorci de Transports de Mallorca 44
+
+PAGE 45
+ 5.2.1 - Alestis – Geoactio
+Atendiendo a los criterios anteriormente descritos, la valoración de la propuesta 
+recibida por Alestis - GeoActio es la siguiente, teniendo en consideración aquellos 
+criterios evaluables mediante juicio de valor:
+1 Memoria justificativa Hasta 45 
+puntos
+Puntuación 
+obtenida GeoActio
+1.1
+Planteamiento y diseño del servicio propuesto Hasta 20 
+puntos 19 Justificación
+1.1.1
+Entendimiento y adecuación de la 
+propuesta al contexto del proyecto, 
+objetivos y propuesta de valor para el CTM.
+Del análisis de cada propuesta se 
+derivarán tres niveles de adecuación que 
+se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. La 
+propuesta realizada no se alinea con los 
+objetivos o propuesta de valor esperada 
+por el CTM, o bien estos aspectos no 
+quedan convenientemente descritos. 
+• Nivel 1  Adecuada: 2 puntos. El →
+planteamiento realizado da cobertura a 
+los objetivos y propuesta de valor 
+esperada por parte del CTM, quedando 
+estos aspectos convenientemente 
+descritos y argumentados.
+Hasta 2 
+puntos 2
+Atendiendo a lo 
+descrito en la 
+propuesta realizada 
+por Geoactio al CTM, 
+esta se alinea con las 
+expectativas y 
+objetivos 
+establecidos por el 
+CTM en relación con 
+la puesta en marcha 
+de soluciones ITS.
+1.1.2
+Se valorará el planteamiento de la 
+arquitectura propuesta por los ofertantes, 
+atendiendo a las diferentes soluciones, 
+componentes y servicios propuestos y su 
+adecuación a los requerimientos 
+expresados en el epígrafe 2 del Pliego de 
+Prescripciones técnicas.
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos técnicos no 
+funcionales y de arquitectura descrita.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos técnicos no funcionales 
+Hasta 5 
+puntos 4
+La propuesta 
+realizada por 
+GeoActio da 
+cobertura a los 
+diferentes 
+requerimientos no 
+funcionales —NFR— y 
+de arquitectura. Cada 
+uno de los 
+requerimientos 
+establecidos es 
+descrito de forma 
+detallada, justificando 
+de forma razonada el 
+cumplimiento de los 
+mismos.
+Consorci de Transports de Mallorca 45
+
+PAGE 46
+y de arquitectura descrita o los mismos 
+no son descritos y / o argumentados de 
+forma profesional.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura a los 
+requerimientos técnicos no funcionales 
+y de arquitectura y objeto del alcance, 
+describiendo la cobertura de estos en 
+su totalidad y con un nivel adecuado de 
+detalle.
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura a los 
+requerimientos aportando mejoras 
+sustanciales y / o un nivel de detalle no 
+requerido, siendo estas mejoras 
+argumentadas y redactadas de forma 
+profesional.
+1.1.3 Se valorará el planteamiento y adecuación 
+del servicio/solución propuesta para dar 
+cobertura a los requerimientos funcionales 
+y casos de uso descritos bajo el epígrafe 1. 
+Del pliego de prescripciones técnicas.
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos funcionales y casos 
+de uso descritos.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos funcionales y/o casos 
+de uso descritos o los mismos no son 
+descritos y / o argumentados de forma 
+profesional.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura a los 
+requerimientos funcionales y casos de 
+uso objeto del alcance, describiendo la 
+cobertura de estos en su totalidad y con 
+un nivel adecuado de detalle.
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura a los 
+requerimientos aportando mejoras 
+sustanciales y / o un nivel de detalle no 
+requerido, siendo estas mejoras 
+argumentadas y redactadas de forma 
+profesional.
+Hasta 5 
+puntos
+5 La propuesta 
+realizada por 
+GeoActio da 
+cobertura a los 
+diferentes 
+requerimientos 
+funcionales, lógicos, y 
+relativos a los 
+diferentes casos de 
+uso en relación con el 
+cálculo de la 
+estimación/predicció
+n del paso por parada 
+Cada uno de los 
+requerimientos 
+establecidos es 
+descrito de forma 
+detallada, justificando 
+de forma razonada el 
+cumplimiento de los 
+mismos. A excepción, 
+sin embargo, de 
+aquellos aspectos 
+relativos a las 
+cuestiones especiales 
+que, si bien refieren 
+cumplir, no quedan 
+convenientemente 
+descritos.
+Caso de tratarse de 
+una funcionalidad no 
+disponible en su 
+solución SaaS actual, 
+describen de forma 
+argumentada su 
+planteamiento para 
+Consorci de Transports de Mallorca 46
+
+PAGE 47
+dar cobertura a los 
+mismos.
+Por otro lado, cabe 
+destacar que 
+GeoActio ofrece 
+mejoras sustanciales 
+al alcance propuesto 
+por el CTM:
+• Aplicaciones 
+móviles basadas 
+en iOS y Android.
+• Integración de 
+fuentes de valor 
+adicionales al 
+modelo 
+propuesto, 
+asumiendo los 
+costes/esfuerzo de 
+adquisición e 
+integración (al 
+margen de su 
+propuesta de 
+mejoras al 
+alcance)
+1.1.4 Se valorará el grado de adecuación y 
+planteamiento del algoritmo de cálculo de 
+la estimación predictiva de paso por 
+parada, su fiabilidad, así como su 
+adecuación y robustez conforme al estado 
+del arte en tecnologías y capacidades de 
+estimación predictiva. 
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos descritos en el 
+pliego de prescripciones técnicas.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos descritos o los mismos 
+no son descritos y / o argumentados de 
+forma profesional y/o sin alcanzar los 
+objetivos de flexibilidad, fiabilidad y 
+robustez requeridos.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura a los 
+requerimientos planteados, descritos 
+en su totalidad y con un nivel adecuado 
+Hasta 5 
+puntos
+5 Atendiendo a lo 
+descrito en la 
+propuesta realizada 
+por Geoactio, el 
+modelo de cálculo de 
+la estimación 
+predictiva queda 
+convenientemente 
+descrito y detallado, 
+justificando de forma 
+razonada las fuentes 
+seleccionadas y el 
+valor incremental —
+subjetivo— 
+consecuencia de la 
+integración de 
+fuentes adicionales 
+en el modelo. No 
+obstante, GeoActio 
+asume valorar dicha 
+integración en detalle 
+así como su 
+contribución a la 
+fiabilidad de la 
+predicción, y la 
+adquisición e 
+integración si es 
+requerido por el CTM.
+Consorci de Transports de Mallorca 47
+
+PAGE 48
+de detalle.
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura a los 
+requerimientos aportando mejoras 
+sustanciales, especialmente en 
+términos de fiabilidad, robustez y 
+flexibilidad, y / o un nivel de detalle no 
+requerido, siendo estas mejoras 
+argumentadas y redactadas de forma 
+profesional.
+1.1.5
+Adecuación de la solución técnica a los 
+requerimientos en materia de seguridad, 
+así como los relativos a la capacidad y 
+dimensionamiento de la solución 
+propuesta, incluyendo los entornos pre-
+productivos propuestos, que deberán 
+atender a las diferentes modalidades de 
+prestación existentes.
+Del análisis de cada propuesta se 
+derivarán tres niveles de adecuación que 
+se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos a con el planteamiento y 
+cobertura de los requerimientos en 
+materia de seguridad y/o capacidad y 
+dimensionamiento de los diferentes 
+entornos de trabajo propuestos.
+• Nivel 1  Adecuado: 2 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con los requerimientos de 
+seguridad y entornos de trabajo 
+propuestos, su dimensionamiento y 
+capacidad, describiendo con claridad el 
+grado de cumplimiento de los 
+diferentes requerimientos expresados 
+por el CTM.
+• Nivel 2  Excelente: 3 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con los requerimientos de 
+seguridad y entornos de trabajo 
+propuestos, su dimensionamiento y 
+capacidad, presentando mejoras que 
+optimizan la eficacia y eficiencia de la 
+gestión de estos o de su 
+capacidad/seguridad.
+Hasta 3 
+puntos 3
+La propuesta da 
+cobertura a los 
+requerimientos 
+establecidos en el 
+PPT aportando 
+herramientas 
+orientadas a mejorar 
+el control y la 
+supervisión de 
+eventos de seguridad 
+(SIEM) así como otros 
+aspectos no 
+requeridos en el 
+alcance.
+1.2. Gobierno y gestión del servicio Hasta 15 
+puntos
+8  
+Consorci de Transports de Mallorca 48
+
+PAGE 49
+1.2.1
+Se valorará el planteamiento y enfoque 
+metodológico propuesto por el ofertante 
+para dar cobertura cada una de las fases 
+requeridas proyecto de diseño, desarrollo, 
+implantación y posterior mantenimiento 
+de la solución propuesta, así como los 
+diferentes entregables asociados a cada 
+una de ellas.
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos a la metodología y 
+enfoque para la entrega de los 
+diferentes tipos de servicio objeto del 
+alcance.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos en materia de 
+planteamiento y enfoque metodológico 
+y entregables derivados de la 
+prestación de los servicios objeto del 
+alcance, exhibiendo limitaciones en 
+relación en su descripción y/o alguna de 
+las dimensiones del mismo.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el 
+planteamiento y enfoque metodológico 
+y entregables, describiendo de forma 
+clara las diferentes dimensiones que 
+componen el mismo.
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el 
+planteamiento y enfoque metodológico 
+para la entrega de los diferentes 
+servicios objeto del alcance, 
+presentando un enfoque que mejora el 
+alcance requerido, aportando valor 
+incremental al CTM.
+Hasta 5 
+puntos 2
+Si bien la propuesta 
+realizada por 
+GeoActio da 
+cobertura al 
+planteamiento 
+metodológico de las 
+diferentes fases del 
+proyecto, esta resulta 
+compleja y abstracta, 
+poco operativa y 
+concreta para su 
+aplicación en el 
+contexto del CTM. En 
+consecuencia 
+requiere de un 
+trabajo de 
+especificación y 
+operativización previo 
+a su puesta en 
+marcha que se debe 
+tener en 
+consideración al 
+inicio del proyecto.
+1.2.2
+Se valorará la adecuación del plan de 
+trabajo propuesto por los ofertantes 
+atendiendo a los principales hitos de valor 
+del proyecto, el planteamiento 
+metodológico realizado, los recursos y la 
+capacidad asociada a cada uno de ellos, así 
+como los planes de riesgo y mitigación 
+propuestos.
+Hasta 3 
+puntos 2
+La propuesta de 
+Geoactio da 
+cobertura a los 
+requerimientos 
+relativos al plan de 
+trabajo propuesto, 
+que resulta detallado 
+al igual que sus 
+Consorci de Transports de Mallorca 49
+
+PAGE 50
+Del análisis de cada propuesta se 
+derivarán tres niveles de adecuación que 
+se puntuarán de la siguiente manera:
+• Nivel 0 Insuficiente: 0 puntos. No se 
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos a con el plan de trabajo 
+propuesto, sus recursos y dedicación 
+así como la metodología de gestión y 
+seguimiento de este, así como de los 
+riesgos del proyecto.
+• Nivel 1  Adecuado: 2 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con el plan de trabajo 
+propuesto, describiendo con claridad la 
+metodología, recursos, planes de 
+gestión de riesgos, entregables y 
+responsabilidades tanto del ofertante 
+como del CTM.
+• Nivel 2  Excelente: 3 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con el plan de trabajo 
+propuesto, describiendo con claridad la 
+metodología, recursos, entregables y 
+responsabilidades tanto del ofertante 
+como del CTM, presentando mejoras 
+que optimizan la eficacia y eficiencia del 
+mismo o reduzcan el riesgo derivado de 
+este.
+entregables. De la 
+misma forma, 
+describe los 
+diferentes recursos, 
+responsabilidades 
+mediante matrices 
+RACI y planes de 
+riesgo. 
+1.2.3 Se valorará el planteamiento y enfoque del 
+modelo de gobierno propuesto, los 
+diferentes elementos de los que este se 
+compone (reuniones, responsabilidades, 
+criterios, principios, etc.)
+Del análisis de cada propuesta se 
+derivarán tres niveles de adecuación que 
+se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se →
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos al modelo de gestión y 
+gobierno del servicio.
+• Nivel 1  Adecuado: 2 puntos. La →
+propuesta da cobertura a los 
+requerimientos en materia de gobierno 
+y gestión del servicio, con adecuados 
+Hasta 4 
+puntos
+2 En relación con el 
+modelo de gobierno 
+propuesto, GeoActio 
+plantea un esquema 
+de Gobierno 
+compuesto por un 
+Comité de Dirección 
+conjunto con el CTM 
+así como un Comité 
+de Seguimiento del 
+proyecto. En ambos 
+casos se describen las 
+funciones y objetivos 
+del cada comité así 
+como los 
+participantes a los 
+mismos, tanto por 
+parte del CTM como 
+por GeoActio. Uno de 
+los roles clave 
+Consorci de Transports de Mallorca 50
+
+PAGE 51
+compromisos y planteamientos 
+metodológicos para ello.
+• Nivel 2  Excelente: 4 puntos. La →
+propuesta da cobertura a los 
+requerimientos en materia de gobierno 
+y gestión del servicio de forma clara y 
+con adecuados compromisos y 
+planteamientos metodológicos para 
+ello, presentando mejoras que 
+optimizan el modelo propuesto y/o 
+mejoran la eficiencia de este.
+identificados por 
+GeoActio es el de Jefe 
+de Proyecto, cuya 
+contribución al 
+gobierno se describe 
+en términos de 
+responsabilidades. 
+Asimismo, se indica la 
+periodicidad, 
+entregables de cada 
+uno de los comités de 
+seguimiento 
+responsabilidades 
+RACI de los diferentes 
+comités / equipos 
+para cada una de las 
+funciones en el 
+alcance del modelo 
+de gobierno descrito.
+No se aprecia, sin 
+embargo, que la 
+planificación de 
+proyecto propuesta 
+tenga en 
+consideración las 
+actividades 
+orientadas a la 
+puesta en marcha del 
+modelo descrito.
+1.2.4 Se valorará el planteamiento y la 
+adecuación del plan de devolución del 
+servicio conforme a los requerimientos 
+establecidos por el CTM en el pliego de 
+prescripciones técnicas.
+Del análisis de cada propuesta se 
+derivarán tres niveles de adecuación que 
+se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se →
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos al plan de devolución del 
+servicio.
+• Nivel 1  Adecuado: 2 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con el plan de devolución 
+del servicio propuesto, describiendo 
+con claridad la metodología, recursos, 
+entregables y responsabilidades tanto 
+del ofertante como del CTM.
+Hasta 3 
+puntos
+2 La propuesta 
+realizada por 
+Geoactio describe el 
+plan de devolución 
+propuesto para el 
+servicio (2.4.), que 
+comprende las 
+diferentes fases: 
+preparación de la 
+transición —que 
+comprende la 
+planificación 
+detallada, proceso de 
+transición, plan de 
+transición, definición 
+del ámbito a 
+transferir, análisis de 
+la situación actual, 
+niveles de 
+conocimiento y 
+diseño del KTP—, la 
+ejecución del KTP, 
+que comprende las 
+fases de preparación 
+Consorci de Transports de Mallorca 51
+
+PAGE 52
+• Nivel 2  Excelente: 3 puntos. La →
+propuesta da cobertura a los 
+requerimientos expresados en el PPT 
+en relación con el plan de devolución 
+del servicio propuesto, describiendo 
+con claridad la metodología, recursos, 
+entregables y responsabilidades tanto 
+del ofertante como del CTM, 
+presentando mejoras que optimizan la 
+eficacia y eficiencia del mismo o 
+reduzcan el riesgo derivado de este.
+y traspaso de la 
+operativa del servicio 
+así como la fase de 
+cierre del proceso de 
+transición (2 
+semanas). Cada una 
+de las fases es 
+descrita en términos 
+de tareas y 
+responsables, 
+describiendo una 
+matriz RACI que 
+describe las 
+diferentes actividades 
+relativas a la 
+devolución y su 
+responsabilidad.
+1.3. Plan de formación y gestión del conocimiento Hasta 5 
+puntos 5  
+1.3.1 Se valorará el planteamiento y adecuación 
+del plan de formación y gestión del 
+conocimiento propuesto por los 
+ofertantes, su conveniente soporte 
+tecnológico, sesiones, recursos, etc. 
+conforme a los requerimientos expresados 
+en el PPT.
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se →
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos a la formación y gestión 
+del conocimiento requerido para la 
+prestación de los servicios objeto del 
+alcance.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos en materia de 
+formación continua y gestión del 
+conocimiento requerido para la 
+prestación de los servicios objeto del 
+alcance, exhibiendo limitaciones en 
+relación en su descripción y/o en alguna 
+de las dimensiones que lo componen.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el plan de 
+formación y gestión del conocimiento, 
+describiendo de forma clara las 
+diferentes dimensiones del mismo.
+Hasta 5 
+puntos
+5 La propuesta 
+realizada por 
+Geoactio da 
+cobertura a los 
+requerimientos de 
+formación y gestión 
+del conocimiento 
+requeridos en el PPT, 
+aportando valor 
+adicional al 
+incorporar 
+herramientas que 
+permitan mejorar la 
+eficiencia y 
+reusabilidad de estos 
+contenidos.
+Consorci de Transports de Mallorca 52
+
+PAGE 53
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el plan de 
+formación y gestión del conocimiento, 
+presentando un enfoque que mejora el 
+alcance requerido, aportando valor 
+incremental al CTM.
+1.4.
+Servicio de administración, mantenimiento y 
+evolución del servicio
+Hasta 5 
+puntos 4
+1.4.1
+Se valorará el planteamiento y enfoque 
+metodológico, recursos, entregables y 
+tecnología de soporte a las actividades 
+propuesto por el ofertante para dar 
+cobertura a los diferentes servicios de 
+mantenimiento propuestos por el CTM 
+bajo el epígrafe 4. Del pliego de 
+prescripciones técnicas.
+Del análisis de cada propuesta se 
+derivarán cuatro niveles de adecuación 
+que se puntuarán de la siguiente manera:
+• Nivel 0  Insuficiente: 0 puntos. No se →
+menciona, no se describe o 
+explícitamente no se dan cobertura a 
+los requerimientos expresados en el 
+PPT relativos a los servicios de 
+administración, mantenimiento y 
+evolución del servicio.
+• Nivel 1  Aceptable: 2 puntos. La →
+propuesta da cobertura parcial a los 
+requerimientos y planteamientos 
+metodológicos requeridos para dar 
+cobertura a los servicios de 
+administración, mantenimiento y 
+evolución del servicio, o bien exhibe 
+una elevada complejidad o ineficiencia 
+operativa.
+• Nivel 2  Adecuada: 4 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el 
+planteamiento metodológico propuesto 
+para la prestación de los servicios de 
+administración, mantenimiento y 
+evolución del servicio.
+• Nivel 3  Excelente: 5 puntos. La →
+propuesta da cobertura y describe de 
+forma clara y detallada el 
+planteamiento metodológico propuesto 
+para los servicios de administración, 
+mantenimiento y evolución del servicio, 
+presentando mejoras que optimizan la 
+eficiencia del proceso y/o reducen la 
+complejidad del mismo, aportando 
+valor incremental al CTM.
+Hasta 5 
+puntos 4
+La propuesta 
+realizada por 
+Geoactio da 
+cobertura a los 
+requerimientos de 
+mantenimiento y 
+administración 
+requeridos en el PPT 
+y que, igualmente, 
+hace extensibles a las 
+aplicaciones móviles 
+basadas en iOS y 
+Android, aportando 
+valor incremental al 
+CTM.
+Cabe destacar, sin 
+embargo, que se 
+obvian las 
+prestaciones relativas 
+al mantenimiento 
+evolutivo al 
+considerarse como 
+un aspecto a detallar 
+como parte de las 
+mejoras al alcance de 
+la propuesta 
+realizada.
+Total 36
+Consorci de Transports de Mallorca 53
+
+PAGE 54
+ 6 - Resultados del proceso de valoración
+Tras llevar a cabo la evaluación del cumplimiento de los requerimientos técnicos, 
+operativos y de servicio de la oferta recibida conforme a los criterios establecidos 
+basados en juicio de valor y, atendiendo a lo indicado en los diferentes epígrafes 
+que componen el presente documento, se recogen a continuación los resultados 
+del proceso de valoración:
+Criterio Valoración Alestis-GeoActio
+1. Planteamiento y diseño del servicio propuesto Máximo 20 puntos 19
+2. Gobierno y gestión del servicio Máximo 15 puntos 8
+3. Plan de formación y gestión del conocimiento Máximo 5 puntos 5
+4. Servicio de administración, mantenimiento y 
+evolución del servicio Máximo 5 puntos 4
+Puntación total 
+(máximo 45 puntos) 36
+Palma, a fecha de la firma electrónica
+José Ángel Martínez
+Director de Contratos del CTM
+Consorci de Transports de Mallorca 54
+
+PAGE 55
+CONTRATACIÓN DE UN SERVICIO DE DISEÑO, DESARROLLO, PUESTA EN 
+MARCHA Y MANTENIMIENTO DE UN SISTEMA ANALÍTICO BASADO EN 
+BUSINESS INTELLIGENCE / BIG DATA / MACHINE LEARNING PARA EL 
+CONSORCIO DE TRANSPORTES DE MALLORCA
+EXPEDIENTE 202317
+Consorci de Transports de Mallorca 1
+
+PAGE 56
+Índice
+ 1 - Objeto del informe......................................................................................................3
+ 2 - Antecedentes...............................................................................................................3
+ 3 - Criterios de valoración de las ofertas presentadas.................................................3
+ 4 - Ofertas presentadas....................................................................................................3
+ 5 - Valoración de las ofertas presentadas......................................................................4
+ 5.1 - Criterios evaluables mediante juicio de valor......................................................4
+ 5.2 - Criterios evaluables de forma automática...........................................................4
+ 5.2.1 - Propuesta económica.........................................................................................6
+ 5.2.2 - Resto de criterios evaluables de forma automática.......................................8
+ 6 - Puntuación final...........................................................................................................9
+Consorci de Transports de Mallorca 2
+
+PAGE 57
+ 1 - Objeto del informe
+El presente informe tiene como objeto valorar las ofertas presentadas para el 
+expediente OB202317 tras la apertura del sobre 2 – Propuesta Económica.
+ 2 - Antecedentes
+El expediente de contratación OB202317 tiene como objetivo la contratación del 
+desarrollo y puesta en marcha de una solución tecnológica que permita integrar 
+información disponible en el Consorcio de Transporte de Mallorca a partir de sus 
+sistemas —posicionamiento, ticketing, etc.—, de forma que proporcione 
+información tanto en tiempo real como en tiempo diferido de los servicios de 
+transporte interurbano ofrecidos por el CTM.
+ 3 - Criterios de valoración de las ofertas presentadas
+Según se describe en el Pliego de Cláusulas Administrativas Particulares (PCAP) de 
+este procedimiento, el esquema de evaluación de las ofertas presentadas es el 
+siguiente:
+Criterio Descripción Ponderación
+Criterios evaluables mediante juicio de valor Hasta 45 puntos
+1. Calidad de la propuesta técnica Hasta 45 puntos
+1.1. Planteamiento y Diseño del servicio propuesto Hasta 20 puntos
+1.2. Gobierno y gestión del servicio Hasta 15 puntos
+1.3. Plan de formación y gestión del conocimiento Hasta 5 puntos
+1.4. Servicio de administración, mantenimiento y evolución del servicio Hasta 5 puntos
+Criterios evaluables mediante fórmula Hasta 55 puntos
+2. Propuestas de mejora Hasta 35 puntos
+3. Oferta económica Hasta 18 puntos
+4. Programa de cumplimiento normativo o Compliance Penal 2 puntos
+ 4 - Ofertas presentadas
+A la siguiente licitación ha concurrido la siguiente empresa
+• Alestis Consulting - Geoactio
+La oferta presentada por esta empresa es conforme a los requerimientos 
+expresados en los pliegos de este procedimiento, por tanto, se considera 
+ADMITIDA.
+Consorci de Transports de Mallorca 3
+
+PAGE 58
+ 5 - Valoración de las ofertas presentadas
+ 5.1 - Criterios evaluables mediante juicio de valor
+Tras la apertura del sobre 3 —Propuesta Técnica— se llevó a cabo el informe en el 
+que se evaluaba el cumplimiento de los requerimientos funcionales, técnicos y de 
+servicio de la oferta recibida conforme a los criterios establecidos basados en 
+juicio de valor. El resultado del citado informe arrojó los siguientes resultados:
+Criterio Valoración Máxima Alestis-GeoActio
+1. Planteamiento y diseño del servicio propuesto 20 puntos 19
+2. Gobierno y gestión del servicio 15 puntos 8
+3. Plan de formación y gestión del conocimiento 5 puntos 5
+4. Servicio de administración, mantenimiento y evolución del 
+servicio 5 puntos 4
+TOTAL 45 36
+ 5.2 - Criterios evaluables de forma automática
+Criterios evaluables mediante fórmula Hasta 55 puntos
+2. Propuestas de mejora Hasta 35 puntos
+2.1. Hasta 9 puntos por cada mejora funcional propuesta por el CTM entre las  
+descritas: 4.4.3.3. (Planificación—Líneas subterráneas), 4.4.3.9. (Operación —  
+Calidad GPS) y 4.6.1.2.1.13. (Tiempos de parada)
+Hasta 9 puntos
+2.2. Hasta 12 puntos si las propuestas de los ofertantes dan cobertura a TODOS  
+los requerimientos funcionales en relación con la estimación de la ocupación de  
+los  servicios  de  transporte  público  comprendidos  en  los  requerimientos 
+funcionales 4.6.1.2.2, 4.6.1.2.1.4, 4.6.1.2.1.5, 4.6.1.2.7, 4.6.1.2.9 y 4.6.3.2.
+Caso de no dar cobertura a los requerimientos funcionales descritos en su  
+totalidad, las mejoras funcionales serán valoradas con 1,5 puntos por mejora  
+funcional de las descritas en 2.2
+Hasta 12 puntos
+2.3. Hasta 12 puntos si las propuestas de los ofertantes dan cobertura a TODOS  
+los requerimientos funcionales en relación con los ajustes, modificaciones y  
+alertas relativas los servicios de transporte público comprendidos en los  
+requerimientos  funcionales  4.6.1.2.1.10,  4.6.1.2.2.2,  4.6.1.2.2.3,  4.6.1.2.2.4,  
+4.6.1.2.3.1 y 4.6.2.4.
+Caso de no dar cobertura a los requerimientos funcionales descritos en su  
+totalidad, las mejoras funcionales serán valoradas con 1,5 puntos por mejora  
+funcional de las descritas en 2.1 y 2.2.
+Hasta 12 puntos
+2.4. Hasta 15 puntos  a aquellas soluciones  SaaS que se oferten en modo  
+suministro, transfiriendo la propiedad intelectual de la solución completa al CTM. Hasta 15 puntos
+2.5. Hasta 3 puntos por mes que se adelante la fecha de MVP propuesta, máximo Hasta 6 puntos
+Consorci de Transports de Mallorca 4
+
+PAGE 59
+6 puntos. Los ofertantes deben tener en consideración que se exige disponer de  
+un MVP a los 6 meses del inicio del proyecto (conforme a lo indicado en apartado  
+6.3. del pliego de prescripciones técnicas) y que, adelantar esta fecha tiene efecto 
+en el SLA SLA-PRO-0004.
+2.6. Hasta 3 puntos  por mes que se adelante la fecha del hito asociado al  
+despliegue de la solución funcional completa, máximo 6 puntos. Los ofertantes  
+deben tener en consideración que se exige disponer de este hito a los 12 meses  
+del inicio del proyecto (conforme a lo indicado en apartado 6.3. del pliego de  
+prescripciones técnicas) y que, adelantar esta fecha tiene efecto en el SLA SLA-
+PRO-0006.
+Hasta 6 puntos
+2.7. Hasta 6 puntos para aquellas soluciones SaaS en modo pago por uso que 
+doten a la solución propuesta de capacidades de explotación analítica mediante el 
+uso  de  soluciones  como  Power  BI,  Tableu  o  similar,  atendiendo  a  los 
+requerimientos descritos en 4.6.
+Hasta 6 puntos
+2.8. Hasta 6 puntos, considerando 3 puntos por cada 150 horas adicionales —
+sobre  las  800  establecidas—  de  capacidad  de  mantenimiento  evolutivo  
+propuestas, que permita dar cobertura a las necesidades y actividades descritas  
+bajo el epígrafe 4. del pliego de prescripciones técnicas, relativo a los servicios de  
+administración y mantenimiento de la solución propuesta.
+Hasta 6 puntos
+3. Oferta económica Hasta 18 puntos
+Se otorgarán 18 puntos a la oferta más económica y al resto se aplicarán los  
+siguientes criterios:
+Para el cálculo de la valoración de cada oferta se determina en primer lugar el 
+grado de dispersión de las mismas (representado por sigma “σ”) entre las ofertas. 
+De esta forma se calcula la desviación típica a partir de los porcentajes de rebaja 
+(en %) de las ofertas presentadas, sobre el presupuesto base de licitación 
+estimado:
+σ=√
+∑1
+n
+(xi− ¯X )2
+n
+Siendo:
+xi = % de rebaja respecto al PBL de cada oferta
+X = Media del % de rebaja de las ofertas
+n = Número de ofertas presentadas y admitidas
+
+Una vez determinado el grado de dispersión, se tendrá en consideración lo 
+siguiente:
+• Si σ es inferior a 5% se aplica la siguiente fórmula:
+POi=MaxP ' (
+MO
+Oi )
+• Si σ es igual o superior a 5% se aplica la fórmula
+POi=MaxP ' (
+BOi
+BMO )
+Dónde:
+POi= Puntos de la oferta a valorar
+MaxP= Máximo de puntos
+MO=Mejor oferta
+Oi=oferta a valorar
+BOi=Baja de la oferta que se valora
+BMO=Baja de la mejor oferta
+Hasta 18 puntos
+4. Programa de cumplimiento normativo o Compliance Penal 2 puntos
+4.1 Se otorgarán 2 puntos si se certifica que el licitador posee la certificación ISO  
+37301:2021 Sistemas de gestión de Compliance 2 puntos
+Consorci de Transports de Mallorca 5
+
+PAGE 60
+ 5.2.1 - Propuesta económica
+La única propuesta económica de este procedimiento es la siguiente:
+Licitador Oferta
+Alestis - Geoactio 342.950,40
+ 5.2.1.1 - Identificador de ofertas anormalmente bajas
+Con arreglo a lo descrito en el PCAP de este procedimiento, la identificación de 
+propuestas anormalmente bajas se rige por los siguientes criterios:
+1. Se calcula el porcentaje de baja de cada oferta económica Boi:
+Ofi = Importe de la oferta que se evalúa
+PC = Presupuesto base de licitación
+2. A continuación, se calcula la media aritmética (BM) del porcentaje de bajas 
+(Boi):
+3. Después se calcula la desviación estándar (σ):
+4. Entre las ofertas admitidas se tomarán aquellas ofertas, que, además 
+cumplan la condición siguiente:
+El conjunto de ofertas se obtiene únicamente con el fin de obtener la baja de 
+referencia (BR).
+Consorci de Transports de Mallorca 6
+BOi=100(1− Ofi
+˙PC )
+BM =1
+n ∑i=1
+n
+BOi
+σ=[
+∑i=1
+n
+( BOi)²−n(BM )²
+n ]
+1/2
+( BOi−BM ) ≤σ
+PAGE 61
+A continuación se aplicarán los parámetros objetivos siguientes:
+a) Para un número n de ofertas económicas mayor o igual que cinco (5)  :
+Se obtendrá primero la baja de referencia BR:
+Se entenderán, como ofertas incursas en presunción de anormalidad,
+1. Aquellas que sus porcentajes de baja (BO)  superen los siguientes 
+valores:      determinado arreglo con la siguiente 
+fórmula:
+2. Y además hayan obtenido más de 30 puntos en el criterio evaluable 
+mediante juicio de valor “Memoria técnica”.
+b) Para un número n de ofertas económicas menor que cinco (5)  :
+Se obtendrá la baja media BM.
+Se entenderán, como ofertas incursas en presunción de anormalidad,
+1. Aquellas que sus porcentajes de baja (BO) superen los siguientes 
+valores: determinado con arreglo a la siguiente 
+fórmula: 
+2. Y, además, hayan obtenido más de 30 puntos en el criterio evaluable 
+mediante juicio de valor “Memoria técnica”.
+Atendiendo a estos criterios y teniendo en cuenta que solo existe una oferta, 
+obtenemos
+• Precio base de licitación: 384.000,00 €
+• Número de licitadores: 1
+Consorci de Transports de Mallorca 7
+BR= 1
+n ' ∑i=1
+n'
+BOi
+BO> BR+UT
+UT = 100
+2 BR
+BO> BM +UT
+UT = 100
+2 BR
+PAGE 62
+Licitador Oferta Porcentaje de baja (BO)
+Alestis - Geoactio 342.950,40 € 10,69 %
+BM = 10,69
+σ = 0
+BR = 10,69
+UT = 4,68
+Atendiendo a este resultado, se considera que la oferta está dentro de los 
+parámetros de normalidad.
+ 5.2.1.2 - Puntuaciones sobre la propuesta económica
+Dado que solo existe un licitador, este obtiene la puntuación máxima que se 
+establece para este apartado
+Licitador Oferta Puntos
+Alestis - Geoactio 342.950,40 € 18
+ 5.2.2 - Resto de criterios evaluables de forma automática
+Propuestas de mejora Alestis - Geoactio
+2.1. Hasta 3 puntos por cada mejora funcional propuesta por el CTM entre las descritas: 4.4.3.3.  
+(Planificación—Líneas subterráneas), 4.4.3.9 (Operación—Calidad GPS) y 4.6.1.2.1.13 (Tiempos de  
+parada)
+6 puntos
+2.2. Hasta 12 puntos si las propuestas de los ofertantes dan cobertura a TODOS los requerimientos  
+funcionales en relación con la estimación de la ocupación de los servicios de transporte público  
+comprendidos en los requerimientos funcionales 4.6.1.2.2, 4.6.1.2.1.4, 4.6.1.2.1.5, 4.6.1.2.7, 4.6.1.2.9 y  
+4.6.3.2.
+Caso de no dar cobertura a los requerimientos funcionales descritos en su totalidad, las mejoras  
+funcionales serán valoradas con 1,5 puntos por mejora funcional de las descritas en 2.2
+0 puntos
+2.3. Hasta 12 puntos si las propuestas de los ofertantes dan cobertura a TODOS los requerimientos  
+funcionales en relación con los ajustes, modificaciones y alertas relativas los servicios de transporte  
+público comprendidos en los requerimientos funcionales 4.6.1.2.1.10, 4.6.1.2.2.2, 4.6.1.2.2.3, 4.6.1.2.2.4,  
+4.6.1.2.3.1 y 4.6.2.4.
+Caso de no dar cobertura a los requerimientos funcionales descritos en su totalidad, las mejoras  
+funcionales serán valoradas con 1,5 puntos por mejora funcional de las descritas en 2.1 y 2.2.
+7,5 puntos
+2.4. Hasta 15 puntos a aquellas soluciones SaaS que se oferten en modo suministro, transfiriendo la  15 puntos
+Consorci de Transports de Mallorca 8
+
+PAGE 63
+propiedad intelectual de la solución completa al CTM.
+2.5. Hasta 3 puntos  por mes que se adelante la fecha de MVP propuesta, máximo 6 puntos. Los  
+ofertantes deben tener en consideración que se exige disponer de un MVP a los 6 meses del inicio del  
+proyecto (conforme a lo indicado en apartado 6.3. del pliego de prescripciones técnicas) y que, adelantar 
+esta fecha, tiene efecto en el SLA SLA-PRO-0004.
+0 puntos
+2.6. Hasta 3 puntos por mes que se adelante la fecha del hito asociado al despliegue de la solución  
+funcional completa, máximo 6 puntos. Los ofertantes deben tener en consideración que se exige  
+disponer de este hito a los 12 meses del inicio del proyecto (conforme a lo indicado en apartado 6.3. del  
+pliego de prescripciones técnicas) y que, adelantar esta fecha, tiene efecto en el SLA SLA-PRO-0006.
+6 puntos
+2.7. Hasta 6 puntos para aquellas soluciones SaaS en modo pago por uso que doten a la solución  
+propuesta de capacidades de explotación analítica mediante el uso de soluciones como Power BI, Tableu 
+o similar, atendiendo a los requerimientos descritos en 4.6.
+6 puntos
+2.8. Hasta 6 puntos,  considerando 3 puntos por cada  150 horas adicionales —sobre las 800  
+establecidas— de capacidad de mantenimiento evolutivo propuestas, que permita dar cobertura a las  
+necesidades y actividades descritas bajo el epígrafe 4. del pliego de prescripciones técnicas, relativo a  
+los servicios de administración y mantenimiento de la solución propuesta.
+3 puntos
+TOTAL Propuestas de mejora 43,5 puntos (*)
+(*) La puntuación máxima otorgada para las propuestas de mejora son 35 puntos, 
+por tanto, si se supera esta cantidad solo se contabilizan 35 puntos.
+Programa de cumplimiento normativo o Compliance Penal 2 puntos
+Cuadro de puntuaciones de los criterios evaluables de forma automática:
+Licitador Puntuación oferta 
+económica
+Puntuación resto de 
+criterios automáticos
+Puntuación total 
+criterios automáticos
+Alestis - Geoactio 18 37 55
+ 6 - Puntuación final
+Una vez evaluados tanto los criterios evaluables por juicio de valor, como los 
+criterios evaluables de forma automática o por fórmula, la puntuación final de 
+este procedimiento es la siguiente:
+Licitador
+Puntuación criterios 
+evaluables por juicio 
+de valor
+Puntuación criterios 
+evaluables de forma 
+automática
+Puntuación final
+Alestis - Geoactio 36 55 91
+Consorci de Transports de Mallorca 9
+
+PAGE 64
+Palma, a fecha de la firma electrónica
+José Ángel Martínez
+Director de Contratos del CTM
+Consorci de Transports de Mallorca 10

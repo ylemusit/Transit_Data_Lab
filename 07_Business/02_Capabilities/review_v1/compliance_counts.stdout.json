@@ -1,0 +1,11 @@
+[{"tbl":"source.documents","n":10},
+{"tbl":"source.relationships","n":6},
+{"tbl":"source.provisions","n":92},
+{"tbl":"compliance.requirements","n":48},
+{"tbl":"compliance.source_facts","n":36},
+{"tbl":"compliance.deadlines","n":10},
+{"tbl":"mapping.format_coverage","n":0},
+{"tbl":"mapping.format_equivalences","n":0},
+{"tbl":"audit.rules","n":0},
+{"tbl":"audit.runs","n":0},
+{"tbl":"audit.results","n":0}]

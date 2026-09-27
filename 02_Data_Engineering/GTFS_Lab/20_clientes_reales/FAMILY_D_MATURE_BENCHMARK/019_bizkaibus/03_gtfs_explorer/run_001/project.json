@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "project_id": "d8889b17-226e-44a5-a808-7df4fe953a9b",
+  "name": "run_001",
+  "status": "READY",
+  "feed": {
+    "feed_id": "f7c238b2-9177-49fd-8417-994ef81d74e4",
+    "manifest_sha256": "48f96a07133e58e50e64d9398c9e8dc4b6b0534dd9c0579624cee41ab5a4b9ec"
+  },
+  "references": {
+    "database": "data.duckdb",
+    "cache": "cache",
+    "reports": "reports"
+  }
+}

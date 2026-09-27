@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Chouette SaaS : gestion de vos données de mobilités théoriques ! - enRoute
+      
+    </title>
+    <meta name="description" content="
+      
+        Avec Chouette SaaS vous gérez vos données de mobilités théoriques de manière simple et automatisée avec une interface intuitive et des fonctionnalités exclusives. Solution multiformats : GTFS, NeTEx, Neptune...
+      
+    " />
+    <meta property="og:title" content="
+      
+        Chouette SaaS : gestion de vos données de mobilités théoriques ! - enRoute
+      
+    " />
+    <meta property="og:description" content="
+      
+        Avec Chouette SaaS vous gérez vos données de mobilités théoriques de manière simple et automatisée avec une interface intuitive et des fonctionnalités exclusives. Solution multiformats : GTFS, NeTEx, Neptune...
+      
+    " />
+    <meta property="og:image" content="
+      
+        /fr/assets/images/logo/enroute-2020.png
+      
+    ">
+    <link rel="stylesheet" href="/fr/assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script defer data-domain="enroute.mobi" src="https://plausible.io/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/fr/assets/js/main.js"></script>
+  </head>
+
+  <body class="antialiased" x-data="{ isOpen : false, mainNav : false}">
+    <div class="mobile-overlay" :class="{ 'active': isOpen === true }"></div>
+    <header class="fixed top-0 w-full flex flex-col z-100">
+      <div class="flex flex-col pt-5 w-full bg-white max-md:max-w-full" :class="{ 'bg-none': isOpen === true }">
+        <nav class="container flex flex-wrap gap-5 justify-between self-center w-full max-w-[1035px] max-md:max-w-full px-5">
+          <div class="flex gap-10 my-auto text-lg font-bold text-enroute-blue">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="/fr/">
+                <img class="block lg:hidden h-10 w-auto" src="/assets/images/logo/enroute-2020.svg" alt="Company logo">
+                <img class="hidden lg:block h-10 w-auto" src="/assets/images/logo/enroute-2020.svg" alt="Company logo">
+              </a>
+            </div>
+            <div class="hidden md:flex relative items-center my-auto cursor-pointer" @click="mainNav = true" @keydown.escape=" mainNav = false">
+              <span class="text-base">Vous êtes</span>
+              <img loading="lazy" src="/assets/images/icon/arrow-menu.svg" class="ml-4 transition-transform transform duration-200 " :class="{ 'rotate-180': mainNav }" alt="" />
+            </div>
+            <nav class="flex flex-col absolute mt-8 w-full text-base font-semibold text-enroute-blue shadow-xl" x-show="mainNav" @click.away=" mainNav = false">
+              <ul class="flex flex-col absolute top-16 left-10 items-start px-8 pt-3 pb-7 bg-blue-50 rounded-2xl fill-blue-50 shadow-xl">
+                
+                  <li>
+                      <a href="/fr/pta" class="block w-full mt-3.5 hover:bg-gradient-to-r from-pink-500 to-violet-500 hover:text-transparent bg-clip-text">Autorité Organisatrice de Mobilités</a>
+                  </li>
+                  
+                    <li class="shrink-0 self-stretch mt-3 h-px border border-zinc-300 border-solid opacity-60" aria-hidden="true"></li>
+                  
+                
+                  <li>
+                      <a href="/fr/operator" class="block w-full mt-3.5 hover:bg-gradient-to-r from-yellow-300 to-orange-500 hover:text-transparent bg-clip-text">Opérateur de Transport Public</a>
+                  </li>
+                  
+                    <li class="shrink-0 self-stretch mt-3 h-px border border-zinc-300 border-solid opacity-60" aria-hidden="true"></li>
+                  
+                
+                  <li>
+                      <a href="/fr/nap" class="block w-full mt-3.5 hover:bg-gradient-to-r from-cyan-300 to-blue-700 hover:text-transparent bg-clip-text">Point d'Accès National</a>
+                  </li>
+                  
+                
+              </ul>
+          </nav>
+          </div>
+          <div class="hidden md:flex flex-wrap gap-7 items-center max-md:max-w-full">
+            <a href="/fr/contact" class="flex gap-3.5 justify-center items-center self-stretch px-6 py-4 text-base font-semibold text-enroute-blue border-2 border-enroute-blue border-solid rounded-[59px] transform transition hover:bg-enroute-blue hover:text-white group duration-300 ease-in-out max-md:px-5">
+              <span>Demander une démo</span>
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-[15px] stroke-2 stroke-enroute-blue group-hover:stroke-white">
+                <path d="M1.58104 7.77391H14.3639" stroke-width="1.5107" stroke-linecap="round"/>
+                <path d="M8.98926 1.02734L15.7359 7.77399L8.98926 14.5206" stroke-width="1.5107" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <a href="/fr/company" class="self-stretch my-auto text-lg font-bold text-enroute-blue">Equipe</a>
+            <a href="/fr/news" class="self-stretch my-auto text-lg font-bold text-enroute-blue">Blog</a>
+            
+              <a href="/chouette/" >
+                <img class="object-contain shrink-0 self-stretch my-auto aspect-[1.16] w-[37px]" src="/assets/images/flag_eng.png" alt="language_flag">
+              </a>
+            
+          </div>
+          <div class="inset-y-0 right-0 size-12 flex items-center toggle md:hidden bg-enroute-blue rounded-full">
+            <div @click=" isOpen = true" @keydown.escape=" isOpen = false" id="nav-icon4" :class="{ 'open': isOpen === true }">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </nav>
+        <div class="mt-5 w-full bg-enroute-blue border border-enroute-blue border-solid min-h-[1px] max-md:max-w-full"></div>
+      </div>
+    </header>
+
+    <!-- mobile navbar -->
+    <div class="mobile-navbar">
+      <!-- navbar wrapper -->
+      <div class="navbar-wrapper fixed top-0 left-0 h-full bg-white z-110 w-64 shadow-lg pt-5 px-5 flex flex-col md:hidden" x-show="isOpen" @click.away=" isOpen = false" x-transition:enter="transition duration-300 -ml-64" x-transition:enter-start="" x-transition:enter-end="transform translate-x-64" x-transition:leave="transition duration-300" x-transition:enter-start="" x-transition:leave-end="transform -translate-x-64">
+        <ul class="divide-y">
+          <li>
+            <a href="/fr/">
+              <img class="block h-8 w-auto mb-5" src="/assets/images/logo/enroute-2020.svg" alt="Workflow">
+            </a>
+          </li>
+          
+            <li>
+              <a href="/fr/pta" class="my-4 inline-block active font-bold text-enroute-blue">Autorité Organisatrice de Mobilités</a>
+            </li>
+          
+            <li>
+              <a href="/fr/operator" class="my-4 inline-block active font-bold text-enroute-blue">Opérateur de Transport Public</a>
+            </li>
+          
+            <li>
+              <a href="/fr/nap" class="my-4 inline-block active font-bold text-enroute-blue">Point d'Accès National</a>
+            </li>
+          
+          <li>
+            <a href="/fr/company" class="my-4 inline-block active font-bold text-enroute-blue">Equipe</a>
+          </li>
+          <li>
+            <a href="/fr/news" class="my-4 inline-block active font-bold text-enroute-blue">Blog</a>
+          </li>
+          <li>
+            <a href="/fr/contact" class="mt-8 mb-4 w-full text-center font-semibold cta inline-block bg-enroute-blue hover:bg-opacity-70 px-3 py-3 rounded-3xl text-white">Demander une démo</a>
+          </li>
+        </ul>
+        
+            <a href="/chouette/" >
+              <img class="h-12 w-auto py-2" src="/assets/images/flag_eng.png" alt="language_flag">
+            </a>
+        
+        <div class="flex flex-col mt-auto self-start">
+          <div class="flex justify-around items-center -mb-3 z-20">
+            <img class="h-10" src="/assets/images/logo/chouette-icon.svg" alt="">
+            <img class="h-10 -mb-3" src="/assets/images/logo/ara-icon.svg" alt="">
+          </div>
+          <img class="h-10 z-10" src="/assets/images/buble-mobile-nav.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- end mobile navbar -->
+</html>
+ <div class="absolute top-24 right-0 overflow-hidden">
+  <img class="-z-1 object-none object-right-top main-img -mt-1" src="/assets/images/hero/chouette-hero.jpg"/>
+  
+  
+    <img class="absolute bottom-0 right-0 z-20 object-cover main-img -mb-1" src="/assets/images/hero/chouette-hero-mask.svg"/>
+  
+
+  <svg id="blob-pink" class="morphing-blob pink absolute z-10 top-64 -right-10" viewBox="0 0 200 200">
+    <defs>
+      <linearGradient id="gradient-pink" gradientTransform="rotate(90)">
+        <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+        <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+      </linearGradient>
+    </defs>
+    <path d="" fill="url('#gradient-pink')"></path>
+  </svg>
+
+
+  <svg id="blob-orange" class="morphing-blob orange absolute z-10 top-80 right-96" viewBox="0 0 200 200">
+    <defs>
+      <linearGradient id="gradient-orange" gradientTransform="rotate(90)">
+        <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+        <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+      </linearGradient>
+    </defs>
+    <path d="" fill="url('#gradient-orange')"></path>
+  </svg>
+
+  <svg id="blob-blue" class="morphing-blob blue absolute z-10 -top-20 -right-5" viewBox="0 0 200 200">
+    <defs>
+      <linearGradient id="gradient-blue" gradientTransform="rotate(90)">
+        <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+        <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+      </linearGradient>
+    </defs>
+    <path d="" fill="url('#gradient-blue')"></path>
+  </svg>
+</div>
+
+<script type="module">
+  import blob from '/assets/js/main.js';
+
+  blob.newBlob(4,150,"hsla(252, 100%, 66%, .4)","hsla(323, 100%, 59%, .4)","blob-pink")
+  blob.newBlob(4,120,"hsla(52, 100%, 66%, .4)","hsla(28, 100%, 59%, .4)","blob-orange")
+  blob.newBlob(5,140,"hsla(184, 100%, 57%, .4)", "hsla(238, 100%, 66%, .4)","blob-blue")
+</script>
+
+<div class="pt-96 md:pt-52 lg:pt-64">
+  <div class="container px-5 mx-auto flex flex-wrap flex-col md:flex-row items-center relative z-50" style="min-height: 406px;">
+    
+    <img class="block absolute h-64 w-96 -top-20 -left-48 -z-1" src="/assets/images/shape/shape-chouette-hero.svg" alt="logo"/>
+    
+    <!--Left Col-->
+    <div class="flex flex-col w-full md:w-4/5 lg:w-3/5 xl:w-3/5 justify-center items-start text-left">
+      
+      <img class="block max-h-40" src="/assets/images/logo/chouette_icon.svg" alt="logo"/>
+      
+
+      <h1 class="my-4 text-4xl lg:text-5xl font-black leading-tight text-light-brown">Chouette <span class="font-normal">SaaS</span></h1>
+      <p class="leading-normal text-2xl mb-8 text-light-grey-2 font-normal"><span class='font-bold mb-2'>Pour la gestion de vos données théoriques <br/></span> Une interface simple et intuitive, un accès rapide, une gestion automatisée et multi formats en collecte et en publication (GTFS, NeTEx avec plusieurs profils, Neptune…).</p>
+      
+      
+      <a href="/fr/contact" class="lg:mx-0 hover: bg-enroute-chouette text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        Demander une démo
+      </a>
+      
+    </div>
+  </div>
+  <div class="relative">
+    <div class="flex justify-center items-center absolute md:fixed mt-10 h-66 w-100 right-0 rounded-l-full bg-gradient-to-r from-blue-custom to-light-blue-3 shadow-lg z-100"
+    >
+      <a href="/fr/contact">
+        <img class="p-6" src="/assets/images/talk.svg" alt="contact" />
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<section class="bg-light-blue mt-20">
+  <div class="container px-5 pt-24 mx-auto">
+    <h2 class="w-full my-2 text-4xl font-black font-lato leading-tight text-center text-light-brown px-3">
+      Gestion des données théoriques
+    </h2>
+    
+    <p class="w-full my-2 text-2xl leading-tight text-center text-light-grey-2 px-3 mb-20">
+      Cas d’usage régional
+    </p>
+    
+    <div class="flex flex-wrap -m-4">
+      
+      <div class="p-4 w-full lg:w-1/3">
+        <div
+          class="flex flex-col items-center h-full bg-white bg-opacity-75 px-6 p-5 pt-10 rounded-xl text-center relative">
+          <img src="/assets/images/logo/server-document.gif"
+            alt=""
+            class="h-36 relative -mb-16 -top-16 h-52 left-5" />
+          <div
+            class="text-2xl title-font font-bold text-white rounded-full h-12 w-12 flex items-center justify-center bg-enroute-chouette absolute -top-6 z-30">
+            1
+          </div>
+          <h3 class="title-font text-3xl font-bold text-light-brown mb-3 mt-6">
+            Automatisez<br/> la collecte des données<br/> & facilitez la saisie
+          </h3>
+          <p class="leading-relaxed mb-3 text-light-grey-2">Collectez les données théoriques depuis les outils de planification de trafic et de services (Hastus, Heurès, Pégase…) ou depuis l’open data. Vous pouvez également saisir de l’offre de mobilités directement dans l’interface de Chouette SaaS.</p>
+          
+          
+          <div
+            class="text-left mt-5 leading-none flex justify-center py-4 border-2 border-dashed border-light-grey items-center p-5 rounded-2xl">
+            <img src="/assets/images/logo/document-bidirectional.gif"
+              alt=""
+              class="h-14 mr-5" />
+            <p class="leading-tight text-light-blue-4">Multi-formats en collecte : GTFS, NeTEx (plusieurs profils), Neptune, saisie…</p>
+          </div>
+          
+          
+          <div class="flex mx-5 justify-around w-full mt-10">
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/puzzle-yellow.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Réseau<br/> partenaire</p>
+            </div>
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/puzzle-blue.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Réseau<br/> publieur<br/> open-data</p>
+            </div>
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/puzzle-orange.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Petit réseau<br/> saisie direct</p>
+            </div>
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/puzzle-purple.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Saisie pour un<br/> évènement,<br/> une navette…</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="p-4 w-full lg:w-1/3">
+        <div
+          class="flex flex-col items-center h-full bg-white bg-opacity-75 px-6 p-5 pt-10 rounded-xl text-center relative">
+          <img src="/assets/images/logo/loop-document.gif"
+            alt=""
+            class="h-36 " />
+          <div
+            class="text-2xl title-font font-bold text-white rounded-full h-12 w-12 flex items-center justify-center bg-enroute-chouette absolute -top-6 z-30">
+            2
+          </div>
+          <h3 class="title-font text-3xl font-bold text-light-brown mb-3 mt-6">
+            Contrôlez<br/>& agrégez<br/> les données
+          </h3>
+          <p class="leading-relaxed mb-3 text-light-grey-2">Paramétrez les jeux de contrôle de la donnée selon vos règles métier. Vous créez un référentiel de données théoriques unifié pour votre territoire.</p>
+          
+          
+          <div
+            class="text-left mt-5 leading-none flex justify-center py-4 border-2 border-dashed border-light-grey items-center p-5 rounded-2xl">
+            <img src="/assets/images/logo/time.gif"
+              alt=""
+              class="h-14 mr-5" />
+            <p class="leading-tight text-light-blue-4">Vous pouvez mettre à jour le référentiel unifié avec la fréquence que vous souhaitez (mois, hebdo, quotidien...).</p>
+          </div>
+          
+          
+          <img src="/assets/images/logo/puzzles.svg"
+            alt=""
+            class="mt-10 lg:mt-auto mb-10" />
+          
+        </div>
+      </div>
+      
+      <div class="p-4 w-full lg:w-1/3">
+        <div
+          class="flex flex-col items-center h-full bg-white bg-opacity-75 px-6 p-5 pt-10 rounded-xl text-center relative">
+          <img src="/assets/images/logo/hand-phone.gif"
+            alt=""
+            class="h-36 " />
+          <div
+            class="text-2xl title-font font-bold text-white rounded-full h-12 w-12 flex items-center justify-center bg-enroute-chouette absolute -top-6 z-30">
+            3
+          </div>
+          <h3 class="title-font text-3xl font-bold text-light-brown mb-3 mt-6">
+            Gérez la publication<br/> de vos données
+          </h3>
+          <p class="leading-relaxed mb-3 text-light-grey-2">Vous publiez vos données de manière simple et automatisée (API) vers vos systèmes ou ceux de vos partenaires.</p>
+          
+            <img src="/assets/images/logo/puzzles.svg" alt="" class="h-16 my-5" />
+          
+          
+          <div
+            class="text-left mt-5 leading-none flex justify-center py-4 border-2 border-dashed border-light-grey items-center p-5 rounded-2xl">
+            <img src="/assets/images/logo/document-bidirectional.gif"
+              alt=""
+              class="h-14 mr-5" />
+            <p class="leading-tight text-light-blue-4">Multi-formats en publication : GTFS, NeTEx (plusieurs profils)</p>
+          </div>
+          
+          
+          <div class="flex mx-5 justify-around w-full mt-10">
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/phone.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Calculateur<br/> d’itinéraire</p>
+            </div>
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/document-lock.svg"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Open<br/> data</p>
+            </div>
+            
+            <div class="flex flex-col">
+              <img src="/assets/images/logo/citymapper.gif"
+                alt=""
+                class="h-12 mb-5 object-contain" />
+              <p class="text-light-grey-2 leading-none text-sm">Réutilisateurs<br/> & partenaires</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="bg-light-blue py-24 overflow-hidden">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12 justify-center">
+  <h2 class="w-full my-2 text-4xl font-black leading-tight text-center text-light-brown px-3 mb-8 font-lato">
+    Les points forts de Chouette SaaS
+  </h2>
+  
+</div>
+<div class="px-5 pb-5 pt-5 mb-10 mx-auto flex lg:justify-center horizontal-frieze overflow-y-hidden overscroll-x-auto">
+  
+    <div class="flex relative items-center w-60 pb-5 flex-col">
+      <div class="flex items-center flex-col bg-white w-4/5 py-6 px-6 mx-8 mb-9 w-56 h-60 rounded-xl shadow-lg relative z-20">
+        
+        <div class="flex-shrink-0 w-24 h-24 inline-flex items-center justify-center mb-6">
+          <img class="block w-24 h-24" src="/assets/images/logo/frieze/tools.svg" alt="icon">
+        </div>
+        
+        <div class="flex-grow">
+          <h2 class="mb-1 text-center leading-tight font-semibold text-light-grey-2 text-lg">
+            Un seul outil
+          </h2>
+          <p class="text-sm font-normal text-gray-600 mb-1 text-normal text-center">
+            pour la gestion de vos<br/> données théoriques
+          </p>
+        </div>
+      </div>
+      <div class="w-96 h-1 flex bottom-0 relative z-1">
+        <div class="w-full h-1 bg-light-blue-2 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -50%;bottom: 0.4rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -10%;bottom: 0.9rem;">
+        <div class="h-52 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-52 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full inline-flex items-center justify-center bg-light-blue-2 text-white relative z-10 dot" style="bottom: 1.9rem;">
+        <div class="h-10 pointer-events-none border border-dashed border-light-blue-2 absolute bottom-6 little-dash z-1"></div>
+        <div class="flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center bg-white absolute z-10"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: 30%;bottom: 2.9rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-2 mr-56 xl:mr-60 visible" style="min-height: 3rem;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap ml-2 xl:ml-0">
+          Contrôles<br/> paramétrables
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-12 ml-48 visible">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap">
+          Versionnement et historisation<br/> des données théoriques
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 mt-20 mr-16 visible" style="max-width: 190px;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center">
+          Design IHM avec<br/> une approche métier
+          </h3>
+      </div>
+    </div>
+  
+    <div class="flex relative items-center w-60 pb-5 flex-col">
+      <div class="flex items-center flex-col bg-white w-4/5 py-6 px-6 mx-8 mb-9 w-56 h-60 rounded-xl shadow-lg relative z-20">
+        
+        <div class="flex-shrink-0 w-24 h-24 inline-flex items-center justify-center mb-6">
+          <img class="block w-24 h-24" src="/assets/images/logo/frieze/paper-rules.svg" alt="icon">
+        </div>
+        
+        <div class="flex-grow">
+          <h2 class="mb-1 text-center leading-tight font-semibold text-light-grey-2 text-lg">
+            Une IHM simple
+          </h2>
+          <p class="text-sm font-normal text-gray-600 mb-1 text-normal text-center">
+            et intuitive
+          </p>
+        </div>
+      </div>
+      <div class="w-96 h-1 flex bottom-0 relative z-1">
+        <div class="w-full h-1 bg-light-blue-2 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot invisible" style="left: -50%;bottom: 0.4rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -10%;bottom: 0.9rem;">
+        <div class="h-52 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-52 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full inline-flex items-center justify-center bg-light-blue-2 text-white relative z-10 dot" style="bottom: 1.9rem;">
+        <div class="h-10 pointer-events-none border border-dashed border-light-blue-2 absolute bottom-6 little-dash z-1"></div>
+        <div class="flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center bg-white absolute z-10"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot invisible" style="left: 30%;bottom: 2.9rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-2 mr-56 xl:mr-60 invisible" style="min-height: 3rem;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap ml-2 xl:ml-0">
+          
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-12 ml-48 invisible">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap">
+          
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 mt-20 mr-16 visible" style="max-width: 190px;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center">
+          Automatisation des processus de collecte des données
+          </h3>
+      </div>
+    </div>
+  
+    <div class="flex relative items-center w-60 pb-5 flex-col">
+      <div class="flex items-center flex-col bg-white w-4/5 py-6 px-6 mx-8 mb-9 w-56 h-60 rounded-xl shadow-lg relative z-20">
+        
+        <div class="flex-shrink-0 w-24 h-24 inline-flex items-center justify-center mb-6">
+          <img class="block w-24 h-24" src="/assets/images/logo/frieze/timer.svg" alt="icon">
+        </div>
+        
+        <div class="flex-grow">
+          <h2 class="mb-1 text-center leading-tight font-semibold text-light-grey-2 text-lg">
+            Un accès rapide
+          </h2>
+          <p class="text-sm font-normal text-gray-600 mb-1 text-normal text-center">
+            et opéré en mode SaaS
+          </p>
+        </div>
+      </div>
+      <div class="w-96 h-1 flex bottom-0 relative z-1">
+        <div class="w-full h-1 bg-light-blue-2 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -50%;bottom: 0.4rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -10%;bottom: 0.9rem;">
+        <div class="h-52 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-52 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full inline-flex items-center justify-center bg-light-blue-2 text-white relative z-10 dot" style="bottom: 1.9rem;">
+        <div class="h-10 pointer-events-none border border-dashed border-light-blue-2 absolute bottom-6 little-dash z-1"></div>
+        <div class="flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center bg-white absolute z-10"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot invisible" style="left: 30%;bottom: 2.9rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-2 mr-56 xl:mr-60 visible" style="min-height: 3rem;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap ml-2 xl:ml-0">
+          Chaine complète<br/> de gestion des données<br/> théoriques
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-12 ml-48 invisible">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap">
+          
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 mt-20 mr-16 visible" style="max-width: 190px;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center">
+          Workflow et espace<br/> de travail pour chaque<br/> contributeur
+          </h3>
+      </div>
+    </div>
+  
+    <div class="flex relative items-center w-60 pb-5 flex-col">
+      <div class="flex items-center flex-col bg-white w-4/5 py-6 px-6 mx-8 mb-9 w-56 h-60 rounded-xl shadow-lg relative z-20">
+        
+        <div class="flex-shrink-0 w-24 h-24 inline-flex items-center justify-center mb-6">
+          <img class="block w-24 h-24" src="/assets/images/logo/frieze/documents.svg" alt="icon">
+        </div>
+        
+        <div class="flex-grow">
+          <h2 class="mb-1 text-center leading-tight font-semibold text-light-grey-2 text-lg">
+            Multi-formats en collecte en publication
+          </h2>
+          <p class="text-sm font-normal text-gray-600 mb-1 text-normal text-center">
+            GTFS, NeTEx, Neptune
+          </p>
+        </div>
+      </div>
+      <div class="w-96 h-1 flex bottom-0 relative z-1">
+        <div class="w-full h-1 bg-light-blue-2 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -50%;bottom: 0.4rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: -10%;bottom: 0.9rem;">
+        <div class="h-52 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-52 little-dash-bottom z-1"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full inline-flex items-center justify-center bg-light-blue-2 text-white relative z-10 dot" style="bottom: 1.9rem;">
+        <div class="h-10 pointer-events-none border border-dashed border-light-blue-2 absolute bottom-6 little-dash z-1"></div>
+        <div class="flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center bg-white absolute z-10"></div>
+      </div>
+      <div class="flex-shrink-0 w-2 h-2 rounded-full items-center justify-center bg-light-blue-2 text-white relative z-30 dot visible" style="left: 30%;bottom: 2.9rem;">
+        <div class="h-20 pointer-events-none border border-dashed border-light-blue-2 absolute -bottom-20 little-dash-bottom z-1"></div>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-2 mr-56 xl:mr-60 visible" style="min-height: 3rem;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap ml-2 xl:ml-0">
+          Automatisation<br/> des publications
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 -mt-12 ml-48 visible">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center whitespace-nowrap">
+          Gestion des<br/> calendriers
+          </h3>
+      </div>
+      <div class="items-center justify-center flex-col p-3 bg-white rounded-xl shadow-lg relative z-30 mt-20 mr-16 visible" style="max-width: 190px;">
+        <h3 class="font-bold text-enroute-chouette mb-1 text-xs text-center">
+          Consultation des données<br/> brutes avec une API GraphQL
+          </h3>
+      </div>
+    </div>
+  
+</div>
+
+</section>
+
+<section class="bg-white py-8 overflow-hidden">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12 justify-center">
+  <h1 class="w-full my-2 text-4xl font-black font-lato leading-tight text-center text-light-brown px-3 mb-8">
+    Une interface utilisateur<br/> riche et fonctionnelle
+  </h1>
+  <div class="container px-3 mx-auto flex flex-wrap md:flex-nowrap items-center relative z-50">
+    <div class="flex flex-col w-full lg:w-3/5 justify-center text-left max-w-2xl">
+      <h3 class="my-4 text-xl font-bold text-light-grey-2">
+        Chouette SaaS permet d’automatiser la gestion des référentiels de données théoriques à travers les fonctionnalités suivantes :
+      </h3>
+      <ul class="list-disc list-outside text-light-grey-2 text-lg ml-8 leading-tight">
+        
+          <li class="mb-3">Assurer indépendamment la collecte des données, par des fichiers GTFS, Neptune ou NeTEx;</li>
+        
+          <li class="mb-3">Agréger les différentes offres de chaque producteur pour créer une offre globale. Historiser l’ensemble des offres et assurer un retour arrière en un clic;</li>
+        
+          <li class="mb-3">Gérer l’ensemble des données théoriques : arrêts et leurs hiérarchies, lignes, et leurs transporteurs, courses et leurs calendriers de circulation, mais aussi missions, correspondances, tracés, temps de parcours, interdiction de trafic locale, etc;</li>
+        
+          <li class="mb-3">Impliquer les partenaires producteurs de données en leur donnant accès à un espace de travail permettant de travailler en équipe et en toute sécurité sur l’offre en cours de préparation;</li>
+        
+          <li class="mb-3">Visualiser, saisir ou modifier l’ensemble de l’offre;</li>
+        
+          <li class="mb-3">Intégrer les nouvelles données aux données existante sans contrainte de période;</li>
+        
+          <li class="mb-3">Définir les règles qui doivent être respectées par les données et assurer qu’elles sont respectées à chaque étape pour chaque producteur;</li>
+        
+          <li class="mb-3">Publier automatiquement tout ou partie des données en GTFS ou NeTEx, quelque soit le format d’origine et mettre à disposition les données publiées sur des APIs de publication privée ou publique;</li>
+        
+          <li class="mb-3">Transmettre automatiquement les données publiées vers d’autres outils et intégrer les données grâce à l’API Chouette GraphQL;</li>
+        
+          <li class="mb-3">Administrer l’ensemble des fonctionnalités en quelques clics depuis l’interface utilisateur.</li>
+        
+      </ul>
+    </div>
+    <div class="flex flex-col justify-center items-center w-full lg:w-3/5 mx-auto pt-28 lg:ml-20">
+      <img class="" src="/assets/images/computer.png"/>
+      <a href="/fr/contact" class="lg:mx-0 bg-enroute-chouette-green text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      Demandez une démo
+      </a>
+    </div>
+  </div>
+</div>
+</section>
+<section class="bg-light-blue pt-24 pb-14 overflow-hidden">
+  <div class="container mx-auto">
+  <h2 class="w-full my-2 text-4xl font-black font-lato leading-tight text-center text-light-brown px-3 mb-10">
+    Une offre complète de service
+  </h2>
+
+  <div class="container px-5 p-10 mx-auto flex flex-col flex-wrap items-center justify-center md:justify-between bg-enroute-chouette-green lg:rounded-lg shadow-lg">
+    <h3 class="w-full my-2 text-5xl font-semibold leading-tight text-center text-white px-3 mb-12">
+      Un socle SaaS
+    </h3>
+    <div class="flex flex-col md:flex-row items-center justify-between mx-auto">
+      
+        <div class="flex flex-col items-center text-center">
+          <img class="block mb-5 h-24" src="/assets/images/logo/cards/chouette-circle.svg" alt="tiket"/>
+          <p class="text-xl text-white font-semibold">
+            Mise à disposition<br /> des technologies
+          </p>
+        </div>
+        
+        <img class="w-6 my-5 md:my-0 md:mx-5 lg:mx-10" src="/assets/images/logo/cards/plus-white.svg" alt="plus"/>
+        
+      
+        <div class="flex flex-col items-center text-center">
+          <img class="block mb-5 h-24" src="/assets/images/logo/cards/server.svg" alt="tiket"/>
+          <p class="text-xl text-white font-semibold">
+            Gestion de<br /> l’infrastructure
+          </p>
+        </div>
+        
+        <img class="w-6 my-5 md:my-0 md:mx-5 lg:mx-10" src="/assets/images/logo/cards/plus-white.svg" alt="plus"/>
+        
+      
+        <div class="flex flex-col items-center text-center">
+          <img class="block mb-5 h-24" src="/assets/images/logo/cards/document.svg" alt="tiket"/>
+          <p class="text-xl text-white font-semibold">
+            Niveau de services<br /> contractuel
+          </p>
+        </div>
+        
+        
+      
+    </div>
+  </div>
+</div>
+
+</section>
+<section class="bg-light-blue overflow-hidden">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap items-center justify-center md:justify-between bg-white lg:rounded-lg">
+  <img class="block max-h-42 mb-5 md:w-30 lg:w-40 mr-5" src="/assets/images/tiket.svg" alt="tiket"/>
+  <div class="md:w-3/5">
+    <h2 class="text-3xl text-enroute-blue font-semibold title-font mb-2">
+      Un budget simple et prévisible
+    </h2>
+    <p class="text-lg text-light-grey-2 font-semibold title-font leading-tight mb-2">
+      Le montant de l’abonnement mensuel dépend de 2<br /> paramètres parfaitement transparents :
+    </p>
+    <ul class="list-disc list-outside text-light-grey-2 text-md ml-5 leading-tight">
+      
+      <li class="mb-3">le nombre de courses dans l’offre agrégée</li>
+      
+      <li class="mb-3">la fréquence de mise à jour du référentiel de données<br /> théoriques (quotidien, hebdomadaire, mensuel, trimestriel...)</li>
+      
+    </ul>
+  </div>
+  <div class="md:w-1/5 flex">
+    <a href="/fr/contact" class="lg:mx-0 hover: bg-enroute-blue text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+      Estimez votre tarif
+    </a>
+  </div>
+</div>
+
+</section>
+<section class="bg-light-blue py-14 overflow-hidden">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12 justify-center ">
+  <h2 class="w-full my-2 text-4xl font-black leading-tight text-center text-light-brown px-3 mb-8 font-lato">
+    Des services d’accompagnement dédiés<br/> pour les clients SaaS qui le souhaitent
+  </h1>
+  
+  <div class="w-full mb-4"></div>
+  <div class="flex flex-row flex-wrap container justify-center relative little-cards-shapes blue-shapes">
+    
+    <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 flex flex-col py-6 px-3 relative" x-data="{open:false, discover:false, back:false}" id="">
+      <div class="flex-1 card w-full transform transition-transform out-flip duration-700 z-10 h-full" :class="{'flipped' : discover === true}">
+        <div class="front flex-1 flex-col justify-center w-full bg-white shadow-xl rounded-lg z-0 antialiased overflow-hidden h-full relative">
+          
+          <div class="flex items-center justify-center h-40 w-full p-4 " style="background-color:#5ED5DE">
+            <img src="/assets/images/logo/cards/cursor.svg" alt="" class="max-h-28"/>
+          </div>
+        
+        <div class="p-4">
+          <div class="flex flex-wrap items-center mb-2">
+            
+            
+            
+          </div>
+          <div class="flex flex-wrap items-center">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+          <p class="tracking-wide text-lg font-bold text-enroute-chouette-green mb-2 mt-2">
+            Accompagnement<br/> mise en œuvre
+          </p>
+          
+          
+          
+          
+          
+          <ul class="list-disc list-outside text-light-grey-2 text-md ml-5 leading-relaxed">
+            
+              <li class="mb-2">Analyse des besoins</li>
+            
+              <li class="mb-2">Identification des cas d'usages ciblés</li>
+            
+              <li class="mb-2">Paramétrages</li>
+            
+              <li class="mb-2">Assistance intégration SI et tests</li>
+            
+              <li class="mb-2">Formation</li>
+            
+          </ul>
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 flex flex-col py-6 px-3 relative" x-data="{open:false, discover:false, back:false}" id="">
+      <div class="flex-1 card w-full transform transition-transform out-flip duration-700 z-10 h-full" :class="{'flipped' : discover === true}">
+        <div class="front flex-1 flex-col justify-center w-full bg-white shadow-xl rounded-lg z-0 antialiased overflow-hidden h-full relative">
+          
+          <div class="flex items-center justify-center h-40 w-full p-4 " style="background-color:#5ED5DE">
+            <img src="/assets/images/logo/cards/agent.svg" alt="" class="max-h-28"/>
+          </div>
+        
+        <div class="p-4">
+          <div class="flex flex-wrap items-center mb-2">
+            
+            
+            
+          </div>
+          <div class="flex flex-wrap items-center">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+          <p class="tracking-wide text-lg font-bold text-enroute-chouette-green mb-2 mt-2">
+            Accompagnement<br/> exploitation
+          </p>
+          
+          
+          
+          
+          
+          <ul class="list-disc list-outside text-light-grey-2 text-md ml-5 leading-relaxed">
+            
+              <li class="mb-2">Petites évolutions</li>
+            
+              <li class="mb-2">Points réguliers sur l’intégration,les performances et paramétrages</li>
+            
+              <li class="mb-2">Présentation de nouvelles fonctionnalités</li>
+            
+              <li class="mb-2">Support renforcé</li>
+            
+          </ul>
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="max-w-sm w-full sm:w-1/2 lg:w-1/3 flex flex-col py-6 px-3 relative" x-data="{open:false, discover:false, back:false}" id="">
+      <div class="flex-1 card w-full transform transition-transform out-flip duration-700 z-10 h-full" :class="{'flipped' : discover === true}">
+        <div class="front flex-1 flex-col justify-center w-full bg-white shadow-xl rounded-lg z-0 antialiased overflow-hidden h-full relative">
+          
+          <div class="flex items-center justify-center h-40 w-full p-4 " style="background-color:#5ED5DE">
+            <img src="/assets/images/logo/cards/tools.svg" alt="" class="max-h-28"/>
+          </div>
+        
+        <div class="p-4">
+          <div class="flex flex-wrap items-center mb-2">
+            
+            
+            
+          </div>
+          <div class="flex flex-wrap items-center">
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </div>
+          <p class="tracking-wide text-lg font-bold text-enroute-chouette-green mb-2 mt-2">
+            Evolutions<br/> fonctionnelles
+          </p>
+          
+          
+          
+          
+          
+          <ul class="list-disc list-outside text-light-grey-2 text-md ml-5 leading-relaxed">
+            
+              <li class="mb-2">Identification des évolutions</li>
+            
+              <li class="mb-2">Définition des livrables et du calendrier de réalisation</li>
+            
+              <li class="mb-2">Développements logiciels</li>
+            
+          </ul>
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+</div>
+
+</section>
+<section class="bg-light-blue pb-14 overflow-hidden">
+  <div class="container mx-auto flex flex-wrap pt-4 pb-12 justify-center items-center main-products max-w-7xl">
+  <h2 class="w-full my-2 text-4xl font-black font-lato leading-tight text-center text-light-brown px-3 mb-8">
+    Deux solutions parfaitement intégrées<br /> pour optimiser vos données temps réel
+  </h2>
+  <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink chouette relative z-10 max-w-xl">
+    <div class="flex-1 bg-white rounded-lg shadow pt-20 px-10 md:px-10 lg:px-16">
+      <a href="/fr/chouette" class="flex flex-wrap no-underline hover:no-underline relative">
+        <div class="flex">
+          <img class="block max-h-40 mb-5 z-10" src="/assets/images/logo/chouette_icon.svg" alt="logo chouette"/>
+          <div class="bubble absolute -right-12 xl:-right-20 2xl:-right-28 -top-28 z-1">
+            <img class="block max-h-42 mb-5" src="/assets/images/bubble-arrow-chouette.svg" alt="bulle"/>
+            <p class="text-lg text-white leading-tight text-center mx-5">
+              Gestion des données
+              <span class="text-xl font-bold">théoriques</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-full text-4xl text-gray-800 mb-5">
+          <span class="font-bold">Chouette</span> SaaS
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="md:42 flex flex-col items-center max-w-xs m-5">
+    <div class="p-6 bg-white rounded-full mb-3">
+      <img class="h-10 w-10" src="/assets/images/reload.svg" />
+    </div>
+    <p class="text-enroute-blue text-center font-bold">
+      Synchronisation des<br /> référentiels de données<br /> théoriques et temps-réel
+    </p>
+  </div>
+  <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink ara relative z-10 max-w-xl">
+    <div class="flex-1 bg-white rounded-lg shadow pt-20 px-10 md:px-10 lg:px-16">
+      <a href="/fr/ara" class="flex flex-wrap no-underline hover:no-underline relative">
+        <div class="flex">
+          <img class="block max-h-40 mb-5 z-10" src="/assets/images/logo/ara_icon.svg" alt="logo ara"/>
+          <div class="bubble absolute -right-12 xl:-right-20 2xl:-right-28 -top-28 z-1">
+            <img class="block max-h-42 mb-5" src="/assets/images/bubble-arrow-ara.svg" alt="bulle"/>
+            <p class="text-lg text-white leading-tight text-center mx-5">
+              Gestion des données<br />
+              <span class="text-xl font-bold"
+                >temps réel</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="w-full text-4xl text-gray-800 mb-5">
+          <span class="font-bold">Ara</span> SaaS
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+</section>
+ <footer class="flex overflow-hidden flex-col justify-center items-center px-16 py-14 bg-enroute-blue max-md:px-5">
+    <section class="container">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-5 max-md:flex-col">
+        <section class="flex flex-col max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col items-start w-full text-sm text-white max-md:mt-10">
+            <img
+              loading="lazy"
+              src="/assets/images/logo/enroute-2020-blanc.svg"
+              alt="enRoute company logo"
+              class="object-contain aspect-[2.1] w-[100px]"
+            />
+            <h2 class="self-stretch text-lg mt-3 font-bold leading-6">
+                Les transports publics et les mobilités partagées répondent aux enjeux sociaux et environnementaux auxquels nous sommes confrontés.
+            </h2>
+            <p class="mt-3 leading-6 text-lg max-md:mr-1">
+                Chez enRoute, notre but est de faire de ces modes de transport le socle des mobilités urbaines, inter-urbaines et rurales, en permettant à nos clients de prendre le contrôle de leurs données.
+            </p>
+            <h3 class="mt-6 text-xl font-bold">Notre actualité</h3>
+            <a href="https://fr.linkedin.com/company/enroutemobi" target="_blank" class="my-3 flex items-center text-enroute-chouette-green hover:text-gray-100 text-lg font-medium duration-700">
+                <img class="block h-5 mr-2" src="/assets/images/linkedin.svg" alt="linkedin" />
+                <p>linkedin.com/enRoute</p>
+                <svg class="h-6 w-6 text-enroute-chouette-green ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            <a href="https://twitter.com/enRoute_mobi" target="_blank" class="flex items-center text-enroute-chouette-green hover:text-gray-100 text-lg font-medium duration-700">
+                    <img class="block h-5 mr-2" src="/assets/images/twitter.svg" alt="twitter" />
+                    <p>@enRoute_mobi</p>
+                    <svg class="h-6 w-6 text-enroute-chouette-green ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+            </a>
+          </article>
+        </section>
+        <section class="flex flex-col ml-5 max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow items-start text-white max-md:mt-10">
+            <div class="w-full max-w-[286px]">
+                <a href="https://chouette.enroute.mobi/" target="_blank" class="flex justify-center y-3 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 duration-700">
+                    <img class="p-3 h-20 w-52" src="/assets/images/logo/logo-chouette-2020-saas.svg" alt="logo" />
+                </a>
+                <a href="https://ara.enroute.mobi/" target="_blank" class="flex justify-center mt-4 rounded-full bg-white bg-opacity-70 hover:bg-opacity-90 duration-700">
+                    <img class="p-3 h-20 w-52" src="/assets/images/logo/logo-ara-2020-saas.svg" alt="logo" />
+                </a>
+                <div class="p-3 h-28 mt-8 rounded-full bg-white bg-opacity-70 flex flex-col md:flex-row md:h-20 flex-wrap md:flex-nowrap justify-around items-center hover:bg-opacity-90 duration-700">
+                    <a class="mr-0 sm:mr-6" href="https://enroute.atlassian.net/wiki/spaces/PUBLIC/overview" target="_blank">
+                        <img class="w-24 block" src="/assets/images/logo/confluence-blue.svg" alt="logo" />
+                    </a>
+                    <a href="https://bitbucket.org/enroute-mobi/" target="_blank">
+                        <img class="w-24 block" src="/assets/images/tools/bitbucket.svg" alt="logo" />
+                    </a>
+                </div>
+            </div>
+            <h3 class="mt-9 text-xl font-bold">Nous contacter</h3>
+            <address class="mt-5 text-lg leading-6 not-italic">
+              enRoute
+              <br />
+              Paris
+              <br />
+              <a href="tel:+33188337484" class="hover:text-cyan-500 duration-700">+33 1 88 33 74 84</a>
+            </address>
+          </article>
+        </section>
+        <section class="flex flex-col max-md:ml-0 max-md:w-full">
+          <nav class="flex flex-col grow items-start text-base text-cyan-500 max-md:mt-10">
+            <h3 class="font-bold text-xl text-white mb-2">Vous êtes ?</h3>
+            <ul class="list-none p-0">
+                
+                    <li class="mb-2"><a href="/fr/operator" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Opérateur de Transport Public</a></li>
+                
+                    <li class="mb-2"><a href="/fr/pta" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Autorité Organisatrice de Mobilités</a></li>
+                
+                    <li class="mb-2"><a href="/fr/nap" class="leading-none text-lg mt-2 hover:text-gray-100 duration-700">Point d’Accès National</a></li>
+                
+            </ul>
+            <h3 class="mt-10 mb-2 font-bold text-xl text-white">Nos Solutions</h3>
+            <ul class="list-none p-0">
+              <li><a href="/fr/chouette" class="text-lg hover:text-gray-100 duration-700">Chouette SaaS</a></li>
+              <li class="mt-2"><a href="/fr/ara" class="text-lg hover:text-gray-100 duration-700">Ara SaaS</a></li>
+            </ul>
+            <ul class="list-none p-0 mt-10">
+                
+                    <li class="mb-2"><a href="/fr/company" class="leading-none text-lg hover:text-gray-100 duration-700">Equipe</a></li>
+                
+                    <li class="mb-2"><a href="/fr/legals" class="leading-none text-lg hover:text-gray-100 duration-700">Mentions légales</a></li>
+                
+                    <li class="mb-2"><a href="/fr/contact" class="leading-none text-lg hover:text-gray-100 duration-700">Contact</a></li>
+                
+            </ul>
+          </nav>
+        </section>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

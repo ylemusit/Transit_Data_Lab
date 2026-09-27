@@ -1,0 +1,72 @@
+{
+  "recorded_at": "2026-09-27T01:12:06.442781+00:00",
+  "PHASE_2_BASELINE_PROMOTION": "FAIL",
+  "PHASE_2": "NOT_FORMALLY_FROZEN",
+  "blocking_issues": [
+    {
+      "check": "REQUESTED_GTFS_BASELINE_SHA",
+      "expected": "f4186d603c455021b807261bdac8770f5f4d2bed7830214eb98c223efd99fc",
+      "actual": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+      "expected_length": 62,
+      "actual_length": 64,
+      "reason": "Requested GTFS SHA has 62 characters and differs from the live database and existing official baseline. No correction inferred."
+    }
+  ],
+  "DB_SHA_BEFORE": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "previous_official_compliance_baseline_sha": "52ca421c349d4be85764e84ae1cd08750bbfee99bbc8424a8379ae60a4b0fec5",
+  "new_official_compliance_baseline_sha": null,
+  "approved_candidate_compliance_sha": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "phase_1_baseline_preserved": true,
+  "gtfs_baseline_preserved": true,
+  "gtfs_sha_before": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+  "gtfs_existing_baseline_sha": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+  "PROJECT_BASELINE_UPDATED": "NO",
+  "PROJECT_CURRENT_STATE_UPDATED": "NO",
+  "READY_FOR_PHASE_3_PLANNING": "NO",
+  "phase_3_started": false,
+  "textual_fidelity_certified": false,
+  "legal_compliance_assessed": false,
+  "format_mapping_completed": false,
+  "audit_rules_created": false,
+  "known_limitations_count": 7,
+  "files_modified": [],
+  "files_created": [
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_BASELINE_PROMOTION.md",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_BASELINE_PROMOTION.csv",
+    "03_Compliance/reports/phase_2/freeze/PHASE_2_BASELINE_PROMOTION_FAILURE.json"
+  ],
+  "git_status_before": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+  "final_tests": "NOT_RUN_STOP_ON_BLOCKER",
+  "baseline_validation": "NOT_RUN_NO_PROMOTION",
+  "current_state_validation": "NOT_RUN_NO_UPDATE",
+  "historical_freeze_review_results": {
+    "PHASE_2_FINAL_FREEZE_REVIEW": "PASS",
+    "provisions": 92,
+    "source_facts": 36,
+    "requirements": 48,
+    "deadlines": 10,
+    "phase_1_invariant_result": "PASS (22/22)",
+    "structural_result": "PASS (22/22)",
+    "annex_result": "PASS (7 suites, 63/63)",
+    "legal_hashes_result": "PASS (10/10)",
+    "post_materialization_gate_result": "PASS (387/387)"
+  },
+  "historical_results_note": "Historical approved review evidence read; not rerun or certified as final promotion tests.",
+  "DB_SHA_AFTER": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "DB_CHANGED_DURING_BASELINE_PROMOTION": "NO",
+  "gtfs_sha_after": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+  "protected_files": {
+    "project_baseline.json": {
+      "before": "b8407edbf637071a6d9f64aab29fd5a096dab7b845c3f16345e288dddf1ca0b8",
+      "after": "b8407edbf637071a6d9f64aab29fd5a096dab7b845c3f16345e288dddf1ca0b8",
+      "unchanged": true
+    },
+    "PROJECT_CURRENT_STATE.md": {
+      "before": "479badc53cfe4de3ea8f4827baa99fe3df3f34829f5afe695282667cf25dbe84",
+      "after": "479badc53cfe4de3ea8f4827baa99fe3df3f34829f5afe695282667cf25dbe84",
+      "unchanged": true
+    }
+  },
+  "git_status_after": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+  "git_status_equal": true
+}

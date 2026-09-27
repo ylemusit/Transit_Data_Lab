@@ -1,0 +1,9 @@
+[{"test":"01_EXPECTED_COUNT","status":"PASS","expected":4,"actual":4},
+{"test":"02_DATA_ELEMENT_COUNT","status":"PASS","expected":3,"actual":3},
+{"test":"03_GROUP_COUNT","status":"PASS","expected":1,"actual":1},
+{"test":"04_MISSING_PROVISIONS","status":"PASS","expected":0,"actual":0},
+{"test":"05_UNEXPECTED_PROVISIONS","status":"PASS","expected":0,"actual":0},
+{"test":"06_SECTION_MISMATCH","status":"PASS","expected":0,"actual":0},
+{"test":"07_TYPE_MISMATCH","status":"PASS","expected":0,"actual":0},
+{"test":"08_SOURCE_REFERENCE_NULL","status":"PASS","expected":0,"actual":0}]
+[{"test":"ANNEX_2_2_SOURCE_INTEGRITY","status":"PASS"}]

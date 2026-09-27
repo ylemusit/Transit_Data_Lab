@@ -1,0 +1,40 @@
+# Conciliación del baseline de tests
+
+- TEST_BASELINE_RECONCILIATION = `PASS`
+- DB_SHA_BEFORE = `0c119b4a75e6a0e7954480675cc625659fe65a1878f46dae1e496e0790d8ffec`
+- DB_SHA_AFTER = `0c119b4a75e6a0e7954480675cc625659fe65a1878f46dae1e496e0790d8ffec`
+- DB_UNCHANGED = `YES`
+- ARTICLE_9_3_SOURCE_FACT_COUNT = `1`
+- SOURCE_FACT_TRANSACTION = `PASS`
+- PHASE_1_HISTORICAL_MASTER = `FAIL (23/24; aggregate FAIL)`
+- HISTORICAL_MISMATCH_CLASSIFICATION = `EXPECTED_HISTORICAL_STATE_MISMATCH`
+- PRIOR_AGGREGATE_FAIL = `POST_WRITE_TEST_GATE_FAIL`
+- REASON = `HISTORICAL_PHASE_STATE_ASSERTION_APPLIED_TO_LATER_PHASE_DB`
+- PHASE_1_FROZEN_REQUIREMENTS_COUNT = `0`
+- PHASE_1_INVARIANT_REGRESSION = `PASS`
+- STRUCTURAL_2017_1926 = `PASS`
+- ANNEX_TESTS = `PASS`
+- LEGAL_HASHES = `PASS`
+- PHASE_2_TESTS = `PASS`
+- PHASE_2_PRE_MATERIALIZATION_GATE = `PASS`
+- REQUIREMENTS_COUNT = `3`
+- DEADLINES_COUNT = `1`
+- FINAL_ATOMIC_UNIVERSE = `48`
+- EXCEPTION_QUEUE = `0`
+- INTERPRETIVE_ISSUES = `0`
+- MECHANICAL_BLOCKERS = `0`
+- SOURCE_FACT_TRACEABILITY = `PASS`
+- UTF8 = `PASS`
+- DATABASE_INTEGRITY = `PASS`
+- PRIOR_AUTHORIZED_SEMANTIC_DELTA = `+1 source_fact only; requirements delta=0; deadlines delta=0`
+- THIS_RECONCILIATION_DB_DELTA = `0`
+- HUMAN_REVIEW_GATE_2 = `CLOSED`
+- READY_FOR_PHASE_2_REQUIREMENTS_MATERIALIZATION = `YES`
+
+El FAIL histórico y todos los archivos previos conservan su SHA-256. El agregado PHASE_1_CORPUS_INTEGRITY también falla por la misma condición histórica. La nueva suite conserva 21 checks y el agregado estructural, sin las condiciones de estado 22–24.
+
+Evidencia durable: test_baseline_reconciliation_evidence/TEST_RESULTS.csv, stdout JSON completo, stderr y exit_code por suite; hashes de archivos previos y de fuentes jurídicas. DATABASE_BEFORE/AFTER originales verifican el delta previo; todas las tablas actuales coinciden con AFTER.
+
+Phase 2 sigue abierta y sin congelar; no se evalúa cumplimiento ni se inicia Phase 3.
+
+Autor: Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

@@ -1,0 +1,77 @@
+[
+  {
+    "requirement_id": "EU-2017-1926-REQ-A03-P01-001",
+    "final_review_id": "G2-001",
+    "classification": "COMPATIBLE_MATCH",
+    "differences": [],
+    "ancillary_persisted_fields": {
+      "requirement_type": "ESTABLISH_NAP",
+      "data_category": null,
+      "data_element": null,
+      "transport_modes": null,
+      "availability_requirement": null,
+      "accessibility_requirement": "Establecer el punto de acceso nacional previsto en el artículo 3.",
+      "update_requirement": null,
+      "quality_requirement": null,
+      "interoperability_requirement": null,
+      "effective_from": null,
+      "effective_to": null,
+      "legal_status": null,
+      "is_auditable": false,
+      "validation_method": null,
+      "notes": "Materialized from an approved Phase 2 candidate; see compliance.requirement_candidates and compliance.source_facts.",
+      "created_at": "2026-09-27 01:09:24.519454"
+    },
+    "decision": "No update required: approved proposition/provenance exact; descriptive Gate 2 metadata preserved in input and ID map. Existing notes trace to unchanged approved candidate/source fact."
+  },
+  {
+    "requirement_id": "EU-2017-1926-REQ-A03-P01-002",
+    "final_review_id": "G2-002",
+    "classification": "COMPATIBLE_MATCH",
+    "differences": [],
+    "ancillary_persisted_fields": {
+      "requirement_type": "SINGLE_ACCESS_POINT",
+      "data_category": null,
+      "data_element": null,
+      "transport_modes": null,
+      "availability_requirement": null,
+      "accessibility_requirement": "Punto único para las categorías y titulares cubiertos por el artículo 3, apartado 1.",
+      "update_requirement": null,
+      "quality_requirement": null,
+      "interoperability_requirement": null,
+      "effective_from": null,
+      "effective_to": null,
+      "legal_status": null,
+      "is_auditable": false,
+      "validation_method": null,
+      "notes": "Materialized from an approved Phase 2 candidate; see compliance.requirement_candidates and compliance.source_facts.",
+      "created_at": "2026-09-27 01:09:24.519454"
+    },
+    "decision": "No update required: approved proposition/provenance exact; descriptive Gate 2 metadata preserved in input and ID map. Existing notes trace to unchanged approved candidate/source fact."
+  },
+  {
+    "requirement_id": "EU-2017-1926-REQ-A10-P01-001",
+    "final_review_id": "G2-042",
+    "classification": "COMPATIBLE_MATCH",
+    "differences": [],
+    "ancillary_persisted_fields": {
+      "requirement_type": "NAP_ESTABLISHMENT_REPORT",
+      "data_category": null,
+      "data_element": null,
+      "transport_modes": null,
+      "availability_requirement": null,
+      "accessibility_requirement": null,
+      "update_requirement": null,
+      "quality_requirement": null,
+      "interoperability_requirement": null,
+      "effective_from": null,
+      "effective_to": null,
+      "legal_status": null,
+      "is_auditable": false,
+      "validation_method": null,
+      "notes": "Materialized from an approved Phase 2 candidate; see compliance.requirement_candidates and compliance.source_facts.",
+      "created_at": "2026-09-27 01:09:24.519454"
+    },
+    "decision": "No update required: approved proposition/provenance exact; descriptive Gate 2 metadata preserved in input and ID map. Existing notes trace to unchanged approved candidate/source fact."
+  }
+]

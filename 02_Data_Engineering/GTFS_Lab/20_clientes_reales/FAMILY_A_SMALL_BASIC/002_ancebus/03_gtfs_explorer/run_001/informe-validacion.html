@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Informe de validación GTFS Explorer</title></head><body><h1>Informe de validación GTFS Explorer</h1><pre>{
+  &quot;schema_version&quot;: &quot;1.0.0&quot;,
+  &quot;report_type&quot;: &quot;gtfs-explorer.validation&quot;,
+  &quot;batch&quot;: {
+    &quot;id&quot;: &quot;e403acfe-4c56-411f-be4f-750c2b6c4e89:structure&quot;,
+    &quot;feed_id&quot;: &quot;e6347a4b-10c6-43df-a389-f49a02912f63&quot;,
+    &quot;state&quot;: &quot;INVALID&quot;,
+    &quot;total_issue_count&quot;: 12,
+    &quot;stored_issue_count&quot;: 12,
+    &quot;omitted_issue_count&quot;: 0
+  },
+  &quot;filter&quot;: {
+    &quot;severities&quot;: null,
+    &quot;categories&quot;: null
+  },
+  &quot;summary_by_severity&quot;: {
+    &quot;FATAL&quot;: 0,
+    &quot;ERROR&quot;: 6,
+    &quot;WARNING&quot;: 0,
+    &quot;NOTICE&quot;: 6
+  },
+  &quot;issues&quot;: [
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL060_1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 5,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_H2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL060_2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 7,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL060_2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 4,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_H1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 2,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 3,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_H2&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_H1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;NOTICE&quot;,
+      &quot;category&quot;: &quot;BEST_PRACTICE&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;trips.txt&quot;,
+        &quot;row&quot;: 6,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;trip&quot;,
+        &quot;entity_id&quot;: &quot;VACL060_1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.best_practice_trip_without_shape&quot;,
+        &quot;parameters&quot;: {
+          &quot;origin&quot;: &quot;gtfs-explorer/best-practice&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_BP_TRIP_WITHOUT_SHAPE&quot;,
+      &quot;occurrence_count&quot;: 1
+    },
+    {
+      &quot;rule&quot;: {
+        &quot;code&quot;: &quot;GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+        &quot;origin&quot;: &quot;gtfs-explorer&quot;
+      },
+      &quot;severity&quot;: &quot;ERROR&quot;,
+      &quot;category&quot;: &quot;GEOMETRY&quot;,
+      &quot;location&quot;: {
+        &quot;file&quot;: &quot;shapes.txt&quot;,
+        &quot;row&quot;: null,
+        &quot;field&quot;: &quot;shape_id&quot;,
+        &quot;entity_type&quot;: &quot;shape&quot;,
+        &quot;entity_id&quot;: &quot;VACL018_1&quot;
+      },
+      &quot;message&quot;: {
+        &quot;key&quot;: &quot;validation.shape_geometry_invalid&quot;,
+        &quot;parameters&quot;: {
+          &quot;detail&quot;: &quot;TRIP_SHAPE_MISSING&quot;,
+          &quot;shape_id&quot;: &quot;&quot;
+        }
+      },
+      &quot;help_id&quot;: &quot;validation/GTFS_SHAPE_GEOMETRY_INVALID&quot;,
+      &quot;occurrence_count&quot;: 1
+    }
+  ]
+}</pre></body></html>

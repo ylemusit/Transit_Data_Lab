@@ -1,0 +1,806 @@
+
+
+    
+
+    
+
+    
+
+    Nommon | Big data e inteligencia artificial para un futuro sostenible
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+            
+
+    
+
+    
+
+            
+
+                    
+
+            
+
+                
+
+            
+
+                
+
+Productos
+
+                                
+
+                                    
+
+Mobility Insights
+
+                                        
+Matrices origen-destino fiables y actualizadas obtenidas a partir de datos móviles
+
+                                        
+
+                                
+
+                                    
+
+Population Insights
+
+                                        
+Aprovechando los datos móviles para el estudio de la afluencia de visitantes y el comportamiento del cliente
+
+                                        
+
+                                
+
+                                    
+
+WiseTransit
+
+                                        
+Inteligencia artificial para atraer más pasajeros al transporte público
+
+                                        
+
+                                
+
+                                    
+
+WiseRide
+
+                                        
+Optimizando la movilidad compartida mediante la predicción de la demanda basada en datos
+
+                                        
+
+                                
+
+                                    
+
+WisePax
+
+                                        
+Optimización de los flujos de pasajeros para el aeropuerto del futuro
+
+                                        
+
+                                
+
+                                    
+
+InSite
+
+                                        
+Transformando la inteligencia de localización con el uso de datos de movilidad de alta resolución y la analítica predictiva
+
+                                        
+
+                                
+
+                                    
+
+Servicios profesionales
+
+                                        
+Soluciones creativas y nuevos enfoques para el análisis de datos y la modelización
+
+                                        
+
+Demo
+Sectores
+Transporte y movilidad
+Aviación
+Ciudades inteligentes
+Turismo
+Mercado inmobiliario
+Retail y geomarketing
+Empresa
+Unidades de negocio
+Sobre Nommon
+Equipo
+Clientes y colaboradores
+Valores
+Historia
+Conocimiento
+Publicaciones científicas
+Casos de estudio
+Proyectos de investigación
+Documentos de trabajo
+Empleo
+Por qué Nommon
+Ofertas de empleo
+Actualidad
+Blog
+Noticias
+Contacto
+
+ENG
+
+            
+
+    
+
+    
+
+        
+
+            
+
+                
+Big data e inteligencia artificial para un futuro sostenible
+
+            
+
+    
+
+                            
+
+                                
+
+    
+
+    
+
+        
+
+                Qué hacemos            
+
+                        
+
+                    
+
+                            Transporte y movilidad                        
+
+                            Información de calidad y modelización de la demanda para planificar y gestionar la movilidad del futuro                        
+
+                
+
+                    
+
+                            Aviación                        
+
+                            Análisis de datos, modelos predictivos y herramientas de ayuda a la decisión para impulsar el transporte aéreo                        
+
+                
+
+                    
+
+                            Ciudades inteligentes                        
+
+                            Inteligencia artificial para conseguir ciudades más sostenibles, saludables y resilientes                        
+
+                
+
+                    
+
+                            Turismo                        
+
+                            Entiende y predice el comportamiento de los turistas con datos de presencia de alta calidad                        
+
+                
+
+                    
+
+                            Mercado inmobiliario                        
+
+                            Big data para identificar las mejores oportunidades de inversión                        
+
+                
+
+                    
+
+                            Retail y geomarketing                        
+
+                            Encuentre la localización ideal para su negocio con información dinámica y modelos predictivos                        
+
+                
+
+    
+
+    
+
+	
+
+		
+
+			Our product suite
+
+		
+
+		Access advanced analytics tools powered by big data and artificial intelligence to analyse scenarios, measure impact, and make more informed strategic and operational decisions.
+
+		
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+		
+
+			Explore our solutions
+
+	
+
+    
+
+	
+
+		
+
+			Conoce nuestra suite de productos
+
+		
+
+		Accede a herramientas de analítica avanzada impulsadas por big data e inteligencia artificial para evaluar escenarios, medir impactos y tomar decisiones estratégicas y operacionales más informadas.
+
+		
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+			
+
+				
+
+				
+
+		
+
+			Explora nuestras soluciones
+
+	
+
+    
+
+        
+
+Qué nos diferencia
+
+                        
+
+                    
+
+Una empresa líder a nivel mundial en el análisis del transporte y la movilidad
+
+Proporcionamos información y herramientas software basadas en el análisis de datos masivos para ayudar a nuestros clientes a tomar mejores decisiones. Desde su creación en 2012, Nommon ha sido pionera en la aplicación del big data y la inteligencia artificial al análisis y la modelización de la movilidad.
+
+                        
+
+                    
+
+La excelencia y el conocimiento son nuestra principal fuente de competitividad
+
+El desarrollo de soluciones de la más alta calidad y el compromiso con la mejora continua de nuestros productos son parte del ADN de Nommon. Nuestra búsqueda de la excelencia se apoya en un equipo de profesionales brillantes y una cultura de trabajo que promueve el pensamiento crítico, la experimentación y el aprendizaje.
+
+                        
+
+                    
+
+Intentamos hacer del mundo un lugar mejor a través de lo que hacemos y cómo lo hacemos
+
+Nuestro objetivo es crear valor sostenible para nuestros clientes, nuestros colaboradores, nuestros profesionales y la sociedad en general. Nos esforzamos por construir un entorno de trabajo que atraiga y retenga a personas responsables, comprometidas no solo con su trabajo, sino también con la sociedad.
+
+        
+
+    
+
+        
+
+            
+
+                
+
+                    
+Aprovechando los datos de telefonía móvil y billetaje para estimar la cuota modal del transporte público
+                    Descubre nuestra metodología                
+
+        
+
+    
+
+        
+
+            
+
+                Algunos de nuestros clientes            
+
+                    
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                                    
+
+                            
+
+                                
+
+                                            
+
+                    
+
+    
+
+            
+
+                        
+                            Sobre Nommon
+
+Equipo
+Unidades de negocio
+Clientes y colaboradores
+Ofertas de empleo
+
+                    
+
+                    
+
+                        
+                            Productos
+
+Mobility Insights
+Population Insights
+WiseTransit
+WiseRide
+WisePax
+InSite
+
+                    
+
+                    
+
+                        
+                            Recursos
+
+Casos de estudio
+Proyectos de investigación
+Publicaciones científicas
+Blog
+
+                    
+
+            
+
+                
+                    Contact
+
+                                            
+
+                                    Madrid
+
+                                    +34 91 072 62 61
+                                    nommon@nommon.es                                
+
+                                    London
+
+                                                                        uk@nommon.es                                
+
+                                    Bogotá
+
+                                                                        colombia@nommon.es                                
+
+                                     São Paulo
+
+                                                                        brasil@nommon.es                                
+
+                                    
+
+            
+
+                
+
+                                                        
+
+                                    
+
+                                    
+
+                                                        
+
+                                    
+
+                                    
+
+                                                        
+
+                                    
+
+                                    
+
+                                            
+
+            
+
+        
+
+            
+
+                © 2026 Nommon Solutions and Technologies, S.L.            
+
+                
+
+Política de privacidad
+
+Política de cookies
+
+            
+
+    
+
+	
+
+	
+
+		
+
+		
+
+  
+Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web. Si sigue utilizando este sitio asumiremos que está de acuerdo. Más información
+
+		
+
+			Aceptar
+
+		
+
+	
+
+	
+
+	
+
+    
+
+	
+
+	
+
+		    
+
+			Cerrar los ajustes de cookies RGPD
+
+		
+
+		
+
+	
+
+		
+
+	
+	Resumen de privacidad
+
+	
+
+	
+		Cookies estrictamente necesarias
+
+	
+
+		
+
+			Powered by  GDPR Cookie Compliance
+
+		
+
+		
+
+		
+
+			 
+
+		
+
+			
+
+			
+
+		Resumen de privacidad
+
+	
+Esta web utiliza cookies para que podamos ofrecerte la mejor experiencia de usuario posible. La información de las cookies se almacena en tu navegador y realiza funciones tales como reconocerte cuando vuelves a nuestra web o ayudar a nuestro equipo a comprender qué secciones de la web encuentras más interesantes y útiles.
+
+	
+
+			
+
+    Cookies estrictamente necesarias
+
+      
+Las cookies estrictamente necesarias tiene que activarse siempre para que podamos guardar tus preferencias de ajustes de cookies.
+
+        
+
+          
+
+                
+              Activar o desactivar las cookies        
+
+              
+
+                  Activado
+                  Desactivado
+
+              
+
+          
+
+        
+
+      
+
+                                              
+
+    
+
+  
+
+			
+
+			
+
+		
+
+		
+
+			
+
+						Activar todo
+								Guardar ajustes
+
+		
+
+		
+
+		
+
+	
+
+	
+
+	
+

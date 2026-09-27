@@ -1,0 +1,166 @@
+{
+  "phase": "Phase 2",
+  "scope": "EU-REG-2017-1926 requirements engine",
+  "database_path": "03_Compliance/databases/transit_compliance.duckdb",
+  "database_sha256": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "source_document": "EU-REG-2017-1926",
+  "source_version": "2024-03-04",
+  "provisions_count": 92,
+  "source_facts_count": 36,
+  "requirements_count": 48,
+  "deadlines_count": 10,
+  "external_dependencies_partial": 7,
+  "functional_time_requirements": 5,
+  "explicit_deadlines": 10,
+  "external_schedule_references": 1,
+  "mapping_format_coverage_count": 0,
+  "audit_rules_count": 0,
+  "gate_1_status": "CLOSED",
+  "gate_2_status": "CLOSED",
+  "requirements_materialization_status": "PASS",
+  "phase_1_invariant_status": "PASS",
+  "structural_test_status": "PASS",
+  "annex_test_status": "PASS",
+  "legal_hash_status": "PASS",
+  "post_materialization_gate_status": "PASS",
+  "textual_fidelity_certified": false,
+  "legal_compliance_assessed": false,
+  "format_mapping_completed": false,
+  "audit_rules_created": false,
+  "known_source_anomalies": [
+    "Annex 1.3 B-I",
+    "Annex 1.3 D-I"
+  ],
+  "created_at": "2026-09-27T01:08:55.639878+00:00",
+  "candidate_only": false,
+  "baseline_promoted": true,
+  "ready_for_promotion": true,
+  "reproducibility_status": "CONTROLLED_REPLAY_WITH_MANUAL_HUMAN_DECISIONS",
+  "status": "FROZEN",
+  "phase_3_started": false,
+  "final_freeze_review_status": "PASS",
+  "frozen_at": "2026-09-27T01:18:24.849175+00:00",
+  "PHASE_2": "FROZEN",
+  "final_tests": [
+    {
+      "suite": "test_phase_1_invariants",
+      "status": "PASS",
+      "checks": 22,
+      "exit_code": 0,
+      "sql_sha256": "b2a89c0d14842bc2ff5f7d5b561b60a7d3d76269004c1b71e10ffc5e7300332a"
+    },
+    {
+      "suite": "test_eu_2017_1926_master_structure",
+      "status": "PASS",
+      "checks": 22,
+      "exit_code": 0,
+      "sql_sha256": "db2b5366319769e3a739e7629d8e04f7f79afd0528d02374a1e9933f455e194b"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_1_1",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "93f4715baefbe8c9cdc158a01bcbdd20fe93bbcb3f0512741126d0d11244b5d0"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_1_2",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "f2265f6bbc4fb2df1e829eaa98464197a1a2130fa95b213aa2441c983d437d69"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_1_3",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "196a32123a84ef5d79fd366c68b5c1e5f14ba60b90f26a9cc3ef1c437844af1c"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_1_4",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "6d89324b08f93db8c8881f82711216ca80a96d7d627d091501fade308b9daf39"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_2_1",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "da3f0f3f110e9d55b3c3cc159c5558ec579c556e3230d64fdd5421e1ebc0c5b6"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_2_2",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "b3656f2539549c5bd178ed8e58b35a01d6ed275469072db52309789191187a6a"
+    },
+    {
+      "suite": "test_eu_2017_1926_annex_2_3",
+      "status": "PASS",
+      "checks": 9,
+      "exit_code": 0,
+      "sql_sha256": "778afdf1ec09cbfb5f4ad99eebef2f451dc67b2d5f9cdee9e60f5c530ac779da"
+    },
+    {
+      "suite": "test_phase_2_post_materialization_gate",
+      "status": "PASS",
+      "checks": 387,
+      "exit_code": 0,
+      "sql_sha256": "974a972340fe8949d69f90f01bb7835265671d4e3ce8fb69c80daf8cb7d3cba8"
+    }
+  ],
+  "legal_hashes": "PASS (10/10)",
+  "known_limitations": [
+    {
+      "issue": "Annex 1.3 B-I/D-I unresolved source fidelity anomalies",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "7 PARTIAL external dependencies; interpretation pending",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "No format mapping",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "No audit rules",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Textual fidelity not certified",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Human legal decisions require manual replay; Gate 1/2 report generators are not standalone scripts",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    },
+    {
+      "issue": "Phase 1 master and Phase 2 pre-materialization mutable assertions mismatch the later state; intact historical evidence preserved",
+      "classification": "HISTORICAL"
+    },
+    {
+      "issue": "Three absolute local_file paths are not portable",
+      "classification": "NON_BLOCKING_KNOWN_LIMITATION"
+    }
+  ],
+  "scope_exclusions": [
+    "Legal interpretation",
+    "Textual fidelity certification",
+    "Legal compliance assessment",
+    "Format mapping",
+    "Audit rules",
+    "Phase 3 execution"
+  ],
+  "project_baseline_sha256": "541b19b2d4b47d9639a346df9531ec163e92c96f2a5f56d7413a07620ffb0da3",
+  "current_state_sha256": "1926a19ab7a779fcb4bdb256499a2e703696f92460c458b4f757bc9668141871",
+  "db_sha_before": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "db_sha_after": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+  "db_changed": false,
+  "validation_evidence": "03_Compliance/reports/phase_2/freeze/promotion_resume/run_001",
+  "approved_candidate_sha256": "1ab711ce678dbb39ee88ce654d2d3ac5a01cc9b435277a21fa276ddbca7d4315"
+}

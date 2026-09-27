@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "010",
+    "operator_display_name":  "Rodil",
+    "operator_slug":  "rodil",
+    "family":  "FAMILY_B_SME_OPERATIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/010_rodil/02_sources/gtfs_schedule/original/20260309_110029_BUS_RODIL.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "3113B5B5E78BB8D97E4895B41564A80799B087F2A86C4E28019D7DB05BE98FAF"
+                         },
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/010_rodil/01_nap_snapshot/Rodil.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "C1B2E279D3D77D9758117493ADE7E618ECC0418909929E27B551A9EBBCD6B7A2"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

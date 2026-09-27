@@ -1,0 +1,235 @@
+[
+  {
+    "name": "tuvisa_notice",
+    "url": "https://www.euskadi.eus/anuncio_contratacion/desarrollo-despliegue-y-validacion-datos-transporte-avanzados-formatos-gtfs-gtfs-rt-siri-y-netex/web01-tramite/es/",
+    "resolved_url": "https://www.euskadi.eus/anuncio_contratacion/desarrollo-despliegue-y-validacion-datos-transporte-avanzados-formatos-gtfs-gtfs-rt-siri-y-netex/web01-tramite/es/",
+    "consulted": "2026-09-27",
+    "sha256": "cb1eb61fa3834ec45739e398d74f083b89182ed5f6efde98e0826d25aad88816",
+    "bytes": 63928,
+    "file": "tuvisa_notice.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "attg_notice",
+    "url": "https://www.euskadi.eus/web01-tramite/es/contenidos/anuncio_contratacion/expjaso16796/es_doc/es_arch_expjaso16796.html",
+    "resolved_url": "https://www.euskadi.eus/web01-tramite/es/contenidos/anuncio_contratacion/expjaso16796/es_doc/es_arch_expjaso16796.html",
+    "consulted": "2026-09-27",
+    "sha256": "d590c9e2232060db6103152fc2086743dd848024baf2f7ffa924924bf0b857e8",
+    "bytes": 79742,
+    "file": "attg_notice.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "attg_ppt",
+    "url": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso16796/es_doc/adjuntos/pliego_bases_tecnicas1.pdf",
+    "resolved_url": "https://www.contratacion.euskadi.eus/webkpe00-kpeperfi/es/contenidos/anuncio_contratacion/expjaso16796/es_doc/adjuntos/pliego_bases_tecnicas1.pdf",
+    "consulted": "2026-09-27",
+    "sha256": "f3c97211901ea78ffa8adc7980d7b7de330ed8aacf6d2f24717d74f56c37a0eb",
+    "bytes": 483414,
+    "file": "attg_ppt.pdf",
+    "status": "SAVED"
+  },
+  {
+    "name": "ctm_document",
+    "url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?DocumentIdParam=9259f10b-7ff6-4991-b8d1-6d948a5fc1a5&cmpntname=GetDocumentsById&source=library&srv=cmpnt",
+    "resolved_url": "https://contrataciondelestado.es/wps/wcm/connect/PLACE_es/Site/area/docAccCmpnt?DocumentIdParam=9259f10b-7ff6-4991-b8d1-6d948a5fc1a5&cmpntname=GetDocumentsById&source=library&srv=cmpnt",
+    "consulted": "2026-09-27",
+    "sha256": "7a58b79982ca9acc9815a6941c7ea378bc66ebf6ab88071730160141cf81baf2",
+    "bytes": 466896,
+    "file": "ctm_document.pdf",
+    "status": "SAVED"
+  },
+  {
+    "name": "puglia_purchase",
+    "url": "https://trasparenza.regione.puglia.it/sites/default/files/2024-07/078_DIR_2024_00076_DeterminaPUB.pdf",
+    "resolved_url": "https://trasparenza.regione.puglia.it/sites/default/files/2024-07/078_DIR_2024_00076_DeterminaPUB.pdf",
+    "consulted": "2026-09-27",
+    "sha256": "cbc0d7ab0e4e1d038af1e4b7df333232420c311dc288679882689f702362e2b8",
+    "bytes": 296665,
+    "file": "puglia_purchase.pdf",
+    "status": "SAVED"
+  },
+  {
+    "name": "wiltshire_award",
+    "url": "https://www.find-tender.service.gov.uk/Notice/023202-2022",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "bods_notice",
+    "url": "https://www.find-tender.service.gov.uk/Notice/025414-2023",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "ley9_consolidated",
+    "url": "https://www.boe.es/eli/es/l/2025/12/03/9/con",
+    "resolved_url": "https://www.boe.es/eli/es/l/2025/12/03/9/con",
+    "consulted": "2026-09-27",
+    "sha256": "862eaf499241a554709c897d2326e846753a6d77a7dc21955944e7ecdc3fa3b7",
+    "bytes": 643552,
+    "file": "ley9_consolidated.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "eu_2024_490",
+    "url": "https://eur-lex.europa.eu/eli/reg_del/2024/490/oj/spa/pdf",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "The read operation timed out"
+  },
+  {
+    "name": "eu_2017_1926",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:02017R1926-20240304",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "The read operation timed out"
+  },
+  {
+    "name": "nap_catalog",
+    "url": "https://nap.transportes.gob.es/Files/List?showFilterTT=true",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "name": "moveuskadi",
+    "url": "https://www.euskadi.eus/contenidos/ds_movilidad/md_ideeu_moveuskadi/es_def/index.shtml",
+    "resolved_url": "https://www.euskadi.eus/contenidos/ds_movilidad/md_ideeu_moveuskadi/es_def/index.shtml",
+    "consulted": "2026-09-27",
+    "sha256": "4968e6fc8bf1a9242a422a6564ce130bd8c54f2d5966ee7b98405977da682509",
+    "bytes": 12562,
+    "file": "moveuskadi.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "enroute_chouette",
+    "url": "https://enroute.mobi/fr/chouette",
+    "resolved_url": "https://enroute.mobi/fr/chouette",
+    "consulted": "2026-09-27",
+    "sha256": "5d57ee17bd22fc2ddebe33cce154d470addba70891f3813a9ccb175be4a02f6d",
+    "bytes": 55054,
+    "file": "enroute_chouette.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "enroute_operator",
+    "url": "https://enroute.mobi/fr/operator",
+    "resolved_url": "https://enroute.mobi/fr/operator",
+    "consulted": "2026-09-27",
+    "sha256": "65c4c3723fed074e9f4772e879fbcb928b5571db0e10675f0478a8af3ab75a16",
+    "bytes": 118157,
+    "file": "enroute_operator.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "trillium_terms",
+    "url": "https://trilliumtransit.com/gtfs-maintenance-terms-of-service/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "trillium_gtfs",
+    "url": "https://trilliumtransit.com/gtfs/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "ito_quality",
+    "url": "https://www.itoworld.com/inside-ito/why-ito/data-quality/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "mobilitydata_readme",
+    "url": "https://raw.githubusercontent.com/MobilityData/gtfs-validator/master/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/MobilityData/gtfs-validator/master/README.md",
+    "consulted": "2026-09-27",
+    "sha256": "7e78048de0a82203c7324019b2b1fc5acf64acd84758582505622842d1963994",
+    "bytes": 15192,
+    "file": "mobilitydata_readme.md",
+    "status": "SAVED"
+  },
+  {
+    "name": "mobilitydata_rules",
+    "url": "https://gtfs-validator.mobilitydata.org/rules.html",
+    "resolved_url": "https://gtfs-validator.mobilitydata.org/rules.html",
+    "consulted": "2026-09-27",
+    "sha256": "25c40a45fcd2df49925fab5af75a17bc015103b7e4c78de2f7d6987c92970325",
+    "bytes": 920584,
+    "file": "mobilitydata_rules.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "mobilitydata_web",
+    "url": "https://gtfs-validator.mobilitydata.org/",
+    "resolved_url": "https://gtfs-validator.mobilitydata.org/",
+    "consulted": "2026-09-27",
+    "sha256": "6418a9999102ebc6ea8f8219ef39e35302338807ae3581ccebd704eac9cb28c6",
+    "bytes": 1891,
+    "file": "mobilitydata_web.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "rt_validator",
+    "url": "https://raw.githubusercontent.com/MobilityData/gtfs-realtime-validator/master/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/MobilityData/gtfs-realtime-validator/master/README.md",
+    "consulted": "2026-09-27",
+    "sha256": "fcc51395a0f6be5d795b6512d531d8d9dd00370a1aba07f1d7c6b7b5b8219d14",
+    "bytes": 11537,
+    "file": "rt_validator.md",
+    "status": "SAVED"
+  },
+  {
+    "name": "otp_formats",
+    "url": "https://docs.opentripplanner.org/en/latest/features-explained/Netex-Siri-Compatibility/",
+    "resolved_url": "https://docs.opentripplanner.org/en/latest/features-explained/Netex-Siri-Compatibility/",
+    "consulted": "2026-09-27",
+    "sha256": "afaf36f1c34ce548b5ef5e9ceb97a3ea8fa513bc7784683f5065cead1fb7dad4",
+    "bytes": 48188,
+    "file": "otp_formats.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "gtfs_best_practices",
+    "url": "https://gtfs.org/documentation/schedule/schedule-best-practices/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "siri_france",
+    "url": "https://normes.transport.data.gouv.fr/normes/siri/profil-france/",
+    "resolved_url": "https://normes.transport.data.gouv.fr/normes/siri/profil-france/",
+    "consulted": "2026-09-27",
+    "sha256": "b5af23bf0b446011dc28361db379169b1bfbd98f36775dc9734143ef224d735e",
+    "bytes": 867995,
+    "file": "siri_france.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "netex_france",
+    "url": "https://normes.transport.data.gouv.fr/normes/netex/elements_communs/",
+    "resolved_url": "https://normes.transport.data.gouv.fr/normes/netex/elements_communs/",
+    "consulted": "2026-09-27",
+    "sha256": "9dd14dc2be21d7dc1d58fdb608204cd83f88db27c9a901c41e12e3d939a5f117",
+    "bytes": 369178,
+    "file": "netex_france.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "entur_siri",
+    "url": "https://entur.atlassian.net/wiki/spaces/PUBLIC/pages/637370373/General+information+SIRI",
+    "resolved_url": "https://entur.atlassian.net/wiki/spaces/PUBLIC/pages/637370373/General+information+SIRI",
+    "consulted": "2026-09-27",
+    "sha256": "75239cbcad0c5d783654a1159ef1a66d2dd6540b00910cf09bd876efec0f6eb8",
+    "bytes": 1676744,
+    "file": "entur_siri.html",
+    "status": "SAVED"
+  }
+]

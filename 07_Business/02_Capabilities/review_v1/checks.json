@@ -1,0 +1,1661 @@
+[
+  {
+    "check": "evidence_count",
+    "status": "PASS",
+    "detail": 28
+  },
+  {
+    "check": "path_count",
+    "status": "PASS",
+    "detail": 76
+  },
+  {
+    "check": "path:project_baseline.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "541b19b2d4b47d9639a346df9531ec163e92c96f2a5f56d7413a07620ffb0da3",
+      "actual": "541b19b2d4b47d9639a346df9531ec163e92c96f2a5f56d7413a07620ffb0da3"
+    }
+  },
+  {
+    "check": "path:PROJECT_CURRENT_STATE.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "1926a19ab7a779fcb4bdb256499a2e703696f92460c458b4f757bc9668141871",
+      "actual": "1926a19ab7a779fcb4bdb256499a2e703696f92460c458b4f757bc9668141871"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/databases/gtfs_lab.duckdb",
+    "status": "PASS",
+    "detail": {
+      "expected": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+      "actual": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/feeds/raw/20260924_020003_Consorcio_Asturias.zip",
+    "status": "PASS",
+    "detail": {
+      "expected": "f3093ab85d728ee824ba45cd3f247d1d9ea68a4685aaf25b27a8de98ea50b549",
+      "actual": "f3093ab85d728ee824ba45cd3f247d1d9ea68a4685aaf25b27a8de98ea50b549"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/sql/01_import/20260924_020003_import_consorcio_asturias.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "91cc3dfe7145426db892cccb115abcb0622f5f5b318cc62b015ddef0fc938c62",
+      "actual": "91cc3dfe7145426db892cccb115abcb0622f5f5b318cc62b015ddef0fc938c62"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/sql/01_import/run_import_consorcio_asturias.ps1",
+    "status": "PASS",
+    "detail": {
+      "expected": "894240131b36a056c7b656d1570c22058e591386d8d50f35709359aa0ad3ba50",
+      "actual": "894240131b36a056c7b656d1570c22058e591386d8d50f35709359aa0ad3ba50"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/sql/07_tests/test_gtfs_lab_integrity.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "8faee3ad03c65d6858104e2e1da20da5dce3b1e780de568f6efa44f86447def0",
+      "actual": "8faee3ad03c65d6858104e2e1da20da5dce3b1e780de568f6efa44f86447def0"
+    }
+  },
+  {
+    "check": "path:reports/repository_integrity/phase_1_5/gtfs_integrity.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "1abce89bed94996a01c788ffefb616c3fbd89b1c7d276ef5e3fab1771df656d8",
+      "actual": "1abce89bed94996a01c788ffefb616c3fbd89b1c7d276ef5e3fab1771df656d8"
+    }
+  },
+  {
+    "check": "path:reports/repository_integrity/GTFS_INTEGRITY_REPORT.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "cecedd15aacecf0ea946bf37f6d109bf277594a5ad7faeaceb660d204fa07b6a",
+      "actual": "cecedd15aacecf0ea946bf37f6d109bf277594a5ad7faeaceb660d204fa07b6a"
+    }
+  },
+  {
+    "check": "path:reports/repository_integrity/PHASE_1_5_STABILIZATION_REPORT.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "52b159cbc374f3e3f72e3f8f0906b48b85a7230d69b50aa885e2584d701159eb",
+      "actual": "52b159cbc374f3e3f72e3f8f0906b48b85a7230d69b50aa885e2584d701159eb"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/exports/route_440.kml",
+    "status": "PASS",
+    "detail": {
+      "expected": "ec4910135abcb79b2f80e9fe77e3d8fa3afec0488207abee16d654ad75a9b2d6",
+      "actual": "ec4910135abcb79b2f80e9fe77e3d8fa3afec0488207abee16d654ad75a9b2d6"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/exports/route_440_dir0.kml",
+    "status": "PASS",
+    "detail": {
+      "expected": "fdd2d0c5398db95f39aa53a742e5338a369ec387a320e53e17ffa3794a2c1e65",
+      "actual": "fdd2d0c5398db95f39aa53a742e5338a369ec387a320e53e17ffa3794a2c1e65"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/exports/route_440_dir1.kml",
+    "status": "PASS",
+    "detail": {
+      "expected": "d8078684945cab253a3f65d0b7c5268477b9db2cb8087224c4629f2b4c5c92ad",
+      "actual": "d8078684945cab253a3f65d0b7c5268477b9db2cb8087224c4629f2b4c5c92ad"
+    }
+  },
+  {
+    "check": "path:03_Compliance/databases/transit_compliance.duckdb",
+    "status": "PASS",
+    "detail": {
+      "expected": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3",
+      "actual": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_FORMAL_FREEZE.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "117837aacfba3f136f5c0cd171d7e1dd00c34e3cdf531eee43e0b202cdf80a05",
+      "actual": "117837aacfba3f136f5c0cd171d7e1dd00c34e3cdf531eee43e0b202cdf80a05"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_FORMAL_FREEZE.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "d15a91ba1099305e67a8479ec7ef87b23d541775ce2e6ccc7120758dadb5b7b3",
+      "actual": "d15a91ba1099305e67a8479ec7ef87b23d541775ce2e6ccc7120758dadb5b7b3"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/LEGAL_SOURCE_HASH_CHECKS.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "324b1801107dd5313f8b66ce83305f368f2048d3d3ab0c0fb0ee7c2732273908",
+      "actual": "324b1801107dd5313f8b66ce83305f368f2048d3d3ab0c0fb0ee7c2732273908"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_REQUIREMENTS.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "f46f98339ebe4c6194be23b5a9800346df659c6a9df68c0a101a0b07e46fee72",
+      "actual": "f46f98339ebe4c6194be23b5a9800346df659c6a9df68c0a101a0b07e46fee72"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_SOURCE_FACTS.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "5f82d4153adf5b1139d4e9abc182904cfd3e7775027d2b837878d6dc6a204907",
+      "actual": "5f82d4153adf5b1139d4e9abc182904cfd3e7775027d2b837878d6dc6a204907"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_DEADLINES.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "fd90dd1fbcdc6b80b086c58e4a4b630176ac9c308f936ea0c8a9da26284fc11b",
+      "actual": "fd90dd1fbcdc6b80b086c58e4a4b630176ac9c308f936ea0c8a9da26284fc11b"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/materialization/PHASE_2_REQUIREMENTS_MATERIALIZATION.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "54c5a374ba735490b8adabbb71e3aef7812e0ff21b40ad987a3fe2909605f016",
+      "actual": "54c5a374ba735490b8adabbb71e3aef7812e0ff21b40ad987a3fe2909605f016"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/materialization/materialize_requirements.py",
+    "status": "PASS",
+    "detail": {
+      "expected": "418b49b3123a071138687416f87ae7b149d45abc59c0d6294e7c1694e929ff06",
+      "actual": "418b49b3123a071138687416f87ae7b149d45abc59c0d6294e7c1694e929ff06"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/FINAL_TEST_RESULTS.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "65e878da5a99b0d325a0b66fb71f054956419863101960707c4ce9c041a281f7",
+      "actual": "65e878da5a99b0d325a0b66fb71f054956419863101960707c4ce9c041a281f7"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_phase_1_invariants.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "28a8671fae7d5ee04160c935e34895c635e719c9d8f5bf6f43c3d6d6c1b835c6",
+      "actual": "28a8671fae7d5ee04160c935e34895c635e719c9d8f5bf6f43c3d6d6c1b835c6"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_phase_1_invariants.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/phase_1/test_phase_1_invariants.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "b2a89c0d14842bc2ff5f7d5b561b60a7d3d76269004c1b71e10ffc5e7300332a",
+      "actual": "b2a89c0d14842bc2ff5f7d5b561b60a7d3d76269004c1b71e10ffc5e7300332a"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_master_structure.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "bc796cce428bf722e6670a1528f7d4d7cf767b852e1f967cb5903925e6acfab7",
+      "actual": "bc796cce428bf722e6670a1528f7d4d7cf767b852e1f967cb5903925e6acfab7"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_master_structure.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_master_structure.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "db2b5366319769e3a739e7629d8e04f7f79afd0528d02374a1e9933f455e194b",
+      "actual": "db2b5366319769e3a739e7629d8e04f7f79afd0528d02374a1e9933f455e194b"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_1.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "0e2cce8c5060c202ced50976d4d45103a987df00e2e4e411b2ed8a25d76170e3",
+      "actual": "0e2cce8c5060c202ced50976d4d45103a987df00e2e4e411b2ed8a25d76170e3"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_1.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_1_1.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "93f4715baefbe8c9cdc158a01bcbdd20fe93bbcb3f0512741126d0d11244b5d0",
+      "actual": "93f4715baefbe8c9cdc158a01bcbdd20fe93bbcb3f0512741126d0d11244b5d0"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_2.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "b9d2731721fa01cf08c82d1c06d1e9d211806c91e341af74b579b934240fed89",
+      "actual": "b9d2731721fa01cf08c82d1c06d1e9d211806c91e341af74b579b934240fed89"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_2.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_1_2.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "f2265f6bbc4fb2df1e829eaa98464197a1a2130fa95b213aa2441c983d437d69",
+      "actual": "f2265f6bbc4fb2df1e829eaa98464197a1a2130fa95b213aa2441c983d437d69"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_3.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "6976688459780905208ab896ed8cc4a90ff4f485169e1c34571aea3dc4929370",
+      "actual": "6976688459780905208ab896ed8cc4a90ff4f485169e1c34571aea3dc4929370"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_3.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_1_3.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "196a32123a84ef5d79fd366c68b5c1e5f14ba60b90f26a9cc3ef1c437844af1c",
+      "actual": "196a32123a84ef5d79fd366c68b5c1e5f14ba60b90f26a9cc3ef1c437844af1c"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_4.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "e50b4bd78a26f35b181e97b9a05cf5256c7d7105a3d8890b005b19b88a073ba4",
+      "actual": "e50b4bd78a26f35b181e97b9a05cf5256c7d7105a3d8890b005b19b88a073ba4"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_1_4.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_1_4.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "6d89324b08f93db8c8881f82711216ca80a96d7d627d091501fade308b9daf39",
+      "actual": "6d89324b08f93db8c8881f82711216ca80a96d7d627d091501fade308b9daf39"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_1.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "c06e25122855e077b4396ba6686e504c82b7af3e493508ceacf8c00545c50049",
+      "actual": "c06e25122855e077b4396ba6686e504c82b7af3e493508ceacf8c00545c50049"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_1.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_2_1.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "da3f0f3f110e9d55b3c3cc159c5558ec579c556e3230d64fdd5421e1ebc0c5b6",
+      "actual": "da3f0f3f110e9d55b3c3cc159c5558ec579c556e3230d64fdd5421e1ebc0c5b6"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_2.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "5562a146a804e38e740d1ff59c35d135ced94caa836ac4efec65bf8d634fce8c",
+      "actual": "5562a146a804e38e740d1ff59c35d135ced94caa836ac4efec65bf8d634fce8c"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_2.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_2_2.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "b3656f2539549c5bd178ed8e58b35a01d6ed275469072db52309789191187a6a",
+      "actual": "b3656f2539549c5bd178ed8e58b35a01d6ed275469072db52309789191187a6a"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_3.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "39d608920a18a280a46fbff0b1ad36099cbee7fe19da8702ce90e969fd4d8f60",
+      "actual": "39d608920a18a280a46fbff0b1ad36099cbee7fe19da8702ce90e969fd4d8f60"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_eu_2017_1926_annex_2_3.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/source/test_eu_2017_1926_annex_2_3.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "778afdf1ec09cbfb5f4ad99eebef2f451dc67b2d5f9cdee9e60f5c530ac779da",
+      "actual": "778afdf1ec09cbfb5f4ad99eebef2f451dc67b2d5f9cdee9e60f5c530ac779da"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_phase_2_post_materialization_gate.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "a556697bf92c4e8f4462c1bf8be7b4a1a54bb8fe22749e8484bc627bd19c80a6",
+      "actual": "a556697bf92c4e8f4462c1bf8be7b4a1a54bb8fe22749e8484bc627bd19c80a6"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/test_phase_2_post_materialization_gate.exit_code.txt",
+    "status": "PASS",
+    "detail": {
+      "expected": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+      "actual": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/07_tests/phase_2/test_phase_2_post_materialization_gate.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "974a972340fe8949d69f90f01bb7835265671d4e3ce8fb69c80daf8cb7d3cba8",
+      "actual": "974a972340fe8949d69f90f01bb7835265671d4e3ce8fb69c80daf8cb7d3cba8"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/freeze/PHASE_2_REPRODUCIBILITY_MATRIX.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "05f1c26b7fe2d408fb482a146c5e62d943fa1915c00a7bfe8cae08f358955e61",
+      "actual": "05f1c26b7fe2d408fb482a146c5e62d943fa1915c00a7bfe8cae08f358955e61"
+    }
+  },
+  {
+    "check": "path:03_Compliance/TEST_BASELINE_POLICY.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "fd26a072aa184187bdbfa27b5a3b0157298e595f7ec525efa8d2a2a15f323db5",
+      "actual": "fd26a072aa184187bdbfa27b5a3b0157298e595f7ec525efa8d2a2a15f323db5"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/review/gate_1/HUMAN_DECISION_MATRIX_V1.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "59fb133a0c2803feb9c7832c97f8f15985eedc7e57b74f6712b38a52272a54c9",
+      "actual": "59fb133a0c2803feb9c7832c97f8f15985eedc7e57b74f6712b38a52272a54c9"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/review/gate_1/GATE_1_RECONCILIATION.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "31aeb68e3f77d182c3ae2b144850721318f156ca313baaa599d467940b7e3d8a",
+      "actual": "31aeb68e3f77d182c3ae2b144850721318f156ca313baaa599d467940b7e3d8a"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/review/gate_2/resolution/GATE_2_FINAL_ATOMIC_UNIVERSE.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "4f7c0a3342a91c148a56c6f73c50a384501f1baff5b61e278e322193624906c5",
+      "actual": "4f7c0a3342a91c148a56c6f73c50a384501f1baff5b61e278e322193624906c5"
+    }
+  },
+  {
+    "check": "path:03_Compliance/reports/phase_2/review/gate_2/resolution/GATE_2_EXCEPTION_RESOLUTION.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "1137de90d01ffb6aab7efa4bdc1cc53a36e1452665dc42846b6af1f38633da95",
+      "actual": "1137de90d01ffb6aab7efa4bdc1cc53a36e1452665dc42846b6af1f38633da95"
+    }
+  },
+  {
+    "check": "path:03_Compliance/sql/00_setup/001_create_compliance_database.sql",
+    "status": "PASS",
+    "detail": {
+      "expected": "74cc1273b58ac8560dec4c01a13ad1a873de2cfddcd78b0bae66e41cd50b7061",
+      "actual": "74cc1273b58ac8560dec4c01a13ad1a873de2cfddcd78b0bae66e41cd50b7061"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "293caa25d298e802fd9a759cf22ca1e8f89d6711e68a5a001724a3222153fe3d",
+      "actual": "293caa25d298e802fd9a759cf22ca1e8f89d6711e68a5a001724a3222153fe3d"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/README.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "ba404f7307cd83eeb6abedb1c49c7bbf8afc235464a9fa28ac770b873fc42920",
+      "actual": "ba404f7307cd83eeb6abedb1c49c7bbf8afc235464a9fa28ac770b873fc42920"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/source_census.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "0741520fbac7d03b79c246d4d36545d14204d68d8c7e2ebc1aa836cae7a4fbfa",
+      "actual": "0741520fbac7d03b79c246d4d36545d14204d68d8c7e2ebc1aa836cae7a4fbfa"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/source_census.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "581c4a536db456708939504957e7d7ec48b43851075ae2dc7f7a24c295665907",
+      "actual": "581c4a536db456708939504957e7d7ec48b43851075ae2dc7f7a24c295665907"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/tools/generate_pilot_01.py",
+    "status": "PASS",
+    "detail": {
+      "expected": "6cbb5333048449897aa05a6e66c4c824d6ef03e049460109bed321adcf579622",
+      "actual": "6cbb5333048449897aa05a6e66c4c824d6ef03e049460109bed321adcf579622"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/tools/audit_gtfs_explorer_pilot_01.py",
+    "status": "PASS",
+    "detail": {
+      "expected": "bc0d37279a52fcdbc133ec6cf79d703a9684bcf62f3ba0c3d46a85532c2889ab",
+      "actual": "bc0d37279a52fcdbc133ec6cf79d703a9684bcf62f3ba0c3d46a85532c2889ab"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/differential_matrix.csv",
+    "status": "PASS",
+    "detail": {
+      "expected": "dbb73f5e17baa786dcde2e3770d8d4518fcb681a921d22daa5e68eedfbbe0d35",
+      "actual": "dbb73f5e17baa786dcde2e3770d8d4518fcb681a921d22daa5e68eedfbbe0d35"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/final_report.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "aafdff8b3bd05af407c0edc4949f83afd7df00c546bd5059797216e723eff49a",
+      "actual": "aafdff8b3bd05af407c0edc4949f83afd7df00c546bd5059797216e723eff49a"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PILOT_01_EVIDENCE_MODEL_OBSERVATIONS.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "c560ca7babcec0c36684242be521880ef7727bae9df6a6cea99bddeba4d917e8",
+      "actual": "c560ca7babcec0c36684242be521880ef7727bae9df6a6cea99bddeba4d917e8"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/informe-validacion.html",
+    "status": "PASS",
+    "detail": {
+      "expected": "d67c57a206e0d052bdbd78cdd3bde1a1eacd41681f3547bb6341253ef46e7d5f",
+      "actual": "d67c57a206e0d052bdbd78cdd3bde1a1eacd41681f3547bb6341253ef46e7d5f"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/informe-validacion.html.manifest.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "22c15f172042235bd792af66b3b15a5298e2edf403fff2a554b0cc1d07a78197",
+      "actual": "22c15f172042235bd792af66b3b15a5298e2edf403fff2a554b0cc1d07a78197"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/gtfs-export-route-AH-H-L2-L3-service-1-2-json.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "8de77f94cac49559d070dd06211afc7ce75a63adf69a9aa6de2d19d1a9608048",
+      "actual": "8de77f94cac49559d070dd06211afc7ce75a63adf69a9aa6de2d19d1a9608048"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/gtfs-export-route-AH-H-L2-L3-service-1-2-json.json.manifest.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "42245ad3f7ec9328e260775b11bffe26f41c042f414080f8b065a801b91af848",
+      "actual": "42245ad3f7ec9328e260775b11bffe26f41c042f414080f8b065a801b91af848"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/README.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "894e561f8aca810b1798b8247b2659c7a4395ea968ba0e31c80a3ca88c1d913f",
+      "actual": "894e561f8aca810b1798b8247b2659c7a4395ea968ba0e31c80a3ca88c1d913f"
+    }
+  },
+  {
+    "check": "path:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/run_004_gtfs023_candidate001/project.json",
+    "status": "PASS",
+    "detail": {
+      "expected": "8e3440b1691e13605c1e27d54d00bc235eea7f7a3404289b08c2d51604702c65",
+      "actual": "8e3440b1691e13605c1e27d54d00bc235eea7f7a3404289b08c2d51604702c65"
+    }
+  },
+  {
+    "check": "path:03_Compliance/PHASE_2_REQUIREMENTS_ENGINE.md",
+    "status": "PASS",
+    "detail": {
+      "expected": "79f6c49991bd216786464d48bb8cbd6662d118cdb14b826c736f62c3b3658a73",
+      "actual": "79f6c49991bd216786464d48bb8cbd6662d118cdb14b826c736f62c3b3658a73"
+    }
+  },
+  {
+    "check": "capability_links:TDL-CAP-001",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-002",
+      "TDL-EVD-003",
+      "TDL-EVD-004",
+      "TDL-EVD-005",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-001:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-001:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-001:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-001:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-002",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-002",
+      "TDL-EVD-003",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-002:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-002:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-002:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-002:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-003",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-002",
+      "TDL-EVD-006",
+      "TDL-EVD-007",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-003:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-003:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-003:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-003:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-004",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-002",
+      "TDL-EVD-006",
+      "TDL-EVD-007",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-004:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-004:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-004:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-004:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-005",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-008",
+      "TDL-EVD-009"
+    ]
+  },
+  {
+    "check": "TDL-CAP-005:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-005:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-005:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-005:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-006",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-006",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-006:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-006:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-006:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-006:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-007",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-006",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-007:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-007:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-007:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-007:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-008",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-001",
+      "TDL-EVD-006",
+      "TDL-EVD-008"
+    ]
+  },
+  {
+    "check": "TDL-CAP-008:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-008:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-008:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-008:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-009",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-010",
+      "TDL-EVD-011",
+      "TDL-EVD-012",
+      "TDL-EVD-015",
+      "TDL-EVD-017"
+    ]
+  },
+  {
+    "check": "TDL-CAP-009:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-009:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-009:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-009:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-010",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-010",
+      "TDL-EVD-011",
+      "TDL-EVD-013",
+      "TDL-EVD-014",
+      "TDL-EVD-015",
+      "TDL-EVD-018",
+      "TDL-EVD-019",
+      "TDL-EVD-028"
+    ]
+  },
+  {
+    "check": "TDL-CAP-010:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-010:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-010:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-010:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-011",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-011",
+      "TDL-EVD-016",
+      "TDL-EVD-018",
+      "TDL-EVD-019"
+    ]
+  },
+  {
+    "check": "TDL-CAP-011:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-011:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-011:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-011:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-012",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-010",
+      "TDL-EVD-011",
+      "TDL-EVD-015",
+      "TDL-EVD-017"
+    ]
+  },
+  {
+    "check": "TDL-CAP-012:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-012:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-012:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-012:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-013",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-014",
+      "TDL-EVD-016",
+      "TDL-EVD-017",
+      "TDL-EVD-018",
+      "TDL-EVD-019"
+    ]
+  },
+  {
+    "check": "TDL-CAP-013:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-013:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-013:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-013:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-014",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-010",
+      "TDL-EVD-011",
+      "TDL-EVD-020",
+      "TDL-EVD-028"
+    ]
+  },
+  {
+    "check": "TDL-CAP-014:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-014:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-014:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-014:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-015",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-010",
+      "TDL-EVD-011",
+      "TDL-EVD-020",
+      "TDL-EVD-028"
+    ]
+  },
+  {
+    "check": "TDL-CAP-015:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-015:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-015:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-015:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-016",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-021",
+      "TDL-EVD-022",
+      "TDL-EVD-023"
+    ]
+  },
+  {
+    "check": "TDL-CAP-016:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-016:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-016:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-016:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-017",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-024",
+      "TDL-EVD-025",
+      "TDL-EVD-027"
+    ]
+  },
+  {
+    "check": "TDL-CAP-017:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-017:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-017:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-017:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-018",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-024",
+      "TDL-EVD-025",
+      "TDL-EVD-026"
+    ]
+  },
+  {
+    "check": "TDL-CAP-018:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-018:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-018:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-018:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-019",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-022",
+      "TDL-EVD-023",
+      "TDL-EVD-024",
+      "TDL-EVD-027"
+    ]
+  },
+  {
+    "check": "TDL-CAP-019:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-019:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-019:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-019:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "capability_links:TDL-CAP-020",
+    "status": "PASS",
+    "detail": [
+      "TDL-EVD-024"
+    ]
+  },
+  {
+    "check": "TDL-CAP-020:Limitaciones",
+    "status": "PASS",
+    "detail": "Limitaciones"
+  },
+  {
+    "check": "TDL-CAP-020:Dependencias",
+    "status": "PASS",
+    "detail": "Dependencias"
+  },
+  {
+    "check": "TDL-CAP-020:Afirmación comercial permitida",
+    "status": "PASS",
+    "detail": "Afirmación comercial permitida"
+  },
+  {
+    "check": "TDL-CAP-020:Afirmaciones NO permitidas",
+    "status": "PASS",
+    "detail": "Afirmaciones NO permitidas"
+  },
+  {
+    "check": "distribution",
+    "status": "PASS",
+    "detail": {
+      "EXISTING": 11,
+      "PENDING_VERIFICATION": 3,
+      "PLANNED": 4,
+      "IN_DEVELOPMENT": 2
+    }
+  },
+  {
+    "check": "sentinel_exit",
+    "status": "PASS",
+    "detail": {
+      "command": [
+        "duckdb",
+        "-no-init",
+        "-batch",
+        "-bail",
+        "-readonly",
+        "-json",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\databases\\gtfs_lab.duckdb"
+      ],
+      "exit_code": 0
+    }
+  },
+  {
+    "check": "sentinel_expected_warning",
+    "status": "PASS",
+    "detail": {
+      "PASS": 42,
+      "FAIL": 4
+    }
+  },
+  {
+    "check": "sentinel_absent_layers",
+    "status": "PASS",
+    "detail": [
+      {
+        "check_family": "SCHEMA",
+        "check_name": "analysis",
+        "expected": "present",
+        "actual": "absent",
+        "status": "FAIL"
+      },
+      {
+        "check_family": "SCHEMA",
+        "check_name": "core",
+        "expected": "present",
+        "actual": "absent",
+        "status": "FAIL"
+      },
+      {
+        "check_family": "SCHEMA",
+        "check_name": "validation",
+        "expected": "present",
+        "actual": "absent",
+        "status": "FAIL"
+      },
+      {
+        "check_family": "RELATION",
+        "check_name": "validation.results",
+        "expected": "present",
+        "actual": "absent",
+        "status": "FAIL"
+      }
+    ]
+  },
+  {
+    "check": "raw_columns_exit",
+    "status": "PASS",
+    "detail": {
+      "command": [
+        "duckdb",
+        "-no-init",
+        "-batch",
+        "-bail",
+        "-readonly",
+        "-json",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\databases\\gtfs_lab.duckdb"
+      ],
+      "exit_code": 0
+    }
+  },
+  {
+    "check": "raw_varchar",
+    "status": "PASS",
+    "detail": 37
+  },
+  {
+    "check": "asturias_zip_extraction",
+    "status": "PASS",
+    "detail": [
+      {
+        "entry": "agency.txt",
+        "zip_sha": "f58a6add2a32d7bc46a087a5c960279f05607aa46763d7dcce2e51da60f63dc8",
+        "extracted_sha": "f58a6add2a32d7bc46a087a5c960279f05607aa46763d7dcce2e51da60f63dc8"
+      },
+      {
+        "entry": "calendar_dates.txt",
+        "zip_sha": "367407f5b02f8ecd42b3477810dab0c0d4b59eab3b12baabe8d4d530a399464c",
+        "extracted_sha": "367407f5b02f8ecd42b3477810dab0c0d4b59eab3b12baabe8d4d530a399464c"
+      },
+      {
+        "entry": "routes.txt",
+        "zip_sha": "6f462dfbc81c35e0c435ae0add8b9bd5bd39dc1c763b2471d8df2f93083be10f",
+        "extracted_sha": "6f462dfbc81c35e0c435ae0add8b9bd5bd39dc1c763b2471d8df2f93083be10f"
+      },
+      {
+        "entry": "shapes.txt",
+        "zip_sha": "fceb6edc62e135f70d3ca6301cefe44c5edce6bc9f4f44da590a81321569f3c9",
+        "extracted_sha": "fceb6edc62e135f70d3ca6301cefe44c5edce6bc9f4f44da590a81321569f3c9"
+      },
+      {
+        "entry": "stops.txt",
+        "zip_sha": "8651047829b8f8972667fcfb2e395e02e925ceb7fc2dcbe1f9702c85ca4b04c7",
+        "extracted_sha": "8651047829b8f8972667fcfb2e395e02e925ceb7fc2dcbe1f9702c85ca4b04c7"
+      },
+      {
+        "entry": "stop_times.txt",
+        "zip_sha": "a75bcf443c1c34f79055834c457eaf824ffa9e9c7657bd3f85e2177731715ca9",
+        "extracted_sha": "a75bcf443c1c34f79055834c457eaf824ffa9e9c7657bd3f85e2177731715ca9"
+      },
+      {
+        "entry": "trips.txt",
+        "zip_sha": "8b4137f6df2c0fd2ea53dec36a136d63cb880345bc97f072d4cbdb4d54437fed",
+        "extracted_sha": "8b4137f6df2c0fd2ea53dec36a136d63cb880345bc97f072d4cbdb4d54437fed"
+      }
+    ]
+  },
+  {
+    "check": "compliance_catalog_exit",
+    "status": "PASS",
+    "detail": {
+      "command": [
+        "duckdb",
+        "-no-init",
+        "-batch",
+        "-bail",
+        "-readonly",
+        "-json",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+      ],
+      "exit_code": 0
+    }
+  },
+  {
+    "check": "compliance_counts_exit",
+    "status": "PASS",
+    "detail": {
+      "command": [
+        "duckdb",
+        "-no-init",
+        "-batch",
+        "-bail",
+        "-readonly",
+        "-json",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+      ],
+      "exit_code": 0
+    }
+  },
+  {
+    "check": "compliance_counts",
+    "status": "PASS",
+    "detail": {
+      "source.documents": 10,
+      "source.relationships": 6,
+      "source.provisions": 92,
+      "compliance.requirements": 48,
+      "compliance.source_facts": 36,
+      "compliance.deadlines": 10,
+      "mapping.format_coverage": 0,
+      "mapping.format_equivalences": 0,
+      "audit.rules": 0,
+      "audit.runs": 0,
+      "audit.results": 0
+    }
+  },
+  {
+    "check": "legal_source:EU-DIR-2010-40",
+    "status": "PASS",
+    "detail": "832deb51ce828b65c6e1b951bdae57194769838d47a0cd3013cc28f1bd420e58"
+  },
+  {
+    "check": "legal_source:EU-DIR-2023-2661",
+    "status": "PASS",
+    "detail": "d9a1a3fb35ae1db13861f8f9c32085bd2f9375d55eb74f979f0c912f86e133ab"
+  },
+  {
+    "check": "legal_source:EU-REG-2017-1926",
+    "status": "PASS",
+    "detail": "0a91ab5ffcf0466d588da8a8db7f7e7ed6d97b4d64576c31e083610fcd5b08d5"
+  },
+  {
+    "check": "legal_source:EU-REG-2024-490",
+    "status": "PASS",
+    "detail": "853f3cacdb5c5d4751c36b3938cdd20929a33c83cfe195679c3309fdbbd31eaf"
+  },
+  {
+    "check": "legal_source:ES-LAW-9-2025",
+    "status": "PASS",
+    "detail": "ba40df196ab7bf2ad74b840784b268cd8e75d213533d6aafdcd8c72c0386048c"
+  },
+  {
+    "check": "legal_source:EU-REG-2024-1679",
+    "status": "PASS",
+    "detail": "73b34f389d4493b62f553d28c740ee499b8feb1d7534dd1356efd9502d669c15"
+  },
+  {
+    "check": "legal_source:EU-REG-IMPL-2026-1554",
+    "status": "PASS",
+    "detail": "873bd419ebc3769f1d93e466767e971fd25c40caff2c768f98093654f70334e0"
+  },
+  {
+    "check": "legal_source:EU-REG-IMPL-2026-253",
+    "status": "PASS",
+    "detail": "eb6bfd69199d226758f6940896e0dd5c68ca15b1bf1f18f069827fa1d73de42f"
+  },
+  {
+    "check": "legal_source:EU-REG-2011-454",
+    "status": "PASS",
+    "detail": "8daa0f6f9aa6adc52f3b335d551ee2bf5d3c4572b51a9eb69bbad245f8847f14"
+  },
+  {
+    "check": "legal_source:EU-REG-2014-1305",
+    "status": "PASS",
+    "detail": "0ab0d946f518cc486a3dc2740865eedd5e616048f5ca674fe1b5de18f6137264"
+  },
+  {
+    "check": "persisted_suite:test_phase_1_invariants",
+    "status": "PASS",
+    "detail": {
+      "checks": 22,
+      "status_counts": {
+        "PASS": 22
+      },
+      "sql_sha256": "b2a89c0d14842bc2ff5f7d5b561b60a7d3d76269004c1b71e10ffc5e7300332a"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_master_structure",
+    "status": "PASS",
+    "detail": {
+      "checks": 22,
+      "status_counts": {
+        "PASS": 22
+      },
+      "sql_sha256": "db2b5366319769e3a739e7629d8e04f7f79afd0528d02374a1e9933f455e194b"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_1_1",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "93f4715baefbe8c9cdc158a01bcbdd20fe93bbcb3f0512741126d0d11244b5d0"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_1_2",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "f2265f6bbc4fb2df1e829eaa98464197a1a2130fa95b213aa2441c983d437d69"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_1_3",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "196a32123a84ef5d79fd366c68b5c1e5f14ba60b90f26a9cc3ef1c437844af1c"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_1_4",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "6d89324b08f93db8c8881f82711216ca80a96d7d627d091501fade308b9daf39"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_2_1",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "da3f0f3f110e9d55b3c3cc159c5558ec579c556e3230d64fdd5421e1ebc0c5b6"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_2_2",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "b3656f2539549c5bd178ed8e58b35a01d6ed275469072db52309789191187a6a"
+    }
+  },
+  {
+    "check": "persisted_suite:test_eu_2017_1926_annex_2_3",
+    "status": "PASS",
+    "detail": {
+      "checks": 9,
+      "status_counts": {
+        "PASS": 9
+      },
+      "sql_sha256": "778afdf1ec09cbfb5f4ad99eebef2f451dc67b2d5f9cdee9e60f5c530ac779da"
+    }
+  },
+  {
+    "check": "persisted_suite:test_phase_2_post_materialization_gate",
+    "status": "PASS",
+    "detail": {
+      "checks": 387,
+      "status_counts": {
+        "PASS": 387
+      },
+      "sql_sha256": "974a972340fe8949d69f90f01bb7835265671d4e3ce8fb69c80daf8cb7d3cba8"
+    }
+  },
+  {
+    "check": "snapshot:REQUIREMENTS",
+    "status": "PASS",
+    "detail": 48
+  },
+  {
+    "check": "snapshot:SOURCE_FACTS",
+    "status": "PASS",
+    "detail": 36
+  },
+  {
+    "check": "snapshot:DEADLINES",
+    "status": "PASS",
+    "detail": 10
+  },
+  {
+    "check": "manifest:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/informe-validacion.html.manifest.json",
+    "status": "PASS",
+    "detail": {
+      "artifact_name": "informe-validacion.html",
+      "schema_version": 1,
+      "sha256": "d67c57a206e0d052bdbd78cdd3bde1a1eacd41681f3547bb6341253ef46e7d5f",
+      "size_bytes": 630340
+    }
+  },
+  {
+    "check": "manifest:02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/run_001/gtfs-export-route-AH-H-L2-L3-service-1-2-json.json.manifest.json",
+    "status": "PASS",
+    "detail": {
+      "artifact_name": "gtfs-export-route-AH-H-L2-L3-service-1-2-json.json",
+      "schema_version": 1,
+      "sha256": "8de77f94cac49559d070dd06211afc7ce75a63adf69a9aa6de2d19d1a9608048",
+      "size_bytes": 1284917
+    }
+  },
+  {
+    "check": "census_five",
+    "status": "PASS",
+    "detail": [
+      "Ancebus",
+      "Viagón",
+      "Gilsanz",
+      "Kbus",
+      "Bizkaibus"
+    ]
+  },
+  {
+    "check": "census_zip:002",
+    "status": "FAIL",
+    "detail": {
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\002_ancebus\\02_sources\\gtfs_schedule\\original\\20250523_100004_Ancebus.zip",
+      "expected": "42BF756A88336DACB085EC49DBDD0F019FD37AFE7C7E5C24C1D8D2C1DF0DE27D"
+    }
+  },
+  {
+    "check": "census_zip:005",
+    "status": "FAIL",
+    "detail": {
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\005_viagon\\02_sources\\gtfs_schedule\\original\\20250604_080004_Viagon_Autocares.zip",
+      "expected": "F35192F9AC9F91E39F10357DAD6CC88EBDFFDEEDFC3BF4053B383D09636DE100"
+    }
+  },
+  {
+    "check": "census_zip:014",
+    "status": "FAIL",
+    "detail": {
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_C_COMPLEX_REGIONAL\\014_gilsanz\\02_sources\\gtfs_schedule\\original\\20260527_110752_Empresa_Gilsanz.zip",
+      "expected": "DA9DAA4F60D798FC45B3A71EF81926E447A1EAA6C061CDDF96C34EA3388272F9"
+    }
+  },
+  {
+    "check": "census_zip:020",
+    "status": "FAIL",
+    "detail": {
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\020_kbus\\02_sources\\gtfs_schedule\\original\\20250530_060158_Bus_Barakaldo.zip",
+      "expected": "65130FD01470593CD2E234177F3C4CB810154D0B8E13FBEE3AA91F1973072ACE"
+    }
+  },
+  {
+    "check": "census_zip:019",
+    "status": "FAIL",
+    "detail": {
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\019_bizkaibus\\02_sources\\gtfs_schedule\\original\\20260910_060014_Euskadi_Bizkaibus.zip",
+      "expected": "E15D963BA3DC774E47B4F9F46DBD954ECE6A720D49A71BFC22A104A12027BD73"
+    }
+  },
+  {
+    "check": "comparison_descriptive",
+    "status": "PASS",
+    "detail": {
+      "NOT_COMPARABLE": 15,
+      "UNKNOWN": 24
+    }
+  },
+  {
+    "check": "technical_unchanged",
+    "status": "PASS",
+    "detail": {
+      "files": 899,
+      "added": [],
+      "removed": [],
+      "changed": []
+    }
+  }
+]

@@ -1,0 +1,456 @@
+
+2022-OJS204-582917-en
+
+582917-2022 - CompetitionSee the notice on TED website 
+
+582917-2022
+
+582917-2022 - CompetitionFrance-Nantes: Miscellaneous software development services and computer systems
+OJ S 204/2022 21/10/2022
+Contract notice – utilities
+Services
+
+Legal Basis:
+Directive 2014/25/EU
+
+Section I: Contracting entity
+
+I.1. 
+
+Name and addresses
+Official name: semitan mandataire de Nantes Métropole
+Postal address: 3 rue Bellier - bP 64 605
+Town: Nantes Cedex 1
+NUTS code: FRG01 Loire-Atlantique
+Postal code: 44046
+Country: France
+Contact person: Service Commande Publique
+E-mail: marchespublics@semitan.fr
+Telephone: +33 251817700
+Internet address(es): 
+Main address: http://www.tan.fr
+Address of the buyer profile: http://marchespublics.semitan.fr
+
+I.3. 
+
+Communication
+The procurement documents are available for unrestricted and full direct access, free of charge, at: http://marchespublics.semitan.fr
+Additional information can be obtained from the abovementioned address
+Tenders or requests to participate must be submitted electronically via: http://marchespublics.semitan.fr
+
+I.6. 
+
+Main activity
+Recreation, culture and religion
+
+Section II: Object
+
+II.1. 
+
+Scope of the procurement
+
+II.1.1. 
+
+Title
+
+conception, développement, mise en oeuvre et maintenance d'une Gestion Centralisée de l'information Voyageurs et de l'information Trafic multimodales
+
+Reference number: 22MB4/262
+
+II.1.2. 
+
+Main CPV code
+72212900 Miscellaneous software development services and computer systems
+
+II.1.3. 
+
+Type of contract
+Services
+
+II.1.4. 
+
+Short description
+
+dans le cadre du mandat de rénovation de la chaîne d'information voyageurs, dans un contexte multimodal, la SEMITAN, mandataire de Nantes Métropole lance la présente consultation portant sur la conception, le développement, la mise en oeuvre et la maintenance d'une GCIV - gestion Centralisée de l'information Voyageurs - multimodale.
+
+ce projet de mise en place a été décomposé en trois modules :
+
+- module GCIV : import/export de données et administration de ces données
+
+- module Itr Info Trafic : import de données, diffusion des données et IHM de saisie des informations trafic
+
+- module Indicateurs et administration de la solution
+
+II.1.5. 
+
+Estimated total value
+
+II.1.6. 
+
+Information about lots
+This contract is divided into lots: no
+
+II.2. 
+
+Description
+
+II.2.2. 
+
+Additional CPV code(s)
+48440000 Financial analysis and accounting software package, 72000000 IT services: consulting, software development, Internet and support, 72220000 Systems and technical consultancy services, 72227000 Software integration consultancy services
+
+II.2.3. 
+
+Place of performance
+
+NUTS code: FRG01 Loire-Atlantique
+Main site or place of performance: 
+le projet se situe dans les locaux de la SEMITAN, rue BELLIER à Nantes
+
+II.2.4. 
+
+Description of the procurement
+
+le présent marché concerne la mise en place d'une solution de Gestion Centralisée d'information Voyageurs (Gciv) multimodale incluant l'ensemble des prestations (gestion de projet, études, développements, essais, recettes, formation, suivi, etc.) nécessaire à fournir un ensemble répondant à ces objectifs :
+
+-	Intégrer et agréger les données liées aux services de mobilité :
+
+- données provenant des services de mobilité (VLS, parking, covoiturage, autopartage, freefloating) avec pour les TC de la tan :
+
+- données de l'offre planifiée issues du logiciel de planification et de graphicage Hastus
+
+- données de l'offre temps réel issues des SAE tram et bus
+
+- données info trafic issues du module " Info trafic " dédié
+
+- données de tarification, de fréquentation, d'accessibilité.
+
+- Données TC d'autres Aom
+
+- enrichissement de données au travers de l'outil lui-même.
+
+-	être une plateforme de normalisation de la donnée :
+
+- intégrer nativement des formats normalisés (Netex, siri ...)
+
+- agréger un jeu de données normalisées, avec des données dans un format non normalisé
+
+- convertir des données normalisées (Exemple : convertir du Netex en GTFS ou du SIRI en Gtfs-Rt)
+
+- temporairement, convertir des données non normalisées en entrée et en sortie
+
+- vérifier la conformité des données à la norme (complétude des données obligatoires, vérification des typologies des champs, etc.).
+
+-	publier les données en open data :
+
+- vers le portail Open Data de NM (sous forme de fichiers via l'outil Open data soft existant.
+
+- Sous forme d'api via un nouveau frontal unique, performant et scalable.
+
+-	garantir une qualité de service globale et pérenne :
+
+- qualifier les flux et définir des API garantissant la tenue de la charge vis-à-vis des applications ré-utilisatrices (internes et open data)
+
+- être modulaire et évolutive tant sur les formats de données que sur leur volumétrie
+
+- fournir des indicateurs complets (fonctionnement propre et qualité de la donnée véhiculée)
+
+- garantir la sécurité, la disponibilité, la fiabilité et la maintenabilité.
+
+le détail complet des prestations figure au Cctp.
+
+Le présent marché est décomposé en une tranche ferme et en 5 tranches optionnelles, dont une à bons de commande. Ces tranches sont les suivantes :
+
+-	Tranche ferme :
+
+- module GCIV : import/export de données et administration de ces données
+
+- module Itr : import de données, diffusion des données et IHM de saisie des informations trafic
+
+- module Indicateurs et administration de la solution
+
+-	tranche optionnelle 1 - connecteur d'import depuis sae ineo (Tr)
+
+-	Tranche optionnelle 2 - connecteur d'import depuis sae navocap (Tr)
+
+-	Tranche optionnelle 3 - connecteur d'export vers le SIC Lumiplan
+
+-	Tranche optionnelle 4 - connecteur d'export vers le sae-iv ineo - offre théorique
+
+-	tranche optionnelle 5 à bons de commande - prestations complémentaires / développement d'une interface avec un opérateur
+
+la durée de la tranche ferme est de 24 mois à compter de la date de notification du marché.
+
+la durée des tranches optionnelles no1, 2, 3 et 4 est de 6 mois à compter de l'ordre de service prescrivant l'affermissement. 
+
+La date limite d'affermissement des tranches optionnelles no1 et 2 est le 1er juillet 2023 au plus tard.
+
+La date limite d'affermissement des tranches optionnelles no3 et 4 est le 1er janvier 2024 au plus tard.
+
+la durée de la tranche optionnelle no5 est de 5 mois à compter de l'ordre de service prescrivant son affermissement. La date limite d'affermissement de la tranche optionnelle no5 est le 1er juin 2024 au plus tard
+
+II.2.5. 
+
+Award criteria
+Price is not the only award criterion and all criteria are stated only in the procurement documents
+
+II.2.6. 
+
+Estimated value
+
+II.2.7. 
+
+Duration of the contract, framework agreement or dynamic purchasing system
+Duration in months: 46
+This contract is subject to renewal: no
+
+II.2.9. 
+
+Information about the limits on the number of candidates to be invited
+Envisaged minimum number: 2Maximum number: 5Objective criteria for choosing the limited number of candidates: 
+
+mise en concurrence effective
+
+II.2.10. 
+
+Information about variants
+Variants will be accepted: no
+
+II.2.11. 
+
+Information about options
+Options: yes
+Description of options: 
+
+le présent marché est décomposé en une tranche ferme et en 5 tranches optionnelles, dont une à bons de commande. Ces tranches sont les suivantes :
+
+-	Tranche ferme :
+
+- module GCIV : import/export de données et administration de ces données
+
+- module Itr : import de données, diffusion des données et IHM de saisie des informations trafic
+
+- module Indicateurs et administration de la solution
+
+-	tranche optionnelle 1 - connecteur d'import depuis sae ineo (Tr)
+
+-	Tranche optionnelle 2 - connecteur d'import depuis sae navocap (Tr)
+
+-	Tranche optionnelle 3 - connecteur d'export vers le SIC Lumiplan
+
+-	Tranche optionnelle 4 - connecteur d'export vers le sae-iv ineo - offre théorique
+
+-	tranche optionnelle 5 à bons de commande - prestations complémentaires / développement d'une interface avec un opérateur
+
+II.2.13. 
+
+Information about European Union funds
+The procurement is related to a project and/or programme financed by European Union funds: no
+
+II.2.14. 
+
+Additional information
+
+Section III: Legal, economic, financial and technical information
+
+III.1. 
+
+Conditions for participation
+
+III.1.1. 
+
+Suitability to pursue the professional activity, including requirements relating to enrolment on professional or trade registers
+
+List and brief description of conditions: 
+
+-	Une lettre de candidature accompagnée des pièces présentant la société candidate (dont notamment le nom, la raison sociale, la forme juridique etc..). Le candidat pourra utiliser le formulaire Dc1.
+
+-	Les documents relatifs aux pouvoirs de la personne habilitée pour l'engager, le cas échéant.
+
+-	la copie du ou des jugements prononcés, si le candidat est en redressement judiciaire.
+
+-	une déclaration sur l'honneur, dûment datée et signée pour justifier qu'il n'entre dans aucun des cas mentionnés articles L. 2141-1 à 2141-5, L. 2141-7 à L. 2141-11 et R. 2143-8 du code de la commande publique et notamment qu'il est en règle au regard des articles L.5212-1 à L.5212-11 du code du travail concernant l'emploi des travailleurs handicapés.
+
+Si le candidat est en France, il fournira son numéro unique d'identification délivré par l'insee, ou a défaut, un extrait kbis de moins de 3 mois (ou équivalent), permettant de vérifier ces points. Si le candidat est basé à l'étranger, il fournira un document délivré par l'autorité judiciaire ou administrative compétente de son pays d'origine attestant de ces points.
+
+-	une attestation d'assurance de responsabilité civile professionnelle en cours de validité
+
+III.1.2. 
+
+Economic and financial standing
+
+List and brief description of selection criteria: 
+
+-	Une déclaration concernant le chiffre d'affaires global et le chiffre d'affaires concernant les prestations objet du marché, réalisés au cours des trois derniers exercices disponibles. Le candidat pourra utiliser le formulaire Dc2
+
+III.1.3. 
+
+Technical and professional ability
+
+List and brief description of selection criteria: 
+
+-	Une déclaration indiquant les effectifs moyens annuels du candidat et notamment ceux localisés en France (avec décomposition si groupement) et l'importance du personnel d'encadrement pour chacune des trois dernières années.
+
+-	une présentation détaillée du candidat et de ses sous-traitants éventuels. Cette présentation comprendra au minimum les domaines de compétences, les méthodologies projet les plus pratiquées, la (ou les) situation(s) géographique(s), la répartition des effectifs par rapport aux différents domaines de compétences.
+
+-	la politique managériale du candidat ainsi que le turnover des équipes sur les trois dernières années.
+
+-	la politique RSE ou qualité appliquée par le candidat. La DPEF pourra également être fournie.
+
+-	une liste des principales livraisons effectuées ou des principaux services fournis au cours des trois dernières années en indiquant le montant, la date et le destinataire public ou privé. Les livraisons et les prestations de services sont prouvées par des attestations du destinataire ou, à défaut, par une déclaration de l'opérateur économique.
+
+-	l'historique et les expériences en lien avec la participation à la définition et/ou la mise en place des normes/standards Netex/Siri/Gtfs/Gtfs RT, et leurs profils lorsque applicable.
+
+-	une description de l'outillage, du matériel et de l'équipement technique (plateformes de développement et de test) dont le candidat dispose pour la réalisation du marché.
+
+-	les certificats de qualification professionnelle établis par des organismes indépendants (par exemple la certification ISO 27001 pour la partie hébergement): la preuve de la capacité du candidat peut être apportée par tout moyen, notamment par des certificats équivalents d'organismes établis dans d'autres Etats membres.
+
+-	la description de l'équipement technique ainsi que des mesures employées par le candidat pour s'assurer de la qualité et des moyens d'étude et de recherche de son entreprise
+
+III.1.4. 
+
+Objective rules and criteria for participation
+List and brief description of rules and criteria: 
+
+les candidats seront sélectionnés selon leurs capacités économiques, financières, techniques et professionnelles.
+
+Pour justifier des capacités professionnelles, techniques et financières d'opérateurs économiques sur lesquels il s'appuie pour présenter sa candidature, le candidat produit les mêmes documents concernant cet opérateur que ceux qui lui sont exigés par la SEMITAN. Pour justifier qu'il dispose des capacités de cet opérateur pour l'exécution des prestations, le candidat produit un engagement écrit de l'opérateur. Si le candidat présente des sous-traitants au moment de la candidature, il devra justifier de leurs capacités et certifier qu'il en disposera pour l'exécution du marché, afin que ces capacités soient prises en compte dans l'analyse des candidatures. Dans cette hypothèse, aucun changement de sous-traitant ne sera accepté. Pour justifier des capacités d'un sous-traitant, le candidat produit les mêmes documents concernant le sous-traitant que ceux exigés des candidats
+
+III.1.6. 
+
+Deposits and guarantees required
+
+-	Garantie à première demande pour le versement de l'avance le cas échéant
+
+-	retenue de garantie.
+
+III.1.7. 
+
+Main financing conditions and payment arrangements and/or reference to the relevant provisions governing them
+
+modalités de financement : ressources propres Nantes Métropole
+
+Paiement sous 30 jours à compter de la date de réception des factures.
+
+III.1.8. 
+
+Legal form to be taken by the group of economic operators to whom the contract is to be awarded
+
+groupement conjoint avec mandataire solidaire ou groupement solidaire. 
+
+Les entreprises ne pourront pas présenter plusieurs candidatures pour le marché en agissant à la fois en qualité de candidats individuels ou de membres d'un ou plusieurs groupements.
+
+Section IV: Procedure
+
+IV.1. 
+
+Description
+
+IV.1.1. 
+
+Type of procedure
+Negotiated procedure with prior call for competition
+
+IV.1.3. 
+
+Information about a framework agreement or a dynamic purchasing system
+
+IV.1.8. 
+
+Information about the Government Procurement Agreement (GPA)
+The procurement is covered by the Government Procurement Agreement: yes
+
+IV.2. 
+
+Administrative information
+
+IV.2.2. 
+
+Time limit for receipt of tenders or requests to participate
+Date: 14/11/2022 Local time: 12:00
+
+IV.2.3. 
+
+Estimated date of dispatch of invitations to tender or to participate to selected candidates
+
+IV.2.4. 
+
+Languages in which tenders or requests to participate may be submitted
+French
+
+IV.2.6. 
+
+Minimum time frame during which the tenderer must maintain the tender
+Duration in months: 6 (from the date stated for receipt of tender)
+
+Section VI: Complementary information
+
+VI.1. 
+
+Information about recurrence
+This is a recurrent procurement: no
+
+VI.3. 
+
+Additional information
+
+conditions de participation des concurrents : Les entreprises ou groupements d'entreprises souhaitant candidater devront disposer de compétences dans les domaines suivants :
+
+- traitement de données de mobilité normalisée (Netex, gtfs, siri, gtfs-rt, rdex+, ocpi/iec 63119, Gbfs)
+
+O Agrégation et administration de données multimodales IV théoriques/temps réel
+
+o Information Trafic : saisie et diffusion des perturbations programmées et inopinées
+
+o A minima sur les services de transport tc, vls et parking
+
+- développement et maintenance informatique
+
+- mise en oeuvre d'infrastructures de données,
+
+- mise en oeuvre de systèmes de publication de données de grande ampleur
+
+le mandataire du groupement d'entreprises ou le titulaire devra obligatoirement posséder les compétences requises dans le domaine de " Mise en oeuvre d'une Gestion Centralisée de l'information Voyageurs ".
+
+En cas de sous-traitance pour le module Information Trafic (Itr), l'entreprise sous-traitante devra être proposée à l'agrément dès le dépôt de la candidature.
+
+cette procédure est dématérialisée. Le présent avis ainsi que le DCE peuvent être téléchargés sur le site http://marchespublics.semitan.fr.
+
+Les candidatures et les offres seront entièrement rédigées en langue française ainsi que les documents de présentation associés ou accompagnés d'une traduction en français certifiés conforme à l'original par un traducteur assermenté.
+
+remise des plis : La transmission des plis par courrier postal, courrier électronique ou par fax n'est pas autorisée. 
+
+Les candidats qui souhaitent déposer leur pli doivent le faire via le site http://marchespublics.semitan.fr  
+
+VI.4. 
+
+Procedures for review
+
+VI.4.1. 
+
+Review body
+Official name: tribunal administratif de Nantes
+Postal address: 6 Allée Ile Gloriette, B.P. 24111
+Town: Nantes Cedex 1
+Postal code: 44000
+Country: France
+E-mail: greffe.ta-nantes@juradm.fr
+Telephone: +33 240994600
+Fax: +33 240994658
+
+VI.4.4. 
+
+Service from which information about the review procedure may be obtained
+Official name: tribunal administratif de Nantes
+Postal address: 6 Allée Ile Gloriette, B.P. 24111
+Town: Nantes Cedex 1
+Postal code: 44000
+Country: France
+E-mail: greffe.ta-nantes@juradm.fr
+Telephone: +33 240994600
+Fax: +33 240994658
+
+VI.5. 
+
+Date of dispatch of this notice
+18/10/2022

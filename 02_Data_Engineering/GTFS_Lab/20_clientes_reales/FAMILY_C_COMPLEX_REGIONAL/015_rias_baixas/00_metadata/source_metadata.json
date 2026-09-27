@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "015",
+    "operator_display_name":  "Autocares RÃ­as Baixas",
+    "operator_slug":  "rias_baixas",
+    "family":  "FAMILY_C_COMPLEX_REGIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/02_sources/gtfs_schedule/original/20260916_100037_Autobus_Rias_Baixas.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "D0FA0D4BE2897CDCF43C1005F9D381FD41B3788A71D75E27B589409B68B1EA19"
+                         },
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/01_nap_snapshot/Rias baixas.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "45A560628D282DF683F7B7E585AF60866977AFEE01B5656B12557A1323B3453D"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

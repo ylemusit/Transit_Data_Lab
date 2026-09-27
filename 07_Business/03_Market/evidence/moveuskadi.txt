@@ -1,0 +1,226 @@
+
+
+	
+
+			
+Moveuskadi. Datos de la red de transporte público de Euskadi: operadores, horarios, paradas, calendario, tarifas, etc. 
+
+	
+
+	
+Descargar datos
+
+			
+
+				
+					Descargar Fichero índice completo en formato 
+					JSON
+					(34.6
+						KB) - Fichero índice completo
+
+				
+
+			
+
+				
+					Descargar Fichero índice en formato 
+					GTFS
+					 - Fichero índice
+
+				
+
+			
+
+				
+					Descargar Fichero índice en formato 
+					GTFS-RT
+					 - Fichero índice
+
+				
+
+			
+
+				
+					Descargar Fichero índice en formato 
+					SIRI
+					 - Fichero índice
+
+				
+
+			
+
+				
+					Descargar Fichero índice en formato 
+					NETEX
+					 - Fichero índice
+
+				
+
+			
+
+				
+					Descargar Servicios de Descarga FTP en formato 
+					SHP
+					 - Servicios de Descarga FTP
+
+				
+
+		
+
+ Compañia:  
+Seleccione una compañia
+
+ Formato:  
+Seleccione un formato
+
+Descargar
+
+			
+
+	
+
+			
+Documentación asociada
+
+				
+Moveuskadi, portal de información de transporte público
+
+			
+
+		
+
+			
+Detalles
+
+		Metadatos en
+
+				RDF
+
+			
+
+				
+
+					
+Fuente de datos
+
+Gobierno Vasco
+
+Transportes
+
+Movilidad
+
+				
+
+					
+Tipo
+
+Datos de Movilidad
+
+				
+
+Tema
+
+Infraestructura y Obras Públicas
+
+,  
+Transporte y movilidad
+
+,  
+Infraestructura del transporte
+
+,  
+Ferrocarril
+
+,  
+Transporte por carretera
+
+,  
+Transporte público
+
+,  
+Otros medios de transporte (tranvía, cable...)
+
+					
+Etiquetas
+
+Ferrocarril
+
+, Transporte
+
+, Transporte público
+
+, Tranvía
+
+, Redes de transporte
+
+, Metro
+
+, Red de transporte
+
+, Rutas
+
+, Autobús
+
+, movilidad
+
+, moveuskadi
+
+				
+
+					
+Licencia
+
+Información legal
+
+				
+
+					
+Fecha de creación
+
+01/01/2014
+
+				
+
+					
+Fecha de actualización
+
+26/09/2026
+
+				
+
+					
+Frecuencia de actualización
+
+En tiempo real
+
+				
+
+					
+Fecha de fin de datos
+
+26/09/2026
+
+				
+
+		
+
+			
+Descripción
+
+Este conjunto de datos contiene información estática y en tiempo real sobre la red de transporte público de la Comunidad Autónoma del País Vasco de forma digitalizada: operadores, horarios, paradas, calendario, tarifas,... Los datos incluyen todos los medios de transporte: metro, tranvía, autobuses urbanos e interurbanos, trenes autonómicos, trenes de cercanías, funiculares, puente colgante,…
+
+Moveuskadi, el portal de información de transporte público del Gobierno Vasco, se nutre de los datos aquí expuestos. Asimismo, esta información puede servir de fuente de datos para el desarrollo de planificadores de transporte y otras aplicaciones de movilidad de terceros.
+
+Los datos publicados posibilitan la interoperabilidad con otras aplicaciones, la aplicación de una política de datos abiertos, así como el cumplimiento del Reglamento Delegado (UE) 2017/1926 de la Comisión, de 31 de mayo de 2017, que complementa la Directiva 2010/40/UE del Parlamento Europeo y del Consejo en lo que se refiere al suministro de servicios de información sobre desplazamientos multimodales en toda la Unión.
+
+			
+		
+
+
+
+Envianos tu opinión
+
+Comenta este conjunto de datos.Tu opinión nos ayuda a seguir mejorando.
+
+
+	

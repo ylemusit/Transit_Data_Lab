@@ -1,0 +1,55 @@
+# Transit Data Lab parent repository: preserve nested product repositories as independent repositories.
+/06_Products/GTFS Explorer/GTFS Explorer Desktop/
+/06_Products/GTFS Explorer/GTFS Explorer Engineering/
+/06_Products/GTFS Explorer/GTFS Explorer Artifacts/
+/06_Products/GTFS Explorer/GTFS Explorer Backups/restore_test_v0.2.2_20260924T161533Z_02/
+
+# Databases and transient DuckDB state are reproducible/local data, not source.
+*.duckdb
+*.duckdb.wal
+*.wal
+
+# Downloaded GTFS feeds and extracted raw snapshots are retained locally.
+/02_Data_Engineering/GTFS_Lab/feeds/raw/
+/02_Data_Engineering/GTFS_Lab/feeds/extracted/
+
+# Local environments, caches, logs, temporary files and credentials.
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+**/.tmp/
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Product backups and restored release snapshots are retained outside the parent index.
+/06_Products/GTFS Explorer/GTFS Explorer Backups/
+
+# Pilot raw feeds and extracted datasets: manifests remain versionable.
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/**/02_sources/gtfs_schedule/original/
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/**/02_sources/gtfs_schedule/extracted/
+*.duckdb.editor-pre-migration.bak
+
+# Large generated historical evidence is retained locally; back up separately.
+/07_Business/03_Market/evidence/scope_before.json
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/run_001/gtfs-export-*.json
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/run_001/gtfs-export-*.zip
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/run_001/informe-validacion.html
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/run_002_rc002/gtfs-export-*.zip
+
+# Generated dependency/build trees; source, manifests and reports stay eligible.
+**/node_modules/
+**/build/
+**/dist/
+**/*.dist/
+
+# Sensitive Entur source retained locally; sanitized canonical HTML remains eligible.
+/07_Business/03_Market/evidence/.sensitive_local/

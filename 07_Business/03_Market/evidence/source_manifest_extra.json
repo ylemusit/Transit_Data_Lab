@@ -1,0 +1,98 @@
+[
+  {
+    "name": "eu_490_alt",
+    "url": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32024R0490",
+    "resolved_url": "https://eur-lex.europa.eu/legal-content/ES/TXT/PDF/?uri=CELEX:32024R0490",
+    "consulted": "2026-09-27",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "file": "eu_490_alt.html",
+    "status": "UNAVAILABLE_EMPTY_RESPONSE",
+    "error": "Zero bytes: no source content verified"
+  },
+  {
+    "name": "eu_1926_html",
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R1926-20240304",
+    "resolved_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02017R1926-20240304",
+    "consulted": "2026-09-27",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0,
+    "file": "eu_1926_html.html",
+    "status": "UNAVAILABLE_EMPTY_RESPONSE",
+    "error": "Zero bytes: no source content verified"
+  },
+  {
+    "name": "france_stats",
+    "url": "https://transport.data.gouv.fr/stats?locale=fr",
+    "resolved_url": "https://transport.data.gouv.fr/stats?locale=fr",
+    "consulted": "2026-09-27",
+    "sha256": "096ac2948743d5cf35784bcd9ab49cd4f71bc0283187ab18a61006c4a8f19b8b",
+    "bytes": 32526,
+    "file": "france_stats.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "france_sncf",
+    "url": "https://transport.data.gouv.fr/datasets/horaires-sncf?locale=fr",
+    "resolved_url": "https://transport.data.gouv.fr/datasets/horaires-sncf?locale=fr",
+    "consulted": "2026-09-27",
+    "sha256": "23dc73a1e5a40706ff5f292fde877b711fa2baebc650b0ced82a549b3f984d46",
+    "bytes": 178174,
+    "file": "france_sncf.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "france_news",
+    "url": "https://transport.data.gouv.fr/nouveautes?locale=fr",
+    "resolved_url": "https://transport.data.gouv.fr/nouveautes?locale=fr",
+    "consulted": "2026-09-27",
+    "sha256": "7eda3b3e1910bfbf9d0c6d5e9ac0cc4a4baa4f71dde427383e730b9583bde2b8",
+    "bytes": 32380,
+    "file": "france_news.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "skedgo",
+    "url": "https://skedgo.com/how-skedgo-uses-gbfs/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "nommon",
+    "url": "https://www.nommon.es/es/",
+    "resolved_url": "https://www.nommon.es/es/",
+    "consulted": "2026-09-27",
+    "sha256": "7319c74677b25826ef9ecb3bc741d7157b51a97683204e3c4839798545d0dc89",
+    "bytes": 104893,
+    "file": "nommon.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "gtfs_publish",
+    "url": "https://gtfs.org/getting-started/publish/",
+    "consulted": "2026-09-27",
+    "status": "UNAVAILABLE",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "boe_original",
+    "url": "https://www.boe.es/eli/es/l/2025/12/03/9",
+    "resolved_url": "https://www.boe.es/eli/es/l/2025/12/03/9",
+    "consulted": "2026-09-27",
+    "sha256": "a0311009fb2baeeec6534461c99ed4d7de59b39dd7b13d9075dc3fc857a516e5",
+    "bytes": 663732,
+    "file": "boe_original.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "tuvisa_contract",
+    "url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroContratoPorIdFichero?idFichero=438804&R01HNoPortal=true",
+    "resolved_url": "https://www.contratacion.euskadi.eus/ac70cPublicidadWar/downloadDokusiREST/descargaFicheroContratoPorIdFichero?idFichero=438804&R01HNoPortal=true",
+    "consulted": "2026-09-27",
+    "sha256": "050218bdb9af53885c8e4b0c953810690ee6f57ded8c4c66bef45999af438c05",
+    "bytes": 184966,
+    "file": "tuvisa_contract.pdf",
+    "status": "SAVED"
+  }
+]

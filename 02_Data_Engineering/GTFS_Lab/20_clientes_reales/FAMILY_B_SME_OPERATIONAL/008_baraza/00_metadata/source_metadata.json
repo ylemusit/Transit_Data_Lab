@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "008",
+    "operator_display_name":  "Autocares Baraza",
+    "operator_slug":  "baraza",
+    "family":  "FAMILY_B_SME_OPERATIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/008_baraza/02_sources/gtfs_schedule/original/20260831_100006_BUS_Baraza.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "50D7DACBE5A384A5122CDE2563F884B7FB6D067F2581A3B726C529A0703F4049"
+                         },
+                         {
+                             "path":  "FAMILY_B_SME_OPERATIONAL/008_baraza/01_nap_snapshot/Baraza.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "21C19AB20B001F1FB7C9FD246639242905629009E4FDFA1BEC463B3CEA1EAA8C"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

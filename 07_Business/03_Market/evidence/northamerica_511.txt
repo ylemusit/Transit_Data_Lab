@@ -1,0 +1,1033 @@
+
+
+  
+
+    
+
+    Transit Data | 511.org
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  
+
+    
+      Skip to main content
+
+    
+
+    
+
+  
+
+  
+
+    
+
+        
+
+      
+
+  
+Black Strip Menu
+
+        
+
+              
+
+        Metropolitan Transportation Commission
+
+                          
+
+        Fastrak
+
+                      
+
+        511.org
+
+                      
+
+        Clipper Card
+
+                      
+
+        Vital signs
+
+        
+
+              
+
+  
+
+  
+
+  
+
+      
+
+        
+
+            
+
+      
+
+  
+
+        
+
+      
+
+        
+
+      511.org
+
+    
+
+  
+
+          
+
+            
+
+                
+
+      
+
+  
+
+      
+
+Map & Alerts
+
+  
+
+            
+
+Main navigation
+
+        
+
+              
+
+        Map & Alerts
+
+                                
+
+        Interactive Map
+
+                                  
+
+        Critical Alerts
+
+                                  
+
+        Traffic Alerts
+
+                                  
+
+        Transit Alerts
+
+                                  
+
+        Emergencies
+
+              
+
+              
+
+        Travel Info
+
+                                
+
+        Public Transit
+
+                                  
+
+        Express Lanes
+
+                                  
+
+        Bay Area Bridges
+
+                                  
+
+        Biking & Walking
+
+                                  
+
+        Carpool & Vanpool
+
+                                  
+
+        Beyond 511.org
+
+              
+
+              
+
+        511 Phone
+
+                                
+
+        Phone Shortcuts
+
+                                  
+
+        Tips & Safety
+
+                                  
+
+        Freeway Assist
+
+                                  
+
+        Phone FAQs
+
+                                  
+
+        511電話服務 : 協助
+
+                                  
+
+        511 Servicio Telefónico
+
+                                  
+
+        Bay Area Freeway Service Patrol
+
+              
+
+              
+
+        511 Open Data
+
+                                
+
+        Traffic Data
+
+                                  
+
+        Transit Data
+
+                                  
+
+        511 Open Data FAQs
+
+                                  
+
+        Request a Token
+
+                                  
+
+        Cancel a Token
+
+              
+
+              
+
+        For Employers
+
+                                
+
+        Bay Area Commuter Benefits Program
+
+                                  
+
+        Employer Resources
+
+              
+
+              
+
+        About 511
+
+                                
+
+        Partners
+
+                                  
+
+        Accessibility
+
+                                  
+
+        FAQs
+
+                                  
+
+        Feedback
+
+                                  
+
+        Terms of Use
+
+                                  
+
+        Privacy Policy
+
+                                  
+
+        Branding & Logos
+
+                                  
+
+        Welcome to the New 511.org!
+
+              
+
+              
+
+  
+
+  
+
+  
+
+  Search
+
+    
+
+          
+
+  
+
+      Search
+
+          
+
+        Close Search
+
+  
+
+  
+
+      
+
+      
+
+  Menu
+
+  
+
+  
+
+              
+
+          
+
+      
+
+      
+
+  
+
+    
+
+      
+
+  
+
+      
+
+  
+
+    
+Welcome to the New 511.org! A fresh look with the same features you rely on.
+
+Check out our welcome page for more info.
+
+  
+
+  
+
+            
+
+  
+
+    
+
+              
+
+  
+
+      
+
+    
+Breadcrumb
+
+              
+
+                      Home
+                                /
+
+              
+
+                      511 SF Bay Open Data Portal
+
+          
+
+  
+
+  
+
+      
+
+Transit Data
+
+  
+
+  
+
+      
+
+Welcome to 511 SF Bay’s Portal for Open Transit Data. This free resource offers comprehensive, real-time transit data through APIs that you can use to power innovative applications and services.
+
+  
+
+      
+
+          
+
+      
+
+          
+
+        
+
+  
+
+          
+
+      
+
+  
+
+511 Open Data
+
+      
+
+              
+
+        Traffic Data
+
+                                  
+
+        Transit Data
+
+                                  
+
+        511 Open Data FAQs
+
+                                  
+
+        Request a Token
+
+                                  
+
+        Cancel a Token
+
+              
+
+  
+
+  
+
+      
+
+    
+
+                      
+
+    
+
+  
+
+      
+
+  
+
+  
+
+      
+
+            
+
+                              
+
+            
+
+  
+
+      
+
+511 SF Bay provides transit data in both bulk and API quantities for all publicly available transit service providers in the San Francisco Bay Area. Besides GTFS and GTFS-Realtime (Trip Updates, Vehicle Positions, Service Alerts) feeds in bulk, a number of APIs modeled after SIRI and NeTEx standards are also available. Available transit data feeds include:
+Static transit data in General Transit Feed Specification (GTFS) and Open 511 SIRI/NeTEx API formats
+Real-time transit data via Open 511 SIRI APIs and GTFS-Realtime
+Once you have obtained your API token, you can choose any combination of data endpoints from the following list to obtain the data you need. The default rate limit per API token is 60 requests per 3600 seconds. If you need an increased rate limit for your purpose, please send your request to 511sfbaydeveloperresources@googlegroups.com without including your API Key. For more details on these data endpoints, you can download the technical specification. 
+
+  
+
+  
+
+      
+
+List of Bulk Data FeedsGTFS Operators
+GTFS Operators provides the list of transit operators/agencies that have a GTFS dataset available for download. It provides the operator’s ID, name, and the date the operator’s feed was last updated.
+Endpoint: http://api.511.org/transit/gtfsoperators?api_key=[your_key]
+Allowable Parameters: api_key (mandatory)GTFS Feed Download
+GTFS Feed Download allows the user to download a zip file containing the GTFS dataset for the specified operator/agency. It also contains additional files, called the GTFS+ files, that provide information not contained in the GTFS files such as the direction names, fare zone names, etc.
+In addition to operator/agency feeds, you can download a consolidated active Regional GTFS feed as well as a monthly historical Regional GTFS feed. The active regional feed can be obtained by setting the Operator_id to ‘RG’ and the historic regional feed can be obtained by setting the historic parameter value to the desired year and month (YYYY-MM).
+Endpoint: http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=[operatorID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), and historic (optional)GTFS-Realtime Trip Updates
+GTFS-Realtime Trip Updates provides real-time updates on the expected arrival and departure times for an agency. The response is provided in the Protocol Buffer format.
+In addition to individual transit agency feed, a single consolidated Regional Trip Updates feed can also be downloaded using the value 'RG'.
+Endpoint: http://api.511.org/transit/tripupdates?api_key=[your_key]&agency=[operatorID]
+Allowable parameters: api_key (mandatory), agency (mandatory)GTFS-Realtime Vehicle Positions
+GTFS-Realtime Vehicle Positions provides real-time updates on the vehicle positions for an agency in the Protocol Buffer format.
+In addition to individual transit agency feed, a single consolidated Regional GTFS-RT Vehicle Positions feed can be downloaded by setting the agency parameter to the value 'RG'.
+Endpoint: http://api.511.org/transit/vehiclepositions?api_key=[your_key]&agency=[operatorID]
+Allowable parameters: api_key (mandatory), agency (mandatory)GTFS-Realtime Service Alerts
+GTFS-Realtime Service Alerts provides real-time updates on service alerts for the entire region as well as per agency. The response is provided in the Protocol Buffer, XML, and JSON formats.
+In addition to individual transit agency feed, a single consolidated Regional GTFS-RT Service Alerts feed can be downloaded by setting the agency parameter to the value 'RG'.
+Endpoint: http://api.511.org/transit/servicealerts?api_key=[your_key]&agency=[operatorID]
+Allowable parameters: api_key, agency (optional), format (optional)
+
+  
+
+  
+
+      
+
+List of Available APIsReal-time Stop Monitoring
+Real-time Stop Monitoring API provides the expected arrival and departure times of vehicles at a stop. The response is provided in  XML and JSON formats.
+Endpoint: http://api.511.org/transit/StopMonitoring?api_key=[your_key]&agency=[operatorID]
+Allowable parameters: api_key (mandatory), agency (mandatory), stopcode (optional) and format (optional)Real-time Vehicle Monitoring
+Real-time Vehicle Monitoring API provides information about a vehicle’s current location and expected activities. The response is provided in  XML and JSON formats.
+ 
+Endpoint: http://api.511.org/transit/VehicleMonitoring?api_key=[your_key]&agency=[operatorID]
+Allowable parameters: api_key (mandatory), agency (mandatory), vehicleID (optional) and format (optional)Operators (NeTEx)
+The Operators API provides a list of the transit operators along with the operator information such as the operator ID, name and contact. The response is provided in XML and JSON formats.
+Endpoint: http://api.511.org/transit/operators?api_key=[your_key]
+Allowable parameters: api_key (mandatory), operator_id (optional) and format (optional)Lines (NeTEx)
+The Lines API provides the list of routes serviced by a transit agency. It provides route ID, name, mode of transport and other details. The response is provided in XML and JSON formats.
+Endpoint: http://api.511.org/transit/lines?api_key=[your_key]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), line_id (optional) and format (optional)Stops (NeTEx)
+The Stops API returns the list of stops where passengers can board or alight from vehicles. It returns the stop id, name and location information for the stops.
+Endpoint: http://api.511.org/transit/stops?api_key=[your_key]&operator_id=[operatorID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), include_stop_areas(optional), Direction_id (optional), line_id (optional), Pattern_id (optional) and format (optional)Stop Places (NeTEx)
+The Stop Places API returns the list of physical stops for an agency and includes more detailed information about the stop.
+Endpoint: http://api.511.org/transit/stopplaces?api_key=[your_key]&operator_id=[operatorID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), format (optional), stop_id (optional)Patterns (NeTEx)
+The Patterns API returns a list of patterns for a given route/line. A pattern is an ordered list of stop points and time points and it describes a trip pattern followed by the public transport vehicle.
+Endpoint: http://api.511.org/transit/patterns?api_key=[your_key]&operator_id=[operatorID]&line_id=[lineID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), line_id (mandatory), format (optional), pattern_id (optional)Route Timetable (NeTEx)
+The Route Timetable API returns all the timetables for a given route. It includes supporting elements referenced by the timetable such as the Route (ordered list of timepoints for which times are provided), direction, and the day type (service type).
+Endpoint: http://api.511.org/transit/timetable?api_key=[your_key]&operator_id=[operatorID]&line_id=[lineID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), line_id (mandatory), format (optional) , includespecialservice (optional), exceptiondate (optional)Scheduled Departures at a Stop (SIRI)
+The Scheduled Departures at a Stop API (also known as SIRI Stop Timetable) provides all the scheduled departures and arrivals at a stop within a given timeframe.
+Endpoint: http://api.511.org/transit/stoptimetable?api_key=[your_key]&operatorref=[operatorID]&monitoringref=[stopID_id]
+Allowable parameters: api_key (mandatory), operatorref (mandatory), monitoringref (mandatory), format (optional), lineref (optional), starttime (optional), endtime (optional)Service Holidays (NeTEx)
+Service Holidays API returns the list of service exceptions (typically holidays) for an agency.
+Endpoint: http://api.511.org/transit/holidays?api_key=[your_key]&operator_id=[operatorID]
+Allowable parameters: api_key (mandatory), operator_id (mandatory), format(optional)
+
+  
+
+  
+
+Want to use 511 Open Data APIs?
+
+      
+
+Here's a short guide to the process. Don't forget to check the Terms & Conditions of usage.
+Get Started by Requesting a Token
+
+  
+
+  
+
+API Documentation
+
+      
+
+  
+
+  
+
+    
+Document
+
+              
+
+ 511_Data_Agreement_Final_2026.pdf
+
+              
+
+  
+
+  
+
+  
+
+    
+Document
+
+              
+
+ 511 SF Bay Open Data Specification - Transit.pdf
+
+              
+
+  
+
+  
+
+  
+
+    
+Document
+
+              
+
+ 511 SF Bay Open Data Specification - Overview_2026.pdf
+
+              
+
+  
+
+  
+
+  
+
+    
+Document
+
+              
+
+ Transit-StationsHubs-included-in-Pathways Data_2026.pdf
+
+              
+
+  
+
+      
+
+          
+
+    
+
+  
+
+  
+
+  
+
+                  
+
+    
+
+          
+
+  
+
+  
+
+  
+
+      
+
+Top
+
+      
+
+  
+
+      
+
+      
+
+  
+
+      
+
+  
+
+  
+
+    
+Image
+
+  
+
+          
+
+  
+
+Getting around the Bay Area with real-time transportation updates & resources.
+
+  
+
+            
+
+Footer
+
+        
+
+              
+
+        Map & Alerts
+
+                      
+
+        Travel Info
+
+                          
+
+        Public Transit
+
+                      
+
+        Express Lanes
+
+                      
+
+        Bridges
+
+                      
+
+        511 Freeway Assist
+
+                      
+
+        Biking & Walking
+
+                      
+
+        Beyond 511
+
+        
+
+              
+
+        511 Phone
+
+                      
+
+        511 Open Data
+
+                      
+
+        For Employers
+
+                      
+
+        About 511
+
+                          
+
+        Partners
+
+                      
+
+        FAQs
+
+                      
+
+        Feedback
+
+        
+
+              
+
+  
+
+  
+
+      
+
+        
+
+          
+Follow Us on Social Media
+
+            
+
+              Twitter
+
+            
+
+              Facebook
+
+            
+
+              Instagram
+
+            
+
+              Bluesky
+
+          
+
+        
+
+          
+
+          
+
+          
+
+      
+
+  
+
+      
+
+      
+
+      
+
+  
+Sub Footer
+
+        
+
+              
+
+        Terms of Use
+
+                      
+
+        Privacy Policy
+
+                      
+
+        Accessibility
+
+                      
+
+        Branding & Logos
+
+                      
+
+        Non Discrimination
+
+                      
+
+        Site Map
+
+        
+
+  
+
+            
+
+Sub Footer 2
+
+        
+
+              
+
+                          
+                    ©2026 Metropolitan Transportation Commission
+
+              
+
+  
+
+  
+
+  
+
+      V4.0.16
+
+  
+
+    
+
+  
+
+    
+
+        
+
+          Map & Alerts
+
+              
+
+          Interactive Map
+
+              
+
+          Critical Alerts
+
+              
+
+          Traffic Alerts
+
+              
+
+          Transit Alerts
+
+              
+
+          Emergencies
+
+          
+
+                  
+
+          Travel Info
+
+              
+
+          Public Transit
+
+              
+
+          Express Lanes
+
+              
+
+          Bay Area Bridges
+
+              
+
+          Biking & Walking
+
+              
+
+          Carpool & Vanpool
+
+              
+
+          Beyond 511.org
+
+          
+
+                  
+
+          511 Phone
+
+              
+
+          Phone Shortcuts
+
+              
+
+          Tips & Safety
+
+              
+
+          Freeway Assist
+
+              
+
+          Phone FAQs
+
+              
+
+          511電話服務 : 協助
+
+              
+
+          511 Servicio Telefónico
+
+              
+
+          Bay Area Freeway Service Patrol
+
+          
+
+                  
+
+          511 Open Data
+
+              
+
+          Traffic Data
+
+              
+
+          Transit Data
+
+              
+
+          511 Open Data FAQs
+
+              
+
+          Request a Token
+
+              
+
+          Cancel a Token
+
+          
+
+                  
+
+          For Employers
+
+              
+
+          Bay Area Commuter Benefits Program
+
+              
+
+          Employer Resources
+
+          
+
+                  
+
+          About 511
+
+              
+
+          Partners
+
+              
+
+          Accessibility
+
+              
+
+          FAQs
+
+              
+
+          Feedback
+
+              
+
+          Terms of Use
+
+              
+
+          Privacy Policy
+
+              
+
+          Branding & Logos
+
+              
+
+          Welcome to the New 511.org!
+
+          
+
+                  
+
+  
+
+    
+
+  
+

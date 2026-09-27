@@ -1,0 +1,145 @@
+# TRANSIT DATA LAB
+# Compliance Source Manifest
+
+Generated: 2026-09-26 22:44:44
+
+============================================================
+EUROPEAN UNION
+============================================================
+
+Directive 2010/40/EU
+Authority: European Union
+Source: EUR-Lex
+CELEX: 02010L0040-20231220
+Status: Consolidated
+Date: 2023-12-20
+
+Directive (EU) 2023/2661
+Authority: European Union
+Source: EUR-Lex
+CELEX: 32023L2661
+Purpose: Amendment of Directive 2010/40/EU
+
+Delegated Regulation (EU) 2017/1926
+Authority: European Commission
+Source: EUR-Lex
+CELEX original: 32017R1926
+CELEX consolidated: 02017R1926-20240304
+Subject: EU-wide multimodal travel information services
+
+Delegated Regulation (EU) 2024/490
+Authority: European Commission
+Source: EUR-Lex
+CELEX: 32024R0490
+Purpose: Amendment of Regulation 2017/1926
+
+============================================================
+SPAIN
+============================================================
+
+Ley 9/2025, de 3 de diciembre, de Movilidad Sostenible
+Authority: Jefatura del Estado
+Source: BOE
+BOE: BOE-A-2025-24545
+Published: 2025-12-04
+Entered into force: 2025-12-05
+
+Relevant area:
+Articles 85-92
+Transport and mobility data
+National Access Point
+Digitalisation
+Interoperability
+Data availability
+
+============================================================
+NAP SPAIN
+============================================================
+
+Authority:
+Ministerio de Transportes y Movilidad Sostenible
+
+Documents:
+
+- NAP institutional information
+- Data Contribution Policy
+- Open Data Licence
+- FAQ / technical guidance
+
+IMPORTANT:
+
+NAP operational rules must NOT automatically be classified
+as legislation.
+
+Classification:
+
+LAW
+REGULATION
+DIRECTIVE
+NAP_POLICY
+NAP_TECHNICAL_RULE
+GUIDANCE
+OBSERVED_VALIDATOR_RULE
+
+============================================================
+TRANSIT DATA LAB PRINCIPLE
+============================================================
+
+Legal obligation
+        !=
+NAP requirement
+        !=
+Format specification
+        !=
+Data quality rule
+
+Each requirement must preserve its original source and authority.
+
+============================================================
+TRANSIT DATA LAB - COMPLIANCE CORPUS UPDATE
+Update date: 2026-09-26
+============================================================
+
+[EU-REG-2024-1679]
+CLASSIFICATION=REGULATION
+STATUS=IN_FORCE
+CELEX=32024R1679
+TOPIC=TEN-T / URBAN NODES
+OFFICIAL_SOURCE=https://eur-lex.europa.eu/eli/reg/2024/1679/oj
+LOCAL_FILE=EU/01_Primary_Law/Regulation_2024_1679/Regulation_EU_2024_1679_ES.pdf
+SHA256=73B34F389D4493B62F553D28C740EE499B8FEB1D7534DD1356EFD9502D669C15
+
+[EU-REG-IMPL-2026-1554]
+CLASSIFICATION=IMPLEMENTING_REGULATION
+STATUS=IN_FORCE
+CELEX=32026R1554
+TOPIC=URBAN_MOBILITY_DATA
+OFFICIAL_SOURCE=https://eur-lex.europa.eu/eli/reg_impl/2026/1554/oj
+LOCAL_FILE=EU/01_Primary_Law/Regulation_2026_1554/Implementing_Regulation_EU_2026_1554_ES.pdf
+SHA256=873BD419EBC3769F1D93E466767E971FD25C40CAFF2C768F98093654F70334E0
+
+[EU-REG-IMPL-2026-253]
+CLASSIFICATION=IMPLEMENTING_REGULATION
+STATUS=IN_FORCE
+CELEX=32026R0253
+TOPIC=RAIL_TELEMATICS / TEL_TSI
+OFFICIAL_SOURCE=https://eur-lex.europa.eu/eli/reg_impl/2026/253/oj
+LOCAL_FILE=EU/01_Primary_Law/Regulation_2026_253/Implementing_Regulation_EU_2026_253_ES.pdf
+SHA256=EB6BFD69199D226758F6940896E0DD5C68CA15B1BF1F18F069827FA1D73DE42F
+
+[EU-REG-2011-454]
+CLASSIFICATION=REGULATION
+STATUS=REPEALED
+CELEX=32011R0454
+TOPIC=RAIL_TELEMATICS / TAP_TSI
+REPEALED_BY=EU-REG-IMPL-2026-253
+LOCAL_FILE=NOT_DOWNLOADED
+
+[EU-REG-2014-1305]
+CLASSIFICATION=REGULATION
+STATUS=REPEALED
+CELEX=32014R1305
+TOPIC=RAIL_TELEMATICS / TAF_TSI
+REPEALED_BY=EU-REG-IMPL-2026-253
+LOCAL_FILE=NOT_DOWNLOADED
+

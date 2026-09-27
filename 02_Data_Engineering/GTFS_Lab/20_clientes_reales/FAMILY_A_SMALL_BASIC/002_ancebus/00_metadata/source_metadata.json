@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "002",
+    "operator_display_name":  "Ancebus",
+    "operator_slug":  "ancebus",
+    "family":  "FAMILY_A_SMALL_BASIC",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/002_ancebus/02_sources/gtfs_schedule/original/20250523_100004_Ancebus.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "42BF756A88336DACB085EC49DBDD0F019FD37AFE7C7E5C24C1D8D2C1DF0DE27D"
+                         },
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/002_ancebus/01_nap_snapshot/Ancebus.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "6F837412025DEE9537F46726BDB53B7BF7E818813FF49E5AC3B100C1890BC47A"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

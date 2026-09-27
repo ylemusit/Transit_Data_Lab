@@ -1,0 +1,183 @@
+{
+  "date": "2026-09-27",
+  "verification": "PASS",
+  "checks": [
+    {
+      "name": "outside_business_unchanged",
+      "pass_": true,
+      "detail": {
+        "before_count": 275363,
+        "after_count": 275363,
+        "differences": []
+      }
+    },
+    {
+      "name": "frozen_CAPABILITY_REGISTER.md",
+      "pass_": true,
+      "detail": {
+        "expected": "39506abb74cf0437802603c7915d90ba62fce29ff38f6c21277cdabc577a4c15",
+        "actual": "39506abb74cf0437802603c7915d90ba62fce29ff38f6c21277cdabc577a4c15"
+      }
+    },
+    {
+      "name": "frozen_EVIDENCE_INDEX.md",
+      "pass_": true,
+      "detail": {
+        "expected": "f8bdcf9a49f09352fe754decc1c87881091c56c23edec4cff344c9eb2c691b41",
+        "actual": "f8bdcf9a49f09352fe754decc1c87881091c56c23edec4cff344c9eb2c691b41"
+      }
+    },
+    {
+      "name": "frozen_CAPABILITY_GAPS.md",
+      "pass_": true,
+      "detail": {
+        "expected": "2b33a86971f8f860039a9f2a0144da14a67867ef0c26ccb801a94ce96264e01d",
+        "actual": "2b33a86971f8f860039a9f2a0144da14a67867ef0c26ccb801a94ce96264e01d"
+      }
+    },
+    {
+      "name": "baseline_aggregate",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "descriptor_frozen",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_MARKET_EVIDENCE_REGISTER.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_CUSTOMER_SEGMENTS.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_PROBLEM_REGISTER.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_PROCUREMENT_EVIDENCE.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_COMPETITOR_LANDSCAPE.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_REGULATORY_DEMAND.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "document_MARKET_GAPS.md",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "evidence_unique_36",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "evidence_references_resolve",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "local_links_resolve",
+      "pass_": true,
+      "detail": []
+    },
+    {
+      "name": "exactly_11_existing_in_matrix",
+      "pass_": true,
+      "detail": [
+        "TDL-CAP-001",
+        "TDL-CAP-002",
+        "TDL-CAP-003",
+        "TDL-CAP-004",
+        "TDL-CAP-009",
+        "TDL-CAP-010",
+        "TDL-CAP-011",
+        "TDL-CAP-012",
+        "TDL-CAP-016",
+        "TDL-CAP-018",
+        "TDL-CAP-019"
+      ]
+    },
+    {
+      "name": "segments_count",
+      "pass_": true,
+      "detail": 15
+    },
+    {
+      "name": "problems_count",
+      "pass_": true,
+      "detail": 10
+    },
+    {
+      "name": "obligations_count",
+      "pass_": true,
+      "detail": 12
+    },
+    {
+      "name": "providers_count",
+      "pass_": true,
+      "detail": 11
+    },
+    {
+      "name": "procurements_count",
+      "pass_": true,
+      "detail": 8
+    },
+    {
+      "name": "status_in_progress",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "no_later_phase_directories",
+      "pass_": true,
+      "detail": null
+    },
+    {
+      "name": "saved_source_hashes_match",
+      "pass_": true,
+      "detail": {
+        "checked": 34,
+        "failed": []
+      }
+    },
+    {
+      "name": "economic_arithmetic",
+      "pass_": true,
+      "detail": null
+    }
+  ],
+  "document_sha256": {
+    "07_Business\\03_Market\\MARKET_EVIDENCE_REGISTER.md": "837380e038f1cd18d293b43c310bf1453334d81cbc6ea7f476799209e6373c45",
+    "07_Business\\03_Market\\CUSTOMER_SEGMENTS.md": "bdcdcdd2e9e77c5e22b9efc18b72fdc84073c2e1452ac6885b18904eefc49164",
+    "07_Business\\03_Market\\PROBLEM_REGISTER.md": "0bb05879fa3e048d042507c4cc45c07dd20d0c2550d62e81c3b9d0e3005c02f9",
+    "07_Business\\03_Market\\PROCUREMENT_EVIDENCE.md": "ff715d4db1d7c0079b286e5705ab3723f209e64eb86317a5fd93930ae1b6cd20",
+    "07_Business\\03_Market\\COMPETITOR_LANDSCAPE.md": "8a35f21993bcda9ac3a79b530c47de3e0542ee6c47f3e13dcee208be6c9da401",
+    "07_Business\\03_Market\\REGULATORY_DEMAND.md": "e5d5e31aa37d039b4be80f698c0a783d844dc0af2d37a6aef6b196d0d82e291d",
+    "07_Business\\03_Market\\MARKET_GAPS.md": "0a9df45762324f981b92cbcfc1a1d4fe58ff5890f3509beb72ac83623157be4e",
+    "07_Business\\BUSINESS_STATUS.md": "bd33a31ad46f4c28c23e2c4f8c990799616dc6d95ce1578f882a52a6c7023cda",
+    "07_Business\\01_Governance\\ASSUMPTIONS_REGISTER.md": "72faa4e1bfdb1e299789da93a72beee76a3bef9753715e0550d83d5689ce5b5a",
+    "07_Business\\01_Governance\\DECISION_LOG.md": "f5c752f89c884f8d12fb0215f9f5e38bf98bc04c4cd45bd7bbdb5c019a0744a2"
+  },
+  "baseline_descriptor_sha256": "aef902bdbef06df15a3d85a3b5e8751edf04474174046f0b1947abcce480202a",
+  "limitations": [
+    "Automated checks cover document structure, references, source hashes and scope; source interpretation reviewed manually.",
+    "Git repository untracked; empty diff is not proof of unchanged files.",
+    "Legal source EU only partial primary excerpts; no legal certification."
+  ],
+  "market_evidence_result": "PASS for A-G, no commercial validation"
+}

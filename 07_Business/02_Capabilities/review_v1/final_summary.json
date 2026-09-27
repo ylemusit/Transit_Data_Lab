@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checks": 221,
+  "original_pass": 216,
+  "corrected_checks": [
+    {
+      "check": "census_zip:002",
+      "status": "PASS",
+      "expected_normalized": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "actual": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\002_ancebus\\02_sources\\gtfs_schedule\\original\\20250523_100004_Ancebus.zip"
+    },
+    {
+      "check": "census_zip:005",
+      "status": "PASS",
+      "expected_normalized": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "actual": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\005_viagon\\02_sources\\gtfs_schedule\\original\\20250604_080004_Viagon_Autocares.zip"
+    },
+    {
+      "check": "census_zip:014",
+      "status": "PASS",
+      "expected_normalized": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "actual": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_C_COMPLEX_REGIONAL\\014_gilsanz\\02_sources\\gtfs_schedule\\original\\20260527_110752_Empresa_Gilsanz.zip"
+    },
+    {
+      "check": "census_zip:020",
+      "status": "PASS",
+      "expected_normalized": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "actual": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\020_kbus\\02_sources\\gtfs_schedule\\original\\20250530_060158_Bus_Barakaldo.zip"
+    },
+    {
+      "check": "census_zip:019",
+      "status": "PASS",
+      "expected_normalized": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "actual": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\019_bizkaibus\\02_sources\\gtfs_schedule\\original\\20260910_060014_Euskadi_Bizkaibus.zip"
+    }
+  ],
+  "correction_reason": "El manifiesto de censo representa SHA-256 en hexadecimal mayúsculo; el comparador inicial no normalizó el case. Identidad binaria confirmada normalizando hexadecimal. Se conserva summary.json FAIL del comparador inicial, sin ocultar ni modificar evidencia técnica.",
+  "technical_inventory_unchanged": true
+}

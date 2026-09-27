@@ -1,0 +1,54 @@
+{
+  "status": "FAIL",
+  "checks": 221,
+  "failures": [
+    {
+      "check": "census_zip:002",
+      "status": "FAIL",
+      "detail": {
+        "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\002_ancebus\\02_sources\\gtfs_schedule\\original\\20250523_100004_Ancebus.zip",
+        "expected": "42BF756A88336DACB085EC49DBDD0F019FD37AFE7C7E5C24C1D8D2C1DF0DE27D"
+      }
+    },
+    {
+      "check": "census_zip:005",
+      "status": "FAIL",
+      "detail": {
+        "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_A_SMALL_BASIC\\005_viagon\\02_sources\\gtfs_schedule\\original\\20250604_080004_Viagon_Autocares.zip",
+        "expected": "F35192F9AC9F91E39F10357DAD6CC88EBDFFDEEDFC3BF4053B383D09636DE100"
+      }
+    },
+    {
+      "check": "census_zip:014",
+      "status": "FAIL",
+      "detail": {
+        "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_C_COMPLEX_REGIONAL\\014_gilsanz\\02_sources\\gtfs_schedule\\original\\20260527_110752_Empresa_Gilsanz.zip",
+        "expected": "DA9DAA4F60D798FC45B3A71EF81926E447A1EAA6C061CDDF96C34EA3388272F9"
+      }
+    },
+    {
+      "check": "census_zip:020",
+      "status": "FAIL",
+      "detail": {
+        "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\020_kbus\\02_sources\\gtfs_schedule\\original\\20250530_060158_Bus_Barakaldo.zip",
+        "expected": "65130FD01470593CD2E234177F3C4CB810154D0B8E13FBEE3AA91F1973072ACE"
+      }
+    },
+    {
+      "check": "census_zip:019",
+      "status": "FAIL",
+      "detail": {
+        "path": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_D_MATURE_BENCHMARK\\019_bizkaibus\\02_sources\\gtfs_schedule\\original\\20260910_060014_Euskadi_Bizkaibus.zip",
+        "expected": "E15D963BA3DC774E47B4F9F46DBD954ECE6A720D49A71BFC22A104A12027BD73"
+      }
+    }
+  ],
+  "distribution": {
+    "EXISTING": 11,
+    "PENDING_VERIFICATION": 3,
+    "PLANNED": 4,
+    "IN_DEVELOPMENT": 2
+  },
+  "evidences": 28,
+  "paths": 76
+}

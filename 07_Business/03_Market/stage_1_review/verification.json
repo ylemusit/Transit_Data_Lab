@@ -1,0 +1,113 @@
+{
+  "date": "2026-09-27T03:03:35.787573+00:00",
+  "package_verification": "PASS",
+  "stage_1_execution": "INCOMPLETE",
+  "gate_readiness": "NOT_READY_FOR_HUMAN_GATE",
+  "stage_2": "NOT AUTHORIZED",
+  "checks": [
+    {
+      "name": "15 requested review sections",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Conservative execution and readiness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Four conclusion classes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Human gate remains pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No assumption state change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Criteria omission explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "36 distinct reused evidence IDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Evidence metadata and limits retained verbatim",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Local review and evidence links resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Persisted full historical result: evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Persisted full historical result: readiness_review",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git status completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git diff_names completed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git diff_check completed",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "modified_document_sha256": {
+    "07_Business\\03_Market\\STAGE_1_GATE_REVIEW.md": "2da0022f845181839ca5fe1f95435c8423f89b5f3d31e9c6b2a6f47de8fadbf4",
+    "07_Business\\03_Market\\STAGE_1_EVIDENCE_REUSE.md": "729864dc3abc73effd07f176c9974d4f7163894b8567d63ad5dc203028a1d675",
+    "07_Business\\BUSINESS_STATUS.md": "97440ad934243fca60d14b9df339a2aec74ec1c74714174a1223d6a68375a0b7",
+    "07_Business\\01_Governance\\DECISION_LOG.md": "8b7f2ce2541734b23b7ae76360e445f2316950990d951a0d889bff715f742e7b",
+    "07_Business\\03_Market\\stage_1_review\\verify_package.py": "98cd83c7f5ae884721670bed382b4daee5ae0adaaa12a573d7376d2b4b9380ee"
+  },
+  "git": {
+    "status": {
+      "exit_code": 0,
+      "stdout": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? 07_Business/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+      "stderr": ""
+    },
+    "diff_names": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "diff_check": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "new_external_evidence": 0,
+  "assumption_changes": [],
+  "repository_wide_hash": false,
+  "resource_guard_triggered": false,
+  "limitations": [
+    "Structure and references only; no human gate approval.",
+    "Historical evidence reused without rerun or external refresh.",
+    "Hashes only of files written in this execution; no current V1 hash certification.",
+    "Grouped untracked Git cannot prove global immutability."
+  ]
+}

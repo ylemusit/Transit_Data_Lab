@@ -1,0 +1,6 @@
+?? .gitignore
+?? 02_Data_Engineering/
+?? 03_Compliance/
+?? PROJECT_CURRENT_STATE.md
+?? project_baseline.json
+?? reports/

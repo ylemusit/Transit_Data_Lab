@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "validated_at": "2026-09-27T01:18:24.849175+00:00",
+  "sha256": "541b19b2d4b47d9639a346df9531ec163e92c96f2a5f56d7413a07620ffb0da3",
+  "checks": {
+    "JSON_valid": true,
+    "GTFS_SHA_correct": true,
+    "GTFS_preserved": true,
+    "Phase_1_preserved": true,
+    "Phase_2_FROZEN": true,
+    "Phase_2_SHA_correct": true,
+    "negative_assertions_preserved": true,
+    "unrelated_metadata_preserved": true
+  }
+}

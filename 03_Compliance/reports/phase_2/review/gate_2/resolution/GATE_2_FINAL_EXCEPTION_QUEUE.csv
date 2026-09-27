@@ -1,0 +1,2 @@
+final_review_id,issue,required_action,issue_type,requires_human_legal_decision,human_status,materialization_eligible
+G2-045,SOURCE_FACT_NOT_PERSISTED,Persistir por separado el source fact EU-2017-1926-SF-A09-P03 conforme a la propuesta aprobada; esta ejecución no lo autoriza.,MECHANICAL_PERSISTENCE_DEPENDENCY,FALSE,READY_PENDING_SOURCE_FACT_PERSISTENCE,FALSE

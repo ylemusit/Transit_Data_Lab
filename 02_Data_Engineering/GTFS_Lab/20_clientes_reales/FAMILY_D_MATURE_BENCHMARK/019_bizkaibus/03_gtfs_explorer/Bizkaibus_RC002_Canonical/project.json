@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "project_id": "6bc0199c-c0c8-4ff2-8dae-5c43c5658de0",
+  "name": "Bizkaibus_RC002_Canonical",
+  "status": "READY",
+  "feed": {
+    "feed_id": "aa49b9cb-99d7-4479-94de-92ca4753770b",
+    "manifest_sha256": "48f96a07133e58e50e64d9398c9e8dc4b6b0534dd9c0579624cee41ab5a4b9ec"
+  },
+  "references": {
+    "database": "data.duckdb",
+    "cache": "cache",
+    "reports": "reports"
+  }
+}

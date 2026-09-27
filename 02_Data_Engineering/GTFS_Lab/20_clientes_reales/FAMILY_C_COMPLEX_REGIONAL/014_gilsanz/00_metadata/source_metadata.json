@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "014",
+    "operator_display_name":  "Empresa Gilsanz",
+    "operator_slug":  "gilsanz",
+    "family":  "FAMILY_C_COMPLEX_REGIONAL",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/02_sources/gtfs_schedule/original/20260527_110752_Empresa_Gilsanz.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "DA9DAA4F60D798FC45B3A71EF81926E447A1EAA6C061CDDF96C34EA3388272F9"
+                         },
+                         {
+                             "path":  "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/01_nap_snapshot/Gilsanz.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "A2B9EB47D878869EFDFBF82432142AE8B74A988FDB3354A401CB83F11AA19742"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

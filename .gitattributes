@@ -1,0 +1,57 @@
+# Transit Data Lab: repository EOL policy, independent of core.autocrlf.
+# Normal text: LF in Git and checkout; no inherited content filters.
+* text=auto eol=lf -filter -ident -working-tree-encoding
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+*.sql text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.txt text eol=lf
+*.sha256 text eol=lf
+*.canvas text eol=lf
+
+# Captured sources and retained execution evidence: original bytes in both directions.
+/03_Compliance/NAP/** -text -eol
+/03_Compliance/Spain/**/*.xml -text -eol
+/03_Compliance/_Sources/** -text -eol
+/03_Compliance/reports/** -text -eol
+/07_Business/03_Market/evidence/** -text -eol
+/07_Business/02_Capabilities/review_v1/** -text -eol
+/07_Business/03_Market/readiness_review/** -text -eol
+/07_Business/03_Market/stage_1_review/** -text -eol
+/07_Business/03_Market/stage_1_amendment/** -text -eol
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/**/01_nap_snapshot/** -text -eol
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/**/02_sources/** -text -eol
+/02_Data_Engineering/GTFS_Lab/20_clientes_reales/**/03_gtfs_explorer/** -text -eol
+/02_Data_Engineering/GTFS_Lab/exports/*.kml -text -eol
+/reports/repository_integrity/phase_1_5/** -text -eol
+
+# Explicit frozen document exceptions required by existing governance/hash records.
+/PROJECT_CURRENT_STATE.md -text -eol
+/project_baseline.json -text -eol
+/07_Business/02_Capabilities/CAPABILITY_REGISTER.md -text -eol
+/07_Business/02_Capabilities/EVIDENCE_INDEX.md -text -eol
+/07_Business/02_Capabilities/CAPABILITY_GAPS.md -text -eol
+
+# Known binaries: never text-convert; do not invoke textual diff/merge drivers.
+*.pdf -text -eol -diff -merge
+*.png -text -eol -diff -merge
+*.jpg -text -eol -diff -merge
+*.jpeg -text -eol -diff -merge
+*.gif -text -eol -diff -merge
+*.webp -text -eol -diff -merge
+*.ico -text -eol -diff -merge
+*.zip -text -eol -diff -merge
+*.7z -text -eol -diff -merge
+*.gz -text -eol -diff -merge
+*.bz2 -text -eol -diff -merge
+*.xz -text -eol -diff -merge
+*.tar -text -eol -diff -merge
+
+# Attributes do not make ignored sensitive originals, datasets or generated data eligible.
+# Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

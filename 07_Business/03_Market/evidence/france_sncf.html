@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ministère des Transports">
+    <meta name="csrf" content="Gyg1VgAodC1lEl45Wg0wOkU3VTIFLT43cXjfLQ1j6Xgl5USP3ubfUriS">
+
+
+
+    <meta name="description" content="Rendre disponible, valoriser et améliorer les données transports">
+    <title>Réseau SNCF TGV, Intercités et TER - Données (GTFS, NeTEx, SIRI Lite, gtfs-rt) ouvertes - France</title>
+
+    <meta property="og:title" content="Réseau SNCF TGV, Intercités et TER - Données (GTFS, NeTEx, SIRI Lite, gtfs-rt) ouvertes - France">
+    <meta property="og:image" content="https://transport.data.gouv.fr/images/transport-social-share-65fc4c760aa8fe71c7ae5e5bcd370981.png?vsn=d">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Rendre disponible, valoriser et améliorer les données transports">
+    <meta property="og:locale" content="fr">
+
+    <meta name="twitter:card" content="summary">
+    <meta property="twitter:title" content="Réseau SNCF TGV, Intercités et TER - Données (GTFS, NeTEx, SIRI Lite, gtfs-rt) ouvertes - France">
+    <meta property="twitter:image" content="https://transport.data.gouv.fr/images/transport-social-share-65fc4c760aa8fe71c7ae5e5bcd370981.png?vsn=d">
+    <meta property="twitter:description" content="Rendre disponible, valoriser et améliorer les données transports">
+
+    <link rel="stylesheet" media="all" href="/css/app-379b618f185b3a36fb75a2558a0c0b35.css?vsn=d">
+    <link rel="alternate" type="application/atom+xml" href="https://transport.data.gouv.fr/atom.xml" title="Resources feed">
+    <link type="text/plain" rel="author" href="https://transport.data.gouv.fr/humans.txt">
+
+      <!-- Polyfill for css grid-->
+      <script type="text/javascript">
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+          document.write('<script src="https://unpkg.com/@babel/polyfill@7.0.0/dist/polyfill.js"><\/script>');
+          document.write('<script src="https://unpkg.com/url-polyfill@1.0.14/url-polyfill.js"><\/script>');
+        }
+      </script>
+      <!-- Matomo -->
+      <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setCookieDomain", "*.transport.data.gouv.fr"]);
+        _paq.push(["setDomains", "*.transport.data.gouv.fr"]);
+        _paq.push(["HeatmapSessionRecording::disable"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+        window._paq = _paq;
+        (function() {
+          var u="//stats.data.gouv.fr/";
+          _paq.push(["setTrackerUrl", u+"matomo.php"]);
+          _paq.push(["setSiteId", "58"]);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName("script")[0];
+          g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"matomo.js"; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <!-- End Matomo Code -->
+
+
+  </head>
+
+  <body>
+    <header class="navbar">
+  <div class="navbar__container">
+    <a href="/" class="navbar__home">
+      <img alt="transport.data.gouv.fr" class="navbar__logo-mariane" src="/images/logo-ministere-transports-2026-03.png">
+      <img alt="transport.data.gouv.fr" class="navbar__logo-black" src="/images/logo-black.svg">
+    </a>
+    <nav>
+      <a href="#menu" class="nav__hamburger" aria-label="Fermer le menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <div id="menu">
+        <a id="close-menu" href="#" aria-label="Fermer le menu">
+          <i class="fas icon--times-circle"></i>&nbsp
+        </a>
+        <ul class="nav__links top-nav-links">
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Données
+              <div class="dropdown-content">
+                <a href="/datasets">Toutes les données</a>
+                <a href="/explore">Carte d&#39;exploration des données</a>
+                <a href="/explore/gtfs-stops">Carte nationale des arrêts GTFS</a>
+                <a href="/reuses">Réutilisations</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="https://doc.transport.data.gouv.fr">Documentation</a>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Outils
+              <div class="dropdown-content">
+                <a href="/validation">Vérifier la qualité d&#39;un fichier ou d&#39;un flux</a>
+                <a href="/tools/gtfs_diff">Comparer deux GTFS</a>
+                <a href="/tools/siri-querier">Générateur de requêtes SIRI</a>
+
+                <a href="https://mtes-mct.github.io/alm-docs/" target="_blank">Accèslibre Mobilités</a>
+                <a href="https://status.transport.data.gouv.fr" target="_blank">État des services</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="/stats">Statistiques</a>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              Réglementation
+              <div class="dropdown-content">
+                <a href="https://normes.transport.data.gouv.fr" target="_blank">Normes</a>
+                <a href="https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/declaration-de-conformite" target="_blank">Déclaration de conformité</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+              À propos
+              <div class="dropdown-content">
+                <a href="/missions">Nos missions</a>
+                <a href="/nouveautes">Nouvelles fonctionnalités</a>
+              </div>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="https://blog.transport.data.gouv.fr">Blog</a>
+          </li>
+
+            <li class="nav__item">
+              <a class="navigation__link navigation__link--login" href="/login/explanation?redirect_path=%2Fdatasets%2Fhoraires-sncf%3Flocale%3Dfr">
+                <i class="icon icon--login" aria-hidden="true"></i>
+                <span>Se connecter</span>
+              </a>
+            </li>
+
+          <li class="nav__item">
+            <button type="button" class="dropdown">
+
+                <img src="/images/icons/fr-7be6995ec50bd9a89ae2d963e23cd4ea.png?vsn=d" alt="Français" height="18px">
+
+              <div class="dropdown-content languages">
+                <a href="/datasets/horaires-sncf?locale=fr">Français</a>
+                <a href="/datasets/horaires-sncf?locale=en">English</a>
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main class="layout-main">
+
+      
+<div class="container dataset-page-top pb-24">
+  <div class="form__group">
+<form action="/datasets" class="shortlist-form" method="get">
+      <div class="searchBar">
+        <div class="form__group"><div class=""><i class="fas icon--magnifier" id="magnifier"></i><input aria-label="Trouvez un jeu de données" autocomplete="off" id="autoComplete" name="q" placeholder="Trouvez un jeu de données" type="search" value=""></div></div>
+        <div class="autoCompleteResultsField">
+          <div id="autoCompleteResults"></div>
+        </div>
+      </div>
+</form>
+  </div>
+</div>
+<script nonce="oZzgsQi6gCwAtw">
+  const contactId = null;
+  const labels = {"commune":"commune","dataset":"jeu de données","departement":"département","epci":"EPCI","feature":"données contenant…","format":"format de données","mode":"mode de transport","offer":"offre de transport","region":"région","results-description":"Ou rechercher par :","search-description":"Rechercher $query dans les descriptions des jeux de données"};
+</script>
+<style nonce="oZzgsQi6gCwAtw">
+  #autoComplete_list li:nth-of-type(2)::before {
+    content: 'Ou rechercher par :';
+  }
+</style>
+<script src="/js/autocomplete-a645ea96725cc94fc7eff8b13a1d4f92.js?vsn=d">
+</script>
+
+
+
+<div class="dataset-title-div" id="dataset-top">
+  jeu de données
+  <h1>Réseau SNCF TGV, Intercités et TER</h1>
+  <div data-section="dataset-header-links">
+
+  <i class="fa fa-up-right-from-square"></i>
+
+    <a href="/infos_reutilisateurs?utm_campaign=dataset_details" target="_blank">Espace réutilisateur</a>
+
+</div>
+</div>
+<div class="dataset-page">
+  <div class="dataset-menu-container">
+    <div class="dataset-menu">
+      <div class="menu-item"><a href="#dataset-top">Description</a></div>
+      
+      <div class="menu-item">
+        <a href="#dataset-resources">
+          Ressources (6)
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#quality-indicators">Indicateurs qualité</a>
+      </div>
+      <div class="menu-item">
+        <a href="#community-resources">Ressources communautaires</a>
+      </div>
+      
+
+      <div id="phx-GNkK1PkUG7H2zloi" data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdOa0sxUGtVRzdIMnpsb2l3B3Nlc3Npb250AAAAAW0AAAATZGF0YXNldF9kYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwR2aWV3dyNFbGl4aXIuVHJhbnNwb3J0V2ViLkNvdW50UmV1c2VzTGl2ZXcKcGFyZW50X3BpZHcDbmlsdwhyb290X3BpZHcDbmlsdwZyb3V0ZXJ3A25pbHcRbGl2ZV9zZXNzaW9uX25hbWV3A25pbHcJcm9vdF92aWV3dyNFbGl4aXIuVHJhbnNwb3J0V2ViLkNvdW50UmV1c2VzTGl2ZW4GAAyzlOCgAWIAAVGA.-21JTsAwWn4geaK6fAec2siTRgIus0cYS3NttdHs854" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdOa0sxUGtVRzdIMnpsb2l3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYADLOU4KABYgABUYA.RaPoIjE2zppp7ZbUFl3AW5lSFXHEGc1hKBClCoz6cE0"><div class="menu-item">
+  <a href="#dataset-reuses">
+    Réutilisations
+    
+  </a>
+</div></div>
+
+      <div class="menu-item">
+        <a href="#notifications-sent">
+          Notifications envoyées (1)
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#dataset-discussions">
+          Discussions <span id="phx-GNkK1PkVnTH2zlpC" data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdOa0sxUGtWblRIMnpscEN3B3Nlc3Npb250AAAAAW0AAAATZGF0YXNldF9kYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwR2aWV3dyhFbGl4aXIuVHJhbnNwb3J0V2ViLkNvdW50RGlzY3Vzc2lvbnNMaXZldwpwYXJlbnRfcGlkdwNuaWx3CHJvb3RfcGlkdwNuaWx3BnJvdXRlcncDbmlsdxFsaXZlX3Nlc3Npb25fbmFtZXcDbmlsdwlyb290X3ZpZXd3KEVsaXhpci5UcmFuc3BvcnRXZWIuQ291bnREaXNjdXNzaW9uc0xpdmVuBgAMs5TgoAFiAAFRgA.0O-kl539UMwuGcCmYqhUQjbgNEf6XaoQ_kKNfM5DXbs" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdOa0sxUGtWblRIMnpscEN3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYADLOU4KABYgABUYA.daj1KfLWwB9epJC5CB_eCcL-4-1Z6i4PwosBYLE4Hz4"></span>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#backed-up-resources">Ressources historisées</a>
+      </div>
+    </div>
+  </div>
+  <div class="dataset-infos">
+    <section>
+      
+
+
+      <div class="panel">
+        <p>
+<strong>Horaires théoriques et en temps réel de la SNCF</strong></p>
+<p>
+<strong>Théorique :</strong> les horaires des lignes TER, Intercités et TGV opérées par la SNCF Voyageurs pour les 151j à venir, sont fournis au format <a href="https://developers.google.com/transit/gtfs/reference">GTFS</a> et au format NeTEx (qui est la norme technique européenne pour l’échange de données de transport). Les fichiers sont disponibles aux liens suivants :</p>
+<ul>
+  <li>
+pour le GTFS : <a href="https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>  </li>
+  <li>
+pour le NeTEx : <a href="https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>  </li>
+</ul>
+<p>
+<strong>Temps réel :</strong> les horaires en temps réel sont fournis selon les deux standards GTFS RT et SIRI pour les horaires et les informations contextuelles sur un périmètre élargi comprenant notamment les TGV, les IC et TER (y compris les sociétés dédiées TER) :</p>
+<ul>
+  <li>
+GTFS-RT TU (Trip Updates) mis à jour toutes les 2 minutes pour les trains circulant dans les 60 prochaines minutes et GTFS-RT SA (Service Alerts) pour les circulations à venir  </li>
+  <li>
+SIRI ET Lite (service “Situation eXchange”) mis à jour toutes les 2 minutes pour les trains circulant dans les 60 prochaines minutes et SIRI SX Lite (service “Situation eXchange”) pour les circulations à venir  </li>
+</ul>
+<p>
+Les fichiers sont disponibles aux liens suivants :</p>
+<ul>
+  <li>
+pour le GTFS-RT TU : <a href="https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates">https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates</a>  </li>
+  <li>
+pour le GTFS-RT SA : <a href="https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts">https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts</a>  </li>
+  <li>
+pour le SIRI ET LITE (version Béta) : <a href="https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable">https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable</a>  </li>
+  <li>
+pour le SIRI SX LITE : <a href="https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange">https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange</a>  </li>
+</ul>
+<p>
+Quelques remarques techniques : </p>
+<ul>
+  <li>
+Au niveau théorique : des mises à jour ont été effectuées sur les données GTFS : le plan de transport théorique intègre désormais à l’échelle nationale les adaptations connues la veille à 17h en cas de perturbations ou de mouvements sociaux.  </li>
+  <li>
+Les flux en temps réel ne sont pas filtrés, et peuvent contenir un périmètre plus large que les TGV, IC et TER. Même si des informations concernant d’autres circulations peuvent être visibles, merci de vous référer aux jeux de données des autorités organisatrices compétentes, notamment Ile de France Mobilités pour les données en temps réel en Ile de France ou les différents temps réels des Régions quand elles existent. Le périmètre n’est garanti que pour TGV et IC  </li>
+  <li>
+Pour les flux GTFS-RT SA et SIRI SX Lite : l’identifiant commun des circulations entre les différents flux est le numéro commercial du train, que vous trouverez dans &lt;trip&gt; pour le GTFS-RT SA et dans &lt;VehiculeJourneyRef&gt; dans le SIRI SX LITE. Ces flux ne comprennent que les informations valorisées à la course et ne comprennent pas les informations relatives à des périmètres (gares ou lignes du réseau, qui peuvent impacter plusieurs opérateurs).  </li>
+</ul>
+<p>
+·<strong>Ce jeu de données est une production SNCF Voyageurs contenant des éléments assemblés pour la communauté open</strong> <strong>data au-delà de ses obligations réglementaires. Il ne se substitue donc pas aux données officielles progressivement publiées par les autorités organisatrices régionales qui peuvent éventuellement comporter de petites divergences. Aussi, nous vous recommandons de plutôt consommer les données fournies par les Régions et IDFM.</strong></p>
+<p>
+En cas de question, vous pouvez contacter l’équipe Open data SNCF Voyageurs à l’adresse suivante : <a href="mailto:Data_Office_Secretariat_General_SA_Voyageurs@sncf.fr">Data_Office_Secretariat_General_SA_Voyageurs@sncf.fr</a></p>
+
+      </div>
+    </section>
+
+    
+    <section id="dataset-resources" class="pt-48">
+      
+
+
+  <section class="dataset__resources white">
+    <h2>Données statiques</h2>
+    
+
+    
+    <div>
+      <div class="ressources-list">
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</h4>
+
+  
+
+  
+
+<div title="Période de validité">
+  <i class="icon icon--calendar-alt" aria-hidden="true"></i>
+  <span>26/09/2026</span>
+  <i class="icon icon--right-arrow ml-05-em" aria-hidden="true"></i>
+  
+  <span class="">28/02/2027</span>
+</div>
+
+  <div class="pb-24 light-gry">
+    <span title="Nous vérifions quotidiennement à la source si le contenu a changé. Cette date peut différer de celle indiquée sur data.gouv.fr car les vérifications de transport.data.gouv.fr portent sur le contenu lui-même.">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  27/09/2026
+  <span class="small">
+    Dernière modification du contenu
+  </span>
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83582#download-availability">100%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="resource-status-corner resource--valid">
+    <span class="">
+
+
+
+          À jour
+
+
+    </span>
+  </div>
+
+    
+
+  <div class="pb-24">
+
+
+    <a href="/resources/83582#validation-report">
+      <span class="resource__summary--Warning">
+
+          46 avertissements
+
+      </span>
+    </a>
+    <span>lors de la validation</span>
+  </div>
+
+
+
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">GTFS</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83582">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--download" aria-hidden="true"></i>Télécharger
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</h4>
+
+  
+
+  
+
+
+
+  <div class="pb-24 light-gry">
+    <span title="Nous vérifions quotidiennement à la source si le contenu a changé. Cette date peut différer de celle indiquée sur data.gouv.fr car les vérifications de transport.data.gouv.fr portent sur le contenu lui-même.">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  27/09/2026
+  <span class="small">
+    Dernière modification du contenu
+  </span>
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83195#download-availability">100%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="resource-status-corner ">
+    <span class="">
+
+
+
+
+    </span>
+  </div>
+
+
+    
+
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">NeTEx</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83195">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--download" aria-hidden="true"></i>Télécharger
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+      
+
+
+  <section class="dataset__resources white">
+    <h2>Données temps réel</h2>
+    
+
+    
+    <div>
+      <div class="ressources-list">
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts</h4>
+
+  
+
+  
+
+  <div class="pb-24 light-gry">
+    <span title="">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  temps réel
+  
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83196#download-availability">100%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  
+
+
+
+    
+
+
+
+    <div class="pb-24">
+
+      <a href="/resources/83196#validation-report">
+        <span class="resource__summary--Warning">
+
+
+            10 498 avertissements
+
+
+        </span>
+      </a>
+      <span>lors de la validation</span>
+    </div>
+
+
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+        Données présentes dans la ressource :
+        <div>
+
+            <span class="label mode">service_alerts</span>
+
+        </div>
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">gtfs-rt</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83196">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-service-alerts">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--link" aria-hidden="true"></i>Lien vers l&#39;API
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates</h4>
+
+  
+
+  
+
+  <div class="pb-24 light-gry">
+    <span title="">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  temps réel
+  
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83583#download-availability">100%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  
+
+
+
+    
+
+
+
+    <div class="pb-24">
+
+      <a href="/resources/83583#validation-report">
+        <span class="resource__summary--Error">
+
+
+
+            383 erreurs
+
+        </span>
+      </a>
+      <span>lors de la validation</span>
+    </div>
+
+
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+        Données présentes dans la ressource :
+        <div>
+
+            <span class="label mode">trip_updates</span>
+
+        </div>
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">gtfs-rt</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83583">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--link" aria-hidden="true"></i>Lien vers l&#39;API
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange</h4>
+
+  
+
+  
+
+  <div class="pb-24 light-gry">
+    <span title="">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  temps réel
+  
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83199#download-availability">99.9%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  
+
+
+
+    
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">SIRI Lite</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83199">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-situation-exchange">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--link" aria-hidden="true"></i>Lien vers l&#39;API
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+
+
+
+
+
+
+<div class="panel resource ">
+  <h4>https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable</h4>
+
+  
+
+  
+
+  <div class="pb-24 light-gry">
+    <span title="">
+  <i class="icon icon--sync-alt" aria-hidden="true"></i>
+  temps réel
+  
+</span>
+
+    
+    
+    <div>
+      <span title="disponibilité au téléchargement durant les 30 derniers jours">
+        <img class="icon icon--uptime" src="/images/icons/uptime-75465e34d1ef58d3d095b3c6cda308b0.svg?vsn=d">
+
+        <span class="resource__summary--Success">
+          <a href="/resources/83198#download-availability">99.8%</a>
+        </span>
+        <span class="small">Taux de disponibilité</span>
+      </span>
+    </div>
+  </div>
+
+  
+
+
+
+    
+
+  <div class="resource-panel-bottom">
+    <div class="resource-features">
+
+      
+    </div>
+    <div class="resource-actions">
+      <div>
+        <div class="resource-format" title="format de la ressource">
+          <span class="label">SIRI Lite</span>
+        </div>
+      </div>
+      <div>
+        <a href="/resources/83198">
+          <button class="button-outline primary small">
+            <i class="icon icon--plus" aria-hidden="true"></i>détails
+          </button>
+        </a>
+        <a class="download-button" href="https://proxy.transport.data.gouv.fr/resource/sncf-siri-lite-estimated-timetable">
+          <button class="button-outline primary small">
+
+              <i class="icon icon--link" aria-hidden="true"></i>Lien vers l&#39;API
+
+          </button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+      
+
+
+      
+
+
+      
+
+  <section class="dataset__resources">
+    <p class="information-message">
+      Des versions précédentes des ressources de ce jeu de données sont disponibles dans la section <a href="#backed-up-resources">Ressources historisées</a>.
+    </p>
+  </section>
+
+      
+
+
+  <section class="dataset__resources white" id="dataset-documentation">
+    <h2>Documentation</h2>
+    <p class="information-message">
+      Les producteurs peuvent partager dans cette section : charte graphique, documentation, etc. Utilisez <a href="https://doc.data.gouv.fr/jeux-de-donnees/publier-un-jeu-de-donnees/#type" target="_blank">le type documentation</a> sur data.gouv.fr.
+    </p>
+
+    
+    <div>
+      <div class="ressources-list">
+
+      </div>
+    </div>
+  </section>
+
+      
+
+
+      <hr>
+<section class="dataset__resources">
+  <div class="information-message pb-24">
+    <i class="fas fa-circle-info"></i>
+    Vous réutilisez ce jeu de données ? <a href="#mail_form">Envoyez-nous un message</a> afin que l’on puisse en discuter et mettre en avant votre réutilisation.
+  </div>
+</section>
+      <section id="quality-indicators">
+  <h2>Indicateurs qualité</h2>
+  <div class="panel">
+    <div id="vega-vis"></div>
+    <h5>Derniers indicateurs qualité</h5>
+    <table class="table">
+      <tr>
+
+          <th>Disponibilité</th>
+
+          <th>Conformité</th>
+
+          <th>Fraicheur</th>
+
+      </tr>
+      <tr>
+
+          <td>99%</td>
+
+          <td>100%</td>
+
+          <td>100%</td>
+
+      </tr>
+    </table>
+    <p>
+      transport.data.gouv.fr calcule des indicateurs qualité de manière quotidienne afin de mieux appréhender les données publiées. <i class="fa fa-up-right-from-square"></i> <a href="https://doc.transport.data.gouv.fr/outils/outils-disponibles-sur-le-pan/indicateurs-de-qualite" target="_blank">En savoir plus</a>.
+    </p>
+  </div>
+</section>
+
+<script src="/js/vega-e67ffabc35d6c566d4fe8b0a6b7d2047.js?vsn=d" nonce="oZzgsQi6gCwAtw"></script>
+<script nonce="oZzgsQi6gCwAtw">
+  const spec = {"$schema":"https://vega.github.io/schema/vega-lite/v5.json","config":{"axis":{"grid":false}},"data":{"values":[{"date":"2026-06-29","score":100,"topic":"fraicheur"},{"date":"2026-06-29","score":100,"topic":"disponibilité"},{"date":"2026-06-29","score":100,"topic":"conformité"},{"date":"2026-06-30","score":100,"topic":"fraicheur"},{"date":"2026-06-30","score":100,"topic":"disponibilité"},{"date":"2026-06-30","score":100,"topic":"conformité"},{"date":"2026-07-01","score":100,"topic":"fraicheur"},{"date":"2026-07-01","score":100,"topic":"disponibilité"},{"date":"2026-07-01","score":100,"topic":"conformité"},{"date":"2026-07-02","score":100,"topic":"fraicheur"},{"date":"2026-07-02","score":100,"topic":"disponibilité"},{"date":"2026-07-02","score":100,"topic":"conformité"},{"date":"2026-07-03","score":100,"topic":"fraicheur"},{"date":"2026-07-03","score":100,"topic":"disponibilité"},{"date":"2026-07-03","score":100,"topic":"conformité"},{"date":"2026-07-04","score":100,"topic":"fraicheur"},{"date":"2026-07-04","score":100,"topic":"disponibilité"},{"date":"2026-07-04","score":100,"topic":"conformité"},{"date":"2026-07-05","score":100,"topic":"fraicheur"},{"date":"2026-07-05","score":100,"topic":"disponibilité"},{"date":"2026-07-05","score":100,"topic":"conformité"},{"date":"2026-07-06","score":100,"topic":"fraicheur"},{"date":"2026-07-06","score":100,"topic":"disponibilité"},{"date":"2026-07-06","score":100,"topic":"conformité"},{"date":"2026-07-07","score":100,"topic":"fraicheur"},{"date":"2026-07-07","score":100,"topic":"disponibilité"},{"date":"2026-07-07","score":100,"topic":"conformité"},{"date":"2026-07-08","score":100,"topic":"fraicheur"},{"date":"2026-07-08","score":100,"topic":"disponibilité"},{"date":"2026-07-08","score":100,"topic":"conformité"},{"date":"2026-07-09","score":100,"topic":"fraicheur"},{"date":"2026-07-09","score":100,"topic":"disponibilité"},{"date":"2026-07-09","score":100,"topic":"conformité"},{"date":"2026-07-10","score":100,"topic":"fraicheur"},{"date":"2026-07-10","score":100,"topic":"disponibilité"},{"date":"2026-07-10","score":100,"topic":"conformité"},{"date":"2026-07-11","score":100,"topic":"fraicheur"},{"date":"2026-07-11","score":100,"topic":"disponibilité"},{"date":"2026-07-11","score":100,"topic":"conformité"},{"date":"2026-07-12","score":100,"topic":"fraicheur"},{"date":"2026-07-12","score":100,"topic":"disponibilité"},{"date":"2026-07-12","score":100,"topic":"conformité"},{"date":"2026-07-13","score":100,"topic":"fraicheur"},{"date":"2026-07-13","score":100,"topic":"disponibilité"},{"date":"2026-07-13","score":100,"topic":"conformité"},{"date":"2026-07-14","score":100,"topic":"fraicheur"},{"date":"2026-07-14","score":100,"topic":"disponibilité"},{"date":"2026-07-14","score":100,"topic":"conformité"},{"date":"2026-07-15","score":100,"topic":"fraicheur"},{"date":"2026-07-15","score":100,"topic":"disponibilité"},{"date":"2026-07-15","score":100,"topic":"conformité"},{"date":"2026-07-16","score":100,"topic":"fraicheur"},{"date":"2026-07-16","score":100,"topic":"disponibilité"},{"date":"2026-07-16","score":100,"topic":"conformité"},{"date":"2026-07-17","score":100,"topic":"fraicheur"},{"date":"2026-07-17","score":100,"topic":"disponibilité"},{"date":"2026-07-17","score":100,"topic":"conformité"},{"date":"2026-07-18","score":100,"topic":"fraicheur"},{"date":"2026-07-18","score":100,"topic":"disponibilité"},{"date":"2026-07-18","score":100,"topic":"conformité"},{"date":"2026-07-19","score":100,"topic":"fraicheur"},{"date":"2026-07-19","score":100,"topic":"disponibilité"},{"date":"2026-07-19","score":100,"topic":"conformité"},{"date":"2026-07-20","score":100,"topic":"fraicheur"},{"date":"2026-07-20","score":100,"topic":"disponibilité"},{"date":"2026-07-20","score":100,"topic":"conformité"},{"date":"2026-07-21","score":100,"topic":"fraicheur"},{"date":"2026-07-21","score":100,"topic":"disponibilité"},{"date":"2026-07-21","score":100,"topic":"conformité"},{"date":"2026-07-22","score":100,"topic":"fraicheur"},{"date":"2026-07-22","score":100,"topic":"disponibilité"},{"date":"2026-07-22","score":100,"topic":"conformité"},{"date":"2026-07-23","score":100,"topic":"fraicheur"},{"date":"2026-07-23","score":100,"topic":"disponibilité"},{"date":"2026-07-23","score":100,"topic":"conformité"},{"date":"2026-07-24","score":100,"topic":"fraicheur"},{"date":"2026-07-24","score":100,"topic":"disponibilité"},{"date":"2026-07-24","score":100,"topic":"conformité"},{"date":"2026-07-25","score":100,"topic":"fraicheur"},{"date":"2026-07-25","score":100,"topic":"disponibilité"},{"date":"2026-07-25","score":100,"topic":"conformité"},{"date":"2026-07-26","score":100,"topic":"fraicheur"},{"date":"2026-07-26","score":100,"topic":"disponibilité"},{"date":"2026-07-26","score":100,"topic":"conformité"},{"date":"2026-07-27","score":100,"topic":"fraicheur"},{"date":"2026-07-27","score":100,"topic":"disponibilité"},{"date":"2026-07-27","score":100,"topic":"conformité"},{"date":"2026-07-28","score":100,"topic":"fraicheur"},{"date":"2026-07-28","score":100,"topic":"disponibilité"},{"date":"2026-07-28","score":100,"topic":"conformité"},{"date":"2026-07-29","score":100,"topic":"fraicheur"},{"date":"2026-07-29","score":100,"topic":"disponibilité"},{"date":"2026-07-29","score":100,"topic":"conformité"},{"date":"2026-07-30","score":100,"topic":"fraicheur"},{"date":"2026-07-30","score":100,"topic":"disponibilité"},{"date":"2026-07-30","score":100,"topic":"conformité"},{"date":"2026-07-31","score":100,"topic":"fraicheur"},{"date":"2026-07-31","score":100,"topic":"disponibilité"},{"date":"2026-07-31","score":100,"topic":"conformité"},{"date":"2026-08-01","score":100,"topic":"fraicheur"},{"date":"2026-08-01","score":100,"topic":"disponibilité"},{"date":"2026-08-01","score":100,"topic":"conformité"},{"date":"2026-08-02","score":100,"topic":"fraicheur"},{"date":"2026-08-02","score":100,"topic":"disponibilité"},{"date":"2026-08-02","score":100,"topic":"conformité"},{"date":"2026-08-03","score":100,"topic":"fraicheur"},{"date":"2026-08-03","score":100,"topic":"disponibilité"},{"date":"2026-08-03","score":100,"topic":"conformité"},{"date":"2026-08-04","score":100,"topic":"fraicheur"},{"date":"2026-08-04","score":100,"topic":"disponibilité"},{"date":"2026-08-04","score":100,"topic":"conformité"},{"date":"2026-08-05","score":100,"topic":"fraicheur"},{"date":"2026-08-05","score":100,"topic":"disponibilité"},{"date":"2026-08-05","score":100,"topic":"conformité"},{"date":"2026-08-06","score":100,"topic":"fraicheur"},{"date":"2026-08-06","score":100,"topic":"disponibilité"},{"date":"2026-08-06","score":100,"topic":"conformité"},{"date":"2026-08-07","score":100,"topic":"fraicheur"},{"date":"2026-08-07","score":100,"topic":"disponibilité"},{"date":"2026-08-07","score":100,"topic":"conformité"},{"date":"2026-08-08","score":100,"topic":"fraicheur"},{"date":"2026-08-08","score":100,"topic":"disponibilité"},{"date":"2026-08-08","score":100,"topic":"conformité"},{"date":"2026-08-09","score":100,"topic":"fraicheur"},{"date":"2026-08-09","score":100,"topic":"disponibilité"},{"date":"2026-08-09","score":100,"topic":"conformité"},{"date":"2026-08-10","score":100,"topic":"fraicheur"},{"date":"2026-08-10","score":100,"topic":"disponibilité"},{"date":"2026-08-10","score":100,"topic":"conformité"},{"date":"2026-08-11","score":100,"topic":"fraicheur"},{"date":"2026-08-11","score":100,"topic":"disponibilité"},{"date":"2026-08-11","score":100,"topic":"conformité"},{"date":"2026-08-12","score":100,"topic":"fraicheur"},{"date":"2026-08-12","score":100,"topic":"disponibilité"},{"date":"2026-08-12","score":100,"topic":"conformité"},{"date":"2026-08-13","score":100,"topic":"fraicheur"},{"date":"2026-08-13","score":100,"topic":"disponibilité"},{"date":"2026-08-13","score":100,"topic":"conformité"},{"date":"2026-08-14","score":100,"topic":"fraicheur"},{"date":"2026-08-14","score":100,"topic":"disponibilité"},{"date":"2026-08-14","score":100,"topic":"conformité"},{"date":"2026-08-15","score":100,"topic":"fraicheur"},{"date":"2026-08-15","score":100,"topic":"disponibilité"},{"date":"2026-08-15","score":100,"topic":"conformité"},{"date":"2026-08-16","score":100,"topic":"fraicheur"},{"date":"2026-08-16","score":100,"topic":"disponibilité"},{"date":"2026-08-16","score":100,"topic":"conformité"},{"date":"2026-08-17","score":100,"topic":"fraicheur"},{"date":"2026-08-17","score":100,"topic":"disponibilité"},{"date":"2026-08-17","score":100,"topic":"conformité"},{"date":"2026-08-18","score":100,"topic":"fraicheur"},{"date":"2026-08-18","score":100,"topic":"disponibilité"},{"date":"2026-08-18","score":100,"topic":"conformité"},{"date":"2026-08-19","score":100,"topic":"fraicheur"},{"date":"2026-08-19","score":100,"topic":"disponibilité"},{"date":"2026-08-19","score":100,"topic":"conformité"},{"date":"2026-08-20","score":100,"topic":"fraicheur"},{"date":"2026-08-20","score":100,"topic":"disponibilité"},{"date":"2026-08-20","score":100,"topic":"conformité"},{"date":"2026-08-21","score":100,"topic":"fraicheur"},{"date":"2026-08-21","score":100,"topic":"disponibilité"},{"date":"2026-08-21","score":100,"topic":"conformité"},{"date":"2026-08-22","score":100,"topic":"fraicheur"},{"date":"2026-08-22","score":100,"topic":"disponibilité"},{"date":"2026-08-22","score":100,"topic":"conformité"},{"date":"2026-08-23","score":100,"topic":"fraicheur"},{"date":"2026-08-23","score":100,"topic":"disponibilité"},{"date":"2026-08-23","score":100,"topic":"conformité"},{"date":"2026-08-24","score":100,"topic":"fraicheur"},{"date":"2026-08-24","score":100,"topic":"disponibilité"},{"date":"2026-08-24","score":100,"topic":"conformité"},{"date":"2026-08-25","score":100,"topic":"fraicheur"},{"date":"2026-08-25","score":100,"topic":"disponibilité"},{"date":"2026-08-25","score":100,"topic":"conformité"},{"date":"2026-08-26","score":100,"topic":"fraicheur"},{"date":"2026-08-26","score":100,"topic":"disponibilité"},{"date":"2026-08-26","score":100,"topic":"conformité"},{"date":"2026-08-27","score":100,"topic":"fraicheur"},{"date":"2026-08-27","score":98,"topic":"disponibilité"},{"date":"2026-08-27","score":100,"topic":"conformité"},{"date":"2026-08-28","score":100,"topic":"fraicheur"},{"date":"2026-08-28","score":98,"topic":"disponibilité"},{"date":"2026-08-28","score":100,"topic":"conformité"},{"date":"2026-08-29","score":100,"topic":"fraicheur"},{"date":"2026-08-29","score":99,"topic":"disponibilité"},{"date":"2026-08-29","score":100,"topic":"conformité"},{"date":"2026-08-30","score":100,"topic":"fraicheur"},{"date":"2026-08-30","score":99,"topic":"disponibilité"},{"date":"2026-08-30","score":100,"topic":"conformité"},{"date":"2026-08-31","score":100,"topic":"fraicheur"},{"date":"2026-08-31","score":99,"topic":"disponibilité"},{"date":"2026-08-31","score":100,"topic":"conformité"},{"date":"2026-09-01","score":100,"topic":"fraicheur"},{"date":"2026-09-01","score":99,"topic":"disponibilité"},{"date":"2026-09-01","score":100,"topic":"conformité"},{"date":"2026-09-02","score":100,"topic":"fraicheur"},{"date":"2026-09-02","score":99,"topic":"disponibilité"},{"date":"2026-09-02","score":100,"topic":"conformité"},{"date":"2026-09-03","score":100,"topic":"fraicheur"},{"date":"2026-09-03","score":99,"topic":"disponibilité"},{"date":"2026-09-03","score":100,"topic":"conformité"},{"date":"2026-09-04","score":100,"topic":"fraicheur"},{"date":"2026-09-04","score":99,"topic":"disponibilité"},{"date":"2026-09-04","score":100,"topic":"conformité"},{"date":"2026-09-05","score":100,"topic":"fraicheur"},{"date":"2026-09-05","score":99,"topic":"disponibilité"},{"date":"2026-09-05","score":100,"topic":"conformité"},{"date":"2026-09-06","score":100,"topic":"fraicheur"},{"date":"2026-09-06","score":99,"topic":"disponibilité"},{"date":"2026-09-06","score":100,"topic":"conformité"},{"date":"2026-09-07","score":100,"topic":"fraicheur"},{"date":"2026-09-07","score":99,"topic":"disponibilité"},{"date":"2026-09-07","score":100,"topic":"conformité"},{"date":"2026-09-08","score":100,"topic":"fraicheur"},{"date":"2026-09-08","score":99,"topic":"disponibilité"},{"date":"2026-09-08","score":100,"topic":"conformité"},{"date":"2026-09-09","score":100,"topic":"fraicheur"},{"date":"2026-09-09","score":99,"topic":"disponibilité"},{"date":"2026-09-09","score":100,"topic":"conformité"},{"date":"2026-09-10","score":100,"topic":"fraicheur"},{"date":"2026-09-10","score":99,"topic":"disponibilité"},{"date":"2026-09-10","score":100,"topic":"conformité"},{"date":"2026-09-11","score":100,"topic":"fraicheur"},{"date":"2026-09-11","score":99,"topic":"disponibilité"},{"date":"2026-09-11","score":100,"topic":"conformité"},{"date":"2026-09-12","score":100,"topic":"fraicheur"},{"date":"2026-09-12","score":99,"topic":"disponibilité"},{"date":"2026-09-12","score":100,"topic":"conformité"},{"date":"2026-09-13","score":100,"topic":"fraicheur"},{"date":"2026-09-13","score":99,"topic":"disponibilité"},{"date":"2026-09-13","score":100,"topic":"conformité"},{"date":"2026-09-14","score":100,"topic":"fraicheur"},{"date":"2026-09-14","score":99,"topic":"disponibilité"},{"date":"2026-09-14","score":100,"topic":"conformité"},{"date":"2026-09-15","score":100,"topic":"fraicheur"},{"date":"2026-09-15","score":99,"topic":"disponibilité"},{"date":"2026-09-15","score":100,"topic":"conformité"},{"date":"2026-09-16","score":100,"topic":"fraicheur"},{"date":"2026-09-16","score":99,"topic":"disponibilité"},{"date":"2026-09-16","score":100,"topic":"conformité"},{"date":"2026-09-17","score":100,"topic":"fraicheur"},{"date":"2026-09-17","score":99,"topic":"disponibilité"},{"date":"2026-09-17","score":100,"topic":"conformité"},{"date":"2026-09-18","score":100,"topic":"fraicheur"},{"date":"2026-09-18","score":100,"topic":"disponibilité"},{"date":"2026-09-18","score":100,"topic":"conformité"},{"date":"2026-09-19","score":100,"topic":"fraicheur"},{"date":"2026-09-19","score":100,"topic":"disponibilité"},{"date":"2026-09-19","score":100,"topic":"conformité"},{"date":"2026-09-20","score":100,"topic":"fraicheur"},{"date":"2026-09-20","score":100,"topic":"disponibilité"},{"date":"2026-09-20","score":100,"topic":"conformité"},{"date":"2026-09-21","score":100,"topic":"fraicheur"},{"date":"2026-09-21","score":99,"topic":"disponibilité"},{"date":"2026-09-21","score":100,"topic":"conformité"},{"date":"2026-09-22","score":100,"topic":"fraicheur"},{"date":"2026-09-22","score":99,"topic":"disponibilité"},{"date":"2026-09-22","score":100,"topic":"conformité"},{"date":"2026-09-23","score":100,"topic":"fraicheur"},{"date":"2026-09-23","score":99,"topic":"disponibilité"},{"date":"2026-09-23","score":100,"topic":"conformité"},{"date":"2026-09-24","score":100,"topic":"fraicheur"},{"date":"2026-09-24","score":99,"topic":"disponibilité"},{"date":"2026-09-24","score":100,"topic":"conformité"},{"date":"2026-09-25","score":100,"topic":"fraicheur"},{"date":"2026-09-25","score":99,"topic":"disponibilité"},{"date":"2026-09-25","score":100,"topic":"conformité"},{"date":"2026-09-26","score":100,"topic":"fraicheur"},{"date":"2026-09-26","score":99,"topic":"disponibilité"},{"date":"2026-09-26","score":100,"topic":"conformité"}]},"encoding":{"color":{"field":"topic","type":"nominal"},"x":{"field":"date","type":"temporal"},"y":{"field":"score","type":"quantitative"}},"height":250,"mark":{"interpolate":"step-before","strokewidth":3,"tooltip":true,"type":"line"},"width":"container"};
+
+  // Make sure the chart has got the appropriate width.
+  // It may be too large at the beginning, listen to resize
+  // events and rerender the chart.
+  // https://talk.observablehq.com/t/embedding-vega-lite-charts-that-have-width-value-set-to-container-leads-to-null-width-until-window-is-resized/6120/6
+  // https://github.com/vega/react-vega/issues/85#issuecomment-1826421132
+  new ResizeObserver(() => {
+    window.dispatchEvent(new Event("resize"));
+  }).observe(document.getElementById("vega-vis"));
+
+  window.vegaEmbed("#vega-vis", spec, {renderer: "svg"});
+</script>
+      <section class="pt-48" id="community-resources">
+  <h2>Ressources communautaires</h2>
+  <section class="dataset__resources">
+    <div class="information-message">
+
+      Les réutilisateurs peuvent partager dans cette section les modifications apportées à une ressource, conformément à la clause de partage à l’identique (article 4.4) de la <a href="https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/conditions-dutilisation-des-donnees/licence-odbl#conditions-particulieres-dutilisation" target="_blank">licence ODbL</a>. <a href="https://www.data.gouv.fr/admin/community-resource/new/?dataset_id=6853c089b3ed5781f6adfdf7" target="_blank">Publiez votre ressource</a> sur data.gouv.fr ou <a href="https://doc.transport.data.gouv.fr/reutilisations-des-donnees/procedures-de-repartage-des-donnees" target="_blank">consultez la documentation.</a>
+    </div>
+  </section>
+
+  <div class="ressources-list">
+
+  </div>
+</section>
+    </section>
+
+    <div id="phx-GNkK1PlTVkT2zlpi" data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdOa0sxUGxUVmtUMnpscGl3B3Nlc3Npb250AAAAAW0AAAATZGF0YXNldF9kYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwR2aWV3dx5FbGl4aXIuVHJhbnNwb3J0V2ViLlJldXNlc0xpdmV3CnBhcmVudF9waWR3A25pbHcIcm9vdF9waWR3A25pbHcGcm91dGVydwNuaWx3EWxpdmVfc2Vzc2lvbl9uYW1ldwNuaWx3CXJvb3Rfdmlld3ceRWxpeGlyLlRyYW5zcG9ydFdlYi5SZXVzZXNMaXZlbgYAELOU4KABYgABUYA.0-vQmyvHVANKkwpYOFSiPXHKENH_ZED2GuMtzTJuSBI" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdOa0sxUGxUVmtUMnpscGl3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYAELOU4KABYgABUYA.e9mAxuHlTqf0PDVoXgM4bnCZQTcmqDJkp-ehH8mSeVE"><section class="white pt-48" id="dataset-reuses">
+  <h2>Réutilisations</h2>
+  
+      <div class="panel">
+        <p>Chargement des réutilisations…</p>
+      </div>
+    
+</section></div>
+
+      <section class="white pt-48" id="notifications-sent">
+  <h2>Notifications envoyées</h2>
+  <div class="panel">
+    <p>
+      transport.data.gouv.fr envoie automatiquement des notifications au producteur du jeu de données afin d&#39;en améliorer la qualité. Les notifications suivantes ont été envoyées au cours des 90 derniers jours.
+    </p>
+    <div id="notifications-sent-content">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Motif de notification</th>
+            <th>Détails</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+  <td>Erreurs de validation</td>
+  <td>
+  <a href="/resources/83583" target="_blank">
+    https://proxy.transport.data.gouv.fr/resource/sncf-gtfs-rt-trip-updates
+  </a>
+</td>
+  <td>05/09/2026 à 09h15 Europe/Paris</td>
+</tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      ℹ️ Si vous êtes producteur de données, vous pouvez <a href="https://doc.transport.data.gouv.fr/administration-des-donnees/procedures-de-publication/gerer-la-qualite-des-donnees#sinscrire-aux-notifications" target="_blank">personnaliser ces notifications</a> depuis votre Espace producteur.
+    </p>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    addSeeMore("15em",
+      "#notifications-sent-content",
+      "Voir plus",
+      "Voir moins",
+      "notifications_sent"
+    )
+  })
+</script>
+
+    <section class="pt-48" id="dataset-discussions">
+      <h2>Discussions</h2>
+      <div class="dataset-details__discussions panel">
+        <div id="phx-GNkK1PmhV9H2znwB" data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdOa0sxUG1oVjlIMnpud0J3B3Nlc3Npb250AAAAAm0AAAAMY3VycmVudF91c2VydwNuaWxtAAAAB2RhdGFzZXR0AAAALXcJaXNfaGlkZGVudwVmYWxzZXcEc2x1Z20AAAANaG9yYWlyZXMtc25jZncZbGVnYWxfb3duZXJfY29tcGFueV9zaXJlbm0AAAAJNTE5MDM3NTg0dxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzbAAAAAF0AAAACXcCaWRiAACN-XcEdHlwZXcEcGF5c3cKX19zdHJ1Y3RfX3cgRWxpeGlyLkRCLkFkbWluaXN0cmF0aXZlRGl2aXNpb253A25vbW0AAAAGRnJhbmNldwpwb3B1bGF0aW9uYgQMa6N3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAXYWRtaW5pc3RyYXRpdmVfZGl2aXNpb253Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdyBFbGl4aXIuREIuQWRtaW5pc3RyYXRpdmVEaXZpc2lvbncFaW5zZWVtAAAAAkZSdwRnZW9tdwNuaWx3CnR5cGVfaW5zZWVtAAAAB3BheXNfRlJqdwZvZmZlcnNsAAAAC3QAAAARdwJpZHcDbmlsdwVtb2Rlc3cDbmlsdwpfX3N0cnVjdF9fdw9FbGl4aXIuREIuT2ZmZXJ3A2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193A2FvbXcJX19vd25lcl9fdw9FbGl4aXIuREIuT2ZmZXJ3C2luc2VydGVkX2F0dwNuaWx3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAFb2ZmZXJ3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdw9FbGl4aXIuREIuT2ZmZXJ3CnVwZGF0ZWRfYXR3A25pbHcObm9tX2NvbW1lcmNpYWxtAAAAElRFUi1TTkNGIE5vcm1hbmRpZXcRaWRlbnRpZmlhbnRfb2ZmcmViAAABl3cOdHlwZV90cmFuc3BvcnR3A25pbHcHbm9tX2FvbXcDbmlsdwlhb21fc2lyZW53A25pbHcGYW9tX2lkdwNuaWx3CmV4cGxvaXRhbnR3A25pbHcGbml2ZWF1dwNuaWx3CnRlcnJpdG9pcmV3A25pbHcMdHlwZV9jb250cmF0dwNuaWx0AAAAEXcCaWR3A25pbHcFbW9kZXN3A25pbHcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRCLk9mZmVydwNhb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdwNhb213CV9fb3duZXJfX3cPRWxpeGlyLkRCLk9mZmVydwtpbnNlcnRlZF9hdHcDbmlsdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABW9mZmVydwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcPRWxpeGlyLkRCLk9mZmVydwp1cGRhdGVkX2F0dwNuaWx3Dm5vbV9jb21tZXJjaWFsbQAAACRURVItU05DRiBDZW50cmUtVmFsIGRlIExvaXJlIChSw6ltaSl3EWlkZW50aWZpYW50X29mZnJlYgAAAZh3DnR5cGVfdHJhbnNwb3J0dwNuaWx3B25vbV9hb213A25pbHcJYW9tX3NpcmVudwNuaWx3BmFvbV9pZHcDbmlsdwpleHBsb2l0YW50dwNuaWx3Bm5pdmVhdXcDbmlsdwp0ZXJyaXRvaXJldwNuaWx3DHR5cGVfY29udHJhdHcDbmlsdAAAABF3AmlkdwNuaWx3BW1vZGVzdwNuaWx3Cl9fc3RydWN0X193D0VsaXhpci5EQi5PZmZlcncDYW9tdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwNvbmV3CV9fZmllbGRfX3cDYW9tdwlfX293bmVyX193D0VsaXhpci5EQi5PZmZlcncLaW5zZXJ0ZWRfYXR3A25pbHcIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAVvZmZlcncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3D0VsaXhpci5EQi5PZmZlcncKdXBkYXRlZF9hdHcDbmlsdw5ub21fY29tbWVyY2lhbG0AAAAYVEVSLVNOQ0YgSGF1dHMgZGUgRnJhbmNldxFpZGVudGlmaWFudF9vZmZyZWIAAAGZdw50eXBlX3RyYW5zcG9ydHcDbmlsdwdub21fYW9tdwNuaWx3CWFvbV9zaXJlbncDbmlsdwZhb21faWR3A25pbHcKZXhwbG9pdGFudHcDbmlsdwZuaXZlYXV3A25pbHcKdGVycml0b2lyZXcDbmlsdwx0eXBlX2NvbnRyYXR3A25pbHQAAAARdwJpZHcDbmlsdwVtb2Rlc3cDbmlsdwpfX3N0cnVjdF9fdw9FbGl4aXIuREIuT2ZmZXJ3A2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193A2FvbXcJX19vd25lcl9fdw9FbGl4aXIuREIuT2ZmZXJ3C2luc2VydGVkX2F0dwNuaWx3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAFb2ZmZXJ3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdw9FbGl4aXIuREIuT2ZmZXJ3CnVwZGF0ZWRfYXR3A25pbHcObm9tX2NvbW1lcmNpYWxtAAAAF1RFUi1TTkNGIEZsdW8gR3JhbmQgRXN0dxFpZGVudGlmaWFudF9vZmZyZWIAAAGadw50eXBlX3RyYW5zcG9ydHcDbmlsdwdub21fYW9tdwNuaWx3CWFvbV9zaXJlbncDbmlsdwZhb21faWR3A25pbHcKZXhwbG9pdGFudHcDbmlsdwZuaXZlYXV3A25pbHcKdGVycml0b2lyZXcDbmlsdwx0eXBlX2NvbnRyYXR3A25pbHQAAAARdwJpZHcDbmlsdwVtb2Rlc3cDbmlsdwpfX3N0cnVjdF9fdw9FbGl4aXIuREIuT2ZmZXJ3A2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193A2FvbXcJX19vd25lcl9fdw9FbGl4aXIuREIuT2ZmZXJ3C2luc2VydGVkX2F0dwNuaWx3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAFb2ZmZXJ3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdw9FbGl4aXIuREIuT2ZmZXJ3CnVwZGF0ZWRfYXR3A25pbHcObm9tX2NvbW1lcmNpYWxtAAAAIVRFUi1TTkNGIEJvdXJnb2duZSBGcmFuY2hlIENvbXTDqXcRaWRlbnRpZmlhbnRfb2ZmcmViAAABm3cOdHlwZV90cmFuc3BvcnR3A25pbHcHbm9tX2FvbXcDbmlsdwlhb21fc2lyZW53A25pbHcGYW9tX2lkdwNuaWx3CmV4cGxvaXRhbnR3A25pbHcGbml2ZWF1dwNuaWx3CnRlcnJpdG9pcmV3A25pbHcMdHlwZV9jb250cmF0dwNuaWx0AAAAEXcCaWR3A25pbHcFbW9kZXN3A25pbHcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRCLk9mZmVydwNhb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdwNhb213CV9fb3duZXJfX3cPRWxpeGlyLkRCLk9mZmVydwtpbnNlcnRlZF9hdHcDbmlsdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABW9mZmVydwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcPRWxpeGlyLkRCLk9mZmVydwp1cGRhdGVkX2F0dwNuaWx3Dm5vbV9jb21tZXJjaWFsbQAAACJURVItU05DRiBQYXlzIGRlIGxhIExvaXJlIChBbMOpb3ApdxFpZGVudGlmaWFudF9vZmZyZWIAAAGcdw50eXBlX3RyYW5zcG9ydHcDbmlsdwdub21fYW9tdwNuaWx3CWFvbV9zaXJlbncDbmlsdwZhb21faWR3A25pbHcKZXhwbG9pdGFudHcDbmlsdwZuaXZlYXV3A25pbHcKdGVycml0b2lyZXcDbmlsdwx0eXBlX2NvbnRyYXR3A25pbHQAAAARdwJpZHcDbmlsdwVtb2Rlc3cDbmlsdwpfX3N0cnVjdF9fdw9FbGl4aXIuREIuT2ZmZXJ3A2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193A2FvbXcJX19vd25lcl9fdw9FbGl4aXIuREIuT2ZmZXJ3C2luc2VydGVkX2F0dwNuaWx3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAFb2ZmZXJ3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdw9FbGl4aXIuREIuT2ZmZXJ3CnVwZGF0ZWRfYXR3A25pbHcObm9tX2NvbW1lcmNpYWxtAAAAHFRFUi1TTkNGIEJyZXRhZ25lIChCcmVpemhHbyl3EWlkZW50aWZpYW50X29mZnJlYgAAAZ13DnR5cGVfdHJhbnNwb3J0dwNuaWx3B25vbV9hb213A25pbHcJYW9tX3NpcmVudwNuaWx3BmFvbV9pZHcDbmlsdwpleHBsb2l0YW50dwNuaWx3Bm5pdmVhdXcDbmlsdwp0ZXJyaXRvaXJldwNuaWx3DHR5cGVfY29udHJhdHcDbmlsdAAAABF3AmlkdwNuaWx3BW1vZGVzdwNuaWx3Cl9fc3RydWN0X193D0VsaXhpci5EQi5PZmZlcncDYW9tdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwNvbmV3CV9fZmllbGRfX3cDYW9tdwlfX293bmVyX193D0VsaXhpci5EQi5PZmZlcncLaW5zZXJ0ZWRfYXR3A25pbHcIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAVvZmZlcncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3D0VsaXhpci5EQi5PZmZlcncKdXBkYXRlZF9hdHcDbmlsdw5ub21fY29tbWVyY2lhbG0AAAAbVEVSLVNOQ0YgTm91dmVsbGUgQXF1aXRhaW5ldxFpZGVudGlmaWFudF9vZmZyZWIAAAGedw50eXBlX3RyYW5zcG9ydHcDbmlsdwdub21fYW9tdwNuaWx3CWFvbV9zaXJlbncDbmlsdwZhb21faWR3A25pbHcKZXhwbG9pdGFudHcDbmlsdwZuaXZlYXV3A25pbHcKdGVycml0b2lyZXcDbmlsdwx0eXBlX2NvbnRyYXR3A25pbHQAAAARdwJpZHcDbmlsdwVtb2Rlc3cDbmlsdwpfX3N0cnVjdF9fdw9FbGl4aXIuREIuT2ZmZXJ3A2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193A2FvbXcJX19vd25lcl9fdw9FbGl4aXIuREIuT2ZmZXJ3C2luc2VydGVkX2F0dwNuaWx3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAFb2ZmZXJ3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdw9FbGl4aXIuREIuT2ZmZXJ3CnVwZGF0ZWRfYXR3A25pbHcObm9tX2NvbW1lcmNpYWxtAAAAHlRFUi1TTkNGIEF1dmVyZ25lIFJow7RuZS1BbHBlc3cRaWRlbnRpZmlhbnRfb2ZmcmViAAABn3cOdHlwZV90cmFuc3BvcnR3A25pbHcHbm9tX2FvbXcDbmlsdwlhb21fc2lyZW53A25pbHcGYW9tX2lkdwNuaWx3CmV4cGxvaXRhbnR3A25pbHcGbml2ZWF1dwNuaWx3CnRlcnJpdG9pcmV3A25pbHcMdHlwZV9jb250cmF0dwNuaWx0AAAAEXcCaWR3A25pbHcFbW9kZXN3A25pbHcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRCLk9mZmVydwNhb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdwNhb213CV9fb3duZXJfX3cPRWxpeGlyLkRCLk9mZmVydwtpbnNlcnRlZF9hdHcDbmlsdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABW9mZmVydwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcPRWxpeGlyLkRCLk9mZmVydwp1cGRhdGVkX2F0dwNuaWx3Dm5vbV9jb21tZXJjaWFsbQAAABJURVItU05DRiBPY2NpdGFuaWV3EWlkZW50aWZpYW50X29mZnJlYgAAAaB3DnR5cGVfdHJhbnNwb3J0dwNuaWx3B25vbV9hb213A25pbHcJYW9tX3NpcmVudwNuaWx3BmFvbV9pZHcDbmlsdwpleHBsb2l0YW50dwNuaWx3Bm5pdmVhdXcDbmlsdwp0ZXJyaXRvaXJldwNuaWx3DHR5cGVfY29udHJhdHcDbmlsdAAAABF3AmlkdwNuaWx3BW1vZGVzdwNuaWx3Cl9fc3RydWN0X193D0VsaXhpci5EQi5PZmZlcncDYW9tdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwNvbmV3CV9fZmllbGRfX3cDYW9tdwlfX293bmVyX193D0VsaXhpci5EQi5PZmZlcncLaW5zZXJ0ZWRfYXR3A25pbHcIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAVvZmZlcncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3D0VsaXhpci5EQi5PZmZlcncKdXBkYXRlZF9hdHcDbmlsdw5ub21fY29tbWVyY2lhbG0AAAAuVEVSLVNOQ0YgU3VkIFByb3ZlbmNlIEFscGVzIEPDtHRlIGQnQXp1ciAoWm91KXcRaWRlbnRpZmlhbnRfb2ZmcmViAAABoXcOdHlwZV90cmFuc3BvcnR3A25pbHcHbm9tX2FvbXcDbmlsdwlhb21fc2lyZW53A25pbHcGYW9tX2lkdwNuaWx3CmV4cGxvaXRhbnR3A25pbHcGbml2ZWF1dwNuaWx3CnRlcnJpdG9pcmV3A25pbHcMdHlwZV9jb250cmF0dwNuaWxqdwdsaWNlbmNlbQAAAAhvZGMtb2RibHcKY3JlYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYR53CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWESdwR5ZWFyYgAAB-l3Bm1pbnV0ZWEzdwRob3VyYQh3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxNsZWdhbF9vd25lcnNfcmVnaW9ubAAAAAx0AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAQUGF5cyBkZSBsYSBMb2lyZXcIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAZyZWdpb253Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxBFbGl4aXIuREIuUmVnaW9udwVpbnNlZW0AAAACNTJ3BGdlb213A25pbHcMZGVwYXJ0ZW1lbnRzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193DGRlcGFydGVtZW50c3cJX19vd25lcl9fdxBFbGl4aXIuREIuUmVnaW9udAAAAAh3AmlkdwNuaWx3Cl9fc3RydWN0X193EEVsaXhpci5EQi5SZWdpb253BGFvbXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cEYW9tc3cJX19vd25lcl9fdxBFbGl4aXIuREIuUmVnaW9udwNub21tAAAAHVByb3ZlbmNlLUFscGVzLUPDtHRlIGTigJlBenVydwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAI5M3cEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAASTm91dmVsbGUtQXF1aXRhaW5ldwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAI3NXcEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAJTm9ybWFuZGlldwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAIyOHcEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAJT2NjaXRhbmlldwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAI3NncEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAJR3JhbmQgRXN0dwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAI0NHcEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAPSGF1dHMtZGUtRnJhbmNldwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAIzMncEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAATQ2VudHJlLVZhbCBkZSBMb2lyZXcIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAZyZWdpb253Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxBFbGl4aXIuREIuUmVnaW9udwVpbnNlZW0AAAACMjR3BGdlb213A25pbHcMZGVwYXJ0ZW1lbnRzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193DGRlcGFydGVtZW50c3cJX19vd25lcl9fdxBFbGl4aXIuREIuUmVnaW9udAAAAAh3AmlkdwNuaWx3Cl9fc3RydWN0X193EEVsaXhpci5EQi5SZWdpb253BGFvbXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cEYW9tc3cJX19vd25lcl9fdxBFbGl4aXIuREIuUmVnaW9udwNub21tAAAACE5hdGlvbmFsdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAJGUncEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAYQm91cmdvZ25lLUZyYW5jaGUtQ29tdMOpdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAIyN3cEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAVQXV2ZXJnbmUtUmjDtG5lLUFscGVzdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAABnJlZ2lvbncKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EEVsaXhpci5EQi5SZWdpb253BWluc2VlbQAAAAI4NHcEZ2VvbXcDbmlsdwxkZXBhcnRlbWVudHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cMZGVwYXJ0ZW1lbnRzdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb250AAAACHcCaWR3A25pbHcKX19zdHJ1Y3RfX3cQRWxpeGlyLkRCLlJlZ2lvbncEYW9tc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwRhb21zdwlfX293bmVyX193EEVsaXhpci5EQi5SZWdpb253A25vbW0AAAAIQnJldGFnbmV3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAGcmVnaW9udwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcQRWxpeGlyLkRCLlJlZ2lvbncFaW5zZWVtAAAAAjUzdwRnZW9tdwNuaWx3DGRlcGFydGVtZW50c3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwxkZXBhcnRlbWVudHN3CV9fb3duZXJfX3cQRWxpeGlyLkRCLlJlZ2lvbmp3EGxlZ2FsX293bmVyc19hb21qdwlmcmVxdWVuY3ltAAAACmNvbnRpbnVvdXN3DGhhc19yZWFsdGltZXcEdHJ1ZXcOZGF0YWdvdXZfdGl0bGVtAAAADUhPUkFJUkVTIFNOQ0Z3FHJldXNlcl9pbXByb3ZlZF9kYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193FHJldXNlcl9pbXByb3ZlZF9kYXRhdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtjdXN0b21fdGFnc2p3C2N1c3RvbV9sb2dvdwNuaWx3BGxvZ29tAAAAV2h0dHBzOi8vdWRhdGEtYXZhdGFycy5zMy5yYnguaW8uY2xvdWQub3ZoLm5ldC9mMy8wYjhhZDkzMmY3NDA4NmE2YWIzZjI5MWVlOTI0M2YtMTAwLnBuZ3cTb3JnYW5pemF0aW9uX29iamVjdHQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193E29yZ2FuaXphdGlvbl9vYmplY3R3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CWlzX2FjdGl2ZXcEdHJ1ZXcLbGFzdF91cGRhdGV0AAAADXcLbWljcm9zZWNvbmRoAmEAYQZ3BnNlY29uZGEedwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhEncEeWVhcmIAAAfpdwZtaW51dGVhM3cEaG91cmEIdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcOc2VhcmNoX3BheWxvYWR0AAAAAHcJcmVzb3VyY2VzbAAAAAZ0AAAAHncCaWRiAAFE_3cEdHlwZW0AAAAEbWFpbncGZm9ybWF0bQAAAAlTSVJJIExpdGV3C2Rlc2NyaXB0aW9ubQAAAFBBbGVydGVzIGVuIHRlbXBzIHLDqWVsIHN1ciBsZXMgY2lyY3VsYXRpb25zIGF1IGZvcm1hdCBTSVJJIFNlcnZpY2UgZVhjaGFuZ2UgTElURXcFdGl0bGVtAAAAT2h0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1zaXR1YXRpb24tZXhjaGFuZ2V3Cl9fc3RydWN0X193EkVsaXhpci5EQi5SZXNvdXJjZXcDdXJsbQAAAE9odHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtc2l0dWF0aW9uLWV4Y2hhbmdldwpkYXRhc2V0X2lkYgAABQp3C2xhc3RfdXBkYXRldAAAAA13C21pY3Jvc2Vjb25kaAJiAAxctWEGdwZzZWNvbmRhIncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRp3BHllYXJiAAAH6ncGbWludXRlYRJ3BGhvdXJhA3cJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3B2RhdGFzZXR0AAAALXcJaXNfaGlkZGVudwVmYWxzZXcEc2x1Z20AAAANaG9yYWlyZXMtc25jZncZbGVnYWxfb3duZXJfY29tcGFueV9zaXJlbm0AAAAJNTE5MDM3NTg0dxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193GWRlY2xhcmF0aXZlX3NwYXRpYWxfYXJlYXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3Bm9mZmVyc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwZvZmZlcnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3B2xpY2VuY2VtAAAACG9kYy1vZGJsdwpjcmVhdGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJhAGEGdwZzZWNvbmRhHncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRJ3BHllYXJiAAAH6XcGbWludXRlYTN3BGhvdXJhCHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3E2xlZ2FsX293bmVyc19yZWdpb250AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cTbGVnYWxfb3duZXJzX3JlZ2lvbncJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcQbGVnYWxfb3duZXJzX2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxBsZWdhbF9vd25lcnNfYW9tdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwlmcmVxdWVuY3ltAAAACmNvbnRpbnVvdXN3DGhhc19yZWFsdGltZXcEdHJ1ZXcOZGF0YWdvdXZfdGl0bGVtAAAADUhPUkFJUkVTIFNOQ0Z3FHJldXNlcl9pbXByb3ZlZF9kYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193FHJldXNlcl9pbXByb3ZlZF9kYXRhdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtjdXN0b21fdGFnc2p3C2N1c3RvbV9sb2dvdwNuaWx3BGxvZ29tAAAAV2h0dHBzOi8vdWRhdGEtYXZhdGFycy5zMy5yYnguaW8uY2xvdWQub3ZoLm5ldC9mMy8wYjhhZDkzMmY3NDA4NmE2YWIzZjI5MWVlOTI0M2YtMTAwLnBuZ3cTb3JnYW5pemF0aW9uX29iamVjdHQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193E29yZ2FuaXphdGlvbl9vYmplY3R3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CWlzX2FjdGl2ZXcEdHJ1ZXcLbGFzdF91cGRhdGV0AAAADXcLbWljcm9zZWNvbmRoAmEAYQZ3BnNlY29uZGEedwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhEncEeWVhcmIAAAfpdwZtaW51dGVhM3cEaG91cmEIdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcOc2VhcmNoX3BheWxvYWR0AAAAAHcJcmVzb3VyY2VzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193CXJlc291cmNlc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLaW5zZXJ0ZWRfYXR0AAAADXcLbWljcm9zZWNvbmRoAmIAC8NeYQZ3BnNlY29uZGErdwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhE3cEeWVhcmIAAAfpdwZtaW51dGVhNXcEaG91cmEOdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcJZm9sbG93ZXJzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193CWZvbGxvd2Vyc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcPb3JnYW5pemF0aW9uX2lkbQAAABg1MzRmZmZiMGEzYTcyOTJjNjRhNzgxMTV3FmN1c3RvbV9sb2dvX2NoYW5nZWRfYXR3A25pbHcRb3JnYW5pemF0aW9uX3R5cGVtAAAAF09ww6lyYXRldXIgZGUgdHJhbnNwb3J0dwR0YWdzbAAAABFtAAAAA2Nhcm0AAAAaZXRvaWxlLWZlcnJvdmlhaXJlLWRhbWllbnNtAAAABGd0ZnNtAAAAB2d0ZnMtcnRtAAAACGhvcmFpcmVzbQAAABdob3JhaXJlcy1ldC1pdGluZXJhaXJlc20AAAAFaW5vdWltAAAACmludGVyY2l0ZXNtAAAAEGxvaXJlLWF0bGFudGlxdWVtAAAABW5ldGV4bQAAAAVvdWlnb20AAAAJc2lyaS1saXRlbQAAAAhzdWQtYXp1cm0AAAAKdGVtcHMtcmVlbG0AAAADdGVybQAAAAN0Z3ZtAAAABXRyYWluancMY3VzdG9tX3RpdGxlbQAAACRSw6lzZWF1IFNOQ0YgVEdWLCBJbnRlcmNpdMOpcyBldCBURVJ3Gm5vdGlmaWNhdGlvbl9zdWJzY3JpcHRpb25zdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193Gm5vdGlmaWNhdGlvbl9zdWJzY3JpcHRpb25zdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwpwb3B1bGF0aW9uYgQMa6N3CnVwZGF0ZWRfYXR0AAAADXcLbWljcm9zZWNvbmRoAmIAAz4yYQZ3BnNlY29uZGEKdwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhCXcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhGncEeWVhcmIAAAfqdwZtaW51dGVhEXcEaG91cmEEdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcQY3VzdG9tX2Z1bGxfbG9nb3cDbmlsdwlmdWxsX2xvZ29tAAAAU2h0dHBzOi8vdWRhdGEtYXZhdGFycy5zMy5yYnguaW8uY2xvdWQub3ZoLm5ldC9mMy8wYjhhZDkzMmY3NDA4NmE2YWIzZjI5MWVlOTI0M2YucG5ndxBkYXRhc2V0X3N1YnR5cGVzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EGRhdGFzZXRfc3VidHlwZXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3DG9yZ2FuaXphdGlvbm0AAAAEU05DRncIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAdkYXRhc2V0dwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcRRWxpeGlyLkRCLkRhdGFzZXR3C2RhdGFnb3V2X2lkbQAAABg2ODUzYzA4OWIzZWQ1NzgxZjZhZGZkZjd3AmlkYgAABQp3C2FyY2hpdmVkX2F0dwNuaWx3Cl9fc3RydWN0X193EUVsaXhpci5EQi5EYXRhc2V0dwluYl9yZXVzZXNhHXcEdHlwZW0AAAAOcHVibGljLXRyYW5zaXR3ImxhdGVzdF9kYXRhX2dvdXZfY29tbWVudF90aW1lc3RhbXB0AAAADXcLbWljcm9zZWNvbmRoAmEAYQB3BnNlY29uZGE6dwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhCXcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhFncEeWVhcmIAAAfqdwZtaW51dGVhAHcEaG91cmEQdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcLbG9nc19pbXBvcnR0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cLbG9nc19pbXBvcnR3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2Rlc2NyaXB0aW9ubQAADx8qKkhvcmFpcmVzIHRow6lvcmlxdWVzIGV0IGVuIHRlbXBzIHLDqWVsIGRlIGxhIFNOQ0YqKgoKKipUaMOpb3JpcXVlIDoqKiBsZXMgaG9yYWlyZXMgZGVzIGxpZ25lcyBURVIsIEludGVyY2l0w6lzIGV0IFRHViBvcMOpcsOpZXMgcGFyIGxhIFNOQ0YgVm95YWdldXJzIHBvdXIgbGVzIDE1MWogw6AgdmVuaXIsIHNvbnQgZm91cm5pcyBhdSBmb3JtYXQgW0dURlNdKGh0dHBzOi8vZGV2ZWxvcGVycy5nb29nbGUuY29tL3RyYW5zaXQvZ3Rmcy9yZWZlcmVuY2UpIGV0IGF1IGZvcm1hdCBOZVRFeCAocXVpIGVzdCBsYSBub3JtZSB0ZWNobmlxdWUgZXVyb3DDqWVubmUgcG91ciBsJ8OpY2hhbmdlIGRlIGRvbm7DqWVzIGRlIHRyYW5zcG9ydCkuIExlcyBmaWNoaWVycyBzb250IGRpc3BvbmlibGVzIGF1eCBsaWVucyBzdWl2YW50cyA6CgogICogcG91ciBsZSBHVEZTIDogW2h0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9FeHBvcnRfT3BlbkRhdGFfU05DRl9HVEZTX05ld1RyaXBJZC56aXBdKGh0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9FeHBvcnRfT3BlbkRhdGFfU05DRl9HVEZTX05ld1RyaXBJZC56aXApCiAgKiBwb3VyIGxlIE5lVEV4IDogPGh0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9leHBvcnQtb3BlbmRhdGEtc25jZi1uZXRleC56aXA-CgoKCioqVGVtcHMgcsOpZWwgOioqIGxlcyBob3JhaXJlcyBlbiB0ZW1wcyByw6llbCBzb250IGZvdXJuaXMgc2Vsb24gbGVzIGRldXggc3RhbmRhcmRzIEdURlMgUlQgZXQgU0lSSSBwb3VyIGxlcyBob3JhaXJlcyBldCBsZXMgaW5mb3JtYXRpb25zIGNvbnRleHR1ZWxsZXMgc3VyIHVuIHDDqXJpbcOodHJlIMOpbGFyZ2kgY29tcHJlbmFudCBub3RhbW1lbnQgbGVzIFRHViwgbGVzIElDIGV0IFRFUiAoeSBjb21wcmlzIGxlcyBzb2Npw6l0w6lzIGTDqWRpw6llcyBURVIpIDoKCiAgKiBHVEZTLVJUIFRVIChUcmlwIFVwZGF0ZXMpIG1pcyDDoCBqb3VyIHRvdXRlcyBsZXMgMiBtaW51dGVzIHBvdXIgbGVzIHRyYWlucyBjaXJjdWxhbnQgZGFucyBsZXMgNjAgcHJvY2hhaW5lcyBtaW51dGVzIGV0IEdURlMtUlQgU0EgKFNlcnZpY2UgQWxlcnRzKSBwb3VyIGxlcyBjaXJjdWxhdGlvbnMgw6AgdmVuaXIKICAqIFNJUkkgRVQgTGl0ZSAoc2VydmljZSAiU2l0dWF0aW9uIGVYY2hhbmdlIikgbWlzIMOgIGpvdXIgdG91dGVzIGxlcyAyIG1pbnV0ZXMgcG91ciBsZXMgdHJhaW5zIGNpcmN1bGFudCBkYW5zIGxlcyA2MCBwcm9jaGFpbmVzIG1pbnV0ZXMgZXQgU0lSSSBTWCBMaXRlIChzZXJ2aWNlICJTaXR1YXRpb24gZVhjaGFuZ2UiKSBwb3VyIGxlcyBjaXJjdWxhdGlvbnMgw6AgdmVuaXIKCgoKTGVzIGZpY2hpZXJzIHNvbnQgZGlzcG9uaWJsZXMgYXV4IGxpZW5zIHN1aXZhbnRzIDoKCiAgKiBwb3VyIGxlIEdURlMtUlQgVFUgOiBbaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC10cmlwLXVwZGF0ZXNdKGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzKQogICogcG91ciBsZSBHVEZTLVJUIFNBIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtc2VydmljZS1hbGVydHM-CiAgKiBwb3VyIGxlIFNJUkkgRVQgTElURSAodmVyc2lvbiBCw6l0YSkgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLWVzdGltYXRlZC10aW1ldGFibGU-CiAgKiBwb3VyIGxlIFNJUkkgU1ggTElURSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtc2l0dWF0aW9uLWV4Y2hhbmdlPgoKCgpRdWVscXVlcyByZW1hcnF1ZXMgdGVjaG5pcXVlcyA6IAoKICAqIEF1IG5pdmVhdSB0aMOpb3JpcXVlIDogZGVzIG1pc2VzIMOgIGpvdXIgb250IMOpdMOpIGVmZmVjdHXDqWVzIHN1ciBsZXMgZG9ubsOpZXMgR1RGUyA6IGxlIHBsYW4gZGUgdHJhbnNwb3J0IHRow6lvcmlxdWUgaW50w6hncmUgZMOpc29ybWFpcyDDoCBsJ8OpY2hlbGxlIG5hdGlvbmFsZSBsZXMgYWRhcHRhdGlvbnMgY29ubnVlcyBsYSB2ZWlsbGUgw6AgMTdoIGVuIGNhcyBkZSBwZXJ0dXJiYXRpb25zIG91IGRlIG1vdXZlbWVudHMgc29jaWF1eC4KICAqIExlcyBmbHV4IGVuIHRlbXBzIHLDqWVsIG5lIHNvbnQgcGFzIGZpbHRyw6lzLCBldCBwZXV2ZW50IGNvbnRlbmlyIHVuIHDDqXJpbcOodHJlIHBsdXMgbGFyZ2UgcXVlIGxlcyBUR1YsIElDIGV0IFRFUi4gTcOqbWUgc2kgZGVzIGluZm9ybWF0aW9ucyBjb25jZXJuYW50IGTigJlhdXRyZXMgY2lyY3VsYXRpb25zIHBldXZlbnQgw6p0cmUgdmlzaWJsZXMsIG1lcmNpIGRlIHZvdXMgcsOpZsOpcmVyIGF1eCBqZXV4IGRlIGRvbm7DqWVzIGRlcyBhdXRvcml0w6lzIG9yZ2FuaXNhdHJpY2VzIGNvbXDDqXRlbnRlcywgbm90YW1tZW50IElsZSBkZSBGcmFuY2UgTW9iaWxpdMOpcyBwb3VyIGxlcyBkb25uw6llcyBlbiB0ZW1wcyByw6llbCBlbiBJbGUgZGUgRnJhbmNlIG91IGxlcyBkaWZmw6lyZW50cyB0ZW1wcyByw6llbHMgZGVzIFLDqWdpb25zIHF1YW5kIGVsbGVzIGV4aXN0ZW50LiBMZSBww6lyaW3DqHRyZSBu4oCZZXN0IGdhcmFudGkgcXVlIHBvdXIgVEdWIGV0IElDCiAgKiBQb3VyIGxlcyBmbHV4IEdURlMtUlQgU0EgZXQgU0lSSSBTWCBMaXRlIDogbCdpZGVudGlmaWFudCBjb21tdW4gZGVzIGNpcmN1bGF0aW9ucyBlbnRyZSBsZXMgZGlmZsOpcmVudHMgZmx1eCBlc3QgbGUgbnVtw6lybyBjb21tZXJjaWFsIGR1IHRyYWluLCBxdWUgdm91cyB0cm91dmVyZXogZGFucyA8dHJpcD4gcG91ciBsZSBHVEZTLVJUIFNBIGV0IGRhbnMgPFZlaGljdWxlSm91cm5leVJlZj4gZGFucyBsZSBTSVJJIFNYIExJVEUuIENlcyBmbHV4IG5lIGNvbXByZW5uZW50IHF1ZSBsZXMgaW5mb3JtYXRpb25zIHZhbG9yaXPDqWVzIMOgIGxhIGNvdXJzZSBldCBuZSBjb21wcmVubmVudCBwYXMgbGVzIGluZm9ybWF0aW9ucyByZWxhdGl2ZXMgw6AgZGVzIHDDqXJpbcOodHJlcyAoZ2FyZXMgb3UgbGlnbmVzIGR1IHLDqXNlYXUsIHF1aSBwZXV2ZW50IGltcGFjdGVyIHBsdXNpZXVycyBvcMOpcmF0ZXVycykuCgoKCsK3KipDZSBqZXUgZGUgZG9ubsOpZXMgZXN0IHVuZSBwcm9kdWN0aW9uIFNOQ0YgVm95YWdldXJzIGNvbnRlbmFudCBkZXMgw6lsw6ltZW50cyBhc3NlbWJsw6lzIHBvdXIgbGEgY29tbXVuYXV0w6kgb3BlbioqICoqZGF0YSBhdS1kZWzDoCBkZSBzZXMgb2JsaWdhdGlvbnMgcsOpZ2xlbWVudGFpcmVzLiBJbCBuZSBzZSBzdWJzdGl0dWUgZG9uYyBwYXMgYXV4IGRvbm7DqWVzIG9mZmljaWVsbGVzIHByb2dyZXNzaXZlbWVudCBwdWJsacOpZXMgcGFyIGxlcyBhdXRvcml0w6lzIG9yZ2FuaXNhdHJpY2VzIHLDqWdpb25hbGVzIHF1aSBwZXV2ZW50IMOpdmVudHVlbGxlbWVudCBjb21wb3J0ZXIgZGUgcGV0aXRlcyBkaXZlcmdlbmNlcy4gQXVzc2ksIG5vdXMgdm91cyByZWNvbW1hbmRvbnMgZGUgcGx1dMO0dCBjb25zb21tZXIgbGVzIGRvbm7DqWVzIGZvdXJuaWVzIHBhciBsZXMgUsOpZ2lvbnMgZXQgSURGTS4qKgoKRW4gY2FzIGRlIHF1ZXN0aW9uLCB2b3VzIHBvdXZleiBjb250YWN0ZXIgbCfDqXF1aXBlIE9wZW4gZGF0YSBTTkNGIFZveWFnZXVycyDDoCBsJ2FkcmVzc2Ugc3VpdmFudGUgOiBbRGF0YV9PZmZpY2VfU2VjcmV0YXJpYXRfR2VuZXJhbF9TQV9Wb3lhZ2V1cnNAc25jZi5mcl0obWFpbHRvOkRhdGFfT2ZmaWNlX1NlY3JldGFyaWF0X0dlbmVyYWxfU0FfVm95YWdldXJzQHNuY2YuZnIpdwpsYXRlc3RfdXJsbQAAAE5odHRwczovL3d3dy5kYXRhLmdvdXYuZnIvYXBpLzEvZGF0YXNldHMvci82NzczZDdlNS1iMzc3LTQxNmEtYWE0ZS03MTkxMWZkMmIxZTN3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAIcmVzb3VyY2V3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxJFbGl4aXIuREIuUmVzb3VyY2V3D2Zvcm1hdF9vdmVycmlkZXcDbmlsdxByZXNvdXJjZV9oaXN0b3J5dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EHJlc291cmNlX2hpc3Rvcnl3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldw5zY2hlbWFfdmVyc2lvbncDbmlsdwtzY2hlbWFfbmFtZXcDbmlsdwt2YWxpZGF0aW9uc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwt2YWxpZGF0aW9uc3cJX19vd25lcl9fdxJFbGl4aXIuREIuUmVzb3VyY2V3C2RhdGFnb3V2X2lkbQAAACQ2NzczZDdlNS1iMzc3LTQxNmEtYWE0ZS03MTkxMWZkMmIxZTN3EXJlc291cmNlc19yZWxhdGVkancMaXNfYXZhaWxhYmxldwR0cnVldxxjb21tdW5pdHlfcmVzb3VyY2VfcHVibGlzaGVydwNuaWx3EGRpc3BsYXlfcG9zaXRpb25hBXcIZmlsZXNpemV3A25pbHcVb3JpZ2luYWxfcmVzb3VyY2VfdXJsdwNuaWx3FWlzX2NvbW11bml0eV9yZXNvdXJjZXcFZmFsc2V3DWNvdW50ZXJfY2FjaGV3A25pbHcIZmlsZXR5cGV3A25pbHcLbGFzdF9pbXBvcnR3A25pbHcRcmVzb3VyY2VfbWV0YWRhdGF0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cRcmVzb3VyY2VfbWV0YWRhdGF3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldxlyZXNvdXJjZV91bmF2YWlsYWJpbGl0aWVzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193GXJlc291cmNlX3VuYXZhaWxhYmlsaXRpZXN3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldAAAAB53AmlkYgABRPx3BHR5cGVtAAAABG1haW53BmZvcm1hdG0AAAAHZ3Rmcy1ydHcLZGVzY3JpcHRpb25tAAAATEFsZXJ0ZXMgZW4gdGVtcHMgcsOpZWwgc3VyIGxlcyBjaXJjdWxhdGlvbnMgYXUgZm9ybWF0IEdURlMgUlQgU2VydmljZSBBbGVydHN3BXRpdGxlbQAAAElodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXNlcnZpY2UtYWxlcnRzdwpfX3N0cnVjdF9fdxJFbGl4aXIuREIuUmVzb3VyY2V3A3VybG0AAABJaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC1zZXJ2aWNlLWFsZXJ0c3cKZGF0YXNldF9pZGIAAAUKdwtsYXN0X3VwZGF0ZXQAAAANdwttaWNyb3NlY29uZGgCYgAJILthBncGc2Vjb25kYTh3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEadwR5ZWFyYgAAB-p3Bm1pbnV0ZWETdwRob3VyYQN3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwdkYXRhc2V0dAAAAC13CWlzX2hpZGRlbncFZmFsc2V3BHNsdWdtAAAADWhvcmFpcmVzLXNuY2Z3GWxlZ2FsX293bmVyX2NvbXBhbnlfc2lyZW5tAAAACTUxOTAzNzU4NHcZZGVjbGFyYXRpdmVfc3BhdGlhbF9hcmVhc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwZvZmZlcnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cGb2ZmZXJzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwdsaWNlbmNlbQAAAAhvZGMtb2RibHcKY3JlYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYR53CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWESdwR5ZWFyYgAAB-l3Bm1pbnV0ZWEzdwRob3VyYQh3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxNsZWdhbF9vd25lcnNfcmVnaW9udAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193E2xlZ2FsX293bmVyc19yZWdpb253CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3EGxlZ2FsX293bmVyc19hb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cQbGVnYWxfb3duZXJzX2FvbXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcJZnJlcXVlbmN5bQAAAApjb250aW51b3VzdwxoYXNfcmVhbHRpbWV3BHRydWV3DmRhdGFnb3V2X3RpdGxlbQAAAA1IT1JBSVJFUyBTTkNGdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLY3VzdG9tX3RhZ3NqdwtjdXN0b21fbG9nb3cDbmlsdwRsb2dvbQAAAFdodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLTEwMC5wbmd3E29yZ2FuaXphdGlvbl9vYmplY3R0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdxNvcmdhbml6YXRpb25fb2JqZWN0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwlpc19hY3RpdmV3BHRydWV3C2xhc3RfdXBkYXRldAAAAA13C21pY3Jvc2Vjb25kaAJhAGEGdwZzZWNvbmRhHncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRJ3BHllYXJiAAAH6XcGbWludXRlYTN3BGhvdXJhCHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3DnNlYXJjaF9wYXlsb2FkdAAAAAB3CXJlc291cmNlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlyZXNvdXJjZXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2luc2VydGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAvDXmEGdwZzZWNvbmRhK3cIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRN3BHllYXJiAAAH6XcGbWludXRlYTV3BGhvdXJhDncJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3CWZvbGxvd2Vyc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlmb2xsb3dlcnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3D29yZ2FuaXphdGlvbl9pZG0AAAAYNTM0ZmZmYjBhM2E3MjkyYzY0YTc4MTE1dxZjdXN0b21fbG9nb19jaGFuZ2VkX2F0dwNuaWx3EW9yZ2FuaXphdGlvbl90eXBlbQAAABdPcMOpcmF0ZXVyIGRlIHRyYW5zcG9ydHcEdGFnc2wAAAARbQAAAANjYXJtAAAAGmV0b2lsZS1mZXJyb3ZpYWlyZS1kYW1pZW5zbQAAAARndGZzbQAAAAdndGZzLXJ0bQAAAAhob3JhaXJlc20AAAAXaG9yYWlyZXMtZXQtaXRpbmVyYWlyZXNtAAAABWlub3VpbQAAAAppbnRlcmNpdGVzbQAAABBsb2lyZS1hdGxhbnRpcXVlbQAAAAVuZXRleG0AAAAFb3VpZ29tAAAACXNpcmktbGl0ZW0AAAAIc3VkLWF6dXJtAAAACnRlbXBzLXJlZWxtAAAAA3Rlcm0AAAADdGd2bQAAAAV0cmFpbmp3DGN1c3RvbV90aXRsZW0AAAAkUsOpc2VhdSBTTkNGIFRHViwgSW50ZXJjaXTDqXMgZXQgVEVSdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcKcG9wdWxhdGlvbmIEDGujdwp1cGRhdGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAM-MmEGdwZzZWNvbmRhCncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRp3BHllYXJiAAAH6ncGbWludXRlYRF3BGhvdXJhBHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3EGN1c3RvbV9mdWxsX2xvZ293A25pbHcJZnVsbF9sb2dvbQAAAFNodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLnBuZ3cQZGF0YXNldF9zdWJ0eXBlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxBkYXRhc2V0X3N1YnR5cGVzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwxvcmdhbml6YXRpb25tAAAABFNOQ0Z3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAHZGF0YXNldHcKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EUVsaXhpci5EQi5EYXRhc2V0dwtkYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwJpZGIAAAUKdwthcmNoaXZlZF9hdHcDbmlsdwpfX3N0cnVjdF9fdxFFbGl4aXIuREIuRGF0YXNldHcJbmJfcmV1c2VzYR13BHR5cGVtAAAADnB1YmxpYy10cmFuc2l0dyJsYXRlc3RfZGF0YV9nb3V2X2NvbW1lbnRfdGltZXN0YW1wdAAAAA13C21pY3Jvc2Vjb25kaAJhAGEAdwZzZWNvbmRhOncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRZ3BHllYXJiAAAH6ncGbWludXRlYQB3BGhvdXJhEHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3C2xvZ3NfaW1wb3J0dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193C2xvZ3NfaW1wb3J0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtkZXNjcmlwdGlvbm0AAA8fKipIb3JhaXJlcyB0aMOpb3JpcXVlcyBldCBlbiB0ZW1wcyByw6llbCBkZSBsYSBTTkNGKioKCioqVGjDqW9yaXF1ZSA6KiogbGVzIGhvcmFpcmVzIGRlcyBsaWduZXMgVEVSLCBJbnRlcmNpdMOpcyBldCBUR1Ygb3DDqXLDqWVzIHBhciBsYSBTTkNGIFZveWFnZXVycyBwb3VyIGxlcyAxNTFqIMOgIHZlbmlyLCBzb250IGZvdXJuaXMgYXUgZm9ybWF0IFtHVEZTXShodHRwczovL2RldmVsb3BlcnMuZ29vZ2xlLmNvbS90cmFuc2l0L2d0ZnMvcmVmZXJlbmNlKSBldCBhdSBmb3JtYXQgTmVURXggKHF1aSBlc3QgbGEgbm9ybWUgdGVjaG5pcXVlIGV1cm9ww6llbm5lIHBvdXIgbCfDqWNoYW5nZSBkZSBkb25uw6llcyBkZSB0cmFuc3BvcnQpLiBMZXMgZmljaGllcnMgc29udCBkaXNwb25pYmxlcyBhdXggbGllbnMgc3VpdmFudHMgOgoKICAqIHBvdXIgbGUgR1RGUyA6IFtodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwXShodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwKQogICogcG91ciBsZSBOZVRFeCA6IDxodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvZXhwb3J0LW9wZW5kYXRhLXNuY2YtbmV0ZXguemlwPgoKCgoqKlRlbXBzIHLDqWVsIDoqKiBsZXMgaG9yYWlyZXMgZW4gdGVtcHMgcsOpZWwgc29udCBmb3VybmlzIHNlbG9uIGxlcyBkZXV4IHN0YW5kYXJkcyBHVEZTIFJUIGV0IFNJUkkgcG91ciBsZXMgaG9yYWlyZXMgZXQgbGVzIGluZm9ybWF0aW9ucyBjb250ZXh0dWVsbGVzIHN1ciB1biBww6lyaW3DqHRyZSDDqWxhcmdpIGNvbXByZW5hbnQgbm90YW1tZW50IGxlcyBUR1YsIGxlcyBJQyBldCBURVIgKHkgY29tcHJpcyBsZXMgc29jacOpdMOpcyBkw6lkacOpZXMgVEVSKSA6CgogICogR1RGUy1SVCBUVSAoVHJpcCBVcGRhdGVzKSBtaXMgw6Agam91ciB0b3V0ZXMgbGVzIDIgbWludXRlcyBwb3VyIGxlcyB0cmFpbnMgY2lyY3VsYW50IGRhbnMgbGVzIDYwIHByb2NoYWluZXMgbWludXRlcyBldCBHVEZTLVJUIFNBIChTZXJ2aWNlIEFsZXJ0cykgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCiAgKiBTSVJJIEVUIExpdGUgKHNlcnZpY2UgIlNpdHVhdGlvbiBlWGNoYW5nZSIpIG1pcyDDoCBqb3VyIHRvdXRlcyBsZXMgMiBtaW51dGVzIHBvdXIgbGVzIHRyYWlucyBjaXJjdWxhbnQgZGFucyBsZXMgNjAgcHJvY2hhaW5lcyBtaW51dGVzIGV0IFNJUkkgU1ggTGl0ZSAoc2VydmljZSAiU2l0dWF0aW9uIGVYY2hhbmdlIikgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCgoKCkxlcyBmaWNoaWVycyBzb250IGRpc3BvbmlibGVzIGF1eCBsaWVucyBzdWl2YW50cyA6CgogICogcG91ciBsZSBHVEZTLVJUIFRVIDogW2h0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzXShodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlcykKICAqIHBvdXIgbGUgR1RGUy1SVCBTQSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXNlcnZpY2UtYWxlcnRzPgogICogcG91ciBsZSBTSVJJIEVUIExJVEUgKHZlcnNpb24gQsOpdGEpIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1lc3RpbWF0ZWQtdGltZXRhYmxlPgogICogcG91ciBsZSBTSVJJIFNYIExJVEUgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLXNpdHVhdGlvbi1leGNoYW5nZT4KCgoKUXVlbHF1ZXMgcmVtYXJxdWVzIHRlY2huaXF1ZXMgOiAKCiAgKiBBdSBuaXZlYXUgdGjDqW9yaXF1ZSA6IGRlcyBtaXNlcyDDoCBqb3VyIG9udCDDqXTDqSBlZmZlY3R1w6llcyBzdXIgbGVzIGRvbm7DqWVzIEdURlMgOiBsZSBwbGFuIGRlIHRyYW5zcG9ydCB0aMOpb3JpcXVlIGludMOoZ3JlIGTDqXNvcm1haXMgw6AgbCfDqWNoZWxsZSBuYXRpb25hbGUgbGVzIGFkYXB0YXRpb25zIGNvbm51ZXMgbGEgdmVpbGxlIMOgIDE3aCBlbiBjYXMgZGUgcGVydHVyYmF0aW9ucyBvdSBkZSBtb3V2ZW1lbnRzIHNvY2lhdXguCiAgKiBMZXMgZmx1eCBlbiB0ZW1wcyByw6llbCBuZSBzb250IHBhcyBmaWx0csOpcywgZXQgcGV1dmVudCBjb250ZW5pciB1biBww6lyaW3DqHRyZSBwbHVzIGxhcmdlIHF1ZSBsZXMgVEdWLCBJQyBldCBURVIuIE3Dqm1lIHNpIGRlcyBpbmZvcm1hdGlvbnMgY29uY2VybmFudCBk4oCZYXV0cmVzIGNpcmN1bGF0aW9ucyBwZXV2ZW50IMOqdHJlIHZpc2libGVzLCBtZXJjaSBkZSB2b3VzIHLDqWbDqXJlciBhdXggamV1eCBkZSBkb25uw6llcyBkZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyBjb21ww6l0ZW50ZXMsIG5vdGFtbWVudCBJbGUgZGUgRnJhbmNlIE1vYmlsaXTDqXMgcG91ciBsZXMgZG9ubsOpZXMgZW4gdGVtcHMgcsOpZWwgZW4gSWxlIGRlIEZyYW5jZSBvdSBsZXMgZGlmZsOpcmVudHMgdGVtcHMgcsOpZWxzIGRlcyBSw6lnaW9ucyBxdWFuZCBlbGxlcyBleGlzdGVudC4gTGUgcMOpcmltw6h0cmUgbuKAmWVzdCBnYXJhbnRpIHF1ZSBwb3VyIFRHViBldCBJQwogICogUG91ciBsZXMgZmx1eCBHVEZTLVJUIFNBIGV0IFNJUkkgU1ggTGl0ZSA6IGwnaWRlbnRpZmlhbnQgY29tbXVuIGRlcyBjaXJjdWxhdGlvbnMgZW50cmUgbGVzIGRpZmbDqXJlbnRzIGZsdXggZXN0IGxlIG51bcOpcm8gY29tbWVyY2lhbCBkdSB0cmFpbiwgcXVlIHZvdXMgdHJvdXZlcmV6IGRhbnMgPHRyaXA-IHBvdXIgbGUgR1RGUy1SVCBTQSBldCBkYW5zIDxWZWhpY3VsZUpvdXJuZXlSZWY-IGRhbnMgbGUgU0lSSSBTWCBMSVRFLiBDZXMgZmx1eCBuZSBjb21wcmVubmVudCBxdWUgbGVzIGluZm9ybWF0aW9ucyB2YWxvcmlzw6llcyDDoCBsYSBjb3Vyc2UgZXQgbmUgY29tcHJlbm5lbnQgcGFzIGxlcyBpbmZvcm1hdGlvbnMgcmVsYXRpdmVzIMOgIGRlcyBww6lyaW3DqHRyZXMgKGdhcmVzIG91IGxpZ25lcyBkdSByw6lzZWF1LCBxdWkgcGV1dmVudCBpbXBhY3RlciBwbHVzaWV1cnMgb3DDqXJhdGV1cnMpLgoKCgrCtyoqQ2UgamV1IGRlIGRvbm7DqWVzIGVzdCB1bmUgcHJvZHVjdGlvbiBTTkNGIFZveWFnZXVycyBjb250ZW5hbnQgZGVzIMOpbMOpbWVudHMgYXNzZW1ibMOpcyBwb3VyIGxhIGNvbW11bmF1dMOpIG9wZW4qKiAqKmRhdGEgYXUtZGVsw6AgZGUgc2VzIG9ibGlnYXRpb25zIHLDqWdsZW1lbnRhaXJlcy4gSWwgbmUgc2Ugc3Vic3RpdHVlIGRvbmMgcGFzIGF1eCBkb25uw6llcyBvZmZpY2llbGxlcyBwcm9ncmVzc2l2ZW1lbnQgcHVibGnDqWVzIHBhciBsZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyByw6lnaW9uYWxlcyBxdWkgcGV1dmVudCDDqXZlbnR1ZWxsZW1lbnQgY29tcG9ydGVyIGRlIHBldGl0ZXMgZGl2ZXJnZW5jZXMuIEF1c3NpLCBub3VzIHZvdXMgcmVjb21tYW5kb25zIGRlIHBsdXTDtHQgY29uc29tbWVyIGxlcyBkb25uw6llcyBmb3VybmllcyBwYXIgbGVzIFLDqWdpb25zIGV0IElERk0uKioKCkVuIGNhcyBkZSBxdWVzdGlvbiwgdm91cyBwb3V2ZXogY29udGFjdGVyIGwnw6lxdWlwZSBPcGVuIGRhdGEgU05DRiBWb3lhZ2V1cnMgw6AgbCdhZHJlc3NlIHN1aXZhbnRlIDogW0RhdGFfT2ZmaWNlX1NlY3JldGFyaWF0X0dlbmVyYWxfU0FfVm95YWdldXJzQHNuY2YuZnJdKG1haWx0bzpEYXRhX09mZmljZV9TZWNyZXRhcmlhdF9HZW5lcmFsX1NBX1ZveWFnZXVyc0BzbmNmLmZyKXcKbGF0ZXN0X3VybG0AAABOaHR0cHM6Ly93d3cuZGF0YS5nb3V2LmZyL2FwaS8xL2RhdGFzZXRzL3IvYjE1MTlhMjEtMjMxOS00NDBjLThiNjctMGNjMDJiNGI5YTgwdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAACHJlc291cmNldwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcSRWxpeGlyLkRCLlJlc291cmNldw9mb3JtYXRfb3ZlcnJpZGV3A25pbHcQcmVzb3VyY2VfaGlzdG9yeXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxByZXNvdXJjZV9oaXN0b3J5dwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcOc2NoZW1hX3ZlcnNpb253A25pbHcLc2NoZW1hX25hbWV3A25pbHcLdmFsaWRhdGlvbnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cLdmFsaWRhdGlvbnN3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldwtkYXRhZ291dl9pZG0AAAAkYjE1MTlhMjEtMjMxOS00NDBjLThiNjctMGNjMDJiNGI5YTgwdxFyZXNvdXJjZXNfcmVsYXRlZGp3DGlzX2F2YWlsYWJsZXcEdHJ1ZXccY29tbXVuaXR5X3Jlc291cmNlX3B1Ymxpc2hlcncDbmlsdxBkaXNwbGF5X3Bvc2l0aW9uYQN3CGZpbGVzaXpldwNuaWx3FW9yaWdpbmFsX3Jlc291cmNlX3VybHcDbmlsdxVpc19jb21tdW5pdHlfcmVzb3VyY2V3BWZhbHNldw1jb3VudGVyX2NhY2hldwNuaWx3CGZpbGV0eXBldwNuaWx3C2xhc3RfaW1wb3J0dwNuaWx3EXJlc291cmNlX21ldGFkYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EXJlc291cmNlX21ldGFkYXRhdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcZcmVzb3VyY2VfdW5hdmFpbGFiaWxpdGllc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlyZXNvdXJjZV91bmF2YWlsYWJpbGl0aWVzdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXQAAAAedwJpZGIAAUT7dwR0eXBlbQAAAARtYWludwZmb3JtYXRtAAAABU5lVEV4dwtkZXNjcmlwdGlvbm0AAAAOTmVURXggc3RhdGlxdWV3BXRpdGxlbQAAAExodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvZXhwb3J0LW9wZW5kYXRhLXNuY2YtbmV0ZXguemlwdwpfX3N0cnVjdF9fdxJFbGl4aXIuREIuUmVzb3VyY2V3A3VybG0AAABMaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL2V4cG9ydC1vcGVuZGF0YS1zbmNmLW5ldGV4LnppcHcKZGF0YXNldF9pZGIAAAUKdwtsYXN0X3VwZGF0ZXQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYTB3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEZdwR5ZWFyYgAAB-p3Bm1pbnV0ZWEqdwRob3VyYRN3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwdkYXRhc2V0dAAAAC13CWlzX2hpZGRlbncFZmFsc2V3BHNsdWdtAAAADWhvcmFpcmVzLXNuY2Z3GWxlZ2FsX293bmVyX2NvbXBhbnlfc2lyZW5tAAAACTUxOTAzNzU4NHcZZGVjbGFyYXRpdmVfc3BhdGlhbF9hcmVhc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwZvZmZlcnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cGb2ZmZXJzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwdsaWNlbmNlbQAAAAhvZGMtb2RibHcKY3JlYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYR53CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWESdwR5ZWFyYgAAB-l3Bm1pbnV0ZWEzdwRob3VyYQh3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxNsZWdhbF9vd25lcnNfcmVnaW9udAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193E2xlZ2FsX293bmVyc19yZWdpb253CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3EGxlZ2FsX293bmVyc19hb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cQbGVnYWxfb3duZXJzX2FvbXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcJZnJlcXVlbmN5bQAAAApjb250aW51b3VzdwxoYXNfcmVhbHRpbWV3BHRydWV3DmRhdGFnb3V2X3RpdGxlbQAAAA1IT1JBSVJFUyBTTkNGdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLY3VzdG9tX3RhZ3NqdwtjdXN0b21fbG9nb3cDbmlsdwRsb2dvbQAAAFdodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLTEwMC5wbmd3E29yZ2FuaXphdGlvbl9vYmplY3R0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdxNvcmdhbml6YXRpb25fb2JqZWN0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwlpc19hY3RpdmV3BHRydWV3C2xhc3RfdXBkYXRldAAAAA13C21pY3Jvc2Vjb25kaAJhAGEGdwZzZWNvbmRhHncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRJ3BHllYXJiAAAH6XcGbWludXRlYTN3BGhvdXJhCHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3DnNlYXJjaF9wYXlsb2FkdAAAAAB3CXJlc291cmNlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlyZXNvdXJjZXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2luc2VydGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAvDXmEGdwZzZWNvbmRhK3cIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRN3BHllYXJiAAAH6XcGbWludXRlYTV3BGhvdXJhDncJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3CWZvbGxvd2Vyc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlmb2xsb3dlcnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3D29yZ2FuaXphdGlvbl9pZG0AAAAYNTM0ZmZmYjBhM2E3MjkyYzY0YTc4MTE1dxZjdXN0b21fbG9nb19jaGFuZ2VkX2F0dwNuaWx3EW9yZ2FuaXphdGlvbl90eXBlbQAAABdPcMOpcmF0ZXVyIGRlIHRyYW5zcG9ydHcEdGFnc2wAAAARbQAAAANjYXJtAAAAGmV0b2lsZS1mZXJyb3ZpYWlyZS1kYW1pZW5zbQAAAARndGZzbQAAAAdndGZzLXJ0bQAAAAhob3JhaXJlc20AAAAXaG9yYWlyZXMtZXQtaXRpbmVyYWlyZXNtAAAABWlub3VpbQAAAAppbnRlcmNpdGVzbQAAABBsb2lyZS1hdGxhbnRpcXVlbQAAAAVuZXRleG0AAAAFb3VpZ29tAAAACXNpcmktbGl0ZW0AAAAIc3VkLWF6dXJtAAAACnRlbXBzLXJlZWxtAAAAA3Rlcm0AAAADdGd2bQAAAAV0cmFpbmp3DGN1c3RvbV90aXRsZW0AAAAkUsOpc2VhdSBTTkNGIFRHViwgSW50ZXJjaXTDqXMgZXQgVEVSdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcKcG9wdWxhdGlvbmIEDGujdwp1cGRhdGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAM-MmEGdwZzZWNvbmRhCncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRp3BHllYXJiAAAH6ncGbWludXRlYRF3BGhvdXJhBHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3EGN1c3RvbV9mdWxsX2xvZ293A25pbHcJZnVsbF9sb2dvbQAAAFNodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLnBuZ3cQZGF0YXNldF9zdWJ0eXBlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxBkYXRhc2V0X3N1YnR5cGVzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwxvcmdhbml6YXRpb25tAAAABFNOQ0Z3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAHZGF0YXNldHcKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EUVsaXhpci5EQi5EYXRhc2V0dwtkYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwJpZGIAAAUKdwthcmNoaXZlZF9hdHcDbmlsdwpfX3N0cnVjdF9fdxFFbGl4aXIuREIuRGF0YXNldHcJbmJfcmV1c2VzYR13BHR5cGVtAAAADnB1YmxpYy10cmFuc2l0dyJsYXRlc3RfZGF0YV9nb3V2X2NvbW1lbnRfdGltZXN0YW1wdAAAAA13C21pY3Jvc2Vjb25kaAJhAGEAdwZzZWNvbmRhOncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRZ3BHllYXJiAAAH6ncGbWludXRlYQB3BGhvdXJhEHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3C2xvZ3NfaW1wb3J0dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193C2xvZ3NfaW1wb3J0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtkZXNjcmlwdGlvbm0AAA8fKipIb3JhaXJlcyB0aMOpb3JpcXVlcyBldCBlbiB0ZW1wcyByw6llbCBkZSBsYSBTTkNGKioKCioqVGjDqW9yaXF1ZSA6KiogbGVzIGhvcmFpcmVzIGRlcyBsaWduZXMgVEVSLCBJbnRlcmNpdMOpcyBldCBUR1Ygb3DDqXLDqWVzIHBhciBsYSBTTkNGIFZveWFnZXVycyBwb3VyIGxlcyAxNTFqIMOgIHZlbmlyLCBzb250IGZvdXJuaXMgYXUgZm9ybWF0IFtHVEZTXShodHRwczovL2RldmVsb3BlcnMuZ29vZ2xlLmNvbS90cmFuc2l0L2d0ZnMvcmVmZXJlbmNlKSBldCBhdSBmb3JtYXQgTmVURXggKHF1aSBlc3QgbGEgbm9ybWUgdGVjaG5pcXVlIGV1cm9ww6llbm5lIHBvdXIgbCfDqWNoYW5nZSBkZSBkb25uw6llcyBkZSB0cmFuc3BvcnQpLiBMZXMgZmljaGllcnMgc29udCBkaXNwb25pYmxlcyBhdXggbGllbnMgc3VpdmFudHMgOgoKICAqIHBvdXIgbGUgR1RGUyA6IFtodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwXShodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwKQogICogcG91ciBsZSBOZVRFeCA6IDxodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvZXhwb3J0LW9wZW5kYXRhLXNuY2YtbmV0ZXguemlwPgoKCgoqKlRlbXBzIHLDqWVsIDoqKiBsZXMgaG9yYWlyZXMgZW4gdGVtcHMgcsOpZWwgc29udCBmb3VybmlzIHNlbG9uIGxlcyBkZXV4IHN0YW5kYXJkcyBHVEZTIFJUIGV0IFNJUkkgcG91ciBsZXMgaG9yYWlyZXMgZXQgbGVzIGluZm9ybWF0aW9ucyBjb250ZXh0dWVsbGVzIHN1ciB1biBww6lyaW3DqHRyZSDDqWxhcmdpIGNvbXByZW5hbnQgbm90YW1tZW50IGxlcyBUR1YsIGxlcyBJQyBldCBURVIgKHkgY29tcHJpcyBsZXMgc29jacOpdMOpcyBkw6lkacOpZXMgVEVSKSA6CgogICogR1RGUy1SVCBUVSAoVHJpcCBVcGRhdGVzKSBtaXMgw6Agam91ciB0b3V0ZXMgbGVzIDIgbWludXRlcyBwb3VyIGxlcyB0cmFpbnMgY2lyY3VsYW50IGRhbnMgbGVzIDYwIHByb2NoYWluZXMgbWludXRlcyBldCBHVEZTLVJUIFNBIChTZXJ2aWNlIEFsZXJ0cykgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCiAgKiBTSVJJIEVUIExpdGUgKHNlcnZpY2UgIlNpdHVhdGlvbiBlWGNoYW5nZSIpIG1pcyDDoCBqb3VyIHRvdXRlcyBsZXMgMiBtaW51dGVzIHBvdXIgbGVzIHRyYWlucyBjaXJjdWxhbnQgZGFucyBsZXMgNjAgcHJvY2hhaW5lcyBtaW51dGVzIGV0IFNJUkkgU1ggTGl0ZSAoc2VydmljZSAiU2l0dWF0aW9uIGVYY2hhbmdlIikgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCgoKCkxlcyBmaWNoaWVycyBzb250IGRpc3BvbmlibGVzIGF1eCBsaWVucyBzdWl2YW50cyA6CgogICogcG91ciBsZSBHVEZTLVJUIFRVIDogW2h0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzXShodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlcykKICAqIHBvdXIgbGUgR1RGUy1SVCBTQSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXNlcnZpY2UtYWxlcnRzPgogICogcG91ciBsZSBTSVJJIEVUIExJVEUgKHZlcnNpb24gQsOpdGEpIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1lc3RpbWF0ZWQtdGltZXRhYmxlPgogICogcG91ciBsZSBTSVJJIFNYIExJVEUgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLXNpdHVhdGlvbi1leGNoYW5nZT4KCgoKUXVlbHF1ZXMgcmVtYXJxdWVzIHRlY2huaXF1ZXMgOiAKCiAgKiBBdSBuaXZlYXUgdGjDqW9yaXF1ZSA6IGRlcyBtaXNlcyDDoCBqb3VyIG9udCDDqXTDqSBlZmZlY3R1w6llcyBzdXIgbGVzIGRvbm7DqWVzIEdURlMgOiBsZSBwbGFuIGRlIHRyYW5zcG9ydCB0aMOpb3JpcXVlIGludMOoZ3JlIGTDqXNvcm1haXMgw6AgbCfDqWNoZWxsZSBuYXRpb25hbGUgbGVzIGFkYXB0YXRpb25zIGNvbm51ZXMgbGEgdmVpbGxlIMOgIDE3aCBlbiBjYXMgZGUgcGVydHVyYmF0aW9ucyBvdSBkZSBtb3V2ZW1lbnRzIHNvY2lhdXguCiAgKiBMZXMgZmx1eCBlbiB0ZW1wcyByw6llbCBuZSBzb250IHBhcyBmaWx0csOpcywgZXQgcGV1dmVudCBjb250ZW5pciB1biBww6lyaW3DqHRyZSBwbHVzIGxhcmdlIHF1ZSBsZXMgVEdWLCBJQyBldCBURVIuIE3Dqm1lIHNpIGRlcyBpbmZvcm1hdGlvbnMgY29uY2VybmFudCBk4oCZYXV0cmVzIGNpcmN1bGF0aW9ucyBwZXV2ZW50IMOqdHJlIHZpc2libGVzLCBtZXJjaSBkZSB2b3VzIHLDqWbDqXJlciBhdXggamV1eCBkZSBkb25uw6llcyBkZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyBjb21ww6l0ZW50ZXMsIG5vdGFtbWVudCBJbGUgZGUgRnJhbmNlIE1vYmlsaXTDqXMgcG91ciBsZXMgZG9ubsOpZXMgZW4gdGVtcHMgcsOpZWwgZW4gSWxlIGRlIEZyYW5jZSBvdSBsZXMgZGlmZsOpcmVudHMgdGVtcHMgcsOpZWxzIGRlcyBSw6lnaW9ucyBxdWFuZCBlbGxlcyBleGlzdGVudC4gTGUgcMOpcmltw6h0cmUgbuKAmWVzdCBnYXJhbnRpIHF1ZSBwb3VyIFRHViBldCBJQwogICogUG91ciBsZXMgZmx1eCBHVEZTLVJUIFNBIGV0IFNJUkkgU1ggTGl0ZSA6IGwnaWRlbnRpZmlhbnQgY29tbXVuIGRlcyBjaXJjdWxhdGlvbnMgZW50cmUgbGVzIGRpZmbDqXJlbnRzIGZsdXggZXN0IGxlIG51bcOpcm8gY29tbWVyY2lhbCBkdSB0cmFpbiwgcXVlIHZvdXMgdHJvdXZlcmV6IGRhbnMgPHRyaXA-IHBvdXIgbGUgR1RGUy1SVCBTQSBldCBkYW5zIDxWZWhpY3VsZUpvdXJuZXlSZWY-IGRhbnMgbGUgU0lSSSBTWCBMSVRFLiBDZXMgZmx1eCBuZSBjb21wcmVubmVudCBxdWUgbGVzIGluZm9ybWF0aW9ucyB2YWxvcmlzw6llcyDDoCBsYSBjb3Vyc2UgZXQgbmUgY29tcHJlbm5lbnQgcGFzIGxlcyBpbmZvcm1hdGlvbnMgcmVsYXRpdmVzIMOgIGRlcyBww6lyaW3DqHRyZXMgKGdhcmVzIG91IGxpZ25lcyBkdSByw6lzZWF1LCBxdWkgcGV1dmVudCBpbXBhY3RlciBwbHVzaWV1cnMgb3DDqXJhdGV1cnMpLgoKCgrCtyoqQ2UgamV1IGRlIGRvbm7DqWVzIGVzdCB1bmUgcHJvZHVjdGlvbiBTTkNGIFZveWFnZXVycyBjb250ZW5hbnQgZGVzIMOpbMOpbWVudHMgYXNzZW1ibMOpcyBwb3VyIGxhIGNvbW11bmF1dMOpIG9wZW4qKiAqKmRhdGEgYXUtZGVsw6AgZGUgc2VzIG9ibGlnYXRpb25zIHLDqWdsZW1lbnRhaXJlcy4gSWwgbmUgc2Ugc3Vic3RpdHVlIGRvbmMgcGFzIGF1eCBkb25uw6llcyBvZmZpY2llbGxlcyBwcm9ncmVzc2l2ZW1lbnQgcHVibGnDqWVzIHBhciBsZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyByw6lnaW9uYWxlcyBxdWkgcGV1dmVudCDDqXZlbnR1ZWxsZW1lbnQgY29tcG9ydGVyIGRlIHBldGl0ZXMgZGl2ZXJnZW5jZXMuIEF1c3NpLCBub3VzIHZvdXMgcmVjb21tYW5kb25zIGRlIHBsdXTDtHQgY29uc29tbWVyIGxlcyBkb25uw6llcyBmb3VybmllcyBwYXIgbGVzIFLDqWdpb25zIGV0IElERk0uKioKCkVuIGNhcyBkZSBxdWVzdGlvbiwgdm91cyBwb3V2ZXogY29udGFjdGVyIGwnw6lxdWlwZSBPcGVuIGRhdGEgU05DRiBWb3lhZ2V1cnMgw6AgbCdhZHJlc3NlIHN1aXZhbnRlIDogW0RhdGFfT2ZmaWNlX1NlY3JldGFyaWF0X0dlbmVyYWxfU0FfVm95YWdldXJzQHNuY2YuZnJdKG1haWx0bzpEYXRhX09mZmljZV9TZWNyZXRhcmlhdF9HZW5lcmFsX1NBX1ZveWFnZXVyc0BzbmNmLmZyKXcKbGF0ZXN0X3VybG0AAABOaHR0cHM6Ly93d3cuZGF0YS5nb3V2LmZyL2FwaS8xL2RhdGFzZXRzL3IvYzVmNjQ1NmUtMTEzNy00ZTc0LWExMGYtNGIwYTI1YzNjYzYxdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAACHJlc291cmNldwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcSRWxpeGlyLkRCLlJlc291cmNldw9mb3JtYXRfb3ZlcnJpZGV3A25pbHcQcmVzb3VyY2VfaGlzdG9yeXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxByZXNvdXJjZV9oaXN0b3J5dwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcOc2NoZW1hX3ZlcnNpb253A25pbHcLc2NoZW1hX25hbWV3A25pbHcLdmFsaWRhdGlvbnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cLdmFsaWRhdGlvbnN3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldwtkYXRhZ291dl9pZG0AAAAkYzVmNjQ1NmUtMTEzNy00ZTc0LWExMGYtNGIwYTI1YzNjYzYxdxFyZXNvdXJjZXNfcmVsYXRlZGp3DGlzX2F2YWlsYWJsZXcEdHJ1ZXccY29tbXVuaXR5X3Jlc291cmNlX3B1Ymxpc2hlcncDbmlsdxBkaXNwbGF5X3Bvc2l0aW9uYQF3CGZpbGVzaXpldwNuaWx3FW9yaWdpbmFsX3Jlc291cmNlX3VybHcDbmlsdxVpc19jb21tdW5pdHlfcmVzb3VyY2V3BWZhbHNldw1jb3VudGVyX2NhY2hldwNuaWx3CGZpbGV0eXBldwNuaWx3C2xhc3RfaW1wb3J0dwNuaWx3EXJlc291cmNlX21ldGFkYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EXJlc291cmNlX21ldGFkYXRhdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcZcmVzb3VyY2VfdW5hdmFpbGFiaWxpdGllc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlyZXNvdXJjZV91bmF2YWlsYWJpbGl0aWVzdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXQAAAAedwJpZGIAAUZ_dwR0eXBlbQAAAARtYWludwZmb3JtYXRtAAAAB2d0ZnMtcnR3C2Rlc2NyaXB0aW9ubQAAADNob3JhaXJlcyBlbiB0ZW1wcyByw6llbCBmb3JtYXQgR1RGUyBSVCBUcmlwIFVwZGF0ZXN3BXRpdGxlbQAAAEdodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlc3cKX19zdHJ1Y3RfX3cSRWxpeGlyLkRCLlJlc291cmNldwN1cmxtAAAAR2h0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzdwpkYXRhc2V0X2lkYgAABQp3C2xhc3RfdXBkYXRldAAAAA13C21pY3Jvc2Vjb25kaAJiAAw0qWEGdwZzZWNvbmRhBXcIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRp3BHllYXJiAAAH6ncGbWludXRlYRV3BGhvdXJhA3cJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3B2RhdGFzZXR0AAAALXcJaXNfaGlkZGVudwVmYWxzZXcEc2x1Z20AAAANaG9yYWlyZXMtc25jZncZbGVnYWxfb3duZXJfY29tcGFueV9zaXJlbm0AAAAJNTE5MDM3NTg0dxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193GWRlY2xhcmF0aXZlX3NwYXRpYWxfYXJlYXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3Bm9mZmVyc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwZvZmZlcnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3B2xpY2VuY2VtAAAACG9kYy1vZGJsdwpjcmVhdGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJhAGEGdwZzZWNvbmRhHncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRJ3BHllYXJiAAAH6XcGbWludXRlYTN3BGhvdXJhCHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3E2xlZ2FsX293bmVyc19yZWdpb250AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cTbGVnYWxfb3duZXJzX3JlZ2lvbncJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcQbGVnYWxfb3duZXJzX2FvbXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxBsZWdhbF9vd25lcnNfYW9tdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwlmcmVxdWVuY3ltAAAACmNvbnRpbnVvdXN3DGhhc19yZWFsdGltZXcEdHJ1ZXcOZGF0YWdvdXZfdGl0bGVtAAAADUhPUkFJUkVTIFNOQ0Z3FHJldXNlcl9pbXByb3ZlZF9kYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193FHJldXNlcl9pbXByb3ZlZF9kYXRhdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtjdXN0b21fdGFnc2p3C2N1c3RvbV9sb2dvdwNuaWx3BGxvZ29tAAAAV2h0dHBzOi8vdWRhdGEtYXZhdGFycy5zMy5yYnguaW8uY2xvdWQub3ZoLm5ldC9mMy8wYjhhZDkzMmY3NDA4NmE2YWIzZjI5MWVlOTI0M2YtMTAwLnBuZ3cTb3JnYW5pemF0aW9uX29iamVjdHQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cDb25ldwlfX2ZpZWxkX193E29yZ2FuaXphdGlvbl9vYmplY3R3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CWlzX2FjdGl2ZXcEdHJ1ZXcLbGFzdF91cGRhdGV0AAAADXcLbWljcm9zZWNvbmRoAmEAYQZ3BnNlY29uZGEedwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhEncEeWVhcmIAAAfpdwZtaW51dGVhM3cEaG91cmEIdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcOc2VhcmNoX3BheWxvYWR0AAAAAHcJcmVzb3VyY2VzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193CXJlc291cmNlc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLaW5zZXJ0ZWRfYXR0AAAADXcLbWljcm9zZWNvbmRoAmIAC8NeYQZ3BnNlY29uZGErdwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhE3cEeWVhcmIAAAfpdwZtaW51dGVhNXcEaG91cmEOdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcJZm9sbG93ZXJzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193CWZvbGxvd2Vyc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcPb3JnYW5pemF0aW9uX2lkbQAAABg1MzRmZmZiMGEzYTcyOTJjNjRhNzgxMTV3FmN1c3RvbV9sb2dvX2NoYW5nZWRfYXR3A25pbHcRb3JnYW5pemF0aW9uX3R5cGVtAAAAF09ww6lyYXRldXIgZGUgdHJhbnNwb3J0dwR0YWdzbAAAABFtAAAAA2Nhcm0AAAAaZXRvaWxlLWZlcnJvdmlhaXJlLWRhbWllbnNtAAAABGd0ZnNtAAAAB2d0ZnMtcnRtAAAACGhvcmFpcmVzbQAAABdob3JhaXJlcy1ldC1pdGluZXJhaXJlc20AAAAFaW5vdWltAAAACmludGVyY2l0ZXNtAAAAEGxvaXJlLWF0bGFudGlxdWVtAAAABW5ldGV4bQAAAAVvdWlnb20AAAAJc2lyaS1saXRlbQAAAAhzdWQtYXp1cm0AAAAKdGVtcHMtcmVlbG0AAAADdGVybQAAAAN0Z3ZtAAAABXRyYWluancMY3VzdG9tX3RpdGxlbQAAACRSw6lzZWF1IFNOQ0YgVEdWLCBJbnRlcmNpdMOpcyBldCBURVJ3Gm5vdGlmaWNhdGlvbl9zdWJzY3JpcHRpb25zdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193Gm5vdGlmaWNhdGlvbl9zdWJzY3JpcHRpb25zdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwpwb3B1bGF0aW9uYgQMa6N3CnVwZGF0ZWRfYXR0AAAADXcLbWljcm9zZWNvbmRoAmIAAz4yYQZ3BnNlY29uZGEKdwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhCXcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhGncEeWVhcmIAAAfqdwZtaW51dGVhEXcEaG91cmEEdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcQY3VzdG9tX2Z1bGxfbG9nb3cDbmlsdwlmdWxsX2xvZ29tAAAAU2h0dHBzOi8vdWRhdGEtYXZhdGFycy5zMy5yYnguaW8uY2xvdWQub3ZoLm5ldC9mMy8wYjhhZDkzMmY3NDA4NmE2YWIzZjI5MWVlOTI0M2YucG5ndxBkYXRhc2V0X3N1YnR5cGVzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EGRhdGFzZXRfc3VidHlwZXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3DG9yZ2FuaXphdGlvbm0AAAAEU05DRncIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAdkYXRhc2V0dwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcRRWxpeGlyLkRCLkRhdGFzZXR3C2RhdGFnb3V2X2lkbQAAABg2ODUzYzA4OWIzZWQ1NzgxZjZhZGZkZjd3AmlkYgAABQp3C2FyY2hpdmVkX2F0dwNuaWx3Cl9fc3RydWN0X193EUVsaXhpci5EQi5EYXRhc2V0dwluYl9yZXVzZXNhHXcEdHlwZW0AAAAOcHVibGljLXRyYW5zaXR3ImxhdGVzdF9kYXRhX2dvdXZfY29tbWVudF90aW1lc3RhbXB0AAAADXcLbWljcm9zZWNvbmRoAmEAYQB3BnNlY29uZGE6dwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhCXcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhFncEeWVhcmIAAAfqdwZtaW51dGVhAHcEaG91cmEQdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcLbG9nc19pbXBvcnR0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cLbG9nc19pbXBvcnR3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2Rlc2NyaXB0aW9ubQAADx8qKkhvcmFpcmVzIHRow6lvcmlxdWVzIGV0IGVuIHRlbXBzIHLDqWVsIGRlIGxhIFNOQ0YqKgoKKipUaMOpb3JpcXVlIDoqKiBsZXMgaG9yYWlyZXMgZGVzIGxpZ25lcyBURVIsIEludGVyY2l0w6lzIGV0IFRHViBvcMOpcsOpZXMgcGFyIGxhIFNOQ0YgVm95YWdldXJzIHBvdXIgbGVzIDE1MWogw6AgdmVuaXIsIHNvbnQgZm91cm5pcyBhdSBmb3JtYXQgW0dURlNdKGh0dHBzOi8vZGV2ZWxvcGVycy5nb29nbGUuY29tL3RyYW5zaXQvZ3Rmcy9yZWZlcmVuY2UpIGV0IGF1IGZvcm1hdCBOZVRFeCAocXVpIGVzdCBsYSBub3JtZSB0ZWNobmlxdWUgZXVyb3DDqWVubmUgcG91ciBsJ8OpY2hhbmdlIGRlIGRvbm7DqWVzIGRlIHRyYW5zcG9ydCkuIExlcyBmaWNoaWVycyBzb250IGRpc3BvbmlibGVzIGF1eCBsaWVucyBzdWl2YW50cyA6CgogICogcG91ciBsZSBHVEZTIDogW2h0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9FeHBvcnRfT3BlbkRhdGFfU05DRl9HVEZTX05ld1RyaXBJZC56aXBdKGh0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9FeHBvcnRfT3BlbkRhdGFfU05DRl9HVEZTX05ld1RyaXBJZC56aXApCiAgKiBwb3VyIGxlIE5lVEV4IDogPGh0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9leHBvcnQtb3BlbmRhdGEtc25jZi1uZXRleC56aXA-CgoKCioqVGVtcHMgcsOpZWwgOioqIGxlcyBob3JhaXJlcyBlbiB0ZW1wcyByw6llbCBzb250IGZvdXJuaXMgc2Vsb24gbGVzIGRldXggc3RhbmRhcmRzIEdURlMgUlQgZXQgU0lSSSBwb3VyIGxlcyBob3JhaXJlcyBldCBsZXMgaW5mb3JtYXRpb25zIGNvbnRleHR1ZWxsZXMgc3VyIHVuIHDDqXJpbcOodHJlIMOpbGFyZ2kgY29tcHJlbmFudCBub3RhbW1lbnQgbGVzIFRHViwgbGVzIElDIGV0IFRFUiAoeSBjb21wcmlzIGxlcyBzb2Npw6l0w6lzIGTDqWRpw6llcyBURVIpIDoKCiAgKiBHVEZTLVJUIFRVIChUcmlwIFVwZGF0ZXMpIG1pcyDDoCBqb3VyIHRvdXRlcyBsZXMgMiBtaW51dGVzIHBvdXIgbGVzIHRyYWlucyBjaXJjdWxhbnQgZGFucyBsZXMgNjAgcHJvY2hhaW5lcyBtaW51dGVzIGV0IEdURlMtUlQgU0EgKFNlcnZpY2UgQWxlcnRzKSBwb3VyIGxlcyBjaXJjdWxhdGlvbnMgw6AgdmVuaXIKICAqIFNJUkkgRVQgTGl0ZSAoc2VydmljZSAiU2l0dWF0aW9uIGVYY2hhbmdlIikgbWlzIMOgIGpvdXIgdG91dGVzIGxlcyAyIG1pbnV0ZXMgcG91ciBsZXMgdHJhaW5zIGNpcmN1bGFudCBkYW5zIGxlcyA2MCBwcm9jaGFpbmVzIG1pbnV0ZXMgZXQgU0lSSSBTWCBMaXRlIChzZXJ2aWNlICJTaXR1YXRpb24gZVhjaGFuZ2UiKSBwb3VyIGxlcyBjaXJjdWxhdGlvbnMgw6AgdmVuaXIKCgoKTGVzIGZpY2hpZXJzIHNvbnQgZGlzcG9uaWJsZXMgYXV4IGxpZW5zIHN1aXZhbnRzIDoKCiAgKiBwb3VyIGxlIEdURlMtUlQgVFUgOiBbaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC10cmlwLXVwZGF0ZXNdKGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzKQogICogcG91ciBsZSBHVEZTLVJUIFNBIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtc2VydmljZS1hbGVydHM-CiAgKiBwb3VyIGxlIFNJUkkgRVQgTElURSAodmVyc2lvbiBCw6l0YSkgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLWVzdGltYXRlZC10aW1ldGFibGU-CiAgKiBwb3VyIGxlIFNJUkkgU1ggTElURSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtc2l0dWF0aW9uLWV4Y2hhbmdlPgoKCgpRdWVscXVlcyByZW1hcnF1ZXMgdGVjaG5pcXVlcyA6IAoKICAqIEF1IG5pdmVhdSB0aMOpb3JpcXVlIDogZGVzIG1pc2VzIMOgIGpvdXIgb250IMOpdMOpIGVmZmVjdHXDqWVzIHN1ciBsZXMgZG9ubsOpZXMgR1RGUyA6IGxlIHBsYW4gZGUgdHJhbnNwb3J0IHRow6lvcmlxdWUgaW50w6hncmUgZMOpc29ybWFpcyDDoCBsJ8OpY2hlbGxlIG5hdGlvbmFsZSBsZXMgYWRhcHRhdGlvbnMgY29ubnVlcyBsYSB2ZWlsbGUgw6AgMTdoIGVuIGNhcyBkZSBwZXJ0dXJiYXRpb25zIG91IGRlIG1vdXZlbWVudHMgc29jaWF1eC4KICAqIExlcyBmbHV4IGVuIHRlbXBzIHLDqWVsIG5lIHNvbnQgcGFzIGZpbHRyw6lzLCBldCBwZXV2ZW50IGNvbnRlbmlyIHVuIHDDqXJpbcOodHJlIHBsdXMgbGFyZ2UgcXVlIGxlcyBUR1YsIElDIGV0IFRFUi4gTcOqbWUgc2kgZGVzIGluZm9ybWF0aW9ucyBjb25jZXJuYW50IGTigJlhdXRyZXMgY2lyY3VsYXRpb25zIHBldXZlbnQgw6p0cmUgdmlzaWJsZXMsIG1lcmNpIGRlIHZvdXMgcsOpZsOpcmVyIGF1eCBqZXV4IGRlIGRvbm7DqWVzIGRlcyBhdXRvcml0w6lzIG9yZ2FuaXNhdHJpY2VzIGNvbXDDqXRlbnRlcywgbm90YW1tZW50IElsZSBkZSBGcmFuY2UgTW9iaWxpdMOpcyBwb3VyIGxlcyBkb25uw6llcyBlbiB0ZW1wcyByw6llbCBlbiBJbGUgZGUgRnJhbmNlIG91IGxlcyBkaWZmw6lyZW50cyB0ZW1wcyByw6llbHMgZGVzIFLDqWdpb25zIHF1YW5kIGVsbGVzIGV4aXN0ZW50LiBMZSBww6lyaW3DqHRyZSBu4oCZZXN0IGdhcmFudGkgcXVlIHBvdXIgVEdWIGV0IElDCiAgKiBQb3VyIGxlcyBmbHV4IEdURlMtUlQgU0EgZXQgU0lSSSBTWCBMaXRlIDogbCdpZGVudGlmaWFudCBjb21tdW4gZGVzIGNpcmN1bGF0aW9ucyBlbnRyZSBsZXMgZGlmZsOpcmVudHMgZmx1eCBlc3QgbGUgbnVtw6lybyBjb21tZXJjaWFsIGR1IHRyYWluLCBxdWUgdm91cyB0cm91dmVyZXogZGFucyA8dHJpcD4gcG91ciBsZSBHVEZTLVJUIFNBIGV0IGRhbnMgPFZlaGljdWxlSm91cm5leVJlZj4gZGFucyBsZSBTSVJJIFNYIExJVEUuIENlcyBmbHV4IG5lIGNvbXByZW5uZW50IHF1ZSBsZXMgaW5mb3JtYXRpb25zIHZhbG9yaXPDqWVzIMOgIGxhIGNvdXJzZSBldCBuZSBjb21wcmVubmVudCBwYXMgbGVzIGluZm9ybWF0aW9ucyByZWxhdGl2ZXMgw6AgZGVzIHDDqXJpbcOodHJlcyAoZ2FyZXMgb3UgbGlnbmVzIGR1IHLDqXNlYXUsIHF1aSBwZXV2ZW50IGltcGFjdGVyIHBsdXNpZXVycyBvcMOpcmF0ZXVycykuCgoKCsK3KipDZSBqZXUgZGUgZG9ubsOpZXMgZXN0IHVuZSBwcm9kdWN0aW9uIFNOQ0YgVm95YWdldXJzIGNvbnRlbmFudCBkZXMgw6lsw6ltZW50cyBhc3NlbWJsw6lzIHBvdXIgbGEgY29tbXVuYXV0w6kgb3BlbioqICoqZGF0YSBhdS1kZWzDoCBkZSBzZXMgb2JsaWdhdGlvbnMgcsOpZ2xlbWVudGFpcmVzLiBJbCBuZSBzZSBzdWJzdGl0dWUgZG9uYyBwYXMgYXV4IGRvbm7DqWVzIG9mZmljaWVsbGVzIHByb2dyZXNzaXZlbWVudCBwdWJsacOpZXMgcGFyIGxlcyBhdXRvcml0w6lzIG9yZ2FuaXNhdHJpY2VzIHLDqWdpb25hbGVzIHF1aSBwZXV2ZW50IMOpdmVudHVlbGxlbWVudCBjb21wb3J0ZXIgZGUgcGV0aXRlcyBkaXZlcmdlbmNlcy4gQXVzc2ksIG5vdXMgdm91cyByZWNvbW1hbmRvbnMgZGUgcGx1dMO0dCBjb25zb21tZXIgbGVzIGRvbm7DqWVzIGZvdXJuaWVzIHBhciBsZXMgUsOpZ2lvbnMgZXQgSURGTS4qKgoKRW4gY2FzIGRlIHF1ZXN0aW9uLCB2b3VzIHBvdXZleiBjb250YWN0ZXIgbCfDqXF1aXBlIE9wZW4gZGF0YSBTTkNGIFZveWFnZXVycyDDoCBsJ2FkcmVzc2Ugc3VpdmFudGUgOiBbRGF0YV9PZmZpY2VfU2VjcmV0YXJpYXRfR2VuZXJhbF9TQV9Wb3lhZ2V1cnNAc25jZi5mcl0obWFpbHRvOkRhdGFfT2ZmaWNlX1NlY3JldGFyaWF0X0dlbmVyYWxfU0FfVm95YWdldXJzQHNuY2YuZnIpdwpsYXRlc3RfdXJsbQAAAE5odHRwczovL3d3dy5kYXRhLmdvdXYuZnIvYXBpLzEvZGF0YXNldHMvci85YjA2ZDI1ZC03YjQ1LTQ5YmEtYmUxZi0yMTZjZGI0MjQ1NTJ3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAIcmVzb3VyY2V3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxJFbGl4aXIuREIuUmVzb3VyY2V3D2Zvcm1hdF9vdmVycmlkZXcDbmlsdxByZXNvdXJjZV9oaXN0b3J5dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EHJlc291cmNlX2hpc3Rvcnl3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldw5zY2hlbWFfdmVyc2lvbncDbmlsdwtzY2hlbWFfbmFtZXcDbmlsdwt2YWxpZGF0aW9uc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwt2YWxpZGF0aW9uc3cJX19vd25lcl9fdxJFbGl4aXIuREIuUmVzb3VyY2V3C2RhdGFnb3V2X2lkbQAAACQ5YjA2ZDI1ZC03YjQ1LTQ5YmEtYmUxZi0yMTZjZGI0MjQ1NTJ3EXJlc291cmNlc19yZWxhdGVkancMaXNfYXZhaWxhYmxldwR0cnVldxxjb21tdW5pdHlfcmVzb3VyY2VfcHVibGlzaGVydwNuaWx3EGRpc3BsYXlfcG9zaXRpb25hAncIZmlsZXNpemV3A25pbHcVb3JpZ2luYWxfcmVzb3VyY2VfdXJsdwNuaWx3FWlzX2NvbW11bml0eV9yZXNvdXJjZXcFZmFsc2V3DWNvdW50ZXJfY2FjaGV3A25pbHcIZmlsZXR5cGV3A25pbHcLbGFzdF9pbXBvcnR3A25pbHcRcmVzb3VyY2VfbWV0YWRhdGF0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cRcmVzb3VyY2VfbWV0YWRhdGF3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldxlyZXNvdXJjZV91bmF2YWlsYWJpbGl0aWVzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193GXJlc291cmNlX3VuYXZhaWxhYmlsaXRpZXN3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldAAAAB53AmlkYgABRP53BHR5cGVtAAAABG1haW53BmZvcm1hdG0AAAAJU0lSSSBMaXRldwtkZXNjcmlwdGlvbm0AAAA_SG9yYWlyZXMgZW4gdGVtcHMgcsOpZWwgYXUgZm9ybWF0IFNJUkkgRXN0aW1hdGVkIFRpbWV0YWJsZSBMSVRFdwV0aXRsZW0AAABQaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLWVzdGltYXRlZC10aW1ldGFibGV3Cl9fc3RydWN0X193EkVsaXhpci5EQi5SZXNvdXJjZXcDdXJsbQAAAFBodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtZXN0aW1hdGVkLXRpbWV0YWJsZXcKZGF0YXNldF9pZGIAAAUKdwtsYXN0X3VwZGF0ZXQAAAANdwttaWNyb3NlY29uZGgCYgAEZzZhBncGc2Vjb25kYSd3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEadwR5ZWFyYgAAB-p3Bm1pbnV0ZWEPdwRob3VyYQN3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwdkYXRhc2V0dAAAAC13CWlzX2hpZGRlbncFZmFsc2V3BHNsdWdtAAAADWhvcmFpcmVzLXNuY2Z3GWxlZ2FsX293bmVyX2NvbXBhbnlfc2lyZW5tAAAACTUxOTAzNzU4NHcZZGVjbGFyYXRpdmVfc3BhdGlhbF9hcmVhc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlkZWNsYXJhdGl2ZV9zcGF0aWFsX2FyZWFzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwZvZmZlcnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cGb2ZmZXJzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwdsaWNlbmNlbQAAAAhvZGMtb2RibHcKY3JlYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYR53CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWESdwR5ZWFyYgAAB-l3Bm1pbnV0ZWEzdwRob3VyYQh3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxNsZWdhbF9vd25lcnNfcmVnaW9udAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193E2xlZ2FsX293bmVyc19yZWdpb253CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3EGxlZ2FsX293bmVyc19hb210AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cQbGVnYWxfb3duZXJzX2FvbXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcJZnJlcXVlbmN5bQAAAApjb250aW51b3VzdwxoYXNfcmVhbHRpbWV3BHRydWV3DmRhdGFnb3V2X3RpdGxlbQAAAA1IT1JBSVJFUyBTTkNGdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxRyZXVzZXJfaW1wcm92ZWRfZGF0YXcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLY3VzdG9tX3RhZ3NqdwtjdXN0b21fbG9nb3cDbmlsdwRsb2dvbQAAAFdodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLTEwMC5wbmd3E29yZ2FuaXphdGlvbl9vYmplY3R0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193A29uZXcJX19maWVsZF9fdxNvcmdhbml6YXRpb25fb2JqZWN0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwlpc19hY3RpdmV3BHRydWV3C2xhc3RfdXBkYXRldAAAAA13C21pY3Jvc2Vjb25kaAJhAGEGdwZzZWNvbmRhHncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRJ3BHllYXJiAAAH6XcGbWludXRlYTN3BGhvdXJhCHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3DnNlYXJjaF9wYXlsb2FkdAAAAAB3CXJlc291cmNlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlyZXNvdXJjZXN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2luc2VydGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAvDXmEGdwZzZWNvbmRhK3cIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQZ3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRN3BHllYXJiAAAH6XcGbWludXRlYTV3BGhvdXJhDncJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3CWZvbGxvd2Vyc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwlmb2xsb3dlcnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3D29yZ2FuaXphdGlvbl9pZG0AAAAYNTM0ZmZmYjBhM2E3MjkyYzY0YTc4MTE1dxZjdXN0b21fbG9nb19jaGFuZ2VkX2F0dwNuaWx3EW9yZ2FuaXphdGlvbl90eXBlbQAAABdPcMOpcmF0ZXVyIGRlIHRyYW5zcG9ydHcEdGFnc2wAAAARbQAAAANjYXJtAAAAGmV0b2lsZS1mZXJyb3ZpYWlyZS1kYW1pZW5zbQAAAARndGZzbQAAAAdndGZzLXJ0bQAAAAhob3JhaXJlc20AAAAXaG9yYWlyZXMtZXQtaXRpbmVyYWlyZXNtAAAABWlub3VpbQAAAAppbnRlcmNpdGVzbQAAABBsb2lyZS1hdGxhbnRpcXVlbQAAAAVuZXRleG0AAAAFb3VpZ29tAAAACXNpcmktbGl0ZW0AAAAIc3VkLWF6dXJtAAAACnRlbXBzLXJlZWxtAAAAA3Rlcm0AAAADdGd2bQAAAAV0cmFpbmp3DGN1c3RvbV90aXRsZW0AAAAkUsOpc2VhdSBTTkNGIFRHViwgSW50ZXJjaXTDqXMgZXQgVEVSdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxpub3RpZmljYXRpb25fc3Vic2NyaXB0aW9uc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcKcG9wdWxhdGlvbmIEDGujdwp1cGRhdGVkX2F0dAAAAA13C21pY3Jvc2Vjb25kaAJiAAM-MmEGdwZzZWNvbmRhCncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRp3BHllYXJiAAAH6ncGbWludXRlYRF3BGhvdXJhBHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3EGN1c3RvbV9mdWxsX2xvZ293A25pbHcJZnVsbF9sb2dvbQAAAFNodHRwczovL3VkYXRhLWF2YXRhcnMuczMucmJ4LmlvLmNsb3VkLm92aC5uZXQvZjMvMGI4YWQ5MzJmNzQwODZhNmFiM2YyOTFlZTkyNDNmLnBuZ3cQZGF0YXNldF9zdWJ0eXBlc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxBkYXRhc2V0X3N1YnR5cGVzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwxvcmdhbml6YXRpb25tAAAABFNOQ0Z3CF9fbWV0YV9fdAAAAAZ3BXN0YXRldwZsb2FkZWR3B2NvbnRleHR3A25pbHcGcHJlZml4dwNuaWx3BnNvdXJjZW0AAAAHZGF0YXNldHcKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EUVsaXhpci5EQi5EYXRhc2V0dwtkYXRhZ291dl9pZG0AAAAYNjg1M2MwODliM2VkNTc4MWY2YWRmZGY3dwJpZGIAAAUKdwthcmNoaXZlZF9hdHcDbmlsdwpfX3N0cnVjdF9fdxFFbGl4aXIuREIuRGF0YXNldHcJbmJfcmV1c2VzYR13BHR5cGVtAAAADnB1YmxpYy10cmFuc2l0dyJsYXRlc3RfZGF0YV9nb3V2X2NvbW1lbnRfdGltZXN0YW1wdAAAAA13C21pY3Jvc2Vjb25kaAJhAGEAdwZzZWNvbmRhOncIY2FsZW5kYXJ3E0VsaXhpci5DYWxlbmRhci5JU093BW1vbnRoYQl3Cl9fc3RydWN0X193D0VsaXhpci5EYXRlVGltZXcDZGF5YRZ3BHllYXJiAAAH6ncGbWludXRlYQB3BGhvdXJhEHcJdGltZV96b25lbQAAAAdFdGMvVVRDdwl6b25lX2FiYnJtAAAAA1VUQ3cKdXRjX29mZnNldGEAdwpzdGRfb2Zmc2V0YQB3C2xvZ3NfaW1wb3J0dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193C2xvZ3NfaW1wb3J0dwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtkZXNjcmlwdGlvbm0AAA8fKipIb3JhaXJlcyB0aMOpb3JpcXVlcyBldCBlbiB0ZW1wcyByw6llbCBkZSBsYSBTTkNGKioKCioqVGjDqW9yaXF1ZSA6KiogbGVzIGhvcmFpcmVzIGRlcyBsaWduZXMgVEVSLCBJbnRlcmNpdMOpcyBldCBUR1Ygb3DDqXLDqWVzIHBhciBsYSBTTkNGIFZveWFnZXVycyBwb3VyIGxlcyAxNTFqIMOgIHZlbmlyLCBzb250IGZvdXJuaXMgYXUgZm9ybWF0IFtHVEZTXShodHRwczovL2RldmVsb3BlcnMuZ29vZ2xlLmNvbS90cmFuc2l0L2d0ZnMvcmVmZXJlbmNlKSBldCBhdSBmb3JtYXQgTmVURXggKHF1aSBlc3QgbGEgbm9ybWUgdGVjaG5pcXVlIGV1cm9ww6llbm5lIHBvdXIgbCfDqWNoYW5nZSBkZSBkb25uw6llcyBkZSB0cmFuc3BvcnQpLiBMZXMgZmljaGllcnMgc29udCBkaXNwb25pYmxlcyBhdXggbGllbnMgc3VpdmFudHMgOgoKICAqIHBvdXIgbGUgR1RGUyA6IFtodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwXShodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvRXhwb3J0X09wZW5EYXRhX1NOQ0ZfR1RGU19OZXdUcmlwSWQuemlwKQogICogcG91ciBsZSBOZVRFeCA6IDxodHRwczovL2V1LmZ0cC5vcGVuZGF0YXNvZnQuY29tL3NuY2YvcGxhbmRhdGEvZXhwb3J0LW9wZW5kYXRhLXNuY2YtbmV0ZXguemlwPgoKCgoqKlRlbXBzIHLDqWVsIDoqKiBsZXMgaG9yYWlyZXMgZW4gdGVtcHMgcsOpZWwgc29udCBmb3VybmlzIHNlbG9uIGxlcyBkZXV4IHN0YW5kYXJkcyBHVEZTIFJUIGV0IFNJUkkgcG91ciBsZXMgaG9yYWlyZXMgZXQgbGVzIGluZm9ybWF0aW9ucyBjb250ZXh0dWVsbGVzIHN1ciB1biBww6lyaW3DqHRyZSDDqWxhcmdpIGNvbXByZW5hbnQgbm90YW1tZW50IGxlcyBUR1YsIGxlcyBJQyBldCBURVIgKHkgY29tcHJpcyBsZXMgc29jacOpdMOpcyBkw6lkacOpZXMgVEVSKSA6CgogICogR1RGUy1SVCBUVSAoVHJpcCBVcGRhdGVzKSBtaXMgw6Agam91ciB0b3V0ZXMgbGVzIDIgbWludXRlcyBwb3VyIGxlcyB0cmFpbnMgY2lyY3VsYW50IGRhbnMgbGVzIDYwIHByb2NoYWluZXMgbWludXRlcyBldCBHVEZTLVJUIFNBIChTZXJ2aWNlIEFsZXJ0cykgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCiAgKiBTSVJJIEVUIExpdGUgKHNlcnZpY2UgIlNpdHVhdGlvbiBlWGNoYW5nZSIpIG1pcyDDoCBqb3VyIHRvdXRlcyBsZXMgMiBtaW51dGVzIHBvdXIgbGVzIHRyYWlucyBjaXJjdWxhbnQgZGFucyBsZXMgNjAgcHJvY2hhaW5lcyBtaW51dGVzIGV0IFNJUkkgU1ggTGl0ZSAoc2VydmljZSAiU2l0dWF0aW9uIGVYY2hhbmdlIikgcG91ciBsZXMgY2lyY3VsYXRpb25zIMOgIHZlbmlyCgoKCkxlcyBmaWNoaWVycyBzb250IGRpc3BvbmlibGVzIGF1eCBsaWVucyBzdWl2YW50cyA6CgogICogcG91ciBsZSBHVEZTLVJUIFRVIDogW2h0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLWd0ZnMtcnQtdHJpcC11cGRhdGVzXShodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlcykKICAqIHBvdXIgbGUgR1RGUy1SVCBTQSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXNlcnZpY2UtYWxlcnRzPgogICogcG91ciBsZSBTSVJJIEVUIExJVEUgKHZlcnNpb24gQsOpdGEpIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1lc3RpbWF0ZWQtdGltZXRhYmxlPgogICogcG91ciBsZSBTSVJJIFNYIExJVEUgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2Ytc2lyaS1saXRlLXNpdHVhdGlvbi1leGNoYW5nZT4KCgoKUXVlbHF1ZXMgcmVtYXJxdWVzIHRlY2huaXF1ZXMgOiAKCiAgKiBBdSBuaXZlYXUgdGjDqW9yaXF1ZSA6IGRlcyBtaXNlcyDDoCBqb3VyIG9udCDDqXTDqSBlZmZlY3R1w6llcyBzdXIgbGVzIGRvbm7DqWVzIEdURlMgOiBsZSBwbGFuIGRlIHRyYW5zcG9ydCB0aMOpb3JpcXVlIGludMOoZ3JlIGTDqXNvcm1haXMgw6AgbCfDqWNoZWxsZSBuYXRpb25hbGUgbGVzIGFkYXB0YXRpb25zIGNvbm51ZXMgbGEgdmVpbGxlIMOgIDE3aCBlbiBjYXMgZGUgcGVydHVyYmF0aW9ucyBvdSBkZSBtb3V2ZW1lbnRzIHNvY2lhdXguCiAgKiBMZXMgZmx1eCBlbiB0ZW1wcyByw6llbCBuZSBzb250IHBhcyBmaWx0csOpcywgZXQgcGV1dmVudCBjb250ZW5pciB1biBww6lyaW3DqHRyZSBwbHVzIGxhcmdlIHF1ZSBsZXMgVEdWLCBJQyBldCBURVIuIE3Dqm1lIHNpIGRlcyBpbmZvcm1hdGlvbnMgY29uY2VybmFudCBk4oCZYXV0cmVzIGNpcmN1bGF0aW9ucyBwZXV2ZW50IMOqdHJlIHZpc2libGVzLCBtZXJjaSBkZSB2b3VzIHLDqWbDqXJlciBhdXggamV1eCBkZSBkb25uw6llcyBkZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyBjb21ww6l0ZW50ZXMsIG5vdGFtbWVudCBJbGUgZGUgRnJhbmNlIE1vYmlsaXTDqXMgcG91ciBsZXMgZG9ubsOpZXMgZW4gdGVtcHMgcsOpZWwgZW4gSWxlIGRlIEZyYW5jZSBvdSBsZXMgZGlmZsOpcmVudHMgdGVtcHMgcsOpZWxzIGRlcyBSw6lnaW9ucyBxdWFuZCBlbGxlcyBleGlzdGVudC4gTGUgcMOpcmltw6h0cmUgbuKAmWVzdCBnYXJhbnRpIHF1ZSBwb3VyIFRHViBldCBJQwogICogUG91ciBsZXMgZmx1eCBHVEZTLVJUIFNBIGV0IFNJUkkgU1ggTGl0ZSA6IGwnaWRlbnRpZmlhbnQgY29tbXVuIGRlcyBjaXJjdWxhdGlvbnMgZW50cmUgbGVzIGRpZmbDqXJlbnRzIGZsdXggZXN0IGxlIG51bcOpcm8gY29tbWVyY2lhbCBkdSB0cmFpbiwgcXVlIHZvdXMgdHJvdXZlcmV6IGRhbnMgPHRyaXA-IHBvdXIgbGUgR1RGUy1SVCBTQSBldCBkYW5zIDxWZWhpY3VsZUpvdXJuZXlSZWY-IGRhbnMgbGUgU0lSSSBTWCBMSVRFLiBDZXMgZmx1eCBuZSBjb21wcmVubmVudCBxdWUgbGVzIGluZm9ybWF0aW9ucyB2YWxvcmlzw6llcyDDoCBsYSBjb3Vyc2UgZXQgbmUgY29tcHJlbm5lbnQgcGFzIGxlcyBpbmZvcm1hdGlvbnMgcmVsYXRpdmVzIMOgIGRlcyBww6lyaW3DqHRyZXMgKGdhcmVzIG91IGxpZ25lcyBkdSByw6lzZWF1LCBxdWkgcGV1dmVudCBpbXBhY3RlciBwbHVzaWV1cnMgb3DDqXJhdGV1cnMpLgoKCgrCtyoqQ2UgamV1IGRlIGRvbm7DqWVzIGVzdCB1bmUgcHJvZHVjdGlvbiBTTkNGIFZveWFnZXVycyBjb250ZW5hbnQgZGVzIMOpbMOpbWVudHMgYXNzZW1ibMOpcyBwb3VyIGxhIGNvbW11bmF1dMOpIG9wZW4qKiAqKmRhdGEgYXUtZGVsw6AgZGUgc2VzIG9ibGlnYXRpb25zIHLDqWdsZW1lbnRhaXJlcy4gSWwgbmUgc2Ugc3Vic3RpdHVlIGRvbmMgcGFzIGF1eCBkb25uw6llcyBvZmZpY2llbGxlcyBwcm9ncmVzc2l2ZW1lbnQgcHVibGnDqWVzIHBhciBsZXMgYXV0b3JpdMOpcyBvcmdhbmlzYXRyaWNlcyByw6lnaW9uYWxlcyBxdWkgcGV1dmVudCDDqXZlbnR1ZWxsZW1lbnQgY29tcG9ydGVyIGRlIHBldGl0ZXMgZGl2ZXJnZW5jZXMuIEF1c3NpLCBub3VzIHZvdXMgcmVjb21tYW5kb25zIGRlIHBsdXTDtHQgY29uc29tbWVyIGxlcyBkb25uw6llcyBmb3VybmllcyBwYXIgbGVzIFLDqWdpb25zIGV0IElERk0uKioKCkVuIGNhcyBkZSBxdWVzdGlvbiwgdm91cyBwb3V2ZXogY29udGFjdGVyIGwnw6lxdWlwZSBPcGVuIGRhdGEgU05DRiBWb3lhZ2V1cnMgw6AgbCdhZHJlc3NlIHN1aXZhbnRlIDogW0RhdGFfT2ZmaWNlX1NlY3JldGFyaWF0X0dlbmVyYWxfU0FfVm95YWdldXJzQHNuY2YuZnJdKG1haWx0bzpEYXRhX09mZmljZV9TZWNyZXRhcmlhdF9HZW5lcmFsX1NBX1ZveWFnZXVyc0BzbmNmLmZyKXcKbGF0ZXN0X3VybG0AAABOaHR0cHM6Ly93d3cuZGF0YS5nb3V2LmZyL2FwaS8xL2RhdGFzZXRzL3IvNzhlOTQ2MDMtZmU3NS00NWEwLThhNDUtMWJiYjYzY2MwODgxdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAACHJlc291cmNldwpfX3N0cnVjdF9fdxtFbGl4aXIuRWN0by5TY2hlbWEuTWV0YWRhdGF3BnNjaGVtYXcSRWxpeGlyLkRCLlJlc291cmNldw9mb3JtYXRfb3ZlcnJpZGV3A25pbHcQcmVzb3VyY2VfaGlzdG9yeXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxByZXNvdXJjZV9oaXN0b3J5dwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcOc2NoZW1hX3ZlcnNpb253A25pbHcLc2NoZW1hX25hbWV3A25pbHcLdmFsaWRhdGlvbnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cLdmFsaWRhdGlvbnN3CV9fb3duZXJfX3cSRWxpeGlyLkRCLlJlc291cmNldwtkYXRhZ291dl9pZG0AAAAkNzhlOTQ2MDMtZmU3NS00NWEwLThhNDUtMWJiYjYzY2MwODgxdxFyZXNvdXJjZXNfcmVsYXRlZGp3DGlzX2F2YWlsYWJsZXcEdHJ1ZXccY29tbXVuaXR5X3Jlc291cmNlX3B1Ymxpc2hlcncDbmlsdxBkaXNwbGF5X3Bvc2l0aW9uYQR3CGZpbGVzaXpldwNuaWx3FW9yaWdpbmFsX3Jlc291cmNlX3VybHcDbmlsdxVpc19jb21tdW5pdHlfcmVzb3VyY2V3BWZhbHNldw1jb3VudGVyX2NhY2hldwNuaWx3CGZpbGV0eXBldwNuaWx3C2xhc3RfaW1wb3J0dwNuaWx3EXJlc291cmNlX21ldGFkYXRhdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EXJlc291cmNlX21ldGFkYXRhdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcZcmVzb3VyY2VfdW5hdmFpbGFiaWxpdGllc3QAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxlyZXNvdXJjZV91bmF2YWlsYWJpbGl0aWVzdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXQAAAAedwJpZGIAAUZ-dwR0eXBlbQAAAARtYWludwZmb3JtYXRtAAAABEdURlN3C2Rlc2NyaXB0aW9ubQAAAA1HVEZTIFN0YXRpcXVldwV0aXRsZW0AAABVaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL0V4cG9ydF9PcGVuRGF0YV9TTkNGX0dURlNfTmV3VHJpcElkLnppcHcKX19zdHJ1Y3RfX3cSRWxpeGlyLkRCLlJlc291cmNldwN1cmxtAAAAVWh0dHBzOi8vZXUuZnRwLm9wZW5kYXRhc29mdC5jb20vc25jZi9wbGFuZGF0YS9FeHBvcnRfT3BlbkRhdGFfU05DRl9HVEZTX05ld1RyaXBJZC56aXB3CmRhdGFzZXRfaWRiAAAFCncLbGFzdF91cGRhdGV0AAAADXcLbWljcm9zZWNvbmRoAmEAYQZ3BnNlY29uZGEZdwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhCXcKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhGHcEeWVhcmIAAAfqdwZtaW51dGVhKHcEaG91cmETdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcHZGF0YXNldHQAAAAtdwlpc19oaWRkZW53BWZhbHNldwRzbHVnbQAAAA1ob3JhaXJlcy1zbmNmdxlsZWdhbF9vd25lcl9jb21wYW55X3NpcmVubQAAAAk1MTkwMzc1ODR3GWRlY2xhcmF0aXZlX3NwYXRpYWxfYXJlYXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cZZGVjbGFyYXRpdmVfc3BhdGlhbF9hcmVhc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcGb2ZmZXJzdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193Bm9mZmVyc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcHbGljZW5jZW0AAAAIb2RjLW9kYmx3CmNyZWF0ZWRfYXR0AAAADXcLbWljcm9zZWNvbmRoAmEAYQZ3BnNlY29uZGEedwhjYWxlbmRhcncTRWxpeGlyLkNhbGVuZGFyLklTT3cFbW9udGhhBncKX19zdHJ1Y3RfX3cPRWxpeGlyLkRhdGVUaW1ldwNkYXlhEncEeWVhcmIAAAfpdwZtaW51dGVhM3cEaG91cmEIdwl0aW1lX3pvbmVtAAAAB0V0Yy9VVEN3CXpvbmVfYWJicm0AAAADVVRDdwp1dGNfb2Zmc2V0YQB3CnN0ZF9vZmZzZXRhAHcTbGVnYWxfb3duZXJzX3JlZ2lvbnQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxNsZWdhbF9vd25lcnNfcmVnaW9udwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dxBsZWdhbF9vd25lcnNfYW9tdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193EGxlZ2FsX293bmVyc19hb213CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CWZyZXF1ZW5jeW0AAAAKY29udGludW91c3cMaGFzX3JlYWx0aW1ldwR0cnVldw5kYXRhZ291dl90aXRsZW0AAAANSE9SQUlSRVMgU05DRncUcmV1c2VyX2ltcHJvdmVkX2RhdGF0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cUcmV1c2VyX2ltcHJvdmVkX2RhdGF3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3C2N1c3RvbV90YWdzancLY3VzdG9tX2xvZ293A25pbHcEbG9nb20AAABXaHR0cHM6Ly91ZGF0YS1hdmF0YXJzLnMzLnJieC5pby5jbG91ZC5vdmgubmV0L2YzLzBiOGFkOTMyZjc0MDg2YTZhYjNmMjkxZWU5MjQzZi0xMDAucG5ndxNvcmdhbml6YXRpb25fb2JqZWN0dAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwNvbmV3CV9fZmllbGRfX3cTb3JnYW5pemF0aW9uX29iamVjdHcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcJaXNfYWN0aXZldwR0cnVldwtsYXN0X3VwZGF0ZXQAAAANdwttaWNyb3NlY29uZGgCYQBhBncGc2Vjb25kYR53CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWESdwR5ZWFyYgAAB-l3Bm1pbnV0ZWEzdwRob3VyYQh3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdw5zZWFyY2hfcGF5bG9hZHQAAAAAdwlyZXNvdXJjZXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cJcmVzb3VyY2VzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dwtpbnNlcnRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYgALw15hBncGc2Vjb25kYSt3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWETdwR5ZWFyYgAAB-l3Bm1pbnV0ZWE1dwRob3VyYQ53CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwlmb2xsb3dlcnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cJZm9sbG93ZXJzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dw9vcmdhbml6YXRpb25faWRtAAAAGDUzNGZmZmIwYTNhNzI5MmM2NGE3ODExNXcWY3VzdG9tX2xvZ29fY2hhbmdlZF9hdHcDbmlsdxFvcmdhbml6YXRpb25fdHlwZW0AAAAXT3DDqXJhdGV1ciBkZSB0cmFuc3BvcnR3BHRhZ3NsAAAAEW0AAAADY2FybQAAABpldG9pbGUtZmVycm92aWFpcmUtZGFtaWVuc20AAAAEZ3Rmc20AAAAHZ3Rmcy1ydG0AAAAIaG9yYWlyZXNtAAAAF2hvcmFpcmVzLWV0LWl0aW5lcmFpcmVzbQAAAAVpbm91aW0AAAAKaW50ZXJjaXRlc20AAAAQbG9pcmUtYXRsYW50aXF1ZW0AAAAFbmV0ZXhtAAAABW91aWdvbQAAAAlzaXJpLWxpdGVtAAAACHN1ZC1henVybQAAAAp0ZW1wcy1yZWVsbQAAAAN0ZXJtAAAAA3Rndm0AAAAFdHJhaW5qdwxjdXN0b21fdGl0bGVtAAAAJFLDqXNlYXUgU05DRiBUR1YsIEludGVyY2l0w6lzIGV0IFRFUncabm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cabm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CnBvcHVsYXRpb25iBAxro3cKdXBkYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYgADPjJhBncGc2Vjb25kYQp3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEadwR5ZWFyYgAAB-p3Bm1pbnV0ZWERdwRob3VyYQR3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxBjdXN0b21fZnVsbF9sb2dvdwNuaWx3CWZ1bGxfbG9nb20AAABTaHR0cHM6Ly91ZGF0YS1hdmF0YXJzLnMzLnJieC5pby5jbG91ZC5vdmgubmV0L2YzLzBiOGFkOTMyZjc0MDg2YTZhYjNmMjkxZWU5MjQzZi5wbmd3EGRhdGFzZXRfc3VidHlwZXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cQZGF0YXNldF9zdWJ0eXBlc3cJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcMb3JnYW5pemF0aW9ubQAAAARTTkNGdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAAB2RhdGFzZXR3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxFFbGl4aXIuREIuRGF0YXNldHcLZGF0YWdvdXZfaWRtAAAAGDY4NTNjMDg5YjNlZDU3ODFmNmFkZmRmN3cCaWRiAAAFCncLYXJjaGl2ZWRfYXR3A25pbHcKX19zdHJ1Y3RfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CW5iX3JldXNlc2EddwR0eXBlbQAAAA5wdWJsaWMtdHJhbnNpdHcibGF0ZXN0X2RhdGFfZ291dl9jb21tZW50X3RpbWVzdGFtcHQAAAANdwttaWNyb3NlY29uZGgCYQBhAHcGc2Vjb25kYTp3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEWdwR5ZWFyYgAAB-p3Bm1pbnV0ZWEAdwRob3VyYRB3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwtsb2dzX2ltcG9ydHQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwtsb2dzX2ltcG9ydHcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLZGVzY3JpcHRpb25tAAAPHyoqSG9yYWlyZXMgdGjDqW9yaXF1ZXMgZXQgZW4gdGVtcHMgcsOpZWwgZGUgbGEgU05DRioqCgoqKlRow6lvcmlxdWUgOioqIGxlcyBob3JhaXJlcyBkZXMgbGlnbmVzIFRFUiwgSW50ZXJjaXTDqXMgZXQgVEdWIG9ww6lyw6llcyBwYXIgbGEgU05DRiBWb3lhZ2V1cnMgcG91ciBsZXMgMTUxaiDDoCB2ZW5pciwgc29udCBmb3VybmlzIGF1IGZvcm1hdCBbR1RGU10oaHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vdHJhbnNpdC9ndGZzL3JlZmVyZW5jZSkgZXQgYXUgZm9ybWF0IE5lVEV4IChxdWkgZXN0IGxhIG5vcm1lIHRlY2huaXF1ZSBldXJvcMOpZW5uZSBwb3VyIGwnw6ljaGFuZ2UgZGUgZG9ubsOpZXMgZGUgdHJhbnNwb3J0KS4gTGVzIGZpY2hpZXJzIHNvbnQgZGlzcG9uaWJsZXMgYXV4IGxpZW5zIHN1aXZhbnRzIDoKCiAgKiBwb3VyIGxlIEdURlMgOiBbaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL0V4cG9ydF9PcGVuRGF0YV9TTkNGX0dURlNfTmV3VHJpcElkLnppcF0oaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL0V4cG9ydF9PcGVuRGF0YV9TTkNGX0dURlNfTmV3VHJpcElkLnppcCkKICAqIHBvdXIgbGUgTmVURXggOiA8aHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL2V4cG9ydC1vcGVuZGF0YS1zbmNmLW5ldGV4LnppcD4KCgoKKipUZW1wcyByw6llbCA6KiogbGVzIGhvcmFpcmVzIGVuIHRlbXBzIHLDqWVsIHNvbnQgZm91cm5pcyBzZWxvbiBsZXMgZGV1eCBzdGFuZGFyZHMgR1RGUyBSVCBldCBTSVJJIHBvdXIgbGVzIGhvcmFpcmVzIGV0IGxlcyBpbmZvcm1hdGlvbnMgY29udGV4dHVlbGxlcyBzdXIgdW4gcMOpcmltw6h0cmUgw6lsYXJnaSBjb21wcmVuYW50IG5vdGFtbWVudCBsZXMgVEdWLCBsZXMgSUMgZXQgVEVSICh5IGNvbXByaXMgbGVzIHNvY2nDqXTDqXMgZMOpZGnDqWVzIFRFUikgOgoKICAqIEdURlMtUlQgVFUgKFRyaXAgVXBkYXRlcykgbWlzIMOgIGpvdXIgdG91dGVzIGxlcyAyIG1pbnV0ZXMgcG91ciBsZXMgdHJhaW5zIGNpcmN1bGFudCBkYW5zIGxlcyA2MCBwcm9jaGFpbmVzIG1pbnV0ZXMgZXQgR1RGUy1SVCBTQSAoU2VydmljZSBBbGVydHMpIHBvdXIgbGVzIGNpcmN1bGF0aW9ucyDDoCB2ZW5pcgogICogU0lSSSBFVCBMaXRlIChzZXJ2aWNlICJTaXR1YXRpb24gZVhjaGFuZ2UiKSBtaXMgw6Agam91ciB0b3V0ZXMgbGVzIDIgbWludXRlcyBwb3VyIGxlcyB0cmFpbnMgY2lyY3VsYW50IGRhbnMgbGVzIDYwIHByb2NoYWluZXMgbWludXRlcyBldCBTSVJJIFNYIExpdGUgKHNlcnZpY2UgIlNpdHVhdGlvbiBlWGNoYW5nZSIpIHBvdXIgbGVzIGNpcmN1bGF0aW9ucyDDoCB2ZW5pcgoKCgpMZXMgZmljaGllcnMgc29udCBkaXNwb25pYmxlcyBhdXggbGllbnMgc3VpdmFudHMgOgoKICAqIHBvdXIgbGUgR1RGUy1SVCBUVSA6IFtodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlc10oaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC10cmlwLXVwZGF0ZXMpCiAgKiBwb3VyIGxlIEdURlMtUlQgU0EgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC1zZXJ2aWNlLWFsZXJ0cz4KICAqIHBvdXIgbGUgU0lSSSBFVCBMSVRFICh2ZXJzaW9uIELDqXRhKSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtZXN0aW1hdGVkLXRpbWV0YWJsZT4KICAqIHBvdXIgbGUgU0lSSSBTWCBMSVRFIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1zaXR1YXRpb24tZXhjaGFuZ2U-CgoKClF1ZWxxdWVzIHJlbWFycXVlcyB0ZWNobmlxdWVzIDogCgogICogQXUgbml2ZWF1IHRow6lvcmlxdWUgOiBkZXMgbWlzZXMgw6Agam91ciBvbnQgw6l0w6kgZWZmZWN0dcOpZXMgc3VyIGxlcyBkb25uw6llcyBHVEZTIDogbGUgcGxhbiBkZSB0cmFuc3BvcnQgdGjDqW9yaXF1ZSBpbnTDqGdyZSBkw6lzb3JtYWlzIMOgIGwnw6ljaGVsbGUgbmF0aW9uYWxlIGxlcyBhZGFwdGF0aW9ucyBjb25udWVzIGxhIHZlaWxsZSDDoCAxN2ggZW4gY2FzIGRlIHBlcnR1cmJhdGlvbnMgb3UgZGUgbW91dmVtZW50cyBzb2NpYXV4LgogICogTGVzIGZsdXggZW4gdGVtcHMgcsOpZWwgbmUgc29udCBwYXMgZmlsdHLDqXMsIGV0IHBldXZlbnQgY29udGVuaXIgdW4gcMOpcmltw6h0cmUgcGx1cyBsYXJnZSBxdWUgbGVzIFRHViwgSUMgZXQgVEVSLiBNw6ptZSBzaSBkZXMgaW5mb3JtYXRpb25zIGNvbmNlcm5hbnQgZOKAmWF1dHJlcyBjaXJjdWxhdGlvbnMgcGV1dmVudCDDqnRyZSB2aXNpYmxlcywgbWVyY2kgZGUgdm91cyByw6lmw6lyZXIgYXV4IGpldXggZGUgZG9ubsOpZXMgZGVzIGF1dG9yaXTDqXMgb3JnYW5pc2F0cmljZXMgY29tcMOpdGVudGVzLCBub3RhbW1lbnQgSWxlIGRlIEZyYW5jZSBNb2JpbGl0w6lzIHBvdXIgbGVzIGRvbm7DqWVzIGVuIHRlbXBzIHLDqWVsIGVuIElsZSBkZSBGcmFuY2Ugb3UgbGVzIGRpZmbDqXJlbnRzIHRlbXBzIHLDqWVscyBkZXMgUsOpZ2lvbnMgcXVhbmQgZWxsZXMgZXhpc3RlbnQuIExlIHDDqXJpbcOodHJlIG7igJllc3QgZ2FyYW50aSBxdWUgcG91ciBUR1YgZXQgSUMKICAqIFBvdXIgbGVzIGZsdXggR1RGUy1SVCBTQSBldCBTSVJJIFNYIExpdGUgOiBsJ2lkZW50aWZpYW50IGNvbW11biBkZXMgY2lyY3VsYXRpb25zIGVudHJlIGxlcyBkaWZmw6lyZW50cyBmbHV4IGVzdCBsZSBudW3DqXJvIGNvbW1lcmNpYWwgZHUgdHJhaW4sIHF1ZSB2b3VzIHRyb3V2ZXJleiBkYW5zIDx0cmlwPiBwb3VyIGxlIEdURlMtUlQgU0EgZXQgZGFucyA8VmVoaWN1bGVKb3VybmV5UmVmPiBkYW5zIGxlIFNJUkkgU1ggTElURS4gQ2VzIGZsdXggbmUgY29tcHJlbm5lbnQgcXVlIGxlcyBpbmZvcm1hdGlvbnMgdmFsb3Jpc8OpZXMgw6AgbGEgY291cnNlIGV0IG5lIGNvbXByZW5uZW50IHBhcyBsZXMgaW5mb3JtYXRpb25zIHJlbGF0aXZlcyDDoCBkZXMgcMOpcmltw6h0cmVzIChnYXJlcyBvdSBsaWduZXMgZHUgcsOpc2VhdSwgcXVpIHBldXZlbnQgaW1wYWN0ZXIgcGx1c2lldXJzIG9ww6lyYXRldXJzKS4KCgoKwrcqKkNlIGpldSBkZSBkb25uw6llcyBlc3QgdW5lIHByb2R1Y3Rpb24gU05DRiBWb3lhZ2V1cnMgY29udGVuYW50IGRlcyDDqWzDqW1lbnRzIGFzc2VtYmzDqXMgcG91ciBsYSBjb21tdW5hdXTDqSBvcGVuKiogKipkYXRhIGF1LWRlbMOgIGRlIHNlcyBvYmxpZ2F0aW9ucyByw6lnbGVtZW50YWlyZXMuIElsIG5lIHNlIHN1YnN0aXR1ZSBkb25jIHBhcyBhdXggZG9ubsOpZXMgb2ZmaWNpZWxsZXMgcHJvZ3Jlc3NpdmVtZW50IHB1Ymxpw6llcyBwYXIgbGVzIGF1dG9yaXTDqXMgb3JnYW5pc2F0cmljZXMgcsOpZ2lvbmFsZXMgcXVpIHBldXZlbnQgw6l2ZW50dWVsbGVtZW50IGNvbXBvcnRlciBkZSBwZXRpdGVzIGRpdmVyZ2VuY2VzLiBBdXNzaSwgbm91cyB2b3VzIHJlY29tbWFuZG9ucyBkZSBwbHV0w7R0IGNvbnNvbW1lciBsZXMgZG9ubsOpZXMgZm91cm5pZXMgcGFyIGxlcyBSw6lnaW9ucyBldCBJREZNLioqCgpFbiBjYXMgZGUgcXVlc3Rpb24sIHZvdXMgcG91dmV6IGNvbnRhY3RlciBsJ8OpcXVpcGUgT3BlbiBkYXRhIFNOQ0YgVm95YWdldXJzIMOgIGwnYWRyZXNzZSBzdWl2YW50ZSA6IFtEYXRhX09mZmljZV9TZWNyZXRhcmlhdF9HZW5lcmFsX1NBX1ZveWFnZXVyc0BzbmNmLmZyXShtYWlsdG86RGF0YV9PZmZpY2VfU2VjcmV0YXJpYXRfR2VuZXJhbF9TQV9Wb3lhZ2V1cnNAc25jZi5mcil3CmxhdGVzdF91cmxtAAAATmh0dHBzOi8vd3d3LmRhdGEuZ291di5mci9hcGkvMS9kYXRhc2V0cy9yLzlhZTc1OGVjLWNkN2EtNDBjZC1hODkwLWJiMzk2MzIyNDk0MncIX19tZXRhX190AAAABncFc3RhdGV3BmxvYWRlZHcHY29udGV4dHcDbmlsdwZwcmVmaXh3A25pbHcGc291cmNlbQAAAAhyZXNvdXJjZXcKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3EkVsaXhpci5EQi5SZXNvdXJjZXcPZm9ybWF0X292ZXJyaWRldwNuaWx3EHJlc291cmNlX2hpc3Rvcnl0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cQcmVzb3VyY2VfaGlzdG9yeXcJX19vd25lcl9fdxJFbGl4aXIuREIuUmVzb3VyY2V3DnNjaGVtYV92ZXJzaW9udwNuaWx3C3NjaGVtYV9uYW1ldwNuaWx3C3ZhbGlkYXRpb25zdAAAAAR3Cl9fc3RydWN0X193IUVsaXhpci5FY3RvLkFzc29jaWF0aW9uLk5vdExvYWRlZHcPX19jYXJkaW5hbGl0eV9fdwRtYW55dwlfX2ZpZWxkX193C3ZhbGlkYXRpb25zdwlfX293bmVyX193EkVsaXhpci5EQi5SZXNvdXJjZXcLZGF0YWdvdXZfaWRtAAAAJDlhZTc1OGVjLWNkN2EtNDBjZC1hODkwLWJiMzk2MzIyNDk0MncRcmVzb3VyY2VzX3JlbGF0ZWRqdwxpc19hdmFpbGFibGV3BHRydWV3HGNvbW11bml0eV9yZXNvdXJjZV9wdWJsaXNoZXJ3A25pbHcQZGlzcGxheV9wb3NpdGlvbmEAdwhmaWxlc2l6ZXcDbmlsdxVvcmlnaW5hbF9yZXNvdXJjZV91cmx3A25pbHcVaXNfY29tbXVuaXR5X3Jlc291cmNldwVmYWxzZXcNY291bnRlcl9jYWNoZXcDbmlsdwhmaWxldHlwZXcDbmlsdwtsYXN0X2ltcG9ydHcDbmlsdxFyZXNvdXJjZV9tZXRhZGF0YXQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdxFyZXNvdXJjZV9tZXRhZGF0YXcJX19vd25lcl9fdxJFbGl4aXIuREIuUmVzb3VyY2V3GXJlc291cmNlX3VuYXZhaWxhYmlsaXRpZXN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cZcmVzb3VyY2VfdW5hdmFpbGFiaWxpdGllc3cJX19vd25lcl9fdxJFbGl4aXIuREIuUmVzb3VyY2VqdwtpbnNlcnRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYgALw15hBncGc2Vjb25kYSt3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEGdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWETdwR5ZWFyYgAAB-l3Bm1pbnV0ZWE1dwRob3VyYQ53CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwlmb2xsb3dlcnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cJZm9sbG93ZXJzdwlfX293bmVyX193EUVsaXhpci5EQi5EYXRhc2V0dw9vcmdhbml6YXRpb25faWRtAAAAGDUzNGZmZmIwYTNhNzI5MmM2NGE3ODExNXcWY3VzdG9tX2xvZ29fY2hhbmdlZF9hdHcDbmlsdxFvcmdhbml6YXRpb25fdHlwZW0AAAAXT3DDqXJhdGV1ciBkZSB0cmFuc3BvcnR3BHRhZ3NsAAAAEW0AAAADY2FybQAAABpldG9pbGUtZmVycm92aWFpcmUtZGFtaWVuc20AAAAEZ3Rmc20AAAAHZ3Rmcy1ydG0AAAAIaG9yYWlyZXNtAAAAF2hvcmFpcmVzLWV0LWl0aW5lcmFpcmVzbQAAAAVpbm91aW0AAAAKaW50ZXJjaXRlc20AAAAQbG9pcmUtYXRsYW50aXF1ZW0AAAAFbmV0ZXhtAAAABW91aWdvbQAAAAlzaXJpLWxpdGVtAAAACHN1ZC1henVybQAAAAp0ZW1wcy1yZWVsbQAAAAN0ZXJtAAAAA3Rndm0AAAAFdHJhaW5qdwxjdXN0b21fdGl0bGVtAAAAJFLDqXNlYXUgU05DRiBUR1YsIEludGVyY2l0w6lzIGV0IFRFUncabm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbnN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cabm90aWZpY2F0aW9uX3N1YnNjcmlwdGlvbnN3CV9fb3duZXJfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CnBvcHVsYXRpb25iBAxro3cKdXBkYXRlZF9hdHQAAAANdwttaWNyb3NlY29uZGgCYgADPjJhBncGc2Vjb25kYQp3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEadwR5ZWFyYgAAB-p3Bm1pbnV0ZWERdwRob3VyYQR3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdxBjdXN0b21fZnVsbF9sb2dvdwNuaWx3CWZ1bGxfbG9nb20AAABTaHR0cHM6Ly91ZGF0YS1hdmF0YXJzLnMzLnJieC5pby5jbG91ZC5vdmgubmV0L2YzLzBiOGFkOTMyZjc0MDg2YTZhYjNmMjkxZWU5MjQzZi5wbmd3EGRhdGFzZXRfc3VidHlwZXNsAAAAAXQAAAAIdwJpZHcDbmlsdwpfX3N0cnVjdF9fdxhFbGl4aXIuREIuRGF0YXNldFN1YnR5cGV3C2luc2VydGVkX2F0dwNuaWx3BHNsdWdtAAAACWludGVyY2l0eXcIZGF0YXNldHN0AAAABHcKX19zdHJ1Y3RfX3chRWxpeGlyLkVjdG8uQXNzb2NpYXRpb24uTm90TG9hZGVkdw9fX2NhcmRpbmFsaXR5X193BG1hbnl3CV9fZmllbGRfX3cIZGF0YXNldHN3CV9fb3duZXJfX3cYRWxpeGlyLkRCLkRhdGFzZXRTdWJ0eXBldwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAAD2RhdGFzZXRfc3VidHlwZXcKX19zdHJ1Y3RfX3cbRWxpeGlyLkVjdG8uU2NoZW1hLk1ldGFkYXRhdwZzY2hlbWF3GEVsaXhpci5EQi5EYXRhc2V0U3VidHlwZXcKdXBkYXRlZF9hdHcDbmlsdwtwYXJlbnRfdHlwZXcDbmlsancMb3JnYW5pemF0aW9ubQAAAARTTkNGdwhfX21ldGFfX3QAAAAGdwVzdGF0ZXcGbG9hZGVkdwdjb250ZXh0dwNuaWx3BnByZWZpeHcDbmlsdwZzb3VyY2VtAAAAB2RhdGFzZXR3Cl9fc3RydWN0X193G0VsaXhpci5FY3RvLlNjaGVtYS5NZXRhZGF0YXcGc2NoZW1hdxFFbGl4aXIuREIuRGF0YXNldHcLZGF0YWdvdXZfaWRtAAAAGDY4NTNjMDg5YjNlZDU3ODFmNmFkZmRmN3cCaWRiAAAFCncLYXJjaGl2ZWRfYXR3A25pbHcKX19zdHJ1Y3RfX3cRRWxpeGlyLkRCLkRhdGFzZXR3CW5iX3JldXNlc2EddwR0eXBlbQAAAA5wdWJsaWMtdHJhbnNpdHcibGF0ZXN0X2RhdGFfZ291dl9jb21tZW50X3RpbWVzdGFtcHQAAAANdwttaWNyb3NlY29uZGgCYQBhAHcGc2Vjb25kYTp3CGNhbGVuZGFydxNFbGl4aXIuQ2FsZW5kYXIuSVNPdwVtb250aGEJdwpfX3N0cnVjdF9fdw9FbGl4aXIuRGF0ZVRpbWV3A2RheWEWdwR5ZWFyYgAAB-p3Bm1pbnV0ZWEAdwRob3VyYRB3CXRpbWVfem9uZW0AAAAHRXRjL1VUQ3cJem9uZV9hYmJybQAAAANVVEN3CnV0Y19vZmZzZXRhAHcKc3RkX29mZnNldGEAdwtsb2dzX2ltcG9ydHQAAAAEdwpfX3N0cnVjdF9fdyFFbGl4aXIuRWN0by5Bc3NvY2lhdGlvbi5Ob3RMb2FkZWR3D19fY2FyZGluYWxpdHlfX3cEbWFueXcJX19maWVsZF9fdwtsb2dzX2ltcG9ydHcJX19vd25lcl9fdxFFbGl4aXIuREIuRGF0YXNldHcLZGVzY3JpcHRpb25tAAAPHyoqSG9yYWlyZXMgdGjDqW9yaXF1ZXMgZXQgZW4gdGVtcHMgcsOpZWwgZGUgbGEgU05DRioqCgoqKlRow6lvcmlxdWUgOioqIGxlcyBob3JhaXJlcyBkZXMgbGlnbmVzIFRFUiwgSW50ZXJjaXTDqXMgZXQgVEdWIG9ww6lyw6llcyBwYXIgbGEgU05DRiBWb3lhZ2V1cnMgcG91ciBsZXMgMTUxaiDDoCB2ZW5pciwgc29udCBmb3VybmlzIGF1IGZvcm1hdCBbR1RGU10oaHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vdHJhbnNpdC9ndGZzL3JlZmVyZW5jZSkgZXQgYXUgZm9ybWF0IE5lVEV4IChxdWkgZXN0IGxhIG5vcm1lIHRlY2huaXF1ZSBldXJvcMOpZW5uZSBwb3VyIGwnw6ljaGFuZ2UgZGUgZG9ubsOpZXMgZGUgdHJhbnNwb3J0KS4gTGVzIGZpY2hpZXJzIHNvbnQgZGlzcG9uaWJsZXMgYXV4IGxpZW5zIHN1aXZhbnRzIDoKCiAgKiBwb3VyIGxlIEdURlMgOiBbaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL0V4cG9ydF9PcGVuRGF0YV9TTkNGX0dURlNfTmV3VHJpcElkLnppcF0oaHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL0V4cG9ydF9PcGVuRGF0YV9TTkNGX0dURlNfTmV3VHJpcElkLnppcCkKICAqIHBvdXIgbGUgTmVURXggOiA8aHR0cHM6Ly9ldS5mdHAub3BlbmRhdGFzb2Z0LmNvbS9zbmNmL3BsYW5kYXRhL2V4cG9ydC1vcGVuZGF0YS1zbmNmLW5ldGV4LnppcD4KCgoKKipUZW1wcyByw6llbCA6KiogbGVzIGhvcmFpcmVzIGVuIHRlbXBzIHLDqWVsIHNvbnQgZm91cm5pcyBzZWxvbiBsZXMgZGV1eCBzdGFuZGFyZHMgR1RGUyBSVCBldCBTSVJJIHBvdXIgbGVzIGhvcmFpcmVzIGV0IGxlcyBpbmZvcm1hdGlvbnMgY29udGV4dHVlbGxlcyBzdXIgdW4gcMOpcmltw6h0cmUgw6lsYXJnaSBjb21wcmVuYW50IG5vdGFtbWVudCBsZXMgVEdWLCBsZXMgSUMgZXQgVEVSICh5IGNvbXByaXMgbGVzIHNvY2nDqXTDqXMgZMOpZGnDqWVzIFRFUikgOgoKICAqIEdURlMtUlQgVFUgKFRyaXAgVXBkYXRlcykgbWlzIMOgIGpvdXIgdG91dGVzIGxlcyAyIG1pbnV0ZXMgcG91ciBsZXMgdHJhaW5zIGNpcmN1bGFudCBkYW5zIGxlcyA2MCBwcm9jaGFpbmVzIG1pbnV0ZXMgZXQgR1RGUy1SVCBTQSAoU2VydmljZSBBbGVydHMpIHBvdXIgbGVzIGNpcmN1bGF0aW9ucyDDoCB2ZW5pcgogICogU0lSSSBFVCBMaXRlIChzZXJ2aWNlICJTaXR1YXRpb24gZVhjaGFuZ2UiKSBtaXMgw6Agam91ciB0b3V0ZXMgbGVzIDIgbWludXRlcyBwb3VyIGxlcyB0cmFpbnMgY2lyY3VsYW50IGRhbnMgbGVzIDYwIHByb2NoYWluZXMgbWludXRlcyBldCBTSVJJIFNYIExpdGUgKHNlcnZpY2UgIlNpdHVhdGlvbiBlWGNoYW5nZSIpIHBvdXIgbGVzIGNpcmN1bGF0aW9ucyDDoCB2ZW5pcgoKCgpMZXMgZmljaGllcnMgc29udCBkaXNwb25pYmxlcyBhdXggbGllbnMgc3VpdmFudHMgOgoKICAqIHBvdXIgbGUgR1RGUy1SVCBUVSA6IFtodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1ndGZzLXJ0LXRyaXAtdXBkYXRlc10oaHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC10cmlwLXVwZGF0ZXMpCiAgKiBwb3VyIGxlIEdURlMtUlQgU0EgOiA8aHR0cHM6Ly9wcm94eS50cmFuc3BvcnQuZGF0YS5nb3V2LmZyL3Jlc291cmNlL3NuY2YtZ3Rmcy1ydC1zZXJ2aWNlLWFsZXJ0cz4KICAqIHBvdXIgbGUgU0lSSSBFVCBMSVRFICh2ZXJzaW9uIELDqXRhKSA6IDxodHRwczovL3Byb3h5LnRyYW5zcG9ydC5kYXRhLmdvdXYuZnIvcmVzb3VyY2Uvc25jZi1zaXJpLWxpdGUtZXN0aW1hdGVkLXRpbWV0YWJsZT4KICAqIHBvdXIgbGUgU0lSSSBTWCBMSVRFIDogPGh0dHBzOi8vcHJveHkudHJhbnNwb3J0LmRhdGEuZ291di5mci9yZXNvdXJjZS9zbmNmLXNpcmktbGl0ZS1zaXR1YXRpb24tZXhjaGFuZ2U-CgoKClF1ZWxxdWVzIHJlbWFycXVlcyB0ZWNobmlxdWVzIDogCgogICogQXUgbml2ZWF1IHRow6lvcmlxdWUgOiBkZXMgbWlzZXMgw6Agam91ciBvbnQgw6l0w6kgZWZmZWN0dcOpZXMgc3VyIGxlcyBkb25uw6llcyBHVEZTIDogbGUgcGxhbiBkZSB0cmFuc3BvcnQgdGjDqW9yaXF1ZSBpbnTDqGdyZSBkw6lzb3JtYWlzIMOgIGwnw6ljaGVsbGUgbmF0aW9uYWxlIGxlcyBhZGFwdGF0aW9ucyBjb25udWVzIGxhIHZlaWxsZSDDoCAxN2ggZW4gY2FzIGRlIHBlcnR1cmJhdGlvbnMgb3UgZGUgbW91dmVtZW50cyBzb2NpYXV4LgogICogTGVzIGZsdXggZW4gdGVtcHMgcsOpZWwgbmUgc29udCBwYXMgZmlsdHLDqXMsIGV0IHBldXZlbnQgY29udGVuaXIgdW4gcMOpcmltw6h0cmUgcGx1cyBsYXJnZSBxdWUgbGVzIFRHViwgSUMgZXQgVEVSLiBNw6ptZSBzaSBkZXMgaW5mb3JtYXRpb25zIGNvbmNlcm5hbnQgZOKAmWF1dHJlcyBjaXJjdWxhdGlvbnMgcGV1dmVudCDDqnRyZSB2aXNpYmxlcywgbWVyY2kgZGUgdm91cyByw6lmw6lyZXIgYXV4IGpldXggZGUgZG9ubsOpZXMgZGVzIGF1dG9yaXTDqXMgb3JnYW5pc2F0cmljZXMgY29tcMOpdGVudGVzLCBub3RhbW1lbnQgSWxlIGRlIEZyYW5jZSBNb2JpbGl0w6lzIHBvdXIgbGVzIGRvbm7DqWVzIGVuIHRlbXBzIHLDqWVsIGVuIElsZSBkZSBGcmFuY2Ugb3UgbGVzIGRpZmbDqXJlbnRzIHRlbXBzIHLDqWVscyBkZXMgUsOpZ2lvbnMgcXVhbmQgZWxsZXMgZXhpc3RlbnQuIExlIHDDqXJpbcOodHJlIG7igJllc3QgZ2FyYW50aSBxdWUgcG91ciBUR1YgZXQgSUMKICAqIFBvdXIgbGVzIGZsdXggR1RGUy1SVCBTQSBldCBTSVJJIFNYIExpdGUgOiBsJ2lkZW50aWZpYW50IGNvbW11biBkZXMgY2lyY3VsYXRpb25zIGVudHJlIGxlcyBkaWZmw6lyZW50cyBmbHV4IGVzdCBsZSBudW3DqXJvIGNvbW1lcmNpYWwgZHUgdHJhaW4sIHF1ZSB2b3VzIHRyb3V2ZXJleiBkYW5zIDx0cmlwPiBwb3VyIGxlIEdURlMtUlQgU0EgZXQgZGFucyA8VmVoaWN1bGVKb3VybmV5UmVmPiBkYW5zIGxlIFNJUkkgU1ggTElURS4gQ2VzIGZsdXggbmUgY29tcHJlbm5lbnQgcXVlIGxlcyBpbmZvcm1hdGlvbnMgdmFsb3Jpc8OpZXMgw6AgbGEgY291cnNlIGV0IG5lIGNvbXByZW5uZW50IHBhcyBsZXMgaW5mb3JtYXRpb25zIHJlbGF0aXZlcyDDoCBkZXMgcMOpcmltw6h0cmVzIChnYXJlcyBvdSBsaWduZXMgZHUgcsOpc2VhdSwgcXVpIHBldXZlbnQgaW1wYWN0ZXIgcGx1c2lldXJzIG9ww6lyYXRldXJzKS4KCgoKwrcqKkNlIGpldSBkZSBkb25uw6llcyBlc3QgdW5lIHByb2R1Y3Rpb24gU05DRiBWb3lhZ2V1cnMgY29udGVuYW50IGRlcyDDqWzDqW1lbnRzIGFzc2VtYmzDqXMgcG91ciBsYSBjb21tdW5hdXTDqSBvcGVuKiogKipkYXRhIGF1LWRlbMOgIGRlIHNlcyBvYmxpZ2F0aW9ucyByw6lnbGVtZW50YWlyZXMuIElsIG5lIHNlIHN1YnN0aXR1ZSBkb25jIHBhcyBhdXggZG9ubsOpZXMgb2ZmaWNpZWxsZXMgcHJvZ3Jlc3NpdmVtZW50IHB1Ymxpw6llcyBwYXIgbGVzIGF1dG9yaXTDqXMgb3JnYW5pc2F0cmljZXMgcsOpZ2lvbmFsZXMgcXVpIHBldXZlbnQgw6l2ZW50dWVsbGVtZW50IGNvbXBvcnRlciBkZSBwZXRpdGVzIGRpdmVyZ2VuY2VzLiBBdXNzaSwgbm91cyB2b3VzIHJlY29tbWFuZG9ucyBkZSBwbHV0w7R0IGNvbnNvbW1lciBsZXMgZG9ubsOpZXMgZm91cm5pZXMgcGFyIGxlcyBSw6lnaW9ucyBldCBJREZNLioqCgpFbiBjYXMgZGUgcXVlc3Rpb24sIHZvdXMgcG91dmV6IGNvbnRhY3RlciBsJ8OpcXVpcGUgT3BlbiBkYXRhIFNOQ0YgVm95YWdldXJzIMOgIGwnYWRyZXNzZSBzdWl2YW50ZSA6IFtEYXRhX09mZmljZV9TZWNyZXRhcmlhdF9HZW5lcmFsX1NBX1ZveWFnZXVyc0BzbmNmLmZyXShtYWlsdG86RGF0YV9PZmZpY2VfU2VjcmV0YXJpYXRfR2VuZXJhbF9TQV9Wb3lhZ2V1cnNAc25jZi5mcil3BHZpZXd3I0VsaXhpci5UcmFuc3BvcnRXZWIuRGlzY3Vzc2lvbnNMaXZldwpwYXJlbnRfcGlkdwNuaWx3CHJvb3RfcGlkdwNuaWx3BnJvdXRlcncDbmlsdxFsaXZlX3Nlc3Npb25fbmFtZXcDbmlsdwlyb290X3ZpZXd3I0VsaXhpci5UcmFuc3BvcnRXZWIuRGlzY3Vzc2lvbnNMaXZlbgYAFbOU4KABYgABUYA.sqYhYxTt8z0st_Zaxb0emTjUe9CBAZLyiBm3SYcRYKI" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdOa0sxUG1oVjlIMnpud0J3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYAFrOU4KABYgABUYA.5Ouqw8Wzi0FC86o0C_BmA3XUgZy-rSnppeKo98e2mWg"><script nonce="oZzgsQi6gCwAtw">
+  window.addEventListener('phx:discussions-loaded', (event) => {
+    event.detail.ids.forEach(id =>
+      addSeeMore(
+        "0px",
+        "#comments-discussion-" + id,
+        "Voir plus",
+        "Voir moins",
+        "discussion"
+      )
+    )
+
+    // Scroll to the right place after discussions have been loaded
+    if (window.location.hash) {
+      setTimeout(() => {
+        const id = window.location.hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+      }, 1000);
+    }
+  })
+</script>
+
+
+  <div>
+    Chargement des discussions…
+  </div>
+</div>
+
+          <span class="discussion-commment__connection-needed">
+            <a href="/login/explanation?redirect_path=%2Fdatasets%2Fhoraires-sncf%3Flocale%3Dfr">Vous devez être identifié pour commencer une discussion.</a>
+          </span>
+
+      </div>
+    </section>
+    
+<section class="white pt-48" id="backed-up-resources">
+  <h3>Ressources historisées</h3>
+  <div class="panel">
+    <div id="backed-up-resources-see-more-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Fichier</th>
+            <th>Date de publication</th>
+
+              <th>
+                Période de validité
+              </th>
+
+            <th>Format</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260927.002252.493749.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>27/09/2026</td>
+
+
+                  <td>
+                    26/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260927.001821.800792.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>27/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260926.001942.780084.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>26/09/2026</td>
+
+
+                  <td>
+                    25/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260926.001751.303307.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>26/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260925.001847.588717.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>25/09/2026</td>
+
+
+                  <td>
+                    24/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260925.001756.201450.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>25/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260924.001824.352740.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>24/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260924.001542.579826.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>24/09/2026</td>
+
+
+                  <td>
+                    23/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260923.002727.891340.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>23/09/2026</td>
+
+
+                  <td>
+                    22/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260923.002551.029484.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>23/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260922.002314.146724.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>22/09/2026</td>
+
+
+                  <td>
+                    21/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260921.181321.507831.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>21/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260921.001955.656476.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>21/09/2026</td>
+
+
+                  <td>
+                    20/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260920.181315.633441.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>20/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260920.001946.731570.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>20/09/2026</td>
+
+
+                  <td>
+                    19/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260919.181401.258768.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>19/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260919.002030.387242.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>19/09/2026</td>
+
+
+                  <td>
+                    18/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260918.181421.899309.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>18/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260918.001842.327546.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>18/09/2026</td>
+
+
+                  <td>
+                    17/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260917.181407.231372.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>17/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260917.001741.288883.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>17/09/2026</td>
+
+
+                  <td>
+                    16/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260916.181429.725792.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>16/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260916.002136.666814.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>16/09/2026</td>
+
+
+                  <td>
+                    15/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83195/83195.20260916.001454.201802.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/export-opendata-sncf-netex.zip</a>
+              </td>
+              <td>16/09/2026</td>
+
+
+                  <td></td>
+
+
+              <td><span class="label">NeTEx</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <a href="https://transport-data-gouv-fr-resource-history-prod.cellar-c2.services.clever-cloud.com/83582/83582.20260915.001654.310485.zip" rel="nofollow">https://eu.ftp.opendatasoft.com/sncf/plandata/Export_OpenData_SNCF_GTFS_NewTripId.zip</a>
+              </td>
+              <td>15/09/2026</td>
+
+
+                  <td>
+                    14/09/2026 au 28/02/2027
+                  </td>
+
+
+              <td><span class="label">GTFS</span></td>
+            </tr>
+
+        </tbody>
+      </table>
+
+        <p class="small">
+          Affiche les 25 dernières ressources historisées.
+        </p>
+
+    </div>
+    <div class="pt-12">
+      <a class="button-outline small secondary" href="/datasets/1290/resources_history_csv" data-tracking-category="dataset_details" data-tracking-action="download_resources_history_csv" rel="nofollow">
+        <i class="icon icon--download" aria-hidden="true"></i>Télécharger les ressources historisées
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    addSeeMore("280px",
+      "#backed-up-resources-see-more-wrapper",
+      "Voir plus",
+      "Voir moins",
+      "resource_history"
+    )
+  })
+</script>
+  </div>
+  <div class="dataset-metas">
+    <div class="panel">
+      <div id="phx-GNkK1PlVNU_2zlqC" data-phx-session="SFMyNTY.g2gDaAJhBnQAAAAIdwJpZG0AAAAUcGh4LUdOa0sxUGxWTlVfMnpscUN3B3Nlc3Npb250AAAAAm0AAAAMY3VycmVudF91c2VydwNuaWxtAAAACmRhdGFzZXRfaWRiAAAFCncEdmlld3cqRWxpeGlyLlRyYW5zcG9ydFdlYi5MaXZlLkZvbGxvd0RhdGFzZXRMaXZldwpwYXJlbnRfcGlkdwNuaWx3CHJvb3RfcGlkdwNuaWx3BnJvdXRlcncDbmlsdxFsaXZlX3Nlc3Npb25fbmFtZXcDbmlsdwlyb290X3ZpZXd3KkVsaXhpci5UcmFuc3BvcnRXZWIuTGl2ZS5Gb2xsb3dEYXRhc2V0TGl2ZW4GABKzlOCgAWIAAVGA.FDqGe6pZUYbhiIc_AR3hFd7SUHTsjfrokctZEFExE70" data-phx-static="SFMyNTY.g2gDaAJhBnQAAAADdwJpZG0AAAAUcGh4LUdOa0sxUGxWTlVfMnpscUN3BWZsYXNodAAAAAB3CmFzc2lnbl9uZXdqbgYAErOU4KABYgABUYA.fDugKn9xfu76x0ZYWUcUcMrZnDT4zsjqvGjHmYzsO8Y">
+<div class="follow-dataset-icon">
+  <i class="fa fa-heart fa-2x icon---animated-heart" phx-click="nudge_signup"></i>
+  
+</div>
+
+</div>
+      <div class="dataset__logo">
+        <img alt="Réseau SNCF TGV, Intercités et TER" src="https://udata-avatars.s3.rbx.io.cloud.ovh.net/f3/0b8ad932f74086a6ab3f291ee9243f.png">
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">Données publiées par</span>
+        <div>
+          <b>
+            <a href="/datasets?organization_id=534fffb0a3a7292c64a78115">SNCF</a>
+          </b>
+        </div>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">
+          Données sous la responsabilité de
+        </span>
+        <div>
+          <a href="/datasets/region/84">Auvergne-Rhône-Alpes</a>, <a href="/datasets/region/27">Bourgogne-Franche-Comté</a>, <a href="/datasets/region/53">Bretagne</a>, <a href="/datasets/region/24">Centre-Val de Loire</a>, <a href="/datasets/region/44">Grand Est</a>, <a href="/datasets/region/32">Hauts-de-France</a>, <a href="/datasets/region/FR">National</a>, <a href="/datasets/region/28">Normandie</a>, <a href="/datasets/region/75">Nouvelle-Aquitaine</a>, <a href="/datasets/region/76">Occitanie</a>, <a href="/datasets/region/52">Pays de la Loire</a>, <a href="/datasets/region/93">Provence-Alpes-Côte d’Azur</a>
+
+            SNCF VOYAGEURS
+
+        </div>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">
+          Offres de transport
+        </span>
+        <div>
+
+            <a href="/datasets/offer/415">TER-SNCF Auvergne Rhône-Alpes</a>
+
+            <a href="/datasets/offer/411">TER-SNCF Bourgogne Franche Comté</a>
+
+            <a href="/datasets/offer/413">TER-SNCF Bretagne (BreizhGo)</a>
+
+            <a href="/datasets/offer/408">TER-SNCF Centre-Val de Loire (Rémi)</a>
+
+            <a href="/datasets/offer/410">TER-SNCF Fluo Grand Est</a>
+
+            <a href="/datasets/offer/409">TER-SNCF Hauts de France</a>
+
+            <a href="/datasets/offer/407">TER-SNCF Normandie</a>
+
+            <a href="/datasets/offer/414">TER-SNCF Nouvelle Aquitaine</a>
+
+            <a href="/datasets/offer/416">TER-SNCF Occitanie</a>
+
+            <a href="/datasets/offer/412">TER-SNCF Pays de la Loire (Aléop)</a>
+
+            <a href="/datasets/offer/417">TER-SNCF Sud Provence Alpes Côte d&#39;Azur (Zou)</a>
+
+        </div>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">Type de données</span>
+        <div class="dataset-type-info">
+
+    <span class="dataset-icon-type">
+      <img alt="Transport public collectif" src="/images/icons/bus.svg">
+    </span>
+
+  <a href="/datasets?type=public-transit">
+    <b>Transport public collectif</b>
+  </a>
+</div>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">Licence</span>
+<br>
+<b>
+
+    <a href="https://opendatacommons.org/licenses/odbl/1.0/">ODbL</a>
+
+
+
+      &#32 et 
+      <a href="https://doc.transport.data.gouv.fr/presentation-et-mode-demploi-du-pan/conditions-dutilisation-des-donnees/licence-odbl">Conditions Particulières d&#39;utilisation</a>
+
+
+</b>
+      </div>
+      <div class="pt-12">
+        <i class="fas fa-gears"></i>
+        Récupérer des détails sur ce jeu de données via un <a href="/api/datasets/6853c089b3ed5781f6adfdf7">appel à l'API</a>
+      </div>
+      <div class="pt-12 shortlist__link shortlist__link--external-link">
+        <i class="icon icon--link" aria-hidden="true"></i>
+        <a href="https://www.data.gouv.fr/datasets/horaires-sncf" role="link" target="_blank">Voir sur data.gouv.fr</a>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">
+          Mots-clefs
+        </span>
+        <br>
+        <div class="dataset-tags">
+
+            <span class="label">car</span>
+
+            <span class="label">etoile-ferroviaire-damiens</span>
+
+            <span class="label">gtfs</span>
+
+            <span class="label">gtfs-rt</span>
+
+            <span class="label">horaires</span>
+
+            <span class="label">horaires-et-itineraires</span>
+
+            <span class="label">inoui</span>
+
+            <span class="label">intercites</span>
+
+            <span class="label">loire-atlantique</span>
+
+            <span class="label">netex</span>
+
+            <span class="label">ouigo</span>
+
+            <span class="label">siri-lite</span>
+
+            <span class="label">sud-azur</span>
+
+            <span class="label">temps-reel</span>
+
+            <span class="label">ter</span>
+
+            <span class="label">tgv</span>
+
+            <span class="label">train</span>
+
+        </div>
+      </div>
+      <div class="pt-12">
+        <span class="dataset-metas-info-title">Couverture spatiale</span>
+        <div>
+          France
+        </div>
+        <div id="dataset-covered-area-map"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="/js/datasetmap-8b942ef1d3e8343ac1f3abdf13849854.js?vsn=d">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    createDatasetMap('dataset-covered-area-map', "6853c089b3ed5781f6adfdf7")
+  })
+</script>
+<script src="/js/utils-0ee0db806b59d5c9e2f8d660a93c14ae.js?vsn=d"></script>
+    </main>
+
+    <footer class="footer" id="footer">
+  <a href="#mail_form" class="mail__button" aria-label="Demander de l’aide">
+    <i class="fas icon--envelope"></i>
+    <span>Demander de l’aide</span>
+  </a>
+  <div class="modal__backdrop" id="mail_form">
+    <div class="footer__contact">
+      <a class="footer__contact--close" href="#" aria-label="Fermer le formulaire">
+        <i class="fas icon--times-circle"></i>
+      </a>
+<form action="/send_mail" method="post"><input name="_csrf_token" type="hidden" hidden value="Gyg1VgAodC1lEl45Wg0wOkU3VTIFLT43cXjfLQ1j6Xgl5USP3ubfUriS">
+        <h3>Contact</h3>
+        <p>
+          Avez-vous lu notre <a href="https://doc.transport.data.gouv.fr" target="_blank">documentation en ligne</a> ? Votre réponse est probablement présente.
+        </p>
+<label for="email">
+          Adresse email<div class="form__group"><input id="email" name="email" required type="email"></div>
+</label>
+<label class="pt-12" for="user_type">
+          Je suis <div class="form__group"><select id="user_type" name="user_type" required><option disabled selected value="">Sélectionnez un choix</option><option value="data-producer">Producteur de données</option><option value="data-reuser">Réutilisateur de données</option><option value="other">Autre</option></select></div>
+</label>
+<label class="pt-12" for="question_type">
+          Ma question est à propos <div class="form__group"><select id="question_type" name="question_type" required><option disabled selected value="">Sélectionnez un choix</option><option value="website">Le site web transport.data.gouv.fr</option><option value="data-not-found">Des données que je ne trouve pas</option><option value="technical-support">Un besoin de support technique</option><option value="legal-requirements">Des informations réglementaires</option><option value="other">Autre</option></select></div>
+</label>
+        <div class="form__group"><input autocomplete="off" class="form-special-field" id="name" name="name" placeholder="your name" tabindex="-1" type="text"></div>
+<label class="pt-12" for="subject">
+          Sujet<div class="form__group"><input id="subject" name="subject" required type="text"></div>
+</label>
+<label class="pt-12" for="question">
+          Question<div class="form__group"><textarea id="question" name="question" required>
+</textarea></div>
+</label>
+        <div class="form__group"><button class="button" type="submit">Envoyer un email</button></div>
+</form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer__logo">
+      <a class="ministere-link" href="https://www.ecologie.gouv.fr">Ministère des Transports</a>
+      <a href="/"><img alt="transport.data.gouv.fr" src="/images/logo-footer.svg"></a>
+    </div>
+    <ul class="footer__links">
+      <li>
+        <a class="footer__link footer__link--contact" href="#mail_form">
+          Nous contacter
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://doc.transport.data.gouv.fr/outils/outils-disponibles-sur-le-pan/api">
+          API
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://doc.transport.data.gouv.fr/le-point-d-acces-national/generalites/le-point-dacces-national">
+          FAQ
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="https://github.com/etalab/transport-site/">
+          Code source
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="/legal">
+          Mentions légales
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" target="_blank" href="/budget">
+          Budget
+        </a>
+      </li>
+      <li>
+        <a class="footer__link" href="/accessibilite">
+          Accessibilité : non conforme
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  </body>
+  <script defer type="text/javascript" src="/js/app-32f138810734ad798f1318d149d03ccb.js?vsn=d"></script>
+</html>

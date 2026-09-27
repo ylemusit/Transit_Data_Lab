@@ -1,0 +1,7 @@
+relationship_id,source_document_id,source_provision_id,target_document_id,target_provision_id,relationship_type,description,notes,created_at
+REL-EU-2023-2661-AMENDS-2010-40,EU-DIR-2023-2661,,EU-DIR-2010-40,,AMENDS,Directive (EU) 2023/2661 amends Directive 2010/40/EU.,,2026-09-26 23:51:53.078052
+REL-EU-2024-490-AMENDS-2017-1926,EU-REG-2024-490,,EU-REG-2017-1926,,AMENDS,Delegated Regulation (EU) 2024/490 amends Delegated Regulation (EU) 2017/1926.,,2026-09-26 23:51:53.078052
+REL-EU-2026-1554-IMPLEMENTS-2024-1679,EU-REG-IMPL-2026-1554,,EU-REG-2024-1679,,IMPLEMENTS,Implementing Regulation (EU) 2026/1554 lays down rules for the application of Regulation (EU) 2024/1679 regarding urban mobility data.,,2026-09-26 23:51:53.078052
+REL-EU-2026-1554-REFERENCES-2017-1926,EU-REG-IMPL-2026-1554,,EU-REG-2017-1926,,REFERENCES,Regulation (EU) 2026/1554 refers to data collection methods under Delegated Regulation (EU) 2017/1926 for relevant urban mobility indicators.,,2026-09-26 23:51:53.078052
+REL-EU-2026-253-REPEALS-2011-454,EU-REG-IMPL-2026-253,,EU-REG-2011-454,,REPEALS,Implementing Regulation (EU) 2026/253 repeals Regulation (EU) No 454/2011.,,2026-09-26 23:51:53.078052
+REL-EU-2026-253-REPEALS-2014-1305,EU-REG-IMPL-2026-253,,EU-REG-2014-1305,,REPEALS,Implementing Regulation (EU) 2026/253 repeals Regulation (EU) No 1305/2014.,,2026-09-26 23:51:53.078052

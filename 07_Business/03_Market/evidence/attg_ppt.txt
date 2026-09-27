@@ -1,0 +1,340 @@
+PAGE 1
+
+ 
+1 
+
+ 
+
+PLIEGO DE PRESCRIPCIONES TÉCNICAS QUE HAN DE REGIR 
+EN EL CONTRATO DE SERVICIOS DE GENERACIÓN Y 
+MANTENIMIENTO DE DATOS DE TRANSPORTE EN FORMATO 
+GTFS 
+
+ 
+EXPEDIENTE: E3/2018/06 
+
+ 
+
+ 
+
+  
+PAGE 2
+
+ 
+2 
+
+1 CONTEXTO DEL CONSORCIO AUTORIDAD TERRITORIAL DEL TRANSPORTE 
+DE GIPUZKOA. ........................................................................................................................... 3 
+2 OBJETO y ALCANCE ......................................................................................................... 4 
+2.1 Generación de archivos GTFS: ....................................................................................... 4 
+2.2 Vincular la información con el tiempo real. .................................................................. 4 
+2.3 Real Tme GTFS: .............................................................................................................. 5 
+2.4 Modelos de datos de estándares europeos .................................................................. 5 
+3 METODOLOGÍA ................................................................................................................. 7 
+4 ANS DEL SERVICIO .......................................................................................................... 8 
+5 EQUIPO DE TRABAJO .................................................................................................... 10 
+6 LA OFERTA DEBE INCLUIR: ........................................................................................ 11 
+7 VALORACIÓN ................................................................................................................... 12 
+
+ 
+PAGE 3
+
+ 
+3 
+
+1 CONTEXTO DEL CONSORCIO AUTORIDAD TERRITORIAL DEL 
+TRANSPORTE DE GIPUZKOA.  
+El Consorcio Autoridad Territorial del Transporte de Gipuzkoa, en adelante ATTG, 
+tiene como objetivo integrar todo el territorio de Gipuzkoa mediante un sistema de 
+transporte sostenible. 
+La ATTG está formada por el gobierno Vasco, diputación foral de Gipuzkoa y 
+Ayuntamientos de Donostia, Irun, Errenteria, Eibar, Zarautz, Arrasate, Hernani y 
+Lasarte-Oria. 
+La ATTG lideró  el proyecto de Integración Tarifaria de Gipuzkoa, Sistema MUGI, 
+implantado con éxito en Gipuzkoa a partir del 4 de marzo de 2013. 
+El Sistema MUGI define una política tarifaria única en los servicios de autobuses 
+urbanos de Gipuzkoa (Donostia, Irun, Errent eria, Eibar, Zarautz, Arrasate -
+Mondragón, Hernani y Lasarte -Oria), autobuses interurbanos (Lurraldebus 7 
+concesionarias), servicios de taxibus y servicios ferroviarios de EuskoTren, estando 
+en proceso la incorporación de Renfe. Todo ello mediante el uso de un único soporte 
+de pago: la Tarjeta MUGI. Además, las tarjetas Mugi pueden ser también utilizadas 
+posible en los tranvías de Vitoria y Bilbao y en el funicular de Larreineta. 
+Además de ello, informar a la población de la oferta de transporte público de manera 
+integral y con calidad es uno de los objetivos de la ATTG. La Autoridad del Transporte 
+de Gipuzkoa hace unos años comenzó a generar una serie de archivos de intercambio 
+de información denominados GTFS para publicar la oferta de transporte público en el 
+planificador de Google. Durante estos años se ha conseguido un grado de 
+automatización de la información muy alto estableciendo una arquitectura de 
+comunicaciones entre los proveedores del servicio de ayuda a explotación.  
+Además, para divulgar esta información, la ATTG dispone de una app donde ofrece 
+información estática y dinámica de estos modos de transporte y ofrece el servicio de 
+un planificador de transporte.  
+En la web mugi.eus, la ATTG ofrece la misma información. Es  más, los datos de 
+transporte público para Google Maps también se ofrecen a través de este servicio, al 
+igual que el portal open data del Gobierno Vasco también es alimentado de este 
+mismo canal.  
+A través de este contrato e pretende contratar la generación y mantenimiento de 
+estos datos en formato GTFS para los próximos cuatro años. 
+
+ 
+
+ 
+PAGE 4
+
+ 
+4 
+
+OBJETO y ALCANCE  
+
+1.1 Generación de archivos GTFS: 
+
+La Especificación general de feeds  de transporte público (GTFS) define un formato 
+común para los horarios de transporte público y la información geográfica asociada 
+a ellos. Los "feeds" GTFS permiten que las empresas de transporte público publiquen 
+sus datos de transporte y que los programadores escriban aplicaciones que consuman 
+esos datos de manera interoperable. 
+El adjudicatario debe generar todos los ficheros necesarios  para la ATTG. (en la 
+actualidad 17 operadores) . Es importante destacar que cada operador se envía a 
+Google como un op erador independiente. Esto significa que algunos códigos se 
+pueden repetir entre Lurraldebus, Dbus Euskotren y Renfe y que el adjudicatario debe 
+ser capaz de filtrar y adecuar estos códigos para que no se produzcan errores. 
+Además, la codificación de paradas tampoco es común a todos los operadores  
+El adjudicatario detallará en su oferta técnica como realiza estos ajustes  y las 
+comprobaciones necesarias a realizar 
+
+Periodicidad de creación de los GTFS: al menos semanal  
+Canal de publicación: el adjudicatario tendrá que publicar los feeds desde el portal 
+de partners de Google.  
+Además, el adjudicatario debe crear y enviar periódicamente los feed a Google y 
+Moveuskadi simultáneamente de tal  forma que la información publicada en el Open 
+Data de l Gobierno Vasco sea la que se esté  enviando a Google. El adjudicatario 
+detallará en su oferta técnica como realiza este proceso 
+Tras la recuperación de los feed por parte de Google se genera un informe de 
+validación donde se describen errores y advertenci as. Ninguno de los feed creados 
+por el adjudicatario en la fecha de creación de este documento debe contener errores. 
+El adjudicatario remitirá o dará acceso a la ATTG dicho informe. Si se generan errores 
+durante más de 6 veces en un año, se considerará falta grave. Si se generan más de 
+10 faltas en un año se considerará falta muy grave. 
+
+1.2 Vincular la información con el tiempo real. 
+
+ Además de al información estática, existe la posición en tiempo real. Dicha 
+información se publica a través de WS o en FTPs. El adjudicatario, deberá vincular 
+ambos tipos de información (real y dinámica) manteniendo los códigos de parada u 
+PAGE 5
+
+ 
+5 
+
+otros que sean necesarios para que esta información se consideren correcta y 
+coherente.  
+El adjudicatario detallará en su oferta técnica como realizar los controles, filtros y 
+procedimientos necesarios cara a garantizar la integridad de los datos.  
+
+ 
+1.3 Real Tme GTFS:  
+
+GTFS en tiempo real es una especificación de feed que permite que las empresas de 
+tranporte público proporcionen actualizaciones en tiempo real sobre su flota a los 
+programadores de la aplicación. Es una extensión de GTFS (Especificación general de 
+feeds de transporte público), un formato de datos abierto para los horarios de 
+transporte público y la información geográfica asociada.  
+La especificación es compatible actualmente con los siguientes tipos de información: 
+ Actualizaciones de viaje: retrasos, cancelaciones, cambios de ruta 
+ Alertas del servicio: traslados de paradas o eventos imprevistos que afectan 
+una estación, ruta o toda la red 
+ Posiciones del vehículo: información sobre los vehículos, incluidos la ubicación 
+y el nivel de congestión 
+
+Al inicio del segundo año desde el inicio de este contrato, el adjudicatario debe estar 
+preparado para publicar no solo los GTFS sino GTFS-RT.  
+Para ello el adjudicatario explicará en su oferta técnica qué cambios se pretenden 
+realizar y como los plantea realizarlos. Primeramente deberá entregar un documento 
+que contemple los cambios necesarios a realizar.  
+
+1.4 Modelos de datos de estándares europeos 
+
+La Directiva 2010/40/UE del Parlamento Europeo y del Consejo, de 7 de julio de 
+2010, por la que se establece el marco para la implantación de los sistemas de 
+transporte inteligentes en el sector del transporte por carretera y para las interfaces 
+con otros modos de transporte, ponen el foco de los sistemas ITS en el usuario y en 
+la interoperabilidad de los sistemas como mecanismos de desarrollo. 
+Atendiendo al marco normativo y recomendaciones de la Comisión Europea, el 
+modelo de datos asociado a las entidades del servicio de ATTG debe estar alineado 
+con los estándares que se recogen a continuación: 
+PAGE 6
+
+ 
+6 
+
+ Transmodel EN 12896-9 Public Transport - Reference Data Model 
+ NeTEx EN 16614 Public transport - Network and Timetable Exchange 
+ SIRI EN 15531 Public Transport - Service Interface for real-time Information 
+
+En este contrato no se plantea la propia generación de los datos en tales estandares.  
+El resultado esperado de la ATTG en lo que a este punto se refiere, es disponer a lo 
+largo del tercer año de la vigencia del contrato, de un informe que v alore el alcance 
+de este cambio. E s decir, las modificaciones necesarias a realizar tanto en los 
+orígenes de los datos (SAE, WS o FTP) o en los procesos de generación de los GTFS 
+si se quisieran implantar estos modelos de datos  así como una hoja de ruta que 
+permita alcanzar tal fin.  
+
+ 
+
+ 
+PAGE 7
+
+ 
+7 
+
+2 METODOLOGÍA 
+El licitador en su oferta deberá especificar la metodología a emplear incidiendo sobre 
+todo como realizar lo señalado en los puntos 2.1 y 2.2 de este pliego técnico.  
+Se requiere un mantenimiento correctivo y vigilancia del conjunto de datos. Conviene 
+tener en cuenta que la rede de datos que se engloba bajo la marca Mugi afecta a 17 
+operadores y existen constantes cambios en la red y en los servicios.  
+Todos estos cambios tienen que tener un reflejo en los GTFS generados de la manera 
+más ágil posible. 
+Deberá especificar si los controles que efectúa son automáticos y/o manual es y qué 
+se pretende detectar con cada tipo de control . En el caso de controles manuales, 
+señalará las horas de personas en atender los cambios y como se realizarán. 
+
+PAGE 8
+
+ 
+8 
+
+3 ANS DEL SERVICIO 
+
+El ANS es documento que define la relación entre la ATTG y la empresa adjudicataria 
+y que debe: proporcionar un marco de medición y control del nivel de desempeño de 
+los servicios 
+Con el objetivo de controlar la facturación de los servicios prestados es necesario: 
+ Registro de los servicios prestados. 
+ Aceptación del responsable del ANS de ATTG de los resultados del servicio por 
+parte del adjudicatario. 
+Con el objeto de monitorizar la calidad del servicio prestado es necesario. 
+ Definir los niveles de calidad en la prestación de cada uno de los servicios. 
+ Monitorizar y medir en base a indicadores objetivos asignados a cada uno 
+de los servicios. 
+ Control el nivel de desempeño en la prestación de los servicios del ANS en 
+función de los indicadores. 
+
+El adjudicatario, dentro du sus tareas deberá encargarse de lo siguientes puntos. 
+• Corrección de errores: mantenimiento correctivo 
+• Soporte técnico 
+• Monitorización de los servicios 
+• documentar debidamente los cambios. 
+
+En cuanto a cualquier cambio ante problemas, el adjudicatario deberá  
+1. Analizar el cambio, estimar y planificar su resolución 
+2. Resolver el problema: programación, re-configuración, etc 
+3. Realizar informes de control y seguimiento 
+4. Elaborar la documentación requerida por ATTG para instalar los cambios  
+5. Hacer el seguimiento del problema una vez corregido 
+
+Respecto a estas ta reas, el adjudicatario, mensualmente se facilitará un 
+informe/listado de los defectos corregidos de entre aquellos registrados y los cambios 
+en las configuraciones realizadas. En el informe se incluirán datos que faciliten la 
+medición del rendimiento de corrección de defectos tales como: 
+ Tiempo de Respuesta: Tiempo transcurrido desde el alta de la petición hasta 
+que ésta se acepta. 
+PAGE 9
+
+ 
+9 
+
+ Tiempo de resolución: Tiempo transcurrido desde que se acepta la petición 
+hasta que ésta se resuelve satisfactoriamente. 
+El informe incluirá un resumen del tipo: 
+
+Código id Descripción  
+
+Tiempo de 
+resolución 
+planificado 
+
+Tiempo de 
+respuesta 
+real 
+
+Tiempo de 
+resolución 
+real 
+
+     
+
+ 
+Para el mantenimiento correctivo el objetivo para el indicador de servicio es que un 
+95% de los defectos sean corregidos en un tiempo según la siguiente tabla: 
+
+ 
+Tipo de Mantenimiento Tiempo Respuesta/Tiempo 
+Resolución 
+
+Urgente 8 horas / 32 horas 
+Normal 32 hora s/ 72horas 
+
+Adicionalmente se incluirá un informe detallado de aquellos defectos que lleven un 
+tiempo excesivo (más de 15 días) sin ser solucionados. 
+En el caso de la documentación, la ATTG valorará la calidad de la documentación 
+entregada, no aceptándola en caso de no superar el mínimo exigible. 
+
+PAGE 10
+
+ 
+10 
+
+4 EQUIPO DE TRABAJO 
+El equipo de trabajo propuesto por los licitadores al menos debe formarse por cuatro 
+personas de estos perfiles: 
+ Coordinador de proyecto y responsable de la coordinación con el cliente. 
+o Licenciado superior o grado con al menos 5 años de experiencia 
+ Gestor Técnico de Sistemas/datos.  
+o Licenciado o grado en informática/ informática de gestión/ ingeniería/ 
+matemática/física con al menos 3 años de experiencia 
+
+ 
+PAGE 11
+
+ 
+11 
+
+5 LA OFERTA DEBE INCLUIR: 
+La oferta debe incluir una memoria técnica, que enviará en papel y algunos de los 
+siguientes soportes electrónicos (USB, CD o DVD)  
+Dicha memoria técnica contendrá al menos los siguientes apartados 
+ Generación de archivos GTFS: 
+o Alcance y metodología 
+o Diagramas de procesos 
+o Mantenimiento semanal; controles a establecer para una mejor 
+calidad de datos 
+ Vincular la información con el tiempo real. 
+o Alcance y metodología 
+o Diagramas de procesos 
+o Mantenimiento semanal: controles a establecer para una mejor 
+calidad de datos 
+ Real Tme GTFS: 
+o Alcance y metodología 
+o Diagramas de procesos 
+o Controles a establecer para una mejor calidad de datos 
+o Cambios a introducir en origen de los datos o en BBDD 
+ Modelos de datos de estándares europeos  
+o Cambios a introducir en origen de los datos de los operadores 
+o en el proceso de generación de los GTFS para permitir realizar 
+este cambio 
+
+ 
+PAGE 12
+
+ 
+12 
+
+6 VALORACIÓN 
+ Generación de archivos GTFS: 22 PUNTOS 
+ Vincular la información con el tiempo real. 12 PUNTOS 
+ Real Tme GTFS: 8 PUNTOS 
+ Modelos de datos de estándares europeos 6 PUNTOS 
+TOTAL MÁXIMO: 48 PUNTOS 
+
+ 

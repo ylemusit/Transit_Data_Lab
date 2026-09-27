@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ted_nantes_award",
+    "url": "https://ted.europa.eu/en/notice/272975-2023/html",
+    "resolved_url": "https://ted.europa.eu/en/notice/272975-2023/html",
+    "consulted": "2026-09-27",
+    "sha256": "b47a02e7349434f12a8bdbb042a33f5cd8367a771ee5e2218f90f1268cc28d64",
+    "bytes": 37397,
+    "file": "ted_nantes_award.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "ted_nantes_tender",
+    "url": "https://ted.europa.eu/en/notice/582917-2022/html",
+    "resolved_url": "https://ted.europa.eu/en/notice/582917-2022/html",
+    "consulted": "2026-09-27",
+    "sha256": "04961f21b1eec5934279e401747389687d456cc503a1ba44ae53d6b6761bc4db",
+    "bytes": 49576,
+    "file": "ted_nantes_tender.html",
+    "status": "SAVED"
+  },
+  {
+    "name": "ted_rome_award",
+    "url": "https://ted.europa.eu/en/notice/560078-2022/html",
+    "resolved_url": "https://ted.europa.eu/en/notice/560078-2022/html",
+    "consulted": "2026-09-27",
+    "sha256": "1320ac683f99fa055d527613f21aae3376cebeea7d1b639e99ae2df927f81fff",
+    "bytes": 30361,
+    "file": "ted_rome_award.html",
+    "status": "SAVED"
+  }
+]

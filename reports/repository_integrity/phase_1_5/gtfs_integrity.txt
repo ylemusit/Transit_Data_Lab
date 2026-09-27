@@ -1,0 +1,82 @@
+┌──────────────┬────────────────┬──────────┬────────┬─────────┐
+│ check_family │   check_name   │ expected │ actual │ status  │
+│   varchar    │    varchar     │  int32   │ int64  │ varchar │
+├──────────────┼────────────────┼──────────┼────────┼─────────┤
+│ RAW_COUNT    │ agency         │       41 │     41 │ PASS    │
+│ RAW_COUNT    │ calendar_dates │     3875 │   3875 │ PASS    │
+│ RAW_COUNT    │ routes         │      609 │    609 │ PASS    │
+│ RAW_COUNT    │ shapes         │   774732 │ 774732 │ PASS    │
+│ RAW_COUNT    │ stop_times     │   354287 │ 354287 │ PASS    │
+│ RAW_COUNT    │ stops          │     6368 │   6368 │ PASS    │
+│ RAW_COUNT    │ trips          │    21015 │  21015 │ PASS    │
+└──────────────┴────────────────┴──────────┴────────┴─────────┘
+┌──────────────┬────────────┬──────────┬─────────┬─────────┐
+│ check_family │ check_name │ expected │ actual  │ status  │
+│   varchar    │  varchar   │ varchar  │ varchar │ varchar │
+├──────────────┼────────────┼──────────┼─────────┼─────────┤
+│ SCHEMA       │ analysis   │ present  │ absent  │ FAIL    │
+│ SCHEMA       │ core       │ present  │ absent  │ FAIL    │
+│ SCHEMA       │ raw        │ present  │ present │ PASS    │
+│ SCHEMA       │ validation │ present  │ absent  │ FAIL    │
+└──────────────┴────────────┴──────────┴─────────┴─────────┘
+┌──────────────┬────────────────────┬──────────┬────────────┬─────────┐
+│ check_family │     check_name     │ expected │   actual   │ status  │
+│   varchar    │      varchar       │ varchar  │  varchar   │ varchar │
+├──────────────┼────────────────────┼──────────┼────────────┼─────────┤
+│ RELATION     │ raw.agency         │ present  │ base table │ PASS    │
+│ RELATION     │ raw.calendar_dates │ present  │ base table │ PASS    │
+│ RELATION     │ raw.routes         │ present  │ base table │ PASS    │
+│ RELATION     │ raw.shapes         │ present  │ base table │ PASS    │
+│ RELATION     │ raw.stop_times     │ present  │ base table │ PASS    │
+│ RELATION     │ raw.stops          │ present  │ base table │ PASS    │
+│ RELATION     │ raw.trips          │ present  │ base table │ PASS    │
+│ RELATION     │ validation.results │ present  │ absent     │ FAIL    │
+└──────────────┴────────────────────┴──────────┴────────────┴─────────┘
+┌────────────────┬─────────────────────────────────────┬──────────┬────────┬─────────┐
+│  check_family  │             check_name              │ expected │ actual │ status  │
+│    varchar     │               varchar               │  int32   │ int64  │ varchar │
+├────────────────┼─────────────────────────────────────┼──────────┼────────┼─────────┤
+│ DATA_INTEGRITY │ duplicate_agency_id                 │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_calendar_service_date     │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_route_id                  │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_shape_sequence            │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_stop_id                   │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_stop_time_sequence        │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ duplicate_trip_id                   │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ invalid_arrival_or_departure_format │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ invalid_shape_coordinates           │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ invalid_shape_pt_sequence           │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ invalid_stop_coordinates            │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ invalid_stop_sequence               │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_route_agency                 │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_stop_time_stop               │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_stop_time_trip               │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_trip_route                   │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_trip_service                 │        0 │      0 │ PASS    │
+│ DATA_INTEGRITY │ orphan_trip_shape                   │        0 │      0 │ PASS    │
+└────────────────┴─────────────────────────────────────┴──────────┴────────┴─────────┘
+  18 rows                                                                  5 columns
+┌──────────────┬──────────────────────────────────┬──────────┬────────┬─────────┐
+│ check_family │            check_name            │ expected │ actual │ status  │
+│   varchar    │             varchar              │  int32   │ int64  │ varchar │
+├──────────────┼──────────────────────────────────┼──────────┼────────┼─────────┤
+│ MONOTONICITY │ non_increasing_shape_pt_sequence │        0 │      0 │ PASS    │
+│ MONOTONICITY │ non_increasing_stop_sequence     │        0 │      0 │ PASS    │
+└──────────────┴──────────────────────────────────┴──────────┴────────┴─────────┘
+┌────────────────┬────────────────────────────────────────────┬─────────────────┬──────────────────────────────────────────────────────┬─────────┐
+│  check_family  │                 check_name                 │    expected     │                        actual                        │ status  │
+│    varchar     │                  varchar                   │     varchar     │                       varchar                        │ varchar │
+├────────────────┼────────────────────────────────────────────┼─────────────────┼──────────────────────────────────────────────────────┼─────────┤
+│ TIME_SEMANTICS │ times_at_or_after_24h_preserved_as_varchar │ >0 VARCHAR rows │ 201 rows; max arrival hour=24; max departure hour=24 │ PASS    │
+└────────────────┴────────────────────────────────────────────┴─────────────────┴──────────────────────────────────────────────────────┴─────────┘
+┌─────────────────┬───────────────────────────┬──────────┬────────┬─────────┐
+│  check_family   │        check_name         │ expected │ actual │ status  │
+│     varchar     │          varchar          │  int32   │ int64  │ varchar │
+├─────────────────┼───────────────────────────┼──────────┼────────┼─────────┤
+│ KNOWN_ARTIFACTS │ main_stops_minus_raw      │        0 │      0 │ PASS    │
+│ KNOWN_ARTIFACTS │ raw_stops_minus_main      │        0 │      0 │ PASS    │
+│ KNOWN_ARTIFACTS │ route_440_distinct_shapes │        2 │      2 │ PASS    │
+│ KNOWN_ARTIFACTS │ route_440_route_rows      │        1 │      1 │ PASS    │
+│ KNOWN_ARTIFACTS │ route_440_shape_points    │      814 │    814 │ PASS    │
+│ KNOWN_ARTIFACTS │ route_440_trip_rows       │        2 │      2 │ PASS    │
+└─────────────────┴───────────────────────────┴──────────┴────────┴─────────┘

@@ -1,0 +1,332 @@
+PAGE 1
+ATTO DIRIGENZIALE
+Codifica adempimenti L.R. 15/08 (trasparenza)
+Ufficio istruttore
+Sezione Trasporto 
+Pubblico Locale e 
+Intermodalità
+Tipo materia ALTRO
+Materia ALTRO
+Sotto Materia ALTRO
+Riservato NO
+Pubblicazione integrale NO
+Obblighi D.Lgs 33/2013 Art. 23
+Tipologia Nessuno 
+Adempimenti di 
+inventariazione NO
+
+N. 00076  del 17/05/2024 del Registro delle Determinazioni della AOO 078
+Codice CIFRA (Identificativo Proposta): 078/DIR/2024/00081
+OGGETTO: Progetto “Regional Acces Point ” della Regione Puglia - Convenzione 
+DGR n. 176/2023 – Accordo Quadro per l’erogazione di servizi Cloud IasS e Pass art. 
+54 co. 3 D.Lgs. n. 50/2016 - Determinazione a contrarre.
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 1
+PAGE 2
+Il giorno 17/05/2024, in Bari, 
+il Dirigente della Sezione 
+
+Visti
+gli articoli.  4, 5 e 6 della L.R. 4 febbraio 1997 n. 7 “Norme in materia di 
+organizzazione dell’amministrazione regionale”, che regolano l’attività della 
+Regione Puglia secondo i principi di cui al decreto legislativo n. 29 del 3 
+febbraio 1993 e ss.mm.ii in materia di ripartizione delle competenze e funzioni 
+dirigenziali;
+■
+la deliberazione della Giunta regionale del 28.07.1998 n. 3261 “Separazione 
+delle attività di direzione politica da quelle di gestione amministrativa. Direttiva 
+alle strutture organizzative regionali”;
+■
+la Legge n. 241 del 1990 “Nuove norme in materia di procedimento 
+amministrativo e di diritto di accesso ai documenti amministrativi”;
+■
+gli articoli 4 e 16 del D.Lgs. n. 165 del 30.03.2001 e ss.mm.ii. “Norme 
+generali sull’ordinamento del lavoro alle dipendenze delle amministrazioni 
+pubbliche”, con particolare riferimento a Indirizzo politico-amministrativo. 
+Funzioni e responsabilità e Funzioni dei dirigenti di uffici dirigenziali generali;
+■
+l'art. 32 della legge 18 giugno 2009, n. 69 “Eliminazione degli sprechi relativi 
+al mantenimento di documenti in forma cartacea”, che prevede l'obbligo di 
+sostituire la pubblicazione tradizionale all'Albo ufficiale con la pubblicazione di 
+documenti digitali sui siti in formatici;
+■
+Regolamento UE 2016/679 “General Data Protection Regulation” in merito ai 
+principi applicabili ai trattamenti dei dati personali effettuati dai soggetti pubblici 
+nonché, in quanto compatibile, il Decreto Legislativo n. 196 del 2003 “Codice 
+in materia di protezione dei dati personali” , così come modificato dal D.Lgs. n. 
+101 del 2018;
+■
+la deliberazione della Giunta Regionale n. 1974 del 7 dicembre 2020, 
+avente ad oggetto “Approvazione Atto di Alta Organizzazione. Modello 
+organizzativo MAIA 2.0” e ss.mm.ii;
+■
+il D.P.G.R. n. 22 del 2021 con cui la Regione Puglia approva il modello 
+organizzativo denominato “Modello Ambidestro per l’innovazione della 
+macchina amministrativa regionale – “MAIA”. Approvazione Atto di Alta 
+Organizzazione”;
+■
+la D.G.R. n. 1289 del 28.07.2021, di istituzione e individuazione delle funzioni 
+delle Sezioni di Dipartimento, in applicazione dell’art. 8, comma 4 del D.P.G.R. 
+n. 22 del 2021;
+■
+il decreto del Presidente della Giunta Regionale del 10.08.2021 n. 263, 
+avente ad oggetto “Attuazione modello organizzativo MAIA 2.0. Definizione 
+delle Sezioni di Dipartimento e delle relative funzioni”;
+■
+la D.G.R. n. 1576 del 30.09.2021 relativa al “Conferimento incarichi di direzione 
+delle Sezioni di Dipartimento ai sensi dell’articolo 22, comma 2, del decreto del 
+Presidente della Giunta regionale 22 gennaio 2021 n. 22", con la quale è stata 
+conferita all’ing. Carmela Iadaresta la titolarità della Sezione Trasporto Pubblico 
+Locale e Intermodalità, dal 1° novembre 2021, per un periodo di tre anni;
+■
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 2
+PAGE 3
+Visti, inoltre
+Il D.Lgs. n. 50 del 18.04.2016, “Codice dei contratti pubblici”;■
+la DGR n. 1466 del 15.09.2021, recante l’approvazione della Strategia 
+regionale per la parità di genere, denominata “Agenda di Genere”;
+■
+la DGR n. 938 del 03.07.2023, recante Valutazione di Impatto di Genere. 
+Sistema di gestione e di monitoraggio;
+■
+Il D.Lgs. n. 118 del 2011 e ss.mm.ii “Disposizioni in materia di armonizzazione 
+dei sistemi contabili e degli schemi di bilancio delle Regioni, degli enti locali e 
+dei loro organismi, a norma degli articoli 1 e 2 della legge 5 maggio 2009, n. 
+42”;
+■
+la Legge Regionale n. 37 del 29.12.2023 “Disposizioni per la formazione del 
+bilancio di previsione 2024 e bilancio pluriennale 2024-2026 della Regione 
+Puglia (legge di stabilità)”;
+■
+la Legge Regionale n. 38 del 29.12.2023 “Bilancio di previsione per l’esercizio 
+finanziario 2024 e bilancio pluriennale 2024-2026;
+■
+la D.G.R. n. 18 del 22.01.2024 “Bilancio di previsione per l’esercizio finanziario 
+2024 e pluriennale 2024-2026. Art. 39 co. 10 del D. Lgs. 23.06.2011 n. 118. 
+Documento tecnico di accompagnamento e Bilancio Finanziario Gestionale. 
+Approvazione”.
+■
+Premesso che
+Il Regolamento Delegato UE 2015/962 del 18 dicembre 2014, che integra la Direttiva 
+2010/40/UE relativamente alla predisposizione in tutto il territorio dell’Unione Europea 
+di servizi di informazione sul traffico in tempo reale, all’art. 3 prevede che <<...ogni 
+Stato membro istituisce un punto d’accesso nazionale. Il punto di accesso nazionale 
+costituisce un unico punto di accesso per gli utenti ai dati sulle strade e sul 
+traffico…>>. 
+
+La Commissione Europea ha inoltre emanato, in data 31.05.2017, il Regolamento 
+Delegato 1926/2017 che integra ulteriormente la direttiva 2010/40/UE, per quanto 
+riguarda la predisposizione, in tutto il territorio dell’Unione Europea, di servizi di 
+informazione sulla mobilità multimodale, stabilendo inoltre quelli che sono i requisiti 
+necessari affinché i servizi di informazione sulla mobilità multimodale, in tutta Europa, 
+siano accurati e disponibili agli utenti. 
+A tale scopo, viene richiesto che ogni Stato membro istituisca un punto di accesso 
+nazionale (NAP), che costituisca un riferimento di accesso unico per gli utenti, per i 
+dati sulla mobilità forniti dalle autorità dei trasporti, dagli operatori dei trasporti, dai 
+gestori delle infrastrutture o dai fornitori di servizi di trasporto a richiesta, nel territorio 
+di un determinato Stato membro. 
+Suddetto Regolamento richiede che i dati del Trasporto Pubblico Locale vengano 
+raccolti attraverso un protocollo di scambio di dati standard, denominato NeTEx 
+CEN/TS 16614 per i dati statici e SIRI CEN/TS 15531 per i dati dinamici e che tali dati 
+siano opportunamente raccolti e validati da un Punto Unico di Accesso Regionale 
+(RAP) per la trasmissione al NAP. 
+
+Peraltro come  dalla L.R. n. 18 del 2002 e s.m.i. “Testo Unico sulla disciplina del 
+Trasporto Pubblico Locale”, la Regione Puglia esercita le funzioni di programmazione 
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 3
+PAGE 4
+e amministrazione dei servizi di trasporto pubblico locale, con qualsiasi modalità 
+esercitati, non attribuiti agli enti locali ai sensi dei commi 1 e 2 e non dichiarati di 
+interesse nazionale ai sensi dell'articolo 3 del d.lgs. n. 422 del 1997, nonché le 
+funzioni che richiedono l'esercizio unitario a livello regionale, come disposto dall’art. 3 
+co. 3. 
+
+Pertanto, è risultato necessario, per garantire l’interscambio di informazioni sulla 
+mobilità multimodale al fine di contribuire alla realizzazione di un sistema di servizi di 
+informazione europeo, procedere alla sottoscrizione di apposita Convenzione tra 
+Regione Puglia - Sezione Trasporto Pubblico Locale e Intermodalità con il Ministero 
+delle Infrastrutture e della Mobilità Sostenibili - Dipartimento per la Mobilità 
+Sostenibile, Direzione Generale per la Sicurezza Stradale e L’autotrasporto - 
+Divisione 4 “Centro Coordinamento delle informazioni sul traffico, sulla viabilità e sulla 
+Sicurezza Stradale” (CCISS), in attuazione di quanto previsto dalla normativa europea 
+richiamata (Regolamento Delegato UE 2017/1926) relativamente alla predisposizioni 
+in tutto il territorio dell’Unione europea di servizi di informazione sulla mobilità 
+multimodale.
+A tale scopo, a mezzo della Deliberazione di Giunta Regionale n. 176 del 2023 è stata 
+approvata la Convenzione tra la Regione Puglia e il Ministero delle Infrastrutture e dei 
+Trasporti, Dipartimento per la Mobilità Sostenibile, Direzione Generale per la 
+Sicurezza Stradale e l’Autotrasporto, Divisione 4 per l’interscambio di informazioni 
+sulla mobilità multimodale (National Access Point). 
+
+Considerato che 
+In un primo momento, a livello regionale, è stata realizzata una prima versione della 
+piattaforma regionale per la gestione integrata dei dati di mobilità, utilizzando 
+l’infrastruttura Cloud della Regione Puglia. Tale prima versione include il nucleo 
+iniziale del Regional Access Point (RAP) della Regione Puglia. 
+
+Il RAP è un “Punto di Accesso Regionale” per i dati sulla mobilità multimodale, così 
+come definito dal già richiamato Regolamento UE 2017/1926. 
+Il Punto di Accesso Nazionale sulla mobilità multimodale (National Access Point o 
+NAP) raccoglie le informazioni e dati relativi a diversi modi di trasporto, con l'obiettivo 
+di agevolare la consultazione dei dati e consentirne la diffusione attraverso un unico 
+portale, nel rispetto di quanto previsto e statuito dal Regolamento UE 1926/2017. 
+
+Nella sua prima versione, il RAP della Regione Puglia, è stato sviluppato nell’ambito 
+di un affidamento realizzato attraverso l’Accordo Quadro per l’affidamento di servizi 
+Cloud IAAS e PAAS – Lotto 11 stipulato da Consip. 
+In seguito e allo stato attuale il “RAP regionale” ha implementato i livelli 1 e 2 del 
+profilo italiano del NeTEx, definendo le interfacce per la ricezione dei dati statici 
+relativi a questi livelli provenienti dagli operatori di trasporto regionali, e 
+implementando la validazione dei file NeTEx prodotti, secondo gli schemi XSD 
+disponibili e ha implementato la trasmissione dei file NeTEX al NAP. 
+
+Risulta però opportuno, oltrechè necessario, procedere ad una ulteriore attività di 
+manutenzione evolutiva, adeguativa e di supporto tecnico alla conduzione operativa 
+dell’“attuale” sistema informativo “Regional Acces Point (RAP) della Regione Puglia, 
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 4
+PAGE 5
+procedendo all’approvvigionamento dei servizi utili e pertanto necessari, avvalendosi 
+del sistema di “Acquisti in Rete” PA. 
+
+Dato atto che 
+Nello specifico, come meglio desumibile dal “Piano dei Fabbisogni (agli atti della 
+Sezione), a seguito dell’acquisto dei servizi di tipo manutentivo, evolutivo, adeguativo 
+al sistema RAP Puglia,  a valere sull’Accordo Quadro Consip “Public Cloud IaaS Pass 
+– Servizi di Supporto – ID 2213 Lotto 11, l’oggetto  dell’approvvigionamento fornitura 
+corrisponde a: 
+“Attività professionali volte implementare l’evoluzione dell’attuale sistema RAP della 
+Regione Puglia, finalizzata alla completa gestione del livello 3 del profilo italiano del 
+protocollo NeTEx, come descritto nel documento "Linee guida per la compilazione del 
+profilo italiano del NeTEx" la cui ultima versione disponibile è la n. 4.0.1 
+dell'11.03.2024 e scaricabile attraverso la pagina web https://netex-
+cen.eu/implementation/italian-implementation/#italian-documents-download”.
+
+Più dettagliatamente, al RAP della Regione Puglia attualmente realizzato ed operativo 
+saranno implementate le seguenti nuove funzionalità che si configurano come 
+interventi di manutenzione evolutiva, essendo caratterizzate da una evoluzione di 
+funzioni già presenti nel sistema:
+Modifiche alla funzione “Download di template di file in formato CSV alternativi 
+al formato GFTS”;
+•
+Modifiche alla funzione “Upload di file GFTS”;•
+Modifiche alla funzione “Upload diretto di dati in formato CSV alternativi al 
+formato GFTS”;
+•
+Modifiche alla funzione “Elenco file caricati”;•
+Modifiche alle funzioni di analisi e importi di file GFTS e CSV.•
+Modifiche alla funzione di export di file Netex;•
+Servizio di Manutenzione adeguativa;•
+Servizio di Manutenzione correttiva;•
+Servizi di Training e di supporto alla conduzione operativa;•
+Security;•
+
+Nel richiamato “Piano dei Fabbisogni” è inoltre esplicitato che, per la realizzazione 
+dell’intervento, l’importo contrattuale complessivo ammonta ad € 149.710,00 
+(centoquarantanovesettecentodieci/00 €) Iva esclusa e che il contratto dispiegherà 
+i suoi effetti a partire dalla data di stipula, per una durata di 12 mesi. 
+
+A mezzo nota prot.  0236092/2024 del 17.05.2024 (agli atti di questa Sezione), si è 
+acquisito il parere favorevole del Responsabile per la Transizione al Digitale, in 
+conformità a quanto previsto dalla D.G.R. n. 1219 del 22.09.2021. 
+
+Al fine di aderire all’Accordo Quadro Consip – “Accordo Quadro Consip “Public Cloud 
+IaaS Pass – Servizi di Supporto – ID 2213 Lotto 11”, la Sezione Trasporto Pubblico 
+Locale e Intermodalità, provvede a trasmettere sulla piattaforma di 
+www.acquisitinretepa.it”, laddove siano riportate tutte le informazioni, in suindicato 
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 5
+PAGE 6
+“Piano dei Fabbisogni”, contenente la descrizione delle esigenze e delle indicazioni in 
+termini di tipologia e di quantità di servizi da realizzare, predisposto secondo apposito 
+schema. 
+
+ 
+Per tutto quanto sin qui premesso, considerato e richiamato,  con il presente 
+atto si intende:
+Approvare la proposta di acquisto in esame, da espletarsi a valere sull’Accordo 
+Quadro Consip – “Public Cloud IaaS Pass – Servizi di Supporto – ID 2213 Lotto 
+11”, secondo quanto dettagliatamente specificato nella stessa.
+•
+Individuare quale Responsabile Unico del Procedimento (R.U.P.), ex. art. 31 del 
+D.Lgs. n. 50 del 2016 e s.m.i., degli artt. 4, 5 e 6, della L. n. 241 del 1990 e 
+ss.mm.ii. ed in considerazione delle Linee Guida ANAC n. 3, il Dirigente ella 
+Sezione Trasporto Pubblico Locale e Intermodalità.
+•
+
+Verifica ai sensi del Regolamento UE n. 679 del 2016 e del D.Lgs. n. 196 del 2003 
+così come modificato dal D.Lgs. n. 101 del 2018 
+Garanzia della riservatezza
+La pubblicazione dell’atto all’albo, salve le garanzie previste dalla legge n. 241 del 
+1990 in tema di accesso ai documenti amministrativi, avviene nel rispetto della tutela 
+alla riservatezza dei cittadini, secondo quanto disposto dal Regolamento UE n. 
+679/2016 in materia di protezione dei dati personali, in quanto compatibili con D. Lgs. 
+196/2003, nonché dal vigente regolamento regionale n. 5 del 2006 per il trattamento 
+dei dati sensibili e giudiziari. 
+Ai fini della pubblicità legale, l’atto destinato alla pubblicazione è redatto in modo da 
+evitare la diffusione di dati personali identificativi non necessari ovvero il riferimento a 
+dati sensibili; qualora tali dati fossero indispensabili per l’adozione dell’atto, essi sono 
+trasferiti in documenti separati, esplicitamente richiamati.
+
+ADEMPIMENTI CONTABILI AI SENSI DEL D.Lgs.  n. 118 del 2011 e ss.mm.ii. 
+Il presente provvedimento non comporta implicazioni, dirette e/o indirette, di natura 
+economico e/o finanziaria, e/o patrimoniale e dalla stesso non deriva alcun onere a 
+carico del bilancio regionale.
+DETERMINA
+Di prendere atto di quanto espresso in narrativa, che costituisce parte integrante e 
+sostanziale del presente atto e che qui si intende integralmente riportato.
+Di prendere atto delle premesse che costituiscono parte integrante e sostanziale del 
+presente atto.
+
+Di approvare la proposta di acquisto in esame, da espletarsi a valere sull’Accordo 
+Quadro Consip – “Public Cloud IaaS Pass – Servizi di Supporto – ID 2213 Lotto 11”, 
+secondo quanto dettagliatamente specificato nella stessa.
+
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 6
+PAGE 7
+Di Dare atto che l’importo complessivo stimato per l’affidamento sarà pari € 
+149.710,00 (centoquarantanovesettecentodieci/00 €) Iva esclusa e che il contratto 
+dispiegherà i suoi effetti a partire dalla data di stipula, per una durata di 12 mesi.
+
+Di Individuare quale Responsabile Unico del Procedimento (R.U.P.), ex. art. 31 del 
+D.Lgs. n. 50 del 2016 e s.m.i., degli artt. 4, 5 e 6, della L. n. 241 del 1990 e ss.mm.ii. 
+ed in considerazione delle Linee Guida ANAC n. 3, il Dirigente ella Sezione Trasporto 
+Pubblico Locale e Intermodalità.
+
+Di dare atto che si procederà al perfezionamento dell’affidamento a valere 
+sull’Accordo Quadro Public Cloud IaaS Pass – Servizi di Supporto – ID 2213 Lotto 
+11”, unavolta ricevuto ed approvato il piano operative da parte del fornitore individuate 
+ed in accordo con le funzionalità del Sistema “Acquisti in rete”. 
+
+Di trasmettere il presente provvedimento al Segretariato della Giunta Regionale. 
+
+Il presente provvedimento. elaborato tramite la piattaforma CIFRA2, composto da 
+pagine progressivamente nunerate: 
+- è immediatamente esecutivo; 
+- è prodotto, firmato e trattato in formato originale digitale in coerenza con le Linee 
+Guida dettate dalla Segreteria Generale della Giunta Regionale con nota prot. n. 
+AOO_175_1875 del 28.05.2020; 
+- sarà pubblicato all’Albo pretorio on-line della Regione dove resterà affisso per dieci 
+giorni lavorativi consecutivi; 
+-sarà conservato nell’archivio documentale dell’Ente; 
+- sarà pubblicato all’albo on-line nelle pagine del sito www.regione.puglia.it - 
+sezione“Amministrazione Trasparente” - sottosezione “Provvedimenti dirigenti 
+amministrativi”.
+Il presente Provvedimento è direttamente esecutivo.
+Firmato digitalmente da:
+E.Q. Investimenti nel settore ferroviario e automobilistico
+Giuseppina Raimondo
+Il Dirigente del Servizio Contratti di Servizio e TPL
+Giuseppe Merra
+Dipartimento Mobilità
+Sezione Trasporto Pubblico Locale e Intermodalità
+www.regione.puglia.it 7

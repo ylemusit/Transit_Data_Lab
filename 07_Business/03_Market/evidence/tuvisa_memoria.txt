@@ -1,0 +1,375 @@
+PAGE 1
+ 
+ 
+1 
+ 
+ 
+MEMORIA JUSTIFICATIVA DE LA FINANCIACIÓN DEL CONTRATO DE DESARROLLO, DESPLIEGUE 
+Y VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS -RT, 
+SIRI Y NETEX. EN EL MARCO DEL PLAN DE RECUPERACIÓN, TRANSFORMACIÓN Y RESILIENCIA 
+FINANCIADO POR LA UNIÓN EUROPEA-NEXT GENERATION-EU CON Nº DE EXPEDIENTE 2022-
+14LT CON CARGO AL PLAN DE RECUPERACIÓN, TRANSFORMACIÓN Y RESILIENCIA, 
+FINANCIADO POR LA UNIÓN EUROPEA-NEXT GENERATION-EU 
+1.-ANTECEDENTES. 
+ 
+En fecha 26 de mayo de 2022 TUVISA y la mercantil DATIK INFORMACIÓN INTELIGENTE S.L. con 
+NIF B2098562 contratan el servicio de “Desarrollo, Despliegue y Validación de Datos de 
+Transporte Avanzados en los Formatos GTFS, GTFS -RT, SIRI Y NETEX. , en el marco del plan de 
+recuperación, transformación y resiliencia financiado por la Unión Europea – NextGeneration 
+EU”. 
+ 
+El presupuesto máximo al que ascendió el contrato fue  38.558,16 € (IVA incluido) pero se 
+financiaron por medio de los fondos Next Generation-EU 31.866,25€, esto es, la cantidad sin IVA 
+Este expediente (2022-14LT) de contratación se tramitó por medio de un procedimiento abierto. 
+2.- FINANCIACIÓN DEL CONTRATO DEL SERVICIO DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN 
+DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, SIRI Y NETEX, EN 
+EL MARCO DEL PLAN DE RECUPERACIÓN, TRANSFORMACIÓN Y RESILIENCIA FINANCIADO POR 
+LA UNIÓN EUROPEA-NEXT GENERATION-EU CON Nº DE EXPEDIENTE 2022-14LT CON CARGO 
+AL PLAN DE RECUPERACIÓN, TRANSFORMACIÓN Y RESILIENCIA, FINANCIADO POR LA UNIÓN 
+EUROPEA-NEXT GENERATION-EU 
+El contrato ha sido financiado por la Unión Europea a través del Mecanismo de Recuperación y 
+Resiliencia (Fondo NextGenerationEU) en un porcentaje del 100 % sin considerar el IVA. 
+De conformidad con el Reglamento (UE) 2021/241, del Parlamento Europeo y del Consejo, por 
+el que se establece el Mecanismo de Recuperación y Resiliencia, el Consejo de Ministros, en 
+sesión celebrada el 27 de abril de 2021, aprueba el Plan de Recuperación, Transformación y 
+Resiliencia de España (PRTR), instrumento fundamental para el desarrollo de los fondos 
+europeos de recuperación Next Generation.  
+Este subproyecto se encuentra inserto d entro de la Palanca II «Infraestructuras y ecosistemas 
+resilientes» y del Componente 6 «Movilidad sostenible, segura y conectada». 
+Dentro del indicado componente, este contrato tiene por objeto el desarrollo de la Inversión 4 
+(C6.I4) Programa de apoyo para un transporte sostenible y digital que, a su vez, financiará 15 
+nuevos proyectos, con el objetivo de mejorar la eficiencia del sistema de transporte mediante 
+la digitalización e introducción de nuevas tecnologías en el sector, y el apoyo a los medios de 
+transporte más sostenibles, en particular el ferrocarril. 
+Componente del Plan de Recuperación, Transformación y Resiliencia: Componente 6 
+«Movilidad sostenible, segura y conectada» 
+Actuación: «Digitalización del transporte público de Euskadi». 
+PAGE 2
+ 
+ 
+2 
+ 
+ 
+Código de referencia del proyecto: C06.I04.P02- Programa de Ayuda al Transporte Sostenible y 
+Digital – CCAA – actuaciones propias de País Vasco 
+Localizador: C06.I04.P02.S03.SI02.PROVISIONAL.01 Generación de datos de transporte avanzados 
+en el municipio de Vitoria-Gasteiz 
+Como consecuencia de la financiación del contrato con cargo al PRTR, le resulta de aplicación el 
+siguiente régimen jurídico:  Real Decreto-ley 36/2020, de 30 de diciembre, por el que se aprueban 
+medidas urgentes para la modernización de la Administración Pública y para la ejecución del Plan de 
+Recuperación, Transformación y Resiliencia; Reglamento (UE) 2021/241 del Parlamento Europeo y del 
+Consejo, de 12 de febrero de 2021, por el que se establece el Mecanismo de Recuperación y 
+Resiliencia; Reglamento (UE) 2020/852 del Parlamento Europeo y del Consejo, de 18 de junio de 2020, 
+relativo al establecimiento de un marco para facilitar las inversiones sostenibles y por el que se 
+modifica el Reglamento (UE) 2019/2088; Orden HFP/1030/2021, de 29 de septiembre, por la que se 
+configura el sistema de gestión del Plan de Recuperación, Transformación y Resiliencia; Orden 
+HFP/1031/2021, de 29 de  septiembre, por la que se establece el procedimiento y formato de 
+información a proporcionar por las Entidades del Sector Público Estatal, Autonómico y Local para el 
+seguimiento del cumplimiento de hitos y objetivos y de ejecución presupuestaria y contabl e de las 
+medidas de los componentes del Plan de Recuperación, Transformación y Resiliencia; y el  Plan de 
+medidas antifraude, prevención de conflicto de interés, ausencia de doble financiación y adecuación 
+al régimen de ayudas de estado de aplicación a esta entidad ejecutora. 
+3.-HITOS Y OBJETIVOS DE LA ACTUACIÓN OBJETO DEL CONTRATO 
+Adicionalmente tendrán que cumplir los objetivos e hitos establecidos en la Decisión de 
+Ejecución del Consejo (CID). El hito establecido para esta inversión es de aplicación conjunta 
+para todas las líneas de actuación que comprende, sin que se haya estable cido ningún hito 
+específico para las inversiones a realizar por las Comunidades Autónomas y las ciudades de 
+Ceuta y Melilla:  
+– Hito n.º 100 del CID: Cuarto trimestre de 2024: Inicio de las actuaciones de todos los 
+proyectos adjudicados en el cuarto trimestre de 2022 (hito 99) para promover el transporte 
+sostenible y digital.  
+– Hito n.º 101 del CID: Segundo trimestre de 2026: Finalización de todos los proyectos 
+adjudicados en el cuarto trimestre de 2022 (hito 99) para promover el transporte sostenible 
+y digital. 
+De acuerdo con el Anexo III del Acuerdo de 5 de noviembre de 2021, de la Conferencia Nacional 
+de Transportes, la actuación financiable en el ámbito de la Comunidad Autónoma del País Vasco 
+para la línea de inversión C6.I4 -CCAA con un presupuesto de 5.630.000 euros es la 
+“Digitalización del transporte público de Euskadi”. El objetivo de dicha actuación es desarrollar 
+la digitalización y actualización de herramientas telemáticas para impulsar la movilidad 
+sostenible en Euskadi.  
+El objeto del contrato  se integra en la actuación referida, contribuyendo a la i mplantación de 
+sistemas digitales públicos de información en tiempo real sobre los servicios de transporte , así 
+como a la implantación de proyectos de movilidad como servicio. 
+PAGE 3
+ 
+ 
+3 
+ 
+ 
+4.-MECANISMOS DE VERIFICACIÓN DEL CUMPLIMIENTO DE LOS HITOS Y OBJETIVOS. 
+En el Acuerdo de 5 de noviembre de 2021 de la Conferencia Nacional de Transportes, por el que 
+se fijan los criterios de distribución territorial de créditos presupuestarios de los ejercicios 2021 
+y 2022, así como la distribución de los correspondientes al ejercicio 2021, para la financiación 
+de ac tuaciones de inversión en el marco del Componente 1 «Plan de choque de movilidad 
+sostenible, segura y conectada en entornos urbanos y metropolitanos», y Componente 6 
+«Movilidad sostenible, segura y conectada» del P lan de Recuperación, Transformación y 
+Resiliencia, se fijan los siguientes mecanismos de verificación del cumplimiento de los hitos y 
+objetivos señalados en el apartado anterior: 
+- Hito n.º 100 del CID- Transporte sostenible y digital: inicio de las obras. Cuarto trimestre de 
+2024 
+Descripción del hito u objetivo: Inicio de las obras en todos los proyectos adjudicados en el 
+cuarto trimestre de 2022 (hito 99) para promover el transporte sostenible y digital. Las obras 
+están relacionadas con los ámbitos definidos en los criterios de selección del documento de 
+adjudicación del proyecto del cuarto trimestre de 2022 (hito 99). 
+Indicador: Notificación oficial de inicio de las obras/proyectos con subvención adjudicada en el 
+programa de ayudas al transporte sostenible y digital. 
+Mecanismo de verificación: Documento resumen que justifique debidamente cómo se ha 
+cumplido el hito (incluyendo los elementos relevantes del hito, tal y como se enumeran en la 
+descripción del hito y de la medida correspondiente en el anexo del CID). Este d ocumento 
+incluirá como anexo la lista de proyectos y, para cada uno de ellos, la notificación oficial del inicio 
+de las obras. 
+- Hito n.º 101 del CID: - Transporte sostenible y digital: finalización de las obras.  Segundo 
+trimestre de 2026  
+Descripción del hito u objetivo: Finalización de todos los proyectos adjudicados en el cuarto 
+trimestre de 2022 (hito 99) para promover el transporte sostenible y digital. Las obras están 
+relacionadas con los ámbitos definidos en los criterios de selección del documento de 
+adjudicación del proyecto del cuarto trimestre de 2022. Respecto de las medidas 10 y 12, los 
+criterios de elegibilidad asegurarán el cumplimiento de la Guía técnica sobre la aplicación del 
+principio de «no causar un perjuicio significativ o» (DO C 58 de 18.2.2021, p. 1), garantizando 
+que la infraestructura permita en el momento de su construcción el suministro de gases 
+renovables y bajos en carbono. 
+Indicador: Notificación oficial de la finalización de las obras/proyectos con subvención 
+adjudicada en el programa de ayudas al transporte sostenible y digital 
+Mecanismo de verificación: Documento resumen en el que se justifique debidamente cómo se 
+ha cumplido el hito (incluyendo los elementos relevantes del hito, tal y como se enumeran en la 
+descripción del hito y de la medida correspondiente en el anexo del CID) de forma satisfactoria. 
+5.- OBJETIVOS CUANTITATIVOS INDIVIDUALIZADOS MÍNIMOS 
+PAGE 4
+ 
+ 
+4 
+ 
+ 
+C6I4-CCAA: Por estar directamente asociados a los créditos objeto de transferencia, y conforme 
+a las orientaciones del Ministerio de Hacienda de 11 de febrero de 2021, se incluyen también 
+objetivos cuantitativos individualizados mínimos a lograr, de obligado cumplimiento:  
+- Indicador de importe de inversión licitado: a 30 de septiembre de 2023 se deberá haber 
+licitado por un valor de al menos el 100% de la cuantía recibida.  
+- Indicador de inversión adjudicada en licitaciones y compras: a 30 de junio de 2024 se deberá 
+haber adjudicado por valor del importe total de la cuantía recibida.  
+Por otra parte, se exigirá justificar la finalización de los proyectos a fecha 30 de junio de 2026. 
+Para considerar finalizada una actuación es necesario que todos los elementos constitutivos de 
+la misma estén finalizados. A estos efectos se exigirá el act a de recepción del contrato o el 
+documento que se pueda establecer alternativamente en cumplimiento de las disposiciones que 
+establezca la Comisión Europea o el Ministerio de Hacienda y Función Pública. El incumplimiento 
+de estos hitos y objetivos puede ser causa de pérdida de la subvención y obligación de reintegro 
+de las cuantías percibidas, cuando no se pueda garantizar el cumplimiento de los objetivos 
+globales comprometidos para la componente 6, Inversión 4 del Plan de Recuperación, 
+Transformación y Resiliencia. 
+Se establecen los siguientes indicadores de seguimiento de la ejecución de los créditos asignados 
+a las Comunidades Autónomas y a las ciudades de Ceuta y Melilla. Estos indicadores formarán 
+parte de la información recogida en los informes justificativos descritos en el apartado 13.1 del 
+presente anexo con periodicidad mensual:  
+- Presupuesto licitado.  
+- Presupuesto adjudicado. 
+- Presupuesto ejecutado. 
+- Número de proyectos finalizados 
+6.-ETIQUETADO VERDE Y DIGITAL. 
+La actuación tiene el siguiente etiquetado climático:  
+Submedida C06.I04o; Campo de intervención 010: Digitalización de pymes (incluidos el negocio 
+y el comercio electrónicos y los procesos empresariales en red, los polos de innovación digital, 
+los laboratorios vivientes, los ciberemprendedores, las empresas emergentes basadas en TIC, el 
+comercio electrónico entre empresas) 
+Contribución climática 0%; Contribución ambiental 0%; Contribución digital 100% 
+7.- PRINCIPIO DNSH 
+La acreditación de este principio debe realizarse ex post. En caso de que la actuación no haya 
+concluido, deberá realizarse además tan pronto como sea posible ex ante. Para ello, el órgano 
+de contratación deberá realizar una autoevaluación del principio DNSH para cada expediente 
+según el modelo que figura como anexo. 
+PAGE 5
+ 
+ 
+5 
+ 
+ 
+Conforme a la Orden HFP/1030/2021, de 29 de septiembre, por la que se configura el sistema 
+de gestión del Plan de Recuperación, Transformación y Resiliencia , e n el expediente se ha 
+incorpora la autoevaluación del Principio DNSH que se ha realizado ex ante. Una vez ejecutado 
+el contrato, se añadirá al expediente la versión ex post de la autoevaluación. 
+Asimismo, se debe garantizar que ninguna las medidas y actuaciones financiadas con cargo a 
+este programa causa un perjuicio significativo a los objetivos medioambientales en el sentido 
+del artículo 17 del Reglamento (UE) 2020/852 (principio de «no causar un perjuicio significativo 
+al medio ambiente» o DNSH por sus siglas en inglés, «Do No Significant Harm»), según lo 
+dispuesto en el artículo 5 del Reglamento (UE) 2021/241 del Parlamento Europeo y del Consejo, 
+de 12 de febrero de 2021, por el que se establece el Mecanismo de Recuperación y Resiliencia. 
+Por su parte la Comisión establece en su Comunicación 2021/C 58/01 la Guía técnica sobre la 
+aplicación del principio de «no causar un perjuicio significativo» en virtud del Reglamento 
+relativo al Mecanismo de Recuperación y Resiliencia, con el objetivo de esclarecer el significado 
+de tal principio y la manera en que debe aplicarse en el contexto del mecanismo de recuperación 
+y resiliencia. Ello incluye el cumplimiento de las condiciones específicas asignadas y previstas en 
+el Componente 6, inversión 4, Verificable en https://www.boe.es la que se enmarca este 
+programa de ayudas, y especialmente las recogidas en los apartados 3 y 8 del documento del 
+Componente del Plan en lo que se refiere a las actividades incluid as en esta Orden Ministerial 
+(documento disponible en la web https://www.lamoncloa.gob.es/temas/fondos-
+recuperacion/Documents/16062021- Componente6.pdf) 
+De acuerdo con el Componente 6: https://cdn.mitma.gob.es/portal-web-
+drupal/prtr/documentos/16062021-Componente6_V2.pdf  el condicionante específico de 
+DNSH del C6. I4.15 Proyectos para la digitalización de los servicios de transporte de viajeros y 
+mercancías en el ámbito autonómico y local es el siguiente: 
+The transition to a circular economy, including waste prevention and recycling: Is the measure 
+expected to: i. lead to a significant increase in the generation, incineration or disposal of waste, 
+with the exception of the incineration of non-recyclable hazardous waste; or ii. lead to significant 
+inefficiencies in the direct or indirect use of any natural resource at any stage of its life cycle 
+which are not minimised by adequate measures; or iii. cause significant and long-term harm to 
+the environment in respect to the circular economy? 
+Se tomarán medidas que aumenten la durabilidad la posibilidad de reparación, de actualización 
+y de reutilización de los productos, de los aparatos eléctricos y electrónicos implantados. Se 
+adoptarán medidas adecuadas para que se apliquen los requisitos de diseño ecológico que 
+facilitan la reutilización y el tratamiento de los RAEE establecidos en el marco de la Directiva 
+2009/125/CE, hasta el final de su vida útil aplicando las directrices que marca la Directiva 
+2012/19/UE sobre residuos de aparatos eléctricos y electrónicos (RAEE). 
+8.- ANTIFRAUDE, CORRUPCIÓN Y CONFLCITO DE INTERÉS. 
+Resulta de aplicación al presente contrato el Plan de m edidas antifraude  de Tuvisa aprobado 
+por el Consejo de Administración  el 29 de enero de 20 25, prevención de conflicto de interés, 
+ausencia de doble financiación y adecuación al régimen de ayudas de estado de aplicación a esta 
+entidad ejecutora. 
+Por otra parte , el órgano de contratación ha recopilado y archivado las DACIs  de quienes han 
+participado en la tramitación del expediente y de los contratistas, según lo establecido en el 
+indicado plan. 
+PAGE 6
+ 
+ 
+6 
+ 
+ 
+9.-AYUDAS DE ESTADO Y AUSENCIA DE DOBLE FINANCIACIÓN 
+El órgano de contratación ha acreditado en el expediente la compatibilidad con el régimen de 
+ayudas de estado y la ausencia de doble financiación para cada expediente en los términos 
+previstos en la Orden HFP/1030/2021, de 29 de septiembre, por la que se configura el sistema 
+de gestión del Plan de Recuperación, Transformación y Resiliencia. 
+En la página 54 del Componente 6: https://cdn.mitma.gob.es/portal-web-
+drupal/prtr/documentos/16062021-Componente6_V2.pdf se dispone lo siguiente: 
+Línea de actuación 6. Digitalización del transporte  
+- Se considera ayuda de estado.  
+- Requiere notificación  
+o No cumple régimen de Minimis o Reglamento de exención por categorías GBER  
+- Es compatible con el mercado interior  
+o Art 93. TFUE: Artículo 93 (antiguo artículo 73 TCE) Serán compatibles con los 
+Tratados las ayudas que respondan a las necesidades de coordinación de los 
+transportes o que correspondan al reembolso de determinadas obligaciones 
+inherentes a la noción de servicio público. 
+10.-IDENTIFICACIÓN DEL PERCEPTOR FINAL DE LOS FONDOS. 
+El órgano de contratación  ha recopilado la información de todos los contratistas y 
+subcontratistas asociados al expediente según lo recogido en el artículo 8 de la Orden 
+HFP/1030/2021, de 29 de septiembre, por la que se configura el sistema de gestión del Plan de 
+Recuperación, Transformación y Resiliencia. Esta información será recogida en la plataforma del 
+sistema de gestión del PRTR. Igualmente, se ha recabado el Anexo IV.B Declaración de cesión y 
+tratamiento de datos de la citada orden. 
+11.-COMUNICACIÓN. 
+El expediente cumple con las obligaciones de comunicación establecidas en el artículo 9 de la 
+Orden HFP/1030/2021, de 29 de septiembre, por la que se configura el sistema de gestión del 
+Plan de Recuperación, Transformación y Resiliencia . En concreto, se modificó el anuncio de 
+licitación en el mismo medio en el que se publicó el anuncio de licitación original y se incluyó la 
+literalidad del Art.9.3.b de la HFP 1030/2021:  
+b) Para el adecuado cumplimiento de lo previsto en el artículo 10 del Acuerdo de Financiación, 
+en todos los proyectos y subproyectos que se desarrollen en ejecución del Plan de Recuperación, 
+Transformación y Resiliencia deberá exhibirse de forma correcta y de stacada el emblema de la 
+UE con una declaración de financiación adecuada que diga (traducida a las lenguas locales 
+cuando proceda) "financiado por la Unión Europea - NextGenerationEU", junto al logo del PRTR, 
+disponible en el link https://planderecuperacion.gob.es/identidad-visual. Del mismo modo, 
+todas las convocatorias, licitaciones, convenios y resto de instrumentos jurídicos, que se 
+desarrollen en este ámbito, deberán contener tanto en su encabezamiento como en su cuerpo 
+de desarrollo la siguiente referencia «Plan de Recuperación, Transformación y Resiliencia - 
+Financiado por la Unión Europea – NextGenerationEU». 
+Igualmente, se ha puesto en conocimiento del contratista la financiación del contrato con cargo 
+al PRTR, y las obligaciones nacionales y europeas derivadas de dicha financiación. 
+PAGE 7
+ 
+ 
+7 
+ 
+ 
+ 
+Componente Componente 6 « Movilidad sostenible, segura y conectada» 
+Inversión/Reforma Inversión 4:  Programa de apoyo para un transporte sostenible y 
+digital. 
+Etiquetado climático y digital 
+Submedida C06.I04o ; Campo de intervención 010 : Digitalización de 
+pymes (incluidos el negocio y el comercio electrónicos y los procesos 
+empresariales en red, los polos de innovación digital, los laboratorios 
+vivientes, los ciberemprendedores, las empresas emergentes basadas 
+en TIC, el comercio electrónico entre empresas) 
+Contribución climática 0% ; Contribución ambiental 0% ; 
+Contribución digital 100% 
+Porcentaje de financiación 100 % 
+OBJETIVOS 
+OBJETIVOS FECHA DE CUMPLIMIENTO 
+PLANIFICADA 
+DESCRIPCIÓN 
+Hito n.º 100 del 
+CID- Transporte 
+sostenible y digital: 
+inicio de las obras. 
+Cuarto trimestre de 2024 
+Inicio de las obras en todos los proyectos 
+adjudicados en el cuarto trimestre de 
+2022 (hito 99) para promover el 
+transporte sostenible y digital. Las obras 
+están relacionadas con los ámbitos 
+definidos en los criterios de selección del 
+documento de adjudicación del proyecto 
+del cuarto trimestre de 2022 (hito 99). 
+Hito n.º 101 del 
+CID: - Transporte 
+sostenible y digital: 
+finalización de las 
+obras.  
+Segundo trimestre de 2026 
+Finalización de todos los proyectos 
+adjudicados en el cuarto trimestre de 
+2022 (hito 99) para promover el 
+transporte sostenible y digital. Las obras 
+están relacionadas con los ámbitos 
+definidos en los criterios de selección del 
+documento de adjudicación del proyecto 
+del cuarto trimestre de 2022. Respecto 
+de las medidas 10 y 12, los criterios de 
+elegibilidad asegurarán el cumplimiento 
+de la Guía técnica sobre la aplicación del 
+principio de «no causar un perjuicio 
+significativo» (DO C 58 de 18.2.2021, p. 
+1), garantizando que la infraestructura 
+permita en el momento de su 
+construcción el suministro de gases 
+renovables y bajos en carbono. 
+ 
+MECANISMOS DE VERIFICACIÓN 
+Hito n.º 100 del CID - Transporte sostenible y 
+digital: inicio de las obras. 
+Documento resumen que justifique debidamente cómo 
+se ha cumplido el hito (incluyendo los elementos 
+relevantes del hito, tal y como se enumeran en la 
+PAGE 8
+ 
+ 
+8 
+ 
+ 
+descripción del hito y de la medida correspondiente en 
+el anexo del CID). Este documento incluirá como anexo 
+la lista de proyectos y, para cada uno de ellos, la 
+notificación oficial del inicio de las obras. 
+ 
+–Hito n.º 101 del CID: - Transporte sostenible y digital: 
+finalización de las obras.  
+Documento resumen en el que se justifique 
+debidamente cómo se ha cumplido el hito 
+(incluyendo los elementos relevantes del hito, tal y 
+como se enumeran en la descripción del hito y de 
+la medida correspondiente en el anexo del CID) de 
+forma satisfactoria. 
+Código de referencia del proyecto: C06.I04.P02- Programa de Ayuda al Transporte Sostenible y 
+Digital – CCAA – actuaciones propias de País Vasco 
+Localizador: C06.I04.P02.S03.PROVISIONAL.SI07 Generación de datos de transporte avanzados en el 
+municipio de Vitoria-Gasteiz 
+Objetivos cuantitativos individualizados mínimos conforme al Acuerdo de 5 de noviembre de 2021, 
+de la Conferencia Nacional de Transportes: 
+ 
+OBJETIVOS CUANTITATIVOS INDIVIDUALIZADOS MÍNIMOS 
+Indicador de importe de inversión licitado: 30/09/2023 
+Indicador de importe de inversión adjudicado: 30/06/2024 
+Finalización de los proyectos:  30/06/2026 
+ 
+En Vitoria-Gasteiz, a fecha de firma 
+ 
+Fdo.:  

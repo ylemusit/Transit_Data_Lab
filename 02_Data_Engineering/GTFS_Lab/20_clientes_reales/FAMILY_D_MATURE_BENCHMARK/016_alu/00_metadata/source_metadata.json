@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "016",
+    "operator_display_name":  "Autobuses La UniÃ³n (ALU)",
+    "operator_slug":  "alu",
+    "family":  "FAMILY_D_MATURE_BENCHMARK",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/016_alu/02_sources/gtfs_schedule/original/20260922_060136_Euskadi_La_Union.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "CDAE69F98C44D5E19BBA3F5F87791740E2477515A03249568B275F8E4E509216"
+                         },
+                         {
+                             "path":  "FAMILY_D_MATURE_BENCHMARK/016_alu/01_nap_snapshot/La Union.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "CB32406B7F9EC4FF7536A41E22D60C48CC6DEB9E85FE8E68A55A71F5D91294DD"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

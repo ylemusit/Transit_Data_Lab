@@ -1,0 +1,147 @@
+{
+  "date": "2026-09-27T03:12:21.990683+00:00",
+  "package_verification": "PASS",
+  "stage_1_execution": "INCOMPLETE",
+  "gate_readiness": "NOT_READY_FOR_HUMAN_GATE",
+  "stage_1_gate": "NOT_REACHED",
+  "stage_2": "NOT AUTHORIZED",
+  "criteria": {
+    "S1-ENTRY-01": "PASS",
+    "S1-ENTRY-02": "PASS",
+    "S1-ENTRY-03": "PASS",
+    "S1-EXIT-01": "PASS",
+    "S1-EXIT-02": "PASS",
+    "S1-EXIT-03": "PASS",
+    "S1-EXIT-04": "PASS",
+    "S1-EXIT-05": "PASS",
+    "S1-EXIT-06": "PASS",
+    "S1-EXIT-07": "PASS",
+    "S1-EXIT-08": "PASS",
+    "S1-EXIT-09": "INSUFFICIENT_EVIDENCE",
+    "S1-EXIT-10": "PASS",
+    "S1-EXIT-11": "PASS",
+    "S1-EXIT-12": "PASS"
+  },
+  "checks": [
+    {
+      "name": "BUSINESS_MASTER_ROADMAP.md: 15 criteria in order, no omissions or duplicates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "STAGE_1_CRITERIA_REEVALUATION.md: 15 criteria in order, no omissions or duplicates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Criterion results: 14 PASS and EXIT-09 insufficient",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "STAGE_1_CRITERIA_REEVALUATION.md: conservative current outcome",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BUSINESS_STATUS.md: conservative current outcome",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "DECISION_LOG.md: conservative current outcome",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Decision ID unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Roadmap formal name and categories",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Gap plan only five authorized columns and one affected criterion",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Existing register and reused annex retain 36 IDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Five counted capabilities documented EXISTING",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All eight ASM reviewed without state change",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Previous incomplete attempt remains explicit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Local references resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Git status",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git diff_names",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Git diff_check",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "modified_document_sha256": {
+    "07_Business\\01_Governance\\BUSINESS_MASTER_ROADMAP.md": "8386ef030f4a9ec596f0fd24299ce8fa4cb8572d3ae0431a19a28f157f1ea863",
+    "07_Business\\03_Market\\STAGE_1_CRITERIA_REEVALUATION.md": "5f8a23ec1dc4b98c6b27d026893de39b27ed13abb92b6b74eeb8c0ebb668b777",
+    "07_Business\\03_Market\\STAGE_1_EVIDENCE_GAP_PLAN.md": "263c1cdd4173efc7b0987dd34294aadd2372f39a13121c20a7413ca4c3ac962b",
+    "07_Business\\01_Governance\\DECISION_LOG.md": "c1365bed5250c068a666d9ac5fc2ee142acb66a581abfd4da422dd091ec28974",
+    "07_Business\\BUSINESS_STATUS.md": "d1d430698647726ae4d8a4486aafb79fd96a4f43dfeba18cce47614faff2372f",
+    "07_Business\\03_Market\\stage_1_amendment\\verify_amendment.py": "95ecd90cde5569d29b85576052d26715af89d8934df5c9e47205c9811c13e866"
+  },
+  "git": {
+    "status": {
+      "exit_code": 0,
+      "stdout": "?? .gitignore\n?? 02_Data_Engineering/\n?? 03_Compliance/\n?? 07_Business/\n?? PROJECT_CURRENT_STATE.md\n?? project_baseline.json\n?? reports/\n",
+      "stderr": ""
+    },
+    "diff_names": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "diff_check": {
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "new_external_evidence": 0,
+  "assumption_changes": [],
+  "repository_wide_hash": false,
+  "resource_guard_triggered": false,
+  "limitations": [
+    "Document structure and references only; criterion judgments are in the review.",
+    "No human gate approval, external freshness or global immutability certification.",
+    "Historical attempt/evidence untouched; no historical verifier rerun.",
+    "Only six written files hashed; V1 and technical sources not hashed."
+  ]
+}

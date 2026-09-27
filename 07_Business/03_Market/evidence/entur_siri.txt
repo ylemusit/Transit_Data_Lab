@@ -1,0 +1,238 @@
+
+
+    General information SIRI - Håndbok N801 (SIRI/NeTEX) - Entur
+
+    
+
+    
+
+        
+
+                        
+
+                        
+
+                        
+
+    
+
+        
+
+    
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+
+    
+
+            
+
+        
+
+        
+
+    
+
+        
+
+            
+
+                
+
+        
+
+        
+
+            
+
+            
+
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device.Atlassian cookies and tracking notice, (opens new window)
+Atlassian uses cookies to improve your browsing experience, perform analytics and research, and conduct advertising. Accept all cookies to indicate that you agree to our use of cookies on your device. Atlassian cookies and tracking notice, (opens new window)
+PreferencesOnly necessaryAccept all
+
+Collapse sidebar
+
+Switch sites or apps
+
+    
+
+Confluence
+Entur
+
+CreateCreate
+
+Help
+Log in
+
+Spaces
+
+Apps
+
+Håndbok N801 (SIRI/NeTEX)
+
+More actions
+
+Back to top
+
+Content
+
+Results will update as you type.
+
+Håndbok N801
+
+Nordic NeTEx Profile
+
+Nordic SIRI Profile
+
+General information SIRI
+
+SIRI Profile Documents
+
+SIRI Examples Catalogue
+
+Norwegian GBFS Profile
+
+Using our services
+
+List of current Codespaces
+
+Data Quality Reports
+
+You‘re viewing this with anonymous access, so some content might be blocked.Close
+
+Håndbok N801 (SIRI/NeTEX)
+/
+General information SIRI
+
+Updated 10. Nov 2020
+
+More actions
+
+General information SIRI
+
+By Kristian Syversen (Unlicensed)
+
+10. Nov 2020
+
+10 min
+
+Add a reaction
+
+ 
+
+Version
+Current version for Norwegian SIRI profile is:   v1.1  (last changed Nov 10, 2020)
+ 
+
+1 Preface
+2 Introduction
+2.1 Service Interface for Real Time Information (SIRI)
+2.2 SIRI high-level model
+2.2.1 Services supported by the Norwegian SIRI-standard
+2.3 What the profile does not include
+2.4 Terminology
+2.4.1 SIRI-specific objects and formats
+2.4.2 General requirements on data
+2.5 Using ID's
+2.5.1 Fixed ID's
+3 Exchanging data
+3.1 Asynchronous
+3.1.1 Publish/Subscribe - Direct delivery
+3.1.2 Publish/Subscribe - Fetched delivery
+3.2 Synchronous
+3.2.1 Request/response
+3.3 General requirements
+3.3.1 Standard values
+3.3.2 Data correctness
+3.3.3 Data completeness
+3.3.4 Data content
+3.3.5 Data freshness
+4 Common components
+4.1 Message objects
+4.1.1 ServiceDelivery
+4.2 Data types
+4.2.1 NaturalLanguageStringStructure
+4.2.2 NaturalLanguagePlaceNameStructure
+4.2.3 FramedVehicleJourneyRefStructure 
+
+Preface
+A Norwegian standard for exchanging uniform real-time data is extremely valuable for:
+Entur AS on behalf of Jernbanedirektoratet
+...in order to efficiently collect all real-time data from each data provider, ensure consistency of data, and increase data quality. This allows the creation of multimodal information systems which may be used to implement nationwide journey planning solutions and publicize business neutral information to all interested parties.
+for travellers
+...in order to present relevant, and up-to-date, high-quality journey suggestions.
+for public transport operators
+...in order to re-use the data in their own journey planning-, ticketing-, and information systems, and offer a better service to their customers.
+for third party service providers
+...in order to minimize unnecessary costs related to supporting multiple different exchange formats, and to contribute to continued growth of standardized public transport data exchange.
+
+Introduction
+
+Service Interface for Real Time Information (SIRI)
+Service Interface for Real Time Information (SIRI) is a CEN-specification (CEN/TS 15531, prCEN/TS-OO278181) for exchanging real-time data for public transport and vehicles. Its development was a cooperative effort between France, Germany (Verband Deutscher Verkehrsunternehmen, VDV), Scandinavia and Great Britain (UK Real Time Interest Group, RTIG). The standard is based on the reference model Transmodel (CEN TC278, EN12896) and contains a general model for real-time data and an XML Schema for its implementation.
+The SIRI format is used to update planned data with short term changes and deviations in the form of vehicle positions, estimated arrival times, and relevant textual messages.
+The guidelines for using SIRI 2.0 XML Schema are specified by a local (Norwegian) profile of the SIRI format, which accounts for existing systems, as well as future needs. Like the Nordic NeTEx Profile, which defines the planned and fixed portion of public transport data, the Norwegian SIRI profile describes how- and which parts of the wider format to use. It is based on Transmodel 5.1 (EN 12896: 2006) which in turn is based on the standards of NEPTUNE (AFNOR - PR NF P99-506 desember 2009) and IFOPT (EN 28701 - Identification of Fixed Objects in Public Transport). The purpose of the profile is to clarify which events and data are expected to be included in a comprehensive data exchange and to make the implementation of common standards easier.
+SIRI defines a standardised communication layer with procedures and mechanisms for exchanging data by means of a format which is openly described to the public and in wide use around the world. 
+
+Well known interface
+
+Openness
+
+Scalability
+
+Flexible for particular needs
+
+Re-useability for architecture, infrastructure and services (cost-saving)
+
+Content independent from transfer protocols
+
+Standardised publication and message handling 
+
+WebService (HTTP/SOAP with request/response) and WS-PubSub
+
+Supports common mechanisms for access control, versioning and error handling
+
+Configurable updating and filtering
+ 
+
+Links for more information about the formats
+
+SIRI: https://www.vdv.de/siri.aspx
+
+Transmodel: http://transmodel-cen.eu
+
+NeTEx: http://netex-cen.eu/
+
+SIRI high-level model
+Overview of the functional services from the official SIRI-documentation:
+
+Open 
+
+        
+
+    {"serverDuration": 35, "requestCorrelationId": "84cc821ad0e44444ab93d3f00ad7c3e3"}
+

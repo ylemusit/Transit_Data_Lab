@@ -1,0 +1,2118 @@
+PAGE 1
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 
+ 
+PLIEGO DE CONDICIONES ADMINISTRATIVAS QUE HAN DE 
+REGIR EL CONTRATO DE SERVICIOS DE DESARROLLO, 
+DESPLIEGUE Y VALIDACIÓN DE DATOS DE TRANSPORTE 
+AVANZADOS EN LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX. 
+ 
+ 
+Nº expediente: 2022-14LT 
+ 
+ 
+ 
+ 
+ 
+ 
+TRAMITACIÓN: Ordinaria 
+ 
+PROCEDIMIENTO DE ADJUDICACIÓN: Abierto Simplificado 
+ 
+FORMA: Criterios de adjudicación; Precio y Juicios de valor 
+ 
+Contrato NO sujeto a regulacion armonizada 
+ 
+ 
+ 
+ 
+Forma Presentación ofertas; 2 SOBRES 
+ 
+ 
+ 
+CPV : 72400000-4 - Servicios de Internet  (Principal) 
+ 
+ 
+ 
+ 
+PLIEGO DE CONDICIONES ADMINISTRATIVAS PARTICULARES 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 2
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 2  
+ 
+I. ELEMENTOS DEL CONTRATO 
+ 
+ 
+1. RÉGIMEN JURÍDICO DEL CONTRATO. DOCUMENTACIÓN CONTRACTUAL. 
+ 
+ El contrato, de carácter privado, se califica de “servicios” y se regirá: 
+ 
+a) En cuanto a su preparación y adjudicación, por el presente Pliego de 
+Condiciones Administrativas Particulares, por el Pliego de Prescripciones Técnicas 
+y, en lo no previsto en los mismos, por la Ley 9/2017 de Contratos del Sector 
+Público, por la que se transponen al ordenamiento jurídico español las Directivas 
+del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE, de 26 de febrero 
+de 2014,(en adelante LCSP), y por las disposiciones que la desarrollen o 
+modifiquen, de conformidad con el art. 26.3 LCSP. 
+ 
+b) En cuanto a sus efectos y extinción, el contrato se regirá por las normas de 
+derecho privado, por el Pliego de Condiciones Administrativas Particulares, y por el 
+Pliego de Prescripciones Técnicas, todo ello sin perjuicio de lo expuesto en el art. 
+319 LCSP. 
+ 
+ Tendrán carácter contractual, por este orden, y sin perjuicio de los que se 
+indiquen expresamente en el pliego de condiciones, los siguientes documentos:  
+1) El propio contrato 
+2) El presente Pliego de Condiciones Administrativas Particulares (PCAP) 
+3) El Pliego de Prescripciones Técnicas (PPT) 
+4) La Oferta de la licitadora 
+ 
+ 
+ 
+2.- OBJETO Y JUSTIFICACIÓNES 
+ 
+OBJETO  
+ 
+ Transportes Urbanos de Vitoria, S.A., en adelante TUVISA, tiene como 
+objetivo integrar un sistema de transporte sostenible, capaz de informar a la 
+población de la oferta de transporte público de manera integral y con calidad.  
+TUVISA hace unos años comenzó a generar una serie de archivos de intercambio 
+de información denominados GTFS para publicar la oferta de transporte público 
+mediante especificaciones generales del suministro de datos para el transporte 
+público. En este momento, la necesidad de completar esa información en los 
+archivos de intercambio hace que nazca esta licitación para conseguir compartir 
+una mayor información de manera libre, fácil y accesible. 
+ 
+PAGE 3
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 3  
+ 
+ 
+ 
+JUSTIFICACION DE LA NECESIDAD 
+ 
+ Durante estos años se ha conseguido un grado de automatización de la 
+información muy alto estableciendo una arquitectura de comunicaciones entre los 
+proveedores del servicio de ayuda a explotación.  
+Además, para divulgar esta información, el AYUNTAMIENTO DE VITORIA-
+GASTEIZ dispone de una base de datos donde ofrece información estática y 
+dinámica de este modo de transporte y mediante App ofrece el servicio de un 
+planificador de transporte. Es más, los datos de transporte público también se 
+ofrecen en Open data a través del Gobierno Vasco que también es alimentado de 
+este mismo canal. A través de este contrato se pretende contratar la completa 
+generación, despliegue y validación de estos datos en formato GTFS, GTFS-RT, 
+SIRI y NETEX para los próximos cuatro años. 
+ 
+JUSTIFICACIÓN DE LA INSUFICIENCIA DE MEDIOS 
+ TUVISA, S.A, no dispone de personal propio para realizar este servicio. 
+ 
+  
+JUSTIFICACIÓN DE LA NO DIVISIÓN EN LOTES. 
+ 
+No se puede dividir el contrato en lotes, ya que el servicio que se propone en este 
+documento debe ser realizado en armonía con los datos, para una futura 
+generación de archivos únicos. Además, este contrato contempla no solo la 
+generación, sino su despliegue y validación.  
+ 
+ 
+3.- CAPACIDAD ECONÓMICA SUFICIENTE  
+ 
+ TUVISA dispone de capacidad económica suficiente para hacer frente al gasto 
+derivado de este contrato. 
+ 
+ 
+ 
+4. PRESUPUESTO DE LICITACIÓN Y VALOR ESTIMADO 
+ 
+ A todos los efectos, se entenderá que el Precio del Contrato será el que 
+resulte de la adjudicación; comprenderá todos los gastos directos e indirectos que 
+la empresa contratista deba realizar para la normal ejecución de la prestación 
+contratada, y no podrá en ningún caso exceder del presupuesto base de licitación. 
+ 
+PAGE 4
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 4  
+  
+En el precio ofertado se entienden incluidos todos los conceptos, como son 
+impuestos, gastos, tasas y arbitrios de cualquier esfera fiscal y el beneficio 
+industrial del contratista.  
+ 
+En la proposición económica deberá indicarse, como partida independiente, el 
+importe del Impuesto sobre el Valor Añadido que deba ser repercutido. 
+ 
+       PRESUPUESTO BASE DE LICITACIÓN  
+ 
+TOTAL por los 4 años de duración del contrato;      31.866,25 € 
+IVA 21%;                      6.691,91 € 
+TOTAL PRESUPUESTO DE LICITACIÓN;       38.558,16 € 
+ 
+   
+No se prevén prórrogas. No procede la revisión de precios. 
+ 
+ 
+5.- DURACIÓN DEL CONTRATO 
+ 
+ Con fecha 30 de Octubre de 2022, el adjudicatario debe estar preparado para 
+publicar todos los ficheros de los GTFS y GTFS-RT. Su posterior conversión a los 
+formatos SIRI Y NETEX tiene fecha límite 15 de Noviembre de 2022. 
+ 
+El contrato tendrá una duración de 4 años desde la formalización, contando como 
+período de generación, despliegue y validación desde el primer día del contrato. 
+ 
+ No obstante lo establecido anteriormente, cuando al vencimiento del contrato 
+no se hubiera formalizado el nuevo contrato que garantice la continuidad de la 
+prestación a realizar por la contratista como consecuencia de incidencias 
+resultantes de acontecimientos imprevisibles para el órgano de contratación 
+producidas en el procedimiento de adjudicación y existan razones de interés 
+público para no interrumpir la prestación, se podrá prorrogar el contrato originario 
+hasta que comience la ejecución del nuevo contrato y en todo caso por un periodo 
+máximo de nueve meses, sin modificar las restantes condiciones del contrato, 
+siempre que el anuncio de licitación del nuevo contrato se haya publicado con una 
+antelación mínima de tres meses respecto de la fecha de finalización del contrato. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 5
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 5  
+ 
+ 
+ 
+ 
+ 
+6.- CAPACIDAD PARA CONTRATAR. 
+ 
+De acuerdo con el art. 159.4.a), todos los licitadores que se presenten a 
+licitaciones realizadas a través de este procedimiento simplificado deberán 
+estar inscritos en el Registro Oficial de Licitadores y Empresas Clasificadas 
+del Sector Público,  o en el Registro Oficial de Licitadores y Empresas 
+Clasificadas de la Comunidad Autónoma de Euskadi , en la fecha final de 
+presentación de ofertas. La presentación por las empresas licitadoras del 
+certificado de estar inscrito en cualquiera de estos registros oficiales, acreditará, 
+salvo prueba en contrario, las condiciones de aptitud de las empresas en cuanto a 
+su personalidad y capacidad de obrar, representación, habilitación profesional, 
+clasificación y demás circunstancias inscritas, así como la concurrencia o no 
+concurrencia de las prohibiciones de contratar que deban constar en el mismo (art. 
+96 LCSP) 
+   
+ Las circunstancias relativas a la capacidad, solvencia y ausencia de 
+prohibiciones de contratar, deberán concurrir en la fecha final de presentación de 
+ofertas y subsistir en el momento de la perfección del contrato. Las prohibiciones 
+de contratar deberán continuar al menos hasta la formalización del contrato. 
+ 
+ En todo caso la Mesa o el órgano de contratación, en orden a garantizar el 
+buen fin del procedimiento, podrá exigir en cualquier momento anterior a la 
+adopción de la propuesta de adjudicación que las personas licitadoras aporten 
+documentación acreditativa del cumplimiento de las condiciones establecidas para 
+ser adjudicatario del contrato. 
+ 
+ 6.1. Aptitud y Capacidad . 
+ 
+ Solo podrán contratar con el sector público las personas físicas o jurídicas que 
+reúnan las condiciones de aptitud y capacidad previstas en los arts. 65 a 70 de la 
+LCSP, que estén al corriente en el cumplimiento de las disposiciones legales 
+vigentes, especialmente en materia de empleo de personas con discapacidad y de 
+igualdad de género, y que no estén incursas en prohibición de contratar según el 
+art. 71 de la LCSP. 
+ 
+ 
+ 6.2. Solvencia económico-financiera y técnica  
+ 
+  
+ 
+PAGE 6
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 6  
+ 
+La licitadora a cuyo favor se tramite la propuesta de adjudicación deberá acreditar 
+estar en posesión de las condiciones mínimas de solvencia económico-financiera y 
+técnica que aquí se exponen. 
+ 
+  6.2.1. La solvencia económica y financiera 
+ 
+ La inscripción en el Registro Oficial de Licitadores y Empresas Clasificadas del 
+Sector Público  (ROLECE) o en su análogo de la Comunidad Autónoma de 
+Euskadi, ya acreditará frente a todos los órganos de contratación del sector 
+público, a tenor de lo en él reflejado y salvo prueba en contrario, las condiciones de 
+solvencia económica y financiera de la empresa licitadora. 
+ Las licitadoras deberán inexcusablemente estar al corriente del cumplimiento 
+de las obligaciones tributarias y la seguridad Social que tengan la obligación de 
+atender. TUVISA podrá exigir en cualquier momento que aporten documentación 
+acreditativa a este respecto. 
+ 
+  6.2.2. La solvencia técnica mínima requerida será: 
+ 
+ La licitadora, al acreditar estar inscrita en el ROLECE o en su análogo de la 
+Comunidad Autónoma de Euskadi, no deberá acreditar la solvencia técnica o 
+profesional mediante otra documentación. 
+ 
+ 
+ 
+II. ADJUDICACIÓN DEL CONTRATO 
+ 
+ 
+7.- FORMA DE ADJUDICACIÓN. 
+ 
+ En la adjudicación del contrato, el órgano de contratación se adaptará al 
+procedimiento abierto simplificado establecido en el artículo 159 de la LCSP. 
+ 
+ 
+8.- CRITERIOS DE ADJUDICACIÓN.  
+ 
+La puntuación máxima es de 100 puntos. La puntuación máxima a alcanzar 
+por precio son 75 puntos; los otros 25 puntos se podrán obtener con los criterios 
+subjetivos que a continuación se establecen. 
+ 
+ 
+ 8.1. Precio del contrato. Hasta 75 puntos.  
+ La valoración de las ofertas económicas se realizará en base a las bajas 
+presentadas por las licitadoras en su propuesta económica, calculado de la 
+siguiente forma: 
+PAGE 7
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 7  
+ 
+- Al PRESUPUESTO DE LICITACIÓN se le asignará cero puntos. 
+- El resto de ofertas se valorarán con la aplicación de la siguiente fórmula: 
+
+
+
+
+
+
+Baja
+Baja
+xPuntuaciónPuntuación
+máxima
+oferta
+máximaoferta  
+Puntuación maxima = Puntuación máxima posible a obtener 
+Baja oferta= Porcentaje de baja de la oferta a valorar 
+Baja máxima= Mayor porcentaje de baja de las ofertas presentadas. 
+ 
+Cuando el mayor porcentaje de baja ofertado por las ofertas admitidas sea 
+inferior a un 10% el valor de este parámetro será 10%. 
+ 
+ 
+8.2. Otros criterios de juicio de valor. Hasta 25 puntos. 
+1º) Generación de archivos GTFS: hasta 10 puntos 
+Se valorará con hasta 10 puntos la memoria explicativa que contenga el 
+Programa/ Plan de Trabajo y metodología propuesto en la ejecución del servicio de 
+generación, despliegue y validación, de acuerdo con los criterios y exigencias 
+establecidos en el pliego de prescripciones técnicas de la licitación. 
+ 
+Se deberán justificar detalladamente las propuestas de actuación, su 
+metodología, así como la disponibilidad de medios humanos destinados a TUVISA; 
+se valorarán la cantidad, y el tipo y calidad de los recursos ofrecidos, así como su 
+idoneidad al objeto del contrato. 
+ 
+Este Programa/Plan de Trabajo no admitirá variantes, y se valorará la mejor 
+adecuación de este al objeto del contrato.  
+2º) Vincular la información con el tiempo real: hasta 5 puntos 
+Se valorará con hasta 5 puntos la metodología propuesta para la vinculación de 
+la información en tiempo real. 
+3º) Real Time GTFS: hasta 5 puntos 
+Se valorará con hasta 5 puntos la memoria explicativa que contenga el 
+Programa/ Plan de Trabajo y metodología propuesto en la ejecución del servicio de 
+generación, despliegue y validación, de acuerdo con los criterios y exigencias 
+establecidos en el pliego de prescripciones técnicas de la licitación. 
+PAGE 8
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 8  
+4º) SIRI y NeTEx: hasta 5 puntos 
+ 
+Se valorará con hasta 5 puntos la memoria explicativa que contenga el 
+Programa/ Plan de Trabajo y metodología propuesto en la ejecución del servicio de 
+generación, con su futuro despliegue y validación, de acuerdo con los criterios y 
+exigencias establecidos en el pliego de prescripciones técnicas de la licitación. 
+ 
+9. PUBLICIDAD DEL PROCEDIMIENTO Y PRESENTACIÓN DE LAS 
+PROPOSICIONES 
+ Se anunciará la licitación en el Perfil de Contratante de TRANSPORTES 
+URBANOS DE VITORIA, S.A. (TUVISA), que se encuentra alojado en la 
+Plataforma de la Contratación Pública en Euskadi, donde también podrán 
+consultarse los pliegos y la documentación complementaria de este expediente así 
+como cualquier otra información de utilidad.  
+ De acuerdo con lo previsto en el art.138.3 LCSP, las licitadoras podrán 
+solicitar información adicional o aclaraciones sobre los pliegos y resto de 
+documentación complementaria relativa al presente procedimiento a través de 
+correo electrónico dirigido a la dirección tuvisa.contratacion@vitoria-gasteiz.org . 
+Dichas consultas podrán realizarse, al menos 10 días antes del transcurso del 
+plazo de presentación de proposiciones.  
+ Podrán presentar su oferta las personas naturales o jurídicas, españolas o 
+extranjeras, que reúnan los requisitos necesarios según la cláusula 6 del presente 
+Pliego.  
+ Las proposiciones de las empresas interesadas deberán ajustarse a los 
+pliegos y documentación que rigen la licitación. La presentación de la proposición 
+supone la aceptación incondicionada por las licitadoras del contenido de la 
+totalidad de las cláusulas o condiciones de este pliego, del resto de documentos 
+contractuales, de la exactitud de los datos presentados y de que reúne todas y 
+cada una de las condiciones exigidas para la ejecución del contrato sin salvedad 
+alguna. 
+ 
+ Cada empresa licitadora no podrá presentar más de una proposición. 
+Lugar: Los interesados deberán hacer llegar las proposiciones a las oficinas de 
+TUVISA, en la C/ Agirrelanda n º 2, de Vitoria-Gasteiz (CP 01013).  
+Plazo: Dentro de las horas de oficina y hasta las 13 horas del décimo quinto día 
+natural contados desde el siguiente a la publicación de la licitación en el perfil de 
+PAGE 9
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 9  
+contratante. En caso de que ese día fuera inhábil, el último día será el primer día 
+hábil siguiente. Las proposiciones presentadas fuera de plazo no serán admitidas. 
+Forma: Las proposiciones deberán presentarse o bien presencialmente o bien por 
+correo en la forma que establece el artículo 80.4 del Reglamento General de 
+Contratación del Estado, debiendo justificarse en dichas proposiciones la fecha de 
+imposición del envío en la oficina de Correos y anunciar al órgano de contratación 
+la remisión de la oferta, mediante correo electrónico el mismo día a la dirección 
+tuvisa@vitoria-gasteiz.org. Sin la concurrencia de ambos requisitos no será 
+admitida la proposición si es recibida  por el órgano de contratación con 
+posterioridad a la fecha de la terminación del plazo señalado en el anuncio. 
+Transcurridos, no obstante, diez días naturales siguientes a la indicada fecha, sin 
+haberse recibido la proposición, ésta no será admitida en ningún caso. 
+ 
+Las licitadoras deberán presentar DOS SOBRES cerrados, con la 
+documentación que luego se especifica, indicando en cada uno de ellos, el 
+nombre y nº de expediente del procedimiento al que concurre, denominación 
+y CIF de la empresa, nombre y apellidos de quien firma la proposición y 
+carácter con que lo hace, y dirección de correo electrónico a la que efectuar 
+las comunicaciones relativas al procedimiento de licitación. Los sobres 
+deberán ser necesariamente firmados por la licitadora o persona que lo 
+representa. 
+  Toda la documentación contenida en cada uno de los sobres se 
+presentará en formato papel y digital (archivos pdf), y su contenido será 
+confidencial hasta el momento fijado para su apertura. En caso de discrepancia, 
+prevalecerá la información contenida en soporte digital que se incorporará al 
+expediente de contratación. 
+El soporte digital será individual para cada sobre. La presentación de un único 
+soporte digital comprensivo de toda la información, dará lugar a la exclusión de la 
+oferta por vulneración del secreto de proposiciones. 
+ 
+TUVISA realizará las notificaciones referentes al presente procedimiento a 
+través de la dirección de correo electrónico que a tal efecto indiquen las licitadoras. 
+  TUVISA se reserva el derecho a realizar las labores de comprobación que 
+considere oportunas o de exigir cuanta documentación adicional entienda 
+necesaria con la finalidad de comprobar la veracidad de la información aportada 
+por las licitadoras según esta cláusula. 
+  El contenido de la proposición presentada adquirirá carácter contractual 
+en caso de adjudicación. 
+ 
+PAGE 10
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 10  
+   
+DOCUMENTACIÓN A INCLUIR EN EL SOBRE 1 
+Las licitadoras deberán de confeccionar e incluir en este sobre 1 los 
+documentos que sean precisos para la valoración de los criterios de 
+adjudicación que se determinan en la cláusula 8.2  (criterios subjetivos de juicio 
+de valor), en los que se desarrollen de la forma más detallada posible todos y cada 
+uno de los aspectos especificados. 
+DOCUMENTACIÓN A INCLUIR EN EL SOBRE 2 
+En el sobre de la licitación se incluirá la “Documentación administrativa”, y la 
+“Proposición económica”: 
+ A.- Documentación administrativa 
+1.-  Se presentará, debidamente cumplimentada, una declaración responsable que 
+se ajustará al formulario del Documento Europeo Único de Contratación ( DEUC), 
+que deberá estar firmada y con la correspondiente identificación, en la que la 
+licitadora ponga de manifiesto lo siguiente: 
+I. Que la sociedad está válidamente constituida y que conforme a su objeto social 
+puede presentarse a la licitación, así como que el firmante de la declaración 
+ostenta la debida representación para la presentación de la proposición y de 
+aquella. 
+II. Que cuenta con la correspondiente clasificación, en su caso, o que cumple los 
+requisitos de solvencia económica, financiera y técnica o profesional exigidos 
+para este procedimiento. 
+III. Que no está incursa en prohibición de contratar según el art.71 LCSP. 
+IV. La designación de una dirección de correo electrónico en que efectuar las 
+notificaciones (deberá coincidir con la indicada en el exterior del sobre). 
+  En la “Plataforma de Contratación en Euskadi” constan las instrucciones 
+para la cumplimentación del DEUC, que es electrónica, pero su presentación se 
+realizará en versión papel y se incluirá en el sobre. 
+  En todos los supuestos en que varios empresarios concurran agrupados 
+en una unión temporal, se aportará un DEUC por cada empresa participante, 
+firmado e identificado, en el que figurará la información pertinente. Adicionalmente, 
+se incluirá también el compromiso de constituir la unión temporal por parte de los 
+empresarios que sean parte de la misma, en el que se indiquen los nombres y 
+circunstancias de los que la constituyan y la participación de cada uno, así como 
+que asumen el compromiso de constituirse formalmente en U.T.E. en caso de 
+resultar adjudicatarias del contrato, y designar una persona que durante la vigencia 
+PAGE 11
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 11  
+del contrato ostentará la plena representación de todas las integrantes ante 
+TUVISA (Anexo V) 
+ 2.- Las licitadoras deberán aportar certificado de estar inscritos en el Registro 
+Oficial de Licitadores y Empresas Clasificadas del Sector Público, o en el Registro 
+Oficial de Licitadores y Empresas Clasificadas de la Comunidad Autónoma de 
+Euskadi. Junto con el Certificado, aportará igualmente declaración responsable 
+en la que se manifieste que las circunstancias reflejadas en la certificación del 
+ROLECE o el registro de la C.A de Euskadi no han experimentado variación, 
+redactada conforme al modelo que figura en este pliego en el Anexo III. 
+3.- Las licitadoras deberán suscribir y presentar  el modelo de Declaración 
+Responsable de la persona firmante respecto a la oferta que presenta Anexo II. 
+4.- Las licitadoras deberán suscribir y presentar el compromiso de cumplimiento de 
+las condiciones especiales de ejecución establecidas en la cláusula 15. ( Anexo 
+III). 
+ 5.- Las empresas extranjeras, si el contrato va a ejecutarse en España, aportarán 
+obligatoriamente el anexo VI que contiene una declaración de someterse a la 
+jurisdicción de los Juzgados y Tribunales españoles de cualquier orden, para todas 
+las incidencias que de modo directo o indirecto pudieran surgir del contrato, con 
+renuncia, en su caso, al fuero jurisdiccional extranjero que pudiera corresponder a 
+la persona licitadora. 
+ 6.- Las licitadoras deberán incluir el Anexo VIII  de pertenencia a grupos de 
+empresas.  
+7.- Las licitadoras presentarán, en su caso, una declaración designando qué 
+documentos y/o datos presentados son, a su parecer, constitutivos de ser 
+considerados confidenciales, tal como se indica en el art.133 LCSP. Anexo VII. 
+ 
+B.-  Proposición económica  
+ 
+  Contendrá el modelo de proposición económica adjunto a este pliego 
+como Anexo I  firmado por la licitadora o persona que lo represente. En él se 
+especificará el precio del contrato que no podrá ser superior al presupuesto de 
+licitación. En el precio ofertado se entienden incluidos todos los conceptos, 
+incluidos los impuestos, gastos, tasas y arbitrios de cualquier esfera fiscal y el 
+beneficio industrial del contratista. En la proposición económica deberá indicarse, 
+como partida independiente, el importe del Impuesto sobre el Valor Añadido que 
+deba ser repercutido.  
+ 
+PAGE 12
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 12  
+  No se aceptarán  y será desechada por la Mesa, en resolución motivada 
+aquellas proposiciones económicas que: 
+ Tengan contradicciones, omisiones, errores o tachaduras que impidan conocer 
+claramente lo que el poder adjudicador estime fundamental para considerar la 
+oferta. Aquellas que carezcan de concordancia con la documentación examinada y 
+admitida 
+ Excedan del presupuesto máximo de licitación 
+ Varíen sustancialmente el modelo establecido o comporten error manifiesto en el 
+importe de la proposición 
+ En las que existiese reconocimiento por parte de la licitadora de que adolece de 
+error o inconsistencia que la hagan inviable 
+ 
+  Por el  contrario, el cambio u omisión de algunas palabras del modelo, con 
+tal de que el uno o la otra no alteren su sentido, no será causa para el rechazo de 
+la proposición.  
+   
+  Toda la documentación aportada por la licitadora que contenga datos de 
+carácter personal será utilizada por TUVISA a los solos efectos de valorar los 
+criterios de adjudicación contenidos en el presente pliego y serán tratados con las 
+medidas de seguridad establecidas en la Ley Orgánica 3/2018, de 5 de diciembre, 
+de Protección de Datos Personales y Garantía de los Derechos Digitales. 
+Criterios de desempate 
+  En los casos en que, tras la aplicación de los criterios de adjudicación, se 
+produzca un empate entre dos o más ofertas, se aplicará lo dispuesto en el 
+art.147.2 LCSP. 
+ 
+ 
+10. SELECCIÓN DE LA PERSONA CONTRATISTA, ADJUDICACIÓN Y 
+FORMALIZACIÓN 
+  10.1. Apertura de las ofertas y selección del adjudicatario  
+  Concluido el plazo de presentación de proposiciones, el contenido de los 
+sobres nº 1 con los criterios de un juicio de valor, se entregará  al personal que los 
+va a valorar técnicamente, en un plazo no superior a 7 días. 
+La Mesa de Contratación procederá en acto público a la apertura de los 
+sobres de las licitadoras presentadas: en primer lugar, se dará lectura del resultado 
+de los criterios relativos a juicios de valor del sobre nº 1 y posteriormente se abrirá 
+el sobre nº 2,  para la lectura y comprobación de la idoneidad de la documentación 
+presentada. 
+PAGE 13
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 13  
+Posteriormente, tras dicho acto público, se examinará que las ofertas reúnan 
+los requerimientos del pliego con el objetivo de admitirlas o excluirlas y en su caso, 
+valorar y realizar la propuesta de adjudicación en favor de la licitadora que haya 
+obtenido la mejor puntuación. 
+En caso de detectarse errores subsanables en la documentación 
+administrativa presentada, se comunicará por correo electrónico o teléfono a la 
+licitadora, otorgándole un plazo máximo de 3 días hábiles para su subsanación. La 
+Mesa acordará en su caso la exclusión de las candidatas o licitadoras que no 
+subsanen en plazo los defectos encontrados o que éstos no sean subsanables. La 
+propuesta económica (Anexo I), no es susceptible de subsanación. 
+Asimismo, se comprobará en el ROLECE la documentación de la empresa, 
+su inscripción, el poder de representación, su solvencia o clasificación y su 
+exclusión de las prohibiciones de contratar. 
+A continuación, se requerirá a la empresa propuesta como adjudicataria para 
+que aporte justificante de haber constituido la garantía definitiva especificada en el 
+siguiente punto, para que aporte los documentos señalados en el Pliego de 
+prescripciones técnicas, así como la copia de la póliza del seguro de 
+responsabilidad civil exigido en la cláusula 14 del presente pliego (y el último 
+recibo abonado), en el plazo improrrogable de 7 días hábiles desde que se le 
+realice el requerimiento. De no cumplimentarse adecuadamente el requerimiento 
+en el plazo señalado, se entenderá que la licitadora ha retirado su oferta, 
+procediéndose a exigirle el importe del 3 por ciento del presupuesto base de 
+licitación, IVA excluido, en concepto de penalidad, y se procederá a solicitar dicha 
+documentación a la siguiente licitadora mejor clasificada, otorgándole el 
+correspondiente plazo. 
+Finalmente, efectuará la propuesta de adjudicación a favor de la oferta con la 
+mayor puntuación, propuesta que será posteriormente elevada al Órgano de 
+Contratación, que es el Consejo de Administración de TUVISA, el cual procederá a 
+la adjudicación del contrato a la vista del informe de la Mesa de Contratación. La 
+propuesta de adjudicación no crea derecho alguno a favor de la licitadora 
+propuesta frente a TUVISA. No obstante, cuando el órgano de contratación no 
+adjudique el contrato de acuerdo con la propuesta formulada, deberá motivar su 
+decisión. 
+ 
+  10.2. Criterios para la apreciación de bajas desproporcionadas o 
+temerarias 
+  Se apreciará la existencia de valores anormales o desproporcionados, 
+atendiendo al tenor del artículo 149 de la LCSP, así como al artículo 85 de su 
+PAGE 14
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 14  
+Reglamento. Aquellas ofertas cuya baja se entienda como anormalmente baja, de 
+acuerdo con lo establecido en art. 85 del Reglamento general de la ley de 
+Contratos de las Administraciones Públicas, deberán justificar detalladamente su 
+viabilidad técnica y económica, tal y como se especifica en el art 149 LCSP, o 
+serán excluidas de la licitación. 
+Así pues, en el caso de que la Mesa de Contratación identifique que la oferta 
+de la licitadora que haya obtenido la mejor puntuación se presuma que es 
+anormalmente baja, es decir, que esté incursa en presunción de anormalidad, 
+siguiendo el procedimiento previsto en el art.149 LCSP, requerirá a la licitadora 
+que la hubiere presentado dándole audiencia para que, en el plazo máximo de 5 
+días hábiles desde el envío de la correspondiente comunicación, justifique y 
+desglose razonada y detalladamente el bajo nivel de precios, o de costes o 
+cualquier otro parámetro en base al cual se haya definido la anormalidad de la 
+oferta y solicitará el asesoramiento técnico del servicio correspondiente. 
+ La Mesa de Contratación evaluará toda la información y documentación 
+proporcionada por la licitadora en plazo y elevará de forma motivada la 
+correspondiente propuesta de aceptación o rechazo al órgano de contratación.  
+Si el órgano de contratación, considerando la justificación efectuada por la 
+licitadora y la propuesta de la Mesa, estimase que la información recabada no 
+explica satisfactoriamente el bajo nivel de los precios o costes propuestos por la 
+licitadora y que, por lo tanto, la oferta no puede ser cumplida como consecuencia 
+de la inclusión de valores anormales, la excluirá de la clasificación y acordará la 
+adjudicación a favor de la mejor oferta, de acuerdo con el orden en que hayan sido 
+clasificadas.  
+En todo caso, de acuerdo con el artículo 149.4 LCSP, se rechazarán las 
+ofertas si se comprueba que son anormalmente bajas porque vulneran la 
+normativa sobre subcontratación o no cumplen las obligaciones aplicables en 
+materia medioambiental, social o laboral, nacional o internacional, incluyendo el 
+incumplimiento de los convenios colectivos sectoriales vigentes en aplicación del 
+art. 201 LCSP. 
+   10.3. Constitución de la garantía definitiva 
+ 
+Para formar parte de esta licitación no se requiere constituir garantía 
+provisional. 
+ 
+La empresa propuesta como adjudicataria deberá presentar documentación 
+justificativa de haber constituido la garantía definitiva por un total del 5% del precio 
+del contrato, según la oferta de la adjudicataria, IVA excluido, en el plazo de 7 días 
+hábiles desde que se le notifique el requerimiento, que podrá constituirse en 
+alguna de las siguientes formas: 
+PAGE 15
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 15  
+ 
+a) Como depósito de efectivo, mediante ingreso en la cuenta corriente 2095 3178 
+311090951152 abierta a nombre de Transportes Urbanos de Vitoria S.A. en 
+Kutxabank. En este caso la documentación justificativa será el resguardo de la 
+operación y podrá hacerla llegar a TUVISA por medios electrónicos. 
+ 
+b) Como aval bancario, el cual deberá ajustarse al modelo facilitado (Anexo VI), 
+prestado por cualquier entidad con sucursal en España autorizada para operar. El 
+documento de aval original deberá entregarse físicamente en TUVISA. 
+ 
+c) Como contrato de seguro de caución, que se ajustará al modelo facilitado 
+(Anexo VII), celebrado con una entidad aseguradora autorizada para operar en 
+España en el ramo. El certificado del seguro original deberá entregarse físicamente 
+en TUVISA. 
+ 
+Esta garantía a favor de TUVISA responderá del cumplimiento del contrato y 
+será devuelta a la terminación del plazo del mismo, una vez cumplidas todas las 
+obligaciones o garantías asumidas en ellos: si la licitadora adjudicataria está 
+exenta de responsabilidad, se procederá a la devolución de la fianza o de 
+cancelación del aval. 
+   10.4. Adjudicación del contrato 
+ 
+   El Consejo de Administración, como Órgano de Contratación de la Sociedad, 
+procederá en principio a adjudicar el contrato a favor de la licitadora propuesta 
+como adjudicataria, siempre que la misma hubiese aportado justificante de 
+constitución de la garantía definitiva y el resto de la documentación para la 
+adjudicación. 
+ 
+  La adjudicación deberá ser motivada y contendrá los extremos siguientes; 
+ 
+- Con respecto a las licitadoras excluidas, los motivos por los que no se haya 
+admitido su oferta. 
+- En todo caso, el nombre de la empresa adjudicataria, las características 
+determinantes de que haya sido seleccionada su oferta, con preferencia respecto a 
+las restantes que hayan sido admitidas. 
+ Una vez adjudicado el contrato por el órgano de contratación, en el plazo de 
+15 días hábiles se notificará la adjudicación a todas las licitadoras y 
+simultáneamente se publicará en el perfil del contratante del órgano de 
+contratación. La notificación deberá contener, en todo caso, la información 
+necesaria que permita a la licitadora excluida o candidatura descartada interponer, 
+conforme al art. 151.2 LCSP, recurso suficientemente fundado contra la decisión 
+de adjudicación. 
+PAGE 16
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 16  
+ La decisión de no adjudicar o celebrar el contrato o el desistimiento del 
+procedimiento podrán acordarse por el órgano de contratación antes de la 
+formalización, en los términos establecidos en el art.152 LCSP. 
+ 
+ 
+  10.5. Formalización del contrato 
+  El contrato se formalizará dentro de los 15 días hábiles siguientes a la 
+notificación de la adjudicación, a través de documento privado, que se ajustará con 
+exactitud a las condiciones de la licitación. 
+  Cuando por causas imputables a la adjudicataria no se hubiese 
+formalizado el contrato dentro del plazo indicado, se le exigirá el importe del 3% 
+del presupuesto base de licitación, IVA excluido, en concepto de penalidad. En 
+este caso, el contrato se adjudicará a la siguiente licitadora por el orden en que 
+hubieran quedado clasificadas las ofertas. 
+  La formalización del contrato se publicará en un plazo no superior a 15 
+días tras el perfeccionamiento del contrato, en el perfil de contratante del órgano 
+de contratación.  
+  No podrá iniciarse la ejecución del contrato sin su previa formalización. 
+ 
+ 
+ 
+IV. EJECUCIÓN DEL CONTRATO 
+ 
+ 
+CLÁUSULA 11 - RESPONSABLE DEL CONTRATO 
+ 
+ La persona responsable del contrato será el Técnico de Innovación y Nuevas 
+Tecnologías de TUVISA, que será la persona encargada de verificar el 
+cumplimiento de las obligaciones de la adjudicataria, especialmente en lo que se 
+refiere a la calidad den la prestación del servicio. Específicamente le 
+corresponderá: 
+ 
+1. La supervisión de la ejecución del contrato  
+2. Informar al órgano de Contratación para que adopte las decisiones y dicte las 
+instrucciones necesarias con el fin de asegurar la correcta realización de la 
+prestación pactada. 
+3. Proponer al órgano de Contratación la imposición de penalidades previstas en  
+pliegos. 
+ 
+ 
+ 
+PAGE 17
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 17  
+CLÁUSULA 12 - OBLIGACIONES DE LA ADJUDICATARIA 
+ 
+ La ejecución del contrato se realizará a riesgo y ventura de la contratista. 
+ 
+ El contrato deberá cumplirse a tenor de sus cláusulas, de los pliegos de 
+cláusulas administrativas particulares y el de prescripciones técnicas, sin perjuicio 
+de las prerrogativas establecidas por la legislación a favor de las Administraciones 
+Públicas que sean de aplicación a TUVISA. 
+ 
+ Se considerarán también incluidos en la proposición de la adjudicataria y en el 
+precio del contrato todos los gastos que resultaren necesarios para la ejecución del 
+contrato. 
+ 
+ La empresa adjudicataria responderá de que los trabajos se realicen con la 
+diligencia y nivel de calidad adecuados. 
+ 
+ La adjudicataria responderá de la calidad  de la ejecución de los trabajos y de 
+las faltas que hubiere. Quedará exenta de responsabilidad cuando los vicios que 
+se observen sean consecuencia directa de una orden de TUVISA o de las 
+condiciones impuestas por ella. 
+ 
+ La empresa adjudicataria está obligada al cumplimiento de las disposiciones 
+vigentes en materia laboral, de seguridad social, de integración social de personas 
+con diversidad funcional, y de prevención de riesgos laborales: con respecto a 
+estas últimas, de formación social, comprometiéndose a que por parte de las 
+empresas subcontratistas, en su caso, se cumpla la legislación vigente en materia 
+laboral con respecto a sus trabajadores/as.  
+  El incumplimiento de estas obligaciones por parte de la empresa adjudicataria 
+o la infracción de las disposiciones sobre seguridad por parte del personal técnico 
+designado por él no implicará responsabilidad alguna para TUVISA. 
+ 
+ En materia de Prevención de riesgos laborales, TUVISA entregará a la 
+adjudicataria la documentación correspondiente, y recibirá de la misma los 
+documentos firmados. 
+ 
+ 
+CLAUSULA 13. INCUMPLIMIENTOS CONTRACTUALES 
+ 
+ Se considerarán incumplimientos contractuales a efectos de este contrato;  
+ 
+ Incumplimiento del convenio colectivo de aplicación 
+ Incumplimiento de las condiciones especiales de ejecución (cláusula 15) 
+ Ejecución incorrecta o defectuosa del servicio, a juicio del Responsable del 
+Contrato. 
+ Incumplimiento de la remisión de los partes de trabajo diariamente. 
+ 
+PAGE 18
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 18  
+ Las penalidades a imponer serán acordes con la gravedad del incumplimiento, 
+y tendrán un máximo económico del 10% del precio de adjudicación sin IVA. 
+  
+ La imposición de las penas por incumplimientos corresponderá al Órgano de 
+Contratación, previa la instrucción del oportuno expediente y a propuesta de la 
+responsable del contrato. El acuerdo del Órgano de Contratación será 
+inmediatamente ejecutivo. 
+ Al iniciarse la instrucción del expediente, TUVISA deberá notificarlo a la 
+adjudicataria y darle audiencia para que presente las alegaciones que estime 
+oportunas. 
+ Las penas pecuniarias se aplicarán mediante deducción del abono de la 
+factura correspondiente. 
+ El total de las penas pecuniarias impuestas no podrá superar el 50 por cien del 
+precio del contrato.  
+ 
+CLAUSULA 14 - RESPONSABLIDAD DEL CONTRATISTA POR DAÑOS Y 
+PERJUICIOS  
+ 
+ Será obligación de la adjudicataria indemnizar los daños y perjuicios que se 
+causen como consecuencia de las operaciones que requiera la ejecución del 
+contrato, de conformidad con lo dispuesto en el artículo 196 de la LCSP. A tal 
+efecto, tendrá contratada una Póliza de Seguro que cubre la responsabilidad civil 
+en que pudiera incidir cualquiera de sus trabajadores en el desarrollo de su trabajo, 
+hasta un importe de 3.000.000. € por siniestro. 
+ 
+CLÁUSULA 15. CONDICIONES ESPECIALES DE EJECUCIÓN 
+ 
+ Las siguientes condiciones especiales de ejecución serán considerada 
+obligación contractual esencial a los efectos señalados en el artículo 211.1.f) de la 
+LCSP. El incumplimiento de cualquiera de ellas podrá ser considerado, en los 
+términos establecidos reglamentariamente, como infracción grave a los efectos 
+establecidos en el artículo 71.2.c) de la LCSP. 
+15.1.-Condición especial de ejecución de carácter medioambiental 
+  La contratista está obligada al cumplimiento de las disposiciones vigentes en 
+materia de gestión medioambiental que se establezcan tanto en la normativa 
+vigente como en los pliegos que rigen la presente contratación.  
+ 
+ Todos los trabajos de ejecución de los servicios deberán respetar los 
+siguientes criterios: 
+ 
+PAGE 19
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 19  
+- Se establecerán medidas de minimización y reutilización del consumo de agua 
+necesaria para la ejecución de los servicios. 
+- Se adoptarán las medidas precisas para minimizar los ruidos y vibraciones que 
+puedan ocasionar molestias a las personas usuarias y al personal de TUVISA, 
+respetando en todo caso la normativa específica sobre ruido. 
+- Los residuos que se puedan generar se deberán tratar de acuerdo a lo previsto 
+por la normativa vigente. 
+- Se evitará la contaminación que se entenderá comprensiva del medio ambiente 
+atmosférico, de los recursos naturales (cursos de agua, masas forestales,...) y de 
+cualesquiera otros bienes que puedan resultar dañados en la ejecución del 
+contrato. 
+ 
+ 
+15.2.  Condición especial de ejecución en materia laboral 
+   
+ La contratista está obligada al cumplimiento de la normativa vigente en 
+materia laboral, de Seguridad Social y de Seguridad y Salud en el trabajo. El 
+incumplimiento de estas obligaciones por parte de la contratista no implicará 
+responsabilidad alguna para TUVISA. 
+ 
+ Todo el personal trabajador por cuenta del adjudicatario deberá estar 
+amparado por el correspondiente contrato de trabajo. Dicho personal no adquirirá 
+relación laboral alguna con TUVISA, por ser dependiente única y exclusivamente 
+de la adjudicataria, la cual tendrá todos los derechos y obligaciones inherentes a 
+su calidad de patrono respecto al citado personal, con arreglo a la Legislación 
+Laboral sin que en ningún caso resulte para TUVISA responsabilidad de las 
+obligaciones nacidas entre el adjudicatario y sus empleados, aún cuando los 
+despidos u otras medidas que adopte sean consecuencia directa o indirecta del 
+cumplimiento, incumplimiento, rescisión o interpretación de este contrato. 
+ 
+ Asimismo, el adjudicatario ha de dar de alta en la Seguridad Social a todo el 
+personal que preste sus servicios en la actividad y suscribir el documento de 
+Asociación con la Mutualidad Laboral correspondiente, que cubra los riesgos de 
+accidente de trabajo, con exacto cumplimiento de cuanto establece o establezca la 
+legislación sobre la materia, así como de la normativa de seguridad, salud en el 
+trabajo y prevención de riesgos laborales. 
+ 
+ No existirá vinculación laboral alguna entre el personal que la adjudicataria 
+destine a la ejecución del contrato y TUVISA, por cuanto el citado personal queda 
+expresamente sometido al poder direccional y de organización de la adjudicataria 
+en todo ámbito y orden legalmente establecido y siendo por tanto ésta la única 
+responsable y obligada al cumplimiento de cuantas disposiciones legales resulten 
+aplicables al caso, en especial en materia de contratación, Seguridad Social y 
+Seguridad y Salud en el trabajo, por cuanto dicho personal en ningún caso tendrá 
+vinculación jurídico-laboral con TUVISA, y ello con independencia de las facultades 
+de control e inspección que legal o contractualmente le correspondan. 
+PAGE 20
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 20  
+ 
+ La adjudicataria asume bajo su responsabilidad que cumplirá y hará cumplir a 
+todos su personal trabajador las normas y procedimientos operativos de trabajo 
+que vengan establecidos por el Servicio de Prevención de Riesgos Laborales. 
+ 
+ TUVISA podrá requerir a la adjudicataria para que entregue copia de los 
+partes de alta, baja o alteraciones de la Seguridad Social de la totalidad del 
+personal destinado a los trabajos adjudicados, así como copia de las liquidaciones 
+de cuotas efectuadas a la Seguridad Social, modelos TC1 y TC2 o los que en el 
+futuro puedan sustituir a los citados. Siempre que lo solicite TUVISA, la contratista 
+deberá poner a disposición de la misma, además, la información precisa sobre los 
+contratos del personal de su empresa destinados a la ejecución del presente 
+contrato. Cualquier cambio que se produzca deberá ser notificado con carácter 
+previo y de forma fehaciente a la unidad gestora, sin que esté permitida la 
+reducción en el número de trabajadores adscritos al cumplimiento del contrato o su 
+sustitución por personal que no posea la misma cualificación laboral. En la 
+notificación que al efecto realice la adjudicataria, se hará constar la categoría 
+profesional, tipo de contrato, antigüedad, número de horas semanales de trabajo y 
+horario diario, tanto de las personas que pretenda sustituir como de las que desee 
+incorporar. 
+ 
+ Quedará obligada, además, a dar exacto cumplimiento a cuanto previene la 
+legislación social vigente y de prevención de riesgos laborales, corriendo de su 
+cuenta y riesgo toda clase de seguros sociales, subsidios, indemnizaciones, 
+remuneraciones y, en general, cualquier otra obligación de tipo laboral. 
+ 
+ Obligación de indicar el convenio colectivo: En el caso de resultar 
+adjudicatarias, las licitadoras indicarán el convenio colectivo aplicable al personal 
+trabajador que realice la actividad objeto del contrato, así como la obligación de 
+facilitar cuanta información se requiera sobre las condiciones de trabajo que, una 
+vez adjudicado el contrato, se apliquen efectivamente a dichos trabajadores y 
+trabajadoras.  
+ 
+ Obligación de pago de salario recogido en convenio: En el caso de resultar 
+adjudicatarias, las licitadoras asumirán la obligación de aplicar a la plantilla que 
+ejecutará el contrato las condiciones establecidas por el último convenio colectivo 
+(de empresa, sectorial o territorial, según corresponda) vigente en el que se 
+encuadra y desarrolla la prestación contractual, sin perjuicio de las mejoras sobre 
+lo dispuesto en el mismo. En particular, la contratista deberá abonar el salario 
+recogido en el precitado convenio colectivo de aplicación según la categoría 
+profesional que le corresponda, sin que el salario pueda ser inferior a aquél.  
+ 
+ A la extinción del contrato, no podrá producirse la consolidación/subrogación 
+de las personas adscritas a este contrato como personal de TUVISA. 
+ 
+ 
+PAGE 21
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 21  
+ 
+CLÁUSULA 16 - LUGAR DE EJECUCIÓN 
+ 
+  El lugar de ejecución del contrato será en las oficinas centrales de 
+Transportes Urbanos de Vitoria-Gasteiz, S.A. 
+ 
+   
+ 
+CLÁUSULA 17 - MODIFICACIONES DEL CONTRATO 
+ 
+El Órgano de Contratación no prevé modificaciones en el contrato. 
+ 
+CLÁUSULA 18 - FORMA DE PAGO 
+ 
+  La adjudicataria tendrá derecho al abono del precio de los servicios 
+prestados y recibidos de conformidad por TUVISA. 
+  El abono se realizará mensualmente, mediante transferencia bancaria, 
+previa remisión de factura a TUVISA, en los términos que se indican, en el plazo 
+máximo de 30 días desde su visado y visto bueno por la Responsable del 
+Contrato. 
+ 
+ Las facturas irán dirigidas a:  
+TRANSPORTES URBANOS DE VITORIA S.A. 
+C/ AGIRRELANDA, 2 , BJ     
+01013 VITORIA-GASTEIZ (ÁLAVA) 
+CIF: A01005230 
+ 
+TUVISA aceptará también la facturación electrónica;  tuvisa.conta@vitoria-
+gasteiz.org 
+ 
+CLÁUSULA 19 - PROTECCIÓN DE DATOS DE CARÁCTER PERSONAL 
+ TUVISA está legitimada para tratar los datos que le faciliten las licitadoras con 
+motivo de la participación en la presente licitación para las siguientes finalidades: 
+ 
+a) Gestionar la participación de las licitadoras en la licitación. Este tratamiento 
+queda legitimado por el consentimiento válidamente prestado por éstos en el 
+momento de la presentación de su candidatura. 
+b) Se emplearán los datos de la adjudicataria para el control y ejecución de la 
+relación jurídica que surja entre las partes. El tratamiento está legitimado en virtud 
+de la ejecución del contrato que regirá la prestación de los servicios del contrato. 
+PAGE 22
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 22  
+c) Publicación de los datos de las licitadoras y las adjudicatarias a través de los 
+medios que TUVISA considere oportunos, en especial a través de la página Web 
+de la compañía, que recoge información acerca, entre otros aspectos, de 
+contrataciones y proveedores. Esta finalidad está autorizada por la LCSP. 
+   
+Los datos de carácter personal únicamente se tratarán y conservarán mientras 
+persista la relación y una vez finalizada ésta mientras TUVISA esté legitimada para 
+su tratamiento y/o conservación atendiendo a los plazos establecidos por la 
+legislación vigente. 
+ 
+ Respecto a los datos de carácter personal recogidos para su tratamiento las 
+licitadoras tienen la posibilidad de ejercitar los derechos de acceso rectificación, 
+supresión y portabilidad. Asimismo, en determinadas circunstancias las licitadoras 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en 
+cuyo caso TUVISA cesará en su tratamiento y únicamente conservará los mismos 
+para el ejercicio o la defensa de reclamaciones. 
+ 
+ El ejercicio de los citados derechos podrá hacerse mediante solicitud dirigida 
+por escrito a TUVISA según la legislación vigente. Asimismo, en cualquier 
+momento las reclamaciones podrán dirigirse indistintamente al Responsable o la 
+Agencia Española de Protección de datos a través de los formularios que ésta 
+entidad tiene habilitados al efecto y que son accesibles a través de su página Web, 
+https://sedeagpd.gob.es. 
+ Por otro lado, cualquier tratamiento de datos de carácter personal que, durante 
+la vigencia del contrato, la contratista lleve a cabo en el marco de sus actividades, 
+deberá entenderse realizado por su propia cuenta y decisión, como Responsable 
+de dicho tratamiento, asumiendo en todo caso el cumplimiento de las obligaciones 
+que se deriven para ella de lo previsto en la legislación española y europea en 
+materia de Protección de Datos de Carácter Personal, como consecuencia de 
+dicho tratamiento. 
+ 
+ 
+CLÁUSULA 20 - SUBCONTRATACIÓN, CESIÓN DEL CONTRATO Y   
+SUCESIÓN DE LA EMPRESA CONTRATISTA DURANTE LA EJECUCIÓN DEL 
+CONTRATO 
+ 
+  Subcontratación. Si la contratista tuviera necesidad de subcontratar 
+partes específicas del contrato, lo pondrá en conocimiento de TUVISA con 
+anterioridad, identificando las condiciones técnicas de la subcontratación.  En todo 
+caso se precisará consentimiento expreso de TUVISA en el supuesto de que el 
+adjudicatario pretenda subcontratar parte de sus servicios, y será ésta quien fije 
+sus límites y exija al subcontratista las necesarias garantías. 
+PAGE 23
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 23  
+  En cualquier caso, los subcontratistas quedarán sólo obligados frente al 
+contratista principal, quien asumirá la total responsabilidad de la ejecución del 
+servicio con arreglo a los términos del contrato. 
+       Dicha subcontratación estará sometida a lo dispuesto en los arts. 215 a 
+217 de LCSP. 
+  Cesión del contrato. No se admitirá la cesión del contrato y, en caso de 
+producirse, será causa de resolución del mismo. 
+ 
+  Sucesión de la empresa contratista durante la ejecución del contrato. 
+En los casos de fusión de empresas en las que participe la contratista, continuará 
+el contrato vigente con la entidad absorbente o con la resultante de la fusión, que 
+quedará subrogada en todos los derechos y obligaciones dimanantes del mismo. 
+Igualmente, en los supuestos de escisión, aportación o transmisión de empresas o 
+ramas de actividad de las mismas, continuará el contrato con la entidad resultante 
+o beneficiaria, que quedará subrogada en los derechos y obligaciones dimanantes 
+del mismo, siempre que tenga la solvencia exigida al acordarse la adjudicación. 
+ 
+ 
+CLÁUSULA 21 - RESOLUCIÓN DEL CONTRATO 
+ 
+ Constituyen causa de resolución del contractual, las siguientes; 
+ 
+ La concurrencia de alguna de las causas previstas en los artículos 211 de la 
+LCSP, dando lugar a los efectos previstos en el artículo 213. 
+ 
+ La concurrencia de las causas señaladas en el artículo 313.1 LCSP con los 
+efectos de los apartados 2 y 3 del citado artículo. 
+ 
+ El supuesto en que las penas pecuniarias impuestas superaran el 50 por 
+cien del precio del contrato. 
+ 
+ En el supuesto que se incumpla en 3 o más ocasiones la obligación de 
+entrega de los partes de trabajo diariamente. 
+ 
+ 
+CLÁUSULA FINAL – JUZGADOS Y TRIBUNALES 
+ 
+  TUVISA, interpretará los contratos en que intervenga y resolverá las 
+dudas que ofrezca su cumplimiento. Los acuerdos que adopte serán 
+inmediatamente ejecutivos, sin perjuicio del derecho de la Empresa adjudicataria a 
+obtener en vía jurisdiccional la declaración que proceda sobre inteligencia de lo 
+pactado, si no se conformase con lo resuelto por TUVISA. 
+ 
+PAGE 24
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 24  
+  Tanto TUVISA como la Empresa adjudicataria aceptarán la jurisdicción de 
+los Juzgados y Tribunales de Vitoria-Gasteiz, para cualquier litigio que en relación 
+con la contratación pueda originarse, renunciando la adjudicataria a cualquier otro 
+fuero de cualquier orden que pudiera corresponderle. 
+ 
+  Serán competencia del orden jurisdiccional contencioso-administrativo las 
+cuestiones relativas a la preparación y a la adjudicación. 
+ 
+  El orden jurisdiccional civil será el competente para resolver las 
+controversias que se susciten entre las partes en relación con los efectos y 
+extinción del contrato. 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 25
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 25  
+ANEXO I -  MODELO DE PROPOSICIÓN ECONÓMICA  
+ Es obligatoria su presentación. 
+ 
+Dª/D................., con domicilio en......................, calle................................................, 
+y provista/o de DNI..............................., en nombre propio o en representación 
+de.........................................., con domicilio en ......................................., 
+calle.............................................Tfno ................................y  N.I.F......................., 
+bien enterado de los Pliegos de Condiciones relativos PARA LA CONTRATACIÓN 
+DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN DE 
+DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, 
+SIRI Y NETEX, Nº expediente 2022-14LT, se compromete a llevar a cabo la 
+realización de los trabajos objeto del mismo por un precio de:  
+ 
+ 
+ Precio del contrato 
+ 
+TOTAL por los 4 años de duración del contrato;   --------- € * 
+IVA 21%;                           --------- €  
+TOTAL                     --------- € 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de 
+protección de datos informamos a los licitadores que el responsable del tratamiento de sus datos 
+es TUVISA (en adelante, el Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de 
+teléfono 945 16 10 54 y dirección de correo electrónico tuvisa.contratacion@vitoria-gasteiz.org. El 
+Responsable está legitimado para tratar los datos que le faciliten los licitadores por la participación en 
+la licitación para las siguientes finalidades: a) Gestionar su participación en la licitación. Este 
+tratamiento queda legitimado por el consentimiento válidamente prestado por los licitadores en el 
+momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 
+9/2017, de 8 de noviembre, de Contratos del Sector Público. Los datos de carácter personal 
+únicamente se tratarán y conservarán mientras persista la relación y una vez finalizada ésta 
+mientras el Responsable esté legitimado para su tratamiento y/o conservación atendiendo a los 
+plazos establecidos por la legislación vigente. Respecto a los datos de carácter personal recogidos 
+para su tratamiento los licitadores tienen la posibilidad de ejercitar los derechos de acceso  
+rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los licitadores 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la 
+defensa de reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud 
+dirigida por escrito al Responsable a través de los datos de contacto indicados previamente, en los 
+términos que suscribe la legislación vigente. Asimismo, en cualquier momento las reclamaciones 
+podrán dirigirse indistintamente al Responsable o la Agencia Española de Protección de datos a 
+través de los formularios que esta entidad tiene habilitados al efecto y que son accesibles a través de 
+su página web, https://sedeagpd.gob.es.Y para que así conste, firmo la presenta 
+declaración en …… a      de ……2021 
+PAGE 26
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 26  
+ANEXO II - MODELO DE DECLARACIÓN RESPONSABLE DE LA PERSONA 
+FIRMANTE RESPECTO A LA OFERTA QUE PRESENTA 
+Es obligatoria su presentación. 
+Dª/D...................................................., con domicilio en ................................,calle 
+............................ , y provista/o de D.N.I .............................,en nombre propio o en 
+representación de ............................. , con domicilio en ............................... , calle 
+..................................Tfno ................................ dirección de email ……….y 
+C.I.F......................., bien enterado de los Pliegos de Cláusulas Administrativas y 
+de Prescripciones Técnicas que han de regir la LICITACIÓN PARA LA 
+CONTRATACIÓN DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y 
+VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX, Nº expediente 2022-14LT,  
+Declara bajo su responsabilidad: 
+ 
+- Que ostenta la representación de la sociedad que presenta la oferta. 
+- Que cuenta con la adecuada solvencia económica, financiera y técnica exigida en  
+pliegos 
+- Que cuenta con las autorizaciones necesarias para ejercer la actividad necesaria para 
+la ejecución del objeto del contrato. 
+- Que  no está incursa en prohibición de contratar alguna. 
+- Que, en caso de resultar adjudicataria y recurrir a las capacidades de otras entidades, 
+demostrará al poder adjudicador que va a disponer de los recursos necesarios 
+mediante la presentación a tal efecto del compromiso por escrito de dichas entidades.  
+Y para que así conste, firmo la presenta declaración en …… a ……. de …2021 
+ 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de protección de 
+datos informamos a los licitadores que el responsable del tratamiento de sus datos es TUVISA (en adelante, el 
+Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de teléfono 945 16 10 54 y dirección de 
+correo electrónico tuvisa.contratacion@vitoria-gasteiz.org. El Responsable está legitimado para tratar los datos 
+que le faciliten los licitadores por la participación en la licitación para las siguientes finalidades: a) Gestionar su 
+participación en la licitación. Este tratamiento queda legitimado por el consentimiento válidamente prestado por los 
+licitadores en el momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 9/2017, de 8 de 
+noviembre, de Contratos del Sector Público. Los datos de carácter personal únicamente se tratarán y 
+conservarán mientras persista la relación y una vez finalizada ésta mientras el Responsable esté legitimado para 
+su tratamiento y/o conservación atendiendo a los plazos establecidos por la legislación vigente. Respecto a los 
+datos de carácter personal recogidos para su tratamiento los licitadores tienen la posibilidad de ejercitar los 
+derechos de acceso rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los 
+licitadores tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la defensa de 
+reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud dirigida por escrito al 
+Responsable a través de los datos de contacto indicados previamente, en los términos que suscribe la legislación 
+vigente. Asimismo, en cualquier omento las reclamaciones podrán dirigirse indistintamente al Responsable o la 
+Agencia Española de Protección de datos a través de los formularios que esta entidad tiene habilitados al efecto y 
+que son accesibles a través de su página web, https://sedeagpd.gob.es. 
+PAGE 27
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 27  
+ANEXO III - DECLARACIÓN RESPONSABLE DE CUMPLIMIENTO DE LA 
+CONDICIÓN  ESPECIAL DE EJECUCIÓN  
+Es obligatoria su presentación. 
+ 
+Dª/D................., con domicilio en......................, calle................................................, 
+y provista/o de DNI..............................., en nombre propio o en representación 
+de.........................................., con domicilio en ......................................., 
+calle.............................................Tfno ................................y  N.I.F......................., 
+bien enterado de los Pliegos de Condiciones relativos PARA LA CONTRATACIÓN 
+DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN DE 
+DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, 
+SIRI Y NETEX, Nº expediente 2022-14LT, declara bajo su responsabilidad: 
+Que se compromete, en caso de resultar adjudicataria, al cumplimiento de 
+las condiciones especiales de ejecución indicadas en el pliego (cláusula 15) 
+Y para que así conste, firmo la presenta declaración en ………… a ……. de 
+…………………2021 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de 
+protección de datos informamos a los licitadores que el responsable del tratamiento de sus datos 
+es TUVISA (en adelante, el Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de 
+teléfono 945 16 10 54 y dirección de correo electrónico tuvisa.contratacion@vitoria-gasteiz.org. El 
+Responsable está legitimado para tratar los datos que le faciliten los licitadores por la participación en 
+la licitación para las siguientes finalidades: a) Gestionar su participación en la licitación. Este 
+tratamiento queda legitimado por el consentimiento válidamente prestado por los licitadores en el 
+momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 
+9/2017, de 8 de noviembre, de Contratos del Sector Público. Los datos de carácter personal 
+únicamente se tratarán y conservarán mientras persista la relación y una vez finalizada ésta 
+mientras el Responsable esté legitimado para su tratamiento y/o conservación atendiendo a los 
+plazos establecidos por la legislación vigente. Respecto a los datos de carácter personal recogidos 
+para su tratamiento los licitadores tienen la posibilidad de ejercitar los derechos de acceso 
+rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los licitadores 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la 
+defensa de reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud 
+dirigida por escrito al Responsable a través de los datos de contacto indicados previamente, en los 
+términos que suscribe la legislación vigente. Asimismo, en cualquier momento las reclamaciones 
+podrán dirigirse indistintamente al Responsable o la Agencia Española de Protección de datos a 
+través de los formularios que esta entidad tiene habilitados al efecto y que son accesibles a través de 
+su página web, https://sedeagpd.gob.es. 
+ 
+(Lugar, fecha y firma) 
+PAGE 28
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 28  
+ANEXO IV- MODELO DE DECLARACIÓN RESPONSABLE DE VIGENCIA DE 
+LOS DATOS ANOTADOS EN EL REGISTRO DE LICITADORES 
+Es obligatoria su presentación 
+ 
+Dª/D................., con domicilio en......................, calle................................................, 
+y provista/o de DNI..............................., en nombre propio o en representación 
+de.........................................., con domicilio en ......................................., 
+calle.............................................Tfno ................................y  N.I.F......................., 
+bien enterado de los Pliegos de Condiciones relativos PARA LA CONTRATACIÓN 
+DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN DE 
+DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, 
+SIRI Y NETEX, Nº expediente 2022-14LT, declara bajo su responsabilidad: 
+- Que los datos de esta empresa que constan en el Registro de Licitadores no han 
+sido alterados en ninguna de sus circunstancias y que se corresponden con el 
+certificado del Registro expedido con fecha…………………………….. 
+ -Que de los datos de esta empresa anotados en el Registro de Licitadores han 
+sufrido variación los que a continuación se indican, según se acredita mediante 
+los documentos que se adjuntan, manteniéndose los demás datos sin ninguna 
+alteración respecto del contenido del Certificado del Registro de 
+fecha……………………….. 
+Datos que han sufrido variación, y Documentación justificativa que se adjunta: 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de 
+protección de datos informamos a los licitadores que el responsable del tratamiento de sus datos 
+es TUVISA (en adelante, el Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de 
+teléfono 945 16 10 54 y dirección de correo electrónico tuvisa. contratacion@vitoria-gasteiz.org. El 
+Responsable está legitimado para tratar los datos que le faciliten los licitadores por la participación en 
+la licitación para las siguientes finalidades: a) Gestionar su participación en la licitación. Este 
+tratamiento queda legitimado por el consentimiento válidamente prestado por los licitadores en el 
+momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 
+9/2017, de 8 de noviembre, de Contratos del Sector Público.  Los datos de carácter personal 
+únicamente se tratarán y conservarán mientras persista la relación y una vez finalizada ésta 
+mientras el Responsable esté legitimado para su tratamiento y/o conservación atendiendo a los 
+plazos establecidos por la legislación vigente. Respecto a los datos de carácter personal recogidos 
+para su tratamiento los licitadores tienen la posibilidad de ejercitar los derechos de acceso 
+rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los licitadores 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la 
+defensa de reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud 
+dirigida por escrito al Responsable a través de los datos de contacto indicados previamente, en los 
+términos que suscribe la legislación vigente. Asimismo, en cualquier momento las reclamaciones 
+podrán dirigirse indistintamente al Responsable o la Agencia Española de Protección de datos a 
+PAGE 29
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 29  
+través de los formularios que esta entidad tiene habilitados al efecto y que son accesibles a través de 
+su página web, https://sedeagpd.gob.es. 
+ 
+En ............., a ......... de ............................ de  2021 
+ 
+ANEXO V -  DECLARACIÓN DE COMPROMISO DE CONSTITUCIÓN EN UNIÓN 
+TEMPORAL  DE EMPRESAS 
+A cumplimentar sólo en caso de presentarse como UTE 
+ 
+Dª./D. ____________________, mayor de edad y con NIF núm. __________, en 
+nombre propio o en representación de la 
+empresa......................................................., con domicilio social 
+en..................................... y NIF nº.................., en calidad de 
+(1)…………………….., bajo su personal responsabilidad. 
+Dª./D. ____________________, mayor de edad y con NIF núm. __________, en 
+nombre propio o en representación de la 
+empresa......................................................., con domicilio social 
+en...................................., y NIF nº................... en calidad de (1)……………………., 
+bajo su personal responsabilidad. 
+Se comprometen a constituir una unión temporal de empresas, de conformidad con 
+lo establecido en la Ley 9/2017, de 8 de noviembre, de Contratos del Sector 
+Público, por la que se transponen al Ordenamiento Jurídico Español las Directivas 
+del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE de 26 de febrero 
+de 2014, a efectos de participar en la licitación para la contratación del expediente 
+PARA LA CONTRATACIÓN DE LOS SERVICIOS DE DESARROLLO, 
+DESPLIEGUE Y VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN 
+LOS FORMATOS GTFS, GTFS-RT, SIRI Y NETEX, Nº expediente 2022-14LT. 
+En el caso de resultar adjudicatarias se comprometen a formalizar en escritura 
+pública la citada unión. La participación en la unión temporal de cada miembro es 
+la que sigue: 
+___________________ XX%. 
+___________________ XX%. 
+ 
+Como persona representante de la citada unión se nombra a 
+__________________________ (2) 
+PAGE 30
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 30  
+ 
+ (1) Apoderado/a, administrador/a único/a, administrador/a solidario/a, 
+administrador/a mancomunado/a, etc. 
+(2) Indicar nombre y apellidos, cargo y empresa. 
+ 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de 
+protección de datos informamos a los licitadores que el responsable del tratamiento de sus datos 
+es TUVISA (en adelante, el Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de 
+teléfono 945 16 10 54 y dirección de correo electrónico tuvisa. contratacion@vitoria-gasteiz.org. El 
+Responsable está legitimado para tratar los datos que le faciliten los licitadores por la participación en 
+la licitación para las siguientes finalidades: a) Gestionar su participación en la licitación. Este 
+tratamiento queda legitimado por el consentimiento válidamente prestado por los licitadores en el 
+momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 
+9/2017, de 8 de noviembre, de Contratos del Sector Público.  Los datos de carácter personal 
+únicamente se tratarán y conservarán mientras persista la relación y una vez finalizada ésta 
+mientras el Responsable esté legitimado para su tratamiento y/o conservación atendiendo a los 
+plazos establecidos por la legislación vigente. Respecto a los datos de carácter personal recogidos 
+para su tratamiento los licitadores tienen la posibilidad de ejercitar los derechos de acceso 
+rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los licitadores 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la 
+defensa de reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud 
+dirigida por escrito al Responsable a través de los datos de contacto indicados previamente, en los 
+términos que suscribe la legislación vigente. Asimismo, en cualquier momento las reclamaciones 
+podrán dirigirse indistintamente al Responsable o la Agencia Española de Protección de datos a 
+través de los formularios que esta entidad tiene habilitados al efecto y que son accesibles a través de 
+su página web, https://sedeagpd.gob.es. 
+ 
+ 
+ 
+(Lugar, fecha y firma de cada miembro de la futura UTE)  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+PAGE 31
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 31  
+ 
+ 
+ANEXO VI – DOCUMENTACIÓN QUE DEBEN PRESENTAR LAS EMPRESAS 
+EXTRANJERAS 
+  Es obligatoria su presentación para las empresas no españolas de 
+países miembros de la Unión Europea, que deberán aportar la siguiente 
+documentación: 
+ Las empresas deberán acreditar su capacidad de obrar mediante su 
+inscripción en un Registro profesional o presentación de las certificaciones que se 
+indican en el anexo I del Reglamento General de la Ley de Contratos de las 
+Administraciones Públicas. Todo ello traducido de forma oficial al castellano o al 
+euskera. 
+ En el caso de que el licitador no actúe en nombre propio o se trate de 
+persona jurídica, deberá aportar poder bastante que habrá de ser, asimismo, 
+traducido al castellano o euskera. 
+ Declaración, en castellano o euskera, de someterse a la jurisdicción de los 
+Juzgados y Tribunales españoles de cualquier orden, para todas las incidencias 
+que de modo directo o indirecto pudieran surgir del contrato, con renuncia en su 
+caso al Fuero jurisdiccional extranjero que pudiera corresponder al licitante. 
+ Declaración responsable, en castellano o en euskera, de no estar incurso 
+en ninguna de las circunstancias expresadas en el artículo 71 de la Ley 9/2017, de 
+8 de noviembre, de Contratos del Sector Público, por la que se transponen al 
+Ordenamiento Jurídico Español las Directivas del Parlamento Europeo y del 
+Consejo 2014/23/UE y 2014/24/UE de 26 de febrero de 2014 Certificado expedido 
+por la autoridad competente del Estado miembro, traducido de forma oficial al 
+castellano o euskera, por la que se acredite que la empresa cumplimenta sus 
+obligaciones relativas al pago de sus obligaciones tributarias o de Seguridad Social 
+impuesta por las disposiciones vigentes del país del poder adjudicatario. 
+ En el supuesto de exigir clasificación para los empresarios no españoles de 
+Estado miembro, será suficiente que acrediten ante el órgano de contratación 
+correspondiente su solvencia técnica, económica y financiera, conforme a lo 
+previsto en este pliego. 
+Los certificados de clasificación o documentos similares que hayan sido expedidos 
+por Estados Miembros de la Comunidad Europea en favor de sus propios 
+empresarios constituyen una presunción de capacidad de conformidad con lo 
+dispuesto en el articulo 97  de la Ley 9/2017, de 8 de noviembre, de Contratos del 
+Sector Público, por la que se transponen al Ordenamiento Jurídico Español las 
+Directivas del Parlamento Europeo y del Consejo 2014/23/UE y 2014/24/UE de 26 
+de febrero de 2014 El licitador deberá prestar garantía provisional cuando así se 
+exija en este pliego. 
+PAGE 32
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 32  
+Aquellas empresas extranjeras de Estados no pertenecientes a la Comunidad 
+Europea, además de los requisitos expuestos, deberán acreditar: 
+ 
+ La capacidad de obrar, mediante certificación expedida por la Embajada de 
+España en el Estado correspondiente en la que se haga constar, que figuran 
+inscritas en el Registro local, profesional, comercial o análogo o, en su defecto, 
+que actúan con habitualidad en el tráfico local en el ámbito de las actividades a las 
+que se extiende el objeto del contrato, salvo que se trate de Estados signatarios 
+del acuerdo sobre el Espacio Económico Europeo en cuyo caso se acreditará su 
+capacidad de obrar. 
+ Que su Estado de procedencia admite a su vez la participación de 
+empresas españolas en la contratación con la Administración, en forma 
+sustancialmente análoga o que es signatario del Acuerdo sobre Contratación 
+Pública de la Organización Mundial del Comercio. Este extremo se justificará 
+mediante el informe de la respectiva representación diplomática española. 
+ Documentalmente, que tiene abierta sucursal con domicilio en España, con 
+designación de sus apoderados o representantes para sus operaciones. 
+ Que se encuentre inscrita en el Registro Mercantil, al igual que los 
+apoderamientos referidos en el párrafo anterior. 
+ En el caso de que el importe del contrato, con exclusión del IVA sea igual o 
+superior a la cifra que figura en el artículo 21 de la Ley 9/2017, de 8 de noviembre, 
+de Contratos del Sector Público, por la que se transponen al Ordenamiento 
+Jurídico Español las Directivas del Parlamento Europeo y del Consejo 2014/23/UE 
+y 2014/24/UE de 26 de febrero de 2014 exigirá el informe de reciprocidad a que se 
+refiere el apartado b) en relación con las empresas de estados signatarios del 
+Acuerdo sobre Contratación Pública de la Organización Mundial del Comercio. 
+ Declaración de someterse a la jurisdicción de los Juzgados y Tribunales 
+españoles de cualquier orden, para todas las incidencias que de modo directo o 
+indirecto pudieran surgir del contrato, con renuncia, en su caso, al fuero 
+jurisdiccional extranjero que pudiera corresponder al licitador. 
+ 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de 
+protección de datos informamos a los licitadores que el responsable del tratamiento de sus datos 
+es TUVISA (en adelante, el Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de 
+teléfono 945 16 10 54 y dirección de correo electrónico tuvisa. contratacion@vitoria-gasteiz.org. El 
+Responsable está legitimado para tratar los datos que le faciliten los licitadores por la participación en 
+la licitación para las siguientes finalidades: a) Gestionar su participación en la licitación. Este 
+tratamiento queda legitimado por el consentimiento válidamente prestado por los licitadores en el 
+momento de su participación. b) Publicación de los datos de los licitadores y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 
+9/2017, de 8 de noviembre, de Contratos del Sector Público.  Los datos de carácter personal 
+únicamente se tratarán y conservarán mientras persista la relación y una vez finalizada ésta 
+mientras el Responsable esté legitimado para su tratamiento y/o conservación atendiendo a los 
+PAGE 33
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 33  
+plazos establecidos por la legislación vigente. Respecto a los datos de carácter personal recogidos 
+para su tratamiento los licitadores tienen la posibilidad de ejercitar los derechos de acceso 
+rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los licitadores 
+tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la 
+defensa de reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud 
+dirigida por escrito al Responsable a través de los datos de contacto indicados previamente, en los 
+términos que suscribe la legislación vigente. Asimismo, en cualquier momento las reclamaciones 
+podrán dirigirse indistintamente al Responsable o la Agencia Española de Protección de datos a 
+través de los formularios que esta entidad tiene habilitados al efecto y que son accesibles a través de 
+su página web, https://sedeagpd.gob.es.  
+ 
+PAGE 34
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 34  
+ANEXO VII  - DECLARACIÓN DE CONFIDENCIALIDAD     
+A cumplimentar sólo en caso de dar carácter confidencial a algún contenido 
+específico de la oferta 
+ 
+Dª/D................., con domicilio en......................, calle................................................, 
+y provista/o de DNI..............................., en nombre propio o en representación 
+de.........................................., con domicilio en ......................................., 
+calle.............................................Tfno ................................y  N.I.F......................., 
+bien enterado de los Pliegos de Condiciones relativos PARA LA CONTRATACIÓN 
+DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN DE 
+DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, 
+SIRI Y NETEX, Nº expediente 2022-14LT, declara bajo su responsabilidad: 
+- Que se consideran de carácter confidencial los documentos y datos presentados 
+en el sobre ----- de la licitación que a continuación se relacionan: 
+…… 
+…… 
+…… 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de protección de 
+datos informamos a los licitadores que el responsable del tratamiento de sus datos es TUVISA (en adelante, el 
+Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de teléfono 945 16 10 54 y dirección de 
+correo electrónico tuvisa.contratacion@vitoria-gasteiz.org. El Responsable está legitimado para tratar los datos 
+que le faciliten los licitadores por la participación en la licitación para las siguientes finalidades: a) Gestionar su 
+participación en la licitación. Este tratamiento queda legitimado por el consentimiento válidamente prestado por los 
+licitadores en el momento de su participación. b) Publicación de los datos de los licitadores  y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 9/2017, de 8 de 
+noviembre, de Contratos del Sector Público. Los datos de carácter personal únicamente se tratarán y 
+conservarán mientras persista la relación y una vez finalizada ésta mientras el Responsable esté legitimado para 
+su tratamiento y/o conservación atendiendo a los plazos establecidos por la legislación vigente. Respecto a los 
+datos de carácter personal recogidos para su tratamiento los licitadores tienen la posibilidad de ejercitar los 
+derechos de acceso rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los 
+licitadores tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la defensa de 
+reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud dirigida por escrito al 
+Responsable a través de los datos de contacto indicados previamente, en los términos que suscribe la legislación 
+vigente. Asimismo, en cualquier momento las reclamaciones podrán dirigirse indistintamente al Responsable o la 
+Agencia Española de Protección de datos a través de los formularios que esta entidad tiene habilitados al efecto y 
+que son accesibles a través de su página web, https://sedeagpd.gob.es.  
+Y para que así conste, firmo la presente en ………… a ……. de 
+…………………2021 
+(Lugar, fecha y firma) 
+PAGE 35
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 35  
+ANEXO VIII – DECLARACIÓN DE RELACIÓN DE EMPRESAS 
+PERTENECIENTES AL MISMO GRUPO       
+Es obligatoria su presentación. 
+ 
+Dª/D................., con domicilio en......................, calle................................................, 
+y provista/o de DNI..............................., en nombre propio o en representación 
+de.........................................., con domicilio en ......................................., 
+calle.............................................Tfno ................................y  N.I.F......................., 
+bien enterado de los Pliegos de Condiciones relativos PARA LA CONTRATACIÓN 
+DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y VALIDACIÓN DE 
+DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS GTFS, GTFS-RT, 
+SIRI Y NETEX, Nº expediente 2022-14LT, declara bajo su responsabilidad: 
+DECLARA; Que la empresa a la que representa: (indicar a o b) 
+ a) No pertenece a ningún grupo de empresas. 
+ b) Pertenece al grupo de empresas denominado: .................... compuesto por 
+las  siguientes empresas (indicar todas las empresas del grupo) 
+En este último caso deberá indicar: 
+ No concurren a la licitación otras empresas del Grupo que se encuentren en 
+alguno de los supuestos del art. 42.1 del Código de Comercio  
+ 
+ Concurren a la licitación otras empresas del Grupo que se encuentren en alguno 
+de los supuestos del art. 42.1 del Código de Comercio. (indicar nombre de las 
+otras empresas) 
+PROTECCIÓN DE DATOS - De acuerdo con lo dispuesto en la normativa vigente en materia de protección de 
+datos informamos a los licitadores que el responsable del tratamiento de sus datos es TUVISA (en adelante, el 
+Responsable), C/ Agirrelanda, 2. 01013 Vitoria-Gasteiz, con número de teléfono 945 16 10 54 y dirección de 
+correo electrónico tuvisa.contratacion@vitoria-gasteiz.org. El Responsable está legitimado para tratar los datos 
+que le faciliten los licitadores por la participación en la licitación para las siguientes finalidades: a) Gestionar su 
+participación en la licitación. Este tratamiento queda legitimado por el consentimiento válidamente prestado por los 
+licitadores en el momento de su participación. b) Publicación de los datos de los licitadores  y los adjudicatarios a 
+través de los medios que TUVISA considere oportunos. Esta finalidad está autorizada por la Ley 9/2017, de 8 de 
+noviembre, de Contratos del Sector Público. Los datos de carácter personal únicamente se tratarán y 
+conservarán mientras persista la relación y una vez finalizada ésta mientras el Responsable esté legitimado para 
+su tratamiento y/o conservación atendiendo a los plazos establecidos por la legislación vigente. Respecto a los 
+datos de carácter personal recogidos para su tratamiento los licitadores tienen la posibilidad de ejercitar los 
+derechos de acceso rectificación, supresión y portabilidad. Asimismo, en determinadas circunstancias los 
+licitadores tendrán derecho a solicitar la limitación u oposición del tratamiento de sus datos en cuyo caso el 
+Responsable cesará en su tratamiento y únicamente conservará los mismos para el ejercicio o la defensa de 
+reclamaciones. El ejercicio de los citados derechos podrá hacerse mediante solicitud dirigida por escrito al 
+Responsable a través de los datos de contacto indicados previamente, en los términos que suscribe la legislación 
+vigente. Asimismo, en cualquier momento las reclamaciones podrán dirigirse indistintamente al Responsable o la 
+Agencia Española de Protección de datos a través de los formularios que esta entidad tiene habilitados al efecto y 
+que son accesibles a través de su página web, https://sedeagpd.gob.es.  
+PAGE 36
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 36  
+Y para que así conste, firmo la presente en ………… a ……. de ……………2021 
+PAGE 37
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 37  
+ANEXO IX 
+ 
+DECLARACIÓN RESPONSABLE PARA  
+EL TRATAMIENTO DE DATOS PERSONALES 
+ 
+ 
+ 
+D/Dª…………………………….. , con D.N.I. ……………………….., en nombre y 
+representación de  XX, C.I.F XX , empresa adjudicataria del EXPEDIENTE: 
+CONTRATACIÓN DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y 
+VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX, Nº EXPEDIENTE: 2022-14LT en adelante 
+ENCARGADA DE TRATAMIENTO. 
+ 
+En relación al Contrato anteriormente citado y según lo dispuesto en la Disposición 
+adicional vigésima quinta de la Ley 9/2017, de 8 de noviembre, de Contratos del 
+Sector Público, en relación con la Disposición Transitoria Quinta de la Ley Orgáni-
+ca 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los 
+derechos digitales, 
+ 
+DECLARA que asume las siguientes instrucciones que Transportes Urbanos de 
+Vitoria S.A. (en adelante TUVISA) le remite, en relación al tratamiento de datos 
+personales y que asume las funciones y obligaciones de ENCARGADA DEL 
+TRATAMIENTO conforme a las siguientes especificaciones: 
+ 
+Primera. Objeto del encargo del tratamiento 
+Mediante las presentes instrucciones se habilita a la ENCARGADA DEL 
+TRATAMIENTO, para tratar por cuenta de TUVISA, responsable del tratamiento, 
+los datos personales necesarios para prestar el contrato de servicio para la 
+CONTRATACIÓN DE LOS SERVICIOS DE DESARROLLO, DESPLIEGUE Y 
+VALIDACIÓN DE DATOS DE TRANSPORTE AVANZADOS EN LOS FORMATOS 
+GTFS, GTFS-RT, SIRI Y NETEX PARA TRANSPORTES URBANOS DE VITORIA-
+GASTEIZ S.A. 
+ 
+Segunda. Identificación de la información afectada 
+Para la ejecución de las prestaciones derivadas del cumplimiento del objeto de 
+este encargo, TUVISA, pone a disposición de la ENCARGADA DEL 
+TRATAMIENTO, la información que se describe en el Anexo del presente docu-
+mento. 
+ 
+Tercera. Duración 
+Lo indicado en el presente documento se mantiene vigente mientras perdure la 
+relación vinculante o durante los años necesarios para cumplir con las obligaciones 
+legales. Ello sin perjuicio de las revisiones periódicas que se consideren óptimas 
+PAGE 38
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 38  
+para la revisión, verificación de los datos e información a servicio de la 
+ENCARGADA DEL TRATAMIENTO. 
+ 
+Finalizada la citada relación, la ENCARGADA DEL TRATAMIENTO deberá supri-
+mir los datos personales de acuerdo a lo previsto en el siguiente apartado, y en 
+todo caso, no deberá conservar ninguna copia en su poder salvo autorización ex-
+presa del responsable. 
+ 
+Cuarta. Obligaciones de la ENCARGADA DEL TRATAMIENTO   
+La ENCARGADA DEL TRATAMIENTO  y en su caso, el personal a su cargo, se 
+obliga a: 
+a) Utilizar los datos personales objeto de tratamiento, o los que recoja para su in-
+clusión, sólo para la finalidad objeto del encargo de tratamiento. En ningún caso 
+podrá utilizar los datos para fines propios. 
+b) Tratar los datos de acuerdo con las instrucciones de TUVISA. 
+c) Llevar, por escrito, un registro de todas las categorías de actividades de trata-
+miento efectuadas por cuenta de TUVISA, que contenga: 
+ Nombre y los datos de contacto de la ENCARGADA DEL TRATAMIENTO y 
+de cada responsable por cuenta del cual actúe el encargado y, en su caso, 
+del delegado de protección de datos. 
+ Categorías de tratamientos efectuados por cuenta de TUVISA. 
+ Una descripción de las medidas técnicas y organizativas de seguridad, en 
+caso de que proceda su aplicación, relativas a: 
+o Seudonimización y el cifrado de datos personales. 
+o La capacidad de garantizar la confidencialidad, integridad, disponibili-
+dad y resiliencia permanentes de los sistemas y servicios de tratamien-
+to. 
+o La capacidad de restaurar la disponibilidad y el acceso a los datos per-
+sonales de forma rápida, en caso de incidente físico o técnico. 
+o El proceso de verificación, evaluación y valoración regulares de la efi-
+cacia de las medidas técnicas y organizativas para garantizar la segu-
+ridad del tratamiento. 
+ 
+d) Cesiones y datos de personas usuarias: Con carácter general, no se podrá co-
+municar datos a terceras personas u organizaciones, salvo aquella información 
+que en el ámbito de la representación y defensa judicial deban conocer terceros 
+legitimados. 
+e) Subcontratación: Se prohíbe subcontratar las prestaciones que formen parte del 
+objeto del presente documento, salvo lo dispuesto al respecto en el Anexo “Trata-
+miento de datos personales” 
+Si, además, fuera necesario subcontratar algún tratamiento, este hecho se deberá 
+comunicar previamente y por escrito A TUVISA, con una antelación de cinco (5) 
+días laborables, indicando los tratamientos que se pretende subcontratar e identifi-
+cando de forma clara e inequívoca la entidad subcontratista y sus datos de contac-
+PAGE 39
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 39  
+to. La subcontratación podrá llevarse a cabo si TUVISA no manifiesta su oposición 
+en el plazo establecido. 
+En cualquier caso, el subcontratista, que también tendrá la condición de encargado 
+del tratamiento, está obligado igualmente a cumplir las obligaciones establecidas 
+en el presente documento y las instrucciones que dicte TUVISA. Corresponde a la 
+ENCARGADA DEL TRATAMIENTO regular la relación jurídica con el subencarga-
+do mediante un instrumento jurídico que refleje las mismas condiciones, medidas 
+de seguridad aplicables e instrucciones del presente documento. 
+f) Mantener el deber de secreto respecto a los datos de carácter personal a los que 
+haya tenido acceso en virtud del presente encargo, incluso después de que finalice 
+su objeto. 
+g) Garantizar que las personas autorizadas para tratar datos personales se com-
+prometan, de forma expresa y por escrito, a respetar la confidencialidad y a cumplir 
+las medidas de seguridad correspondientes, manteniendo a disposición de 
+TUVISA la documentación acreditativa del cumplimiento de dicha obligación. 
+h) Garantizar la formación necesaria en materia de protección de datos personales 
+del personal de la ENCARGADA DEL TRATAMIENTO  autorizado a tratar datos 
+personales. 
+i) Asistir a TUVISA en la respuesta al ejercicio de los derechos de acceso, rectifi-
+cación, supresión y oposición; limitación del tratamiento; a no ser objeto de deci-
+siones individualizadas automatizadas (incluida la elaboración de perfiles). En caso 
+de que la ENCARGADA DEL TRATAMIENTO reciba alguna petición de ejercicio 
+de derechos correspondiente a tratamientos de datos de TUVISA, deberá comuni-
+carla en un plazo máximo de 48 horas al mismo. 
+j) Corresponde a TUVISA facilitar el derecho de información a las personas intere-
+sadas, de tal modo que, la ENCARGADA DEL TRATAMIENTO se abstendrá de 
+aportar sus propios modelos de información, recurriendo en todo caso a aquellos 
+aportados por TUVISA o solicitándolos en caso de que se precisen incluir en cual-
+quier medio o canal de recogida de datos. 
+k) Notificación de brechas de seguridad de los datos: La ENCARGADA DEL 
+TRATAMIENTO  notificará a TUVISA, sin dilación indebida, y en cualquier caso 
+antes del plazo máximo de 24 horas , a través de correo electrónico a la persona 
+responsable de ejecución y/o supervisión del objeto del contrato, las violaciones de 
+la seguridad de los datos personales de las que tenga conocimiento, así como toda 
+la información relevante para la documentación y comunicación de la incidencia 
+(En concreto, descripción y potenciales consecuencias de la incidencia, categoría y 
+número aproximado de personas afectadas, medidas adoptadas para revertir y 
+mitigar incidencia). 
+No será necesaria la notificación cuando sea improbable que dicha violación de la 
+seguridad constituya un riesgo para los derechos y las libertades de las personas 
+físicas. 
+l) Dar apoyo a TUVISA en la realización de las evaluaciones de impacto relativas a 
+la protección de datos, cuando proceda. 
+m) Dar apoyo a TUVISA en la realización de las consultas previas a la autoridad de 
+control, cuando proceda. 
+PAGE 40
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 40  
+n) Poner disposición de TUVISA toda la información necesaria para demostrar el 
+cumplimiento de sus obligaciones, así como para la realización de las auditorías o 
+las inspecciones que realice TUVISA u otro auditor autorizado por él. 
+o) Implantar las medidas de seguridad que garanticen la confidencialidad, integri-
+dad, disponibilidad y resiliencia permanentes de los sistemas y servicios de trata-
+miento. Que permitan restaurar la disponibilidad y el acceso a los datos personales 
+de forma rápida, en caso de incidente físico o técnico; que permitan verificar, eva-
+luar y valorar, de forma regular, la eficacia de las medidas técnicas y organizativas 
+implantadas para garantizar la seguridad del tratamiento. Sin perjuicio de adoptar 
+otras que, de acuerdo a los estándares aceptados, se puedan implementar o acor-
+dar entre las partes mediante instrucciones y que además, se puedan demostrar 
+mediante certificados y acreditaciones al efecto. En particular, las medidas de se-
+guridad a implantar serán, al menos, las especificadas en el Anexo II del presente 
+documento 
+p) Destino de los datos: La ENCARGADA DEL TRATAMIENTO  se obliga a devol-
+ver a TUVISA los datos personales y, en su caso, los soportes donde consten, una 
+vez cumplida la prestación. La devolución debe comportar el borrado total de los 
+datos existentes en los equipos informáticos utilizados por el encargado. 
+ 
+Para que conste a los afectos oportunos, se firma y rubrica, en Vitoria-Gasteiz a 22 
+de febrero de 2022. 
+ 
+ 
+ 
+ 
+ 
+Fdo:…………………………………….  
+ 
+Nombre y cargo
+PAGE 41
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 41  
+ 
+ANEXO IX-II  
+ 
+TRATAMIENTO DE DATOS PERSONALES 
+ 
+ 
+Colectivos  
+Los colectivos de interesados y Datos Personales tratados a las que puede tener 
+acceso la ENCARGADA DEL TRATAMIENTO son:  
+CATEGORÍAS DE PERSONAS INTERESADAS 
+ XXXXX 
+ 
+Datos tratados 
+La ENCARGADA DEL TRATAMIENTO podrá tratar la siguiente información perso-
+nal: 
+ 
+Datos Personales del tratamiento a los que se puede acceder 
+ D.N.I./N.I.F./NIE/NÚMERO PASAPORTE 
+ NOMBRE  
+ APELLIDOS 
+ DIRECCION postal 
+ CORREO ELECTRÓNICO 
+ TELEFONO 
+ FIRMA 
+ IMAGEN (FOTOGRAFÍAS O VIDEOS) 
+ SONIDOS (GRABACIONES DE AUDIO) 
+ REDES SOCIALES (PERFIL TWITTER, FACEBOOK, INSTAGRAM, ENTRE 
+OTROS) 
+ SEXO 
+ NACIONALIDAD  
+ LUGAR DE NACIMIENTO 
+ FECHA NACIMIENTO 
+ EDAD 
+ NÚMERO DE HIJOS O HIJAS 
+ ESTADO CIVIL 
+ CARACTERISTICAS PERSONALES (ALTURA, PESO, TALLA, ENTRE 
+OTROS) 
+ DATOS DE FORMACIÓN (TÍTULOS ACADÉMICOS, DIPLOMAS, ENTRE 
+OTROS) 
+ EXPERIENCIA O HISTORIAL PROFESIONAL 
+ PROFESIÓN 
+ PUESTO DE TARABAJO O CATEGORÍA PROFESIONAL 
+ LICENCIAS, PERMISOS O AUTORIZACIONES 
+PAGE 42
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 42  
+ PERTENCIA A ASOCIACIONES, CLUBES, ENTRE OTROS 
+ PROPIEDADES O POSESIONES 
+ ECONOMICOS, FINANCIEROS Y DE SEGUROS (DATOS BANCARIOS, 
+CUENTA CORRIENTE, NÚMERO DE TARJETA, DATOS SOBRE TRIBUTOS, 
+SUELDOS, SUBSIDIOS, ENTRE OTROS) 
+ DATOS DE INFORMACIÓN COMERCIAL (ACTIVIDADES, NEGOCIOS, 
+ENTRE OTROS) 
+ DATOS SOBRE TRANSACCIONES (BIENES O SERVICIOS OFERTADOS 
+POR EL INTERESADO, BIENES 0 SERVICIOS RECIBIDOS POR EL 
+INTERESADO, ENTRE OTROS) 
+ DATOS SOBRE INFRACCIONES ADMINISTRATIVAS 
+ DATOS SOBRE INFRACCIONES PENALES 
+ CATEGORÍAS ESPECIALES DE DATOS 
+ ORIGEN ÉTNICO O RACIAL 
+ CONVICCIONES RELIGIOSAS O FILOSÓFICAS 
+ AFILIACIÓN SINDICAL 
+ DATOS GENÉTICOS 
+ DATOS BIOMÉTRICOS (HUELLA DIGITAL, IRIS, ENTRE OTROS) 
+ DATOS DE SALUD 
+ DATOS DE VIDA SEXUAL 
+ DATOS DE ORIENTACIÓN SEXUAL 
+ OTROS DATOS 
+(INDICAR):___________________________________________ 
+  
+ 
+Elementos de tratamiento 
+ 
+OPERACIONES DE TRATAMIENTO 
+ Recogida (captura de datos) 
+ Registro (grabación) 
+ Estructuración 
+ Modificación 
+ Conservación(almacenamiento) 
+ Extracción (retrieval) 
+ Consulta 
+ Cesión 
+ Difusión  
+ Interconexión (cruce) 
+ Cotejo  
+ Limitación 
+ Supresión 
+ Destrucción (de copias temporales) 
+ Conservación (en sus sistemas de información) 
+PAGE 43
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 43  
+ Duplicado 
+ Copia (copias temporales)  
+ Copia de seguridad 
+ Recuperación 
+ Otros:________ 
+  
+ 
+ 
+Medidas de seguridad 
+La ENCARGADA DE TRATAMIENTO deberá implantar las medidas de seguridad 
+precisas de tipo físico, lógico y organizativo que, garanticen la confidencialidad, 
+integridad, disponibilidad y resiliencia permanentes de los sistemas y servicios de 
+tratamiento, permitiendo restaurar la disponibilidad y el acceso a los datos perso-
+nales de forma rápida, en caso de incidente físico o técnico. Asimismo, deberán 
+permitir verificar, evaluar y valorar, de forma regular, la eficacia de las medidas 
+técnicas y organizativas implantadas para garantizar la seguridad del tratamiento. 
+Sin perjuicio de que TUVISA emita otras instrucciones, se deberán cumplir al me-
+nos las siguientes medidas de seguridad: 
+ 
+ Personal usuario en sus sistemas de información:  El personal de la 
+ENCARGADA DE TRATAMIENTO con acceso a los equipos que dan soporte a 
+los sistemas de información con los datos responsabilidad de TUVISA con fines 
+de tratamiento de datos personales de acuerdo al presente instrumento jurídi-
+co, deberá solicitar la correspondiente autorización de acceso a datos persona-
+les que deberá ser validada por quien tenga esa responsabilidad en la 
+ENCARGADA DE TRATAMIENTO. 
+ Identificación y autenticación en sus sistemas de información: 
+o El personal de la ENCARGADA DE TRATAMIENTO con acceso a datos 
+personales por cuenta de TUVISA en el ámbito de la prestación del ser-
+vicio, deberá disponer de credenciales de acceso que le identifiquen de 
+manera inequívoca y personalizada mediante usuario y contraseña de 
+acceso a sus sistemas de información. 
+o La ENCARGADA DE TRATAMIENTO será responsable de gestionar 
+con la debida cautela y confidencialidad sus mecanismos de identifica-
+ción y autenticación. En concreto, deberá asignar los usuarios y contra-
+señas distribuidos para acceder a sus sistemas de información a perso-
+nas físicas autorizadas e identificadas de manera inequívoca y persona-
+lizada a fin de que no puedan compartirse por varios usuarios. 
+o Los usuarios o personas físicas de la ENCARGADA DE 
+TRATAMIENTO serán responsables de custodiar debidamente la confi-
+dencialidad de sus contraseñas de acceso a sus sistemas de informa-
+ción. 
+PAGE 44
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 44  
+ Soportes: En el caso de que el personal de la ENCARGADA DE 
+TRATAMIENTO precise utilizar soportes informáticos con capacidad de alma-
+cenamiento de datos personales en el ámbito de la prestación del servicio por 
+cuenta de TUVISA, deberá cumplir las siguientes instrucciones: 
+o Deberá disponer de una relación actualizada de personas autorizadas a 
+tratar soportes con datos personales por cuenta de TUVISA. 
+o En todo caso, se prohíbe la salida de datos mediante soportes físicos 
+con capacidad de almacenamiento fuera de las instalaciones de 
+TUVISA salvo su autorización expresa. 
+ Incidencias: Cualquier incidencia que afecte a la integridad, confidencialidad, 
+autenticidad y disponibilidad del tratamiento de los datos personales llevada a 
+cabo por la ENCARGADA DE TRATAMIENTO será comunicada de inmediato 
+a TUVISA. 
+ Copias de respaldo: La ENCARGADA DE TRATAMIENTO será responsable 
+de implantar y aplicar procedimientos de copias de respaldo de los datos per-
+sonales que trate por cuenta de TUVISA y que se encuentren bajo su ámbito 
+de control y/o mantenimiento a fin de impedir la pérdida y/o destrucción de in-
+formación de titularidad de TUVISA. 
+ Copias de recuperación: La ENCARGADA DE TRATAMIENTO será respon-
+sable de implantar y aplicar procedimientos de copias de recuperación de los 
+datos personales que trate por cuenta de TUVISA y que se encuentren bajo su 
+ámbito de control y/o mantenimiento a fin de impedir la pérdida y/o destrucción 
+de información de titularidad de TUVISA. 
+ Telecomunicaciones y envío de datos: En caso de que la ENCARGADA DE 
+TRATAMIENTO precise enviar datos a TUVISA a través de redes públicas o 
+redes inalámbricas de comunicaciones electrónicas se realizará cifrando dichos 
+datos o bien utilizando cualquier otro mecanismo que garantice que la informa-
+ción no sea inteligible ni manipulada por terceros. 
+ Categorías especiales de datos : El tratamiento de categorías especiales de 
+datos, como datos de salud, origen étnico o racial, afiliación sindical, datos ge-
+néticos, datos biométricos o datos relativos a la vida u orientación sexual, entre 
+otros, en el ámbito del servicio contratado requerirá adoptar especiales caute-
+las de seguridad y confidencialidad. De este modo, la ENCARGADA DE 
+TRATAMIENTO no revelará ni difundirá este tipo de datos a ninguna persona 
+ajena al desarrollo del servicio y a la relación entre las partes. El tratamiento de 
+categorías especiales de datos tanto en soporte informático como en papel re-
+querirá la adopción de medidas de seguridad específicas: 
+ La información en soporte informático deberá cifrarse cuando se envíe 
+mediante redes de comunicaciones públicas (internet). 
+PAGE 45
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 45  
+ El personal de la ENCARGADA DE TRATAMIENTO con acceso a este 
+tipo de datos deberá encontrarse previamente autorizado y documenta-
+do mediante un listado específico. 
+ El tratamiento de estos datos en soporte papel requerirá adoptar siste-
+mas de almacenamiento y conservación cerrados con llave y sólo acce-
+sible a personal autorizado por la ENCARGADA DE TRATAMIENTO. 
+ El traslado de este tipo de datos mediante soportes en papel requerirá 
+la adopción de medidas de seguridad que impidan la visualización de la 
+información por terceros no autorizados. 
+ Gestión de soportes o documentos en papel: En el ámbito de la prestación 
+del servicio, el personal de la ENCARGADA DE TRATAMIENTO podrá tratar y 
+acceder a datos personales en soporte papel si bien se prohíbe expresamente 
+su traslado fuera de las instalaciones de TUVISA, salvo autorización expresa. 
+Durante el tratamiento y visualización de la información en las instalaciones de 
+TUVISA, el personal de la ENCARGADA DE TRATAMIENTO deberá aplicar 
+las correspondientes medidas de seguridad en relación a la conservación, ar-
+chivo, custodia y traslado de documentos y soportes en formato papel con da-
+tos personales que se le indiquen desde TUVISA. 
+ Gestión de soportes o documentos en papel en las instalaciones de la 
+ENCARGADA DE TRATAMIENTO: En el ámbito de la prestación del servicio, 
+el personal de la ENCARGADA DE TRATAMIENTO podrá, en sus propias ins-
+talaciones, tratar y acceder a datos personales de TUVISA en soporte papel si 
+bien, durante el tratamiento y visualización de esta información, el personal de 
+ENCARGADA DE TRATAMIENTO aplicará las correspondientes medidas de 
+seguridad en relación a la conservación, archivo, custodia y traslado de docu-
+mentos y soportes en formato papel con datos personales. En concreto: 
+o Los dispositivos de almacenamiento de los documentos que contengan 
+datos personales deberán disponer de mecanismos que obstaculicen su 
+apertura como llaves o tarjetas electrónicas así como cualquier otra 
+medida que impidan el acceso de personas no autorizadas. 
+o Los soportes o documentos en papel con datos personales que se en-
+cuentren en proceso de revisión o tramitación, deberán ser custodiadas 
+por personal a cargo de la misma e impedir en todo momento que pue-
+da ser accedida por persona no autorizada. 
+o Durante el traslado físico de la documentación con datos personales 
+deberán adoptarse medidas dirigidas a impedir el acceso o manipula-
+ción de la información objeto de traslado. Por ejemplo, utilizando conte-
+nedores opacos y medios de transporte protegidos e inaccesibles por 
+cualquier tercero mediante llaves o sistemas equivalentes. 
+ 
+ Gestión de datos en soporte papel:  Los datos personales tratados mediante 
+soportes deberán ser conservados y custodiados de tal modo que se impida el 
+PAGE 46
+ 
+Administrazio baldintzen orria 
+Pliego de condiciones administrativas 2022-14LT 
+ 
+ 
+ 46  
+acceso a terceros ajenos a TUVISA o a la ENCARGADA DE TRATAMIENTO. 
+De este modo, únicamente podrán ser recogidos, tratados y transportados por 
+personal de la ENCARGADA DE TRATAMIENTO, aplicando medidas de segu-
+ridad que impidan accesos no autorizados y por lo tanto, la visualización de in-
+formación con datos personales por personas físicas ajenas a los trabajos y 
+servicios encomendados por TUVISA a la ENCARGADA DE TRATAMIENTO. 
+Las copias de datos personales en papel obsoletas o desechables serán com-
+pletamente destruidas de tal modo que no puedan visualizarse datos por terce-
+ras personas no interesadas.  
+ 
+ Destrucción de soportes o documentos en papel: Cuando resulte necesario 
+destruir datos en papel se utilizarán destructoras o, se destruirán de tal modo 
+que resulte imposible reconstruir los datos a un estado anterior que permita 
+identificar a personas físicas ajenas TUVISA y a la ENCARGADA DE 
+TRATAMIENTO. 
+ 

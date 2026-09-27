@@ -1,0 +1,5 @@
+rule_id,severity,category,file,field,message_key,occurrence_count,distinct_detail_rows,evidence_source
+GTFS_ROUTES_TXT_CONTINUOUS_DROP_OFF_CONDITIONALLY_FORBIDDEN,ERROR,FIELD,routes.txt,continuous_drop_off,validation.enum_value_invalid,99,99,informe-validacion.html:issues
+GTFS_ROUTES_TXT_CONTINUOUS_PICKUP_CONDITIONALLY_FORBIDDEN,ERROR,FIELD,routes.txt,continuous_pickup,validation.enum_value_invalid,99,99,informe-validacion.html:issues
+GTFS_STOPS_TXT_WHEELCHAIR_BOARDING_OPTIONAL,ERROR,FIELD,stops.txt,wheelchair_boarding,validation.enum_value_invalid,1360,1360,informe-validacion.html:issues
+GTFS_STOP_TIMES_TXT_CONTINUOUS_PICKUP_CONDITIONALLY_FORBIDDEN,ERROR,FIELD,stop_times.txt,continuous_pickup,validation.enum_value_invalid,98442,98442,informe-validacion.html:issues

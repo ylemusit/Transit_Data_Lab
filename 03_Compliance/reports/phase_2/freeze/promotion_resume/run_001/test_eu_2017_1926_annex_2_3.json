@@ -1,0 +1,9 @@
+[{"test":"01_LEVEL_COUNT","status":"PASS","expected":1,"actual":1},
+{"test":"02_LEVEL_TYPE","status":"PASS","expected":1,"actual":1},
+{"test":"03_CHILD_COUNT","status":"PASS","expected":0,"actual":0},
+{"test":"04_DATA_ELEMENT_CHILD_COUNT","status":"PASS","expected":0,"actual":0},
+{"test":"05_SOURCE_REFERENCE_NULL","status":"PASS","expected":0,"actual":0},
+{"test":"06_TEXT_CONTENT_NULL","status":"PASS","expected":0,"actual":0},
+{"test":"07_SECTION_MISMATCH","status":"PASS","expected":0,"actual":0},
+{"test":"08_SYNTHETIC_CHILD_IDS","status":"PASS","expected":0,"actual":0}]
+[{"test":"ANNEX_2_3_SOURCE_INTEGRITY","status":"PASS"}]

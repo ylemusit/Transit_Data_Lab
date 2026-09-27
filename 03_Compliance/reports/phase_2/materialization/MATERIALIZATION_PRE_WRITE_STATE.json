@@ -1,0 +1,79 @@
+{
+  "db_sha": "0c119b4a75e6a0e7954480675cc625659fe65a1878f46dae1e496e0790d8ffec",
+  "timestamp": "2026-09-27T00:57:09.054630+00:00",
+  "tables": {
+    "audit.evidence": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit.results": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit.rules": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "audit.runs": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compliance.deadlines": {
+      "count": 1,
+      "content_hash": "2edd7d93608d71ef2196ecf88860522562035e4a811e2cff26f8959313f75a1d"
+    },
+    "compliance.nap_requirements": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "compliance.provision_classifications": {
+      "count": 92,
+      "content_hash": "ce3648626ef4486c0e41ab1bd438fbdb90262f3e922e8a878070767e6a6f4823"
+    },
+    "compliance.requirement_candidate_sources": {
+      "count": 21,
+      "content_hash": "8620fc46a0916b35df80939212290283fb9cfb7bc77f941176d6f1fca1e38c62"
+    },
+    "compliance.requirement_candidates": {
+      "count": 34,
+      "content_hash": "3891ac41ae9fbccefda9967f2db74e6b423a24c1c518226a97a5b3b59c0d65a7"
+    },
+    "compliance.requirements": {
+      "count": 3,
+      "content_hash": "f17abec6a633fe0407ae49732db41a398aff3554fbcf98d9a73b3168ea0e0a5e"
+    },
+    "compliance.source_facts": {
+      "count": 36,
+      "content_hash": "4558e8448c3d6963c2f2b8c25aa92c1289de61acdec21d24d37703bd430ccc55"
+    },
+    "mapping.format_coverage": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "mapping.format_equivalences": {
+      "count": 0,
+      "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "source.documents": {
+      "count": 10,
+      "content_hash": "d48ecde5be0efbf5eed3eb22c5830145c3a3fc624db9235b618b159369e83098"
+    },
+    "source.provisions": {
+      "count": 92,
+      "content_hash": "927e457562c0667c54ad5d8b8b15b7531194b0379a46ecb63830e66028e6dd25"
+    },
+    "source.relationships": {
+      "count": 6,
+      "content_hash": "d8fbf7dcfdefe48252c9bfb8c7cd62cbdefed45641a1358bfa82db422f26df1e"
+    }
+  },
+  "universe_hash": "4f7c0a3342a91c148a56c6f73c50a384501f1baff5b61e278e322193624906c5",
+  "artifacts": {
+    "REQUIREMENTS_MATERIALIZATION_INPUT.csv": "547ab74aefd34fa359b25ce4648e7188e9a68a78450bcb8736776efc5e0f2057",
+    "REQUIREMENT_ID_MAP.csv": "cc030237c1b1111144c2f83ae1a027fd18aba59502b7bd71c2de0a31d5bd9df2",
+    "DEADLINE_MATERIALIZATION_PLAN.csv": "6e836d8641548433d0d8eab53e81eae61ba53966f0a9a33d0564cf7f73948faf",
+    "PREPARED_INSERTS.json": "5127a6aa5110d9ad6cb24ade402b29cda1dbbb6d1558ed8392d83bedd600752c",
+    "DATABASE_BEFORE.json": "5591fa4eda0013f84301f4def73b20515c00d967ce20eb304db710f98b2fef8d",
+    "PROTECTED_FILE_HASHES.json": "050f5b2064a67c52abd9d330410bc39b1975e6944175307b34e9d37cf86bc577"
+  }
+}

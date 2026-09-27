@@ -1,0 +1,56 @@
+┌──────────────────────────────────────┬─────────┬──────────┬────────┐
+│                 test                 │ status  │ expected │ actual │
+│               varchar                │ varchar │  int32   │ int64  │
+├──────────────────────────────────────┼─────────┼──────────┼────────┤
+│ 01_DOCUMENT_EXISTS                   │ PASS    │        1 │      1 │
+│ 02_TOTAL_DOCUMENT_PROVISIONS         │ PASS    │       92 │     92 │
+│ 03_ARTICLE_COUNT                     │ PASS    │       11 │     11 │
+│ 04_ANNEX_ROOT_COUNT                  │ PASS    │        1 │      1 │
+│ 05_ANNEX_SECTION_COUNT               │ PASS    │        2 │      2 │
+│ 06_ANNEX_LEVEL_COUNT                 │ PASS    │        7 │      7 │
+│ 07_MISSING_ANNEX_LEVELS              │ PASS    │        0 │      0 │
+│ 08_UNEXPECTED_ANNEX_LEVELS           │ PASS    │        0 │      0 │
+│ 09_ANNEX_LEVEL_SECTION_MISMATCH      │ PASS    │        0 │      0 │
+│ 10_LEVEL_CHILD_COUNT_MISMATCH        │ PASS    │        0 │      0 │
+│ 11_LEVEL_GROUP_COUNT_MISMATCH        │ PASS    │        0 │      0 │
+│ 12_LEVEL_DATA_ELEMENT_COUNT_MISMATCH │ PASS    │        0 │      0 │
+│ 13_TOTAL_ANNEX_GROUPS                │ PASS    │       14 │     14 │
+│ 14_TOTAL_DATA_ELEMENTS               │ PASS    │       57 │     57 │
+│ 15_ANNEX_SOURCE_REFERENCE_NULL       │ PASS    │        0 │      0 │
+│ 16_ANNEX_HEADING_NULL                │ PASS    │        0 │      0 │
+│ 17_DATA_ELEMENT_TEXT_NULL            │ PASS    │        0 │      0 │
+│ 18_ANNEX_2_3_TYPE                    │ PASS    │        1 │      1 │
+│ 19_ANNEX_2_3_SYNTHETIC_CHILDREN      │ PASS    │        0 │      0 │
+│ 20_DUPLICATE_PROVISION_IDS           │ PASS    │        0 │      0 │
+│ 21_UNEXPECTED_PROVISION_TYPES        │ PASS    │        0 │      0 │
+└──────────────────────────────────────┴─────────┴──────────┴────────┘
+  21 rows                                                  4 columns
+┌─────────────────────────────────────────┬─────────┐
+│                  test                   │ status  │
+│                 varchar                 │ varchar │
+├─────────────────────────────────────────┼─────────┤
+│ EU_2017_1926_MASTER_STRUCTURE_INTEGRITY │ PASS    │
+└─────────────────────────────────────────┴─────────┘
+┌────────────────┬─────────┐
+│ provision_type │ records │
+│    varchar     │  int64  │
+├────────────────┼─────────┤
+│ ARTICLE        │      11 │
+│ ANNEX          │       1 │
+│ ANNEX_SECTION  │       2 │
+│ ANNEX_LEVEL    │       7 │
+│ ANNEX_GROUP    │      14 │
+│ DATA_ELEMENT   │      57 │
+└────────────────┴─────────┘
+┌─────────┬───────────────┬────────┬───────────────┬─────────┐
+│  level  │ child_records │ groups │ data_elements │ status  │
+│ varchar │     int64     │ int64  │     int64     │ varchar │
+├─────────┼───────────────┼────────┼───────────────┼─────────┤
+│ 1.1     │            24 │      4 │            20 │ PASS    │
+│ 1.2     │            14 │      3 │            11 │ PASS    │
+│ 1.3     │            14 │      4 │            10 │ PASS    │
+│ 1.4     │            12 │      2 │            10 │ PASS    │
+│ 2.1     │             3 │      0 │             3 │ PASS    │
+│ 2.2     │             4 │      1 │             3 │ PASS    │
+│ 2.3     │             0 │      0 │             0 │ PASS    │
+└─────────┴───────────────┴────────┴───────────────┴─────────┘

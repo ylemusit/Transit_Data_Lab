@@ -1,0 +1,3 @@
+rule_id,severity,category,file,field,message_key,occurrence_count,distinct_detail_rows,evidence_source
+GTFS_BP_TRIP_WITHOUT_SHAPE,NOTICE,BEST_PRACTICE,trips.txt,shape_id,validation.best_practice_trip_without_shape,6,6,informe-validacion.html:issues
+GTFS_SHAPE_GEOMETRY_INVALID,ERROR,GEOMETRY,shapes.txt,shape_id,validation.shape_geometry_invalid,6,6,informe-validacion.html:issues

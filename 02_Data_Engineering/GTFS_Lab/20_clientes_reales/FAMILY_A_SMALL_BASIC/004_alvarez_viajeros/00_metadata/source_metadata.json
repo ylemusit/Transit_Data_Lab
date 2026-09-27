@@ -1,0 +1,42 @@
+{
+    "benchmark_id":  "004",
+    "operator_display_name":  "Autocares Ãlvarez de Viajeros",
+    "operator_slug":  "alvarez_viajeros",
+    "family":  "FAMILY_A_SMALL_BASIC",
+    "country":  "ES",
+    "source_platform":  "NAP EspaÃ±a",
+    "source_dataset_id":  null,
+    "source_url":  null,
+    "capture_date":  null,
+    "download_date":  null,
+    "nap_last_update":  null,
+    "nap_validation_status":  null,
+    "nap_error_count":  null,
+    "nap_warning_count":  null,
+    "declared_valid_from":  null,
+    "declared_valid_to":  null,
+    "declared_routes":  null,
+    "declared_stops":  null,
+    "declared_trips":  null,
+    "declared_accessibility":  null,
+    "declared_fares":  null,
+    "declared_route_geometry":  null,
+    "formats_available":  [
+                              "GTFS Schedule"
+                          ],
+    "source_files":  [
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/02_sources/gtfs_schedule/original/20250522_080004_Autocares_Alvarez.zip",
+                             "role":  "original_gtfs_zip",
+                             "sha256":  "1FE7ADB7486766672DDEF94917A881A0BACC5450BA00591D9A3C0E7067E63CB6"
+                         },
+                         {
+                             "path":  "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/01_nap_snapshot/Alvarez.png",
+                             "role":  "original_nap_snapshot",
+                             "sha256":  "9CA5E9AE839BD2E0580945D6F703758A494082B356ACF1C173A117DE31C9323D"
+                         }
+                     ],
+    "notes":  [
+                  "Inventario fÃ­sico inicial; no se ha ejecutado auditorÃ­a semÃ¡ntica ni se han extraÃ­do conclusiones de calidad."
+              ]
+}

@@ -1,0 +1,329 @@
+{
+  "benchmark_id": "005",
+  "operator": "Viagón",
+  "family": "FAMILY_A_SMALL_BASIC",
+  "source_root": "FAMILY_A_SMALL_BASIC/005_viagon/02_sources/gtfs_schedule/extracted",
+  "original_zip": "FAMILY_A_SMALL_BASIC/005_viagon/02_sources/gtfs_schedule/original/20250604_080004_Viagon_Autocares.zip",
+  "original_zip_sha256": "F35192F9AC9F91E39F10357DAD6CC88EBDFFDEEDFC3BF4053B383D09636DE100",
+  "zip_members": [
+    "agency.txt",
+    "calendar.txt",
+    "routes.txt",
+    "stop_times.txt",
+    "stops.txt",
+    "trips.txt"
+  ],
+  "files": [
+    {
+      "file": "agency.txt",
+      "size_bytes": 175,
+      "data_rows": 1,
+      "columns": 6,
+      "column_names": [
+        "agency_id",
+        "agency_name",
+        "agency_url",
+        "agency_timezone",
+        "agency_phone",
+        "agency_lang"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": []
+    },
+    {
+      "file": "calendar.txt",
+      "size_bytes": 636,
+      "data_rows": 11,
+      "columns": 10,
+      "column_names": [
+        "service_id",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "start_date",
+        "end_date"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": []
+    },
+    {
+      "file": "routes.txt",
+      "size_bytes": 871,
+      "data_rows": 11,
+      "columns": 5,
+      "column_names": [
+        "route_id",
+        "agency_id",
+        "route_short_name",
+        "route_long_name",
+        "route_type"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": []
+    },
+    {
+      "file": "stop_times.txt",
+      "size_bytes": 14335,
+      "data_rows": 240,
+      "columns": 16,
+      "column_names": [
+        "trip_id",
+        "arrival_time",
+        "departure_time",
+        "stop_id",
+        "stop_sequence",
+        "Unnamed: 5",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12",
+        "Unnamed: 13",
+        "Unnamed: 14",
+        "Unnamed: 15"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": [
+        "Unnamed: 5",
+        "Unnamed: 6",
+        "Unnamed: 7",
+        "Unnamed: 8",
+        "Unnamed: 9",
+        "Unnamed: 10",
+        "Unnamed: 11",
+        "Unnamed: 12",
+        "Unnamed: 13",
+        "Unnamed: 14",
+        "Unnamed: 15"
+      ]
+    },
+    {
+      "file": "stops.txt",
+      "size_bytes": 4054,
+      "data_rows": 62,
+      "columns": 4,
+      "column_names": [
+        "stop_id",
+        "stop_name",
+        "stop_lat",
+        "stop_lon"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": []
+    },
+    {
+      "file": "trips.txt",
+      "size_bytes": 1192,
+      "data_rows": 22,
+      "columns": 5,
+      "column_names": [
+        "route_id",
+        "service_id",
+        "trip_id",
+        "trip_headsign",
+        "direction_id"
+      ],
+      "encoding": "utf-8-sig",
+      "bom": false,
+      "newline": "LF",
+      "empty": false,
+      "duplicate_columns": false,
+      "nonstandard_columns": []
+    }
+  ],
+  "nonstandard_fields": [
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 5",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 6",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 7",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 8",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 9",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 10",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 11",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 12",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 13",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 14",
+      "nonstandard_occurrence_count": 0
+    },
+    {
+      "file": "stop_times.txt",
+      "column": "Unnamed: 15",
+      "nonstandard_occurrence_count": 0
+    }
+  ],
+  "metrics": {
+    "agency_rows": 1,
+    "routes_rows": 11,
+    "stops_rows": 62,
+    "trips_rows": 22,
+    "stop_times_rows": 240,
+    "calendar_rows": 11,
+    "calendar_dates_rows": 0,
+    "shapes_rows": 0,
+    "frequencies_rows": 0,
+    "transfers_rows": 0,
+    "feed_info_rows": 0,
+    "fare_attributes_rows": 0,
+    "fare_rules_rows": 0,
+    "pathways_rows": 0,
+    "levels_rows": 0,
+    "translations_rows": 0,
+    "attributions_rows": 0
+  },
+  "distributions": {
+    "routes.route_type": {
+      "3": 11
+    },
+    "stops.location_type": {
+      "": 62
+    },
+    "stops.wheelchair_boarding": {
+      "blank": 62
+    },
+    "trips.wheelchair_accessible": {
+      "blank": 22
+    },
+    "trips.bikes_allowed": {
+      "blank": 22
+    },
+    "trips.shape_id": {
+      "populated": 0,
+      "blank": 22
+    },
+    "stop_times.pickup_type": {
+      "": 240
+    },
+    "stop_times.drop_off_type": {
+      "": 240
+    },
+    "stop_times.timepoint": {
+      "": 240
+    }
+  },
+  "temporal": {
+    "minimum_service_date_detectable": "2025-01-01",
+    "maximum_service_date_detectable": "2026-12-31",
+    "calendar_present": true,
+    "calendar_dates_present": false,
+    "service_ids_calendar": 11,
+    "exceptions_added": 0,
+    "exceptions_removed": 0,
+    "feed_start_date": null,
+    "feed_end_date": null
+  },
+  "geometry": {
+    "shapes_present": false,
+    "shape_points": 0,
+    "distinct_shape_id": 0,
+    "trips_with_shape_id": 0,
+    "trips_without_shape_id": 22
+  },
+  "fares": {
+    "fare_data_in_gtfs": false,
+    "files_present": []
+  },
+  "accessibility": {
+    "accessibility_data_present_in_gtfs": false,
+    "stops_wheelchair_boarding_present": false,
+    "trips_wheelchair_accessible_present": false
+  },
+  "nap": {
+    "declared_routes": {
+      "value": 11,
+      "evidence_source": "NAP snapshot",
+      "transcription_method": "manual_verified"
+    },
+    "declared_stops": {
+      "value": 62,
+      "evidence_source": "NAP snapshot",
+      "transcription_method": "manual_verified"
+    },
+    "declared_trips": {
+      "value": 22,
+      "evidence_source": "NAP snapshot",
+      "transcription_method": "manual_verified"
+    },
+    "declared_valid_from": "2025-01-01",
+    "declared_valid_to": "2026-12-31",
+    "declared_accessibility": false,
+    "declared_fares": false,
+    "declared_route_geometry": false,
+    "nap_last_update": "2026-06-02",
+    "nap_validation_status": "VALID_WITH_WARNINGS",
+    "nap_error_count": 0,
+    "nap_warning_count": 22,
+    "declared_gtfs_rt": false,
+    "declared_netex": false,
+    "declared_siri": false
+  },
+  "comparison": {
+    "count_alignment": "MATCH",
+    "date_alignment": "MATCH",
+    "geometry_alignment": "CONSISTENT_WITH_NAP",
+    "fare_alignment": "NO_FARE_DATA_DECLARED",
+    "accessibility_alignment": "NO_ACCESSIBILITY_DATA_IN_GTFS"
+  }
+}

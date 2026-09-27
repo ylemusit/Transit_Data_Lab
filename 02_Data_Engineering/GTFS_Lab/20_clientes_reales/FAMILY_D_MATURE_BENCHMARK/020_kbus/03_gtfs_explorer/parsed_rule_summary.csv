@@ -1,0 +1,4 @@
+rule_id,severity,category,file,field,message_key,occurrence_count,distinct_detail_rows,evidence_source
+GTFS_STOPS_TXT_WHEELCHAIR_BOARDING_OPTIONAL,ERROR,FIELD,stops.txt,wheelchair_boarding,validation.enum_value_invalid,88,88,informe-validacion.html:issues
+GTFS_TRIPS_TXT_BIKES_ALLOWED_OPTIONAL,ERROR,FIELD,trips.txt,bikes_allowed,validation.enum_value_invalid,278,278,informe-validacion.html:issues
+GTFS_TRIPS_TXT_WHEELCHAIR_ACCESSIBLE_OPTIONAL,ERROR,FIELD,trips.txt,wheelchair_accessible,validation.enum_value_invalid,278,278,informe-validacion.html:issues
