@@ -4,7 +4,7 @@
 
 Este archivo rige el trabajo dentro de `07_Business`. El área Business está físicamente aislada y se ocupa de su documentación empresarial. No autoriza modificaciones fuera de este directorio.
 
-La fase actual es **BUSINESS PHASE 1 — DOCUMENT GOVERNANCE**. Su alcance se limita a la infraestructura mínima de gobierno documental. No se debe iniciar otra fase sin autorización expresa.
+La fase actual es **BUSINESS PHASE 3 — MARKET EVIDENCE**, **IN_PROGRESS**, con baseline de capacidades V1 FROZEN. El estado operativo se mantiene en BUSINESS_STATUS.md y las autorizaciones en 01_Governance/DECISION_LOG.md. Stage 1 sigue INCOMPLETE y su gate NOT_REACHED; Stage 2 no autorizado. No iniciar ni cerrar fases o gates sin autorización expresa.
 
 ## Fuentes técnicas de verdad
 
@@ -28,7 +28,7 @@ La construcción empresarial seguirá esta secuencia:
 6. Legal/commercial.
 7. Go-to-market.
 
-Los directorios `02_Capabilities`, `03_Market`, `04_Offering`, `05_Economics`, `06_Legal_and_Compliance` y `07_Go_to_Market` solo se crearán al iniciar formalmente su fase correspondiente.
+`02_Capabilities` y `03_Market` ya existen por autorizaciones registradas. Los directorios `04_Offering`, `05_Economics`, `06_Legal_and_Compliance` y `07_Go_to_Market` solo se crearán al iniciar formalmente su fase correspondiente. Los Business Stages no renumeran las Business Phases ni las Compliance Phases.
 
 ## Decisiones, hipótesis y evidencias
 
@@ -44,11 +44,11 @@ Los directorios `02_Capabilities`, `03_Market`, `04_Offering`, `05_Economics`, `
 
 El objetivo empresarial inicial es explorar la futura comercialización de servicios/productos relacionados con calidad, validación, auditoría y compliance de datos de transporte público, siempre sujeto a capacidades técnicamente demostradas. Esta intención no acredita capacidades, demanda ni viabilidad comercial.
 
-## Restricciones de la Fase 1
+## Restricciones vigentes
 
-No inspeccionar otras carpetas ni modificar archivos fuera de `07_Business`. No investigar mercado, competidores o marcas; establecer pricing; crear landing pages, material comercial o paquetes de servicios; realizar afirmaciones sobre capacidades técnicas; ni contactar terceros.
+Una tarea exclusivamente Business no autoriza modificaciones fuera de `07_Business`. La revisión global de alineación autorizada por el usuario puede leer documentación técnica y corregir gobierno vigente, preservando baselines y evidencias. No habilita desarrollo técnico ni ejecución de nuevas fases empresariales.
 
-La verificación final se limitará a la documentación de este directorio y a `git diff`/`git status` para comprobar el alcance. No hacer commit. Esperar autorización para Business Phase 2.
+La investigación de mercado previa está registrada; no ampliar investigación ni iniciar entrevistas, pilotos, contactos, pricing, oferta o publicación sin autorización específica. No cambiar capacidades congeladas para acomodarlas a documentación nueva. Aplicar 03_Market/RESOURCE_USAGE_POLICY.md para controles de recursos: no hash global ni ejecución automática de verify_market.py. No hacer commit. Las restricciones iniciales de Phase 1 se interpretan como históricas, conforme a las autorizaciones posteriores registradas.
 
 ## Autoría
 

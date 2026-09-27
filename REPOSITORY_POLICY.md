@@ -19,7 +19,7 @@ Revisar por metadatos los archivos >10 MB, >50 MB y >100 MB antes de staging. Ni
 
 ## Evidencia y baselines
 
-Conservar éxitos, fallos, intentos corregidos, promoción fallida/resumida, decisiones, manifests y fuentes. No mover, borrar, regenerar o retocar evidencia congelada por estética. Los informes previos describen su momento histórico y no sustituyen registros de estado posteriores. PROJECT_CURRENT_STATE.md y project_baseline.json se preservan byte a byte; el snapshot documenta la evolución del gobierno Git sin modificar esas huellas.
+Conservar éxitos, fallos, intentos corregidos, promoción fallida/resumida, decisiones, manifests y fuentes. No mover, borrar, regenerar o retocar evidencia congelada por estética. Los informes previos describen su momento histórico y no sustituyen registros de estado posteriores. PROJECT_CURRENT_STATE.md y project_baseline.json se preservan byte a byte. PROJECT_SNAPSHOT_V0.1.md conserva el intento inicialmente bloqueado; PROJECT_STATUS.md y README.md documentan el estado vigente sin modificar esas huellas.
 
 - GTFS raw: `f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc`.
 - Compliance Phase 1 histórico: `52ca421c349d4be85764e84ae1cd08750bbfee99bbc8424a8379ae60a4b0fec5`.

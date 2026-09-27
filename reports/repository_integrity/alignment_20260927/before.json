@@ -1,0 +1,1061 @@
+{
+  "timestamp_utc": "2026-09-27T04:32:19.375705+00:00",
+  "scope": "parent Markdown and Python; explicit frozen files; nested Git metadata only",
+  "root_head": {
+    "exit_code": 0,
+    "stdout": "3c122f48ce4425c2e34313a2a65dcb9218bc77f5",
+    "stderr": ""
+  },
+  "root_tag": {
+    "exit_code": 0,
+    "stdout": "3c122f48ce4425c2e34313a2a65dcb9218bc77f5",
+    "stderr": ""
+  },
+  "origin": {
+    "exit_code": 0,
+    "stdout": "https://github.com/ylemusit/Transit_Data_Lab.git",
+    "stderr": ""
+  },
+  "cached_origin_main": {
+    "exit_code": 0,
+    "stdout": "3c122f48ce4425c2e34313a2a65dcb9218bc77f5",
+    "stderr": ""
+  },
+  "merge_base": {
+    "exit_code": 0,
+    "stdout": "3c122f48ce4425c2e34313a2a65dcb9218bc77f5",
+    "stderr": ""
+  },
+  "desktop_tag": {
+    "exit_code": 0,
+    "stdout": "85c700587ffec06d73d84825e1951fb73259b62c",
+    "stderr": ""
+  },
+  "nested": {
+    "06_Products/GTFS Explorer/GTFS Explorer Desktop": {
+      "head": {
+        "exit_code": 0,
+        "stdout": "38e0e96dbeabaf00d53ed4d85509e5a4ce0b06fd",
+        "stderr": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "stdout": "M AGENTS.md\n M docs/SESSION_CONTEXT.md\n M docs/TESTING.md\n M docs/tasks/CONTEXT_MANIFEST_TEMPLATE.md\n M docs/tasks/TASK_TEMPLATE.md\n M src/gtfs_explorer/application/editor_session.py\n M src/gtfs_explorer/presentation/desktop/editor/widget.py\n M src/gtfs_explorer/presentation/desktop/exporter/widget.py\n M src/gtfs_explorer/presentation/desktop/main_window.py\n M src/gtfs_explorer/resources/i18n/de-DE.json\n M src/gtfs_explorer/resources/i18n/en.json\n M src/gtfs_explorer/resources/i18n/es.json\n M src/gtfs_explorer/resources/i18n/ja-JP.json\n M src/gtfs_explorer/resources/i18n/zh-CN.json\n M tests/test_editor_duckdb_integration.py\n M tests/test_editor_route_workspace.py\n M tests/test_revision_export.py\n?? .vscode/\n?? docs/tasks/AI_EXECUTION_POLICY.md\n?? docs/tasks/AI_EXECUTION_PROFILE_TEMPLATE.md",
+        "stderr": ""
+      }
+    },
+    "06_Products/GTFS Explorer/GTFS Explorer Engineering": {
+      "head": {
+        "exit_code": 0,
+        "stdout": "efdfe91c2c888bf7e3de6c72a29e4e2ee8f0abbf",
+        "stderr": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "stdout": "M engineering/current/DEVELOPMENT_GOVERNANCE.md\n M engineering/evidence/v0.2.2/canonical-gate-final-001_20260924T103408Z/run_canonical_gate.ps1\n M engineering/evidence/v0.2.2/canonical-gate-final-002_20260924T104040Z/run_canonical_gate.ps1\n M engineering/evidence/v0.2.2/recover_canonical_gate_retry_002_evidence.ps1\n M engineering/evidence/v0.2.2/run_canonical_gate_retry_002.ps1",
+        "stderr": ""
+      }
+    },
+    "06_Products/GTFS Explorer/GTFS Explorer Artifacts": {
+      "head": {
+        "exit_code": 0,
+        "stdout": "d49ef160b1e1685c143389f86ecf9643af1f4f03",
+        "stderr": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "stdout": "?? superseded/GTFS-Explorer-Desktop-0.2.1-validation-100k-workspace-dist-20260925/",
+        "stderr": ""
+      }
+    },
+    "06_Products/GTFS Explorer/GTFS Explorer Backups/restore_test_v0.2.2_20260924T161533Z_02": {
+      "head": {
+        "exit_code": 0,
+        "stdout": "85c700587ffec06d73d84825e1951fb73259b62c",
+        "stderr": ""
+      },
+      "status": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    }
+  },
+  "protected_sha256": {
+    "PROJECT_CURRENT_STATE.md": "1926a19ab7a779fcb4bdb256499a2e703696f92460c458b4f757bc9668141871",
+    "project_baseline.json": "541b19b2d4b47d9639a346df9531ec163e92c96f2a5f56d7413a07620ffb0da3",
+    "07_Business/02_Capabilities/CAPABILITY_REGISTER.md": "39506abb74cf0437802603c7915d90ba62fce29ff38f6c21277cdabc577a4c15",
+    "07_Business/02_Capabilities/EVIDENCE_INDEX.md": "f8bdcf9a49f09352fe754decc1c87881091c56c23edec4cff344c9eb2c691b41",
+    "07_Business/02_Capabilities/CAPABILITY_GAPS.md": "2b33a86971f8f860039a9f2a0144da14a67867ef0c26ccb801a94ce96264e01d",
+    "07_Business/02_Capabilities/BUSINESS_CAPABILITY_BASELINE_V1.md": "aef902bdbef06df15a3d85a3b5e8751edf04474174046f0b1947abcce480202a",
+    "02_Data_Engineering/GTFS_Lab/databases/gtfs_lab.duckdb": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+    "03_Compliance/databases/transit_compliance.duckdb": "823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3"
+  },
+  "markdown_files": [
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/BIZKAIBUS_LARGE_RUN_ANALYSIS.md",
+      "bytes": 7382,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/NAP_VS_GTFS_EXPLORER.md",
+      "bytes": 6061,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/differential_matrix.md",
+      "bytes": 9572,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/final_report.md",
+      "bytes": 4720,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/gte_output_inventory.md",
+      "bytes": 7727,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/04_audit/pilot_01/source_census.md",
+      "bytes": 773,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/CHANGELOG.md",
+      "bytes": 116,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/001_galan_gomez/README.md",
+      "bytes": 663,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/002_ancebus/03_gtfs_explorer/README.md",
+      "bytes": 369,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/002_ancebus/04_audit/pilot_01/nap_vs_source.md",
+      "bytes": 619,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/002_ancebus/04_audit/pilot_01/source_census.md",
+      "bytes": 1388,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/002_ancebus/README.md",
+      "bytes": 625,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/003_j_cristeto/README.md",
+      "bytes": 651,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/README.md",
+      "bytes": 660,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/005_viagon/03_gtfs_explorer/README.md",
+      "bytes": 369,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/005_viagon/04_audit/pilot_01/nap_vs_source.md",
+      "bytes": 623,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/005_viagon/04_audit/pilot_01/source_census.md",
+      "bytes": 1963,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/005_viagon/README.md",
+      "bytes": 645,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/006_rafael_nadal/README.md",
+      "bytes": 660,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/007_perez_cubero/README.md",
+      "bytes": 643,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/008_baraza/README.md",
+      "bytes": 636,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/009_medina/README.md",
+      "bytes": 642,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/010_rodil/README.md",
+      "bytes": 623,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/011_autocorb/README.md",
+      "bytes": 642,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/012_costa/README.md",
+      "bytes": 639,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/013_lazara/README.md",
+      "bytes": 645,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/03_gtfs_explorer/README.md",
+      "bytes": 369,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/04_audit/pilot_01/nap_vs_source.md",
+      "bytes": 639,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/04_audit/pilot_01/source_census.md",
+      "bytes": 2877,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/README.md",
+      "bytes": 641,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/README.md",
+      "bytes": 658,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/016_alu/README.md",
+      "bytes": 655,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/017_tuvisa/README.md",
+      "bytes": 630,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/018_bilbobus/README.md",
+      "bytes": 636,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/03_gtfs_explorer/README.md",
+      "bytes": 2055,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/04_audit/pilot_01/nap_vs_source.md",
+      "bytes": 653,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/04_audit/pilot_01/source_census.md",
+      "bytes": 4207,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/README.md",
+      "bytes": 1346,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/00_metadata/source_identity_verification.md",
+      "bytes": 999,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/03_gtfs_explorer/README.md",
+      "bytes": 366,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/04_audit/pilot_01/nap_vs_source.md",
+      "bytes": 637,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/04_audit/pilot_01/source_census.md",
+      "bytes": 3785,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/README.md",
+      "bytes": 625,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/README.md",
+      "bytes": 2133,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/AUDIT_MODEL.md",
+      "bytes": 579,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/BENCHMARK_METHODOLOGY.md",
+      "bytes": 532,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/DATA_GOVERNANCE.md",
+      "bytes": 779,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/FAMILY_CLASSIFICATION.md",
+      "bytes": 875,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/FUTURE_RESEARCH.md",
+      "bytes": 406,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/NAMING_CONVENTIONS.md",
+      "bytes": 301,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/OPERATOR_CATALOG.md",
+      "bytes": 3425,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PILOT_01.md",
+      "bytes": 927,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PILOT_01_BASELINE_MATRIX.md",
+      "bytes": 1369,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PILOT_01_EVIDENCE_MODEL_OBSERVATIONS.md",
+      "bytes": 4545,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PILOT_01_PRODUCT_GAPS.md",
+      "bytes": 1592,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PROJECT_SCOPE.md",
+      "bytes": 402,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/SOURCE_FORMAT_MATRIX.md",
+      "bytes": 687,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/README.md",
+      "bytes": 0,
+      "classification": "documentation",
+      "empty": true
+    },
+    {
+      "path": "03_Compliance/PHASE_2_REQUIREMENTS_ENGINE.md",
+      "bytes": 5769,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/TEST_BASELINE_POLICY.md",
+      "bytes": 2822,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/PHASE_2_SUMMARY.md",
+      "bytes": 2357,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/EXECUTION_NOTES.md",
+      "bytes": 908,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/PHASE_2_BASELINE_PROMOTION.md",
+      "bytes": 2061,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/PHASE_2_BASELINE_PROMOTION_RESUME.md",
+      "bytes": 1094,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/PHASE_2_FINAL_FREEZE_REVIEW.md",
+      "bytes": 12405,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/PHASE_2_FORMAL_FREEZE.md",
+      "bytes": 2439,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/PROJECT_CURRENT_STATE_PHASE_2_PROPOSAL.md",
+      "bytes": 932,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/attempts/run_001/PHASE_2_FINAL_FREEZE_REVIEW.md",
+      "bytes": 10683,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/freeze/promotion_resume/run_001/PHASE_2_BASELINE_PROMOTION.md",
+      "bytes": 2495,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/materialization/EXECUTION_NOTES.md",
+      "bytes": 1290,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/materialization/PHASE_2_REQUIREMENTS_DATABASE_DELTA.md",
+      "bytes": 3082,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/materialization/PHASE_2_REQUIREMENTS_MATERIALIZATION.md",
+      "bytes": 8125,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/materialization/REQUIREMENTS_MATERIALIZATION_DRY_RUN.md",
+      "bytes": 1111,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/EU_2017_1926_HUMAN_REVIEW.md",
+      "bytes": 121717,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_1/GATE_1_RECONCILIATION.md",
+      "bytes": 5370,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_1/HUMAN_DECISION_MATRIX_V1.md",
+      "bytes": 12419,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_1/HUMAN_REVIEW_GATE_1_SUMMARY.md",
+      "bytes": 5370,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/GATE_2_REVIEW_PACK.md",
+      "bytes": 41178,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/HUMAN_REVIEW_GATE_2_SUMMARY.md",
+      "bytes": 2543,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/materialization/ARTICLE_9_3_SOURCE_FACT_PERSISTENCE.md",
+      "bytes": 3336,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/materialization/HUMAN_REVIEW_GATE_2_CLOSURE.md",
+      "bytes": 1253,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/materialization/HUMAN_REVIEW_GATE_2_STATUS.md",
+      "bytes": 939,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/materialization/SOURCE_FACT_DATABASE_DELTA.md",
+      "bytes": 1682,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/materialization/TEST_BASELINE_RECONCILIATION.md",
+      "bytes": 2048,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/resolution/GATE_2_ENCODING_CHECK.md",
+      "bytes": 2571,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/resolution/GATE_2_EXCEPTION_RESOLUTION.md",
+      "bytes": 7162,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "03_Compliance/reports/phase_2/review/gate_2/resolution/GATE_2_FINAL_ATOMIC_UNIVERSE.md",
+      "bytes": 34374,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/01_Governance/ASSUMPTIONS_REGISTER.md",
+      "bytes": 6683,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/01_Governance/BUSINESS_MASTER_ROADMAP.md",
+      "bytes": 9201,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/01_Governance/DECISION_LOG.md",
+      "bytes": 13114,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/02_Capabilities/BASELINE_REVIEW_V1.md",
+      "bytes": 12443,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/02_Capabilities/BUSINESS_CAPABILITY_BASELINE_V1.md",
+      "bytes": 6885,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/02_Capabilities/CAPABILITY_GAPS.md",
+      "bytes": 5251,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/02_Capabilities/CAPABILITY_REGISTER.md",
+      "bytes": 35827,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/02_Capabilities/EVIDENCE_INDEX.md",
+      "bytes": 39654,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/BUSINESS_PHASE_3_VALIDATION_GATE.md",
+      "bytes": 24522,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/COMMERCIAL_VALIDATION_EVIDENCE_MODEL.md",
+      "bytes": 3848,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/COMPETITOR_LANDSCAPE.md",
+      "bytes": 7654,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/CUSTOMER_DISCOVERY_INTERVIEW_GUIDE.md",
+      "bytes": 3291,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/CUSTOMER_SEGMENTS.md",
+      "bytes": 4124,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/MARKET_EVIDENCE_REGISTER.md",
+      "bytes": 29264,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/MARKET_GAPS.md",
+      "bytes": 7752,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/MARKET_VALIDATION_PLAN.md",
+      "bytes": 6897,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/PROBLEM_REGISTER.md",
+      "bytes": 4545,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/PROCUREMENT_EVIDENCE.md",
+      "bytes": 13774,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/REGULATORY_DEMAND.md",
+      "bytes": 7841,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/RESOURCE_USAGE_POLICY.md",
+      "bytes": 1845,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/STAGE_1_CRITERIA_REEVALUATION.md",
+      "bytes": 14192,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/STAGE_1_EVIDENCE_GAP_PLAN.md",
+      "bytes": 1418,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/STAGE_1_EVIDENCE_REUSE.md",
+      "bytes": 32443,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/STAGE_1_GATE_REVIEW.md",
+      "bytes": 14337,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/evidence/ENTUR_SIRI_SANITIZATION_RECORD.md",
+      "bytes": 4777,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/evidence/FINAL_SOURCE_CHECK.md",
+      "bytes": 661,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/evidence/SEARCH_LOG.md",
+      "bytes": 5853,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "bytes": 15192,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/03_Market/evidence/rt_validator.md",
+      "bytes": 11537,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "07_Business/AGENTS.md",
+      "bytes": 3780,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/BUSINESS_STATUS.md",
+      "bytes": 8016,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "07_Business/README.md",
+      "bytes": 2110,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "BACKUP_AND_RECOVERY.md",
+      "bytes": 5732,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "PROJECT_CURRENT_STATE.md",
+      "bytes": 12089,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "PROJECT_SNAPSHOT_V0.1.md",
+      "bytes": 2607,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "PROJECT_STRUCTURE.md",
+      "bytes": 3576,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "REPOSITORY_POLICY.md",
+      "bytes": 5638,
+      "classification": "documentation",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/ABSOLUTE_PATH_REVIEW.md",
+      "bytes": 7583,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/COMPLIANCE_INTEGRITY_REPORT.md",
+      "bytes": 2255,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/FIRST_FORMAL_COMMIT_AUDIT.md",
+      "bytes": 19898,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/FIRST_FORMAL_COMMIT_FINAL_GATE.md",
+      "bytes": 13777,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/GIT_LINE_ENDING_POLICY.md",
+      "bytes": 14352,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/GIT_LONG_PATH_DIAGNOSIS.md",
+      "bytes": 15431,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/GTFS_INTEGRITY_REPORT.md",
+      "bytes": 2716,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/LEGACY_REPOSITORY_RENAME_READINESS.md",
+      "bytes": 11426,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/PHASE_1_5_STABILIZATION_REPORT.md",
+      "bytes": 5199,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/REMOTE_GITHUB_ALIGNMENT.md",
+      "bytes": 6650,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/REMOTE_HISTORY_REVIEW.md",
+      "bytes": 18979,
+      "classification": "historical_or_frozen",
+      "empty": false
+    },
+    {
+      "path": "reports/repository_integrity/REPOSITORY_INTEGRITY_REPORT.md",
+      "bytes": 6302,
+      "classification": "historical_or_frozen",
+      "empty": false
+    }
+  ],
+  "markdown_count": 136,
+  "markdown_bytes": 902862,
+  "missing_local_links": [
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 46,
+      "target": "./web/client/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 46,
+      "target": "./web/service/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 127,
+      "target": "/docs/USAGE.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 178,
+      "target": "/docs/NOTICE_MIGRATION.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 184,
+      "target": "/docs/NEW_RULES.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 187,
+      "target": "/docs/DOWNLOAD_SNAPSHOT_JAR.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 197,
+      "target": "/docs/BUILD.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 200,
+      "target": "/docs/ARCHITECTURE.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 203,
+      "target": "docs/ACCEPTANCE_TESTS.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/mobilitydata_readme.md",
+      "line": 212,
+      "target": "/docs/CONTRIBUTING.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 35,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 35,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 39,
+      "target": "RULES.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 42,
+      "target": "ADDING_NEW_RULES.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 47,
+      "target": "RULES.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 47,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 47,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 88,
+      "target": "CONFIG.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 90,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 90,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 109,
+      "target": "TROUBLESHOOTING.md",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 115,
+      "target": "../.github/workflows/test_package.yml",
+      "historical": true
+    },
+    {
+      "file": "07_Business/03_Market/evidence/rt_validator.md",
+      "line": 141,
+      "target": "gtfs-realtime-validator-lib/README.md",
+      "historical": true
+    }
+  ],
+  "python_syntax_errors": [],
+  "limitations": [
+    "No nested worktree content inspection or product runtime tests",
+    "No remote fetch, legal interpretation or technical gate rerun",
+    "Link check excludes anchors, reference-style links and external URLs"
+  ],
+  "verification_ok": true
+}

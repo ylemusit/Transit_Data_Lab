@@ -52,7 +52,7 @@ Roadmap maestro: [BUSINESS_MASTER_ROADMAP.md](01_Governance/BUSINESS_MASTER_ROAD
 
 V1 describe evidencia técnica a una fecha. No constituye catálogo comercial, certificación, homologación, garantía jurídica, producto terminado, readiness comercial ni garantía de cumplimiento normativo. Phase 3 no amplía capacidades ni modifica V1. Las ocho hipótesis mantienen los estados conservadores de ASSUMPTIONS_REGISTER.
 
-AGENTS.md y README.md conservan el texto inicial de Fase 1; prevalecen las autorizaciones posteriores registradas en DECISION_LOG. No se crean áreas de fases posteriores. Git padre sin commits y archivos untracked: diff vacío no demuestra alcance por sí solo; la revisión de mercado anterior se complementó con inventarios SHA-256 históricos. No repetirlos: política actual prohíbe hash global por defecto. Esta revisión usa escrituras de rutas explícitas Business, documentos concretos, manifiestos previos y Git; no certifica inmutabilidad global.
+AGENTS.md y README.md están alineados con Phase 3 y las autorizaciones posteriores registradas en DECISION_LOG. No se crean áreas de fases posteriores. El Git padre ya tiene baseline local/remota; ver [PROJECT_STATUS.md](../PROJECT_STATUS.md). Las observaciones de ausencia de commits en V1 y verificaciones anteriores permanecen históricas. La revisión de mercado anterior se complementó con inventarios SHA-256 históricos; no repetirlos: la política prohíbe hash global por defecto. Esta alineación documental no cambia V1, capacidades, hipótesis ni gates y no certifica inmutabilidad global.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 

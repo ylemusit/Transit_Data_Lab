@@ -1,0 +1,58 @@
+[
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/sql/01_import/run_import_consorcio_asturias.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/close_phase_1.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/finalize_phase_1.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_1_2.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_1_3.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_1_4.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_2_1.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_2_2.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/load_annex_2_3.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/repair_phase_1_metadata.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/run_phase_2_2017_1926.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/setup_transit_compliance.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/test_eu_2017_1926_master.ps1",
+    "errors": []
+  },
+  {
+    "file": "03_Compliance/sql/00_setup/update_compliance_2026.ps1",
+    "errors": []
+  }
+]

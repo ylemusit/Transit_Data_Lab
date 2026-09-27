@@ -4,6 +4,6 @@ Este laboratorio estudia GTFS Schedule, GTFS Realtime, NeTEx, SIRI, metadatos NA
 
 ## Modelo futuro
 
-CLIENT (GTFS Schedule, GTFS-RT, NeTEx, SIRI, Metadata, Fare information, Accessibility information, Web/API sources, Documentary evidence) â†’ AUDIT ENGINE.
+CLIENT (GTFS Schedule, GTFS-RT, NeTEx, SIRI, Metadata, Fare information, Accessibility information, Web/API sources, Documentary evidence) → AUDIT ENGINE.
 
-En esta fase solo se preservan e inventarÃ­an fuentes.
+En esta fase solo se preservan e inventarían fuentes.

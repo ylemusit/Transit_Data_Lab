@@ -1,0 +1,35 @@
+{
+  "document_audit_exit_code": 0,
+  "document_audit_ok": true,
+  "document_validation_ok": true,
+  "preservation": {
+    "protected_sha256": true,
+    "nested": true,
+    "root_head": true,
+    "root_tag": true,
+    "desktop_tag": true
+  },
+  "current_compliance_row_assertions": {
+    "exit_code": 0,
+    "checks": 377,
+    "passed": 377,
+    "failed": [],
+    "excluded_legal_hash_checks": 10,
+    "scope": "Frozen row assertions extracted from post-materialization gate; not the full legal hash gate",
+    "execution_note": "Initial -c launch failed with Windows command length limit before DuckDB started; executed the same SQL via stdin."
+  },
+  "legacy_master_status": "27 PASS / 1 FAIL; historical staging contract mismatch; not promoted to PASS",
+  "active_missing_links": 0,
+  "active_text_defects": 0,
+  "diff_check": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "warning: in the working copy of '03_Compliance/TEST_BASELINE_POLICY.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of '07_Business/BUSINESS_STATUS.md', CRLF will be replaced by LF the next time Git touches it\n"
+  },
+  "staged_diff": {
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "result": "PASS_FOR_DOCUMENT_ALIGNMENT_WITH_RECORDED_TECHNICAL_LIMITATIONS"
+}

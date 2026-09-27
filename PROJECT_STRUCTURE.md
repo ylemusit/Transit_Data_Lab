@@ -1,18 +1,20 @@
 # Estructura lógica y estado
 
-Fecha: 2026-09-27. Manifest de componentes; no inventario exhaustivo de datasets. Los directorios sin archivos no se conservarán en un checkout Git; no se crean placeholders en esta tarea.
+Fecha: 2026-09-27. Manifest de componentes; no inventario exhaustivo de datasets. Estado vigente: [PROJECT_STATUS.md](PROJECT_STATUS.md). Los directorios vacíos son estructuras locales planificadas y no se conservarán en un checkout Git.
 
 | Componente | Ubicación | Estado y clasificación |
 | --- | --- | --- |
 | Research & Standards | 01_Research_Standards | NON_GIT_DIRECTORY; estructura vacía, planificada, CORRECTLY_LOCATED |
-| Data Engineering | 02_Data_Engineering/GTFS_Lab | NON_GIT_DIRECTORY; raw implementado, integrity baseline frozen; core/validation/analysis pendientes |
+| Data Engineering | 02_Data_Engineering/GTFS_Lab | ROOT_TRACKED_AREA; raw implementado, integrity baseline frozen; core/validation/analysis pendientes |
 | GTFS-RT, NeTEx, SIRI | 02_Data_Engineering/*_Lab | NON_GIT_DIRECTORY; estructura planificada sin implementación |
-| Compliance | 03_Compliance | NON_GIT_DIRECTORY; Phase 1 y 2 FROZEN, requisitos 48, source facts 36, provisions 92, deadlines 10 |
+| Compliance | 03_Compliance | ROOT_TRACKED_AREA; Phase 1 y 2 FROZEN, requisitos 48, source facts 36, provisions 92, deadlines 10 |
 | Interoperability | 04_Interoperability | NON_GIT_DIRECTORY; estructura vacía, mappings pendientes |
 | Audits | 05_Audits | NON_GIT_DIRECTORY; estructura vacía |
 | Products | 06_Products/GTFS Explorer | Contenedor NON_GIT_DIRECTORY de repos independientes y backups |
-| Business | 07_Business | NON_GIT_DIRECTORY; V1 FROZEN; Phase 3 IN_PROGRESS; evidencia/readiness PASS documentales |
+| Business | 07_Business | ROOT_TRACKED_AREA; V1 FROZEN; Phase 3 IN_PROGRESS; evidencia/readiness PASS documentales |
 | Gobierno raíz | raíz y reports/repository_integrity | ROOT_REPOSITORY; documentación y revisión de consolidación |
+
+ROOT_TRACKED_AREA significa que sus fuentes/documentos pertenecen al Git padre, con los datos excluidos según .gitignore. NON_GIT_DIRECTORY identifica un directorio sin repositorio propio, no una ausencia de versionado de sus descendientes. Desktop mantiene su identidad de producto y baseline 0.2.2 dentro de Transit Data Lab.
 
 - `06_Products/GTFS Explorer/GTFS Explorer Artifacts`: NESTED_INDEPENDENT_REPOSITORY, excluido del índice raíz.
 - `06_Products/GTFS Explorer/GTFS Explorer Backups/restore_test_v0.2.2_20260924T161533Z_02`: NESTED_INDEPENDENT_REPOSITORY, excluido del índice raíz.

@@ -1,0 +1,158 @@
+[
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/001_galan_gomez/README.md",
+    "before_sha256": "640c4490175d2dc09ca2ae443076d24c19c5600c0463d7988a40823fcffb7f6a",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "92a42c79d0fbc3b36b2c831393eef346a88bde82ff51a9753a79dd82e1b62431"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/002_ancebus/README.md",
+    "before_sha256": "566a09147e5c7adee87f7e56b80c4b23cea2cbd7aaca44e600f237585b64cb82",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "6bfac09d1c8372c7cc29386df0da0fb389570913e1c585e55096ca35f536b2be"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/003_j_cristeto/README.md",
+    "before_sha256": "b5457784aaf184c05632c9f20972e7df4a6b0fdacf5188b70f471f89990a68c8",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "62eba1e7a3ac5d993c32e2902f92d1c7b0a34700eb0e6e8e32acf1fd2cd4b82d"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/README.md",
+    "before_sha256": "09525a18c6a3a1204c1d72108468291ecb9a449a77bb952dccdf28c31aeecb3e",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "26d74d2f738dd470c7446f938d11f84ddce1a7a5efcc1f944cb9bef79abcf515"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/005_viagon/README.md",
+    "before_sha256": "ca580ce5efad7d079ac4c83f1434e1f3fefc8a0318f99f981e32a85a7a884b1f",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "9182dd51fde8e776933563a0f48dd19ff78f1acf0cf92e39cb6a81a2c36f3543"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/006_rafael_nadal/README.md",
+    "before_sha256": "aa238dd62281e851b73ead68d9cf81686244cfc35cc62e8732ff0b70bbaa561e",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "6fa4bd6e8e37bc0c3b9f1d10a9b0869d9096e4cc06f7fdcbd90ba5580c52817f"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/007_perez_cubero/README.md",
+    "before_sha256": "643fbd72f99f3958d7c097a09a56779c23e61b4ddc7fa4795bbf204fe31866da",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "5c8f22609a0b3388feffddaf7fea54a111ce693c398eeaf3364fb78e08f0e067"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/008_baraza/README.md",
+    "before_sha256": "6732b31d65acace9f14fa58eaff20c22f535f4294ccb0d69c381caf207de277d",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "2bf0b9acfe33f41c779f9efd9549b207a10a2b8cdf9b5b6d2f969c8894a6762e"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/009_medina/README.md",
+    "before_sha256": "a1b5b786b15260091cd1f30830149faae110c074dd8cbd7a41bf2a07ecbe4bce",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "7141282e4b5ed8d9e16217f9a8a6503cd74287e3c59c7fe6230aaa8d78427843"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/010_rodil/README.md",
+    "before_sha256": "644f5e44bc30705f79f7c4dafad9e9b713d78b7e55697b65d9da0790df0afd35",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "7ca015031a27bc054e24692024381a572d6f6535d7a8f3bd193cb105efc5ebcf"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/011_autocorb/README.md",
+    "before_sha256": "55362e8d01ed58b79e6ae3b1584ce2477a343dabeab4a4a62878307fbe93bc8c",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "ee1db310cd5a7d4cfe7164dbdb6aa919f3ba9b71f54286f008fbec8afdaf4480"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/012_costa/README.md",
+    "before_sha256": "4143314083dda42ba8ef2cc925264d973513ffc62ddfec615d6446f783addb08",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "0ffc81a51955321bdbb956d7ad77f4df1fdd95d2ba91531dc5f46b5a91cf2f80"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/013_lazara/README.md",
+    "before_sha256": "ef31f68b01cefa888081350740edd93cc9e0d8c34d627c6988293472e1cdcd06",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "cd5acc599c5aa819f15b25b90ac0f3c921be55e92506e4c1707e42419c1b80a4"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/README.md",
+    "before_sha256": "e5e75e36aae9a3838e187be534811fcd8b4578137336f0a2a51a38cad992b181",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "cc3b37070141c3598cce7e6fb05a3a1e14eebb1ed43c7120b614515aaa498e48"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/README.md",
+    "before_sha256": "dbb76ff4ce238ac21ecb70b6a50965e72fb208b75ef7f67ab283e7ca4b4d0950",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "20a76ffa194907ea54f5731d33d0639b2e88eb44be0317a468ac1296c5ae3114"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/016_alu/README.md",
+    "before_sha256": "8a80547fbf9cbd6e4296d193cf465942f0077fcd3437d363b95c261737b33103",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "1048b3e223afc76ba8543327a9c768878018f15ac77f05c9ec8af259e345949b"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/017_tuvisa/README.md",
+    "before_sha256": "5479cf3ca66a01995277008291213384897a4defce35319ce3c9c8415f393ae1",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "aa54e0a3750add1337158ebef2401152ac0faa6e7ef6a1c8dcc89796fa5cb36f"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/018_bilbobus/README.md",
+    "before_sha256": "1f276e4adcb75e09e4c9c282e9b40fa264bc539725b03b38234dd200d24f03ad",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "9458caf8d5a9280a7c4e88a0a7295309a4f5775411f896111f8ece13a59a696e"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/020_kbus/README.md",
+    "before_sha256": "c7130fcf34a3e855986f71501564debd8be9a59984f1d0df3d7e589bb7cba0f3",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "26df40f87d226e4cab4a561c12abfdae1feec5d7a8a85b7cad738aa160132cf1"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/BENCHMARK_METHODOLOGY.md",
+    "before_sha256": "ee100d864268a93d8b998b1a753addbdd8f9b169f6dbae78e962a7fdda1ffd2e",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "fff12d4b5f15642bb814383bf3bcac27d1945b54b44eac1ca12603ca90197dde"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/DATA_GOVERNANCE.md",
+    "before_sha256": "703ff20336e79a39e035f8e1c836af866362a8dfd0236a7e8760b1481dad4f81",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "6b8f049e5b428d247120374ed843065d3535def03606f8f52235622b52294678"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/FAMILY_CLASSIFICATION.md",
+    "before_sha256": "8e6e7493c564e7df53d25fd93adf34b6eba6b1befcbbb50c24c138ac3b4bf918",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "f5318a333bfc07cace67e1d6725f287b8ada1a7867c9f0521647394ad58bdd39"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/FUTURE_RESEARCH.md",
+    "before_sha256": "fd6c0d47768b5d5afe2c09a8dba3caae0bfac564dc79a18400617a1b5fc8300c",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "f8284799c43accb19d860dc859aac2da4ef266e4e5472cccc85554789ab41605"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/NAMING_CONVENTIONS.md",
+    "before_sha256": "d01ea28cf3ed7c1e2e48b385d26153dbe1f806321b8a2cd89e587feeef72c8ea",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "f052f96961553e5fe7edd9984930cd202cb267a8b5a9964ce9830354b8e9a973"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/OPERATOR_CATALOG.md",
+    "before_sha256": "5f392bf8c4f3174185fd85020ac2c2f921955a7538dbbffe013920cfbccbf15c",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "db3e02ba19c48360d85b4935eb274529bae301eac71f46b684f072df909036ac"
+  },
+  {
+    "file": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/docs/PROJECT_SCOPE.md",
+    "before_sha256": "c4fe5b570072ea5699e0d108b714a8ef28c403d7d6fd09cf5361d0b79e083057",
+    "corrections": "encoding/control characters; metadata placeholders where present",
+    "after_sha256": "5aa8b58f74d5faf8e77a5eb91439efcfadf749ed9ebbbf8b76b4933429a6bd35"
+  }
+]

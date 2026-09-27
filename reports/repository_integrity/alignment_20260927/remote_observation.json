@@ -1,0 +1,32 @@
+{
+  "root_remote_head": {
+    "exit_code": 0,
+    "stdout": "ref: refs/heads/main\tHEAD\n3c122f48ce4425c2e34313a2a65dcb9218bc77f5\tHEAD\n",
+    "stderr": ""
+  },
+  "root_remote_tags": {
+    "exit_code": 0,
+    "stdout": "d1f72b83bdee00b8bbfa24f8edaa990e76e5f552\trefs/tags/tdl-baseline-v0.1\n3c122f48ce4425c2e34313a2a65dcb9218bc77f5\trefs/tags/tdl-baseline-v0.1^{}\n",
+    "stderr": ""
+  },
+  "desktop_remote_head": {
+    "exit_code": 0,
+    "stdout": "ref: refs/heads/main\tHEAD\n38e0e96dbeabaf00d53ed4d85509e5a4ce0b06fd\tHEAD\n",
+    "stderr": ""
+  },
+  "desktop_remote_tags": {
+    "exit_code": 0,
+    "stdout": "f7601eac19f1469002de89cc9d73078ea30995b9\trefs/tags/v0.2.2\n85c700587ffec06d73d84825e1951fb73259b62c\trefs/tags/v0.2.2^{}\n",
+    "stderr": ""
+  },
+  "root_visibility": {
+    "exit_code": 0,
+    "stdout": "{\"defaultBranchRef\":{\"name\":\"main\"},\"isPrivate\":false,\"nameWithOwner\":\"ylemusit/Transit_Data_Lab\"}\n",
+    "stderr": ""
+  },
+  "desktop_visibility": {
+    "exit_code": 0,
+    "stdout": "{\"defaultBranchRef\":{\"name\":\"main\"},\"isPrivate\":false,\"nameWithOwner\":\"ylemusit/GTFS-Explorer-Desktop\"}\n",
+    "stderr": ""
+  }
+}

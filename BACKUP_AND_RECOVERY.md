@@ -1,12 +1,12 @@
 # Backup y recuperación
 
-Fecha: 2026-09-27. PROJECT_BACKUP_POLICY_DOCUMENTED = YES. El primer snapshot local está BLOCKED por una credencial probable en evidencia HTML. Aún no existe backup Git raíz mediante commit, etiqueta o remoto. No se ha realizado copia física ni archivo multigigabyte.
+Fecha: 2026-09-27. PROJECT_BACKUP_POLICY_DOCUMENTED = YES. El snapshot local existe: HEAD y tdl-baseline-v0.1 apuntan a 3c122f48ce4425c2e34313a2a65dcb9218bc77f5; main y etiqueta remotos coinciden según consulta actual. El bloqueo inicial por evidencia HTML corresponde a un intento histórico conservado; no describe el estado Git actual. No se acredita copia física integral ni backup de datos excluidos. Ver [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
-## VERSIONED IN GIT — objetivo, todavía pendiente
+## VERSIONED IN GIT — snapshot local y remoto existentes
 
-Fuentes SQL/Python/PowerShell, Markdown, CSV/JSON de evidencia seleccionada, manifests, informes de gates (incluidos fallos), registros de freeze, gobierno Business y 12 PDF jurídicos aprobados. El índice está vacío: estos archivos son candidatos, no se presentan como ya versionados. Consultar FIRST_FORMAL_COMMIT_MANIFEST.csv y el audit antes de cualquier staging.
+El commit raíz conserva fuentes SQL/Python/PowerShell, Markdown, CSV/JSON de evidencia seleccionada, manifests, informes de gates (incluidos fallos), registros de freeze, gobierno Business y PDF jurídicos. Los documentos nuevos y cambios sin commit posteriores no quedan cubiertos por ese snapshot. FIRST_FORMAL_COMMIT_MANIFEST.csv y su audit son registros del intento previo, no un inventario actualizado del índice.
 
-Una vez resuelto el bloqueo y verificado el commit, reconstruir estas categorías mediante checkout de tdl-baseline-v0.1. Verificar el commit y tag sin modificar informes para insertar SHA. Guardar luego una copia del repositorio o git bundle en un destino independiente y probar una restauración acotada, como operación separada. Un Git local en el mismo disco no protege de avería/ransomware.
+Reconstruir el contenido versionado de la baseline mediante checkout de tdl-baseline-v0.1 en un destino independiente. Verificar el commit y tag sin modificar informes históricos. Una copia o git bundle adicional y una restauración acotada siguen siendo operaciones separadas; no se han ejecutado en esta revisión. Un Git local en el mismo disco no protege de avería/ransomware.
 
 ## NOT VERSIONED / REGENERABLE
 
@@ -24,7 +24,7 @@ Entornos, cachés, builds y temporales, siempre que sus fuentes/dependencias est
 | 20_clientes_reales/**/data.duckdb y *.duckdb.editor-pre-migration.bak | Resultados y recuperación de runs del piloto; conservar por procedencia |
 | Bizkaibus run_001 JSON/ZIP/informe-validacion.html y run_002_rc002 ZIP | Generados grandes excluidos; evidencia histórica cuya reproducción exacta no se presupone |
 | 07_Business/03_Market/evidence/scope_before.json | Inventario histórico de 70.195.962 bytes, excluido; no regenerar/hash global |
-| Exportaciones GIS/KML | Los KML pequeños siguen candidatos Git; proteger los originales porque no hay generador reproducible |
+| Exportaciones GIS/KML | Los KML pequeños están versionados; proteger los originales porque no hay generador reproducible |
 | Evidencia que contenga credenciales | Conservar en un destino restringido hasta resolución; no publicar ni incluir en backup compartido indiscriminadamente |
 
 - GTFS raw: `f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc`.
@@ -45,8 +45,8 @@ Los commits del padre no incluyen commits ni cambios sin commit de estos reposit
 
 ## Procedimiento controlado propuesto
 
-1. Resolver el SECRET_BLOCKER sin cambiar silenciosamente fuentes ni manifests; repetir la revisión acotada antes del snapshot.
-2. Establecer el commit/tag local y posteriormente un segundo destino autorizado para el repositorio raíz y repos anidados.
+1. Consultar el estado vigente y conservar el registro de sanitización de la fuente histórica; no copiar originales sensibles excluidos a destinos públicos/compartidos.
+2. Verificar el commit/tag y el destino remoto actual; preservar por separado los repos anidados y los cambios locales sin commit. No repetir una publicación ya realizada para corregir un informe antiguo.
 3. Copiar bases cerradas de forma consistente, el ZIP fuente y evidencia no regenerable a un destino separado y restringido. No copiar un DuckDB abierto o descartar WAL pendientes.
 4. Restaurar en un workspace independiente. Comprobar hashes autoritativos dirigidos y manifests existentes; respetar directorios de ejecución de scripts. El replay Compliance requiere decisiones humanas; el GIS no tiene replay completo.
 5. No lanzar masters antiguos ni materializaciones automáticamente: contienen expectativas históricas y rutas locales. Los tres local_file absolutos y read_blob absolutos requieren un procedimiento futuro de recuperación compatible con el freeze.
