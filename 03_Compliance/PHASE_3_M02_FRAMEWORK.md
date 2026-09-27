@@ -14,6 +14,8 @@ La migración `sql/00_setup/005_phase_3_m02_mapping_framework.sql` es aditiva e 
 
 Los objetos nuevos `mapping.phase3_*` separan registro de estándares/versiones/perfiles, catálogo reusable de capacidades, relación N:M con `compliance.requirements`, representabilidad, evidencia observada, potencial de automatización, clasificación familiar, excepciones y referencias fuente. Los registros de estándar empiezan vacíos: `GTFS_SCHEDULE`, `GTFS_REALTIME`, `NETEX` y `SIRI` son vocabulario de identidad, no afirmaciones de cobertura.
 
+M04B separa la revisión semántica de cada mapping de la decisión de cobertura del requisito. `ESTABLISHED` describe únicamente cobertura del requisito modelado dentro del alcance y las rutas revisadas; **ESTABLISHED != LEGAL COMPLIANCE**. La representabilidad técnica, la cobertura del requisito y el cumplimiento jurídico son conceptos distintos. Una cobertura puede ser `PARTIAL` o `UNRESOLVED`, y puede apoyarse en rutas híbridas o procedimentales aunque no haya mappings técnicos.
+
 `phase3_representability` describe si una capacidad puede expresar un concepto dentro del contexto registrado; no prueba presencia en un dataset. `phase3_observed_evidence` registra observaciones futuras. `phase3_automatability` describe posibilidad de auditoría futura; no ejecuta reglas. `PARTIAL`, `MISSING`, `UNKNOWN` y `NOT_APPLICABLE` requieren explicación.
 
 La excepción declara una ruta de evaluación fuera del mapping de formato con tipo, razón, justificación, expectativas de evidencia y revisión. Una ausencia de mapping no se interpreta como incumplimiento. Las familias son taxonomía provisional, no clasificación jurídica.

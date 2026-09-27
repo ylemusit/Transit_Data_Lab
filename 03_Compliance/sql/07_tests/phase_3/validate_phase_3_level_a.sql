@@ -20,6 +20,12 @@ WITH checks AS (
     UNION ALL SELECT 'EXCEPTION_JUSTIFICATION', count(*) FROM mapping.phase3_exceptions WHERE length(trim(reason))=0 OR length(trim(justification))=0 OR length(trim(evidence_expectations))=0
     UNION ALL SELECT 'SOURCE_REFERENCE_SHAPE', count(*) FROM mapping.phase3_source_references WHERE length(trim(url_or_document_id))=0 OR capability_id NOT IN (SELECT capability_id FROM mapping.phase3_capabilities)
     UNION ALL SELECT 'CAPABILITY_CONTEXT', count(*) FROM mapping.phase3_capabilities c JOIN mapping.phase3_standards s USING (standard_id) WHERE length(trim(c.semantic_meaning))=0 OR length(trim(s.standard_kind))=0
+    UNION ALL SELECT 'MAPPING_REVIEW_REFERENCE', count(*) FROM mapping.phase3_mapping_reviews r LEFT JOIN mapping.phase3_requirement_capabilities m USING (mapping_id) WHERE m.mapping_id IS NULL
+    UNION ALL SELECT 'MAPPING_REVIEW_OUTCOME', count(*) FROM mapping.phase3_mapping_reviews WHERE semantic_review_outcome NOT IN ('ACCEPTED','ACCEPTED_WITH_LIMITATIONS','REJECTED','UNRESOLVED') OR length(trim(justification))=0 OR length(trim(reviewed_by))=0
+    UNION ALL SELECT 'COVERAGE_REQUIREMENT_REFERENCE', count(*) FROM mapping.phase3_requirement_coverage c LEFT JOIN compliance.requirements r USING (requirement_id) WHERE r.requirement_id IS NULL
+    UNION ALL SELECT 'COVERAGE_VOCABULARY', count(*) FROM mapping.phase3_requirement_coverage WHERE coverage_state NOT IN ('ESTABLISHED','PARTIAL','UNRESOLVED','NOT_APPLICABLE','NONE_IDENTIFIED') OR semantic_review_outcome NOT IN ('ACCEPTED','ACCEPTED_WITH_LIMITATIONS','REJECTED','UNRESOLVED') OR review_status NOT IN ('REVIEWED','NEEDS_REVIEW')
+    UNION ALL SELECT 'COVERAGE_REQUIRED_CONTEXT', count(*) FROM mapping.phase3_requirement_coverage WHERE length(trim(justification))=0 OR length(trim(identified_paths))=0 OR length(trim(reviewed_by))=0 OR length(trim(reviewed_against_baseline))=0
+    UNION ALL SELECT 'DUPLICATE_REQUIREMENT_COVERAGE', count(*) FROM (SELECT requirement_id FROM mapping.phase3_requirement_coverage GROUP BY requirement_id HAVING count(*)>1)
 ), totals AS (
     SELECT (SELECT count(*) FROM mapping.phase3_requirement_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS mappings,
            (SELECT count(*) FROM mapping.phase3_capabilities WHERE fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST') AS capabilities,

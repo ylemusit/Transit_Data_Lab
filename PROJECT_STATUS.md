@@ -25,7 +25,7 @@ Desktop tiene 20 entradas locales de estado, incluidas modificaciones de código
 | --- | --- |
 | 01_Research_Standards | Estructura planificada, sin implementación observada en la baseline. |
 | 02_Data_Engineering | GTFS raw implementado; sentinel de integridad; core, validation y analysis pendientes. GTFS-RT, NeTEx y SIRI planificados. |
-| 03_Compliance | Phase 1 y Phase 2 FROZEN; 92 provisions, 36 source facts, 48 requirements, 10 deadlines. Phase 3 no iniciada. |
+| 03_Compliance | Phase 1 y Phase 2 FROZEN; 92 provisions, 36 source facts, 48 requirements, 10 deadlines. Phase 3 IN_PROGRESS; M04 conserva 5 relaciones y 5 registros de automatización `PARTIAL`, todos con workflow `NEEDS_REVIEW`; 0 assertions de representabilidad y 0 audit.rules. M04B registra 5 revisiones semánticas de mapping separadas de 5 decisiones de cobertura persistidas para el piloto. A05 y A09 usan rutas procedimentales sin mappings técnicos; las decisiones aceptan limitaciones y no son conclusiones de cumplimiento jurídico. Baseline semántica M04/M04B publicada; siguiente actividad: expansión controlada por familia, pendiente de plan humano. |
 | 04_Interoperability | Mappings pendientes; no se presupone conversión 1:1. |
 | 05_Audits | Estructura planificada; evidencia de 20 operadores ubicada en GTFS_Lab. |
 | 06_Products | Desktop, Engineering, Artifacts y backups separados del índice raíz. Desktop baseline 0.2.2 protegida. |
@@ -35,10 +35,12 @@ Los PASS previos de market evidence y validation readiness son documentales. El 
 
 ## Integridad y pendientes
 
-Las dos bases actuales coinciden con sus hashes registrados, comprobados en esta revisión:
+La base GTFS raw coincide con su hash registrado. La base Compliance se amplió con el esquema y las decisiones reproducibles de M04B. Se conservan el hash del snapshot de Phase 2, la captura local previa a M04B y el hash actual:
 
 - GTFS raw: `f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc`.
-- Compliance Phase 2: `823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3`.
+- Compliance Phase 2 snapshot: `823999a9c63e4ebe68746d52b7ba1a0048efec74a7347a4bee05f66fe03453e3`.
+- Compliance local antes de M04B: `6e944fcb3e7bffd220963854dee3d753bf9377fb8b84d2525228253fcbfc1577`.
+- Compliance local tras M04B: `2c9c54a3fd261b30b3c468cf3f182a354c6ea02a80df1685fa82e545517c70b5`.
 
 La concordancia de bytes no certifica semántica GTFS, fidelidad textual o cumplimiento jurídico. Se mantienen las anomalías Annex 1.3 B-I/D-I, siete dependencias PARTIAL y mappings/reglas pendientes. El SQL del gate posterior a materialización incluye rutas absolutas y `read_blob`; no es un gate portable para un nuevo checkout. Los tests históricos de Phase 1, pre-materialización y el test 23 del master inicial de Phase 2 no deben aplicarse como expectativas del estado materializado. La revisión obtiene 27 PASS / 1 FAIL en ese master antiguo y 377/377 PASS en las comprobaciones de filas del gate final, excluyendo diez hashes jurídicos. Ver [la política de tests](03_Compliance/TEST_BASELINE_POLICY.md).
 
