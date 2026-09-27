@@ -4,7 +4,18 @@ WITH checks AS (
     WHERE r.requirement_id IS NULL AND m.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST'
     UNION ALL SELECT 'CAPABILITY_REFERENCE', count(*) FROM mapping.phase3_requirement_capabilities m LEFT JOIN mapping.phase3_capabilities c USING (capability_id) WHERE c.capability_id IS NULL
     UNION ALL SELECT 'STANDARD_REFERENCE', count(*) FROM mapping.phase3_capabilities c LEFT JOIN mapping.phase3_standards s USING (standard_id) WHERE s.standard_id IS NULL
+    UNION ALL SELECT 'STANDARD_IDENTITY', count(*) FROM mapping.phase3_standards WHERE length(trim(standard_id))=0 OR length(trim(standard_name))=0 OR length(trim(standard_kind))=0
+    UNION ALL SELECT 'DUPLICATE_STANDARD_IDENTITY', count(*) FROM (SELECT standard_id FROM mapping.phase3_standards GROUP BY standard_id HAVING count(*) > 1)
+    UNION ALL SELECT 'STANDARD_REGISTRY_VOCABULARY', count(*) FROM mapping.phase3_standards WHERE registry_status NOT IN ('IDENTITY_ONLY','REVIEWED')
     UNION ALL SELECT 'DUPLICATE_MAPPING', count(*) FROM (SELECT requirement_id, capability_id FROM mapping.phase3_requirement_capabilities GROUP BY 1,2 HAVING count(*) > 1)
+    UNION ALL SELECT 'REVIEW_VOCABULARY', count(*) FROM (
+        SELECT review_status FROM mapping.phase3_capabilities
+        UNION ALL SELECT review_status FROM mapping.phase3_requirement_capabilities
+        UNION ALL SELECT review_status FROM mapping.phase3_representability
+        UNION ALL SELECT review_status FROM mapping.phase3_automatability
+        UNION ALL SELECT review_status FROM mapping.phase3_requirement_families
+        UNION ALL SELECT review_status FROM mapping.phase3_exceptions
+    ) v WHERE review_status NOT IN ('UNREVIEWED','NEEDS_REVIEW','REVIEWED','APPROVED','REJECTED')
     UNION ALL SELECT 'REPRESENTABILITY_REASON', count(*) FROM mapping.phase3_representability WHERE representability_state IN ('PARTIAL','MISSING','UNKNOWN','NOT_APPLICABLE') AND length(trim(coalesce(explanation,'')))=0
     UNION ALL SELECT 'EXCEPTION_JUSTIFICATION', count(*) FROM mapping.phase3_exceptions WHERE length(trim(reason))=0 OR length(trim(justification))=0 OR length(trim(evidence_expectations))=0
     UNION ALL SELECT 'SOURCE_REFERENCE_SHAPE', count(*) FROM mapping.phase3_source_references WHERE length(trim(url_or_document_id))=0 OR capability_id NOT IN (SELECT capability_id FROM mapping.phase3_capabilities)
@@ -17,6 +28,6 @@ WITH checks AS (
 SELECT CASE WHEN (SELECT coalesce(sum(invalid_count),0) FROM checks)=0 THEN 'PASS' ELSE 'FAIL' END AS status,
        mappings, capabilities, exceptions,
        coalesce((SELECT sum(invalid_count) FROM checks WHERE check_name IN ('REQUIREMENT_REFERENCE','CAPABILITY_REFERENCE','STANDARD_REFERENCE')),0) AS invalid_references,
-       coalesce((SELECT sum(invalid_count) FROM checks WHERE check_name IN ('DUPLICATE_MAPPING','CAPABILITY_CONTEXT')),0) AS invalid_states,
+       coalesce((SELECT sum(invalid_count) FROM checks WHERE check_name IN ('DUPLICATE_MAPPING','DUPLICATE_STANDARD_IDENTITY','STANDARD_REGISTRY_VOCABULARY','REVIEW_VOCABULARY','CAPABILITY_CONTEXT')),0) AS invalid_states,
        coalesce((SELECT sum(invalid_count) FROM checks WHERE check_name IN ('REPRESENTABILITY_REASON','EXCEPTION_JUSTIFICATION','SOURCE_REFERENCE_SHAPE')),0) AS missing_required_reasons
 FROM totals;
