@@ -58,7 +58,8 @@ def build(out, gtfs_version, netex_version):
     add('NETEX','namespace',{'fragment.xml':xml.replace(b'http://www.netex.org.uk/netex',b'https://invalid.example')},'NOT_EVALUABLE')
     add('NETEX','external-entity',{'fragment.xml':b'<!DOCTYPE Line [<!ENTITY x SYSTEM "file:///not-read">]>'+xml},'INSPECTION_ERROR')
     add('NETEX','missing-id',{'fragment.xml':xml.replace(b' id="tdl:Line:1"',b'')},'FAIL_TECHNICAL')
-    (out/'manifest.json').write_text(json.dumps(cases,indent=2)+'\n',encoding='utf-8')
+    manifest=(json.dumps(cases,indent=2)+'\n').encode('utf-8')
+    (out/'manifest.json').write_bytes(manifest)
     return cases
 
 

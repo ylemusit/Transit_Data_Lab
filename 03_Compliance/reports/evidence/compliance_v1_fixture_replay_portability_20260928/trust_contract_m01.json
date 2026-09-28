@@ -1,0 +1,19 @@
+{
+  "gate": "TDL_TRUST_CONTRACT_GATE",
+  "status": "PASS",
+  "check_count": 12,
+  "checks": {
+    "manifest_derived_from_dataset_identity": "PASS",
+    "missing_manifest_hash_rejected": "PASS",
+    "unverified_preservation_rejected": "PASS",
+    "finding_identity_hash_unicode_and_dataset_sensitive": "PASS",
+    "finding_lifecycle_transitions_enforced": "PASS",
+    "human_review_states_require_reviewer_and_evidence": "PASS",
+    "incomplete_review_evidence_rejected": "PASS",
+    "review_timestamp_must_be_valid_utc_iso8601": "PASS",
+    "actual_rule_result_roundtrip_normalized": "PASS",
+    "identical_repeated_findings_deduplicated_explicitly": "PASS",
+    "conflicting_duplicate_findings_rejected": "PASS",
+    "invalid_rule_status_rejected": "PASS"
+  }
+}
