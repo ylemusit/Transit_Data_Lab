@@ -96,7 +96,7 @@ Los outputs V1 ya generados se conservan ante errores Trust para diagnóstico. N
 
 ## K. Estado Git
 
-Los fixes de esta deep review modifican cinco archivos respecto al head previo del Draft PR #4: 137 inserciones y 23 eliminaciones. La rama sigue siendo `feat/tdl-trust-foundation-m02` y su head vigente se refleja en el mismo PR; no integra `main` ni inicia M03.
+Los fixes de esta deep review modifican cinco archivos respecto al head previo del Draft PR #4: 139 inserciones y 25 eliminaciones. La rama sigue siendo `feat/tdl-trust-foundation-m02` y su head vigente se refleja en el mismo PR; no integra `main` ni inicia M03.
 
 ## L. Draft PR
 
