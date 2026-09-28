@@ -6,7 +6,27 @@ Actualizado: 2026-09-28. Este documento describe el estado técnico local de V1;
 
 `gtfs_lab` implementa contratos comunes mínimos en `core.py` y módulos separados para ingestión, DuckDB, validación, análisis, GIS, orquestación e informe. La entrada es un ZIP GTFS. Cada ejecución crea su carpeta bajo `runs/<run_id>/`, conserva una copia únicamente de las tablas soportadas y genera una base DuckDB propia; no escribe en `databases/gtfs_lab.duckdb` ni en el ZIP de entrada.
 
-Flujo: ZIP → comprobaciones y hash → tablas de ejecución → DuckDB `raw.*` → integridad → reglas → análisis → GIS → regla técnica Compliance V1 → `run.json` e informe.
+Flujo: ZIP → comprobaciones y hash → tablas de ejecución → DuckDB `raw.*` → integridad → reglas → análisis → GIS → regla técnica Compliance V1 → outputs V1 → persistencia dual M02 en `audit/`.
+
+## Persistencia de confianza M02
+
+Al completar el pipeline, `audit/audit_manifest.json` se deriva de `RunContext`, `DatasetIdentity`, los resultados del run y las reglas/versiones ejecutadas. Usa el contrato `AuditManifest 1.1.2` de M01 sin modificar `run.json`, `validation.json`, `analysis.json`, `report.md`, GIS ni DuckDB. `preservation_evidence` registra `INPUT_INTEGRITY_VERIFIED` solo si el SHA-256 del ZIP al terminar coincide con el verificado al ingerirlo; no afirma archivado permanente.
+
+`audit/findings.normalized.json` aplica las funciones aceptadas de M01 y vincula cada finding con audit/run/dataset/source SHA-256. `evidence.source_sha256` debe coincidir con el SHA-256 del dataset (comparación hexadecimal sin distinguir mayúsculas); un finding con hash extranjero se rechaza como `REJECTED_FINDING_SOURCE_MISMATCH`, se excluye de findings normalizados y `run()` falla. Un hash ausente recibe el SHA-256 del dataset actual. La reconciliación separa esas ocurrencias rechazadas de duplicados; cuando existen, `source_finding_occurrences = normalized_unique_findings + identical_duplicates_collapsed + conflicting_duplicates + rejected_source_mismatch_occurrences`. Los duplicados idénticos se colapsan y los conflictivos dejan `REJECTED_CONFLICTING_DUPLICATES`; ambos rechazos impiden un manifest aceptado. Una discrepancia del hash final de entrada se persiste como `REJECTED_INPUT_INTEGRITY`.
+
+El estado `NORMALIZED` describe únicamente que la operación de normalización terminó correctamente; no declara aceptación de la auditoría. La aceptación Trust requiere que exista `audit/audit_manifest.json` y valide contra M01 1.1.2. Si falla una etapa posterior, `findings.normalized.json` puede conservar `NORMALIZED` sin manifest. En ese caso `run()` informa el fallo mediante excepción y no existe auditoría aceptada. Los IDs/versiones se derivan de todas las entradas de `validation.rules` que contienen `rule_id`/`version`, incluidas las adjuntas de Compliance y sin filtrar por estado; por ello describen reglas declaradas en resultados, no una medición separada de ejecución efectiva. `ruleset_id` permanece en `gtfs-lab-v1`. Un `INGESTION_ERROR` conserva su `run.json` y no crea directorio `audit/`.
+
+El manifest se prepara en un temporal del mismo directorio, se valida desde disco y se publica con reemplazo atómico; la interrupción anterior al reemplazo no deja `audit_manifest.json`. Antes se comprueba que todas sus referencias de artefacto existen. `findings.normalized.json` puede existir sin manifest si el proceso falla entre ambos pasos: es evidencia incompleta, no una auditoría aceptada. La identidad `INPUT_INTEGRITY_VERIFIED` solo prueba que el SHA-256 observado en `DatasetIdentity` coincide con el comprobado al terminar el pipeline; no garantiza conservación permanente, WORM, custodia externa ni imposibilidad de cambio intermedio.
+
+Los artefactos declarados son específicos de `runs/<run_id>/`: `run.json`, `validation.json`, `analysis.json`, `report.md`, `findings.normalized.json`, exportaciones GIS y, si se creó, `dataset.duckdb`. DuckDB es una base propia de ese run, no una referencia a la base compartida `databases/gtfs_lab.duckdb`; aun así, sus referencias de ruta no son hashes ni impiden cambios manuales posteriores. La revisión adversarial, semántica de reglas, reconciliación y comparación V1 se resumen en [informe M02](reports/GTFS_LAB_M02_ADVERSARIAL_REVIEW.md).
+
+El gate independiente se ejecuta desde este directorio:
+
+```powershell
+python -m gtfs_lab.trust_persistence_gate --output runs/trust_persistence_gate
+```
+
+La aceptación M02 requiere además el Trust Contract Gate, el gate GTFS_Lab V1 y el gate Compliance V1. El gate demuestra persistencia técnica con fixtures sintéticos; no declara `TDL_TRUST_FOUNDATION = PASS` ni inicia M03.
 
 ## Entrada, identidad e inventario
 
