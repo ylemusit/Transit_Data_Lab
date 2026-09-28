@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 from . import VERSION
 from .analysis import analyze
+from .audit_persistence import persist_audit
 from .compliance_adapter import inspect_fixed_stop_references
 from .core import new_run_id, sha256_file, write_json
 from .database import build_duckdb
@@ -45,6 +46,7 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         write_json(ctx.work_dir / "validation.json", validation)
         report = render_report(result)
         (ctx.work_dir / "report.md").write_text(report, encoding="utf-8")
+        persist_audit(ctx, result)
         return result
     except Exception:
         # Do not erase partial evidence; mark run error with context for diagnosis.

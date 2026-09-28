@@ -8,6 +8,7 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 - El dry run crea DuckDB aislado por ejecución y no modifica `databases/gtfs_lab.duckdb`, el ZIP original ni Compliance.
 - Core, integridad, reglas iniciales, análisis con calendario, consultas SQL y exportaciones KML/GeoJSON están en el pack V1. Ver [estado V1](GTFS_LAB_V1_CURRENT_STATE.md) y [informe de estabilización](reports/GTFS_LAB_V1_STABILIZATION_REPORT.md).
 - El import SQL/runner anterior y los tres KML históricos se conservan; el nuevo flujo no depende de ellos.
+- Persistencia dual de confianza M02: las ejecuciones completas escriben `audit/audit_manifest.json` y `audit/findings.normalized.json` sin cambiar los outputs V1. Se valida con `python -m gtfs_lab.trust_persistence_gate --output runs/trust_persistence_gate`; el estado y los límites están en [estado V1](GTFS_LAB_V1_CURRENT_STATE.md).
 - Evidencia piloto de 20 operadores en [20_clientes_reales](20_clientes_reales/CURRENT_DOCUMENTATION.md). Son datasets de investigación, no clientes comerciales, y quedan fuera del run V1.
 
 GTFS-RT y SIRI quedan fuera de GTFS_Lab V1; NeTEx pertenece al laboratorio Compliance separado. El resultado técnico V1 no acredita cumplimiento jurídico ni auditoría de operadores.

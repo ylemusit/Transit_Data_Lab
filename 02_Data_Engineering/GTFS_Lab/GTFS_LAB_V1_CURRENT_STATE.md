@@ -6,7 +6,21 @@ Actualizado: 2026-09-28. Este documento describe el estado técnico local de V1;
 
 `gtfs_lab` implementa contratos comunes mínimos en `core.py` y módulos separados para ingestión, DuckDB, validación, análisis, GIS, orquestación e informe. La entrada es un ZIP GTFS. Cada ejecución crea su carpeta bajo `runs/<run_id>/`, conserva una copia únicamente de las tablas soportadas y genera una base DuckDB propia; no escribe en `databases/gtfs_lab.duckdb` ni en el ZIP de entrada.
 
-Flujo: ZIP → comprobaciones y hash → tablas de ejecución → DuckDB `raw.*` → integridad → reglas → análisis → GIS → regla técnica Compliance V1 → `run.json` e informe.
+Flujo: ZIP → comprobaciones y hash → tablas de ejecución → DuckDB `raw.*` → integridad → reglas → análisis → GIS → regla técnica Compliance V1 → outputs V1 → persistencia dual M02 en `audit/`.
+
+## Persistencia de confianza M02
+
+Al completar el pipeline, `audit/audit_manifest.json` se deriva de `RunContext`, `DatasetIdentity`, los resultados del run y las reglas/versiones ejecutadas. Usa el contrato `AuditManifest 1.1.2` de M01 sin modificar `run.json`, `validation.json`, `analysis.json`, `report.md`, GIS ni DuckDB. `preservation_evidence` registra `INPUT_INTEGRITY_VERIFIED` solo si el SHA-256 del ZIP al terminar coincide con el verificado al ingerirlo; no afirma archivado permanente.
+
+`audit/findings.normalized.json` aplica las funciones aceptadas de M01 y vincula cada finding con audit/run/dataset/source SHA-256. Su reconciliación cuenta las ocurrencias dentro de reglas y en el nivel superior de `validation.json`; los duplicados idénticos se colapsan y los conflictivos dejan el artefacto `REJECTED_CONFLICTING_DUPLICATES` y no generan un manifest aceptado. Los IDs de reglas y versiones se toman de `validation.rules`. Un `INGESTION_ERROR` conserva su `run.json` y no genera artefactos de auditoría.
+
+El gate independiente se ejecuta desde este directorio:
+
+```powershell
+python -m gtfs_lab.trust_persistence_gate --output runs/trust_persistence_gate
+```
+
+La aceptación M02 requiere además el Trust Contract Gate, el gate GTFS_Lab V1 y el gate Compliance V1. El gate demuestra persistencia técnica con fixtures sintéticos; no declara `TDL_TRUST_FOUNDATION = PASS` ni inicia M03.
 
 ## Entrada, identidad e inventario
 
