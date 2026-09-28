@@ -36,7 +36,7 @@ def _base_finding(source_sha256: str = "a" * 64) -> dict:
     }
 
 
-def _reviewed_finding(state: str) -> dict:
+def _reviewed_finding(state: str, reviewed_at_utc: str = "2026-09-28T15:00:00+00:00") -> dict:
     finding = _base_finding()
     finding.update(
         {
@@ -44,7 +44,7 @@ def _reviewed_finding(state: str) -> dict:
             "review_required": True,
             "reviewed_by": "gate-reviewer",
             "review_evidence": {
-                "reviewed_at_utc": "2026-09-28T15:00:00+00:00",
+                "reviewed_at_utc": reviewed_at_utc,
                 "basis": "synthetic gate review evidence",
             },
         }
@@ -152,6 +152,13 @@ def run_gate() -> dict:
     incomplete_review_evidence["review_evidence"] = {"reviewed_at_utc": "2026-09-28T15:00:00+00:00"}
     _expect_contract_error(lambda: normalize_finding(incomplete_review_evidence))
     checks.append({"check": "incomplete_review_evidence_rejected", "status": "PASS"})
+
+    _expect_contract_error(lambda: normalize_finding(_reviewed_finding("REVIEWED", "not-a-timestamp")))
+    _expect_contract_error(lambda: normalize_finding(_reviewed_finding("REVIEWED", "2026-09-28T15:00:00")))
+    _expect_contract_error(lambda: normalize_finding(_reviewed_finding("REVIEWED", "2026-09-28T17:00:00+02:00")))
+    assert normalize_finding(_reviewed_finding("REVIEWED", "2026-09-28T15:00:00Z"))["review_evidence"]["reviewed_at_utc"].endswith("Z")
+    assert normalize_finding(_reviewed_finding("REVIEWED", "2026-09-28T15:00:00+00:00"))["review_evidence"]["reviewed_at_utc"].endswith("+00:00")
+    checks.append({"check": "review_timestamp_must_be_valid_utc_iso8601", "status": "PASS"})
 
     actual_rule_result = RuleResult(
         rule_id="GTFS-TEST-001",
