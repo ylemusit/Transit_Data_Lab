@@ -1,0 +1,12 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\evidence\\compliance_v1_20260928\\persistence\\isolated.duckdb"
+  ],
+  "exit_code": 1,
+  "stdout": "[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n[{\"check_result\":\"IDENTITY_COLLISION:PASS\"}]\n",
+  "stderr": "Invalid Input Error: V1_INJECTED_FAILURE\n"
+}

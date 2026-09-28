@@ -1,6 +1,6 @@
 # Transit Data Lab — estado vigente
 
-Actualizado: 2026-09-27. Sustituye únicamente las afirmaciones operativas obsoletas de las instantáneas anteriores; no promueve ni modifica sus baselines. Evidencia y límites en [la revisión](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md).
+Actualizado: 2026-09-28. Sustituye únicamente las afirmaciones operativas obsoletas de las instantáneas anteriores; no promueve ni modifica sus baselines. Evidencia y límites en [la revisión](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md).
 
 ## Identidad y repositorios
 
@@ -25,11 +25,13 @@ Desktop tiene 20 entradas locales de estado, incluidas modificaciones de código
 | --- | --- |
 | 01_Research_Standards | Estructura planificada, sin implementación observada en la baseline. |
 | 02_Data_Engineering | GTFS raw implementado; sentinel de integridad; core, validation y analysis pendientes. GTFS-RT, NeTEx y SIRI planificados. |
-| 03_Compliance | Phase 1 y Phase 2 FROZEN; 92 provisions, 36 source facts, 48 requirements, 10 deadlines. Phase 3 IN_PROGRESS; M04 conserva 5 relaciones y 5 registros de automatización `PARTIAL`, todos con workflow `NEEDS_REVIEW`; 0 assertions de representabilidad y 0 audit.rules. M04B registra 5 revisiones semánticas de mapping separadas de 5 decisiones de cobertura persistidas para el piloto. `PHASE3_FAMILY_BASELINE_V1` conserva 9 familias y 48 membresías primarias (41 HIGH, 7 MEDIUM, 0 LOW). M06-B01 COMPLETED / CHECKPOINTED: 3 requisitos revisados; 1 mapping técnico a `NAP_DATA_DISCOVERY` (`standard_id = NULL`), 2 rutas no técnicas; 3 decisiones `PARTIAL / ACCEPTED_WITH_LIMITATIONS`; fuente legal oficial clasificada como tal. Validación y accounting global PASS; 0 representability, 0 observed evidence, 0 audit.rules. La cobertura semántica no es cumplimiento jurídico; no se auditó una implementación NAP concreta. M03 permanece PARTIAL / accepted-with-limitations. Siguiente acción: `M06-B02_PLANNING`; B02 no iniciado. |
+| 03_Compliance | **Compliance V1 CLOSED_WITH_DEFERRALS**; Phase 1/2 FROZEN (92 provisions, 36 source facts, 48 requirements, 10 deadlines); Phase 3 CLOSED_WITH_DEFERRALS bajo alcance GTFS/NeTEx V1. GTFS y NeTEx READY / OPERATIONAL_COMPLIANCE_TRACK exclusivamente en dos scopes técnicos reproducibles con fixtures sintéticos; SIRI y GTFS-RT STANDBY. B02 CLOSED_WITH_DEFERRALS intacto. 15 mappings y 10 coverage sin cambios (9 PARTIAL, 1 UNRESOLVED); 2 assertions PARTIAL, 28 observaciones sintéticas, 2 reglas técnicas sin conclusión jurídica. Gate vigente PASS; +44 filas en una transacción, cero migraciones. Hash final 4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B. [Vista vigente](03_Compliance/COMPLIANCE_V1_CURRENT_STATE.md) · [Informe maestro](03_Compliance/reports/COMPLIANCE_V1_FINAL_CLOSURE_REPORT.md). |
 | 04_Interoperability | Mappings pendientes; no se presupone conversión 1:1. |
 | 05_Audits | Estructura planificada; evidencia de 20 operadores ubicada en GTFS_Lab. |
 | 06_Products | Desktop, Engineering, Artifacts y backups separados del índice raíz. Desktop baseline 0.2.2 protegida. |
 | 07_Business | V1 FROZEN; Business Phase 3 IN_PROGRESS. Stage 1 COMPLETE / APPROVED (15/15). Stage 2A COMPLETE; autorización explícita del usuario del 2026-09-27 completó Stage 2B documental: auditoría, simulaciones sintéticas, seis objetivos y canales públicos, borrador y paquete. `CONTACT_GATE_READINESS = READY_FOR_CONTACT_GATE`; contacto externo NOT_AUTHORIZED hasta decisión humana. Sin entrevistas. |
+
+Antecedentes preservados: M06-B02 cerró C01/C07 y dos decisiones coverage PARTIAL como CLOSED_WITH_DEFERRALS. El pack operacional posterior mantuvo Phase 3 IN_PROGRESS porque los pilotos ET/SX no demostraron constraints de perfil; ese resultado permanece histórico. La misión Compliance V1 del 2026-09-28 cambia el alcance operacional a GTFS/NeTEx y deja SIRI/GTFS-RT en standby, sin reabrir B02 ni reinterpretar requirements. Demostró referencias fixed-stop GTFS y un fragmento Line contra EPIP XSD basado en NeTEx 1.3.1, con 28 fixtures, observaciones y dos reglas técnicas. Los 48 requisitos y nueve familias quedan dispuestos; no se afirma cobertura completa ni auditoría de operadores. El cierre vigente es CLOSED_WITH_DEFERRALS; véase el [informe maestro](03_Compliance/reports/COMPLIANCE_V1_FINAL_CLOSURE_REPORT.md).
 
 Los PASS previos de market evidence y validation readiness son documentales. El approval de Stage 1 tampoco valida el mercado: MARKET_VALIDATED = NO, DEMAND_VALIDATED = NO, WILLINGNESS_TO_PAY = NO, DIFFERENTIATION = UNPROVEN.
 
@@ -42,6 +44,12 @@ La base GTFS raw coincide con su hash registrado. La base Compliance se amplió 
 - Compliance local antes de M04B: `6e944fcb3e7bffd220963854dee3d753bf9377fb8b84d2525228253fcbfc1577`.
 - Compliance local tras M04B: `2c9c54a3fd261b30b3c468cf3f182a354c6ea02a80df1685fa82e545517c70b5`.
 - Compliance tras M06-B01: `DD5256494A682618F8F10C46396F96806FDE90B79E88BBFCA9DFABEABB68F1E4`.
+- Compliance tras migración de esquema requirement concepts M06-B02: `E1CA1603D2300B90726F50C65092DB1E923B76F1F35A70E9F57CBB05E35A7BDE`.
+- Compliance tras persistencia M06-B02A (sin escrituras en este gate): `9AA7065ABBDF52B152D888B688071F3F2FC35EF251D83317D04DD81BB4DF8EB6`.
+- Compliance previo al pack M06-B02 orquestado (schema B02C): `0175895ED430FC11698B5D6A0B9D9288B251175893549CC4EA5F2D29B008070F`.
+- Compliance tras persistencia C01+C07 y post-validation del pack (2026-09-28): `657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791`.
+- Compliance tras M06-B02 FINAL CLOSURE, +2 coverage PARTIAL y post-validation (2026-09-28): `6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F`.
+- Compliance V1 CLOSED_WITH_DEFERRALS, +44 filas aditivas verificadas (2026-09-28): `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B`.
 
 La concordancia de bytes no certifica semántica GTFS, fidelidad textual o cumplimiento jurídico. Se mantienen las anomalías Annex 1.3 B-I/D-I, siete dependencias PARTIAL y mappings/reglas pendientes. El SQL del gate posterior a materialización incluye rutas absolutas y `read_blob`; no es un gate portable para un nuevo checkout. Los tests históricos de Phase 1, pre-materialización y el test 23 del master inicial de Phase 2 no deben aplicarse como expectativas del estado materializado. La revisión obtiene 27 PASS / 1 FAIL en ese master antiguo y 377/377 PASS en las comprobaciones de filas del gate final, excluyendo diez hashes jurídicos. Ver [la política de tests](03_Compliance/TEST_BASELINE_POLICY.md).
 

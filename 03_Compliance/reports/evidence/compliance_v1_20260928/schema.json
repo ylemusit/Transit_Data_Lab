@@ -1,0 +1,1322 @@
+[
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "result_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_source",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "reference_text",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "captured_at",
+    "data_type": "TIMESTAMP"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "result_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "rule_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "result_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "severity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "entity_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "field_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "observed_value",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "expected_value",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "message",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "evidence_text",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "created_at",
+    "data_type": "TIMESTAMP"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_family",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "description",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_format",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_field",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "severity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "validation_engine",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "validation_expression",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "is_automatic",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "legal_conclusion_allowed",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "dataset_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "operator_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "format_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "format_version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "source_url",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "source_file",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "executed_at",
+    "data_type": "TIMESTAMP"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "format_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "format_version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "profile_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "coverage_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "source_file",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "source_entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "source_field",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "target_entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "target_field",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "transformation_required",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "enrichment_required",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "mapping_notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "evidence_text",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_coverage",
+    "column_name": "created_at",
+    "data_type": "TIMESTAMP"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "equivalence_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "source_format",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "source_version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "source_entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "source_field",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "target_format",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "target_version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "target_profile",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "target_entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "target_field",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "mapping_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "information_loss",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "enrichment_required",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "format_equivalences",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "automatability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "automatability_state",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "explanation",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "prerequisites",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "assessed_on",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "standard_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "domain",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "entity",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "field_or_element",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "semantic_meaning",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "cardinality",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "required_or_optional",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "conditions",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "profile_dependency",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "evidence_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "limitations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_capabilities",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_concept_mappings",
+    "column_name": "concept_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_concept_mappings",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_concept_mappings",
+    "column_name": "relation_note",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "exception_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "exception_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "reason",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "justification",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "evidence_expectations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_exceptions",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_families",
+    "column_name": "family_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_families",
+    "column_name": "family_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_families",
+    "column_name": "description",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_families",
+    "column_name": "provisional",
+    "data_type": "BOOLEAN"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "semantic_review_outcome",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "justification",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "limitations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "reviewed_by",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_reviews",
+    "column_name": "reviewed_at",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "scope_unit_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "concept_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "unit_code",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "unit_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "unit_definition",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "scope_disposition",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "basis_section",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "limitation",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "rationale",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "reviewed_at",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "reviewed_by",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "decision_document_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_mapping_scope_units",
+    "column_name": "milestone_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "evidence_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "evidence_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "locator",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "observed_value",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "observed_on",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "representability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "representability_state",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "explanation",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "conditions",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "assessed_on",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "mapping_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "mapping_conditions",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "limitations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_capabilities",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "concept_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "concept_code",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "concept_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "concept_description",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "scope_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "applicability_conditions",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "source_basis",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "review_outcome",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "review_justification",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "limitations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "created_at",
+    "data_type": "TIMESTAMP"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "created_by",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "reviewed_at",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "reviewed_by",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_concepts",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "coverage_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "coverage_state",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "semantic_review_outcome",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "justification",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "limitations",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "identified_paths",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "reviewed_by",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "reviewed_at",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_coverage",
+    "column_name": "reviewed_against_baseline",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "family_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "relation_type",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "review_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "classification_reason",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_requirement_families",
+    "column_name": "classification_confidence",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_scope_source_references",
+    "column_name": "scope_unit_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_scope_source_references",
+    "column_name": "source_reference_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_scope_source_references",
+    "column_name": "evidence_role",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "source_reference_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "source_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "specification_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "section",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "url_or_document_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "retrieved_on",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "reviewed_on",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "notes",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_source_references",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "standard_id",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "standard_name",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "standard_kind",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "version",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "profile",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "service_or_subprofile",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "jurisdiction_context",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "valid_from",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "valid_to",
+    "data_type": "DATE"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "source_metadata",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_standards",
+    "column_name": "registry_status",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_vocabularies",
+    "column_name": "vocabulary",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_vocabularies",
+    "column_name": "value",
+    "data_type": "VARCHAR"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_vocabularies",
+    "column_name": "description",
+    "data_type": "VARCHAR"
+  }
+]

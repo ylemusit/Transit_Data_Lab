@@ -1,0 +1,905 @@
+{
+  "scope": {
+    "primary": [
+      "GTFS",
+      "NeTEx"
+    ],
+    "standby": [
+      "SIRI",
+      "GTFS-RT"
+    ],
+    "standby_reason": "DEFERRED_BY_PRODUCT_SCOPE",
+    "reopen_condition": "GTFS + NeTEx V1 stable AND explicit future realtime track"
+  },
+  "requirements": [
+    {
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-001",
+      "description": "Cada Estado miembro debe establecer un punto de acceso nacional.",
+      "family_id": "F01",
+      "coverage_state": "PARTIAL",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-002",
+      "description": "El punto de acceso nacional debe servir como punto único de acceso a las categorías de datos y actualizaciones enumeradas para el territorio del Estado miembro.",
+      "family_id": "F01",
+      "coverage_state": "PARTIAL",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A03-P03-001",
+      "description": "El punto de acceso nacional debe prestar servicios de localización a los usuarios de datos.",
+      "family_id": "F01",
+      "coverage_state": "PARTIAL",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A03-P04-001-01",
+      "description": "El Estado miembro, en cooperación con las partes interesadas pertinentes de los STI, alcanzará un acuerdo sobre los requisitos en materia de metadatos.",
+      "family_id": "F04",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Faltan contexto de metadatos, procedencia y solicitud.",
+      "impact": "Campos técnicos no prueban deber contextual.",
+      "reopen_condition": "Contrato y evidencia de procedencia/solicitud revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A03-P04-001-02",
+      "description": "El titular de datos facilitará metadatos sobre la base de los requisitos acordados.",
+      "family_id": "F04",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Faltan contexto de metadatos, procedencia y solicitud.",
+      "impact": "Campos técnicos no prueban deber contextual.",
+      "reopen_condition": "Contrato y evidencia de procedencia/solicitud revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-001",
+      "description": "Los titulares facilitarán por el punto de acceso nacional acceso a los datos estáticos, históricos y observados incluidos en el punto 1 del anexo.",
+      "family_id": "F01",
+      "coverage_state": "PARTIAL",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Two operational technical subscopes demonstrated; broad NAP/static/historical/observed obligation not demonstrated.",
+      "impact": "No claim that the full legal requirement is delivered.",
+      "reopen_condition": "Additional reviewed scopes and contextual NAP evidence.",
+      "targets": [
+        "GTFS_TARGET",
+        "NETEX_TARGET"
+      ]
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-002",
+      "description": "Facilitar los datos de carretera mediante el formato normalizado al que remite el artículo 4.",
+      "family_id": "F02",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-003",
+      "description": "Para otros modos, utilizar una norma/especificación enumerada o un formato digital legible por máquina que pueda demostrarse plenamente compatible e interoperable con ellas.",
+      "family_id": "F02",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Perfil, constraints o aplicabilidad incompletos.",
+      "impact": "No acredita representación de todo el requisito.",
+      "reopen_condition": "Perfil versionado y crosswalk revisado por scope.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-004",
+      "description": "Para la red espacial, aplicar los requisitos a los que remite el artículo 7 de la Directiva 2007/2/CE.",
+      "family_id": "F02",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P02-001",
+      "description": "Los datos estáticos, históricos y observados del anexo a los que sean aplicables NeTEx y DATEX II se representarán mediante perfiles mínimos de la UE o nacionales.",
+      "family_id": "F02",
+      "coverage_state": "UNRESOLVED",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Perfil, constraints o aplicabilidad incompletos.",
+      "impact": "No acredita representación de todo el requisito.",
+      "reopen_condition": "Perfil versionado y crosswalk revisado por scope.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-001",
+      "description": "Para la red RTE-T global, facilitar los datos del punto 1.1 del anexo, salvo el punto 1.1, letra d), inciso ix), a más tardar el 1 de diciembre de 2019.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-002",
+      "description": "Para la red RTE-T global, facilitar los datos del punto 1.2 del anexo, salvo los incisos expresamente exceptuados en el artículo 4, apartado 3, letra b), a más tardar el 1 de diciembre de 2020.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-003",
+      "description": "Para la red RTE-T global, facilitar los datos del punto 1.3 del anexo, salvo el punto 1.3, letra c), inciso iii), a más tardar el 1 de diciembre de 2021.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-004",
+      "description": "Para las demás partes de la red de transporte de la Unión, facilitar los datos de los puntos 1.1 a 1.3 del anexo dentro del alcance y excepciones expresos de la letra d), a más tardar el 1 de diciembre de 2023.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-005",
+      "description": "Para toda la red de transporte de la Unión, facilitar las categorías de los puntos 1.1, 1.2 y 1.3 expresamente enumeradas en la letra e), a más tardar el 1 de diciembre de 2024.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P03-006",
+      "description": "Facilitar el punto 1.4 del anexo en toda la red de la Unión a más tardar el 1 de diciembre de 2025.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P04-001",
+      "description": "Las API que proporcionen acceso a los datos estáticos, históricos y observados del anexo a través del punto de acceso nacional serán públicamente accesibles para los usuarios de datos; cuando proceda, estos estarán previamente registrados.",
+      "family_id": "F01",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P05-001",
+      "description": "Usuarios y titulares colaborarán para notificar sin demora las inexactitudes al titular de origen.",
+      "family_id": "F06",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin métricas/criterios y evidencia de calidad/notificación.",
+      "impact": "No puede atribuir fallo de calidad.",
+      "reopen_condition": "Criterio acotado revisado y evidencia de ejecución.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A04-P06-001",
+      "description": "Los datos facilitados por titulares a través del punto de acceso nacional no incluirán datos personales conforme a la definición remitida.",
+      "family_id": "F09",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-001",
+      "description": "Los titulares proporcionarán por el punto de acceso nacional acceso a los datos dinámicos de los puntos 2.1 y 2.2 del anexo.",
+      "family_id": "F01",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "description": "Facilitar datos dinámicos de carretera mediante los formatos a los que remiten los artículos 5 y 6.",
+      "family_id": "F02",
+      "coverage_state": "PARTIAL",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-003",
+      "description": "Para otros modos, utilizar una norma/especificación enumerada o un formato digital legible por máquina que pueda demostrarse plenamente compatible e interoperable.",
+      "family_id": "F02",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "description": "Los datos dinámicos de los puntos 2.1 y 2.2 del anexo a los que sean aplicables SIRI y DATEX II se representarán mediante perfiles mínimos de la UE o nacionales.",
+      "family_id": "F02",
+      "coverage_state": "PARTIAL",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P03-001",
+      "description": "Facilitar los datos del punto 2.1 del anexo para la red RTE-T global a más tardar el 1 de diciembre de 2025.",
+      "family_id": "F03",
+      "coverage_state": "PARTIAL",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P03-002",
+      "description": "Facilitar los datos del punto 2.2 del anexo para la red RTE-T global a más tardar el 1 de diciembre de 2026.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P03-003",
+      "description": "Facilitar datos de los puntos 2.1 y 2.2 para las demás partes de la red de la Unión a más tardar el 1 de diciembre de 2028.",
+      "family_id": "F03",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P04-001",
+      "description": "Si el Estado miembro decide que los titulares faciliten por el punto de acceso nacional los datos dinámicos del punto 2.3 del anexo, los titulares utilizarán SIRI o un formato digital legible por máquina demostrablemente plenamente compatible e interoperable.",
+      "family_id": "F02",
+      "coverage_state": null,
+      "disposition": "OUT_OF_SCOPE_V1",
+      "automatability": "OUT_OF_SCOPE_V1",
+      "reason": "DEFERRED_BY_PRODUCT_SCOPE: realtime, road format or spatial-network track outside committed GTFS/NeTEx pilots.",
+      "impact": "Historical obligation, mapping, review and coverage remain unchanged; no operational V1 claim.",
+      "reopen_condition": "GTFS + NeTEx V1 stable AND the relevant future track explicitly opened.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A06-P02-001-01",
+      "description": "Cuando se produzcan cambios en los datos del artículo 6, apartado 1, el titular actualizará los datos pertinentes enumerados en el anexo y los hará accesibles a través del punto de acceso nacional en un plazo que permita su utilización fiable y efectiva, de conformidad con el artículo 8.",
+      "family_id": "F05",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin historial observable de cambios/correcciones.",
+      "impact": "No puede evaluar actualización.",
+      "reopen_condition": "Historial versionado y contrato de comparación revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A06-P02-001-02",
+      "description": "Cuando los cambios se conozcan con antelación, el titular facilitará dichas actualizaciones a los usuarios de datos con antelación.",
+      "family_id": "F05",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin historial observable de cambios/correcciones.",
+      "impact": "No puede evaluar actualización.",
+      "reopen_condition": "Historial versionado y contrato de comparación revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A06-P02-001-03",
+      "description": "El titular corregirá oportunamente cualquier inexactitud que detecte o que le indiquen los usuarios de datos y los usuarios finales.",
+      "family_id": "F05",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin historial observable de cambios/correcciones.",
+      "impact": "No puede evaluar actualización.",
+      "reopen_condition": "Historial versionado y contrato de comparación revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A07-P01-001",
+      "description": "A solicitud, los proveedores comunicarán a otro proveedor resultados de encaminamiento basados en los datos enumerados.",
+      "family_id": "F08",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin contrato ni observación de intercambio de resultados.",
+      "impact": "No evalúa solicitud/respuesta.",
+      "reopen_condition": "Interfaz y caso solicitud/respuesta revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P01-001-01-A",
+      "description": "Los datos de desplazamientos y tráfico enumerados en el anexo y los metadatos correspondientes, incluida la información sobre su calidad, serán accesibles para su intercambio y reutilización dentro de la Unión de forma no discriminatoria, a través del punto de acceso nacional establecido de conformidad con el artículo 3.",
+      "family_id": "F01",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P01-001-01-B",
+      "description": "Los datos de desplazamientos y tráfico enumerados en el anexo y los metadatos correspondientes, incluida la información sobre su calidad, serán accesibles en un plazo que permita la reutilización fiable y efectiva de los datos.",
+      "family_id": "F01",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P01-001-02",
+      "description": "Los datos serán exactos y actualizados.",
+      "family_id": "F06",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin métricas/criterios y evidencia de calidad/notificación.",
+      "impact": "No puede atribuir fallo de calidad.",
+      "reopen_condition": "Criterio acotado revisado y evidencia de ejecución.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P01-001-03",
+      "description": "Los datos se basarán en requisitos mínimos de calidad.",
+      "family_id": "F06",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin métricas/criterios y evidencia de calidad/notificación.",
+      "impact": "No puede atribuir fallo de calidad.",
+      "reopen_condition": "Criterio acotado revisado y evidencia de ejecución.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P01-001-04",
+      "description": "El Estado miembro, en cooperación con las partes interesadas pertinentes de los STI, alcanzará un acuerdo sobre los requisitos mínimos de calidad de los datos.",
+      "family_id": "F06",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin métricas/criterios y evidencia de calidad/notificación.",
+      "impact": "No puede atribuir fallo de calidad.",
+      "reopen_condition": "Criterio acotado revisado y evidencia de ejecución.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P02-001-01",
+      "description": "Los datos del artículo 8, apartado 1, se reutilizarán de manera neutral, sin discriminación o parcialidad con respecto al titular de los datos.",
+      "family_id": "F07",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P02-001-02-A",
+      "description": "Los criterios utilizados para ordenar las opciones de desplazamiento de los diferentes modos de transporte, o combinaciones de estos, o ambas cosas, deberán ser transparentes.",
+      "family_id": "F07",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P02-001-02-B",
+      "description": "Los criterios utilizados para ordenar las opciones de desplazamiento de los diferentes modos de transporte, o combinaciones de estos, o ambas cosas, no estarán basados en ningún factor directa o indirectamente relacionado con la identidad del usuario de datos o del usuario final o, si la hubiera, la consideración comercial relacionada con la reutilización de los datos.",
+      "family_id": "F07",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P02-001-02-C",
+      "description": "Los criterios utilizados para ordenar las opciones de desplazamiento de los diferentes modos de transporte, o combinaciones de estos, o ambas cosas, deberán aplicarse de forma no discriminatoria a todos los usuarios de datos o usuarios finales participantes.",
+      "family_id": "F07",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P02-001-03",
+      "description": "La primera presentación de itinerario de viaje no inducirá a error al usuario final.",
+      "family_id": "F07",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-01",
+      "description": "Cuando se reutilicen los datos de desplazamientos y tráfico, se indicará su fuente si el titular de datos así lo solicita.",
+      "family_id": "F04",
+      "coverage_state": "PARTIAL",
+      "disposition": "PARTIAL",
+      "automatability": "PARTIALLY_AUTOMATABLE",
+      "reason": "Faltan contexto de metadatos, procedencia y solicitud.",
+      "impact": "Campos técnicos no prueban deber contextual.",
+      "reopen_condition": "Contrato y evidencia de procedencia/solicitud revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-02",
+      "description": "Cuando se reutilicen los datos, se indicará su intervalo de actualización; para los datos dinámicos, solo cuando sea posible.",
+      "family_id": "F04",
+      "coverage_state": null,
+      "disposition": "DEFERRED",
+      "automatability": "DEFERRED",
+      "reason": "Faltan contexto de metadatos, procedencia y solicitud.",
+      "impact": "Campos técnicos no prueban deber contextual.",
+      "reopen_condition": "Contrato y evidencia de procedencia/solicitud revisados.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A09-P01-001",
+      "description": "Los Estados miembros evaluarán el cumplimiento por titulares y proveedores de los requisitos de los artículos 3 a 8.",
+      "family_id": "F09",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A09-P02-DOCUMENT_REQUEST",
+      "description": "A fin de llevar a cabo la evaluación del artículo 9(1), las autoridades competentes de los Estados miembros podrán solicitar a titulares de datos y proveedores de servicios de información sobre desplazamientos: a) descripción de los datos accesibles a través del NAP, información sobre su calidad y condiciones de reutilización; b) descripción de los servicios de información sobre desplazamientos disponibles y, cuando proceda, sus conexiones con otros servicios; c) declaración y justificantes correspondientes del cumplimiento de los artículos 3 a 8; d) licencia o acuerdos contractuales con proveedores de servicios de información sobre desplazamientos.",
+      "family_id": "F09",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A09-P03-RANDOM_CHECKS",
+      "description": "Los Estados miembros efectuarán comprobaciones aleatorias de la exactitud de las declaraciones mencionadas en el artículo 9, apartado 2, letra c).",
+      "family_id": "F09",
+      "coverage_state": "PARTIAL",
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A10-P01-001",
+      "description": "Los Estados miembros deben remitir a la Comisión un informe sobre medidas para establecer el punto de acceso nacional y sus modalidades de funcionamiento, a más tardar el 1 de diciembre de 2019.",
+      "family_id": "F09",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A10-P02-001",
+      "description": "Los Estados miembros proporcionarán en los informes de progreso información sobre avances, cobertura/calidad, conexiones, resultados de evaluación y cambios del NAP cuando proceda.",
+      "family_id": "F09",
+      "coverage_state": null,
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "automatability": "HUMAN_REVIEW_REQUIRED",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso.",
+      "targets": []
+    }
+  ],
+  "families": [
+    {
+      "family_id": "F01",
+      "requirements": 8,
+      "disposition": "PARTIAL_WITH_ACCEPTED_LIMITS",
+      "reason": "Falta evidencia contextual de acceso/designación/descubrimiento.",
+      "impact": "No acredita operación NAP.",
+      "reopen_condition": "Evidencia NAP identificable y contrato de inspección acotado."
+    },
+    {
+      "family_id": "F02",
+      "requirements": 8,
+      "disposition": "PARTIAL_WITH_ACCEPTED_LIMITS",
+      "reason": "Perfil, constraints o aplicabilidad incompletos.",
+      "impact": "No acredita representación de todo el requisito.",
+      "reopen_condition": "Perfil versionado y crosswalk revisado por scope."
+    },
+    {
+      "family_id": "F03",
+      "requirements": 9,
+      "disposition": "PARTIAL_WITH_ACCEPTED_LIMITS",
+      "reason": "Faltan registros fechados de disponibilidad y ámbito.",
+      "impact": "No acredita satisfacción temporal.",
+      "reopen_condition": "Registros de publicación y aplicabilidad revisados."
+    },
+    {
+      "family_id": "F04",
+      "requirements": 4,
+      "disposition": "PARTIAL_WITH_ACCEPTED_LIMITS",
+      "reason": "Faltan contexto de metadatos, procedencia y solicitud.",
+      "impact": "Campos técnicos no prueban deber contextual.",
+      "reopen_condition": "Contrato y evidencia de procedencia/solicitud revisados."
+    },
+    {
+      "family_id": "F05",
+      "requirements": 3,
+      "disposition": "DEFERRED",
+      "reason": "Sin historial observable de cambios/correcciones.",
+      "impact": "No puede evaluar actualización.",
+      "reopen_condition": "Historial versionado y contrato de comparación revisados."
+    },
+    {
+      "family_id": "F06",
+      "requirements": 4,
+      "disposition": "DEFERRED",
+      "reason": "Sin métricas/criterios y evidencia de calidad/notificación.",
+      "impact": "No puede atribuir fallo de calidad.",
+      "reopen_condition": "Criterio acotado revisado y evidencia de ejecución."
+    },
+    {
+      "family_id": "F07",
+      "requirements": 5,
+      "disposition": "DEFERRED",
+      "reason": "Sin evidencia de decisiones de reutilización/presentación.",
+      "impact": "No evalúa neutralidad ni ranking.",
+      "reopen_condition": "Casos y criterios revisados con evidencia contextual."
+    },
+    {
+      "family_id": "F08",
+      "requirements": 1,
+      "disposition": "DEFERRED",
+      "reason": "Sin contrato ni observación de intercambio de resultados.",
+      "impact": "No evalúa solicitud/respuesta.",
+      "reopen_condition": "Interfaz y caso solicitud/respuesta revisados."
+    },
+    {
+      "family_id": "F09",
+      "requirements": 6,
+      "disposition": "PARTIAL_WITH_ACCEPTED_LIMITS",
+      "reason": "Requiere registros institucionales/procedimentales.",
+      "impact": "Un formato no acredita actuación institucional.",
+      "reopen_condition": "Revisión humana con registros de autoridad/proceso."
+    }
+  ],
+  "mappings": [
+    {
+      "mapping_id": "M04-MAP-A04P01-GTFS-TRIP-STOP",
+      "capability_id": "CAP-GTFS-SCHEDULE-TRIP-STOP-TIMES",
+      "disposition": "PARTIAL",
+      "operational_in_v1": true
+    },
+    {
+      "mapping_id": "M04-MAP-A04P01-NETEX-PT",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "disposition": "PARTIAL",
+      "operational_in_v1": true
+    },
+    {
+      "mapping_id": "M04-MAP-A04P02-NETEX-PT",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "disposition": "PARTIAL",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-ATTRIBUTION",
+      "capability_id": "CAP-GTFS-DATASET-ATTRIBUTION",
+      "disposition": "PARTIAL",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-PUBLISHER",
+      "capability_id": "CAP-GTFS-FEED-PUBLISHER-METADATA",
+      "disposition": "PARTIAL",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B01-MAP-A03-P03-001-NAP-DISCOVERY",
+      "capability_id": "NAP_DATA_DISCOVERY",
+      "disposition": "PARTIAL",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+      "capability_id": "CAP-DATEXII-RRP-ROAD-CLOSURE",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+      "capability_id": "CAP-DATEXII-RRP-LANE-CLOSURE",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+      "capability_id": "CAP-DATEXII-RRP-ROADWORKS",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+      "capability_id": "CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+      "capability_id": "CAP-DATEXII-RRP-BRIDGE-CLOSURE",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+      "capability_id": "CAP-DATEXII-RRP-ACCIDENT-INCIDENT",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "capability_id": "CAP-DATEXII-RRP-POOR-ROAD-CONDITION",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+      "capability_id": "CAP-SIRI-EPIPRT-ET",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "capability_id": "CAP-SIRI-EPIPRT-SX",
+      "disposition": "OUT_OF_SCOPE_V1",
+      "operational_in_v1": false
+    }
+  ],
+  "coverage": [
+    {
+      "coverage_id": "M04B-COV-A04-P01",
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Reviewed technical paths cover bounded scheduled network and timetable concepts.",
+      "limitations": "Does not establish full Annex coverage, historical/observed data, NAP publication/access, or legal compliance.",
+      "identified_paths": "MAPPING:M04-MAP-A04P01-GTFS-TRIP-STOP;MAPPING:M04-MAP-A04P01-NETEX-PT",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A04-P02",
+      "requirement_id": "EU-2017-1926-REQ-A04-P02-001",
+      "coverage_state": "UNRESOLVED",
+      "semantic_review_outcome": "UNRESOLVED",
+      "justification": "A bounded NeTEx relationship is identified, but applicable profile/category coverage cannot yet be resolved.",
+      "limitations": "Applicable minimum profile and category scope remain unresolved; do not infer complete coverage or legal compliance.",
+      "identified_paths": "MAPPING:M04-MAP-A04P02-NETEX-PT",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A05-P03",
+      "requirement_id": "EU-2017-1926-REQ-A05-P03-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed deadline/procedural path is identified without manufacturing a technical mapping.",
+      "limitations": "Calendar/feed date fields do not establish timely legal provision; dated NAP publication/access and applicable scope evidence remain necessary.",
+      "identified_paths": "EXCEPTION:M03-EXC-A05-DEADLINE",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A08-P03",
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-01",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Hybrid technical and external evidence paths cover bounded publisher/attribution and request-context aspects.",
+      "limitations": "Publisher metadata and attribution do not establish all provenance, request/response, disclosure, or reuse facts; no legal compliance is asserted.",
+      "identified_paths": "MAPPING:M04-MAP-A08P03-GTFS-PUBLISHER;MAPPING:M04-MAP-A08P03-GTFS-ATTRIBUTION;EXCEPTION:M03-EXC-A08-SOURCE-REQUEST",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A09-RANDOM-CHECKS",
+      "requirement_id": "EU-2017-1926-REQ-A09-P03-RANDOM_CHECKS",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed manual assessment path is identified without manufacturing a technical mapping.",
+      "limitations": "Operational records, sampled declarations and corroboration are needed; the pilot does not define method, frequency, sample size, or legal compliance outcome.",
+      "identified_paths": "EXCEPTION:M03-EXC-A09-RANDOM-CHECKS",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P01-001",
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "An institutional/legal-process evaluation path is identifiable, but no justified reusable technical capability mapping exists.",
+      "limitations": "Assessment requires authoritative external evidence establishing the relevant National Access Point. Technical accessibility or dataset-format evidence alone does not prove this obligation. No legal-compliance conclusion is made.",
+      "identified_paths": "EXCEPTION:M06-B01-EXC-A03-P01-001",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P01-002",
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-002",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "An organizational/institutional evaluation path concerning the access point role as the single point of access is identifiable; no justified reusable technical capability mapping exists.",
+      "limitations": "Assessment requires authoritative organizational/designation evidence. Dataset presence or technical accessibility alone does not prove single-access-point status. No legal-compliance conclusion is made.",
+      "identified_paths": "EXCEPTION:M06-B01-EXC-A03-P01-002",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P03-001",
+      "requirement_id": "EU-2017-1926-REQ-A03-P03-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed functional mapping for metadata-based dataset discovery coexists with the manual/external evaluation path.",
+      "limitations": "Technical observation covers only some discovery behavior. Contextual and external evidence remains necessary for complete evaluation; this is not a legal-compliance conclusion.",
+      "identified_paths": "MAPPING:M06-B01-MAP-A03-P03-001-NAP-DISCOVERY;EXCEPTION:M06-B01-EXC-A03-P03-001",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B02-COV-A05-P01-002",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Evaluated B02 scope: ROAD_STATUS_DISRUPTION only. Persisted C01 category-specific partial mappings support a bounded part of the road dynamic-data requirement. PARTIAL is a semantic review, not a ratio of mappings. DATEX II RTTI RRP 2022/670 evidence; individual releases remain unresolved.",
+      "limitations": "Not exhaustive; not observed implementation; not legal compliance conclusion. 5-SN-D deferred: profile/identity ambiguity. Frozen 2015/962 literal reference preserved; 2022/670 succession context is not a legal substitution. Other dynamic road-data scope and exact releases not established.",
+      "identified_paths": "MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-A;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-B;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-C;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-D;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-A;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-B;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_against_baseline": "M06_B02_FINAL_CLOSURE_2026-09-28; S1+B02A; PRE_DB_SHA256=657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791"
+    },
+    {
+      "coverage_id": "M06-B02-COV-A05-P02-001",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Evaluated B02 scope: conditional Annex 2.1/2.2 concepts, with support limited to PASSENGER_RT_STATUS_DISRUPTION through C07 ET/SX. SIRI 2.1 / EPIP-RT CEN/TS 15531-7:2025. The accepted partial mappings support PARTIAL semantic coverage without establishing all concepts; no count-based percentage.",
+      "limitations": "Not exhaustive; not observed implementation; not legal compliance conclusion. Gaps: C04 Article 5(2) road applicability; C08 normative FM/facility element path; CM guaranteed-connections bridge; U01 PARKING_TARIFF minimum general profile/version/elements and applicability; U02 SHARED_VEHICLE_AVAILABILITY modal profile/element evidence; U03 PARKING_AVAILABILITY on/off-street minimum profile and crosswalk. All deferred for closure; exact profile constraints and representability not established.",
+      "identified_paths": "MAPPING:M06-B02-MAP-A05-P02-001-SIRI-ET;MAPPING:M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_against_baseline": "M06_B02_FINAL_CLOSURE_2026-09-28; S1+B02A; PRE_DB_SHA256=657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791"
+    }
+  ],
+  "counts": {
+    "requirements": {
+      "PARTIAL": 6,
+      "DEFERRED": 20,
+      "OUT_OF_SCOPE_V1": 10,
+      "HUMAN_REVIEW_REQUIRED": 12
+    },
+    "families": {
+      "PARTIAL_WITH_ACCEPTED_LIMITS": 5,
+      "DEFERRED": 4
+    }
+  }
+}

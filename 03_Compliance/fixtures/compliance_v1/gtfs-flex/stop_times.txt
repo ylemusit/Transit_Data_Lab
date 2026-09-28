@@ -1,0 +1,2 @@
+trip_id,stop_id,location_id
+T,,AREA

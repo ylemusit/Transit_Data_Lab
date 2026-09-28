@@ -1,0 +1,50 @@
+{
+  "commit": "e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a",
+  "tree": {
+    "sha": "e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a",
+    "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/trees/e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a",
+    "tree": [
+      {
+        "path": "NeTEx_publication_EPIP-NoConstraint.xsd",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "03d90e0b0712b2d2b8ae59b3698e59c22d19bccd",
+        "size": 6352,
+        "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/blobs/03d90e0b0712b2d2b8ae59b3698e59c22d19bccd"
+      },
+      {
+        "path": "NeTEx_publication_EPIP.xsd",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4954e4b72366c933c5a57638361ac3d51fdb25d6",
+        "size": 432580,
+        "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/blobs/4954e4b72366c933c5a57638361ac3d51fdb25d6"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4e4bbb585703b194ad14b47d966e29bdc5eeff29",
+        "size": 1688,
+        "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/blobs/4e4bbb585703b194ad14b47d966e29bdc5eeff29"
+      },
+      {
+        "path": "_content_NeTEx_EPIP.xsd",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "dbd3b4d5772a4f362cbf2b9db45198b8775e4872",
+        "size": 475734,
+        "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/blobs/dbd3b4d5772a4f362cbf2b9db45198b8775e4872"
+      },
+      {
+        "path": "gml_combo_v3_2_1_simplified.xsd",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a5c6566b95d970456757c0667116c06cb179057d",
+        "size": 15563,
+        "url": "https://api.github.com/repos/TransmodelEcosystem/NeTEx-Profile-EPIP/git/blobs/a5c6566b95d970456757c0667116c06cb179057d"
+      }
+    ],
+    "truncated": false
+  }
+}

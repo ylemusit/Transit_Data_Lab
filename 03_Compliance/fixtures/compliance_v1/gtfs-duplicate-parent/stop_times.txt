@@ -1,0 +1,3 @@
+trip_id,arrival_time,departure_time,stop_id,stop_sequence
+T,25:00:00,25:00:00,S,1
+T,25:01:00,25:01:00,Z,2

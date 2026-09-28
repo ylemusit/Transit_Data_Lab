@@ -55,3 +55,5 @@
 
 # Attributes do not make ignored sensitive originals, datasets or generated data eligible.
 # Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+03_Compliance/reports/evidence/compliance_v1_20260928/sources/*.xsd whitespace=-blank-at-eol
+03_Compliance/reports/evidence/compliance_v1_20260928/sources/gtfs_reference.md whitespace=-blank-at-eol

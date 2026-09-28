@@ -1,0 +1,67 @@
+{
+  "status": "FAIL_BLOCKING",
+  "error": "{'command': ['duckdb', '-batch', '-bail', '-json', '-readonly', ':memory:'], 'exit_code': 1, 'stdout': '', 'stderr': 'Catalog Error: Cannot launch in-memory database in read-only mode!\\n'}",
+  "completed_checks": {
+    "exact_authoritative_delta": {
+      "audit.evidence": "PASS",
+      "audit.results": "PASS",
+      "audit.rules": "PASS",
+      "audit.runs": "PASS",
+      "compliance.deadlines": "PASS",
+      "compliance.nap_requirements": "PASS",
+      "compliance.provision_classifications": "PASS",
+      "compliance.requirement_candidate_sources": "PASS",
+      "compliance.requirement_candidates": "PASS",
+      "compliance.requirements": "PASS",
+      "compliance.source_facts": "PASS",
+      "mapping.format_coverage": "PASS",
+      "mapping.format_equivalences": "PASS",
+      "mapping.phase3_automatability": "PASS",
+      "mapping.phase3_capabilities": "PASS",
+      "mapping.phase3_concept_mappings": "PASS",
+      "mapping.phase3_exceptions": "PASS",
+      "mapping.phase3_families": "PASS",
+      "mapping.phase3_mapping_reviews": "PASS",
+      "mapping.phase3_mapping_scope_units": "PASS",
+      "mapping.phase3_observed_evidence": "PASS",
+      "mapping.phase3_representability": "PASS",
+      "mapping.phase3_requirement_capabilities": "PASS",
+      "mapping.phase3_requirement_concepts": "PASS",
+      "mapping.phase3_requirement_coverage": "PASS",
+      "mapping.phase3_requirement_families": "PASS",
+      "mapping.phase3_scope_source_references": "PASS",
+      "mapping.phase3_source_references": "PASS",
+      "mapping.phase3_standards": "PASS",
+      "mapping.phase3_vocabularies": "PASS",
+      "source.documents": "PASS",
+      "source.provisions": "PASS",
+      "source.relationships": "PASS"
+    },
+    "technical_sources": "PASS",
+    "persistence_generator_replay": "PASS",
+    "phase1": {
+      "current_pass": 22,
+      "historical": []
+    },
+    "phase2": {
+      "current_pass": 386,
+      "historical": [
+        {
+          "test": "UNCHANGED_COUNT_audit.rules",
+          "status": "FAIL",
+          "expected": 0,
+          "actual": 2
+        }
+      ]
+    },
+    "scope_coverage_disposition": "PASS",
+    "pilots": {
+      "status": "PASS",
+      "GTFS": 18,
+      "NETEX": 10,
+      "replays": 2
+    }
+  },
+  "initial_hash": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+  "final_hash": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B"
+}

@@ -1,0 +1,3 @@
+stop_id,stop_name,stop_lat,stop_lon,location_type
+S,Synthetic A,40,-3,1
+Z,Synthetic B,40.1,-3.1,1

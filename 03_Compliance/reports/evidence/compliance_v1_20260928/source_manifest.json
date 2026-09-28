@@ -1,0 +1,31 @@
+{
+  "retrieved_on": "2026-09-28",
+  "netex_commit": "e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a",
+  "sources": [
+    {
+      "path": "gml_combo_v3_2_1_simplified.xsd",
+      "url": "https://raw.githubusercontent.com/TransmodelEcosystem/NeTEx-Profile-EPIP/e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a/gml_combo_v3_2_1_simplified.xsd",
+      "sha256": "cb01abeff60d15314437ff88e9757e750c903b043326986c449739c5a10b5f3f"
+    },
+    {
+      "path": "NeTEx_publication_EPIP.xsd",
+      "url": "https://raw.githubusercontent.com/TransmodelEcosystem/NeTEx-Profile-EPIP/e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a/NeTEx_publication_EPIP.xsd",
+      "sha256": "1787736b1061475db200a1e9a9394ec6544a08d04828f4a8b64eb086c03607c7"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/TransmodelEcosystem/NeTEx-Profile-EPIP/e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a/README.md",
+      "sha256": "042cf77ded4665354c708777fc4f9de7a54cbd69f576dd9c445d8a45b6d88791"
+    },
+    {
+      "path": "_content_NeTEx_EPIP.xsd",
+      "url": "https://raw.githubusercontent.com/TransmodelEcosystem/NeTEx-Profile-EPIP/e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a/_content_NeTEx_EPIP.xsd",
+      "sha256": "1568f718f9c8e5b070270223150468d2209ec3d03491337e6d39164ebcfe9947"
+    },
+    {
+      "path": "gtfs_reference.md",
+      "url": "https://raw.githubusercontent.com/google/transit/master/gtfs/spec/en/reference.md",
+      "sha256": "1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147"
+    }
+  ]
+}
