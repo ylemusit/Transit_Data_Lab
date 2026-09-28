@@ -5,6 +5,7 @@ import json
 from .audit_contract import (
     AuditContractError,
     build_audit_manifest,
+    normalize_finding,
     normalize_rule_result,
     normalize_validation_payload,
     stable_finding_id,
@@ -33,6 +34,22 @@ def _base_finding(source_sha256: str = "a" * 64) -> dict:
         "technical_message": "fixture unicode",
         "evidence": {"source_sha256": source_sha256},
     }
+
+
+def _reviewed_finding(state: str) -> dict:
+    finding = _base_finding()
+    finding.update(
+        {
+            "lifecycle_state": state,
+            "review_required": True,
+            "reviewed_by": "gate-reviewer",
+            "review_evidence": {
+                "reviewed_at_utc": "2026-09-28T15:00:00+00:00",
+                "basis": "synthetic gate review evidence",
+            },
+        }
+    )
+    return finding
 
 
 def run_gate() -> dict:
@@ -109,13 +126,32 @@ def run_gate() -> dict:
     _expect_contract_error(lambda: validate_finding_transition("REPORTED", "DETECTED"))
     checks.append({"check": "finding_lifecycle_transitions_enforced", "status": "PASS"})
 
-    ambiguous = dict(finding)
-    ambiguous["lifecycle_state"] = "DATA_AMBIGUITY"
-    ambiguous["review_required"] = False
-    _expect_contract_error(
-        lambda: normalize_validation_payload({"rules": [], "findings": [ambiguous]})
-    )
-    checks.append({"check": "human_review_required_for_ambiguous_state", "status": "PASS"})
+    for state in ("DATA_AMBIGUITY", "REQUIRES_CONTEXT", "REVIEWED", "CONFIRMED", "REPORTED"):
+        missing_reviewer = _base_finding()
+        missing_reviewer["lifecycle_state"] = state
+        _expect_contract_error(lambda f=missing_reviewer: normalize_finding(f))
+
+        explicit_false = _base_finding()
+        explicit_false["lifecycle_state"] = state
+        explicit_false["review_required"] = False
+        _expect_contract_error(lambda f=explicit_false: normalize_finding(f))
+
+        missing_evidence = _base_finding()
+        missing_evidence.update(
+            {"lifecycle_state": state, "review_required": True, "reviewed_by": "gate-reviewer"}
+        )
+        _expect_contract_error(lambda f=missing_evidence: normalize_finding(f))
+
+        valid_reviewed = normalize_finding(_reviewed_finding(state))
+        assert valid_reviewed["review_required"] is True
+        assert valid_reviewed["reviewed_by"] == "gate-reviewer"
+        assert valid_reviewed["review_evidence"]["basis"]
+    checks.append({"check": "human_review_states_require_reviewer_and_evidence", "status": "PASS"})
+
+    incomplete_review_evidence = _reviewed_finding("REVIEWED")
+    incomplete_review_evidence["review_evidence"] = {"reviewed_at_utc": "2026-09-28T15:00:00+00:00"}
+    _expect_contract_error(lambda: normalize_finding(incomplete_review_evidence))
+    checks.append({"check": "incomplete_review_evidence_rejected", "status": "PASS"})
 
     actual_rule_result = RuleResult(
         rule_id="GTFS-TEST-001",
