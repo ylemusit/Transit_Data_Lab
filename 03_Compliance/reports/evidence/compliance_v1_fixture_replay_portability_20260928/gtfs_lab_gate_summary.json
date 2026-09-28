@@ -1,0 +1,30 @@
+{
+  "gate": "GTFS_LAB_V1_CURRENT_GATE",
+  "status": "PASS",
+  "fixture_count": 14,
+  "fixture_results": {
+    "REPRODUCIBLE_DATASET_ID": "PASS",
+    "VALID_MINIMAL": "PASS",
+    "ORPHAN_TRIP": "PASS",
+    "ORPHAN_STOP": "PASS",
+    "ORPHAN_ROUTE": "PASS",
+    "BAD_SERVICE_REFERENCE": "PASS",
+    "BAD_SHAPE_REFERENCE": "PASS",
+    "MALFORMED_CSV": "PASS",
+    "MISSING_FILE": "PASS",
+    "PARTIAL_FEED": "PASS",
+    "UNSUPPORTED_TABLE": "PASS",
+    "MISSING_HEADER": "PASS",
+    "ZIP_PATH_TRAVERSAL": "PASS",
+    "ZIP_DUPLICATE_MEMBER": "PASS"
+  },
+  "e2e_synthetic": "PASS",
+  "directional_gis": "PASS",
+  "protected_hashes_before": {
+    "gtfs_lab_database": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc"
+  },
+  "protected_hashes_after": {
+    "gtfs_lab_database": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc"
+  },
+  "protected_state_unchanged": true
+}

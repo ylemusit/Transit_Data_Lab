@@ -1,0 +1,32 @@
+{
+  "byte_equal": true,
+  "rows": [
+    {
+      "representation": "Git blob",
+      "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+      "bytes": 20737,
+      "LF": 572,
+      "CRLF": 0,
+      "BOM": false,
+      "final_newline": true
+    },
+    {
+      "representation": "clean checkout",
+      "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+      "bytes": 20737,
+      "LF": 572,
+      "CRLF": 0,
+      "BOM": false,
+      "final_newline": true
+    },
+    {
+      "representation": "generated replay",
+      "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+      "bytes": 20737,
+      "LF": 572,
+      "CRLF": 0,
+      "BOM": false,
+      "final_newline": true
+    }
+  ]
+}

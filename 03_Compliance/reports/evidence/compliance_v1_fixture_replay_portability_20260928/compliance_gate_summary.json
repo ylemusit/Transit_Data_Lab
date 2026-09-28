@@ -1,0 +1,26 @@
+{
+  "gate": "COMPLIANCE_V1_CURRENT_GATE",
+  "status": "PASS",
+  "phase1_pass": 22,
+  "phase2_pass": 386,
+  "historical_discrepancy": [
+    {
+      "test": "UNCHANGED_COUNT_audit.rules",
+      "status": "FAIL",
+      "expected": 0,
+      "actual": 2
+    }
+  ],
+  "persistence_generator_replay": "PASS",
+  "pilots": {
+    "status": "PASS",
+    "GTFS": 18,
+    "NETEX": 10,
+    "replays": 2
+  },
+  "data_safety": "PASS",
+  "protected_gtfs_hash": "F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC",
+  "compliance_db_hash_before": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+  "compliance_db_hash_after": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+  "protected_hashes_unchanged": true
+}
