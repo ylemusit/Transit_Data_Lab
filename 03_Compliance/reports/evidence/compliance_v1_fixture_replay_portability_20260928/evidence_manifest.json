@@ -1,0 +1,82 @@
+{
+  "baseline_commit": "56d75a2d0c0b32a5906ef31b279103d785f53977",
+  "remediation_commit_reference": "amended branch commit; supersedes 66ee3d7a94074ad72456f15fa3d18eb79456246a",
+  "prior_remediation_commit": "66ee3d7a94074ad72456f15fa3d18eb79456246a",
+  "historical_freeze_sha256": "3BBB6D87500608364972CFE841D6B2D3D03558FC73F1960A28579905FAEC6A3E",
+  "historical_generator_sha256": "A9310139C2D5931E272840C1278064DCFB6B34D3DE7CFDF566A72B53BD53E365",
+  "current_generator_sha256": "60850BC0741DD8BE0CA9E5B312EEA95DA409E421EABADB4A4BDA040252DF6071",
+  "historical_git_blob_manifest_sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+  "historical_freeze_checkout_manifest_sha256": "A407838AFBF086CF85CE5EA626FA6745217CD92B88A599538E3EEB4B3C4334AF",
+  "canonical_manifest_sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+  "binary_replay_result": {
+    "byte_equal": true,
+    "rows": [
+      {
+        "representation": "Git blob",
+        "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+        "bytes": 20737,
+        "LF": 572,
+        "CRLF": 0,
+        "BOM": false,
+        "final_newline": true
+      },
+      {
+        "representation": "clean checkout",
+        "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+        "bytes": 20737,
+        "LF": 572,
+        "CRLF": 0,
+        "BOM": false,
+        "final_newline": true
+      },
+      {
+        "representation": "generated replay",
+        "sha256": "B27FFCEF76B9D3E099606F876AE9007869E5041F203F358DAEE9D6F89BB144C1",
+        "bytes": 20737,
+        "LF": 572,
+        "CRLF": 0,
+        "BOM": false,
+        "final_newline": true
+      }
+    ]
+  },
+  "compliance_gate_result": {
+    "status": "PASS",
+    "summary": "compliance_gate_summary.json"
+  },
+  "gtfs_lab_gate_result": {
+    "status": "PASS",
+    "summary": "gtfs_lab_gate_summary.json"
+  },
+  "trust_contract_result": {
+    "status": "PASS",
+    "check_count": 12,
+    "summary": "trust_contract_m01.json"
+  },
+  "protected_hashes_before_after": {
+    "compliance_database": {
+      "before": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+      "after": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B"
+    },
+    "gtfs_lab_database": {
+      "before": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc",
+      "after": "f4186d603c455021b807261bdac8770f5f5f4d2bed7830214eb98c223efd99fc"
+    }
+  },
+  "fixture_unchanged": true,
+  "freeze_unchanged": true,
+  "gitattributes_unchanged": true,
+  "py_compile": "PASS",
+  "git_diff_check": "PASS",
+  "cross_platform_design_verified": true,
+  "cross_platform_execution_verified": false,
+  "m02_modified": false,
+  "persistent_evidence": [
+    "REMEDIATION_REPORT.md",
+    "binary_replay.json",
+    "compliance_gate_summary.json",
+    "gtfs_lab_gate_summary.json",
+    "trust_contract_m01.json",
+    "evidence_manifest.json"
+  ]
+}
