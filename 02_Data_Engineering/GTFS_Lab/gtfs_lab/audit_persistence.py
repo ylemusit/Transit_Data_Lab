@@ -25,13 +25,18 @@ def _finding_occurrences(validation: dict[str, Any]) -> list[dict[str, Any]]:
 
 def _normalize_findings(
     occurrences: list[dict[str, Any]], *, run_id: str, dataset: dict[str, Any]
-) -> tuple[list[dict[str, Any]], int]:
+) -> tuple[list[dict[str, Any]], int, int]:
     unique: dict[str, dict[str, Any]] = {}
     conflicts = 0
+    source_mismatches = 0
     for source_finding in occurrences:
         finding = dict(source_finding)
         evidence = dict(finding.get("evidence") or {})
-        evidence.setdefault("source_sha256", dataset["source_sha256"])
+        source_hash = evidence.get("source_sha256")
+        if source_hash is not None and str(source_hash).lower() != str(dataset["source_sha256"]).lower():
+            source_mismatches += 1
+            continue
+        evidence["source_sha256"] = dataset["source_sha256"]
         finding["evidence"] = evidence
         normalized = normalize_finding(finding)
         comparable = dict(normalized)
@@ -46,7 +51,7 @@ def _normalize_findings(
             unique[normalized["finding_id"]] = comparable
         elif existing != comparable:
             conflicts += 1
-    return list(unique.values()), conflicts
+    return list(unique.values()), conflicts, source_mismatches
 
 
 def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
@@ -66,22 +71,25 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
     rule_ids = sorted({str(rule["rule_id"]) for rule in rules if rule.get("rule_id")})
     executed_scopes = sorted({str(rule["scope"]) for rule in rules if rule.get("scope")})
     occurrences = _finding_occurrences(result["validation"])
-    normalized, conflicts = _normalize_findings(
+    normalized, conflicts, source_mismatches = _normalize_findings(
         occurrences, run_id=ctx.run_id, dataset=result["dataset"]
     )
     unique_count = len(normalized)
     reconciliation = {
         "source_finding_occurrences": len(occurrences),
         "normalized_unique_findings": unique_count,
-        "identical_duplicates_collapsed": len(occurrences) - unique_count - conflicts,
+        "identical_duplicates_collapsed": len(occurrences) - unique_count - conflicts - source_mismatches,
         "conflicting_duplicates": conflicts,
+        "rejected_source_mismatch_occurrences": source_mismatches,
     }
     normalized_payload = {
         "status": (
-            "ACCEPTED"
-            if integrity_verified and conflicts == 0
+            "NORMALIZED"
+            if integrity_verified and conflicts == 0 and source_mismatches == 0
             else "REJECTED_CONFLICTING_DUPLICATES"
             if conflicts
+            else "REJECTED_FINDING_SOURCE_MISMATCH"
+            if source_mismatches
             else "REJECTED_INPUT_INTEGRITY"
         ),
         "audit_id": f"TDL-{ctx.run_id}",
@@ -92,7 +100,7 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
         "findings": normalized,
     }
     write_json(audit_dir / "findings.normalized.json", normalized_payload)
-    if not integrity_verified or conflicts:
+    if not integrity_verified or conflicts or source_mismatches:
         return {"manifest_status": "NOT_ACCEPTED", **reconciliation}
 
     artifacts = {

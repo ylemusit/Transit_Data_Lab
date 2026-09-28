@@ -11,6 +11,8 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 - Persistencia dual de confianza M02: las ejecuciones completas escriben `audit/audit_manifest.json` y `audit/findings.normalized.json` sin cambiar los outputs V1. Se valida con `python -m gtfs_lab.trust_persistence_gate --output runs/trust_persistence_gate`; el estado y los límites están en [estado V1](GTFS_LAB_V1_CURRENT_STATE.md).
 - Evidencia piloto de 20 operadores en [20_clientes_reales](20_clientes_reales/CURRENT_DOCUMENTATION.md). Son datasets de investigación, no clientes comerciales, y quedan fuera del run V1.
 
+En M02, `findings.normalized.json` describe solo la normalización: `NORMALIZED` no significa que la auditoría esté aceptada. Solo la existencia de `audit_manifest.json` validado contra M01 1.1.2 representa aceptación Trust. Cada `finding.evidence.source_sha256` debe coincidir con el SHA-256 del dataset; los hashes extranjeros se rechazan como `REJECTED_FINDING_SOURCE_MISMATCH` y el pipeline falla cerrado. Si falta ese campo, se completa con el hash del dataset actual.
+
 GTFS-RT y SIRI quedan fuera de GTFS_Lab V1; NeTEx pertenece al laboratorio Compliance separado. El resultado técnico V1 no acredita cumplimiento jurídico ni auditoría de operadores.
 
 ## Inspección segura
