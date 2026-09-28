@@ -11,56 +11,52 @@ Este checkpoint **no promueve** `TDL_TRUST_FOUNDATION = PASS` y no modifica la b
 ## Implementado
 
 - `gtfs_lab/audit_contract.py`
-  - `AuditManifest` versionado (`1.1.0`).
-  - los campos repetidos de identidad se derivan del dataset/run existente en lugar de declararse de forma independiente;
+  - `AuditManifest` versionado (`1.1.1`).
+  - los campos repetidos de identidad se derivan del dataset/run existente;
   - `source_sha256` obligatorio para una auditoría aceptada;
-  - `original_preserved=true` solo se acepta acompañado de `preservation_evidence.verified=true` y del mismo SHA-256 de fuente;
+  - `original_preserved=true` solo se acepta con evidencia verificada y hash coincidente;
   - estados normalizados de `RuleResult`;
   - lifecycle de findings con transiciones permitidas y estados terminales;
-  - revisión humana obligatoria para estados ambiguos/contextuales y para findings reportados;
-  - `finding_id` determinista y sensible al hash del dataset, con soporte Unicode;
+  - estados `DATA_AMBIGUITY`, `REQUIRES_CONTEXT`, `REVIEWED`, `CONFIRMED` y `REPORTED` exigen `review_required=true`, `reviewed_by` no vacío y `review_evidence` con `reviewed_at_utc` y `basis`;
+  - `finding_id` determinista, sensible al hash del dataset y compatible con Unicode;
   - rechazo de findings sin hash de fuente o sin localizador estable mínimo;
   - normalización de payloads existentes con deduplicación explícita;
   - rechazo de duplicados con el mismo `finding_id` pero contenido conflictivo.
 - `gtfs_lab/trust_gate.py`
   - derivación del manifest desde identidad de dataset;
-  - rechazo de hash ausente;
-  - rechazo de preservación no verificada;
+  - rechazo de hash ausente y preservación no verificada;
   - determinismo, Unicode y sensibilidad al dataset del `finding_id`;
-  - rechazo de identidad de finding sin hash;
   - validación de transiciones del lifecycle;
-  - revisión humana obligatoria para `DATA_AMBIGUITY`;
+  - cobertura de todos los estados que requieren revisión humana;
+  - rechazo de `review_required=false`, ausencia de `reviewed_by`, ausencia o incompletitud de `review_evidence`;
+  - aceptación de un estado revisado solo con identidad y evidencia de revisión completas;
   - roundtrip real `RuleResult` dataclass → `result_dict` → normalización;
   - deduplicación explícita de findings repetidos entre regla y nivel superior;
-  - rechazo de duplicados conflictivos;
-  - rechazo de estados no contractuales.
+  - rechazo de duplicados conflictivos y estados no contractuales.
 
-## Verificación previa del checkout
+## Evidencia de revisión previa
 
-La revisión de Codex sobre la primera versión de M01 ejecutó en el checkout completo:
+Codex ejecutó sobre el HEAD anterior `2025ca75a9981c602042c8ad7a5602a62577407d`:
 
-- `python -m gtfs_lab.trust_gate`: PASS, 5/5;
-- `py_compile` de GTFS_Lab: PASS en Python 3.12.10;
-- gate GTFS_Lab V1: PASS, 14 casos, incluido E2E sintético y GIS direccional;
-- gate Compliance V1: PASS, preservando su FAIL histórico declarado;
-- hashes de la base Compliance sin cambios;
-- `git diff --check`: PASS.
+- trust gate PASS 10/10;
+- `py_compile` PASS usando enumeración explícita de módulos en PowerShell;
+- GTFS_Lab V1 gate PASS;
+- Compliance V1 gate PASS, con hash inicial/final idéntico y FAIL histórico preservado;
+- `git diff --check` PASS.
 
-Esa revisión detectó cinco lagunas contractuales: identidad repetida, hash/preservación permisivos, cobertura insuficiente del finding ID, lifecycle sin transiciones y gate sin recorrido real de `RuleResult`. La versión actual de M01 las aborda sin integrar todavía el contrato en `pipeline.py`.
+La revisión encontró que varios estados de revisión humana podían normalizarse sin `reviewed_by` ni evidencia de revisión. El contrato `1.1.1` corrige esa brecha. La evidencia anterior **no se reutiliza como PASS del nuevo HEAD**.
 
-## Verificación pendiente tras el hardening
+## Verificación pendiente tras este hardening
 
-Debe repetirse sobre el checkout completo de la rama:
+Repetir sobre el checkout completo de la rama:
 
 ```text
 python -m gtfs_lab.trust_gate
-python -m py_compile gtfs_lab/*.py
+# py_compile con enumeración explícita de módulos en PowerShell
 # gate vigente GTFS_Lab V1
 # gate vigente Compliance V1
 git diff --check
 ```
-
-La evidencia anterior no se reutiliza como PASS de la versión endurecida hasta ejecutar estos checks sobre el nuevo HEAD.
 
 ## No implementado todavía
 
@@ -77,12 +73,12 @@ La evidencia anterior no se reutiliza como PASS de la versión endurecida hasta 
 
 M01 puede pasar de `PENDING_CONTRACT_REVIEW` a `ACCEPTED_FOR_M02` solo si:
 
-1. el gate endurecido pasa en el checkout real;
+1. el gate actual pasa en el checkout real;
 2. `py_compile`, GTFS_Lab V1 y Compliance V1 permanecen PASS según sus contratos vigentes;
 3. `git diff --check` permanece limpio;
 4. no cambia ninguna baseline, feed, base protegida ni evidencia histórica;
-5. la revisión confirma que el manifest no puede aceptar hash ausente ni preservación autoafirmada;
-6. las transiciones y obligaciones de revisión humana no permiten saltar de detección a reporte;
+5. los estados que implican revisión humana no pueden aceptarse sin revisor y evidencia explícita;
+6. las transiciones no permiten saltar de detección a reporte;
 7. el roundtrip de `RuleResult` real y la política de duplicados se comportan según el contrato.
 
 Hasta entonces, M01 es `PENDING_CONTRACT_REVIEW`. No se inicia M02 ni se declara `TDL_TRUST_FOUNDATION = PASS`.
