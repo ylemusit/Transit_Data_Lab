@@ -83,7 +83,7 @@ Los outputs V1 ya generados se conservan ante errores Trust para diagnóstico. N
 
 ## K. Estado Git
 
-El branch partía de `cab3eee97db65ed16bb91c468ba17732a30d4449`, dos commits por delante de `origin/main` en `0134408021c335007cfde88137ca2fb599c72ee5`. SHA final y estadísticas se completan al preparar el Draft PR.
+El código revisado quedó en `d6d7e2efff9ef0e206d0ae931646ff8a545d04fe`, sobre `origin/main` `0134408021c335007cfde88137ca2fb599c72ee5`. El cambio M02 respecto a `main` contiene seis archivos, 469 inserciones y una eliminación. La publicación de este branch no integra ni inicia M03.
 
 ## L. Draft PR
 
@@ -131,7 +131,7 @@ No generan AuditManifest aceptado ni directorio `audit/`.
 - M01 1.1.2 no tipa propiedad ni digest de artefactos.
 - No se declara `TDL_TRUST_FOUNDATION = PASS`.
 
-Draft PR hacia `main`; no merge.
+Draft PR #4: [feat(gtfs-lab): persist Trust Foundation audit evidence M02](https://github.com/ylemusit/Transit_Data_Lab/pull/4). Base `main` (`0134408021c335007cfde88137ca2fb599c72ee5`); head `feat/tdl-trust-foundation-m02` (`d6d7e2efff9ef0e206d0ae931646ff8a545d04fe` al abrirlo). Seis archivos, +469/-1. Abierto como Draft; no merge.
 
 ## M. Veredicto
 
