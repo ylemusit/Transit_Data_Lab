@@ -1,0 +1,24 @@
+{
+  "initial_hash": "0175895ED430FC11698B5D6A0B9D9288B251175893549CC4EA5F2D29B008070F",
+  "seed_hashes": {
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_capabilities_seed.sql": "08DA01C99F74DD3065DFFED86D0057D7236FF395939C6670F9E08D723FE68A42",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_concept_bridges_seed.sql": "32EBA858AC2B49E81ED89092AD157A18C9B0DE3456A1D9B618DF11AE4178F3FB",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_mappings_seed.sql": "FE0D10CB85E12844CF2D9023E29F4B2758632CF5207FAC73861F05FBD09EE4ED",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_mapping_reviews_seed.sql": "B24ED8CF537CB137379AFC5F8ADD865DEB9CF07659BBD332EEAA6B18B4740ED2",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_scope_source_refs_seed.sql": "E69C5F9BEAC9EA6BE34E6B7C11C4FC0ED902809D39D3328C6A1CD8D7525E732A",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_scope_units_seed.sql": "7EEC603B2934AD592914D04984BCD90CBD6DDED864C514144F10462FDAAA64BD",
+    "03_Compliance\\sql\\03_mappings\\phase3_m06_b02d_source_references_seed.sql": "1BBA3C8819FAD4D7243788B21F9CAA9B3103085A975515DEE5E07D460B92EA29"
+  },
+  "tests": {
+    "A_fresh": "PASS",
+    "B_second": "PASS",
+    "C_partial": "PASS",
+    "D_conflict": "PASS",
+    "E_rollback": "PASS",
+    "F_natural_key": "PASS",
+    "G_duplicate": "PASS",
+    "H_fk": "PASS"
+  },
+  "executor_hash": "E805E58F2C2B1C3C793924088CAA322CD6B65169410B5740C55BB23B887E8691",
+  "execution_hash": "4302D8B10586930C833B2BBE2BE9016F41D2F1BCC7CE1451CDF9C959797A1767"
+}

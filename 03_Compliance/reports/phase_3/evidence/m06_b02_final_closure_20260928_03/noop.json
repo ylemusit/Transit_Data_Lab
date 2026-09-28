@@ -1,0 +1,12 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_03\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_result\":\"COVERAGE_CONFLICT:PASS\"}]\n[{\"check_result\":\"COVERAGE_REQUIREMENT:PASS\"}]\n[{\"check_result\":\"COVERAGE_CONFLICT:PASS\"}]\n[{\"check_result\":\"COVERAGE_REQUIREMENT:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_0:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_1:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_2:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_3:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_4:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_5:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_6:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_7:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_8:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_9:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_10:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_11:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_12:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_13:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_14:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_15:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_16:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_17:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_18:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_19:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_20:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_21:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_22:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_23:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_24:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_25:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_26:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_27:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_28:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_29:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_30:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_31:PASS\"}]\n[{\"check_result\":\"EXACT_DELTA_32:PASS\"}]\n",
+  "stderr": ""
+}

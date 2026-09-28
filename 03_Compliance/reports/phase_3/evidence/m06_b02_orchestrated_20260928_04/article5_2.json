@@ -1,0 +1,4 @@
+{
+  "sql": "SELECT provision_id,text_content FROM source.provisions WHERE article='5' AND paragraph='2'",
+  "rows": []
+}

@@ -1,0 +1,485 @@
+[
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "result_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_type",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "evidence_source",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "reference_text",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "captured_at",
+    "data_type": "TIMESTAMP",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "evidence",
+    "column_name": "notes",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "result_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "rule_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "result_status",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "severity",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "entity_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "field_name",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "observed_value",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "expected_value",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "message",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "evidence_text",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "results",
+    "column_name": "created_at",
+    "data_type": "TIMESTAMP",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "requirement_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_family",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "rule_name",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "description",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_format",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_entity",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "target_field",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "severity",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "validation_engine",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "validation_expression",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "is_automatic",
+    "data_type": "BOOLEAN",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "legal_conclusion_allowed",
+    "data_type": "BOOLEAN",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "rules",
+    "column_name": "notes",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "audit_run_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "dataset_name",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "operator_name",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "format_name",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "format_version",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "source_url",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "source_file",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "executed_at",
+    "data_type": "TIMESTAMP",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "audit",
+    "table_name": "runs",
+    "column_name": "notes",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "automatability_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "automatability_state",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "explanation",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "prerequisites",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "assessed_on",
+    "data_type": "DATE",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "review_status",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_automatability",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "evidence_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "mapping_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "evidence_type",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "locator",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "observed_value",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "observed_on",
+    "data_type": "DATE",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "notes",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_observed_evidence",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "representability_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "capability_id",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "representability_state",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "explanation",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "conditions",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "assessed_on",
+    "data_type": "DATE",
+    "is_nullable": "YES"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "review_status",
+    "data_type": "VARCHAR",
+    "is_nullable": "NO"
+  },
+  {
+    "table_schema": "mapping",
+    "table_name": "phase3_representability",
+    "column_name": "fixture_kind",
+    "data_type": "VARCHAR",
+    "is_nullable": "YES"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_02\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"COUNT_7\",\"bad\":0},\n{\"check_name\":\"EXPECTED_SET\",\"bad\":0},\n{\"check_name\":\"REQUIREMENTS\",\"bad\":0},\n{\"check_name\":\"DUP_ID\",\"bad\":0},\n{\"check_name\":\"DUP_REQ_CODE\",\"bad\":0},\n{\"check_name\":\"SCOPE_VOCAB\",\"bad\":0},\n{\"check_name\":\"REJECTED_TRAVEL_CONCEPTS\",\"bad\":0},\n{\"check_name\":\"B02_BRIDGES\",\"bad\":9},\n{\"check_name\":\"B02_MAPPINGS\",\"bad\":9},\n{\"check_name\":\"LEGACY_ASSOCIATIONS\",\"bad\":0},\n{\"check_name\":\"PROTECTED_COUNTERS\",\"bad\":11}]\n",
+  "stderr": ""
+}

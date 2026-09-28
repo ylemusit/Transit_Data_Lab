@@ -1,0 +1,42 @@
+[
+  {
+    "case": "uninspected_absent",
+    "error": "STATUS_RESULT_COLLISION"
+  },
+  {
+    "case": "failed_absent",
+    "error": "STATUS_RESULT_COLLISION"
+  },
+  {
+    "case": "partial_absent",
+    "error": "ABSENCE_REQUIRES_COMPLETE_INSPECTION"
+  },
+  {
+    "case": "unknown_enum",
+    "error": "STATUS_RESULT_COLLISION"
+  },
+  {
+    "case": "version_mismatch",
+    "error": "CONTRACT_VERSION_OR_FIELDS"
+  },
+  {
+    "case": "unknown_scope",
+    "error": "UNKNOWN_SCOPE"
+  },
+  {
+    "case": "bad_hash",
+    "error": "DATASET_HASH"
+  },
+  {
+    "case": "failure_without_reason",
+    "error": "FAILURE_REASON_REQUIRED"
+  },
+  {
+    "case": "indeterminate_without_reason",
+    "error": "INDETERMINATE_REASON_REQUIRED"
+  },
+  {
+    "case": "errors_on_completed",
+    "error": "ERROR_REQUIRES_FAILED"
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "present": {
+    "contract_version": "phase3-observation-envelope/1",
+    "dataset_id": "SYNTHETIC-CONTRACT-ONLY",
+    "dataset_version": "1",
+    "dataset_sha256": "548ab2ba4485ac5d64cf6611704449946d951e91a102e32441e8eced5dab1951",
+    "inspection_run": "contract-test-present",
+    "evaluator_version": "contract-test/1",
+    "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+    "inspection_status": "COMPLETED",
+    "observed_result": "PRESENT",
+    "errors": [],
+    "limitations": [
+      "Storage test only; no SIRI inspection or representability assertion."
+    ],
+    "inspection_extent": "COMPLETE_DECLARED_LOCATOR",
+    "synthetic": true
+  },
+  "absent": {
+    "contract_version": "phase3-observation-envelope/1",
+    "dataset_id": "SYNTHETIC-CONTRACT-ONLY",
+    "dataset_version": "1",
+    "dataset_sha256": "548ab2ba4485ac5d64cf6611704449946d951e91a102e32441e8eced5dab1951",
+    "inspection_run": "contract-test-absent",
+    "evaluator_version": "contract-test/1",
+    "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+    "inspection_status": "COMPLETED",
+    "observed_result": "ABSENCE_CONFIRMED",
+    "errors": [],
+    "limitations": [
+      "Storage test only; no SIRI inspection or representability assertion."
+    ],
+    "inspection_extent": "COMPLETE_DECLARED_LOCATOR",
+    "synthetic": true
+  },
+  "boundary": {
+    "contract_version": "phase3-observation-envelope/1",
+    "dataset_id": "SYNTHETIC-CONTRACT-ONLY",
+    "dataset_version": "1",
+    "dataset_sha256": "548ab2ba4485ac5d64cf6611704449946d951e91a102e32441e8eced5dab1951",
+    "inspection_run": "contract-test-boundary",
+    "evaluator_version": "contract-test/1",
+    "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+    "inspection_status": "COMPLETED",
+    "observed_result": "INDETERMINATE",
+    "errors": [],
+    "limitations": [
+      "Storage test only; no SIRI inspection or representability assertion."
+    ],
+    "inspection_extent": "COMPLETE_DECLARED_LOCATOR",
+    "synthetic": true
+  },
+  "not_inspected": {
+    "contract_version": "phase3-observation-envelope/1",
+    "dataset_id": "SYNTHETIC-CONTRACT-ONLY",
+    "dataset_version": "1",
+    "dataset_sha256": "548ab2ba4485ac5d64cf6611704449946d951e91a102e32441e8eced5dab1951",
+    "inspection_run": "contract-test-not_inspected",
+    "evaluator_version": "contract-test/1",
+    "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+    "inspection_status": "NOT_INSPECTED",
+    "observed_result": "INDETERMINATE",
+    "errors": [],
+    "limitations": [
+      "Storage test only; no SIRI inspection or representability assertion."
+    ],
+    "inspection_extent": "COMPLETE_DECLARED_LOCATOR",
+    "synthetic": true
+  },
+  "failed": {
+    "contract_version": "phase3-observation-envelope/1",
+    "dataset_id": "SYNTHETIC-CONTRACT-ONLY",
+    "dataset_version": "1",
+    "dataset_sha256": "548ab2ba4485ac5d64cf6611704449946d951e91a102e32441e8eced5dab1951",
+    "inspection_run": "contract-test-failed",
+    "evaluator_version": "contract-test/1",
+    "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+    "inspection_status": "FAILED",
+    "observed_result": "INDETERMINATE",
+    "errors": [
+      "INJECTED_INSPECTION_FAILURE"
+    ],
+    "limitations": [
+      "Storage test only; no SIRI inspection or representability assertion."
+    ],
+    "inspection_extent": "COMPLETE_DECLARED_LOCATOR",
+    "synthetic": true
+  }
+}

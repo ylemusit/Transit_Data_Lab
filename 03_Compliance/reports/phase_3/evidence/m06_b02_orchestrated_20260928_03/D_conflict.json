@@ -1,0 +1,12 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\D_conflict.duckdb"
+  ],
+  "exit_code": 1,
+  "stdout": "[{\"check_result\":\"EXPECTED_COUNT_expected_phase3_standards:PASS\"}]\n[{\"check_result\":\"DUPLICATE_expected_phase3_standards_0:PASS\"}]\n",
+  "stderr": "Invalid Input Error: CONFLICT_expected_phase3_standards_0\n"
+}

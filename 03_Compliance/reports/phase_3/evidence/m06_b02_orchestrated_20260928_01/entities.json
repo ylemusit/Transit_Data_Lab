@@ -1,0 +1,369 @@
+[
+  {
+    "table": "mapping.phase3_standards",
+    "cols": [
+      "standard_id",
+      "standard_name",
+      "standard_kind",
+      "version",
+      "profile",
+      "service_or_subprofile",
+      "jurisdiction_context",
+      "valid_from",
+      "valid_to",
+      "source_metadata",
+      "registry_status"
+    ],
+    "values": "('M06-B02D-SIRI-EPIPRT-2025','SIRI','SIRI','SIRI 2.1','EPIP-RT, CEN/TS 15531-7:2025','ET and SX; exact Annex crosswalk remains partial','European',NULL,NULL,'Profile identity recorded from public preview; no deployment XSD or full element crosswalk inferred.','IDENTITY_ONLY')",
+    "temp": "expected_phase3_standards",
+    "constraints": [
+      {
+        "table_name": "phase3_standards",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "standard_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      }
+    ],
+    "pk": [
+      "standard_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_capabilities",
+    "cols": [
+      "capability_id",
+      "standard_id",
+      "domain",
+      "entity",
+      "field_or_element",
+      "semantic_meaning",
+      "cardinality",
+      "required_or_optional",
+      "conditions",
+      "profile_dependency",
+      "evidence_type",
+      "limitations",
+      "review_status",
+      "fixture_kind"
+    ],
+    "values": "('CAP-DATEXII-RRP-ROAD-CLOSURE','M03-DATEXII-MMTIS-RRP','road disruption','road','4-SN-A Road closures','Road-closure events within RTTI 670/2022 RRP 4-SN-A.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-LANE-CLOSURE','M03-DATEXII-MMTIS-RRP','road disruption','road lane','4-SN-B Lane closures','Lane-closure events within RTTI 670/2022 RRP 4-SN-B.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-ROADWORKS','M03-DATEXII-MMTIS-RRP','road disruption','roadworks','4-SN-C Roadworks','Roadworks events within RTTI 670/2022 RRP 4-SN-C.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT','M03-DATEXII-MMTIS-RRP','road disruption','temporary traffic management','4-SN-D Temporary traffic management','Temporary traffic management measures within RTTI 670/2022 RRP 4-SN-D.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Limited to temporary traffic management; no inferred model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-BRIDGE-CLOSURE','M03-DATEXII-MMTIS-RRP','road disruption','bridge','5-SN-A Bridge closures','Bridge-closure events within RTTI 670/2022 RRP 5-SN-A.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-ACCIDENT-INCIDENT','M03-DATEXII-MMTIS-RRP','road disruption','accident or incident','5-SN-B Accidents and incidents','Accident and incident events within RTTI 670/2022 RRP 5-SN-B.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Limited to this category, not all SRTI; no inferred model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-DATEXII-RRP-POOR-ROAD-CONDITION','M03-DATEXII-MMTIS-RRP','road disruption','road condition','5-SN-C Poor road conditions','Poor road condition events within RTTI 670/2022 RRP 5-SN-C.',NULL,NULL,NULL,'RTTI 670/2022; profile-specific model release unresolved','EXTERNAL_DOCUMENT','Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-SIRI-EPIPRT-ET','M06-B02D-SIRI-EPIPRT-2025','passenger service disruption','journey and call','EPIP-RT §8 Estimated Timetable (ET)','Estimated timetable service includes bounded delay and cancellation status cases.','PARTIAL',NULL,NULL,'EPIP-RT CEN/TS 15531-7:2025; SIRI 2.1','EXTERNAL_DOCUMENT','Exact Annex-to-element/constraint crosswalk remains partial; profile source is a preview; no complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('CAP-SIRI-EPIPRT-SX','M06-B02D-SIRI-EPIPRT-2025','passenger service disruption','situation notice','EPIP-RT §7 Situation Exchange (SX)','Situation Exchange service includes bounded passenger disruption notices and impacts.','PARTIAL',NULL,NULL,'EPIP-RT CEN/TS 15531-7:2025; SIRI 2.1','EXTERNAL_DOCUMENT','Exact Annex-to-element/constraint crosswalk remains partial; profile source is a preview; no complete legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL)",
+    "temp": "expected_phase3_capabilities",
+    "constraints": [
+      {
+        "table_name": "phase3_capabilities",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "capability_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_capabilities",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "standard_id"
+        ],
+        "referenced_table": "phase3_standards",
+        "referenced_column_names": [
+          "standard_id"
+        ]
+      }
+    ],
+    "pk": [
+      "capability_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_source_references",
+    "cols": [
+      "source_reference_id",
+      "capability_id",
+      "source_kind",
+      "specification_name",
+      "version",
+      "section",
+      "url_or_document_id",
+      "retrieved_on",
+      "reviewed_on",
+      "notes",
+      "fixture_kind"
+    ],
+    "values": "('M06-B02D-SRC-DATEX-4-SN-A','CAP-DATEXII-RRP-ROAD-CLOSURE','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','4-SN-A Road closures','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-a-road-closures/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-DATEX-4-SN-B','CAP-DATEXII-RRP-LANE-CLOSURE','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','4-SN-B Lane closures','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-b-lane-closures/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-DATEX-4-SN-C','CAP-DATEXII-RRP-ROADWORKS','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','4-SN-C Roadworks','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-c-roadworks/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-DATEX-4-SN-D','CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','4-SN-D Temporary traffic management','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-d-temporary-traffic-management-measures/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-DATEX-5-SN-A','CAP-DATEXII-RRP-BRIDGE-CLOSURE','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','5-SN-A Bridge closures','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-a-bridge-closures/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-DATEX-5-SN-B','CAP-DATEXII-RRP-ACCIDENT-INCIDENT','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','5-SN-B Accidents and incidents','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-b-accidents-and-incidents/',DATE '2026-09-27',DATE '2026-09-27','Limited to this profile category; not all SRTI. No model release, legal coverage, dataset representability or observed implementation is asserted.',NULL),\n('M06-B02D-SRC-DATEX-5-SN-C','CAP-DATEXII-RRP-POOR-ROAD-CONDITION','OFFICIAL_PROFILE','RTTI 670/2022 Recommended Reference Profiles','RTTI 670/2022; profile-specific model release unresolved','5-SN-C Poor road conditions','https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-c-poor-road-conditions/',DATE '2026-09-27',DATE '2026-09-27','Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.',NULL),\n('M06-B02D-SRC-SIRI-EPIPRT-ET','CAP-SIRI-EPIPRT-ET','OFFICIAL_PROFILE','EPIP-RT, CEN/TS 15531-7:2025','CEN/TS 15531-7:2025; SIRI 2.1','§8 Estimated Timetable (ET)','https://normy.normoff.gov.sk/norma/141185/nahlad/',DATE '2026-09-27',DATE '2026-09-27','Preview-level service identity. Exact Annex-to-element/constraint crosswalk remains partial; deployment XSD not asserted.',NULL),\n('M06-B02D-SRC-SIRI-EPIPRT-SX','CAP-SIRI-EPIPRT-SX','OFFICIAL_PROFILE','EPIP-RT, CEN/TS 15531-7:2025','CEN/TS 15531-7:2025; SIRI 2.1','§7 Situation Exchange (SX)','https://normy.normoff.gov.sk/norma/141185/nahlad/',DATE '2026-09-27',DATE '2026-09-27','Preview-level service identity. Exact Annex-to-element/constraint crosswalk remains partial; deployment XSD not asserted.',NULL)",
+    "temp": "expected_phase3_source_references",
+    "constraints": [
+      {
+        "table_name": "phase3_source_references",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "source_reference_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_source_references",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "capability_id"
+        ],
+        "referenced_table": "phase3_capabilities",
+        "referenced_column_names": [
+          "capability_id"
+        ]
+      }
+    ],
+    "pk": [
+      "source_reference_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_requirement_capabilities",
+    "cols": [
+      "mapping_id",
+      "requirement_id",
+      "capability_id",
+      "mapping_type",
+      "mapping_conditions",
+      "limitations",
+      "review_status",
+      "fixture_kind"
+    ],
+    "values": "('M06-B02-MAP-A05-P01-002-DATEX-4-SN-A','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-ROAD-CLOSURE','PARTIAL','Only road-closure events represented by RTTI 670/2022 RRP 4-SN-A.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-B','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-LANE-CLOSURE','PARTIAL','Only lane-closure events represented by RTTI 670/2022 RRP 4-SN-B.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-C','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-ROADWORKS','PARTIAL','Only roadworks represented by RTTI 670/2022 RRP 4-SN-C.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-D','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT','PARTIAL','Only temporary traffic management measures represented by RTTI 670/2022 RRP 4-SN-D.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-A','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-BRIDGE-CLOSURE','PARTIAL','Only bridge-closure events represented by RTTI 670/2022 RRP 5-SN-A.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-B','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-ACCIDENT-INCIDENT','PARTIAL','Only accident and incident events represented by RTTI 670/2022 RRP 5-SN-B.','Not all SRTI; does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-C','EU-2017-1926-REQ-A05-P01-002','CAP-DATEXII-RRP-POOR-ROAD-CONDITION','PARTIAL','Only poor-road-condition events represented by RTTI 670/2022 RRP 5-SN-C.','Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P02-001-SIRI-ET','EU-2017-1926-REQ-A05-P02-001','CAP-SIRI-EPIPRT-ET','PARTIAL','Only ET delay and cancellation status cases within EPIP-RT §8.','Exact Annex-to-element/constraint crosswalk remains partial; does not establish all point-2 data, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL),\n('M06-B02-MAP-A05-P02-001-SIRI-SX','EU-2017-1926-REQ-A05-P02-001','CAP-SIRI-EPIPRT-SX','PARTIAL','Only passenger disruption notice and impact cases within EPIP-RT §7.','Exact Annex-to-element/constraint crosswalk remains partial; does not establish all point-2 data, legal coverage, dataset representability, or observed implementation.','NEEDS_REVIEW',NULL)",
+    "temp": "expected_phase3_requirement_capabilities",
+    "constraints": [
+      {
+        "table_name": "phase3_requirement_capabilities",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "mapping_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_requirement_capabilities",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "capability_id"
+        ],
+        "referenced_table": "phase3_capabilities",
+        "referenced_column_names": [
+          "capability_id"
+        ]
+      },
+      {
+        "table_name": "phase3_requirement_capabilities",
+        "constraint_type": "UNIQUE",
+        "constraint_column_names": [
+          "requirement_id",
+          "capability_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      }
+    ],
+    "pk": [
+      "mapping_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_mapping_reviews",
+    "cols": [
+      "mapping_id",
+      "semantic_review_outcome",
+      "justification",
+      "limitations",
+      "reviewed_by",
+      "reviewed_at"
+    ],
+    "values": "('M06-B02-MAP-A05-P01-002-DATEX-4-SN-A','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the road-closure category 4-SN-A.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-B','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the lane-closure category 4-SN-B.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-C','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the roadworks category 4-SN-C.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-4-SN-D','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the temporary traffic management category 4-SN-D.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-A','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the bridge-closure category 5-SN-A.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-B','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the accidents/incidents category 5-SN-B.','Limited to this category and not all SRTI; profile-specific model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P01-002-DATEX-5-SN-C','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C01 to the poor-road-conditions category 5-SN-C.','Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P02-001-SIRI-ET','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C07 to EPIP-RT Estimated Timetable (ET), limited to journey delay and cancellation.','EPIP-RT is CEN/TS 15531-7:2025 over SIRI 2.1; exact Annex-to-element/constraint crosswalk remains partial; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28'),\n('M06-B02-MAP-A05-P02-001-SIRI-SX','ACCEPTED_WITH_LIMITATIONS','Human-approved partial relation of C07 to EPIP-RT Situation Exchange (SX), limited to passenger disruption notices.','EPIP-RT is CEN/TS 15531-7:2025 over SIRI 2.1; exact Annex-to-element/constraint crosswalk remains partial; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.','Yeison Arbey Carrillo Lemus',DATE '2026-09-28')",
+    "temp": "expected_phase3_mapping_reviews",
+    "constraints": [
+      {
+        "table_name": "phase3_mapping_reviews",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "mapping_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_mapping_reviews",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "mapping_id"
+        ],
+        "referenced_table": "phase3_requirement_capabilities",
+        "referenced_column_names": [
+          "mapping_id"
+        ]
+      }
+    ],
+    "pk": [
+      "mapping_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_concept_mappings",
+    "cols": [
+      "concept_id",
+      "mapping_id",
+      "relation_note"
+    ],
+    "values": "('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-A','C01 partial technical relation: RTTI 670/2022 RRP 4-SN-A road closures.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-B','C01 partial technical relation: RTTI 670/2022 RRP 4-SN-B lane closures.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-C','C01 partial technical relation: RTTI 670/2022 RRP 4-SN-C roadworks.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-D','C01 partial technical relation: RTTI 670/2022 RRP 4-SN-D temporary traffic management.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-A','C01 partial technical relation: RTTI 670/2022 RRP 5-SN-A bridge closures.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-B','C01 partial technical relation: RTTI 670/2022 RRP 5-SN-B accidents and incidents.'),\n('M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-C','C01 partial technical relation: RTTI 670/2022 RRP 5-SN-C poor road conditions.'),\n('M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION','M06-B02-MAP-A05-P02-001-SIRI-ET','C07 partial technical relation: EPIP-RT ET journey delay/cancellation.'),\n('M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION','M06-B02-MAP-A05-P02-001-SIRI-SX','C07 partial technical relation: EPIP-RT SX passenger disruption notice.')",
+    "temp": "expected_phase3_concept_mappings",
+    "constraints": [
+      {
+        "table_name": "phase3_concept_mappings",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "concept_id"
+        ],
+        "referenced_table": "phase3_requirement_concepts",
+        "referenced_column_names": [
+          "concept_id"
+        ]
+      },
+      {
+        "table_name": "phase3_concept_mappings",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "mapping_id"
+        ],
+        "referenced_table": "phase3_requirement_capabilities",
+        "referenced_column_names": [
+          "mapping_id"
+        ]
+      },
+      {
+        "table_name": "phase3_concept_mappings",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "concept_id",
+          "mapping_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      }
+    ],
+    "pk": [
+      "concept_id",
+      "mapping_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_mapping_scope_units",
+    "cols": [
+      "scope_unit_id",
+      "concept_id",
+      "mapping_id",
+      "unit_code",
+      "unit_name",
+      "unit_definition",
+      "scope_disposition",
+      "basis_section",
+      "limitation",
+      "rationale",
+      "review_status",
+      "reviewed_at",
+      "reviewed_by",
+      "decision_document_id",
+      "milestone_id"
+    ],
+    "values": "('M06-B02-SCOPE-C01-4-SN-A','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-A','ROAD_CLOSURE','Road closures','Road closure events scoped to RTTI 670/2022 RRP 4-SN-A.','INCLUDED','4-SN-A','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-4-SN-B','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-B','LANE_CLOSURE','Lane closures','Lane closure events scoped to RTTI 670/2022 RRP 4-SN-B.','INCLUDED','4-SN-B','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-4-SN-C','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-C','ROADWORKS','Roadworks','Roadworks events scoped to RTTI 670/2022 RRP 4-SN-C.','INCLUDED','4-SN-C','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-4-SN-D','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-4-SN-D','TEMP_TRAFFIC_MGMT','Temporary traffic management','Temporary traffic management measures scoped to RTTI 670/2022 RRP 4-SN-D.','INCLUDED','4-SN-D','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-5-SN-A','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-A','BRIDGE_CLOSURE','Bridge closures','Bridge closure events scoped to RTTI 670/2022 RRP 5-SN-A.','INCLUDED','5-SN-A','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-5-SN-B','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-B','ACCIDENT_INCIDENT','Accidents and incidents','Accident and incident events scoped to RTTI 670/2022 RRP 5-SN-B.','INCLUDED','5-SN-B','Limited to accidents/incidents; not all SRTI. Profile-specific model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C01-5-SN-C','M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION','M06-B02-MAP-A05-P01-002-DATEX-5-SN-C','POOR_ROAD_CONDITION','Poor road conditions','Poor road condition events scoped to RTTI 670/2022 RRP 5-SN-C.','INCLUDED','5-SN-C','Profile-specific DATEX model release unresolved.','Human-approved C01 subset; this is not a finding about an operator or dataset.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION','M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION','M06-B02-MAP-A05-P02-001-SIRI-ET','JOURNEY_DELAY_CANCELLATION','Journey delay or cancellation','Journey delay and cancellation status cases within EPIP-RT ET.','INCLUDED','EPIP-RT §8 ET','Exact Annex-to-element/constraint crosswalk remains partial.','Human-approved C07 subset; does not imply complete service or legal coverage.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1'),\n('M06-B02-SCOPE-C07-SX-PASSENGER-DISRUPTION-NOTICE','M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION','M06-B02-MAP-A05-P02-001-SIRI-SX','PASSENGER_DISRUPTION_NOTICE','Passenger disruption notice','Passenger disruption notices within EPIP-RT SX.','INCLUDED','EPIP-RT §7 SX','Exact Annex-to-element/constraint crosswalk remains partial.','Human-approved C07 subset; does not imply complete service or legal coverage.','APPROVED',DATE '2026-09-28','Yeison Arbey Carrillo Lemus','M06-B02D-S1','M06-B02D-S1')",
+    "temp": "expected_phase3_mapping_scope_units",
+    "constraints": [
+      {
+        "table_name": "phase3_mapping_scope_units",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "scope_unit_id"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_mapping_scope_units",
+        "constraint_type": "UNIQUE",
+        "constraint_column_names": [
+          "concept_id",
+          "mapping_id",
+          "unit_code"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      },
+      {
+        "table_name": "phase3_mapping_scope_units",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "concept_id",
+          "mapping_id"
+        ],
+        "referenced_table": "phase3_concept_mappings",
+        "referenced_column_names": [
+          "concept_id",
+          "mapping_id"
+        ]
+      }
+    ],
+    "pk": [
+      "scope_unit_id"
+    ]
+  },
+  {
+    "table": "mapping.phase3_scope_source_references",
+    "cols": [
+      "scope_unit_id",
+      "source_reference_id",
+      "evidence_role"
+    ],
+    "values": "('M06-B02-SCOPE-C01-4-SN-A','M06-B02D-SRC-DATEX-4-SN-A','SUPPORT'),\n('M06-B02-SCOPE-C01-4-SN-B','M06-B02D-SRC-DATEX-4-SN-B','SUPPORT'),\n('M06-B02-SCOPE-C01-4-SN-C','M06-B02D-SRC-DATEX-4-SN-C','SUPPORT'),\n('M06-B02-SCOPE-C01-4-SN-D','M06-B02D-SRC-DATEX-4-SN-D','SUPPORT'),\n('M06-B02-SCOPE-C01-5-SN-A','M06-B02D-SRC-DATEX-5-SN-A','SUPPORT'),\n('M06-B02-SCOPE-C01-5-SN-B','M06-B02D-SRC-DATEX-5-SN-B','SUPPORT'),\n('M06-B02-SCOPE-C01-5-SN-C','M06-B02D-SRC-DATEX-5-SN-C','SUPPORT'),\n('M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION','M06-B02D-SRC-SIRI-EPIPRT-ET','SUPPORT'),\n('M06-B02-SCOPE-C07-SX-PASSENGER-DISRUPTION-NOTICE','M06-B02D-SRC-SIRI-EPIPRT-SX','SUPPORT')",
+    "temp": "expected_phase3_scope_source_references",
+    "constraints": [
+      {
+        "table_name": "phase3_scope_source_references",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "scope_unit_id"
+        ],
+        "referenced_table": "phase3_mapping_scope_units",
+        "referenced_column_names": [
+          "scope_unit_id"
+        ]
+      },
+      {
+        "table_name": "phase3_scope_source_references",
+        "constraint_type": "FOREIGN KEY",
+        "constraint_column_names": [
+          "source_reference_id"
+        ],
+        "referenced_table": "phase3_source_references",
+        "referenced_column_names": [
+          "source_reference_id"
+        ]
+      },
+      {
+        "table_name": "phase3_scope_source_references",
+        "constraint_type": "PRIMARY KEY",
+        "constraint_column_names": [
+          "scope_unit_id",
+          "source_reference_id",
+          "evidence_role"
+        ],
+        "referenced_table": null,
+        "referenced_column_names": []
+      }
+    ],
+    "pk": [
+      "scope_unit_id",
+      "source_reference_id",
+      "evidence_role"
+    ]
+  }
+]

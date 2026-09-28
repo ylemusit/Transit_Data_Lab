@@ -1,0 +1,855 @@
+# MISIÓN CODEX — M06-B02 FINAL CLOSURE PACK
+
+Usa obligatoriamente:
+
+`.agents/skills/compliance_eu/SKILL.md`
+
+y:
+
+`.agents/skills/compliance_eu/references/FAILURE_PATTERNS.md`
+
+Esta misión parte del estado ya alcanzado:
+
+```text
+C01 = PERSISTED_PARTIAL
+C07 = PERSISTED_PARTIAL
+
+9 capabilities persisted
+9 mappings PARTIAL persisted
+9 mapping reviews persisted
+9 concept bridges persisted
+9 scope units INCLUDED persisted
+9 source references persisted
+9 scope-source links persisted
+
+C04 = DEFERRED
+C08 = DEFERRED
+5-SN-D = DEFERRED
+CM = DEFERRED
+U01/U02/U03 = DEFERRED_OR_PARTIAL
+
+B02 = READY_FOR_CLOSURE_WITH_DEFERRALS
+Phase 3 = IN_PROGRESS
+```
+
+DB autoritativa final del paquete orquestado:
+
+```text
+657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791
+```
+
+No reabrir C01/C07 salvo conflicto material o evidencia nueva.
+
+---
+
+# 1. OBJETIVO
+
+Cerrar formalmente M06-B02 de forma reproducible y auditable.
+
+El cierre NO significa:
+
+```text
+FULL coverage
+FULL representability
+FULL legal compliance
+audit engine complete
+Phase 3 complete
+```
+
+El cierre significa:
+
+```text
+agreed B02 scope reconciled
+approved mappings persisted
+remaining candidates explicitly disposed
+coverage reviewed
+limitations documented
+reopen conditions defined
+```
+
+---
+
+# 2. CRITERIO DE CIERRE APROBADO
+
+B02 puede cerrarse aunque existan asuntos diferidos, siempre que cada uno tenga:
+
+```text
+status
+reason
+impact
+reopen_condition
+```
+
+Estados válidos para cierre:
+
+```text
+PERSISTED
+REJECTED_FOR_SCOPE
+DEFERRED
+PARTIAL
+```
+
+No permitir pendientes ambiguos como:
+
+```text
+TODO
+OPEN
+RESEARCH_LATER
+```
+
+sin disposición formal.
+
+---
+
+# 3. INVENTARIO FINAL B02
+
+Conciliar todos los candidatos y concepts del lote.
+
+Como mínimo:
+
+```text
+C01
+C02
+C03
+C04
+C05
+C06
+C07
+C08
+
+U01
+U02
+U03
+```
+
+Confirmar contra inventario autoritativo real.
+
+No inferir el inventario solo desde informes antiguos.
+
+---
+
+# 4. DISPOSICIONES ESPERADAS
+
+## C01
+
+```text
+PERSISTED_PARTIAL
+```
+
+Contenido persistido:
+
+```text
+4-SN-A
+4-SN-B
+4-SN-C
+4-SN-D
+5-SN-A
+5-SN-B
+5-SN-C
+```
+
+5-SN-D:
+
+```text
+DEFERRED
+```
+
+Reason:
+
+```text
+profile/identity evidence remains insufficiently reconciled
+```
+
+Impact:
+
+```text
+C01 cannot be presented as exhaustive
+```
+
+Reopen condition:
+
+```text
+official evidence resolves identity/profile ambiguity
+```
+
+---
+
+## C02
+
+```text
+REJECTED_FOR_THIS_REQUIREMENT_SCOPE
+```
+
+No mapping.
+
+---
+
+## C03
+
+```text
+REJECTED_FOR_THIS_REQUIREMENT_SCOPE
+```
+
+No mapping.
+
+---
+
+## C04
+
+```text
+DEFERRED
+```
+
+Reason:
+
+```text
+Article 5(2) applicability not sufficiently demonstrated by category
+```
+
+Impact:
+
+```text
+P02 road-status path remains incomplete
+```
+
+Reopen condition:
+
+```text
+documented legal/semantic applicability decision
+```
+
+No new mappings in this closure pack.
+
+---
+
+## C05
+
+```text
+REJECTED_FOR_THIS_REQUIREMENT_SCOPE
+```
+
+No mapping.
+
+---
+
+## C06
+
+```text
+REJECTED_FOR_THIS_REQUIREMENT_SCOPE
+```
+
+No mapping.
+
+---
+
+## C07
+
+```text
+PERSISTED_PARTIAL
+```
+
+Persisted:
+
+```text
+SIRI-ET
+SIRI-SX
+```
+
+CM:
+
+```text
+DEFERRED
+```
+
+Reason:
+
+```text
+bridge for guaranteed connections not sufficiently demonstrated
+```
+
+Impact:
+
+```text
+PASSENGER_RT_STATUS_DISRUPTION remains partial
+```
+
+Reopen condition:
+
+```text
+sufficient normative/profile evidence for CM contribution
+```
+
+VM remains out of scope unless a future concept requires vehicle-position semantics.
+
+---
+
+## C08
+
+```text
+DEFERRED
+```
+
+Reason:
+
+```text
+SIRI-FM normative/service path not sufficiently established for authoritative mapping
+```
+
+Impact:
+
+```text
+facility/access-node status remains partially unresolved
+```
+
+Reopen condition:
+
+```text
+profile/version + element/constraint path demonstrated
+```
+
+No persistence in this closure pack.
+
+---
+
+## U01
+
+```text
+PARTIAL / DEFERRED
+```
+
+Concept:
+
+```text
+PARKING_TARIFF
+```
+
+Record exact reason/impact/reopen condition from current evidence.
+
+No forced mapping.
+
+---
+
+## U02
+
+```text
+UNRESOLVED → formal DEFERRED for B02 closure
+```
+
+Concept:
+
+```text
+SHARED_VEHICLE_AVAILABILITY
+```
+
+Facets may remain:
+
+```text
+car
+bike
+scooter
+other
+```
+
+Do not create new concepts solely for closure.
+
+---
+
+## U03
+
+```text
+PARTIAL / DEFERRED
+```
+
+Concept:
+
+```text
+PARKING_AVAILABILITY
+```
+
+No forced mapping.
+
+---
+
+# 5. COVERAGE REVIEW
+
+Human direction:
+
+```text
+P01 = PARTIAL
+P02 = PARTIAL
+```
+
+but Codex must still validate whether this is consistent with the authoritative B02 state before persistence.
+
+Coverage must NOT be computed mechanically from counts.
+
+Do NOT use:
+
+```text
+7/8 DATEX mappings
+2 SIRI mappings
+```
+
+as a percentage proxy.
+
+Coverage must express:
+
+- requirement;
+- evaluated B02 scope;
+- supporting concepts/mappings;
+- material gaps;
+- deferred items;
+- version/evidence basis;
+- rationale;
+- review outcome.
+
+---
+
+# 6. P01 COVERAGE
+
+Expected semantic conclusion:
+
+```text
+PARTIAL
+```
+
+Supporting evidence:
+
+- persisted road-status/disruption mappings for 7 DATEX RRP categories;
+- mappings explicitly partial;
+- 5-SN-D deferred;
+- legal succession limitation remains documented.
+
+Must explicitly state:
+
+```text
+not exhaustive
+not observed implementation
+not legal compliance conclusion
+```
+
+---
+
+# 7. P02 COVERAGE
+
+Expected semantic conclusion:
+
+```text
+PARTIAL
+```
+
+Supporting evidence:
+
+- C07 ET/SX persisted;
+- C04 deferred;
+- C08 deferred;
+- CM deferred;
+- U01/U02/U03 unresolved/deferred/partial;
+- no full concept coverage claimed.
+
+Must explicitly list gaps.
+
+---
+
+# 8. COVERAGE PERSISTENCE AUTHORIZATION
+
+This closure pack authorizes coverage persistence ONLY if:
+
+```text
+coverage contract already exists
+target rows are semantically clear
+no schema change required
+preflight shows no conflict
+```
+
+Expected:
+
+```text
+2 B02 coverage decisions
+P01 PARTIAL
+P02 PARTIAL
+```
+
+If coverage cannot be persisted safely without schema/design change:
+
+```text
+COVERAGE = DOCUMENTED_PARTIAL
+PERSISTENCE = DEFERRED
+```
+
+and B02 may still close if the closure policy allows documented semantic coverage.
+
+Do not redesign coverage schema here.
+
+---
+
+# 9. COVERAGE SAFETY
+
+If rows already exist:
+
+```text
+exact match → NO-OP
+semantic conflict → ABORT coverage write
+```
+
+No silent UPDATE.
+
+Use same persistence safety principles already validated for B02 mappings.
+
+---
+
+# 10. B02 CLOSURE TABLE
+
+Create a final authoritative table:
+
+| Item | Final disposition | Persisted | Impact | Reopen condition |
+|---|---|---:|---|---|
+
+Include all:
+
+```text
+C01-C08
+U01-U03
+P01 coverage
+P02 coverage
+```
+
+No missing candidate.
+
+---
+
+# 11. REPRESENTABILITY
+
+Do NOT block B02 closure on representability.
+
+Current state:
+
+```text
+pilot attempts = insufficient evidence
+representability = DEFERRED
+```
+
+Record:
+
+```text
+B02_REPRESENTABILITY = NOT_ESTABLISHED / DEFERRED
+```
+
+Do not convert to failure of B02.
+
+Representability belongs to the next Phase 3 operational track.
+
+---
+
+# 12. OBSERVED EVIDENCE
+
+No new observed evidence is required for B02 closure.
+
+Keep:
+
+```text
+observed evidence = 0
+```
+
+unless previous orchestration legitimately created something.
+
+Do not create synthetic observed evidence merely to close B02.
+
+---
+
+# 13. AUDIT RULES
+
+Keep:
+
+```text
+audit.rules = 0
+```
+
+B02 closure does not require an operational audit rule.
+
+That requirement moves to Phase 3 operational proof.
+
+---
+
+# 14. VALIDATION BEFORE CLOSURE
+
+Run current authoritative validators.
+
+At minimum:
+
+- B02D post-persistence validator;
+- B02C;
+- B02A;
+- populated schema;
+- Level A;
+- M04/M04B/M05B/M06-B01;
+- accounting;
+- coverage validator if current/compatible;
+- exact persisted-row comparison;
+- `git diff --check`.
+
+Do not treat obsolete historical expectations as current gates.
+
+Document historical FAILs separately.
+
+---
+
+# 15. PROTECTED INVARIANTS
+
+Must remain:
+
+```text
+Phase 1 frozen
+Phase 2 frozen
+legacy mappings preserved
+C01/C07 approved mappings unchanged
+C04 absent
+C08 absent
+5-SN-D absent
+CM absent
+FULL B02 mappings = 0
+representability not artificially promoted
+observed evidence not fabricated
+audit.rules unchanged
+```
+
+---
+
+# 16. B02 FINAL STATUS
+
+If inventory, dispositions, coverage review and validators pass:
+
+set:
+
+```text
+M06_B02 = CLOSED_WITH_DEFERRALS
+```
+
+Recommended supporting status:
+
+```text
+M06_B02_APPROVED_SUBSET_PERSISTED = YES
+M06_B02_COVERAGE = PARTIAL
+M06_B02_REPRESENTABILITY = DEFERRED
+M06_B02_OBSERVED_EVIDENCE = NOT_STARTED
+M06_B02_AUDIT_RULES = NOT_STARTED
+```
+
+Use existing status vocabulary/conventions where available.
+
+Do not invent persistent DB vocabulary just to mirror these labels.
+
+---
+
+# 17. PROJECT_STATUS
+
+Update only if closure succeeds.
+
+Record:
+
+- C01/C07 persisted;
+- 9 mappings PARTIAL;
+- deferred list;
+- P01/P02 coverage state;
+- B02 closure state;
+- Phase 3 remains IN_PROGRESS;
+- final DB hash;
+- no claim of full compliance.
+
+Add current DB hash history entry without deleting prior hashes.
+
+---
+
+# 18. CLOSURE REPORT
+
+Create:
+
+```text
+03_Compliance/reports/phase_3/M06_B02_FINAL_CLOSURE.md
+```
+
+Structure:
+
+# M06-B02 Final Closure
+
+## Closure scope
+
+## Authoritative pre-state
+
+## Persisted subset
+
+## Rejected candidates
+
+## Deferred candidates
+
+## U01/U02/U03 disposition
+
+## Coverage P01
+
+## Coverage P02
+
+## Representability status
+
+## Observed evidence status
+
+## Audit rules status
+
+## Validation
+
+## Protected invariants
+
+## DB hash
+
+## Deferred work and reopen conditions
+
+## Closure decision
+
+## Relationship to Phase 3
+
+---
+
+# 19. PHASE 3 HANDOFF
+
+After B02 closure produce a compact handoff:
+
+```text
+PHASE3_NEXT_CRITICAL_PATH
+```
+
+Do NOT execute that next phase here beyond analysis.
+
+Expected categories:
+
+```text
+1. reconcile remaining Phase 3 families/scope
+2. select best representability candidate
+3. establish representability
+4. validate observed-evidence contract
+5. run fixtures
+6. implement first narrow audit rule
+7. evaluate automatability
+8. Phase 3 closure review
+```
+
+---
+
+# 20. FAILURE POLICY
+
+If coverage persistence fails but coverage can be documented semantically:
+
+```text
+FAIL_LOCAL
+```
+
+and assess whether B02 closure can still proceed.
+
+If candidate inventory is inconsistent:
+
+```text
+FAIL_BLOCKING
+```
+
+for closure.
+
+If Phase 1/2 or legacy integrity breaks:
+
+```text
+STOP GLOBAL
+```
+
+If a deferred candidate remains unresolved:
+
+that alone is NOT a closure failure if it has:
+
+```text
+reason
+impact
+reopen condition
+```
+
+---
+
+# 21. RESULTADO ESPERADO
+
+Ideal:
+
+```text
+M06_B02_FINAL_CLOSURE = PASS
+M06_B02 = CLOSED_WITH_DEFERRALS
+
+C01 = PERSISTED_PARTIAL
+C07 = PERSISTED_PARTIAL
+
+C02/C03/C05/C06 = REJECTED_FOR_SCOPE
+
+C04 = DEFERRED
+C08 = DEFERRED
+5-SN-D = DEFERRED
+CM = DEFERRED
+U01/U02/U03 = FORMALLY_DISPOSED
+
+P01 COVERAGE = PARTIAL
+P02 COVERAGE = PARTIAL
+
+PHASE3 = IN_PROGRESS
+```
+
+---
+
+# 22. INFORME FINAL
+
+Devuelve:
+
+## Closure
+- result:
+- B02 final status:
+
+## Persisted
+- C01:
+- C07:
+- mappings:
+- scopes:
+
+## Rejected
+- candidates:
+
+## Deferred
+- candidates:
+- reasons:
+- reopen conditions:
+
+## Coverage
+- P01:
+- P02:
+- persisted:
+- limitations:
+
+## Representability
+- status:
+
+## Observed evidence
+- status:
+
+## Audit rules
+- status:
+
+## Validation
+- current validators:
+- historical incompatible validators:
+
+## DB
+- initial hash:
+- final hash:
+- writes performed:
+
+## Project status
+- updated:
+- exact B02 state:
+- exact Phase 3 state:
+
+## Phase 3 handoff
+Lista el siguiente camino crítico, sin ejecutarlo.
+
+No reabrir mappings C01/C07.
+No iniciar una nueva arquitectura.
+No intentar resolver indefinidamente diferidos.

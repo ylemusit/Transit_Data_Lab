@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"REQUIREMENT_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"CAPABILITY_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"STANDARD_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"STANDARD_IDENTITY\",\"invalid_count\":0},\n{\"check_name\":\"DUPLICATE_STANDARD_IDENTITY\",\"invalid_count\":0},\n{\"check_name\":\"STANDARD_REGISTRY_VOCABULARY\",\"invalid_count\":0},\n{\"check_name\":\"DUPLICATE_MAPPING\",\"invalid_count\":0},\n{\"check_name\":\"REVIEW_VOCABULARY\",\"invalid_count\":0},\n{\"check_name\":\"REPRESENTABILITY_REASON\",\"invalid_count\":0},\n{\"check_name\":\"EXCEPTION_JUSTIFICATION\",\"invalid_count\":0},\n{\"check_name\":\"SOURCE_REFERENCE_SHAPE\",\"invalid_count\":0},\n{\"check_name\":\"CAPABILITY_CONTEXT\",\"invalid_count\":0},\n{\"check_name\":\"MAPPING_REVIEW_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"MAPPING_REVIEW_OUTCOME\",\"invalid_count\":0},\n{\"check_name\":\"COVERAGE_REQUIREMENT_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"COVERAGE_VOCABULARY\",\"invalid_count\":0},\n{\"check_name\":\"COVERAGE_REQUIRED_CONTEXT\",\"invalid_count\":0},\n{\"check_name\":\"DUPLICATE_REQUIREMENT_COVERAGE\",\"invalid_count\":0},\n{\"check_name\":\"FAMILY_REFERENCE\",\"invalid_count\":0},\n{\"check_name\":\"FAMILY_CLASSIFICATION_METADATA\",\"invalid_count\":0}]\n",
+  "stderr": ""
+}

@@ -57,3 +57,5 @@
 # Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 03_Compliance/reports/evidence/compliance_v1_20260928/sources/*.xsd whitespace=-blank-at-eol
 03_Compliance/reports/evidence/compliance_v1_20260928/sources/gtfs_reference.md whitespace=-blank-at-eol
+03_Compliance/reports/phase_3/evidence/phase3_operational_closure_20260928/datex_road_closures.html whitespace=-blank-at-eol
+03_Compliance/reports/phase_3/evidence/phase3_operational_closure_20260928/siri_repository.html whitespace=-blank-at-eol,-blank-at-eof

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"status\":\"PASS\",\"structural_failures\":\"0\",\"a04_p01_regression\":true,\"a04_p02_regression\":true,\"a08_p03_regression\":true,\"a05_p03_regression\":true,\"a09_regression\":true,\"zero_mapping_pilot_mappings\":0,\"coverage_decisions\":8,\"mapping_reviews\":15}]\n",
+  "stderr": ""
+}

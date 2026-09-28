@@ -1,0 +1,68 @@
+{
+  "sql": "SELECT f.family_id,f.family_name,count(DISTINCT rf.requirement_id) requirements,count(DISTINCT m.requirement_id) mapped_requirements,count(DISTINCT c.requirement_id) coverage_reviewed_requirements FROM mapping.phase3_families f JOIN mapping.phase3_requirement_families rf USING(family_id) LEFT JOIN mapping.phase3_requirement_capabilities m ON m.requirement_id=rf.requirement_id AND m.fixture_kind IS DISTINCT FROM 'SYNTHETIC_TEST' LEFT JOIN mapping.phase3_requirement_coverage c ON c.requirement_id=rf.requirement_id GROUP BY 1,2 ORDER BY 1",
+  "rows": [
+    {
+      "family_id": "F01",
+      "family_name": "NAP access and discovery",
+      "requirements": 8,
+      "mapped_requirements": 2,
+      "coverage_reviewed_requirements": 4
+    },
+    {
+      "family_id": "F02",
+      "family_name": "Availability and format representation",
+      "requirements": 8,
+      "mapped_requirements": 3,
+      "coverage_reviewed_requirements": 1
+    },
+    {
+      "family_id": "F03",
+      "family_name": "Temporal coverage and deadlines",
+      "requirements": 9,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 1
+    },
+    {
+      "family_id": "F04",
+      "family_name": "Metadata and provenance",
+      "requirements": 4,
+      "mapped_requirements": 1,
+      "coverage_reviewed_requirements": 1
+    },
+    {
+      "family_id": "F05",
+      "family_name": "Update and correction",
+      "requirements": 3,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 0
+    },
+    {
+      "family_id": "F06",
+      "family_name": "Quality and notification",
+      "requirements": 4,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 0
+    },
+    {
+      "family_id": "F07",
+      "family_name": "Reuse and journey presentation",
+      "requirements": 5,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 0
+    },
+    {
+      "family_id": "F08",
+      "family_name": "Routing-result exchange",
+      "requirements": 1,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 0
+    },
+    {
+      "family_id": "F09",
+      "family_name": "Governance, evaluation, and process duties",
+      "requirements": 6,
+      "mapped_requirements": 0,
+      "coverage_reviewed_requirements": 1
+    }
+  ]
+}

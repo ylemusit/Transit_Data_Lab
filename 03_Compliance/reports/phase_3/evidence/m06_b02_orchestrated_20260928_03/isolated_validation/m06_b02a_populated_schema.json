@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"populated_schema_gate\":\"FAIL\",\"checks\":13,\"failures\":\"36\",\"failing_checks\":\"B02_BRIDGES=9; B02_MAPPINGS=9; LEGACY_MAPPINGS=18\"}]\n",
+  "stderr": ""
+}

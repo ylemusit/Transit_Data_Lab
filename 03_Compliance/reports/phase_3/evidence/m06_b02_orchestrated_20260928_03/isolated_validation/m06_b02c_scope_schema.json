@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"status\":\"FAIL\",\"checks\":26,\"failures\":\"72\",\"failing_checks\":\"B02_BRIDGES=9; B02_MAPPINGS=9; B02_SCOPE_ROWS=9; B02_SOURCE_BRIDGES=9; EMPTY_SCOPE_STATE=18; GLOBAL_MAPPINGS=9; LEGACY_SCOPE_ASSIGNMENTS=9\"}]\n",
+  "stderr": ""
+}

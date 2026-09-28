@@ -1,0 +1,155 @@
+[
+  {
+    "mapping_id": "M04-MAP-A04P01-GTFS-TRIP-STOP",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "A future machine check could inspect the bounded technical representation only; scope and legal availability/access require other evidence.",
+    "prerequisites": "Observed dataset and defined legal/category scope; M04 does not establish either.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M04-MAP-A04P01-NETEX-PT",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "A future machine check could inspect the bounded technical representation only; scope and legal availability/access require other evidence.",
+    "prerequisites": "Observed dataset and defined legal/category scope; M04 does not establish either.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M04-MAP-A04P02-NETEX-PT",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "A future machine check could inspect the bounded technical representation only; scope and legal availability/access require other evidence.",
+    "prerequisites": "Observed dataset and defined legal/category scope; M04 does not establish either.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M04-MAP-A08P03-GTFS-ATTRIBUTION",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "Only the bounded technical metadata relationship may be machine-inspected; conditional reuse, request, provenance, response and disclosure require external evidence.",
+    "prerequisites": "Observed dataset plus linked reuse context, request and response/disclosure records; none are established by this M04 mapping.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M04-MAP-A08P03-GTFS-PUBLISHER",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "Only the bounded technical metadata relationship may be machine-inspected; conditional reuse, request, provenance, response and disclosure require external evidence.",
+    "prerequisites": "Observed dataset plus linked reuse context, request and response/disclosure records; none are established by this M04 mapping.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B01-MAP-A03-P03-001-NAP-DISCOVERY",
+    "scope_units": [],
+    "decision": "PARTIALLY_AUTOMATABLE",
+    "basis": "Some metadata-based dataset discovery behavior can potentially be observed and tested technically; complete evaluation requires contextual and external evidence.",
+    "prerequisites": "Access to the relevant access point and authoritative contextual evidence; technical observation alone is insufficient.",
+    "persisted_state": "PARTIAL",
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-4-SN-A"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-4-SN-B"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-4-SN-C"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-4-SN-D"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-5-SN-A"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-5-SN-B"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+    "scope_units": [
+      "M06-B02-SCOPE-C01-5-SN-C"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+    "scope_units": [
+      "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  },
+  {
+    "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+    "scope_units": [
+      "M06-B02-SCOPE-C07-SX-PASSENGER-DISRUPTION-NOTICE"
+    ],
+    "decision": "DEFERRED",
+    "basis": "No representability contract demonstrated for this persisted scope; no parser/rule proof.",
+    "prerequisites": "Versioned profile constraints, representability, controlled fixtures and false-positive validation.",
+    "persisted_state": null,
+    "operational_automation_proven": false
+  }
+]

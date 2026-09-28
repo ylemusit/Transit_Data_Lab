@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_03\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"status\":\"FAIL\",\"checks\":26,\"failures\":\"76\",\"failing_checks\":\"B02_BRIDGES=9; B02_COVERAGE=2; B02_MAPPINGS=9; B02_SCOPE_ROWS=9; B02_SOURCE_BRIDGES=9; COVERAGE_GLOBAL=2; EMPTY_SCOPE_STATE=18; GLOBAL_MAPPINGS=9; LEGACY_SCOPE_ASSIGNMENTS=9\"}]\n",
+  "stderr": ""
+}

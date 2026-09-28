@@ -1,0 +1,13 @@
+{
+  "sql": "SELECT requirement_id,description FROM compliance.requirements WHERE requirement_id IN ('EU-2017-1926-REQ-A05-P01-002','EU-2017-1926-REQ-A05-P02-001')",
+  "rows": [
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "description": "Facilitar datos dinámicos de carretera mediante los formatos a los que remiten los artículos 5 y 6."
+    },
+    {
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "description": "Los datos dinámicos de los puntos 2.1 y 2.2 del anexo a los que sean aplicables SIRI y DATEX II se representarán mediante perfiles mínimos de la UE o nacionales."
+    }
+  ]
+}

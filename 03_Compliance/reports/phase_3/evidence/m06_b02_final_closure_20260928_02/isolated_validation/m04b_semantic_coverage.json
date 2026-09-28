@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_02\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"status\":\"FAIL\",\"structural_failures\":\"2\",\"a04_p01_regression\":true,\"a04_p02_regression\":true,\"a08_p03_regression\":true,\"a05_p03_regression\":true,\"a09_regression\":true,\"zero_mapping_pilot_mappings\":0,\"coverage_decisions\":10,\"mapping_reviews\":15}]\n",
+  "stderr": ""
+}

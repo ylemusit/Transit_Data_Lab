@@ -1,0 +1,170 @@
+{
+  "A_fresh": [
+    {
+      "entity": "mapping.phase3_standards",
+      "missing": 1,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_capabilities",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_source_references",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_requirement_capabilities",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_reviews",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_concept_mappings",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_scope_units",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_scope_source_references",
+      "missing": 9,
+      "matching": 0
+    }
+  ],
+  "B_second": [
+    {
+      "entity": "mapping.phase3_standards",
+      "missing": 0,
+      "matching": 1
+    },
+    {
+      "entity": "mapping.phase3_capabilities",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_source_references",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_requirement_capabilities",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_mapping_reviews",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_concept_mappings",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_mapping_scope_units",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_scope_source_references",
+      "missing": 0,
+      "matching": 9
+    }
+  ],
+  "C_partial": [
+    {
+      "entity": "mapping.phase3_standards",
+      "missing": 0,
+      "matching": 1
+    },
+    {
+      "entity": "mapping.phase3_capabilities",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_source_references",
+      "missing": 0,
+      "matching": 9
+    },
+    {
+      "entity": "mapping.phase3_requirement_capabilities",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_reviews",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_concept_mappings",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_scope_units",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_scope_source_references",
+      "missing": 9,
+      "matching": 0
+    }
+  ],
+  "authoritative_execution": [
+    {
+      "entity": "mapping.phase3_standards",
+      "missing": 1,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_capabilities",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_source_references",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_requirement_capabilities",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_reviews",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_concept_mappings",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_mapping_scope_units",
+      "missing": 9,
+      "matching": 0
+    },
+    {
+      "entity": "mapping.phase3_scope_source_references",
+      "missing": 9,
+      "matching": 0
+    }
+  ]
+}

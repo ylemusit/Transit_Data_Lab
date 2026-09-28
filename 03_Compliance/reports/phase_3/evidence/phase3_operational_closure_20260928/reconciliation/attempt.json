@@ -1,0 +1,8 @@
+{
+  "status": "FAIL_LOCAL",
+  "command": "python tools/phase3_scope_inventory.py --evidence .../reconciliation",
+  "exit_code": 1,
+  "error": "RuntimeError: STOP_GLOBAL: SCOPE_RECONCILIATION",
+  "diagnosis": "Implementation used PRIMARY; live enum is PRIMARY_FAMILY (48 rows). No authoritative writes or semantic collision; corrected query only, rerun in reconciliation_02.",
+  "recovery_status": "PASS"
+}

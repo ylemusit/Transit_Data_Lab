@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\databases\\transit_compliance.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"status\":\"PASS\",\"checks\":21,\"failures\":\"0\",\"failing_checks\":null}]\n",
+  "stderr": ""
+}

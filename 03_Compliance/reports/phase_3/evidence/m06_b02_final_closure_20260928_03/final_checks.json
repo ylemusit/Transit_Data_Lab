@@ -1,0 +1,30 @@
+{
+  "authorization_sha256": "F33AB04DC21EDA0CF688C86766105C38E924C999AC3C629E1030C3543959326A",
+  "python_compile": "PASS",
+  "git_diff_check": {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "warning: in the working copy of '03_Compliance/TEST_BASELINE_POLICY.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'PROJECT_STATUS.md', CRLF will be replaced by LF the next time Git touches it\n"
+  },
+  "current_gate": "PASS",
+  "final_hash": "6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F",
+  "closure_delta": "PASS: all tables identical to pre-closure plus two coverage rows",
+  "final_artifacts": {
+    "PROJECT_STATUS.md": "6859660E6AD9B0D28F0780D08CDD1E723D8812274220271D360C0D4F14BED687",
+    "03_Compliance/TEST_BASELINE_POLICY.md": "AD496FFEDC59B9BB4103B61C334EC8541D0F612C5517BA654792C5AC38A3EB1B",
+    "03_Compliance/reports/phase_3/M06_B02_FINAL_CLOSURE.md": "5BA2C95743A352565ACE65350098DDE33AA1AD570CBA6432818CB275A88849BD",
+    "tools/m06_b02_closure.py": "D59F5E45845F5FDB7AADBB782644AF886E79012AC1D2EC3961C8EC9248452841",
+    "tools/m06_b02_validate.py": "9199C61B60556A214F54865291D6EA59CEAD339E693E7EEDA40928157CD67540"
+  },
+  "closure_table_inventory": "PASS",
+  "diagnostics": {
+    "run_01": "Read-only SQL alias parser error before any write; fixed explicit AS alias.",
+    "run_02": "Isolated gate blocked on three historical coverage expectations; authoritative DB unchanged.",
+    "run_03": "All tests and authoritative post-validation PASS."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_01\\D_conflict.duckdb"
+  ],
+  "exit_code": 1,
+  "stdout": "[{\"CASE  WHEN (((SELECT count_star() FROM expected_phase3_standards) = 1)) THEN ('EXPECTED_COUNT_expected_phase3_standards:PASS') ELSE \\\"error\\\"('EXPECTED_COUNT_expected_phase3_standards') END\":\"EXPECTED_COUNT_expected_phase3_standards:PASS\"}]\n[{\"CASE  WHEN ((NOT EXISTS(SELECT 1 FROM expected_phase3_standards GROUP BY standard_id HAVING (count_star() > 1)))) THEN ('DUPLICATE_expected_phase3_standards_0:PASS') ELSE \\\"error\\\"('DUPLICATE_expected_phase3_standards_0') END\":\"DUPLICATE_expected_phase3_standards_0:PASS\"}]\n",
+  "stderr": "Invalid Input Error: CONFLICT_expected_phase3_standards_0\n"
+}

@@ -1,0 +1,30 @@
+{
+  "requirements": 48,
+  "families": {
+    "F01": 8,
+    "F02": 8,
+    "F03": 9,
+    "F04": 4,
+    "F05": 3,
+    "F06": 4,
+    "F07": 5,
+    "F08": 1,
+    "F09": 6
+  },
+  "disposition": {
+    "PARTIAL": 10,
+    "DEFERRED": 38
+  },
+  "coverage": {
+    "PARTIAL": 9,
+    "UNRESOLVED": 1
+  },
+  "automatability": {
+    "PARTIALLY_AUTOMATABLE": 6,
+    "DEFERRED": 9
+  },
+  "scope_units": 9,
+  "automated_proven": 0,
+  "initial_hash": "6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F",
+  "final_hash": "6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F"
+}

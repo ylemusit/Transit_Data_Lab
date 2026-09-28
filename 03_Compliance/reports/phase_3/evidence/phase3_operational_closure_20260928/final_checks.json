@@ -1,0 +1,62 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\yeiso\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "tools/m06_b02_validate.py",
+        "--db",
+        "03_Compliance/databases/transit_compliance.duckdb",
+        "--baseline",
+        "03_Compliance/reports/phase_3/evidence/m06_b02_orchestrated_20260928_04/authoritative_before.duckdb",
+        "--closure-coverage",
+        "--evidence",
+        "03_Compliance\\reports\\phase_3\\evidence\\phase3_operational_closure_20260928\\final_validation"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"m06_b02d_s1\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"B02_COVERAGE_UNCHANGED\",\n        \"failures\": 2\n      }\n    ]\n  },\n  \"m06_b02c_scope_schema\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"EMPTY_SCOPE_STATE\",\n        \"failures\": 18\n      },\n      {\n        \"check_name\": \"GLOBAL_MAPPINGS\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"LEGACY_SCOPE_ASSIGNMENTS\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_MAPPINGS\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_BRIDGES\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_SCOPE_ROWS\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_SOURCE_BRIDGES\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_COVERAGE\",\n        \"failures\": 2\n      },\n      {\n        \"check_name\": \"COVERAGE_GLOBAL\",\n        \"failures\": 2\n      }\n    ]\n  },\n  \"m06_b02a_requirement_concepts\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"B02_BRIDGES\",\n        \"bad\": 9\n      },\n      {\n        \"check_name\": \"B02_MAPPINGS\",\n        \"bad\": 9\n      },\n      {\n        \"check_name\": \"PROTECTED_COUNTERS\",\n        \"bad\": 11\n      }\n    ]\n  },\n  \"m06_b02a_populated_schema\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"B02_MAPPINGS\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_BRIDGES\",\n        \"failures\": 9\n      },\n      {\n        \"check_name\": \"B02_COVERAGE\",\n        \"failures\": 2\n      },\n      {\n        \"check_name\": \"LEGACY_MAPPINGS\",\n        \"failures\": 18\n      }\n    ]\n  },\n  \"level_a\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": []\n  },\n  \"m04_pilot\": {\n    \"status\": \"PASS\",\n    \"original_result\": {\n      \"m04_pilot_structural_validation\": \"FAIL\",\n      \"non_pilot_mappings\": 9,\n      \"valid_expected_mappings\": 5,\n      \"expected_mappings\": 5,\n      \"accepted_mappings\": 0,\n      \"representability_assertions\": 0,\n      \"partial_automatability\": 5,\n      \"exceptions\": 3,\n      \"invalid_expected_exceptions\": 0,\n      \"unexpected_pilot_exceptions\": 0,\n      \"audit_rules\": 0,\n      \"requirements\": 48,\n      \"deadlines\": 10,\n      \"candidates\": 34,\n      \"source_facts\": 36\n    }\n  },\n  \"m04b_semantic_coverage\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"NON_PILOT_COVERAGE\",\n        \"n\": 2\n      }\n    ]\n  },\n  \"m05b_family_baseline_v1\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"NONPILOT_MAPPINGS\",\n        \"invalid_count\": 9\n      }\n    ]\n  },\n  \"m06_b01_candidates\": {\n    \"status\": \"PASS\",\n    \"failures\": [],\n    \"historical_state_mismatches\": [\n      {\n        \"check_name\": \"TOTALS\",\n        \"failures\": 1\n      }\n    ]\n  },\n  \"exception_accounting\": {\n    \"status\": \"PASS\",\n    \"original_result\": {\n      \"global_exception_accounting\": \"PASS\",\n      \"m04_expected_exceptions\": 3,\n      \"b01_expected_exceptions\": 3,\n      \"unaccounted_substantive_exceptions\": 0,\n      \"missing_or_incompatible_recognized_exceptions\": 0\n    }\n  },\n  \"row_exact\": {\n    \"status\": \"PASS\"\n  },\n  \"protected_delta\": {\n    \"status\": \"PASS\"\n  },\n  \"readonly_hash\": {\n    \"status\": \"PASS\",\n    \"hash\": \"6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F\"\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\yeiso\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-m",
+        "py_compile",
+        "tools/phase3_observation_contract.py",
+        "tools/phase3_operational_checks.py",
+        "tools/phase3_scope_inventory.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "warning: in the working copy of '03_Compliance/TEST_BASELINE_POLICY.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'PROJECT_STATUS.md', CRLF will be replaced by LF the next time Git touches it\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--stat"
+      ],
+      "exit_code": 0,
+      "stdout": " 03_Compliance/TEST_BASELINE_POLICY.md | 52 +++++++++++++++++++++++++++++++++++\n PROJECT_STATUS.md                     | 11 ++++++--\n 2 files changed, 61 insertions(+), 2 deletions(-)\n",
+      "stderr": "warning: in the working copy of '03_Compliance/TEST_BASELINE_POLICY.md', CRLF will be replaced by LF the next time Git touches it\nwarning: in the working copy of 'PROJECT_STATUS.md', CRLF will be replaced by LF the next time Git touches it\n"
+    }
+  ],
+  "new_file_whitespace": [],
+  "files": {
+    "tools/phase3_observation_contract.py": "8c3dca456be77d1a7df9b54f9e46ac94fc7a33687a6944f5d5ab427a9a0510c2",
+    "tools/phase3_operational_checks.py": "723bb05f346b73f38703443e2070efcd93603f8e373476d814f56c43c26106be",
+    "tools/phase3_scope_inventory.py": "a7af36c4c679f189884e5e18254ce57d3031fc38e5806d038efd70754868a55d",
+    "03_Compliance/reports/phase_3/PHASE3_OBSERVED_EVIDENCE_CONTRACT.md": "8f7daa76e61dff239ee0c3a032fcaed3dc657f4a8df5eb18ac0f473b73abfe2a",
+    "03_Compliance/reports/phase_3/PHASE3_OPERATIONAL_CLOSURE_REPORT.md": "e8258323ba5e8c214a81ffb43a525c7e4b8a06ec66fe8983c2550ef5222bd1a1"
+  },
+  "db_final_hash": "6c7a944fb9eb7983a912af42c2f5c69c0f29d268f6139d3b5566bf7140788e0f"
+}

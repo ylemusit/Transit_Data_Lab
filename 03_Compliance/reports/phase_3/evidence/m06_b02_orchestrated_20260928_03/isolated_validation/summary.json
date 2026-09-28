@@ -1,0 +1,125 @@
+{
+  "m06_b02d_s1": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m06_b02c_scope_schema": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "EMPTY_SCOPE_STATE",
+        "failures": 18
+      },
+      {
+        "check_name": "GLOBAL_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "LEGACY_SCOPE_ASSIGNMENTS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_BRIDGES",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_SCOPE_ROWS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_SOURCE_BRIDGES",
+        "failures": 9
+      }
+    ]
+  },
+  "m06_b02a_requirement_concepts": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "B02_BRIDGES",
+        "bad": 9
+      },
+      {
+        "check_name": "B02_MAPPINGS",
+        "bad": 9
+      },
+      {
+        "check_name": "PROTECTED_COUNTERS",
+        "bad": 9
+      }
+    ]
+  },
+  "m06_b02a_populated_schema": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "B02_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_BRIDGES",
+        "failures": 9
+      },
+      {
+        "check_name": "LEGACY_MAPPINGS",
+        "failures": 18
+      }
+    ]
+  },
+  "level_a": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m04_pilot": {
+    "status": "FAIL_BLOCKING",
+    "error": "Catalog Error: Table with name checks does not exist!\nDid you mean \"information_schema.check_constraints\"?\n\nLINE 44: ) SELECT * FROM checks;\n                         ^\n"
+  },
+  "m04b_semantic_coverage": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m05b_family_baseline_v1": {
+    "status": "FAIL_BLOCKING",
+    "failures": [
+      {
+        "check_name": "NONPILOT_MAPPINGS",
+        "invalid_count": 9
+      }
+    ],
+    "historical_state_mismatches": []
+  },
+  "m06_b01_candidates": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "TOTALS",
+        "failures": 1
+      }
+    ]
+  },
+  "exception_accounting": {
+    "status": "FAIL_BLOCKING",
+    "error": "Catalog Error: Table with name checks does not exist!\nDid you mean \"information_schema.check_constraints\"?\n\nLINE 22: ) SELECT * FROM checks;\n                         ^\n"
+  },
+  "row_exact": {
+    "status": "PASS"
+  },
+  "protected_delta": {
+    "status": "PASS"
+  },
+  "readonly_hash": {
+    "status": "PASS",
+    "hash": "FB4C1D3F71652FF45F3597BA6FDD234BBC9952EA0764DD0467DFBB9C2A37E730"
+  }
+}

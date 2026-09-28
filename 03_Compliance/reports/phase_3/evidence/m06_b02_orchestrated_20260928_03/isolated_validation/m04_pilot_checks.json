@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Catalog Error: Table with name checks does not exist!\nDid you mean \"information_schema.check_constraints\"?\n\nLINE 44: ) SELECT * FROM checks;\n                         ^\n"
+}

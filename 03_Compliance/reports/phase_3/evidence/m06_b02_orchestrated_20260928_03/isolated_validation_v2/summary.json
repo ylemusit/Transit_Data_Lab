@@ -1,0 +1,147 @@
+{
+  "m06_b02d_s1": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m06_b02c_scope_schema": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "EMPTY_SCOPE_STATE",
+        "failures": 18
+      },
+      {
+        "check_name": "GLOBAL_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "LEGACY_SCOPE_ASSIGNMENTS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_BRIDGES",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_SCOPE_ROWS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_SOURCE_BRIDGES",
+        "failures": 9
+      }
+    ]
+  },
+  "m06_b02a_requirement_concepts": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "B02_BRIDGES",
+        "bad": 9
+      },
+      {
+        "check_name": "B02_MAPPINGS",
+        "bad": 9
+      },
+      {
+        "check_name": "PROTECTED_COUNTERS",
+        "bad": 9
+      }
+    ]
+  },
+  "m06_b02a_populated_schema": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "B02_MAPPINGS",
+        "failures": 9
+      },
+      {
+        "check_name": "B02_BRIDGES",
+        "failures": 9
+      },
+      {
+        "check_name": "LEGACY_MAPPINGS",
+        "failures": 18
+      }
+    ]
+  },
+  "level_a": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m04_pilot": {
+    "status": "PASS",
+    "original_result": {
+      "m04_pilot_structural_validation": "FAIL",
+      "non_pilot_mappings": 9,
+      "valid_expected_mappings": 5,
+      "expected_mappings": 5,
+      "accepted_mappings": 0,
+      "representability_assertions": 0,
+      "partial_automatability": 5,
+      "exceptions": 3,
+      "invalid_expected_exceptions": 0,
+      "unexpected_pilot_exceptions": 0,
+      "audit_rules": 0,
+      "requirements": 48,
+      "deadlines": 10,
+      "candidates": 34,
+      "source_facts": 36
+    }
+  },
+  "m04b_semantic_coverage": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": []
+  },
+  "m05b_family_baseline_v1": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "NONPILOT_MAPPINGS",
+        "invalid_count": 9
+      }
+    ]
+  },
+  "m06_b01_candidates": {
+    "status": "PASS",
+    "failures": [],
+    "historical_state_mismatches": [
+      {
+        "check_name": "TOTALS",
+        "failures": 1
+      }
+    ]
+  },
+  "exception_accounting": {
+    "status": "PASS",
+    "original_result": {
+      "global_exception_accounting": "PASS",
+      "m04_expected_exceptions": 3,
+      "b01_expected_exceptions": 3,
+      "unaccounted_substantive_exceptions": 0,
+      "missing_or_incompatible_recognized_exceptions": 0
+    }
+  },
+  "row_exact": {
+    "status": "PASS"
+  },
+  "protected_delta": {
+    "status": "PASS"
+  },
+  "readonly_hash": {
+    "status": "PASS",
+    "hash": "FB4C1D3F71652FF45F3597BA6FDD234BBC9952EA0764DD0467DFBB9C2A37E730"
+  }
+}

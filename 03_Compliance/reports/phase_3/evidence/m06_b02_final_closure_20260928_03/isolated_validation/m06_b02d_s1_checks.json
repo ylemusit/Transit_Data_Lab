@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_03\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"B02_CAPABILITIES\",\"failures\":0},\n{\"check_name\":\"B02_MAPPINGS\",\"failures\":0},\n{\"check_name\":\"PARTIAL_ONLY\",\"failures\":0},\n{\"check_name\":\"REVIEWS\",\"failures\":0},\n{\"check_name\":\"REVIEW_OUTCOME\",\"failures\":0},\n{\"check_name\":\"BRIDGES\",\"failures\":0},\n{\"check_name\":\"BRIDGE_REQUIREMENT_ALIGNMENT\",\"failures\":0},\n{\"check_name\":\"SCOPE_TOTAL\",\"failures\":0},\n{\"check_name\":\"SCOPE_INCLUDED\",\"failures\":0},\n{\"check_name\":\"SCOPE_SOURCE_LINKS\",\"failures\":0},\n{\"check_name\":\"SOURCE_REFERENCES\",\"failures\":0},\n{\"check_name\":\"SOURCE_CAPABILITY_MATCH\",\"failures\":0},\n{\"check_name\":\"FORBIDDEN_SUBSET\",\"failures\":0},\n{\"check_name\":\"B02_COVERAGE_UNCHANGED\",\"failures\":2},\n{\"check_name\":\"B02_REPRESENTABILITY_UNCHANGED\",\"failures\":0},\n{\"check_name\":\"B02_OBSERVED_UNCHANGED\",\"failures\":0},\n{\"check_name\":\"B02_AUTOMATABILITY_UNCHANGED\",\"failures\":0},\n{\"check_name\":\"AUDIT_UNCHANGED\",\"failures\":0},\n{\"check_name\":\"LEGACY_MAPPINGS\",\"failures\":0},\n{\"check_name\":\"LEGACY_SCOPES\",\"failures\":0},\n{\"check_name\":\"PHASES_1_2\",\"failures\":0}]\n",
+  "stderr": ""
+}

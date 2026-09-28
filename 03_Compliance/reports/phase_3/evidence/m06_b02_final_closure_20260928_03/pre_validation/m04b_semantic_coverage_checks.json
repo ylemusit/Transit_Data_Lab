@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"COVERAGE_REFERENCE\",\"n\":0},\n{\"check_name\":\"NON_PILOT_COVERAGE\",\"n\":0},\n{\"check_name\":\"COVERAGE_PILOT_COUNT\",\"n\":0},\n{\"check_name\":\"MAPPING_REVIEW_REFERENCE\",\"n\":0},\n{\"check_name\":\"MAPPING_REVIEW_COUNT\",\"n\":0},\n{\"check_name\":\"MISSING_M04_MAPPING_REVIEW\",\"n\":0},\n{\"check_name\":\"A04P01_MAPPING_REVIEW\",\"n\":0},\n{\"check_name\":\"A04P02_MAPPING_REVIEW\",\"n\":0},\n{\"check_name\":\"A08_MAPPING_REVIEW\",\"n\":0},\n{\"check_name\":\"INVALID_COVERAGE_VOCABULARY\",\"n\":0},\n{\"check_name\":\"INVALID_SEMANTIC_OUTCOME\",\"n\":0},\n{\"check_name\":\"MAPPING_WORKFLOW_SEPARATION\",\"n\":0},\n{\"check_name\":\"COVERAGE_REVIEWED_BASELINE\",\"n\":0},\n{\"check_name\":\"ZERO_MAPPING_PATH_FAILURE\",\"n\":0},\n{\"check_name\":\"A08_HYBRID_PATH_FAILURE\",\"n\":0},\n{\"check_name\":\"A04P02_UNRESOLVED_FAILURE\",\"n\":0},\n{\"check_name\":\"LEGAL_COMPLIANCE_FIELD\",\"n\":0},\n{\"check_name\":\"REPRESENTABILITY_ROWS\",\"n\":0},\n{\"check_name\":\"OBSERVED_EVIDENCE_ROWS\",\"n\":0},\n{\"check_name\":\"AUDIT_RULES\",\"n\":0}]\n",
+  "stderr": ""
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "contract_roundtrips": 5,
+  "negative_cases_rejected": 10,
+  "isolated_rows": 5,
+  "authoritative_rows_added": 0,
+  "schema_changes": 0,
+  "rollback": "PASS",
+  "initial_hash": "6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F",
+  "final_hash": "6C7A944FB9EB7983A912AF42C2F5C69C0F29D268F6139D3B5566BF7140788E0F",
+  "evaluator_hash": "8C3DCA456BE77D1A7DF9B54F9E46AC94FC7A33687A6944F5D5AB427A9A0510C2",
+  "test_hash": "723BB05F346B73F38703443E2070EFCD93603F8E373476D814F56C43C26106BE",
+  "limitation": "Storage contract only; no representability, SIRI fixture, parser, audit rule or operational end-to-end PASS."
+}

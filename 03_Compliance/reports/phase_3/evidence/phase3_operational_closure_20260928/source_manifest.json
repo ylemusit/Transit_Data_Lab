@@ -1,0 +1,29 @@
+[
+  {
+    "file": "epip_preview.pdf",
+    "url": "https://normy.normoff.gov.sk/norma/141185/nahlad/",
+    "resolved_url": "https://normy.normoff.gov.sk/norma/141185/nahlad/",
+    "retrieved_on": "2026-09-28",
+    "sha256": "752b2a15fd9c5bbefcbefa75f90eb077e24771dbea89fede23a4bd953990695f",
+    "bytes": 1245865,
+    "status": "CAPTURED"
+  },
+  {
+    "file": "siri_repository.html",
+    "url": "https://github.com/TransmodelEcosystem/SIRI",
+    "resolved_url": "https://github.com/TransmodelEcosystem/SIRI",
+    "retrieved_on": "2026-09-28",
+    "sha256": "a98d9a9e15b98beab3301fb1502e5b8bfa7e55283ba3e3b00bc98fd40d7a532c",
+    "bytes": 303010,
+    "status": "CAPTURED"
+  },
+  {
+    "file": "datex_road_closures.html",
+    "url": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-a-road-closures/",
+    "resolved_url": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-a-road-closures/",
+    "retrieved_on": "2026-09-28",
+    "sha256": "d5df198b4aacb4bc36a693e37c5e030a166dcf4ce77d89c9d602a6fbcdea3aee",
+    "bytes": 130331,
+    "status": "CAPTURED"
+  }
+]

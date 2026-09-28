@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"REQUIREMENTS\",\"invalid_count\":0},\n{\"check_name\":\"FAMILY_COUNT\",\"invalid_count\":0},\n{\"check_name\":\"CLASSIFIED_REQUIREMENTS\",\"invalid_count\":0},\n{\"check_name\":\"PRIMARY_ASSIGNMENTS\",\"invalid_count\":0},\n{\"check_name\":\"WITHOUT_PRIMARY\",\"invalid_count\":0},\n{\"check_name\":\"MULTIPLE_PRIMARY\",\"invalid_count\":0},\n{\"check_name\":\"UNKNOWN_REQUIREMENTS\",\"invalid_count\":0},\n{\"check_name\":\"DUPLICATES\",\"invalid_count\":0},\n{\"check_name\":\"SECONDARY_ASSIGNMENTS\",\"invalid_count\":0},\n{\"check_name\":\"MISSING_REASON\",\"invalid_count\":0},\n{\"check_name\":\"INVALID_CONFIDENCE\",\"invalid_count\":0},\n{\"check_name\":\"CONFIDENCE_COUNTS\",\"invalid_count\":0},\n{\"check_name\":\"FAMILY_COUNTS\",\"invalid_count\":0},\n{\"check_name\":\"INVALID_RELATION\",\"invalid_count\":0},\n{\"check_name\":\"INVALID_REVIEW\",\"invalid_count\":0},\n{\"check_name\":\"PILOTS\",\"invalid_count\":0},\n{\"check_name\":\"B01\",\"invalid_count\":0},\n{\"check_name\":\"FAMILY_REFERENCES\",\"invalid_count\":0},\n{\"check_name\":\"PILOT_MAPPINGS\",\"invalid_count\":0},\n{\"check_name\":\"NONPILOT_MAPPINGS\",\"invalid_count\":9},\n{\"check_name\":\"MAPPING_REVIEWS\",\"invalid_count\":0},\n{\"check_name\":\"COVERAGE_DECISIONS\",\"invalid_count\":0},\n{\"check_name\":\"ASSERTIONS\",\"invalid_count\":0},\n{\"check_name\":\"OBSERVED_EVIDENCE\",\"invalid_count\":0},\n{\"check_name\":\"AUDIT_RULES\",\"invalid_count\":0}]\n",
+  "stderr": ""
+}

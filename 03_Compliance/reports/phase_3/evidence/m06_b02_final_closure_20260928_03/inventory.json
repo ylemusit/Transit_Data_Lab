@@ -1,0 +1,1717 @@
+{
+  "phase3_requirement_concepts": [
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-ROAD-STATUS-DISRUPTION",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "ROAD_STATUS_DISRUPTION",
+      "concept_name": "Road status and disruption",
+      "concept_description": "Road disruption/status within relevant Annex 2.1 road branches, limited to the conditional scope of this requirement.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_HUMAN_REVIEW.md C04; M06_B02_POST_HUMAN_REVIEW.md; human decision ACCEPT_WITH_LIMITATIONS. Legal/source basis: Article 5(2), consolidated 2024-03-04. Future technical mapping basis is separate and excluded from this concept definition.",
+      "review_status": "APPROVED",
+      "review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "review_justification": "Human decision on C04 accepts a bounded road-status concept under the conditional requirement.",
+      "limitations": "Does not cover all Annex 2.1/2.2 categories; exact applicable category/profile and version remain open.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "M06-B02A authorized concept persistence; functional/legal concept only."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "concept_code": "ROAD_STATUS_DISRUPTION",
+      "concept_name": "Road status and disruption",
+      "concept_description": "Dynamic road-network status and disruption within the bounded road-status concept. It does not cover all dynamic road data or travel-time concepts.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": null,
+      "source_basis": "EU-2017-1926-SF-A05-P01-ROAD; M06_B02_HUMAN_REVIEW.md C01; M06_B02_POST_HUMAN_REVIEW.md; human decision ACCEPT_WITH_LIMITATIONS. Legal/source basis: Article 5(1)(a), consolidated 2024-03-04. Future technical mapping basis is separate and excluded from this concept definition.",
+      "review_status": "APPROVED",
+      "review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "review_justification": "Human decision on C01 accepts a bounded road-status concept; exact profile and legal successor linkage remain limitations.",
+      "limitations": "Exact applicable category/profile and version are not fixed. The 2015/962 source citation remains literal; current RTTI context is not a legal substitution.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "M06-B02A authorized concept persistence; functional/legal concept only."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-SHARED-VEHICLE-AVAILABILITY",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "SHARED_VEHICLE_AVAILABILITY",
+      "concept_name": "Shared-vehicle availability",
+      "concept_description": "Availability/location of shared vehicles, preserving distinctions among vehicle modes and categories.",
+      "scope_status": "UNRESOLVED",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_POST_HUMAN_REVIEW.md U02; human decision KEEP_UNRESOLVED. Legal/source basis: Article 5(2), consolidated 2024-03-04. No technical source is used as primary concept basis.",
+      "review_status": "REVIEWED",
+      "review_outcome": "UNRESOLVED",
+      "review_justification": "Human decision keeps the concept unresolved; no common profile/category crosswalk was established.",
+      "limitations": "Requires future mode/category decomposition; no capability or mapping is authorized.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "UNRESOLVED is a concept state, not evidence of missing data or audit result."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-PARKING-AVAILABILITY",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "PARKING_AVAILABILITY",
+      "concept_name": "Parking-space availability",
+      "concept_description": "Availability of parking spaces, without asserting a common treatment for on-street and off-street parking.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_POST_HUMAN_REVIEW.md U03; human decision PARTIAL. Legal/source basis: Article 5(2), consolidated 2024-03-04. No technical source is used as primary concept basis.",
+      "review_status": "REVIEWED",
+      "review_outcome": null,
+      "review_justification": "Human-reviewed state is PARTIAL; no ACCEPTED/REJECTED outcome was assigned.",
+      "limitations": "Exact profile/version/elements and on/off-street applicability remain unresolved; no capability or mapping is authorized.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "Concept state PARTIAL records incomplete scope research, not absence of data."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "PASSENGER_RT_STATUS_DISRUPTION",
+      "concept_name": "Passenger real-time service status and disruption",
+      "concept_description": "Real-time status of public passenger services, including delay, cancellation and disruption information within the human-reviewed concept scope.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_HUMAN_REVIEW.md C07; M06_B02_POST_HUMAN_REVIEW.md; human decision ACCEPT_WITH_LIMITATIONS. Legal/source basis: Article 5(2), consolidated 2024-03-04. Future technical mapping basis is separate and excluded from this concept definition.",
+      "review_status": "APPROVED",
+      "review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "review_justification": "Human decision on C07 accepts the bounded passenger real-time status concept.",
+      "limitations": "Does not establish every mode, Annex element, profile or all P02 scope.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "M06-B02A authorized concept persistence; profile versions are not part of concept identity."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-FACILITY-ACCESS-NODE-STATUS",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "FACILITY_ACCESS_NODE_STATUS",
+      "concept_name": "Facility and access-node status",
+      "concept_description": "Status of availability of access facilities at a transport node, such as lifts or escalators when the reviewed item applies.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_HUMAN_REVIEW.md C08; M06_B02_POST_HUMAN_REVIEW.md; human decision ACCEPT_WITH_LIMITATIONS. Legal/source basis: Article 5(2), consolidated 2024-03-04. Future technical mapping basis is separate and excluded from this concept definition.",
+      "review_status": "APPROVED",
+      "review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "review_justification": "Human decision on C08 accepts the bounded facility/access-node concept.",
+      "limitations": "The Annex-item to service-element crosswalk is incomplete; no complete facility coverage is implied.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "M06-B02A authorized concept persistence; profile-specific terminology is excluded from identity."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-PARKING-TARIFF",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "concept_code": "PARKING_TARIFF",
+      "concept_name": "Parking tariff information",
+      "concept_description": "Parking tariff information within the reviewed Annex 2.2(a) candidate scope.",
+      "scope_status": "PARTIAL",
+      "applicability_conditions": "Applies only where Article 5(2) makes the named profile applicable.",
+      "source_basis": "EU-2017-1926-SF-A05-P02; M06_B02_POST_HUMAN_REVIEW.md U01; human decision PARTIAL. Legal/source basis: Article 5(2), consolidated 2024-03-04. No technical source is used as primary concept basis.",
+      "review_status": "REVIEWED",
+      "review_outcome": null,
+      "review_justification": "Human-reviewed state is PARTIAL; no ACCEPTED/REJECTED outcome was assigned.",
+      "limitations": "Exact general-parking profile/version/elements and applicability chain are not established; no capability or mapping is authorized.",
+      "created_at": "2026-09-28 00:00:00",
+      "created_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "notes": "Concept state PARTIAL records incomplete scope research, not absence of data."
+    }
+  ],
+  "phase3_requirement_capabilities": [
+    {
+      "mapping_id": "M04-MAP-A04P01-GTFS-TRIP-STOP",
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-001",
+      "capability_id": "CAP-GTFS-SCHEDULE-TRIP-STOP-TIMES",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Candidate relation limited to scheduled public transport concepts; the pilot proposal also covers historical and observed data.",
+      "limitations": "Does not establish Annex point-1 coverage, historical/observed data representation, all modes, NAP access/publication, or legal compliance.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M04-MAP-A04P01-NETEX-PT",
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-001",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Candidate relation limited to the public transport network and scheduled timetable concepts described by existing public scope evidence.",
+      "limitations": "The available source is not the full normative profile; it does not establish complete Annex point-1 coverage, historical/observed data, NAP access/publication, or legal compliance.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-PUBLISHER",
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-01",
+      "capability_id": "CAP-GTFS-FEED-PUBLISHER-METADATA",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only a candidate metadata relationship for publisher identity/URL when the conditional reuse and request context applies.",
+      "limitations": "Publisher metadata does not necessarily identify the source of each reused datum and does not prove a request, response, or disclosure to the requester.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-ATTRIBUTION",
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-01",
+      "capability_id": "CAP-GTFS-DATASET-ATTRIBUTION",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Attribution records can provide technical source-related metadata at dataset, agency, route, or trip scope, subject to the conditional request context.",
+      "limitations": "Attribution may not identify the legally relevant source for each reused datum and does not prove request handling or disclosure to the requester.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M04-MAP-A04P02-NETEX-PT",
+      "requirement_id": "EU-2017-1926-REQ-A04-P02-001",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Candidate technical relation only for the existing NeTEx network/timetable scope; the applicable minimum profile and category scope remain unresolved.",
+      "limitations": "Does not establish complete representability, final mapping approval, the applicable Spanish NeTEx profile, DATEX II scope, or legal compliance.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B01-MAP-A03-P03-001-NAP-DISCOVERY",
+      "requirement_id": "EU-2017-1926-REQ-A03-P03-001",
+      "capability_id": "NAP_DATA_DISCOVERY",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Technical observation is limited to searching requested datasets using corresponding metadata and displaying or exposing that metadata.",
+      "limitations": "Does not establish the complete requirement, legal establishment or single-point designation of a NAP, required dataset presence, metadata completeness, machine-readable access, format conformance, data quality, or legal compliance. Contextual and external evidence remains necessary; no particular API or technology is implied.",
+      "review_status": "REVIEWED",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-ROAD-CLOSURE",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only road-closure events represented by RTTI 670/2022 RRP 4-SN-A.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-LANE-CLOSURE",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only lane-closure events represented by RTTI 670/2022 RRP 4-SN-B.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-ROADWORKS",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only roadworks represented by RTTI 670/2022 RRP 4-SN-C.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only temporary traffic management measures represented by RTTI 670/2022 RRP 4-SN-D.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-BRIDGE-CLOSURE",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only bridge-closure events represented by RTTI 670/2022 RRP 5-SN-A.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-ACCIDENT-INCIDENT",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only accident and incident events represented by RTTI 670/2022 RRP 5-SN-B.",
+      "limitations": "Not all SRTI; does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+      "capability_id": "CAP-DATEXII-RRP-POOR-ROAD-CONDITION",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only poor-road-condition events represented by RTTI 670/2022 RRP 5-SN-C.",
+      "limitations": "Does not establish the whole requirement, profile-specific model release, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "capability_id": "CAP-SIRI-EPIPRT-ET",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only ET delay and cancellation status cases within EPIP-RT §8.",
+      "limitations": "Exact Annex-to-element/constraint crosswalk remains partial; does not establish all point-2 data, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+      "capability_id": "CAP-SIRI-EPIPRT-SX",
+      "mapping_type": "PARTIAL",
+      "mapping_conditions": "Only passenger disruption notice and impact cases within EPIP-RT §7.",
+      "limitations": "Exact Annex-to-element/constraint crosswalk remains partial; does not establish all point-2 data, legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    }
+  ],
+  "phase3_mapping_reviews": [
+    {
+      "mapping_id": "M04-MAP-A04P01-GTFS-TRIP-STOP",
+      "semantic_review_outcome": "ACCEPTED",
+      "justification": "Valid semantic relationship for scheduled trip and stop time concepts.",
+      "limitations": "Does not establish all Annex point-1 coverage, historical/observed data, all modes, NAP access/publication, or legal compliance.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M04-MAP-A04P02-NETEX-PT",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Valid bounded NeTEx relationship for existing network and timetable concepts.",
+      "limitations": "Applicable minimum profile and category scope remain unresolved; no complete representability or legal compliance is asserted.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M04-MAP-A04P01-NETEX-PT",
+      "semantic_review_outcome": "ACCEPTED",
+      "justification": "Valid semantic relationship for the evidenced NeTEx public transport network and timetable scope.",
+      "limitations": "Available source is not the full normative profile; does not establish all Annex point-1 coverage, historical/observed data, NAP access/publication, or legal compliance.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-ATTRIBUTION",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Valid bounded technical relationship for GTFS attribution at dataset or related entity scope.",
+      "limitations": "Attribution may not identify the legally relevant source for each reused datum and does not establish request/response handling, disclosure, or legal compliance.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M04-MAP-A08P03-GTFS-PUBLISHER",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Valid bounded technical relationship for publisher identity/URL metadata where the conditional reuse context applies.",
+      "limitations": "Publisher metadata does not establish each datum source, request/response handling, disclosure, or legal compliance.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M06-B01-MAP-A03-P03-001-NAP-DISCOVERY",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "The approved functional mapping is metadata-based dataset discovery: users can search for requested datasets using corresponding metadata and the access point displays or exposes that metadata.",
+      "limitations": "Only discovery behavior is technically observable. Complete evaluation requires contextual and external evidence. This does not prove NAP establishment or designation, complete required datasets or metadata, machine-readable access, transport-format conformance, data quality, or legal compliance.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the road-closure category 4-SN-A.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the lane-closure category 4-SN-B.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the roadworks category 4-SN-C.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the temporary traffic management category 4-SN-D.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the bridge-closure category 5-SN-A.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the accidents/incidents category 5-SN-B.",
+      "limitations": "Limited to this category and not all SRTI; profile-specific model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C01 to the poor-road-conditions category 5-SN-C.",
+      "limitations": "Profile-specific DATEX model release unresolved; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C07 to EPIP-RT Estimated Timetable (ET), limited to journey delay and cancellation.",
+      "limitations": "EPIP-RT is CEN/TS 15531-7:2025 over SIRI 2.1; exact Annex-to-element/constraint crosswalk remains partial; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    },
+    {
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Human-approved partial relation of C07 to EPIP-RT Situation Exchange (SX), limited to passenger disruption notices.",
+      "limitations": "EPIP-RT is CEN/TS 15531-7:2025 over SIRI 2.1; exact Annex-to-element/constraint crosswalk remains partial; no complete requirement coverage, dataset representability, observed implementation, or legal-compliance conclusion.",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-28"
+    }
+  ],
+  "phase3_concept_mappings": [
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 4-SN-A road closures."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 4-SN-B lane closures."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 4-SN-C roadworks."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 4-SN-D temporary traffic management."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 5-SN-A bridge closures."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 5-SN-B accidents and incidents."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "relation_note": "C01 partial technical relation: RTTI 670/2022 RRP 5-SN-C poor road conditions."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+      "relation_note": "C07 partial technical relation: EPIP-RT ET journey delay/cancellation."
+    },
+    {
+      "concept_id": "M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "relation_note": "C07 partial technical relation: EPIP-RT SX passenger disruption notice."
+    }
+  ],
+  "phase3_mapping_scope_units": [
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-A",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-A",
+      "unit_code": "ROAD_CLOSURE",
+      "unit_name": "Road closures",
+      "unit_definition": "Road closure events scoped to RTTI 670/2022 RRP 4-SN-A.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "4-SN-A",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-B",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-B",
+      "unit_code": "LANE_CLOSURE",
+      "unit_name": "Lane closures",
+      "unit_definition": "Lane closure events scoped to RTTI 670/2022 RRP 4-SN-B.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "4-SN-B",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-C",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-C",
+      "unit_code": "ROADWORKS",
+      "unit_name": "Roadworks",
+      "unit_definition": "Roadworks events scoped to RTTI 670/2022 RRP 4-SN-C.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "4-SN-C",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-D",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-4-SN-D",
+      "unit_code": "TEMP_TRAFFIC_MGMT",
+      "unit_name": "Temporary traffic management",
+      "unit_definition": "Temporary traffic management measures scoped to RTTI 670/2022 RRP 4-SN-D.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "4-SN-D",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-A",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-A",
+      "unit_code": "BRIDGE_CLOSURE",
+      "unit_name": "Bridge closures",
+      "unit_definition": "Bridge closure events scoped to RTTI 670/2022 RRP 5-SN-A.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "5-SN-A",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-B",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-B",
+      "unit_code": "ACCIDENT_INCIDENT",
+      "unit_name": "Accidents and incidents",
+      "unit_definition": "Accident and incident events scoped to RTTI 670/2022 RRP 5-SN-B.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "5-SN-B",
+      "limitation": "Limited to accidents/incidents; not all SRTI. Profile-specific model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-C",
+      "concept_id": "M06-B02-CPT-A05-P01-002-ROAD-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+      "unit_code": "POOR_ROAD_CONDITION",
+      "unit_name": "Poor road conditions",
+      "unit_definition": "Poor road condition events scoped to RTTI 670/2022 RRP 5-SN-C.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "5-SN-C",
+      "limitation": "Profile-specific DATEX model release unresolved.",
+      "rationale": "Human-approved C01 subset; this is not a finding about an operator or dataset.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+      "concept_id": "M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-ET",
+      "unit_code": "JOURNEY_DELAY_CANCELLATION",
+      "unit_name": "Journey delay or cancellation",
+      "unit_definition": "Journey delay and cancellation status cases within EPIP-RT ET.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "EPIP-RT §8 ET",
+      "limitation": "Exact Annex-to-element/constraint crosswalk remains partial.",
+      "rationale": "Human-approved C07 subset; does not imply complete service or legal coverage.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C07-SX-PASSENGER-DISRUPTION-NOTICE",
+      "concept_id": "M06-B02-CPT-A05-P02-001-PASSENGER-RT-STATUS-DISRUPTION",
+      "mapping_id": "M06-B02-MAP-A05-P02-001-SIRI-SX",
+      "unit_code": "PASSENGER_DISRUPTION_NOTICE",
+      "unit_name": "Passenger disruption notice",
+      "unit_definition": "Passenger disruption notices within EPIP-RT SX.",
+      "scope_disposition": "INCLUDED",
+      "basis_section": "EPIP-RT §7 SX",
+      "limitation": "Exact Annex-to-element/constraint crosswalk remains partial.",
+      "rationale": "Human-approved C07 subset; does not imply complete service or legal coverage.",
+      "review_status": "APPROVED",
+      "reviewed_at": "2026-09-28",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "decision_document_id": "M06-B02D-S1",
+      "milestone_id": "M06-B02D-S1"
+    }
+  ],
+  "phase3_source_references": [
+    {
+      "source_reference_id": "M03-SRC-NETEX-CEN-SCOPE",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "NeTEx extension for New Modes — Detailed Scope",
+      "version": "2021 public scope document",
+      "section": "pp. 2–3: profiles and European Profile; pp. 4–5: public transport concepts",
+      "url_or_document_id": "https://www.netex-cen.eu/wp-content/uploads/2021/04/NeTEx-extension-for-New-Modes-Detailed-Scope.pdf",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Public scope document, not normative EPIP text.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-GTFS-FEED-INFO",
+      "capability_id": "CAP-GTFS-FEED-PUBLISHER-METADATA",
+      "source_kind": "OFFICIAL_SPECIFICATION",
+      "specification_name": "GTFS Schedule Reference",
+      "version": "Revision 2026-04-27",
+      "section": "feed_info.txt",
+      "url_or_document_id": "https://gtfs.org/documentation/schedule/reference/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Publisher metadata, not necessarily provenance of each data item.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-GTFS-TRIP-STOP",
+      "capability_id": "CAP-GTFS-SCHEDULE-TRIP-STOP-TIMES",
+      "source_kind": "OFFICIAL_SPECIFICATION",
+      "specification_name": "GTFS Schedule Reference",
+      "version": "Revision 2026-04-27",
+      "section": "Dataset Files; routes.txt; trips.txt; stops.txt; stop_times.txt",
+      "url_or_document_id": "https://gtfs.org/documentation/schedule/reference/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Official MobilityData/GTFS reference; static schedule field definitions. Does not establish legal coverage.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-GTFS-ATTRIBUTION",
+      "capability_id": "CAP-GTFS-DATASET-ATTRIBUTION",
+      "source_kind": "OFFICIAL_SPECIFICATION",
+      "specification_name": "GTFS Schedule Reference",
+      "version": "Revision 2026-04-27",
+      "section": "attributions.txt",
+      "url_or_document_id": "https://gtfs.org/documentation/schedule/reference/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Attribution scope can be dataset, agency, route, or trip; legal source disclosure not inferred.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-NETEX-EPIP-INDEX",
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "Standards for implementation — Transmodel",
+      "version": "CEN/TS 16614-4:2017",
+      "section": "NeTEx Profiles: Part 4 European Passenger Information Profile; implementation standards table",
+      "url_or_document_id": "https://transmodel-cen.eu/index.php/standards-for-implementation/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Official ecosystem index supports profile identity only, not full normative semantics or national applicability.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-DATEXII-TRAVELTIME",
+      "capability_id": "CAP-DATEXII-RRP-ROAD-TRAVEL",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "Road Link traveltime - DATEX II Docs",
+      "version": "Official MMTIS RRP documentation",
+      "section": "RRP scope for current road-link travel times; profile elements and scope",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/mmtis/ls2a-current-road-link-travel-times/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Road-specific technical profile; no legal Annex point-1 mapping inferred.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M03-SRC-DATEXII-MMTIS-RRP",
+      "capability_id": "CAP-DATEXII-RRP-ROAD-TRAVEL",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "Recommended Reference Profiles - MMTIS",
+      "version": "Official DATEX II RRP documentation; v3.3 context where linked",
+      "section": "MMTIS overview, profile role and data categories; official profile documentation linked from overview",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/mmtis/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Terminology preserved as Recommended Reference Profiles. Overview describes minimum data elements per datacategory; this is not legal designation as EU minimum profile and does not prove Article 4(2) point-1 applicability.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B01-SRC-REG-2017-1926",
+      "capability_id": "NAP_DATA_DISCOVERY",
+      "source_kind": "OFFICIAL_LEGAL_SOURCE",
+      "specification_name": "Regulation (EU) 2017/1926, consolidated text",
+      "version": "Consolidated version 2024-03-04",
+      "section": "Article 3(3)",
+      "url_or_document_id": "https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX:02017R1926-20240304",
+      "retrieved_on": null,
+      "reviewed_on": "2026-09-27",
+      "notes": "Supports the functional discovery concept for this capability; not observed implementation evidence and not a legal-compliance conclusion.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-A",
+      "capability_id": "CAP-DATEXII-RRP-ROAD-CLOSURE",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "4-SN-A Road closures",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-a-road-closures/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-B",
+      "capability_id": "CAP-DATEXII-RRP-LANE-CLOSURE",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "4-SN-B Lane closures",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-b-lane-closures/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-C",
+      "capability_id": "CAP-DATEXII-RRP-ROADWORKS",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "4-SN-C Roadworks",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-c-roadworks/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-D",
+      "capability_id": "CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "4-SN-D Temporary traffic management",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/4-sn-d-temporary-traffic-management-measures/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-A",
+      "capability_id": "CAP-DATEXII-RRP-BRIDGE-CLOSURE",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "5-SN-A Bridge closures",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-a-bridge-closures/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-B",
+      "capability_id": "CAP-DATEXII-RRP-ACCIDENT-INCIDENT",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "5-SN-B Accidents and incidents",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-b-accidents-and-incidents/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Limited to this profile category; not all SRTI. No model release, legal coverage, dataset representability or observed implementation is asserted.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-C",
+      "capability_id": "CAP-DATEXII-RRP-POOR-ROAD-CONDITION",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "RTTI 670/2022 Recommended Reference Profiles",
+      "version": "RTTI 670/2022; profile-specific model release unresolved",
+      "section": "5-SN-C Poor road conditions",
+      "url_or_document_id": "https://docs.datex2.eu/recommended-profiles/rrp/rtti/rtti-670/5-sn-c-poor-road-conditions/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Category/profile identity only; does not establish model release, legal coverage, dataset representability or observed implementation.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-SIRI-EPIPRT-ET",
+      "capability_id": "CAP-SIRI-EPIPRT-ET",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "EPIP-RT, CEN/TS 15531-7:2025",
+      "version": "CEN/TS 15531-7:2025; SIRI 2.1",
+      "section": "§8 Estimated Timetable (ET)",
+      "url_or_document_id": "https://normy.normoff.gov.sk/norma/141185/nahlad/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Preview-level service identity. Exact Annex-to-element/constraint crosswalk remains partial; deployment XSD not asserted.",
+      "fixture_kind": null
+    },
+    {
+      "source_reference_id": "M06-B02D-SRC-SIRI-EPIPRT-SX",
+      "capability_id": "CAP-SIRI-EPIPRT-SX",
+      "source_kind": "OFFICIAL_PROFILE",
+      "specification_name": "EPIP-RT, CEN/TS 15531-7:2025",
+      "version": "CEN/TS 15531-7:2025; SIRI 2.1",
+      "section": "§7 Situation Exchange (SX)",
+      "url_or_document_id": "https://normy.normoff.gov.sk/norma/141185/nahlad/",
+      "retrieved_on": "2026-09-27",
+      "reviewed_on": "2026-09-27",
+      "notes": "Preview-level service identity. Exact Annex-to-element/constraint crosswalk remains partial; deployment XSD not asserted.",
+      "fixture_kind": null
+    }
+  ],
+  "phase3_scope_source_references": [
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-A",
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-A",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-B",
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-B",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-C",
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-C",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-4-SN-D",
+      "source_reference_id": "M06-B02D-SRC-DATEX-4-SN-D",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-A",
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-A",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-B",
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-B",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C01-5-SN-C",
+      "source_reference_id": "M06-B02D-SRC-DATEX-5-SN-C",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C07-ET-JOURNEY-DELAY-CANCELLATION",
+      "source_reference_id": "M06-B02D-SRC-SIRI-EPIPRT-ET",
+      "evidence_role": "SUPPORT"
+    },
+    {
+      "scope_unit_id": "M06-B02-SCOPE-C07-SX-PASSENGER-DISRUPTION-NOTICE",
+      "source_reference_id": "M06-B02D-SRC-SIRI-EPIPRT-SX",
+      "evidence_role": "SUPPORT"
+    }
+  ],
+  "phase3_standards": [
+    {
+      "standard_id": "M03-NETEX-EPIP-2017",
+      "standard_name": "Network and Timetable Exchange (NeTEx)",
+      "standard_kind": "NETEX",
+      "version": "CEN/TS 16614-4:2017",
+      "profile": "European Passenger Information Profile (EPIP)",
+      "service_or_subprofile": "Passenger information",
+      "jurisdiction_context": "European; national minimum profile not established",
+      "valid_from": null,
+      "valid_to": null,
+      "source_metadata": "Profile identity listed by Transmodel/CEN ecosystem; public scope sources only; reviewed 2026-09-27",
+      "registry_status": "REVIEWED"
+    },
+    {
+      "standard_id": "M03-GTFS-SCHEDULE-2026-04",
+      "standard_name": "General Transit Feed Specification Schedule",
+      "standard_kind": "GTFS_SCHEDULE",
+      "version": "Reference revision 2026-04-27",
+      "profile": "GTFS Schedule Reference",
+      "service_or_subprofile": null,
+      "jurisdiction_context": "General",
+      "valid_from": null,
+      "valid_to": null,
+      "source_metadata": "Official live reference by MobilityData / GTFS project; reviewed 2026-09-27",
+      "registry_status": "REVIEWED"
+    },
+    {
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "standard_name": "DATEX II",
+      "standard_kind": "DATEX_II",
+      "version": "RRP documentation current in official v3.3 documentation",
+      "profile": "MMTIS Recommended Reference Profiles",
+      "service_or_subprofile": "Road traffic/travel data; MMTIS use cases",
+      "jurisdiction_context": "European; Spanish national profile not established",
+      "valid_from": null,
+      "valid_to": null,
+      "source_metadata": "DATEX II official documentation calls these Recommended Reference Profiles; not equated with a legally mandatory EU minimum profile; reviewed 2026-09-27",
+      "registry_status": "IDENTITY_ONLY"
+    },
+    {
+      "standard_id": "M06-B02D-SIRI-EPIPRT-2025",
+      "standard_name": "SIRI",
+      "standard_kind": "SIRI",
+      "version": "SIRI 2.1",
+      "profile": "EPIP-RT, CEN/TS 15531-7:2025",
+      "service_or_subprofile": "ET and SX; exact Annex crosswalk remains partial",
+      "jurisdiction_context": "European",
+      "valid_from": null,
+      "valid_to": null,
+      "source_metadata": "Profile identity recorded from public preview; no deployment XSD or full element crosswalk inferred.",
+      "registry_status": "IDENTITY_ONLY"
+    }
+  ],
+  "phase3_capabilities": [
+    {
+      "capability_id": "CAP-GTFS-DATASET-ATTRIBUTION",
+      "standard_id": "M03-GTFS-SCHEDULE-2026-04",
+      "domain": "dataset attribution",
+      "entity": "dataset, agency, route, trip",
+      "field_or_element": "attributions.txt",
+      "semantic_meaning": "GTFS Schedule provides attribution records applicable at dataset, agency, route, or trip scope.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "FIELD",
+      "limitations": "Attribution is not necessarily the legally relevant source for each reused datum and does not prove disclosure to a user.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-GTFS-SCHEDULE-TRIP-STOP-TIMES",
+      "standard_id": "M03-GTFS-SCHEDULE-2026-04",
+      "domain": "scheduled public transport",
+      "entity": "trip, stop, route",
+      "field_or_element": "routes.txt; trips.txt; stops.txt; stop_times.txt",
+      "semantic_meaning": "GTFS Schedule Reference defines routes, trips, stops, and arrival/departure times associated with trips.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "FIELD",
+      "limitations": "Does not establish legal coverage of Annex point 1, historical/observed data, all modes, NAP access, or compliance.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-NETEX-PT-NETWORK-TIMETABLE-EXCHANGE",
+      "standard_id": "M03-NETEX-EPIP-2017",
+      "domain": "public transport static data",
+      "entity": "network and timetable",
+      "field_or_element": "CEN/TS 16614 parts 1–4; EPIP profile identity",
+      "semantic_meaning": "Public CEN ecosystem material identifies NeTEx exchange for public transport network and scheduled timetable concepts, with EPIP as a named European profile.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Full normative profile detail unavailable in reviewed public sources; national minimum profile applicable under Regulation 2017/1926 Article 4(2) remains unknown.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-GTFS-FEED-PUBLISHER-METADATA",
+      "standard_id": "M03-GTFS-SCHEDULE-2026-04",
+      "domain": "dataset metadata",
+      "entity": "feed",
+      "field_or_element": "feed_info.txt: feed_publisher_name, feed_publisher_url, feed_version",
+      "semantic_meaning": "GTFS Schedule can express dataset publisher identity and URL and feed version metadata.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "FIELD",
+      "limitations": "Publisher is not necessarily the source of each underlying data item; does not prove an Article 8(3) request or response.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-ROAD-TRAVEL",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road traffic and travel data",
+      "entity": "road link travel times; MMTIS use cases",
+      "field_or_element": "MMTIS RRP documentation; specific profiles include current and future predicted road link travel times",
+      "semantic_meaning": "Official DATEX II documentation describes RRP as use-case subsets and identifies MMTIS profiles; this establishes technical profile families, not applicability to each Annex point-1 element.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "MMTIS page also lists categories from prior/other regulatory contexts; some are dynamic point-2 data or changed by Regulation 2024/490. No point-1 assignment or Spanish national profile is inferred.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "NAP_DATA_DISCOVERY",
+      "standard_id": null,
+      "domain": "digital access point",
+      "entity": "dataset",
+      "field_or_element": "corresponding metadata",
+      "semantic_meaning": "A functional capability of a digital access point that allows users to search for requested datasets using corresponding metadata and to display or expose that metadata.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": null,
+      "evidence_type": "Technical observation of metadata-based dataset discovery behavior",
+      "limitations": "Does not prove legal establishment of a NAP; designation as the single point of access; presence of all legally required datasets; metadata completeness; machine-readable access unless separately evidenced; transport-format conformance; data quality; or legal compliance. Means metadata-based data discovery, not geographic localization, GPS or vehicle positioning, stop coordinates, or geocoding. No particular REST API, search engine, or implementation technology is prescribed by this capability.",
+      "review_status": "REVIEWED",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-ROAD-CLOSURE",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "road",
+      "field_or_element": "4-SN-A Road closures",
+      "semantic_meaning": "Road-closure events within RTTI 670/2022 RRP 4-SN-A.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-LANE-CLOSURE",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "road lane",
+      "field_or_element": "4-SN-B Lane closures",
+      "semantic_meaning": "Lane-closure events within RTTI 670/2022 RRP 4-SN-B.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-ROADWORKS",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "roadworks",
+      "field_or_element": "4-SN-C Roadworks",
+      "semantic_meaning": "Roadworks events within RTTI 670/2022 RRP 4-SN-C.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-TEMP-TRAFFIC-MGMT",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "temporary traffic management",
+      "field_or_element": "4-SN-D Temporary traffic management",
+      "semantic_meaning": "Temporary traffic management measures within RTTI 670/2022 RRP 4-SN-D.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Limited to temporary traffic management; no inferred model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-BRIDGE-CLOSURE",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "bridge",
+      "field_or_element": "5-SN-A Bridge closures",
+      "semantic_meaning": "Bridge-closure events within RTTI 670/2022 RRP 5-SN-A.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-ACCIDENT-INCIDENT",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "accident or incident",
+      "field_or_element": "5-SN-B Accidents and incidents",
+      "semantic_meaning": "Accident and incident events within RTTI 670/2022 RRP 5-SN-B.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Limited to this category, not all SRTI; no inferred model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-DATEXII-RRP-POOR-ROAD-CONDITION",
+      "standard_id": "M03-DATEXII-MMTIS-RRP",
+      "domain": "road disruption",
+      "entity": "road condition",
+      "field_or_element": "5-SN-C Poor road conditions",
+      "semantic_meaning": "Poor road condition events within RTTI 670/2022 RRP 5-SN-C.",
+      "cardinality": null,
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "RTTI 670/2022; profile-specific model release unresolved",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Profile category identity only; no inferred DATEX model 3.7, complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-SIRI-EPIPRT-ET",
+      "standard_id": "M06-B02D-SIRI-EPIPRT-2025",
+      "domain": "passenger service disruption",
+      "entity": "journey and call",
+      "field_or_element": "EPIP-RT §8 Estimated Timetable (ET)",
+      "semantic_meaning": "Estimated timetable service includes bounded delay and cancellation status cases.",
+      "cardinality": "PARTIAL",
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "EPIP-RT CEN/TS 15531-7:2025; SIRI 2.1",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Exact Annex-to-element/constraint crosswalk remains partial; profile source is a preview; no complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    },
+    {
+      "capability_id": "CAP-SIRI-EPIPRT-SX",
+      "standard_id": "M06-B02D-SIRI-EPIPRT-2025",
+      "domain": "passenger service disruption",
+      "entity": "situation notice",
+      "field_or_element": "EPIP-RT §7 Situation Exchange (SX)",
+      "semantic_meaning": "Situation Exchange service includes bounded passenger disruption notices and impacts.",
+      "cardinality": "PARTIAL",
+      "required_or_optional": null,
+      "conditions": null,
+      "profile_dependency": "EPIP-RT CEN/TS 15531-7:2025; SIRI 2.1",
+      "evidence_type": "EXTERNAL_DOCUMENT",
+      "limitations": "Exact Annex-to-element/constraint crosswalk remains partial; profile source is a preview; no complete legal coverage, dataset representability, or observed implementation.",
+      "review_status": "NEEDS_REVIEW",
+      "fixture_kind": null
+    }
+  ],
+  "phase3_requirement_coverage": [
+    {
+      "coverage_id": "M04B-COV-A09-RANDOM-CHECKS",
+      "requirement_id": "EU-2017-1926-REQ-A09-P03-RANDOM_CHECKS",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed manual assessment path is identified without manufacturing a technical mapping.",
+      "limitations": "Operational records, sampled declarations and corroboration are needed; the pilot does not define method, frequency, sample size, or legal compliance outcome.",
+      "identified_paths": "EXCEPTION:M03-EXC-A09-RANDOM-CHECKS",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A04-P01",
+      "requirement_id": "EU-2017-1926-REQ-A04-P01-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Reviewed technical paths cover bounded scheduled network and timetable concepts.",
+      "limitations": "Does not establish full Annex coverage, historical/observed data, NAP publication/access, or legal compliance.",
+      "identified_paths": "MAPPING:M04-MAP-A04P01-GTFS-TRIP-STOP;MAPPING:M04-MAP-A04P01-NETEX-PT",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A08-P03",
+      "requirement_id": "EU-2017-1926-REQ-A08-P03-001-01",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "Hybrid technical and external evidence paths cover bounded publisher/attribution and request-context aspects.",
+      "limitations": "Publisher metadata and attribution do not establish all provenance, request/response, disclosure, or reuse facts; no legal compliance is asserted.",
+      "identified_paths": "MAPPING:M04-MAP-A08P03-GTFS-PUBLISHER;MAPPING:M04-MAP-A08P03-GTFS-ATTRIBUTION;EXCEPTION:M03-EXC-A08-SOURCE-REQUEST",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A05-P03",
+      "requirement_id": "EU-2017-1926-REQ-A05-P03-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed deadline/procedural path is identified without manufacturing a technical mapping.",
+      "limitations": "Calendar/feed date fields do not establish timely legal provision; dated NAP publication/access and applicable scope evidence remain necessary.",
+      "identified_paths": "EXCEPTION:M03-EXC-A05-DEADLINE",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M04B-COV-A04-P02",
+      "requirement_id": "EU-2017-1926-REQ-A04-P02-001",
+      "coverage_state": "UNRESOLVED",
+      "semantic_review_outcome": "UNRESOLVED",
+      "justification": "A bounded NeTEx relationship is identified, but applicable profile/category coverage cannot yet be resolved.",
+      "limitations": "Applicable minimum profile and category scope remain unresolved; do not infer complete coverage or legal compliance.",
+      "identified_paths": "MAPPING:M04-MAP-A04P02-NETEX-PT",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M04_LOCAL_PILOT_MAPPING_SET_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P03-001",
+      "requirement_id": "EU-2017-1926-REQ-A03-P03-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "A reviewed functional mapping for metadata-based dataset discovery coexists with the manual/external evaluation path.",
+      "limitations": "Technical observation covers only some discovery behavior. Contextual and external evidence remains necessary for complete evaluation; this is not a legal-compliance conclusion.",
+      "identified_paths": "MAPPING:M06-B01-MAP-A03-P03-001-NAP-DISCOVERY;EXCEPTION:M06-B01-EXC-A03-P03-001",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P01-002",
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-002",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "An organizational/institutional evaluation path concerning the access point role as the single point of access is identifiable; no justified reusable technical capability mapping exists.",
+      "limitations": "Assessment requires authoritative organizational/designation evidence. Dataset presence or technical accessibility alone does not prove single-access-point status. No legal-compliance conclusion is made.",
+      "identified_paths": "EXCEPTION:M06-B01-EXC-A03-P01-002",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    },
+    {
+      "coverage_id": "M06-B01-COV-A03-P01-001",
+      "requirement_id": "EU-2017-1926-REQ-A03-P01-001",
+      "coverage_state": "PARTIAL",
+      "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+      "justification": "An institutional/legal-process evaluation path is identifiable, but no justified reusable technical capability mapping exists.",
+      "limitations": "Assessment requires authoritative external evidence establishing the relevant National Access Point. Technical accessibility or dataset-format evidence alone does not prove this obligation. No legal-compliance conclusion is made.",
+      "identified_paths": "EXCEPTION:M06-B01-EXC-A03-P01-001",
+      "review_status": "REVIEWED",
+      "reviewed_by": "Yeison Arbey Carrillo Lemus",
+      "reviewed_at": "2026-09-27",
+      "reviewed_against_baseline": "M06_B01_HUMAN_SEMANTIC_REVIEW_2026-09-27"
+    }
+  ],
+  "constraints": [
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 171,
+      "constraint_type": "PRIMARY KEY",
+      "constraint_text": "PRIMARY KEY(coverage_id)",
+      "expression": null,
+      "constraint_column_indexes": [
+        0
+      ],
+      "constraint_column_names": [
+        "coverage_id"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_id_pkey",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 172,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        1
+      ],
+      "constraint_column_names": [
+        "requirement_id"
+      ],
+      "constraint_name": "phase3_requirement_coverage_requirement_id_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 173,
+      "constraint_type": "UNIQUE",
+      "constraint_text": "UNIQUE(requirement_id)",
+      "expression": null,
+      "constraint_column_indexes": [
+        1
+      ],
+      "constraint_column_names": [
+        "requirement_id"
+      ],
+      "constraint_name": "phase3_requirement_coverage_requirement_id_key",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 174,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        2
+      ],
+      "constraint_column_names": [
+        "coverage_state"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 175,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK((coverage_state IN ('ESTABLISHED', 'PARTIAL', 'UNRESOLVED', 'NOT_APPLICABLE', 'NONE_IDENTIFIED')))",
+      "expression": "(coverage_state IN ('ESTABLISHED', 'PARTIAL', 'UNRESOLVED', 'NOT_APPLICABLE', 'NONE_IDENTIFIED'))",
+      "constraint_column_indexes": [
+        2
+      ],
+      "constraint_column_names": [
+        "coverage_state"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 176,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        3
+      ],
+      "constraint_column_names": [
+        "semantic_review_outcome"
+      ],
+      "constraint_name": "phase3_requirement_coverage_semantic_review_outcome_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 177,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK((semantic_review_outcome IN ('ACCEPTED', 'ACCEPTED_WITH_LIMITATIONS', 'REJECTED', 'UNRESOLVED')))",
+      "expression": "(semantic_review_outcome IN ('ACCEPTED', 'ACCEPTED_WITH_LIMITATIONS', 'REJECTED', 'UNRESOLVED'))",
+      "constraint_column_indexes": [
+        3
+      ],
+      "constraint_column_names": [
+        "semantic_review_outcome"
+      ],
+      "constraint_name": "phase3_requirement_coverage_semantic_review_outcome_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 178,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        4
+      ],
+      "constraint_column_names": [
+        "justification"
+      ],
+      "constraint_name": "phase3_requirement_coverage_justification_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 179,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        6
+      ],
+      "constraint_column_names": [
+        "identified_paths"
+      ],
+      "constraint_name": "phase3_requirement_coverage_identified_paths_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 180,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        7
+      ],
+      "constraint_column_names": [
+        "review_status"
+      ],
+      "constraint_name": "phase3_requirement_coverage_review_status_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 181,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK((review_status IN ('REVIEWED', 'NEEDS_REVIEW')))",
+      "expression": "(review_status IN ('REVIEWED', 'NEEDS_REVIEW'))",
+      "constraint_column_indexes": [
+        7
+      ],
+      "constraint_column_names": [
+        "review_status"
+      ],
+      "constraint_name": "phase3_requirement_coverage_review_status_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 182,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        8
+      ],
+      "constraint_column_names": [
+        "reviewed_by"
+      ],
+      "constraint_name": "phase3_requirement_coverage_reviewed_by_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 183,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        9
+      ],
+      "constraint_column_names": [
+        "reviewed_at"
+      ],
+      "constraint_name": "phase3_requirement_coverage_reviewed_at_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 184,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        10
+      ],
+      "constraint_column_names": [
+        "reviewed_against_baseline"
+      ],
+      "constraint_name": "phase3_requirement_coverage_reviewed_against_baseline_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 185,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK(((coverage_state != 'PARTIAL') OR (length(main.\"trim\"(COALESCE(limitations, ''))) > 0)))",
+      "expression": "((coverage_state != 'PARTIAL') OR (length(main.\"trim\"(COALESCE(limitations, ''))) > 0))",
+      "constraint_column_indexes": [
+        2,
+        5
+      ],
+      "constraint_column_names": [
+        "coverage_state",
+        "limitations"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_limitations_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 186,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK(((coverage_state != 'UNRESOLVED') OR (semantic_review_outcome = 'UNRESOLVED')))",
+      "expression": "((coverage_state != 'UNRESOLVED') OR (semantic_review_outcome = 'UNRESOLVED'))",
+      "constraint_column_indexes": [
+        2,
+        3
+      ],
+      "constraint_column_names": [
+        "coverage_state",
+        "semantic_review_outcome"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_semantic_review_outcome_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 187,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK(((coverage_state != 'NOT_APPLICABLE') OR (semantic_review_outcome IN ('ACCEPTED', 'ACCEPTED_WITH_LIMITATIONS'))))",
+      "expression": "((coverage_state != 'NOT_APPLICABLE') OR (semantic_review_outcome IN ('ACCEPTED', 'ACCEPTED_WITH_LIMITATIONS')))",
+      "constraint_column_indexes": [
+        2,
+        3
+      ],
+      "constraint_column_names": [
+        "coverage_state",
+        "semantic_review_outcome"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_semantic_review_outcome_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 188,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK(((coverage_state != 'NONE_IDENTIFIED') OR (semantic_review_outcome IN ('ACCEPTED_WITH_LIMITATIONS', 'UNRESOLVED'))))",
+      "expression": "((coverage_state != 'NONE_IDENTIFIED') OR (semantic_review_outcome IN ('ACCEPTED_WITH_LIMITATIONS', 'UNRESOLVED')))",
+      "constraint_column_indexes": [
+        2,
+        3
+      ],
+      "constraint_column_names": [
+        "coverage_state",
+        "semantic_review_outcome"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_state_semantic_review_outcome_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 189,
+      "constraint_type": "CHECK",
+      "constraint_text": "CHECK(((semantic_review_outcome != 'ACCEPTED_WITH_LIMITATIONS') OR (length(main.\"trim\"(COALESCE(limitations, ''))) > 0)))",
+      "expression": "((semantic_review_outcome != 'ACCEPTED_WITH_LIMITATIONS') OR (length(main.\"trim\"(COALESCE(limitations, ''))) > 0))",
+      "constraint_column_indexes": [
+        3,
+        5
+      ],
+      "constraint_column_names": [
+        "semantic_review_outcome",
+        "limitations"
+      ],
+      "constraint_name": "phase3_requirement_coverage_semantic_review_outcome_limitations_check",
+      "referenced_table": null,
+      "referenced_column_names": []
+    },
+    {
+      "database_name": "transit_compliance",
+      "database_oid": 21197,
+      "schema_name": "mapping",
+      "schema_oid": 20769,
+      "table_name": "phase3_requirement_coverage",
+      "table_oid": 20801,
+      "constraint_index": 190,
+      "constraint_type": "NOT NULL",
+      "constraint_text": "NOT NULL",
+      "expression": null,
+      "constraint_column_indexes": [
+        0
+      ],
+      "constraint_column_names": [
+        "coverage_id"
+      ],
+      "constraint_name": "phase3_requirement_coverage_coverage_id_not_null",
+      "referenced_table": null,
+      "referenced_column_names": []
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_01\\G_duplicate.duckdb"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Invalid Input Error: EXPECTED_COUNT_expected_phase3_standards\n"
+}

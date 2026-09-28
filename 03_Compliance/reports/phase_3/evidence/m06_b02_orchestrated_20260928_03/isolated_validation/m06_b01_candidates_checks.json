@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"B01_EXCEPTION_SET\",\"failures\":0},\n{\"check_name\":\"B01_REQUIREMENT_SET\",\"failures\":0},\n{\"check_name\":\"F01_ASSIGNMENTS\",\"failures\":0},\n{\"check_name\":\"P01_001_NONTECHNICAL_ONLY\",\"failures\":0},\n{\"check_name\":\"P01_002_NONTECHNICAL_ONLY\",\"failures\":0},\n{\"check_name\":\"P03_MAPPING_AND_REVIEW\",\"failures\":0},\n{\"check_name\":\"NAP_CAPABILITY_AND_STANDARD_BOUNDARY\",\"failures\":0},\n{\"check_name\":\"OFFICIAL_LEGAL_SOURCE\",\"failures\":0},\n{\"check_name\":\"P03_MANUAL_PATH_PRESERVED\",\"failures\":0},\n{\"check_name\":\"B01_AUTOMATABILITY\",\"failures\":0},\n{\"check_name\":\"B01_COVERAGE\",\"failures\":0},\n{\"check_name\":\"NO_REPRESENTABILITY_OR_OBSERVED_EVIDENCE_OR_RULES\",\"failures\":0},\n{\"check_name\":\"TOTALS\",\"failures\":1},\n{\"check_name\":\"FAMILIES_UNCHANGED\",\"failures\":0},\n{\"check_name\":\"PILOT_MAPPING_COUNT_UNCHANGED\",\"failures\":0}]\n",
+  "stderr": ""
+}

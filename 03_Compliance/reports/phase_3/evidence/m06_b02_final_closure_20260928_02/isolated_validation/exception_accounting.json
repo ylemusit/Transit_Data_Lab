@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_02\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"global_exception_accounting\":\"PASS\",\"m04_expected_exceptions\":3,\"b01_expected_exceptions\":3,\"unaccounted_substantive_exceptions\":0,\"missing_or_incompatible_recognized_exceptions\":0}]\n",
+  "stderr": ""
+}

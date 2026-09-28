@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_03\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"SCHEMA_TABLES\",\"failures\":0},\n{\"check_name\":\"SCHEMA_CONSTRAINTS\",\"failures\":0},\n{\"check_name\":\"CONCEPT_SET\",\"failures\":0},\n{\"check_name\":\"P01_P02_SPLIT\",\"failures\":0},\n{\"check_name\":\"REQUIREMENT_REFERENCES\",\"failures\":0},\n{\"check_name\":\"VALID_VOCABULARY\",\"failures\":0},\n{\"check_name\":\"FORBIDDEN_TRAVEL_TIME_CONCEPTS\",\"failures\":0},\n{\"check_name\":\"B02_MAPPINGS\",\"failures\":9},\n{\"check_name\":\"B02_BRIDGES\",\"failures\":9},\n{\"check_name\":\"B02_COVERAGE\",\"failures\":2},\n{\"check_name\":\"B02_OTHER_LAYERS\",\"failures\":0},\n{\"check_name\":\"LEGACY_MAPPINGS\",\"failures\":18},\n{\"check_name\":\"PROTECTED_PHASES\",\"failures\":0}]\n",
+  "stderr": ""
+}

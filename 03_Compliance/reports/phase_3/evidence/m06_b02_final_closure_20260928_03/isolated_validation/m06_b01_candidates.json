@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\reports\\phase_3\\evidence\\m06_b02_final_closure_20260928_03\\fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"b01_structural_validation\":\"FAIL\",\"structural_failures\":\"1\",\"checks\":\"B01_AUTOMATABILITY=0; B01_COVERAGE=0; B01_EXCEPTION_SET=0; B01_REQUIREMENT_SET=0; F01_ASSIGNMENTS=0; FAMILIES_UNCHANGED=0; NAP_CAPABILITY_AND_STANDARD_BOUNDARY=0; NO_REPRESENTABILITY_OR_OBSERVED_EVIDENCE_OR_RULES=0; OFFICIAL_LEGAL_SOURCE=0; P01_001_NONTECHNICAL_ONLY=0; P01_002_NONTECHNICAL_ONLY=0; P03_MANUAL_PATH_PRESERVED=0; P03_MAPPING_AND_REVIEW=0; PILOT_MAPPING_COUNT_UNCHANGED=0; TOTALS=1\"}]\n",
+  "stderr": ""
+}

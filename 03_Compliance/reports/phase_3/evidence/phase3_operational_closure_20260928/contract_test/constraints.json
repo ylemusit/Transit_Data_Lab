@@ -1,0 +1,199 @@
+[
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 125,
+    "constraint_type": "PRIMARY KEY",
+    "constraint_text": "PRIMARY KEY(evidence_id)",
+    "expression": null,
+    "constraint_column_indexes": [
+      0
+    ],
+    "constraint_column_names": [
+      "evidence_id"
+    ],
+    "constraint_name": "phase3_observed_evidence_evidence_id_pkey",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 126,
+    "constraint_type": "FOREIGN KEY",
+    "constraint_text": "FOREIGN KEY (capability_id) REFERENCES mapping.phase3_capabilities(capability_id)",
+    "expression": null,
+    "constraint_column_indexes": [
+      1
+    ],
+    "constraint_column_names": [
+      "capability_id"
+    ],
+    "constraint_name": "phase3_observed_evidence_capability_id_capability_id_fkey",
+    "referenced_table": "phase3_capabilities",
+    "referenced_column_names": [
+      "capability_id"
+    ]
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 127,
+    "constraint_type": "FOREIGN KEY",
+    "constraint_text": "FOREIGN KEY (mapping_id) REFERENCES mapping.phase3_requirement_capabilities(mapping_id)",
+    "expression": null,
+    "constraint_column_indexes": [
+      2
+    ],
+    "constraint_column_names": [
+      "mapping_id"
+    ],
+    "constraint_name": "phase3_observed_evidence_mapping_id_mapping_id_fkey",
+    "referenced_table": "phase3_requirement_capabilities",
+    "referenced_column_names": [
+      "mapping_id"
+    ]
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 128,
+    "constraint_type": "NOT NULL",
+    "constraint_text": "NOT NULL",
+    "expression": null,
+    "constraint_column_indexes": [
+      3
+    ],
+    "constraint_column_names": [
+      "evidence_type"
+    ],
+    "constraint_name": "phase3_observed_evidence_evidence_type_not_null",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 129,
+    "constraint_type": "CHECK",
+    "constraint_text": "CHECK((evidence_type IN ('DATASET', 'FILE', 'ENTITY', 'FIELD', 'API_SERVICE', 'METADATA_DOCUMENT', 'EXTERNAL_DOCUMENT')))",
+    "expression": "(evidence_type IN ('DATASET', 'FILE', 'ENTITY', 'FIELD', 'API_SERVICE', 'METADATA_DOCUMENT', 'EXTERNAL_DOCUMENT'))",
+    "constraint_column_indexes": [
+      3
+    ],
+    "constraint_column_names": [
+      "evidence_type"
+    ],
+    "constraint_name": "phase3_observed_evidence_evidence_type_check",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 130,
+    "constraint_type": "NOT NULL",
+    "constraint_text": "NOT NULL",
+    "expression": null,
+    "constraint_column_indexes": [
+      4
+    ],
+    "constraint_column_names": [
+      "locator"
+    ],
+    "constraint_name": "phase3_observed_evidence_locator_not_null",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 131,
+    "constraint_type": "CHECK",
+    "constraint_text": "CHECK(((fixture_kind IS NULL) OR (fixture_kind = 'SYNTHETIC_TEST')))",
+    "expression": "((fixture_kind IS NULL) OR (fixture_kind = 'SYNTHETIC_TEST'))",
+    "constraint_column_indexes": [
+      8,
+      8
+    ],
+    "constraint_column_names": [
+      "fixture_kind",
+      "fixture_kind"
+    ],
+    "constraint_name": "phase3_observed_evidence_fixture_kind_fixture_kind_check",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 132,
+    "constraint_type": "CHECK",
+    "constraint_text": "CHECK(((capability_id IS NOT NULL) OR (mapping_id IS NOT NULL)))",
+    "expression": "((capability_id IS NOT NULL) OR (mapping_id IS NOT NULL))",
+    "constraint_column_indexes": [
+      1,
+      2
+    ],
+    "constraint_column_names": [
+      "capability_id",
+      "mapping_id"
+    ],
+    "constraint_name": "phase3_observed_evidence_capability_id_mapping_id_check",
+    "referenced_table": null,
+    "referenced_column_names": []
+  },
+  {
+    "database_name": "transit_compliance",
+    "database_oid": 21197,
+    "schema_name": "mapping",
+    "schema_oid": 20769,
+    "table_name": "phase3_observed_evidence",
+    "table_oid": 21019,
+    "constraint_index": 133,
+    "constraint_type": "NOT NULL",
+    "constraint_text": "NOT NULL",
+    "expression": null,
+    "constraint_column_indexes": [
+      0
+    ],
+    "constraint_column_names": [
+      "evidence_id"
+    ],
+    "constraint_name": "phase3_observed_evidence_evidence_id_not_null",
+    "referenced_table": null,
+    "referenced_column_names": []
+  }
+]

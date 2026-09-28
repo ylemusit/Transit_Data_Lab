@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\03_Compliance\\databases\\transit_compliance.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"check_name\":\"SCOPE_TABLES\",\"failures\":0},\n{\"check_name\":\"SCOPE_IDENTITY_AND_COLUMNS\",\"failures\":0},\n{\"check_name\":\"SCOPE_PRIMARY_KEY\",\"failures\":0},\n{\"check_name\":\"SCOPE_UNIQUENESS\",\"failures\":0},\n{\"check_name\":\"SCOPE_BRIDGE_FOREIGN_KEY\",\"failures\":0},\n{\"check_name\":\"SOURCE_BRIDGE_CONSTRAINTS\",\"failures\":0},\n{\"check_name\":\"SCOPE_DISPOSITION_VOCABULARY\",\"failures\":0},\n{\"check_name\":\"EMPTY_SCOPE_STATE\",\"failures\":18},\n{\"check_name\":\"GLOBAL_MAPPINGS\",\"failures\":9},\n{\"check_name\":\"LEGACY_MAPPING_IDS\",\"failures\":0},\n{\"check_name\":\"LEGACY_SCOPE_ASSIGNMENTS\",\"failures\":9},\n{\"check_name\":\"B02_CONCEPTS\",\"failures\":0},\n{\"check_name\":\"B02_MAPPINGS\",\"failures\":9},\n{\"check_name\":\"B02_BRIDGES\",\"failures\":9},\n{\"check_name\":\"B02_SCOPE_ROWS\",\"failures\":9},\n{\"check_name\":\"B02_SOURCE_BRIDGES\",\"failures\":9},\n{\"check_name\":\"B02_COVERAGE\",\"failures\":2},\n{\"check_name\":\"B02_REPRESENTABILITY\",\"failures\":0},\n{\"check_name\":\"B02_AUTOMATABILITY\",\"failures\":0},\n{\"check_name\":\"B02_OBSERVED_EVIDENCE\",\"failures\":0},\n{\"check_name\":\"AUDIT_RULES\",\"failures\":0},\n{\"check_name\":\"PROTECTED_PHASES\",\"failures\":0},\n{\"check_name\":\"COVERAGE_GLOBAL\",\"failures\":2},\n{\"check_name\":\"REPRESENTABILITY_GLOBAL\",\"failures\":0},\n{\"check_name\":\"OBSERVED_GLOBAL\",\"failures\":0},\n{\"check_name\":\"AUTOMATABILITY_GLOBAL\",\"failures\":0}]\n",
+  "stderr": ""
+}

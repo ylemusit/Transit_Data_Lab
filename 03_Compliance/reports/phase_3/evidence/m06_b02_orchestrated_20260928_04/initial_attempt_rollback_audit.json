@@ -1,0 +1,26 @@
+{
+  "01_A_fresh": {
+    "baseline_equal": true,
+    "changed_tables": []
+  },
+  "01_C_partial": {
+    "baseline_equal": false,
+    "changed_tables": [
+      "mapping.phase3_capabilities",
+      "mapping.phase3_source_references",
+      "mapping.phase3_standards"
+    ]
+  },
+  "02_A_fresh": {
+    "baseline_equal": true,
+    "changed_tables": []
+  },
+  "02_C_partial": {
+    "baseline_equal": false,
+    "changed_tables": [
+      "mapping.phase3_capabilities",
+      "mapping.phase3_source_references",
+      "mapping.phase3_standards"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "coverage_id": "M06-B02-COV-A05-P01-002",
+    "requirement_id": "EU-2017-1926-REQ-A05-P01-002",
+    "coverage_state": "PARTIAL",
+    "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+    "justification": "Evaluated B02 scope: ROAD_STATUS_DISRUPTION only. Persisted C01 category-specific partial mappings support a bounded part of the road dynamic-data requirement. PARTIAL is a semantic review, not a ratio of mappings. DATEX II RTTI RRP 2022/670 evidence; individual releases remain unresolved.",
+    "limitations": "Not exhaustive; not observed implementation; not legal compliance conclusion. 5-SN-D deferred: profile/identity ambiguity. Frozen 2015/962 literal reference preserved; 2022/670 succession context is not a legal substitution. Other dynamic road-data scope and exact releases not established.",
+    "identified_paths": "MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-A;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-B;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-C;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-4-SN-D;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-A;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-B;MAPPING:M06-B02-MAP-A05-P01-002-DATEX-5-SN-C",
+    "review_status": "REVIEWED",
+    "reviewed_by": "Yeison Arbey Carrillo Lemus",
+    "reviewed_at": "2026-09-28",
+    "reviewed_against_baseline": "M06_B02_FINAL_CLOSURE_2026-09-28; S1+B02A; PRE_DB_SHA256=657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791"
+  },
+  {
+    "coverage_id": "M06-B02-COV-A05-P02-001",
+    "requirement_id": "EU-2017-1926-REQ-A05-P02-001",
+    "coverage_state": "PARTIAL",
+    "semantic_review_outcome": "ACCEPTED_WITH_LIMITATIONS",
+    "justification": "Evaluated B02 scope: conditional Annex 2.1/2.2 concepts, with support limited to PASSENGER_RT_STATUS_DISRUPTION through C07 ET/SX. SIRI 2.1 / EPIP-RT CEN/TS 15531-7:2025. The accepted partial mappings support PARTIAL semantic coverage without establishing all concepts; no count-based percentage.",
+    "limitations": "Not exhaustive; not observed implementation; not legal compliance conclusion. Gaps: C04 Article 5(2) road applicability; C08 normative FM/facility element path; CM guaranteed-connections bridge; U01 PARKING_TARIFF minimum general profile/version/elements and applicability; U02 SHARED_VEHICLE_AVAILABILITY modal profile/element evidence; U03 PARKING_AVAILABILITY on/off-street minimum profile and crosswalk. All deferred for closure; exact profile constraints and representability not established.",
+    "identified_paths": "MAPPING:M06-B02-MAP-A05-P02-001-SIRI-ET;MAPPING:M06-B02-MAP-A05-P02-001-SIRI-SX",
+    "review_status": "REVIEWED",
+    "reviewed_by": "Yeison Arbey Carrillo Lemus",
+    "reviewed_at": "2026-09-28",
+    "reviewed_against_baseline": "M06_B02_FINAL_CLOSURE_2026-09-28; S1+B02A; PRE_DB_SHA256=657A48BF6472F958980646193F8CBAA81C01F316D2385D0F4E81F7EF13BAA791"
+  }
+]

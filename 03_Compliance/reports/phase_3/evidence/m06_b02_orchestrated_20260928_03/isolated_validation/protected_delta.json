@@ -1,0 +1,13 @@
+{
+  "command": [
+    "duckdb",
+    "-batch",
+    "-bail",
+    "-json",
+    "-readonly",
+    "03_Compliance\\reports\\phase_3\\evidence\\m06_b02_orchestrated_20260928_03\\A_fresh.duckdb"
+  ],
+  "exit_code": 0,
+  "stdout": "[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n[{\"exact_delta\":\"PASS\"}]\n",
+  "stderr": ""
+}
