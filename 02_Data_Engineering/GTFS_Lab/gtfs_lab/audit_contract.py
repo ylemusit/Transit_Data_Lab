@@ -6,7 +6,7 @@ from hashlib import sha256
 from typing import Any
 import json
 
-MANIFEST_VERSION = "1.1.0"
+MANIFEST_VERSION = "1.1.1"
 RULE_RESULT_STATUSES = {"PASS", "FAIL_TECHNICAL", "WARNING", "NOT_EVALUABLE", "INSPECTION_ERROR"}
 FINDING_LIFECYCLE_STATES = {
     "DETECTED",
@@ -180,6 +180,26 @@ def validate_finding_transition(previous_state: str, next_state: str) -> None:
         raise AuditContractError(f"invalid finding lifecycle transition: {previous_state} -> {next_state}")
 
 
+def _validate_review_evidence(finding: dict[str, Any]) -> None:
+    state = finding["lifecycle_state"]
+    if state not in REVIEW_REQUIRED_STATES:
+        return
+    if finding.get("review_required") is not True:
+        raise AuditContractError(f"{state} requires human review")
+    reviewed_by = finding.get("reviewed_by")
+    if not isinstance(reviewed_by, str) or not reviewed_by.strip():
+        raise AuditContractError(f"{state} requires reviewed_by")
+    review_evidence = finding.get("review_evidence")
+    if not isinstance(review_evidence, dict):
+        raise AuditContractError(f"{state} requires review_evidence")
+    reviewed_at = review_evidence.get("reviewed_at_utc")
+    basis = review_evidence.get("basis")
+    if not isinstance(reviewed_at, str) or not reviewed_at.strip():
+        raise AuditContractError(f"{state} requires review_evidence.reviewed_at_utc")
+    if not isinstance(basis, str) or not basis.strip():
+        raise AuditContractError(f"{state} requires review_evidence.basis")
+
+
 def normalize_finding(finding: dict[str, Any]) -> dict[str, Any]:
     normalized = dict(finding)
     normalized.setdefault("finding_id", stable_finding_id(finding))
@@ -191,10 +211,7 @@ def normalize_finding(finding: dict[str, Any]) -> dict[str, Any]:
         raise AuditContractError(f"invalid lifecycle_state: {normalized['lifecycle_state']}")
     required_review = normalized["lifecycle_state"] in REVIEW_REQUIRED_STATES
     normalized.setdefault("review_required", required_review)
-    if required_review and normalized["review_required"] is not True:
-        raise AuditContractError(f"{normalized['lifecycle_state']} requires human review")
-    if normalized["lifecycle_state"] == "REPORTED" and normalized.get("reviewed_by") in (None, ""):
-        raise AuditContractError("REPORTED findings require reviewed_by")
+    _validate_review_evidence(normalized)
     return normalized
 
 
