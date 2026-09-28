@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from hashlib import sha256
 from typing import Any
 import json
 
-MANIFEST_VERSION = "1.1.1"
+MANIFEST_VERSION = "1.1.2"
 RULE_RESULT_STATUSES = {"PASS", "FAIL_TECHNICAL", "WARNING", "NOT_EVALUABLE", "INSPECTION_ERROR"}
 FINDING_LIFECYCLE_STATES = {
     "DETECTED",
@@ -74,6 +74,21 @@ def _valid_sha256(value: str | None) -> bool:
     except ValueError:
         return False
     return True
+
+
+def _valid_utc_timestamp(value: str | None) -> bool:
+    if not isinstance(value, str) or not value.strip():
+        return False
+    candidate = value.strip()
+    if candidate.endswith("Z"):
+        candidate = candidate[:-1] + "+00:00"
+    try:
+        parsed = datetime.fromisoformat(candidate)
+    except ValueError:
+        return False
+    if parsed.tzinfo is None:
+        return False
+    return parsed.utcoffset() == timedelta(0)
 
 
 def build_audit_manifest(
@@ -194,8 +209,8 @@ def _validate_review_evidence(finding: dict[str, Any]) -> None:
         raise AuditContractError(f"{state} requires review_evidence")
     reviewed_at = review_evidence.get("reviewed_at_utc")
     basis = review_evidence.get("basis")
-    if not isinstance(reviewed_at, str) or not reviewed_at.strip():
-        raise AuditContractError(f"{state} requires review_evidence.reviewed_at_utc")
+    if not _valid_utc_timestamp(reviewed_at):
+        raise AuditContractError(f"{state} requires review_evidence.reviewed_at_utc as a valid UTC ISO-8601 timestamp")
     if not isinstance(basis, str) or not basis.strip():
         raise AuditContractError(f"{state} requires review_evidence.basis")
 
