@@ -4,14 +4,13 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 
 ## Estado implementado
 
-- Snapshot Asturias: `feeds/raw/20260924_020003_Consorcio_Asturias.zip` y extracción con siete tablas GTFS; usa calendar_dates y no calendar.
-- Base local: `databases/gtfs_lab.duckdb`; esquema raw con columnas VARCHAR. Conteos y hash en [PROJECT_STATUS.md](../../PROJECT_STATUS.md) y en la instantánea congelada raíz.
-- SQL de importación en `sql/01_import`; runner PowerShell que fija el directorio del laboratorio.
-- Sentinel de integridad en `sql/07_tests/test_gtfs_lab_integrity.sql`. Las capas ausentes producen advertencias/fallos explícitos; no es un validador GTFS completo.
-- Tres KML en exports para route_id 440; no existe un pipeline GIS reproducible acreditado.
-- Evidencia piloto de 20 operadores en [20_clientes_reales](20_clientes_reales/CURRENT_DOCUMENTATION.md). Son datasets de investigación, no clientes comerciales.
+- GTFS_Lab V1 tiene pipeline local reproducible de ZIP a informe; gate sintético PASS y reglas GTFS_Lab PASS en Asturias con cero hallazgos. La regla Compliance V1 reporta `INSPECTION_ERROR` para el feed completo por su límite fijo de 10.000 filas.
+- El dry run crea DuckDB aislado por ejecución y no modifica `databases/gtfs_lab.duckdb`, el ZIP original ni Compliance.
+- Core, integridad, reglas iniciales, análisis con calendario, consultas SQL y exportaciones KML/GeoJSON están en el pack V1. Ver [estado V1](GTFS_LAB_V1_CURRENT_STATE.md) y [informe de estabilización](reports/GTFS_LAB_V1_STABILIZATION_REPORT.md).
+- El import SQL/runner anterior y los tres KML históricos se conservan; el nuevo flujo no depende de ellos.
+- Evidencia piloto de 20 operadores en [20_clientes_reales](20_clientes_reales/CURRENT_DOCUMENTATION.md). Son datasets de investigación, no clientes comerciales, y quedan fuera del run V1.
 
-Core, validation y analysis siguen pendientes. GTFS-RT, NeTEx y SIRI son laboratorios futuros separados. No se infiere soporte de estándares o auditoría jurídica a partir de los nombres de carpetas.
+GTFS-RT y SIRI quedan fuera de GTFS_Lab V1; NeTEx pertenece al laboratorio Compliance separado. El resultado técnico V1 no acredita cumplimiento jurídico ni auditoría de operadores.
 
 ## Inspección segura
 

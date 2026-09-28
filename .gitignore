@@ -12,6 +12,7 @@
 # Downloaded GTFS feeds and extracted raw snapshots are retained locally.
 /02_Data_Engineering/GTFS_Lab/feeds/raw/
 /02_Data_Engineering/GTFS_Lab/feeds/extracted/
+/02_Data_Engineering/GTFS_Lab/runs/
 
 # Local environments, caches, logs, temporary files and credentials.
 **/.venv/

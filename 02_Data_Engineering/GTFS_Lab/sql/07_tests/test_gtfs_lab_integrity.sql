@@ -34,23 +34,14 @@ FROM expected e
 LEFT JOIN actual a USING (table_name)
 ORDER BY e.table_name;
 
--- 2. Expected architecture. Only raw currently exists; absent later layers are
--- reported, never created by this test.
-WITH expected(schema_name) AS (
-    VALUES ('raw'), ('core'), ('validation'), ('analysis')
-)
+-- 2. Protected database architecture. V1 core/validation/analysis are Python
+-- modules in each run; they are intentionally not schemas in this frozen store.
 SELECT
     'SCHEMA' check_family,
-    e.schema_name check_name,
+    'raw' check_name,
     'present' expected,
-    CASE WHEN s.schema_name IS NULL THEN 'absent' ELSE 'present' END actual,
-    CASE WHEN s.schema_name IS NULL THEN 'FAIL' ELSE 'PASS' END status
-FROM expected e
-LEFT JOIN (
-    SELECT DISTINCT schema_name
-    FROM information_schema.schemata
-) s USING (schema_name)
-ORDER BY e.schema_name;
+    CASE WHEN EXISTS (SELECT 1 FROM information_schema.schemata WHERE schema_name = 'raw') THEN 'present' ELSE 'absent' END actual,
+    CASE WHEN EXISTS (SELECT 1 FROM information_schema.schemata WHERE schema_name = 'raw') THEN 'PASS' ELSE 'FAIL' END status;
 
 WITH expected(table_schema, table_name) AS (
     VALUES
@@ -60,8 +51,7 @@ WITH expected(table_schema, table_name) AS (
         ('raw', 'shapes'),
         ('raw', 'stop_times'),
         ('raw', 'stops'),
-        ('raw', 'trips'),
-        ('validation', 'results')
+        ('raw', 'trips')
 )
 SELECT
     'RELATION' check_family,
