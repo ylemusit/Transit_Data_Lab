@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import json
+import os
+import tempfile
 from typing import Any
 
 from .audit_contract import (
@@ -74,7 +77,13 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
         "conflicting_duplicates": conflicts,
     }
     normalized_payload = {
-        "status": "ACCEPTED" if conflicts == 0 else "REJECTED_CONFLICTING_DUPLICATES",
+        "status": (
+            "ACCEPTED"
+            if integrity_verified and conflicts == 0
+            else "REJECTED_CONFLICTING_DUPLICATES"
+            if conflicts
+            else "REJECTED_INPUT_INTEGRITY"
+        ),
         "audit_id": f"TDL-{ctx.run_id}",
         "run_id": ctx.run_id,
         "dataset_id": ctx.dataset.dataset_id,
@@ -99,6 +108,13 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
     database_path = ctx.work_dir / "dataset.duckdb"
     if database_path.is_file():
         artifacts["database"] = "../dataset.duckdb"
+    missing_artifacts = [
+        reference
+        for reference in artifacts.values()
+        if not (audit_dir / reference).resolve().is_file()
+    ]
+    if missing_artifacts:
+        raise RuntimeError(f"audit artifacts are missing before manifest commit: {missing_artifacts}")
     ruleset_id = "gtfs-lab-v1"
     manifest = build_audit_manifest(
         run_id=ctx.run_id,
@@ -128,5 +144,29 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
         }
     )
     validate_audit_manifest(manifest)
-    write_json(audit_dir / "audit_manifest.json", manifest)
+    manifest_path = audit_dir / "audit_manifest.json"
+    temporary_path: str | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=audit_dir,
+            prefix=".audit_manifest.",
+            suffix=".tmp",
+            delete=False,
+        ) as temporary:
+            temporary_path = temporary.name
+            temporary.write(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
+            temporary.flush()
+            os.fsync(temporary.fileno())
+        with open(temporary_path, "r", encoding="utf-8") as persisted:
+            validate_audit_manifest(json.load(persisted))
+        os.replace(temporary_path, manifest_path)
+        temporary_path = None
+    finally:
+        if temporary_path is not None:
+            try:
+                os.unlink(temporary_path)
+            except FileNotFoundError:
+                pass
     return {"manifest_status": "ACCEPTED", **reconciliation}

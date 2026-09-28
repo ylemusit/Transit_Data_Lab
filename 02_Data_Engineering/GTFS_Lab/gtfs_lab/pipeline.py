@@ -46,7 +46,11 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         write_json(ctx.work_dir / "validation.json", validation)
         report = render_report(result)
         (ctx.work_dir / "report.md").write_text(report, encoding="utf-8")
-        persist_audit(ctx, result)
+        persistence = persist_audit(ctx, result)
+        if persistence.get("manifest_status") != "ACCEPTED":
+            raise RuntimeError(
+                f"Trust audit persistence was not accepted: {persistence}"
+            )
         return result
     except Exception:
         # Do not erase partial evidence; mark run error with context for diagnosis.
