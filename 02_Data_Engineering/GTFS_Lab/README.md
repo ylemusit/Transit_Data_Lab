@@ -1,5 +1,7 @@
 # GTFS_Lab — Transit Data Lab
 
+Para un gate de CI sobre un ZIP, ejecutar `python -m gtfs_lab.ci_gate <zip> --output <directorio-nuevo>` desde este directorio. Devuelve JSON y salidas 0 (política satisfecha), 2 (fallo técnico/de inspección/recurso) o 3 (configuración inválida); el CLI V1 de ejecución conserva su contrato. Las nuevas auditorías persistidas marcan ChangeAttribution 1.1.0 y versiones semánticas por regla. Véase el [pack de precondiciones](../../reports/repository_integrity/TDL_GTFS_ENGINE_PRECONDITIONS_PACK_CLOSURE.md).
+
 Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del producto GTFS Explorer Desktop, cuya baseline protegida es 0.2.2.
 
 ## Estado implementado
