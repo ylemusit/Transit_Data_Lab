@@ -18,6 +18,10 @@ from compliance_v1_fixtures import build
 from compliance_v1_reconcile import reconcile
 from phase3_observation_contract import decode
 from compliance_v1_transition_candidate import build_candidate, candidate_bytes
+import compliance_v1_pack
+import compliance_v1_reconcile
+from compliance_portable_gate import portable_sql, sources
+from protected_resource_preflight import check_resource
 
 CURRENT_PACKAGE_DIR = ROOT/'03_Compliance/reports/evidence/compliance_v1_20260929_transition_candidate_final'
 HISTORICAL_REPLAY = ROOT/'02_Data_Engineering/GTFS_Lab/reports/evidence/m04b2a_transition_20260929/historical_package_replay.json'
@@ -59,6 +63,7 @@ def replay_historical_package():
             # The historical package generator hashes its local evaluator path.
             # Keep all captured fixtures/sources and the database read-only in place.
             historic_pack.ROOT=replay_root
+            historic_pack.DB=DB
             historic_pack.EVIDENCE=EVIDENCE
             historic_pack.FIXTURES=FIXTURES
             generated=historic_pack.build_package()
@@ -72,9 +77,25 @@ def replay_historical_package():
 
 
 def main():
+    global DB
     p=argparse.ArgumentParser();p.add_argument('--evidence',type=Path,required=True)
-    a=p.parse_args();out=a.evidence.resolve();out.mkdir(parents=True,exist_ok=False)
+    p.add_argument('--db',type=Path);p.add_argument('--gtfs-db',type=Path)
+    p.add_argument('--portable',action='store_true');p.add_argument('--legal-root',type=Path)
+    a=p.parse_args()
+    if a.portable:
+        require(a.db is not None and a.gtfs_db is not None and a.legal_root is not None,'PORTABLE_CONFIGURATION_REQUIRED')
+        require(a.legal_root.resolve()==ROOT.resolve(),'LEGAL_ROOT_WRONG_CHECKOUT')
+        require(sources(a.legal_root.resolve())['status']=='PASS','PORTABLE_LEGAL_SOURCE_FAILURE')
+        for name,path,expected in [('compliance_db',a.db,'4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B'),
+                                   ('gtfs_raw_db',a.gtfs_db,'F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC')]:
+            status=check_resource(dict(name=name,path=str(path.resolve()),sha256=expected,kind='duckdb'))['status']
+            require(status=='RESOURCE_READY',name+':'+status)
+        DB=a.db.resolve();compliance_v1_pack.DB=DB;compliance_v1_reconcile.DB=DB
+    out=a.evidence.resolve();out.mkdir(parents=True,exist_ok=False)
     checks={};initial=sha(DB)
+    if a.portable:
+        checks['portable_legal_sources']='PASS'
+        checks['portable_resource_preflight']='PASS'
     try:
         package=json.loads((EVIDENCE/'package.json').read_text())
         baseline=json.loads((EVIDENCE/'baseline.json').read_text())
@@ -123,10 +144,11 @@ def main():
         checks['current_package_identity']=CURRENT_PACKAGE_SHA256
         # Re-run frozen-phase checks, preserving the one superseded state assertion.
         for name,path in [('phase1','phase_1/test_phase_1_invariants.sql'),('phase2','phase_2/test_phase_2_post_materialization_gate.sql')]:
-            raw=run(DB,(ROOT/'03_Compliance/sql/07_tests'/path).read_text(encoding='utf-8-sig'))
+            sql=portable_sql() if a.portable and name=='phase2' else (ROOT/'03_Compliance/sql/07_tests'/path).read_text(encoding='utf-8-sig')
+            raw=run(DB,sql)
             save(out/(name+'_raw.json'),raw);require(raw['exit_code']==0,name+'_EXECUTION')
             rows=[r for r in json_stream(raw['stdout']) if 'test' in r and 'status' in r]
-            require(len(rows)==(22 if name=='phase1' else 387),name+'_CHECK_COUNT')
+            require(len(rows)==(22 if name=='phase1' else (377 if a.portable else 387)),name+'_CHECK_COUNT')
             failures=[r for r in rows if r['status']!='PASS']
             allowed=[dict(test='UNCHANGED_COUNT_audit.rules',status='FAIL',expected=0,actual=2)] if name=='phase2' else []
             require(failures==allowed,name+'_INTEGRITY')
@@ -210,7 +232,7 @@ def main():
                 require(r['result']=='PASS','CLI_PILOT');outputs.append(r)
             require(outputs[0]==outputs[1],'CLI_REPLAY');cli.append(dict(command=command,output=outputs[0]))
         save(out/'cli_replay.json',cli);checks['controlled_process_replay']='PASS'
-        checks['protected_gtfs_hash']=sha(ROOT/'02_Data_Engineering/GTFS_Lab/databases/gtfs_lab.duckdb')
+        checks['protected_gtfs_hash']=sha(a.gtfs_db.resolve() if a.portable else ROOT/'02_Data_Engineering/GTFS_Lab/databases/gtfs_lab.duckdb')
         require(checks['protected_gtfs_hash']=='F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC','GTFS_BASELINE_DRIFT')
         require(sha(DB)==initial,'STOP_GLOBAL: READONLY_DRIFT')
         summary=dict(status='PASS',gate='COMPLIANCE_V1_CURRENT_GATE',checks=checks,initial_hash=initial,final_hash=sha(DB),

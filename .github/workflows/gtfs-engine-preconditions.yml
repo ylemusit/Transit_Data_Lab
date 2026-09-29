@@ -1,0 +1,38 @@
+name: GTFS engine synthetic preconditions
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  synthetic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Compile Python
+        run: python -m compileall -q tools 02_Data_Engineering/GTFS_Lab/gtfs_lab 02_Data_Engineering/GTFS_Lab/tests
+      - name: Verify portable legal sources
+        run: python tools/compliance_portable_gate.py --legal-root . --sources-only > legal-sources-result.json
+      - name: Synthetic trust, comparison, corpus and precondition tests
+        working-directory: 02_Data_Engineering/GTFS_Lab
+        run: |
+          python -m unittest discover -s tests -p test_change_attribution_contract.py
+          python -m unittest discover -s tests -p test_audit_comparison.py
+          python -m unittest discover -s tests -p test_corpus_split_gate.py
+          python -m unittest discover -s tests -p test_corpus_lineage_review.py
+          python -m unittest discover -s tests -p test_engine_preconditions.py
+      - name: M01, M03 and frozen corpus contracts
+        working-directory: 02_Data_Engineering/GTFS_Lab
+        run: |
+          python -m gtfs_lab.trust_gate
+          python -m gtfs_lab.golden_contract_gate
+          python -m gtfs_lab.golden_corpus_gate
+          python -m gtfs_lab.golden_evaluator_gate
+          python -m gtfs_lab.corpus_split_gate --inventory corpus/inventory_v1.json --split corpus/split_v1.json --lineage-review corpus/lineage_review_m04a2.json
+          python -m gtfs_lab.corpus_split_gate --lineage-review corpus/lineage_review_m04a2.json --lineage-review-only
+      - name: Repository whitespace integrity
+        run: git diff --check origin/main...HEAD

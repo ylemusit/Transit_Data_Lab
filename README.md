@@ -13,6 +13,7 @@ La entrada vigente es [PROJECT_STATUS.md](PROJECT_STATUS.md). Describe el estado
 | [REPOSITORY_POLICY.md](REPOSITORY_POLICY.md) | Separación de repositorios y preservación de evidencia. |
 | [BACKUP_AND_RECOVERY.md](BACKUP_AND_RECOVERY.md) | Cobertura Git y recuperación de datos excluidos. |
 | [GTFS_Lab](02_Data_Engineering/GTFS_Lab/README.md) | Operación y límites del laboratorio GTFS. |
+| [Precondiciones del GTFS Audit Engine](reports/repository_integrity/TDL_GTFS_ENGINE_PRECONDITIONS_PACK_CLOSURE.md) | Pack P1, comandos portables, evidencia local y límites de CI. |
 | [Business](07_Business/README.md) | Capacidades, evidencia y gates empresariales. |
 | [Revisión de alineación](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md) | Hallazgos, cambios y verificación de esta revisión. |
 

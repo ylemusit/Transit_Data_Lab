@@ -147,6 +147,7 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
             "ruleset_version": ",".join(rule_versions),
             "executed_rule_ids": rule_ids,
             "executed_rule_versions": executed_rule_versions,
+            "change_attribution_contract_version": "1.1.0",
             "run_outcome": dict(result["summary"]),
             "reconciliation": reconciliation,
         }
