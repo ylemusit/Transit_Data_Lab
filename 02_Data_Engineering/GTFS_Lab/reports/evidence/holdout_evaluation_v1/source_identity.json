@@ -1,0 +1,50 @@
+[
+  {
+    "dataset_id": "006",
+    "relative_path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/02_sources/gtfs_schedule/original/20250320_121835_Autocares_Rafael_Nadal.zip",
+    "expected_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+    "actual_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+    "size_bytes": 1982,
+    "match": true
+  },
+  {
+    "dataset_id": "008",
+    "relative_path": "FAMILY_B_SME_OPERATIONAL/008_baraza/02_sources/gtfs_schedule/original/20260831_100006_BUS_Baraza.zip",
+    "expected_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+    "actual_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+    "size_bytes": 126374,
+    "match": true
+  },
+  {
+    "dataset_id": "013",
+    "relative_path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/02_sources/gtfs_schedule/original/20250529_100032_Autocares_Lazara.zip",
+    "expected_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+    "actual_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+    "size_bytes": 189716,
+    "match": true
+  },
+  {
+    "dataset_id": "015",
+    "relative_path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/02_sources/gtfs_schedule/original/20260916_100037_Autobus_Rias_Baixas.zip",
+    "expected_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+    "actual_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+    "size_bytes": 443076,
+    "match": true
+  },
+  {
+    "dataset_id": "017",
+    "relative_path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/02_sources/gtfs_schedule/original/20260922_060014_Euskadi_Tuvisa.zip",
+    "expected_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+    "actual_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+    "size_bytes": 1014865,
+    "match": true
+  },
+  {
+    "dataset_id": "018",
+    "relative_path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/02_sources/gtfs_schedule/original/20260922_060003_Euskadi_Bilbobus.zip",
+    "expected_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+    "actual_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+    "size_bytes": 2959893,
+    "match": true
+  }
+]
