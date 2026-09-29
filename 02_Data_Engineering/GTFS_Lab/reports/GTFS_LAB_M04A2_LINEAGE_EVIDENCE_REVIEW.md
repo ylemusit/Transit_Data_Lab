@@ -79,8 +79,9 @@ Regresión: M01 PASS (12 checks); M02 Trust Persistence PASS; M03-A Contract PAS
 ## I. HEAD y PR
 
 - HEAD inicial: `3657fa279f00162eee4ad7a448df2c530bfdbe89`.
-- PR [#7 — feat(trust): define development and holdout split M04](https://github.com/ylemusit/Transit_Data_Lab/pull/7): Draft abierto; actualizar su descripción con este resultado.
-- HEAD final y estado remoto se registrarán tras publicar la actualización autorizada.
+- Commit de implementación M04-A2 publicado: `ba83d6c82874133e4e1bb066fa352f7f42dd58e5`.
+- PR [#7 — feat(trust): define development and holdout split M04](https://github.com/ylemusit/Transit_Data_Lab/pull/7): abierto en Draft; descripción pendiente de reflejar esta revisión.
+- No se ha hecho merge ni se ha marcado Ready.
 
 ## J. Veredicto
 
