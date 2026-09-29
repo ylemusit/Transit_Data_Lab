@@ -72,8 +72,10 @@ def compare(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[str, An
             for row in changes
         )
         result["evidence_refs"].extend(f"identity.rules.rule_versions.{row['rule_id']}" for row in changes)
-        if result["confidence_or_evidence_status"]["status"] == "NO_CAUSAL_EVIDENCE" and "UNATTRIBUTED_CHANGE" not in causes:
+        if result["confidence_or_evidence_status"]["status"] == "NO_CAUSAL_EVIDENCE":
             result["confidence_or_evidence_status"]["status"] = "SUPPORTED"
+        if unresolved_dataset_identity and not result["unresolved_reasons"]:
+            result["unresolved_reasons"].append("dataset identity changed without a supported source change")
         if "UNATTRIBUTED_CHANGE" not in causes:
             result["unresolved_reasons"] = [
                 reason for reason in result["unresolved_reasons"]

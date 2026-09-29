@@ -51,7 +51,18 @@ class Preconditions(unittest.TestCase):
         self.assertEqual(["RULE_SEMANTIC_CHANGE", "UNATTRIBUTED_CHANGE"], result["supported_causes"])
         self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
         self.assertEqual(["result changed without a supported identity cause"], result["unresolved_reasons"])
-        self.assertEqual("NO_CAUSAL_EVIDENCE", result["confidence_or_evidence_status"]["status"])
+        self.assertEqual("SUPPORTED", result["confidence_or_evidence_status"]["status"])
+
+    def test_rule_semantic_change_and_unresolved_lineage_without_result_change(self):
+        base = snapshot({"R2": "1"})
+        base["identity"]["dataset"]["lineage_id"] = "L1"
+        candidate = snapshot({"R2": "2"})
+        candidate["identity"]["dataset"]["lineage_id"] = "L2"
+        result = compare(base, candidate)
+        self.assertEqual(["RULE_SEMANTIC_CHANGE", "UNATTRIBUTED_CHANGE"], result["supported_causes"])
+        self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
+        self.assertEqual(["dataset identity changed without a supported source change"], result["unresolved_reasons"])
+        self.assertEqual("SUPPORTED", result["confidence_or_evidence_status"]["status"])
 
     def test_rule_semantic_and_supported_dataset_change(self):
         base = snapshot({"R2": "1"})
@@ -62,6 +73,7 @@ class Preconditions(unittest.TestCase):
         self.assertEqual(["DATASET_CHANGE", "RULE_SEMANTIC_CHANGE"], result["supported_causes"])
         self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
         self.assertEqual([], result["unresolved_reasons"])
+        self.assertEqual("SUPPORTED", result["confidence_or_evidence_status"]["status"])
 
     def test_implementation_semantic_and_unresolved_identity_coexist(self):
         base = snapshot({"R2": "1"})
@@ -81,6 +93,7 @@ class Preconditions(unittest.TestCase):
         candidate = snapshot({"R2": "2"})
         del base["identity"]["dataset"]["source_sha256"]
         result = compare(base, candidate)
+        self.assertEqual(["RULE_SEMANTIC_CHANGE"], result["supported_causes"])
         self.assertEqual("MISSING_IDENTITY", result["confidence_or_evidence_status"]["status"])
         self.assertEqual(["baseline.dataset.source_sha256"], result["confidence_or_evidence_status"]["missing_identity"])
         legacy_base = snapshot({"R2": "1"}, "1.0.0")
