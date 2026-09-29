@@ -1,0 +1,56 @@
+{
+  "case_id": "gtfs-orphan-route-v1",
+  "case_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "status": "UNDER_REVIEW",
+  "purpose": "Detectar una referencia trips.route_id sin ruta padre en routes.txt.",
+  "created_at_utc": "2026-09-29T00:00:00Z",
+  "input": {
+    "filename": "input.zip",
+    "sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
+    "format": "GTFS_STATIC_ZIP",
+    "provenance": "SYNTHETIC"
+  },
+  "scope": [
+    "GTFS Schedule: existencia de la ruta referenciada por el único registro de trips.txt"
+  ],
+  "expected": [
+    {
+      "type": "STATUS",
+      "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].status",
+      "value": "FAIL_TECHNICAL",
+      "authority": "GTFS_SPECIFICATION"
+    },
+    {
+      "type": "COUNT",
+      "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].finding_count",
+      "value": 1,
+      "authority": "GTFS_SPECIFICATION"
+    }
+  ],
+  "excluded_expectations": [
+    "cumplimiento legal",
+    "interpretación de operadores",
+    "outputs JSON completos",
+    "run_id",
+    "timestamps del run",
+    "rutas locales o temporales",
+    "metadatos de máquina",
+    "resultados de reglas no relacionados"
+  ],
+  "authority": {
+    "basis": "GTFS_SPECIFICATION",
+    "source_name": "GTFS Schedule Reference",
+    "section_topic": "trips.txt: route_id; Foreign ID referencing routes.route_id, Required",
+    "interpretation_note": "Cada viaje declara una ruta existente; el fixture contiene un único trips.route_id sin fila correspondiente en routes.txt."
+  },
+  "review": {},
+  "engine_context": {
+    "gtfs_lab_version": "1.0.0-dev",
+    "validator_version": "1.0.0",
+    "ruleset_id": "gtfs-lab-v1",
+    "ruleset_version": "1"
+  },
+  "expectation_defined_before_observation": true,
+  "golden_expectation_source": "GTFS_SPECIFICATION"
+}

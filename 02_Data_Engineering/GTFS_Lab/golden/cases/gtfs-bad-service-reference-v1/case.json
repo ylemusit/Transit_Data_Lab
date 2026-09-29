@@ -1,0 +1,56 @@
+{
+  "case_id": "gtfs-bad-service-reference-v1",
+  "case_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "status": "UNDER_REVIEW",
+  "purpose": "Detectar trips.service_id sin registro en calendar.txt ni calendar_dates.txt.",
+  "created_at_utc": "2026-09-29T00:00:00Z",
+  "input": {
+    "filename": "input.zip",
+    "sha256": "21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51",
+    "format": "GTFS_STATIC_ZIP",
+    "provenance": "SYNTHETIC"
+  },
+  "scope": [
+    "GTFS Schedule: existencia del service_id del único viaje en calendar.txt o calendar_dates.txt"
+  ],
+  "expected": [
+    {
+      "type": "STATUS",
+      "target": "validation.rules[rule_id=GTFS-REF-SERVICE].status",
+      "value": "FAIL_TECHNICAL",
+      "authority": "GTFS_SPECIFICATION"
+    },
+    {
+      "type": "COUNT",
+      "target": "validation.rules[rule_id=GTFS-REF-SERVICE].finding_count",
+      "value": 1,
+      "authority": "GTFS_SPECIFICATION"
+    }
+  ],
+  "excluded_expectations": [
+    "cumplimiento legal",
+    "interpretación de operadores",
+    "outputs JSON completos",
+    "run_id",
+    "timestamps del run",
+    "rutas locales o temporales",
+    "metadatos de máquina",
+    "resultados de reglas no relacionados"
+  ],
+  "authority": {
+    "basis": "GTFS_SPECIFICATION",
+    "source_name": "GTFS Schedule Reference",
+    "section_topic": "trips.txt: service_id; Foreign ID referencing calendar.service_id or calendar_dates.service_id, Required",
+    "interpretation_note": "El único viaje declara missing-service y las tablas de calendario presentes solo declaran weekday."
+  },
+  "review": {},
+  "engine_context": {
+    "gtfs_lab_version": "1.0.0-dev",
+    "validator_version": "1.0.0",
+    "ruleset_id": "gtfs-lab-v1",
+    "ruleset_version": "1"
+  },
+  "expectation_defined_before_observation": true,
+  "golden_expectation_source": "GTFS_SPECIFICATION"
+}
