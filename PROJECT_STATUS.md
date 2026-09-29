@@ -2,7 +2,7 @@
 
 ## Desarrollo posterior a la base del GTFS Audit Engine
 
-La rama aislada `feat/gtfs-engine-preconditions-pack`, basada en `e6c4d39e0032d3dd08cc8cc087a1bdb48275fe4a`, prepara los seis P1 de la revisión técnica global. La [evidencia local y sus límites](reports/repository_integrity/TDL_GTFS_ENGINE_PRECONDITIONS_PACK_CLOSURE.md) separan el gate portable Compliance completo, preflight de bases externas, resultado de auditoría para CI, ChangeAttribution 1.1.0 y workflow sintético. Este estado de desarrollo no promueve automáticamente `main`, ningún gate humano ni validación de operadores. El check remoto y el Draft PR se comprueban por separado.
+La rama aislada `feat/gtfs-engine-preconditions-pack`, basada en `e6c4d39e0032d3dd08cc8cc087a1bdb48275fe4a`, resuelve los seis P1 de la revisión técnica global en el [Draft PR #19](https://github.com/ylemusit/Transit_Data_Lab/pull/19). La [evidencia y sus límites](reports/repository_integrity/TDL_GTFS_ENGINE_PRECONDITIONS_PACK_CLOSURE.md) separan el gate portable Compliance completo, preflight de bases externas, resultado de auditoría para CI, ChangeAttribution 1.1.0 y workflow sintético. El check remoto `synthetic` pasó y `main` lo exige antes de fusionar. Este estado de desarrollo no promueve automáticamente `main`, ningún gate humano ni validación de operadores; el PR sigue sin fusionar.
 
 Actualizado: 2026-09-30. Sustituye únicamente las afirmaciones operativas obsoletas de las instantáneas anteriores; no promueve ni modifica sus baselines. Evidencia y límites en [la revisión](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md).
 

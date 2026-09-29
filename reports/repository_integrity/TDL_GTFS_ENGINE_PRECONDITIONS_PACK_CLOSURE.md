@@ -6,7 +6,7 @@ Base autorizada: `e6c4d39e0032d3dd08cc8cc087a1bdb48275fe4a`. Rama aislada: `feat
 | --- | --- | --- | --- | --- |
 | R01 | SQL histórico con diez rutas legales absolutas | Manifiesto legal relativo y SHA-256; gate portable verifica bytes del checkout y sustituye en memoria solo las diez cláusulas de hash antes de ejecutar el gate Compliance completo | `03_Compliance/legal_sources_portable_v1.json`; `tools/compliance_portable_gate.py`; 22 Phase 1 + 377 Phase 2 y replay completo PASS | PASS |
 | R02 | Bases ausentes del checkout; fallo tardío y dependencias implícitas | Configuración explícita, estados de recurso, hash, WAL y apertura DuckDB `-readonly` antes del gate | `config/protected_resources.example.json`; `tools/protected_resource_preflight.py`; prueba de ausencia, mismatch, WAL y dos DB externas PASS | PASS |
-| R03 | Ningún workflow | Job sintético en cada PR, con tests, contratos M01/M03/Golden, split/lineage, Compliance legal portable y compileall | `.github/workflows/gtfs-engine-preconditions.yml`; comandos equivalentes locales PASS; ejecución remota pendiente | PASS local; CI remoto pendiente |
+| R03 | Ningún workflow ni protección de `main` | Job sintético en cada PR, con tests, contratos M01/M03/Golden, split/lineage, Compliance legal portable y compileall; `main` exige `synthetic` actualizado también a administradores | [Run 36646327710](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36646327710) PASS; protección GitHub API: `contexts=[synthetic]`, `strict=true`, `enforce_admins=true` | PASS |
 | R04 | CLI histórico devolvía 0 para `FAIL_TECHNICAL` | Entrada `gtfs_lab.ci_gate`, contrato JSON y salidas 0/2/3; política de findings explícita | `ORPHAN_ROUTE.zip`: `FAIL_TECHNICAL`, exit 2; `VALID_MINIMAL.zip`: `AUDIT_PASS`, exit 0 | PASS |
 | R05 | ChangeAttribution 1.0.0 no atribuía mapas por regla | Contrato sucesor 1.1.0, versiones por `rule_id`, altas/bajas/cambios múltiples; nuevas auditorías lo marcan en manifest; comparaciones mixtas fallan cerradas | `change_attribution_v1_1.py`; tests legacy y sucesor; dos nuevos runs 1.1.0 comparados | PASS |
 | R13 | Raíz histórica sucia y atrasada | Política de worktree aislado limpio, base ancestral y guard para operaciones autorizadas | `tools/clean_worktree_guard.py`; worktree desde base exacta; raíz intacta | MITIGATED |
@@ -27,13 +27,19 @@ Base autorizada: `e6c4d39e0032d3dd08cc8cc087a1bdb48275fe4a`. Rama aislada: `feat
 - 101 tests completos PASS al inyectar la DB externa verificada en el único test histórico con ruta fija. Sin esa inyección: 100 PASS y 1 error de recurso ausente, sin falso PASS.
 - M01, M02, M03-A, corpus Golden, evaluador Golden, regresión Golden, split y GTFS_Lab V1: PASS con entradas sintéticas y salidas temporales nuevas. Suite CI local: 72 tests PASS. `compileall` y `git diff --check`: PASS.
 - El checkpoint M04 V2 `CEEEC24A72211DD0F0B59A663C3AF34C3697820FEACA015384DFDF534392C978` se conserva como referencia histórica; no se reabrió su fuente bajo la restricción «No HOLDOUT». Split, Golden, registros M05 y cierre M04 no se modificaron en el diff.
+- Draft PR [#19](https://github.com/ylemusit/Transit_Data_Lab/pull/19) abierto, base `e6c4d39…`; el job remoto `synthetic` pasó. `main` exige el contexto `synthetic` con branch actualizado. PR sin fusionar.
 
 ## Riesgos aplazados
 
-R06 registro extensible, R07 recursos/timeout completo, R08 matriz Windows/Linux, R09 restore, R10 `main.stops`, R11 limpieza histórica de tests y R14 retención de evidencia. La ejecución remota del workflow y su protección en GitHub se deben comprobar en el Draft PR; un PASS local no equivale a ese check remoto.
+R06 registro extensible, R07 recursos/timeout completo, R08 matriz Windows/Linux, R09 restore, R10 `main.stops`, R11 limpieza histórica de tests y R14 retención de evidencia. El CI sin bases protegidas ejecuta la parte sintética y legal-source-only; el gate Compliance completo se probó localmente con recursos externos hash-verificados y no se presenta como PASS del job remoto.
 
 ## Veredicto
 
-Q1 Sí: la configuración y manifiestos declaran recursos. Q2 Sí: ausencia falla antes del gate. Q3 Sí: el nuevo gate usa fuentes legales relativas y DB externa explícita. Q4 Sí: el gate de auditoría devuelve 2 para fallo técnico. Q5 Sí: contratos 1.1.0 por regla. Q6 Sí en el workflow declarado; pendiente confirmación de ejecución en GitHub. Q7 No se observa otro P1 técnico en la regresión local. La declaración final `GTFS_AUDIT_ENGINE_V1_PRECONDITIONS = PASS` queda condicionada al check remoto y a la revisión del Draft PR.
+Q1 Sí: la configuración y manifiestos declaran recursos. Q2 Sí: ausencia falla antes del gate. Q3 Sí: el nuevo gate usa fuentes legales relativas y DB externa explícita. Q4 Sí: el gate de auditoría devuelve 2 para fallo técnico. Q5 Sí: contratos 1.1.0 por regla. Q6 Sí: el workflow pasó en GitHub y `main` exige su check. Q7 No se observa otro P1 que invalide el inicio del desarrollo del motor en esta rama.
+
+`GTFS_AUDIT_ENGINE_V1_PRECONDITIONS = PASS`  
+`GTFS_AUDIT_ENGINE_V1_READY_TO_START`
+
+Este veredicto corresponde al pack en el Draft PR; no afirma que esté fusionado en `main`.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
