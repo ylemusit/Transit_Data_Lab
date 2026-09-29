@@ -5,6 +5,9 @@ import argparse
 import hashlib
 import json
 import re
+import os
+import tempfile
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -321,13 +324,176 @@ def compare_audit_directories(baseline_directory: str | Path, candidate_director
     return compare_audits(build_audit_snapshot(baseline_directory), build_audit_snapshot(candidate_directory))
 
 
+RECORD_CONTRACT = "AuditComparisonRecord"
+RECORD_CONTRACT_VERSION = "1.0.0"
+
+
+def _canonical_bytes(value: Any) -> bytes:
+    return (json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8")
+
+
+def _digest(value: Any) -> str:
+    return hashlib.sha256(_canonical_bytes(value)).hexdigest()
+
+
+def verify_comparison_record(record: dict[str, Any], baseline: dict[str, Any], candidate: dict[str, Any]) -> bool:
+    if record.get("record_contract") != RECORD_CONTRACT or record.get("record_contract_version") != RECORD_CONTRACT_VERSION:
+        raise ComparisonError("COMPARISON_RECORD_INVALID", "unsupported comparison record contract")
+    integrity = record.get("integrity", {})
+    payload = {key: record[key] for key in ("comparison_id", "baseline_audit_id", "candidate_audit_id", "comparison", "source_artifacts")}
+    expected = {"baseline_snapshot_sha256": _digest(baseline), "candidate_snapshot_sha256": _digest(candidate),
+                "comparison_payload_sha256": _digest(payload),
+                "record_sha256": _digest({key: value for key, value in record.items() if key != "integrity"})}
+    if integrity != expected:
+        raise ComparisonError("COMPARISON_HASH_MISMATCH", "comparison record integrity verification failed")
+    return True
+
+
+def render_comparison_report(record: dict[str, Any]) -> bytes:
+    """Render the compact comparison record as deterministic UTF-8 Markdown."""
+    result = record["comparison"]
+    finding = result.get("finding_change", {})
+    changes = finding.get("changes", [])
+    groups = {
+        "Findings added": [x for x in changes if x.get("change") == "NEW_FINDING"],
+        "Findings resolved": [x for x in changes if x.get("change") == "RESOLVED_FINDING"],
+        "Findings changed": [x for x in changes if x.get("change") not in {"NEW_FINDING", "RESOLVED_FINDING"}],
+    }
+    lines = ["# Audit comparison", "", f"- Comparison: `{record['comparison_id']}`",
+             f"- Baseline: `{record['baseline_audit_id']}`",
+             f"- Candidate: `{record['candidate_audit_id']}`",
+             f"- Comparability: `{result['comparability']['status']}`",
+             f"- Attribution: `{result['attribution']}`", "", "## What changed", "",
+             f"- Result change: `{result['result_change'].get('status')}`; changed=`{result['result_change'].get('changed')}`",
+             f"- Finding change: changed=`{finding.get('changed')}`",
+             f"- Supported causes: {', '.join(result.get('supported_causes', [])) or 'none recorded'}", "", "## Identity differences", ""]
+    for difference in result.get("identity_differences", []):
+        before = json.dumps(difference.get("baseline"), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        after = json.dumps(difference.get("candidate"), ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+        lines.append(f"- `{difference.get('identity')}`: `{before}` → `{after}`")
+    if not result.get("identity_differences"):
+        lines.append("- None recorded")
+    lines.extend(["", "## Result differences", ""])
+    for difference in result["result_change"].get("differences", []):
+        rendered = json.dumps(difference, ensure_ascii=False, sort_keys=True, separators=(",", ":")) if isinstance(difference, (dict, list)) else str(difference)
+        lines.append(f"- `{rendered}`")
+    if not result["result_change"].get("differences"):
+        lines.append("- None recorded")
+    lines.append("")
+    if "historical_rows" in result:
+        lines.extend(["## Historical comparisons", ""])
+        for row in result["historical_rows"]:
+            lines.append(f"- Dataset `{row['dataset_id']}`: result `{row['result_change']}`; attribution `{row['attribution']}`; causes `{', '.join(row['supported_causes']) or 'none'}`; evidence `{row['evidence_state']}`.")
+        lines.append("")
+    for title, rows in groups.items():
+        lines.extend([f"## {title}", "", *(f"- `{row.get('finding_id', 'unknown')}`: `{row.get('change')}`" for row in rows)])
+        if not rows:
+            lines.append("- None")
+        lines.append("")
+    lines.extend(["## Unresolved causes", "", *(f"- `{x}`" for x in result.get("unresolved_reasons", []))])
+    if not result.get("unresolved_reasons"):
+        lines.append("- None")
+    lines.extend(["", "## Evidence references", "", *(f"- `{x}`" for x in record["source_artifacts"].values())])
+    if not record["source_artifacts"]:
+        lines.append("- None")
+    lines.extend(["", "## Contracts", "", f"- Record: `{record['record_contract']} {record['record_contract_version']}`",
+                  f"- Snapshot: `{result['snapshot_contract_version']}`",
+                  f"- Change attribution: `{result['change_attribution_contract_version']}`", ""])
+    return "\n".join(lines).encode("utf-8")
+
+
+def persist_comparison(directory: str | Path, baseline: dict[str, Any], candidate: dict[str, Any], *,
+                       source_artifacts: dict[str, str] | None = None,
+                       created_at_utc: str | None = None) -> dict[str, Any]:
+    """Persist a compact, content-addressed record and report, idempotently."""
+    comparison = compare_audits(baseline, candidate)
+    refs = dict(sorted((source_artifacts or {}).items()))
+    required_refs = {"baseline_run", "baseline_manifest", "candidate_run", "candidate_manifest"}
+    if not required_refs <= refs.keys() or any(not isinstance(key, str) or not key.strip() or not isinstance(value, str) or not value.strip() for key, value in refs.items()):
+        raise ComparisonError("EVIDENCE_REFERENCE_INVALID", "baseline and candidate run/manifest paths are required")
+    def resolve_ref(value: str) -> Path:
+        reference = Path(value)
+        return (reference if reference.is_absolute() else Path(directory) / reference).resolve()
+    for side in ("baseline", "candidate"):
+        run_ref = resolve_ref(refs[f"{side}_run"])
+        manifest_ref = resolve_ref(refs[f"{side}_manifest"])
+        if not run_ref.is_dir() or not manifest_ref.is_file() or not manifest_ref.is_relative_to(run_ref):
+            raise ComparisonError("EVIDENCE_REFERENCE_INVALID", f"{side} run/manifest references are unavailable or unrelated")
+    comparison_id = comparison["comparison_id"]
+    payload = {"comparison_id": comparison_id, "baseline_audit_id": baseline["audit_id"],
+               "candidate_audit_id": candidate["audit_id"], "comparison": comparison,
+               "source_artifacts": refs}
+    record = {**payload, "record_contract": RECORD_CONTRACT, "record_contract_version": RECORD_CONTRACT_VERSION,
+              "created_at_utc": created_at_utc or datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")}
+    record["integrity"] = {"baseline_snapshot_sha256": _digest(baseline),
+                           "candidate_snapshot_sha256": _digest(candidate),
+                           "comparison_payload_sha256": _digest(payload),
+                           "record_sha256": _digest(record)}
+    folder = Path(directory) / "reports" / "evidence" / "comparisons" / comparison_id
+    json_path, report_path = folder / "comparison.json", folder / "report.md"
+    data = _canonical_bytes(record)
+    report = render_comparison_report(record)
+    try:
+        folder.mkdir(parents=True, exist_ok=True)
+        if json_path.exists():
+            existing = json_path.read_bytes()
+            try:
+                old = json.loads(existing.decode("utf-8"))
+                old_payload = {key: old[key] for key in payload}
+                old_integrity = old["integrity"]
+                if old["record_contract"] != RECORD_CONTRACT or old["record_contract_version"] != RECORD_CONTRACT_VERSION or existing != _canonical_bytes(old):
+                    raise ComparisonError("COMPARISON_RECORD_INVALID", comparison_id)
+                if old_integrity["comparison_payload_sha256"] != _digest(old_payload):
+                    raise ComparisonError("COMPARISON_HASH_MISMATCH", comparison_id)
+                if old_integrity["record_sha256"] != _digest({key: value for key, value in old.items() if key != "integrity"}):
+                    raise ComparisonError("COMPARISON_HASH_MISMATCH", comparison_id)
+            except (KeyError, TypeError, ValueError, UnicodeError) as exc:
+                if isinstance(exc, ComparisonError):
+                    raise
+                raise ComparisonError("COMPARISON_RECORD_INVALID", comparison_id) from exc
+            if any(old_integrity[key] != record["integrity"][key] for key in ("baseline_snapshot_sha256", "candidate_snapshot_sha256", "comparison_payload_sha256")) or old_payload != payload:
+                raise ComparisonError("COMPARISON_RECORD_CONFLICT", comparison_id)
+            # The creation time belongs to the first successful write.
+            data = existing
+            old_report = render_comparison_report(old)
+            if old_report != report:
+                raise ComparisonError("COMPARISON_RECORD_CONFLICT", comparison_id)
+            report = old_report
+        else:
+            fd, tmp_name = tempfile.mkstemp(prefix=".comparison-", dir=folder)
+            try:
+                with os.fdopen(fd, "wb") as stream:
+                    stream.write(data); stream.flush(); os.fsync(stream.fileno())
+                try:
+                    os.link(tmp_name, json_path)
+                except FileExistsError:
+                    raise ComparisonError("COMPARISON_RECORD_CONFLICT", comparison_id)
+            finally:
+                if os.path.exists(tmp_name): os.unlink(tmp_name)
+        if report_path.exists() and report_path.read_bytes() != report:
+            raise ComparisonError("COMPARISON_RECORD_CONFLICT", comparison_id)
+        if not report_path.exists():
+            report_path.write_bytes(report)
+    except ComparisonError:
+        raise
+    except OSError as exc:
+        raise ComparisonError("WRITE_FAILED", str(exc)) from exc
+    return {"record": json.loads(data.decode("utf-8")), "path": str(json_path), "report_path": str(report_path)}
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Compare two persisted GTFS_Lab audit runs (read-only).")
     parser.add_argument("baseline", type=Path, help="persisted baseline run directory")
     parser.add_argument("candidate", type=Path, help="persisted candidate run directory")
+    parser.add_argument("--persist", type=Path, help="persist JSON and Markdown under this evidence root")
     args = parser.parse_args()
     try:
-        result = compare_audit_directories(args.baseline, args.candidate)
+        if args.persist:
+            result = persist_comparison(args.persist, build_audit_snapshot(args.baseline), build_audit_snapshot(args.candidate),
+                                        source_artifacts={"baseline_run": str(args.baseline.resolve()), "baseline_manifest": str((args.baseline / "audit" / "audit_manifest.json").resolve()),
+                                                          "candidate_run": str(args.candidate.resolve()), "candidate_manifest": str((args.candidate / "audit" / "audit_manifest.json").resolve())})["record"]["comparison"]
+        else:
+            result = compare_audit_directories(args.baseline, args.candidate)
     except ComparisonError as exc:
         print(json.dumps({"error": exc.code, "message": str(exc)}, ensure_ascii=False, sort_keys=True, indent=2))
         return 2

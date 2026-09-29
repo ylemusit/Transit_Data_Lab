@@ -1,0 +1,149 @@
+{
+  "status": "FAIL_TECHNICAL",
+  "findings": [
+    {
+      "dataset_id": "GTFS-57c6720aed07167d",
+      "rule_id": "V1-RULE-GTFS",
+      "table": "stop_times.txt",
+      "row_locator": "stop_times.txt#csv-record=2;trip_id=t1;stop_id=ghost",
+      "field": "trip_id/stop_id",
+      "observed_value": "ABSENCE_CONFIRMED",
+      "expected_condition": "trip_id references trips.trip_id; stop_id references fixed stops.txt platform",
+      "technical_message": "BROKEN_FOREIGN_REFERENCE",
+      "evidence": {
+        "source_zip_sha256": "57c6720aed07167dd8a238fb089542e5331f7b74846fbf25372b421b66acbf0b",
+        "inspection_dataset_sha256": "46c655b51880f81dc4508055ca853fb00f17c824ab3e9e1a76ec8fb029cf133c",
+        "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+        "rule_version": "compliance-v1/1"
+      }
+    }
+  ],
+  "rules": [
+    {
+      "rule_id": "GTFS-STRUCT-REQUIRED",
+      "version": "1.0.0",
+      "scope": "STRUCTURAL",
+      "severity": "ERROR",
+      "description": "GTFS STRUCT REQUIRED",
+      "source_reference": "GTFS Schedule Reference; required tables",
+      "status": "PASS",
+      "checked_rows": 0,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+      "version": "1.0.0",
+      "scope": "STRUCTURAL",
+      "severity": "ERROR",
+      "description": "GTFS STRUCT SERVICE CALENDAR",
+      "source_reference": "GTFS Schedule Reference; calendar.txt or calendar_dates.txt",
+      "status": "PASS",
+      "checked_rows": 0,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-REF-TRIP-ROUTE",
+      "version": "1.0.0",
+      "scope": "REFERENTIAL",
+      "severity": "ERROR",
+      "description": "GTFS REF TRIP ROUTE",
+      "source_reference": "GTFS Schedule Reference; trips.route_id",
+      "status": "PASS",
+      "checked_rows": 2,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-REF-SERVICE",
+      "version": "1.0.0",
+      "scope": "REFERENTIAL",
+      "severity": "ERROR",
+      "description": "GTFS REF SERVICE",
+      "source_reference": "GTFS Schedule Reference; trips.service_id",
+      "status": "PASS",
+      "checked_rows": 2,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-REF-SHAPE",
+      "version": "1.0.0",
+      "scope": "REFERENTIAL",
+      "severity": "ERROR",
+      "description": "GTFS REF SHAPE",
+      "source_reference": "GTFS Schedule Reference; trips.shape_id (when supplied)",
+      "status": "PASS",
+      "checked_rows": 2,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+      "version": "1.0.0",
+      "scope": "STRUCTURAL",
+      "severity": "ERROR",
+      "description": "GTFS UNIQUE PRIMARY ID",
+      "source_reference": "GTFS Schedule Reference primary IDs",
+      "status": "PASS",
+      "checked_rows": 0,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "GTFS-COORDINATE-RANGE",
+      "version": "1.0.0",
+      "scope": "DATA_CONSISTENCY",
+      "severity": "ERROR",
+      "description": "GTFS COORDINATE RANGE",
+      "source_reference": "GTFS Schedule Reference latitude/longitude ranges",
+      "status": "PASS",
+      "checked_rows": 6,
+      "finding_count": 0,
+      "findings": []
+    },
+    {
+      "rule_id": "V1-RULE-GTFS",
+      "version": "compliance-v1/1",
+      "scope": "COMPLIANCE_V1",
+      "severity": "ERROR",
+      "description": "Fixed-stop stop_times references to trips and stops",
+      "source_reference": "gtfs_reference.md sha256=1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147",
+      "status": "FAIL_TECHNICAL",
+      "checked_rows": 0,
+      "finding_count": 1,
+      "findings": [
+        {
+          "dataset_id": "GTFS-57c6720aed07167d",
+          "rule_id": "V1-RULE-GTFS",
+          "table": "stop_times.txt",
+          "row_locator": "stop_times.txt#csv-record=2;trip_id=t1;stop_id=ghost",
+          "field": "trip_id/stop_id",
+          "observed_value": "ABSENCE_CONFIRMED",
+          "expected_condition": "trip_id references trips.trip_id; stop_id references fixed stops.txt platform",
+          "technical_message": "BROKEN_FOREIGN_REFERENCE",
+          "evidence": {
+            "source_zip_sha256": "57c6720aed07167dd8a238fb089542e5331f7b74846fbf25372b421b66acbf0b",
+            "inspection_dataset_sha256": "46c655b51880f81dc4508055ca853fb00f17c824ab3e9e1a76ec8fb029cf133c",
+            "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+            "rule_version": "compliance-v1/1"
+          }
+        }
+      ],
+      "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb"
+    }
+  ],
+  "checked_rows": {
+    "routes": 1,
+    "trips": 2,
+    "stops": 2,
+    "agency": 1,
+    "trips_references": 2,
+    "stops_coordinates": 2,
+    "shapes_coordinates": 4
+  },
+  "finding_count": 1,
+  "local_status": "PASS",
+  "compliance_v1_status": "FAIL_TECHNICAL"
+}
