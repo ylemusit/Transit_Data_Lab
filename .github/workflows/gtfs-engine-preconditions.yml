@@ -35,4 +35,4 @@ jobs:
           python -m gtfs_lab.corpus_split_gate --inventory corpus/inventory_v1.json --split corpus/split_v1.json --lineage-review corpus/lineage_review_m04a2.json
           python -m gtfs_lab.corpus_split_gate --lineage-review corpus/lineage_review_m04a2.json --lineage-review-only
       - name: Repository whitespace integrity
-        run: git diff --check HEAD^
+        run: git diff --check origin/main...HEAD
