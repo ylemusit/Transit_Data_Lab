@@ -125,7 +125,7 @@ Golden Corpus V1 remains `29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2
 
 ## N. Commit / PR
 
-To be recorded after the approval changes and gates are committed. PR #7 remains the target Draft; do not merge or mark Ready.
+The approval and freeze changes were committed as `7225fe2ab7d60ceb3ed9f1d83e4cc21984e916a4`. This closeout report is being finalized on the same PR branch. PR #7 remains the target Draft; do not merge or mark Ready.
 
 ## O. Verdict
 
