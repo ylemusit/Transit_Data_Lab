@@ -10,7 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 ENGINE_PATH = PROJECT_ROOT / "tools" / "compliance_v1_engine.py"
 SOURCES_DIR = PROJECT_ROOT / "03_Compliance" / "reports" / "evidence" / "compliance_v1_20260928" / "sources"
 MANIFEST_PATH = SOURCES_DIR.parent / "source_manifest.json"
-EXPECTED_ENGINE_SHA256 = "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70"
+EXPECTED_ENGINE_SHA256 = "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb"
 EXPECTED_SPEC_SHA256 = "1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147"
 RULE_ID = "V1-RULE-GTFS"
 
@@ -40,12 +40,12 @@ def inspect_fixed_stop_references(ctx: RunContext) -> dict:
     """Call the hash-pinned Compliance V1 implementation without modifying it."""
     try:
         engine, expected_version = _load_engine()
-        files = {f"{name}.txt": path.read_bytes() for name, path in ctx.tables.items() if name in {"trips", "stops", "stop_times"}}
+        files = {f"{name}.txt": path for name, path in ctx.tables.items() if name in {"trips", "stops", "stop_times"}}
         result = engine.inspect_gtfs(files, expected_version, expected_version, complete=True)
-        data_hash = engine.dataset_hash(files)
-        result.update({"rule_id": RULE_ID, "rule_version": engine.VERSION, "evaluator_sha256": EXPECTED_ENGINE_SHA256, "reference_sha256": EXPECTED_SPEC_SHA256, "dataset_id": ctx.dataset.dataset_id, "source_zip_sha256": ctx.dataset.source_sha256, "inspection_dataset_sha256": data_hash, "provenance": "Invocación directa de tools/compliance_v1_engine.py; código y base Compliance V1 sin cambios", "scope_limit_bytes_per_file": engine.MAX_BYTES, "scope_limit_rows": engine.MAX_ROWS, "legal_conclusion_allowed": False})
+        data_hash = engine.dataset_hash_paths(files)
+        result.update({"rule_id": RULE_ID, "rule_version": "compliance-v1/1", "evaluator_version": engine.VERSION, "evaluator_sha256": EXPECTED_ENGINE_SHA256, "reference_sha256": EXPECTED_SPEC_SHA256, "dataset_id": ctx.dataset.dataset_id, "source_zip_sha256": ctx.dataset.source_sha256, "inspection_dataset_sha256": data_hash, "provenance": "Invocación del motor Compliance V1 v2 sobre archivos de ingestión; regla semántica sin cambios", "scope_limit_bytes_per_file": 512 * 1024 * 1024, "scope_limit_rows": engine.MAX_ROWS, "scope_limit_record_bytes": engine.MAX_RECORD_BYTES, "legal_conclusion_allowed": False})
     except Exception as exc:
-        result = {"result": "INSPECTION_ERROR", "reason": f"{type(exc).__name__}:{exc}", "locator": "input", "observed": "INDETERMINATE", "legal_conclusion_allowed": False, "rule_id": RULE_ID, "rule_version": "compliance-v1/1", "evaluator_sha256": None, "reference_sha256": EXPECTED_SPEC_SHA256, "dataset_id": ctx.dataset.dataset_id, "source_zip_sha256": ctx.dataset.source_sha256, "inspection_dataset_sha256": None, "provenance": "Compliance V1 adapter failed safely before a technical conclusion", "scope_limit_bytes_per_file": 1_048_576, "scope_limit_rows": 10_000}
+        result = {"result": "INSPECTION_ERROR", "reason": f"{type(exc).__name__}:{exc}", "locator": "input", "observed": "INDETERMINATE", "legal_conclusion_allowed": False, "rule_id": RULE_ID, "rule_version": "compliance-v1/1", "evaluator_version": "compliance-v1/2", "evaluator_sha256": None, "reference_sha256": EXPECTED_SPEC_SHA256, "dataset_id": ctx.dataset.dataset_id, "source_zip_sha256": ctx.dataset.source_sha256, "inspection_dataset_sha256": None, "provenance": "Compliance V1 adapter failed safely before a technical conclusion", "scope_limit_bytes_per_file": 512 * 1024 * 1024, "scope_limit_rows": 1_000_000, "scope_limit_record_bytes": 4 * 1024 * 1024}
     result["findings"] = []
     result["integration_status"] = "PASS" if result.get("evaluator_sha256") == EXPECTED_ENGINE_SHA256 and result.get("rule_id") == RULE_ID else "FAIL_LOCAL"
     if result["result"] == "FAIL_TECHNICAL":

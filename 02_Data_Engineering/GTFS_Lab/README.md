@@ -4,7 +4,7 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 
 ## Estado implementado
 
-- GTFS_Lab V1 tiene pipeline local reproducible de ZIP a informe; gate sintético PASS y reglas GTFS_Lab PASS en Asturias con cero hallazgos. La regla Compliance V1 reporta `INSPECTION_ERROR` para el feed completo por su límite fijo de 10.000 filas.
+- GTFS_Lab V1 tiene pipeline local reproducible de ZIP a informe; gate sintético PASS y reglas GTFS_Lab PASS en Asturias con cero hallazgos. La regla Compliance V1 del checkpoint base reportaba `INSPECTION_ERROR` al superar sus límites de 10.000 filas/1 MiB. M04-B2 desarrolla lectura incremental sintética en una rama aislada; su replay sigue cerrado hasta reconciliar la identidad del motor con el gate Compliance V1.
 - El dry run crea DuckDB aislado por ejecución y no modifica `databases/gtfs_lab.duckdb`, el ZIP original ni Compliance.
 - Core, integridad, reglas iniciales, análisis con calendario, consultas SQL y exportaciones KML/GeoJSON están en el pack V1. Ver [estado V1](GTFS_LAB_V1_CURRENT_STATE.md) y [informe de estabilización](reports/GTFS_LAB_V1_STABILIZATION_REPORT.md).
 - El import SQL/runner anterior y los tres KML históricos se conservan; el nuevo flujo no depende de ellos.

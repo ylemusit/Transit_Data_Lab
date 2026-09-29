@@ -19,9 +19,34 @@ REQUIRED_COLUMNS = {
 }
 MAX_MEMBER = 512 * 1024 * 1024
 MAX_TOTAL = 2 * 1024 * 1024 * 1024
+MAX_RECORD_BYTES = 4 * 1024 * 1024
+MAX_COLUMNS = 256
+MAX_FIELD_BYTES = 128 * 1024
 
 class IngestionError(Exception):
     code = "INGESTION_ERROR"
+
+class _PhysicalLines:
+    def __init__(self, stream):
+        self.stream = stream
+        self.record_bytes = 0
+        self.record_is_whitespace = True
+
+    def __iter__(self):
+        for line in self.stream:
+            size = len(line.encode("utf-8"))
+            self.record_bytes += size
+            if line.strip(" \t\r\n\v\f"):
+                self.record_is_whitespace = False
+            if size > MAX_RECORD_BYTES or self.record_bytes > MAX_RECORD_BYTES:
+                raise IngestionError("Límite de tamaño de registro CSV excedido")
+            yield line
+
+    def finish_record(self):
+        whitespace_only = self.record_is_whitespace
+        self.record_bytes = 0
+        self.record_is_whitespace = True
+        return whitespace_only
 
 def _safe_member(name: str) -> bool:
     normalized = name.replace("\\", "/")
@@ -88,23 +113,38 @@ def _validate_member(zf: zipfile.ZipFile, info: zipfile.ZipInfo, table: str) -> 
     else:
         warning = []
     stream = io.StringIO(text, newline="")
+    physical_lines = _PhysicalLines(stream)
     try:
-        reader = csv.reader(stream, strict=True)
+        reader = csv.reader(physical_lines, strict=True)
+        empty_record_count = 0
+        empty_record_lines = []
         header = next(reader, None)
-        if not header or any(not h.strip() for h in header) or len(set(header)) != len(header):
+        physical_lines.finish_record()
+        if not header or len(header) > MAX_COLUMNS or any(not h.strip() for h in header) or any(len(h.encode("utf-8")) > MAX_FIELD_BYTES for h in header) or len(set(header)) != len(header):
             raise IngestionError(f"Cabecera vacía, duplicada o ausente: {info.filename}")
         missing = REQUIRED_COLUMNS.get(table, set()) - set(header)
         if missing:
             raise IngestionError(f"Faltan columnas requeridas en {info.filename}: {', '.join(sorted(missing))}")
         rows = 0
-        for line_no, row in enumerate(reader, start=2):
+        for row in reader:
+            line_no = reader.line_num
+            whitespace_only = physical_lines.finish_record()
+            if row == [] or whitespace_only:
+                empty_record_count += 1
+                if len(empty_record_lines) < 20:
+                    empty_record_lines.append(line_no)
+                continue
             if len(row) != len(header):
-                raise IngestionError(f"CSV malformado en {info.filename}, registro {line_no}: {len(row)} campos; cabecera {len(header)}")
+                raise IngestionError(f"CSV malformado en {info.filename}, línea física {line_no}: {len(row)} campos; cabecera {len(header)}")
+            if any(len(value.encode("utf-8")) > MAX_FIELD_BYTES for value in row):
+                raise IngestionError(f"Límite de tamaño de campo CSV excedido en {info.filename}, línea física {line_no}")
             rows += 1
     except (csv.Error, StopIteration) as exc:
         if isinstance(exc, IngestionError):
             raise
         raise IngestionError(f"CSV malformado en {info.filename}: {exc}") from exc
+    if empty_record_count:
+        warning.append(f"EMPTY_CSV_RECORD_IGNORED table={table}.txt lines={','.join(map(str, empty_record_lines))} count={empty_record_count}")
     return raw, header, encoding, rows, warning
 
 def load_dataset(zip_path: Path, output_dir: Path) -> RunContext:
@@ -137,5 +177,5 @@ def load_dataset(zip_path: Path, output_dir: Path) -> RunContext:
         if table not in selected:
             warnings.append(f"Falta tabla obligatoria: {table}.txt")
     digest = sha256_file(zip_path)
-    identity = DatasetIdentity(dataset_id="GTFS-" + digest[:16], source_filename=zip_path.name, source_sha256=digest, ingestion_timestamp_utc=datetime.now(timezone.utc).isoformat(), parser_version="gtfs-lab-csv/1", gtfs_lab_version=VERSION, files=files_meta)
+    identity = DatasetIdentity(dataset_id="GTFS-" + digest[:16], source_filename=zip_path.name, source_sha256=digest, ingestion_timestamp_utc=datetime.now(timezone.utc).isoformat(), parser_version="gtfs-lab-csv/2", gtfs_lab_version=VERSION, files=files_meta)
     return RunContext(run_id, identity, zip_path, work_dir, table_paths, inventory, warnings)
