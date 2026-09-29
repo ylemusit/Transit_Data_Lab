@@ -1,0 +1,1961 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "LOCAL_METADATA_AND_INPUTS_ONLY",
+  "dataset_count": 20,
+  "datasets": [
+    {
+      "dataset_id": "001",
+      "zip_sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "Autocares GalÃ¡n GÃ³mez",
+      "agency_identity": [
+        {
+          "agency_id": "VACL_068",
+          "agency_name": "Autocares Galán Gómez S.L.",
+          "agency_url": "https://www.autocaresgalan.com/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Autocares Galán Gómez S.L.",
+        "feed_publisher_url": "https://www.autocaresgalan.com/",
+        "feed_lang": "es",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "feed_version": "2025.10.29-v9",
+        "feed_contact_email": "iperez@linecar.es",
+        "feed_contact_url": "https://www.autocaresgalan.com/"
+      },
+      "filename_timestamp_candidate": "2025-10-29T15:00:04",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-06-02",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/02_sources/gtfs_schedule/original/20251029_150004_Autocares_Galan_Gomez.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20251029_150004_Autocares_Galan_Gomez.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/01_nap_snapshot/Galan Gomez.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "Autocares GalÃ¡n GÃ³mez",
+          "normalized_display_value": "Autocares Galán Gómez",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Galán Gómez S.L.",
+          "normalized_display_value": "Autocares Galán Gómez S.L.",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/01_nap_snapshot/Galan Gomez.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "002",
+      "zip_sha256": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "Ancebus",
+      "agency_identity": [
+        {
+          "agency_id": "ANCEBUS",
+          "agency_name": "ANCEBUS, SL",
+          "agency_url": "http://www.ancebus.com/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-05-23T10:00:04",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-06-02",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/002_ancebus/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/002_ancebus/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/002_ancebus/02_sources/gtfs_schedule/original/20250523_100004_Ancebus.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250523_100004_Ancebus.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/002_ancebus/01_nap_snapshot/Ancebus.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "ANCEBUS, SL",
+          "normalized_display_value": "ANCEBUS, SL",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/002_ancebus/01_nap_snapshot/Ancebus.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "003",
+      "zip_sha256": "70b14647471462975b9b646d738b76c2f27454d8d9f49311bb31289a888e411a",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "Autocares J. Cristeto",
+      "agency_identity": [
+        {
+          "agency_id": "VACL_001",
+          "agency_name": "Autocares J. Cristeto S.L.",
+          "agency_url": "https://autocaresjcristeto.com/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Autocares J. Cristeto S.L.",
+        "feed_publisher_url": "https://autocaresjcristeto.com/",
+        "feed_lang": "es",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "feed_version": "2025.01.01-01",
+        "feed_contact_email": "info@autocaresjcristeto.com",
+        "feed_contact_url": "https://autocaresjcristeto.com/"
+      },
+      "filename_timestamp_candidate": "2025-11-19T07:00:03",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-06-02",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/02_sources/gtfs_schedule/original/20251119_070003_Autocares_Cristeto.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20251119_070003_Autocares_Cristeto.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/01_nap_snapshot/Cristeto.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares J. Cristeto S.L.",
+          "normalized_display_value": "Autocares J. Cristeto S.L.",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/01_nap_snapshot/Cristeto.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "004",
+      "zip_sha256": "1fe7adb7486766672ddef94917a881a0bacc5450ba00591d9a3c0e7067e63cb6",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "Autocares Ãlvarez de Viajeros",
+      "agency_identity": [
+        {
+          "agency_id": "AUTOS ALVAREZ",
+          "agency_name": "AUTOS ALVAREZ DE VIAJEROS SL",
+          "agency_url": "http://vulpeti.com/moderniza/B49122856.zip",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-05-22T08:00:04",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-06-02",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/02_sources/gtfs_schedule/original/20250522_080004_Autocares_Alvarez.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250522_080004_Autocares_Alvarez.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/01_nap_snapshot/Alvarez.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "Autocares Ãlvarez de Viajeros",
+          "normalized_display_value": "Autocares Álvarez de Viajeros",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "AUTOS ALVAREZ DE VIAJEROS SL",
+          "normalized_display_value": "AUTOS ALVAREZ DE VIAJEROS SL",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/01_nap_snapshot/Alvarez.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "005",
+      "zip_sha256": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "ViagÃ³n Autocares",
+      "agency_identity": [
+        {
+          "agency_id": "VIAGON AUTOCARES SL",
+          "agency_name": "VIAGON AUTOCARES SL",
+          "agency_url": "http://www.autocaresviagon.com/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-06-04T08:00:04",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-06-02",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/005_viagon/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/005_viagon/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/005_viagon/02_sources/gtfs_schedule/original/20250604_080004_Viagon_Autocares.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250604_080004_Viagon_Autocares.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/005_viagon/01_nap_snapshot/Viagon.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "ViagÃ³n Autocares",
+          "normalized_display_value": "Viagón Autocares",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "VIAGON AUTOCARES SL",
+          "normalized_display_value": "VIAGON AUTOCARES SL",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/005_viagon/01_nap_snapshot/Viagon.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "006",
+      "zip_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "Autocares Rafael Nadal",
+      "agency_identity": [
+        {
+          "agency_id": "arf",
+          "agency_name": "Autocares Rafael Nadal",
+          "agency_url": "https://www.rafanadalautocares.com",
+          "agency_timezone": "Europe/Berlin",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Speed Telematics S.A.",
+        "feed_publisher_url": "https://www.speedtelematics.com/",
+        "feed_lang": "es",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20251231",
+        "feed_version": "v2.3",
+        "feed_contact_email": "hola@speedtelematics.com",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-03-20T12:18:35",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20250101",
+        "feed_end_date": "20251231",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2024-12-31",
+          "end": "2025-12-30"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-02-04",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/02_sources/gtfs_schedule/original/20250320_121835_Autocares_Rafael_Nadal.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250320_121835_Autocares_Rafael_Nadal.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/01_nap_snapshot/Rafael Nadal.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Rafael Nadal",
+          "normalized_display_value": "Autocares Rafael Nadal",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/01_nap_snapshot/Rafael Nadal.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "007",
+      "zip_sha256": "81ef87bfe4c8500dc9f4b48f75ae2992131eb86e566fb4a60c73ea54431a9f1a",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_declared": "PÃ©rez Cubero",
+      "agency_identity": [
+        {
+          "agency_id": "APC",
+          "agency_name": "AUTOCARES PEREZ CUBERO",
+          "agency_url": "https://autocaresperezcubero.com",
+          "agency_timezone": "Europe/Berlin",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Speed Telematics S.A.",
+        "feed_publisher_url": "https://www.speedtelematics.com/",
+        "feed_lang": "es",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20251231",
+        "feed_version": "v2.3",
+        "feed_contact_email": "hola@speedtelematics.com",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-03-20T09:00:30",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20250101",
+        "feed_end_date": "20251231",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-12-31",
+          "end": "2026-12-30"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-03-20",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/02_sources/gtfs_schedule/original/20260320_090030_Perez_Cubero.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260320_090030_Perez_Cubero.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/01_nap_snapshot/Perez Cubero.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "PÃ©rez Cubero",
+          "normalized_display_value": "Pérez Cubero",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "AUTOCARES PEREZ CUBERO",
+          "normalized_display_value": "AUTOCARES PEREZ CUBERO",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/01_nap_snapshot/Perez Cubero.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "008",
+      "zip_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_declared": "Autocares Baraza",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "Autocares Baraza",
+          "agency_url": "http://www.autocaresbaraza.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-08-31T10:00:06",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2024-06-01",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-08-31",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/008_baraza/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/008_baraza/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_B_SME_OPERATIONAL/008_baraza/02_sources/gtfs_schedule/original/20260831_100006_BUS_Baraza.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260831_100006_BUS_Baraza.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_B_SME_OPERATIONAL/008_baraza/01_nap_snapshot/Baraza.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Baraza",
+          "normalized_display_value": "Autocares Baraza",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_B_SME_OPERATIONAL/008_baraza/01_nap_snapshot/Baraza.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "009",
+      "zip_sha256": "0c588ca4a7547b36777f9aaf8a997ae35307d4ed74ac0cee04e8ff543c8f40f8",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_declared": "Autocares Medina",
+      "agency_identity": [
+        {
+          "agency_id": "16",
+          "agency_name": "Autocares Medina SL",
+          "agency_url": "http://www.autocaresmedina.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-09-16T08:00:04",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-07-22",
+          "end": "2026-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2025-09-16",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/009_medina/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/009_medina/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_B_SME_OPERATIONAL/009_medina/02_sources/gtfs_schedule/original/20250916_080004_AUTOCARES_MEDINA.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250916_080004_AUTOCARES_MEDINA.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_B_SME_OPERATIONAL/009_medina/01_nap_snapshot/Medina.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Medina SL",
+          "normalized_display_value": "Autocares Medina SL",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_B_SME_OPERATIONAL/009_medina/01_nap_snapshot/Medina.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "010",
+      "zip_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_declared": "Rodil",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "UTE Rodil",
+          "agency_url": "empresarodil.es",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-03-09T11:00:29",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-12-31",
+          "end": "2049-12-30"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-03-09",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/010_rodil/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/010_rodil/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_B_SME_OPERATIONAL/010_rodil/02_sources/gtfs_schedule/original/20260309_110029_BUS_RODIL.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260309_110029_BUS_RODIL.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_B_SME_OPERATIONAL/010_rodil/01_nap_snapshot/Rodil.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "UTE Rodil",
+          "normalized_display_value": "UTE Rodil",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_B_SME_OPERATIONAL/010_rodil/01_nap_snapshot/Rodil.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "011",
+      "zip_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_declared": "Autocares Autocorb",
+      "agency_identity": [
+        {
+          "agency_id": "Autocorb",
+          "agency_name": "Autocorb",
+          "agency_url": "http://www.autocorb.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ca"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Autocorb",
+        "feed_publisher_url": "http://www.autocorb.com",
+        "feed_lang": "ca",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20260701",
+        "feed_end_date": "20270901",
+        "feed_version": "111",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-09-07T16:00:10",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20260701",
+        "feed_end_date": "20270901",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-07-01",
+          "end": "2027-09-01"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-07",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/02_sources/gtfs_schedule/original/20260907_160010_BUS_Autocorb.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260907_160010_BUS_Autocorb.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/01_nap_snapshot/Autocorb.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocorb",
+          "normalized_display_value": "Autocorb",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/01_nap_snapshot/Autocorb.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "012",
+      "zip_sha256": "da2d07f8d0e2dbad98f4a6b05b927ed1a2f3f660a61054b7fd6401418cad5eb7",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_declared": "Autocares Costa",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "Autocares Costa S. L.",
+          "agency_url": "http://www.autocarescosta.es/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-06-30T16:00:03",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2024-12-31",
+          "end": "2049-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2025-06-30",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/012_costa/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_B_SME_OPERATIONAL/012_costa/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_B_SME_OPERATIONAL/012_costa/02_sources/gtfs_schedule/original/20250630_160003_Autocares_Costa.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250630_160003_Autocares_Costa.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_B_SME_OPERATIONAL/012_costa/01_nap_snapshot/costa.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Costa S. L.",
+          "normalized_display_value": "Autocares Costa S. L.",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_B_SME_OPERATIONAL/012_costa/01_nap_snapshot/costa.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "013",
+      "zip_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_declared": "Autocares LÃ¡zara",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "UTE XG-863 LÁZARA-RÍAS BAIXAS",
+          "agency_url": "https://autocareslazara.eu/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2025-05-29T10:00:32",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2025-01-01",
+          "end": "2049-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2025-05-29",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/02_sources/gtfs_schedule/original/20250529_100032_Autocares_Lazara.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250529_100032_Autocares_Lazara.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/01_nap_snapshot/lazara.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "Autocares LÃ¡zara",
+          "normalized_display_value": "Autocares Lázara",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "UTE XG-863 LÁZARA-RÍAS BAIXAS",
+          "normalized_display_value": "UTE XG-863 LÁZARA-RÍAS BAIXAS",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/01_nap_snapshot/lazara.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "014",
+      "zip_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_declared": "Empresa Gilsanz",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "Empresa Gilsanz S.A",
+          "agency_url": "UNKNOWN",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-05-27T11:07:52",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-01-01",
+          "end": "2049-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-05-27",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/02_sources/gtfs_schedule/original/20260527_110752_Empresa_Gilsanz.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260527_110752_Empresa_Gilsanz.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/01_nap_snapshot/Gilsanz.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Empresa Gilsanz S.A",
+          "normalized_display_value": "Empresa Gilsanz S.A",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/01_nap_snapshot/Gilsanz.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "015",
+      "zip_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_declared": "Autocares RÃ­as Baixas",
+      "agency_identity": [
+        {
+          "agency_id": "1",
+          "agency_name": "Autocares Rias Baixas S. L.",
+          "agency_url": "http://www.autocaresriasbaixas.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        },
+        {
+          "agency_id": "2",
+          "agency_name": "TREN TURÍSTICO",
+          "agency_url": "http://www.autocaresriasbaixas.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "ES"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "UNKNOWN",
+        "feed_publisher_url": "UNKNOWN",
+        "feed_lang": "UNKNOWN",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-09-16T10:00:37",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-01-01",
+          "end": "2049-12-31"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-16",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/02_sources/gtfs_schedule/original/20260916_100037_Autobus_Rias_Baixas.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260916_100037_Autobus_Rias_Baixas.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/01_nap_snapshot/Rias baixas.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "Autocares RÃ­as Baixas",
+          "normalized_display_value": "Autocares Rías Baixas",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autocares Rias Baixas S. L.",
+          "normalized_display_value": "Autocares Rias Baixas S. L.",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        },
+        {
+          "raw_value": "TREN TURÍSTICO",
+          "normalized_display_value": "TREN TURÍSTICO",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/01_nap_snapshot/Rias baixas.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "016",
+      "zip_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_declared": "Autobuses La UniÃ³n (ALU)",
+      "agency_identity": [
+        {
+          "agency_id": "launion",
+          "agency_name": "Autobuses La Unión, S.A.",
+          "agency_url": "https://www.autobuseslaunion.com",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Autobuses La Unión, S.A.",
+        "feed_publisher_url": "https://www.autobuseslaunion.com",
+        "feed_lang": "spa",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "feed_version": "UNKNOWN",
+        "feed_contact_email": "UNKNOWN",
+        "feed_contact_url": "UNKNOWN"
+      },
+      "filename_timestamp_candidate": "2026-09-22T06:01:36",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "UNKNOWN",
+        "feed_end_date": "UNKNOWN",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-09-21",
+          "end": "2027-09-21"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-22",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/016_alu/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/016_alu/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_D_MATURE_BENCHMARK/016_alu/02_sources/gtfs_schedule/original/20260922_060136_Euskadi_La_Union.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260922_060136_Euskadi_La_Union.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_D_MATURE_BENCHMARK/016_alu/01_nap_snapshot/La Union.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "Autobuses La UniÃ³n (ALU)",
+          "normalized_display_value": "Autobuses La Unión (ALU)",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Autobuses La Unión, S.A.",
+          "normalized_display_value": "Autobuses La Unión, S.A.",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_D_MATURE_BENCHMARK/016_alu/01_nap_snapshot/La Union.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "017",
+      "zip_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_declared": "TUVISA",
+      "agency_identity": [
+        {
+          "agency_id": "320",
+          "agency_name": "Tuvisa",
+          "agency_url": "https://www.vitoria-gasteiz.org/tuvisa",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Tuvisa",
+        "feed_publisher_url": "https://www.vitoria-gasteiz.org/tuvisa",
+        "feed_lang": "es",
+        "default_lang": "es",
+        "feed_start_date": "20260920",
+        "feed_end_date": "20261021",
+        "feed_version": "1.0",
+        "feed_contact_email": "tuvisa@vitoria-gasteiz.org",
+        "feed_contact_url": "https://www.vitoria-gasteiz.org/tuvisa"
+      },
+      "filename_timestamp_candidate": "2026-09-22T06:00:14",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20260920",
+        "feed_end_date": "20261021",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-09-20",
+          "end": "2026-10-21"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-22",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/02_sources/gtfs_schedule/original/20260922_060014_Euskadi_Tuvisa.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260922_060014_Euskadi_Tuvisa.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/01_nap_snapshot/Tuvisa.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Tuvisa",
+          "normalized_display_value": "Tuvisa",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/01_nap_snapshot/Tuvisa.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "018",
+      "zip_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_declared": "Bilbobus",
+      "agency_identity": [
+        {
+          "agency_id": "Bilbobus",
+          "agency_name": "Bilbobus",
+          "agency_url": "https://www.bilbao.eus/bilbobus",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Bilbobus",
+        "feed_publisher_url": "http://www.bilbao.eus/bilbobus",
+        "feed_lang": "es",
+        "default_lang": "UNKNOWN",
+        "feed_start_date": "20260901",
+        "feed_end_date": "20270630",
+        "feed_version": "1789938057086",
+        "feed_contact_email": "webmaster@bilbao.eus",
+        "feed_contact_url": "https://www.bilbao.eus/opendata/es/colabora?tipo=1272994245057"
+      },
+      "filename_timestamp_candidate": "2026-09-22T06:00:03",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20260901",
+        "feed_end_date": "20270630",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2026-09-01",
+          "end": "2027-06-30"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-22",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/02_sources/gtfs_schedule/original/20260922_060003_Euskadi_Bilbobus.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260922_060003_Euskadi_Bilbobus.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/01_nap_snapshot/bilbobus.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Bilbobus",
+          "normalized_display_value": "Bilbobus",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/01_nap_snapshot/bilbobus.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "019",
+      "zip_sha256": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_declared": "Bizkaibus",
+      "agency_identity": [
+        {
+          "agency_id": "200",
+          "agency_name": "Bizkaibus",
+          "agency_url": "https://www.bizkaia.eus/es/web/bizkaibus",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "Lantik",
+        "feed_publisher_url": "https://www.lantik.bizkaia.eus/",
+        "feed_lang": "es",
+        "default_lang": "es",
+        "feed_start_date": "20260907",
+        "feed_end_date": "20261107",
+        "feed_version": "20260908",
+        "feed_contact_email": "lantik.gtfs@gmail.com",
+        "feed_contact_url": "https://www.bizkaia.eus/es/web/bizkaibus"
+      },
+      "filename_timestamp_candidate": "2026-09-10T06:00:14",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20260907",
+        "feed_end_date": "20261107",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2017-01-06",
+          "end": "2026-12-23"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2026-09-10",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/02_sources/gtfs_schedule/original/20260910_060014_Euskadi_Bizkaibus.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20260910_060014_Euskadi_Bizkaibus.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/01_nap_snapshot/bizkaibus.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Bizkaibus",
+          "normalized_display_value": "Bizkaibus",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/01_nap_snapshot/bizkaibus.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    },
+    {
+      "dataset_id": "020",
+      "zip_sha256": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_declared": "Kbus",
+      "agency_identity": [
+        {
+          "agency_id": "kbus",
+          "agency_name": "Kbus",
+          "agency_url": "https://www.kbus.eus/",
+          "agency_timezone": "Europe/Madrid",
+          "agency_lang": "es"
+        }
+      ],
+      "feed_info": {
+        "feed_publisher_name": "AddTransit",
+        "feed_publisher_url": "https://addtransit.com",
+        "feed_lang": "es",
+        "default_lang": "es",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "feed_version": "20240112",
+        "feed_contact_email": "gtfs@addtransit.com",
+        "feed_contact_url": "https://addtransit.com"
+      },
+      "filename_timestamp_candidate": "2025-05-30T06:01:58",
+      "timestamp_semantics": "UNKNOWN",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "publication_or_feed_dates": {
+        "feed_start_date": "20250101",
+        "feed_end_date": "20261231",
+        "nap_last_update_metadata": "UNKNOWN",
+        "nap_snapshot_displayed_service_range": {
+          "start": "2023-12-31",
+          "end": "2026-12-30"
+        }
+      },
+      "nap_snapshot_displayed_update_date": "2025-05-30",
+      "metadata_retrieved_at": "UNKNOWN",
+      "evidence_sources": [
+        {
+          "type": "MANIFEST",
+          "path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+          "field": "benchmark_id"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/00_metadata/source_metadata.json",
+          "field": "source_files[role=original_gtfs_zip].sha256"
+        },
+        {
+          "type": "LOCAL_METADATA_FILE",
+          "path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/00_metadata/source_metadata.json",
+          "field": "operator_display_name/source_platform/family"
+        },
+        {
+          "type": "GTFS_ZIP",
+          "path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/02_sources/gtfs_schedule/original/20250530_060158_Bus_Barakaldo.zip",
+          "field": "agency.txt/feed_info.txt/routes.txt/stops.txt/trips.txt"
+        },
+        {
+          "type": "FILENAME_PATTERN",
+          "filename": "20250530_060158_Bus_Barakaldo.zip",
+          "field": "filename_timestamp_candidate"
+        },
+        {
+          "type": "LOCAL_NAP_SNAPSHOT",
+          "path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/01_nap_snapshot/kbus.png",
+          "field": "visual_snapshot_only"
+        }
+      ],
+      "provenance_confidence": "MEDIUM",
+      "normalization": [
+        {
+          "raw_value": "NAP EspaÃ±a",
+          "normalized_display_value": "NAP España",
+          "normalization_method": "REVERSIBLE_LATIN1_BYTES_DECODED_AS_UTF8"
+        },
+        {
+          "raw_value": "Kbus",
+          "normalized_display_value": "Kbus",
+          "normalization_method": "GTFS_TEXT_DECODING_UTF8_OR_CP1252_FALLBACK"
+        }
+      ],
+      "notes": ["Filename timestamp semantics are unknown; not treated as capture or publication date.", "NAP source dataset ID and URL are absent from local metadata.", "NAP dates are manual transcriptions from the preserved screenshot; they are not ZIP capture dates."],
+      "nap_snapshot_evidence": {
+        "type": "LOCAL_NAP_SNAPSHOT",
+        "path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/01_nap_snapshot/kbus.png",
+        "fields": "displayed_updated_date_and_feed_date_range"
+      }
+    }
+  ],
+  "source_lineage_candidates": [],
+  "custodian_questions": [
+    {
+      "question_id": "CQ-01",
+      "datasets_affected": ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020"],
+      "unknown": "NAP source dataset IDs and canonical resource URLs",
+      "why_it_matters": "Cannot establish source lineage or acquisition provenance.",
+      "evidence_found": "source_metadata.json fields are null; local NAP snapshots show no resource identifier.",
+      "question": "What NAP resource ID and URL correspond to each benchmark dataset and which acquisition record links it to this ZIP?"
+    },
+    {
+      "question_id": "CQ-02",
+      "datasets_affected": ["002", "005", "008", "009", "011", "013", "015", "016", "017", "018", "019"],
+      "unknown": "Origin and reuse policy for shared GTFS identifiers",
+      "why_it_matters": "Related feeds may need to remain on one split side.",
+      "evidence_found": "Shared route/stop IDs without shared agency IDs, names, or trips in affected pairs.",
+      "question": "Do these shared identifiers come from a common registry/network or independent reuse, and should any affected feeds be grouped?"
+    },
+    {
+      "question_id": "CQ-03",
+      "datasets_affected": ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020"],
+      "unknown": "Semantic meaning of ZIP filename timestamps",
+      "why_it_matters": "They cannot be used as capture/publication chronology without corroboration.",
+      "evidence_found": "Filename patterns exist; metadata does not assign their meaning.",
+      "question": "Which acquisition event, if any, does the YYYYMMDD_HHMMSS filename prefix represent?"
+    }
+  ]
+}
