@@ -1,6 +1,6 @@
 # GTFS_Lab M03-B1 — Golden Corpus V1 para revisión humana
 
-Fecha: 2026-09-29. Estado: `M03B1_CORPUS_READY_FOR_HUMAN_REVIEW`. Ningún candidato está aprobado. La propuesta no es una aprobación técnica ni humana.
+Fecha: 2026-09-29. Estado: `M03B1_READY_FOR_HUMAN_APPROVAL`. Ningún candidato está aprobado. La propuesta no es una aprobación técnica ni humana.
 
 ## A. Inventario y decisión de candidatos
 
@@ -11,8 +11,8 @@ La tabla registra el propósito de cada candidato, regla/status/finding propuest
 | `VALID_MINIMAL` | feed mínimo admitido por el scope de validación V1 | `PASS`; 0 findings de regla | `TDL_CONTRACT` si se limita al subconjunto | El nombre sugiere validez GTFS completa; no cubre semántica condicional/opcional | `KEEP_DRAFT` |
 | `ORPHAN_TRIP` | `stop_times.trip_id` sin trip padre; adapter Compliance `V1-RULE-GTFS` | `FAIL_TECHNICAL`; un finding agregado esperado | GTFS Specification para la relación, pero el adapter emite regla agregada | No aísla qué lado de la referencia fija causó el finding | `KEEP_DRAFT` |
 | `ORPHAN_STOP` | `stop_times.stop_id` sin stop padre; adapter Compliance `V1-RULE-GTFS` | `FAIL_TECHNICAL`; un finding agregado esperado | GTFS Specification para la relación, pero el adapter emite regla agregada | Regla agregada compartida con trip reference | `KEEP_DRAFT` |
-| `ORPHAN_ROUTE` | `trips.route_id` sin ruta padre; `GTFS-REF-TRIP-ROUTE` | `FAIL_TECHNICAL`; 1 finding | `GTFS_SPECIFICATION` | Baja: un viaje y una ruta inexistente deliberada | `APPROVE` recomendado, pendiente de Yeison |
-| `BAD_SERVICE_REFERENCE` | `trips.service_id` sin service en calendar/calendar_dates; `GTFS-REF-SERVICE` | `FAIL_TECHNICAL`; 1 finding | `GTFS_SPECIFICATION` | Baja: una fila de calendario válida y un service ausente deliberado | `APPROVE` recomendado, pendiente de Yeison |
+| `ORPHAN_ROUTE` | `trips.route_id` sin ruta padre; `GTFS-REF-TRIP-ROUTE` | `FAIL_TECHNICAL`; 1 finding | Semántica: `GTFS_SPECIFICATION`; output: `TDL_CONTRACT` | Baja: un viaje y una ruta inexistente deliberada | `UNDER_REVIEW` |
+| `BAD_SERVICE_REFERENCE` | `trips.service_id` sin service en calendar/calendar_dates; `GTFS-REF-SERVICE` | `FAIL_TECHNICAL`; 1 finding | Semántica: `GTFS_SPECIFICATION`; output: `TDL_CONTRACT` | Baja: una fila de calendario válida y un service ausente deliberado | `UNDER_REVIEW` |
 | `BAD_SHAPE_REFERENCE` | `trips.shape_id` suministrado sin shape padre; `GTFS-REF-SHAPE` | `FAIL_TECHNICAL`; 1 finding propuesto | `GTFS_SPECIFICATION` | La tabla shapes es condicional y el scope de la regla depende de que exista | `KEEP_DRAFT` |
 | Compliance `gtfs-valid` | referencias fixed-stop aceptadas por Compliance V1 | `PASS`; 0 findings | `COMPLIANCE_FROZEN_SCOPE` | No afirma validación completa GTFS ni sustituye GTFS_Lab V1 | `REJECT_FOR_GOLDEN_V1` |
 | Compliance `gtfs-broken-stop` | referencia fija a stop incorrecta | `FAIL_TECHNICAL`; finding de Compliance V1 | `COMPLIANCE_FROZEN_SCOPE` | Ownership y scope pertenecen al adapter Compliance; se conserva su límite y no es expectativa del validator GTFS_Lab | `REJECT_FOR_GOLDEN_V1` |
@@ -20,7 +20,7 @@ La tabla registra el propósito de cada candidato, regla/status/finding propuest
 | Compliance `gtfs-missing-value` | caso GTFS de valor ausente | El manifest histórico marca `INSPECTION_ERROR`; no se convierte en finding | `COMPLIANCE_FROZEN_SCOPE` | Error de inspección no es una expectation normativa estable | `REJECT_FOR_GOLDEN_V1` |
 | Compliance `gtfs-boundary` | comportamiento en el límite del scope congelado | resultado de frontera del evaluador | `COMPLIANCE_FROZEN_SCOPE` | El límite del evaluador no representa una regla GTFS | `REJECT_FOR_GOLDEN_V1` |
 
-La etiqueta `APPROVE recomendado` es una recomendación técnica del asset. Los dos `case.json` permanecen `UNDER_REVIEW`, con `review: {}`. Para el resto, “expected” describe la hipótesis candidateada en M03-A; el resultado del evaluador Compliance no se promueve a Golden.
+Los dos `case.json` permanecen `UNDER_REVIEW`, con `review: {}`. Esta corrección no registra una decisión humana ni aprueba los casos. Para el resto, “expected” describe la hipótesis candidateada en M03-A; el resultado del evaluador Compliance no se promueve a Golden.
 
 ## B. Propuesta seleccionada
 
@@ -32,9 +32,10 @@ Ambos inputs son ZIP sintéticos independientes bajo `golden/cases/`; se eligió
 - Input: `golden/cases/gtfs-orphan-route-v1/input.zip`.
 - SHA-256: `28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81`.
 - Expectativas: `STATUS validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].status = FAIL_TECHNICAL`; `COUNT ...finding_count = 1`.
-- Authority: GTFS Schedule Reference, `trips.txt`, campo `route_id`, “Foreign ID referencing routes.route_id”, Required. Interpretación: el único trip declara una ruta que no está en el conjunto de `routes.route_id`.
+- Autoridad semántica del caso: GTFS Schedule Reference, `trips.txt`, campo `route_id`, “Foreign ID referencing routes.route_id”, Required. Interpretación: el único trip declara una ruta que no está en el conjunto de `routes.route_id`.
+- Autoridad de las expectations STATUS y COUNT: `TDL_CONTRACT`. GTFS establece la relación referencial, pero no define nombres de reglas TDL, `FAIL_TECHNICAL` ni número de findings.
 - Comparación observada: `FAIL_TECHNICAL`, `FAIL_TECHNICAL`, 1 finding; coincidencia en ambas expectativas.
-- Recomendación: `APPROVE`, pendiente de aprobación del usuario.
+- Decisión: `UNDER_REVIEW`; `review: {}`. Pendiente de revisión y decisión humana.
 
 ### `gtfs-bad-service-reference-v1` — versión 1.0.0
 
@@ -42,9 +43,20 @@ Ambos inputs son ZIP sintéticos independientes bajo `golden/cases/`; se eligió
 - Input: `golden/cases/gtfs-bad-service-reference-v1/input.zip`.
 - SHA-256: `21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51`.
 - Expectativas: `STATUS validation.rules[rule_id=GTFS-REF-SERVICE].status = FAIL_TECHNICAL`; `COUNT ...finding_count = 1`.
-- Authority: GTFS Schedule Reference, `trips.txt`, campo `service_id`, referencia a `calendar.service_id` o `calendar_dates.service_id`, Required. Interpretación: ambas tablas de calendario están correctamente formadas y solo declaran `weekday`; el trip declara `missing-service`.
+- Autoridad semántica del caso: GTFS Schedule Reference, `trips.txt`, campo `service_id`, referencia a `calendar.service_id` o `calendar_dates.service_id`, Required. Interpretación: ambas tablas de calendario están correctamente formadas y solo declaran `weekday`; el trip declara `missing-service`.
+- Autoridad de las expectations STATUS y COUNT: `TDL_CONTRACT`. GTFS establece la relación referencial, pero no define nombres de reglas TDL, `FAIL_TECHNICAL` ni número de findings.
 - Comparación observada: `FAIL_TECHNICAL`, `FAIL_TECHNICAL`, 1 finding; coincidencia en ambas expectativas.
-- Recomendación: `APPROVE`, pendiente de aprobación del usuario.
+- Decisión: `UNDER_REVIEW`; `review: {}`. Pendiente de revisión y decisión humana.
+
+### Cadena de autoridad y cardinalidad propuesta
+
+`GTFS_SPECIFICATION` → define la validez de la referencia (`trips.route_id` → `routes.route_id`; `trips.service_id` → `calendar.service_id` o `calendar_dates.service_id`).
+
+`TDL_CONTRACT` → define la representación técnica Golden del incumplimiento para estos fixtures focales:
+
+`violación única focal` → `rule.status = FAIL_TECHNICAL` → exactamente 1 finding.
+
+GTFS no exige ese status ni ese número de findings. `finding_count = 1` es una decisión contractual propuesta de TDL para cada fixture focal; permite detectar findings duplicados u omitidos y preservar la cardinalidad una violación/una evidencia para estas reglas concretas. No se generaliza automáticamente a otras reglas.
 
 ## C. Candidatos diferidos/rechazados
 
@@ -54,7 +66,7 @@ Los dos casos de referencias son focales, pero los fixtures `ORPHAN_TRIP` y `ORP
 
 `golden/corpus_v1.json` declara dos casos `UNDER_REVIEW`, versión de contrato `1.0.0`, timestamp de creación UTC y `corpus_sha256` determinista. La identidad se calcula sobre la lista ordenada por `case_id`, `case_version`, con esos identificadores más `case.json SHA-256` e input SHA-256; JSON canónico UTF-8, claves ordenadas, separadores compactos. No entran timestamps ni paths.
 
-Identidad actual del corpus: `9bbd133a54c0cd6029789a6cb7ce2bd6206aace604a71cc97981ed9459edcae0`.
+La identidad del corpus se recalcula tras esta corrección; véase el bloque de hashes y gates de esta revisión.
 
 `golden_evaluator.py` implementa `STATUS`, `COUNT`, `PRESENCE` y `ABSENCE`, y los targets limitados `validation.status` y `validation.rules[rule_id=ID].{status,finding_count,findings}`. COUNT exige `int` exacto; no convierte strings. El tipo `GoldenCaseResult` define caso/versión, run, dataset, engine context, status, resultados por expectation y diferencias inesperadas. No hay scoring.
 
@@ -64,7 +76,7 @@ Los estados generales son `PASS`, `FAIL_EXPECTATION`, `NOT_EVALUABLE` y `EXECUTI
 
 El corpus no está aprobado ni es operativo. No se registra nombre, fecha ni firma de reviewer. Los outputs observados se incluyen únicamente como contraste posterior de expectativas definidas primero. La especificación GTFS es normativa técnica para estas referencias y no equivale a conclusión jurídica sobre un operador.
 
-## F. Regresión M03-B1
+## F. Regresión M03-B1 — ejecución inicial
 
 | Comprobación | Resultado |
 |---|---|
@@ -79,5 +91,24 @@ El corpus no está aprobado ni es operativo. No se registra nombre, fecha ni fir
 | `git diff --check` | PASS |
 
 El Compliance gate leyó las bases locales existentes a través de junctions temporales desde el worktree aislado; las referencias se retiraron tras el gate. No se modificaron las bases protegidas. Evidencias de ejecución fuera del checkout: `C:\Users\yeiso\AppData\Local\Temp\tdl_m03b_gate_outputs\`.
+
+Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## G. Corrección de autoridad M03-B1
+
+Se separa la autoridad semántica GTFS de la representación que propone el contrato TDL. El bloque case-level conserva `authority.basis = GTFS_SPECIFICATION`, su referencia y la nota interpretativa. Las expectations STATUS y COUNT usan `authority = TDL_CONTRACT`; sus valores esperados no cambian. Los casos conservan `status = UNDER_REVIEW` y `review = {}`; no se registra reviewer, fecha ni aprobación.
+
+Cadena de autoridad: `GTFS_SPECIFICATION` → define la validez de la referencia; `TDL_CONTRACT` → define la representación técnica Golden del incumplimiento. Para cada fixture focal se propone `violación única focal` → `rule.status = FAIL_TECHNICAL` → exactamente 1 finding. GTFS no exige el status ni la cantidad de findings. `finding_count = 1` es una decisión contractual propuesta de TDL para estos fixtures concretos: detecta duplicados u omisiones y preserva cardinalidad una violación/una evidencia para estas reglas, sin generalización automática a otras reglas.
+
+| Caso | `case_sha256` nuevo | SHA-256 input sin cambios |
+|---|---|---|
+| `gtfs-orphan-route-v1` | `5ca9eee38e0b6d52696721ca4ca14018c0ce6a2e663768bd456ab2c6e23658df` | `28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81` |
+| `gtfs-bad-service-reference-v1` | `292dca311b52dfecffec791b9f6b886919229c4c8e5736efad0f8791b56fe3e8` | `21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51` |
+
+Nuevo `corpus_sha256`: `205c43dd68bd20520e46680c06b3a76fba8bd415895259588b5b5bf71435b0e1`.
+
+Gates tras la corrección: M03-A Contract Gate PASS (18/18); Golden Corpus Review Gate PASS (9/9, 2 casos, 0 aprobados); Golden Evaluator Gate PASS (11/11); `py_compile` PASS para contrato/evaluator y sus gates; `git diff --check` PASS. M01, M02, GTFS_Lab V1 y Compliance V1 no se repitieron: el cambio es de metadata/documentación y esos procedimientos no lo exigen.
+
+Resultado: `M03B1_READY_FOR_HUMAN_APPROVAL`. Este resultado deja los casos disponibles para decisión humana; no los aprueba ni cambia el estado Draft de la PR.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

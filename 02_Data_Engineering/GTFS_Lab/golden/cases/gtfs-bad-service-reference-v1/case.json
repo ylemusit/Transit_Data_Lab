@@ -19,13 +19,13 @@
       "type": "STATUS",
       "target": "validation.rules[rule_id=GTFS-REF-SERVICE].status",
       "value": "FAIL_TECHNICAL",
-      "authority": "GTFS_SPECIFICATION"
+      "authority": "TDL_CONTRACT"
     },
     {
       "type": "COUNT",
       "target": "validation.rules[rule_id=GTFS-REF-SERVICE].finding_count",
       "value": 1,
-      "authority": "GTFS_SPECIFICATION"
+      "authority": "TDL_CONTRACT"
     }
   ],
   "excluded_expectations": [
@@ -42,7 +42,7 @@
     "basis": "GTFS_SPECIFICATION",
     "source_name": "GTFS Schedule Reference",
     "section_topic": "trips.txt: service_id; Foreign ID referencing calendar.service_id or calendar_dates.service_id, Required",
-    "interpretation_note": "El único viaje declara missing-service y las tablas de calendario presentes solo declaran weekday."
+    "interpretation_note": "GTFS establece que trips.service_id referencia calendar.service_id o calendar_dates.service_id; el único viaje declara missing-service y las tablas de calendario presentes solo declaran weekday. GTFS no define el status ni el número de findings emitidos por TDL."
   },
   "review": {},
   "engine_context": {
@@ -52,5 +52,5 @@
     "ruleset_version": "1"
   },
   "expectation_defined_before_observation": true,
-  "golden_expectation_source": "GTFS_SPECIFICATION"
+  "golden_expectation_source": "TDL_CONTRACT"
 }

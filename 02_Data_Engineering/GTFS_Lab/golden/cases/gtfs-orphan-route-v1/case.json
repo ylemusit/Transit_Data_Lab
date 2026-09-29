@@ -19,13 +19,13 @@
       "type": "STATUS",
       "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].status",
       "value": "FAIL_TECHNICAL",
-      "authority": "GTFS_SPECIFICATION"
+      "authority": "TDL_CONTRACT"
     },
     {
       "type": "COUNT",
       "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].finding_count",
       "value": 1,
-      "authority": "GTFS_SPECIFICATION"
+      "authority": "TDL_CONTRACT"
     }
   ],
   "excluded_expectations": [
@@ -42,7 +42,7 @@
     "basis": "GTFS_SPECIFICATION",
     "source_name": "GTFS Schedule Reference",
     "section_topic": "trips.txt: route_id; Foreign ID referencing routes.route_id, Required",
-    "interpretation_note": "Cada viaje declara una ruta existente; el fixture contiene un único trips.route_id sin fila correspondiente en routes.txt."
+    "interpretation_note": "GTFS establece que trips.route_id referencia routes.route_id; el fixture contiene un único trips.route_id sin fila correspondiente en routes.txt. GTFS no define el status ni el número de findings emitidos por TDL."
   },
   "review": {},
   "engine_context": {
@@ -52,5 +52,5 @@
     "ruleset_version": "1"
   },
   "expectation_defined_before_observation": true,
-  "golden_expectation_source": "GTFS_SPECIFICATION"
+  "golden_expectation_source": "TDL_CONTRACT"
 }
