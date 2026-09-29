@@ -2,7 +2,9 @@
 
 **Checkpoint classification:** `HOLDOUT_EXECUTION_PARTIAL`
 
-**Verdict:** `M04B1_HOLDOUT_CHECKPOINT_PARTIAL`
+**Verdict:** `M04B1_CHECKPOINT_PRESERVED_AND_RECONCILED`
+
+**Execution result:** `HOLDOUT_EXECUTION_PARTIAL`
 
 ## A. Evaluation and access identity
 
@@ -27,7 +29,7 @@
 ## D. First HOLDOUT access
 
 - First source ZIP hash access recorded at `2026-09-29T13:23:48Z`, after the pre-open access record and engine identity had been persisted. All six entry hashes match frozen split metadata.
-- One earlier path-resolution attempt failed before opening any source file; it is recorded in `access_record.json`.
+- One path-resolution attempt at `2026-09-29T13:23:19Z` failed before any source file was opened; the attempt remains recorded in `access_record.json`. The first actual source ZIP hash access occurred at `2026-09-29T13:23:48Z`.
 
 ## E. Dataset identities and outcomes
 

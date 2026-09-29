@@ -51,11 +51,15 @@
   "preopen_checks": {
     "split_gate": "TDL_CORPUS_SPLIT_GATE_PASS",
     "lineage_gate": "M04A2_LINEAGE_REVIEW_PASS",
-    "source_zip_contents_read": true
+    "source_zip_contents_read": false
   },
   "first_access_attempt": {
     "attempted_at_utc": "2026-09-29T13:23:19Z",
     "outcome": "PATH_RESOLUTION_ERROR_BEFORE_SOURCE_OPEN",
     "detail": "Resolved candidate paths under isolated worktree instead of protected corpus source root; Get-FileHash reported path not found."
+  },
+  "postopen_state": {
+    "source_zip_contents_read": true,
+    "first_holdout_opened_at_utc": "2026-09-29T13:23:48Z"
   }
 }
