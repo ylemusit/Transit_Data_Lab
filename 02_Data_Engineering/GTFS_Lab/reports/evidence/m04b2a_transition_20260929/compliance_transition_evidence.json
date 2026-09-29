@@ -14,6 +14,11 @@
   "expanded_domain_cases": 2,
   "historical_package_unchanged": true,
   "candidate_replay_status": "PASS",
+  "historical_package_replay_status": "PASS",
+  "historical_evaluator_byte_identity": "PASS",
+  "historical_evaluator_git_blob": "efe3164ddfe33255d9ce94db0e6f410a80ec58c6",
+  "historical_evaluator_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+  "historical_package_replayed_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
   "approval_status": "UNDER_REVIEW_NOT_APPROVED",
   "historical_db_sha256": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
   "historical_freeze_sha256": "3BBB6D87500608364972CFE841D6B2D3D03558FC73F1960A28579905FAEC6A3E",
@@ -32,7 +37,7 @@
   "b1_evidence_unchanged": true,
   "holdout_accessed": false,
   "current_gate_status": "NOT_RUN_PROTECTED_DB_FOOTPRINT",
-  "historical_package_replay_status": "NOT_CONCLUSIVE_TEMP_LINE_ENDING_CHANGED_EVALUATOR_SHA",
+  "historical_package_replay_previous_attempt": "INCONCLUSIVE_TEMP_TEXT_MODE_CONVERTED_EVALUATOR_LF_TO_CRLF",
   "gates": {
     "M01": "PASS",
     "M02": "PASS",
@@ -43,6 +48,7 @@
     "split": "PASS",
     "lineage": "PASS",
     "gtfs_lab_synthetic": "PASS",
+    "historical_package_replay": "PASS",
     "compileall": "PASS",
     "git_diff_check": "PASS"
   },

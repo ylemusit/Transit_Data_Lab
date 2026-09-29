@@ -41,7 +41,19 @@ Dos casos sintéticos superan por separado el límite antiguo de 1 MiB y el de 1
 
 ## I. Generator replay
 
-La construcción del candidato v2 repetida dos veces produce el mismo objeto y SHA; `candidate_replay_status=PASS`. El intento de reproducir el paquete histórico usando el evaluador v1 cargado desde un temporal no es concluyente: la escritura temporal en Windows convirtió LF a CRLF y cambió el SHA del código incorporado en el paquete. No se reporta como PASS. No se escribió sobre el paquete histórico ni la DB.
+La construcción del candidato v2 repetida dos veces produce el mismo objeto y SHA; `candidate_replay_status=PASS`. En el intento inicial de reproducir el paquete histórico, la escritura temporal en Windows convirtió LF a CRLF y cambió el SHA del código incorporado; ese intento quedó registrado como inconcluso. La sección siguiente cierra la reproducibilidad con recuperación binaria del blob y serialización explícita. No se escribió sobre el paquete histórico ni la DB original.
+
+## I.1. Cierre de reproducibilidad histórica
+
+- El evaluador histórico se recuperó directamente y en bytes del blob Git `efe3164ddfe33255d9ce94db0e6f410a80ec58c6`; el blob contiene 8.768 bytes LF, cero CRLF y no tiene BOM. SHA-256 esperado y actual: `efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70`.
+- Contrato de replay del paquete: reconstruir el objeto con el evaluador recuperado; serializar con `json.dumps(ensure_ascii=False, indent=2).encode("utf-8")`; convertir LF a CRLF para reproducir la materialización histórica de Windows; no añadir newline final.
+- SHA-256 esperado y reproducido del paquete: `2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981`; identidad byte a byte: PASS. La DB protegida se copió y verificó por SHA antes de usarla en lectura; la DB original no se modificó.
+- El intento anterior permanece registrado como inconcluso: la materialización temporal en modo texto convirtió el evaluador LF a CRLF y alteró el SHA del código incorporado. La recuperación binaria del blob y el contrato explícito de serialización cierran ahora esa limitación; no se elimina el registro histórico.
+- Evidencia durable: `02_Data_Engineering/GTFS_Lab/reports/evidence/m04b2a_transition_20260929/historical_package_replay.json`.
+
+Veredicto técnico final: `M04B2B_HISTORICAL_REPLAY_VERIFIED`.
+Estado de transición: `TRANSITION_READY_FOR_HUMAN_APPROVAL`.
+`approval_status` permanece `UNDER_REVIEW_NOT_APPROVED`.
 
 ## J. Historical package integrity
 
@@ -68,6 +80,6 @@ Revisar y decidir `COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2`. No existe 
 
 ## N. Verdict
 
-`M04B2A_COMPLIANCE_TRANSITION_READY_FOR_HUMAN_APPROVAL` — equivalencia diferencial 28/28 y replay del candidato v2 PASS. El replay del generador histórico queda no concluyente por la serialización temporal de newline indicada arriba; deberá cerrarse en revisión antes de considerar completa la reproducibilidad histórica. HOLDOUT V2 permanece bloqueado.
+`M04B2_TRANSITION_EVIDENCE_COMPLETE_AWAITING_HUMAN_APPROVAL` — veredicto técnico `M04B2B_HISTORICAL_REPLAY_VERIFIED`, equivalencia diferencial 28/28, dos casos de dominio ampliado y replay de candidato v2 PASS. Transición lista para decisión humana; no aprobada. HOLDOUT V2 permanece cerrado.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

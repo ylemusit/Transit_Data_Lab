@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "historical_evaluator_git_blob": "efe3164ddfe33255d9ce94db0e6f410a80ec58c6",
+  "historical_evaluator_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+  "historical_evaluator_bytes": 8768,
+  "historical_evaluator_lf_count": 180,
+  "historical_evaluator_crlf_count": 0,
+  "expected_package_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
+  "replayed_package_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
+  "package_bytes": 78554,
+  "package_crlf_count": 887,
+  "package_lf_only_count": 0,
+  "serialization_contract": "json.dumps(ensure_ascii=False, indent=2).encode(utf-8), then LF to CRLF conversion to reproduce historical Windows materialization; no trailing newline",
+  "previous_attempt": "INCONCLUSIVE: temporary text-mode materialization converted evaluator LF to CRLF; retained as historical record",
+  "byte_identity": "PASS"
+}
