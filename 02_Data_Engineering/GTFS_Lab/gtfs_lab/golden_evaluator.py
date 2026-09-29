@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal, TypedDict
 
 from .golden_contract import is_executable_authority
 
@@ -11,6 +11,27 @@ SUPPORTED_TYPES = {"STATUS", "COUNT", "PRESENCE", "ABSENCE"}
 
 class GoldenEvaluationError(ValueError):
     pass
+
+
+class ExpectationResult(TypedDict):
+    expectation_index: int
+    type: str
+    target: str
+    expected: Any
+    observed: Any
+    status: Literal["PASS", "FAIL", "NOT_EVALUABLE", "EXECUTION_ERROR"]
+    message: str
+
+
+class GoldenCaseResult(TypedDict):
+    case_id: str
+    case_version: str
+    run_id: str
+    dataset_id: str
+    engine_context: dict[str, Any]
+    status: Literal["PASS", "FAIL_EXPECTATION", "NOT_EVALUABLE", "EXECUTION_ERROR"]
+    expectation_results: list[ExpectationResult]
+    unexpected_differences: list[dict[str, Any]]
 
 
 def _resolve(payload: Any, target: str) -> tuple[bool, Any]:
@@ -38,12 +59,12 @@ def _resolve(payload: Any, target: str) -> tuple[bool, Any]:
     return field in rule, rule.get(field)
 
 
-def evaluate(case: dict[str, Any], case_dir: Path, observed_output: Any, context: dict[str, Any]) -> dict[str, Any]:
+def evaluate(case: dict[str, Any], case_dir: Path, observed_output: Any, context: dict[str, Any]) -> GoldenCaseResult:
     if not is_executable_authority(case, case_dir):
         raise GoldenEvaluationError("case is not valid executable APPROVED authority")
     if not isinstance(context, dict) or not all(isinstance(context.get(k), str) and context[k] for k in ("run_id", "dataset_id")):
         raise GoldenEvaluationError("run_id and dataset_id are required")
-    results = []
+    results: list[ExpectationResult] = []
     unexpected = []
     for index, exp in enumerate(case["expected"]):
         typ, target, expected = exp["type"], exp["target"], exp["value"]

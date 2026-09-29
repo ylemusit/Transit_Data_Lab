@@ -56,7 +56,7 @@ Los dos casos de referencias son focales, pero los fixtures `ORPHAN_TRIP` y `ORP
 
 Identidad actual del corpus: `9bbd133a54c0cd6029789a6cb7ce2bd6206aace604a71cc97981ed9459edcae0`.
 
-`golden_evaluator.py` implementa `STATUS`, `COUNT`, `PRESENCE` y `ABSENCE`, y los targets limitados `validation.status` y `validation.rules[rule_id=ID].{status,finding_count,findings}`. COUNT exige `int` exacto; no convierte strings. `GoldenCaseResult` incluye caso/versión, run, dataset, engine context, status, resultados por expectation y diferencias inesperadas. No hay scoring.
+`golden_evaluator.py` implementa `STATUS`, `COUNT`, `PRESENCE` y `ABSENCE`, y los targets limitados `validation.status` y `validation.rules[rule_id=ID].{status,finding_count,findings}`. COUNT exige `int` exacto; no convierte strings. El tipo `GoldenCaseResult` define caso/versión, run, dataset, engine context, status, resultados por expectation y diferencias inesperadas. No hay scoring.
 
 Los estados generales son `PASS`, `FAIL_EXPECTATION`, `NOT_EVALUABLE` y `EXECUTION_ERROR`. Solo un caso que pase `is_executable_authority(...)` se evalúa. El gate del evaluator usa casos temporales sintéticos APPROVED que no se guardan en el corpus. Los casos candidatos `UNDER_REVIEW` no se ejecutan como autoridad.
 
@@ -74,7 +74,7 @@ El corpus no está aprobado ni es operativo. No se registra nombre, fecha ni fir
 | GTFS_Lab V1 current gate | PASS; fixtures, E2E sintético y GIS direccional PASS |
 | Compliance V1 current gate | PASS; hash inicial/final `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B`; mantiene el test histórico `UNCHANGED_COUNT_audit.rules` (386 PASS, una aserción histórica FAIL admitida por el gate) |
 | Golden Corpus Review Gate | PASS, 9/9; 2 casos y 0 APPROVED |
-| Golden Evaluator Gate | PASS, 10/10 |
+| Golden Evaluator Gate | PASS, 11/11 |
 | `py_compile` | PASS para evaluator y ambos gates nuevos |
 | `git diff --check` | PASS |
 

@@ -21,7 +21,9 @@ def run_gate() -> dict:
         def one(typ, target, value):
             c = copy.deepcopy(case); c["expected"] = [{"type":typ,"target":target,"value":value,"authority":"SYNTHETIC_INVARIANT"}]
             return evaluate(c, base, observed, context)
-        add("status_pass", one("STATUS","validation.rules[rule_id=R].status","FAIL_TECHNICAL")["status"] == "PASS")
+        passing_result = one("STATUS","validation.rules[rule_id=R].status","FAIL_TECHNICAL")
+        add("status_pass", passing_result["status"] == "PASS")
+        add("golden_case_result_contract", set(passing_result) == {"case_id", "case_version", "run_id", "dataset_id", "engine_context", "status", "expectation_results", "unexpected_differences"} and set(passing_result["expectation_results"][0]) == {"expectation_index", "type", "target", "expected", "observed", "status", "message"})
         add("status_fail", one("STATUS","validation.status","PASS")["status"] == "FAIL_EXPECTATION")
         add("count_pass", one("COUNT","validation.rules[rule_id=R].finding_count",1)["status"] == "PASS")
         add("count_fail_and_no_string_coercion", one("COUNT","validation.rules[rule_id=R].finding_count","1")["status"] == "FAIL_EXPECTATION")
