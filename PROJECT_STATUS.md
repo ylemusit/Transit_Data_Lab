@@ -12,12 +12,12 @@ Actualizado: 2026-09-30. Sustituye únicamente las afirmaciones operativas obsol
 | Remoto raíz | `https://github.com/ylemusit/Transit_Data_Lab.git`; el HEAD remoto de `main` se verifica al publicar cada checkpoint. |
 | Remoto Desktop | `https://github.com/ylemusit/GTFS-Explorer-Desktop.git`; historia independiente del contenedor. |
 | Baseline Desktop | `v0.2.2` → `85c700587ffec06d73d84825e1951fb73259b62c`, local y remota. |
-| HEAD Desktop | `38e0e96dbeabaf00d53ed4d85509e5a4ce0b06fd`: commit documental posterior al release. |
+| HEAD Desktop | `07e2c2a64766144dba4c4b6136157d5bb8291226` observado el 2026-09-30; posterior a la etiqueta `v0.2.2`, con historia independiente. |
 | Visibilidad | Ambos repositorios públicos según consulta GitHub actual. Las declaraciones anteriores de privacidad son históricas. |
 
 Los informes `REMOTE_GITHUB_ALIGNMENT.md`, `REMOTE_HISTORY_REVIEW.md` y `LEGACY_REPOSITORY_RENAME_READINESS.md` documentan el estado anterior a la separación efectiva de los remotos. El bloqueo UNRELATED_HISTORIES de esos informes no describe la relación actual entre HEAD raíz y su origin/main. No se deben fusionar historias para resolver un bloqueo ya superado.
 
-Desktop tiene 20 entradas locales de estado, incluidas modificaciones de código y tests. Engineering y Artifacts también tienen cambios previos; el restore de 0.2.2 está limpio. Estas observaciones no modifican la etiqueta del release, pero impiden considerar el working tree de Desktop una copia limpia de esa baseline. No se han revertido ni revisado funcionalmente esos cambios.
+El working tree de Desktop figura limpio en la comprobación del 2026-09-30, en HEAD `07e2c2a…`; esto no lo convierte en un checkout de la etiqueta `v0.2.2` ni valida funcionalmente los commits posteriores. Engineering, Artifacts y el restore requieren comprobación propia antes de afirmar su estado actual. Las 20 entradas locales de Desktop registradas en la revisión anterior son una observación histórica.
 
 ## Estado por área
 
@@ -52,6 +52,8 @@ La base GTFS raw coincide con su hash registrado. La base Compliance se amplió 
 - Compliance V1 CLOSED_WITH_DEFERRALS, +44 filas aditivas verificadas (2026-09-28): `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B`.
 
 La concordancia de bytes no certifica semántica GTFS, fidelidad textual o cumplimiento jurídico. Se mantienen las anomalías Annex 1.3 B-I/D-I, siete dependencias PARTIAL y mappings/reglas pendientes. El SQL del gate posterior a materialización incluye rutas absolutas y `read_blob`; no es un gate portable para un nuevo checkout. Los tests históricos de Phase 1, pre-materialización y el test 23 del master inicial de Phase 2 no deben aplicarse como expectativas del estado materializado. La revisión obtiene 27 PASS / 1 FAIL en ese master antiguo y 377/377 PASS en las comprobaciones de filas del gate final, excluyendo diez hashes jurídicos. Ver [la política de tests](03_Compliance/TEST_BASELINE_POLICY.md).
+
+La [revisión global de preparación técnica](reports/repository_integrity/TDL_GLOBAL_TECHNICAL_READINESS_REVIEW.md) clasifica dependencias operativas y precondiciones para GTFS Audit Engine V1. Su veredicto es técnico y no altera los cierres humanos, contractuales o jurídicos anteriores.
 
 Los tres KML históricos se conservan como referencia; GTFS_Lab V1 añade exportación KML/GeoJSON reproducible por run. `main.stops` sigue siendo un duplicado documentado cuyo propósito está pendiente de aclaración. Git conserva fuentes y evidencia seleccionada; bases, feeds, repositorios anidados y grandes generados requieren backup separado. La publicación del Git raíz no acredita ese backup integral.
 

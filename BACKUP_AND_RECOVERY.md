@@ -1,6 +1,6 @@
 # Backup y recuperación
 
-Fecha: 2026-09-27. PROJECT_BACKUP_POLICY_DOCUMENTED = YES. El snapshot local existe: HEAD y tdl-baseline-v0.1 apuntan a 3c122f48ce4425c2e34313a2a65dcb9218bc77f5; main y etiqueta remotos coinciden según consulta actual. El bloqueo inicial por evidencia HTML corresponde a un intento histórico conservado; no describe el estado Git actual. No se acredita copia física integral ni backup de datos excluidos. Ver [PROJECT_STATUS.md](PROJECT_STATUS.md).
+Política documentada el 2026-09-27; la afirmación de que HEAD coincidía con `tdl-baseline-v0.1` describe solo aquel snapshot. El estado Git actual se consulta en [PROJECT_STATUS.md](PROJECT_STATUS.md) y en el remoto. No se acredita copia física integral, restauración probada ni backup de datos excluidos. El bloqueo inicial por evidencia HTML corresponde a un intento histórico conservado.
 
 ## VERSIONED IN GIT — snapshot local y remoto existentes
 
@@ -17,7 +17,7 @@ Entornos, cachés, builds y temporales, siempre que sus fuentes/dependencias est
 | Ruta o categoría | Propósito / requisito |
 | --- | --- |
 | 02_Data_Engineering/GTFS_Lab/databases/gtfs_lab.duckdb | Base raw autoritativa; conservar copia consistente y SHA del baseline |
-| 03_Compliance/databases/transit_compliance.duckdb | Phase 2 actual; copia consistente del baseline frozen, no modificar metadata |
+| 03_Compliance/databases/transit_compliance.duckdb | Base Compliance V1 actual, con Phase 1/2 congeladas y capas posteriores aprobadas; copia consistente y SHA del estado vigente, sin modificar metadata |
 | 03_Compliance/reports/phase_2/materialization/PRE_WRITE_DATABASE_BACKUP.duckdb | Copia previa a escritura; histórica, no presumir que equivale a Phase 2 actual |
 | GTFS_Lab/feeds/raw y feeds/extracted | Snapshot Asturias; ZIP exacto necesario |
 | 20_clientes_reales/**/02_sources/gtfs_schedule/original y extracted | Snapshots piloto históricos; manifests en Git no sustituyen sus bytes |
