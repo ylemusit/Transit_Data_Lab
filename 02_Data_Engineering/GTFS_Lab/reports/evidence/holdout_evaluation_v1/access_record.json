@@ -1,0 +1,65 @@
+{
+  "evaluation_id": "TDL_HOLDOUT_EVALUATION_V1",
+  "access_id": "ACCESS-20260929T132226Z-M04B1-01",
+  "started_at_utc": "2026-09-29T13:22:26Z",
+  "first_holdout_opened_at_utc": "2026-09-29T13:23:48Z",
+  "access_status": "FIRST_HOLDOUT_OPENED",
+  "git_commit": "9b3a5c1207e77ae69d14e254bf560f365302e7e7",
+  "git_branch": "feat/tdl-trust-foundation-m04b-holdout-evaluation",
+  "worktree_clean_at_start": true,
+  "gtfs_lab_version": "1.0.0-dev",
+  "parser_version": "gtfs-lab-csv/1",
+  "validator_version": "1.0.0",
+  "ruleset_id": "gtfs-lab-v1",
+  "ruleset_version": "1",
+  "rule_result_contract_statuses": [
+    "PASS",
+    "FAIL_TECHNICAL",
+    "WARNING",
+    "NOT_EVALUABLE",
+    "INSPECTION_ERROR"
+  ],
+  "trust_contracts": {
+    "audit_manifest_version": "1.1.2",
+    "source_identity_method": "git commit tree; immutable checkout at git_commit",
+    "compliance_rule_id": "V1-RULE-GTFS",
+    "compliance_rule_version_identity": "compliance-v1/1",
+    "compliance_evaluator_sha256_expected": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+    "compliance_reference_sha256_expected": "1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147"
+  },
+  "split_id": "TDL-CORPUS-SPLIT-V1",
+  "split_version": "1.0.0",
+  "split_contract": "CorpusSplit 1.0.0",
+  "split_status": "APPROVED",
+  "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+  "holdout_dataset_ids": [
+    "006",
+    "008",
+    "013",
+    "015",
+    "017",
+    "018"
+  ],
+  "holdout_lineage_units": [
+    "DATASET-006",
+    "DATASET-008",
+    "LINEAGE-013-015",
+    "DATASET-017",
+    "DATASET-018"
+  ],
+  "purpose": "M04-B1 FIRST CONTROLLED HOLDOUT EVALUATION",
+  "preopen_checks": {
+    "split_gate": "TDL_CORPUS_SPLIT_GATE_PASS",
+    "lineage_gate": "M04A2_LINEAGE_REVIEW_PASS",
+    "source_zip_contents_read": false
+  },
+  "first_access_attempt": {
+    "attempted_at_utc": "2026-09-29T13:23:19Z",
+    "outcome": "PATH_RESOLUTION_ERROR_BEFORE_SOURCE_OPEN",
+    "detail": "Resolved candidate paths under isolated worktree instead of protected corpus source root; Get-FileHash reported path not found."
+  },
+  "postopen_state": {
+    "source_zip_contents_read": true,
+    "first_holdout_opened_at_utc": "2026-09-29T13:23:48Z"
+  }
+}
