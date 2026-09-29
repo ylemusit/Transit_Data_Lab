@@ -74,8 +74,15 @@ M01 Trust Contract, M02 Trust Persistence, M03-A Golden Contract, Golden Corpus,
 
 Checkpoint, evaluator, paquete Compliance, split canónico, Golden Corpus canónico, Compliance DB y GTFS DB coinciden con sus hashes protegidos. La Compliance DB fue `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B` antes y después del gate. Parser y evaluator coinciden con el commit de trabajo. B1 no se modificó. Sin cambios de código, reglas, umbrales, paquete ni split tras abrir HOLDOUT.
 
-## P. M04 conclusion candidate
+## P. Human closure and M04 conclusion
 
-`M04B3_HOLDOUT_V2_COMPLETED`; seis datasets y cinco unidades lineage con estado terminal e interpretable. `M04_READY_FOR_HUMAN_CLOSURE_REVIEW`. No se declara M04 completo. El revisor humano deberá considerar la limitación registrada de timestamps exactos para los hashes iniciales antes de la decisión de cierre.
+Registro de cierre humano: [human_closure.json](../02_Data_Engineering/GTFS_Lab/reports/evidence/holdout_evaluation_v2/human_closure.json).
+
+- Identidad: `M04_GENERALIZATION_HOLDOUT_CLOSURE`.
+- Decisión: `APPROVE`, revisada por Yeison Arbey Carrillo Lemus el `2026-09-29T18:03:08Z`.
+- Base: `M04B3_HOLDOUT_V2_COMPLETED`.
+- Limitación aceptada: `HOLDOUT_V2_HASH_ACCESS_TIMESTAMP_NOT_CAPTURED` (`ACCEPTED_BY_HUMAN_REVIEWER`).
+
+Se conservan los timestamps nulos originales. La hora exacta de lectura inicial de hashes no se reconstruyó ni se repitieron hashes para inferir cronología. M04 queda `M04_GENERALIZATION_HOLDOUT_CLOSED`; M05 Change Attribution permanece `NOT STARTED`. El cierre de M04 no declara `TDL_TRUST_FOUNDATION = PASS`.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
