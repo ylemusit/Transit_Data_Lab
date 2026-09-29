@@ -1,11 +1,13 @@
 # GTFS Lab M04-A — Corpus split review
 
-**Estado tras M04-A1:** `M04A_PROVENANCE_PARTIALLY_RECOVERED` (detalle y límites en Q–W)
-**Baseline:** `b363079e5b8c8131f484917098d06b3a12a13eeb`
-**Split:** no propuesto; no existe `split_sha256` ni asignación `DEVELOPMENT` / `HOLDOUT`.
+**Registro histórico:** Estado tras M04-A1 `M04A_PROVENANCE_PARTIALLY_RECOVERED` (detalle y límites en Q–W). **Estado vigente tras M04-A3:** `M04A_SPLIT_READY_FOR_HUMAN_REVIEW`; split `UNDER_REVIEW` sin aprobación en [`reports/GTFS_LAB_M04A3_SPLIT_DESIGN_REVIEW.md`](reports/GTFS_LAB_M04A3_SPLIT_DESIGN_REVIEW.md).
+**Baseline de entrada A2 (histórica):** `b363079e5b8c8131f484917098d06b3a12a13eeb`
+**Split al cierre A2 (histórico):** no propuesto entonces. **Split vigente A3:** [`corpus/split_v1.json`](corpus/split_v1.json), SHA `b30b1de464984b8c61f41e51279005cf3a32f9a11509e9996803c8f18be261e2`.
 **Golden Corpus V1:** independiente e intacto.
 
-> **Actualización M04-A2:** la matriz anterior de las secciones R–V conservaba `POSSIBLY_RELATED` para coincidencias de IDs. Esa clasificación queda reemplazada para la decisión de split por [la revisión M04-A2](reports/GTFS_LAB_M04A2_LINEAGE_EVIDENCE_REVIEW.md) y [`lineage_review_m04a2.json`](corpus/lineage_review_m04a2.json). M04-A2 concluye `M04A_LINEAGE_MATRIX_READY_FOR_SPLIT_DESIGN`; no ha creado split, holdout ni iniciado M04-B.
+> **Actualización M04-A2:** la matriz anterior de las secciones R–V conservaba `POSSIBLY_RELATED` para coincidencias de IDs. Esa clasificación queda reemplazada para la decisión de split por [la revisión M04-A2](reports/GTFS_LAB_M04A2_LINEAGE_EVIDENCE_REVIEW.md) y [`lineage_review_m04a2.json`](corpus/lineage_review_m04a2.json). M04-A2 concluyó `M04A_LINEAGE_MATRIX_READY_FOR_SPLIT_DESIGN`. **Actualización M04-A3:** la propuesta reproducible está registrada en [`corpus/split_v1.json`](corpus/split_v1.json); sigue `UNDER_REVIEW`, no abre holdout ni inicia M04-B.
+
+> Las secciones de análisis originales que describen la ausencia de split y el bloqueo de A1/A2 son registros de su momento; M04-A3 los supersede para el estado actual.
 
 ## A. Por qué existe holdout
 

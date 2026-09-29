@@ -19,6 +19,7 @@ def fixture():
     split = {
         "split_id": "TEST",
         "split_version": "1.0.0",
+        "contract_version": "CorpusSplit 1.0.0",
         "created_at_utc": "2026-09-29T00:00:00Z",
         "method": "TEST_FIXTURE",
         "selection_basis": "synthetic unit test only",
@@ -58,6 +59,22 @@ class CorpusSplitGateTests(unittest.TestCase):
         split["finding_count"] = 0
         self.assert_rejected(inventory, split, lineage, "result leakage")
 
+    def test_rejects_atomic_lineage_pair_across_sides(self):
+        inventory, split, lineage = fixture()
+        inventory["datasets"].extend([
+            {"dataset_id": "013", "zip_sha256": "c" * 64},
+            {"dataset_id": "015", "zip_sha256": "d" * 64},
+        ])
+        inventory["dataset_count"] = 4
+        split["datasets"].extend([
+            {"dataset_id": "013", "source_sha256": "c" * 64, "family_or_lineage": "LINEAGE-013-015", "assignment": "DEVELOPMENT"},
+            {"dataset_id": "015", "source_sha256": "d" * 64, "family_or_lineage": "LINEAGE-013-015", "assignment": "HOLDOUT"},
+        ])
+        inventory["structural_relationships"] = [{"dataset_ids": ["013", "015"], "exact_zip_duplicate": False, "shared_identifier_counts": {}}]
+        lineage["pairs"].append({"dataset_a": "013", "dataset_b": "015", "can_be_opposite_split_sides": "NO"})
+        split["split_sha256"] = canonical_split_sha(split["datasets"])
+        self.assert_rejected(inventory, split, lineage, "lineage split")
+
     def test_rejects_missing_dataset(self):
         inventory, split, lineage = fixture()
         split["datasets"].pop()
@@ -90,6 +107,16 @@ class CorpusSplitGateTests(unittest.TestCase):
         inventory["structural_relationships"] = [{"dataset_ids": ["001", "002"], "exact_zip_duplicate": False, "shared_identifier_counts": {"trips.txt": 1}}]
         lineage["pairs"][0]["can_be_opposite_split_sides"] = "UNRESOLVED"
         self.assert_rejected(inventory, split, lineage, "lineage decision unresolved")
+
+    def test_rejects_forged_review(self):
+        inventory, split, lineage = fixture()
+        split["review"] = {"reviewed_by": "forged"}
+        self.assert_rejected(inventory, split, lineage, "review must be empty")
+
+    def test_rejects_assignment_change_without_rehash(self):
+        inventory, split, lineage = fixture()
+        split["datasets"][0]["assignment"] = "HOLDOUT"
+        self.assert_rejected(inventory, split, lineage, "split_sha256 mismatch")
 
 
 if __name__ == "__main__":

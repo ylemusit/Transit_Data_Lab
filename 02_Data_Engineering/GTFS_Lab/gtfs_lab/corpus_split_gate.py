@@ -16,7 +16,7 @@ RESULT_KEYS = {
     "findings", "results", "run_id", "result", "validation", "scores",
 }
 TOP_LEVEL_KEYS = {
-    "split_id", "split_version", "created_at_utc", "method", "selection_basis",
+    "split_id", "split_version", "contract_version", "created_at_utc", "method", "selection_basis",
     "datasets", "split_sha256", "status", "review",
 }
 DATASET_KEYS = {
@@ -65,7 +65,7 @@ def validate_split(inventory: dict[str, Any], split: dict[str, Any], lineage_rev
         raise SplitGateError("split contract fields missing")
     if set(split) - TOP_LEVEL_KEYS:
         raise SplitGateError("unknown split contract fields")
-    if split.get("split_version") != "1.0.0":
+    if split.get("split_version") != "1.0.0" or split.get("contract_version") != "CorpusSplit 1.0.0":
         raise SplitGateError("unknown split contract version")
     if split.get("status") != "UNDER_REVIEW":
         raise SplitGateError("status must be UNDER_REVIEW")

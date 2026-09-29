@@ -1,0 +1,153 @@
+{
+  "split_id": "TDL-CORPUS-SPLIT-V1",
+  "split_version": "1.0.0",
+  "contract_version": "CorpusSplit 1.0.0",
+  "status": "UNDER_REVIEW",
+  "created_at_utc": "2026-09-29T02:31:22Z",
+  "method": "Exhaustively enumerate five-dataset holdouts from non-exposed units, preserving {013,015} atomically and requiring all four families. Rank valid candidates lexicographically by: number of distinct calendar models; shapes presence states; feed_info presence states; distinct GTFS table names; corpus-derived size bands represented; route-count range; stop-count range; trip-count range; input ZIP-size range. Prefer larger coverage/ranges in that order; break any remaining tie by sorted dataset_id tuple. Family strata are descriptive constraints, not lineage. No validator outcomes, findings, statuses, or result-derived quality were used.",
+  "selection_basis": "Candidate C is the unique winner under the documented exhaustive lexicographic input-only comparison. HOLDOUT 006, 008, 013, 015, 017 covers all three calendar models, both shapes and feed_info states, 15 distinct GTFS tables, and all three size bands. Known Pilot Audit 01 exposure remains DEVELOPMENT. The pair 013/015 is atomic. Provenance is MEDIUM, with NAP resource IDs, source URLs, and capture dates unknown.",
+  "datasets": [
+    {
+      "dataset_id": "001",
+      "source_sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430",
+      "family_or_lineage": "DATASET-001",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "002",
+      "source_sha256": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "family_or_lineage": "DATASET-002",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
+    },
+    {
+      "dataset_id": "003",
+      "source_sha256": "70b14647471462975b9b646d738b76c2f27454d8d9f49311bb31289a888e411a",
+      "family_or_lineage": "DATASET-003",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "004",
+      "source_sha256": "1fe7adb7486766672ddef94917a881a0bacc5450ba00591d9a3c0e7067e63cb6",
+      "family_or_lineage": "DATASET-004",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "005",
+      "source_sha256": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "family_or_lineage": "DATASET-005",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
+    },
+    {
+      "dataset_id": "006",
+      "source_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "family_or_lineage": "DATASET-006",
+      "assignment": "HOLDOUT",
+      "assignment_basis": "PROPOSED_HOLDOUT: unique lexicographic winner candidate C; input-only structural coverage"
+    },
+    {
+      "dataset_id": "007",
+      "source_sha256": "81ef87bfe4c8500dc9f4b48f75ae2992131eb86e566fb4a60c73ea54431a9f1a",
+      "family_or_lineage": "DATASET-007",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "008",
+      "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "family_or_lineage": "DATASET-008",
+      "assignment": "HOLDOUT",
+      "assignment_basis": "PROPOSED_HOLDOUT: unique lexicographic winner candidate C; input-only structural coverage"
+    },
+    {
+      "dataset_id": "009",
+      "source_sha256": "0c588ca4a7547b36777f9aaf8a997ae35307d4ed74ac0cee04e8ff543c8f40f8",
+      "family_or_lineage": "DATASET-009",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "010",
+      "source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "family_or_lineage": "DATASET-010",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "011",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "family_or_lineage": "DATASET-011",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "012",
+      "source_sha256": "da2d07f8d0e2dbad98f4a6b05b927ed1a2f3f660a61054b7fd6401418cad5eb7",
+      "family_or_lineage": "DATASET-012",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "013",
+      "source_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "family_or_lineage": "LINEAGE-013-015",
+      "assignment": "HOLDOUT",
+      "assignment_basis": "PROPOSED_HOLDOUT: unique lexicographic winner candidate C; input-only structural coverage"
+    },
+    {
+      "dataset_id": "014",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "family_or_lineage": "DATASET-014",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
+    },
+    {
+      "dataset_id": "015",
+      "source_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "family_or_lineage": "LINEAGE-013-015",
+      "assignment": "HOLDOUT",
+      "assignment_basis": "PROPOSED_HOLDOUT: unique lexicographic winner candidate C; input-only structural coverage"
+    },
+    {
+      "dataset_id": "016",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "family_or_lineage": "DATASET-016",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "017",
+      "source_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "family_or_lineage": "DATASET-017",
+      "assignment": "HOLDOUT",
+      "assignment_basis": "PROPOSED_HOLDOUT: unique lexicographic winner candidate C; input-only structural coverage"
+    },
+    {
+      "dataset_id": "018",
+      "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "family_or_lineage": "DATASET-018",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+    },
+    {
+      "dataset_id": "019",
+      "source_sha256": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "family_or_lineage": "DATASET-019",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
+    },
+    {
+      "dataset_id": "020",
+      "source_sha256": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "family_or_lineage": "DATASET-020",
+      "assignment": "DEVELOPMENT",
+      "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
+    }
+  ],
+  "review": {},
+  "split_sha256": "b30b1de464984b8c61f41e51279005cf3a32f9a11509e9996803c8f18be261e2"
+}
