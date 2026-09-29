@@ -1,0 +1,149 @@
+{
+  "gate": "GTFS_LAB_V1_CURRENT_GATE",
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": "REPRODUCIBLE_DATASET_ID",
+      "status": "PASS",
+      "expected": "GTFS-2f5f098529e46472",
+      "actual": "GTFS-2f5f098529e46472"
+    },
+    {
+      "fixture": "VALID_MINIMAL",
+      "status": "PASS",
+      "expected": "PASS",
+      "actual": "PASS",
+      "expected_rule": "PASS",
+      "actual_rule": "PASS",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "ORPHAN_TRIP",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "V1-RULE-GTFS",
+      "actual_rule": "V1-RULE-GTFS",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "ORPHAN_STOP",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "V1-RULE-GTFS",
+      "actual_rule": "V1-RULE-GTFS",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "ORPHAN_ROUTE",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "GTFS-REF-TRIP-ROUTE",
+      "actual_rule": "GTFS-REF-TRIP-ROUTE",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "BAD_SERVICE_REFERENCE",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "GTFS-REF-SERVICE",
+      "actual_rule": "GTFS-REF-SERVICE",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "BAD_SHAPE_REFERENCE",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "GTFS-REF-SHAPE",
+      "actual_rule": "GTFS-REF-SHAPE",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "MALFORMED_CSV",
+      "status": "PASS",
+      "expected": "INGESTION_ERROR",
+      "actual": "INGESTION_ERROR",
+      "expected_rule": null,
+      "actual_rule": null,
+      "run_id": "GTFSRUN-9eb4118755df4296",
+      "error": "CSV malformado en stops.txt: unexpected end of data"
+    },
+    {
+      "fixture": "MISSING_FILE",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "GTFS-STRUCT-REQUIRED",
+      "actual_rule": "GTFS-STRUCT-REQUIRED",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "PARTIAL_FEED",
+      "status": "PASS",
+      "expected": "FAIL_TECHNICAL",
+      "actual": "FAIL_TECHNICAL",
+      "expected_rule": "GTFS-STRUCT-SERVICE-CALENDAR",
+      "actual_rule": "GTFS-STRUCT-SERVICE-CALENDAR",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": null
+    },
+    {
+      "fixture": "UNSUPPORTED_TABLE",
+      "status": "PASS",
+      "expected": "PASS",
+      "actual": "PASS",
+      "expected_rule": "PASS",
+      "actual_rule": "PASS",
+      "compliance_evaluator": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "string_ids_preserved": true,
+      "unsupported_file_status": "NOT_SUPPORTED"
+    },
+    {
+      "fixture": "MISSING_HEADER",
+      "status": "PASS",
+      "expected": "INGESTION_ERROR",
+      "actual": "INGESTION_ERROR",
+      "expected_rule": null,
+      "actual_rule": null,
+      "run_id": "GTFSRUN-c1a3b1e867e34821",
+      "error": "Faltan columnas requeridas en routes.txt: route_id, route_type"
+    },
+    {
+      "fixture": "ZIP_PATH_TRAVERSAL",
+      "status": "PASS",
+      "expected": "INGESTION_ERROR",
+      "actual": "INGESTION_ERROR"
+    },
+    {
+      "fixture": "ZIP_DUPLICATE_MEMBER",
+      "status": "PASS",
+      "expected": "INGESTION_ERROR",
+      "actual": "INGESTION_ERROR"
+    }
+  ],
+  "e2e_synthetic": "PASS",
+  "directional_gis": "PASS",
+  "protected_hashes_before": {},
+  "protected_hashes_after": {},
+  "protected_state_unchanged": true,
+  "writes": "only within gate output directory"
+}

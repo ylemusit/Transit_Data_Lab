@@ -1,0 +1,37 @@
+{
+  "transition_id": "COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2",
+  "candidate_status": "UNDER_REVIEW",
+  "predecessor_package": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
+  "predecessor_package_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
+  "candidate_package_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b",
+  "transition_reason": "IMPLEMENTATION_CHANGE",
+  "technical_reason": [
+    "incremental CSV processing",
+    "removed prototype 10000-row and 1 MiB GTFS inspection limits",
+    "explicit implementation resource guards; no semantic rule change"
+  ],
+  "package_schema_version": "compliance-v1/2",
+  "generator_identity": {
+    "package_generator_path": "tools/compliance_v1_pack.py",
+    "package_generator_sha256": "ba9fb9367dd9b734cf957993cc3b5ff6ecb5834dd8180e2bd604c84d946846c9",
+    "transition_builder_path": "tools/compliance_v1_transition_candidate.py",
+    "transition_builder_sha256": "4972c480a3f4d264b8ac6ed3adff35cc1cbe51830c84998e4de8b6c5a575f0a8",
+    "replay": "PASS"
+  },
+  "rule_id": "V1-RULE-GTFS",
+  "rule_version_before": "compliance-v1/1",
+  "rule_version_after": "compliance-v1/1",
+  "evaluator_version_before": "compliance-v1/1",
+  "evaluator_version_after": "compliance-v1/2",
+  "evaluator_sha_before": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+  "evaluator_sha_after": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+  "reference_spec_identity_unchanged": true,
+  "historical_package_unchanged": true,
+  "historical_db_sha256": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+  "historical_freeze_sha256": "3BBB6D87500608364972CFE841D6B2D3D03558FC73F1960A28579905FAEC6A3E",
+  "approval_status": "UNDER_REVIEW_NOT_APPROVED",
+  "authoritative_current_pointer_changed": false,
+  "holdout_accessed": false,
+  "candidate_replay_status": "PASS",
+  "candidate_package_file_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b"
+}
