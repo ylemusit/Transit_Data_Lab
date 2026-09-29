@@ -54,7 +54,7 @@ def _walk(value: Any, path: str = "$"):
             yield from _walk(child, f"{path}[{index}]")
 
 
-def validate_split(inventory: dict[str, Any], split: dict[str, Any]) -> str:
+def validate_split(inventory: dict[str, Any], split: dict[str, Any], lineage_review: dict[str, Any]) -> str:
     for path, key, value in _walk(split):
         if key.lower() in RESULT_KEYS:
             raise SplitGateError(f"result leakage field: {path}.{key}")
@@ -113,13 +113,18 @@ def validate_split(inventory: dict[str, Any], split: dict[str, Any]) -> str:
     if missing:
         raise SplitGateError(f"missing datasets: {','.join(missing)}")
 
+    pair_decisions = {
+        tuple(sorted((row["dataset_a"], row["dataset_b"]))): row["can_be_opposite_split_sides"]
+        for row in lineage_review.get("pairs", [])
+    }
     for relation in inventory.get("structural_relationships", []):
         a, b = relation["dataset_ids"]
-        if assignments[a] != assignments[b] and (
-            relation.get("exact_zip_duplicate")
-            or any(relation.get("shared_identifier_counts", {}).values())
-        ):
-            raise SplitGateError(f"related datasets split across assignments: {a},{b}")
+        if assignments[a] != assignments[b]:
+            decision = pair_decisions.get(tuple(sorted((a, b))))
+            if relation.get("exact_zip_duplicate") or decision == "NO":
+                raise SplitGateError(f"source lineage prevents opposite assignments: {a},{b}")
+            if decision != "YES":
+                raise SplitGateError(f"lineage decision unresolved across assignments: {a},{b}")
 
     if split.get("split_sha256") != canonical_split_sha(datasets):
         raise SplitGateError("split_sha256 mismatch")
@@ -130,11 +135,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--inventory", type=Path, required=True)
     parser.add_argument("--split", type=Path, required=True)
+    parser.add_argument("--lineage-review", type=Path, required=True)
     args = parser.parse_args()
     inventory = json.loads(args.inventory.read_text(encoding="utf-8"))
     split = json.loads(args.split.read_text(encoding="utf-8"))
+    lineage_review = json.loads(args.lineage_review.read_text(encoding="utf-8"))
     try:
-        print(validate_split(inventory, split))
+        print(validate_split(inventory, split, lineage_review))
     except SplitGateError as exc:
         print(f"TDL_CORPUS_SPLIT_GATE_FAIL: {exc}")
         return 1

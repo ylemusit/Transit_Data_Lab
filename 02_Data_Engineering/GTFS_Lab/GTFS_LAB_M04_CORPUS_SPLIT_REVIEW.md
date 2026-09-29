@@ -5,6 +5,8 @@
 **Split:** no propuesto; no existe `split_sha256` ni asignación `DEVELOPMENT` / `HOLDOUT`.
 **Golden Corpus V1:** independiente e intacto.
 
+> **Actualización M04-A2:** la matriz anterior de las secciones R–V conservaba `POSSIBLY_RELATED` para coincidencias de IDs. Esa clasificación queda reemplazada para la decisión de split por [la revisión M04-A2](reports/GTFS_LAB_M04A2_LINEAGE_EVIDENCE_REVIEW.md) y [`lineage_review_m04a2.json`](corpus/lineage_review_m04a2.json). M04-A2 concluye `M04A_LINEAGE_MATRIX_READY_FOR_SPLIT_DESIGN`; no ha creado split, holdout ni iniciado M04-B.
+
 ## A. Por qué existe holdout
 
 Un holdout reservado permite estimar si un motor generaliza a feeds que no se usaron para diseñar reglas, heurísticas o umbrales. La north star es que un feed de un operador desconocido produzca una auditoría reproducible y trazable sin cambios de código específicos para ese operador.
