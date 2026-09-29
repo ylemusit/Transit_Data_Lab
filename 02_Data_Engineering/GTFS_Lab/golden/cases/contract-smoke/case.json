@@ -1,0 +1,15 @@
+{
+  "case_id": "m03a-contract-smoke",
+  "case_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "status": "DRAFT",
+  "purpose": "Ejemplo mínimo para validar metadatos GoldenCase; no es una referencia de comportamiento del motor.",
+  "created_at_utc": "2026-09-29T00:00:00Z",
+  "input": {"filename": "input.zip", "sha256": "80d61249ada099a65495af02a9160ad3fbce1304f70f5f475e72e2cf5c5cfcd4", "format": "GTFS_STATIC_ZIP", "provenance": "SYNTHETIC"},
+  "scope": ["integridad del ZIP sintético y estructura del contrato"],
+  "expected": [{"type": "PRESENCE", "target": "input.sha256", "value": "valid SHA-256", "authority": "SYNTHETIC_INVARIANT"}],
+  "excluded_expectations": ["resultados del validador", "outputs completos", "run_id", "timestamps de ejecución", "rutas locales", "metadatos específicos de máquina"],
+  "authority": {"basis": "SYNTHETIC_INVARIANT", "note": "Solo invariantes de ejemplo; requiere revisión humana antes de cualquier aprobación."},
+  "review": {},
+  "engine_context": {"gtfs_lab_version": "1.0.0-dev", "validator_version": "1.0.0", "ruleset_id": "gtfs-lab-v1", "ruleset_version": "1"}
+}
