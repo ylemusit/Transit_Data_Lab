@@ -10,7 +10,7 @@ Flujo: ZIP → comprobaciones y hash → tablas de ejecución → DuckDB `raw.*`
 
 ## Persistencia de confianza M02
 
-M03-A añade un contrato independiente `GoldenCase 1.0.0` en preparación; no altera `AuditManifest 1.1.2` ni M01/M02. El ejemplo es DRAFT y no hay corpus aprobado ni Golden Regression Gate operativo. Detalles, inventario y límites en [contrato M03](GTFS_LAB_M03_GOLDEN_CASE_CONTRACT.md).
+M03-A mantiene operativo el contrato independiente `GoldenCase 1.0.0`; no altera `AuditManifest 1.1.2` ni M01/M02. Golden Corpus V1 contiene dos casos sintéticos `APPROVED`, y `TDL_GOLDEN_REGRESSION_GATE` ejecuta sus expectations sobre GTFS_Lab. Corpus Gate, Evaluator Gate y Regression Gate pasan. M03-B está listo para revisión final en Draft PR #6, pendiente de merge/verificación final. Esto no declara Trust Foundation PASS. Los detalles, hashes y límites figuran en la [revisión M03-B](reports/GTFS_LAB_M03B_GOLDEN_CORPUS_REVIEW.md); contrato e inventario M03-A en [contrato M03](GTFS_LAB_M03_GOLDEN_CASE_CONTRACT.md).
 
 Al completar el pipeline, `audit/audit_manifest.json` se deriva de `RunContext`, `DatasetIdentity`, los resultados del run y las reglas/versiones ejecutadas. Usa el contrato `AuditManifest 1.1.2` de M01 sin modificar `run.json`, `validation.json`, `analysis.json`, `report.md`, GIS ni DuckDB. `preservation_evidence` registra `INPUT_INTEGRITY_VERIFIED` solo si el SHA-256 del ZIP al terminar coincide con el verificado al ingerirlo; no afirma archivado permanente.
 

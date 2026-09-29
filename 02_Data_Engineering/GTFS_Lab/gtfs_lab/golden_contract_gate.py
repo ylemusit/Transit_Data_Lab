@@ -74,7 +74,7 @@ def run_gate() -> dict[str, Any]:
             else:
                 checks.append({"check": name, "status": "FAIL"})
     enforced_checks = len(checks)
-    return {"gate": "TDL_GOLDEN_CASE_CONTRACT_GATE", "contract_version": "1.0.0", "status": "PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "checks": checks, "check_count": enforced_checks, "enforced_checks": enforced_checks, "pass_count": sum(c["status"] == "PASS" for c in checks), "limitations": {"approved_mutation_detection": "NOT_ENFORCED_IN_M03A"}, "executable_approved_cases": 0}
+    return {"gate": "TDL_GOLDEN_CASE_CONTRACT_GATE", "contract_version": "1.0.0", "status": "PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "checks": checks, "check_count": enforced_checks, "enforced_checks": enforced_checks, "pass_count": sum(c["status"] == "PASS" for c in checks), "limitations": {"approved_mutation_detection": "NOT_ENFORCED_IN_M03A"}, "approved_corpus_cases": 2, "corpus_cases_executed_by_this_gate": 0, "note": "Este gate valida GoldenCase 1.0.0 y casos negativos de contrato; TDL_GOLDEN_REGRESSION_GATE ejecuta el corpus aprobado."}
 
 
 def main() -> int:
