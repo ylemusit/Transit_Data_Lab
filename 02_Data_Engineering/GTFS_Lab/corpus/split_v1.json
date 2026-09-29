@@ -2,7 +2,7 @@
   "split_id": "TDL-CORPUS-SPLIT-V1",
   "split_version": "1.0.0",
   "contract_version": "CorpusSplit 1.0.0",
-  "status": "UNDER_REVIEW",
+  "status": "APPROVED",
   "created_at_utc": "2026-09-29T02:31:22Z",
   "method": "Exhaustively enumerate five-dataset holdouts from non-exposed units, preserving {013,015} atomically and requiring all four families. Rank valid candidates lexicographically by: number of distinct calendar models; shapes presence states; feed_info presence states; distinct GTFS table names; corpus-derived size bands represented; route-count range; stop-count range; trip-count range; input ZIP-size range. Prefer larger coverage/ranges in that order; break any remaining tie by sorted dataset_id tuple. Family strata are descriptive constraints, not lineage. No validator outcomes, findings, statuses, or result-derived quality were used.",
   "selection_basis": "Candidate C is the unique winner under the documented exhaustive lexicographic input-only comparison. HOLDOUT 006, 008, 013, 015, 017 covers all three calendar models, both shapes and feed_info states, 15 distinct GTFS tables, and all three size bands. Known Pilot Audit 01 exposure remains DEVELOPMENT. The pair 013/015 is atomic. Provenance is MEDIUM, with NAP resource IDs, source URLs, and capture dates unknown.",
@@ -130,7 +130,7 @@
       "dataset_id": "018",
       "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
       "family_or_lineage": "DATASET-018",
-      "assignment": "DEVELOPMENT",
+      "assignment": "HOLDOUT",
       "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
     },
     {
@@ -148,6 +148,10 @@
       "assignment_basis": "KNOWN_DEVELOPMENT_EXPOSURE: Pilot Audit 01 prior GTFS Explorer analysis"
     }
   ],
-  "review": {},
-  "split_sha256": "b30b1de464984b8c61f41e51279005cf3a32f9a11509e9996803c8f18be261e2"
+  "review": {
+    "reviewed_by": "Yeison Arbey Carrillo Lemus",
+    "reviewed_at_utc": "2026-09-29T12:26:20Z",
+    "review_basis": "Se aprueba explícitamente USE_6_DATASET_5_LINEAGE_SPLIT y se acepta: 6 datasets HOLDOUT; 5 unidades lineage independientes; 14 DEVELOPMENT; 013/015 como unidad atómica; y las limitaciones conocidas de provenance y exposición previa."
+  },
+  "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d"
 }

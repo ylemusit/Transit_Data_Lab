@@ -1,7 +1,7 @@
 # GTFS Lab M04-A3b — Split sensitivity review
 
-**Verdict:** `M04A_SPLIT_SENSITIVITY_READY_FOR_HUMAN_DECISION`  
-**Base proposal:** `corpus/split_v1.json`, `UNDER_REVIEW`; review remains `{}`.  
+**Verdict:** `M04A_SPLIT_SENSITIVITY_DECISION_RECORDED`
+**Base proposal at analysis time:** `corpus/split_v1.json` was `UNDER_REVIEW`; M04-A4 records the human decision and changes its status to `APPROVED`.
 **Scope:** compare dataset count with independent lineage-unit count using registered input metadata and M04-A2 lineage evidence. No findings, validator outputs, or holdout execution were used. The split contract was not changed.
 
 ## A. Why lineage-unit count matters
@@ -50,13 +50,13 @@ Scenario B transfers `018` from DEVELOPMENT and leaves 14 development datasets, 
 
 A has five dataset entries but four independent units. B has six entries and five independent units while retaining family C. C has five entries and five independent units, but no family C coverage. Therefore dataset count alone does not describe independence; future reporting must show both counts and preserve the 013/015 grouping.
 
-## H. Recommended design
+## H. Decision adopted
 
-**Recommendation: `USE_6_DATASET_5_LINEAGE_SPLIT`.** Relative to A it adds one independent lineage and one distinct input table while preserving A/B/C/D and all categorical structural coverage, at the cost of one DEVELOPMENT dataset. C also reaches five independent units with 15 in DEVELOPMENT, but loses family C from HOLDOUT. On independence and representativeness together, B provides the strongest balance among the compared candidates. This is a technical recommendation for human consideration only; it does not assign or approve a split.
+The human decision in M04-A4 adopts `USE_6_DATASET_5_LINEAGE_SPLIT`. The selected HOLDOUT is `006, 008, 013, 015, 017, 018`: six datasets and five independent lineage units, with A/B/C/D and all categorical structural coverage retained. DEVELOPMENT has 14 datasets. This accepts one fewer DEVELOPMENT dataset than A and avoids the family C exclusion of scenario C. The contract approval and freeze policy are recorded in [M04-A4](GTFS_LAB_M04A4_SPLIT_APPROVAL.md).
 
 ## I. Human decision required
 
-Choose among `KEEP_CURRENT_5_DATASET_SPLIT`, `USE_6_DATASET_5_LINEAGE_SPLIT`, and `USE_5_LINEAGE_NO_C_SPLIT`. Until that decision, `split_v1.json` remains unchanged and `UNDER_REVIEW`, with no reviewer recorded. Do not open or execute HOLDOUT and do not start M04-B from this review. After any future human decision, M04-B must report dataset-level results and lineage-unit-level results; if 013/015 remain in HOLDOUT, five datasets must not be described as five independent sources. No combined score or percentage threshold is defined.
+Decision recorded: Yeison Arbey Carrillo Lemus approved scenario B on 2026-09-29. M04-B remains unstarted and HOLDOUT remains unopened until its separately controlled opening. M04-B must report dataset-level results and lineage-unit-level results; six datasets must not be described as six independent sources because 013/015 form one lineage. No combined score or percentage threshold is defined.
 
 ## Reproducibility and gates
 

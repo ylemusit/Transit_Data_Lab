@@ -68,11 +68,12 @@ class SplitSensitivityTests(unittest.TestCase):
     def setUpClass(cls):
         cls.rows, cls.bands, cls.split = load_inputs()
 
-    def test_current_split_counts_datasets_and_lineage_units_separately(self):
+    def test_approved_split_counts_datasets_and_lineage_units_separately(self):
         holdout = {row["dataset_id"] for row in self.split["datasets"] if row["assignment"] == "HOLDOUT"}
-        self.assertEqual(holdout, {"006", "008", "013", "015", "017"})
-        self.assertEqual(len(holdout), 5)
-        self.assertEqual(len(lineage_units(holdout)), 4)
+        self.assertEqual(holdout, {"006", "008", "013", "015", "017", "018"})
+        self.assertEqual(len(holdout), 6)
+        self.assertEqual(len(lineage_units(holdout)), 5)
+        self.assertEqual(self.split["status"], "APPROVED")
 
     def test_exhaustive_six_dataset_winner_is_stable_and_structurally_eligible(self):
         winner, candidate_count = best_scenario_b(self.rows, self.bands)
@@ -90,8 +91,7 @@ class SplitSensitivityTests(unittest.TestCase):
         self.assertFalse(set(winner) & (KNOWN_EXPOSURE | ATOMIC_LINEAGE))
 
     def test_candidates_use_only_registered_input_metadata(self):
-        self.assertEqual(self.split["status"], "UNDER_REVIEW")
-        self.assertEqual(self.split["review"], {})
+        self.assertEqual(self.split["review"]["reviewed_by"], "Yeison Arbey Carrillo Lemus")
         self.assertTrue(all("finding_count" not in row for row in self.rows.values()))
 
 
