@@ -1,0 +1,80 @@
+{
+  "checkpoint_id": "TDL_HOLDOUT_ENGINE_CHECKPOINT_V2",
+  "status": "FROZEN_FOR_HOLDOUT_V2",
+  "git_commit": "6a4afd4663f7a3ef4b8ae6560cfa314e137c3a72",
+  "engine_identity": {
+    "parser_version": "gtfs-lab-csv/2",
+    "validator_version": "1.0.0",
+    "ruleset_id": "gtfs-lab-v1",
+    "ruleset_version": "1",
+    "rule_id": "V1-RULE-GTFS",
+    "rule_semantic_version": "compliance-v1/1",
+    "compliance_evaluator_version": "compliance-v1/2",
+    "compliance_evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+    "compliance_package_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b"
+  },
+  "split_identity": {
+    "split_id": "TDL-CORPUS-SPLIT-V1",
+    "split_version": "1.0.0",
+    "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d"
+  },
+  "human_approval_reference": {
+    "transition": "COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2",
+    "decision": "APPROVE",
+    "reviewed_by": "Yeison Arbey Carrillo Lemus",
+    "reviewed_at_utc": "2026-09-29T16:18:55Z"
+  },
+  "holdout_set_reference": {
+    "split_id": "TDL-CORPUS-SPLIT-V1",
+    "expected_dataset_ids": [
+      "006",
+      "008",
+      "013",
+      "015",
+      "017",
+      "018"
+    ],
+    "dataset_count": 6,
+    "independent_lineage_units": 5,
+    "linked_lineage": {
+      "dataset_ids": [
+        "013",
+        "015"
+      ],
+      "lineage_id": "LINEAGE-013-015"
+    },
+    "source_accessed": false,
+    "zip_hashes_computed": false
+  },
+  "b1_historical_reference": {
+    "checkpoint_id": "TDL_HOLDOUT_EVALUATION_V1",
+    "historical_result": "HOLDOUT_EXECUTION_PARTIAL",
+    "evidence_modified": false
+  },
+  "change_basis": [
+    "PARSER_IMPLEMENTATION_CHANGE",
+    "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE"
+  ],
+  "implementation_changes": {
+    "parser": {
+      "from": "gtfs-lab-csv/1",
+      "to": "gtfs-lab-csv/2",
+      "behavior": "IGNORE_PHYSICALLY_EMPTY_RECORD",
+      "warning": "EMPTY_CSV_RECORD_IGNORED",
+      "warning_details": "table, first 20 physical line numbers, and total count",
+      "source": "02_Data_Engineering/GTFS_Lab/gtfs_lab/ingestion.py::_validate_member"
+    },
+    "compliance": {
+      "evaluator_from": "compliance-v1/1",
+      "evaluator_to": "compliance-v1/2",
+      "semantic_rule_version": "compliance-v1/1",
+      "capability_change": "Incremental CSV processing removed former 10000-row and 1 MiB prototype limits; explicit implementation resource guards remain."
+    }
+  },
+  "holdout_v2_execution": "NOT_EXECUTED",
+  "holdout_v2_access_record_created": false,
+  "hashing": {
+    "algorithm": "SHA-256",
+    "serialization": "UTF-8 JSON, two-space indentation, insertion-order keys as shown, LF line endings, one terminal LF"
+  }
+}
