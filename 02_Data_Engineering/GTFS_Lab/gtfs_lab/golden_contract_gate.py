@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 from typing import Any
 
-from .golden_contract import GoldenCaseError, is_executable_authority, validate_case
+from .golden_contract import GoldenCaseError, has_approved_status, is_executable_authority, validate_case
 
 
 def run_gate() -> dict[str, Any]:
@@ -31,14 +31,23 @@ def run_gate() -> dict[str, Any]:
             "engine_context": {"gtfs_lab_version": "1.0.0-dev", "validator_version": "1", "ruleset_id": "gtfs-lab-v1", "ruleset_version": "1"},
         }
         validate_case(valid, base)
-        lifecycle_ok = not is_executable_authority(valid)
+        lifecycle_ok = not has_approved_status(valid)
         for status in ("UNDER_REVIEW", "SUPERSEDED", "RETIRED"):
-            lifecycle_ok = lifecycle_ok and not is_executable_authority({"status": status})
+            lifecycle_ok = lifecycle_ok and not has_approved_status({"status": status})
         approved = copy.deepcopy(valid)
         approved.update(status="APPROVED", review={"reviewed_by": "Reviewer", "reviewed_at_utc": "2026-09-29T00:00:00Z", "review_basis": "manual"})
-        lifecycle_ok = lifecycle_ok and is_executable_authority(approved)
-        validate_case(approved, base)
-        checks.append({"check": "draft_and_nonapproved_are_not_authority_but_approved_is_eligible", "status": "PASS" if lifecycle_ok else "FAIL"})
+        lifecycle_ok = lifecycle_ok and has_approved_status(approved) and is_executable_authority(approved, base)
+        checks.append({"check": "approved_lifecycle_status_is_distinct_from_valid_executable_authority", "status": "PASS" if lifecycle_ok else "FAIL"})
+        invalid_authority_cases = {
+            "approved_authority_missing_review": {**copy.deepcopy(valid), "status": "APPROVED"},
+            "incomplete_approved_authority_contract": {"status": "APPROVED"},
+        }
+        for name, candidate in invalid_authority_cases.items():
+            try:
+                authority = is_executable_authority(candidate, base)
+            except (GoldenCaseError, TypeError):
+                authority = False
+            checks.append({"check": name, "status": "PASS" if not authority else "FAIL"})
         mutations = {
             "sha_absent": lambda c: c["input"].pop("sha256"),
             "sha_incorrect": lambda c: c["input"].update(sha256="0" * 64),
@@ -48,6 +57,8 @@ def run_gate() -> dict[str, Any]:
             "naive_review_timestamp": lambda c: (c.update(status="APPROVED"), c["review"].update(reviewed_by="Reviewer", reviewed_at_utc="2026-09-29T00:00:00", review_basis="manual")),
             "expectation_without_type": lambda c: c["expected"][0].pop("type"),
             "absolute_windows_path": lambda c: c["input"].update(filename="C:\\machine\\input.zip"),
+            "absolute_posix_path": lambda c: c["input"].update(filename="/etc/passwd"),
+            "parent_traversal_path": lambda c: c["input"].update(filename="../input.zip"),
             "empty_case_id": lambda c: c.update(case_id=" "),
             "unknown_contract_version": lambda c: c.update(contract_version="9.0.0"),
             "current_output_auto_accept": lambda c: c["expected"][0].update(source="CURRENT_OUTPUT"),
@@ -62,8 +73,8 @@ def run_gate() -> dict[str, Any]:
                 checks.append({"check": name, "status": "PASS"})
             else:
                 checks.append({"check": name, "status": "FAIL"})
-        checks.append({"check": "approved_mutation_detection_deferred_to_versioned_reviewed_change", "status": "PASS"})
-    return {"gate": "TDL_GOLDEN_CASE_CONTRACT_GATE", "contract_version": "1.0.0", "status": "PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "checks": checks, "check_count": len(checks), "executable_approved_cases": 0}
+    enforced_checks = len(checks)
+    return {"gate": "TDL_GOLDEN_CASE_CONTRACT_GATE", "contract_version": "1.0.0", "status": "PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "checks": checks, "check_count": enforced_checks, "enforced_checks": enforced_checks, "pass_count": sum(c["status"] == "PASS" for c in checks), "limitations": {"approved_mutation_detection": "NOT_ENFORCED_IN_M03A"}, "executable_approved_cases": 0}
 
 
 def main() -> int:

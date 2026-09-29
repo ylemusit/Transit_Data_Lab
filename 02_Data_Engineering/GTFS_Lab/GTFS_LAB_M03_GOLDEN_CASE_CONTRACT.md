@@ -26,13 +26,13 @@ Cada `case.json` contiene `case_id`, `case_version`, `contract_version`, `status
 
 `case_id` y `case_version` deben ser strings no vacíos tras `strip`; no hay gramática de formato adicional y no se interpretan como rutas. El gate rechaza `case_id` whitespace-only.
 
-Las expectativas son objetos `{type, target, value, authority}`. Tipos aceptados por el código: `EXACT`, `SEMANTIC`, `STATUS`, `COUNT`, `PRESENCE`, `ABSENCE`, `RELATION`, `HASH`. El contrato separa igualdad byte a byte (`EXACT`/`HASH`) de significado (`SEMANTIC`, `STATUS`, `COUNT`, `PRESENCE`, `ABSENCE`, `RELATION`). M03-A valida su estructura, no implementa la evaluación de esos tipos. El ejemplo vincula su expectativa a `SYNTHETIC_INVARIANT`; no incluye output observado del motor ni usa el motor como autoridad.
+Las expectativas son objetos `{type, target, value, authority}`. Tipos aceptados por el código: `EXACT`, `SEMANTIC`, `STATUS`, `COUNT`, `PRESENCE`, `ABSENCE`, `RELATION`, `HASH`. El contrato separa igualdad byte a byte (`EXACT`/`HASH`) de significado (`SEMANTIC`, `STATUS`, `COUNT`, `PRESENCE`, `ABSENCE`, `RELATION`). M03-A valida la declaración estructural y el tipo de cada expectativa; no implementa su evaluación. M03-B definirá la evaluación. El ejemplo vincula su expectativa a `SYNTHETIC_INVARIANT`; no incluye output observado del motor ni usa el motor como autoridad.
 
 No se convierten automáticamente en expectativas `run_id`, timestamps de ejecución, paths absolutos/locales, temporales ni metadatos de máquina. No se eliminan de outputs productivos. `GoldenCaseResult` queda especificado conceptualmente con `case_id`, `case_version`, `run_id`, `dataset_id`, `engine_context`, `status`, `expectation_results` y `unexpected_differences`; estados `PASS`, `FAIL_EXPECTATION`, `NOT_EVALUABLE`, `EXECUTION_ERROR`. No hay scoring ni porcentajes.
 
 ## Lifecycle, autoridad y revisión
 
-Estados: `DRAFT → UNDER_REVIEW → APPROVED → SUPERSEDED` o `RETIRED` (y retiro desde estados no aprobados). `is_executable_authority(case)` solo considera elegible el estado `APPROVED`; la elegibilidad no ejecuta expectativas ni acredita la veracidad de la revisión declarada. PASS/FAIL pertenece a `GoldenCaseResult`, nunca al status del caso. `DRAFT` no entra en gate regresivo.
+Estados: `DRAFT → UNDER_REVIEW → APPROVED → SUPERSEDED` o `RETIRED` (y retiro desde estados no aprobados). `APPROVED` es exclusivamente un estado del lifecycle. `has_approved_status(case)` comprueba solo esa declaración. `is_executable_authority(case, base_dir)` valida el contrato completo y su input/hash antes de devolver verdadero para un estado `APPROVED`; un objeto incompleto o sin review válido nunca tiene autoridad ejecutable. Esto no acredita que la persona revisora ni la base declarada sean auténticas. PASS/FAIL pertenece a `GoldenCaseResult`, nunca al status del caso. `DRAFT` no entra en gate regresivo.
 
 Bases permitidas: `TDL_CONTRACT`, `GTFS_SPECIFICATION`, `COMPLIANCE_FROZEN_SCOPE`, `HUMAN_REVIEW`, `SYNTHETIC_INVARIANT`. La base se declara por expectativa; una regla técnica congelada no se presenta como obligación legal. `APPROVED` requiere `reviewed_by`, `reviewed_at_utc` en UTC explícito y `review_basis`; no se inventan revisores.
 
@@ -40,13 +40,13 @@ Bases permitidas: `TDL_CONTRACT`, `GTFS_SPECIFICATION`, `COMPLIANCE_FROZEN_SCOPE
 
 ## Cambios y límites
 
-Una expectativa aprobada no se edita silenciosamente: crear nueva `case_version`, conservar la anterior y documentar razón entre `DATASET_CORRECTION`, `SPEC_INTERPRETATION_CHANGED`, `RULESET_CHANGED`, `ENGINE_DEFECT_CORRECTED`, `GOLDEN_CASE_DEFECT`, `SCOPE_CHANGED`; opcionalmente marcarla `SUPERSEDED`. El gate M03-A no detecta mutaciones históricas sin un registro externo firmado/versionado. Ese enforcement se aplaza; Git history por sí sola no se trata como mecanismo contractual.
+Una expectativa aprobada no se edita silenciosamente: crear nueva `case_version`, conservar la anterior y documentar razón entre `DATASET_CORRECTION`, `SPEC_INTERPRETATION_CHANGED`, `RULESET_CHANGED`, `ENGINE_DEFECT_CORRECTED`, `GOLDEN_CASE_DEFECT`, `SCOPE_CHANGED`; opcionalmente marcarla `SUPERSEDED`. La detección de mutaciones históricas no está aplicada en M03-A y se informa como limitación `approved_mutation_detection = NOT_ENFORCED_IN_M03A`, no como check PASS. Git history por sí sola no se trata como mecanismo contractual.
 
 Protección contra “approve current behavior”: se rechazan marcadores `CURRENT_OUTPUT`, `AUTO_GENERATED`, `AUTO_ACCEPTED`; el gate no captura outputs del motor para generar expectations. La aprobación exige revisión declarada. El gate comprueba metadatos, no autoridad real del revisor ni validez normativa. El ZIP mínimo es DRAFT y no demuestra que el validador devuelva PASS.
 
 ## Gate y siguiente fase
 
-`python -m gtfs_lab.golden_contract_gate` valida el contrato y casos negativos: SHA ausente/incorrecto, input ausente, status desconocido, APPROVED sin revisor, timestamp naïve, expectation sin tipo/authority, path absoluto Windows, ID vacío, versión desconocida y expectation derivada de output. También demuestra que mutaciones de caso aprobado requieren mecanismo posterior.
+`python -m gtfs_lab.golden_contract_gate` valida el contrato y casos negativos de autoridad inválida, SHA ausente/incorrecto, input ausente, status desconocido, APPROVED sin revisión, timestamp naïve, expectation sin tipo/authority, rutas absolutas Windows/POSIX, traversal, ID vacío, versión desconocida y expectation derivada de output. La implementación también aplica containment después de `resolve`; no hay un caso de symlink en el gate. La salida informa `enforced_checks` y `PASS = N/N`; las limitaciones se reportan aparte y no se cuentan como checks satisfechos.
 
 M03-B podrá seleccionar casos tras review explícita, definir evaluación de expectations y resultados GoldenCaseResult y decidir mecanismo durable de cambios. No comenzar M03-B como parte de este cambio.
 

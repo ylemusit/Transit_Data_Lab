@@ -4,7 +4,7 @@ from __future__ import annotations
 import hashlib
 import re
 from datetime import datetime
-from pathlib import Path, PureWindowsPath
+from pathlib import Path, PurePosixPath, PureWindowsPath
 from typing import Any
 
 CONTRACT_VERSION = "1.0.0"
@@ -20,13 +20,15 @@ class GoldenCaseError(ValueError):
     pass
 
 
-def is_executable_authority(case: dict[str, Any]) -> bool:
-    """Return whether a case is eligible to act as Golden authority.
-
-    This is only a lifecycle check; it does not evaluate expectations or
-    establish that a declared reviewer or review basis is factually valid.
-    """
+def has_approved_status(case: Any) -> bool:
+    """Return only whether the object declares the APPROVED lifecycle status."""
     return isinstance(case, dict) and case.get("status") == "APPROVED"
+
+
+def is_executable_authority(case: dict[str, Any], base_dir: Path) -> bool:
+    """Validate a complete case before treating APPROVED as executable authority."""
+    validate_case(case, base_dir)
+    return has_approved_status(case)
 
 
 def _utc(value: Any) -> bool:
@@ -61,7 +63,7 @@ def validate_case(case: dict[str, Any], base_dir: Path) -> None:
     if inp["format"] != "GTFS_STATIC_ZIP":
         raise GoldenCaseError("unsupported input format")
     rel = Path(inp["filename"])
-    if rel.is_absolute() or PureWindowsPath(inp["filename"]).is_absolute() or ".." in rel.parts:
+    if rel.is_absolute() or PurePosixPath(inp["filename"]).is_absolute() or PureWindowsPath(inp["filename"]).is_absolute() or ".." in rel.parts:
         raise GoldenCaseError("input filename must be a relative repository path")
     input_path = (base_dir / rel).resolve()
     if not input_path.is_relative_to(base_dir.resolve()):
