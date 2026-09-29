@@ -14,6 +14,7 @@ from typing import Any
 from .audit_contract import AuditContractError, stable_finding_id, validate_audit_manifest
 from .change_attribution import CONTRACT_VERSION as CHANGE_ATTRIBUTION_VERSION
 from .change_attribution import compare as compare_change_attribution
+from .change_attribution_v1_1 import compare as compare_change_attribution_v1_1
 
 SNAPSHOT_CONTRACT_VERSION = "1.0.0"
 SNAPSHOT_CONTRACT = "AuditComparisonSnapshot"
@@ -218,6 +219,8 @@ def build_audit_snapshot(run_directory: str | Path) -> dict[str, Any]:
     return {
         "snapshot_contract": SNAPSHOT_CONTRACT,
         "snapshot_contract_version": SNAPSHOT_CONTRACT_VERSION,
+        **({"change_attribution_contract_version": manifest["change_attribution_contract_version"]}
+           if "change_attribution_contract_version" in manifest else {}),
         "audit_id": manifest["audit_id"],
         "identity": identity,
         "result": {"rules": rules},
@@ -228,6 +231,10 @@ def build_audit_snapshot(run_directory: str | Path) -> dict[str, Any]:
 
 def _compatibility(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[str, Any]:
     reasons: list[str] = []
+    contracts = (baseline.get("change_attribution_contract_version", "1.0.0"),
+                 candidate.get("change_attribution_contract_version", "1.0.0"))
+    if contracts not in (("1.0.0", "1.0.0"), ("1.1.0", "1.1.0")):
+        reasons.append("CHANGE_ATTRIBUTION_CONTRACTS_NOT_COMPARABLE")
     for side, snapshot in (("baseline", baseline), ("candidate", candidate)):
         if snapshot.get("snapshot_contract") != SNAPSHOT_CONTRACT:
             reasons.append(f"{side}:SNAPSHOT_CONTRACT_UNSUPPORTED")
@@ -250,7 +257,10 @@ def _compatibility(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[
     if isinstance(baseline_rules, dict) and isinstance(candidate_rules, dict):
         before_versions = baseline_rules.get("rule_versions")
         after_versions = candidate_rules.get("rule_versions")
-        if isinstance(before_versions, dict) and isinstance(after_versions, dict) and before_versions != after_versions and (baseline_rules.get("rule_version") is None or candidate_rules.get("rule_version") is None):
+        if (baseline.get("change_attribution_contract_version", "1.0.0") == "1.0.0"
+                and candidate.get("change_attribution_contract_version", "1.0.0") == "1.0.0"
+                and isinstance(before_versions, dict) and isinstance(after_versions, dict) and before_versions != after_versions
+                and (baseline_rules.get("rule_version") is None or candidate_rules.get("rule_version") is None)):
             reasons.append("RULE_SEMANTIC_IDENTITY_SHAPE_UNSUPPORTED_BY_CHANGE_ATTRIBUTION_1_0_0")
     if reasons:
         return {"status": "NOT_COMPARABLE", "reasons": sorted(reasons)}
@@ -278,7 +288,9 @@ def compare_audits(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[
         return {
             "comparison_id": _comparison_id(baseline, candidate),
             "snapshot_contract_version": SNAPSHOT_CONTRACT_VERSION,
-            "change_attribution_contract_version": CHANGE_ATTRIBUTION_VERSION,
+            "change_attribution_contract_version": "1.1.0" if any(
+                snapshot.get("change_attribution_contract_version") == "1.1.0" for snapshot in (baseline, candidate)
+            ) else CHANGE_ATTRIBUTION_VERSION,
             "baseline_audit_id": baseline.get("audit_id"),
             "candidate_audit_id": candidate.get("audit_id"),
             "comparability": comparability,
@@ -292,7 +304,8 @@ def compare_audits(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[
             "unresolved_reasons": comparability["reasons"],
         }
     try:
-        attribution = compare_change_attribution(baseline, candidate)
+        versions = (baseline.get("change_attribution_contract_version", "1.0.0"), candidate.get("change_attribution_contract_version", "1.0.0"))
+        attribution = compare_change_attribution(baseline, candidate) if versions == ("1.0.0", "1.0.0") else compare_change_attribution_v1_1(baseline, candidate)
     except ValueError as exc:
         message = str(exc)
         code = "DUPLICATE_RULE_ID" if "unique non-empty rule_id" in message else "FINDING_IDENTITY_INVALID" if "finding" in message else "SNAPSHOT_INVALID"
@@ -300,7 +313,7 @@ def compare_audits(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[
     return {
         "comparison_id": attribution["comparison_id"],
         "snapshot_contract_version": SNAPSHOT_CONTRACT_VERSION,
-        "change_attribution_contract_version": CHANGE_ATTRIBUTION_VERSION,
+        "change_attribution_contract_version": attribution["contract_version"],
         "baseline_audit_id": attribution["baseline_audit_id"],
         "candidate_audit_id": attribution["candidate_audit_id"],
         "comparability": comparability,
@@ -308,6 +321,7 @@ def compare_audits(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[
         "result_change": attribution["result_change"],
         "finding_change": attribution["finding_change"],
         "attribution": attribution["attribution"],
+        **({"per_rule_changes": attribution["per_rule_changes"]} if "per_rule_changes" in attribution else {}),
         "supported_causes": attribution["supported_causes"],
         "evidence_status": attribution["confidence_or_evidence_status"]["status"],
         "evidence_refs": attribution["evidence_refs"],
