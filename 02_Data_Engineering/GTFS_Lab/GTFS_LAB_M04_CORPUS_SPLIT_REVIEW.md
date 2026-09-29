@@ -154,8 +154,8 @@ La matriz completa está embebida en `relationships_v1.json` mediante `independe
 
 No se pregunta por agency/feed fields ni por solapamientos: ya están extraídos del input local.
 
-## W. Updated verdict
+## W. Veredicto M04-A1 (histórico, supersedido por M04-A2)
 
-**Estado:** `M04A_PROVENANCE_PARTIALLY_RECOVERED`. Se recuperó identidad de agencias, metadata `feed_info`, fechas de feed y análisis estructural para los 20 inputs; no se recuperaron los IDs/URLs NAP ni significado de timestamps, y quedan relaciones críticas de lineage sin resolver. No proponer split ni holdout; no iniciar M04-B/M05; Golden Corpus V1 sigue intacto; `TDL_TRUST_FOUNDATION != PASS`.
+**Estado a cierre de M04-A1:** `M04A_PROVENANCE_PARTIALLY_RECOVERED`. Se recuperó identidad de agencias, metadata `feed_info`, fechas de feed y análisis estructural para los 20 inputs; no se recuperaron los IDs/URLs NAP ni significado de timestamps, y quedaron relaciones de lineage sin resolver. La clasificación y preguntas de custodia de A1 son históricas; M04-A2 establece el estado vigente en la revisión enlazada al principio. No proponer split ni holdout; no iniciar M04-B/M05; Golden Corpus V1 sigue intacto; `TDL_TRUST_FOUNDATION != PASS`.
 
 Gate reproducible: `python gtfs_lab/corpus_provenance.py --corpus-root <corpus-local> --provenance corpus/provenance_v1.json --relationships corpus/relationships_v1.json --check`. Rechaza cobertura incompleta, ausencia de fuentes, confianza/enum inválida, fecha de captura derivada únicamente del nombre, campos de validator, rutas absolutas, relaciones independientes sin razón y relaciones unresolved ocultas. Los tests negativos están en `tests/test_corpus_provenance.py`.
