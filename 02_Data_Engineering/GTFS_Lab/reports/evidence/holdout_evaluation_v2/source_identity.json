@@ -1,0 +1,68 @@
+[
+  {
+    "dataset_id": "006",
+    "lineage_unit": "DATASET-006",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_A_SMALL_BASIC/006_rafael_nadal/02_sources/gtfs_schedule/original/20250320_121835_Autocares_Rafael_Nadal.zip",
+    "expected_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+    "actual_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+    "match": true,
+    "size_bytes": 1982,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  },
+  {
+    "dataset_id": "008",
+    "lineage_unit": "DATASET-008",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_B_SME_OPERATIONAL/008_baraza/02_sources/gtfs_schedule/original/20260831_100006_BUS_Baraza.zip",
+    "expected_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+    "actual_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+    "match": true,
+    "size_bytes": 126374,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  },
+  {
+    "dataset_id": "013",
+    "lineage_unit": "LINEAGE-013-015",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/013_lazara/02_sources/gtfs_schedule/original/20250529_100032_Autocares_Lazara.zip",
+    "expected_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+    "actual_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+    "match": true,
+    "size_bytes": 189716,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  },
+  {
+    "dataset_id": "015",
+    "lineage_unit": "LINEAGE-013-015",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/02_sources/gtfs_schedule/original/20260916_100037_Autobus_Rias_Baixas.zip",
+    "expected_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+    "actual_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+    "match": true,
+    "size_bytes": 443076,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  },
+  {
+    "dataset_id": "017",
+    "lineage_unit": "DATASET-017",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/017_tuvisa/02_sources/gtfs_schedule/original/20260922_060014_Euskadi_Tuvisa.zip",
+    "expected_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+    "actual_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+    "match": true,
+    "size_bytes": 1014865,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  },
+  {
+    "dataset_id": "018",
+    "lineage_unit": "DATASET-018",
+    "source_logical_path": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/018_bilbobus/02_sources/gtfs_schedule/original/20260922_060003_Euskadi_Bilbobus.zip",
+    "expected_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+    "actual_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+    "match": true,
+    "size_bytes": 2959893,
+    "first_access_utc": null,
+    "first_access_time_capture_status": "NOT_CAPTURED; deterministic access order is retained in this record."
+  }
+]

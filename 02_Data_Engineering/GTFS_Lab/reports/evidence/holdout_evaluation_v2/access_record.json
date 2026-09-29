@@ -1,0 +1,56 @@
+{
+  "evaluation_id": "TDL-M04B3-V2-1564c27f9de8415e96e6998ee129db03",
+  "access_id": "TDL-HOLDOUT-ACCESS-6a42ecc422ea46fabdd8c88e4899c44c",
+  "checkpoint_id": "TDL_HOLDOUT_ENGINE_CHECKPOINT_V2",
+  "checkpoint_sha256": "CEEEC24A72211DD0F0B59A663C3AF34C3697820FEACA015384DFDF534392C978",
+  "engine_identity": {
+    "git_commit": "6a4afd4663f7a3ef4b8ae6560cfa314e137c3a72",
+    "parser": "gtfs-lab-csv/2",
+    "validator": "1.0.0",
+    "ruleset": "gtfs-lab-v1 / 1",
+    "rule": "V1-RULE-GTFS",
+    "semantic_rule_version": "compliance-v1/1",
+    "evaluator": "compliance-v1/2",
+    "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+    "compliance_package_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b"
+  },
+  "split_identity": {
+    "split_id": "TDL-CORPUS-SPLIT-V1",
+    "split_version": "1.0.0",
+    "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d"
+  },
+  "worktree_commit": "08cf344750f44a1527b261a15074afa1c40fb35a",
+  "worktree_clean": true,
+  "source_zip_contents_read": true,
+  "holdout_access_started": true,
+  "evaluation_start_utc": "2026-09-29T17:28:58.5629445Z",
+  "pre_access_record_created_utc": "2026-09-29T17:28:58.5629445Z",
+  "first_access_attempt_utc": "2026-09-29T17:29:59.58001Z",
+  "first_actual_source_open_or_hash_utc": null,
+  "completion_utc": "2026-09-29T17:32:34.6521520Z",
+  "chronology_note": "All six ZIP SHA-256 values matched split. Exact hash access UTC was not captured due PowerShell timestamp-expression error; null retained. First path resolution failure preserved. Replay proceeds once per dataset; no rerun.",
+  "failed_access_attempts": [
+    {
+      "timestamp_utc": "2026-09-29T17:29:59.58001Z",
+      "dataset_id": "006",
+      "attempt": "resolve inventory zip_relative_path under isolated checkout corpus/",
+      "result": "PATH_NOT_FOUND",
+      "source_bytes_read": false
+    }
+  ],
+  "source_path_resolution_attempts": [
+    {
+      "timestamp_utc": "2026-09-29T17:30:54.3052034Z",
+      "dataset_id": "006",
+      "attempt": "resolve inventory zip_relative_path under root 20_clientes_reales",
+      "result": "PATH_RESOLVED",
+      "source_bytes_read": false
+    }
+  ],
+  "first_source_hash_timestamp_status": "NOT_CAPTURED",
+  "first_source_hash_timestamp_note": "Timestamp expression failed while source SHA-256 reads were executing; timestamps are intentionally null and were not reconstructed or rehashed.",
+  "pipeline_replay_started_utc": "2026-09-29T17:32:27.1809298Z",
+  "regression_started_utc": "2026-09-29T17:35:07.3185165Z",
+  "regression_completed_utc": "2026-09-29T17:36:34.1312041Z",
+  "regression_note": "Compliance strict current first stopped before evaluating Compliance because the isolated worktree lacked the protected GTFS DB. After verifying and copying the DB with its expected SHA, the same gate passed on retry; both attempts are preserved."
+}
