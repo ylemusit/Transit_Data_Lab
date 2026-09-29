@@ -1,0 +1,16 @@
+{
+  "resources": [
+    {
+      "name": "gtfs_raw_db",
+      "kind": "duckdb",
+      "path": "REPLACE_WITH_ABSOLUTE_EXTERNAL_PATH",
+      "sha256": "F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC"
+    },
+    {
+      "name": "compliance_db",
+      "kind": "duckdb",
+      "path": "REPLACE_WITH_ABSOLUTE_EXTERNAL_PATH",
+      "sha256": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B"
+    }
+  ]
+}
