@@ -2,7 +2,7 @@
   "case_id": "gtfs-bad-service-reference-v1",
   "case_version": "1.0.0",
   "contract_version": "1.0.0",
-  "status": "UNDER_REVIEW",
+  "status": "APPROVED",
   "purpose": "Detectar trips.service_id sin registro en calendar.txt ni calendar_dates.txt.",
   "created_at_utc": "2026-09-29T00:00:00Z",
   "input": {
@@ -44,7 +44,11 @@
     "section_topic": "trips.txt: service_id; Foreign ID referencing calendar.service_id or calendar_dates.service_id, Required",
     "interpretation_note": "GTFS establece que trips.service_id referencia calendar.service_id o calendar_dates.service_id; el único viaje declara missing-service y las tablas de calendario presentes solo declaran weekday. GTFS no define el status ni el número de findings emitidos por TDL."
   },
-  "review": {},
+  "review": {
+    "reviewed_by": "Yeison Arbey Carrillo Lemus",
+    "reviewed_at_utc": "2026-09-29T01:07:57Z",
+    "review_basis": "Aprobación humana explícita recibida el 2026-09-29: se aceptan las expectativas STATUS = FAIL_TECHNICAL y COUNT = 1 bajo TDL_CONTRACT para la representación del incumplimiento; GTFS_SPECIFICATION fundamenta la relación trips.service_id → calendar.service_id o calendar_dates.service_id."
+  },
   "engine_context": {
     "gtfs_lab_version": "1.0.0-dev",
     "validator_version": "1.0.0",

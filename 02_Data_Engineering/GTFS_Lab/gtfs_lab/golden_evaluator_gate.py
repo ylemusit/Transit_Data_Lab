@@ -43,7 +43,7 @@ def run_gate() -> dict:
         add("presence_pass", evaluate(case, base, observed, context)["status"] == "PASS")
         case["expected"] = [{"type":"ABSENCE","target":"validation.rules[rule_id=missing].findings","value":True,"authority":"SYNTHETIC_INVARIANT"}]
         add("absence_pass", evaluate(case, base, observed, context)["status"] == "PASS")
-    return {"gate":"TDL_GOLDEN_EVALUATOR_GATE", "status":"PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "check_count":len(checks), "checks":checks, "executable_corpus_cases":0}
+    return {"gate":"TDL_GOLDEN_EVALUATOR_GATE", "status":"PASS" if all(c["status"] == "PASS" for c in checks) else "FAIL", "check_count":len(checks), "checks":checks, "approved_corpus_cases":2, "corpus_cases_executed_by_this_gate":0, "note":"El gate prueba evaluator con casos sintéticos temporales; TDL_GOLDEN_REGRESSION_GATE ejecuta el corpus aprobado."}
 
 
 def main() -> int:

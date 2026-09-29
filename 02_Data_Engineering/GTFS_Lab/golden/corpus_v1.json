@@ -8,21 +8,21 @@
       "case_version": "1.0.0",
       "path": "cases/gtfs-orphan-route-v1",
       "sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
-      "case_sha256": "5ca9eee38e0b6d52696721ca4ca14018c0ce6a2e663768bd456ab2c6e23658df",
+      "case_sha256": "cc35cf844c1cac02529f13158ac1042756915e729b3ded90663ad3da493205bb",
       "input_sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
-      "status": "UNDER_REVIEW"
+      "status": "APPROVED"
     },
     {
       "case_id": "gtfs-bad-service-reference-v1",
       "case_version": "1.0.0",
       "path": "cases/gtfs-bad-service-reference-v1",
       "sha256": "21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51",
-      "case_sha256": "292dca311b52dfecffec791b9f6b886919229c4c8e5736efad0f8791b56fe3e8",
+      "case_sha256": "2567c8e9dca6b1c9591503117fe87f60459db7ad1f642f6e5a530a68816e6aaa",
       "input_sha256": "21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51",
-      "status": "UNDER_REVIEW"
+      "status": "APPROVED"
     }
   ],
-  "status": "UNDER_REVIEW",
+  "status": "APPROVED",
   "created_at_utc": "2026-09-29T00:00:00Z",
-  "corpus_sha256": "205c43dd68bd20520e46680c06b3a76fba8bd415895259588b5b5bf71435b0e1"
+  "corpus_sha256": "29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2b1a6dce1e3"
 }

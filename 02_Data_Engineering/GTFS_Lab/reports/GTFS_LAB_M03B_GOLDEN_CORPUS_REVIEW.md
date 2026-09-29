@@ -1,4 +1,27 @@
-# GTFS_Lab M03-B1 — Golden Corpus V1 para revisión humana
+# GTFS_Lab M03-B — Golden Corpus V1: aprobación y regresión
+
+## Estado vigente — M03-B2
+
+Actualizado: 2026-09-29. Estado: `M03B_DRAFT_PR_READY_FOR_FINAL_REVIEW`. La aprobación humana explícita de Yeison Arbey Carrillo Lemus se registró el `2026-09-29T01:07:57Z` para los dos casos autorizados. No se añadieron otros casos. Los bloques A–G conservan el registro histórico de M03-B1 y de su preparación para review.
+
+| Caso aprobado | `case_sha256` | Input SHA-256 sin cambios | Resultado Golden Regression |
+|---|---|---|---|
+| `gtfs-orphan-route-v1` 1.0.0 | `cc35cf844c1cac02529f13158ac1042756915e729b3ded90663ad3da493205bb` | `28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81` | PASS; STATUS `FAIL_TECHNICAL`, COUNT `1` |
+| `gtfs-bad-service-reference-v1` 1.0.0 | `2567c8e9dca6b1c9591503117fe87f60459db7ad1f642f6e5a530a68816e6aaa` | `21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51` | PASS; STATUS `FAIL_TECHNICAL`, COUNT `1` |
+
+Corpus V1 status: `APPROVED`. `corpus_sha256`: `29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2b1a6dce1e3`. La identidad incluye `case_id`, `case_version`, `case_sha256` e `input_sha256`, ordenados de forma determinista; no incluye timestamp de review, rutas ni IDs de ejecución. Cambió legítimamente al cambiar cada `case.json` aprobado.
+
+`TDL_GOLDEN_CORPUS_GATE`: PASS, 11/11 checks, 2 aprobados. `TDL_GOLDEN_EVALUATOR_GATE`: PASS, 11/11. `TDL_GOLDEN_REGRESSION_GATE`: PASS en ambos casos; negativos controlados COUNT esperado 1/observado 2 y STATUS esperado `FAIL_TECHNICAL`/observado `PASS` producen `FAIL_EXPECTATION`. La evidencia de runs quedó fuera de `golden/`.
+
+**Decisión vigente: APPROVED.** La aprobación acepta las expectations técnicas de TDL y la base semántica de referencia GTFS descritas para cada caso; no es aprobación normativa ni conclusión legal. `approved_mutation_detection = NOT_ENFORCED_IN_M03A`: los hashes aprobados quedan ligados a corpus V1; cualquier edición futura requiere nueva `case_version`, causa explícita y supersession si aplica. No se genera firma criptográfica.
+
+La regresión completa M01 Trust Contract, M02 Trust Persistence, M03-A Contract, GTFS_Lab V1, Compliance V1, Corpus Gate, Evaluator Gate, Regression Gate, `py_compile` y `git diff --check` pasó. Compliance V1 conservó 386 checks actuales PASS y su fallo histórico permitido `UNCHANGED_COUNT_audit.rules` (esperado 0, observado 2). Hashes antes/después: Compliance DB `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B`; GTFS_Lab DB `F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC`; Compliance freeze `3BBB6D87500608364972CFE841D6B2D3D03558FC73F1960A28579905FAEC6A3E`.
+
+La PR #6 permanece Draft y no se ha fusionado. M03-B queda listo para revisión final; Trust Foundation no se declara PASS y M04 no se inicia.
+
+---
+
+## Registro histórico — entrada M03-B1
 
 Fecha: 2026-09-29. Estado: `M03B1_READY_FOR_HUMAN_APPROVAL`. Ningún candidato está aprobado. La propuesta no es una aprobación técnica ni humana.
 
