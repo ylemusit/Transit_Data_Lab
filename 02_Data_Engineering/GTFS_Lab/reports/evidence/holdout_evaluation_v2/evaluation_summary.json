@@ -1,0 +1,1125 @@
+{
+  "evaluation_id": "TDL-M04B3-V2-1564c27f9de8415e96e6998ee129db03",
+  "access_id": "TDL-HOLDOUT-ACCESS-6a42ecc422ea46fabdd8c88e4899c44c",
+  "status": "M04B3_HOLDOUT_V2_COMPLETED",
+  "checkpoint_id": "TDL_HOLDOUT_ENGINE_CHECKPOINT_V2",
+  "checkpoint_sha256": "CEEEC24A72211DD0F0B59A663C3AF34C3697820FEACA015384DFDF534392C978",
+  "engine_identity": {
+    "git_commit": "6a4afd4663f7a3ef4b8ae6560cfa314e137c3a72",
+    "parser": "gtfs-lab-csv/2",
+    "validator": "1.0.0",
+    "ruleset": "gtfs-lab-v1 / 1",
+    "rule": "V1-RULE-GTFS",
+    "semantic_rule_version": "compliance-v1/1",
+    "evaluator": "compliance-v1/2",
+    "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+    "compliance_package_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b"
+  },
+  "split_identity": {
+    "split_id": "TDL-CORPUS-SPLIT-V1",
+    "split_version": "1.0.0",
+    "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d"
+  },
+  "access_chronology": {
+    "evaluation_start_utc": "2026-09-29T17:28:58.5629445Z",
+    "pre_access_record_created_utc": "2026-09-29T17:28:58.5629445Z",
+    "first_access_attempt_utc": "2026-09-29T17:29:59.58001Z",
+    "first_actual_source_open_or_hash_utc": null,
+    "pipeline_replay_started_utc": "2026-09-29T17:32:27.1809298Z",
+    "completion_utc": "2026-09-29T17:32:34.6521520Z",
+    "first_source_hash_timestamp_status": "NOT_CAPTURED",
+    "first_source_hash_timestamp_note": "Timestamp expression failed while source SHA-256 reads were executing; timestamps are intentionally null and were not reconstructed or rehashed."
+  },
+  "source_identity_evidence": "source_identity.json",
+  "datasets": [
+    {
+      "dataset_id": "006",
+      "lineage_unit": "DATASET-006",
+      "source_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-fb41c52b788e432e",
+      "run_id_v2": "GTFSRUN-9c9d90d186e34d6b",
+      "pipeline_v1": "PIPELINE_COMPLETED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "PASS",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 8,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 0
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": 0,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [],
+      "inspection_errors_v1": [],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "ACCEPTED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "NO_CHANGE",
+      "runtime_artifacts_external": "runtime/GTFSRUN-9c9d90d186e34d6b/run.json; runtime/GTFSRUN-9c9d90d186e34d6b/audit/audit_manifest.json; runtime/GTFSRUN-9c9d90d186e34d6b/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    },
+    {
+      "dataset_id": "008",
+      "lineage_unit": "DATASET-008",
+      "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-7ead324525fb461d",
+      "run_id_v2": "GTFSRUN-66c31d282c8a4a36",
+      "pipeline_v1": "PIPELINE_FAILED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "NOT_RUN",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 0,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 0
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": null,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [
+        "EMPTY_CSV_RECORD_IGNORED table=shapes.txt lines=1869 count=1"
+      ],
+      "inspection_errors_v1": [],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [
+        {
+          "type": "INGESTION_ERROR",
+          "message": "CSV malformado en shapes.txt, registro 1869: 0 campos; cabecera 4"
+        }
+      ],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "NOT_CREATED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "PARSER_IMPLEMENTATION_CHANGE; downstream rule results are newly observable after ingestion",
+      "runtime_artifacts_external": "runtime/GTFSRUN-66c31d282c8a4a36/run.json; runtime/GTFSRUN-66c31d282c8a4a36/audit/audit_manifest.json; runtime/GTFSRUN-66c31d282c8a4a36/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    },
+    {
+      "dataset_id": "013",
+      "lineage_unit": "LINEAGE-013-015",
+      "source_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-b22a973c51154d76",
+      "run_id_v2": "GTFSRUN-5f131f8fe1f540e8",
+      "pipeline_v1": "PIPELINE_COMPLETED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "INSPECTION_ERROR",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "INSPECTION_ERROR",
+          "finding_count": 0
+        }
+      ],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 7,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 1
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": 0,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [],
+      "inspection_errors_v1": [
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "status": "INSPECTION_ERROR"
+        }
+      ],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "ACCEPTED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+      "runtime_artifacts_external": "runtime/GTFSRUN-5f131f8fe1f540e8/run.json; runtime/GTFSRUN-5f131f8fe1f540e8/audit/audit_manifest.json; runtime/GTFSRUN-5f131f8fe1f540e8/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    },
+    {
+      "dataset_id": "015",
+      "lineage_unit": "LINEAGE-013-015",
+      "source_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-7344978b6dd44ec4",
+      "run_id_v2": "GTFSRUN-e0c82aa0dcf74fad",
+      "pipeline_v1": "PIPELINE_COMPLETED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "INSPECTION_ERROR",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "INSPECTION_ERROR",
+          "finding_count": 0
+        }
+      ],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 7,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 1
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": 0,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [],
+      "inspection_errors_v1": [
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "status": "INSPECTION_ERROR"
+        }
+      ],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "ACCEPTED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+      "runtime_artifacts_external": "runtime/GTFSRUN-e0c82aa0dcf74fad/run.json; runtime/GTFSRUN-e0c82aa0dcf74fad/audit/audit_manifest.json; runtime/GTFSRUN-e0c82aa0dcf74fad/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    },
+    {
+      "dataset_id": "017",
+      "lineage_unit": "DATASET-017",
+      "source_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-42deb9ac95084fcd",
+      "run_id_v2": "GTFSRUN-9468e5556a2c4da5",
+      "pipeline_v1": "PIPELINE_COMPLETED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "INSPECTION_ERROR",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "INSPECTION_ERROR",
+          "finding_count": 0
+        }
+      ],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 7,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 1
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": 0,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [],
+      "inspection_errors_v1": [
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "status": "INSPECTION_ERROR"
+        }
+      ],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "ACCEPTED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+      "runtime_artifacts_external": "runtime/GTFSRUN-9468e5556a2c4da5/run.json; runtime/GTFSRUN-9468e5556a2c4da5/audit/audit_manifest.json; runtime/GTFSRUN-9468e5556a2c4da5/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    },
+    {
+      "dataset_id": "018",
+      "lineage_unit": "DATASET-018",
+      "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "source_hash_match": true,
+      "run_id_v1": "GTFSRUN-8510844a15384fbf",
+      "run_id_v2": "GTFSRUN-930bb14ca5b84c57",
+      "pipeline_v1": "PIPELINE_COMPLETED",
+      "pipeline_v2": "PIPELINE_COMPLETED",
+      "ingestion_v2": "PASS",
+      "parser_v1": "gtfs-lab-csv/1",
+      "parser_v2": "gtfs-lab-csv/2",
+      "compliance_evaluator_v1_sha256": "efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70",
+      "compliance_v1": "INSPECTION_ERROR",
+      "compliance_evaluator_v2_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "compliance_v2": "PASS",
+      "rule_results_v1": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "INSPECTION_ERROR",
+          "finding_count": 0
+        }
+      ],
+      "rule_results_v2": [
+        {
+          "rule_id": "GTFS-STRUCT-REQUIRED",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-TRIP-ROUTE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SERVICE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-REF-SHAPE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "GTFS-COORDINATE-RANGE",
+          "version": "1.0.0",
+          "status": "PASS",
+          "finding_count": 0
+        },
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "version": "compliance-v1/1",
+          "status": "PASS",
+          "finding_count": 0
+        }
+      ],
+      "rule_status_counts_v1": {
+        "PASS": 7,
+        "FAIL_TECHNICAL": 0,
+        "WARNING": 0,
+        "NOT_EVALUABLE": 0,
+        "INSPECTION_ERROR": 1
+      },
+      "rule_status_counts_v2": {
+        "PASS": 8
+      },
+      "findings_v1_count": 0,
+      "findings_v2_count": 0,
+      "normalized_findings_v2": [],
+      "warnings_v1": "NOT_PERSISTED_IN_B1_SUMMARY",
+      "warnings_v2": [],
+      "inspection_errors_v1": [
+        {
+          "rule_id": "V1-RULE-GTFS",
+          "status": "INSPECTION_ERROR"
+        }
+      ],
+      "inspection_errors_v2": [],
+      "execution_errors_v1": [],
+      "execution_errors_v2": [],
+      "trust_manifest_v1": "ACCEPTED",
+      "trust_manifest_v2": "ACCEPTED",
+      "compliance_reason_v2": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+      "attribution": "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+      "runtime_artifacts_external": "runtime/GTFSRUN-930bb14ca5b84c57/run.json; runtime/GTFSRUN-930bb14ca5b84c57/audit/audit_manifest.json; runtime/GTFSRUN-930bb14ca5b84c57/audit/findings.normalized.json",
+      "execution_attempts": 1,
+      "execution_exit_code": 0
+    }
+  ],
+  "lineage_outcomes": [
+    {
+      "lineage_unit": "DATASET-006",
+      "dataset_ids": [
+        "006"
+      ],
+      "dataset_count": 1,
+      "pipeline_outcomes": [
+        "PIPELINE_COMPLETED"
+      ],
+      "all_interpretable": true,
+      "independence_counted_once": true
+    },
+    {
+      "lineage_unit": "DATASET-008",
+      "dataset_ids": [
+        "008"
+      ],
+      "dataset_count": 1,
+      "pipeline_outcomes": [
+        "PIPELINE_COMPLETED"
+      ],
+      "all_interpretable": true,
+      "independence_counted_once": true
+    },
+    {
+      "lineage_unit": "LINEAGE-013-015",
+      "dataset_ids": [
+        "013",
+        "015"
+      ],
+      "dataset_count": 2,
+      "pipeline_outcomes": [
+        "PIPELINE_COMPLETED",
+        "PIPELINE_COMPLETED"
+      ],
+      "all_interpretable": true,
+      "independence_counted_once": true
+    },
+    {
+      "lineage_unit": "DATASET-017",
+      "dataset_ids": [
+        "017"
+      ],
+      "dataset_count": 1,
+      "pipeline_outcomes": [
+        "PIPELINE_COMPLETED"
+      ],
+      "all_interpretable": true,
+      "independence_counted_once": true
+    },
+    {
+      "lineage_unit": "DATASET-018",
+      "dataset_ids": [
+        "018"
+      ],
+      "dataset_count": 1,
+      "pipeline_outcomes": [
+        "PIPELINE_COMPLETED"
+      ],
+      "all_interpretable": true,
+      "independence_counted_once": true
+    }
+  ],
+  "dataset_count": 6,
+  "independent_lineage_unit_count": 5,
+  "aggregate_rule_status_counts_v1": {
+    "PASS": 36,
+    "INSPECTION_ERROR": 4,
+    "FAIL_TECHNICAL": 0,
+    "NOT_EVALUABLE": 0,
+    "WARNING": 0
+  },
+  "aggregate_rule_status_counts_v2": {
+    "PASS": 48,
+    "INSPECTION_ERROR": 0,
+    "FAIL_TECHNICAL": 0,
+    "NOT_EVALUABLE": 0,
+    "WARNING": 0
+  },
+  "finding_counts": {
+    "v1_confirmed_or_candidate": 0,
+    "v2_new_fail_technical": 0,
+    "v2_findings": 0
+  },
+  "warnings": [
+    "Dataset 008: EMPTY_CSV_RECORD_IGNORED table=shapes.txt lines=1869 count=1"
+  ],
+  "inspection_errors_v1": {
+    "013": "SCALE_LIMIT",
+    "015": "SCALE_LIMIT",
+    "017": "SCALE_LIMIT",
+    "018": "SCALE_LIMIT"
+  },
+  "inspection_errors_v2": [],
+  "classifications": {
+    "dataset_008": "PARSER_IMPLEMENTATION_CHANGE; V2 completed ingestion and rules; line 1869 blank physical record ignored",
+    "datasets_013_015_017_018": "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE; V2 produced semantic PASS results",
+    "dataset_006": "NO_CHANGE; stable control",
+    "tool_defect_detected": false
+  },
+  "attribution_categories": [
+    "NO_CHANGE",
+    "PARSER_IMPLEMENTATION_CHANGE",
+    "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+    "NEWLY_OBSERVABLE_DATA_RESULT"
+  ],
+  "regression": [
+    {
+      "check": "M01_trust_contract",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:07.3185165Z",
+      "end_utc": "2026-09-29T17:35:07.3888285Z"
+    },
+    {
+      "check": "M02_trust_persistence",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:07.3918277Z",
+      "end_utc": "2026-09-29T17:35:08.4865516Z"
+    },
+    {
+      "check": "M03A_golden_contract",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:08.4875199Z",
+      "end_utc": "2026-09-29T17:35:08.5538609Z"
+    },
+    {
+      "check": "golden_corpus",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:08.5542167Z",
+      "end_utc": "2026-09-29T17:35:08.6117332Z"
+    },
+    {
+      "check": "golden_evaluator",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:08.6120918Z",
+      "end_utc": "2026-09-29T17:35:08.7404815Z"
+    },
+    {
+      "check": "golden_regression",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:08.7411364Z",
+      "end_utc": "2026-09-29T17:35:09.0798847Z"
+    },
+    {
+      "check": "split_gate",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:09.0803517Z",
+      "end_utc": "2026-09-29T17:35:09.1377212Z"
+    },
+    {
+      "check": "lineage_gate",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:09.1381068Z",
+      "end_utc": "2026-09-29T17:35:09.1925658Z"
+    },
+    {
+      "check": "gtfs_lab_synthetic_current",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:09.1929577Z",
+      "end_utc": "2026-09-29T17:35:09.7700645Z"
+    },
+    {
+      "check": "compliance_strict_current",
+      "status": "BLOCKED_BEFORE_GATE",
+      "exit_code": 1,
+      "start_utc": "2026-09-29T17:35:09.7705177Z",
+      "end_utc": "2026-09-29T17:35:16.0326369Z"
+    },
+    {
+      "check": "compileall",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:16.0328332Z",
+      "end_utc": "2026-09-29T17:35:16.1902444Z"
+    },
+    {
+      "check": "git_diff_check",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:35:16.1905080Z",
+      "end_utc": "2026-09-29T17:35:16.2218076Z"
+    },
+    {
+      "check": "compliance_strict_current_retry_after_protected_gtfs_db_hash_match",
+      "status": "PASS",
+      "exit_code": 0,
+      "start_utc": "2026-09-29T17:36:27.8928125Z",
+      "end_utc": "2026-09-29T17:36:34.1312041Z",
+      "prior_attempt": "BLOCKED_BEFORE_GATE: isolated worktree lacked GTFS DB; preserved at regression/logs/compliance_strict_current.stderr.txt",
+      "historical_harness_assertion": "UNCHANGED_COUNT_audit.rules expected 0 observed 2; retained as historical, current gate reports 386 current PASS"
+    }
+  ],
+  "regression_completed_utc": "2026-09-29T17:36:34.1312041Z",
+  "protected_integrity": {
+    "checkpoint_v2": {
+      "expected": "CEEEC24A72211DD0F0B59A663C3AF34C3697820FEACA015384DFDF534392C978",
+      "actual": "CEEEC24A72211DD0F0B59A663C3AF34C3697820FEACA015384DFDF534392C978"
+    },
+    "compliance_db": {
+      "expected": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+      "actual": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
+      "initial": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B"
+    },
+    "compliance_package": {
+      "expected": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b",
+      "actual": "8633FE32CF081E8B43A0A176088966AA5941D7B2D3A63E57D6668D70E49A9C9B"
+    },
+    "golden_corpus_identity": {
+      "expected": "29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2b1a6dce1e3",
+      "actual": "29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2b1a6dce1e3",
+      "gate": "PASS"
+    },
+    "split_identity": {
+      "expected": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+      "actual": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+      "gate": "PASS"
+    },
+    "compliance_evaluator": {
+      "expected": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+      "actual": "60CE250684F97E25D77BBE031055B3B458D2A013497B4076989AA7C30EA521EB"
+    },
+    "parser_source_git_blob": {
+      "expected_commit_blob": "7fc80eaf919dbfb4c91061478181ddcc9035c449",
+      "actual_worktree_blob": "7fc80eaf919dbfb4c91061478181ddcc9035c449",
+      "match": true
+    },
+    "gtfs_db": {
+      "expected": "F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC",
+      "source_and_checkout": "F4186D603C455021B807261BDAC8770F5F5F4D2BED7830214EB98C223EFD99FC"
+    }
+  },
+  "b1_immutable": true,
+  "no_post_access_fix": true,
+  "runtime_root": "external: TDL_HOLDOUT_EVALUATION_V2/runtime",
+  "runtime_artifacts_committed": false,
+  "final_verdict": "M04B3_HOLDOUT_V2_COMPLETED",
+  "m04_closure_candidate": "M04_READY_FOR_HUMAN_CLOSURE_REVIEW",
+  "human_closure_performed": false,
+  "limitations": [
+    "Exact UTC timestamps for the six initial source-file SHA reads were not captured due to a PowerShell timestamp-expression error; they remain null and were not reconstructed or rehashed.",
+    "V1 warnings were not persisted in B1 dataset summaries, so V1 warning comparison is unavailable.",
+    "The historical UNCHANGED_COUNT_audit.rules assertion remains a preserved historical failure (0 expected, 2 observed); current strict Compliance gate reports 386 current PASS."
+  ]
+}
