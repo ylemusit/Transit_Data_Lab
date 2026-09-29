@@ -1,0 +1,57 @@
+{
+  "gate": "TDL_GOLDEN_CORPUS_GATE",
+  "status": "PASS",
+  "case_count": 2,
+  "approved_count": 2,
+  "corpus_sha256": "29ae937e3abcf8baad21d998d81c4357defe2530f9da17be370aa2b1a6dce1e3",
+  "checks": [
+    {
+      "check": "manifest_identity_and_contract",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_status_approved",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_cases_list",
+      "status": "PASS"
+    },
+    {
+      "check": "all_cases_exist_and_match_contract",
+      "status": "PASS"
+    },
+    {
+      "check": "lifecycle_all_approved_and_review_complete",
+      "status": "PASS"
+    },
+    {
+      "check": "semantic_and_expectation_authorities_separated",
+      "status": "PASS"
+    },
+    {
+      "check": "unique_case_version_and_no_duplicate_entries",
+      "status": "PASS"
+    },
+    {
+      "check": "input_and_case_hashes_match",
+      "status": "PASS"
+    },
+    {
+      "check": "corpus_sha256_reproducible",
+      "status": "PASS"
+    },
+    {
+      "check": "no_runtime_outputs_in_corpus",
+      "status": "PASS"
+    },
+    {
+      "check": "approved_count_exactly_two",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "El gate comprueba contrato, hashes y consistencia de los datos de review; no autentica criptográficamente la identidad del reviewer ni autoridad normativa.",
+    "La aprobación humana queda ligada a los case_sha256 incluidos en corpus V1."
+  ]
+}

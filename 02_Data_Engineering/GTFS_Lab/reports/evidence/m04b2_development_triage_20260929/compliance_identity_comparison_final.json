@@ -1,0 +1,10 @@
+{
+  "baseline_package_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
+  "baseline_evaluator_version": "compliance-v1/1",
+  "current_evaluator_version": "compliance-v1/2",
+  "current_evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+  "identity_only_normalized_equal": true,
+  "strict_gate_exit_code": 1,
+  "strict_gate_reason": "PACKAGE_GENERATOR_REPLAY",
+  "authoritative_package_or_database_written": false
+}

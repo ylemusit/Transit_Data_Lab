@@ -1,0 +1,28 @@
+{
+  "base_commit": "8d4f2ad7fa0545b76dd5d5ec5503890ed0c396d9",
+  "holdout_zip_files_accessed": false,
+  "files": [
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/reports/evidence/holdout_evaluation_v1/access_record.json",
+      "byte_identical": true,
+      "sha256_checkpoint": "b7c1d9d5e730cea27d27fa474bd9a556f29ab58ab4be9de157f337bdda06d417",
+      "sha256_worktree": "b7c1d9d5e730cea27d27fa474bd9a556f29ab58ab4be9de157f337bdda06d417",
+      "bytes": 2260
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+      "byte_identical": true,
+      "sha256_checkpoint": "17eaa1da87d8ee493ec50befc5debdd7c455335c5cb9296d440e9177236c2314",
+      "sha256_worktree": "17eaa1da87d8ee493ec50befc5debdd7c455335c5cb9296d440e9177236c2314",
+      "bytes": 22631
+    },
+    {
+      "path": "02_Data_Engineering/GTFS_Lab/reports/evidence/holdout_evaluation_v1/source_identity.json",
+      "byte_identical": true,
+      "sha256_checkpoint": "aeae8a37b60f76add923b74cc4fc57fe9b3adc3f4a3239cd501ce1a6fa2ecb0b",
+      "sha256_worktree": "aeae8a37b60f76add923b74cc4fc57fe9b3adc3f4a3239cd501ce1a6fa2ecb0b",
+      "bytes": 2351
+    }
+  ],
+  "all_byte_identical": true
+}

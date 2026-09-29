@@ -1,0 +1,55 @@
+{
+  "gate": "TDL_TRUST_CONTRACT_GATE",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "manifest_derived_from_dataset_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "missing_manifest_hash_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "unverified_preservation_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "finding_identity_hash_unicode_and_dataset_sensitive",
+      "status": "PASS"
+    },
+    {
+      "check": "finding_lifecycle_transitions_enforced",
+      "status": "PASS"
+    },
+    {
+      "check": "human_review_states_require_reviewer_and_evidence",
+      "status": "PASS"
+    },
+    {
+      "check": "incomplete_review_evidence_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "review_timestamp_must_be_valid_utc_iso8601",
+      "status": "PASS"
+    },
+    {
+      "check": "actual_rule_result_roundtrip_normalized",
+      "status": "PASS"
+    },
+    {
+      "check": "identical_repeated_findings_deduplicated_explicitly",
+      "status": "PASS"
+    },
+    {
+      "check": "conflicting_duplicate_findings_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "invalid_rule_status_rejected",
+      "status": "PASS"
+    }
+  ],
+  "check_count": 12
+}

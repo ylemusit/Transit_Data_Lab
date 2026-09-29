@@ -1,0 +1,54 @@
+{
+  "gate": "TDL_GOLDEN_EVALUATOR_GATE",
+  "status": "PASS",
+  "check_count": 11,
+  "checks": [
+    {
+      "check": "status_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "golden_case_result_contract",
+      "status": "PASS"
+    },
+    {
+      "check": "status_fail",
+      "status": "PASS"
+    },
+    {
+      "check": "count_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "count_fail_and_no_string_coercion",
+      "status": "PASS"
+    },
+    {
+      "check": "unsupported_target_not_evaluable",
+      "status": "PASS"
+    },
+    {
+      "check": "malformed_result_execution_error",
+      "status": "PASS"
+    },
+    {
+      "check": "non_approved_rejected_as_authority",
+      "status": "PASS"
+    },
+    {
+      "check": "invalid_approved_contract_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "presence_pass",
+      "status": "PASS"
+    },
+    {
+      "check": "absence_pass",
+      "status": "PASS"
+    }
+  ],
+  "approved_corpus_cases": 2,
+  "corpus_cases_executed_by_this_gate": 0,
+  "note": "El gate prueba evaluator con casos sintéticos temporales; TDL_GOLDEN_REGRESSION_GATE ejecuta el corpus aprobado."
+}

@@ -1,0 +1,109 @@
+{
+  "gate": "TDL_TRUST_PERSISTENCE_GATE",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "synthetic_completed_run_persists_manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_validates_m01_contract",
+      "status": "PASS"
+    },
+    {
+      "check": "source_hash_matches",
+      "status": "PASS"
+    },
+    {
+      "check": "dataset_and_run_identity_match",
+      "status": "PASS"
+    },
+    {
+      "check": "executed_versions_and_rules_present",
+      "status": "PASS"
+    },
+    {
+      "check": "run_outcome_derived_from_pipeline",
+      "status": "PASS"
+    },
+    {
+      "check": "input_integrity_evidence_matches",
+      "status": "PASS"
+    },
+    {
+      "check": "declared_artifacts_exist",
+      "status": "PASS"
+    },
+    {
+      "check": "normalization_reproducible_and_linked",
+      "status": "PASS"
+    },
+    {
+      "check": "identical_duplicates_reconciled",
+      "status": "PASS"
+    },
+    {
+      "check": "conflicting_duplicates_rejected",
+      "status": "PASS"
+    },
+    {
+      "check": "conflicting_duplicate_pipeline_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "check": "foreign_source_hash_pipeline_fails_closed",
+      "status": "PASS"
+    },
+    {
+      "check": "source_mismatch_reconciliation_is_separate",
+      "status": "PASS"
+    },
+    {
+      "check": "manifest_replace_failure_removes_temporary",
+      "status": "PASS"
+    },
+    {
+      "check": "ingestion_error_has_no_manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "different_source_hash_changes_finding_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "missing_finding_hash_defaults_to_dataset",
+      "status": "PASS"
+    },
+    {
+      "check": "different_dataset_produces_distinct_identity",
+      "status": "PASS"
+    },
+    {
+      "check": "v1_outputs_remain_present_and_contractually_intact",
+      "status": "PASS"
+    },
+    {
+      "check": "protected_hashes_unchanged",
+      "status": "PASS"
+    }
+  ],
+  "manifest_example": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2_development_triage_20260929\\M02_trust_final\\runs\\GTFSRUN-c532970c19fd4527\\audit\\audit_manifest.json",
+  "findings_reconciliation": {
+    "source_finding_occurrences": 2,
+    "normalized_unique_findings": 1,
+    "identical_duplicates_collapsed": 1,
+    "conflicting_duplicates": 0,
+    "rejected_source_mismatch_occurrences": 0
+  },
+  "foreign_source_hash_case": {
+    "dataset_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+    "finding_evidence_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "both_valid_sha256": true,
+    "normalized_findings": 0,
+    "normalized_status": "REJECTED_FINDING_SOURCE_MISMATCH",
+    "manifest_exists": false,
+    "caller_failure": "RuntimeError: Trust audit persistence was not accepted: {'manifest_status': 'NOT_ACCEPTED', 'source_finding_occurrences': 2, 'normalized_unique_findings': 0, 'identical_duplicates_collapsed': 0, 'conflicting_duplicates': 0, 'rejected_source_mismatch_occurrences': 2}"
+  },
+  "protected_hashes_before": {},
+  "protected_hashes_after": {}
+}

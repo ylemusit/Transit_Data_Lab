@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\Transit Data Lab-M04B2\tools\compliance_v1_current_gate.py", line 147, in <module>
+    main()
+  File "C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\Transit Data Lab-M04B2\tools\compliance_v1_current_gate.py", line 46, in main
+    require(build_package()==package,'PACKAGE_GENERATOR_REPLAY')
+  File "C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\Transit Data Lab-M04B2\tools\compliance_v1_current_gate.py", line 21, in require
+    if not ok: raise RuntimeError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: PACKAGE_GENERATOR_REPLAY

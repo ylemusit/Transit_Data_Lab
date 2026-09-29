@@ -1,0 +1,27 @@
+{
+  "fixture": "SYNTHETIC_ONLY",
+  "evaluator_version": "compliance-v1/2",
+  "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+  "rows_by_file": {
+    "trips.txt": 1,
+    "stops.txt": 1,
+    "stop_times.txt": 100001
+  },
+  "bytes_by_file": {
+    "trips.txt": 37,
+    "stops.txt": 27,
+    "stop_times.txt": 1900054
+  },
+  "total_input_bytes": 1900118,
+  "rows_processed_in_rule_passes": {
+    "trips.txt": 2,
+    "stops.txt": 2,
+    "stop_times.txt": 100001
+  },
+  "status": "PASS",
+  "completed": true,
+  "python_peak_bytes_observed": 60294,
+  "elapsed_seconds_diagnostic": 0.916419,
+  "timing_is_contractual": false,
+  "operator_findings": 0
+}
