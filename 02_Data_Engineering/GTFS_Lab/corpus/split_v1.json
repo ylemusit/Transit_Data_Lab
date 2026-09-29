@@ -4,8 +4,8 @@
   "contract_version": "CorpusSplit 1.0.0",
   "status": "APPROVED",
   "created_at_utc": "2026-09-29T02:31:22Z",
-  "method": "Exhaustively enumerate five-dataset holdouts from non-exposed units, preserving {013,015} atomically and requiring all four families. Rank valid candidates lexicographically by: number of distinct calendar models; shapes presence states; feed_info presence states; distinct GTFS table names; corpus-derived size bands represented; route-count range; stop-count range; trip-count range; input ZIP-size range. Prefer larger coverage/ranges in that order; break any remaining tie by sorted dataset_id tuple. Family strata are descriptive constraints, not lineage. No validator outcomes, findings, statuses, or result-derived quality were used.",
-  "selection_basis": "Candidate C is the unique winner under the documented exhaustive lexicographic input-only comparison. HOLDOUT 006, 008, 013, 015, 017 covers all three calendar models, both shapes and feed_info states, 15 distinct GTFS tables, and all three size bands. Known Pilot Audit 01 exposure remains DEVELOPMENT. The pair 013/015 is atomic. Provenance is MEDIUM, with NAP resource IDs, source URLs, and capture dates unknown.",
+  "method": "M04-A3 initially produced a five-dataset candidate C split through exhaustive input-only enumeration, preserving {013,015} atomically. M04-A3b then performed sensitivity review. The human decision selected USE_6_DATASET_5_LINEAGE_SPLIT, adding dataset 018 to the final approved split. Final selection is based exclusively on input structure, source lineage, and known development exposure; no validator outputs, findings, statuses, or result-derived quality were used.",
+  "selection_basis": "Approved sensitivity scenario B: HOLDOUT 006, 008, 013, 015, 017, 018. 6 datasets / 5 independent lineage units. A/B/C/D retained. 018 adds an independent lineage and expands structural/table coverage. Known-development-exposure datasets remain DEVELOPMENT.",
   "datasets": [
     {
       "dataset_id": "001",
@@ -131,7 +131,7 @@
       "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
       "family_or_lineage": "DATASET-018",
       "assignment": "HOLDOUT",
-      "assignment_basis": "DEVELOPMENT_COMPLEMENT: not selected for candidate C holdout"
+      "assignment_basis": "APPROVED_HOLDOUT: added by M04-A3b sensitivity decision USE_6_DATASET_5_LINEAGE_SPLIT"
     },
     {
       "dataset_id": "019",

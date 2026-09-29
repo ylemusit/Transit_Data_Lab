@@ -63,6 +63,7 @@ def approved_fixture():
             "source_sha256": f"{int(dataset_id):064x}",
             "family_or_lineage": "LINEAGE-013-015" if dataset_id in {"013", "015"} else f"DATASET-{dataset_id}",
             "assignment": "HOLDOUT" if dataset_id in holdout else "DEVELOPMENT",
+            "assignment_basis": "APPROVED_HOLDOUT: fixture" if dataset_id in holdout else "DEVELOPMENT_COMPLEMENT: fixture",
         }
         for dataset_id in families
     ]
@@ -72,7 +73,12 @@ def approved_fixture():
         "contract_version": "CorpusSplit 1.0.0",
         "created_at_utc": "2026-09-29T00:00:00Z",
         "method": "APPROVED_TEST_FIXTURE",
-        "selection_basis": "synthetic approved split fixture",
+        "selection_basis": (
+            "Approved sensitivity scenario B: HOLDOUT 006, 008, 013, 015, 017, 018. "
+            "6 datasets / 5 independent lineage units. A/B/C/D retained. "
+            "018 adds an independent lineage and expands structural/table coverage. "
+            "Known-development-exposure datasets remain DEVELOPMENT."
+        ),
         "status": "APPROVED",
         "review": {
             "reviewed_by": "Yeison Arbey Carrillo Lemus",
@@ -200,7 +206,9 @@ class CorpusSplitGateTests(unittest.TestCase):
         inventory, split, lineage = approved_fixture()
         rows = {row["dataset_id"]: row for row in split["datasets"]}
         rows["006"]["assignment"] = "DEVELOPMENT"
+        rows["006"]["assignment_basis"] = "DEVELOPMENT_COMPLEMENT: test mutation"
         rows["002"]["assignment"] = "HOLDOUT"
+        rows["002"]["assignment_basis"] = "APPROVED_HOLDOUT: test mutation"
         split["split_sha256"] = canonical_split_sha(split["datasets"])
         self.assert_rejected(inventory, split, lineage, "known-development-exposure")
 
@@ -220,7 +228,9 @@ class CorpusSplitGateTests(unittest.TestCase):
         inventory, split, lineage = approved_fixture()
         rows = {row["dataset_id"]: row for row in split["datasets"]}
         rows["018"]["assignment"] = "DEVELOPMENT"
+        rows["018"]["assignment_basis"] = "DEVELOPMENT_COMPLEMENT: test mutation"
         rows["001"]["assignment"] = "HOLDOUT"
+        rows["001"]["assignment_basis"] = "APPROVED_HOLDOUT: test mutation"
         split["split_sha256"] = canonical_split_sha(split["datasets"])
         self.assert_rejected(inventory, split, lineage, "approved HOLDOUT must be exactly")
 
@@ -233,6 +243,21 @@ class CorpusSplitGateTests(unittest.TestCase):
         inventory, split, lineage = approved_fixture()
         split["source_path"] = "C:\\private\\feed.zip"
         self.assert_rejected(inventory, split, lineage, "absolute path forbidden")
+
+    def test_rejects_holdout_with_development_complement_basis(self):
+        inventory, split, lineage = fixture()
+        split["datasets"][1]["assignment_basis"] = "DEVELOPMENT_COMPLEMENT: not selected"
+        self.assert_rejected(inventory, split, lineage, "contradicts DEVELOPMENT_COMPLEMENT")
+
+    def test_rejects_development_with_holdout_basis(self):
+        inventory, split, lineage = fixture()
+        split["datasets"][0]["assignment_basis"] = "APPROVED_HOLDOUT: selected"
+        self.assert_rejected(inventory, split, lineage, "contradicts HOLDOUT basis")
+
+    def test_approved_contract_rejects_stale_selection_basis(self):
+        inventory, split, lineage = approved_fixture()
+        split["selection_basis"] = "Candidate C HOLDOUT 006, 008, 013, 015, 017"
+        self.assert_rejected(inventory, split, lineage, "approved selection_basis")
 
 
 if __name__ == "__main__":

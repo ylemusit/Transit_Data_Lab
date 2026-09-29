@@ -76,6 +76,15 @@ def validate_split(inventory: dict[str, Any], split: dict[str, Any], lineage_rev
     if split.get("split_version") != "1.0.0" or split.get("contract_version") != "CorpusSplit 1.0.0":
         raise SplitGateError("unknown split contract version")
     status = split.get("status")
+    for row in split.get("datasets", []) if isinstance(split.get("datasets"), list) else []:
+        basis = row.get("assignment_basis", "")
+        if not isinstance(basis, str):
+            raise SplitGateError("assignment_basis must be a string")
+        assignment = row.get("assignment")
+        if assignment == "HOLDOUT" and "DEVELOPMENT_COMPLEMENT" in basis:
+            raise SplitGateError(f"HOLDOUT assignment contradicts DEVELOPMENT_COMPLEMENT basis for {row.get('dataset_id')}")
+        if assignment == "DEVELOPMENT" and ("APPROVED_HOLDOUT" in basis or "PROPOSED_HOLDOUT" in basis):
+            raise SplitGateError(f"DEVELOPMENT assignment contradicts HOLDOUT basis for {row.get('dataset_id')}")
     review = split.get("review")
     if status == "UNDER_REVIEW":
         if review != {}:
@@ -189,6 +198,17 @@ def _validate_approved_allocation(
     pair_decisions: dict[tuple[str, str], str],
 ) -> None:
     holdout = {dataset_id for dataset_id, assignment in assignments.items() if assignment == "HOLDOUT"}
+    selection_basis = split.get("selection_basis")
+    required_selection = (
+        "Approved sensitivity scenario B:",
+        "HOLDOUT 006, 008, 013, 015, 017, 018.",
+        "6 datasets / 5 independent lineage units.",
+        "A/B/C/D retained.",
+        "018 adds an independent lineage and expands structural/table coverage.",
+        "Known-development-exposure datasets remain DEVELOPMENT.",
+    )
+    if not isinstance(selection_basis, str) or any(part not in selection_basis for part in required_selection):
+        raise SplitGateError("approved selection_basis must record the approved sensitivity scenario and HOLDOUT set")
     development = set(assignments) - holdout
     if holdout & KNOWN_DEVELOPMENT_EXPOSURE_IDS:
         raise SplitGateError("known-development-exposure dataset cannot be in approved HOLDOUT")

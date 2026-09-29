@@ -1,6 +1,6 @@
 # GTFS Lab M04-A4 — Split approval and freeze
 
-**Verdict:** `M04A_SPLIT_APPROVED_AND_FROZEN`
+**Original approval verdict:** `M04A_SPLIT_APPROVED_AND_FROZEN` (superseded only as the current reporting label by M04-A4 metadata reconciliation; the approval itself remains valid)
 **Contract:** `CorpusSplit 1.0.0`, status `APPROVED`
 **Decision:** `USE_6_DATASET_5_LINEAGE_SPLIT`
 **Reviewed against:** Draft PR #7 head `f6f98ec20204ebce071d565ff132b1d989438b98`; base `main` `b363079e5b8c8131f484917098d06b3a12a13eeb`.
@@ -86,9 +86,7 @@ The persisted M04-A2 matrix was validated separately without rebuilding it or re
 
 ## J. Negative tests
 
-- Split contract and approval-policy tests: **20/20 PASS**; covers incomplete review, exposure in HOLDOUT, unresolved lineage, wrong 018 assignment, lineage separation, hash drift, results/runtime outputs, and absolute paths.
-- Persisted lineage review tests: **6/6 PASS**.
-- Split sensitivity tests: **4/4 PASS**; confirms the chosen six-dataset/five-lineage candidate and the alternatives using input metadata only.
+- At original approval: split contract and approval-policy tests **20/20 PASS**, persisted lineage tests **6/6 PASS**, and sensitivity tests **4/4 PASS**. After M04-A4 metadata reconciliation: split, lineage, and sensitivity suites **33/33 PASS** total (23 split, 6 lineage, 4 sensitivity), including assignment-basis contradiction and stale approved-selection checks.
 
 ## K. Regression
 
@@ -129,7 +127,19 @@ The approval and freeze changes were committed as `7225fe2ab7d60ceb3ed9f1d83e4cc
 
 ## O. Verdict
 
-`M04A_SPLIT_APPROVED_AND_FROZEN`.
+The original M04-A4 approval froze the final allocation. The metadata reconciliation below records the approved sensitivity decision without changing any assignment or review field.
+
+## P. M04-A4 metadata reconciliation
+
+The initial M04-A3 proposal remains historically a five-dataset candidate C. M04-A3b sensitivity review recommended scenario B, and the human approval selected `USE_6_DATASET_5_LINEAGE_SPLIT`, adding 018. `split_v1.json` now describes this sequence and explicitly records input structure, source lineage, and exposure as the selection basis; validator outputs were not used.
+
+The approved selection basis now names HOLDOUT `006, 008, 013, 015, 017, 018`, six datasets / five independent lineage units, retained A/B/C/D coverage, the independent lineage and expanded structural/table coverage added by 018, and the rule that known-development-exposure datasets remain DEVELOPMENT. Dataset 018 now has a matching `APPROVED_HOLDOUT` assignment basis.
+
+`status`, `reviewed_by`, `reviewed_at_utc`, and `review_basis` are unchanged. No assignment, source hash, lineage identity, or split SHA changed. The canonical `split_sha256` remains `7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d` because it excludes descriptive metadata.
+
+The split gate now rejects HOLDOUT rows with a `DEVELOPMENT_COMPLEMENT` basis, DEVELOPMENT rows with a HOLDOUT basis, and an approved `selection_basis` that omits the approved set/scenario details. Dedicated negative tests cover these contradictions.
+
+Current verdict: `M04A_SPLIT_APPROVED_FROZEN_AND_RECONCILED`.
 
 This is not `M04_MERGED_AND_VERIFIED` and does not declare `TDL_TRUST_FOUNDATION = PASS`. HOLDOUT remains unopened. M04-B remains unstarted.
 
