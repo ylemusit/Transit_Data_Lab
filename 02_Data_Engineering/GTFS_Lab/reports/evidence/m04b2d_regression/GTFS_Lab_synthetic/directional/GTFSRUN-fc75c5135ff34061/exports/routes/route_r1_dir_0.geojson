@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -5.0,
+            43.0
+          ],
+          [
+            -5.1,
+            43.1
+          ]
+        ]
+      },
+      "properties": {
+        "route_id": "r1",
+        "direction_id": "0",
+        "shape_id": "sh1"
+      }
+    }
+  ]
+}

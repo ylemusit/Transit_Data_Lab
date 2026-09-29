@@ -1,6 +1,6 @@
 {
   "transition_id": "COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2",
-  "candidate_status": "UNDER_REVIEW",
+  "candidate_status": "APPROVED_CURRENT",
   "predecessor_package": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
   "predecessor_package_sha256": "2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981",
   "candidate_package_sha256": "8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b",
@@ -29,7 +29,19 @@
   "historical_package_unchanged": true,
   "historical_db_sha256": "4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B",
   "historical_freeze_sha256": "3BBB6D87500608364972CFE841D6B2D3D03558FC73F1960A28579905FAEC6A3E",
-  "approval_status": "UNDER_REVIEW_NOT_APPROVED",
+  "approval_status": "APPROVED",
+  "reviewed_by": "Yeison Arbey Carrillo Lemus",
+  "reviewed_at_utc": "2026-09-29T16:18:55Z",
+  "decision": "APPROVE",
+  "approval_basis": [
+    "Semantic rule unchanged; V1-RULE-GTFS remains compliance-v1/1.",
+    "28/28 legacy-domain semantic equivalence PASS.",
+    "2 expanded-domain fixtures PASS.",
+    "Candidate v2 replay PASS.",
+    "Historical v1 package replay PASS.",
+    "Historical package, Compliance DB, and freeze preserved.",
+    "B1 evidence preserved; HOLDOUT was not used during development."
+  ],
   "authoritative_current_pointer_changed": false,
   "holdout_accessed": false,
   "candidate_replay_status": "PASS",

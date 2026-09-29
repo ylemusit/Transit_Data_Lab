@@ -1,0 +1,84 @@
+{
+  "audit_id": "TDL-GTFSRUN-fc75c5135ff34061",
+  "manifest_version": "1.1.2",
+  "created_at_utc": "2026-09-29T16:24:34.864078+00:00",
+  "run_id": "GTFSRUN-fc75c5135ff34061",
+  "dataset_id": "GTFS-2f5f098529e46472",
+  "source_filename": "VALID_MINIMAL.zip",
+  "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+  "dataset_ingestion_timestamp_utc": "2026-09-29T16:24:34.744921+00:00",
+  "gtfs_lab_version": "1.0.0-dev",
+  "parser_version": "gtfs-lab-csv/2",
+  "validator_version": "1.0.0",
+  "ruleset_id": "gtfs-lab-v1",
+  "scope": [
+    "COMPLIANCE_V1",
+    "DATA_CONSISTENCY",
+    "REFERENTIAL",
+    "STRUCTURAL"
+  ],
+  "excluded": [
+    "LEGAL_CERTIFICATION",
+    "SIRI",
+    "GTFS_RT",
+    "NETEX"
+  ],
+  "original_preserved": true,
+  "preservation_evidence": {
+    "verified": true,
+    "status": "INPUT_INTEGRITY_VERIFIED",
+    "method": "sha256_input_before_and_after_pipeline",
+    "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+    "source_sha256_after_pipeline": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302"
+  },
+  "artifacts": {
+    "run": "../run.json",
+    "validation": "../validation.json",
+    "analysis": "../analysis.json",
+    "report": "../report.md",
+    "findings_normalized": "findings.normalized.json",
+    "gis_export_1": "../exports/routes/route_r1_dir_0.geojson",
+    "gis_export_2": "../exports/routes/route_r1_dir_0_shape_sh1.kml",
+    "gis_export_3": "../exports/stops.geojson",
+    "gis_export_4": "../exports/stops.kml",
+    "database": "../dataset.duckdb"
+  },
+  "ruleset_version": "1.0.0,compliance-v1/1",
+  "executed_rule_ids": [
+    "GTFS-COORDINATE-RANGE",
+    "GTFS-REF-SERVICE",
+    "GTFS-REF-SHAPE",
+    "GTFS-REF-TRIP-ROUTE",
+    "GTFS-STRUCT-REQUIRED",
+    "GTFS-STRUCT-SERVICE-CALENDAR",
+    "GTFS-UNIQUE-PRIMARY-ID",
+    "V1-RULE-GTFS"
+  ],
+  "executed_rule_versions": {
+    "GTFS-STRUCT-REQUIRED": "1.0.0",
+    "GTFS-STRUCT-SERVICE-CALENDAR": "1.0.0",
+    "GTFS-REF-TRIP-ROUTE": "1.0.0",
+    "GTFS-REF-SERVICE": "1.0.0",
+    "GTFS-REF-SHAPE": "1.0.0",
+    "GTFS-UNIQUE-PRIMARY-ID": "1.0.0",
+    "GTFS-COORDINATE-RANGE": "1.0.0",
+    "V1-RULE-GTFS": "compliance-v1/1"
+  },
+  "run_outcome": {
+    "ingestion": "PASS",
+    "integrity": "PASS",
+    "validation": "PASS",
+    "findings": 0,
+    "analysis": "PASS",
+    "gis": "PASS",
+    "database": "PASS",
+    "compliance_v1": "PASS"
+  },
+  "reconciliation": {
+    "source_finding_occurrences": 0,
+    "normalized_unique_findings": 0,
+    "identical_duplicates_collapsed": 0,
+    "conflicting_duplicates": 0,
+    "rejected_source_mismatch_occurrences": 0
+  }
+}

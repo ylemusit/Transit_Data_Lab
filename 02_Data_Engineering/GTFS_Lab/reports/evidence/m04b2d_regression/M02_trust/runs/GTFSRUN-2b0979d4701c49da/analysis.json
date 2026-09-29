@@ -1,0 +1,46 @@
+{
+  "dataset_id": "GTFS-26baf9a07d4b6e3b",
+  "counts": {
+    "agency": 1,
+    "routes": 1,
+    "trips": 2,
+    "stops": 2,
+    "stop_times": 2,
+    "shapes": 4,
+    "calendar": 0,
+    "calendar_dates": 1
+  },
+  "agencies": [
+    "a"
+  ],
+  "routes": [
+    {
+      "route_id": "r1",
+      "name": "R1"
+    }
+  ],
+  "services": {
+    "trip_count_by_service_id": {
+      "s1": 2
+    }
+  },
+  "service_calendar_summary": {
+    "status": "PASS",
+    "active_dates_by_service_id": {
+      "s1": [
+        "2026-10-01"
+      ]
+    },
+    "malformed_rows": 0
+  },
+  "shapes": [
+    "sh1",
+    "sh2"
+  ],
+  "route_stop_matrix": [],
+  "shared_stops": [],
+  "limitations": [
+    "Fechas calculadas solo con los archivos de calendario presentes; date span se devuelve como fechas ISO.",
+    "Route-stop matrix se basa en stop_times.stop_id y excluye entidades flex fuera de ese campo."
+  ]
+}

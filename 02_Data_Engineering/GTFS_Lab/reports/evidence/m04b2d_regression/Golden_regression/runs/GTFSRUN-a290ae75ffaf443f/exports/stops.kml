@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>GTFS stops</name><Placemark><name>Stop 1</name><Point><coordinates>-5.0,43.0,0</coordinates></Point></Placemark><Placemark><name>Stop 2</name><Point><coordinates>-5.1,43.1,0</coordinates></Point></Placemark></Document></kml>

@@ -1,6 +1,6 @@
-# TDL TRUST FOUNDATION — M04-B2a Compliance Package Identity Transition
+# TDL TRUST FOUNDATION — M04-B2D Compliance V2 Approval and Freeze
 
-Estado: candidato bajo revisión humana. Este documento no aprueba el cambio ni desbloquea HOLDOUT V2.
+Estado: `COMPLIANCE_V1_IMPLEMENTATION_V2_APPROVED_AND_FROZEN`. HOLDOUT V2 sigue cerrado.
 
 ## A. Historical package identity
 
@@ -12,8 +12,8 @@ Estado: candidato bajo revisión humana. Este documento no aprueba el cambio ni 
 ## B. Candidate package identity
 
 - Archivo: `03_Compliance/reports/evidence/compliance_v1_20260929_transition_candidate_final/package_candidate.json`.
-- Candidate: `compliance-v1/2`; SHA-256 `8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b`.
-- Lifecycle `UNDER_REVIEW` se registra en `transition_manifest.json`; el contrato histórico del paquete no contiene un campo lifecycle.
+- Paquete actual aprobado: `compliance-v1/2`; SHA-256 `8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b`.
+- Lifecycle `APPROVED_CURRENT` se registra en `transition_manifest.json`; el contrato del paquete no contiene un campo lifecycle.
 
 ## C. Package lineage
 
@@ -51,9 +51,7 @@ La construcción del candidato v2 repetida dos veces produce el mismo objeto y S
 - El intento anterior permanece registrado como inconcluso: la materialización temporal en modo texto convirtió el evaluador LF a CRLF y alteró el SHA del código incorporado. La recuperación binaria del blob y el contrato explícito de serialización cierran ahora esa limitación; no se elimina el registro histórico.
 - Evidencia durable: `02_Data_Engineering/GTFS_Lab/reports/evidence/m04b2a_transition_20260929/historical_package_replay.json`.
 
-Veredicto técnico final: `M04B2B_HISTORICAL_REPLAY_VERIFIED`.
-Estado de transición: `TRANSITION_READY_FOR_HUMAN_APPROVAL`.
-`approval_status` permanece `UNDER_REVIEW_NOT_APPROVED`.
+Veredicto técnico registrado antes de la revisión humana: `M04B2B_HISTORICAL_REPLAY_VERIFIED`. En esa captura la transición aún esperaba decisión; la aprobación vigente consta en la sección M.
 
 ## J. Historical package integrity
 
@@ -68,18 +66,33 @@ Estado de transición: `TRANSITION_READY_FOR_HUMAN_APPROVAL`.
 - 52/52 tests GTFS_Lab: PASS, incluidos parser/scale y differential transition.
 - Trust M01, Trust M02, M03-A, Golden Corpus, Golden Evaluator, Golden Regression, split, lineage y GTFS_Lab sintético: PASS.
 - `compileall` y `git diff --check` (incluidos los ficheros nuevos): PASS.
-- El gate estricto Compliance V1 no se ejecutó en este paso porque su footprint incluye la DB autoritativa protegida; la evidencia previa de M04-B2 lo dejó bloqueado por `PACKAGE_GENERATOR_REPLAY`. No se cambió el gate ni el pointer actual.
+- Estado de entrada: el gate estricto había quedado bloqueado en `PACKAGE_GENERATOR_REPLAY`. Tras registrar esta aprobación, el gate se actualizó para ejecutar por separado el generador histórico v1 y el generador actual aprobado v2. Resultado actual: `PASS`, con DB hash de entrada/salida idéntico; salida en [evidencia M04-B2D](../03_Compliance/reports/evidence/compliance_v1_20260929/current_gate_m04b2d_final4/summary.json).
+- Phase 1: 22/22 PASS. Phase 2: 386 PASS y el mismatch histórico preservado `UNCHANGED_COUNT_audit.rules` (0 esperado, 2 actual). No se debilitó ese contrato ni los checks de replay.
 
 ## L. Commit / PR head
 
 Rama `feat/tdl-trust-foundation-m04b2-triage`; base revisada `83b6a6a522892c916272a2249f57a906023a56ed`, base PR `8d4f2ad7fa0545b76dd5d5ec5503890ed0c396d9`. Destino: el mismo Draft PR #9; no se marca Ready ni se hace merge.
 
-## M. Human decision required
+## M. Human approval
 
-Revisar y decidir `COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2`. No existe aprobación registrada. No promover pointer, no merge/post-merge freeze, y no ejecutar HOLDOUT V2 antes de aprobación y nuevo engine identity freeze.
+- Transition: `COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2`; decision `APPROVE`.
+- Reviewer: Yeison Arbey Carrillo Lemus; `reviewed_at_utc=2026-09-29T16:18:55Z`.
+- Basis: regla semántica sin cambios; 28/28 equivalencia legacy; 2/2 fixtures ampliados; replay v2 actual y replay v1 histórico PASS; paquete/DB/freeze históricos y B1 preservados; HOLDOUT no usado durante desarrollo.
+
+## Approved current implementation
+
+Pointer vigente: [compliance_v1_current_implementation_v2.json](../03_Compliance/reports/evidence/compliance_v1_current_implementation_v2.json). Rule semantic identity: `V1-RULE-GTFS / compliance-v1/1`. Evaluator actual: `compliance-v1/2`, SHA-256 `60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb`; parser: `gtfs-lab-csv/2`; package SHA-256 `8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b`.
+
+## Historical/current coexistence
+
+Semantic scope: Compliance V1. Historical implementation: `compliance-v1/1`, package SHA-256 `2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981`. Current approved implementation: `compliance-v1/2`, package SHA-256 `8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b`. La DB y los artefactos históricos conservan bytes; el pointer y el sidecar de transición identifican v2 sin reescribirlos.
+
+## Future HOLDOUT V2 engine identity preparation
+
+Identidad preparada solo para checkpoint futuro: commit/merge SHA pendiente; parser `gtfs-lab-csv/2`; validator `1.0.0`; ruleset `gtfs-lab-v1/1`; Compliance evaluator `compliance-v1/2` y SHA anterior; package SHA aprobado anterior; split SHA `7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d`. No se creó registro de acceso HOLDOUT V2.
 
 ## N. Verdict
 
-`M04B2_TRANSITION_EVIDENCE_COMPLETE_AWAITING_HUMAN_APPROVAL` — veredicto técnico `M04B2B_HISTORICAL_REPLAY_VERIFIED`, equivalencia diferencial 28/28, dos casos de dominio ampliado y replay de candidato v2 PASS. Transición lista para decisión humana; no aprobada. HOLDOUT V2 permanece cerrado.
+`M04B2_COMPLIANCE_V2_APPROVED_FROZEN_AND_GATE_PASS`. M04 no se declara completo ni `TDL_TRUST_FOUNDATION = PASS`. HOLDOUT V2 no se ejecutó. PR #9 sigue Draft y sin merge.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

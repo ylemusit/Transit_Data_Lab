@@ -2,11 +2,13 @@
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 """
 import argparse
+from datetime import datetime
 import json
 import platform
 import subprocess
 import sys
 import tempfile
+import types
 from pathlib import Path
 from lxml import etree
 from m06_b02_pack import DB, ROOT, query, run, save, sha
@@ -15,6 +17,14 @@ from compliance_v1_engine import evaluate, inspect_gtfs, inspect_netex, digest, 
 from compliance_v1_fixtures import build
 from compliance_v1_reconcile import reconcile
 from phase3_observation_contract import decode
+from compliance_v1_transition_candidate import build_candidate, candidate_bytes
+
+CURRENT_PACKAGE_DIR = ROOT/'03_Compliance/reports/evidence/compliance_v1_20260929_transition_candidate_final'
+HISTORICAL_REPLAY = ROOT/'02_Data_Engineering/GTFS_Lab/reports/evidence/m04b2a_transition_20260929/historical_package_replay.json'
+HISTORICAL_PACKAGE_SHA256 = '2f85c9bd92ad603bab696e34c886b3f85ac22c05ba7aa0e90dc10137bb061981'
+HISTORICAL_GENERATOR_GIT_BLOB = '14b19af18a99619aab0d4e9fbd8a277f4e1c6826'
+CURRENT_PACKAGE_SHA256 = '8633fe32cf081e8b43a0a176088966aa5941d7b2d3a63e57d6668d70e49a9c9b'
+CURRENT_EVALUATOR_SHA256 = '60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb'
 
 
 def require(ok,message):
@@ -28,6 +38,39 @@ def json_stream(s):
     return rows
 
 
+def replay_historical_package():
+    evaluator_sha='efe3164ddfe33255d9ce94db0e6f410a80ec58c6'
+    evaluator_source=subprocess.check_output(['git','cat-file','blob',evaluator_sha],cwd=ROOT)
+    generator_source=subprocess.check_output(['git','cat-file','blob',HISTORICAL_GENERATOR_GIT_BLOB],cwd=ROOT)
+    previous_engine=sys.modules.get('compliance_v1_engine')
+    with tempfile.TemporaryDirectory(prefix='tdl-historical-v1-replay-') as td:
+        replay_root=Path(td)
+        historical_engine_path=replay_root/'tools/compliance_v1_engine.py'
+        historical_engine_path.parent.mkdir(parents=True)
+        historical_engine_path.write_bytes(evaluator_source)
+        historic_engine=types.ModuleType('compliance_v1_engine')
+        historic_engine.__file__=str(historical_engine_path)
+        exec(compile(evaluator_source,historic_engine.__file__,'exec'),historic_engine.__dict__)
+        sys.modules['compliance_v1_engine']=historic_engine
+        try:
+            historic_pack=types.ModuleType('compliance_v1_pack_historical_replay')
+            historic_pack.__file__=str(replay_root/'tools/compliance_v1_pack.py')
+            exec(compile(generator_source,historic_pack.__file__,'exec'),historic_pack.__dict__)
+            # The historical package generator hashes its local evaluator path.
+            # Keep all captured fixtures/sources and the database read-only in place.
+            historic_pack.ROOT=replay_root
+            historic_pack.EVIDENCE=EVIDENCE
+            historic_pack.FIXTURES=FIXTURES
+            generated=historic_pack.build_package()
+        finally:
+            if previous_engine is None:
+                del sys.modules['compliance_v1_engine']
+            else:
+                sys.modules['compliance_v1_engine']=previous_engine
+    serialized=json.dumps(generated,ensure_ascii=False,indent=2).encode('utf-8').replace(b'\n',b'\r\n')
+    return generated,serialized,digest(evaluator_source)
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--evidence',type=Path,required=True)
     a=p.parse_args();out=a.evidence.resolve();out.mkdir(parents=True,exist_ok=False)
@@ -39,12 +82,45 @@ def main():
         require(initial==persistence['final_hash'],'AUTHORITATIVE_HASH_DRIFT')
         require(not Path(str(DB)+'.wal').exists(),'WAL_PENDING')
         checks['exact_authoritative_delta']=verify(DB,package,baseline)
+        require(sha(EVIDENCE/'package.json').lower()==HISTORICAL_PACKAGE_SHA256,'HISTORICAL_PACKAGE_IDENTITY')
+        replay=json.loads(HISTORICAL_REPLAY.read_text(encoding='utf-8'))
+        require(replay.get('status')=='PASS' and replay.get('byte_identity')=='PASS','HISTORICAL_PACKAGE_REPLAY')
+        require(replay.get('historical_evaluator_sha256')=='efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70','HISTORICAL_EVALUATOR_IDENTITY')
+        require(replay.get('expected_package_sha256')==HISTORICAL_PACKAGE_SHA256 and replay.get('replayed_package_sha256')==HISTORICAL_PACKAGE_SHA256,'HISTORICAL_REPLAY_SHA')
+        replayed_historical_package,historical_serialization,historical_evaluator_sha=replay_historical_package()
+        require(historical_evaluator_sha==replay['historical_evaluator_sha256'],'HISTORICAL_EVALUATOR_BYTE_IDENTITY')
+        require(replayed_historical_package==package,'HISTORICAL_PACKAGE_GENERATOR_REPLAY')
+        require(digest(historical_serialization)==HISTORICAL_PACKAGE_SHA256,'HISTORICAL_PACKAGE_BYTE_REPLAY')
+        checks['historical_package_replay']='PASS'
         manifest=json.loads((EVIDENCE/'source_manifest.json').read_text())
         for source in manifest['sources']:
             require(digest((EVIDENCE/'sources'/source['path']).read_bytes())==source['sha256'],'SOURCE_DRIFT:'+source['path'])
         checks['technical_sources']='PASS'
-        require(build_package()==package,'PACKAGE_GENERATOR_REPLAY')
-        checks['persistence_generator_replay']='PASS'
+        current_package,current_manifest=build_candidate()
+        approved_package=json.loads((CURRENT_PACKAGE_DIR/'package_candidate.json').read_text(encoding='utf-8'))
+        approved_manifest=json.loads((CURRENT_PACKAGE_DIR/'transition_manifest.json').read_text(encoding='utf-8'))
+        require(current_package==approved_package,'CURRENT_PACKAGE_GENERATOR_REPLAY')
+        require(candidate_bytes(approved_package)==(CURRENT_PACKAGE_DIR/'package_candidate.json').read_bytes(),'CURRENT_PACKAGE_SERIALIZATION')
+        require(sha(CURRENT_PACKAGE_DIR/'package_candidate.json').lower()==CURRENT_PACKAGE_SHA256,'CURRENT_PACKAGE_IDENTITY')
+        require(current_manifest['candidate_package_sha256']==CURRENT_PACKAGE_SHA256,'CURRENT_PACKAGE_GENERATOR_IDENTITY')
+        require(approved_manifest.get('candidate_package_sha256')==CURRENT_PACKAGE_SHA256,'APPROVED_POINTER_IDENTITY')
+        require(approved_manifest.get('candidate_status')=='APPROVED_CURRENT' and approved_manifest.get('approval_status')=='APPROVED','APPROVED_PACKAGE_LIFECYCLE')
+        require(approved_manifest.get('decision')=='APPROVE' and approved_manifest.get('reviewed_by')=='Yeison Arbey Carrillo Lemus','HUMAN_APPROVAL_IDENTITY')
+        require(datetime.fromisoformat(approved_manifest['reviewed_at_utc'].replace('Z','+00:00')).utcoffset().total_seconds()==0,'HUMAN_APPROVAL_TIMESTAMP')
+        require(approved_manifest.get('evaluator_version_after')=='compliance-v1/2' and approved_manifest.get('evaluator_sha_after')==CURRENT_EVALUATOR_SHA256,'CURRENT_EVALUATOR_IDENTITY')
+        require(approved_manifest.get('rule_id')=='V1-RULE-GTFS' and approved_manifest.get('rule_version_after')=='compliance-v1/1','CURRENT_RULE_IDENTITY')
+        require(approved_manifest.get('reference_spec_identity_unchanged') is True,'REFERENCE_SPEC_IDENTITY')
+        require(current_manifest['transition_reason']=='IMPLEMENTATION_CHANGE' and current_manifest['predecessor_package_sha256']==HISTORICAL_PACKAGE_SHA256,'CURRENT_PACKAGE_LINEAGE')
+        pointer=json.loads((ROOT/'03_Compliance/reports/evidence/compliance_v1_current_implementation_v2.json').read_text(encoding='utf-8'))
+        require(pointer.get('package_sha256')==CURRENT_PACKAGE_SHA256 and pointer.get('evaluator_sha256')==CURRENT_EVALUATOR_SHA256,'CURRENT_POINTER_IDENTITY')
+        require(pointer.get('approval_status')=='APPROVED' and pointer.get('candidate_status')=='APPROVED_CURRENT','CURRENT_POINTER_APPROVAL')
+        require(pointer.get('transition_id')=='COMPLIANCE_V1_IMPLEMENTATION_TRANSITION_V1_TO_V2','CURRENT_POINTER_TRANSITION')
+        require(pointer.get('semantic_scope')=='Compliance V1' and pointer.get('rule_id')=='V1-RULE-GTFS' and pointer.get('rule_version')=='compliance-v1/1','CURRENT_POINTER_RULE_IDENTITY')
+        require(pointer.get('parser_version')=='gtfs-lab-csv/2' and pointer.get('transition_reason')=='IMPLEMENTATION_CHANGE','CURRENT_POINTER_IMPLEMENTATION_IDENTITY')
+        require(pointer.get('semantic_rule_change') is False and pointer.get('reference_spec_identity_unchanged') is True,'CURRENT_POINTER_SEMANTIC_IDENTITY')
+        require(pointer.get('predecessor_package_sha256')==HISTORICAL_PACKAGE_SHA256 and pointer.get('holdout_accessed') is False,'CURRENT_POINTER_LINEAGE_OR_HOLDOUT')
+        checks['current_package_generator_replay']='PASS'
+        checks['current_package_identity']=CURRENT_PACKAGE_SHA256
         # Re-run frozen-phase checks, preserving the one superseded state assertion.
         for name,path in [('phase1','phase_1/test_phase_1_invariants.sql'),('phase2','phase_2/test_phase_2_post_materialization_gate.sql')]:
             raw=run(DB,(ROOT/'03_Compliance/sql/07_tests'/path).read_text(encoding='utf-8-sig'))
@@ -76,7 +152,7 @@ def main():
             for c in cases:
                 first.append(dict(case=c['id'],expected=c['expected'],**evaluate(dict(c,directory=FIXTURES/c['id']),EVIDENCE/'sources',gv,nv)))
                 second.append(dict(case=c['id'],expected=c['expected'],**evaluate(dict(c,directory=regenerated/c['id']),EVIDENCE/'sources',gv,nv)))
-        require(first==second==package['pilots'],'OPERATIONAL_REPLAY_DRIFT')
+        require(first==second==current_package['pilots'],'OPERATIONAL_REPLAY_DRIFT')
         require(all(r['result']==r['expected'] and r['legal_conclusion_allowed'] is False for r in first),'FALSE_POSITIVE')
         save(out/'pilot_replay.json',first)
         checks['pilots']=dict(status='PASS',GTFS=18,NETEX=10,replays=2)
@@ -100,10 +176,13 @@ def main():
             require(obs['dataset_sha256']==r['dataset_sha256'] and obs['observed_result']==r['observed'],'OBSERVATION_IDENTITY')
             require(row['mapping_id']==scopes[obs['scope_unit_id']]['mapping_id'],'OBSERVATION_SCOPE_LINK')
             require(obs['synthetic'] and row['fixture_kind']=='SYNTHETIC_TEST','SYNTHETIC_PROVENANCE')
-        for rule in query(DB,'SELECT * FROM audit.rules'):
+        for rule in current_package['tables']['audit.rules']:
             contract=json.loads(rule['validation_expression'])
             require(rule['legal_conclusion_allowed'] is False and rule['requirement_id']==REQ,'RULE_SEMANTICS')
-            require(contract['evaluator_sha256']==digest((ROOT/'tools/compliance_v1_engine.py').read_bytes()),'EVALUATOR_DRIFT')
+            require(contract['evaluator']=='compliance-v1/2' and contract['evaluator_sha256']==CURRENT_EVALUATOR_SHA256,'EVALUATOR_DRIFT')
+            require(contract['rule_id']==rule['rule_id'],'RULE_IDENTITY_DRIFT')
+            if contract['standard']=='GTFS':
+                require(rule['rule_id']=='V1-RULE-GTFS' and contract['rule_id']=='V1-RULE-GTFS','RULE_IDENTITY_DRIFT')
             require(contract['scope_unit_id'] in scopes,'RULE_SCOPE')
         checks['observation_rule_contract']='PASS'
         # Untrusted input controls, evaluator fault and enum counterexamples.

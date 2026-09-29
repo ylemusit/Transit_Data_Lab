@@ -1,0 +1,15 @@
+{
+  "status": "NORMALIZED",
+  "audit_id": "TDL-GTFSRUN-fc75c5135ff34061",
+  "run_id": "GTFSRUN-fc75c5135ff34061",
+  "dataset_id": "GTFS-2f5f098529e46472",
+  "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+  "reconciliation": {
+    "source_finding_occurrences": 0,
+    "normalized_unique_findings": 0,
+    "identical_duplicates_collapsed": 0,
+    "conflicting_duplicates": 0,
+    "rejected_source_mismatch_occurrences": 0
+  },
+  "findings": []
+}

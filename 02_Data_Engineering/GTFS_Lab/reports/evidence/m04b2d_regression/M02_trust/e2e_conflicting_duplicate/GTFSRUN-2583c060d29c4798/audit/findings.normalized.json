@@ -1,0 +1,35 @@
+{
+  "status": "REJECTED_CONFLICTING_DUPLICATES",
+  "audit_id": "TDL-GTFSRUN-2583c060d29c4798",
+  "run_id": "GTFSRUN-2583c060d29c4798",
+  "dataset_id": "GTFS-2f5f098529e46472",
+  "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+  "reconciliation": {
+    "source_finding_occurrences": 3,
+    "normalized_unique_findings": 1,
+    "identical_duplicates_collapsed": 1,
+    "conflicting_duplicates": 1,
+    "rejected_source_mismatch_occurrences": 0
+  },
+  "findings": [
+    {
+      "rule_id": "SYNTHETIC-TRUST-TEST",
+      "table": "stops.txt",
+      "row_locator": "record:2",
+      "field": "stop_id",
+      "observed_value": "s1",
+      "expected_condition": "synthetic gate finding",
+      "technical_message": "synthetic gate finding",
+      "evidence": {
+        "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302"
+      },
+      "finding_id": "TDLF-d80b55bec7ba1a9d91a3",
+      "lifecycle_state": "DETECTED",
+      "review_required": false,
+      "audit_id": "TDL-GTFSRUN-2583c060d29c4798",
+      "run_id": "GTFSRUN-2583c060d29c4798",
+      "dataset_id": "GTFS-2f5f098529e46472",
+      "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302"
+    }
+  ]
+}

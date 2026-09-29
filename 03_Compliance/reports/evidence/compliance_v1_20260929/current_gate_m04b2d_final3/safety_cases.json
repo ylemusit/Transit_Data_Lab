@@ -1,0 +1,30 @@
+{
+  "utf16_dtd": {
+    "result": "INSPECTION_ERROR",
+    "reason": "DTD_FORBIDDEN_IN_ANY_ENCODING",
+    "locator": "/n:Line[@id]/n:Name; n=http://www.netex.org.uk/netex",
+    "observed": "INDETERMINATE",
+    "legal_conclusion_allowed": false
+  },
+  "oversized_xml": {
+    "result": "INSPECTION_ERROR",
+    "reason": "UNSAFE_OR_OVERSIZED_XML",
+    "locator": "/n:Line[@id]/n:Name; n=http://www.netex.org.uk/netex",
+    "observed": "INDETERMINATE",
+    "legal_conclusion_allowed": false
+  },
+  "missing_schema": {
+    "result": "INSPECTION_ERROR",
+    "reason": "TRUSTED_SCHEMA_LOAD_FAILURE",
+    "locator": "/n:Line[@id]/n:Name; n=http://www.netex.org.uk/netex",
+    "observed": "INDETERMINATE",
+    "legal_conclusion_allowed": false
+  },
+  "oversized_csv": {
+    "result": "INSPECTION_ERROR",
+    "reason": "Error:field larger than field limit (131072)",
+    "locator": "stop_times.txt#rows[*]/trip_id,stop_id -> trips.txt,stops.txt",
+    "observed": "INDETERMINATE",
+    "legal_conclusion_allowed": false
+  }
+}

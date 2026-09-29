@@ -1,0 +1,46 @@
+{
+  "run_id": "GTFSRUN-91dd48fc231f4f54",
+  "dataset": {
+    "dataset_id": "GTFS-778f5530bf873954",
+    "source_filename": "MALFORMED_CSV.zip",
+    "source_sha256": "778f5530bf8739548247e4969e5721f4df7d48ae79050a6c6f5889b93d0e086b"
+  },
+  "gtfs_lab_version": "1.0.0-dev",
+  "parser_version": "gtfs-lab-csv/1",
+  "validator_version": "1.0.0",
+  "started_at_utc": "2026-09-29T16:24:35.377796+00:00",
+  "ended_at_utc": "2026-09-29T16:24:35.379798+00:00",
+  "ingestion": {
+    "status": "INGESTION_ERROR"
+  },
+  "integrity": {
+    "status": "SKIPPED_BY_DEPENDENCY"
+  },
+  "validation": {
+    "status": "SKIPPED_BY_DEPENDENCY",
+    "findings": []
+  },
+  "analysis": {
+    "status": "SKIPPED_BY_DEPENDENCY"
+  },
+  "gis": {
+    "status": "SKIPPED_BY_DEPENDENCY"
+  },
+  "compliance_v1": {
+    "status": "SKIPPED_BY_DEPENDENCY"
+  },
+  "errors": [
+    {
+      "type": "INGESTION_ERROR",
+      "message": "synthetic malformed input"
+    }
+  ],
+  "summary": {
+    "ingestion": "INGESTION_ERROR",
+    "integrity": "SKIPPED_BY_DEPENDENCY",
+    "validation": "SKIPPED_BY_DEPENDENCY",
+    "analysis": "SKIPPED_BY_DEPENDENCY",
+    "gis": "SKIPPED_BY_DEPENDENCY",
+    "compliance_v1": "SKIPPED_BY_DEPENDENCY"
+  }
+}

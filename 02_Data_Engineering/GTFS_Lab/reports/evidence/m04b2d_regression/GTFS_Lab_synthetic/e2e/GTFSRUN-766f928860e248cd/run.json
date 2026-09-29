@@ -1,0 +1,562 @@
+{
+  "run_id": "GTFSRUN-766f928860e248cd",
+  "dataset": {
+    "dataset_id": "GTFS-2f5f098529e46472",
+    "source_filename": "VALID_MINIMAL.zip",
+    "source_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+    "ingestion_timestamp_utc": "2026-09-29T16:24:34.585842+00:00",
+    "parser_version": "gtfs-lab-csv/2",
+    "gtfs_lab_version": "1.0.0-dev",
+    "files": {
+      "agency.txt": {
+        "status": "PRESENT",
+        "rows": 1,
+        "headers": [
+          "agency_id",
+          "agency_name",
+          "agency_url",
+          "agency_timezone"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 93
+      },
+      "calendar_dates.txt": {
+        "status": "PRESENT",
+        "rows": 1,
+        "headers": [
+          "service_id",
+          "date",
+          "exception_type"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 45
+      },
+      "routes.txt": {
+        "status": "PRESENT",
+        "rows": 1,
+        "headers": [
+          "route_id",
+          "agency_id",
+          "route_short_name",
+          "route_type"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 57
+      },
+      "shapes.txt": {
+        "status": "PRESENT",
+        "rows": 4,
+        "headers": [
+          "shape_id",
+          "shape_pt_lat",
+          "shape_pt_lon",
+          "shape_pt_sequence"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 117
+      },
+      "stop_times.txt": {
+        "status": "PRESENT",
+        "rows": 2,
+        "headers": [
+          "trip_id",
+          "arrival_time",
+          "departure_time",
+          "stop_id",
+          "stop_sequence"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 110
+      },
+      "stops.txt": {
+        "status": "PRESENT",
+        "rows": 2,
+        "headers": [
+          "stop_id",
+          "stop_name",
+          "stop_lat",
+          "stop_lon",
+          "location_type"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 94
+      },
+      "trips.txt": {
+        "status": "PRESENT",
+        "rows": 2,
+        "headers": [
+          "route_id",
+          "service_id",
+          "trip_id",
+          "shape_id",
+          "direction_id"
+        ],
+        "encoding": "utf-8-sig",
+        "uncompressed_bytes": 80
+      },
+      "calendar.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "frequencies.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "transfers.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "feed_info.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "levels.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "translations.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "pathways.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "attributions.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_attributes.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_rules.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_media.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_products.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_leg_rules.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_leg_join_rules.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_transfer_rules.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "timeframes.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "networks.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "route_networks.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "areas.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "stop_areas.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "locations.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "location_groups.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "booking_rules.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      },
+      "fare_parkings.txt": {
+        "status": "ABSENT",
+        "rows": 0,
+        "headers": [],
+        "encoding": null,
+        "uncompressed_bytes": 0
+      }
+    }
+  },
+  "gtfs_lab_version": "1.0.0-dev",
+  "validator_version": "1.0.0",
+  "ingestion": {
+    "status": "PASS",
+    "warnings": []
+  },
+  "started_at_utc": "2026-09-29T16:24:34.585842+00:00",
+  "inventory": {
+    "agency": "PRESENT",
+    "stops": "PRESENT",
+    "routes": "PRESENT",
+    "trips": "PRESENT",
+    "stop_times": "PRESENT",
+    "calendar": "OPTIONAL",
+    "calendar_dates": "PRESENT",
+    "shapes": "PRESENT",
+    "frequencies": "OPTIONAL",
+    "transfers": "OPTIONAL",
+    "feed_info": "OPTIONAL",
+    "levels": "OPTIONAL",
+    "translations": "OPTIONAL",
+    "pathways": "OPTIONAL",
+    "attributions": "OPTIONAL",
+    "fare_attributes": "OPTIONAL",
+    "fare_rules": "OPTIONAL",
+    "fare_media": "OPTIONAL",
+    "fare_products": "OPTIONAL",
+    "fare_leg_rules": "OPTIONAL",
+    "fare_leg_join_rules": "OPTIONAL",
+    "fare_transfer_rules": "OPTIONAL",
+    "timeframes": "OPTIONAL",
+    "networks": "OPTIONAL",
+    "route_networks": "OPTIONAL",
+    "areas": "OPTIONAL",
+    "stop_areas": "OPTIONAL",
+    "locations": "OPTIONAL",
+    "location_groups": "OPTIONAL",
+    "booking_rules": "OPTIONAL",
+    "fare_parkings": "OPTIONAL"
+  },
+  "warnings": [],
+  "integrity": {
+    "file_integrity": "PASS",
+    "schema_integrity": "PASS",
+    "referential_integrity": "PASS",
+    "table_rows": {
+      "agency.txt": 1,
+      "calendar_dates.txt": 1,
+      "routes.txt": 1,
+      "shapes.txt": 4,
+      "stop_times.txt": 2,
+      "stops.txt": 2,
+      "trips.txt": 2
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "findings": [],
+    "rules": [
+      {
+        "rule_id": "GTFS-STRUCT-REQUIRED",
+        "version": "1.0.0",
+        "scope": "STRUCTURAL",
+        "severity": "ERROR",
+        "description": "GTFS STRUCT REQUIRED",
+        "source_reference": "GTFS Schedule Reference; required tables",
+        "status": "PASS",
+        "checked_rows": 0,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-STRUCT-SERVICE-CALENDAR",
+        "version": "1.0.0",
+        "scope": "STRUCTURAL",
+        "severity": "ERROR",
+        "description": "GTFS STRUCT SERVICE CALENDAR",
+        "source_reference": "GTFS Schedule Reference; calendar.txt or calendar_dates.txt",
+        "status": "PASS",
+        "checked_rows": 0,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-REF-TRIP-ROUTE",
+        "version": "1.0.0",
+        "scope": "REFERENTIAL",
+        "severity": "ERROR",
+        "description": "GTFS REF TRIP ROUTE",
+        "source_reference": "GTFS Schedule Reference; trips.route_id",
+        "status": "PASS",
+        "checked_rows": 2,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-REF-SERVICE",
+        "version": "1.0.0",
+        "scope": "REFERENTIAL",
+        "severity": "ERROR",
+        "description": "GTFS REF SERVICE",
+        "source_reference": "GTFS Schedule Reference; trips.service_id",
+        "status": "PASS",
+        "checked_rows": 2,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-REF-SHAPE",
+        "version": "1.0.0",
+        "scope": "REFERENTIAL",
+        "severity": "ERROR",
+        "description": "GTFS REF SHAPE",
+        "source_reference": "GTFS Schedule Reference; trips.shape_id (when supplied)",
+        "status": "PASS",
+        "checked_rows": 2,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-UNIQUE-PRIMARY-ID",
+        "version": "1.0.0",
+        "scope": "STRUCTURAL",
+        "severity": "ERROR",
+        "description": "GTFS UNIQUE PRIMARY ID",
+        "source_reference": "GTFS Schedule Reference primary IDs",
+        "status": "PASS",
+        "checked_rows": 0,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "GTFS-COORDINATE-RANGE",
+        "version": "1.0.0",
+        "scope": "DATA_CONSISTENCY",
+        "severity": "ERROR",
+        "description": "GTFS COORDINATE RANGE",
+        "source_reference": "GTFS Schedule Reference latitude/longitude ranges",
+        "status": "PASS",
+        "checked_rows": 6,
+        "finding_count": 0,
+        "findings": []
+      },
+      {
+        "rule_id": "V1-RULE-GTFS",
+        "version": "compliance-v1/1",
+        "scope": "COMPLIANCE_V1",
+        "severity": "ERROR",
+        "description": "Fixed-stop stop_times references to trips and stops",
+        "source_reference": "gtfs_reference.md sha256=1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147",
+        "status": "PASS",
+        "checked_rows": 0,
+        "finding_count": 0,
+        "findings": [],
+        "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb"
+      }
+    ],
+    "checked_rows": {
+      "routes": 1,
+      "trips": 2,
+      "stops": 2,
+      "agency": 1,
+      "trips_references": 2,
+      "stops_coordinates": 2,
+      "shapes_coordinates": 4
+    },
+    "finding_count": 0,
+    "local_status": "PASS",
+    "compliance_v1_status": "PASS"
+  },
+  "analysis": {
+    "dataset_id": "GTFS-2f5f098529e46472",
+    "counts": {
+      "agency": 1,
+      "routes": 1,
+      "trips": 2,
+      "stops": 2,
+      "stop_times": 2,
+      "shapes": 4,
+      "calendar": 0,
+      "calendar_dates": 1
+    },
+    "agencies": [
+      "a"
+    ],
+    "routes": [
+      {
+        "route_id": "r1",
+        "name": "R1"
+      }
+    ],
+    "services": {
+      "trip_count_by_service_id": {
+        "s1": 2
+      }
+    },
+    "service_calendar_summary": {
+      "status": "PASS",
+      "active_dates_by_service_id": {
+        "s1": [
+          "2026-10-01"
+        ]
+      },
+      "malformed_rows": 0
+    },
+    "shapes": [
+      "sh1",
+      "sh2"
+    ],
+    "route_stop_matrix": [
+      {
+        "route_id": "r1",
+        "route_name": "R1",
+        "unique_stops": 2,
+        "stop_time_rows": 2,
+        "stop_ids": [
+          "s1",
+          "s2"
+        ]
+      }
+    ],
+    "shared_stops": [],
+    "limitations": [
+      "Fechas calculadas solo con los archivos de calendario presentes; date span se devuelve como fechas ISO.",
+      "Route-stop matrix se basa en stop_times.stop_id y excluye entidades flex fuera de ese campo."
+    ]
+  },
+  "gis": {
+    "stops": {
+      "status": "PASS",
+      "artifacts": [
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\exports\\stops.geojson",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\exports\\stops.kml"
+      ],
+      "features": 2
+    },
+    "routes": {
+      "status": "PASS",
+      "artifacts": [
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\exports\\routes\\route_r1_dir_0_shape_sh1.kml",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\exports\\routes\\route_r1_dir_1_shape_sh2.kml",
+        "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\exports\\routes\\routes_r1.geojson"
+      ],
+      "route_id": "r1",
+      "direction_id": null
+    }
+  },
+  "database": {
+    "status": "PASS",
+    "database": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab-M04B2-approval\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m04b2d_regression\\GTFS_Lab_synthetic\\e2e\\GTFSRUN-766f928860e248cd\\dataset.duckdb",
+    "tables": [
+      "agency",
+      "calendar_dates",
+      "routes",
+      "shapes",
+      "stop_times",
+      "stops",
+      "trips"
+    ],
+    "cli_output": "┌──────────┐\n│ all_text │\n│ boolean  │\n├──────────┤\n│ true     │\n└──────────┘\n"
+  },
+  "compliance_v1": {
+    "result": "PASS",
+    "reason": "FIXED_STOP_REFERENCES_RESOLVE_TO_TRIP_AND_PLATFORM",
+    "locator": "stop_times.txt#rows[*]/trip_id,stop_id -> trips.txt,stops.txt",
+    "observed": "PRESENT",
+    "legal_conclusion_allowed": false,
+    "rule_id": "V1-RULE-GTFS",
+    "rule_version": "compliance-v1/1",
+    "evaluator_version": "compliance-v1/2",
+    "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+    "reference_sha256": "1ff40b8001b180bd023dd6f1899907aecbcb4600c8dbcb6fc6c841a50839b147",
+    "dataset_id": "GTFS-2f5f098529e46472",
+    "source_zip_sha256": "2f5f098529e464729f43c34b1f2a5348668eddbb3298ffd92e0556cfaa736302",
+    "inspection_dataset_sha256": "add351ea9fdc9cadb3efb0fa9ef6e3b6c3ddbf18763c01e8efa8c9f3df5d9ee3",
+    "provenance": "Invocación del motor Compliance V1 v2 sobre archivos de ingestión; regla semántica sin cambios",
+    "scope_limit_bytes_per_file": 536870912,
+    "scope_limit_rows": 1000000,
+    "scope_limit_record_bytes": 4194304,
+    "findings": [],
+    "integration_status": "PASS",
+    "run_id": "GTFSRUN-766f928860e248cd"
+  },
+  "ended_at_utc": "2026-09-29T16:24:34.694919+00:00",
+  "errors": [],
+  "summary": {
+    "ingestion": "PASS",
+    "integrity": "PASS",
+    "validation": "PASS",
+    "findings": 0,
+    "analysis": "PASS",
+    "gis": "PASS",
+    "database": "PASS",
+    "compliance_v1": "PASS"
+  }
+}

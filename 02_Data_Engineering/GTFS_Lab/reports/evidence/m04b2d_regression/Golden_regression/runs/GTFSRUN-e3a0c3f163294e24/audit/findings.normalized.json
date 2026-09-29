@@ -1,0 +1,36 @@
+{
+  "status": "NORMALIZED",
+  "audit_id": "TDL-GTFSRUN-e3a0c3f163294e24",
+  "run_id": "GTFSRUN-e3a0c3f163294e24",
+  "dataset_id": "GTFS-28e24901f5cec87b",
+  "source_sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
+  "reconciliation": {
+    "source_finding_occurrences": 2,
+    "normalized_unique_findings": 1,
+    "identical_duplicates_collapsed": 1,
+    "conflicting_duplicates": 0,
+    "rejected_source_mismatch_occurrences": 0
+  },
+  "findings": [
+    {
+      "dataset_id": "GTFS-28e24901f5cec87b",
+      "rule_id": "GTFS-REF-TRIP-ROUTE",
+      "table": "trips.txt",
+      "row_locator": "record:2",
+      "field": "route_id",
+      "observed_value": "missing-route",
+      "expected_condition": "route_id debe existir en routes.txt",
+      "technical_message": "Referencia técnica sin registro padre",
+      "evidence": {
+        "source_sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
+        "parser_version": "gtfs-lab-csv/2"
+      },
+      "finding_id": "TDLF-3b8b9cd5c2b7281e3e7a",
+      "lifecycle_state": "DETECTED",
+      "review_required": false,
+      "audit_id": "TDL-GTFSRUN-e3a0c3f163294e24",
+      "run_id": "GTFSRUN-e3a0c3f163294e24",
+      "source_sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81"
+    }
+  ]
+}
