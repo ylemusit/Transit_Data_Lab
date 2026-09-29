@@ -1,0 +1,39 @@
+{
+  "status": "NORMALIZED",
+  "audit_id": "TDL-GTFSRUN-7ac901a32b214fdf",
+  "run_id": "GTFSRUN-7ac901a32b214fdf",
+  "dataset_id": "GTFS-26baf9a07d4b6e3b",
+  "source_sha256": "26baf9a07d4b6e3b2155bfaa4e82bb7a6bf45550218fc2f711e8cbc425ed0af8",
+  "reconciliation": {
+    "source_finding_occurrences": 2,
+    "normalized_unique_findings": 1,
+    "identical_duplicates_collapsed": 1,
+    "conflicting_duplicates": 0,
+    "rejected_source_mismatch_occurrences": 0
+  },
+  "findings": [
+    {
+      "dataset_id": "GTFS-26baf9a07d4b6e3b",
+      "rule_id": "V1-RULE-GTFS",
+      "table": "stop_times.txt",
+      "row_locator": "stop_times.txt#csv-record=2;trip_id=ghost;stop_id=s1",
+      "field": "trip_id/stop_id",
+      "observed_value": "ABSENCE_CONFIRMED",
+      "expected_condition": "trip_id references trips.trip_id; stop_id references fixed stops.txt platform",
+      "technical_message": "BROKEN_FOREIGN_REFERENCE",
+      "evidence": {
+        "source_zip_sha256": "26baf9a07d4b6e3b2155bfaa4e82bb7a6bf45550218fc2f711e8cbc425ed0af8",
+        "inspection_dataset_sha256": "f47f092d8681026002e061e339656a27e625a9571f400e2011025a5616c96ebb",
+        "evaluator_sha256": "60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb",
+        "rule_version": "compliance-v1/1",
+        "source_sha256": "26baf9a07d4b6e3b2155bfaa4e82bb7a6bf45550218fc2f711e8cbc425ed0af8"
+      },
+      "finding_id": "TDLF-afeca96b8c509a1cf0ac",
+      "lifecycle_state": "DETECTED",
+      "review_required": false,
+      "audit_id": "TDL-GTFSRUN-7ac901a32b214fdf",
+      "run_id": "GTFSRUN-7ac901a32b214fdf",
+      "source_sha256": "26baf9a07d4b6e3b2155bfaa4e82bb7a6bf45550218fc2f711e8cbc425ed0af8"
+    }
+  ]
+}

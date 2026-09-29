@@ -13,6 +13,9 @@ from gtfs_lab.audit_comparison import (
     build_audit_snapshot,
     compare_audit_directories,
     compare_audits,
+    persist_comparison,
+    render_comparison_report,
+    verify_comparison_record,
 )
 from gtfs_lab.audit_contract import stable_finding_id
 from gtfs_lab.gate import create_fixtures
@@ -112,6 +115,11 @@ class AuditComparisonTests(unittest.TestCase):
         result = compare_audit_directories(first_dir, second_dir)
         self.assertEqual("RUNTIME_ONLY_CHANGE", result["attribution"])
         self.assertEqual("PARTIALLY_COMPARABLE", result["comparability"]["status"])
+        persisted = persist_comparison(self.root, first_snapshot, second_snapshot, source_artifacts={
+            "baseline_run": str(first_dir), "baseline_manifest": str(first_dir / "audit" / "audit_manifest.json"),
+            "candidate_run": str(second_dir), "candidate_manifest": str(second_dir / "audit" / "audit_manifest.json")})
+        self.assertTrue(Path(persisted["path"]).is_file())
+        self.assertTrue(Path(persisted["report_path"]).is_file())
 
     def test_pb002_different_audit_and_run_ids_are_runtime_only(self) -> None:
         baseline = build_audit_snapshot(write_audit(self.root, "baseline", finding=finding("stable-finding")))
@@ -210,6 +218,100 @@ class AuditComparisonTests(unittest.TestCase):
         evidence = build_audit_snapshot(write_audit(self.root, "evidence", finding=finding("finding-1", "DETECTED", "after")))
         self.assertEqual("FINDING_STATUS_CHANGE", self.compare(baseline, lifecycle)["finding_change"]["changes"][0]["change"])
         self.assertEqual("FINDING_EVIDENCE_CHANGE", self.compare(baseline, evidence)["finding_change"]["changes"][0]["change"])
+
+    def test_pd001_to_pd011_persist_idempotence_integrity_refs_and_report(self) -> None:
+        cases = [
+            ("no-change", {}, "NO_CHANGE"), ("data", {"source": SHA_B}, "DATASET_CHANGE"),
+            ("implementation", {"parser": "gtfs-lab-csv/2"}, "PARSER_IMPLEMENTATION_CHANGE"),
+            ("multiple", {"source": SHA_B, "parser": "gtfs-lab-csv/2"}, "MULTIPLE_CAUSES"),
+            ("not-comparable", {}, "NOT_COMPARABLE"),
+            ("unattributed", {"status": "FAIL_TECHNICAL"}, "UNATTRIBUTED_CHANGE"),
+        ]
+        for name, options, expected_attribution in cases:
+            with self.subTest(name=name):
+                case_root = self.root / name
+                case_root.mkdir()
+                baseline_id = candidate_id = f"TDL-{name}-same" if name == "no-change" else None
+                before_dir = write_audit(case_root, "baseline", audit_id=baseline_id or f"TDL-{name}-baseline")
+                after_dir = write_audit(case_root, "candidate", audit_id=candidate_id or f"TDL-{name}-candidate", **options)
+                before, after = build_audit_snapshot(before_dir), build_audit_snapshot(after_dir)
+                if name == "not-comparable":
+                    before["snapshot_contract_version"] = "unsupported"
+                refs = {"baseline_run": str(before_dir), "baseline_manifest": str(before_dir / "audit" / "audit_manifest.json"),
+                        "candidate_run": str(after_dir), "candidate_manifest": str(after_dir / "audit" / "audit_manifest.json")}
+                first = persist_comparison(self.root, before, after, source_artifacts=refs)
+                self.assertEqual(expected_attribution, first["record"]["comparison"]["attribution"])
+                first_bytes = Path(first["path"]).read_bytes()
+                report_bytes = Path(first["report_path"]).read_bytes()
+                record_mtime = Path(first["path"]).stat().st_mtime_ns
+                report_mtime = Path(first["report_path"]).stat().st_mtime_ns
+                again = persist_comparison(self.root, before, after, source_artifacts=refs)
+                self.assertEqual(first["path"], again["path"])
+                self.assertEqual(first_bytes, Path(again["path"]).read_bytes())
+                self.assertEqual(report_bytes, Path(again["report_path"]).read_bytes())
+                self.assertEqual(record_mtime, Path(again["path"]).stat().st_mtime_ns)
+                self.assertEqual(report_mtime, Path(again["report_path"]).stat().st_mtime_ns)
+                self.assertEqual(render_comparison_report(first["record"]), Path(first["report_path"]).read_bytes())
+                self.assertEqual(refs, first["record"]["source_artifacts"])
+                record = json.loads(first_bytes)
+                import hashlib
+                expected_hash = hashlib.sha256((json.dumps(before, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode()).hexdigest()
+                self.assertEqual(expected_hash, record["integrity"]["baseline_snapshot_sha256"])
+                self.assertEqual(True, verify_comparison_record(record, before, after))
+
+    def test_pd008_same_comparison_id_different_payload_fails_closed(self) -> None:
+        before, after = self.snapshots()
+        refs = {"baseline_run": "baseline", "baseline_manifest": "baseline/audit/audit_manifest.json",
+                "candidate_run": "candidate", "candidate_manifest": "candidate/audit/audit_manifest.json"}
+        persist_comparison(self.root, before, after, source_artifacts=refs)
+        changed = copy.deepcopy(after)
+        changed["result"]["rules"][0]["status"] = "FAIL_TECHNICAL"
+        with self.assertRaises(ComparisonError) as raised:
+            persist_comparison(self.root, before, changed, source_artifacts=refs)
+        self.assertEqual("COMPARISON_RECORD_CONFLICT", raised.exception.code)
+
+    def test_pd011_tampered_snapshot_fails_hash_verification(self) -> None:
+        before, after = self.snapshots()
+        refs = {"baseline_run": "baseline", "baseline_manifest": "baseline/audit/audit_manifest.json",
+                "candidate_run": "candidate", "candidate_manifest": "candidate/audit/audit_manifest.json"}
+        record = persist_comparison(self.root, before, after, source_artifacts=refs)["record"]
+        changed = copy.deepcopy(after)
+        changed["identity"]["engine"]["parser_version"] = "tampered"
+        with self.assertRaises(ComparisonError) as raised:
+            verify_comparison_record(record, before, changed)
+        self.assertEqual("COMPARISON_HASH_MISMATCH", raised.exception.code)
+
+    def test_existing_record_tampering_is_rejected_on_repeat(self) -> None:
+        before, after = self.snapshots()
+        refs = {"baseline_run": "baseline", "baseline_manifest": "baseline/audit/audit_manifest.json",
+                "candidate_run": "candidate", "candidate_manifest": "candidate/audit/audit_manifest.json"}
+        saved = persist_comparison(self.root, before, after, source_artifacts=refs)
+        path = Path(saved["path"])
+        original_bytes = path.read_bytes()
+        tampered = json.loads(path.read_text(encoding="utf-8"))
+        tampered["comparison"]["evidence_status"] = "TAMPERED"
+        path.write_bytes((json.dumps(tampered, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8"))
+        with self.assertRaises(ComparisonError) as raised:
+            persist_comparison(self.root, before, after, source_artifacts=refs)
+        self.assertEqual("COMPARISON_HASH_MISMATCH", raised.exception.code)
+        path.write_bytes(original_bytes)
+        tampered = json.loads(original_bytes)
+        tampered["created_at_utc"] = "2000-01-01T00:00:00Z"
+        path.write_bytes((json.dumps(tampered, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n").encode("utf-8"))
+        with self.assertRaises(ComparisonError) as raised:
+            persist_comparison(self.root, before, after, source_artifacts=refs)
+        self.assertEqual("COMPARISON_HASH_MISMATCH", raised.exception.code)
+
+    def test_productive_record_is_durable_and_verifiable(self) -> None:
+        area = Path(__file__).resolve().parents[1]
+        baseline = build_audit_snapshot(area / "reports/evidence/m05d_productive_sources/baseline")
+        candidate = build_audit_snapshot(area / "reports/evidence/m05d_productive_sources/candidate")
+        record = compare_audits(baseline, candidate)
+        path = area / "reports/evidence/comparisons" / record["comparison_id"] / "comparison.json"
+        persisted = json.loads(path.read_text(encoding="utf-8"))
+        self.assertTrue(verify_comparison_record(persisted, baseline, candidate))
+        self.assertEqual("DATASET_CHANGE", persisted["comparison"]["attribution"])
+        self.assertEqual(render_comparison_report(persisted), path.with_name("report.md").read_bytes())
 
 
 if __name__ == "__main__":

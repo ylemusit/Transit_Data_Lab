@@ -1,0 +1,100 @@
+{
+  "gate": "TDL_GOLDEN_REGRESSION_GATE",
+  "status": "PASS",
+  "output_directory": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab M05D\\02_Data_Engineering\\GTFS_Lab\\reports\\evidence\\m05d_golden_regression",
+  "cases": [
+    {
+      "case_id": "gtfs-orphan-route-v1",
+      "case_version": "1.0.0",
+      "input_sha256": "28e24901f5cec87b900d1d7de510e2a97b3007158c0775012bf6210ad73eab81",
+      "case_sha256": "cc35cf844c1cac02529f13158ac1042756915e729b3ded90663ad3da493205bb",
+      "result_status": "PASS",
+      "expectation_results": [
+        {
+          "expectation_index": 0,
+          "type": "STATUS",
+          "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].status",
+          "expected": "FAIL_TECHNICAL",
+          "observed": "FAIL_TECHNICAL",
+          "status": "PASS",
+          "message": "expectation matched"
+        },
+        {
+          "expectation_index": 1,
+          "type": "COUNT",
+          "target": "validation.rules[rule_id=GTFS-REF-TRIP-ROUTE].finding_count",
+          "expected": 1,
+          "observed": 1,
+          "status": "PASS",
+          "message": "expectation matched"
+        }
+      ],
+      "run_id": "GTFSRUN-5f804f0c33ea45ba",
+      "dataset_id": "GTFS-28e24901f5cec87b",
+      "engine_context": {
+        "gtfs_lab_version": "1.0.0-dev",
+        "validator_version": "1.0.0",
+        "ruleset_id": "gtfs-lab-v1",
+        "ruleset_version": "1"
+      }
+    },
+    {
+      "case_id": "gtfs-bad-service-reference-v1",
+      "case_version": "1.0.0",
+      "input_sha256": "21714ca7c02f99a8e77257ea25eb90aac964b774fc7fcfd5ace0455d4d55ee51",
+      "case_sha256": "2567c8e9dca6b1c9591503117fe87f60459db7ad1f642f6e5a530a68816e6aaa",
+      "result_status": "PASS",
+      "expectation_results": [
+        {
+          "expectation_index": 0,
+          "type": "STATUS",
+          "target": "validation.rules[rule_id=GTFS-REF-SERVICE].status",
+          "expected": "FAIL_TECHNICAL",
+          "observed": "FAIL_TECHNICAL",
+          "status": "PASS",
+          "message": "expectation matched"
+        },
+        {
+          "expectation_index": 1,
+          "type": "COUNT",
+          "target": "validation.rules[rule_id=GTFS-REF-SERVICE].finding_count",
+          "expected": 1,
+          "observed": 1,
+          "status": "PASS",
+          "message": "expectation matched"
+        }
+      ],
+      "run_id": "GTFSRUN-e69468f742e84380",
+      "dataset_id": "GTFS-21714ca7c02f99a8",
+      "engine_context": {
+        "gtfs_lab_version": "1.0.0-dev",
+        "validator_version": "1.0.0",
+        "ruleset_id": "gtfs-lab-v1",
+        "ruleset_version": "1"
+      }
+    }
+  ],
+  "negative_regression": {
+    "count_mismatch": true,
+    "status_mismatch": true,
+    "mutation_source": "observed payload sintético en memoria"
+  },
+  "checks": [
+    {
+      "check": "two_approved_cases_executed",
+      "status": "PASS"
+    },
+    {
+      "check": "count_expected_1_observed_2_fails",
+      "status": "PASS"
+    },
+    {
+      "check": "status_expected_fail_observed_pass_fails",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Los casos son fixtures sintéticos; el gate comprueba el contrato técnico TDL y no constituye validación legal ni completa de GTFS.",
+    "La evidencia de ejecución se escribe fuera de golden/."
+  ]
+}

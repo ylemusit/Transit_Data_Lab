@@ -6,6 +6,8 @@ import unittest
 from pathlib import Path
 
 from gtfs_lab.historical_comparison import compare_historical_summaries
+from gtfs_lab.audit_comparison import render_comparison_report
+from tools.persist_m05c_historical_proof import verify_historical_record
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,6 +64,13 @@ class M05CHistoricalProofTests(unittest.TestCase):
         for row in self.by_id.values():
             self.assertEqual(2, len(row["evidence_refs"]))
             self.assertTrue(all(ref["json_pointer"].startswith("/datasets/") for ref in row["evidence_refs"]))
+
+    def test_pd012_persisted_historical_record_verifies_read_only(self) -> None:
+        folder = EVIDENCE / "comparisons" / "M05C-HISTORICAL-PROOF-V1"
+        record = json.loads((folder / "comparison.json").read_text(encoding="utf-8"))
+        self.assertTrue(verify_historical_record(record))
+        self.assertEqual(6, len(record["comparison"]["historical_rows"]))
+        self.assertEqual(render_comparison_report(record), (folder / "report.md").read_bytes())
 
 
 if __name__ == "__main__":
