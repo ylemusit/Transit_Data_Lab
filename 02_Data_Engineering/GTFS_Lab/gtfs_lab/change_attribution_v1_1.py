@@ -56,7 +56,15 @@ def compare(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[str, An
     if changes:
         causes.discard("NO_CHANGE")
         causes.discard("RUNTIME_ONLY_CHANGE")
-        causes.discard("UNATTRIBUTED_CHANGE")
+        # A legacy unattributed result can be explained by the new per-rule
+        # identity. Unattributed dataset metadata cannot: a lineage or dataset
+        # ID change with unchanged source bytes remains independently unknown.
+        unresolved_dataset_identity = any(
+            row["identity"] in {"dataset.lineage_id", "dataset.dataset_id"}
+            for row in result["identity_differences"]
+        ) and "DATASET_CHANGE" not in causes
+        if not unresolved_dataset_identity:
+            causes.discard("UNATTRIBUTED_CHANGE")
         causes.add("RULE_SEMANTIC_CHANGE")
         result["identity_differences"].extend(
             {"identity": f"rules.rule_versions.{row['rule_id']}",
@@ -64,8 +72,13 @@ def compare(baseline: dict[str, Any], candidate: dict[str, Any]) -> dict[str, An
             for row in changes
         )
         result["evidence_refs"].extend(f"identity.rules.rule_versions.{row['rule_id']}" for row in changes)
-        result["confidence_or_evidence_status"]["status"] = "SUPPORTED"
-        result["unresolved_reasons"] = []
+        if result["confidence_or_evidence_status"]["status"] == "NO_CAUSAL_EVIDENCE" and "UNATTRIBUTED_CHANGE" not in causes:
+            result["confidence_or_evidence_status"]["status"] = "SUPPORTED"
+        if "UNATTRIBUTED_CHANGE" not in causes:
+            result["unresolved_reasons"] = [
+                reason for reason in result["unresolved_reasons"]
+                if reason != "result changed without a supported identity cause"
+            ]
     result.update(contract_version=CONTRACT_VERSION, comparability="COMPARABLE",
                   per_rule_changes=changes, rules_change=bool(changes),
                   supported_causes=sorted(causes),

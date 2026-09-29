@@ -10,6 +10,7 @@ import unittest
 from pathlib import Path
 
 from gtfs_lab.change_attribution_v1_1 import compare
+from gtfs_lab.change_attribution import compare as compare_legacy
 from gtfs_lab.audit_comparison import compare_audits
 from gtfs_lab.ci_gate import classify
 
@@ -30,6 +31,62 @@ def snapshot(versions, contract="1.1.0"):
 
 
 class Preconditions(unittest.TestCase):
+    def test_rule_semantic_change_resolves_legacy_result_uncertainty(self):
+        base = snapshot({"R2": "1"})
+        candidate = snapshot({"R2": "2"})
+        candidate["result"]["rules"][0]["status"] = "FAIL_TECHNICAL"
+        result = compare(base, candidate)
+        self.assertEqual(["RULE_SEMANTIC_CHANGE"], result["supported_causes"])
+        self.assertEqual("RULE_SEMANTIC_CHANGE", result["attribution"])
+        self.assertEqual([], result["unresolved_reasons"])
+        self.assertEqual("SUPPORTED", result["confidence_or_evidence_status"]["status"])
+
+    def test_rule_semantic_change_keeps_unresolved_lineage_identity(self):
+        base = snapshot({"R2": "1"})
+        base["identity"]["dataset"]["lineage_id"] = "L1"
+        candidate = snapshot({"R2": "2"})
+        candidate["identity"]["dataset"]["lineage_id"] = "L2"
+        candidate["result"]["rules"][0]["status"] = "FAIL_TECHNICAL"
+        result = compare(base, candidate)
+        self.assertEqual(["RULE_SEMANTIC_CHANGE", "UNATTRIBUTED_CHANGE"], result["supported_causes"])
+        self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
+        self.assertEqual(["result changed without a supported identity cause"], result["unresolved_reasons"])
+        self.assertEqual("NO_CAUSAL_EVIDENCE", result["confidence_or_evidence_status"]["status"])
+
+    def test_rule_semantic_and_supported_dataset_change(self):
+        base = snapshot({"R2": "1"})
+        candidate = snapshot({"R2": "2"})
+        candidate["identity"]["dataset"]["source_sha256"] = "b" * 64
+        candidate["identity"]["dataset"]["lineage_id"] = "L2"
+        result = compare(base, candidate)
+        self.assertEqual(["DATASET_CHANGE", "RULE_SEMANTIC_CHANGE"], result["supported_causes"])
+        self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
+        self.assertEqual([], result["unresolved_reasons"])
+
+    def test_implementation_semantic_and_unresolved_identity_coexist(self):
+        base = snapshot({"R2": "1"})
+        base["identity"]["dataset"]["lineage_id"] = "L1"
+        candidate = snapshot({"R2": "2"})
+        candidate["identity"]["dataset"]["lineage_id"] = "L2"
+        candidate["identity"]["engine"]["parser_version"] = "2"
+        candidate["result"]["rules"][0]["status"] = "FAIL_TECHNICAL"
+        result = compare(base, candidate)
+        self.assertEqual(["PARSER_IMPLEMENTATION_CHANGE", "RULE_SEMANTIC_CHANGE", "UNATTRIBUTED_CHANGE"], result["supported_causes"])
+        self.assertEqual("MULTIPLE_CAUSES", result["attribution"])
+        self.assertEqual(["result changed without a supported identity cause"], result["unresolved_reasons"])
+        self.assertEqual("SUPPORTED", result["confidence_or_evidence_status"]["status"])
+
+    def test_missing_identity_and_legacy_contract_are_preserved(self):
+        base = snapshot({"R2": "1"})
+        candidate = snapshot({"R2": "2"})
+        del base["identity"]["dataset"]["source_sha256"]
+        result = compare(base, candidate)
+        self.assertEqual("MISSING_IDENTITY", result["confidence_or_evidence_status"]["status"])
+        self.assertEqual(["baseline.dataset.source_sha256"], result["confidence_or_evidence_status"]["missing_identity"])
+        legacy_base = snapshot({"R2": "1"}, "1.0.0")
+        legacy_candidate = snapshot({"R2": "2"}, "1.0.0")
+        self.assertEqual(compare_legacy(legacy_base, legacy_candidate), compare(legacy_base, legacy_candidate))
+
     def test_resource_missing_hash_and_ready(self):
         with tempfile.TemporaryDirectory() as temporary:
             path = Path(temporary) / "resource"
