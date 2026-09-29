@@ -1,0 +1,1461 @@
+{
+  "schema_version": "1.0.0",
+  "baseline_pair_count": 28,
+  "baseline_pairs": ["002-005", "008-010", "008-012", "008-013", "008-014", "008-015", "008-017", "008-018", "009-019", "010-012", "010-013", "010-014", "010-015", "011-016", "011-017", "011-018", "011-019", "012-013", "012-014", "012-015", "013-014", "013-015", "014-015", "016-018", "016-019", "017-018", "017-019", "018-019"],
+  "priority_016_019_pair_count": 6,
+  "pair_count": 29,
+  "pairs": [
+    {
+      "pair_id": "002-005",
+      "dataset_a": "002",
+      "dataset_b": "005",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["SALAMANCA"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.038461538461538464,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["002", "005"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-010",
+      "dataset_a": "008",
+      "dataset_b": "010",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "010"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-012",
+      "dataset_a": "008",
+      "dataset_b": "012",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "012"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-013",
+      "dataset_a": "008",
+      "dataset_b": "013",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "013"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-014",
+      "dataset_a": "008",
+      "dataset_b": "014",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "014"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-015",
+      "dataset_a": "008",
+      "dataset_b": "015",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "015"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-017",
+      "dataset_a": "008",
+      "dataset_b": "017",
+      "shared_agency_ids": [],
+      "shared_route_ids": ["1", "10", "11", "3", "4", "5"],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "Tuvisa",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "https://www.vitoria-gasteiz.org/tuvisa",
+        "version_a": "UNKNOWN",
+        "version_b": "1.0",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260920", "20261021"]
+      },
+      "route_overlap_ratio": 0.75,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "017"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "008-018",
+      "dataset_a": "008",
+      "dataset_b": "018",
+      "shared_agency_ids": [],
+      "shared_route_ids": ["10", "11", "13", "5"],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "Bilbobus",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "http://www.bilbao.eus/bilbobus",
+        "version_a": "UNKNOWN",
+        "version_b": "1789938057086",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260901", "20270630"]
+      },
+      "route_overlap_ratio": 0.5,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["008", "018"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "009-019",
+      "dataset_a": "009",
+      "dataset_b": "019",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1553", "1903", "2031"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "Lantik",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "https://www.lantik.bizkaia.eus/",
+        "version_a": "UNKNOWN",
+        "version_b": "20260908",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260907", "20261107"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.06976744186046512,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["009", "019"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "010-012",
+      "dataset_a": "010",
+      "dataset_b": "012",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["Lamas", "Vilaboa", "Xinzo"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["010", "012"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "010-013",
+      "dataset_a": "010",
+      "dataset_b": "013",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["Barreiros", "Lamas", "O Campo", "San Mamede", "Torre", "Vilaboa"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["010", "013"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "010-014",
+      "dataset_a": "010",
+      "dataset_b": "014",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["Currás", "Hermida", "O Castro"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["010", "014"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "010-015",
+      "dataset_a": "010",
+      "dataset_b": "015",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["Barreiros", "Lamas", "O Campo", "O Castro", "Vilaboa"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["010", "015"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "011-016",
+      "dataset_a": "011",
+      "dataset_b": "016",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["356", "363"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autocorb",
+        "publisher_b": "Autobuses La Unión, S.A.",
+        "publisher_url_a": "http://www.autocorb.com",
+        "publisher_url_b": "https://www.autobuseslaunion.com",
+        "version_a": "111",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["20260701", "20270901"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.018867924528301886,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["011", "016"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "011-017",
+      "dataset_a": "011",
+      "dataset_b": "017",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1001", "1008", "1010", "1011", "1020", "1021", "1029", "1030", "1031", "1422"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autocorb",
+        "publisher_b": "Tuvisa",
+        "publisher_url_a": "http://www.autocorb.com",
+        "publisher_url_b": "https://www.vitoria-gasteiz.org/tuvisa",
+        "version_a": "111",
+        "version_b": "1.0",
+        "feed_dates_a": ["20260701", "20270901"],
+        "feed_dates_b": ["20260920", "20261021"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.058823529411764705,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["011", "017"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "011-018",
+      "dataset_a": "011",
+      "dataset_b": "018",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["356", "363"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autocorb",
+        "publisher_b": "Bilbobus",
+        "publisher_url_a": "http://www.autocorb.com",
+        "publisher_url_b": "http://www.bilbao.eus/bilbobus",
+        "version_a": "111",
+        "version_b": "1789938057086",
+        "feed_dates_a": ["20260701", "20270901"],
+        "feed_dates_b": ["20260901", "20270630"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.011764705882352941,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["011", "018"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "011-019",
+      "dataset_a": "011",
+      "dataset_b": "019",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1422", "2801", "356", "363", "4117", "4121", "4122", "4123", "4124", "4126", "4129", "4131", "4132", "4133", "4136", "4137", "4138", "4141", "4142", "4144", "4145", "4147", "4148", "4149", "4151", "4152", "4153", "4154", "4155", "4156", "4157", "4158", "4161", "4162", "4163", "4164", "4166", "4169", "4171", "4172", "4173", "4174", "4176", "4177", "4178", "4179", "4181", "4182", "4186", "4187", "4188", "4191", "4192", "4193", "4194", "4195", "710", "720", "809", "810", "829", "837", "840", "841", "850", "860", "870", "871", "890", "920", "941", "949"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autocorb",
+        "publisher_b": "Lantik",
+        "publisher_url_a": "http://www.autocorb.com",
+        "publisher_url_b": "https://www.lantik.bizkaia.eus/",
+        "version_a": "111",
+        "version_b": "20260908",
+        "feed_dates_a": ["20260701", "20270901"],
+        "feed_dates_b": ["20260907", "20261107"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.4235294117647059,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["011", "019"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "012-013",
+      "dataset_a": "012",
+      "dataset_b": "013",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["A Revolta", "Bazar", "Bustelo", "Campelo", "Castro", "Cruceiro", "Cuiña", "Fontenla", "Freixeiro", "Insua", "Lamas", "Liñares", "Loureiro", "O Carballo", "O Penedo", "Parada", "Pazos", "Penedo", "Porto", "Rosende", "Santa Comba", "Sobreira", "Vila", "Vilaboa", "Vilar", "Vilar de Arriba", "Xesteira"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["012", "013"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "012-014",
+      "dataset_a": "012",
+      "dataset_b": "014",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["A Costa", "A Revolta", "As Travesas", "Braña", "Carreira", "Castro", "Coiro", "Couto", "Cruceiro", "Insua", "Lamelas", "Liñares", "Loureiro", "Montellos", "O Carballo", "O Seixo", "Pedreira", "Penedo", "Porto", "Regueiro", "San Martiño", "San Román", "Sixto", "Vilacoba", "Vilar", "Vilela"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["012", "014"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "012-015",
+      "dataset_a": "012",
+      "dataset_b": "015",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["A Costa", "A Ponte", "A Revolta", "Bazar", "Bustelo", "Campelo", "Castro", "Fontenla", "Freixeiro", "Insua", "Lamas", "Liñares", "O Carballo", "O Penedo", "O Seixo", "Parada", "Pazos", "Pereiras", "Rosende", "San Martiño", "Santa Baia", "Santa Comba", "Santa Mariña", "Sobreira", "Transformador", "Vila", "Vilaboa", "Vilar", "Xesteira"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["012", "015"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "013-014",
+      "dataset_a": "013",
+      "dataset_b": "014",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["A Regueira", "A Revolta", "Aldea de Abaixo", "Barrio", "Cancelas", "Cangas", "Capela", "Carballal", "Casal", "Castelo", "Castro", "Catro Camiños", "Cimadevila", "Cruceiro", "Espiñeira", "Figueroa", "Fondevila", "Insua", "Laxe", "Liñares", "Loureda", "Loureiro", "O Burgo", "O Carballo", "O Monte", "O Vilar", "Os Castros", "Outeiro", "Paradela", "Penedo", "Pereira", "Piñeiro", "Porto", "Pousada", "Quintas", "Reboredo", "Riveira", "San Fiz", "San Isidro", "Santaia", "Taboada", "Vilanova", "Vilar"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["013", "014"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "013-015",
+      "dataset_a": "013",
+      "dataset_b": "015",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": ["009680", "009681", "009682", "009683", "009684", "009685", "009686", "009687", "009688", "009689", "009690", "009691", "009692", "009693", "009694", "009696", "009697", "009698", "009699", "009700", "009701", "009702", "009703", "009704", "009705", "009706", "009707", "009708", "009709", "009710", "009711", "009712", "009713", "009714", "009716", "009717", "009718", "009719", "009720", "009721", "009722", "009723", "009724", "009725", "009726", "009727", "009728", "009729", "009771", "009772", "009773", "009775", "009776", "009777", "009778", "009779", "009780", "009782", "009784", "009785", "009786", "009787", "009788", "009789", "009790", "009792", "009793", "009794", "009795", "009796", "009797", "009799", "009800", "009801", "009803", "009804", "009805", "009806", "009807", "009808", "009809", "009810", "009811", "009812", "009813", "009814", "009815", "009816", "009817", "009818", "009819", "009821", "009822", "009823", "009824", "009825", "009826", "009827", "009828", "009829", "009830", "009850", "009851", "010836", "011056", "011057", "011058", "011059", "011060", "011061", "011062", "011063", "011064", "011220", "011221", "011307", "011322", "011323", "011324", "011325", "011326", "011327", "011328", "011329", "011464", "011536", "011537", "011656", "011710"],
+      "shared_stop_ids": ["1001116", "1001144", "1001155", "1001157", "1001257", "1001311", "1001336", "1001340", "1001781", "1001861", "1002324", "1004203", "1005632", "1005634", "1007674", "1008199", "1009320", "1009322", "1009323", "1009330", "1009338", "1009342", "1009395", "1009399", "1009408", "1009411", "1009416", "1009423", "1009424", "1009426", "1009427", "1011420", "1012043", "1029537", "1031414", "1037225", "1037819", "1037831", "1037832", "1037837", "1038066", "1038110", "1038136", "1041565", "1043171", "1043235", "1043244", "1043465", "1043468", "1043805", "1043807", "1044056", "1045800", "1047756", "1047757", "1047758", "1047984", "1047985", "1048038", "1048110", "1048162", "1048163", "1048197", "1048320", "1048321", "1048323", "1048342", "1048369", "1048420", "1048456", "1048467", "1048470", "1048488", "1048612", "1048631", "1048632", "1048667", "1048668", "1048669", "1048672", "1048673", "1048756", "1048770", "1048782", "2000594", "2000970", "2001033", "2001034", "2001035", "2001037", "2001040", "2001042", "2001044", "2001047", "2001048", "2001049", "2001051", "2001053", "2001058", "2001059", "2001062", "2001064", "2001065", "2001066", "2001067", "2001069", "2001070", "2001071", "2001073", "2001077", "2001078", "2001079", "2001080", "2001081", "2001092", "2001109", "2001113", "2001116", "2001118", "2001121", "2001122", "2001139", "2001144", "2001148", "2001150", "2001152", "2001155", "2001156", "2001157", "2001169", "2001178", "2001179", "2001257", "2001303", "2001305", "2001308", "2001309", "2001311", "2001314", "2001316", "2001319", "2001320", "2001336", "2001337", "2001340", "2001651", "2001652", "2001654", "2001780", "2001781", "2001782", "2001783", "2001785", "2001855", "2001856", "2001861", "2001867", "2001890", "2002045", "2002052", "2002227", "2002324", "2004203", "2005283", "2005286", "2005306", "2005314", "2005327", "2005342", "2005347", "2005632", "2005634", "2006852", "2006856", "2006864", "2006865", "2006866", "2007037", "2007038", "2007040", "2007671", "2007673", "2007674", "2007679", "2007683", "2007690", "2007693", "2007699", "2007706", "2007708", "2007712", "2007713", "2007718", "2008195", "2008199", "2008924", "2009089", "2009090", "2009091", "2009093", "2009094", "2009095", "2009096", "2009172", "2009173", "2009175", "2009176", "2009177", "2009178", "2009179", "2009182", "2009184", "2009185", "2009186", "2009187", "2009189", "2009192", "2009195", "2009196", "2009197", "2009198", "2009203", "2009209", "2009318", "2009320", "2009322", "2009323", "2009324", "2009330", "2009331", "2009334", "2009338", "2009342", "2009395", "2009397", "2009399", "2009404", "2009406", "2009408", "2009411", "2009415", "2009416", "2009420", "2009423", "2009424", "2009425", "2009426", "2009427", "2009428", "2009431", "2011005", "2011016", "2011345", "2011346", "2011347", "2011349", "2011351", "2011420", "2012043", "2029537", "2029545", "2030496", "2031664", "2037229", "2037639", "2037761", "2037831", "2037847", "2038062", "2038066", "2038098", "2038110", "2038136", "2038143", "2038161", "2039922", "2041565", "2042529", "2042531", "2042575", "2042635", "2042724", "2042785", "2042790", "2043171", "2043205", "2043206", "2043235", "2043236", "2043237", "2043238", "2043239", "2043240", "2043244", "2043353", "2043464", "2043465", "2043468", "2043495", "2047579", "2047581", "2047617", "2047618", "2047619", "2047620", "2047622", "2047623", "2047626", "2047627", "2047630", "2047631", "2047632", "2047633", "2047635", "2047636", "2047637", "2047638", "2047639", "2047641", "2047642", "2047643", "2047644", "2047645", "2047685", "2047761", "2047986", "2048161", "2048299", "2048322", "2048611", "2048632", "3001330", "3001731", "3001844", "3009340", "3009410", "3009432", "3011348", "3037824", "3043175", "3043202", "3047566", "3047573", "3047574", "3047621", "3047624", "3047628", "3047629", "3047634", "4001119", "4001164", "4001330", "4001341", "4009341", "4009410", "4009432", "4029536", "4034309", "4042623", "4047566", "5000389", "5000970", "5001033", "5001034", "5001035", "5001037", "5001040", "5001042", "5001044", "5001047", "5001048", "5001049", "5001051", "5001053", "5001057", "5001058", "5001059", "5001062", "5001064", "5001065", "5001066", "5001067", "5001069", "5001070", "5001071", "5001073", "5001120", "5001121", "5001122", "5001303", "5001305", "5001308", "5001309", "5001314", "5001316", "5001319", "5001320", "5001332", "5001337", "5001338", "5001731", "5002227", "5005314", "5005347", "5006850", "5006852", "5006864", "5006865", "5006866", "5007037", "5007038", "5007040", "5008195", "5009097", "5009172", "5009173", "5009175", "5009176", "5009177", "5009178", "5009179", "5009180", "5009182", "5009184", "5009185", "5009186", "5009187", "5009189", "5009192", "5009195", "5009196", "5009197", "5009198", "5009203", "5009209", "5009346", "5011345", "5011346", "5011347", "5011349", "5011351", "5034309", "5037257", "5038143", "5042529", "5042531", "5042724", "5042750", "5042752", "5042778", "5043237", "6001043", "6001046", "6001054", "6001061", "6001310", "6005286", "6005299", "6006850", "6006851", "6006853", "6007036", "6007039", "6008190", "6008346", "6008347", "6008348", "6009183", "6030492", "6042538", "6042544", "6042760", "7001046", "7001054", "7001061", "7006851", "7006853", "7008190", "7009200", "7039915", "7042538", "7042544", "7042582", "8001056", "8009200", "8009383", "8038057", "8038061", "8039915", "8043747", "9001056"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [["056", "IES Marco do Camballón-Gres"], ["057", "IES Marco do Camballón-Reboredo"], ["059", "Touro-Cimadevila-Santiago E.I."], ["061", "IES Marco do Camballón-CEIP Nosa Señora da Piedade-Reboredo"], ["063", "IES Marco do Camballón-Xordedo (lugar)"], ["064", "IES Marco do Camballón-Noveledo"], ["322", "IES Pintor Colmeiro-Fontefría"], ["324", "IES Pintor Colmeiro-Fonte de Ramos"], ["325", "CEIP de Silleda-Graba"], ["326", "IES Pintor Colmeiro-Meixomence"], ["327", "IES Pintor Colmeiro-Camporrapado"], ["329", "IES Pintor Colmeiro-Senra"], ["682", "CEIP Nosa Señora da Piedade-Ollares I"], ["684", "CEIP de Cerdeiriñas-Merza"], ["688", "IES Marco do Camballón-CEIP-Sexto"], ["689", "IES Marco do Camballón-Añobre"], ["690", "IES Marco do Camballón-Noveledo"], ["691", "IES Marco do Camballón-Gres"], ["692", "IES Marco do Camballón-Santomé"], ["698", "CEIP Varela Buxán-Cancelas"], ["699", "IES Marco do Camballón-Xordedo (lugar)"], ["702", "IES de Arzúa-Touro"], ["708", "CEIP Nosa Señora da Piedade-Duxame III"], ["709", "CEIP de Cerdeiriñas-Obra, 54"], ["710", "CEIP de Cerdeiriñas-Amosa (Xastre)"], ["716", "CEIP de Cerdeiriñas-Cirela"], ["721", "CEIP Nosa Señora da Piedade-Reboredo"], ["723", "Ponte Ledesma-Santiago E.I."], ["726", "Arzúa-Touro"], ["728", "As Hortas-Santiago E.I."], ["772", "CEIP de Silleda-A Mina"], ["775", "CEIP Ramón de Valenzuela-Paredes"], ["776", "IES Pintor Colmeiro-Outeiro"], ["782", "CEIP Ramón de Valenzuela-Fucarelos"], ["784", "Orazo (Orosa)-A Estrada E.A."], ["786", "CEIP Ramón de Valenzuela-Covas"], ["789", "IES Pintor Colmeiro-Vilariño"], ["795", "CEIP de Silleda-Xestoso"], ["796", "CEIP de Silleda-Eirexe (dereita)"], ["797", "CEIP de Silleda-O Ribeirao"], ["799", "CEIP de Silleda-Meixomence"], ["800", "CEIP de Silleda-Tixoa"], ["801", "CEIP Cabada Vázquez-Enviande"], ["805", "CEIP de Oca-Riomao"], ["807", "IES Pintor Colmeiro-Covas"], ["810", "Verxeles-Santiago E.I."], ["811", "CEIP de Oca-Ponte Burata"], ["813", "CEIP de Silleda-Fonte de Ramos"], ["819", "Cerdedo-A Estrada E.A."], ["821", "CEIP de Silleda-Freixeiro"], ["822", "A Estrada E.A.-Troáns"], ["825", "CEIP Ramón de Valenzuela-Soldecasa"], ["826", "CPI Santa Lucía-Cosoirado"], ["827", "CEIP de Silleda-Cardigonde"]],
+      "shared_stop_names": ["A Calvela", "A Calzada", "A Carballa", "A Chaira", "A Cova (Troáns)", "A Cruz", "A Cunca", "A Dobreixa", "A Estrada E.A.", "A Goleta", "A Gouxa", "A Laxe", "A Leira", "A Mera", "A Mera II", "A Mina", "A Moa", "A Obra", "A Pastoriza", "A Pena", "A Penela", "A Regueira", "A Revolta", "A Somoza", "A Susana", "Abades", "Abollo", "Agar (Gonxar)", "Agar (Pepe)", "Agar (Valiñas)", "Agolada", "Agudelo", "Alameda (rúa José Salgado", "Alcobre", "Alende", "Alfonsiños", "Alfonsiños II", "Amarante", "Amarelle", "Amosa", "Amosa (Xastre)", "Andamollo", "Andeade", "Ansemil", "Aragonza", "Arbián", "Arcos", "Arcos da Condesa", "Arinteiro", "Armonda", "Arnego", "Arxe", "Arzúa", "As Goritas", "As Hortas", "As Quintas", "As Torres", "Ascensión", "Avda. María Victoria More", "Añobre", "Balboa", "Bama", "Bamela", "Barcia", "Barco", "Barral", "Barranco", "Barravaite", "Barreiro", "Barreiros", "Barrio", "Barro", "Bascuas", "Bazar", "Bendaña", "Berres", "Besaña", "Besexos", "Besexos I", "Besexos II", "Besteiros", "Bodaño", "Boqueixón", "Borralla", "Brandelos", "Brandomés", "Brea", "Breixa I", "Breixa II", "Briallos", "Brocos", "Brántega", "Bustelo", "Bustelo (Sobradelo)", "CEIP Cabada Vázquez", "CEIP Nosa Señora da Pieda", "CEIP Ramón de Valenzuela", "CEIP San Xoán Bautista", "CEIP Varela Buxán", "CEIP de Cerdeiriñas", "CEIP de Oca", "CEIP de Silleda", "CPI Plurilingüe Antonio O", "CPI Plurilingüe de Fonte-", "CPI Santa Lucía", "Cacheiras (BBVA)", "Cacheiras (Canaletto)", "Cacheiras (ITV)", "Cacheiras (centro medico)", "Cacheiras (farmacia)", "Caldas De Reis", "Caldas de Reis (Mil Pies)", "Calvario", "Calvelos", "Calvos", "Camanzo", "Camanzo pista", "Camballón", "Campelo", "Campomarzo", "Camporrapado", "Camposancos", "Cancelas", "Candañedo", "Candán", "Caneda", "Cangas", "Capela de San Blas", "Carballal", "Carballas", "Carboeiriño", "Carboeiro II", "Cardesín", "Cardigonde", "Caricova", "Carral", "Carricoba", "Casal", "Casaldeique", "Cascaneda", "Cascaxide", "Casderrei", "Casetas", "Castelo", "Castrelo", "Castro", "Castrotión", "Castrovite", "Catro Camiños", "Caxide", "Cea", "Cequeril", "Cerdedo", "Cerdeiras (Nogal)", "Chacente", "Chapa", "Chapa I", "Chares", "Cillobre", "Cimadevila", "Cira", "Cira (Vilar)", "Cira (lugar)", "Cirela", "Codeseda (A Sagrada)", "Codeso", "Combarro", "Concello da Estrada", "Cornado", "Corneda", "Corredoiras", "Correo", "Cortegada", "Cortegadela", "Cortizada", "Cosoirado", "Couselo", "Couso", "Covas", "Cruceiro do Sar", "Cumbraos", "Cumeiro", "Cuntis", "Curantes (cortes)", "Curantes Novo", "Curantes Vello", "Currelo", "Doade II", "Donas", "Dornelas", "Dornelas (Bascuas)", "Dornelas (igrexa)", "Dorvisou I", "Duxame I", "Duxame II", "Duxame III", "Eirexe (dereita)", "Eirexe (esquerda)", "Empalme N-640 (Alto da Cr", "Empalme de Cumeiro", "Empalme de Follente", "Enviande", "Escuadro", "Estrella", "Fao", "Farrapa", "Fentanes", "Feros", "Fiestras", "Figueroa", "Fondevila", "Fontao", "Fonte de Ramos", "Fonte dos Gregorios", "Fontearcada", "Fontefría", "Fontenla", "Fontiñas (CPI Fontiñas)", "Forcas", "Fornás", "Fragoso", "Freande", "Freixeiro", "Fucarelos", "Férveda", "Galegos", "Galán", "Gamil", "Gargallóns", "Gastrar", "Gieral", "Godoi", "Gomesende", "Graba", "Gramil", "Gres", "Guieral", "Guimarei", "IES Marco do Camballón", "IES Pintor Colmeiro", "IES Plurilingüe Aquis Cel", "IES de Arzúa", "IES do Sar", "Insua", "LEICURES", "Lagos", "Lalín E.A.", "Lamas", "Lamas (Rodo)", "Lamas (Sobrado)", "Lamego", "Lamego abaixo", "Lamela", "Larazo", "Lareo", "Laro (empalme)", "Ledesma", "Liñares", "Loimil", "Loimil do Carballo", "Losón", "Loucenzo", "Loureda", "Louredela", "Loxo", "Lugar de Covas", "Lázara", "Madrosende", "Manlle", "Marcón", "Margaride", "Marrozos", "Marrás", "Martixe", "Matalobos (N-640)", "Maunzo", "Meixomence", "Merlín", "Merza", "Merza (Espil)", "Merza (Sulago)", "Millares", "Millán", "Mince", "Moimenta", "Monterroso", "Montrigo", "Moraña (Santa Lucía)", "Morañó", "Moreira", "Morillas", "Mourelos", "Nabás", "Navaza", "Navaza I", "Negreiros", "Noaio", "Nodar", "Noente", "Noveledo", "Nudesa", "O Agro", "O Burgo", "O Campo", "O Carballo", "O Castelo", "O Castro I", "O Couto", "O Eixido", "O Eixo", "O Foxo", "O Marco", "O Monte", "O Pazo", "O Penedo", "O Pereiro", "O Retorno", "O Ribeirao", "O Rollo", "O Sancho", "O Sino", "O Sol", "O Valadoiro", "O Vento", "O Vilar", "Oca", "Oirós", "Oleiros", "Olives (Esmoris)", "Olives (Pazos)", "Olives (Pousada)", "Olives (Viladafonso)", "Ollares I", "Orazo (Orosa)", "Orazo (Vendexa)", "Orazo (igrexa)", "Os Bolos", "Os Castros", "Os Chaos", "Os Chaos 2", "Os Tilos", "Outeiro", "Ouzande", "Painceiros", "Palio de Arriba", "Panadería Remigio", "Parada", "Paradela", "Paradivas", "Parafita", "Paraños", "Pardellas", "Pardemarín", "Paredes", "Parque Montouto", "Pastoriza", "Pazo de Oca", "Pazos", "Pedrouzo", "Pelures", "Pena", "Penagudín", "Penalobeira", "Penalta", "Penarrubia", "Pinlle", "Piñeiro", "Ponte", "Ponte Burata", "Ponte Ledesma", "Pontevea", "Pontevea (centro medico)", "Pontevedra E.A.", "Porcariza", "Porcariza II", "Porráns", "Portapiñeiro", "Portela", "Portovello", "Pousada", "Pousadoiro", "Praderrei", "Prado", "Praza Benito Rivas", "Praza do Antroido", "Praza do concello", "Prevediños", "Proxa", "Pérez Viondi", "Ran", "Rebordaos", "Reboreda", "Reboredo", "Redonde", "Regalade", "Reguenga", "Rellas", "Remesar (Outeiro)", "Remesil", "Remesquide", "Rendo", "Requeixo", "Riamonde", "Riba de Vea", "Riba de Vea (panadería)", "Ribeira", "Ribeiradona", "Ribo", "Riobó (Pena)", "Riobó (Portecelo)", "Riocalvo", "Riomao", "Rodiño Grande", "Rodiño Pequeno", "Rosende", "Rozadela", "Rozas", "Rubio", "Río Calvo", "Rúa D", "Rúa Neira Vilas", "Sabrexo", "Sabrexo I", "Sabucedo", "Salgueiros", "Salmonte", "Sampaio", "Sampaio II", "San Andrés", "San Caetano", "San Fiz", "San Ildefonso", "San Isidro", "San Martiño I", "San Martiño II", "San Miguel", "San Sebastián", "Sanfiz", "Sanguñedo", "Santa Comba", "Santa Cruz de Ribadulla", "Sante", "Santeles", "Santiago E.I.", "Santifoga", "Santomé", "Sar", "Sar de Arriba", "Sarrape", "Sebe (fábrica)", "Senande", "Senra", "Senra I", "Senín", "Sequeiros", "Sergude", "Sestelo", "Señorín", "Siador", "Sieiro", "Silleda", "Silleda II", "Sinteiro", "Soar", "Sobredo", "Sobreira", "Soldecasa", "Susovila II", "Taboada", "Taboada (esquerda)", "Taboada I (dereita)", "Taboada II (dereita)", "Teaño", "Tixoa", "Toiriz", "Tomonde", "Torreboredo", "Toural (Mullerboa)", "Touro", "Traslamela", "Traspedra", "Tresaldeas", "Troáns", "Turces", "Valdariz", "Ventosela", "Verxeles", "Vigo", "Vila", "Vila da Paz", "Vila de Cruces", "Vilaboa", "Vilanova", "Vilanova (transformador)", "Vilar", "Vilar de Mato", "Vilariño", "Vilaverde", "Villaverde", "Xesteira", "Xestoso", "Xindiriz", "Xordedo (lugar)", "Xubrei"],
+      "shared_trip_ids": ["0096801082491435", "0096801084070705", "0096801084481730", "0096801084581930", "0096811082430713", "0096811083481030", "0096811083501030", "0096811084012000", "0096811084201615", "0096811084341435", "0096821082711525", "0096821084471510", "0096831082421435", "0096831083891727", "0096831084371030", "0096831084431435", "0096841083621605", "0096841084541605", "0096851082271607", "0096851083101300", "0096861082750755", "0096861083671300", "0096861084030755", "0096861181111435", "0096871082341607", "0096871084411300", "0096871084491735", "0096881082740810", "0096881083301435", "0096881083330810", "0096881180861530", "0096881181131525", "0096891082290810", "0096891083210810", "0096891083261435", "0096891084211435", "0096891090321730", "0096901082660800", "0096901084151435", "0096901084170800", "0096901084521435", "0096911083581435", "0096911084351435", "0096921082790755", "0096921082961435", "0096921083980755", "0096921084121435", "0096921090331730", "0096931082331435", "0096931083791435", "0096941082361607", "0096941083941735", "0096941084161300", "0096941084561033", "0096961082321435", "0096961082891435", "0096961083311727", "0096971082400745", "0096971082501440", "0096971082811300", "0096971083161440", "0096971083171415", "0096971083201000", "0096971083281700", "0096971083401800", "0096971083411800", "0096971083802000", "0096971083911820", "0096971083930900", "0096971084081300", "0096971084192000", "0096971084241330", "0096971084441700", "0096981083270845", "0096981083751537", "0096981083861617", "0096981084281535", "0096981084311347", "0096991082590805", "0096991083460805", "0096991083531435", "0096991084251435", "0097001082691525", "0097001083151530", "0097011082671435", "0097011199651855", "0097021082640755", "0097021083421540", "0097021083600755", "0097021083841820", "0097021084061435", "0097021084231435", "0097031082801435", "0097031083391030", "0097031083661435", "0097031090301730", "0097041082571900", "0097051082410900", "0097051082871300", "0097051083221607", "0097051083990900", "0097061082310915", "0097061082911605", "0097061083020915", "0097061084091605", "0097071082780905", "0097071083571607", "0097071083691607", "0097071084530905", "0097081082761525", "0097081082881030", "0097081083181530", "0097091082580910", "0097091082951605", "0097091083641605", "0097091083650910", "0097101082481435", "0097101083091727", "0097101083961435", "0097111082540905", "0097111083770905", "0097121082841605", "0097121083611605", "0097131082621010", "0097131083551830", "0097141082471607", "0097141082861300", "0097141083831030", "0097141084391735", "0097161083361610", "0097161084021610", "0097171082650900", "0097171083011607", "0097171083510900", "0097171083631300", "0097181082511607", "0097181084101300", "0097191082390645", "0097191084421930", "0097201082611607", "0097201084041030", "0097201084291300", "0097201084501735", "0097211082551525", "0097211083061030", "0097211083121510", "0097221082521525", "0097221082851510", "0097221083381030", "0097231082721315", "0097231084051645", "0097231084140945", "0097231084551745", "0097231180971645", "0097231181041315", "0097231181070945", "0097231181201745", "0097241082600807", "0097241083031530", "0097241083071535", "0097241083441730", "0097241083870910", "0097251082450810", "0097251083250810", "0097251083921435", "0097251180881525", "0097261082531030", "0097261082821525", "0097261082901845", "0097261083191130", "0097261084001815", "0097261084331400", "0097271082730905", "0097271083040905", "0097271083881607", "0097271083971735", "0097271084221300", "0097281082560750", "0097281082971515", "0097281083241800", "0097281084361300", "0097281180991300", "0097281181140750", "0097281216851410", "0097291082281525", "0097291082700822", "0097291083761530", "0097291083950820", "0097291090291435", "0097711086721155", "0097711087120855", "0097711087821300", "0097711089060855", "0097711091781227", "0097721088151507", "0097721090131507", "0097731087100755", "0097731087791458", "0097731089610755", "0097731089701458", "0097731090201838", "0097751086840905", "0097751088321542", "0097751089101402", "0097751089161542", "0097751089871612", "0097751090000920", "0097751090150920", "0097761086960800", "0097761088450800", "0097771088241730", "0097771089890821", "0097771089951430", "0097771090041430", "0097781086880755", "0097781088561405", "0097781088891345", "0097781090021405", "0097781090190755", "0097791087140800", "0097791087880800", "0097801086690925", "0097801088011200", "0097801088230835", "0097801210971115", "0097821086900835", "0097821088421405", "0097821088591610", "0097821089020905", "0097821089451550", "0097821089470905", "0097821089501550", "0097841087270930", "0097841089341240", "0097841091800940", "0097841091831330", "0097851086620800", "0097851087481345", "0097851087590800", "0097851089041345", "0097861086680835", "0097861087621610", "0097861088841550", "0097861089260905", "0097861089511420", "0097861089670905", "0097861089991550", "0097871086760828", "0097871088161402", "0097871089691402", "0097871089780828", "0097881086550831", "0097881089070831", "0097891086660737", "0097891087931430", "0097891088611430", "0097891089311730", "0097891090210805", "0097901087441430", "0097901088071730", "0097901088211430", "0097901090140818", "0097921086560914", "0097921088970914", "0097921089281535", "0097921090251535", "0097931086601245", "0097931089741000", "0097941087010817", "0097941088751402", "0097941088950817", "0097941089171402", "0097951086780810", "0097951087560810", "0097961087170801", "0097961089030801", "0097971087431505", "0097971088171505", "0097971088990830", "0097991088661507", "0097991089761507", "0098001088491507", "0098001089191507", "0098011087200910", "0098011087711640", "0098011088101535", "0098011088190910", "0098011088831535", "0098031086791630", "0098031087190620", "0098031087241100", "0098031087351630", "0098031087361835", "0098031087551245", "0098031087571500", "0098031087581100", "0098031087631000", "0098031088041815", "0098031088111815", "0098031088121815", "0098031088261815", "0098031088460605", "0098031088651500", "0098031089051530", "0098031089081000", "0098031089391945", "0098031089851245", "0098031090050830", "0098031090101200", "0098031090161000", "0098031090181200", "0098031090221510", "0098031091741800", "0098031091791530", "0098031091811700", "0098041087260940", "0098041089681245", "0098051087040825", "0098051087421345", "0098051088481345", "0098051090080825", "0098061086940635", "0098061087322025", "0098061087601245", "0098061087691810", "0098061087911800", "0098061087971010", "0098061087982015", "0098061088132230", "0098061088311910", "0098061088521715", "0098061088670930", "0098061088771030", "0098061089121130", "0098061089421055", "0098061089431610", "0098061089440725", "0098061089531500", "0098061089552053", "0098061089591710", "0098061089720810", "0098061089770945", "0098061089941900", "0098061089962115", "0098061091430915", "0098061091441300", "0098061091471215", "0098061091481930", "0098061091491130", "0098061091501600", "0098061091511815", "0098061091530900", "0098061091571305", "0098061091582030", "0098061091590900", "0098061091601815", "0098061091611600", "0098061091642030", "0098061091651215", "0098061091671305", "0098061091681930", "0098061091701130", "0098061091721630", "0098061091731345", "0098061175822255", "0098061211072230", "0098061222720645", "0098061222731515", "0098071087210755", "0098071087281730", "0098071089201430", "0098071089560755", "0098071089711430", "0098081086701000", "0098081086830900", "0098081088941215", "0098081090241215", "0098091086971200", "0098091088510900", "0098091089410900", "0098091089651200", "0098101086650730", "0098101087341145", "0098101087501215", "0098101087742100", "0098101087850900", "0098101087901000", "0098101087941000", "0098101088001315", "0098101088401515", "0098101088720900", "0098101088982100", "0098101089010830", "0098101089211945", "0098101089601545", "0098101089862000", "0098101089881245", "0098101089931530", "0098101090091330", "0098101175792015", "0098101175810900", "0098101211080930", "0098101222741500", "0098101222751530", "0098111087471345", "0098111089621345", "0098121087021130", "0098121088800930", "0098121220490730", "0098121222710745", "0098131087301507", "0098131088711507", "0098141087091215", "0098141087771815", "0098141088030740", "0098141088471115", "0098151086751510", "0098151088821510", "0098161087051100", "0098161087920915", "0098171086571145", "0098171088781035", "0098181086740853", "0098181087461610", "0098181087891540", "0098181087951540", "0098181088960908", "0098181089150853", "0098181090121420", "0098191086711010", "0098191087371245", "0098191089001010", "0098191089571245", "0098211086950751", "0098211087960751", "0098221086861300", "0098231087161200", "0098241086890720", "0098241086911630", "0098241087381900", "0098241087611300", "0098241087661150", "0098241088061815", "0098241088351300", "0098241088691530", "0098241088730720", "0098241088931905", "0098241089091100", "0098241089131440", "0098241089351150", "0098241089482000", "0098241089581100", "0098241089801530", "0098241089980700", "0098241090031645", "0098241090060810", "0098241211010810", "0098251087230904", "0098251087751542", "0098251088021612", "0098251088330916", "0098251088621542", "0098251089630916", "0098251089841402", "0098261086990900", "0098261087491605", "0098261087651805", "0098261088701605", "0098261089490900", "0098271086800805", "0098271088430805", "0098281087070832", "0098281087721402", "0098281088571402", "0098281088860832", "0098291086820730", "0098291087111100", "0098291088531300", "0098291088581910", "0098291088921300", "0098291089791100", "0098301090271325", "0098501091761245", "0098501240310825", "0098501240321335", "0098511091751430", "0108361175781425", "0108361175800750", "0110561180891435", "0110561181211727", "0110571180941435", "0110581180920905", "0110581180980905", "0110591180931000", "0110591181121130", "0110601180870733", "0110611180960800", "0110611181150800", "0110621180901435", "0110621181061930", "0110621181171730", "0110621181190705", "0110631180951435", "0110631181161727", "0110641180911435", "0112201199640820", "0112211199630915", "0112211199660915", "0113071209871606", "0113071209881300", "0113221210921430", "0113221210941730", "0113221210981430", "0113231210901430", "0113231211021430", "0113231211051730", "0113241210851430", "0113241210951430", "0113241210961730", "0113251210891515", "0113251210991515", "0113261210911430", "0113261211031430", "0113261211061730", "0113271210881430", "0113271212371730", "0113271212381430", "0113281210871507", "0113281210931507", "0113291210861430", "0113291211001430", "0113291211041730", "0114641221051820", "0114641221061330", "0115361234130805", "0115371234140818", "0116561240831945", "0116561240841745", "0116561240850830", "0116561240861330", "0116561240931130", "0117101249210915", "0117101249220915"],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 1.0,
+      "stop_overlap_ratio": 0.3716881150643452,
+      "trip_overlap_ratio": 0.98014440433213,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["013", "015"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "014-015",
+      "dataset_a": "014",
+      "dataset_b": "015",
+      "shared_agency_ids": ["1"],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": ["A Baiuca", "A Brea", "A Carballeira", "A Costa", "A Ermida", "A Fonte", "A Regueira", "A Revolta", "A Ribeira", "A Torre", "Barrio", "Campolongo", "Campos", "Cancelas", "Cangas", "Carballal", "Casal", "Casas Novas", "Castelo", "Castro", "Catro Camiños", "Cimadevila", "Cuíña", "Figueroa", "Fondevila", "Igrexa", "Insua", "Leiro", "Liñares", "Loureda", "Montouto", "O Burgo", "O Carballo", "O Casal", "O Castro", "O Couso", "O Monte", "O Seixo", "O Vilar", "Os Castros", "Os Loureiros", "Outeiro", "Paradela", "Piñeiro", "Piñoi", "Pousada", "Quintela", "Reboredo", "San Fiz", "San Isidro", "San Martiño", "San Tirso", "San Vicente", "Sobrado", "Taboada", "Vales", "Vilanova", "Vilar"],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "UNKNOWN",
+        "publisher_b": "UNKNOWN",
+        "publisher_url_a": "UNKNOWN",
+        "publisher_url_b": "UNKNOWN",
+        "version_a": "UNKNOWN",
+        "version_b": "UNKNOWN",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["UNKNOWN", "UNKNOWN"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["014", "015"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "016-017",
+      "dataset_a": "016",
+      "dataset_b": "017",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": [],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autobuses La Unión, S.A.",
+        "publisher_b": "Tuvisa",
+        "publisher_url_a": "https://www.autobuseslaunion.com",
+        "publisher_url_b": "https://www.vitoria-gasteiz.org/tuvisa",
+        "version_a": "UNKNOWN",
+        "version_b": "1.0",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260920", "20261021"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.0,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "PRIORITY_PAIR_WITH_NO_SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "UNRESOLVED",
+      "confidence": "UNKNOWN",
+      "reason": "No decisive provenance evidence; structural review is incomplete.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["016", "017"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "016-018",
+      "dataset_a": "016",
+      "dataset_b": "018",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["10", "11", "12", "18", "19", "20", "21", "22", "23", "24", "26", "27", "28", "29", "30", "31", "32", "34", "35", "354", "355", "356", "357", "358", "36", "360", "361", "362", "363", "364", "365", "367", "368", "369", "37", "370", "371", "373", "374", "375", "376", "377", "378", "379", "38", "384", "385", "386", "387", "389", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "52", "61", "66", "67", "68", "69", "71", "72", "73", "74", "75", "76", "9", "90", "91", "92", "93", "95", "96", "97", "98", "99"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autobuses La Unión, S.A.",
+        "publisher_b": "Bilbobus",
+        "publisher_url_a": "https://www.autobuseslaunion.com",
+        "publisher_url_b": "http://www.bilbao.eus/bilbobus",
+        "version_a": "UNKNOWN",
+        "version_b": "1789938057086",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260901", "20270630"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.7924528301886793,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["016", "018"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "016-019",
+      "dataset_a": "016",
+      "dataset_b": "019",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1", "100", "11", "12", "17", "18", "2", "20", "21", "22", "23", "24", "27", "28", "29", "3", "30", "31", "32", "33", "34", "35", "354", "356", "357", "358", "36", "361", "362", "363", "37", "373", "374", "375", "376", "377", "378", "379", "38", "384", "385", "386", "387", "389", "39", "4", "40", "41", "42", "43", "44", "45", "5", "6", "61", "66", "68", "69", "7", "70", "71", "8", "9", "90", "91", "92", "93", "95", "96", "97", "98", "99"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Autobuses La Unión, S.A.",
+        "publisher_b": "Lantik",
+        "publisher_url_a": "https://www.autobuseslaunion.com",
+        "publisher_url_b": "https://www.lantik.bizkaia.eus/",
+        "version_a": "UNKNOWN",
+        "version_b": "20260908",
+        "feed_dates_a": ["UNKNOWN", "UNKNOWN"],
+        "feed_dates_b": ["20260907", "20261107"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.6792452830188679,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "UNKNOWN",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["016", "019"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "017-018",
+      "dataset_a": "017",
+      "dataset_b": "018",
+      "shared_agency_ids": [],
+      "shared_route_ids": ["10", "11", "5", "7", "8", "9"],
+      "shared_stop_ids": ["1033", "1041", "1047", "1049", "1051", "1052", "1056", "1075", "1120", "1192", "1193", "1262", "1327", "1341", "1417"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Tuvisa",
+        "publisher_b": "Bilbobus",
+        "publisher_url_a": "https://www.vitoria-gasteiz.org/tuvisa",
+        "publisher_url_b": "http://www.bilbao.eus/bilbobus",
+        "version_a": "1.0",
+        "version_b": "1789938057086",
+        "feed_dates_a": ["20260920", "20261021"],
+        "feed_dates_b": ["20260901", "20270630"]
+      },
+      "route_overlap_ratio": 0.1935483870967742,
+      "stop_overlap_ratio": 0.04076086956521739,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["017", "018"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "017-019",
+      "dataset_a": "017",
+      "dataset_b": "019",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1003", "1040", "1044", "1045", "1046", "1047", "1048", "1049", "1050", "1051", "1052", "1054", "1055", "1056", "1058", "1059", "1061", "1062", "1063", "1064", "1065", "1066", "1067", "1068", "1069", "1070", "1071", "1073", "1074", "1075", "1077", "1079", "1080", "1081", "1082", "1084", "1086", "1094", "1095", "1097", "1099", "1100", "1106", "1107", "1108", "1109", "1114", "1115", "1116", "1117", "1118", "1119", "1120", "1134", "1135", "1136", "1137", "1138", "1139", "1140", "1141", "1142", "1143", "1147", "1148", "1149", "1150", "1152", "1153", "1154", "1155", "1169", "1170", "1171", "1172", "1175", "1180", "1181", "1182", "1183", "1184", "1185", "1186", "1187", "1188", "1189", "1190", "1191", "1192", "1193", "1194", "1195", "1198", "1199", "1200", "1201", "1202", "1203", "1204", "1205", "1206", "1207", "1208", "1209", "1210", "1211", "1212", "1214", "1215", "1217", "1218", "1219", "1220", "1221", "1224", "1225", "1226", "1227", "1235", "1236", "1237", "1238", "1239", "1240", "1241", "1242", "1243", "1245", "1246", "1247", "1248", "1249", "1250", "1251", "1255", "1258", "1260", "1263", "1267", "1268", "1270", "1271", "1272", "1273", "1275", "1276", "1279", "1280", "1281", "1282", "1295", "1297", "1298", "1299", "1300", "1301", "1306", "1309", "1311", "1312", "1314", "1315", "1316", "1317", "1318", "1319", "1320", "1321", "1322", "1323", "1324", "1325", "1326", "1327", "1328", "1329", "1330", "1331", "1334", "1335", "1336", "1337", "1338", "1339", "1340", "1341", "1342", "1343", "1344", "1345", "1346", "1347", "1348", "1349", "1351", "1352", "1353", "1355", "1356", "1357", "1359", "1360", "1361", "1362", "1363", "1364", "1365", "1366", "1367", "1368", "1369", "1372", "1373", "1374", "1375", "1376", "1377", "1378", "1379", "1380", "1381", "1382", "1383", "1384", "1385", "1386", "1387", "1388", "1389", "1390", "1391", "1392", "1393", "1394", "1395", "1397", "1398", "1399", "1400", "1401", "1402", "1403", "1404", "1405", "1406", "1407", "1408", "1409", "1410", "1412", "1413", "1414", "1415", "1416", "1417", "1418", "1419", "1420", "1421", "1422", "1423", "1424"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Tuvisa",
+        "publisher_b": "Lantik",
+        "publisher_url_a": "https://www.vitoria-gasteiz.org/tuvisa",
+        "publisher_url_b": "https://www.lantik.bizkaia.eus/",
+        "version_a": "1.0",
+        "version_b": "20260908",
+        "feed_dates_a": ["20260920", "20261021"],
+        "feed_dates_b": ["20260907", "20261107"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.7119565217391305,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["017", "019"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "pair_id": "018-019",
+      "dataset_a": "018",
+      "dataset_b": "019",
+      "shared_agency_ids": [],
+      "shared_route_ids": [],
+      "shared_stop_ids": ["1047", "1049", "1051", "1052", "1056", "1057", "1075", "11", "1120", "118", "119", "1192", "1193", "12", "120", "121", "122", "123", "126", "127", "128", "1284", "1286", "129", "13", "130", "131", "132", "1327", "133", "134", "1341", "137", "138", "139", "14", "140", "141", "1417", "145", "146", "147", "150", "151", "153", "154", "1543", "156", "157", "158", "159", "16", "160", "161", "162", "163", "164", "165", "167", "168", "1680", "1681", "169", "171", "1711", "172", "174", "175", "177", "178", "18", "181", "182", "183", "184", "189", "198", "199", "20", "201", "203", "204", "205", "206", "207", "208", "21", "211", "212", "213", "214", "215", "216", "22", "221", "223", "224", "227", "228", "229", "23", "230", "231", "232", "234", "236", "237", "24", "241", "244", "248", "251", "252", "253", "255", "256", "257", "258", "259", "260", "261", "262", "263", "264", "265", "266", "267", "268", "269", "27", "270", "271", "2713", "272", "2721", "2722", "2723", "2724", "2725", "273", "274", "275", "276", "277", "278", "279", "28", "280", "281", "282", "286", "287", "29", "290", "291", "292", "293", "294", "30", "300", "301", "302", "303", "305", "306", "307", "308", "309", "31", "310", "311", "312", "313", "314", "315", "316", "3167", "318", "32", "320", "321", "323", "324", "325", "326", "327", "328", "330", "331", "332", "333", "334", "335", "336", "337", "338", "339", "34", "340", "341", "342", "343", "345", "346", "347", "348", "349", "35", "350", "351", "352", "353", "354", "356", "357", "358", "36", "361", "362", "363", "3685", "37", "372", "373", "374", "375", "376", "377", "378", "379", "38", "382", "383", "384", "385", "386", "387", "389", "39", "390", "391", "392", "393", "394", "395", "3963", "397", "398", "399", "40", "400", "401", "402", "403", "404", "405", "406", "4072", "408", "409", "41", "410", "418", "419", "42", "420", "421", "424", "425", "426", "43", "4328", "433", "434", "435", "436", "438", "44", "442", "443", "445", "446", "447", "449", "45", "450", "451", "453", "460", "461", "463", "464", "465", "466", "467", "468", "469", "472", "476", "478", "479", "529", "531", "533", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "68", "69", "697", "71", "756", "85", "86", "87", "88", "9", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99"],
+      "shared_agency_names": [],
+      "shared_route_short_long_names": [],
+      "shared_stop_names": [],
+      "shared_trip_ids": [],
+      "feed_info_comparison": {
+        "publisher_a": "Bilbobus",
+        "publisher_b": "Lantik",
+        "publisher_url_a": "http://www.bilbao.eus/bilbobus",
+        "publisher_url_b": "https://www.lantik.bizkaia.eus/",
+        "version_a": "1789938057086",
+        "version_b": "20260908",
+        "feed_dates_a": ["20260901", "20270630"],
+        "feed_dates_b": ["20260907", "20261107"]
+      },
+      "route_overlap_ratio": 0.0,
+      "stop_overlap_ratio": 0.631578947368421,
+      "trip_overlap_ratio": 0.0,
+      "operator_relation": "DIFFERENT_OR_UNKNOWN",
+      "source_relation": "NAP_IDS_URL_NOT_RECOVERED",
+      "temporal_relation": "FEED_DATE_RANGE_OVERLAP",
+      "structural_relation": "SHARED_IDENTIFIERS",
+      "shared_feed_publisher": false,
+      "shared_feed_version": false,
+      "classification": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "reason": "One or more shared agency, route, stop, publisher, version, or identity signals; insufficient to establish lineage.",
+      "evidence_sources": [
+        {
+          "type": "GTFS_ZIP_COMPARISON",
+          "datasets": ["018", "019"],
+          "fields": "agency.txt/routes.txt/stops.txt/trips.txt/feed_info.txt"
+        }
+      ],
+      "independence_decision": "UNRESOLVED",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    }
+  ],
+  "independence_matrix": [
+    {
+      "dataset_a": "002",
+      "dataset_b": "005",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "010",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "012",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "013",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "014",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "015",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "017",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "008",
+      "dataset_b": "018",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "009",
+      "dataset_b": "019",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "010",
+      "dataset_b": "012",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "010",
+      "dataset_b": "013",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "010",
+      "dataset_b": "014",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "010",
+      "dataset_b": "015",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "011",
+      "dataset_b": "016",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "011",
+      "dataset_b": "017",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "011",
+      "dataset_b": "018",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "011",
+      "dataset_b": "019",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "012",
+      "dataset_b": "013",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "012",
+      "dataset_b": "014",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "012",
+      "dataset_b": "015",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "013",
+      "dataset_b": "014",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "013",
+      "dataset_b": "015",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "014",
+      "dataset_b": "015",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "016",
+      "dataset_b": "017",
+      "relationship": "UNRESOLVED",
+      "confidence": "UNKNOWN",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "016",
+      "dataset_b": "018",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "016",
+      "dataset_b": "019",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "017",
+      "dataset_b": "018",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "017",
+      "dataset_b": "019",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    },
+    {
+      "dataset_a": "018",
+      "dataset_b": "019",
+      "relationship": "POSSIBLY_RELATED",
+      "confidence": "LOW",
+      "can_be_opposite_split_sides": "UNRESOLVED"
+    }
+  ]
+}

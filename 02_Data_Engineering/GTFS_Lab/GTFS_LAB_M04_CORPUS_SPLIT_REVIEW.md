@@ -1,6 +1,6 @@
 # GTFS Lab M04-A — Corpus split review
 
-**Estado:** `M04A_BLOCKED_BY_CORPUS_PROVENANCE`
+**Estado tras M04-A1:** `M04A_PROVENANCE_PARTIALLY_RECOVERED` (detalle y límites en Q–W)
 **Baseline:** `b363079e5b8c8131f484917098d06b3a12a13eeb`
 **Split:** no propuesto; no existe `split_sha256` ni asignación `DEVELOPMENT` / `HOLDOUT`.
 **Golden Corpus V1:** independiente e intacto.
@@ -98,3 +98,62 @@ Hasta resolverlo, el gate de split no puede emitir `UNDER_REVIEW` para una asign
 En el worktree aislado: M01 12/12 PASS; M02 PASS; M03-A Contract PASS; Golden Corpus PASS con dos casos y el SHA esperado; Golden Evaluator PASS 11/11; Golden Regression PASS para los dos casos; GTFS_Lab V1 PASS; py_compile y `git diff --check` PASS. Compliance V1 se ejecutó en solo lectura desde el checkout local vigente porque su base protegida no está en Git; PASS con hash idéntico antes/después `4DB39FA5…BC8048B`. La salida de esa ejecución quedó en una carpeta temporal, fuera del repositorio.
 
 No se declara un PASS del `TDL_CORPUS_SPLIT_GATE` para los 20 datasets, ni `TDL_TRUST_FOUNDATION = PASS`.
+
+## Q. Provenance recovery
+
+La recuperación M04-A1 está registrada de forma reproducible en `corpus/provenance_v1.json`; el proceso es `gtfs_lab/corpus_provenance.py`. Leyó los 20 `source_metadata.json`, los 20 ZIP originales locales y las tablas GTFS disponibles. Los hashes SHA-256 de todos los ZIP coinciden con el hash declarado en metadata. El ZIP no se copia ni modifica. Los archivos originales son excluidos de Git; el proceso recibe `--corpus-root` local y no persiste rutas absolutas.
+
+Por dataset se conserva familia de benchmark, operador declarado, agencia, `feed_info`, fechas de feed, plataforma, IDs/URL de origen, hash y fuentes de evidencia. Los timestamps `YYYYMMDD_HHMMSS` en los nombres se registran como `filename_timestamp_candidate`; `timestamp_semantics=UNKNOWN` y `capture_date=UNKNOWN` mientras no haya prueba local que les asigne significado. Las fechas de `feed_info` son fechas de vigencia del feed, no fechas de captura.
+
+Los metadatos dejan `source_dataset_id`, `source_url`, `capture_date`, `download_date` y `nap_last_update` nulos o vacíos en los 20 casos. Revisé los 20 snapshots PNG preservados: muestran la página NAP del operador, fechas visibles de actualización y rangos de servicio, pero no un ID/URL de recurso recuperable en la vista capturada. Por tanto: `NAP_SOURCE_ID_NOT_RECOVERED_LOCALLY`. Las fechas/rangos transcritos figuran por separado en `provenance_v1.json`; no se tratan como captura del ZIP. Los cuatro snapshots 016–019 se resumen en S.
+
+`agency.txt` apoya identidad operacional, no lineage por sí solo. `feed_info` falta en parte de los ZIP y sus campos vacíos se conservan como `UNKNOWN`. Los feeds 016–019 muestran publishers, URLs, versiones y rangos distintos o no declarados, lo que no prueba independencia de su estructura compartida.
+
+La vista `normalization` separa `raw_value`, `normalized_display_value` y método de visualización. El fallback CP1252 solo se usa al decodificar tablas GTFS para comparar texto; los bytes fuente no se reescriben. La reparación reversible de mojibake de los nombres del manifest tampoco sustituye los valores originales.
+
+## R. Relationship analysis
+
+`corpus/relationships_v1.json` reproduce los 28 pares de `inventory_v1.json` con IDs compartidos y agrega el sexto par prioritario 016–017, que no tenía coincidencias estructurales. Registra IDs y nombres compartidos de agencia/ruta/parada, IDs de viajes, solapamientos de rutas/paradas/viajes, ambos `feed_info`, relación temporal, clasificación, confianza, razón y la decisión de independencia. Se incluyen explícitamente las seis combinaciones 016–019.
+
+No se calcula la independencia con thresholds numéricos. Los ZIP exactos duplicados podrían clasificarse `SAME_SOURCE_LINEAGE`; no hay ninguno. Los pares con solo solapamientos estructurales se mantienen `POSSIBLY_RELATED`/`LOW`; no hay base para `INDEPENDENT` o `LIKELY_INDEPENDENT`. Los casos sin señal decisiva continúan `UNRESOLVED`. Los valores de solapamiento son descriptores, no reglas automáticas.
+
+La matriz resultante no autoriza lados opuestos: `NO` solo para lineage exacta, `UNRESOLVED` para relaciones posibles o no resueltas. Ningún par recibe `YES`. Estos datos apoyan revisión de unidad de split, no una asignación.
+
+## S. 016–019 deep review
+
+Comparación directa de bytes/tablas de entrada; no se consultaron findings ni resultados del validator. No hay IDs de agencia compartidos ni IDs de viajes compartidos entre las seis combinaciones. Los nombres de rutas y paradas tampoco coinciden como cadenas, aunque varios feeds comparten IDs de paradas.
+
+| Par | Agency IDs | Route IDs | Stop IDs | Feed/identidad observada | Clasificación |
+| --- | ---: | ---: | ---: | --- | --- |
+| 016–017 | 0 | 0 | 0 | La Unión vs Tuvisa; publishers y URLs diferentes. Sin feed dates/version en 016; 017 `20260920–20261021`, v1.0. | UNRESOLVED |
+| 016–018 | 0 | 0 | 84 | La Unión vs Bilbobus; publishers/URLs distintos. 016 sin fechas/version; 018 `20260901–20270630`, version `1789938057086`. | POSSIBLY_RELATED |
+| 016–019 | 0 | 0 | 72 | La Unión vs publisher Lantik; URLs distintas. 019 `20260907–20261107`, version `20260908`. | POSSIBLY_RELATED |
+| 017–018 | 0 | 6 | 15 | Tuvisa vs Bilbobus; publishers/URLs/versiones y rangos distintos. | POSSIBLY_RELATED |
+| 017–019 | 0 | 0 | 262 | Tuvisa vs Lantik; publishers/URLs/versiones y rangos distintos. | POSSIBLY_RELATED |
+| 018–019 | 0 | 0 | 336 | Bilbobus vs Lantik; publishers/URLs/versiones y rangos distintos. | POSSIBLY_RELATED |
+
+Agency identity: `launion` / Autobuses La Unión, S.A.; `320` / Tuvisa; `Bilbobus` / Bilbobus; `200` / Bizkaibus. Los cuatro snapshots NAP muestran operadores y ámbitos diferenciados. Las imágenes muestran “Actualizado el 22/9/2026” para 016, 017 y 018, y “10/9/2026” para 019; rangos NAP 21/9/2026–21/9/2027, 20/9/2026–21/10/2026, 1/9/2026–30/6/2027 y 6/1/2017–23/12/2026, respectivamente. Estas fechas son evidencia visible del snapshot, no `capture_date` del ZIP. Evidencia: `20_clientes_reales/FAMILY_D_MATURE_BENCHMARK/016_alu/01_nap_snapshot/La Union.png`, `017_tuvisa/01_nap_snapshot/TUVISA.png`, `018_bilbobus/01_nap_snapshot/Bilbobus.png`, `019_bizkaibus/01_nap_snapshot/bizkaibus.png`.
+
+El solapamiento de 016 con 018/019 y de 017/018/019 en IDs de paradas no viene acompañado de identidad de agencia, nombre de parada idéntico, trips compartidos ni publisher común. Es insuficiente para inferir el origen del ID o separar los feeds en lados opuestos.
+
+## T. Source lineage candidates
+
+`source_lineage_candidates=[]`. No hay duplicados exactos ni evidencia local de un ID de fuente que permita agrupar feeds por lineage. Las familias A–D siguen siendo cohortes del benchmark, nunca lineage. Los grupos 016–019 quedan como relaciones potenciales por resolver, no como lineage asignada.
+
+## U. Independence matrix
+
+La matriz completa está embebida en `relationships_v1.json` mediante `independence_decision` y `can_be_opposite_split_sides`. Hay 28 pares del inventario y la comparación auxiliar 016–017: ningún `YES`, `NO` solo para SHA idéntico (cero pares), y el resto `UNRESOLVED`. El estado del conjunto es por tanto insuficiente para diseñar un split defendible.
+
+## V. Remaining custodian questions
+
+1. Para los 20 IDs de benchmark, ¿qué ID y URL de recurso NAP corresponden a cada ZIP, y qué registro local/fecha de descarga los relaciona? La búsqueda local encontró campos nulos en metadata y screenshots sin identificador de recurso visible.
+2. Para los pares con IDs de paradas compartidos (en especial 016–019), ¿los IDs provienen de un registro común, de una red de transbordo o de reutilización independiente? ¿Debe mantenerse alguno agrupado por lineage/proveedor?
+3. ¿Qué evidencia primaria documenta los timestamps de nombre de ZIP: descarga, publicación, captura u otra operación? Hasta responder, no son fechas semánticas.
+
+No se pregunta por agency/feed fields ni por solapamientos: ya están extraídos del input local.
+
+## W. Updated verdict
+
+**Estado:** `M04A_PROVENANCE_PARTIALLY_RECOVERED`. Se recuperó identidad de agencias, metadata `feed_info`, fechas de feed y análisis estructural para los 20 inputs; no se recuperaron los IDs/URLs NAP ni significado de timestamps, y quedan relaciones críticas de lineage sin resolver. No proponer split ni holdout; no iniciar M04-B/M05; Golden Corpus V1 sigue intacto; `TDL_TRUST_FOUNDATION != PASS`.
+
+Gate reproducible: `python gtfs_lab/corpus_provenance.py --corpus-root <corpus-local> --provenance corpus/provenance_v1.json --relationships corpus/relationships_v1.json --check`. Rechaza cobertura incompleta, ausencia de fuentes, confianza/enum inválida, fecha de captura derivada únicamente del nombre, campos de validator, rutas absolutas, relaciones independientes sin razón y relaciones unresolved ocultas. Los tests negativos están en `tests/test_corpus_provenance.py`.
