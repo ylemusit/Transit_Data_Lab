@@ -48,7 +48,7 @@ El control 006 conserva pipeline completado, ocho reglas PASS y cero hallazgos. 
 
 ## I. Rule-result comparison V1/V2
 
-V1: 36 PASS, 4 `INSPECTION_ERROR`; dataset 008 no alcanzó reglas. V2: 48 PASS y ningún error. Los siete resultados GTFS_Lab locales de cada dataset evaluable permanecieron PASS. En 008 V1 no hay resultados comparables porque la ingestión impidió ejecutar reglas.
+V1: 36 PASS, 4 `INSPECTION_ERROR`; dataset 008 no alcanzó reglas. V2: 48 PASS y ningún error. Los siete resultados GTFS_Lab locales de cada dataset evaluable permanecieron PASS. En 008 V1 no hay resultados comparables porque la ingestión impidió ejecutar reglas. Parser: `gtfs-lab-csv/1` → `gtfs-lab-csv/2`. Evaluator Compliance: V1 SHA `efa87d537109c26c1921e32f896359e280f09e2d6cf579f61a5c2f804afa3b70` → V2 SHA `60ce250684f97e25d77bbe031055b3b458d2a013497b4076989aa7c30ea521eb`; regla semántica no cambió. B1 no persistió listas de warnings por dataset, así que la comparación de warnings V1/V2 no está disponible; el warning V2 observado fue el de 008 descrito arriba.
 
 ## J. Findings
 
