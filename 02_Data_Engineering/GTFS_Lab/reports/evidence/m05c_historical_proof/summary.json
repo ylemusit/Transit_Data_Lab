@@ -1,0 +1,368 @@
+{
+  "contract": "M05C_HistoricalProof",
+  "version": "1.0.0",
+  "comparison_engine": "ChangeAttribution",
+  "comparison_engine_version": "1.0.0",
+  "adapter": "read-only persisted M04 B1/B3 summary adapter",
+  "baseline": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+  "candidate": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+  "lineage": {
+    "dataset_count": 6,
+    "independent_lineage_unit_count": 5,
+    "linked_dataset_ids": [
+      "013",
+      "015"
+    ]
+  },
+  "datasets": [
+    {
+      "dataset_id": "006",
+      "lineage_unit": "DATASET-006",
+      "source_sha256": {
+        "baseline": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+        "candidate": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_COMPLETED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "UNCHANGED_STATUS",
+        "changed": false,
+        "differences": []
+      },
+      "attribution": "MULTIPLE_CAUSES",
+      "supported_causes": [
+        "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+        "PARSER_IMPLEMENTATION_CHANGE"
+      ],
+      "evidence_state": "PARTIAL",
+      "comparability": {
+        "status": "PARTIALLY_COMPARABLE",
+        "reasons": [
+          "CANDIDATE_ENGINE_GTFS_LAB_VERSION_NOT_PERSISTED",
+          "BASELINE_WARNING_LIST_NOT_PERSISTED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/0",
+          "dataset_id": "006",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/0",
+          "dataset_id": "006",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [],
+        "baseline_execution_errors": [],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": null
+    },
+    {
+      "dataset_id": "008",
+      "lineage_unit": "DATASET-008",
+      "source_sha256": {
+        "baseline": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+        "candidate": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_FAILED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "NOT_COMPARABLE",
+        "changed": null,
+        "differences": []
+      },
+      "attribution": "NOT_COMPARABLE",
+      "supported_causes": [],
+      "evidence_state": "NOT_COMPARABLE",
+      "comparability": {
+        "status": "NOT_COMPARABLE",
+        "reasons": [
+          "RULE_SEMANTIC_IDENTITY_SHAPE_UNSUPPORTED_BY_CHANGE_ATTRIBUTION_1_0_0"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/1",
+          "dataset_id": "008",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/1",
+          "dataset_id": "008",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [
+          "EMPTY_CSV_RECORD_IGNORED table=shapes.txt lines=1869 count=1"
+        ],
+        "baseline_execution_errors": [
+          {
+            "type": "INGESTION_ERROR",
+            "message": "CSV malformado en shapes.txt, registro 1869: 0 campos; cabecera 4"
+          }
+        ],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": "PARSER_IMPLEMENTATION_CHANGE; V2 completed ingestion and rules; line 1869 blank physical record ignored"
+    },
+    {
+      "dataset_id": "013",
+      "lineage_unit": "LINEAGE-013-015",
+      "source_sha256": {
+        "baseline": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+        "candidate": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_COMPLETED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "STATUS_CHANGED",
+        "changed": true,
+        "differences": [
+          {
+            "rule_id": "V1-RULE-GTFS",
+            "change": "STATUS_CHANGED",
+            "baseline_status": "INSPECTION_ERROR",
+            "candidate_status": "PASS"
+          }
+        ]
+      },
+      "attribution": "MULTIPLE_CAUSES",
+      "supported_causes": [
+        "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+        "PARSER_IMPLEMENTATION_CHANGE"
+      ],
+      "evidence_state": "PARTIAL",
+      "comparability": {
+        "status": "PARTIALLY_COMPARABLE",
+        "reasons": [
+          "CANDIDATE_ENGINE_GTFS_LAB_VERSION_NOT_PERSISTED",
+          "BASELINE_WARNING_LIST_NOT_PERSISTED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/2",
+          "dataset_id": "013",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/2",
+          "dataset_id": "013",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [],
+        "baseline_execution_errors": [],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": null
+    },
+    {
+      "dataset_id": "015",
+      "lineage_unit": "LINEAGE-013-015",
+      "source_sha256": {
+        "baseline": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+        "candidate": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_COMPLETED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "STATUS_CHANGED",
+        "changed": true,
+        "differences": [
+          {
+            "rule_id": "V1-RULE-GTFS",
+            "change": "STATUS_CHANGED",
+            "baseline_status": "INSPECTION_ERROR",
+            "candidate_status": "PASS"
+          }
+        ]
+      },
+      "attribution": "MULTIPLE_CAUSES",
+      "supported_causes": [
+        "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+        "PARSER_IMPLEMENTATION_CHANGE"
+      ],
+      "evidence_state": "PARTIAL",
+      "comparability": {
+        "status": "PARTIALLY_COMPARABLE",
+        "reasons": [
+          "CANDIDATE_ENGINE_GTFS_LAB_VERSION_NOT_PERSISTED",
+          "BASELINE_WARNING_LIST_NOT_PERSISTED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/3",
+          "dataset_id": "015",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/3",
+          "dataset_id": "015",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [],
+        "baseline_execution_errors": [],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": null
+    },
+    {
+      "dataset_id": "017",
+      "lineage_unit": "DATASET-017",
+      "source_sha256": {
+        "baseline": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+        "candidate": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_COMPLETED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "STATUS_CHANGED",
+        "changed": true,
+        "differences": [
+          {
+            "rule_id": "V1-RULE-GTFS",
+            "change": "STATUS_CHANGED",
+            "baseline_status": "INSPECTION_ERROR",
+            "candidate_status": "PASS"
+          }
+        ]
+      },
+      "attribution": "MULTIPLE_CAUSES",
+      "supported_causes": [
+        "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+        "PARSER_IMPLEMENTATION_CHANGE"
+      ],
+      "evidence_state": "PARTIAL",
+      "comparability": {
+        "status": "PARTIALLY_COMPARABLE",
+        "reasons": [
+          "CANDIDATE_ENGINE_GTFS_LAB_VERSION_NOT_PERSISTED",
+          "BASELINE_WARNING_LIST_NOT_PERSISTED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/4",
+          "dataset_id": "017",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/4",
+          "dataset_id": "017",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [],
+        "baseline_execution_errors": [],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": null
+    },
+    {
+      "dataset_id": "018",
+      "lineage_unit": "DATASET-018",
+      "source_sha256": {
+        "baseline": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+        "candidate": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+        "status": "MATCH"
+      },
+      "pipeline_status": {
+        "baseline": "PIPELINE_COMPLETED",
+        "candidate": "PIPELINE_COMPLETED"
+      },
+      "result_change": {
+        "status": "STATUS_CHANGED",
+        "changed": true,
+        "differences": [
+          {
+            "rule_id": "V1-RULE-GTFS",
+            "change": "STATUS_CHANGED",
+            "baseline_status": "INSPECTION_ERROR",
+            "candidate_status": "PASS"
+          }
+        ]
+      },
+      "attribution": "MULTIPLE_CAUSES",
+      "supported_causes": [
+        "COMPLIANCE_EVALUATOR_IMPLEMENTATION_CHANGE",
+        "PARSER_IMPLEMENTATION_CHANGE"
+      ],
+      "evidence_state": "PARTIAL",
+      "comparability": {
+        "status": "PARTIALLY_COMPARABLE",
+        "reasons": [
+          "CANDIDATE_ENGINE_GTFS_LAB_VERSION_NOT_PERSISTED",
+          "BASELINE_WARNING_LIST_NOT_PERSISTED"
+        ]
+      },
+      "evidence_refs": [
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v1/first_evaluation_summary.json",
+          "json_pointer": "/datasets/5",
+          "dataset_id": "018",
+          "side": "baseline"
+        },
+        {
+          "evidence_ref": "reports/evidence/holdout_evaluation_v2/evaluation_summary.json",
+          "json_pointer": "/datasets/5",
+          "dataset_id": "018",
+          "side": "candidate"
+        }
+      ],
+      "historical_support": {
+        "baseline_warnings": "NOT_PERSISTED_IN_B1_SUMMARY",
+        "candidate_warnings": [],
+        "baseline_execution_errors": [],
+        "candidate_execution_errors": []
+      },
+      "supporting_historical_interpretation": null
+    }
+  ],
+  "verdict": "M05C_HISTORICAL_PROOF_READY_FOR_REVIEW",
+  "limitations": [
+    "Dataset 008 has no persisted B1 rule results; ChangeAttribution 1.0.0 reports NOT_COMPARABLE.",
+    "B1 warning lists were not persisted; warning comparison is unavailable.",
+    "ChangeAttribution 1.0.0 does not expose a secondary result-interpretation label; the M04-B3 warning and historical evaluator classification remain supporting evidence."
+  ]
+}
