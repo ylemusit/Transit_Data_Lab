@@ -37,7 +37,8 @@ R06 registro extensible, R07 recursos/timeout completo, R08 matriz Windows/Linux
 
 Q1 Sí: la configuración y manifiestos declaran recursos. Q2 Sí: ausencia falla antes del gate. Q3 Sí: el nuevo gate usa fuentes legales relativas y DB externa explícita. Q4 Sí: el gate de auditoría devuelve 2 para fallo técnico. Q5 Sí: contratos 1.1.0 por regla. Q6 Sí: el workflow pasó en GitHub y `main` exige su check. Q7 No se observa otro P1 que invalide el inicio del desarrollo del motor en esta rama.
 
-`GTFS_AUDIT_ENGINE_V1_PRECONDITIONS = PASS`  
+`GTFS_AUDIT_ENGINE_V1_PRECONDITIONS = PASS`
+
 `GTFS_AUDIT_ENGINE_V1_READY_TO_START`
 
 Este veredicto corresponde al pack en el Draft PR; no afirma que esté fusionado en `main`.
