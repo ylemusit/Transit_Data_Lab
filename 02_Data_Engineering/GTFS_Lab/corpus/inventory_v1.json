@@ -1,0 +1,1101 @@
+{
+  "inventory_version": "1.0.0",
+  "source_manifest": "02_Data_Engineering/GTFS_Lab/20_clientes_reales/benchmark_manifest.csv",
+  "inspection_scope": "METADATA_AND_INPUT_STRUCTURE",
+  "evaluation_outputs_used": false,
+  "validator_findings_used": false,
+  "dataset_count": 20,
+  "family_counts": {
+    "FAMILY_A_SMALL_BASIC": 7,
+    "FAMILY_B_SME_OPERATIONAL": 5,
+    "FAMILY_C_COMPLEX_REGIONAL": 3,
+    "FAMILY_D_MATURE_BENCHMARK": 5
+  },
+  "all_declared_zip_hashes_match": true,
+  "datasets": [
+    {
+      "dataset_id": "001",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "Autocares GalÃ¡n GÃ³mez",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/001_galan_gomez/02_sources/gtfs_schedule/original/20251029_150004_Autocares_Galan_Gomez.zip",
+      "zip_sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430",
+      "declared_sha256": "1C70A6EA458370FA9A689F04A4F5300FFB0873D85DBA4E8E5E8EC57DE9964430",
+      "sha_matches_metadata": true,
+      "size_bytes": 2997,
+      "file_count": 8,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 1,
+        "stop_count": 6,
+        "trip_count": 6
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "002",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "Ancebus",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/002_ancebus/02_sources/gtfs_schedule/original/20250523_100004_Ancebus.zip",
+      "zip_sha256": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "declared_sha256": "42BF756A88336DACB085EC49DBDD0F019FD37AFE7C7E5C24C1D8D2C1DF0DE27D",
+      "sha_matches_metadata": true,
+      "size_bytes": 2927,
+      "file_count": 6,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "routes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 2,
+        "stop_count": 26,
+        "trip_count": 6
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": false
+    },
+    {
+      "dataset_id": "003",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "Autocares J. Cristeto",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/003_j_cristeto/02_sources/gtfs_schedule/original/20251119_070003_Autocares_Cristeto.zip",
+      "zip_sha256": "70b14647471462975b9b646d738b76c2f27454d8d9f49311bb31289a888e411a",
+      "declared_sha256": "70B14647471462975B9B646D738B76C2F27454D8D9F49311BB31289A888E411A",
+      "sha_matches_metadata": true,
+      "size_bytes": 4049,
+      "file_count": 8,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 3,
+        "stop_count": 26,
+        "trip_count": 6
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "004",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "Autocares Ãlvarez de Viajeros",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/004_alvarez_viajeros/02_sources/gtfs_schedule/original/20250522_080004_Autocares_Alvarez.zip",
+      "zip_sha256": "1fe7adb7486766672ddef94917a881a0bacc5450ba00591d9a3c0e7067e63cb6",
+      "declared_sha256": "1FE7ADB7486766672DDEF94917A881A0BACC5450BA00591D9A3C0E7067E63CB6",
+      "sha_matches_metadata": true,
+      "size_bytes": 4711,
+      "file_count": 6,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "routes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 2,
+        "stop_count": 65,
+        "trip_count": 10
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": false
+    },
+    {
+      "dataset_id": "005",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "ViagÃ³n Autocares",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/005_viagon/02_sources/gtfs_schedule/original/20250604_080004_Viagon_Autocares.zip",
+      "zip_sha256": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "declared_sha256": "F35192F9AC9F91E39F10357DAD6CC88EBDFFDEEDFC3BF4053B383D09636DE100",
+      "sha_matches_metadata": true,
+      "size_bytes": 6120,
+      "file_count": 6,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "routes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 11,
+        "stop_count": 62,
+        "trip_count": 22
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": false
+    },
+    {
+      "dataset_id": "006",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "Autocares Rafael Nadal",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/006_rafael_nadal/02_sources/gtfs_schedule/original/20250320_121835_Autocares_Rafael_Nadal.zip",
+      "zip_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "declared_sha256": "F94D6F6A37EE802BA168E22ED33358D60D93022C183EE9A3307E13A2EF9F6E7A",
+      "sha_matches_metadata": true,
+      "size_bytes": 1982,
+      "file_count": 7,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 2,
+        "stop_count": 3,
+        "trip_count": 2
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": false
+    },
+    {
+      "dataset_id": "007",
+      "family": "FAMILY_A_SMALL_BASIC",
+      "operator_if_known": "PÃ©rez Cubero",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_A_SMALL_BASIC/007_perez_cubero/02_sources/gtfs_schedule/original/20260320_090030_Perez_Cubero.zip",
+      "zip_sha256": "81ef87bfe4c8500dc9f4b48f75ae2992131eb86e566fb4a60c73ea54431a9f1a",
+      "declared_sha256": "81EF87BFE4C8500DC9F4B48F75AE2992131EB86E566FB4A60C73EA54431A9F1A",
+      "sha_matches_metadata": true,
+      "size_bytes": 2201,
+      "file_count": 7,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 2,
+        "stop_count": 26,
+        "trip_count": 2
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": false
+      },
+      "shape_presence": false
+    },
+    {
+      "dataset_id": "008",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_if_known": "Autocares Baraza",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_B_SME_OPERATIONAL/008_baraza/02_sources/gtfs_schedule/original/20260831_100006_BUS_Baraza.zip",
+      "zip_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "declared_sha256": "50D7DACBE5A384A5122CDE2563F884B7FB6D067F2581A3B726C529A0703F4049",
+      "sha_matches_metadata": true,
+      "size_bytes": 126374,
+      "file_count": 13,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "frequencies.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "transfers.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 8,
+        "stop_count": 50,
+        "trip_count": 75
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "009",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_if_known": "Autocares Medina",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_B_SME_OPERATIONAL/009_medina/02_sources/gtfs_schedule/original/20250916_080004_AUTOCARES_MEDINA.zip",
+      "zip_sha256": "0c588ca4a7547b36777f9aaf8a997ae35307d4ed74ac0cee04e8ff543c8f40f8",
+      "declared_sha256": "0C588CA4A7547B36777F9AAF8A997AE35307D4ED74AC0CEE04E8FF543C8F40F8",
+      "sha_matches_metadata": true,
+      "size_bytes": 29686,
+      "file_count": 7,
+      "tables_present": [
+        "agency.txt",
+        "calendar_dates.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 5,
+        "stop_count": 43,
+        "trip_count": 176
+      },
+      "calendar_model": {
+        "calendar_txt": false,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "010",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_if_known": "Rodil",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_B_SME_OPERATIONAL/010_rodil/02_sources/gtfs_schedule/original/20260309_110029_BUS_RODIL.zip",
+      "zip_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "declared_sha256": "3113B5B5E78BB8D97E4895B41564A80799B087F2A86C4E28019D7DB05BE98FAF",
+      "sha_matches_metadata": true,
+      "size_bytes": 13888,
+      "file_count": 10,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 14,
+        "stop_count": 84,
+        "trip_count": 74
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "011",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_if_known": "Autocares Autocorb",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_B_SME_OPERATIONAL/011_autocorb/02_sources/gtfs_schedule/original/20260907_160010_BUS_Autocorb.zip",
+      "zip_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "declared_sha256": "5C139120F8424B69DD98024CBEDA9A2A3F0F694772E14CB795E20F154663C23B",
+      "sha_matches_metadata": true,
+      "size_bytes": 123548,
+      "file_count": 9,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 8,
+        "stop_count": 170,
+        "trip_count": 370
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "012",
+      "family": "FAMILY_B_SME_OPERATIONAL",
+      "operator_if_known": "Autocares Costa",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_B_SME_OPERATIONAL/012_costa/02_sources/gtfs_schedule/original/20250630_160003_Autocares_Costa.zip",
+      "zip_sha256": "da2d07f8d0e2dbad98f4a6b05b927ed1a2f3f660a61054b7fd6401418cad5eb7",
+      "declared_sha256": "DA2D07F8D0E2DBAD98F4A6B05B927ED1A2F3F660A61054B7FD6401418CAD5EB7",
+      "sha_matches_metadata": true,
+      "size_bytes": 64016,
+      "file_count": 10,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 58,
+        "stop_count": 446,
+        "trip_count": 286
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "013",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_if_known": "Autocares LÃ¡zara",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_C_COMPLEX_REGIONAL/013_lazara/02_sources/gtfs_schedule/original/20250529_100032_Autocares_Lazara.zip",
+      "zip_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "declared_sha256": "B8957128CAD1C91EB8B3020514CDFA3B2EDA0A6C56949B03544CB076D4B22790",
+      "sha_matches_metadata": true,
+      "size_bytes": 189716,
+      "file_count": 10,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 129,
+        "stop_count": 1321,
+        "trip_count": 554
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "014",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_if_known": "Empresa Gilsanz",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_C_COMPLEX_REGIONAL/014_gilsanz/02_sources/gtfs_schedule/original/20260527_110752_Empresa_Gilsanz.zip",
+      "zip_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "declared_sha256": "DA9DAA4F60D798FC45B3A71EF81926E447A1EAA6C061CDDF96C34EA3388272F9",
+      "sha_matches_metadata": true,
+      "size_bytes": 224361,
+      "file_count": 10,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 144,
+        "stop_count": 1244,
+        "trip_count": 788
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "015",
+      "family": "FAMILY_C_COMPLEX_REGIONAL",
+      "operator_if_known": "Autocares RÃ­as Baixas",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_C_COMPLEX_REGIONAL/015_rias_baixas/02_sources/gtfs_schedule/original/20260916_100037_Autobus_Rias_Baixas.zip",
+      "zip_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "declared_sha256": "D0FA0D4BE2897CDCF43C1005F9D381FD41B3788A71D75E27B589409B68B1EA19",
+      "sha_matches_metadata": true,
+      "size_bytes": 443076,
+      "file_count": 10,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 278,
+        "stop_count": 2449,
+        "trip_count": 1653
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "016",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_if_known": "Autobuses La UniÃ³n (ALU)",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_D_MATURE_BENCHMARK/016_alu/02_sources/gtfs_schedule/original/20260922_060136_Euskadi_La_Union.zip",
+      "zip_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "declared_sha256": "CDAE69F98C44D5E19BBA3F5F87791740E2477515A03249568B275F8E4E509216",
+      "sha_matches_metadata": true,
+      "size_bytes": 31517,
+      "file_count": 12,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "levels.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 11,
+        "stop_count": 106,
+        "trip_count": 212
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "017",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_if_known": "TUVISA",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_D_MATURE_BENCHMARK/017_tuvisa/02_sources/gtfs_schedule/original/20260922_060014_Euskadi_Tuvisa.zip",
+      "zip_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "declared_sha256": "7B60390D8F3E3B7853EB3F8A873797CB8FFA36E371BC6086570FD687E805546A",
+      "sha_matches_metadata": true,
+      "size_bytes": 1014865,
+      "file_count": 12,
+      "tables_present": [
+        "agency.txt",
+        "attributions.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "translations.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 31,
+        "stop_count": 368,
+        "trip_count": 4354
+      },
+      "calendar_model": {
+        "calendar_txt": false,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "018",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_if_known": "Bilbobus",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_D_MATURE_BENCHMARK/018_bilbobus/02_sources/gtfs_schedule/original/20260922_060003_Euskadi_Bilbobus.zip",
+      "zip_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "declared_sha256": "70B770F7C5BB945DD472C4EC6FBBE564AEDD62C4A8CE96F717D8214A25BBDAEF",
+      "sha_matches_metadata": true,
+      "size_bytes": 2959893,
+      "file_count": 12,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "levels.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 56,
+        "stop_count": 532,
+        "trip_count": 15224
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "019",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_if_known": "Bizkaibus",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_D_MATURE_BENCHMARK/019_bizkaibus/02_sources/gtfs_schedule/original/20260910_060014_Euskadi_Bizkaibus.zip",
+      "zip_sha256": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "declared_sha256": "E15D963BA3DC774E47B4F9F46DBD954ECE6A720D49A71BFC22A104A12027BD73",
+      "sha_matches_metadata": true,
+      "size_bytes": 18245454,
+      "file_count": 12,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "levels.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 99,
+        "stop_count": 2334,
+        "trip_count": 22151
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    },
+    {
+      "dataset_id": "020",
+      "family": "FAMILY_D_MATURE_BENCHMARK",
+      "operator_if_known": "Kbus",
+      "geography_if_known": "ES",
+      "source_platform": "NAP EspaÃ±a",
+      "source_dataset_id": "UNKNOWN",
+      "source_url": "UNKNOWN",
+      "capture_date": "UNKNOWN",
+      "zip_relative_path": "FAMILY_D_MATURE_BENCHMARK/020_kbus/02_sources/gtfs_schedule/original/20250530_060158_Bus_Barakaldo.zip",
+      "zip_sha256": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "declared_sha256": "65130FD01470593CD2E234177F3C4CB810154D0B8E13FBEE3AA91F1973072ACE",
+      "sha_matches_metadata": true,
+      "size_bytes": 91410,
+      "file_count": 11,
+      "tables_present": [
+        "agency.txt",
+        "calendar.txt",
+        "calendar_dates.txt",
+        "fare_attributes.txt",
+        "fare_rules.txt",
+        "feed_info.txt",
+        "routes.txt",
+        "shapes.txt",
+        "stop_times.txt",
+        "stops.txt",
+        "trips.txt"
+      ],
+      "counts": {
+        "route_count": 4,
+        "stop_count": 88,
+        "trip_count": 278
+      },
+      "calendar_model": {
+        "calendar_txt": true,
+        "calendar_dates_txt": true
+      },
+      "shape_presence": true
+    }
+  ],
+  "structural_relationships": [
+    {
+      "dataset_ids": [
+        "002",
+        "005"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 1
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "010"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "012"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "013"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "014"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "015"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "017"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 6,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "008",
+        "018"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 4,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "009",
+        "019"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 3
+      }
+    },
+    {
+      "dataset_ids": [
+        "010",
+        "012"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "010",
+        "013"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "010",
+        "014"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "010",
+        "015"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "011",
+        "016"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 2
+      }
+    },
+    {
+      "dataset_ids": [
+        "011",
+        "017"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 10
+      }
+    },
+    {
+      "dataset_ids": [
+        "011",
+        "018"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 2
+      }
+    },
+    {
+      "dataset_ids": [
+        "011",
+        "019"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 72
+      }
+    },
+    {
+      "dataset_ids": [
+        "012",
+        "013"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "012",
+        "014"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "012",
+        "015"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "013",
+        "014"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "013",
+        "015"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 129,
+        "stops.txt": 491
+      }
+    },
+    {
+      "dataset_ids": [
+        "014",
+        "015"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 1,
+        "routes.txt": 0,
+        "stops.txt": 0
+      }
+    },
+    {
+      "dataset_ids": [
+        "016",
+        "018"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 84
+      }
+    },
+    {
+      "dataset_ids": [
+        "016",
+        "019"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 72
+      }
+    },
+    {
+      "dataset_ids": [
+        "017",
+        "018"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 6,
+        "stops.txt": 15
+      }
+    },
+    {
+      "dataset_ids": [
+        "017",
+        "019"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 262
+      }
+    },
+    {
+      "dataset_ids": [
+        "018",
+        "019"
+      ],
+      "exact_zip_duplicate": false,
+      "shared_identifier_counts": {
+        "agency.txt": 0,
+        "routes.txt": 0,
+        "stops.txt": 336
+      }
+    }
+  ]
+}
