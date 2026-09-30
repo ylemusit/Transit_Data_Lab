@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0.0",
+  "specification": {
+    "name": "GTFS Schedule",
+    "authority": "official GTFS reference",
+    "reference_url": "https://gtfs.org/documentation/schedule/reference/",
+    "revision_date": "2026-04-27",
+    "retrieved_at": "2026-09-30T00:59:15Z",
+    "revision_history_url": "https://gtfs.org/documentation/schedule/change-history/revision-history/",
+    "legal_authority_claimed": false,
+    "notes": "Normalized technical catalog; consult the official reference for normative definitions and exact field semantics."
+  },
+  "presence_vocabulary": [
+    "REQUIRED",
+    "CONDITIONALLY_REQUIRED",
+    "OPTIONAL",
+    "RECOMMENDED",
+    "CONDITIONALLY_FORBIDDEN"
+  ],
+  "condition_model_vocabulary": [
+    "FILE_PRESENT",
+    "FILE_ABSENT",
+    "FIELD_PRESENT",
+    "FIELD_VALUE_EQUALS",
+    "FIELD_VALUE_IN",
+    "PARENT_ENTITY_EXISTS",
+    "RELATED_FILE_PRESENT",
+    "ONE_OF_FILES_PRESENT",
+    "DEPENDENT_FIELDS",
+    "ALL",
+    "ANY",
+    "NOT",
+    "ALL_SERVICE_DATES_DEFINED"
+  ],
+  "files": [
+    {
+      "file_name": "agency.txt",
+      "primary_key": "agency_id (conditionally required for multi-agency feeds; recommended otherwise)",
+      "foreign_reference_summary": "None at file level; agency identity is referenced by routes when applicable.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#agencytxt",
+      "official_presence": "REQUIRED",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "stops.txt",
+      "primary_key": "stop_id",
+      "foreign_reference_summary": "IDs are shared-unique across stops.stop_id, locations.geojson feature id, and location_groups.location_group_id; parent_station and other fields reference stop entities.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+      "presence_conditions": {
+        "required_otherwise": true,
+        "optional_when": {
+          "entity": "demand-responsive zone feature",
+          "op": "ENTITY_EXISTS",
+          "file": "locations.geojson"
+        }
+      },
+      "official_presence": "CONDITIONALLY_REQUIRED",
+      "official_condition": "Optional if qualifying demand-responsive zones are defined in locations.geojson; required otherwise.",
+      "tdl_v1_support": "FULL_V1_TECHNICAL (conditional presence; fixed-stop audit)"
+    },
+    {
+      "file_name": "routes.txt",
+      "primary_key": "route_id",
+      "foreign_reference_summary": "agency_id conditionally references agency; network_id is an optional representation affecting network file conditions.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+      "official_presence": "REQUIRED",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "trips.txt",
+      "primary_key": "trip_id",
+      "foreign_reference_summary": "route_id references routes; service_id references calendar/calendar_dates; shape_id references shapes when supplied.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#tripstxt",
+      "official_presence": "REQUIRED",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "primary_key": "trip_id + stop_sequence",
+      "foreign_reference_summary": "trip_id references trips; stop_id / location_group_id / location_id are conditionally exclusive location references.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+      "official_presence": "REQUIRED",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL (fixed-stop profile)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "primary_key": "service_id",
+      "foreign_reference_summary": "service_id referenced by trips and calendar_dates.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#calendartxt",
+      "presence_conditions": {
+        "required_otherwise": true,
+        "optional_when": {
+          "op": "ALL_SERVICE_DATES_DEFINED",
+          "file": "calendar_dates.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_REQUIRED",
+      "official_condition": "Required unless all service dates are defined in calendar_dates.txt; optional otherwise.",
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "calendar_dates.txt",
+      "primary_key": "service_id + date",
+      "foreign_reference_summary": "service_id references/extends calendar services and is referenced by trips.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt",
+      "presence_conditions": {
+        "when_calendar_present": "OPTIONAL",
+        "required_when": {
+          "op": "FILE_ABSENT",
+          "file": "calendar.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_REQUIRED",
+      "official_condition": "Required if calendar.txt is omitted; optional otherwise.",
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "fare_attributes.txt",
+      "primary_key": "fare_id",
+      "foreign_reference_summary": "fare_id referenced by fare_rules.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_attributestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_rules.txt",
+      "primary_key": "* (all provided fields)",
+      "foreign_reference_summary": "fare_id references fare_attributes; route/zone fields link to routes/stops according to supplied selectors.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_rulestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "timeframes.txt",
+      "primary_key": "* (all provided fields)",
+      "foreign_reference_summary": "service_id references calendar service definitions.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#timeframestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "rider_categories.txt",
+      "primary_key": "rider_category_id",
+      "foreign_reference_summary": "Referenced by fare products and fare rules where applicable.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#rider_categoriestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_media.txt",
+      "primary_key": "fare_media_id",
+      "foreign_reference_summary": "fare_media_id referenced by fare_products.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_mediatxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_products.txt",
+      "primary_key": "fare_product_id + rider_category_id + fare_media_id",
+      "foreign_reference_summary": "fare_media_id and rider_category_id reference corresponding fare entities when supplied.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_productstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_leg_rules.txt",
+      "primary_key": "network_id + from_area_id + to_area_id + from_timeframe_group_id + to_timeframe_group_id + fare_product_id",
+      "foreign_reference_summary": "References networks, stops, areas, timeframes and fare products.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_leg_rulestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_leg_join_rules.txt",
+      "primary_key": "from_network_id + to_network_id + from_stop_id + to_stop_id",
+      "foreign_reference_summary": "References network/stop selectors used to join fare legs.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_leg_join_rulestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "fare_transfer_rules.txt",
+      "primary_key": "from_leg_group_id + to_leg_group_id + fare_product_id + transfer_count + duration_limit",
+      "foreign_reference_summary": "Leg group IDs refer to fare leg groups defined by fare leg rules.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#fare_transfer_rulestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "areas.txt",
+      "primary_key": "area_id",
+      "foreign_reference_summary": "area_id referenced by stop_areas and fare selectors.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#areastxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "stop_areas.txt",
+      "primary_key": "area_id + stop_id",
+      "foreign_reference_summary": "area_id references areas; stop_id references stops.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_areastxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "networks.txt",
+      "primary_key": "network_id",
+      "foreign_reference_summary": "network_id referenced by routes and route_networks.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#networkstxt",
+      "presence_conditions": {
+        "otherwise": "OPTIONAL",
+        "forbidden_when": {
+          "field": "network_id",
+          "op": "FIELD_PRESENT",
+          "file": "routes.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_FORBIDDEN",
+      "official_condition": "Forbidden if routes.network_id exists; optional otherwise.",
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "route_networks.txt",
+      "primary_key": "route_id",
+      "foreign_reference_summary": "route_id references routes; network_id references networks.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#route_networkstxt",
+      "presence_conditions": {
+        "otherwise": "OPTIONAL",
+        "forbidden_when": {
+          "field": "network_id",
+          "op": "FIELD_PRESENT",
+          "file": "routes.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_FORBIDDEN",
+      "official_condition": "Forbidden if routes.network_id exists; optional otherwise.",
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "shapes.txt",
+      "primary_key": "shape_id + shape_pt_sequence",
+      "foreign_reference_summary": "shape_id referenced by trips; stop_times.shape_dist_traveled has trip-shape constraints.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "primary_key": "trip_id + start_time",
+      "foreign_reference_summary": "trip_id references trips.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "transfers.txt",
+      "primary_key": "* (all provided fields)",
+      "foreign_reference_summary": "Conditionally references stops, routes and trips according to which selectors are populated.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#transferstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "pathways.txt",
+      "primary_key": "pathway_id",
+      "foreign_reference_summary": "from_stop_id and to_stop_id reference stops; pathway level fields reference levels.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "levels.txt",
+      "primary_key": "level_id",
+      "foreign_reference_summary": "Referenced by stops and pathways.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#levelstxt",
+      "presence_conditions": {
+        "otherwise": "OPTIONAL",
+        "required_when": {
+          "field": "pathway_mode",
+          "op": "FIELD_VALUE_EQUALS",
+          "record_scope": "ANY",
+          "value": "5",
+          "file": "pathways.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_REQUIRED",
+      "official_condition": "Required when describing pathways with elevators (pathway_mode=5); optional otherwise.",
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "location_groups.txt",
+      "primary_key": "location_group_id",
+      "foreign_reference_summary": "location_group_id referenced by stop_times and location_group_stops.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#location_groupstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "location_group_stops.txt",
+      "primary_key": "* (all provided fields)",
+      "foreign_reference_summary": "location_group_id references location_groups; stop_id references stops.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#location_group_stopstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "locations.geojson",
+      "primary_key": "Feature.id (unique across stop and location-group IDs)",
+      "foreign_reference_summary": "Feature IDs referenced by stop_times.location_id and share uniqueness with stop_id/location_group_id.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#locationsgeojson",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED (detect for stops conditional; full Flex deferred)"
+    },
+    {
+      "file_name": "booking_rules.txt",
+      "primary_key": "booking_rule_id",
+      "foreign_reference_summary": "Booking rules link to rider-requested service entities/fields as defined in the current reference.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#booking_rulestxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    },
+    {
+      "file_name": "translations.txt",
+      "primary_key": "table_name + field_name + language + record_id + record_sub_id + field_value",
+      "foreign_reference_summary": "References target table/field/record values; exact entity semantics vary by target.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#translationstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "primary_key": "none (one row)",
+      "foreign_reference_summary": "None at file level.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+      "presence_conditions": {
+        "otherwise": "RECOMMENDED",
+        "required_when": {
+          "op": "FILE_PRESENT",
+          "file": "translations.txt"
+        }
+      },
+      "official_presence": "CONDITIONALLY_REQUIRED",
+      "official_condition": "Required if translations.txt is provided; recommended otherwise.",
+      "tdl_v1_support": "FULL_V1_TECHNICAL"
+    },
+    {
+      "file_name": "attributions.txt",
+      "primary_key": "attribution_id (where provided; inspect current per-field key definition)",
+      "foreign_reference_summary": "Attribution entity references agency/route/trip as specified by populated fields.",
+      "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#attributionstxt",
+      "official_presence": "OPTIONAL",
+      "official_condition": null,
+      "tdl_v1_support": "DEFERRED"
+    }
+  ],
+  "coverage_contract": {
+    "presence": [
+      "PRESENT",
+      "ABSENT",
+      "UNKNOWN"
+    ],
+    "audit_support": [
+      "FULL_V1_TECHNICAL",
+      "PARTIAL",
+      "DEFERRED"
+    ],
+    "deferred_condition": "DEFERRED_FEATURE_PRESENT",
+    "deferred_semantics": "Coverage limitation, not operator finding; never PASS for the deferred feature; report affected checks and prohibit unqualified whole-Schedule PASS.",
+    "note": "G01 contract semantics only; exact runtime schema belongs to G02."
+  }
+}
