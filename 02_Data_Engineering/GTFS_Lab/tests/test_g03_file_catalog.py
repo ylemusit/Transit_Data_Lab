@@ -84,6 +84,16 @@ class G03FileCatalogTests(unittest.TestCase):
                          {item["rule_id"] for item in result["validation"]["findings"]})
         self.assertEqual(len(result["validation"]["findings"]), result["validation"]["finding_count"])
         self.assertTrue(all(item["rule_id"] != "GTFS-G03-FILE-CATALOG" for item in result["validation"]["findings"]))
+        run_dir=self.root / "runs" / result["run_id"]
+        report=(run_dir / "report.md").read_text(encoding="utf-8")
+        for phase in ("g04","g05","g06","g07"):
+            self.assertIn(phase,result)
+            self.assertIn(phase,result["summary"])
+            self.assertTrue(result[phase]["rules"])
+            self.assertTrue(all(rule["evaluator_executed"] for rule in result[phase]["rules"]))
+            persisted=json.loads((run_dir / f"{phase}.json").read_text(encoding="utf-8"))
+            self.assertEqual(persisted,result[phase])
+            self.assertIn(f"## {phase.upper()}",report)
 
     def test_missing_and_malformed_catalog_fail_explicitly(self):
         with self.assertRaisesRegex(RuntimeError, "missing"):
