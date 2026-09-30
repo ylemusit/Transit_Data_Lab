@@ -85,3 +85,41 @@ Se copiaron al worktree limpio únicamente los cuatro archivos de las filas 23, 
 4. **Q4 — ¿Copiar archivos históricos modificados enteros regresaría `main`?** Sí: el gate perdería portabilidad/preflight; `PROJECT_STATUS.md` y el README de GTFS_Lab retrocederían el estado. El README raíz desplazaría navegación actual. Los otros cuatro archivos modificados ya coinciden en bytes.
 5. **Q5 — ¿Podrá archivarse/limpiarse la raíz sin pérdida?** Sí, una vez que la integración histórica y sus hashes queden verificados en un destino duradero y haya aprobación explícita para la limpieza. No se ha limpiado ni alterado la raíz.
 6. **Q6 — ¿Qué archivos requieren decisión humana antes de limpiar?** Ninguno requiere decisión técnica de clasificación. La decisión humana pendiente es autorizar la operación de limpieza de las 28 entradas tras verificar el destino; no se presume esa autorización aquí.
+
+## Clasificación final para publicación
+
+| Classification | Count |
+|---|---:|
+| Already represented in main | 14 |
+| Duplicate evidence | 6 |
+| Superseded | 4 |
+| Historical material integrated | 4 |
+| Human-decision classification | 0 |
+| Total | 28 |
+
+```text
+VALID_SOURCE_CODE_ONLY_IN_ROOT = NO
+MISSING_REGRESSION_TESTS = NO
+MISSING_EXECUTION_JSON_EVIDENCE = NO
+WHOLE_FILE_CODE_PORTING_SAFE = NO
+ROOT_CLEANUP_POSSIBLE_AFTER_DURABLE_PRESERVATION = YES
+```
+
+Los cuatro artefactos conservados se clasifican individualmente como `HISTORICAL_EVIDENCE_MISSING_FROM_MAIN`. El origen de cada uno es el worktree histórico local `C:\Users\yeiso\Desktop\Folder\VSCode\Proyectos\Transit Data Lab` en el HEAD `7b6f7fc21fb44f96d2f6d459c9d54115b1a52602`; destino y hashes corresponden a este repositorio en la rama de reconciliación.
+
+| Ruta de origen histórico = destino | Bytes | SHA-256 | Clasificación |
+|---|---:|---|---|
+| `08_infografias/Infografia del proyecto a dia 27092026.png` | 1,899,393 | `c6979c98f9e5e11106e700b2f5ff4c6b548849dfaa8cec887b76917b9a267e87` | `HISTORICAL_EVIDENCE_MISSING_FROM_MAIN` |
+| `08_infografias/Infografia del proyecto a dia 28092026.png` | 2,018,130 | `cb79356e211d917447083afc2002b8ea7ed6a4af0cb48130b8533903a8a224d1` | `HISTORICAL_EVIDENCE_MISSING_FROM_MAIN` |
+| `reports/PROJECT_RADIOGRAPHY_2026-09-28.md` | 12,105 | `b100b7af30d41d8dafdc2178e03b9bf6378520be8ab1bad933e136285bd550ac` | `HISTORICAL_EVIDENCE_MISSING_FROM_MAIN` |
+| `reports/SERVICE_AUDIT_ALIGNMENT_MATRIX.md` | 17,768 | `9daee7b6b8b6bd1c94b4af1feb78d66e2c86e3db444184fe06ebe7a3e411c1a9` | `HISTORICAL_EVIDENCE_MISSING_FROM_MAIN` |
+
+Los SHA-256 de origen y destino coinciden en los cuatro casos. Las referencias Markdown a los PNG son relativas desde `reports/PROJECT_RADIOGRAPHY_2026-09-28.md` y resuelven a los dos destinos anteriores. Las imágenes mantienen firma PNG válida y dimensiones 1536×1024 y 1672×941, respectivamente; no se regeneraron, recomprimieron ni editaron.
+
+### Excepción de preservación byte a byte
+
+`git diff --check` informa únicamente de espacios finales deliberados en `reports/SERVICE_AUDIT_ALIGNMENT_MATRIX.md`, líneas 3 y 4: cada uno implementa el salto de línea Markdown original tras `**Proyecto:** Transit Data Lab` y `**Fecha base:** 2026-09-28`. Clasificación: `KNOWN_HISTORICAL_BYTE_PRESERVATION_EXCEPTION`. La excepción se limita a esas dos líneas y a este archivo; cualquier otro hallazgo de whitespace es fallo. Los bytes fuente se conservan sin normalización.
+
+### Publicación y regresión
+
+La integración parte de `11e8fe6b20232f02622a6c27d29b7c960763e979`, que era `origin/main` al consultar `git ls-remote` durante esta revisión. El delta publicado se limita a los cuatro artefactos anteriores y este informe; no contiene código, tests, Compliance engine, GTFS_Lab engine, bases de datos ni HOLDOUT. La compilación (`compileall`), el gate de fuentes portables y las cinco familias de tests sintéticos (16 + 23 + 23 + 6 + 10 tests) pasaron. También pasaron Trust, Golden Contract, Golden Corpus, Golden Evaluator y ambos modos de Corpus Split. No se accedió a HOLDOUT ni se modificaron bases protegidas. El paso final de `git diff --check origin/main...HEAD` informa solo de las dos excepciones documentadas, por lo que ese paso literal del workflow no queda verde con los bytes preservados. La rama histórica queda preservada intacta con 8 archivos modificados, 20 no seguidos y 0 staged. Su limpieza requiere autorización explícita separada después de la preservación durable.
