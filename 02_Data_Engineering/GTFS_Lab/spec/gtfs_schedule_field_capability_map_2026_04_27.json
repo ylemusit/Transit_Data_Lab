@@ -1,0 +1,4372 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "G03_FIELD_CAPABILITY_MAP",
+  "status": "CREATED_LOCAL_UNPUBLISHED",
+  "specification_revision": "2026-04-27",
+  "legal_authority_claimed": false,
+  "inputs": {
+    "field_contract_sha256": "B583CA329D4E034C5553A0EE6E1BCECF7BDB8C6736FE2CEDAD822302F5B9B4D6",
+    "runtime_sha256": "7EE25E06D16CD7140AA3103DACE929208EDAE89752D44D5BD4C6F9A6E8E178A7",
+    "catalog_sha256": "366A9CADDE04E3E2E5980FD02ACD3C9FBDA49766CC9C8E0AD7AD696F1EC712F8"
+  },
+  "primary_assessment_counts": {
+    "EXECUTABLE_G03": 106,
+    "PARTIALLY_EXECUTABLE_G03": 11,
+    "UNRESOLVED_CONDITION": 15
+  },
+  "fields": [
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_email",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "EMAIL",
+      "type_definition_status": "PARTIAL",
+      "format_constraints_status": "NOT_NORMALIZED_REQUIRES_REVIEW",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_fare_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "agency.txt",
+          "field_name": "agency_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#agencytxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 1)"
+        }
+      },
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_lang",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "LANGUAGE_CODE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_phone",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "PHONE_NUMBER",
+      "type_definition_status": "PARTIAL",
+      "format_constraints_status": "NOT_NORMALIZED_REQUIRES_REVIEW",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_timezone",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TIMEZONE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "agency_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "agency.txt",
+      "field_name": "cemv_support",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 9)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "end_date",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "DATE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "friday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "monday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "saturday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "service_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "start_date",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "DATE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "sunday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "thursday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "tuesday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "calendar.txt",
+      "field_name": "wednesday",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "DEFINED_BY_FIELD_REFERENCE",
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendartxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "calendar_dates.txt",
+      "field_name": "date",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "DATE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "calendar_dates.txt",
+      "field_name": "exception_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "calendar_dates.txt",
+      "field_name": "service_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "default_lang",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "LANGUAGE_CODE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_contact_email",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "EMAIL",
+      "type_definition_status": "PARTIAL",
+      "format_constraints_status": "NOT_NORMALIZED_REQUIRES_REVIEW",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_contact_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_end_date",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "RECOMMENDED",
+      "condition": null,
+      "type": "DATE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "UNAVAILABLE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 6)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_lang",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "LANGUAGE_CODE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_publisher_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_publisher_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_start_date",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "RECOMMENDED",
+      "condition": null,
+      "type": "DATE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "UNAVAILABLE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 5)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "feed_info.txt",
+      "field_name": "feed_version",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "RECOMMENDED",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "field_name": "end_time",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "field_name": "exact_times",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 5)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "field_name": "headway_secs",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "POSITIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "field_name": "start_time",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "frequencies.txt",
+      "field_name": "trip_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#frequenciestxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "levels.txt",
+      "field_name": "level_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#levelstxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "levels.txt",
+      "field_name": "level_index",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#levelstxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "levels.txt",
+      "field_name": "level_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#levelstxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "from_stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 2)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "is_bidirectional",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "length",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NEGATIVE_FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "max_slope",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_NUMERIC_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 9)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ],
+        "empty_equivalent_to_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "min_width",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "POSITIVE_FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "pathway_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "pathway_mode",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 7,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "reversed_signposted_as",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 12)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "signposted_as",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 11)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "stair_count",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NULL_INTEGER",
+      "type_definition_status": "NEEDS_REVIEW",
+      "format_constraints_status": "NOT_NORMALIZED_REQUIRES_REVIEW",
+      "range_status": "NOT_NORMALIZED_REQUIRES_REVIEW",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 format or range metadata is explicitly incomplete",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "to_stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 3)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "pathways.txt",
+      "field_name": "traversal_time",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "POSITIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#pathwaystxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "agency_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "agency_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 2)"
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "cemv_support",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 14)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 14)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "continuous_drop_off",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "continuous_drop_off",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 12)"
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 12)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "1"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 12)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "continuous_pickup",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "continuous_pickup",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 11)"
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 11)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "1"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 11)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "network_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "network_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 13)"
+        }
+      },
+      "type": "ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 13)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_color",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "COLOR",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "DEFAULT_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 8)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ],
+        "empty_equivalent_to_value": "FFFFFF"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_desc",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_long_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_EQUALS",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "route_long_name",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 4)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_EQUALS",
+          "field": "route_short_name",
+          "value": ""
+        }
+      },
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 4)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_short_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_EQUALS",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "routes.txt",
+          "field_name": "route_short_name",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#routestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 3)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_EQUALS",
+          "field": "route_long_name",
+          "value": ""
+        }
+      },
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 3)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_sort_order",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NEGATIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_text_color",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "COLOR",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "DEFAULT_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 9)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ],
+        "empty_equivalent_to_value": "000000"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 10,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "routes.txt",
+      "field_name": "route_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#routestxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "shapes.txt",
+      "field_name": "shape_dist_traveled",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NEGATIVE_FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#shapestxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "shapes.txt",
+      "field_name": "shape_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#shapestxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "shapes.txt",
+      "field_name": "shape_pt_lat",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_07_SPATIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "LATITUDE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G07_SPATIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#shapestxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "shapes.txt",
+      "field_name": "shape_pt_lon",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_07_SPATIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "LONGITUDE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G07_SPATIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#shapestxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "shapes.txt",
+      "field_name": "shape_pt_sequence",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "NON_NEGATIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#shapestxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "arrival_time",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "arrival_time",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 2)"
+        }
+      },
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "continuous_drop_off",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "continuous_drop_off",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 14)"
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 14)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "1"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 14)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "continuous_pickup",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "continuous_pickup",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 13)"
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 13)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "1"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 13)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "departure_time",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "departure_time",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 3)"
+        }
+      },
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "drop_off_booking_rule_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 18)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "drop_off_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": "ALL",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "drop_off_type",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 12)"
+        },
+        "expression": {
+          "op": "ALL",
+          "conditions": [
+            {
+              "op": "FIELD_VALUE_EQUALS",
+              "field": "drop_off_type",
+              "value": "0"
+            },
+            {
+              "op": "ANY",
+              "conditions": [
+                {
+                  "op": "FIELD_PRESENT",
+                  "field": "start_pickup_drop_off_window"
+                },
+                {
+                  "op": "FIELD_PRESENT",
+                  "field": "end_pickup_drop_off_window"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 12)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 12)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "end_pickup_drop_off_window",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "end_pickup_drop_off_window",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 10)"
+        }
+      },
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "location_group_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": "ANY",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "location_group_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 5)"
+        },
+        "expression": {
+          "op": "ANY",
+          "conditions": [
+            {
+              "op": "FIELD_PRESENT",
+              "field": "stop_id"
+            },
+            {
+              "op": "FIELD_PRESENT",
+              "field": "location_id"
+            }
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "location_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": "ANY",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "location_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 6)"
+        },
+        "expression": {
+          "op": "ANY",
+          "conditions": [
+            {
+              "op": "FIELD_PRESENT",
+              "field": "stop_id"
+            },
+            {
+              "op": "FIELD_PRESENT",
+              "field": "location_group_id"
+            }
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "pickup_booking_rule_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 17)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "pickup_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": "ALL",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "pickup_type",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 11)"
+        },
+        "expression": {
+          "op": "ALL",
+          "conditions": [
+            {
+              "op": "FIELD_VALUE_IN",
+              "field": "pickup_type",
+              "values": [
+                "0",
+                "3"
+              ]
+            },
+            {
+              "op": "ANY",
+              "conditions": [
+                {
+                  "op": "FIELD_PRESENT",
+                  "field": "start_pickup_drop_off_window"
+                },
+                {
+                  "op": "FIELD_PRESENT",
+                  "field": "end_pickup_drop_off_window"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 4,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 11)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 11)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "shape_dist_traveled",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NEGATIVE_FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 15)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "start_pickup_drop_off_window",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_05_TEMPORAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "start_pickup_drop_off_window",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 9)"
+        }
+      },
+      "type": "TIME",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G05_TEMPORAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "stop_headsign",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "ANY",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stop_times.txt",
+          "field_name": "stop_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 4)"
+        },
+        "expression": {
+          "op": "ANY",
+          "conditions": [
+            {
+              "op": "FIELD_PRESENT",
+              "field": "location_group_id"
+            },
+            {
+              "op": "FIELD_PRESENT",
+              "field": "location_id"
+            }
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 4)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "stop_sequence",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "NON_NEGATIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "timepoint",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 16)"
+    },
+    {
+      "file_name": "stop_times.txt",
+      "field_name": "trip_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stop_timestxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "level_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 14)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "location_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 5,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 10)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "parent_station",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stops.txt",
+          "field_name": "parent_station",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 11)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "location_type",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 11)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 11)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "platform_code",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 15)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_access",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_FORBIDDEN",
+      "condition": {
+        "operator": "ANY",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stops.txt",
+          "field_name": "stop_access",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 16)"
+        },
+        "expression": {
+          "op": "ANY",
+          "conditions": [
+            {
+              "op": "FIELD_VALUE_IN",
+              "field": "location_type",
+              "values": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "op": "FIELD_VALUE_EQUALS",
+              "field": "parent_station",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "UNDEFINED",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 16)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 16)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_code",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "NO_PUBLIC_CODE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 2)",
+            "kind": "FIELD_DEFINITION_SEMANTICS"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_desc",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_lat",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_07_SPATIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stops.txt",
+          "field_name": "stop_lat",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 6)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "location_type",
+          "values": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      },
+      "type": "LATITUDE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G07_SPATIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_lon",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_07_SPATIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stops.txt",
+          "field_name": "stop_lon",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 7)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "location_type",
+          "values": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      },
+      "type": "LONGITUDE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G07_SPATIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "stops.txt",
+          "field_name": "stop_name",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#stopstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 3)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "location_type",
+          "values": [
+            "0",
+            "1",
+            "2"
+          ]
+        }
+      },
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_timezone",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TIMEZONE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 12)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 12)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "stop_url",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "URL",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 9)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "tts_stop_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "wheelchair_boarding",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 13)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 13)"
+    },
+    {
+      "file_name": "stops.txt",
+      "field_name": "zone_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "from_route_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "from_stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "transfers.txt",
+          "field_name": "from_stop_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#transferstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 1)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "transfer_type",
+          "values": [
+            "",
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 1)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "from_trip_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "transfers.txt",
+          "field_name": "from_trip_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#transferstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 5)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "transfer_type",
+          "values": [
+            "4",
+            "5"
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "min_transfer_time",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "NON_NEGATIVE_INTEGER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NORMATIVE_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "to_route_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "to_stop_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "transfers.txt",
+          "field_name": "to_stop_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#transferstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 2)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "transfer_type",
+          "values": [
+            "",
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 2)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "to_trip_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": "FIELD_VALUE_IN",
+        "normalization_status": "NORMALIZED_G03_RUNTIME",
+        "source_reference": {
+          "file_name": "transfers.txt",
+          "field_name": "to_trip_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#transferstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 6)"
+        },
+        "expression": {
+          "op": "FIELD_VALUE_IN",
+          "field": "transfer_type",
+          "values": [
+            "4",
+            "5"
+          ]
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "transfers.txt",
+      "field_name": "transfer_type",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 6,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 7)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#transferstxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "field_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "field_value",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "translations.txt",
+          "field_name": "field_value",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#translationstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 7)"
+        }
+      },
+      "type": "TEXT_OR_URL_OR_EMAIL_OR_PHONE_NUMBER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 7)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "language",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "LANGUAGE_CODE",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "record_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "translations.txt",
+          "field_name": "record_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#translationstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 5)"
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 5)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "record_sub_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "translations.txt",
+          "field_name": "record_sub_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#translationstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 6)"
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "table_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 8,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "translations.txt",
+      "field_name": "translation",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "PARTIALLY_EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "TEXT_OR_URL_OR_EMAIL_OR_PHONE_NUMBER",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "bikes_allowed",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 10)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 10)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "block_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 7)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "cars_allowed",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 11)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 11)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "direction_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 2,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 6)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "route_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 1)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "safe_duration_factor",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 12)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "safe_duration_offset",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "FLOAT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 13)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "service_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 2)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "shape_id",
+      "primary_assessment": "UNRESOLVED_CONDITION",
+      "capabilities": [
+        "DEFERRED_04_IDENTITY_REFERENTIAL",
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "NEEDS_REVIEW",
+        "UNRESOLVED_CONDITION"
+      ],
+      "presence": "CONDITIONALLY_REQUIRED",
+      "condition": {
+        "operator": null,
+        "normalization_status": "NEEDS_REVIEW",
+        "source_reference": {
+          "file_name": "trips.txt",
+          "field_name": "shape_id",
+          "reference_anchor": "https://gtfs.org/documentation/schedule/reference/#tripstxt",
+          "specification_revision": "2026-04-27",
+          "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 8)"
+        }
+      },
+      "type": "FOREIGN_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "CONDITIONAL",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [
+        "G04_IDENTITY_REFERENTIAL"
+      ],
+      "derivation_reason": "condition normalization_status is NEEDS_REVIEW",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 8)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "trip_headsign",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 4)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "trip_id",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EMPTY_SEMANTICS_NOT_SPECIFIED",
+        "EXECUTABLE_G03"
+      ],
+      "presence": "REQUIRED",
+      "condition": null,
+      "type": "UNIQUE_ID",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "REQUIRED",
+        "empty_allowed": "NOT_SPECIFIED",
+        "empty_has_semantic_value": "NOT_SPECIFIED",
+        "source_evidence": []
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 3)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "trip_short_name",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "TEXT",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": null,
+      "explicit_enum_value_count": 0,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": "SOURCE_MENTIONS_EMPTY",
+        "empty_has_semantic_value": "NEEDS_REVIEW",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 5)",
+            "kind": "EMPTY_MENTION_REQUIRES_CONTEXT"
+          }
+        ]
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 5)"
+    },
+    {
+      "file_name": "trips.txt",
+      "field_name": "wheelchair_accessible",
+      "primary_assessment": "EXECUTABLE_G03",
+      "capabilities": [
+        "EXECUTABLE_G03"
+      ],
+      "presence": "OPTIONAL",
+      "condition": null,
+      "type": "ENUM",
+      "type_definition_status": "EXPLICIT",
+      "format_constraints_status": "EXPLICIT_OFFICIAL",
+      "range_status": "NO_EXPLICIT_RANGE",
+      "allowed_values_status": "EXPLICIT_OFFICIAL_LIST",
+      "explicit_enum_value_count": 3,
+      "empty_value_semantics": {
+        "header_presence": "FIELD_DECLARED_IN_HEADER",
+        "record_value_presence": "NOT_SPECIFIED",
+        "empty_allowed": true,
+        "empty_has_semantic_value": "SAME_AS_ENUM_VALUE",
+        "source_evidence": [
+          {
+            "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 9)",
+            "kind": "ENUM_EMPTY_ALIAS"
+          }
+        ],
+        "empty_equivalent_to_enum_value": "0"
+      },
+      "deferred_ownership": [],
+      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 9)"
+    }
+  ],
+  "output_sha256": "A27863E4E6A8A81B82D5118556B1D79FC0A298070D8B1C998456F6C710CADAD5"
+}

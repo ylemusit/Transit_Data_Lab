@@ -25,6 +25,7 @@ jobs:
           python -m unittest discover -s tests -p test_corpus_split_gate.py
           python -m unittest discover -s tests -p test_corpus_lineage_review.py
           python -m unittest discover -s tests -p test_engine_preconditions.py
+          python -m unittest discover -s tests -p 'test_g03_*.py'
       - name: M01, M03 and frozen corpus contracts
         working-directory: 02_Data_Engineering/GTFS_Lab
         run: |

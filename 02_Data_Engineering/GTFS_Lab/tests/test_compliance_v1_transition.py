@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import json
 import subprocess
@@ -11,7 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "tools"))
 import compliance_v1_engine as v2
-from compliance_v1_transition_candidate import build_candidate
+from compliance_v1_transition_candidate import PREDECESSOR_DB_SHA256, build_candidate
+from m06_b02_pack import DB as COMPLIANCE_DB
 
 BASE = "8d4f2ad7fa0545b76dd5d5ec5503890ed0c396d9"
 FIELDS = (
@@ -84,6 +86,19 @@ class ComplianceV1TransitionTests(unittest.TestCase):
                 self.assertEqual(new["result"], "PASS")
 
     def test_candidate_generator_replays_with_lineage_and_guards(self):
+        if not COMPLIANCE_DB.is_file():
+            self.skipTest(
+                "Requires the separately backed-up Compliance V1 database at "
+                f"{COMPLIANCE_DB} (SHA-256 {PREDECESSOR_DB_SHA256}); "
+                "a clean checkout intentionally does not contain or generate it."
+            )
+        with COMPLIANCE_DB.open("rb") as database:
+            database_sha256 = hashlib.file_digest(database, "sha256").hexdigest().upper()
+        self.assertEqual(
+            PREDECESSOR_DB_SHA256,
+            database_sha256,
+            "Restored Compliance V1 database does not match the frozen transition input.",
+        )
         package_a, manifest_a = build_candidate()
         package_b, manifest_b = build_candidate()
         self.assertEqual(package_a, package_b)
