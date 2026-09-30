@@ -1,5 +1,9 @@
 # Política de baseline de tests
 
+## Dependencia local del replay de transición Compliance V1
+
+`02_Data_Engineering/GTFS_Lab/tests/test_compliance_v1_transition.py::test_candidate_generator_replays_with_lineage_and_guards` es una prueba de integración contra `03_Compliance/databases/transit_compliance.duckdb`. La base se excluye de Git (`*.duckdb`) y [la política de backup](../BACKUP_AND_RECOVERY.md) exige conservarla/restaurarla por separado con su hash. Hay SQL de setup y migraciones, pero no se ha demostrado un procedimiento de checkout limpio que regenere el estado congelado exacto; no se deben usar para reconstruirlo automáticamente. Si la base falta, el test queda explícitamente `skipped`; no genera ni copia una base. Si existe, exige SHA-256 `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B` antes del replay y falla cerrado ante una versión distinta. `skip` significa que este replay de integración no se ejecutó; el resto de la suite sigue siendo evaluable.
+
 ## Gate vigente Compliance V1 (2026-09-28)
 
 CURRENT AUTHORITATIVE: `tools/compliance_v1_current_gate.py --evidence <directorio_nuevo>`.

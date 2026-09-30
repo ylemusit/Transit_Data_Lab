@@ -9,10 +9,12 @@ from .compliance_adapter import inspect_fixed_stop_references
 from .core import new_run_id, sha256_file, write_json
 from .database import build_duckdb
 from .gis import export_route, export_stops
+from .g03_structure import inspect_g03_archive
 from .ingestion import IngestionError, load_dataset
 from .validation import validate
 
 def run(zip_path: Path, output_root: Path, route_id: str | None = None, direction_id: str | None = None) -> dict:
+    g03_result = inspect_g03_archive(zip_path)
     ctx = load_dataset(zip_path, output_root)
     try:
         result = {
@@ -27,6 +29,7 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         }
         compliance = inspect_fixed_stop_references(ctx)
         compliance["run_id"] = ctx.run_id
+        g03_catalog = g03_result["file_catalog"]
         validation = validate(ctx)
         validation = _attach_compliance_result(validation, compliance)
         required = ("agency", "stops", "routes", "trips", "stop_times")
@@ -38,9 +41,9 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         gis_dir = ctx.work_dir / "exports"
         gis_result = {"stops": export_stops(ctx, gis_dir), "routes": export_route(ctx, gis_dir / "routes", route_id, direction_id)}
         db_result = build_duckdb(ctx)
-        result.update({"integrity": integrity, "validation": validation, "analysis": analysis_result, "gis": gis_result, "database": db_result, "compliance_v1": compliance, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "errors": []})
+        result.update({"integrity": integrity, "validation": validation, "g03_file_catalog": g03_catalog, "g03": g03_result, "analysis": analysis_result, "gis": gis_result, "database": db_result, "compliance_v1": compliance, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "errors": []})
         integrity_status = next((integrity[k] for k in ("file_integrity", "schema_integrity", "referential_integrity") if integrity[k] != "PASS"), "PASS")
-        result["summary"] = {"ingestion": "PASS", "integrity": integrity_status, "validation": validation["status"], "findings": validation["finding_count"], "analysis": "PASS", "gis": "PASS" if gis_result["stops"]["status"] == "PASS" or gis_result["routes"]["status"] == "PASS" else "NOT_EVALUABLE", "database": db_result["status"], "compliance_v1": compliance["result"]}
+        result["summary"] = {"ingestion": "PASS", "integrity": integrity_status, "validation": validation["status"], "findings": validation["finding_count"], "g03_file_catalog": g03_catalog["status"], "g03": g03_result["status"], "analysis": "PASS", "gis": "PASS" if gis_result["stops"]["status"] == "PASS" or gis_result["routes"]["status"] == "PASS" else "NOT_EVALUABLE", "database": db_result["status"], "compliance_v1": compliance["result"]}
         write_json(ctx.work_dir / "run.json", result)
         write_json(ctx.work_dir / "analysis.json", analysis_result)
         write_json(ctx.work_dir / "validation.json", validation)
@@ -62,9 +65,11 @@ def record_ingestion_error(zip_path: Path, output_root: Path, error: Exception) 
     run_id = new_run_id()
     work_dir = output_root.resolve() / run_id
     work_dir.mkdir(parents=True, exist_ok=False)
-    result = {"run_id": run_id, "dataset": {"dataset_id": "GTFS-" + digest[:16] if digest else None, "source_filename": zip_path.name, "source_sha256": digest}, "gtfs_lab_version": VERSION, "parser_version": "gtfs-lab-csv/1", "validator_version": "1.0.0", "started_at_utc": started, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "ingestion": {"status": "INGESTION_ERROR"}, "integrity": {"status": "SKIPPED_BY_DEPENDENCY"}, "validation": {"status": "SKIPPED_BY_DEPENDENCY", "findings": []}, "analysis": {"status": "SKIPPED_BY_DEPENDENCY"}, "gis": {"status": "SKIPPED_BY_DEPENDENCY"}, "compliance_v1": {"status": "SKIPPED_BY_DEPENDENCY"}, "errors": [{"type": "INGESTION_ERROR", "message": str(error)}], "summary": {"ingestion": "INGESTION_ERROR", "integrity": "SKIPPED_BY_DEPENDENCY", "validation": "SKIPPED_BY_DEPENDENCY", "analysis": "SKIPPED_BY_DEPENDENCY", "gis": "SKIPPED_BY_DEPENDENCY", "compliance_v1": "SKIPPED_BY_DEPENDENCY"}}
+    g03_result = inspect_g03_archive(zip_path) if zip_path.is_file() else {"status": "INSPECTION_ERROR"}
+    result = {"run_id": run_id, "dataset": {"dataset_id": "GTFS-" + digest[:16] if digest else None, "source_filename": zip_path.name, "source_sha256": digest}, "gtfs_lab_version": VERSION, "parser_version": "gtfs-lab-csv/1", "validator_version": "1.0.0", "started_at_utc": started, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "ingestion": {"status": "INGESTION_ERROR"}, "integrity": {"status": "SKIPPED_BY_DEPENDENCY"}, "validation": {"status": "SKIPPED_BY_DEPENDENCY", "findings": []}, "g03": g03_result, "g03_file_catalog": g03_result.get("file_catalog", {"status": "INSPECTION_ERROR"}), "analysis": {"status": "SKIPPED_BY_DEPENDENCY"}, "gis": {"status": "SKIPPED_BY_DEPENDENCY"}, "compliance_v1": {"status": "SKIPPED_BY_DEPENDENCY"}, "errors": [{"type": "INGESTION_ERROR", "message": str(error)}], "summary": {"ingestion": "INGESTION_ERROR", "integrity": "SKIPPED_BY_DEPENDENCY", "validation": "SKIPPED_BY_DEPENDENCY", "g03": g03_result.get("status", "INSPECTION_ERROR"), "analysis": "SKIPPED_BY_DEPENDENCY", "gis": "SKIPPED_BY_DEPENDENCY", "compliance_v1": "SKIPPED_BY_DEPENDENCY"}}
     write_json(work_dir / "run.json", result)
-    (work_dir / "report.md").write_text("# Informe técnico GTFS_Lab — error de ingestión\n\n" + f"- Run: `{run_id}`\n- Fuente: `{zip_path.name}`\n- SHA-256: `{digest or 'NO_DISPONIBLE'}`\n- Estado: `INGESTION_ERROR`\n- Error: {error}\n\nValidación, análisis, GIS y Compliance se marcaron `SKIPPED_BY_DEPENDENCY`; no se generaron findings GTFS.\n\nYeison Arbey Carrillo Lemus. Todos los derechos reservados.\n", encoding="utf-8")
+    g03_status = g03_result.get("status", "INSPECTION_ERROR")
+    (work_dir / "report.md").write_text("# Informe técnico GTFS_Lab — error de ingestión\n\n" + f"- Run: `{run_id}`\n- Fuente: `{zip_path.name}`\n- SHA-256: `{digest or 'NO_DISPONIBLE'}`\n- Estado: `INGESTION_ERROR`\n- Error: {error}\n- G03 estructural: `{g03_status}` (resultado independiente; findings legacy no evaluados).\n\nValidación, análisis, GIS y Compliance se marcaron `SKIPPED_BY_DEPENDENCY`; no se generaron findings legacy.\n\nYeison Arbey Carrillo Lemus. Todos los derechos reservados.\n", encoding="utf-8")
     return result
 
 def _attach_compliance_result(validation: dict, compliance: dict) -> dict:
@@ -92,6 +97,17 @@ def render_report(run_result: dict) -> str:
         label = table.removeprefix("NOT_SUPPORTED:") if table.startswith("NOT_SUPPORTED:") else table + ".txt"
         count = d["files"].get(table + ".txt", {}).get("rows", 0)
         lines.append(f"| {label} | {status} | {count} |")
+    catalog = run_result["g03_file_catalog"]
+    lines += ["", "## G03 — Catálogo de archivos", "", f"- Detección: `{catalog['status']}`; miembros examinados: {catalog['checked_members']}; cobertura del catálogo oficial: `{catalog['official_catalog_coverage']}`.", "", "| Miembro | Clasificación |", "|---|---|"]
+    for member in catalog["members"]:
+        lines.append(f"| `{member['path']}` | `{member['classification']}` |")
+    lines.append(f"- Límite: {catalog['limitation']}")
+    if "g03" in run_result:
+        lines += ["", "## G03 — Estructura y contrato", "", f"- Estado: `{run_result['g03']['status']}`; el resultado G03 permanece separado de los findings legacy."]
+        for rule in run_result["g03"].get("rules", []):
+            lines.append(f"- `{rule['rule_id']}`: `{rule['status']}`; findings: {len(rule['findings'])}; evaluador ejecutado: `{rule['evaluator_executed']}`.")
+        if "header_schema" in run_result["g03"]:
+            lines.append(f"- Gap de metadatos: {', '.join(run_result['g03']['header_schema'].get('missing_metadata', []))}")
     lines += ["", "## Integridad", "", f"- Archivos: {run_result['integrity']['file_integrity']}", f"- Esquema: {run_result['integrity']['schema_integrity']}", f"- Referencial: {run_result['integrity']['referential_integrity']}", "", "## Validación", "", f"Estado: **{run_result['validation']['status']}**; hallazgos técnicos: {run_result['validation']['finding_count']}", "", "| Regla | Estado | Hallazgos |", "|---|---|---:|"]
     for r in run_result["validation"]["rules"]: lines.append(f"| {r['rule_id']} | {r['status']} | {r['finding_count']} |")
     lines += ["", "Hallazgos:"]
@@ -102,5 +118,5 @@ def render_report(run_result: dict) -> str:
         lines.append("- Ninguno.")
     service_summary = run_result["analysis"]["service_calendar_summary"]
     active_dates = sum(len(values) for values in service_summary.get("active_dates_by_service_id", {}).values())
-    lines += ["", "## Análisis", "", "```json", json.dumps(run_result["analysis"]["counts"], ensure_ascii=False, indent=2), "```", f"- Rutas: {len(run_result['analysis']['routes'])}; paradas compartidas: {len(run_result['analysis']['shared_stops'])}", f"- Calendario: {service_summary['status']}; servicios con fechas: {len(service_summary.get('active_dates_by_service_id', {}))}; pares servicio-fecha: {active_dates}", "", "## GIS y DuckDB", "", f"- GeoJSON/KML paradas: {run_result['gis']['stops']['status']} ({run_result['gis']['stops'].get('features', 0)} entidades)", f"- GIS rutas/formas: {run_result['gis']['routes']['status']} ({len(run_result['gis']['routes'].get('artifacts', []))} archivos)", f"- Base DuckDB aislada: {run_result['database']['status']}", "", "## Compliance V1", "", f"- Regla: `{run_result['compliance_v1']['rule_id']}` → `{run_result['compliance_v1']['result']}` ({run_result['compliance_v1'].get('reason', '')})", f"- Evaluador: `{run_result['compliance_v1'].get('evaluator_version')}` / `{run_result['compliance_v1'].get('evaluator_sha256')}`.", f"- Procedencia: {run_result['compliance_v1']['provenance']}.", "", "## Límites", "", "- Resultado exclusivamente técnico; no concluye cumplimiento jurídico ni incumplimiento de operador.", "- SIRI y GTFS-RT no se procesan; tablas GTFS adicionales solo se inventariarían si están en el catálogo soportado.", "- Revisión de falsos positivos debe conservar specification, interpretation, implementation, input/hash, versión/parser, validador y serialización antes de atribuirlos al operador.", "", "Yeison Arbey Carrillo Lemus. Todos los derechos reservados.", ""]
+    lines += ["", "## Análisis", "", "```json", json.dumps(run_result["analysis"]["counts"], ensure_ascii=False, indent=2), "```", f"- Rutas: {len(run_result['analysis']['routes'])}; paradas compartidas: {len(run_result['analysis']['shared_stops'])}", f"- Calendario: {service_summary['status']}; servicios con fechas: {len(service_summary.get('active_dates_by_service_id', {}))}; pares servicio-fecha: {active_dates}", "", "## GIS y DuckDB", "", f"- GeoJSON/KML paradas: {run_result['gis']['stops']['status']} ({run_result['gis']['stops'].get('features', 0)} entidades)", f"- GIS rutas/formas: {run_result['gis']['routes']['status']} ({len(run_result['gis']['routes'].get('artifacts', []))} archivos)", f"- Base DuckDB aislada: {run_result['database']['status']}", "", "## Compliance V1", "", f"- Regla: `{run_result['compliance_v1']['rule_id']}` → `{run_result['compliance_v1']['result']}` ({run_result['compliance_v1'].get('reason', '')})", f"- Evaluador: `{run_result['compliance_v1'].get('evaluator_version')}` / `{run_result['compliance_v1'].get('evaluator_sha256')}`.", f"- Procedencia: {run_result['compliance_v1']['provenance']}.", "", "## Límites", "", "- Resultado exclusivamente técnico; no concluye cumplimiento jurídico ni incumplimiento de operador.", "- SIRI y GTFS-RT no se procesan; las tablas adicionales detectadas permanecen no inspeccionadas salvo el subconjunto declarado y no elevan cobertura por sí solas.", "- Revisión de falsos positivos debe conservar specification, interpretation, implementation, input/hash, versión/parser, validador y serialización antes de atribuirlos al operador.", "", "Yeison Arbey Carrillo Lemus. Todos los derechos reservados.", ""]
     return "\n".join(lines)

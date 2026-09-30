@@ -1,8 +1,35 @@
 # Transit Data Lab — estado vigente
 
-## GTFS Audit Engine V1 — cierre G02
+## GTFS Audit Engine V1 — G02 cerrado; inicio G03
 
-PR #22 se fusionó mediante merge normal el 2026-09-30. `G02 = PASS`, `GTFS_AUDIT_ENGINE_V1_RULE_REGISTRY = CLOSED` y `GTFS_AUDIT_ENGINE_V1_G03 = READY_TO_START`; G03 no se ha iniciado. Merge commit y nuevo `main`: `8e2b1cac53e96f4000f8be0d9c03da4350edfbee` (padres: base `d7f4c76ce5c13844ea49303f0434f83d31d95a4c`, head revisado `8ca39ab61a7e4c7c80e943d12c2ba328b98a6b82`). PR #22 quedó fusionada a las 01:58:54 UTC. El check remoto `synthetic` pasó sobre el head revisado y sobre el merge commit; la regresión local focalizada pasó por separado. Split y lineage se comprobaron solo con metadatos; no se accedió al contenido HOLDOUT. Detalle de contrato, identidad, regresión y CI en el [informe de cierre G02](reports/repository_integrity/TDL_GTFS_AUDIT_ENGINE_G02_CLOSURE.md).
+`G02 = PASS`, `GTFS_AUDIT_ENGINE_V1_RULE_REGISTRY = CLOSED` y `G02_DOCUMENTATION = DURABLE`. PR #23 se fusionó mediante merge normal el 2026-09-30: base `8e2b1cac53e96f4000f8be0d9c03da4350edfbee`, head revisado `6b01198d089100e425d5e1bc165a7be34adda888` y merge commit `36259cdbbc42cc6d2958ce4bd21e5279e7c1657c`, que es el `main` remoto verificado. El check `synthetic` verde corresponde al head de PR, no se afirma CI post-merge para el merge documental. Véase el [informe de cierre G02](reports/repository_integrity/TDL_GTFS_AUDIT_ENGINE_G02_CLOSURE.md).
+
+```ini
+G03 = IN_PROGRESS
+G03_BASE = 36259cdbbc42cc6d2958ce4bd21e5279e7c1657c
+G03_FILE_CATALOG = IMPLEMENTED_TESTED
+G03_CSV_STRUCTURE = IMPLEMENTED_LOCAL_TESTED
+G03_FIELD_CAPABILITY_MAP = IMPLEMENTED_TESTED_LOCAL
+G03_PRESENCE_CONDITIONS = 16_RUNTIME_RESOLVED_LOCAL; 15_OUTSTANDING
+G03_FIELD_TYPE_FORMAT = IMPLEMENTED_PARTIAL_LOCAL_TESTED
+G03_FIELD_CONTRACT = PRESENT_LOCAL_UNPUBLISHED
+G03_FIELD_CONTRACT_VALIDATION = VALIDATED_WITH_METADATA_GAPS
+G03_SPEC_METADATA_GAP = OPEN
+G03_LOCAL_STATE = RECOVERED
+G03_FIELD_CAPABILITY_MAP_COUNTS = 113_EXECUTABLE_G03; 4_PARTIALLY_EXECUTABLE_G03; 15_UNRESOLVED_CONDITION
+G03_HEADER_SCHEMA = CONDITION_RUNTIME_CONNECTED_LOCAL_TESTED
+G03_EXTENSION_POLICY = NOT_NORMATIVELY_RESOLVED
+G03_TARGETED_REGRESSION = PASS_LOCAL
+G03_FULL_TEST_DISCOVERY = 164_TESTS; 163_PASS; 1_SKIP_EXTERNAL_DB
+G03_PUBLICATION = AUTHORIZED_FOR_PREPARATION
+G03_READY_FOR_PUBLICATION = YES_LOCAL
+G03_REVIEW_REMEDIATION = PASS_LOCAL
+G03_FORMAL_REVIEW = PASS_LOCAL
+```
+
+G03 se trabaja en un worktree dedicado desde el `main` remoto verificado, rama `feat/gtfs-engine-g03-structure-schema-types`; el checkout original con modificaciones locales se conserva intacto. El resultado G03 se registra de forma aditiva y separado de `validation` legacy. Catálogo, estructura CSV y parte de presencia condicional tienen implementación local. El preflight cubre quoting, anchura de filas, encoding y presencia condicional; la matriz de solapamiento legacy permanece informativa, sin borrar ni reescribir reglas anteriores. El contrato de campos contiene 14 archivos y 132 campos FULL_V1_TECHNICAL de G01; el capability map clasifica 113 `EXECUTABLE_G03`, 4 `PARTIALLY_EXECUTABLE_G03` y 15 `UNRESOLVED_CONDITION`. Conserva 4 `UNRESOLVED_TYPE_FORMAT`, 98 `EMPTY_SEMANTICS_NOT_SPECIFIED`, y ownership diferido G04=24, G05=11, G07=4 (G06/G08=0); la política general de extensiones sigue `NOT_NORMATIVELY_RESOLVED`. `HEADER-SCHEMA` consume contrato y mapa: evalúa cabeceras incondicionales y condiciones por fila con expresiones G02, devuelve TRUE/FALSE/UNKNOWN y aplica efectos REQUIRED/OPTIONAL/FORBIDDEN donde la política está normalizada; deja los 15 casos restantes fuera de juicio y registra cabeceras extra sin invalidarlas. `FIELD-TYPE` consume los mismos artefactos, evalúa formatos/listas/rangos explícitos en alcance G03, y omite vacíos sin inventar semántica; condiciones y formatos no resueltos quedan fuera de juicio. Las restricciones de G04/G05/G07 no se ejecutan en G03. Estado local: mapa `IMPLEMENTED_TESTED_LOCAL`; FIELD-TYPE y el runtime de condiciones/HEADER-SCHEMA están conectados y probados localmente; `G03=IN_PROGRESS`, `G03_PUBLICATION=HOLD`. La suite G03 pasa 35/35; los gates dirigidos G02 RuleRegistry, ChangeAttribution, comparación/persistencia, split/lineage y engine preconditions también pasan; M02 pasa 21/21 checks y el gate sintético GTFS_Lab V1 pasa. `compileall`, `git diff --check` y el gate whitespace pasan. El descubrimiento amplio obtiene 152 tests, 151 PASS y 1 `SKIP` esperado: el replay de integración de transición Compliance requiere el DuckDB restaurado por separado y su SHA congelado; no se copió ni abrió la base protegida. Con el contrato de ausencia/skip documentado, `G03_READY_FOR_REVIEW=YES_LOCAL`; la revisión formal puede comenzar y la publicación sigue HOLD. La revisión de las dos reglas de ventana asigna a G03 la presencia condicional basada en campos de la misma fila y a G05 cualquier comparación temporal entre valores; siguen sin normalizar ni ejecutar y el recuento permanece 113/4/15. Estos son resultados locales; no constituyen aprobación humana ni publicación. No se ejecutó HOLDOUT. G04 (identidad y referencias), G05 (coherencia temporal) y G07 (reglas espaciales) permanecen fuera de G03.
+
+El burn-down normativo G03 del 2026-09-30 conserva `G03_REMAINS_IN_PROGRESS_WITH_KNOWN_GAPS`: de 31 condiciones, 16 se normalizaron y ejecutan localmente; 10 dependen de otras etapas/multirregistro, 1 de una feature diferida y 4 siguen declaradas sin regla machine-executable en el contrato actual. Permanecen 4 gaps de tipo/formato. La revisión de ownership de las dos condiciones de ventanas mantiene las reglas de presencia condicional en G03 y las comparaciones entre valores horarios en G05, sin normalizarlas ni ampliar el runtime. La revisión formal inicial registró tres hallazgos, resueltos en la remediación local documentada en el [paquete de revisión formal G03](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G03_FORMAL_REVIEW_BUNDLE_20260930.md). La verificación autorizada actual obtuvo 164 tests: 163 PASS y un `SKIP` explícito porque falta la DB Compliance protegida; G03 permanece `IN_PROGRESS`, con preparación de publicación autorizada. No se accedió a HOLDOUT ni se inició G04.
 
 ## Desarrollo posterior a la base del GTFS Audit Engine
 
@@ -68,5 +95,7 @@ La [revisión global de preparación técnica](reports/repository_integrity/TDL_
 Los tres KML históricos se conservan como referencia; GTFS_Lab V1 añade exportación KML/GeoJSON reproducible por run. `main.stops` sigue siendo un duplicado documentado cuyo propósito está pendiente de aclaración. Git conserva fuentes y evidencia seleccionada; bases, feeds, repositorios anidados y grandes generados requieren backup separado. La publicación del Git raíz no acredita ese backup integral.
 
 La documentación piloto histórica contiene referencias a 0.2.1 y al alcance previo del producto. No se sustituyen las versiones de runs ya generados por 0.2.2. La guía vigente del laboratorio diferencia esos resultados del proyecto global.
+
+El [mapa de capacidades de campos G03](02_Data_Engineering/GTFS_Lab/spec/gtfs_schedule_field_capability_map_2026_04_27.json) deriva 132 evaluaciones primarias: 113 `EXECUTABLE_G03`, 4 `PARTIALLY_EXECUTABLE_G03` y 15 `UNRESOLVED_CONDITION`. Sus categorías secundarias se cuentan por campo y pueden solaparse: 98 `EMPTY_SEMANTICS_NOT_SPECIFIED`, 24 `DEFERRED_G04`, 11 `DEFERRED_G05`, 4 `DEFERRED_G07`; el contrato no asigna restricciones a G06 ni G08. El runtime de condiciones está conectado localmente al evaluador HEADER-SCHEMA; los cuatro gaps de formato siguen sin evaluación léxica y la política de extensiones permanece sin resolver.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
