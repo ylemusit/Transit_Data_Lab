@@ -11,6 +11,11 @@ CONTRACT = ROOT / "spec" / "gtfs_schedule_fields_2026_04_27.json"
 CATALOG = ROOT / "spec" / "gtfs_schedule_2026_04_27.json"
 OUTPUT = ROOT / "spec" / "gtfs_schedule_field_capability_map_2026_04_27.json"
 RUNTIME = Path(__file__).with_name("rule_registry.py")
+EXECUTABLE_TYPE_VALIDATORS = {
+    "TEXT", "ID", "UNIQUE_ID", "FOREIGN_ID", "URL", "COLOR", "ENUM", "DATE", "TIME",
+    "NON_NEGATIVE_INTEGER", "POSITIVE_INTEGER", "NON_NULL_INTEGER", "FLOAT",
+    "NON_NEGATIVE_FLOAT", "POSITIVE_FLOAT", "LATITUDE", "LONGITUDE",
+}
 
 
 def _sha(path: Path) -> str:
@@ -27,9 +32,12 @@ def derive_capability_map(contract: dict[str, Any], catalog: dict[str, Any], run
             if condition and condition.get("normalization_status") == "NEEDS_REVIEW":
                 primary = "UNRESOLVED_CONDITION"
                 reason = "condition normalization_status is NEEDS_REVIEW"
-            elif field.get("format_constraints_status") != "EXPLICIT_OFFICIAL" or field.get("range_status") == "NOT_NORMALIZED_REQUIRES_REVIEW":
+            elif (field.get("format_constraints_status") != "EXPLICIT_OFFICIAL"
+                  or field.get("range_status") == "NOT_NORMALIZED_REQUIRES_REVIEW"
+                  or field["type"] not in EXECUTABLE_TYPE_VALIDATORS):
                 primary = "PARTIALLY_EXECUTABLE_G03"
-                reason = "G03 format or range metadata is explicitly incomplete"
+                reason = ("G03 lexical validator is not implemented for this type" if field["type"] not in EXECUTABLE_TYPE_VALIDATORS
+                          else "G03 format or range metadata is explicitly incomplete")
             else:
                 primary = "EXECUTABLE_G03"
                 reason = "condition is resolved and G03 type/format/range metadata permits evaluation"

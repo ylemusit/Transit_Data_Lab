@@ -149,14 +149,29 @@ class G03FileCatalogTests(unittest.TestCase):
         result = inspect_g03_archive(self.make_g03_zip({
             "agency.txt": "agency_name,agency_url,agency_timezone,cemv_support,imaginary_column\n"
                          "Transit,https://example.org,Europe/Madrid,9,x\n"}))
-        self.assertEqual("PASS", result["header_schema"]["status"])
+        self.assertEqual("NOT_EVALUABLE", result["header_schema"]["status"])
         self.assertEqual("FAIL_TECHNICAL", result["field_types"]["status"])
         self.assertTrue(result["header_schema"]["evaluator_executed"])
-        self.assertEqual("PASS", next(row for row in result["rules"] if row["rule_id"] == "GTFS-G03-HEADER-SCHEMA")["status"])
+        self.assertEqual("NOT_EVALUABLE", next(row for row in result["rules"] if row["rule_id"] == "GTFS-G03-HEADER-SCHEMA")["status"])
         self.assertEqual("NOT_EVALUABLE_EXTENSION_POLICY", next(
             row["status"] for row in result["header_schema"]["decisions"]
             if row.get("assessment") == "UNKNOWN_HEADER"))
         self.assertFalse(any(row["field"] == "agency_id" for row in result["header_schema"]["findings"]))
+
+    def test_checked_value_plus_unsupported_type_is_not_evaluable(self):
+        result = inspect_g03_archive(self.make_g03_zip({
+            "agency.txt": "agency_name,agency_timezone\nTransit,Europe/Madrid\n"}))
+        self.assertEqual("NOT_EVALUABLE", result["field_types"]["status"])
+        self.assertEqual(1, result["field_types"]["checked_values"])
+        self.assertTrue(any(row["field"] == "agency_timezone" and
+                            row["reason"] == "UNSUPPORTED_LEXICAL_VALIDATOR"
+                            for row in result["field_types"]["not_evaluable"]))
+
+    def test_partial_type_coverage_with_failure_preserves_failure(self):
+        result = inspect_g03_archive(self.make_g03_zip({
+            "agency.txt": "agency_name,agency_url,agency_timezone\nTransit,ftp://invalid,Europe/Madrid\n"}))
+        self.assertEqual("FAIL_TECHNICAL", result["field_types"]["status"])
+        self.assertTrue(result["field_types"]["not_evaluable"])
 
     def test_row_condition_runtime_applies_required_effects(self):
         path = self.root / "conditional.zip"

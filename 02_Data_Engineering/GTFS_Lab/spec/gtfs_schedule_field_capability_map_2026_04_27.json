@@ -10,8 +10,8 @@
     "catalog_sha256": "366A9CADDE04E3E2E5980FD02ACD3C9FBDA49766CC9C8E0AD7AD696F1EC712F8"
   },
   "primary_assessment_counts": {
-    "EXECUTABLE_G03": 113,
-    "PARTIALLY_EXECUTABLE_G03": 4,
+    "EXECUTABLE_G03": 106,
+    "PARTIALLY_EXECUTABLE_G03": 11,
     "UNRESOLVED_CONDITION": 15
   },
   "fields": [
@@ -39,7 +39,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "G03 format or range metadata is explicitly incomplete",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 8)"
     },
     {
@@ -110,10 +110,10 @@
     {
       "file_name": "agency.txt",
       "field_name": "agency_lang",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "OPTIONAL",
       "condition": null,
@@ -131,7 +131,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 5)"
     },
     {
@@ -185,16 +185,16 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "G03 format or range metadata is explicitly incomplete",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 6)"
     },
     {
       "file_name": "agency.txt",
       "field_name": "agency_timezone",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "REQUIRED",
       "condition": null,
@@ -212,7 +212,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 4)"
     },
     {
@@ -640,10 +640,10 @@
     {
       "file_name": "feed_info.txt",
       "field_name": "default_lang",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "OPTIONAL",
       "condition": null,
@@ -661,7 +661,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 4)"
     },
     {
@@ -688,7 +688,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "G03 format or range metadata is explicitly incomplete",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 8)"
     },
     {
@@ -755,10 +755,10 @@
     {
       "file_name": "feed_info.txt",
       "field_name": "feed_lang",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "REQUIRED",
       "condition": null,
@@ -776,7 +776,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt (Field Definitions table, row 3)"
     },
     {
@@ -3275,9 +3275,9 @@
     {
       "file_name": "stops.txt",
       "field_name": "stop_timezone",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "OPTIONAL",
       "condition": null,
@@ -3300,7 +3300,7 @@
         ]
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 12)"
     },
     {
@@ -3813,10 +3813,10 @@
     {
       "file_name": "translations.txt",
       "field_name": "language",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "REQUIRED",
       "condition": null,
@@ -3834,7 +3834,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 3)"
     },
     {
@@ -3953,10 +3953,10 @@
     {
       "file_name": "translations.txt",
       "field_name": "translation",
-      "primary_assessment": "EXECUTABLE_G03",
+      "primary_assessment": "PARTIALLY_EXECUTABLE_G03",
       "capabilities": [
         "EMPTY_SEMANTICS_NOT_SPECIFIED",
-        "EXECUTABLE_G03"
+        "PARTIALLY_EXECUTABLE_G03"
       ],
       "presence": "REQUIRED",
       "condition": null,
@@ -3974,7 +3974,7 @@
         "source_evidence": []
       },
       "deferred_ownership": [],
-      "derivation_reason": "condition is resolved and G03 type/format/range metadata permits evaluation",
+      "derivation_reason": "G03 lexical validator is not implemented for this type",
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#translationstxt (Field Definitions table, row 4)"
     },
     {
@@ -4368,5 +4368,5 @@
       "source_locator": "https://gtfs.org/documentation/schedule/reference/#tripstxt (Field Definitions table, row 9)"
     }
   ],
-  "output_sha256": "94A7D5F92F6A12DDCEC0DC93774A02B7D38278B64A01AE8C92DB1403304A4803"
+  "output_sha256": "F2CA6E714C758C00FF6D0B2ADC162FEA4A766A4BEA0ED33163DC51FFDA5FCA51"
 }

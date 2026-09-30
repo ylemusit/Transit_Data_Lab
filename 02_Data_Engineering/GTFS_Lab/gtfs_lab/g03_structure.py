@@ -282,7 +282,8 @@ def _evaluate_schema(source_zip: Path, files: dict[str, zipfile.ZipInfo], offici
         for name in sorted(actual - set(declared)):
             decisions.append({"file": entry["file_name"], "field": name, "assessment": "UNKNOWN_HEADER",
                               "status": "NOT_EVALUABLE_EXTENSION_POLICY"})
-    status = "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if not decisions else "PASS"
+            unevaluable.append({"file": entry["file_name"], "field": name, "reason": "UNRESOLVED_EXTENSION_POLICY"})
+    status = "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if unevaluable or not decisions else "PASS"
     return {"status": status, "findings": findings, "decisions": decisions,
             "conditional_rows": conditional_rows, "not_evaluable": unevaluable,
             "evaluator_executed": True, "capability_map_revision": capabilities["specification_revision"],
@@ -303,6 +304,7 @@ def _evaluate_restrictions(source_zip: Path, files: dict[str, zipfile.ZipInfo], 
 
 def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], official: dict, members: list[str]) -> dict:
     from .g03_field_contract import load_field_contract
+    from .g03_capability_map import EXECUTABLE_TYPE_VALIDATORS
     contract, _ = load_field_contract(catalog_path=Path(__file__).resolve().parents[1] / CATALOG_RELATIVE_PATH)
     capabilities = _load_capability_map()
     rows = {(row["file_name"].casefold(), row["field_name"]): row for row in capabilities["fields"]}
@@ -337,6 +339,10 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
                 not_evaluable.append({"file": entry["file_name"], "field": name, "reason": "UNRESOLVED_TYPE_FORMAT"}); continue
             if field.get("g03_validation_scope") != "G03_TYPE_FORMAT":
                 continue
+            if field["type"] not in EXECUTABLE_TYPE_VALIDATORS:
+                not_evaluable.append({"file": entry["file_name"], "field": name,
+                                      "reason": "UNSUPPORTED_LEXICAL_VALIDATOR"})
+                continue
             allowed = {x["value"] for x in field.get("allowed_values") or []}
             for row_no, value in enumerate(values[name], 1):
                 if value == "":
@@ -357,7 +363,7 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
                                                  value, f"range {bounds}", field["source_reference"]["source_locator"],
                                                  "Value is outside the explicit normative range"))
                 checked += 1
-    return {"status": "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if not checked else "PASS",
+    return {"status": "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if not checked or not_evaluable else "PASS",
             "findings": findings, "checked_values": checked, "not_evaluable": not_evaluable,
             "evaluator_executed": True, "capability_map_revision": capabilities["specification_revision"],
             "coverage_limitation": "Only values with executable G03 capability and explicit normalized format constraints are checked; empty-value semantics and G04/G05/G07 ownership are not inferred."}
