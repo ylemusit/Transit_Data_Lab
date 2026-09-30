@@ -75,9 +75,18 @@ def persist_audit(
             for rule_id, version in versions.items()
         ):
             raise ValueError("rule_identity_map must contain a valid rule_versions map")
-        # Explicit registry identity is authoritative and includes rules with
-        # no result/findings; it is never inferred from the validation payload.
-        executed_rule_versions = dict(sorted(versions.items()))
+        # Registry identity is complete; execution evidence is a separate set.
+        # Only explicit evaluator_executed markers count, and NOT_APPLICABLE
+        # can never mean that the evaluator ran.
+        registered_rule_versions = dict(sorted(versions.items()))
+        executed_ids = {
+            str(rule["rule_id"])
+            for rule in rules
+            if rule.get("rule_id") in versions
+            and rule.get("evaluator_executed") is True
+            and rule.get("status") != "NOT_APPLICABLE"
+        }
+        executed_rule_versions = {rule_id: registered_rule_versions[rule_id] for rule_id in sorted(executed_ids)}
     if rule_identity_map is None:
         executed_rule_versions = {
             str(rule["rule_id"]): str(rule["version"])
@@ -173,6 +182,8 @@ def persist_audit(
     )
     if rule_identity_map is not None:
         manifest["identity"] = {"rules": {"rule_versions": dict(sorted(rule_identity_map["rule_versions"].items()))}}
+        manifest["registered_rule_ids"] = sorted(registered_rule_versions)
+        manifest["registered_rule_versions"] = registered_rule_versions
     validate_audit_manifest(manifest)
     manifest_path = audit_dir / "audit_manifest.json"
     temporary_path: str | None = None

@@ -1,57 +1,64 @@
 # GTFS Audit Engine V1 — G02 Rule Registry + Specification Contract
 
-Fecha: 2026-09-30. Estado: `IMPLEMENTED_NOT_MERGED` sujeto a revisión. Base: `d7f4c76ce5c13844ea49303f0434f83d31d95a4c`. Autor: Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+Fecha: 2026-09-30. Estado: `CONTRACT_ALIGNED_PENDING_FINAL_REVIEW`. Base: `d7f4c76ce5c13844ea49303f0434f83d31d95a4c`. Autor: Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 
-## Alcance y titularidad
+## Alcance
 
-`gtfs_lab.rule_registry` es propietario del conjunto tipado de reglas declarado para una ejecución nueva. G02 define arquitectura ejecutable, pero no conecta este registro con `validation.py`, `pipeline.py` ni hallazgos productivos. No añade findings de operadores ni cambia los resultados GTFS_Lab V1. La especificación describe el contrato; el registro entrega las definiciones concretas.
+G02 establece contratos tipados para el registro de reglas, aplicabilidad, resultados y cobertura. No conecta el registro con `validation.py` ni `pipeline.py`, no cambia reglas productivas ni findings, y no implementa G03. `GTFS_AUDIT_ENGINE_V1_G01_SPECIFICATION_BASELINE` es la fuente normativa de las categorías, autoridades, clases de requisito y condiciones. El catálogo normalizado GTFS es referencia técnica y no una afirmación de autoridad jurídica.
 
-Cada `RuleDefinition` contiene ID estable, versión semántica independiente, categoría, autoridad, severidad, tipo de requisito, archivos aplicables, referencia de especificación, expresión de applicability, identidad del evaluator y cobertura declarada. IDs vacíos/duplicados, SemVer inválido y valores no soportados se rechazan. No existe configuración específica por operador.
+## Dimensiones de regla
 
-## Identidad y versión
+`category` conserva exactamente la taxonomía G01: `STRUCTURE`, `SCHEMA`, `TYPE_FORMAT`, `IDENTITY`, `REFERENTIAL`, `TEMPORAL`, `SEQUENCE`, `SPATIAL`, `DATA_CONSISTENCY`, `QUALITY`. No se sustituye por agrupaciones de alcance como conformidad técnica, calidad de datos o revisión geoespacial.
 
-`RuleRegistry.identity_map()` produce un mapa ordenado `{"rule_versions": {"GTFS-...": "1.0.0"}}` con todas las reglas registradas, incluso sin findings y aunque su disposición sea `NOT_APPLICABLE` o `NOT_EVALUABLE`. Antes de ejecutar se llama `freeze()`; desde entonces `register()` falla y la identidad describe el conjunto exacto congelado. ChangeAttribution 1.1.0 recibe este mapa como `identity.rules.rule_versions`; compara cambios por ID, incluso para reglas no aplicables. Un mapa vacío es válido para representar la eliminación de la última regla.
+`authority` acepta `GTFS_REQUIRED`, `GTFS_CONDITIONAL`, `GTFS_RECOMMENDED`, `TDL_QUALITY`. `requirement` acepta `REQUIRED`, `CONDITIONALLY_REQUIRED`, `OPTIONAL`, `RECOMMENDED`, `PROHIBITED_WHEN`. `severity` (`ERROR`, `WARNING`, `INFO`) es independiente de autoridad y requisito. En consecuencia: **authority != severity** y **requirement != category**.
 
-La revisión de la especificación GTFS `2026-04-27` es identidad de referencia y no es la versión semántica de una regla. Cambiar una regla requiere incrementar el SemVer de esa regla; no se deriva del número de revisión GTFS ni de la implementación del evaluator.
+## Identidad, aplicabilidad y ejecución
 
-## Applicability
+`RuleRegistry.freeze()` cierra el conjunto ordenado de definiciones. `identity_map()` devuelve `{"rule_versions": {rule_id: semantic_version}}`, que incluye todas las reglas registradas aunque sean no aplicables, no evaluables, produzcan cero findings o no lleguen a evaluación. Este mapa completo se persiste como `identity.rules.rule_versions`; `registered_rule_ids` y `registered_rule_versions` son conveniencias equivalentes.
 
-Las expresiones soportan `SIGNAL_PRESENT`, `SIGNAL_EQUALS`, `ALL`, `ANY` y `NOT`. Las señales faltantes o nulas producen `UNKNOWN`; la evaluación devuelve TRUE/FALSE/UNKNOWN junto con una traza determinista con condición, señal observada y motivo de decisión. TRUE autoriza evaluar el evaluator; FALSE produce `NOT_APPLICABLE`; UNKNOWN produce `NOT_EVALUABLE`. Ninguno de estos dos últimos estados equivale a parser error, función no soportada o inspección fallida.
+La identidad de regla no prueba que su evaluator se haya ejecutado: **rule identity != rule execution**. La persistencia explícita solo incluye en `executed_rule_ids` y `executed_rule_versions` reglas con evidencia `evaluator_executed: true` en el resultado y excluye siempre `NOT_APPLICABLE`. `NOT_EVALUABLE` puede estar marcado como ejecutado únicamente si la evidencia indica que el evaluator sí se invocó; una precondición no satisfecha no lo está. **rule applicability evaluation != evaluator execution**. Un PASS con cero findings sigue figurando como ejecución si lleva esa marca.
 
-`NOT_APPLICABLE` significa que la regla es válida y soportada, pero su precondición es falsa para este dataset. Si translations no está presente, una regla condicional a translations no aplica; si está presente y falta `feed_info`, la regla aplicable puede fallar. Ausencia de señal necesaria para decidir es `NOT_EVALUABLE`, nunca una certeza fabricada.
+La evaluación de applicability produce TRUE, FALSE o UNKNOWN. FALSE da `NOT_APPLICABLE`; UNKNOWN da `NOT_EVALUABLE`; TRUE habilita la ejecución, pero no la afirma. **coverage != status**: la cobertura describe la presencia del feature y el soporte declarado por el motor, no el resultado de una regla. Un feature presente diferido no produce por sí solo finding ni `FAIL_TECHNICAL`.
 
-## Resultado, severidad y compatibilidad legacy
+## Traducción del vocabulario G01 (opción B)
 
-El contrato nativo `EngineRuleResult 2.0.0` acepta exclusivamente `PASS`, `FAIL_TECHNICAL`, `NOT_EVALUABLE`, `NOT_APPLICABLE` e `INSPECTION_ERROR`. Severidad es un eje independiente: `ERROR`, `WARNING` o `INFO`. `WARNING` deja de ser estado solo en el contrato nuevo.
+G01 mantiene su vocabulario semántico: `FILE_PRESENT`, `FILE_ABSENT`, `FIELD_PRESENT`, `FIELD_VALUE_EQUALS`, `FIELD_VALUE_IN`, `ENTITY_EXISTS`, `PARENT_ENTITY_EXISTS`, `RELATED_FILE_PRESENT`, `ONE_OF_FILES_PRESENT`, `DEPENDENT_FIELDS`, `ALL`, `ANY`, `NOT` y `ALL_SERVICE_DATES_DEFINED`. `SpecificationCondition` conserva esos operadores en el contrato de entrada. `compile_specification_condition()` los traduce sin pérdida semántica a señales runtime tipadas y `SIGNAL_PRESENT`, `SIGNAL_EQUALS`, `ALL`, `ANY`, `NOT`:
 
-El normalizador legacy conserva `WARNING` como estado y los valores históricos de severidad. La compatibilidad es explícita por rutas distintas: no se transforma un payload histórico ni se normaliza implícitamente legacy `WARNING` a un estado nuevo. El contrato de resultado engine-native se versiona como `2.0.0`; `MANIFEST_VERSION = 1.1.2` no cambia y sus semánticas persistidas siguen intactas. Los artefactos G02 pueden añadir `identity.rules.rule_versions` cuando persistencia recibe el parámetro optativo autoritativo `rule_identity_map`; la ruta V1 sin ese parámetro conserva su serialización.
+- Predicados de presencia (archivo, campo, entidad, entidad padre o fichero relacionado) usan una señal booleana cuyo valor representa exactamente ese predicado.
+- `FILE_ABSENT` niega la señal de presencia del archivo. `FIELD_VALUE_EQUALS` compara el valor inspeccionado con el literal. `FIELD_VALUE_IN` conserva el conjunto G01 en el comparador de señales y comprueba el valor inspeccionado contra ese conjunto.
+- `ONE_OF_FILES_PRESENT`, `DEPENDENT_FIELDS` y `ALL_SERVICE_DATES_DEFINED` usan señales booleanas calculadas conforme a su predicado G01, no inferidas de una mera presencia genérica.
+- `ALL`, `ANY`, `NOT` conservan estructura y lógica de tres valores. Señal ausente o nula es UNKNOWN, no FALSE.
 
-## Autoridad, requisito y cobertura
+La construcción de señales es responsabilidad de la capa inspectora futura; este contrato no la conecta al validador productivo. No se permite mapear un predicado a una señal con significado distinto.
 
-`authority` identifica la base de autoridad (`GTFS_SPECIFICATION` o `TDL_CONTRACT`); `requirement` expresa `REQUIRED`, `RECOMMENDED` o `CONDITIONAL`. No se confunden severidad ni autoridad con resultado.
+## Resultados, cobertura y compatibilidad
 
-`RuleCoverage` representa presencia del feature y soporte de auditoría aparte de RuleResult: `FEATURE_NOT_PRESENT`, `FEATURE_PRESENT_FULLY_AUDITED`, `FEATURE_PRESENT_PARTIALLY_AUDITED` y `FEATURE_PRESENT_DEFERRED`. Combinaciones contradictorias se rechazan. Un feature presente diferido (`presence=PRESENT`, `audit_support=DEFERRED`) es metadato de cobertura y no genera finding ni `FAIL_TECHNICAL` por sí solo.
+`EngineRuleResult 2.0.0` admite `PASS`, `FAIL_TECHNICAL`, `NOT_EVALUABLE`, `NOT_APPLICABLE`, `INSPECTION_ERROR`; severidad permanece separada. La ruta legacy conserva `WARNING` como estado y sus bytes/semántica actuales. `MANIFEST_VERSION = 1.1.2` no cambia.
 
-## Persistencia y ChangeAttribution
+Cobertura admite `FEATURE_NOT_PRESENT`, `FEATURE_PRESENT_FULLY_AUDITED`, `FEATURE_PRESENT_PARTIALLY_AUDITED`, `FEATURE_PRESENT_DEFERRED` con presencia y soporte coherentes. La cobertura no modifica el estado de resultado.
 
-Persistencia acepta `rule_identity_map` explícito y persiste el mismo mapa en `identity.rules.rule_versions`, `executed_rule_versions` e IDs ejecutados. Este origen incluye reglas PASS sin hallazgos, NOT_APPLICABLE, NOT_EVALUABLE y cualquier regla registrada sin finding. No reconstruye el mapa desde `validation.rules` cuando se suministra identidad; sin ella, se mantiene la derivación legacy actual. ChangeAttribution 1.1.0 compara mapa sin cambios, cambio semántico, alta, baja y cambios de versión con estado no aplicable. Los snapshots ChangeAttribution 1.0.0 siguen en su comparador original; mezclar contratos continúa `NOT_COMPARABLE`, sin inferir identidad histórica ausente.
+Sin `rule_identity_map`, persistencia conserva exactamente el comportamiento legacy y no reescribe campos históricos. Con mapa, añade identidad completa y separa evidencia ejecutada mediante el marcador explícito. Los campos legados `executed_rule_ids` y `executed_rule_versions` no se renombran ni se les atribuye la identidad de todo el registry. Los snapshots ChangeAttribution 1.0 permanecen en su comparador; no se infiere identidad ausente.
+
+## ChangeAttribution
+
+ChangeAttribution 1.1 usa `identity.rules.rule_versions` como identidad semántica de regla: mapa sin cambios, cambio semántico, alta, baja y cambio aun con status `NOT_APPLICABLE`. Cada ID y versión individual mantiene la validación vigente. El mapa vacío representa de forma válida el registry vacío (incluida la eliminación de la última regla).
 
 ## Frontera de migración
 
-La validación legacy y sus siete salidas permanecen intactas en G02. No se conectan todavía reglas productivas al registry, no se reescribe evidencia histórica y no se declara equivalencia de resultados GTFS. Una migración posterior deberá comparar explícitamente salidas legacy/nuevas antes de adopción.
+G02 no conecta el registry a la validación productiva, no añade hallazgos GTFS, no accede a datasets HOLDOUT ni ejecuta G03. Cualquier adopción productiva posterior requiere su alcance y revisión propios.
 
-## Evidencia y estado
+## Verificación
 
-Verificación local sobre esta rama/base:
-
-| Comprobación | Resultado |
+| Comprobación | Resultado local |
 | --- | --- |
-| `python -m unittest tests.test_g02_rule_registry -v` | 8 tests PASS; cubre registro, expresiones, estados, cobertura, ChangeAttribution y persistencia explícita. |
-| `python -m unittest tests.test_change_attribution_contract -v` | 16 tests PASS (ChangeAttribution 1.0.0). |
-| `python -m unittest tests.test_audit_comparison -v` | 23 tests PASS; incluye pipeline GTFS con fixtures sintéticos y comparación/persistencia. |
-| `python -m unittest tests.test_engine_preconditions -v` | 10 tests PASS (ChangeAttribution 1.1.0 y precondiciones sintéticas). |
-| `python -m gtfs_lab.trust_persistence_gate --output <directorio-temporal-nuevo>` | PASS, 21 comprobaciones M02. |
-| `python -m compileall -q tools 02_Data_Engineering/GTFS_Lab/gtfs_lab 02_Data_Engineering/GTFS_Lab/tests` | PASS. |
-| `git diff --check d7f4c76ce5c13844ea49303f0434f83d31d95a4c` | PASS. |
+| G02 focalizado | 10 tests PASS; taxonomía, traducción G01, identidad/ejecución, persistencia y ruta legacy. |
+| ChangeAttribution 1.0 | 16 tests PASS. |
+| ChangeAttribution 1.1 / precondiciones | 10 tests PASS. |
+| Comparación y pipeline sintético | 23 tests PASS. |
+| Tests corpus split / lineage review | 23 + 6 tests PASS; metadatos solamente. |
+| Persistencia M02 | PASS, 21 checks. |
+| Flujo sintético del workflow PR | PASS: fuentes Compliance portables, trust, Golden contract/corpus/evaluator y split/lineage metadata gates. |
+| `compileall` | PASS. |
+| `git diff --check <base>` | PASS. |
 
-No se ejecutaron gates ni pruebas del split/lineage que consultan inventarios HOLDOUT. No se accedió a datasets HOLDOUT. El total focalizado es 57 tests PASS, más 21 comprobaciones del gate M02. Este estado no es un PASS de gate humano ni un merge: `G02 = IMPLEMENTED_NOT_MERGED` queda sujeto a revisión de código y Draft PR.
+No se leyeron bytes ni se reprodujeron feeds HOLDOUT. Los gates split/lineage anteriores inspeccionan sus metadatos de acuerdo con el workflow; no son validación del dataset. PR #22 continúa OPEN en su HEAD de entrada hasta que estos cambios se publiquen. El check remoto `synthetic` en SUCCESS corresponde a `0cb074d4b4c1e011bd2cc384b61f1c7ee91b7811`, no a esta edición local pendiente.

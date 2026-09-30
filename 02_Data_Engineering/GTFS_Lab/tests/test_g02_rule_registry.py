@@ -17,14 +17,16 @@ from gtfs_lab.rule_registry import (
     ApplicabilityTruth as Truth, CoverageState, RequirementKind, RuleAuthority,
     RuleCategory, RuleDefinition, RuleRegistry, RuleStatus, Severity,
     SpecificationReference, RuleCoverage, evaluate_applicability,
+    SpecificationCondition as G01, SpecificationConditionOperator as G01Op,
+    compile_specification_condition,
 )
 
 
 def rule(rule_id="GTFS-TEST", version="1.0.0", expression=None):
     return RuleDefinition(
-        rule_id, version, RuleCategory.TECHNICAL_CONFORMANCE,
-        RuleAuthority.GTFS_SPECIFICATION, Severity.ERROR, RequirementKind.REQUIRED,
-        ("stops.txt",), SpecificationReference("GTFS_SPECIFICATION", "2026-04-27", "stops"),
+        rule_id, version, RuleCategory.STRUCTURE,
+        RuleAuthority.GTFS_REQUIRED, Severity.ERROR, RequirementKind.REQUIRED,
+        ("stops.txt",), SpecificationReference("GTFS Schedule", "2026-04-27", "stops"),
         expression or Expr(Op.SIGNAL_PRESENT, signal="stops"), "test-evaluator/1", lambda _: None,
         ("stops",),
     )
@@ -104,6 +106,41 @@ class G02RegistryTests(unittest.TestCase):
             with self.subTest(field=field), self.assertRaises(ValueError):
                 RuleDefinition(**args)
 
+    def test_g01_taxonomy_values_and_unsupported_values(self):
+        self.assertEqual(10, len(RuleCategory))
+        self.assertEqual({"STRUCTURE", "SCHEMA", "TYPE_FORMAT", "IDENTITY", "REFERENTIAL", "TEMPORAL", "SEQUENCE", "SPATIAL", "DATA_CONSISTENCY", "QUALITY"}, {x.value for x in RuleCategory})
+        self.assertEqual({"GTFS_REQUIRED", "GTFS_CONDITIONAL", "GTFS_RECOMMENDED", "TDL_QUALITY"}, {x.value for x in RuleAuthority})
+        self.assertEqual({"REQUIRED", "CONDITIONALLY_REQUIRED", "OPTIONAL", "RECOMMENDED", "PROHIBITED_WHEN"}, {x.value for x in RequirementKind})
+        for field, values in (("category", RuleCategory), ("authority", RuleAuthority), ("requirement", RequirementKind)):
+            for value in values:
+                args = dict(rule().__dict__)
+                args[field] = value.value
+                RuleDefinition(**args)
+        with self.assertRaises(ValueError):
+            G01("NOT_A_G01_OPERATOR", subject="x")
+
+    def test_g01_condition_translation_is_lossless_to_declared_signals(self):
+        cases = [
+            (G01(G01Op.FILE_PRESENT, subject="file:translations"), {"file:translations": True}, Truth.TRUE),
+            (G01(G01Op.FILE_ABSENT, subject="file:calendar"), {"file:calendar": False}, Truth.TRUE),
+            (G01(G01Op.FIELD_PRESENT, subject="field:routes.network_id"), {"field:routes.network_id": True}, Truth.TRUE),
+            (G01(G01Op.FIELD_VALUE_EQUALS, subject="field:feed_info.feed_type", value="fixed"), {"field:feed_info.feed_type": "fixed"}, Truth.TRUE),
+            (G01(G01Op.FIELD_VALUE_IN, subject="field:routes.route_type", values=("0", "1", "2")), {"field:routes.route_type": "2"}, Truth.TRUE),
+            (G01(G01Op.ENTITY_EXISTS, subject="entity:locations.geojson"), {"entity:locations.geojson": True}, Truth.TRUE),
+            (G01(G01Op.PARENT_ENTITY_EXISTS, subject="entity:parent_station"), {"entity:parent_station": True}, Truth.TRUE),
+            (G01(G01Op.RELATED_FILE_PRESENT, subject="file:related"), {"file:related": True}, Truth.TRUE),
+            (G01(G01Op.ONE_OF_FILES_PRESENT, subject="files:calendar_or_dates.any"), {"files:calendar_or_dates.any": True}, Truth.TRUE),
+            (G01(G01Op.DEPENDENT_FIELDS, subject="fields:dependent.valid"), {"fields:dependent.valid": True}, Truth.TRUE),
+            (G01(G01Op.ALL_SERVICE_DATES_DEFINED, subject="calendar_dates:all_service_dates_defined"), {"calendar_dates:all_service_dates_defined": True}, Truth.TRUE),
+        ]
+        for condition, signals, expected in cases:
+            with self.subTest(operator=condition.operator):
+                self.assertEqual(expected, evaluate_applicability(compile_specification_condition(condition), signals).truth)
+        in_condition, _, _ = cases[4]
+        self.assertEqual(Truth.FALSE, evaluate_applicability(compile_specification_condition(in_condition), {"field:routes.route_type": "99"}).truth)
+        nested = G01(G01Op.ALL, conditions=(cases[0][0], G01(G01Op.NOT, conditions=(G01(G01Op.FILE_PRESENT, subject="file:optional"),))))
+        self.assertEqual(Truth.TRUE, evaluate_applicability(compile_specification_condition(nested), {"file:translations": True, "file:optional": False}).truth)
+
     def test_engine_status_severity_and_legacy_warning_are_separate(self):
         self.assertIn("NOT_APPLICABLE", ENGINE_RULE_RESULT_STATUSES)
         self.assertEqual("NOT_APPLICABLE", validate_engine_status("NOT_APPLICABLE"))
@@ -154,16 +191,25 @@ class G02RegistryTests(unittest.TestCase):
             (work / "exports").mkdir()
             ctx = RunContext("run-g02", DatasetIdentity("d", "feed.zip", digest, "2026-01-01T00:00:00Z", "p/1", "g/1"), source, work, {}, {})
             result_rules = [
-                {"rule_id": rule_id, "version": version, "scope": "G02", "severity": "ERROR", "status": status, "findings": []}
-                for rule_id, version, status in (("GTFS-PASS", "1.0.0", "PASS"), ("GTFS-FAIL", "1.0.1", "FAIL_TECHNICAL"), ("GTFS-NA", "1.2.0", "NOT_APPLICABLE"), ("GTFS-UNKNOWN", "2.0.0", "NOT_EVALUABLE"), ("GTFS-ERROR", "2.1.0", "INSPECTION_ERROR"))
+                {"rule_id": rule_id, "version": version, "scope": "G02", "severity": "ERROR", "status": status, "findings": [], "evaluator_executed": executed}
+                for rule_id, version, status, executed in (("GTFS-PASS", "1.0.0", "PASS", True), ("GTFS-FAIL", "1.0.1", "FAIL_TECHNICAL", True), ("GTFS-NA", "1.2.0", "NOT_APPLICABLE", False), ("GTFS-UNKNOWN", "2.0.0", "NOT_EVALUABLE", False), ("GTFS-ERROR", "2.1.0", "INSPECTION_ERROR", False), ("GTFS-ZERO", "3.0.0", "PASS", True))
             ]
             result = {"validation": {"rules": result_rules}, "dataset": ctx.dataset.__dict__, "gtfs_lab_version": "g/1", "validator_version": "v/1", "summary": {"status": "PASS"}}
-            identities = {"rule_versions": {"GTFS-PASS": "1.0.0", "GTFS-FAIL": "1.0.1", "GTFS-NA": "1.2.0", "GTFS-UNKNOWN": "2.0.0", "GTFS-ERROR": "2.1.0"}}
+            identities = {"rule_versions": {"GTFS-PASS": "1.0.0", "GTFS-FAIL": "1.0.1", "GTFS-NA": "1.2.0", "GTFS-UNKNOWN": "2.0.0", "GTFS-ERROR": "2.1.0", "GTFS-ZERO": "3.0.0", "GTFS-REGISTERED": "1.0.0"}}
             persisted = persist_audit(ctx, result, rule_identity_map=identities)
             manifest = json.loads((work / "audit" / "audit_manifest.json").read_text(encoding="utf-8"))
             self.assertEqual("ACCEPTED", persisted["manifest_status"])
             self.assertEqual(identities["rule_versions"], manifest["identity"]["rules"]["rule_versions"])
-            self.assertEqual(identities["rule_versions"], manifest["executed_rule_versions"])
+            self.assertEqual(identities["rule_versions"], manifest["registered_rule_versions"])
+            self.assertEqual(sorted(identities["rule_versions"]), manifest["registered_rule_ids"])
+            self.assertEqual({"GTFS-PASS": "1.0.0", "GTFS-FAIL": "1.0.1", "GTFS-ZERO": "3.0.0"}, manifest["executed_rule_versions"])
+            self.assertEqual(["GTFS-FAIL", "GTFS-PASS", "GTFS-ZERO"], manifest["executed_rule_ids"])
+            persist_audit(ctx, result)
+            legacy_manifest = json.loads((work / "audit" / "audit_manifest.json").read_text(encoding="utf-8"))
+            self.assertNotIn("identity", legacy_manifest)
+            self.assertNotIn("registered_rule_versions", legacy_manifest)
+            self.assertEqual(sorted(rule["rule_id"] for rule in result_rules), legacy_manifest["executed_rule_ids"])
+            self.assertEqual({rule["rule_id"]: rule["version"] for rule in result_rules}, legacy_manifest["executed_rule_versions"])
 
 
 if __name__ == "__main__":

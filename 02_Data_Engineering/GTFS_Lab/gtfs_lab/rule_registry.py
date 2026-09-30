@@ -16,20 +16,31 @@ _SEMVER = re.compile(r"^(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)(?:-(?:
 
 
 class RuleCategory(StrEnum):
-    TECHNICAL_CONFORMANCE = "TECHNICAL_CONFORMANCE"
-    DATA_QUALITY = "DATA_QUALITY"
-    GEOSPATIAL_REVIEW = "GEOSPATIAL_REVIEW"
+    STRUCTURE = "STRUCTURE"
+    SCHEMA = "SCHEMA"
+    TYPE_FORMAT = "TYPE_FORMAT"
+    IDENTITY = "IDENTITY"
+    REFERENTIAL = "REFERENTIAL"
+    TEMPORAL = "TEMPORAL"
+    SEQUENCE = "SEQUENCE"
+    SPATIAL = "SPATIAL"
+    DATA_CONSISTENCY = "DATA_CONSISTENCY"
+    QUALITY = "QUALITY"
 
 
 class RuleAuthority(StrEnum):
-    GTFS_SPECIFICATION = "GTFS_SPECIFICATION"
-    TDL_CONTRACT = "TDL_CONTRACT"
+    GTFS_REQUIRED = "GTFS_REQUIRED"
+    GTFS_CONDITIONAL = "GTFS_CONDITIONAL"
+    GTFS_RECOMMENDED = "GTFS_RECOMMENDED"
+    TDL_QUALITY = "TDL_QUALITY"
 
 
 class RequirementKind(StrEnum):
     REQUIRED = "REQUIRED"
+    CONDITIONALLY_REQUIRED = "CONDITIONALLY_REQUIRED"
+    OPTIONAL = "OPTIONAL"
     RECOMMENDED = "RECOMMENDED"
-    CONDITIONAL = "CONDITIONAL"
+    PROHIBITED_WHEN = "PROHIBITED_WHEN"
 
 
 class Severity(StrEnum):
@@ -58,6 +69,74 @@ class ApplicabilityOperator(StrEnum):
     ALL = "ALL"
     ANY = "ANY"
     NOT = "NOT"
+
+
+class SpecificationConditionOperator(StrEnum):
+    """G01 condition vocabulary; each leaf maps to a typed runtime signal."""
+    FILE_PRESENT = "FILE_PRESENT"
+    FILE_ABSENT = "FILE_ABSENT"
+    FIELD_PRESENT = "FIELD_PRESENT"
+    FIELD_VALUE_EQUALS = "FIELD_VALUE_EQUALS"
+    FIELD_VALUE_IN = "FIELD_VALUE_IN"
+    ENTITY_EXISTS = "ENTITY_EXISTS"
+    PARENT_ENTITY_EXISTS = "PARENT_ENTITY_EXISTS"
+    RELATED_FILE_PRESENT = "RELATED_FILE_PRESENT"
+    ONE_OF_FILES_PRESENT = "ONE_OF_FILES_PRESENT"
+    DEPENDENT_FIELDS = "DEPENDENT_FIELDS"
+    ALL = "ALL"
+    ANY = "ANY"
+    NOT = "NOT"
+    ALL_SERVICE_DATES_DEFINED = "ALL_SERVICE_DATES_DEFINED"
+
+
+@dataclass(frozen=True)
+class SpecificationCondition:
+    """A G01 condition compiled to the generalized runtime signal model."""
+    operator: SpecificationConditionOperator | str
+    subject: str | None = None
+    value: Any = None
+    values: tuple[Any, ...] = ()
+    conditions: tuple["SpecificationCondition", ...] = ()
+
+    def __post_init__(self) -> None:
+        try:
+            operator = SpecificationConditionOperator(self.operator)
+        except ValueError as exc:
+            raise ValueError(f"unsupported G01 condition operator: {self.operator!r}") from exc
+        object.__setattr__(self, "operator", operator)
+        if operator in {SpecificationConditionOperator.ALL, SpecificationConditionOperator.ANY}:
+            if not self.conditions or self.subject is not None:
+                raise ValueError(f"{operator.value} requires child conditions")
+        elif operator == SpecificationConditionOperator.NOT:
+            if len(self.conditions) != 1 or self.subject is not None:
+                raise ValueError("NOT requires exactly one child condition")
+        elif operator == SpecificationConditionOperator.FIELD_VALUE_IN:
+            if not self.subject or not self.values or self.conditions:
+                raise ValueError("FIELD_VALUE_IN requires a subject and values")
+        elif not self.subject or self.conditions:
+            raise ValueError(f"{operator.value} requires a subject")
+
+
+def compile_specification_condition(condition: SpecificationCondition) -> ApplicabilityExpression:
+    """Compile G01 conditions losslessly to signal predicates and boolean operators.
+
+    The caller constructs normalized signals (e.g. file presence as bool,
+    field value as a scalar, membership as bool) from its feed inspection.
+    """
+    op = SpecificationConditionOperator(condition.operator)
+    if op in {SpecificationConditionOperator.ALL, SpecificationConditionOperator.ANY, SpecificationConditionOperator.NOT}:
+        runtime = {SpecificationConditionOperator.ALL: ApplicabilityOperator.ALL,
+                   SpecificationConditionOperator.ANY: ApplicabilityOperator.ANY,
+                   SpecificationConditionOperator.NOT: ApplicabilityOperator.NOT}[op]
+        return ApplicabilityExpression(runtime, conditions=tuple(compile_specification_condition(c) for c in condition.conditions))
+    if op == SpecificationConditionOperator.FILE_ABSENT:
+        return ApplicabilityExpression(ApplicabilityOperator.NOT, conditions=(ApplicabilityExpression(ApplicabilityOperator.SIGNAL_PRESENT, signal=condition.subject),))
+    if op == SpecificationConditionOperator.FIELD_VALUE_IN:
+        return ApplicabilityExpression(ApplicabilityOperator.SIGNAL_EQUALS, signal=condition.subject, expected={"in": condition.values})
+    if op in {SpecificationConditionOperator.FIELD_VALUE_EQUALS, SpecificationConditionOperator.ALL_SERVICE_DATES_DEFINED}:
+        expected = condition.value if op == SpecificationConditionOperator.FIELD_VALUE_EQUALS else True
+        return ApplicabilityExpression(ApplicabilityOperator.SIGNAL_EQUALS, signal=condition.subject, expected=expected)
+    return ApplicabilityExpression(ApplicabilityOperator.SIGNAL_PRESENT, signal=condition.subject)
 
 
 class CoverageState(StrEnum):
@@ -123,7 +202,10 @@ def evaluate_applicability(expression: ApplicabilityExpression, signals: Mapping
             elif op == ApplicabilityOperator.SIGNAL_PRESENT:
                 truth = ApplicabilityTruth.TRUE if bool(observed) else ApplicabilityTruth.FALSE
             else:
-                truth = ApplicabilityTruth.TRUE if observed == node.expected else ApplicabilityTruth.FALSE
+                if isinstance(node.expected, Mapping) and set(node.expected) == {"in"}:
+                    truth = ApplicabilityTruth.TRUE if observed in node.expected["in"] else ApplicabilityTruth.FALSE
+                else:
+                    truth = ApplicabilityTruth.TRUE if observed == node.expected else ApplicabilityTruth.FALSE
             trace.append({"operator": op.value, "condition": node.signal, "observed": observed if present else "MISSING", "expected": node.expected if op == ApplicabilityOperator.SIGNAL_EQUALS else None, "truth": truth.value})
             return truth
         children = [evaluate(child) for child in node.conditions]
