@@ -19,7 +19,8 @@ EXECUTABLE_TYPE_VALIDATORS = {
 
 
 def _sha(path: Path) -> str:
-    return hashlib.sha256(path.read_bytes()).hexdigest().upper()
+    content = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return hashlib.sha256(content).hexdigest().upper()
 
 
 def derive_capability_map(contract: dict[str, Any], catalog: dict[str, Any], runtime_sha256: str) -> dict[str, Any]:

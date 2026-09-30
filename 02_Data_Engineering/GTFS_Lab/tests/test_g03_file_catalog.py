@@ -75,11 +75,13 @@ class G03FileCatalogTests(unittest.TestCase):
 
     def test_pipeline_keeps_catalog_additive_to_legacy_findings(self):
         fixtures = create_fixtures(self.root / "fixtures")
-        result = run(fixtures["ORPHAN_TRIP"], self.root / "runs")
+        result = run(fixtures["ORPHAN_ROUTE"], self.root / "runs")
         catalog = result["g03_file_catalog"]
         self.assertEqual("PASS", catalog["status"])
         self.assertNotIn("GTFS-G03-FILE-CATALOG", {rule["rule_id"] for rule in result["validation"]["rules"]})
         self.assertTrue(result["validation"]["findings"])
+        self.assertEqual({"GTFS-REF-TRIP-ROUTE"},
+                         {item["rule_id"] for item in result["validation"]["findings"]})
         self.assertEqual(len(result["validation"]["findings"]), result["validation"]["finding_count"])
         self.assertTrue(all(item["rule_id"] != "GTFS-G03-FILE-CATALOG" for item in result["validation"]["findings"]))
 
