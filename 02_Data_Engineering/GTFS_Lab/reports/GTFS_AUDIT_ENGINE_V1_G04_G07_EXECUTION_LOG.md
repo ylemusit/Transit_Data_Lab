@@ -2,7 +2,8 @@
 
 **Entrada rápida:** `PROJECT_STATUS.md` → sección «GTFS Audit Engine V1 — candidatos locales hasta G07» → este registro.\
 **Worktree:** `C:\Users\yeiso\AppData\Local\Temp\tdl-gtfs-engine-g04`\
-**Base / HEAD local:** `137ff4ed38da65fb3fb61f9804d729a1cee51feb`\
+**Base del candidato:** `137ff4ed38da65fb3fb61f9804d729a1cee51feb`\
+**HEAD con CI PASS:** `4528d88e5e0a75152112bfc2545e006af34ceed2`\
 **Última actualización:** 2026-10-01
 
 ## Estado en una mirada
@@ -11,10 +12,10 @@
 | --- | --- | --- | --- |
 | 01 | Aprobar alcances y reglas G05–G07; verificar su registro tipado | CERRADO localmente | [Aprobación formal y revalidación](TDL_GTFS_AUDIT_ENGINE_G04_G07_FORMAL_SCOPE_APPROVAL_20261001.md) |
 | 02 | Publicar candidato en una rama y abrir PR para ejecutar CI remoto | CERRADO | [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26) |
-| 03 | Revisar CI remoto y resolver sus resultados | EN CURSO | Check `synthetic`, run `36790578771`, pendiente |
-| 04 | Decidir cierre técnico G04–G07 | NO INICIADO | Depende de pasos anteriores; requiere decisión de cierre |
+| 03 | Revisar CI remoto y resolver sus resultados | CERRADO; PASS | Check `synthetic`, run `36790819465` |
+| 04 | Integrar y decidir cierre técnico G04–G07 | ESPERA autorización de merge | [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26), CI verde |
 
-G04–G07 conservan revisión técnica local `PASS`; ninguna fase figura `CLOSED`. No se ha ejecutado HOLDOUT. La autorización de alcance de G05–G07 no equivale a autorización de publicación.
+G04–G07 conservan revisión técnica local `PASS`; ninguna fase figura `CLOSED`. No se ha ejecutado HOLDOUT. La aprobación de alcance no equivale a autorización de publicación; la autorización de publicación está registrada en el paso 02.
 
 ## Registro cronológico de pasos
 
@@ -46,11 +47,21 @@ G04–G07 conservan revisión técnica local `PASS`; ninguna fase figura `CLOSED
 
 - **Solicitado:** ejecutar los checks del repositorio sobre el candidato publicado.
 - **Analizado:** la PR #26 disparó el check `synthetic` en Actions.
-- **Decidido:** revisar el resultado sobre el HEAD final y registrar cualquier fallo antes de declarar el paso cerrado.
-- **Implementación:** el registro de la publicación se añade como commit documental a la misma PR; esto actualizará su HEAD y reiniciará los checks.
-- **Resultado / validación:** pendiente del CI remoto sobre el HEAD final.
-- **Estado:** en curso.
-- **Siguiente:** cerrar el paso 03 tras confirmar los checks; después abrir paso 04 para decidir el cierre técnico G04–G07.
+- **Decidido:** aceptar el PASS del check remoto como evidencia técnica del candidato; la integración y el cierre permanecen como paso separado.
+- **Implementado:** workflow remoto ejecutado por GitHub Actions.
+- **Resultado:** run `36790819465`, conclusión `success`, sobre `4528d88e5e0a75152112bfc2545e006af34ceed2`.
+- **Validación:** compilación Python, fuentes legales portables, suites sintéticas de confianza/comparación/corpus/precondiciones (incluidas G04, G05–G07 y G03), contratos congelados M01/M03 e integridad whitespace: PASS. [Ejecución](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36790819465).
+- **Cierre:** paso 03 cerrado con PASS técnico remoto el 2026-10-01. PR #26 permanece OPEN/CLEAN; no se ha fusionado.
+- **Siguiente:** paso 04, integrar la PR y decidir el cierre técnico G04–G07. La autorización actual no incluye merge.
+
+### Paso 04 — integración y cierre técnico
+
+- **Solicitado:** completar G07 con trazabilidad por pasos.
+- **Situación:** revisión técnica local PASS; alcances G05–G07 aprobados; CI remoto PASS; PR #26 abierta y limpia.
+- **Propuesta:** fusionar la PR #26 tras autorización expresa. Después verificar el merge commit y el workflow post-merge, y registrar la decisión de cierre con evidencia del commit final.
+- **Decisión:** pendiente; Yeison aún no ha autorizado el merge.
+- **Estado:** en espera de autorización. Mantener G04–G07 en `CLOSURE_PENDING` mientras la PR no se integre.
+- **Siguiente:** pendiente autorización expresa para integrar la PR #26; después verificar el merge y el workflow post-merge.
 
 ## Inventario de archivos
 
