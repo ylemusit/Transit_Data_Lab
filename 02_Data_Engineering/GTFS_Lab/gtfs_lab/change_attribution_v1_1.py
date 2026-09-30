@@ -16,7 +16,7 @@ VERSION_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._/-]*$")
 def _versions(snapshot: dict[str, Any]) -> dict[str, str]:
     rules = snapshot.get("identity", {}).get("rules", {})
     versions = rules.get("rule_versions")
-    if not isinstance(versions, dict) or not versions:
+    if not isinstance(versions, dict):
         raise ValueError("ChangeAttribution 1.1.0 requires rules.rule_versions")
     for rule_id, version in versions.items():
         if not isinstance(rule_id, str) or not VERSION_RE.fullmatch(rule_id) or not isinstance(version, str) or not VERSION_RE.fullmatch(version):

@@ -5,9 +5,14 @@ from datetime import datetime, timedelta, timezone
 from hashlib import sha256
 from typing import Any
 import json
+from dataclasses import dataclass
 
 MANIFEST_VERSION = "1.1.2"
+# Frozen legacy manifest 1.1.2 vocabulary. Engine-native statuses are a
+# separately versioned contract and must pass through validate_engine_status.
 RULE_RESULT_STATUSES = {"PASS", "FAIL_TECHNICAL", "WARNING", "NOT_EVALUABLE", "INSPECTION_ERROR"}
+ENGINE_RULE_RESULT_CONTRACT_VERSION = "2.0.0"
+ENGINE_RULE_RESULT_STATUSES = {"PASS", "FAIL_TECHNICAL", "NOT_EVALUABLE", "NOT_APPLICABLE", "INSPECTION_ERROR"}
 FINDING_LIFECYCLE_STATES = {
     "DETECTED",
     "REPRODUCED",
@@ -60,6 +65,31 @@ class AuditManifest:
 
 class AuditContractError(ValueError):
     pass
+
+
+def validate_engine_status(status: str) -> str:
+    if status not in ENGINE_RULE_RESULT_STATUSES:
+        raise AuditContractError(f"invalid engine-native RuleResult status: {status}")
+    return status
+
+
+@dataclass(frozen=True)
+class EngineRuleResult:
+    """G02 engine-native RuleResult; legacy WARNING remains on its old path."""
+    rule_id: str
+    status: str
+    severity: str
+    checked_rows: int = 0
+    finding_count: int = 0
+
+    def __post_init__(self) -> None:
+        validate_engine_status(self.status)
+        if self.severity not in {"ERROR", "WARNING", "INFO"}:
+            raise AuditContractError(f"invalid engine-native RuleResult severity: {self.severity}")
+        if not isinstance(self.rule_id, str) or not self.rule_id.strip():
+            raise AuditContractError("engine-native RuleResult requires rule_id")
+        if self.checked_rows < 0 or self.finding_count < 0:
+            raise AuditContractError("RuleResult counts must not be negative")
 
 
 def _utc_now() -> str:

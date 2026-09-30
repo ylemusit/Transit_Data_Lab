@@ -54,7 +54,12 @@ def _normalize_findings(
     return list(unique.values()), conflicts, source_mismatches
 
 
-def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
+def persist_audit(
+    ctx: RunContext,
+    result: dict[str, Any],
+    *,
+    rule_identity_map: dict[str, Any] | None = None,
+) -> dict[str, Any]:
     """Dual-write M02 audit evidence without changing any V1 payload."""
     audit_dir = ctx.work_dir / "audit"
     audit_dir.mkdir(parents=True, exist_ok=True)
@@ -62,13 +67,27 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
     expected_hash = ctx.dataset.source_sha256
     integrity_verified = source_hash_after == expected_hash
     rules = result["validation"].get("rules", [])
-    executed_rule_versions = {
-        str(rule["rule_id"]): str(rule["version"])
-        for rule in rules
-        if rule.get("rule_id") and rule.get("version")
-    }
+    if rule_identity_map is not None:
+        versions = rule_identity_map.get("rule_versions") if isinstance(rule_identity_map, dict) else None
+        if not isinstance(versions, dict) or any(
+            not isinstance(rule_id, str) or not rule_id.strip()
+            or not isinstance(version, str) or not version.strip()
+            for rule_id, version in versions.items()
+        ):
+            raise ValueError("rule_identity_map must contain a valid rule_versions map")
+        # Explicit registry identity is authoritative and includes rules with
+        # no result/findings; it is never inferred from the validation payload.
+        executed_rule_versions = dict(sorted(versions.items()))
+    if rule_identity_map is None:
+        executed_rule_versions = {
+            str(rule["rule_id"]): str(rule["version"])
+            for rule in rules
+            if rule.get("rule_id") and rule.get("version")
+        }
     rule_versions = sorted(set(executed_rule_versions.values()))
-    rule_ids = sorted({str(rule["rule_id"]) for rule in rules if rule.get("rule_id")})
+    rule_ids = sorted(executed_rule_versions) if rule_identity_map is not None else sorted(
+        {str(rule["rule_id"]) for rule in rules if rule.get("rule_id")}
+    )
     executed_scopes = sorted({str(rule["scope"]) for rule in rules if rule.get("scope")})
     occurrences = _finding_occurrences(result["validation"])
     normalized, conflicts, source_mismatches = _normalize_findings(
@@ -152,6 +171,8 @@ def persist_audit(ctx: RunContext, result: dict[str, Any]) -> dict[str, Any]:
             "reconciliation": reconciliation,
         }
     )
+    if rule_identity_map is not None:
+        manifest["identity"] = {"rules": {"rule_versions": dict(sorted(rule_identity_map["rule_versions"].items()))}}
     validate_audit_manifest(manifest)
     manifest_path = audit_dir / "audit_manifest.json"
     temporary_path: str | None = None
