@@ -1,5 +1,31 @@
 # Transit Data Lab — estado vigente
 
+## GTFS Audit Engine V1 — candidatos locales hasta G07
+
+**Registro e inventario por pasos:** [GTFS Audit Engine V1 — registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md). Para retomar en otro chat, consultar primero este estado, luego la fila del paso actual en el registro y finalmente los documentos enlazados para ese paso.
+
+```ini
+G04 = IMPLEMENTATION_CANDIDATE
+G04_PHASE = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+G04_SCOPE_FORMAL_REVIEW = PASS
+G04_SCOPE = FROZEN
+G04_IMPLEMENTATION = REMEDIATED_LOCAL_CANDIDATE
+G04_BASE = 137ff4ed38da65fb3fb61f9804d729a1cee51feb
+G04_LOCAL_REVIEW = PASS
+G05_SCOPE = FORMALLY_APPROVED_2026-10-01
+G05_TYPED_RULE_REGISTRY = PASS_LOCAL
+G05_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+G06_SCOPE = FORMALLY_APPROVED_2026-10-01
+G06_TYPED_RULE_REGISTRY = PASS_LOCAL
+G06_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+G07_SCOPE = FORMALLY_APPROVED_2026-10-01
+G07_TYPED_RULE_REGISTRY = PASS_LOCAL
+G07_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+G07_TECHNICAL_CANDIDATE = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+```
+
+El candidato se preparó en el worktree aislado `C:\Users\yeiso\AppData\Local\Temp\tdl-gtfs-engine-g04` sobre la base `137ff4ed38da65fb3fb61f9804d729a1cee51feb`. El 2026-10-01, Yeison Arbey Carrillo Lemus aprobó formalmente los alcances y reglas propuestos para G05–G07 y autorizó commit, push y apertura de PR para ejecutar CI remoto, sin merge; el paso de publicación está en curso y sus identificadores se anotarán en el [registro por pasos](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md). Una regresión adicional verifica el registro tipado congelado de todas sus reglas; nueve de los diez artefactos del paquete anterior conservan sus hashes y el archivo de pruebas modificado tiene una identidad SHA-256 nueva documentada. Verificación local: 217 pruebas totales, 216 OK y 1 SKIP explícito (base Compliance protegida ausente); 51 pruebas G04–G07 focalizadas, compilación, inventario determinista y `git diff --check` pasan. Véase el [addendum de aprobación y revalidación](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G04_G07_FORMAL_SCOPE_APPROVAL_20261001.md). G04–G07 siguen con revisión técnica local PASS, no como fases `CLOSED`; CI remoto y cierre siguen pendientes. No se ejecutó HOLDOUT.
+
 ## GTFS Audit Engine V1 — G02 y G03 cerrados
 
 `G02 = PASS`, `GTFS_AUDIT_ENGINE_V1_RULE_REGISTRY = CLOSED` y `G02_DOCUMENTATION = DURABLE`. PR #23 se fusionó mediante merge normal el 2026-09-30: base `8e2b1cac53e96f4000f8be0d9c03da4350edfbee`, head revisado `6b01198d089100e425d5e1bc165a7be34adda888` y merge commit `36259cdbbc42cc6d2958ce4bd21e5279e7c1657c`, que es el `main` remoto verificado. El check `synthetic` verde corresponde al head de PR, no se afirma CI post-merge para el merge documental. Véase el [informe de cierre G02](reports/repository_integrity/TDL_GTFS_AUDIT_ENGINE_G02_CLOSURE.md).
@@ -36,13 +62,13 @@ G03_MERGE = PASS
 G03_REMOTE_REVIEW = PASS
 G03_DOCUMENTATION_ALIGNMENT = PASS
 G03_KNOWN_GAPS = PRESERVED
-G03_G04 = NOT_STARTED
+G03_G04_AT_G03_MERGE = NOT_STARTED
 G03_PUBLICATION = MERGED
 ```
 
-G03 se desarrolló en un worktree dedicado desde `main`, en la rama `feat/gtfs-engine-g03-structure-schema-types`; el checkout original con modificaciones locales se conserva intacto. El resultado G03 es aditivo y separado de `validation` legacy. La revisión remota pidió cambios en semántica de cobertura parcial, validación léxica de `LANGUAGE_CODE`/`TIMEZONE` y CI G03. La remediación se publicó en commits `52f2e6403806445f59f12c56b8f39e819762c5cd` y `59633a04413404e23d8c6c3eca0b3f8ada1c9bd8`, conservando el commit original `c64c2309aba81764b046509f205de9a6f8916390`. La segunda revisión remota sobre `79a235be7109120c8a96aeea4b65c43e3f77a7e0` fue PASS. La PR #24 se fusionó el 2026-09-30 a las 18:24:56 UTC; `main` remoto apunta al merge commit `7047a9cf8408446f47bcb2325207e9923adb1d9e`, cuyos padres son la base `36259cdbbc42cc6d2958ce4bd21e5279e7c1657c` y el head revisado indicado. El workflow post-merge Actions `36758403975` terminó en `success`, incluyendo compilación, fuentes legales portables, suites sintéticas de confianza/comparación/corpus/precondiciones y whitespace. En el head de PR, G03 obtuvo 49/49 PASS, las cinco suites históricas y `Repository whitespace integrity` PASS sobre el merge ref. El capability map en `main` cuenta 106 `EXECUTABLE_G03`, 11 `PARTIALLY_EXECUTABLE_G03` y 15 `UNRESOLVED_CONDITION`. La reducción de 113 a 106 ejecutables refleja una clasificación más conservadora al excluir tipos sin validador léxico implementado. `G03 = PASS / CLOSED` corresponde al alcance estructural implementado y verificado; las brechas de metadatos normativos y la política de extensiones permanecen explícitas y no se declaran resueltas. Identidad y referencialidad quedan para G04; las comparaciones temporales entre valores pertenecen a G05. Este cierre no equivale a cumplimiento GTFS completo ni acredita cumplimiento jurídico. No se ejecutó HOLDOUT ni se inició G04.
+G03 se desarrolló en un worktree dedicado desde `main`, en la rama `feat/gtfs-engine-g03-structure-schema-types`; el checkout original con modificaciones locales se conserva intacto. El resultado G03 es aditivo y separado de `validation` legacy. La revisión remota pidió cambios en semántica de cobertura parcial, validación léxica de `LANGUAGE_CODE`/`TIMEZONE` y CI G03. La remediación se publicó en commits `52f2e6403806445f59f12c56b8f39e819762c5cd` y `59633a04413404e23d8c6c3eca0b3f8ada1c9bd8`, conservando el commit original `c64c2309aba81764b046509f205de9a6f8916390`. La segunda revisión remota sobre `79a235be7109120c8a96aeea4b65c43e3f77a7e0` fue PASS. La PR #24 se fusionó el 2026-09-30 a las 18:24:56 UTC; `main` remoto apunta al merge commit `7047a9cf8408446f47bcb2325207e9923adb1d9e`, cuyos padres son la base `36259cdbbc42cc6d2958ce4bd21e5279e7c1657c` y el head revisado indicado. El workflow post-merge Actions `36758403975` terminó en `success`, incluyendo compilación, fuentes legales portables, suites sintéticas de confianza/comparación/corpus/precondiciones y whitespace. En el head de PR, G03 obtuvo 49/49 PASS, las cinco suites históricas y `Repository whitespace integrity` PASS sobre el merge ref. El capability map en `main` cuenta 106 `EXECUTABLE_G03`, 11 `PARTIALLY_EXECUTABLE_G03` y 15 `UNRESOLVED_CONDITION`. La reducción de 113 a 106 ejecutables refleja una clasificación más conservadora al excluir tipos sin validador léxico implementado. `G03 = PASS / CLOSED` corresponde al alcance estructural implementado y verificado; las brechas de metadatos normativos y la política de extensiones permanecen explícitas y no se declaran resueltas. Identidad y referencialidad quedaban para G04 en ese checkpoint; el trabajo de G04–G07 se documenta en la sección vigente superior y en el paquete de revisión local fechado 2026-10-01. Este cierre no equivale a cumplimiento GTFS completo ni acredita cumplimiento jurídico. A fecha del merge G03, no se ejecutó HOLDOUT ni se había iniciado G04.
 
-El burn-down normativo G03 del 2026-09-30 conserva las brechas identificadas: de 31 condiciones, 16 se normalizaron y ejecutan; 10 dependen de otras etapas/multirregistro, 1 de una feature diferida y 4 siguen declaradas sin regla machine-executable en el contrato actual. Permanecen 4 gaps de tipo/formato. La revisión de ownership de las dos condiciones de ventanas mantiene las reglas de presencia condicional en G03 y las comparaciones entre valores horarios en G05, sin normalizarlas ni ampliar el runtime. La revisión formal inicial registró tres hallazgos, resueltos en la remediación documentada en el [paquete de revisión formal G03](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G03_FORMAL_REVIEW_BUNDLE_20260930.md). La verificación pre-merge obtuvo 164 tests: 163 PASS y un `SKIP` explícito porque falta la DB Compliance protegida. Estas limitaciones permanecen registradas y no reabren el alcance G03 cerrado. No se accedió a HOLDOUT ni se inició G04.
+El burn-down normativo G03 del 2026-09-30 conserva las brechas identificadas: de 31 condiciones, 16 se normalizaron y ejecutan; 10 dependen de otras etapas/multirregistro, 1 de una feature diferida y 4 siguen declaradas sin regla machine-executable en el contrato actual. Permanecen 4 gaps de tipo/formato. La revisión de ownership de las dos condiciones de ventanas mantiene las reglas de presencia condicional en G03 y las comparaciones entre valores horarios en G05, sin normalizarlas ni ampliar el runtime. La revisión formal inicial registró tres hallazgos, resueltos en la remediación documentada en el [paquete de revisión formal G03](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G03_FORMAL_REVIEW_BUNDLE_20260930.md). La verificación pre-merge obtuvo 164 tests: 163 PASS y un `SKIP` explícito porque falta la DB Compliance protegida. Estas limitaciones permanecen registradas y no reabren el alcance G03 cerrado. El registro `G03_G04_AT_G03_MERGE` describe ese punto histórico; el estado vigente G04–G07 figura al inicio del documento.
 
 ## Desarrollo posterior a la base del GTFS Audit Engine
 
