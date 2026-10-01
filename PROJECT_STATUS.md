@@ -2,32 +2,62 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## GTFS Audit Engine V1 — remediación G08–G11 lista para integración
+## GTFS Audit Engine V1 — cierre técnico V1 publicado
 
-**Estado:** PR #28 permanece integrada en `07bd0beaaf158718430ee53a5001e5f01655dac7`, CI post-merge PASS. G08 y G09 tienen criterios técnicos PASS y registro de cierre preparado. G10 se repitió con los bytes DEVELOPMENT exactos y G11 pasó la revisión técnica local; la remediación está en la rama de preparación y requiere CI, integración y verificación post-merge antes de reflejar los cierres como estado de `main`.
+**Estado vigente (2026-10-01):** PR #29 se fusionó mediante merge normal en `d5c770d5015faa856963a363e14da24124da5a12`; CI post-merge PASS, run `36809106494`. Yeison aprobó expresamente el cierre humano final G11. Este estado acredita el cierre técnico del alcance documentado de GTFS Audit Engine V1.
 
 ```ini
-G04_G07 = CLOSED; PR26_MERGED_AND_POST_MERGE_VERIFIED
-G08 = TECHNICAL_ACCEPTANCE_PASS; CLOSURE_RECORD_PREPARED
-G09 = TECHNICAL_ACCEPTANCE_PASS; CLOSURE_RECORD_PREPARED; M02_UNCHANGED
-G10_DEVELOPMENT_RECOVERY = 14/14; ALL_SHA256_MATCH
-G10_PIPELINE_ERRORS = 0
-G10_STABILITY = PASS; DATASET_001_REPORT_SHA256 = 51a2c5b0125fb2582839e8889e6a2780d39d571de3d5d0ebe58e37f6bb3a8371
-G10_EVALUABILITY_ATTRIBUTION = PERSISTED_BY_DATASET_RULE_FILE_FIELD_REASON
-G10 = REPLAY_PASS; TECHNICAL_CLOSURE_PENDING_INTEGRATION
-G11_TECHNICAL_REVIEW = PASS_LOCAL; PR_CI_AND_POST_MERGE_VERIFICATION_PENDING
-GTFS_AUDIT_ENGINE_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION_AFTER_INTEGRATION
+PR29 = MERGED_NORMAL
+PR29_HEAD = 44e92012b1ab8a27b232b69154abc043c55d21e8
+PR29_MERGE_COMMIT = d5c770d5015faa856963a363e14da24124da5a12
+MAIN = d5c770d5015faa856963a363e14da24124da5a12
+PR29_CI = PASS; RUN 36808289990
+POST_MERGE_CI = PASS; RUN 36809106494
+G08 = PASS / CLOSED
+G08_CLOSED = YES
+G09 = PASS / CLOSED
+G09_CLOSED = YES
+G10 = PASS / CLOSED
+G10_CLOSED = YES
+G11_TECHNICAL_REVIEW = PASS
+G11 = PASS
+G11_CLOSED = YES
+FINAL_HUMAN_G11_CLOSURE_DECISION = APPROVED
+GTFS_AUDIT_ENGINE_V1 = PASS
+GTFS_AUDIT_ENGINE_V1_CLOSED = YES
+GTFS_AUDIT_ENGINE_V1_CLOSURE_DATE = 2026-10-01
 HOLDOUT = NOT_ACCESSED
+M02_CHANGED = NO
 OPERATOR_SPECIFIC_CODE = NO
-M02_CONTRACT_CHANGED = NO
-GTFS_COMPLETE_COMPLIANCE = NOT_ESTABLISHED
+GTFS_COMPLETE_COVERAGE = NOT_CLAIMED
+LEGAL_COMPLIANCE = NOT_CLAIMED
+COMMERCIAL_VALIDATION = NOT_CLAIMED
 ```
 
-La corrección detectó una incompatibilidad: G03 emitía `csv_structure.files_inspected`, mientras G04–G07 buscaban `inspected`. Se corrigió el consumo y se limitó la propagación de gaps G03 a los campos que cada regla utiliza. 114 comprobaciones dirigidas pasaron; se añadió regresión para el contrato CSV y la atribución por campo. El replay G10 completó 14/14 sin errores y con estabilidad PASS.
+### DEVELOPMENT y evaluabilidad G03–G08
 
-La cobertura acumulada incluye 32.002 evaluaciones G04 de dominio, 102 de unicidad, 1.168.910 referencias, 417 rangos calendario, 13 sets de fechas y 558.810 secuencias G06. Se preservan 83 referencias no evaluables por campos fuente opcionales/condicionales ausentes; un dominio G04 técnico no resuelto en `011`; y el deferral de orden temporal G06, sin convertirlos en PASS. Véanse el [informe G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md), el [registro G08–G10](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md), el [replay G10](02_Data_Engineering/GTFS_Lab/reports/evidence/g10_development/g10_development_recovery_20261001.json) y su [atribución por regla/dataset](02_Data_Engineering/GTFS_Lab/reports/evidence/g10_development/g10_evaluability_attribution_20261001.json).
+G10 recuperó y verificó por SHA-256 los 14 feeds DEVELOPMENT del split aprobado; los 14 pipelines terminaron, hubo cero errores y la repetición de estabilidad pasó. HOLDOUT no se abrió ni se leyó. No se aplicaron umbrales agregados inventados: la cobertura se expresa como conteos de estados por regla.
 
-La decisión humana final G11 permanece pendiente y separada del PASS técnico. El registro no declara cumplimiento GTFS completo, legal o comercial. El inventario G04 permanece `CREATED_LOCAL_UNPUBLISHED`; legacy y M02 conservan sus fronteras.
+- **G03:** 106 campos ejecutables, 11 parcialmente ejecutables y 15 condiciones sin resolver. En el replay persistieron `CONDITION_UNKNOWN` (1.682.207), `UNRESOLVED_CONDITION` (168), `UNRESOLVED_EXTENSION_POLICY` (11), `UNRESOLVED_TYPE_FORMAT` (23) y `UNSUPPORTED_LEXICAL_VALIDATOR` (39). Política de extensiones no resuelta; semánticas de vacíos no especificadas y evidencia insuficiente permanecen sin evaluación.
+- **G04:** identidad de dominio, 32.002 evaluaciones (13 feeds PASS y un finding técnico); unicidad, 102 evaluaciones y 80 no aplicables; existencia de referencias, 1.168.910 evaluaciones, 83 no evaluables y 158 no aplicables. Las 83 no evaluables se atribuyen a cabeceras opcionales/condicionales ausentes. El inventario de identidad continúa `CREATED_LOCAL_UNPUBLISHED` como deuda contractual conocida.
+- **G05:** 417 rangos de calendario; 13 feeds evaluables para conjunto de fechas y uno no evaluable por dependencia de identidad G04 en `011`. Rango de feed: 6 PASS, 7 no aplicables y uno no evaluable (`016`, valor de fecha ausente). Frecuencias y ventanas pickup/drop-off no aplicaron al corpus.
+- **G06:** secuencia de paradas evaluada en 558.810 filas y PASS en 14/14. Orden temporal entre paradas queda `NOT_EVALUABLE` / `DEFERRED_BY_SCOPE`, porque la referencia fijada no establece un MUST de monotonía. Frecuencias no aplicaron.
+- **G07:** nueve PASS, cuatro no aplicables y un finding técnico de progresión de distancia en `014`.
+- **G08:** tres recomendaciones informativas de presencia de `feed_start_date`, `feed_end_date` y `feed_version`; siete PASS y siete no aplicables. No evalúa valores ni calidad integral del servicio.
+
+Se mantiene el finding técnico de `010 / agency.txt / agency_url` (URL sin esquema) y el de `011` para referencias `service_id` sin resolver; no se añadieron excepciones por operador. Ningún cambio introdujo código específico por operador o dataset.
+
+### Gaps, features diferidas y límites
+
+G03 mantiene las condiciones sin resolver, gaps de tipos/formato, política de extensiones abierta y semánticas de valores vacíos no definidas; los casos sin evidencia suficiente siguen `NOT_EVALUABLE`. G04 mantiene su inventario local no publicado y findings que no forman parte de `validation.findings`. No se declara equivalencia total entre el engine y el validador legacy.
+
+Los 18 archivos diferidos por G01, sin auditoría completa, son `fare_attributes.txt`, `fare_rules.txt`, `timeframes.txt`, `rider_categories.txt`, `fare_media.txt`, `fare_products.txt`, `fare_leg_rules.txt`, `fare_leg_join_rules.txt`, `fare_transfer_rules.txt`, `areas.txt`, `stop_areas.txt`, `networks.txt`, `route_networks.txt`, `location_groups.txt`, `location_group_stops.txt`, `locations.geojson`, `booking_rules.txt` y `attributions.txt`. GTFS-RT, SIRI y NeTEx también quedan fuera del producto V1 de GTFS Schedule.
+
+`M02_CHANGED = NO`: M02 no normaliza los findings G03–G09, no registra el informe G09 y no se cambió su contrato. El validador legacy continúa generando su salida independiente. No se declara cumplimiento GTFS completo, cumplimiento jurídico, certificación, readiness comercial, demanda ni equivalencia con legacy.
+
+### Decisión humana registrada
+
+La decisión humana final G11 está aprobada. El cierre no constituye certificación, cumplimiento jurídico/completo ni aprobación comercial. El registro de decisión está en [g11_closure_candidate.json](02_Data_Engineering/GTFS_Lab/reports/evidence/g11_closure_candidate.json) y la evidencia detallada en el [review G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md).
 
 ## GTFS Audit Engine V1 — G02 y G03 cerrados
 

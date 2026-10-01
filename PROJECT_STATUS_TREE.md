@@ -1,33 +1,32 @@
 # Transit Data Lab — mapa de estado GTFS Audit Engine V1
 
-**Fuente vigente:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «remediación G08–G11».
+**Actualizado:** 2026-10-01
+**Fuente vigente:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «GTFS Audit Engine V1 — cierre técnico V1 publicado».
 
 ```text
-GTFS AUDIT ENGINE V1 — PREPARACIÓN PARA DECISIÓN FINAL
+GTFS AUDIT ENGINE V1 — CERRADO (ALCANCE TÉCNICO DOCUMENTADO)
 │
-├── G01–G03                               ✅ CERRADOS E INTEGRADOS
-├── G04–G07                               ✅ CERRADOS EN CHECKPOINTS ANTERIORES
-│   └── Corrección de consumo G03 CSV      🔧 Local; CI/merge post-corrección pendientes
-├── G08 Quality                           ✅ Criterios técnicos PASS; cierre registrado en rama
-├── G09 Reporting                         ✅ Criterios técnicos PASS; M02 sin cambios
-├── G10 DEVELOPMENT                       ✅ Replay local 14/14; 0 errores; estabilidad PASS
-├── G10 atribución                        ✅ Por regla/dataset/archivo/campo/causa
-├── G11 revisión técnica                  ✅ PASS local; integración y post-merge pendientes
-├── Engine V1                             ⏳ READY_FOR_FINAL_HUMAN_CLOSURE_DECISION tras integrar
+├── G01–G03                               ✅ CERRADOS; 106 ejecutables, 11 parciales, 15 condiciones pendientes
+├── G04–G07                               ✅ CERRADOS; gaps y deuda de inventario G04 conservados
+├── G08 Quality                           ✅ PASS / CLOSED
+├── G09 Reporting                         ✅ PASS / CLOSED; M02 sin cambios
+├── G10 DEVELOPMENT                       ✅ PASS / CLOSED; 14/14, 0 errores, estabilidad PASS
+├── G11 revisión técnica                  ✅ PASS; merge y post-merge CI verificados
+├── Decisión humana final G11             ✅ APPROVED (2026-10-01)
+├── Engine V1                             ✅ PASS / CLOSED
 └── HOLDOUT                               🔒 NOT_ACCESSED
 ```
 
-## Checkpoint integrado PR #28
+## Integración PR #29
 
-- Merge commit / `origin/main` observado: `07bd0beaaf158718430ee53a5001e5f01655dac7`.
-- Head revisado: `af8c9b157fd52b0e4b5a753dcc0813272f4e06c8`; CI PASS run `36804031563`; post-merge CI PASS run `36804060651`.
-- El replay G10 descubrió que G03 emite `files_inspected` y sus consumidores G04–G07 buscaban `inspected`. La corrección y las regresiones están pendientes de integrar.
-- HOLDOUT no accedido; M02 sin cambios; sin código específico por operador.
+- PR #29 fusionada mediante merge normal; head revisado `44e92012b1ab8a27b232b69154abc043c55d21e8`.
+- Merge commit y `origin/main`: `d5c770d5015faa856963a363e14da24124da5a12`.
+- CI del head PASS, run `36808289990`; CI post-merge PASS, run `36809106494`.
+- `HOLDOUT = NOT_ACCESSED`; `M02_CHANGED = NO`; `OPERATOR_SPECIFIC_CODE = NO`.
+- `FINAL_HUMAN_G11_CLOSURE_DECISION = APPROVED`; el alcance V1 documentado está cerrado técnicamente.
 
 ## Límites
 
-- Los cierres G04–G07 anteriores conservan su evidencia histórica; la corrección actual actualiza su consumo de evidencia y todavía no está integrada.
-- El estado técnico no implica cumplimiento GTFS completo, jurídico o comercial.
-- G04 conserva la deuda de inventario `CREATED_LOCAL_UNPUBLISHED`; legacy y M02 conservan sus fronteras.
+Se conservan las 15 condiciones G03 sin resolver, la política de extensiones abierta, el inventario G04 `CREATED_LOCAL_UNPUBLISHED`, los archivos/funciones diferidos y los límites M02/legacy. El PASS técnico no acredita cobertura GTFS completa, cumplimiento jurídico ni validación comercial.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
