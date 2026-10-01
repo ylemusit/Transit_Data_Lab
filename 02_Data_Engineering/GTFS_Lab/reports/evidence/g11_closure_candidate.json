@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "gate": "GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_CANDIDATE",
-  "candidate_state": "REMOTE_CI_PASS_MERGE_AND_POST_MERGE_PENDING",
+  "candidate_state": "G11_TECHNICAL_REVIEW_PASS_READY_FOR_FINAL_HUMAN_CLOSURE_DECISION_PENDING_INTEGRATION",
   "base_commit": "89b199f1ffa114922047113a8460e2933cfa60f8",
   "specification": {
     "name": "GTFS Schedule Reference",
@@ -19,14 +19,14 @@
       "contract_changed": false
     },
     "G03": {
-      "state": "LOCAL_REGRESSION_PASS_PENDING_MERGE",
+      "state": "CLOSED_MERGED_POST_MERGE_VERIFIED",
       "executable_fields": 106,
       "partially_executable_fields": 11,
       "unresolved_conditions": 15,
       "extension_policy": "UNRESOLVED"
     },
     "G04": {
-      "state": "LOCAL_REGRESSION_PASS_PENDING_MERGE",
+      "state": "CLOSED_MERGED_POST_MERGE_VERIFIED",
       "rules": 4,
       "identity_inventory": "CREATED_LOCAL_UNPUBLISHED"
     },
@@ -43,26 +43,24 @@
       "rules": 3
     },
     "G08": {
-      "state": "LOCAL_IMPLEMENTED_TESTED_PENDING_MERGE",
-      "rules": 3
+      "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+      "rules": 3,
+      "integrated_by": "PR28"
     },
     "G09": {
-      "state": "LOCAL_IMPLEMENTED_TESTED_PENDING_MERGE",
-      "m02_changed": false
+      "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+      "m02_changed": false,
+      "integrated_by": "PR28"
     },
     "G10": {
-      "state": "LOCAL_CORPUS_RUN_COMPLETE_PENDING_POST_MERGE",
-      "split_id": "TDL-CORPUS-SPLIT-V1",
-      "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
-      "scope": "DEVELOPMENT_ONLY",
+      "state": "REPLAY_PASS_PENDING_REMEDIATION_INTEGRATION",
       "completed_datasets": 14,
       "pipeline_errors": 0,
       "stability_replay": "PASS",
-      "holdout_accessed": false,
-      "development_report_sha256": "2f8d1e667d070004dec9e3ee983b9c6681d562b51a22cbdccd7e237b1fdee62c"
+      "holdout_accessed": false
     },
     "G11": {
-      "state": "CLOSURE_REVIEW_CANDIDATE_NOT_CLOSED"
+      "state": "TECHNICAL_REVIEW_PASS_PENDING_PR_CI_MERGE_POST_MERGE_VERIFICATION"
     }
   },
   "persistence_boundary": {
@@ -79,7 +77,9 @@
     "HOLDOUT_RESULTS"
   ],
   "pending_gates": [
-    "MERGE",
+    "TARGETED_TESTS_AND_G10_REPLAY_PASS",
+    "PUSH_AND_PR_CI_PASS",
+    "MERGE_DECISION",
     "POST_MERGE_VERIFICATION",
     "FINAL_HUMAN_G11_CLOSURE_DECISION"
   ],
@@ -90,5 +90,51 @@
   },
   "merge": "PENDING",
   "post_merge_verification": "PENDING",
-  "final_human_g11_closure_decision": "PENDING"
+  "final_human_g11_closure_decision": "PENDING",
+  "pr_28": {
+    "reviewed_head": "af8c9b157fd52b0e4b5a753dcc0813272f4e06c8",
+    "merge_commit": "07bd0beaaf158718430ee53a5001e5f01655dac7",
+    "remote_ci": "PASS",
+    "remote_ci_run": 36804031563,
+    "post_merge_ci": "PASS",
+    "post_merge_ci_run": 36804060651,
+    "merge": "MERGED_NORMAL"
+  },
+  "G08": {
+    "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+    "basis": "PR #28 merged; implementation and synthetic acceptance suites PASS"
+  },
+  "G09": {
+    "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+    "basis": "PR #28 merged; deterministic reporting acceptance PASS; M02 unchanged"
+  },
+  "G10": {
+    "state": "REPLAY_PASS_READY_FOR_TECHNICAL_CLOSURE_AFTER_INTEGRATION",
+    "split_id": "TDL-CORPUS-SPLIT-V1",
+    "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+    "scope": "DEVELOPMENT_ONLY",
+    "expected_dataset_count": 14,
+    "completed_dataset_count": 14,
+    "failed_dataset_count": 0,
+    "stability_replay": "PASS",
+    "holdout_accessed": false,
+    "recovery_artifact": "reports/evidence/g10_development/g10_development_recovery_20261001.json",
+    "recovery_artifact_sha256": "5c1f6dc8a744fe4df44ea2e57e61e6c4e365bc402b240501a682a37cc8447479",
+    "evaluability_attribution_artifact": "reports/evidence/g10_development/g10_evaluability_attribution_20261001.json",
+    "evaluability_attribution_sha256": "497e2694d31c96ae58ee05461bc6309b0475f483afb3acb5a766fad520a33712",
+    "source_root": "C:/Users/yeiso/AppData/Local/Temp/tdl-g11-development-source-20261001",
+    "operator_specific_code_changes": false
+  },
+  "G11": {
+    "state": "TECHNICAL_REVIEW_PASS_PENDING_PR_CI_MERGE_POST_MERGE_VERIFICATION",
+    "final_human_closure_decision": "PENDING",
+    "coverage_counts_without_invented_thresholds": true
+  },
+  "root_cause": {
+    "classification": "IMPLEMENTATION_BUG",
+    "detail": "G03 exposed csv_structure.files_inspected while G04-G07 consumed csv_structure.inspected; relevant-field filtering also over-propagated unrelated G03 type gaps.",
+    "regression_tests_added": true,
+    "scope_contract_changed": false,
+    "normative_scope_changed": false
+  }
 }

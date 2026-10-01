@@ -11,6 +11,21 @@ from gtfs_lab import g05_temporal, g06_operations, g07_spatial
 
 
 class LaterPhaseRuntimeTests(unittest.TestCase):
+    def test_current_g03_file_inspected_contract_is_consumed(self):
+        g03 = {"csv_structure": {"files_inspected": [
+            {"file": "calendar.txt", "status": "PASS"},
+            {"file": "shapes.txt", "status": "PASS"}], "findings": []},
+            "field_types": {"findings": [], "not_evaluable": []}}
+        self.assertFalse(g05_temporal._g03_uncertain(g03, "calendar.txt"))
+        self.assertFalse(g06_operations._g03_uncertain(g03, "calendar.txt"))
+        self.assertFalse(g07_spatial._g03_uncertain(g03))
+        unrelated_gap = {"csv_structure": {"files_inspected": [
+            {"file": "feed_info.txt", "status": "PASS"}], "findings": []},
+            "field_types": {"findings": [], "not_evaluable": [
+                {"file": "feed_info.txt", "field": "feed_lang", "reason": "UNSUPPORTED_LEXICAL_VALIDATOR"}]}}
+        self.assertFalse(g05_temporal._g03_uncertain(
+            unrelated_gap, "feed_info.txt", {"feed_start_date", "feed_end_date"}))
+
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(); self.root=Path(self.tmp.name); self.tables={}
         self.ctx=SimpleNamespace(tables=self.tables,dataset=SimpleNamespace(files={}))

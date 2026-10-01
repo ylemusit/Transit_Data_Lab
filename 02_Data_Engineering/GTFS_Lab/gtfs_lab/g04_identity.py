@@ -75,7 +75,7 @@ def _g03_csv_evidence(g03_result: dict | None, file_name: str) -> tuple[str, set
     if not isinstance(component, dict):
         return "INSPECTION_ERROR", set()
     target = file_name.casefold()
-    inspected = next((row for row in component.get("inspected", [])
+    inspected = next((row for row in component.get("files_inspected", component.get("inspected", []))
                       if str(row.get("file", "")).casefold() == target), None)
     if inspected is None:
         return "NOT_EVALUABLE", set()

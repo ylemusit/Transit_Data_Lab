@@ -1,6 +1,6 @@
 # GTFS Audit Engine V1 — G11 candidate closure review
 
-**Status:** PR #28 head `39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a`; remote CI PASS (run 36803441534); merge pending; post-merge verification pending; final human G11 decision pending.
+**Estado:** PR #28 quedó fusionada con CI post-merge PASS. La recuperación y el replay DEVELOPMENT local completaron 14/14 feeds, cero errores, estabilidad PASS y sin acceso a HOLDOUT. G11 técnico está preparado para decisión humana final cuando esta remediación quede integrada y verificada post-merge.
 **Authoritative development base:** `89b199f1ffa114922047113a8460e2933cfa60f8`.
 **Specification revision:** GTFS Schedule `2026-04-27`.
 
@@ -10,16 +10,16 @@
 |---|---|---|
 | G01 | Frozen inventory of 32 official GTFS Schedule files and their support classification. | CLOSED on `main`; 14 files in full/conditional technical support, 18 deferred. |
 | G02 | Typed `RuleDefinition`, native statuses, rule identity/version and authority/severity/requirement contracts. | CLOSED on `main`; unchanged. |
-| G03 | Archive inventory, CSV structure, header schema and file presence, executable field types and formats. | Existing baseline CLOSED; local bounded-evidence fix is regression-tested and awaits merge. Capability map: 106 executable, 11 partial, 15 unresolved; extension policy remains unresolved. |
-| G04 | Four identity/referential rules: primary-key uniqueness, populated-reference existence, identity-domain resolution, and contextual translations references. | Existing baseline CLOSED; local two-table LRU fix preserves output and awaits merge. Identity inventory remains `CREATED_LOCAL_UNPUBLISHED`, a known contract debt. |
+| G03 | Archive inventory, CSV structure, header schema and file presence, executable field types and formats. | CLOSED; bounded-evidence fix integrated in PR #28 and post-merge CI passed. Capability map: 106 executable, 11 partial, 15 unresolved; extension policy remains unresolved. |
+| G04 | Four identity/referential rules: primary-key uniqueness, populated-reference existence, identity-domain resolution, and contextual translations references. | CLOSED; two-table bounded cache fix integrated in PR #28 and post-merge CI passed. Identity inventory remains `CREATED_LOCAL_UNPUBLISHED`, a known contract debt. |
 | G05 | Five calendar/temporal rules. | CLOSED on `main`; regression included. |
 | G06 | Three stop sequence and operational rules. | CLOSED on `main`; regression included. |
 | G07 | Three shapes/spatial rules. | CLOSED on `main`; regression included. |
-| G08 | Three `feed_info.txt` declaration recommendations, typed through G02 and separate from conformance. | Local implementation and E2E evidence complete; awaiting merge/post-merge gate. |
-| G09 | Deterministic machine and human report of independent G03–G08 results. | Local implementation and synthetic partial/deferred/recommendation evidence complete; awaiting merge/post-merge gate. M02 is unchanged and does not register the supplemental report. |
-| G10 | Reproducible full pipeline over only the 14 DEVELOPMENT sources; per-dataset outcomes, findings, limitations, and stability check. | Local run complete: 14 completed, zero pipeline errors, stability PASS; awaiting merge/post-merge gate. HOLDOUT was not accessed. |
+| G08 | Three `feed_info.txt` declaration recommendations, typed through G02 and separate from conformance. | PR #28 merged; synthetic suite passes. Technical acceptance is recorded in this remediation. |
+| G09 | Deterministic machine and human report of independent G03–G08 results. | PR #28 merged; synthetic suite passes. Technical acceptance is recorded; M02 is unchanged and does not register the supplemental report. |
+| G10 | Reproducible full pipeline over only the 14 DEVELOPMENT sources; per-dataset outcomes, findings, limitations, evaluability and stability check. | Recovery replay completed 14/14, zero pipeline errors, stability PASS. The replay preserves bounded G03 reason counts, file statuses, per-rule coverage and a separate evaluability attribution. HOLDOUT was not accessed. |
 
-The machine-readable candidate state is in [g11_closure_candidate.json](evidence/g11_closure_candidate.json). Detailed G08–G10 execution and corpus results are in [the local progress record](TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md) and [the G10 result artifact](evidence/g10_development/g10_development_results.json).
+La candidatura machine-readable está en [g11_closure_candidate.json](evidence/g11_closure_candidate.json). El replay está en [G10 recovery](evidence/g10_development/g10_development_recovery_20261001.json); cobertura y causas por regla/dataset, en [G10 evaluability attribution](evidence/g10_development/g10_evaluability_attribution_20261001.json). El artefacto histórico de PR #28 se conserva.
 
 ## Qué audita V1
 
@@ -40,18 +40,33 @@ El validador legacy sigue ejecutándose y mantiene su propia salida. G03–G09 s
 
 La inspección del runtime G03–G10 no encontró ramas condicionadas por operador ni código añadido por dataset. El finding observado en `010 / agency.txt / agency_url` (`empresarodil.es` sin esquema) permanece como finding técnico; no se añadió una excepción específica.
 
-## Evidencia y puertas pendientes
+## Evidencia, evaluabilidad y gate G11
 
-La evaluación G10 verificó SHA-256 del split y de cada fuente DEVELOPMENT antes de uso, terminó 14 pipelines, registró las diferencias por regla/etapa y repitió el dataset `001` con el mismo SHA-256 de `engine_report.json`. Cada hash de informe por dataset se conserva en la evidencia; el replay de estabilidad comparó el dataset `001`. Los datos de G10 no contienen salida de HOLDOUT.
+La recuperación localizó los 14 ZIP DEVELOPMENT bajo el `20_clientes_reales` del checkout raíz. Se verificaron con SHA-256 contra inventario y split, y se copiaron solo esos 14 a un source root temporal externo a Git. El replay volvió a comprobar los hashes antes de abrirlos. Resultado: `DEVELOPMENT_SOURCE_RECOVERY = 14/14`, `ALL_SHA256_MATCH = YES`, `zero pipeline errors`, replay de estabilidad del dataset `001` PASS (`engine_report_sha256 = 51a2c5b0125fb2582839e8889e6a2780d39d571de3d5d0ebe58e37f6bb3a8371`), `HOLDOUT_ACCESSED = NO`.
 
-El HEAD autorizado de PR #28 es `39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a`; CI remoto PASS (run `36803441534`). Merge y verificación post-merge siguen pendientes. Tras el merge se repetirá el gate, se verificará `origin/main` y se actualizarán los estados. La decisión humana final G11 queda separada del PASS técnico/CI.
+La revisión detectó un bug de integración: G03 publica la evidencia CSV por archivo como `files_inspected`, pero G04–G07 consultaban `inspected`. Los consumidores marcaban ausente evidencia presente y propagaban `NOT_EVALUABLE`. Se corrigió el contrato de lectura y se añadió regresión. También se acotó la incertidumbre G03 de G05–G07 a los campos que cada regla consume, evitando que gaps de `feed_lang`/correo bloqueen evaluaciones de fechas de feed.
 
-## Afirmaciones expresamente excluidas
+### Cobertura observada en DEVELOPMENT
 
-Este informe no declara cumplimiento GTFS completo, cumplimiento jurídico, certificación, market validation, readiness comercial, NeTEx complete readiness, SIRI readiness, ni resultados de HOLDOUT.
+- **G04:** identidad de servicio, 32.002 evaluaciones (13 datasets PASS, un dataset con finding técnico); unicidad de claves, 102 evaluaciones y 80 no aplicables; referencias, 1.168.910 evaluaciones, 83 no evaluables y 158 no aplicables. Las 83 no evaluables reconcilian con campos fuente opcionales/condicionales ausentes de cabeceras. El finding de `011` conserva las referencias `service_id` sin resolver en `calendar_dates.txt`/`trips.txt`.
+- **G05:** 417 rangos de calendario evaluados y 13/14 sets de fechas evaluados. En `011`, el set depende del dominio G04 no resuelto. El rango `feed_info` evaluó seis; siete feeds no tienen el archivo y `016` carece de un valor de fecha de periodo. Las reglas de frecuencias no aplican a los 14; las cabeceras de ventanas pickup/drop-off no aparecen.
+- **G06:** secuencia de parada evaluada en 558.810 filas y PASS en 14/14. El orden temporal entre paradas permanece `NOT_EVALUABLE` por `DEFERRED_BY_SCOPE`: la referencia fijada no declara un MUST de monotonía. Las reglas de frecuencia no aplican a los 14.
+- **G07:** nueve feeds PASS, cuatro no aplicables y un feed con finding técnico de progresión de distancia; findings limitados y sin valores observados en el artefacto.
+- **G08/G09:** integración PR #28 y suites sintéticas PASS. Sus cierres técnicos se registran separadamente; M02 no registra el reporte suplementario G09.
+- **G10:** 14/14 pipelines completados, errores cero y estabilidad PASS. No se usan thresholds inventados. La cobertura real queda como conteos PASS/FAIL/N/E/N/A, no como score agregado.
+
+La evidencia G03 agrupa por dataset, archivo, campo y código con recuentos completos y muestras limitadas. Conserva los gaps `CONDITION_UNKNOWN`, `UNRESOLVED_CONDITION`, `UNRESOLVED_EXTENSION_POLICY`, `UNRESOLVED_TYPE_FORMAT` y `UNSUPPORTED_LEXICAL_VALIDATOR`. No incluye valores observados de los feeds. La atribución separada reconcilia las 83 ausencias de campos fuente G04; clasifica la dependencia G04→G05 de `011`, el campo de fecha vacío de `016`, las features no presentes y el deferral G06.
+
+### Generalización y límites
+
+No se encontró lógica específica por operador o dataset: `operator_specific_code_changes = false`. El finding observado en `010 / agency.txt / agency_url` se conserva como finding técnico, sin excepción por operador.
+
+V1 cubre solo los archivos y campos declarados en su perfil técnico. No resuelve las 15 condiciones G03 pendientes, la política normativa de extensiones ni semánticas no especificadas de valores vacíos. Los 18 archivos diferidos en G01 no reciben auditoría completa. El inventario G04 sigue `CREATED_LOCAL_UNPUBLISHED`. El flujo legacy sigue produciendo su propia salida; G03–G09 no se copian a `validation.findings`, M02 no los normaliza y G09 no está registrado ni firmado por M02. Esto no declara equivalencia total con legacy, cumplimiento GTFS completo, cumplimiento jurídico, certificación, validación comercial, demanda, readiness de mercado, NeTEx/SIRI ni GTFS-RT.
+
+`M02 = PASS` y los límites de identidad/legacy se mantienen como fronteras; los cierres Business y Compliance no se alteran. `HOLDOUT = NOT_ACCESSED`.
+
+## Estado de integración y decisión humana
+
+PR #28 permanece integrada en `07bd0beaaf158718430ee53a5001e5f01655dac7`, con CI post-merge PASS (run `36804060651`). Esta remediación, la evidencia de recuperación, los cierres técnicos G08–G10 y el review G11 requieren publicación y verificación post-merge antes de anunciar el estado como cerrado en `main`. La decisión humana final G11 queda pendiente; el paquete se prepara para `READY_FOR_FINAL_HUMAN_CLOSURE_DECISION` después de esa integración.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
-
-## DEVELOPMENT G04–G06 evaluability
-
-G10 completed 14/14 DEVELOPMENT pipelines with zero pipeline errors. However, G04, G05 and G06 each reported NOT_EVALUABLE at stage level for all 14 datasets. This is a coverage/evidence outcome, not a pipeline failure or a PASS. Rule-level counts and the missing upstream evidence are recorded in the accompanying G10 report; G10 must expose stage and rule evaluability separately from execution completion. The final G11 decision remains pending.

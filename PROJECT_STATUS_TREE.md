@@ -1,36 +1,33 @@
-# Transit Data Lab — cierre G04–G07 y continuación local G08–G11
+# Transit Data Lab — mapa de estado GTFS Audit Engine V1
 
-**Actualizado:** 2026-10-01
-**Alcance de esta revisión:** reconciliación documental del cierre técnico G04–G07. Este mapa no revalida el estado global de Transit Data Lab.
+**Fuente vigente:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «remediación G08–G11».
 
 ```text
-GTFS AUDIT ENGINE V1 — ALCANCE VERIFICADO EN ESTA REVISIÓN
+GTFS AUDIT ENGINE V1 — PREPARACIÓN PARA DECISIÓN FINAL
 │
-├── G04 Identity / Referential Integrity         ✅ PASS / CLOSED; MERGED Y VERIFICADO
-├── G05 Calendar / Temporal                      ✅ PASS / CLOSED; MERGED Y VERIFICADO
-├── G06 stop_times / Sequence / Operational      ✅ PASS / CLOSED; MERGED Y VERIFICADO
-├── G07 Shapes / Spatial                         ✅ PASS / CLOSED; MERGED Y VERIFICADO
-└── PR #26 / CI post-merge                       ✅ MERGED / PASS (run 36791698098)
-
-GTFS AUDIT ENGINE V1 — CONTINUACIÓN LOCAL (sin publicar)
-│
-├── G03 / G04 evidencia de corpus alta          🛠️ FIX LOCAL; regresiones focalizadas PASS; CI pendiente
-├── G08 Quality                                 🛠️ IMPLEMENTADO / E2E sintético PASS
-├── G09 Reporting                               🛠️ JSON + Markdown deterministas; M02 sin cambios
-├── G10 Development                             ✅ 14/14 pipelines; 0 errores; replay PASS; HOLDOUT no accedido
-└── G11 Closure                                 ⏳ PR #28 / CI PASS; pendiente merge, post-merge y decisión humana
+├── G01–G03                               ✅ CERRADOS E INTEGRADOS
+├── G04–G07                               ✅ CERRADOS EN CHECKPOINTS ANTERIORES
+│   └── Corrección de consumo G03 CSV      🔧 Local; CI/merge post-corrección pendientes
+├── G08 Quality                           ✅ Criterios técnicos PASS; cierre registrado en rama
+├── G09 Reporting                         ✅ Criterios técnicos PASS; M02 sin cambios
+├── G10 DEVELOPMENT                       ✅ Replay local 14/14; 0 errores; estabilidad PASS
+├── G10 atribución                        ✅ Por regla/dataset/archivo/campo/causa
+├── G11 revisión técnica                  ✅ PASS local; integración y post-merge pendientes
+├── Engine V1                             ⏳ READY_FOR_FINAL_HUMAN_CLOSURE_DECISION tras integrar
+└── HOLDOUT                               🔒 NOT_ACCESSED
 ```
 
-**Fuente vigente del estado:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «GTFS Audit Engine V1 — cierre G04–G07», con el detalle y límites del cierre; y [registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md), paso 04, con la decisión, merge y CI post-merge.
+## Checkpoint integrado PR #28
 
-## Límites del cierre
+- Merge commit / `origin/main` observado: `07bd0beaaf158718430ee53a5001e5f01655dac7`.
+- Head revisado: `af8c9b157fd52b0e4b5a753dcc0813272f4e06c8`; CI PASS run `36804031563`; post-merge CI PASS run `36804060651`.
+- El replay G10 descubrió que G03 emite `files_inspected` y sus consumidores G04–G07 buscaban `inspected`. La corrección y las regresiones están pendientes de integrar.
+- HOLDOUT no accedido; M02 sin cambios; sin código específico por operador.
 
-- El PASS acredita únicamente integración y verificación técnica del alcance implementado. No establece cumplimiento GTFS completo ni cumplimiento jurídico.
-- HOLDOUT no se ejecutó ni se accedió. No se declaran resultados de HOLDOUT.
-- Los findings G04 no forman actualmente parte de `validation.findings`; M02 no normaliza findings G04–G07. El manifest conoce indirectamente los artefactos del run y legacy sigue productivo donde corresponde.
-- Se conservan gaps y deferrals. `CREATED_LOCAL_UNPUBLISHED` del inventario G04 permanece como deuda contractual conocida; este cierre no cambia ese inventario.
-- La continuación local G08–G11 se resume arriba y se documenta en PROJECT_STATUS.md; no cambia el cierre histórico G04–G07.
+## Límites
 
-El cierre G04–G07 de la tabla anterior conserva su alcance histórico y su verificación en `main`. La continuación local G08–G11 está descrita en [PROJECT_STATUS.md](PROJECT_STATUS.md) y en el [informe G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md); no constituye publicación ni cierre de milestone.
+- Los cierres G04–G07 anteriores conservan su evidencia histórica; la corrección actual actualiza su consumo de evidencia y todavía no está integrada.
+- El estado técnico no implica cumplimiento GTFS completo, jurídico o comercial.
+- G04 conserva la deuda de inventario `CREATED_LOCAL_UNPUBLISHED`; legacy y M02 conservan sus fronteras.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

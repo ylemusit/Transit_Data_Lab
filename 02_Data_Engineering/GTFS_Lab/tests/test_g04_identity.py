@@ -5,11 +5,16 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import patch
 
-from gtfs_lab.g04_identity import _aggregate, evaluate_g04
+from gtfs_lab.g04_identity import _aggregate, _g03_csv_evidence, evaluate_g04
 from gtfs_lab.pipeline import record_ingestion_error
 
 
 class G04IdentityTests(unittest.TestCase):
+    def test_current_g03_file_inspected_contract_is_consumed(self):
+        g03 = {"csv_structure": {"files_inspected": [
+            {"file": "routes.txt", "status": "PASS"}], "findings": []}}
+        self.assertEqual(("COMPLETE", set()), _g03_csv_evidence(g03, "routes.txt"))
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.root = Path(self.temp.name)

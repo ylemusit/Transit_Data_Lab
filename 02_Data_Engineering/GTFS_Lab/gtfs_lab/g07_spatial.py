@@ -10,14 +10,16 @@ RULE_SPECS=((RULES[0],"SPATIAL","shape point sequence",("shapes.txt",)),
             (RULES[1],"SPATIAL","WGS84 coordinate bounds",("shapes.txt",)),
             (RULES[2],"SPATIAL","shape distance progression",("shapes.txt",)))
 
-def _g03_uncertain(g03):
+def _g03_uncertain(g03,relevant_fields=None):
     if g03 is None:return False
     comp=g03.get("csv_structure")
-    inspected=next((x for x in comp.get("inspected",[]) if x.get("file")=="shapes.txt"),None) if isinstance(comp,dict) else None
+    inspected=next((x for x in comp.get("files_inspected",comp.get("inspected",[])) if x.get("file")=="shapes.txt"),None) if isinstance(comp,dict) else None
     if inspected is None or inspected.get("status")!="PASS":return True
     if any(x.get("file")=="shapes.txt" for x in comp.get("findings",[])):return True
     types=g03.get("field_types") or {}
-    return any(x.get("file")=="shapes.txt" for key in ("findings","not_evaluable") for x in types.get(key,[]))
+    return any(x.get("file")=="shapes.txt"
+               and (relevant_fields is None or x.get("field") in relevant_fields)
+               for key in ("findings","not_evaluable") for x in types.get(key,[]))
 
 def evaluate_g07(ctx,g03_result=None,g04_result=None):
     registry=build_phase_registry(RULE_SPECS,evaluate_g07,"g07_spatial")
@@ -32,7 +34,7 @@ def evaluate_g07(ctx,g03_result=None,g04_result=None):
         if path is None:
             rules=[{"rule_id":r,"semantic_version":"1.0.0","category":"SPATIAL","status":"NOT_APPLICABLE","evaluator_executed":True,"coverage":{"evaluated":0,"not_evaluable":0,"not_applicable":1,"state":"FEATURE_NOT_PRESENT"},"specification_reference":f"GTFS Schedule Reference {REVISION}","findings":[]} for r in RULES]
             return {"status":"NOT_APPLICABLE","rules":rules,"findings":[],"rule_versions":rule_versions}
-        if _g03_uncertain(g03_result):
+        if _g03_uncertain(g03_result,{"shape_id","shape_pt_lat","shape_pt_lon","shape_pt_sequence","shape_dist_traveled"}):
             rules=[{"rule_id":r,"semantic_version":"1.0.0","category":"SPATIAL","status":"NOT_EVALUABLE","evaluator_executed":True,"coverage":{"evaluated":0,"not_evaluable":1,"not_applicable":0,"state":"PARTIAL"},"specification_reference":f"GTFS Schedule Reference {REVISION}","findings":[]} for r in RULES]
             return {"status":"NOT_EVALUABLE","rules":rules,"findings":[],"rule_versions":rule_versions}
         enc=getattr(ctx.dataset,"files",{}).get("shapes.txt",{}).get("encoding") or "utf-8-sig"

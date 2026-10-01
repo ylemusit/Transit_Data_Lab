@@ -23,14 +23,16 @@ def _seconds(text):
     if h<0 or not 0<=m<60 or not 0<=s<60:raise ValueError(text)
     return h*3600+m*60+s
 
-def _g03_uncertain(g03,name):
+def _g03_uncertain(g03,name,relevant_fields=None):
     if g03 is None:return False
     comp=g03.get("csv_structure")
-    inspected=next((x for x in comp.get("inspected",[]) if x.get("file")==name),None) if isinstance(comp,dict) else None
+    inspected=next((x for x in comp.get("files_inspected",comp.get("inspected",[])) if x.get("file")==name),None) if isinstance(comp,dict) else None
     if inspected is None or inspected.get("status")!="PASS":return True
     if any(x.get("file")==name for x in comp.get("findings",[])):return True
     types=g03.get("field_types") or {}
-    return any(x.get("file")==name for key in ("findings","not_evaluable") for x in types.get(key,[]))
+    return any(x.get("file")==name
+               and (relevant_fields is None or x.get("field") in relevant_fields)
+               for key in ("findings","not_evaluable") for x in types.get(key,[]))
 
 def evaluate_g06(ctx,g03_result=None,g04_result=None,g05_result=None):
     registry=build_phase_registry(RULE_SPECS,evaluate_g06,"g06_operations")
@@ -48,29 +50,30 @@ def evaluate_g06(ctx,g03_result=None,g04_result=None,g05_result=None):
         if g03_result and g03_result.get("status")=="INSPECTION_ERROR":return {"status":"INSPECTION_ERROR","rules":[{"rule_id":r,"status":"INSPECTION_ERROR","findings":[],"evaluator_executed":True} for r,_ in specs],"findings":[],"rule_versions":rule_versions}
         st=_read(ctx,"stop_times.txt")
         if st:
-            if _g03_uncertain(g03_result,"stop_times.txt"):
-                add(RULES[0],"NOT_EVALUABLE","stop_times.txt",1,[],None,"G03 structural or field coverage is incomplete")
-                add(RULES[1],"NOT_EVALUABLE","stop_times.txt",1,[],None,"G03 structural or field coverage is incomplete")
-                st=None
-        if st:
             heads,rows=st
-            if not {"trip_id","stop_sequence"}.issubset(heads):add(RULES[0],"NOT_EVALUABLE","stop_times.txt",1,["trip_id","stop_sequence"],None,"required identity fields unavailable")
+            if _g03_uncertain(g03_result,"stop_times.txt",{"trip_id","stop_sequence"}):
+                add(RULES[0],"NOT_EVALUABLE","stop_times.txt",1,[],None,"G03 structural or field coverage is incomplete")
             else:
-                groups={}
-                for i,row in enumerate(rows,1):
-                    if not row.get("trip_id"):
-                        add(RULES[0],"NOT_EVALUABLE","stop_times.txt",i,["trip_id"],row.get("trip_id"),"trip grouping is unresolved for an empty trip_id")
-                        continue
-                    try: seq=int(row.get("stop_sequence",""))
-                    except ValueError: add(RULES[0],"NOT_EVALUABLE","stop_times.txt",i,["stop_sequence"],row.get("stop_sequence"),"sequence is not interpretable");continue
-                    if seq<0:
-                        add(RULES[0],"FAIL_TECHNICAL","stop_times.txt",i,["stop_sequence"],seq,"stop_sequence must be non-negative")
-                        continue
-                    add(RULES[0],"PASS","stop_times.txt",i,["stop_sequence"],seq,"non-negative stop sequence; uniqueness is evaluated by G04")
-                    groups.setdefault(row.get("trip_id",""),[]).append((i,seq,row))
-                for trip,items in groups.items():
-                    if len(items)<2:continue
-                if {"arrival_time","departure_time"}.issubset(heads) and any(row.get("arrival_time") or row.get("departure_time") for row in rows):
+                if not {"trip_id","stop_sequence"}.issubset(heads):add(RULES[0],"NOT_EVALUABLE","stop_times.txt",1,["trip_id","stop_sequence"],None,"required identity fields unavailable")
+                else:
+                    groups={}
+                    for i,row in enumerate(rows,1):
+                        if not row.get("trip_id"):
+                            add(RULES[0],"NOT_EVALUABLE","stop_times.txt",i,["trip_id"],row.get("trip_id"),"trip grouping is unresolved for an empty trip_id")
+                            continue
+                        try: seq=int(row.get("stop_sequence",""))
+                        except ValueError: add(RULES[0],"NOT_EVALUABLE","stop_times.txt",i,["stop_sequence"],row.get("stop_sequence"),"sequence is not interpretable");continue
+                        if seq<0:
+                            add(RULES[0],"FAIL_TECHNICAL","stop_times.txt",i,["stop_sequence"],seq,"stop_sequence must be non-negative")
+                            continue
+                        add(RULES[0],"PASS","stop_times.txt",i,["stop_sequence"],seq,"non-negative stop sequence; uniqueness is evaluated by G04")
+                        groups.setdefault(row.get("trip_id",""),[]).append((i,seq,row))
+                    for trip,items in groups.items():
+                        if len(items)<2:continue
+            if {"arrival_time","departure_time"}.issubset(heads) and any(row.get("arrival_time") or row.get("departure_time") for row in rows):
+                if _g03_uncertain(g03_result,"stop_times.txt",{"arrival_time","departure_time"}):
+                    add(RULES[1],"NOT_EVALUABLE","stop_times.txt",1,["arrival_time","departure_time"],None,"G03 structural or field coverage is incomplete")
+                else:
                     add(RULES[1],"NOT_EVALUABLE","stop_times.txt",1,["arrival_time","departure_time"],None,"the fixed GTFS reference does not state a MUST-level monotonicity relation; retained as a TDL review item")
         freq=_read(ctx,"frequencies.txt")
         if freq:
@@ -78,7 +81,7 @@ def evaluate_g06(ctx,g03_result=None,g04_result=None,g05_result=None):
             if temporal_rule is None or temporal_rule.get("status") in {"NOT_EVALUABLE","INSPECTION_ERROR"}:
                 add(RULES[2],"NOT_EVALUABLE","frequencies.txt",1,[],None,"G05 time interpretation is incomplete")
                 freq=None
-            elif _g03_uncertain(g03_result,"frequencies.txt"):
+            elif _g03_uncertain(g03_result,"frequencies.txt",{"trip_id","start_time","end_time","headway_secs","exact_times"}):
                 add(RULES[2],"NOT_EVALUABLE","frequencies.txt",1,[],None,"G03 structural or field coverage is incomplete")
                 freq=None
         if freq:

@@ -1,0 +1,2896 @@
+{
+  "schema_version": "1.0.0",
+  "artifact": "G10_DEVELOPMENT_EVALUABILITY_ATTRIBUTION",
+  "source_report_sha256": "5c1f6dc8a744fe4df44ea2e57e61e6c4e365bc402b240501a682a37cc8447479",
+  "split_id": "TDL-CORPUS-SPLIT-V1",
+  "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+  "scope": "DEVELOPMENT_ONLY",
+  "holdout_accessed": false,
+  "dataset_count": 14,
+  "rule_coverage": {
+    "GTFS-G04-CONTEXTUAL-REFERENCE": {
+      "stage": "G04",
+      "status_counts": {
+        "NOT_APPLICABLE": 14
+      },
+      "coverage": {
+        "evaluated": 0,
+        "not_evaluable": 0,
+        "not_applicable": 0
+      },
+      "datasets": []
+    },
+    "GTFS-G04-IDENTITY-DOMAIN": {
+      "stage": "G04",
+      "status_counts": {
+        "FAIL_TECHNICAL": 1,
+        "PASS": 13
+      },
+      "coverage": {
+        "evaluated": 32002,
+        "not_evaluable": 0,
+        "not_applicable": 0
+      },
+      "datasets": []
+    },
+    "GTFS-G04-PRIMARY-KEY-UNIQUENESS": {
+      "stage": "G04",
+      "status_counts": {
+        "PASS": 14
+      },
+      "coverage": {
+        "evaluated": 102,
+        "not_evaluable": 0,
+        "not_applicable": 80
+      },
+      "datasets": []
+    },
+    "GTFS-G04-REFERENCE-EXISTENCE": {
+      "stage": "G04",
+      "status_counts": {
+        "NOT_EVALUABLE": 14
+      },
+      "coverage": {
+        "evaluated": 1168910,
+        "not_evaluable": 83,
+        "not_applicable": 158
+      },
+      "datasets": []
+    },
+    "GTFS-G05-CALENDAR-RANGE": {
+      "stage": "G05",
+      "status_counts": {
+        "NOT_APPLICABLE": 1,
+        "PASS": 13
+      },
+      "coverage": {
+        "evaluated": 417,
+        "not_evaluable": 0,
+        "not_applicable": 1
+      },
+      "datasets": []
+    },
+    "GTFS-G05-FEED-RANGE": {
+      "stage": "G05",
+      "status_counts": {
+        "NOT_APPLICABLE": 7,
+        "NOT_EVALUABLE": 1,
+        "PASS": 6
+      },
+      "coverage": {
+        "evaluated": 6,
+        "not_evaluable": 1,
+        "not_applicable": 7
+      },
+      "datasets": []
+    },
+    "GTFS-G05-FREQUENCY-TIME-RANGE": {
+      "stage": "G05",
+      "status_counts": {
+        "NOT_APPLICABLE": 14
+      },
+      "coverage": {
+        "evaluated": 0,
+        "not_evaluable": 0,
+        "not_applicable": 14
+      },
+      "datasets": []
+    },
+    "GTFS-G05-SERVICE-DATE-SET": {
+      "stage": "G05",
+      "status_counts": {
+        "NOT_EVALUABLE": 1,
+        "PASS": 13
+      },
+      "coverage": {
+        "evaluated": 13,
+        "not_evaluable": 1,
+        "not_applicable": 0
+      },
+      "datasets": []
+    },
+    "GTFS-G06-FREQUENCY-OPERATIONS": {
+      "stage": "G06",
+      "status_counts": {
+        "NOT_APPLICABLE": 14
+      },
+      "coverage": {
+        "evaluated": 0,
+        "not_evaluable": 0,
+        "not_applicable": 14
+      },
+      "datasets": []
+    },
+    "GTFS-G06-STOP-SEQUENCE": {
+      "stage": "G06",
+      "status_counts": {
+        "PASS": 14
+      },
+      "coverage": {
+        "evaluated": 558810,
+        "not_evaluable": 0,
+        "not_applicable": 0
+      },
+      "datasets": []
+    },
+    "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": {
+      "stage": "G05",
+      "status_counts": {
+        "NOT_APPLICABLE": 14
+      },
+      "coverage": {
+        "evaluated": 0,
+        "not_evaluable": 0,
+        "not_applicable": 14
+      },
+      "datasets": []
+    },
+    "TDL-G06-TRIP-TIME-ORDER-REVIEW": {
+      "stage": "G06",
+      "status_counts": {
+        "NOT_EVALUABLE": 14
+      },
+      "coverage": {
+        "evaluated": 0,
+        "not_evaluable": 14,
+        "not_applicable": 0
+      },
+      "datasets": []
+    }
+  },
+  "datasets": [
+    {
+      "dataset_id": "001",
+      "source_sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 5,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 73,
+            "not_applicable": 12,
+            "not_evaluable": 5,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ]
+            },
+            "count": 5
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "002",
+      "source_sha256": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ],
+        "trips.txt": [
+          {
+            "field": "shape_id",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 7,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 112,
+            "not_applicable": 11,
+            "not_evaluable": 7,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ],
+              "trips.txt": [
+                {
+                  "field": "shape_id",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 7
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "003",
+      "source_sha256": "70b14647471462975b9b646d738b76c2f27454d8d9f49311bb31289a888e411a",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 171,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "004",
+      "source_sha256": "1fe7adb7486766672ddef94917a881a0bacc5450ba00591d9a3c0e7067e63cb6",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ],
+        "trips.txt": [
+          {
+            "field": "shape_id",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 7,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 296,
+            "not_applicable": 11,
+            "not_evaluable": 7,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ],
+              "trips.txt": [
+                {
+                  "field": "shape_id",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 7
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "005",
+      "source_sha256": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ],
+        "trips.txt": [
+          {
+            "field": "shape_id",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 7,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 513,
+            "not_applicable": 11,
+            "not_evaluable": 7,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ],
+              "trips.txt": [
+                {
+                  "field": "shape_id",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 7
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "007",
+      "source_sha256": "81ef87bfe4c8500dc9f4b48f75ae2992131eb86e566fb4a60c73ea54431a9f1a",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ],
+        "trips.txt": [
+          {
+            "field": "shape_id",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 7,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 52,
+            "not_applicable": 11,
+            "not_evaluable": 7,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ],
+              "trips.txt": [
+                {
+                  "field": "shape_id",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 7
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "009",
+      "source_sha256": "0c588ca4a7547b36777f9aaf8a997ae35307d4ed74ac0cee04e8ff543c8f40f8",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 3849,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-CALENDAR-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "010",
+      "source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "stages": {
+        "g03": "FAIL_TECHNICAL",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 1598,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "011",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "FAIL_TECHNICAL",
+        "g05": "NOT_EVALUABLE",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "NOT_EVALUABLE",
+      "g04_identity_domain_status": "FAIL_TECHNICAL",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+          "status": "FAIL_TECHNICAL",
+          "coverage": {
+            "evaluated": 490,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "OTHER_EXPLICIT_REASON",
+            "source_stage": "G04",
+            "precondition": "technical finding retained in bounded finding_samples"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 17602,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "OTHER_EXPLICIT_REASON",
+            "source_stage": "G04_IDENTITY_DOMAIN",
+            "precondition": "G04 did not establish a complete SERVICE_ID domain for dataset 011",
+            "file_fields": [
+              {
+                "file": "calendar_dates.txt",
+                "field": "service_id"
+              },
+              {
+                "file": "trips.txt",
+                "field": "service_id"
+              }
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "012",
+      "source_sha256": "da2d07f8d0e2dbad98f4a6b05b927ed1a2f3f660a61054b7fd6401418cad5eb7",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 8324,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "014",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "FAIL_TECHNICAL",
+        "g08": "NOT_APPLICABLE"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 6,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 34778,
+            "not_applicable": 11,
+            "not_evaluable": 6,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 6
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "016",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "NOT_EVALUABLE",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "parent_station",
+            "contract_presence": "CONDITIONALLY_REQUIRED"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 5,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 2669,
+            "not_applicable": 12,
+            "not_evaluable": 5,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "parent_station",
+                  "contract_presence": "CONDITIONALLY_REQUIRED"
+                }
+              ]
+            },
+            "count": 5
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FEED-RANGE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "EXPECTED_FEED_CHARACTERISTIC",
+            "source_stage": "GTFS_FEED_DATA",
+            "precondition": "feed_start_date or feed_end_date has no populated date value",
+            "file": "feed_info.txt",
+            "fields": [],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "019",
+      "source_sha256": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 4,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 1086029,
+            "not_applicable": 12,
+            "not_evaluable": 4,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ]
+            },
+            "count": 4
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    },
+    {
+      "dataset_id": "020",
+      "source_sha256": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "stages": {
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "PASS",
+        "g08": "PASS"
+      },
+      "g04_reference_missing_source_fields": {
+        "stop_times.txt": [
+          {
+            "field": "drop_off_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          },
+          {
+            "field": "location_group_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "location_id",
+            "contract_presence": "CONDITIONALLY_FORBIDDEN"
+          },
+          {
+            "field": "pickup_booking_rule_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ],
+        "stops.txt": [
+          {
+            "field": "level_id",
+            "contract_presence": "OPTIONAL"
+          }
+        ]
+      },
+      "g04_reference_not_evaluable_count": 5,
+      "g05_feed_range_empty_date_fields": [],
+      "g05_service_date_set_status": "PASS",
+      "g04_identity_domain_status": "PASS",
+      "rules": [
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G04",
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 12844,
+            "not_applicable": 12,
+            "not_evaluable": 5,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G04_SOURCE_INVENTORY_AND_FEED_HEADERS",
+            "precondition": "G04 inventory source fields absent from optional or conditional source headers",
+            "missing_fields": {
+              "stop_times.txt": [
+                {
+                  "field": "drop_off_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                },
+                {
+                  "field": "location_group_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "location_id",
+                  "contract_presence": "CONDITIONALLY_FORBIDDEN"
+                },
+                {
+                  "field": "pickup_booking_rule_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ],
+              "stops.txt": [
+                {
+                  "field": "level_id",
+                  "contract_presence": "OPTIONAL"
+                }
+              ]
+            },
+            "count": 5
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G05",
+          "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G05",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+          "status": "NOT_EVALUABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 0,
+            "not_evaluable": 1,
+            "state": "PARTIAL"
+          },
+          "attribution": {
+            "classification": "DEFERRED_BY_SCOPE",
+            "source_stage": "G06_NORMATIVE_SCOPE",
+            "precondition": "pinned GTFS reference has no MUST-level monotonicity requirement between stop_times arrival_time and departure_time",
+            "file": "stop_times.txt",
+            "fields": [
+              "arrival_time",
+              "departure_time"
+            ],
+            "count": 1
+          }
+        },
+        {
+          "stage": "G06",
+          "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+          "status": "NOT_APPLICABLE",
+          "coverage": {
+            "evaluated": 0,
+            "not_applicable": 1,
+            "not_evaluable": 0,
+            "state": "FULL"
+          },
+          "attribution": {
+            "classification": "FEATURE_NOT_PRESENT",
+            "source_stage": "G06",
+            "precondition": "no applicable file, header, or data instance in this feed"
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "no raw observed source values retained",
+    "counts describe rule evaluations from G10 outputs",
+    "G03 reason details and bounded finding samples remain in the linked G10 report"
+  ]
+}
