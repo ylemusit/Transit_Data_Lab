@@ -140,11 +140,19 @@ def evaluate_g04(ctx, g03_result: dict | None = None, legacy_result: dict | None
                 if field["presence"] == "REQUIRED"}
             for file in field_contract["files"]
         }
+        # Keep only the most recently used tables. The previous unbounded cache
+        # retained every parsed row dictionary, which multiplied memory on large feeds.
         cache: dict[str, tuple[list[str], list[dict[str, str]]] | None] = {}
         def rows(name):
-            if name not in cache:
-                cache[name] = _rows(ctx, name)
-            return cache[name]
+            if name in cache:
+                parsed = cache.pop(name)
+                cache[name] = parsed
+                return parsed
+            parsed = _rows(ctx, name)
+            cache[name] = parsed
+            if len(cache) > 2:
+                cache.pop(next(iter(cache)))
+            return parsed
         findings: dict[str, list[dict]] = {key: [] for key in RULES}
         statuses: dict[str, list[str]] = {key: [] for key in RULES}
         # Optional empty key components have a definite value in the ordered tuple.

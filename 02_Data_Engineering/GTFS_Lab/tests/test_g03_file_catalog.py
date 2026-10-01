@@ -179,6 +179,19 @@ class G03FileCatalogTests(unittest.TestCase):
                             row["reason"] == "UNSUPPORTED_LEXICAL_VALIDATOR"
                             for row in result["field_types"]["not_evaluable"]))
 
+    def test_conditional_row_evidence_is_bounded_with_complete_counts(self):
+        rows = "".join(f"S{index},Stop {index},40,-3,0\n" for index in range(1100))
+        result = inspect_g03_archive(self.make_g03_zip({
+            "stops.txt": "stop_id,stop_name,stop_lat,stop_lon,location_type\n" + rows,
+        }))
+        schema = result["header_schema"]
+        self.assertEqual(1000, len(schema["conditional_rows"]))
+        self.assertEqual(1000, schema["conditional_rows_sample_limit"])
+        self.assertTrue(schema["conditional_rows_truncated"])
+        self.assertGreater(schema["conditional_rows_total"], len(schema["conditional_rows"]))
+        self.assertEqual(schema["conditional_rows_total"],
+                         sum(item["count"] for item in schema["conditional_rows_counts"]))
+
     def test_partial_type_coverage_with_failure_preserves_failure(self):
         result = inspect_g03_archive(self.make_g03_zip({
             "agency.txt": "agency_name,agency_url,agency_timezone\nTransit,ftp://invalid,Europe/Madrid\n"}))

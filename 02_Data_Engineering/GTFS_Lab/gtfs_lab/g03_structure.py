@@ -29,6 +29,7 @@ CATALOG_RELATIVE_PATH = Path("spec") / "gtfs_schedule_2026_04_27.json"
 EXPECTED_SCHEMA_VERSION = "1.0.0"
 EXPECTED_REVISION = "2026-04-27"
 EXPECTED_FILE_COUNT = 32
+CONDITIONAL_ROW_EVIDENCE_SAMPLE_LIMIT = 1000
 SUPPORTED_TEXT_ENCODINGS = ("utf-8-sig", "utf-8", "cp1252")
 
 _G03_RULES = {
@@ -222,6 +223,8 @@ def _evaluate_schema(source_zip: Path, files: dict[str, zipfile.ZipInfo], offici
     by_file = {row["file_name"].casefold(): row["fields"] for row in contract["files"]}
     caps = {(row["file_name"].casefold(), row["field_name"]): row for row in capabilities["fields"]}
     findings, decisions, unevaluable, conditional_rows = [], [], [], []
+    conditional_rows_total = 0
+    conditional_counts: dict[tuple[str, str, str, str], int] = {}
     for key, info in sorted(files.items()):
         entry = official.get(key)
         if not entry or not entry["tdl_v1_support"].startswith("FULL_V1_TECHNICAL") or key not in by_file:
@@ -253,10 +256,14 @@ def _evaluate_schema(source_zip: Path, files: dict[str, zipfile.ZipInfo], offici
                                             "trace": resolution["trace"]})
                         continue
                     observed = row.get(name)
-                    conditional_rows.append({"file": entry["file_name"], "field": name,
-                                              "record": row_number, "effect": effect,
-                                              "observed": observed if name in actual else "HEADER_ABSENT",
-                                              "truth": resolution["truth"], "trace": resolution["trace"]})
+                    conditional_rows_total += 1
+                    count_key = (entry["file_name"], name, effect, resolution["truth"])
+                    conditional_counts[count_key] = conditional_counts.get(count_key, 0) + 1
+                    if len(conditional_rows) < CONDITIONAL_ROW_EVIDENCE_SAMPLE_LIMIT:
+                        conditional_rows.append({"file": entry["file_name"], "field": name,
+                                                  "record": row_number, "effect": effect,
+                                                  "observed": observed if name in actual else "HEADER_ABSENT",
+                                                  "truth": resolution["truth"], "trace": resolution["trace"]})
                     violation = (effect == "REQUIRED" and (name not in actual or observed == "")) or (
                         effect == "FORBIDDEN" and name in actual and observed != ""
                     )
@@ -286,6 +293,13 @@ def _evaluate_schema(source_zip: Path, files: dict[str, zipfile.ZipInfo], offici
     status = "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if unevaluable or not decisions else "PASS"
     return {"status": status, "findings": findings, "decisions": decisions,
             "conditional_rows": conditional_rows, "not_evaluable": unevaluable,
+            "conditional_rows_total": conditional_rows_total,
+            "conditional_rows_truncated": conditional_rows_total > len(conditional_rows),
+            "conditional_rows_sample_limit": CONDITIONAL_ROW_EVIDENCE_SAMPLE_LIMIT,
+            "conditional_rows_counts": [
+                {"file": file_name, "field": field, "effect": effect, "truth": truth, "count": count}
+                for (file_name, field, effect, truth), count in sorted(conditional_counts.items())
+            ],
             "evaluator_executed": True, "capability_map_revision": capabilities["specification_revision"],
             "coverage_limitation": "Conditional header requirements with unresolved predicates are NOT_EVALUABLE; unknown headers are observed but not rejected while extension policy is unresolved."}
 
@@ -322,14 +336,9 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
             header = next(reader, None)
             if header is None: continue
             positions = {name: i for i, name in enumerate(header)}
-            values = {f["field_name"]: [] for f in file_contract["fields"] if f["field_name"] in positions}
-            for record in reader:
-                if record:
-                    for name in values:
-                        index = positions[name]
-                        if index < len(record): values[name].append(record[index])
         except (UnicodeError, csv.Error):
             not_evaluable.append({"file": entry["file_name"], "reason": "CSV_STRUCTURE_UNAVAILABLE"}); continue
+        executable_fields = []
         for field in file_contract["fields"]:
             name = field["field_name"]
             cap = rows.get((key, name))
@@ -344,25 +353,44 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
                                       "reason": "UNSUPPORTED_LEXICAL_VALIDATOR"})
                 continue
             allowed = {x["value"] for x in field.get("allowed_values") or []}
-            for row_no, value in enumerate(values[name], 1):
-                if value == "":
-                    continue  # empty semantics are deliberately not inferred
-                if not _field_type_valid(field, value):
-                    findings.append(_finding("GTFS-G03-FIELD-TYPE", entry["file_name"], f"ROW:{row_no}", name,
-                                             value, field["type"], field["source_reference"]["source_locator"],
-                                             "Value does not satisfy the executable official lexical type"))
-                elif field["type"] == "ENUM" and allowed and value not in allowed:
-                    findings.append(_finding("GTFS-G03-FIELD-TYPE", entry["file_name"], f"ROW:{row_no}", name,
-                                             value, "one of the explicitly sourced enum values", field["source_reference"]["source_locator"],
-                                             "Value is outside the explicitly sourced enum domain"))
-                elif field.get("range") and field.get("range_status") == "NORMATIVE_RANGE":
-                    number = float(value)
-                    bounds = field["range"]
-                    if bounds.get("min") is not None and number < bounds["min"] or bounds.get("max") is not None and number > bounds["max"]:
+            executable_fields.append((field, positions[name], allowed))
+        # Validate each CSV row as it streams. Retaining every value from large files
+        # (notably stop_times.txt) multiplies memory use without adding evidence.
+        value_rows = {field["field_name"]: 0 for field, _, _ in executable_fields}
+        file_findings_start, checked_before_file = len(findings), checked
+        try:
+            for record in reader:
+                if not record:
+                    continue
+                for field, index, allowed in executable_fields:
+                    if index >= len(record):
+                        continue
+                    name = field["field_name"]
+                    value_rows[name] += 1
+                    row_no = value_rows[name]
+                    value = record[index]
+                    if value == "":
+                        continue  # empty semantics are deliberately not inferred
+                    if not _field_type_valid(field, value):
                         findings.append(_finding("GTFS-G03-FIELD-TYPE", entry["file_name"], f"ROW:{row_no}", name,
-                                                 value, f"range {bounds}", field["source_reference"]["source_locator"],
-                                                 "Value is outside the explicit normative range"))
-                checked += 1
+                                                 value, field["type"], field["source_reference"]["source_locator"],
+                                                 "Value does not satisfy the executable official lexical type"))
+                    elif field["type"] == "ENUM" and allowed and value not in allowed:
+                        findings.append(_finding("GTFS-G03-FIELD-TYPE", entry["file_name"], f"ROW:{row_no}", name,
+                                                 value, "one of the explicitly sourced enum values", field["source_reference"]["source_locator"],
+                                                 "Value is outside the explicitly sourced enum domain"))
+                    elif field.get("range") and field.get("range_status") == "NORMATIVE_RANGE":
+                        number = float(value)
+                        bounds = field["range"]
+                        if bounds.get("min") is not None and number < bounds["min"] or bounds.get("max") is not None and number > bounds["max"]:
+                            findings.append(_finding("GTFS-G03-FIELD-TYPE", entry["file_name"], f"ROW:{row_no}", name,
+                                                     value, f"range {bounds}", field["source_reference"]["source_locator"],
+                                                     "Value is outside the explicit normative range"))
+                    checked += 1
+        except csv.Error:
+            del findings[file_findings_start:]
+            checked = checked_before_file
+            not_evaluable.append({"file": entry["file_name"], "reason": "CSV_STRUCTURE_UNAVAILABLE"})
     return {"status": "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if not checked or not_evaluable else "PASS",
             "findings": findings, "checked_values": checked, "not_evaluable": not_evaluable,
             "evaluator_executed": True, "capability_map_revision": capabilities["specification_revision"],

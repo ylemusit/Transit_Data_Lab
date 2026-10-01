@@ -6,6 +6,9 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 
 ## Estado implementado
 
+- GTFS Audit Engine V1: G01–G07 permanecen cerrados en su base vigente; G08 quality, G09 reporting y G10 DEVELOPMENT tienen implementación/evidencia local pendiente de CI y merge. Véanse el [estado G08–G10](reports/TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md), el [candidato G11](reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y sus [resultados de corpus](reports/evidence/g10_development/g10_development_results.json). Estos estados son locales, no cierres publicados; HOLDOUT no se accedió.
+- G08 es aditivo después de G07 y queda fuera de `validation` legacy y de la normalización M02. G09 escribe informes JSON/Markdown suplementarios que M02 no registra. G10 verifica hashes y usa exclusivamente el split DEVELOPMENT.
+
 - GTFS_Lab V1 tiene pipeline local reproducible de ZIP a informe; gate sintético PASS y reglas GTFS_Lab PASS en Asturias con cero hallazgos. El resultado Compliance V1 del primer checkpoint M04-B1 fue `INSPECTION_ERROR` por límites del evaluador histórico. La implementación actual `compliance-v1/2` completó la evaluación técnica del HOLDOUT V2; véase el [estado vigente](../../PROJECT_STATUS.md). Ninguno de estos resultados acredita una auditoría jurídica del operador.
 - El dry run crea DuckDB aislado por ejecución y no modifica `databases/gtfs_lab.duckdb`, el ZIP original ni Compliance.
 - Core, integridad, reglas iniciales, análisis con calendario, consultas SQL y exportaciones KML/GeoJSON están en el pack V1. Ver [estado V1](GTFS_LAB_V1_CURRENT_STATE.md) y [informe de estabilización](reports/GTFS_LAB_V1_STABILIZATION_REPORT.md).

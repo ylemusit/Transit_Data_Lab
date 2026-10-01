@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_CANDIDATE",
+  "candidate_state": "LOCAL_EVIDENCE_COMPLETE_REMOTE_CI_AND_MERGE_PENDING",
+  "base_commit": "89b199f1ffa114922047113a8460e2933cfa60f8",
+  "specification": {
+    "name": "GTFS Schedule Reference",
+    "revision": "2026-04-27",
+    "official_file_count": 32,
+    "supported_file_count": 14,
+    "deferred_file_count": 18
+  },
+  "stages": {
+    "G01": {
+      "state": "CLOSED_ON_BASE"
+    },
+    "G02": {
+      "state": "CLOSED_ON_BASE",
+      "contract_changed": false
+    },
+    "G03": {
+      "state": "LOCAL_REGRESSION_PASS_PENDING_MERGE",
+      "executable_fields": 106,
+      "partially_executable_fields": 11,
+      "unresolved_conditions": 15,
+      "extension_policy": "UNRESOLVED"
+    },
+    "G04": {
+      "state": "LOCAL_REGRESSION_PASS_PENDING_MERGE",
+      "rules": 4,
+      "identity_inventory": "CREATED_LOCAL_UNPUBLISHED"
+    },
+    "G05": {
+      "state": "CLOSED_ON_BASE",
+      "rules": 5
+    },
+    "G06": {
+      "state": "CLOSED_ON_BASE",
+      "rules": 3
+    },
+    "G07": {
+      "state": "CLOSED_ON_BASE",
+      "rules": 3
+    },
+    "G08": {
+      "state": "LOCAL_IMPLEMENTED_TESTED_PENDING_MERGE",
+      "rules": 3
+    },
+    "G09": {
+      "state": "LOCAL_IMPLEMENTED_TESTED_PENDING_MERGE",
+      "m02_changed": false
+    },
+    "G10": {
+      "state": "LOCAL_CORPUS_RUN_COMPLETE_PENDING_POST_MERGE",
+      "split_id": "TDL-CORPUS-SPLIT-V1",
+      "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+      "scope": "DEVELOPMENT_ONLY",
+      "completed_datasets": 14,
+      "pipeline_errors": 0,
+      "stability_replay": "PASS",
+      "holdout_accessed": false,
+      "development_report_sha256": "2f8d1e667d070004dec9e3ee983b9c6681d562b51a22cbdccd7e237b1fdee62c"
+    },
+    "G11": {
+      "state": "CLOSURE_REVIEW_CANDIDATE_NOT_CLOSED"
+    }
+  },
+  "persistence_boundary": {
+    "m02_contract_changed": false,
+    "engine_report_tracked_by_m02": false,
+    "engine_stages_added_to_legacy_validation": false
+  },
+  "explicit_exclusions": [
+    "LEGAL_COMPLIANCE_OR_CERTIFICATION",
+    "GTFS_COMPLETE_COVERAGE",
+    "MARKET_OR_COMMERCIAL_VALIDATION",
+    "NETEX_READINESS",
+    "SIRI_READINESS",
+    "HOLDOUT_RESULTS"
+  ],
+  "pending_gates": [
+    "REMOTE_CI",
+    "HUMAN_MERGE_APPROVAL",
+    "POST_MERGE_VERIFICATION",
+    "FINAL_HUMAN_G11_CLOSURE_DECISION"
+  ]
+}
