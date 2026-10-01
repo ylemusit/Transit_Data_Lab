@@ -32,14 +32,16 @@ def _time(value):
     if h < 0 or not 0 <= m < 60 or not 0 <= s < 60: raise ValueError(value)
     return h * 3600 + m * 60 + s
 
-def _g03_uncertain(g03, file_name):
+def _g03_uncertain(g03, file_name, relevant_fields=None):
     if g03 is None: return False
     comp=g03.get("csv_structure")
-    inspected=next((x for x in comp.get("inspected",[]) if x.get("file")==file_name),None) if isinstance(comp,dict) else None
+    inspected=next((x for x in comp.get("files_inspected",comp.get("inspected",[])) if x.get("file")==file_name),None) if isinstance(comp,dict) else None
     if inspected is None or inspected.get("status")!="PASS": return True
     if any(x.get("file")==file_name for x in comp.get("findings",[])): return True
     types=g03.get("field_types") or {}
-    return any(x.get("file")==file_name for key in ("findings","not_evaluable") for x in types.get(key,[]))
+    return any(x.get("file")==file_name
+               and (relevant_fields is None or x.get("field") in relevant_fields)
+               for key in ("findings","not_evaluable") for x in types.get(key,[]))
 
 def evaluate_g05(ctx, g03_result=None, g04_result=None):
     registry=build_phase_registry(RULE_SPECS,evaluate_g05,"g05_temporal")
@@ -70,7 +72,7 @@ def evaluate_g05(ctx, g03_result=None, g04_result=None):
         for name, rid, start, end in (("calendar.txt",RULES[0],"start_date","end_date"),("feed_info.txt",RULES[1],"feed_start_date","feed_end_date")):
             data=_read(ctx,name)
             if data is None: continue
-            if _g03_uncertain(g03_result,name): mark(rid,"NOT_EVALUABLE");continue
+            if _g03_uncertain(g03_result,name,{start,end}): mark(rid,"NOT_EVALUABLE");continue
             heads, rows=data
             if start not in heads or end not in heads: mark(rid,"NOT_EVALUABLE");continue
             for i,row in enumerate(rows,1):
@@ -83,7 +85,7 @@ def evaluate_g05(ctx, g03_result=None, g04_result=None):
         for name, fields, rule in (("frequencies.txt",("start_time","end_time"),RULES[2]),("stop_times.txt",("start_pickup_drop_off_window","end_pickup_drop_off_window"),RULES[3])):
             data=_read(ctx,name)
             if data is None: continue
-            if _g03_uncertain(g03_result,name): mark(rule,"NOT_EVALUABLE");continue
+            if _g03_uncertain(g03_result,name,set(fields)): mark(rule,"NOT_EVALUABLE");continue
             heads,rows=data
             if not set(fields).issubset(heads): continue
             for i,row in enumerate(rows,1):
@@ -102,7 +104,9 @@ def evaluate_g05(ctx, g03_result=None, g04_result=None):
         if calendar is None and dates is None:
             mark(RULES[4],"NOT_APPLICABLE")
         else:
-            uncertain=(calendar is not None and _g03_uncertain(g03_result,"calendar.txt")) or (dates is not None and _g03_uncertain(g03_result,"calendar_dates.txt"))
+            calendar_fields={"service_id","start_date","end_date","monday","tuesday","wednesday","thursday","friday","saturday","sunday"}
+            date_fields={"service_id","date","exception_type"}
+            uncertain=(calendar is not None and _g03_uncertain(g03_result,"calendar.txt",calendar_fields)) or (dates is not None and _g03_uncertain(g03_result,"calendar_dates.txt",date_fields))
             g04_domain=next((r for r in (g04_result or {}).get("rules",[]) if r.get("rule_id","" ).endswith("IDENTITY-DOMAIN")),None)
             if g04_result and g04_domain and g04_domain.get("status") not in {"PASS","NOT_APPLICABLE"}: uncertain=True
             g04_keys=next((r for r in (g04_result or {}).get("rules",[]) if r.get("rule_id","" ).endswith("PRIMARY-KEY-UNIQUENESS")),None)

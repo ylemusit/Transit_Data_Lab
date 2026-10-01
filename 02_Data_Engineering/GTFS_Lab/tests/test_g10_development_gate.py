@@ -8,9 +8,38 @@ from pathlib import Path
 from unittest.mock import patch
 
 from gtfs_lab.g10_development_gate import build_cross_dataset_comparison, evaluate_development_corpus
+from gtfs_lab.g10_worker import _bounded_findings_evidence, _bounded_reason_evidence
 
 
 class G10DevelopmentGateTests(unittest.TestCase):
+    def test_g03_reason_evidence_groups_counts_and_caps_samples(self):
+        evidence = _bounded_reason_evidence({
+            "status": "NOT_EVALUABLE",
+            "not_evaluable": [
+                {"file": "routes.txt", "field": "route_type", "reason": "UNRESOLVED_TYPE_FORMAT"}
+                for _ in range(8)
+            ],
+        }, sample_limit=3)
+        self.assertEqual(8, evidence["not_evaluable_count"])
+        self.assertEqual(1, len(evidence["reason_counts"]))
+        self.assertEqual(8, evidence["reason_counts"][0]["count"])
+        self.assertEqual(3, len(evidence["sample"]))
+
+    def test_g03_findings_evidence_groups_rows_and_retains_file_status(self):
+        evidence = _bounded_findings_evidence({
+            "status": "PASS",
+            "findings": [{"file": "stops.txt", "field": "stop_id", "rule_id": "GTFS-G03-FIELD-TYPE",
+                           "observed": "private-value"} for _ in range(7)],
+            "files_inspected": [{"file": "stops.txt", "status": "PASS", "data_rows": 7}],
+        }, sample_limit=2)
+        self.assertEqual(7, evidence["finding_count"])
+        self.assertEqual(7, evidence["reason_counts"][0]["count"])
+        self.assertEqual(2, len(evidence["sample"]))
+        self.assertEqual("GTFS-G03-FIELD-TYPE", evidence["reason_counts"][0]["reason_code"])
+        self.assertNotIn("observed", evidence["sample"][0])
+        self.assertEqual("PASS", evidence["file_statuses"][0]["status"])
+        self.assertEqual(7, evidence["file_statuses"][0]["row_count"])
+
     def test_cross_dataset_comparison_uses_rule_finding_counts(self):
         records = [{"execution_status": "COMPLETED", "stages": {
             "g03": {"status": "FAIL_TECHNICAL", "finding_counts_by_rule": {"GTFS-G03-X": 2},
