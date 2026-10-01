@@ -1,30 +1,45 @@
 # Transit Data Lab — estado vigente
 
-## GTFS Audit Engine V1 — candidatos locales hasta G07
+**Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-**Registro e inventario por pasos:** [GTFS Audit Engine V1 — registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md). Para retomar en otro chat, consultar primero este estado, luego la fila del paso actual en el registro y finalmente los documentos enlazados para ese paso.
+## GTFS Audit Engine V1 — cierre G04–G07; G08 posterior, local y no publicado
+
+**Registro e inventario por pasos:** [GTFS Audit Engine V1 — registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md).
 
 ```ini
-G04 = IMPLEMENTATION_CANDIDATE
-G04_PHASE = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
-G04_SCOPE_FORMAL_REVIEW = PASS
+G04 = PASS
+G04_CLOSED = YES
 G04_SCOPE = FROZEN
-G04_IMPLEMENTATION = REMEDIATED_LOCAL_CANDIDATE
-G04_BASE = 137ff4ed38da65fb3fb61f9804d729a1cee51feb
-G04_LOCAL_REVIEW = PASS
-G05_SCOPE = FORMALLY_APPROVED_2026-10-01
-G05_TYPED_RULE_REGISTRY = PASS_LOCAL
-G05_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
-G06_SCOPE = FORMALLY_APPROVED_2026-10-01
-G06_TYPED_RULE_REGISTRY = PASS_LOCAL
-G06_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
-G07_SCOPE = FORMALLY_APPROVED_2026-10-01
-G07_TYPED_RULE_REGISTRY = PASS_LOCAL
-G07_IMPLEMENTATION = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
-G07_TECHNICAL_CANDIDATE = LOCAL_TECHNICAL_REVIEW_PASS_CLOSURE_PENDING
+G04_IMPLEMENTATION = MERGED_AND_POST_MERGE_VERIFIED
+G05 = PASS
+G05_CLOSED = YES
+G05_IMPLEMENTATION = MERGED_AND_POST_MERGE_VERIFIED
+G06 = PASS
+G06_CLOSED = YES
+G06_IMPLEMENTATION = MERGED_AND_POST_MERGE_VERIFIED
+G07 = PASS
+G07_CLOSED = YES
+G07_IMPLEMENTATION = MERGED_AND_POST_MERGE_VERIFIED
+G04_G07_MERGE_COMMIT = 4b27d26ed507127e68b229ae65915d9cd0307024
+G04_G07_PR = 26_MERGED
+G04_G07_REMOTE_CI = PASS
+G04_G07_POST_MERGE_CI_RUN = 36791698098
+G04_G07_TECHNICAL_CLOSURE_DECISION = APPROVED_2026-10-01
+G04_G07_HOLDOUT = NOT_RUN
+G04_FINDINGS_IN_VALIDATION_FINDINGS = NO
+M02_NORMALIZES_G04_FINDINGS = NO
+G04_G07_MANIFEST_ARTIFACT_KNOWLEDGE = INDIRECT
+G04_G07_LEGACY = PRODUCTIVE_WHERE_APPLICABLE
+G04_IDENTITY_INVENTORY_METADATA = CREATED_LOCAL_UNPUBLISHED; KNOWN_CONTRACT_DEBT
+G08 = LATER_WORK; LOCAL_UNPUBLISHED
+GTFS_COMPLETE_COMPLIANCE = NOT_ESTABLISHED
 ```
 
-El candidato se preparó en el worktree aislado `C:\Users\yeiso\AppData\Local\Temp\tdl-gtfs-engine-g04` sobre la base `137ff4ed38da65fb3fb61f9804d729a1cee51feb`. El 2026-10-01, Yeison Arbey Carrillo Lemus aprobó los alcances G05–G07 y autorizó commit, push y apertura de PR sin merge. La rama `feat/gtfs-engine-g04-identity-referential` está publicada y la [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26) está abierta contra `main`; el check remoto `synthetic` terminó PASS en el commit `4528d88e5e0a75152112bfc2545e006af34ceed2`. El [registro por pasos e inventario](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md) contiene la secuencia, autorización, commits, PR y checks. Una regresión verifica el registro tipado congelado de G05–G07; nueve artefactos del paquete anterior conservan sus hashes y el test actualizado tiene un SHA-256 nuevo en el [addendum de aprobación y revalidación](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G04_G07_FORMAL_SCOPE_APPROVAL_20261001.md). Verificación local: 217 pruebas totales, 216 OK y 1 SKIP explícito (base Compliance protegida ausente); 51 pruebas G04–G07 focalizadas, compilación, inventario determinista y `git diff --check` pasan. G04–G07 mantienen revisión técnica local PASS y no figuran como fases `CLOSED`; el merge y cierre técnico siguen pendientes. No se ejecutó HOLDOUT.
+El cierre G04–G07 acredita únicamente la integración y verificación técnica del alcance implementado. Los findings de G04 no forman parte actualmente de `validation.findings`; M02 no normaliza findings G04–G07. El manifest conoce los artefactos del run indirectamente, y el flujo legacy sigue productivo donde corresponda. No se ejecutó ni se accedió a HOLDOUT. Se conservan los gaps y elementos diferidos de cobertura; tampoco se declara equivalencia total con legacy, cumplimiento GTFS completo ni cumplimiento jurídico. El inventario G04 conserva `CREATED_LOCAL_UNPUBLISHED`, registrado como deuda contractual conocida sin modificar el inventario ni el runtime.
+
+G08 es trabajo posterior, aún local y no publicado. G09–G11 siguen pendientes. La evidencia fechada de sus pasos locales permanece en el registro por pasos, separada del cierre G04–G07.
+
+El 2026-10-01 se registró la decisión de cierre técnico de G04–G07 tras integrar la PR #26. `origin/main` apunta al merge commit `4b27d26ed507127e68b229ae65915d9cd0307024` (base `137ff4ed38da65fb3fb61f9804d729a1cee51feb`, head `38bf16e1f06f938677fbe2158936479e3a1eb8c6`). El CI post-merge de GitHub Actions terminó PASS en ese commit ([run 36791698098](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36791698098)); la [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26) figura fusionada. La verificación actual confirma esos datos remotos. Compliance y Business conservan sus estados propios.
 
 ## GTFS Audit Engine V1 — G02 y G03 cerrados
 
@@ -76,7 +91,7 @@ PR #21 está cerrada y fusionada. Su merge commit fue `d7f4c76ce5c13844ea49303f0
 
 G02 incorporó el registro de reglas tipado, applicability trazable, cobertura, estado nativo versionado e identidad registrada separada de la ejecución. Su cierre y regresión están documentados en el [informe G02](reports/repository_integrity/TDL_GTFS_AUDIT_ENGINE_G02_CLOSURE.md). El registro sigue sin gobernar la validación productiva; GTFS_Lab V1 conserva sus resultados. ChangeAttribution 1.0.0 y `MANIFEST_VERSION = 1.1.2` permanecen intactos; ChangeAttribution 1.1.0 recibe identidad por regla.
 
-Actualizado: 2026-09-30. Sustituye únicamente las afirmaciones operativas obsoletas de las instantáneas anteriores; no promueve ni modifica sus baselines. Evidencia y límites en [la revisión](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md).
+Actualizado: 2026-10-01. Sustituye únicamente las afirmaciones operativas obsoletas de las instantáneas anteriores; no promueve ni modifica sus baselines. Evidencia y límites en [la revisión](reports/repository_integrity/PROJECT_ALIGNMENT_REVIEW.md).
 
 ## Identidad y repositorios
 

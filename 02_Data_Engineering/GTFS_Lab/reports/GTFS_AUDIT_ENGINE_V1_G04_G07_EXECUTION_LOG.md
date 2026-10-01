@@ -1,6 +1,6 @@
 # GTFS Audit Engine V1 — registro e inventario G04–G07
 
-**Entrada rápida:** `PROJECT_STATUS.md` → sección «GTFS Audit Engine V1 — candidatos locales hasta G07» → este registro.\
+**Entrada rápida:** `PROJECT_STATUS.md` → sección «GTFS Audit Engine V1 — cierre G04–G07» → este registro.\
 **Worktree:** `C:\Users\yeiso\AppData\Local\Temp\tdl-gtfs-engine-g04`\
 **Base del candidato:** `137ff4ed38da65fb3fb61f9804d729a1cee51feb`\
 **HEAD con CI PASS:** `4528d88e5e0a75152112bfc2545e006af34ceed2`\
@@ -13,9 +13,12 @@
 | 01 | Aprobar alcances y reglas G05–G07; verificar su registro tipado | CERRADO localmente | [Aprobación formal y revalidación](TDL_GTFS_AUDIT_ENGINE_G04_G07_FORMAL_SCOPE_APPROVAL_20261001.md) |
 | 02 | Publicar candidato en una rama y abrir PR para ejecutar CI remoto | CERRADO | [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26) |
 | 03 | Revisar CI remoto y resolver sus resultados | CERRADO; PASS | Check `synthetic`, run `36790819465` |
-| 04 | Integrar y decidir cierre técnico G04–G07 | ESPERA autorización de merge | [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26), CI verde |
+| 04 | Integrar y decidir cierre técnico G04–G07 | CERRADO; PASS post-merge | Merge `4b27d26e…`; run `36791698098` |
 
-G04–G07 conservan revisión técnica local `PASS`; ninguna fase figura `CLOSED`. No se ha ejecutado HOLDOUT. La aprobación de alcance no equivale a autorización de publicación; la autorización de publicación está registrada en el paso 02.
+G04, G05, G06 y G07 quedan `PASS`, con `G04_CLOSED = YES`, `G05_CLOSED = YES`, `G06_CLOSED = YES` y `G07_CLOSED = YES`, para el alcance técnico implementado e integrado. PR #26 está fusionada en `4b27d26ed507127e68b229ae65915d9cd0307024`; CI remoto y post-merge PASS, run `36791698098`.
+
+Fronteras del cierre: findings G04 no forman parte de `validation.findings`; M02 no normaliza findings G04–G07. El manifest conoce indirectamente los artefactos del run. Legacy continúa productivo donde corresponde. HOLDOUT no se ejecutó ni se accedió. Se preservan gaps y deferrals; no se declara cumplimiento GTFS completo, cumplimiento jurídico, persistencia M02 de findings G04–G07, equivalencia total con legacy ni cobertura de features diferidas. El inventario G04 mantiene `CREATED_LOCAL_UNPUBLISHED` como deuda contractual conocida; no se modifica su estado.
+
 
 ## Registro cronológico de pasos
 
@@ -56,12 +59,12 @@ G04–G07 conservan revisión técnica local `PASS`; ninguna fase figura `CLOSED
 
 ### Paso 04 — integración y cierre técnico
 
-- **Solicitado:** completar G07 con trazabilidad por pasos.
-- **Situación:** revisión técnica local PASS; alcances G05–G07 aprobados; CI remoto PASS; PR #26 abierta y limpia.
-- **Propuesta:** fusionar la PR #26 tras autorización expresa. Después verificar el merge commit y el workflow post-merge, y registrar la decisión de cierre con evidencia del commit final.
-- **Decisión:** pendiente; Yeison aún no ha autorizado el merge.
-- **Estado:** en espera de autorización. Mantener G04–G07 en `CLOSURE_PENDING` mientras la PR no se integre.
-- **Siguiente:** pendiente autorización expresa para integrar la PR #26; después verificar el merge y el workflow post-merge.
+- **Solicitado:** registrar la integración y decidir el cierre técnico G04–G07 tras verificar la PR #26 y su CI post-merge.
+- **Situación verificada:** PR #26 fusionada en `main`; merge commit `4b27d26ed507127e68b229ae65915d9cd0307024`, con padres base `137ff4ed38da65fb3fb61f9804d729a1cee51feb` y head `38bf16e1f06f938677fbe2158936479e3a1eb8c6`.
+- **Evidencia:** CI post-merge Actions run `36791698098` terminó PASS sobre el merge commit ([ejecución](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36791698098)); GitHub muestra la PR #26 como Merged y un check pasado.
+- **Decisión:** Yeison Arbey Carrillo Lemus decide el 2026-10-01 registrar `G04 = PASS`, `G05 = PASS`, `G06 = PASS`, `G07 = PASS` y cada campo `G0N_CLOSED = YES` para el alcance técnico integrado y verificado.
+- **Estado:** paso 04 cerrado con PASS técnico. Findings G04 no forman parte de `validation.findings` y M02 no los normaliza; el manifest conoce los artefactos del run indirectamente y legacy sigue productivo donde corresponda. HOLDOUT no se ejecutó ni se accedió. Se conservan gaps/deferrals; el cierre no implica persistencia M02 de findings G04–G07, equivalencia total con legacy, cobertura de features diferidas, cumplimiento GTFS completo ni cumplimiento jurídico. `CREATED_LOCAL_UNPUBLISHED` del inventario G04 queda registrado como deuda contractual conocida, sin cambiarlo.
+- **Siguiente:** ninguno para este cierre técnico; cualquier ampliación de alcance o ejecución HOLDOUT requiere su gate propio.
 
 ## Inventario de archivos
 
