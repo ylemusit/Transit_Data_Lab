@@ -38,13 +38,13 @@ G09 = IMPLEMENTED_TESTED_LOCAL; M02_UNCHANGED; PENDING_CI_MERGE_POST_MERGE_CLOSU
 G10 = DEVELOPMENT_COMPLETE_LOCAL; 14_COMPLETED; 0_PIPELINE_ERRORS; STABILITY_PASS
 G10_HOLDOUT = NOT_ACCESSED
 G11 = CLOSURE_REVIEW_CANDIDATE; NOT_CLOSED
-GTFS_ENGINE_G08_G10_REMOTE_CI = PENDING
+GTFS_ENGINE_G08_G10_PR = 28; HEAD = cd2c3fb`r`nGTFS_ENGINE_G08_G10_REMOTE_CI = PASS; RUN 36803356048
 GTFS_COMPLETE_COMPLIANCE = NOT_ESTABLISHED
 ```
 
 El cierre G04–G07 acredita únicamente la integración y verificación técnica del alcance implementado. Los findings de G04 no forman parte actualmente de `validation.findings`; M02 no normaliza findings G04–G07. El manifest conoce los artefactos del run indirectamente, y el flujo legacy sigue productivo donde corresponda. No se ejecutó ni se accedió a HOLDOUT. Se conservan los gaps y elementos diferidos de cobertura; tampoco se declara equivalencia total con legacy, cumplimiento GTFS completo ni cumplimiento jurídico. El inventario G04 conserva `CREATED_LOCAL_UNPUBLISHED`, registrado como deuda contractual conocida sin modificar el inventario ni el runtime.
 
-El trabajo local G08–G10 y la candidatura G11 constan en el [estado G08–G10](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md), el [informe G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y la [evidencia del corpus DEVELOPMENT](02_Data_Engineering/GTFS_Lab/reports/evidence/g10_development/g10_development_results.json). El corpus split/lineage pasó; se ejecutaron 14 DEVELOPMENT con cero errores de pipeline y replay de estabilidad PASS. HOLDOUT no se accedió. Estos resultados siguen locales: faltan CI remoto, merge, verificación post-merge y cierre humano; G08–G11 no se declaran cerrados.
+El trabajo local G08–G10 y la candidatura G11 constan en el [estado G08–G10](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md), el [informe G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y la [evidencia del corpus DEVELOPMENT](02_Data_Engineering/GTFS_Lab/reports/evidence/g10_development/g10_development_results.json). El corpus split/lineage pasó; se ejecutaron 14 DEVELOPMENT con cero errores de pipeline y replay de estabilidad PASS. HOLDOUT no se accedió. La rama `feat/gtfs-engine-g08-g11` se publicó en la PR #28 (`cd2c3fb`); CI remoto PASS en el run [36803356048](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36803356048). Faltan merge, verificación post-merge y cierre humano; G08–G11 no se declaran cerrados.
 
 Los cambios locales de memoria G03/G04 preservan la clasificación/finding y el inventario normativo, y pasan sus regresiones focalizadas. Quedan sujetos a regresión completa, CI y verificación post-merge. M02 no cambia y no registra el informe G09 suplementario.
 

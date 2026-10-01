@@ -18,7 +18,7 @@ GTFS AUDIT ENGINE V1 — CONTINUACIÓN LOCAL (sin publicar)
 ├── G08 Quality                                 🛠️ IMPLEMENTADO / E2E sintético PASS
 ├── G09 Reporting                               🛠️ JSON + Markdown deterministas; M02 sin cambios
 ├── G10 Development                             ✅ 14/14 pipelines; 0 errores; replay PASS; HOLDOUT no accedido
-└── G11 Closure                                 ⏳ CANDIDATO local; pendiente CI, merge, post-merge y decisión humana
+└── G11 Closure                                 ⏳ PR #28 / CI PASS; pendiente merge, post-merge y decisión humana
 ```
 
 **Fuente vigente del estado:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «GTFS Audit Engine V1 — cierre G04–G07», con el detalle y límites del cierre; y [registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md), paso 04, con la decisión, merge y CI post-merge.

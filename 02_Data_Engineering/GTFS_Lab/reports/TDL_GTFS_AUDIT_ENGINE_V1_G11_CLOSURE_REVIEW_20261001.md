@@ -1,6 +1,6 @@
 # GTFS Audit Engine V1 — G11 candidate closure review
 
-**Status:** implementation and local evidence prepared; merge and post-merge verification pending; not closed.
+**Status:** PR #28 at `cd2c3fb`; remote CI PASS (run 36803356048); merge and post-merge verification pending; not closed.
 **Authoritative development base:** `89b199f1ffa114922047113a8460e2933cfa60f8`.
 **Specification revision:** GTFS Schedule `2026-04-27`.
 

@@ -1,7 +1,7 @@
 # GTFS Audit Engine V1 — G08–G10 estado local
 
 **Base:** `89b199f1ffa114922047113a8460e2933cfa60f8` (`origin/main` verificado antes del worktree).
-**Estado:** G08, G09 y G10 implementados y verificados localmente; pendientes CI remoto, merge, verificación post-merge y cierres formales.
+**Estado:** G08, G09 y G10 implementados y verificados localmente; PR #28 en `cd2c3fb`, CI remoto PASS (run 36803356048); pendientes merge, verificación post-merge y cierres formales.
 **HOLDOUT:** no abierto, leído ni ejecutado.
 
 ## G08 — Quality
@@ -45,7 +45,7 @@ La evidencia reproducible queda en [g10_development_results.json](evidence/g10_d
 
 - G03: 50/50 PASS; G04: 22/22 PASS; G08: 11/11 PASS; G09: 2/2 PASS; G10: 3/3 PASS.
 - El test de contrato G03 comprueba que el sample está limitado y que los recuentos cubren toda la evaluación condicional.
-- CI remoto aún no ejecutado en esta rama. No hay merge ni cierres formales G08–G10 todavía.
+- CI remoto PASS en [run 36803356048](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36803356048), sobre `cd2c3fb`. No hay merge ni cierres formales G08–G10 todavía.
 - No se declara cobertura GTFS completa, cumplimiento jurídico, equivalencia total con legacy, validación comercial, readiness SIRI/NeTEx ni resultados HOLDOUT.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
