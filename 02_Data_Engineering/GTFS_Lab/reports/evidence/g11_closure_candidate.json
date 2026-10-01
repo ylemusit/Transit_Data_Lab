@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "gate": "GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_CANDIDATE",
-  "candidate_state": "LOCAL_EVIDENCE_COMPLETE_REMOTE_CI_AND_MERGE_PENDING",
+  "candidate_state": "REMOTE_CI_PASS_MERGE_AND_POST_MERGE_PENDING",
   "base_commit": "89b199f1ffa114922047113a8460e2933cfa60f8",
   "specification": {
     "name": "GTFS Schedule Reference",
@@ -79,9 +79,16 @@
     "HOLDOUT_RESULTS"
   ],
   "pending_gates": [
-    "REMOTE_CI",
-    "HUMAN_MERGE_APPROVAL",
+    "MERGE",
     "POST_MERGE_VERIFICATION",
     "FINAL_HUMAN_G11_CLOSURE_DECISION"
-  ]
+  ],
+  "remote_ci": {
+    "status": "PASS",
+    "run": 36803441534,
+    "head": "39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a"
+  },
+  "merge": "PENDING",
+  "post_merge_verification": "PENDING",
+  "final_human_g11_closure_decision": "PENDING"
 }

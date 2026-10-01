@@ -1,6 +1,6 @@
 # GTFS Audit Engine V1 — G11 candidate closure review
 
-**Status:** PR #28 at `cd2c3fb`; remote CI PASS (run 36803356048); merge and post-merge verification pending; not closed.
+**Status:** PR #28 head `39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a`; remote CI PASS (run 36803441534); merge pending; post-merge verification pending; final human G11 decision pending.
 **Authoritative development base:** `89b199f1ffa114922047113a8460e2933cfa60f8`.
 **Specification revision:** GTFS Schedule `2026-04-27`.
 
@@ -44,10 +44,14 @@ La inspección del runtime G03–G10 no encontró ramas condicionadas por operad
 
 La evaluación G10 verificó SHA-256 del split y de cada fuente DEVELOPMENT antes de uso, terminó 14 pipelines, registró las diferencias por regla/etapa y repitió el dataset `001` con el mismo SHA-256 de `engine_report.json`. Cada hash de informe por dataset se conserva en la evidencia; el replay de estabilidad comparó el dataset `001`. Los datos de G10 no contienen salida de HOLDOUT.
 
-El worktree local parte del SHA autoritativo. G08 y G09 no se declaran cerrados antes del merge y post-merge verification; G10 tampoco se promueve de evidencia local. La siguiente puerta formal es revisión/CI remoto y autorización humana para fusionar la PR. Tras el merge se debe repetir el gate autorizado, verificar `origin/main` y actualizar los estados. La decisión humana final de cierre G11 queda separada de PASS técnico/CI.
+El HEAD autorizado de PR #28 es `39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a`; CI remoto PASS (run `36803441534`). Merge y verificación post-merge siguen pendientes. Tras el merge se repetirá el gate, se verificará `origin/main` y se actualizarán los estados. La decisión humana final G11 queda separada del PASS técnico/CI.
 
 ## Afirmaciones expresamente excluidas
 
 Este informe no declara cumplimiento GTFS completo, cumplimiento jurídico, certificación, market validation, readiness comercial, NeTEx complete readiness, SIRI readiness, ni resultados de HOLDOUT.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## DEVELOPMENT G04–G06 evaluability
+
+G10 completed 14/14 DEVELOPMENT pipelines with zero pipeline errors. However, G04, G05 and G06 each reported NOT_EVALUABLE at stage level for all 14 datasets. This is a coverage/evidence outcome, not a pipeline failure or a PASS. Rule-level counts and the missing upstream evidence are recorded in the accompanying G10 report; G10 must expose stage and rule evaluability separately from execution completion. The final G11 decision remains pending.
