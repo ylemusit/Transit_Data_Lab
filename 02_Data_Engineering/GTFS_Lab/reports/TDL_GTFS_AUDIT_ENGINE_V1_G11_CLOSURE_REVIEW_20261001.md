@@ -1,6 +1,6 @@
-# GTFS Audit Engine V1 — G11 candidate closure review
+# GTFS Audit Engine V1 — G11 final closure decision
 
-**Estado:** PR #28 quedó fusionada con CI post-merge PASS. La recuperación y el replay DEVELOPMENT local completaron 14/14 feeds, cero errores, estabilidad PASS y sin acceso a HOLDOUT. G11 técnico está preparado para decisión humana final cuando esta remediación quede integrada y verificada post-merge.
+**Estado vigente (2026-10-01):** Yeison aprobó expresamente la decisión humana final G11. G08–G11 y GTFS Audit Engine V1 quedan `PASS / CLOSED` para el alcance técnico documentado. PR #29 se integró mediante merge normal en `d5c770d5015faa856963a363e14da24124da5a12`; CI post-merge PASS, run `36809106494`. Esta decisión acepta los gaps y deferrals descritos aquí sin ampliación de cobertura.
 **Authoritative development base:** `89b199f1ffa114922047113a8460e2933cfa60f8`.
 **Specification revision:** GTFS Schedule `2026-04-27`.
 
@@ -18,6 +18,7 @@
 | G08 | Three `feed_info.txt` declaration recommendations, typed through G02 and separate from conformance. | PR #28 merged; synthetic suite passes. Technical acceptance is recorded in this remediation. |
 | G09 | Deterministic machine and human report of independent G03–G08 results. | PR #28 merged; synthetic suite passes. Technical acceptance is recorded; M02 is unchanged and does not register the supplemental report. |
 | G10 | Reproducible full pipeline over only the 14 DEVELOPMENT sources; per-dataset outcomes, findings, limitations, evaluability and stability check. | Recovery replay completed 14/14, zero pipeline errors, stability PASS. The replay preserves bounded G03 reason counts, file statuses, per-rule coverage and a separate evaluability attribution. HOLDOUT was not accessed. |
+| G11 | Technical closure gate and final human closure decision for the documented V1 scope. | PASS / CLOSED; final human decision APPROVED on 2026-10-01. |
 
 La candidatura machine-readable está en [g11_closure_candidate.json](evidence/g11_closure_candidate.json). El replay está en [G10 recovery](evidence/g10_development/g10_development_recovery_20261001.json); cobertura y causas por regla/dataset, en [G10 evaluability attribution](evidence/g10_development/g10_evaluability_attribution_20261001.json). El artefacto histórico de PR #28 se conserva.
 
@@ -65,8 +66,37 @@ V1 cubre solo los archivos y campos declarados en su perfil técnico. No resuelv
 
 `M02 = PASS` y los límites de identidad/legacy se mantienen como fronteras; los cierres Business y Compliance no se alteran. `HOLDOUT = NOT_ACCESSED`.
 
-## Estado de integración y decisión humana
+## Decisión humana final y cierre
 
-PR #28 permanece integrada en `07bd0beaaf158718430ee53a5001e5f01655dac7`, con CI post-merge PASS (run `36804060651`). Esta remediación, la evidencia de recuperación, los cierres técnicos G08–G10 y el review G11 requieren publicación y verificación post-merge antes de anunciar el estado como cerrado en `main`. La decisión humana final G11 queda pendiente; el paquete se prepara para `READY_FOR_FINAL_HUMAN_CLOSURE_DECISION` después de esa integración.
+```ini
+G11_HUMAN_CLOSURE_DECISION = APPROVED
+G11 = PASS
+G11_CLOSED = YES
+GTFS_AUDIT_ENGINE_V1 = PASS
+GTFS_AUDIT_ENGINE_V1_CLOSED = YES
+GTFS_AUDIT_ENGINE_V1_CLOSURE_DATE = 2026-10-01
+PR29_MERGE_COMMIT = d5c770d5015faa856963a363e14da24124da5a12
+POST_MERGE_CI_RUN = 36809106494
+POST_MERGE_CI = PASS
+HOLDOUT = NOT_ACCESSED
+M02_CHANGED = NO
+OPERATOR_SPECIFIC_CODE = NO
+GTFS_COMPLETE_COVERAGE = NOT_CLAIMED
+LEGAL_COMPLIANCE = NOT_CLAIMED
+COMMERCIAL_VALIDATION = NOT_CLAIMED
+```
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+
+## Verificación de integración PR #29 — 2026-10-01
+
+PR #29 se fusionó mediante **merge normal** después de revisión aprobada. Head revisado: `44e92012b1ab8a27b232b69154abc043c55d21e8`; merge commit y `origin/main`: `d5c770d5015faa856963a363e14da24124da5a12`. CI pre-merge PASS, run `36808289990`; CI post-merge PASS sobre el merge commit, run `36809106494`.
+
+Con esta integración quedan registrados `G08 = PASS / CLOSED`, `G09 = PASS / CLOSED` y `G10 = PASS / CLOSED`. `G11_TECHNICAL_REVIEW = PASS`. El replay DEVELOPMENT permanece 14/14, cero errores y estabilidad PASS; HOLDOUT no se accedió. No hubo cambios M02 ni código específico por operador.
+
+La evaluabilidad observada G03–G08, sin umbrales inventados, fue: G03, 106 ejecutables / 11 parciales / 15 condiciones sin resolver; G04, 32.002 evaluaciones de dominio (13 PASS, un finding), 102 de unicidad (80 N/A) y 1.168.910 referencias (83 N/E, 158 N/A); G05, 417 rangos calendario, 13/14 conjuntos de fechas evaluables y rango de feed 6 PASS / 7 N/A / 1 N/E; G06, 558.810 filas de secuencia PASS y orden temporal 14 N/E por deferral; G07, 9 PASS / 4 N/A / 1 finding; G08, 7 PASS / 7 N/A para tres recomendaciones de presencia.
+
+Siguen abiertos como gaps conocidos las 15 condiciones G03, los estados `CONDITION_UNKNOWN`, `UNRESOLVED_CONDITION`, `UNRESOLVED_EXTENSION_POLICY`, `UNRESOLVED_TYPE_FORMAT` y `UNSUPPORTED_LEXICAL_VALIDATOR`, la política de extensiones y el inventario G04 `CREATED_LOCAL_UNPUBLISHED`. Se difieren los 18 archivos enumerados en la sección «Qué no audita V1»; GTFS-RT, SIRI y NeTEx quedan fuera. M02 no incorpora findings G03–G09 ni registra el reporte suplementario G09; legacy conserva salida independiente y no se afirma equivalencia total.
+
+La decisión cierra técnicamente el alcance V1 documentado. `pending_gates` queda vacío para Engine V1. No se inicia ningún track posterior. Los gaps y deferrals listados en este informe siguen siendo límites aceptados de V1; este PASS no implica cobertura GTFS completa, cumplimiento jurídico, certificación, validación comercial ni readiness de otros formatos.

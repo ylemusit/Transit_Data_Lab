@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "gate": "GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_CANDIDATE",
-  "candidate_state": "G11_TECHNICAL_REVIEW_PASS_READY_FOR_FINAL_HUMAN_CLOSURE_DECISION_PENDING_INTEGRATION",
-  "base_commit": "89b199f1ffa114922047113a8460e2933cfa60f8",
+  "gate": "GTFS_AUDIT_ENGINE_V1_G11_FINAL_CLOSURE",
+  "candidate_state": "CLOSED",
+  "base_commit": "d5c770d5015faa856963a363e14da24124da5a12",
   "specification": {
     "name": "GTFS Schedule Reference",
     "revision": "2026-04-27",
@@ -43,24 +43,27 @@
       "rules": 3
     },
     "G08": {
-      "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+      "state": "PASS_CLOSED_POST_MERGE_VERIFIED",
       "rules": 3,
-      "integrated_by": "PR28"
+      "integrated_by": "PR29"
     },
     "G09": {
-      "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
+      "state": "PASS_CLOSED_POST_MERGE_VERIFIED",
       "m02_changed": false,
-      "integrated_by": "PR28"
+      "integrated_by": "PR29"
     },
     "G10": {
-      "state": "REPLAY_PASS_PENDING_REMEDIATION_INTEGRATION",
+      "state": "PASS_CLOSED_POST_MERGE_VERIFIED",
       "completed_datasets": 14,
       "pipeline_errors": 0,
       "stability_replay": "PASS",
-      "holdout_accessed": false
+      "holdout_accessed": false,
+      "integrated_by": "PR29",
+      "failed_datasets": 0
     },
     "G11": {
-      "state": "TECHNICAL_REVIEW_PASS_PENDING_PR_CI_MERGE_POST_MERGE_VERIFICATION"
+      "state": "PASS_CLOSED",
+      "final_human_closure_decision": "APPROVED"
     }
   },
   "persistence_boundary": {
@@ -69,28 +72,25 @@
     "engine_stages_added_to_legacy_validation": false
   },
   "explicit_exclusions": [
-    "LEGAL_COMPLIANCE_OR_CERTIFICATION",
-    "GTFS_COMPLETE_COVERAGE",
-    "MARKET_OR_COMMERCIAL_VALIDATION",
-    "NETEX_READINESS",
-    "SIRI_READINESS",
-    "HOLDOUT_RESULTS"
+    "GTFS_COMPLETE_COVERAGE_NOT_CLAIMED",
+    "LEGAL_COMPLIANCE_NOT_CLAIMED",
+    "CERTIFICATION_NOT_CLAIMED",
+    "COMMERCIAL_VALIDATION_NOT_CLAIMED",
+    "HOLDOUT_RESULTS_NOT_ACCESSED",
+    "TOTAL_LEGACY_EQUIVALENCE_NOT_CLAIMED",
+    "NETEX_READINESS_NOT_CLAIMED",
+    "SIRI_READINESS_NOT_CLAIMED",
+    "GTFS_RT_READINESS_NOT_CLAIMED"
   ],
-  "pending_gates": [
-    "TARGETED_TESTS_AND_G10_REPLAY_PASS",
-    "PUSH_AND_PR_CI_PASS",
-    "MERGE_DECISION",
-    "POST_MERGE_VERIFICATION",
-    "FINAL_HUMAN_G11_CLOSURE_DECISION"
-  ],
+  "pending_gates": [],
   "remote_ci": {
     "status": "PASS",
-    "run": 36803441534,
-    "head": "39fd2aa052b4c6fb1f2637d11e7db2e7dd41be6a"
+    "run": 36808289990,
+    "head": "44e92012b1ab8a27b232b69154abc043c55d21e8"
   },
-  "merge": "PENDING",
-  "post_merge_verification": "PENDING",
-  "final_human_g11_closure_decision": "PENDING",
+  "merge": "MERGED_NORMAL",
+  "post_merge_verification": "PASS",
+  "final_human_g11_closure_decision": "APPROVED",
   "pr_28": {
     "reviewed_head": "af8c9b157fd52b0e4b5a753dcc0813272f4e06c8",
     "merge_commit": "07bd0beaaf158718430ee53a5001e5f01655dac7",
@@ -101,15 +101,15 @@
     "merge": "MERGED_NORMAL"
   },
   "G08": {
-    "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
-    "basis": "PR #28 merged; implementation and synthetic acceptance suites PASS"
+    "state": "PASS_CLOSED",
+    "basis": "PR #29 merged; post-merge CI PASS; three allowlisted informational recommendations integrated."
   },
   "G09": {
-    "state": "CLOSED_TECHNICAL_ACCEPTANCE_PASS",
-    "basis": "PR #28 merged; deterministic reporting acceptance PASS; M02 unchanged"
+    "state": "PASS_CLOSED",
+    "basis": "PR #29 merged; deterministic supplemental report integrated; M02 unchanged."
   },
   "G10": {
-    "state": "REPLAY_PASS_READY_FOR_TECHNICAL_CLOSURE_AFTER_INTEGRATION",
+    "state": "PASS_CLOSED",
     "split_id": "TDL-CORPUS-SPLIT-V1",
     "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
     "scope": "DEVELOPMENT_ONLY",
@@ -123,12 +123,14 @@
     "evaluability_attribution_artifact": "reports/evidence/g10_development/g10_evaluability_attribution_20261001.json",
     "evaluability_attribution_sha256": "497e2694d31c96ae58ee05461bc6309b0475f483afb3acb5a766fad520a33712",
     "source_root": "C:/Users/yeiso/AppData/Local/Temp/tdl-g11-development-source-20261001",
-    "operator_specific_code_changes": false
+    "operator_specific_code_changes": false,
+    "basis": "PR #29 merged; DEVELOPMENT replay 14/14, zero pipeline errors, stability PASS; HOLDOUT not accessed."
   },
   "G11": {
-    "state": "TECHNICAL_REVIEW_PASS_PENDING_PR_CI_MERGE_POST_MERGE_VERIFICATION",
-    "final_human_closure_decision": "PENDING",
-    "coverage_counts_without_invented_thresholds": true
+    "state": "PASS_CLOSED",
+    "final_human_closure_decision": "APPROVED",
+    "coverage_counts_without_invented_thresholds": true,
+    "closure_date": "2026-10-01"
   },
   "root_cause": {
     "classification": "IMPLEMENTATION_BUG",
@@ -136,5 +138,38 @@
     "regression_tests_added": true,
     "scope_contract_changed": false,
     "normative_scope_changed": false
+  },
+  "post_merge_ci": {
+    "status": "PASS",
+    "run": 36809106494,
+    "head": "d5c770d5015faa856963a363e14da24124da5a12"
+  },
+  "pr_29": {
+    "reviewed_head": "44e92012b1ab8a27b232b69154abc043c55d21e8",
+    "merge_commit": "d5c770d5015faa856963a363e14da24124da5a12",
+    "merge": "MERGED_NORMAL",
+    "remote_ci": "PASS",
+    "remote_ci_run": 36808289990,
+    "post_merge_ci": "PASS",
+    "post_merge_ci_run": 36809106494
+  },
+  "closure_date": "2026-10-01",
+  "engine_v1": {
+    "state": "PASS_CLOSED",
+    "closure_date": "2026-10-01",
+    "meaning": "TECHNICAL_CLOSURE_OF_DOCUMENTED_GTFS_AUDIT_ENGINE_V1_SCOPE"
+  },
+  "boundaries": {
+    "holdout": "NOT_ACCESSED",
+    "m02_changed": false,
+    "operator_specific_code": false,
+    "g09_outside_m02": true,
+    "legacy_independent": true,
+    "deferred_official_files": 18,
+    "g03_unresolved_conditions": 15,
+    "extension_policy": "PENDING",
+    "type_format_gaps": "PRESERVED",
+    "g04_identity_inventory": "CREATED_LOCAL_UNPUBLISHED",
+    "no_post_v1_track_started": true
   }
 }
