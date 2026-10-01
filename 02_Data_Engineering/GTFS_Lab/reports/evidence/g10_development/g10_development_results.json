@@ -1,0 +1,5239 @@
+{
+  "schema_version": "1.0.0",
+  "gate": "GTFS_AUDIT_ENGINE_V1_G10_DEVELOPMENT",
+  "corpus_execution_status": "COMPLETED",
+  "split_id": "TDL-CORPUS-SPLIT-V1",
+  "split_sha256": "7d39fc1eb3cbd9c9382c20fc30950a1cbee29befdb28bff0787b41e56111e52d",
+  "inventory_version": "1.0.0",
+  "scope": "DEVELOPMENT_ONLY",
+  "holdout_accessed": false,
+  "expected_dataset_count": 14,
+  "completed_dataset_count": 14,
+  "failed_dataset_count": 0,
+  "stability_check": {
+    "status": "PASS",
+    "dataset_id": "001",
+    "engine_report_sha256": "8656ca535d0bbe31d022dc4af6b11cf70d738b48f82a2a3c74a1830976360135"
+  },
+  "cross_dataset_comparison": {
+    "stage_status_counts": {
+      "g03": {
+        "FAIL_TECHNICAL": 1,
+        "NOT_EVALUABLE": 13
+      },
+      "g04": {
+        "NOT_EVALUABLE": 14
+      },
+      "g05": {
+        "NOT_EVALUABLE": 14
+      },
+      "g06": {
+        "NOT_EVALUABLE": 14
+      },
+      "g07": {
+        "NOT_APPLICABLE": 4,
+        "NOT_EVALUABLE": 10
+      },
+      "g08": {
+        "NOT_APPLICABLE": 7,
+        "PASS": 7
+      }
+    },
+    "rule_status_counts": {
+      "GTFS-G03-CSV-STRUCTURE": {
+        "PASS": 14
+      },
+      "GTFS-G03-FIELD-TYPE": {
+        "FAIL_TECHNICAL": 1,
+        "NOT_EVALUABLE": 13
+      },
+      "GTFS-G03-FILE-CATALOG": {
+        "PASS": 14
+      },
+      "GTFS-G03-FILE-PRESENCE": {
+        "NOT_EVALUABLE": 1,
+        "PASS": 13
+      },
+      "GTFS-G03-FILE-RESTRICTIONS": {
+        "PASS": 14
+      },
+      "GTFS-G03-HEADER-SCHEMA": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G04-CONTEXTUAL-REFERENCE": {
+        "NOT_APPLICABLE": 14
+      },
+      "GTFS-G04-IDENTITY-DOMAIN": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G04-PRIMARY-KEY-UNIQUENESS": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G04-REFERENCE-EXISTENCE": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G05-CALENDAR-RANGE": {
+        "NOT_APPLICABLE": 1,
+        "NOT_EVALUABLE": 13
+      },
+      "GTFS-G05-FEED-RANGE": {
+        "NOT_APPLICABLE": 7,
+        "NOT_EVALUABLE": 7
+      },
+      "GTFS-G05-FREQUENCY-TIME-RANGE": {
+        "NOT_APPLICABLE": 14
+      },
+      "GTFS-G05-SERVICE-DATE-SET": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G06-FREQUENCY-OPERATIONS": {
+        "NOT_APPLICABLE": 14
+      },
+      "GTFS-G06-STOP-SEQUENCE": {
+        "NOT_EVALUABLE": 14
+      },
+      "GTFS-G07-COORDINATE-BOUNDS": {
+        "NOT_APPLICABLE": 4,
+        "NOT_EVALUABLE": 10
+      },
+      "GTFS-G07-DISTANCE-PROGRESSION": {
+        "NOT_APPLICABLE": 4,
+        "NOT_EVALUABLE": 10
+      },
+      "GTFS-G07-SHAPE-SEQUENCE": {
+        "NOT_APPLICABLE": 4,
+        "NOT_EVALUABLE": 10
+      },
+      "GTFS-G08-FEED-END-DATE-DECLARED": {
+        "NOT_APPLICABLE": 7,
+        "PASS": 7
+      },
+      "GTFS-G08-FEED-START-DATE-DECLARED": {
+        "NOT_APPLICABLE": 7,
+        "PASS": 7
+      },
+      "GTFS-G08-FEED-VERSION-DECLARED": {
+        "NOT_APPLICABLE": 7,
+        "PASS": 7
+      },
+      "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": {
+        "NOT_EVALUABLE": 14
+      },
+      "TDL-G06-TRIP-TIME-ORDER-REVIEW": {
+        "NOT_EVALUABLE": 14
+      }
+    },
+    "finding_counts_by_rule": {
+      "GTFS-G03-CSV-STRUCTURE": 0,
+      "GTFS-G03-FIELD-TYPE": 1,
+      "GTFS-G03-FILE-CATALOG": 0,
+      "GTFS-G03-FILE-PRESENCE": 0,
+      "GTFS-G03-FILE-RESTRICTIONS": 0,
+      "GTFS-G03-HEADER-SCHEMA": 0,
+      "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+      "GTFS-G04-IDENTITY-DOMAIN": 0,
+      "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+      "GTFS-G04-REFERENCE-EXISTENCE": 0,
+      "GTFS-G05-CALENDAR-RANGE": 0,
+      "GTFS-G05-FEED-RANGE": 0,
+      "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+      "GTFS-G05-SERVICE-DATE-SET": 0,
+      "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+      "GTFS-G06-STOP-SEQUENCE": 0,
+      "GTFS-G07-COORDINATE-BOUNDS": 0,
+      "GTFS-G07-DISTANCE-PROGRESSION": 0,
+      "GTFS-G07-SHAPE-SEQUENCE": 0,
+      "GTFS-G08-FEED-END-DATE-DECLARED": 1,
+      "GTFS-G08-FEED-START-DATE-DECLARED": 1,
+      "GTFS-G08-FEED-VERSION-DECLARED": 1,
+      "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0,
+      "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+    }
+  },
+  "datasets": [
+    {
+      "dataset_id": "001",
+      "source_sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.385,
+      "engine_report_sha256": "8656ca535d0bbe31d022dc4af6b11cf70d738b48f82a2a3c74a1830976360135",
+      "g03_checked_type_values": 191,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 92,
+      "g03_conditional_rows_total": 92,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-0a69c0da5e284d8b",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 6,
+                "not_evaluable": 7,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "002",
+      "source_sha256": "42bf756a88336dacb085ec49dbdd0f019fd37afe7c7e5c24c1d8d2c1df0de27d",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.288,
+      "engine_report_sha256": "acf8e55d633cfab7c6cc7bf8bb331d16efeee94dd20372271f6c816e1f4b5229",
+      "g03_checked_type_values": 196,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 108,
+      "g03_conditional_rows_total": 108,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-cbcf0bef42c4453a",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 7,
+                "not_evaluable": 6,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "003",
+      "source_sha256": "70b14647471462975b9b646d738b76c2f27454d8d9f49311bb31289a888e411a",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.295,
+      "engine_report_sha256": "b29e1962ffc7d41e971064ca7f709f7a9dfaeba506fe3689045329c0c780e6f1",
+      "g03_checked_type_values": 548,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 162,
+      "g03_conditional_rows_total": 162,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-101906c15e7e4e24",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 6,
+                "not_evaluable": 7,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "004",
+      "source_sha256": "1fe7adb7486766672ddef94917a881a0bacc5450ba00591d9a3c0e7067e63cb6",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.305,
+      "engine_report_sha256": "80c46a4c37bd75319eb8636f7d8a4d6b09ae4f303159306b77c8abdd50c944f2",
+      "g03_checked_type_values": 455,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 288,
+      "g03_conditional_rows_total": 288,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-91675d306c4647fb",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 7,
+                "not_evaluable": 6,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "005",
+      "source_sha256": "f35192f9ac9f91e39f10357dad6cc88ebdffdeedfc3bf4053b383d09636de100",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.364,
+      "engine_report_sha256": "e7d3c524885b5458b17616a8fd91e5425122e3d662d2241ce905030c3e42827f",
+      "g03_checked_type_values": 786,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 502,
+      "g03_conditional_rows_total": 502,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-07990430fa264f98",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 7,
+                "not_evaluable": 6,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "007",
+      "source_sha256": "81ef87bfe4c8500dc9f4b48f75ae2992131eb86e566fb4a60c73ea54431a9f1a",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.277,
+      "engine_report_sha256": "7456347981d218daf80cd0db7d50ccbf1feb67ec3cde30eb7f485982b6f084db",
+      "g03_checked_type_values": 103,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 52,
+      "g03_conditional_rows_total": 52,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-828764a745fa4445",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 7,
+                "not_evaluable": 6,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "009",
+      "source_sha256": "0c588ca4a7547b36777f9aaf8a997ae35307d4ed74ac0cee04e8ff543c8f40f8",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.746,
+      "engine_report_sha256": "adaa3d458cee680c912996afe3b1513d3e0a2d34eb69892e05510ad4c0ab2c47",
+      "g03_checked_type_values": 18319,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "NOT_EVALUABLE",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 5456,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-2d8486cccd8042ae",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3,
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 2,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 6,
+                "not_evaluable": 7,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "010",
+      "source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.554,
+      "engine_report_sha256": "3db5df546b551aac946ca757c22050d439dd3289905ad63c5e0fa362dd53c42d",
+      "g03_checked_type_values": 6556,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "FAIL_TECHNICAL",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 1464,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-3ff2e5256bd14979",
+      "stages": {
+        "g03": {
+          "finding_count": 1,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 1,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 1,
+          "rule_status_counts": {
+            "FAIL_TECHNICAL": 1,
+            "NOT_EVALUABLE": 1,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "FAIL_TECHNICAL"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "FAIL_TECHNICAL"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 5,
+                "not_evaluable": 8,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "011",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 2.613,
+      "engine_report_sha256": "7f77b7468fa4fc54a2b06f0477e95a6fc6278cfd21996b745ae28cfc472b6451",
+      "g03_checked_type_values": 61989,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 18537,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-18132be733db4372",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 5,
+                "not_evaluable": 8,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "012",
+      "source_sha256": "da2d07f8d0e2dbad98f4a6b05b927ed1a2f3f660a61054b7fd6401418cad5eb7",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 1.541,
+      "engine_report_sha256": "0c140f09e5aeac6facdd7527dec69a58ad4d61cdd4c05e972650ba22dcd97895",
+      "g03_checked_type_values": 31341,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 7810,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-1df890d6f3bd4a8c",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 5,
+                "not_evaluable": 8,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "014",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 5.609,
+      "engine_report_sha256": "ec8526da773db165253edd37be3929e44f3290e6caedcee77d74098e84d9f3f3",
+      "g03_checked_type_values": 115325,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 33346,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-549743cb245d4abb",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 5,
+                "not_evaluable": 8,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 2,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "audit_support": "NONE",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "ABSENT",
+                "state": "FEATURE_NOT_PRESENT"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_APPLICABLE"
+        }
+      }
+    },
+    {
+      "dataset_id": "016",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 0.808,
+      "engine_report_sha256": "0b8cabd4ac617430658f2cb9c0970931a8af08ce0402587c6ba305b1e4f4ded4",
+      "g03_checked_type_values": 12159,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 4490,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-36722e0978db4e8d",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 4,
+                "not_evaluable": 9,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 3,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 1,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 1,
+            "GTFS-G08-FEED-VERSION-DECLARED": 1
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": false,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": false,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": false,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "019",
+      "source_sha256": "e15d963ba3dc774e47b4f9f46dbd954ece6a720d49a71bfc22a104a12027bd73",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 168.927,
+      "engine_report_sha256": "b6c04f4ff31944db7ba162eab4d450e5d06700291d7765010f9ddc933e25c475",
+      "g03_checked_type_values": 5541368,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 1051162,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-c19097ec1b0a4c88",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 4,
+                "not_evaluable": 9,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    },
+    {
+      "dataset_id": "020",
+      "source_sha256": "65130fd01470593cd2e234177f3c4cb810154d0b8e13fbee3aa91f1973072ace",
+      "execution_status": "COMPLETED",
+      "duration_seconds": 2.302,
+      "engine_report_sha256": "35468e3abcf54c45225b94b4bd2c8d54fab3a571fb982ae7e7d97cbadbc31b7b",
+      "g03_checked_type_values": 28458,
+      "g03_component_statuses": {
+        "csv_structure": "PASS",
+        "field_types": "NOT_EVALUABLE",
+        "file_catalog": "PASS",
+        "file_presence": "PASS",
+        "header_schema": "NOT_EVALUABLE"
+      },
+      "g03_conditional_rows_sampled": 1000,
+      "g03_conditional_rows_total": 12732,
+      "ingestion_status": "PASS",
+      "legacy_finding_count": 0,
+      "legacy_validation_status": "PASS",
+      "run_id": "GTFSRUN-0c5dd132dc084465",
+      "stages": {
+        "g03": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G03-CSV-STRUCTURE": 0,
+            "GTFS-G03-FIELD-TYPE": 0,
+            "GTFS-G03-FILE-CATALOG": 0,
+            "GTFS-G03-FILE-PRESENCE": 0,
+            "GTFS-G03-FILE-RESTRICTIONS": 0,
+            "GTFS-G03-HEADER-SCHEMA": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 2,
+            "PASS": 4
+          },
+          "rules": [
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-CSV-STRUCTURE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-CATALOG",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-PRESENCE",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+              "status": "PASS"
+            },
+            {
+              "coverage": null,
+              "recommendation_met": null,
+              "rule_id": "GTFS-G03-HEADER-SCHEMA",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g04": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G04-CONTEXTUAL-REFERENCE": 0,
+            "GTFS-G04-IDENTITY-DOMAIN": 0,
+            "GTFS-G04-PRIMARY-KEY-UNIQUENESS": 0,
+            "GTFS-G04-REFERENCE-EXISTENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-CONTEXTUAL-REFERENCE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 3,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 5,
+                "not_evaluable": 8,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 11,
+                "not_evaluable": 11,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g05": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G05-CALENDAR-RANGE": 0,
+            "GTFS-G05-FEED-RANGE": 0,
+            "GTFS-G05-FREQUENCY-TIME-RANGE": 0,
+            "GTFS-G05-SERVICE-DATE-SET": 0,
+            "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 4,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 4
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-CALENDAR-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FEED-RANGE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-FREQUENCY-TIME-RANGE",
+              "status": "NOT_APPLICABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G05-SERVICE-DATE-SET",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g06": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G06-FREQUENCY-OPERATIONS": 0,
+            "GTFS-G06-STOP-SEQUENCE": 0,
+            "TDL-G06-TRIP-TIME-ORDER-REVIEW": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 2,
+          "rule_status_counts": {
+            "NOT_APPLICABLE": 1,
+            "NOT_EVALUABLE": 2
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-STOP-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 1,
+                "not_evaluable": 0,
+                "state": "FULL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G06-FREQUENCY-OPERATIONS",
+              "status": "NOT_APPLICABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g07": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G07-COORDINATE-BOUNDS": 0,
+            "GTFS-G07-DISTANCE-PROGRESSION": 0,
+            "GTFS-G07-SHAPE-SEQUENCE": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 3,
+          "rule_status_counts": {
+            "NOT_EVALUABLE": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-SHAPE-SEQUENCE",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-COORDINATE-BOUNDS",
+              "status": "NOT_EVALUABLE"
+            },
+            {
+              "coverage": {
+                "evaluated": 0,
+                "not_applicable": 0,
+                "not_evaluable": 1,
+                "state": "PARTIAL"
+              },
+              "recommendation_met": null,
+              "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+              "status": "NOT_EVALUABLE"
+            }
+          ],
+          "status": "NOT_EVALUABLE"
+        },
+        "g08": {
+          "finding_count": 0,
+          "finding_counts_by_rule": {
+            "GTFS-G08-FEED-END-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-START-DATE-DECLARED": 0,
+            "GTFS-G08-FEED-VERSION-DECLARED": 0
+          },
+          "inspection_error_rule_count": 0,
+          "not_evaluable_rule_count": 0,
+          "rule_status_counts": {
+            "PASS": 3
+          },
+          "rules": [
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_end_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_start_date:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+              "status": "PASS"
+            },
+            {
+              "coverage": {
+                "audit_support": "FULL",
+                "feature": "feed_info.txt:feed_version:header_declaration",
+                "presence": "PRESENT",
+                "state": "FEATURE_PRESENT_FULLY_AUDITED"
+              },
+              "recommendation_met": true,
+              "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        }
+      }
+    }
+  ],
+  "operator_specific_code_changes": false
+}

@@ -2,7 +2,7 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## GTFS Audit Engine V1 — cierre G04–G07; G08 posterior, local y no publicado
+## GTFS Audit Engine V1 — G04–G07 cerrados; G08–G10 preparados localmente, sin publicar
 
 **Registro e inventario por pasos:** [GTFS Audit Engine V1 — registro e inventario G04–G07](02_Data_Engineering/GTFS_Lab/reports/GTFS_AUDIT_ENGINE_V1_G04_G07_EXECUTION_LOG.md).
 
@@ -31,13 +31,22 @@ M02_NORMALIZES_G04_FINDINGS = NO
 G04_G07_MANIFEST_ARTIFACT_KNOWLEDGE = INDIRECT
 G04_G07_LEGACY = PRODUCTIVE_WHERE_APPLICABLE
 G04_IDENTITY_INVENTORY_METADATA = CREATED_LOCAL_UNPUBLISHED; KNOWN_CONTRACT_DEBT
-G08 = LATER_WORK; LOCAL_UNPUBLISHED
+G03 = BASELINE_CLOSED; LOCAL_BOUNDED_EVIDENCE_FIX_PENDING_MERGE
+G04 = BASELINE_CLOSED; LOCAL_TWO_TABLE_CACHE_FIX_PENDING_MERGE
+G08 = IMPLEMENTED_TESTED_LOCAL; PENDING_CI_MERGE_POST_MERGE_CLOSURE
+G09 = IMPLEMENTED_TESTED_LOCAL; M02_UNCHANGED; PENDING_CI_MERGE_POST_MERGE_CLOSURE
+G10 = DEVELOPMENT_COMPLETE_LOCAL; 14_COMPLETED; 0_PIPELINE_ERRORS; STABILITY_PASS
+G10_HOLDOUT = NOT_ACCESSED
+G11 = CLOSURE_REVIEW_CANDIDATE; NOT_CLOSED
+GTFS_ENGINE_G08_G10_PR = 28; HEAD = cd2c3fb`r`nGTFS_ENGINE_G08_G10_REMOTE_CI = PASS; RUN 36803356048
 GTFS_COMPLETE_COMPLIANCE = NOT_ESTABLISHED
 ```
 
 El cierre G04–G07 acredita únicamente la integración y verificación técnica del alcance implementado. Los findings de G04 no forman parte actualmente de `validation.findings`; M02 no normaliza findings G04–G07. El manifest conoce los artefactos del run indirectamente, y el flujo legacy sigue productivo donde corresponda. No se ejecutó ni se accedió a HOLDOUT. Se conservan los gaps y elementos diferidos de cobertura; tampoco se declara equivalencia total con legacy, cumplimiento GTFS completo ni cumplimiento jurídico. El inventario G04 conserva `CREATED_LOCAL_UNPUBLISHED`, registrado como deuda contractual conocida sin modificar el inventario ni el runtime.
 
-G08 es trabajo posterior, aún local y no publicado. G09–G11 siguen pendientes. La evidencia fechada de sus pasos locales permanece en el registro por pasos, separada del cierre G04–G07.
+El trabajo local G08–G10 y la candidatura G11 constan en el [estado G08–G10](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_G08_G10_LOCAL_PROGRESS_20261001.md), el [informe G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y la [evidencia del corpus DEVELOPMENT](02_Data_Engineering/GTFS_Lab/reports/evidence/g10_development/g10_development_results.json). El corpus split/lineage pasó; se ejecutaron 14 DEVELOPMENT con cero errores de pipeline y replay de estabilidad PASS. HOLDOUT no se accedió. La rama `feat/gtfs-engine-g08-g11` se publicó en la PR #28 (`cd2c3fb`); CI remoto PASS en el run [36803356048](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36803356048). Faltan merge, verificación post-merge y cierre humano; G08–G11 no se declaran cerrados.
+
+Los cambios locales de memoria G03/G04 preservan la clasificación/finding y el inventario normativo, y pasan sus regresiones focalizadas. Quedan sujetos a regresión completa, CI y verificación post-merge. M02 no cambia y no registra el informe G09 suplementario.
 
 El 2026-10-01 se registró la decisión de cierre técnico de G04–G07 tras integrar la PR #26. `origin/main` apunta al merge commit `4b27d26ed507127e68b229ae65915d9cd0307024` (base `137ff4ed38da65fb3fb61f9804d729a1cee51feb`, head `38bf16e1f06f938677fbe2158936479e3a1eb8c6`). El CI post-merge de GitHub Actions terminó PASS en ese commit ([run 36791698098](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/36791698098)); la [PR #26](https://github.com/ylemusit/Transit_Data_Lab/pull/26) figura fusionada. La verificación actual confirma esos datos remotos. Compliance y Business conservan sus estados propios.
 

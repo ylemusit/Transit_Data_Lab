@@ -14,6 +14,8 @@ from .g04_identity import evaluate_g04
 from .g05_temporal import evaluate_g05
 from .g06_operations import evaluate_g06
 from .g07_spatial import evaluate_g07
+from .g08_quality import evaluate_g08_run
+from .g09_reporting import build_engine_report, render_engine_report
 from .ingestion import IngestionError, load_dataset
 from .validation import validate
 
@@ -40,6 +42,7 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         g05_result = evaluate_g05(ctx, g03_result, g04_result)
         g06_result = evaluate_g06(ctx, g03_result, g04_result, g05_result)
         g07_result = evaluate_g07(ctx, g03_result, g04_result)
+        g08_result = evaluate_g08_run(ctx, g03_result)
         required = ("agency", "stops", "routes", "trips", "stop_times")
         file_integrity = "PASS" if all(ctx.inventory[t] == "PRESENT" for t in required) else "FAIL"
         schema_integrity = "NOT_EVALUABLE" if file_integrity != "PASS" else "PASS" if all(ctx.dataset.files.get(t + ".txt", {}).get("headers") for t in required) else "FAIL"
@@ -49,7 +52,7 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         gis_dir = ctx.work_dir / "exports"
         gis_result = {"stops": export_stops(ctx, gis_dir), "routes": export_route(ctx, gis_dir / "routes", route_id, direction_id)}
         db_result = build_duckdb(ctx)
-        result.update({"integrity": integrity, "validation": validation, "g03_file_catalog": g03_catalog, "g03": g03_result, "g04": g04_result, "g05": g05_result, "g06": g06_result, "g07": g07_result, "analysis": analysis_result, "gis": gis_result, "database": db_result, "compliance_v1": compliance, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "errors": []})
+        result.update({"integrity": integrity, "validation": validation, "g03_file_catalog": g03_catalog, "g03": g03_result, "g04": g04_result, "g05": g05_result, "g06": g06_result, "g07": g07_result, "g08": g08_result, "analysis": analysis_result, "gis": gis_result, "database": db_result, "compliance_v1": compliance, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "errors": []})
         integrity_status = next((integrity[k] for k in ("file_integrity", "schema_integrity", "referential_integrity") if integrity[k] != "PASS"), "PASS")
         result["summary"] = {"ingestion": "PASS", "integrity": integrity_status, "validation": validation["status"], "findings": validation["finding_count"], "g03_file_catalog": g03_catalog["status"], "g03": g03_result["status"], "g04": g04_result["status"], "g05": g05_result["status"], "g06": g06_result["status"], "g07": g07_result["status"], "analysis": "PASS", "gis": "PASS" if gis_result["stops"]["status"] == "PASS" or gis_result["routes"]["status"] == "PASS" else "NOT_EVALUABLE", "database": db_result["status"], "compliance_v1": compliance["result"]}
         write_json(ctx.work_dir / "run.json", result)
@@ -59,8 +62,12 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         write_json(ctx.work_dir / "g05.json", g05_result)
         write_json(ctx.work_dir / "g06.json", g06_result)
         write_json(ctx.work_dir / "g07.json", g07_result)
+        write_json(ctx.work_dir / "g08.json", g08_result)
         report = render_report(result)
         (ctx.work_dir / "report.md").write_text(report, encoding="utf-8")
+        engine_report = build_engine_report(result)
+        write_json(ctx.work_dir / "engine_report.json", engine_report)
+        (ctx.work_dir / "engine_report.md").write_text(render_engine_report(engine_report), encoding="utf-8")
         persistence = persist_audit(ctx, result)
         if persistence.get("manifest_status") != "ACCEPTED":
             raise RuntimeError(
@@ -78,7 +85,7 @@ def record_ingestion_error(zip_path: Path, output_root: Path, error: Exception) 
     work_dir = output_root.resolve() / run_id
     work_dir.mkdir(parents=True, exist_ok=False)
     g03_result = inspect_g03_archive(zip_path) if zip_path.is_file() else {"status": "INSPECTION_ERROR"}
-    result = {"run_id": run_id, "dataset": {"dataset_id": "GTFS-" + digest[:16] if digest else None, "source_filename": zip_path.name, "source_sha256": digest}, "gtfs_lab_version": VERSION, "parser_version": "gtfs-lab-csv/1", "validator_version": "1.0.0", "started_at_utc": started, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "ingestion": {"status": "INGESTION_ERROR"}, "integrity": {"status": "SKIPPED_BY_DEPENDENCY"}, "validation": {"status": "SKIPPED_BY_DEPENDENCY", "findings": []}, "g03": g03_result, "g03_file_catalog": g03_result.get("file_catalog", {"status": "INSPECTION_ERROR"}), "g04": {"status": "SKIPPED_BY_DEPENDENCY"}, "g05": {"status": "SKIPPED_BY_DEPENDENCY"}, "g06": {"status": "SKIPPED_BY_DEPENDENCY"}, "g07": {"status": "SKIPPED_BY_DEPENDENCY"}, "analysis": {"status": "SKIPPED_BY_DEPENDENCY"}, "gis": {"status": "SKIPPED_BY_DEPENDENCY"}, "compliance_v1": {"status": "SKIPPED_BY_DEPENDENCY"}, "errors": [{"type": "INGESTION_ERROR", "message": str(error)}], "summary": {"ingestion": "INGESTION_ERROR", "integrity": "SKIPPED_BY_DEPENDENCY", "validation": "SKIPPED_BY_DEPENDENCY", "g03": g03_result.get("status", "INSPECTION_ERROR"), "g04": "SKIPPED_BY_DEPENDENCY", "g05": "SKIPPED_BY_DEPENDENCY", "g06": "SKIPPED_BY_DEPENDENCY", "g07": "SKIPPED_BY_DEPENDENCY", "analysis": "SKIPPED_BY_DEPENDENCY", "gis": "SKIPPED_BY_DEPENDENCY", "compliance_v1": "SKIPPED_BY_DEPENDENCY"}}
+    result = {"run_id": run_id, "dataset": {"dataset_id": "GTFS-" + digest[:16] if digest else None, "source_filename": zip_path.name, "source_sha256": digest}, "gtfs_lab_version": VERSION, "parser_version": "gtfs-lab-csv/1", "validator_version": "1.0.0", "started_at_utc": started, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "ingestion": {"status": "INGESTION_ERROR"}, "integrity": {"status": "SKIPPED_BY_DEPENDENCY"}, "validation": {"status": "SKIPPED_BY_DEPENDENCY", "findings": []}, "g03": g03_result, "g03_file_catalog": g03_result.get("file_catalog", {"status": "INSPECTION_ERROR"}), "g04": {"status": "SKIPPED_BY_DEPENDENCY"}, "g05": {"status": "SKIPPED_BY_DEPENDENCY"}, "g06": {"status": "SKIPPED_BY_DEPENDENCY"}, "g07": {"status": "SKIPPED_BY_DEPENDENCY"}, "g08": {"status": "SKIPPED_BY_DEPENDENCY"}, "analysis": {"status": "SKIPPED_BY_DEPENDENCY"}, "gis": {"status": "SKIPPED_BY_DEPENDENCY"}, "compliance_v1": {"status": "SKIPPED_BY_DEPENDENCY"}, "errors": [{"type": "INGESTION_ERROR", "message": str(error)}], "summary": {"ingestion": "INGESTION_ERROR", "integrity": "SKIPPED_BY_DEPENDENCY", "validation": "SKIPPED_BY_DEPENDENCY", "g03": g03_result.get("status", "INSPECTION_ERROR"), "g04": "SKIPPED_BY_DEPENDENCY", "g05": "SKIPPED_BY_DEPENDENCY", "g06": "SKIPPED_BY_DEPENDENCY", "g07": "SKIPPED_BY_DEPENDENCY", "g08": "SKIPPED_BY_DEPENDENCY", "analysis": "SKIPPED_BY_DEPENDENCY", "gis": "SKIPPED_BY_DEPENDENCY", "compliance_v1": "SKIPPED_BY_DEPENDENCY"}}
     write_json(work_dir / "run.json", result)
     g03_status = g03_result.get("status", "INSPECTION_ERROR")
     (work_dir / "report.md").write_text("# Informe técnico GTFS_Lab — error de ingestión\n\n" + f"- Run: `{run_id}`\n- Fuente: `{zip_path.name}`\n- SHA-256: `{digest or 'NO_DISPONIBLE'}`\n- Estado: `INGESTION_ERROR`\n- Error: {error}\n- G03 estructural: `{g03_status}` (resultado independiente; findings legacy no evaluados).\n\nValidación, análisis, GIS y Compliance se marcaron `SKIPPED_BY_DEPENDENCY`; no se generaron findings legacy.\n\nYeison Arbey Carrillo Lemus. Todos los derechos reservados.\n", encoding="utf-8")
@@ -132,7 +139,8 @@ def render_report(run_result: dict) -> str:
             title = phase.upper()
             lines += ["", f"## {title} — auditoría especializada", "", f"- Estado: `{run_result[phase]['status']}`; hallazgos: {len(run_result[phase].get('findings', []))}."]
             for rule in run_result[phase].get("rules", []):
-                lines.append(f"- `{rule['rule_id']}`: `{rule['status']}`; no evaluables: {rule.get('coverage', {}).get('not_evaluable', 'N/D')}.")
+                detail = f"; recomendación cumplida: `{rule['recommendation_met']}`" if phase == "g08" else f"; no evaluables: {rule.get('coverage', {}).get('not_evaluable', 'N/D')}"
+                lines.append(f"- `{rule['rule_id']}`: `{rule['status']}`{detail}.")
     lines += ["", "## Integridad", "", f"- Archivos: {run_result['integrity']['file_integrity']}", f"- Esquema: {run_result['integrity']['schema_integrity']}", f"- Referencial: {run_result['integrity']['referential_integrity']}", "", "## Validación", "", f"Estado: **{run_result['validation']['status']}**; hallazgos técnicos: {run_result['validation']['finding_count']}", "", "| Regla | Estado | Hallazgos |", "|---|---|---:|"]
     for r in run_result["validation"]["rules"]: lines.append(f"| {r['rule_id']} | {r['status']} | {r['finding_count']} |")
     lines += ["", "Hallazgos:"]
