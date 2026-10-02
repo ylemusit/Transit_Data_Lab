@@ -2,29 +2,48 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## GTFS Productization / Client Audit Workflow V1 — implementación técnica en curso
+## GTFS Productization / Client Audit Workflow V1 — CLOSED
 
-**Estado verificado (2026-10-02):** desde un worktree limpio de `origin/main` `455b5e4cc9b3b716f5edfb27b3c69182f52316bf` se documentó el design review, se definió Client Audit Contract V1 y se añadió un orquestador local sobre GTFS_Lab V1. No se modificaron contratos ni código de Trust Foundation, Audit Engine V1, Compliance V1 o Remediation Engine V1.
+**Estado verificado (2026-10-02):** PR #34 se fusionó mediante merge normal. Head `20da5f0e45b597c58074eb444035dce22bd57e34`; merge commit y `origin/main` `b28959c52aca5c0aeb60c0483267dab12ba6a139`. CI de PR #34 pasó en el run `36962646709`; CI post-merge pasó en el run `36962713037`. Ambos ejecutaron `test_client_workflow.py` y el E2E sintético de Client Audit Workflow V1. No se modificaron contratos ni código de Trust Foundation, Audit Engine V1, Compliance V1 o Remediation Engine V1.
 
-El flujo implementado recibe un ZIP, copia y verifica SOURCE, registra identidad cliente/dataset, ejecuta el pipeline existente, mantiene findings por origen (`AUDIT_ENGINE`, `AUDIT_ENGINE_RECOMMENDATION`, `COMPLIANCE`, `LEGACY`), genera decisión de remediación, soporta comparación con baseline, genera informe cliente y entrega manifest + seal. Los artefactos de DELIVERY se hashean; las rutas Windows internas se redactan y se comprueba que no queden en archivos textuales entregables. No hay uploads externos.
+El flujo recibe un ZIP, copia y verifica SOURCE, registra identidad cliente/dataset, ejecuta el pipeline existente, mantiene findings por origen (`AUDIT_ENGINE`, `AUDIT_ENGINE_RECOMMENDATION`, `COMPLIANCE`, `LEGACY`), genera decisión de remediación, soporta comparación con baseline, genera informe cliente y entrega manifest + seal. Los artefactos de DELIVERY se hashean; las rutas locales Windows y POSIX se redactan y comprueban. No hay uploads externos.
 
-E2E DEVELOPMENT sintético reproducible: [evidencia](02_Data_Engineering/GTFS_Lab/reports/evidence/client_audit_workflow_v1/e2e_synthetic_20261002_r7.json). ZIP determinista SHA-256 `db0303034934ed94e558ea79de8670cd0066f99b11ecf284ad9cb849cb066aad`; dos ejecuciones iniciales produjeron exactamente el mismo `engine_report.json`, cero findings, 27 artefactos cada una y hashes verificados. Ambas terminaron `COMPLETED_WITH_LIMITATIONS`, conservando los gaps del motor. La ejecución recurrente fue `PARTIALLY_COMPARABLE`, atribuida a `RUNTIME_ONLY_CHANGE`; no se confundió con cambio del dataset. SOURCE permaneció intacto. HOLDOUT y feeds de clientes reales no se accedieron.
+E2E DEVELOPMENT sintético reproducible: [evidencia local](02_Data_Engineering/GTFS_Lab/reports/evidence/client_audit_workflow_v1/e2e_synthetic_20261002_r7.json) y ejecución remota registrada en los logs de los runs CI indicados. El E2E comprobó SOURCE inmutable, igualdad byte a byte de `engine_report.json` con la misma entrada, hashes de artefactos, manifest y seal generados, ausencia de rutas locales, ningún upload externo y ningún acceso a HOLDOUT o feeds de cliente. La ejecución recurrente conserva `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`; no se elevó a `FULLY_COMPARABLE`. Los runs sintéticos terminaron `COMPLETED_WITH_LIMITATIONS`, manteniendo los gaps del motor.
 
 ```ini
-P01_CONTRACT = IMPLEMENTED
-P02_INTAKE_FREEZE = PASS_SYNTHETIC
-P03_ORCHESTRATION = PASS_SYNTHETIC (ENGINE + COMPLIANCE)
-P04_FINDINGS_CONSOLIDATION = PASS_TESTED_BY_ORIGIN
-P05_REPORTING = PASS_SYNTHETIC
-P06_DELIVERY_PACKAGE = PASS_SYNTHETIC (ARTIFACT_HASHES + MANIFEST SEAL)
-P07_RECURRING_AUDIT = PASS_SYNTHETIC (PARTIALLY_COMPARABLE; RUNTIME_ONLY_CHANGE)
-P08_DEVELOPMENT_E2E = PASS_SYNTHETIC (DETERMINISTIC ENGINE REPORT REPLAY)
-P09_FINAL_CLOSURE = PENDING
-GTFS_CLIENT_AUDIT_WORKFLOW_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION
-COMMERCIAL_READINESS = NOT_CLAIMED
+PR34 = MERGED_NORMAL
+PR34_HEAD = 20da5f0e45b597c58074eb444035dce22bd57e34
+PR34_MERGE_COMMIT = b28959c52aca5c0aeb60c0483267dab12ba6a139
+ORIGIN_MAIN = b28959c52aca5c0aeb60c0483267dab12ba6a139
+PR34_CI = PASS; RUN 36962646709
+POST_MERGE_CI = PASS; RUN 36962713037
+CLIENT_WORKFLOW_TESTS_REMOTE = PASS (3/3)
+CLIENT_WORKFLOW_E2E_REMOTE = PASS
+BASELINES = PASS
+CI = PASS
+P01 = CLOSED
+P02 = CLOSED
+P03 = CLOSED
+P04 = CLOSED
+P05 = CLOSED
+P06 = CLOSED
+P07 = CLOSED_WITH_DOCUMENTED_LIMITATION
+P08 = CLOSED
+P09 = CLOSED
+P09_TECHNICAL_REVIEW = PASS
+P09_FINAL_CLOSURE_DECISION = APPROVED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1_HUMAN_CLOSURE_DECISION = APPROVED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1 = CLOSED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1_CLOSED = YES
+CLIENT_REAL_FEED_TESTED = NO
+COMMERCIAL_READINESS = NOT_ESTABLISHED
+MARKET_VALIDATION = NOT_ESTABLISHED
+HOLDOUT = NOT_ACCESSED
+OPERATOR_SPECIFIC_CODE = NO
+NETEX_WORK = NOT_STARTED
 ```
 
-La Remediation V1 existente solo permite una propuesta de caso exacto DEVELOPMENT 010; el workflow no inventa safe fixes genéricos. Findings con posibles acciones quedan `HUMAN_REVIEW` hasta que haya evidencia y autorización caso por caso. Esta ejecución sintética no demuestra feeds desconocidos de terceros, readiness comercial, cobertura jurídica ni calidad de clientes. Código, contrato, pruebas y procedimiento están en `02_Data_Engineering/GTFS_Lab/gtfs_lab/client_workflow.py`, `spec/client_audit_contract_v1.schema.json`, `reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md`, `tests/test_client_workflow.py` y `tools/client_workflow_e2e.py`.
+La decisión humana final aprueba P09 y el cierre técnico formal de V1 dentro del alcance documentado. P07 conserva `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`; no se declara comparabilidad recurrente completa. La Remediation V1 existente solo permite una propuesta de caso exacto DEVELOPMENT 010; el workflow no inventa safe fixes genéricos. Findings con posibles acciones quedan `HUMAN_REVIEW` hasta que haya evidencia y autorización caso por caso. Este cierre no acredita feeds reales de operadores, readiness comercial, validación de mercado, demanda, certificación, cumplimiento jurídico total, remediación universal ni calidad de clientes. Código, contrato, pruebas y procedimiento están en `02_Data_Engineering/GTFS_Lab/gtfs_lab/client_workflow.py`, `spec/client_audit_contract_v1.schema.json`, `reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md`, `tests/test_client_workflow.py` y `tools/client_workflow_e2e.py`.
 
 ## GTFS Audit Engine V1 — cierre técnico V1 publicado
 
