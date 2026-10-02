@@ -234,7 +234,7 @@ El working tree de Desktop figura limpio en la comprobación del 2026-09-30, en 
 
 ## NeTEx Audit Engine V1 — candidato técnico N02–N08
 
-**Estado vigente (2026-10-02):** N01 conserva el alcance aprobado para España, autobús regular programado e información estática; N02–N08 están implementados como candidato en rama aislada `feat/netex-audit-engine-v1-n02-n09`. Las comprobaciones locales documentales, de esquema, unitarias y E2E sintéticas pasan. N09 espera CI remoto y revisión técnica final; no existe cierre humano ni cierre formal de V1.
+**Estado vigente (2026-10-02):** N01 conserva el alcance aprobado para España, autobús regular programado e información estática; N02–N09 tienen revisión técnica `PASS / READY_FOR_FINAL_HUMAN_CLOSURE_DECISION` en PR #36, run CI `36970444860` (head `eac848271d3fdcc886624c44ee3f1e663a491b19`). El cambio está en rama; el merge y la decisión humana final siguen pendientes. No existe cierre formal de V1.
 
 El motor inspecciona XML/ZIP estáticos contra NeTEx v2.0.0 desde el root `NeTEx_publication.xsd`, fijado al commit upstream `a94e5e1752bcc13aabb8a1f3d018dc08e6978f42` y 458 hashes de XSD. El repositorio contiene el manifiesto, no redistribuye XSD ni avisos/licencias upstream; CI obtiene la fuente fijada temporalmente. El corpus es sintético. HOLDOUT y feeds públicos o de operadores no fueron accedidos; no hay código por operador.
 
@@ -243,7 +243,8 @@ La evaluación EPIP/CEN completa permanece `HUMAN_REVIEW_REQUIRED` por falta del
 ```ini
 NETEX_N01_SCOPE = APPROVED; SPAIN_REGULAR_SCHEDULED_BUS_STATIC_INFO
 NETEX_N02_N08 = LOCAL_TECHNICAL_CHECKS_PASS
-NETEX_N09 = WAITING_REMOTE_CI_AND_TECHNICAL_REVIEW
+NETEX_N09_TECHNICAL_REVIEW = PASS; READY_FOR_FINAL_HUMAN_CLOSURE_DECISION
+NETEX_PR = 36; CI_RUN = 36970444860; HEAD = eac848271d3fdcc886624c44ee3f1e663a491b19
 NETEX_V1_FINAL_HUMAN_CLOSURE = NOT_REQUESTED / PENDING
 NETEX_SCHEMA = V2.0.0; PINNED_COMMIT; 458_DEPENDENCY_HASHES
 NETEX_CORPUS = SYNTHETIC_ONLY
@@ -252,7 +253,7 @@ NETEX_PUBLIC_OR_OPERATOR_FEEDS_ACCESSED = NO
 NETEX_OPERATOR_SPECIFIC_CODE = NO
 NETEX_EPIP_FULL_CONFORMANCE = NOT_ESTABLISHED
 NETEX_BUS_ROAD_LEGAL_APPLICABILITY = NOT_CONCLUDED
-NETEX_CI = PENDING
+NETEX_CI = PASS; RUN 36970444860
 ```
 
 ## Estado por área
