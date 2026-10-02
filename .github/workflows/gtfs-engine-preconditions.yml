@@ -32,6 +32,10 @@ jobs:
           python -m unittest discover -s tests -p 'test_g09_reporting.py'
           python -m unittest discover -s tests -p 'test_g10_development_gate.py'
           python -m unittest discover -s tests -p 'test_remediation.py'
+          python -m unittest discover -s tests -p 'test_client_workflow.py'
+      - name: Client Audit Workflow V1 synthetic end-to-end
+        working-directory: 02_Data_Engineering/GTFS_Lab
+        run: python -m tools.client_workflow_e2e --evidence "$RUNNER_TEMP/client-workflow-e2e.json"
       - name: M01, M03 and frozen corpus contracts
         working-directory: 02_Data_Engineering/GTFS_Lab
         run: |
