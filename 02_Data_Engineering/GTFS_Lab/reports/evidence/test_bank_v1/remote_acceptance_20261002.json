@@ -1,0 +1,47 @@
+{
+  "contract": "TDLTestBankRemoteAcceptanceV1",
+  "technical_review": "PASS",
+  "status": "READY_FOR_FINAL_HUMAN_CLOSURE_DECISION",
+  "implementation_pr": 40,
+  "head_sha": "202eb5997e2383defc916626a2be2bbd4df848e7",
+  "merge_sha": "3cd14d55003671f1a8926018a05fdc22044e99f6",
+  "pr_ci": {
+    "conclusion": "success",
+    "headSha": "202eb5997e2383defc916626a2be2bbd4df848e7",
+    "status": "completed",
+    "url": "https://github.com/ylemusit/Transit_Data_Lab/actions/runs/37023905768"
+  },
+  "post_merge_ci": {
+    "conclusion": "success",
+    "headSha": "3cd14d55003671f1a8926018a05fdc22044e99f6",
+    "status": "completed",
+    "url": "https://github.com/ylemusit/Transit_Data_Lab/actions/runs/37024096727"
+  },
+  "test_bank_tests": 18,
+  "client_workflow_tests": 3,
+  "synthetic_e2e": {
+    "result": "PASS",
+    "CASE_ALLOCATED": "YES",
+    "SHORT_WORKSPACE": "YES",
+    "SOURCE_HASHED": "YES",
+    "SOURCE_IMMUTABLE": "YES",
+    "AUDIT": "COMPLETED",
+    "DELIVERY": "GENERATED",
+    "REPLAY": "PASS",
+    "CASE_CLASSIFICATION": "OK",
+    "REGISTRY_UPDATED": "YES",
+    "FAILURE_REGISTRY_VALID": "YES",
+    "DELIVERY_HASHES": "VERIFIED",
+    "SEALS": "VERIFIED",
+    "OPERATOR_SPECIFIC_CODE": "NO",
+    "REAL_OPERATOR_DATA": "NO",
+    "HOLDOUT": "NOT_ACCESSED"
+  },
+  "negative_case": "00002_NOT_OK",
+  "protected_baselines": "UNCHANGED",
+  "operator_evidence_published": false,
+  "human_closure": "PENDING",
+  "self_service_readiness": "NOT_READY",
+  "commercial_validation": "NOT_ESTABLISHED",
+  "market_validation": "NOT_ESTABLISHED"
+}
