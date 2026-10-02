@@ -2,7 +2,7 @@
 
 **Estado técnico:** `PASS`; `READY_FOR_FINAL_HUMAN_CLOSURE_DECISION`.
 
-CI remoto PR #36: run `36970444860` PASS, head `eac848271d3fdcc886624c44ee3f1e663a491b19`. Incluye verificación del snapshot fijado (458 dependencias), 10/10 tests NeTEx, E2E sintético con replay y los gates protegidos existentes. Esta revisión técnica no registra ni sustituye la decisión humana final.
+CI remoto PR #36: run `36970572860` PASS, head `bc65e829c93cde7f08c9158290a1040dbba6a751`; merge normal `01689e8dd8b326c758f1df68433a03e87bc8c177`; CI post-merge run `36970665306` PASS. Incluye verificación del snapshot fijado (458 dependencias), 10/10 tests NeTEx, E2E sintético con replay y los gates protegidos existentes. Esta revisión técnica no registra ni sustituye la decisión humana final.
 
 Checklist técnico N09 completado; quedan únicamente la decisión humana final y, después, registrar el cierre si Yeison lo aprueba:
 
@@ -14,7 +14,7 @@ Checklist técnico N09 completado; quedan únicamente la decisión humana final 
 - [x] N06 registry typed, authorities traceable, statuses valid.
 - [x] N07 JSON/Markdown findings report reproducible, without local path leaks.
 - [x] N08 synthetic E2E and deterministic replay pass; HOLDOUT/public/operator sources not accessed.
-- [x] Remote CI PASS includes NeTEx validation and existing protected baseline gates (PR #36, run `36970444860`).
+- [x] Remote CI PASS includes NeTEx validation and existing protected baseline gates (PR #36, run `36970572860`; post-merge run `36970665306`).
 - [x] Protected baselines unchanged; scope remains static regular bus only.
 - [x] Review confirms GPL/CEN/Crown Copyright artefacts are not redistributed by this change.
 - [x] Known gaps, deferrals, security/performance limits and commercial/legal boundaries documented.
