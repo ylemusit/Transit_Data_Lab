@@ -6,6 +6,8 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 
 ## Estado implementado
 
+- GTFS Productization / Client Audit Workflow V1 está en implementación aislada. Contrato, design review, entrypoint local `python -m gtfs_lab.client_workflow` y gates/evidencia sintética se describen en el [diseño y contrato](reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md); el estado vigente y límites están en [PROJECT_STATUS](../../PROJECT_STATUS.md). No declara readiness comercial.
+
 - GTFS Audit Engine V1 está `PASS / CLOSED` desde el 2026-10-01 para el alcance técnico documentado. G08–G11 están cerrados; PR #29 y CI post-merge PASS constan en [PROJECT_STATUS.md](../../PROJECT_STATUS.md). La decisión humana final y sus límites se detallan en el [cierre G11](reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y el [registro machine-readable](reports/evidence/g11_closure_candidate.json). HOLDOUT no se accedió, M02 no cambió y no se inició ningún track posterior.
 - G08 es aditivo después de G07 y queda fuera de `validation` legacy y de la normalización M02. G09 escribe informes JSON/Markdown suplementarios que M02 no registra. G10 verifica hashes y usa exclusivamente el split DEVELOPMENT.
 

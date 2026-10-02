@@ -1,0 +1,40 @@
+{
+  "client_data_accessed": false,
+  "contract_version": "1.0.0",
+  "corpus": "SYNTHETIC_UNKNOWN_GTFS",
+  "evidence_contract": "TDL_CLIENT_AUDIT_WORKFLOW_E2E",
+  "external_upload": false,
+  "holdout_accessed": false,
+  "runs": [
+    {
+      "artifacts_sha256_verified": true,
+      "audit_id": "e2e-a",
+      "delivery_artifact_count": 27,
+      "findings_count": 0,
+      "manifest_sha256": "c19b696cd63935665af498e4aa07490cf612d1c24638db27c4ca45ea89a27bc7",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    },
+    {
+      "artifacts_sha256_verified": true,
+      "audit_id": "e2e-b",
+      "delivery_artifact_count": 27,
+      "findings_count": 0,
+      "manifest_sha256": "9547bc838f9b123dde29de4c143d29bb1ddcca4589588129eda2fd3942349fd3",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    },
+    {
+      "artifacts_sha256_verified": true,
+      "attribution": "RUNTIME_ONLY_CHANGE",
+      "audit_id": "e2e-next",
+      "comparison_status": "PARTIALLY_COMPARABLE",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    }
+  ],
+  "same_input_engine_report_identical": true,
+  "source_filename": "unknown_gtfs.zip",
+  "source_sha256": "db0303034934ed94e558ea79de8670cd0066f99b11ecf284ad9cb849cb066aad",
+  "source_size_bytes": 971
+}

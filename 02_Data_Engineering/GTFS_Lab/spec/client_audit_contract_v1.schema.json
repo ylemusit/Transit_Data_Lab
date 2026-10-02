@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tdl:schema:client-audit-contract-v1",
+  "title": "Transit Data Lab Client Audit Contract V1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["client_project_id", "audit_id", "source_filename", "ingestion_timestamp_utc", "source_sha256", "source_size_bytes", "source_provenance", "audit_mode", "workflow_version"],
+  "properties": {
+    "client_project_id": {"type": "string", "minLength": 1},
+    "audit_id": {"type": "string", "minLength": 1},
+    "dataset_id": {"type": "string", "pattern": "^GTFS-[0-9a-f]{16}$"},
+    "source_filename": {"type": "string", "minLength": 1},
+    "ingestion_timestamp_utc": {"type": "string", "format": "date-time"},
+    "source_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "source_size_bytes": {"type": "integer", "minimum": 0},
+    "source_provenance": {"enum": ["CLIENT_PROVIDED", "PUBLIC_AUTHORIZED", "SYNTHETIC", "DEVELOPMENT"]},
+    "optional_client_metadata": {"type": "object"},
+    "audit_mode": {"enum": ["INITIAL", "MAINTENANCE", "RECURRING"]},
+    "workflow_version": {"type": "string", "const": "1.0.0"}
+  }
+}

@@ -12,12 +12,12 @@ TRANSIT DATA LAB
 ├── REMEDIATION ENGINE V1               ✅ CLOSED (alcance técnico documentado)
 │
 ├── NÚCLEO DEL PRODUCTO — AÑO 1         🎯 ESPAÑA + GTFS + NeTEx
-│   ├── GTFS PRODUCTIZATION              🎯 SIGUIENTE OBJETIVO
-│   │   ├── workflow de auditoría cliente real
-│   │   ├── empaquetado de evidencias e informes entregables
-│   │   ├── before / after y re-audit
-│   │   ├── mantenimiento recurrente
-│   │   └── operación reproducible
+│   ├── GTFS PRODUCTIZATION              🚧 IMPLEMENTACIÓN V1
+│   │   ├── contract / intake / freeze   ✅ SYNTHETIC
+│   │   ├── audit + Compliance + findings ✅ SYNTHETIC
+│   │   ├── delivery / report / hashes  ✅ SYNTHETIC
+│   │   ├── recurring comparison        ✅ SYNTHETIC
+│   │   └── cierre final                ⏳ DECISIÓN HUMANA
 │   └── NeTEx                             🎯 PRIORIDAD TÉCNICA AÑO 1
 │
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
