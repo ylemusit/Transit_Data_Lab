@@ -1,6 +1,6 @@
 # Real Dataset Test Bank V1 — Controlled Intake
 
-Estado: **IMPLEMENTED_LOCAL / VALIDATED_LOCAL**, 2026-10-02. El banco antecede al cliente Windows. Alcance ejecutable V1: GTFS Schedule sobre Client Audit Workflow V1; no integra NeTEx ni remediación automática. No cambia reglas, contratos ni baselines cerradas.
+Estado: **CLOSED / HUMAN_CLOSURE_APPROVED**, 2026-10-02. El banco antecede al cliente Windows. Alcance ejecutable V1: GTFS Schedule sobre Client Audit Workflow V1; no integra NeTEx ni remediación automática. No cambia reglas, contratos ni baselines cerradas.
 
 ## Identidad y almacenamiento
 
@@ -84,8 +84,8 @@ El esquema machine-readable es [test_bank_registry_v1.schema.json](spec/test_ban
 
 Las dos incidencias históricas Windows/DuckDB del piloto real permanecen en el expediente local como RESOLVED, con resolución CONTROLLED_SHORT_WORKSPACE y OPERATOR_SPECIFIC = NO. Se descubrieron durante el piloto; no se cuentan como fallos nuevos de la ejecución controlada. La causa técnica exacta sigue sin confirmar. No se publican datos, findings, hashes de fuente ni artefactos del operador.
 
-Pruebas específicas y E2E sintético verifican aceptación con findings, rechazo, reservas sin reciclado, mismo SHA con varios IDs, metadatos, inmutabilidad, replay, clasificación, hashes y sellos después del rename. CI ejecuta estas pruebas y genera evidencia sintética descargable. Aceptación remota PASS: PR #40 MERGED, CI PR 37023905768 y post-merge 37024096727 PASS. Los 18 tests del banco, 3 del workflow y E2E sintético OK/NOT_OK se ejecutaron remotamente. REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW = PASS; estado READY_FOR_FINAL_HUMAN_CLOSURE_DECISION. Evidencia y límites en PROJECT_STATUS.md.
+Pruebas específicas y E2E sintético verifican aceptación con findings, rechazo, reservas sin reciclado, mismo SHA con varios IDs, metadatos, inmutabilidad, replay, clasificación, hashes y sellos después del rename. CI ejecuta estas pruebas y genera evidencia sintética descargable. Aceptación remota PASS: PR #40 MERGED, CI PR 37023905768 y post-merge 37024096727 PASS. Los 18 tests del banco, 3 del workflow y E2E sintético OK/NOT_OK se ejecutaron remotamente. REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW = PASS; estado CLOSED; cierre humano aprobado explícitamente por Yeison el 2026-10-02. Registro: [human_closure_20261002.json](reports/evidence/test_bank_v1/human_closure_20261002.json). Evidencia y límites en PROJECT_STATUS.md.
 
-Límites: GTFS Schedule, CLI técnico, sin NeTEx ni remediación automática; recovery manual tras crash, inmutabilidad por verificación de hash y read-only, replay del informe del motor y conteo de findings. SELF_SERVICE_READINESS = NOT_READY; COMMERCIAL_VALIDATION = NOT_ESTABLISHED; MARKET_VALIDATION = NOT_ESTABLISHED. No se inicia Windows Self-Service Client V1.
+Límites: GTFS Schedule, CLI técnico, sin NeTEx ni remediación automática; recovery manual tras crash, inmutabilidad por verificación de hash y read-only, replay del informe del motor y conteo de findings. SELF_SERVICE_READINESS = NOT_READY; COMMERCIAL_VALIDATION = NOT_ESTABLISHED; MARKET_VALIDATION = NOT_ESTABLISHED. Windows Self-Service Client V1 es el siguiente bloque seleccionado, aún NOT_STARTED; se aborda como objetivo independiente.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

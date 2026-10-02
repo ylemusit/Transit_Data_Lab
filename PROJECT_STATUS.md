@@ -2,12 +2,14 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## Real Dataset Test Bank V1 — aceptación remota PASS; cierre humano pendiente
+## Real Dataset Test Bank V1 — CLOSED; cierre humano aprobado
 
 Capa genérica aditiva sobre Client Audit Workflow V1: captura de identidad, Case IDs no reutilizables, workspace corto configurable, SOURCE inmutable por hash, preflight, auditoría, replay, entrega y clasificación procedural. OK significa procedimiento completo, incluso con findings; NOT_OK significa contrato incompleto. El expediente real EMT Palma permanece LOCAL / CONTROLLED, intacto y fuera de Git. Solo se publica capacidad genérica y evidencia sintética.
 
 REAL_DATASET_VALIDATION_V1 = EMT PALMA LOCAL CASE COMPLETED.
-REAL_DATASET_TEST_BANK_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION.
+REAL_DATASET_TEST_BANK_V1 = CLOSED.
+REAL_DATASET_TEST_BANK_V1_CLOSED = YES.
+REAL_DATASET_TEST_BANK_V1_HUMAN_CLOSURE_DECISION = APPROVED.
 REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW = PASS.
 SELF_SERVICE_READINESS = NOT_READY.
 COMMERCIAL_VALIDATION = NOT_ESTABLISHED.
@@ -17,7 +19,11 @@ OPERATOR_SPECIFIC_CODE = NO.
 
 Aceptación verificada en GitHub: PR [#40](https://github.com/ylemusit/Transit_Data_Lab/pull/40) MERGED; HEAD 202eb5997e2383defc916626a2be2bbd4df848e7; merge 3cd14d55003671f1a8926018a05fdc22044e99f6. CI PR [37023905768](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/37023905768) PASS y CI post-merge [37024096727](https://github.com/ylemusit/Transit_Data_Lab/actions/runs/37024096727) PASS. Ambos ejecutaron las 18 pruebas del banco, 3 del workflow y el E2E sintético OK/NOT_OK con DuckDB PASS, replay, registros persistidos y hashes/sellos después de clasificación. Artefactos remotos descargados y comprobados; sin datos reales. [Evidencia remota](02_Data_Engineering/GTFS_Lab/reports/evidence/test_bank_v1/remote_acceptance_20261002.json) y [revisión técnica](02_Data_Engineering/GTFS_Lab/reports/TDL_TEST_BANK_V1_TECHNICAL_REVIEW_20261002.md).
 
-El cierre humano sigue pendiente. No se inicia Windows Self-Service Client V1 ni se amplía el banco con nuevos datasets en esta misión. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
+Cierre humano final aprobado explícitamente por Yeison el 2026-10-02, tras verificar directamente en GitHub PR #40 y #41, los cuatro runs PASS y main 378c75aa29e3d5d8e292fbfdc1c68f77e7b23ecb. [Registro de aprobación y alcance](02_Data_Engineering/GTFS_Lab/reports/evidence/test_bank_v1/human_closure_20261002.json). Queda cerrado el banco en el alcance demostrado, con aceptación procedural independiente de la cantidad de findings. Las incidencias históricas Windows/DuckDB resueltas permanecen como conocimiento operacional, sin convertirse en fallos nuevos del caso final.
+
+Límites preservados: SERIAL_EXECUTION = CURRENT_LIMITATION; CRASH_RECOVERY = MANUAL; FORMAT_SCOPE = GTFS_SCHEDULE. No se declara autoservicio listo ni validación comercial o de mercado.
+
+Siguiente bloque seleccionado por el usuario: WINDOWS SELF-SERVICE CLIENT V1, implementación NOT_STARTED. Objetivo: doble clic → seleccionar GTFS.zip → introducir datos mínimos → analizar → ver progreso → recibir resultado comprensible → abrir informe o carpeta de entrega. El usuario final debe poder operar sin terminal, Python, Git, VS Code, rutas manuales, JSON, DuckDB ni comandos. Este bloque encapsulará el flujo cerrado; no abre nuevos datasets, formatos ni cambios de motor. No se abrirá otro dataset durante el desarrollo inicial del cliente Windows. Su implementación se trata como objetivo independiente en un chat nuevo. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
 
 ## GTFS Productization / Client Audit Workflow V1 — CLOSED
 

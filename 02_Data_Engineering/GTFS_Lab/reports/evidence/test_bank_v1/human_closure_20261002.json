@@ -1,0 +1,55 @@
+{
+  "contract": "TDLTestBankHumanClosureV1",
+  "decision_date": "2026-10-02",
+  "decision_authority": "Yeison Arbey Carrillo Lemus",
+  "decision_source": "Explicit user approval in this session; GitHub chain verified directly by user",
+  "REAL_DATASET_TEST_BANK_V1_HUMAN_CLOSURE_DECISION": "APPROVED",
+  "REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW": "PASS",
+  "REAL_DATASET_TEST_BANK_V1": "CLOSED",
+  "REAL_DATASET_TEST_BANK_V1_CLOSED": "YES",
+  "implementation_pr": 40,
+  "documentation_pr": 41,
+  "implementation_head": "202eb5997e2383defc916626a2be2bbd4df848e7",
+  "implementation_merge": "3cd14d55003671f1a8926018a05fdc22044e99f6",
+  "verified_main_at_decision": "378c75aa29e3d5d8e292fbfdc1c68f77e7b23ecb",
+  "ci_runs": {
+    "37023905768": "PASS",
+    "37024096727": "PASS",
+    "37024422351": "PASS",
+    "37024619649": "PASS"
+  },
+  "scope": {
+    "CONTROLLED_INTAKE": "PASS",
+    "SHORT_WORKSPACE": "PASS",
+    "CASE_ID_ALLOCATION": "PASS",
+    "NO_ID_REUSE": "PASS",
+    "OK_NOT_OK_LIFECYCLE": "PASS",
+    "SOURCE_IMMUTABILITY": "PASS",
+    "REPLAY": "PASS",
+    "MASTER_REGISTRY": "PASS",
+    "FAILURE_REGISTRY": "PASS",
+    "SYNTHETIC_OK_CASE": "PASS",
+    "SYNTHETIC_NOT_OK_CASE": "PASS",
+    "SAME_SHA_MULTIPLE_EXECUTIONS": "SUPPORTED",
+    "DELIVERY_HASHES": "VERIFIED",
+    "DELIVERY_SEALS": "VERIFIED",
+    "REAL_OPERATOR_EVIDENCE_PUBLISHED": "NO",
+    "HOLDOUT": "NOT_ACCESSED",
+    "OPERATOR_SPECIFIC_CODE": "NO"
+  },
+  "limits": {
+    "SELF_SERVICE_READINESS": "NOT_READY",
+    "COMMERCIAL_VALIDATION": "NOT_ESTABLISHED",
+    "MARKET_VALIDATION": "NOT_ESTABLISHED",
+    "SERIAL_EXECUTION": "CURRENT_LIMITATION",
+    "CRASH_RECOVERY": "MANUAL",
+    "FORMAT_SCOPE": "GTFS_SCHEDULE"
+  },
+  "next_block": "WINDOWS_SELF_SERVICE_CLIENT_V1",
+  "next_block_implementation": "NOT_STARTED",
+  "next_block_constraints": {
+    "initial_development_new_datasets": "NOT_ALLOWED",
+    "new_formats": "OUT_OF_SCOPE",
+    "engine_changes": "OUT_OF_SCOPE"
+  }
+}
