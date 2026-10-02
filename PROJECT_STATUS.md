@@ -2,7 +2,7 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## GTFS Productization / Client Audit Workflow V1 — PASS técnico; cierre humano pendiente
+## GTFS Productization / Client Audit Workflow V1 — CLOSED
 
 **Estado verificado (2026-10-02):** PR #34 se fusionó mediante merge normal. Head `20da5f0e45b597c58074eb444035dce22bd57e34`; merge commit y `origin/main` `b28959c52aca5c0aeb60c0483267dab12ba6a139`. CI de PR #34 pasó en el run `36962646709`; CI post-merge pasó en el run `36962713037`. Ambos ejecutaron `test_client_workflow.py` y el E2E sintético de Client Audit Workflow V1. No se modificaron contratos ni código de Trust Foundation, Audit Engine V1, Compliance V1 o Remediation Engine V1.
 
@@ -29,9 +29,12 @@ P05 = CLOSED
 P06 = CLOSED
 P07 = CLOSED_WITH_DOCUMENTED_LIMITATION
 P08 = CLOSED
+P09 = CLOSED
 P09_TECHNICAL_REVIEW = PASS
-P09_FINAL_CLOSURE_DECISION = PENDING_YEISON
-GTFS_CLIENT_AUDIT_WORKFLOW_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION
+P09_FINAL_CLOSURE_DECISION = APPROVED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1_HUMAN_CLOSURE_DECISION = APPROVED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1 = CLOSED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1_CLOSED = YES
 CLIENT_REAL_FEED_TESTED = NO
 COMMERCIAL_READINESS = NOT_ESTABLISHED
 MARKET_VALIDATION = NOT_ESTABLISHED
@@ -40,7 +43,7 @@ OPERATOR_SPECIFIC_CODE = NO
 NETEX_WORK = NOT_STARTED
 ```
 
-La Remediation V1 existente solo permite una propuesta de caso exacto DEVELOPMENT 010; el workflow no inventa safe fixes genéricos. Findings con posibles acciones quedan `HUMAN_REVIEW` hasta que haya evidencia y autorización caso por caso. La aceptación sintética demuestra capacidad técnica, pero no feeds reales de operadores, readiness comercial, validación de mercado, cobertura jurídica ni calidad de clientes. La decisión formal final P09 queda para Yeison. Código, contrato, pruebas y procedimiento están en `02_Data_Engineering/GTFS_Lab/gtfs_lab/client_workflow.py`, `spec/client_audit_contract_v1.schema.json`, `reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md`, `tests/test_client_workflow.py` y `tools/client_workflow_e2e.py`.
+La decisión humana final aprueba P09 y el cierre técnico formal de V1 dentro del alcance documentado. P07 conserva `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`; no se declara comparabilidad recurrente completa. La Remediation V1 existente solo permite una propuesta de caso exacto DEVELOPMENT 010; el workflow no inventa safe fixes genéricos. Findings con posibles acciones quedan `HUMAN_REVIEW` hasta que haya evidencia y autorización caso por caso. Este cierre no acredita feeds reales de operadores, readiness comercial, validación de mercado, demanda, certificación, cumplimiento jurídico total, remediación universal ni calidad de clientes. Código, contrato, pruebas y procedimiento están en `02_Data_Engineering/GTFS_Lab/gtfs_lab/client_workflow.py`, `spec/client_audit_contract_v1.schema.json`, `reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md`, `tests/test_client_workflow.py` y `tools/client_workflow_e2e.py`.
 
 ## GTFS Audit Engine V1 — cierre técnico V1 publicado
 
