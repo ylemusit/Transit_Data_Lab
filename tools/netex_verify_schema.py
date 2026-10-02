@@ -14,19 +14,15 @@ def main() -> int:
     args = parser.parse_args()
     expected = json.loads(args.manifest.read_text(encoding="utf-8"))
     actual = build_manifest(args.upstream_checkout)
-    if actual != expected:
-        actual_dependencies = {item["path"]: item for item in actual["dependencies"]}
-        expected_dependencies = {item["path"]: item for item in expected.get("dependencies", [])}
-        missing = sorted(set(expected_dependencies) - set(actual_dependencies))
-        extra = sorted(set(actual_dependencies) - set(expected_dependencies))
-        changed = [name for name in sorted(set(actual_dependencies) & set(expected_dependencies))
-                   if actual_dependencies[name] != expected_dependencies[name]]
-        raise SystemExit(
-            "Pinned NeTEx schema snapshot does not match its SHA-256 manifest; "
-            f"missing={missing[:3]} extra={extra[:3]} changed={changed[:3]} "
-            f"root_expected={expected.get('root_schema_sha256')} root_actual={actual.get('root_schema_sha256')} "
-            f"top_level_differences={[(key, expected.get(key), actual.get(key)) for key in sorted(set(expected) | set(actual)) if key != 'dependencies' and expected.get(key) != actual.get(key)]}"
-        )
+    actual_header = {key: value for key, value in actual.items() if key != "dependencies"}
+    expected_header = {key: value for key, value in expected.items() if key != "dependencies"}
+    actual_dependencies = {item["path"]: item for item in actual["dependencies"]}
+    expected_dependencies = {item["path"]: item for item in expected["dependencies"]}
+    if (actual_header != expected_header
+            or len(actual_dependencies) != len(actual["dependencies"])
+            or len(expected_dependencies) != len(expected["dependencies"])
+            or actual_dependencies != expected_dependencies):
+        raise SystemExit("Pinned NeTEx schema snapshot does not match its SHA-256 manifest")
     print(f"schema_snapshot=PASS dependencies={actual['dependency_count']} commit={actual['commit']}")
     return 0
 
