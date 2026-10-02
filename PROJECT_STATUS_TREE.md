@@ -17,7 +17,7 @@ TRANSIT DATA LAB
 │   │   ├── P07 recurring                ✅ CLOSED_WITH_DOCUMENTED_LIMITATION
 │   │   ├── CI remoto + E2E sintético   ✅ PASS (PR34 + POST-MERGE)
 │   │   └── P09 cierre final             ✅ APPROVED; CIERRE TÉCNICO
-│   └── NeTEx                             🎯 PRIORIDAD TÉCNICA AÑO 1
+│   └── NeTEx                             🟡 N02–N08 candidato técnico; N09 espera CI
 │
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
 │
@@ -28,6 +28,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx permanece sin iniciar. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
+El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx N02–N08 tiene comprobaciones locales PASS; N09 espera CI remoto y revisión. No hay cierre humano. EPIP completo y aplicabilidad jurídica de autobús siguen sin concluir. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

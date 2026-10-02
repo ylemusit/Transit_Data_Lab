@@ -1,0 +1,72 @@
+{
+  "registry_version": "1.0.0",
+  "rules": [
+    {
+      "applicability": "IDENTIFIED_OBJECTS",
+      "authority": "L4_TDL_RECOMMENDATION",
+      "evaluation_type": "SEMANTIC_DIAGNOSTIC",
+      "evidence_contract": "object identifiers and locations",
+      "family": "IDENTITY",
+      "requirement_id": null,
+      "rule_id": "NETEX-IDENTITY-001",
+      "scope": "duplicate object identifiers in one publication",
+      "severity": "ADVISORY",
+      "status_vocabulary": [
+        "PASS",
+        "HUMAN_REVIEW_REQUIRED"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "applicability": "REGULAR_SCHEDULED_BUS",
+      "authority": "L3_EPIP_2026",
+      "evaluation_type": "PROFILE_CONSTRAINT",
+      "evidence_contract": "normative text and mapped assertion required",
+      "family": "PROFILE",
+      "requirement_id": "NETEX-REQ-EPIP-UNKNOWN",
+      "rule_id": "NETEX-PROFILE-001",
+      "scope": "EPIP 2026 constraints beyond XSD",
+      "severity": "REVIEW",
+      "status_vocabulary": [
+        "NOT_EVALUABLE",
+        "HUMAN_REVIEW_REQUIRED"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "applicability": "ALWAYS",
+      "authority": "L4_TDL_TECHNICAL",
+      "evaluation_type": "DIRECT_XML",
+      "evidence_contract": "parser state and source SHA-256",
+      "family": "XSD",
+      "requirement_id": "NETEX-REQ-XML-01",
+      "rule_id": "NETEX-XML-001",
+      "scope": "all XML inputs",
+      "severity": "ERROR",
+      "status_vocabulary": [
+        "PASS",
+        "FAIL_TECHNICAL",
+        "INSPECTION_ERROR"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "applicability": "WELL_FORMED_XML",
+      "authority": "L4_PINNED_SCHEMA_ARTIFACT",
+      "evaluation_type": "DIRECT_XSD",
+      "evidence_contract": "schema identity and validator log",
+      "family": "XSD",
+      "requirement_id": "NETEX-REQ-XSD-01",
+      "rule_id": "NETEX-XSD-001",
+      "scope": "NeTEx v2.0.0 publication schema",
+      "severity": "ERROR",
+      "status_vocabulary": [
+        "PASS",
+        "FAIL_TECHNICAL",
+        "NOT_EVALUABLE",
+        "INSPECTION_ERROR"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}

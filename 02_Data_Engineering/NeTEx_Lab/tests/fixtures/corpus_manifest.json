@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "case_id": "NETEX-SYN-001",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "PASS",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/valid_minimal.xml",
+      "purpose": "XSD-valid PublicationDelivery",
+      "sha256": "8e50cc96dd4289e1ed79bc15e251e59165bbb7f1cc30d0e2cdaaa83a30c3b554",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-002",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "FAIL_TECHNICAL",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/malformed.xml",
+      "purpose": "Malformed XML",
+      "sha256": "3d13af798cb3eaced89189ead209ca2a7e2f91f445ec60a36dac2deb52df2f55",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-003",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "FAIL_TECHNICAL",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/xsd_invalid.xml",
+      "purpose": "Well-formed, XSD-invalid XML",
+      "sha256": "6747228ce855197aab96b417cf00c767fa0668c1aa4112b1508e4a19104a1c43",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-004",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "NOT_EVALUABLE",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/broken_reference_candidate.xml",
+      "purpose": "Reference target candidate",
+      "sha256": "181da6301d2e70f90d8dc22a9a9d8c842b954e9f9e87d1ea7c5d7f6b08e73fdd",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-005",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "HUMAN_REVIEW_REQUIRED",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/duplicate_id_candidate.xml",
+      "purpose": "Duplicate identifier candidate",
+      "sha256": "91e5419b8fb0b1460632f845b6a0f4222fc6128cce8c003e4b58c6b39d98c092",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-006",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "NOT_EVALUABLE",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/temporal_inconsistency_candidate.xml",
+      "purpose": "Temporal inconsistency candidate",
+      "sha256": "c806484a2cb5942689d088665a0560ce579f70f9aba0f1f58b400596c0483c98",
+      "source_type": "SYNTHETIC"
+    },
+    {
+      "case_id": "NETEX-SYN-007",
+      "corpus_split": "DEVELOPMENT",
+      "expected_layer_status": "FAIL_TECHNICAL",
+      "limitation": "A candidate fixture is not a normative EPIP assertion unless an implemented, sourced rule evaluates it.",
+      "path": "tests/fixtures/dtd_external.xml",
+      "purpose": "DTD/entity security rejection",
+      "sha256": "b7decf7c0260d736dd3faf404a1a319ed770ec63599b5f4f195f7b7514407421",
+      "source_type": "SYNTHETIC"
+    }
+  ],
+  "corpus_version": "1.0.0",
+  "holdout_accessed": false,
+  "operator_specific_fixtures": false,
+  "public_feed_accessed": false
+}
