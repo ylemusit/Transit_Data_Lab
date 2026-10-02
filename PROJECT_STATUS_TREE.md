@@ -28,6 +28,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx N02–N09 obtuvo PASS técnico en PR #36 y CI remoto (run `36970444860`); está listo para decisión humana final, aún pendiente. No hay cierre formal de V1. EPIP completo y aplicabilidad jurídica de autobús siguen sin concluir. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
+El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx N02–N09 se fusionó en PR #36; CI PR y post-merge PASS (`36970572860`, `36970665306`). Está listo para decisión humana final, aún pendiente. No hay cierre formal de V1. EPIP completo y aplicabilidad jurídica de autobús siguen sin concluir. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
