@@ -1,6 +1,9 @@
 # Real Dataset Test Bank V1 — revisión técnica
 
-Estado local: PASS / TECHNICAL_CANDIDATE; aceptación remota pendiente.
+REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW = PASS.
+REAL_DATASET_TEST_BANK_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION.
+
+Aceptación remota verificada: PR #40 MERGED; HEAD 202eb5997e2383defc916626a2be2bbd4df848e7; merge 3cd14d55003671f1a8926018a05fdc22044e99f6. CI PR 37023905768 PASS; CI post-merge 37024096727 PASS. Ambos ejecutaron tests nuevos y E2E OK/NOT_OK, con artefactos sintéticos descargados y verificados. Evidencia: [remote_acceptance_20261002.json](evidence/test_bank_v1/remote_acceptance_20261002.json).
 
 Validación ejecutada: 18 tests del banco, 3 del workflow, E2E sintético con auditoría real, DuckDB PASS, replay PASS, OK/NOT_OK, JSON/CSV/JSONL persistidos y hashes/sellos verificados después de clasificación. Evidencia sintética: reports/evidence/test_bank_v1/remote_acceptance_candidate_synthetic.json. CI ejecuta la suite nueva y el E2E; no se infiere aceptación desde suites anteriores.
 
