@@ -31,6 +31,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_g08_quality.py'
           python -m unittest discover -s tests -p 'test_g09_reporting.py'
           python -m unittest discover -s tests -p 'test_g10_development_gate.py'
+          python -m unittest discover -s tests -p 'test_remediation.py'
       - name: M01, M03 and frozen corpus contracts
         working-directory: 02_Data_Engineering/GTFS_Lab
         run: |
