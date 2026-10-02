@@ -18,6 +18,8 @@ from .ingestion import IngestionError
 from .pipeline import run
 
 WORKFLOW_VERSION = "1.0.0"
+_LARGE_JSON_STREAM_THRESHOLD = 8 * 1024 * 1024
+_JSON_STRING_TOKEN = re.compile(r'"(?:[^"\\]|\\.)*"')
 STATUSES = {"COMPLETED", "COMPLETED_WITH_FINDINGS", "COMPLETED_WITH_LIMITATIONS",
             "BLOCKED_INPUT_INVALID", "BLOCKED_TECHNICAL", "HUMAN_REVIEW_REQUIRED"}
 
@@ -56,11 +58,39 @@ def _redact_path_text(value: str) -> str:
     return re.sub(r"(?<![\w:/])/(?:[^/\s\"'`<>]+/)*[^/\s\"'`<>]+", "[LOCAL_PATH_REDACTED]", value)
 
 
-def _sanitize_delivery(directory: Path) -> None:
+def _sanitize_large_json(path: Path) -> None:
+    """Redact JSON strings line by line without materializing large artifacts."""
+    temporary = path.with_name(path.name + ".redacted.tmp")
+    try:
+        with path.open("r", encoding="utf-8", newline="") as source, temporary.open(
+                "w", encoding="utf-8", newline="") as target:
+            for line in source:
+                def redact(match: re.Match[str]) -> str:
+                    token = match.group(0)
+                    value = json.loads(token)
+                    # _redact_local_paths leaves object keys unchanged.
+                    if line[match.end():].lstrip().startswith(":") or not isinstance(value, str):
+                        return token
+                    sanitized = _redact_path_text(value)
+                    return json.dumps(sanitized, ensure_ascii=False) if sanitized != value else token
+
+                target.write(_JSON_STRING_TOKEN.sub(redact, line))
+        temporary.replace(path)
+    except Exception:
+        temporary.unlink(missing_ok=True)
+        raise
+
+
+def _sanitize_delivery(directory: Path) -> set[Path]:
+    streamed_json: set[Path] = set()
     for path in directory.rglob("*"):
         if not path.is_file() or path.suffix.lower() not in {".json", ".md", ".txt", ".csv"}:
             continue
         try:
+            if path.suffix.lower() == ".json" and path.stat().st_size > _LARGE_JSON_STREAM_THRESHOLD:
+                _sanitize_large_json(path)
+                streamed_json.add(path.resolve())
+                continue
             text = path.read_text(encoding="utf-8")
             if path.suffix.lower() == ".json":
                 text = json.dumps(_redact_local_paths(json.loads(text)), ensure_ascii=False, sort_keys=True, indent=2) + "\n"
@@ -70,6 +100,7 @@ def _sanitize_delivery(directory: Path) -> None:
         except (UnicodeError, json.JSONDecodeError):
             # Non-text engine outputs are not expected to contain path strings.
             continue
+    return streamed_json
 
 
 def _finding_rows(run: dict[str, Any], source_sha: str) -> list[dict[str, Any]]:
@@ -233,7 +264,9 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             shutil.copyfile(frozen_source, working_input)
         result = run(working_input, zones["AUDIT"] / "engine_runs")
         engine_run_dir = zones["AUDIT"] / "engine_runs" / result["run_id"]
-        run_json = json.loads((engine_run_dir / "run.json").read_text(encoding="utf-8"))
+        # pipeline.run already returns the full run mapping. Reloading run.json
+        # duplicates potentially multi-gigabyte findings in memory on large feeds.
+        run_json = result
         engine_json_path = engine_run_dir / "engine_report.json"
         engine_report = json.loads(engine_json_path.read_text(encoding="utf-8"))
         run_json["engine_report"] = engine_report
@@ -300,11 +333,19 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             shutil.copyfile(path, delivery / name)
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
-        _sanitize_delivery(delivery)
-        if any(_redact_path_text(path.read_text(encoding="utf-8", errors="ignore"))
-               != path.read_text(encoding="utf-8", errors="ignore")
-               for path in delivery.rglob("*")
-               if path.is_file() and path.suffix.lower() in {".json", ".md", ".txt", ".csv"}):
+        streamed_json = _sanitize_delivery(delivery)
+        unredacted_path_found = False
+        for path in delivery.rglob("*"):
+            if not path.is_file() or path.suffix.lower() not in {".json", ".md", ".txt", ".csv"}:
+                continue
+            if path.resolve() in streamed_json:
+                # Every JSON string in this file was checked and redacted in the streaming pass.
+                continue
+            text = path.read_text(encoding="utf-8", errors="ignore")
+            if _redact_path_text(text) != text:
+                unredacted_path_found = True
+                break
+        if unredacted_path_found:
             raise RuntimeError("BLOCKED_TECHNICAL: ruta local detectada en DELIVERY")
         # Hash every client artifact; the manifest is sealed separately to avoid self-reference.
         for path in sorted(p for p in delivery.rglob("*") if p.is_file()):

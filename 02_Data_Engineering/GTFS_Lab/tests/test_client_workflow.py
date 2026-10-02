@@ -8,10 +8,28 @@ import zipfile
 from pathlib import Path
 from unittest.mock import patch
 
-from gtfs_lab.client_workflow import _finding_rows, run_client_audit
+from gtfs_lab.client_workflow import _finding_rows, _sanitize_delivery, run_client_audit
 
 
 class ClientWorkflowTests(unittest.TestCase):
+    def test_large_json_delivery_redaction_is_streamed(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            delivery = root / "delivery"
+            delivery.mkdir()
+            private_path = str(root / "local" / "engine_run" / "run.json")
+            artifact = delivery / "run.json"
+            artifact.write_text(json.dumps({"artifact": private_path, "payload": "x" * 4096}), encoding="utf-8")
+
+            with patch("gtfs_lab.client_workflow._LARGE_JSON_STREAM_THRESHOLD", 1):
+                with patch.object(Path, "read_text", side_effect=AssertionError("large JSON must be streamed")):
+                    streamed = _sanitize_delivery(delivery)
+
+            self.assertIn(artifact.resolve(), streamed)
+            sanitized = json.loads(artifact.read_text(encoding="utf-8"))
+            self.assertEqual(sanitized["artifact"], "[LOCAL_PATH_REDACTED]")
+            self.assertEqual(sanitized["payload"], "x" * 4096)
+
     def test_findings_preserve_origin_and_required_envelope(self) -> None:
         compliance_finding = {"rule_id": "C1", "table": "stop_times.txt", "row_locator": "ROW:1",
                               "field": "stop_id", "observed_value": "missing", "evidence": {"note": "x"}}
@@ -59,8 +77,16 @@ class ClientWorkflowTests(unittest.TestCase):
                 return run
 
             with patch("gtfs_lab.client_workflow.run", side_effect=fake_run):
-                result = run_client_audit(source, root / "workspace", client_project_id="client-a",
-                                          audit_id="audit-001", source_provenance="SYNTHETIC")
+                original_read_text = Path.read_text
+
+                def reject_pipeline_run_reload(path: Path, *args: object, **kwargs: object) -> str:
+                    if path.name == "run.json" and "engine_runs" in path.parts:
+                        raise AssertionError("Client Workflow must reuse the mapping returned by pipeline.run")
+                    return original_read_text(path, *args, **kwargs)
+
+                with patch.object(Path, "read_text", reject_pipeline_run_reload):
+                    result = run_client_audit(source, root / "workspace", client_project_id="client-a",
+                                              audit_id="audit-001", source_provenance="SYNTHETIC")
 
             self.assertEqual(result["status"], "COMPLETED")
             self.assertTrue(result["source_immutable"])
