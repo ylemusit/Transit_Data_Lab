@@ -24,7 +24,8 @@ def main() -> int:
         raise SystemExit(
             "Pinned NeTEx schema snapshot does not match its SHA-256 manifest; "
             f"missing={missing[:3]} extra={extra[:3]} changed={changed[:3]} "
-            f"root_expected={expected.get('root_schema_sha256')} root_actual={actual.get('root_schema_sha256')}"
+            f"root_expected={expected.get('root_schema_sha256')} root_actual={actual.get('root_schema_sha256')} "
+            f"top_level_differences={[(key, expected.get(key), actual.get(key)) for key in sorted(set(expected) | set(actual)) if key != 'dependencies' and expected.get(key) != actual.get(key)]}"
         )
     print(f"schema_snapshot=PASS dependencies={actual['dependency_count']} commit={actual['commit']}")
     return 0
