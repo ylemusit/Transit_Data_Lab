@@ -25,6 +25,40 @@ Límites preservados: SERIAL_EXECUTION = CURRENT_LIMITATION; CRASH_RECOVERY = MA
 
 Siguiente bloque seleccionado por el usuario: WINDOWS SELF-SERVICE CLIENT V1, implementación NOT_STARTED. Objetivo: doble clic → seleccionar GTFS.zip → introducir datos mínimos → analizar → ver progreso → recibir resultado comprensible → abrir informe o carpeta de entrega. El usuario final debe poder operar sin terminal, Python, Git, VS Code, rutas manuales, JSON, DuckDB ni comandos. Este bloque encapsulará el flujo cerrado; no abre nuevos datasets, formatos ni cambios de motor. No se abrirá otro dataset durante el desarrollo inicial del cliente Windows. Su implementación se trata como objetivo independiente en un chat nuevo. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
 
+## REAL DATA HARDENING CAMPAIGN V1 — PASS; CLOSED
+
+**Cierre documental (2026-10-02):** PASS dentro del alcance controlado de GTFS Schedule y snapshots públicos históricos. Los conteos de datasets, intentos, resultados y findings proceden del resumen local de campaña y sus registros bajo `C:\TDL\BANK`; esos artefactos no forman parte de este clean worktree. Por tanto, se registran como resultados de la campaña local controlada y no como verificación local desde el repositorio. No se publican artefactos reales de operadores ni se fabrica evidencia Git sustitutiva.
+
+`00007_NOT_OK` se conserva como evidencia histórica. El mismo SHA terminó posteriormente en `00008_OK` tras una corrección general de memoria; la recuperación no borra ni reclasifica el intento histórico.
+
+```ini
+REAL_DATA_HARDENING_CAMPAIGN_V1 = PASS
+REAL_DATA_HARDENING_CAMPAIGN_V1_CLOSED = YES
+UNIQUE_REAL_DATASETS_FINAL_OK = 7
+TOTAL_CASE_ATTEMPTS = 9
+TOTAL_OK_ATTEMPTS = 8
+HISTORICAL_NOT_OK_PRESERVED = YES
+OPEN_GENERAL_FAILURES = 0
+ALL_REQUIRED_REPLAYS = PASS
+OPERATOR_SPECIFIC_CODE = 0
+HOLDOUT_ACCESSED = NO
+PR43 = MERGED
+PR43_HEAD = 822438151bb1bf21ff54ea1f20519d2e19ae83c5
+PR43_MERGE = fe7fc77d0d65be439845468da937325279f5aeec
+CI_PR43 = PASS; RUN 37033717647
+CI_POST_MERGE_PR43 = PASS; RUN 37033908847
+```
+
+El merge de PR #43 es `origin/main` en la base de este cierre. El resultado respeta estos límites: solo GTFS Schedule; snapshots públicos históricos; procedencia/licencia incompleta para varios snapshots; ejecución serial; recuperación manual ante crashes; optimización de rendimiento en feeds grandes pendiente. La suite fue `262 PASS` y `1 documented SKIP`; no se declara 100 % ejecutada. En Compliance, los tests pasaron, el hash gate de la base protegida no se volvió a ejecutar durante esta campaña y la base no se modificó. No queda establecida validación comercial ni de mercado.
+
+```ini
+WINDOWS_SELF_SERVICE_CLIENT_V1 = NEXT
+NEXT_PROJECT_OBJECTIVE = WINDOWS_SELF_SERVICE_CLIENT_V1
+WINDOWS_SELF_SERVICE_CLIENT_V1_STATUS = NOT_STARTED
+```
+
+Este siguiente objetivo queda seleccionado, sin iniciar implementación.
+
 ## GTFS Productization / Client Audit Workflow V1 — CLOSED
 
 **Estado verificado (2026-10-02):** PR #34 se fusionó mediante merge normal. Head `20da5f0e45b597c58074eb444035dce22bd57e34`; merge commit y `origin/main` `b28959c52aca5c0aeb60c0483267dab12ba6a139`. CI de PR #34 pasó en el run `36962646709`; CI post-merge pasó en el run `36962713037`. Ambos ejecutaron `test_client_workflow.py` y el E2E sintético de Client Audit Workflow V1. No se modificaron contratos ni código de Trust Foundation, Audit Engine V1, Compliance V1 o Remediation Engine V1.
