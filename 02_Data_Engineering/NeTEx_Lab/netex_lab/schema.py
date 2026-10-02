@@ -34,7 +34,7 @@ def verify_schema_snapshot(schema_path: str | Path, manifest_path: str | Path = 
     for dependency in manifest["dependencies"]:
         dependency_path = schema_root / dependency["path"]
         try:
-            digest = hashlib.sha256(dependency_path.read_bytes()).hexdigest()
+            digest = hashlib.sha256(dependency_path.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
         except OSError as exc:
             raise SchemaIdentityError("Pinned schema dependency is missing") from exc
         if digest != dependency["sha256"]:

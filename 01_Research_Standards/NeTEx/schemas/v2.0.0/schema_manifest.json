@@ -2,2294 +2,2294 @@
   "commit": "a94e5e1752bcc13aabb8a1f3d018dc08e6978f42",
   "dependencies": [
     {
-      "bytes": 15155,
+      "bytes": 14888,
       "path": "xsd/gml/basicTypes.xsd",
-      "sha256": "b8d953d1793d0a3646c1d3ba9d5fe994f3592e79a47a80dc1346c1905b743078"
+      "sha256": "72fb3a517cb3987a243701f74c85f43f707b793914d3c47a7e986030dee59ad3"
     },
     {
-      "bytes": 3536,
+      "bytes": 3479,
       "path": "xsd/gml/geometryAggregates-extract-v3_2_1.xsd",
-      "sha256": "f88408d58a8fc1e8b18a615d0e26bdf367a0e96cf4e2db3e65e4f643f4b03efa"
+      "sha256": "68d57f214e8f29aebb14b53d9f2af1114c87ab1434ed19ca8f0b06a553041d01"
     },
     {
-      "bytes": 19009,
+      "bytes": 18738,
       "path": "xsd/gml/geometryBasic0d1d-extract-v3_2_1.xsd",
-      "sha256": "d3aa6aa345bfa3ab648472836b10b03898380bab2c206825c11c5cadcdbb74ff"
+      "sha256": "7d35700d0713ab7407ec29704896d49c08a52358f383294b8ef3857056890417"
     },
     {
-      "bytes": 1262,
+      "bytes": 1243,
       "path": "xsd/gml/geometryPrimitives-extract-v3_2_1.xsd",
-      "sha256": "39932f78f5a56eddd97a9e577f8bcaea8bccc2c1eb69fbb33ada0c5a5db96daa"
+      "sha256": "9cc58d83f62064227086eadffd5c770a98dbfe4874b535097f44c3c6e66b23a9"
     },
     {
-      "bytes": 961,
+      "bytes": 948,
       "path": "xsd/gml/gml_extract_all_objects_v_3_2_1.xsd",
-      "sha256": "f1db547e9ee93f388e125aa9908d16ac2e6f5a676580b804f84752942be6ca0c"
+      "sha256": "b407b6c67aa033eb4bfc1eadd960d80373dfa7dcab12001e74f78de99b39bca2"
     },
     {
-      "bytes": 12063,
+      "bytes": 11895,
       "path": "xsd/gml/gmlBase-extract-v3_2_1.xsd",
-      "sha256": "ebfa0988fe7c1ca37f302101d5df8880e1da82fafcf8ba446166f5910b271c5f"
+      "sha256": "8a17cd88090e47847c343f27932f04e074f8a80c07c4e27cc3c3e747727592d0"
     },
     {
-      "bytes": 6557,
+      "bytes": 6437,
       "path": "xsd/gml/gmlBasic2d-extract-v3_2_1-.xsd",
-      "sha256": "9f813589ace97f8def9db79137a63eb1969198ae0671ce4f1d8362f028badc1e"
+      "sha256": "b3a652643766b6231ec97bdc89f6fdcc55896c76b497a4bcc3f495074bc18696"
     },
     {
-      "bytes": 4783,
+      "bytes": 4664,
       "path": "xsd/ifopt.xsd",
-      "sha256": "faa01e9ebf0465f16b812746bb5a42bc8c48249194f92b3d051cb8a3671dc542"
-    },
-    {
-      "bytes": 684,
-      "path": "xsd/netex_framework/netex_all_objects_framework.xsd",
-      "sha256": "a137152192be294363089387807614d2d23ddaa812cf4b8f8531496e7358c2e2"
-    },
-    {
-      "bytes": 6195,
-      "path": "xsd/netex_framework/netex_all_objects_generic.xsd",
-      "sha256": "bbf0bbcc6796154afaf995c6af5d4dc3f765e24642aa0559ca3aba296b3de487"
-    },
-    {
-      "bytes": 834,
-      "path": "xsd/netex_framework/netex_frames/netex_all_frames_framework.xsd",
-      "sha256": "b88b1d299c7e2cfb2bbc65bf30b673541eb33b18a56131a1f993acf5ce498e18"
-    },
-    {
-      "bytes": 3433,
-      "path": "xsd/netex_framework/netex_frames/netex_commonFrame_version.xsd",
-      "sha256": "66c435257267143025d0022ed0e0a0404e2c3515d50fac70fbde5df8afcfd1d9"
-    },
-    {
-      "bytes": 7376,
-      "path": "xsd/netex_framework/netex_frames/netex_compositeFrame_version.xsd",
-      "sha256": "f0e5fb8e187a654c6be454770d9c632cfac8d9b832b7e5f256a84248768c8413"
-    },
-    {
-      "bytes": 12871,
-      "path": "xsd/netex_framework/netex_frames/netex_generalFrame_version.xsd",
-      "sha256": "5311ba402ec08e00c31e581d6834d9444274f2e04a89248769381f7e709f290d"
-    },
-    {
-      "bytes": 5070,
-      "path": "xsd/netex_framework/netex_frames/netex_resourceFrame_support.xsd",
-      "sha256": "8c336b7c3c1d42d3be534b5f991d8ac5b4ff38f832c7b28167d351344123bc76"
-    },
-    {
-      "bytes": 7712,
-      "path": "xsd/netex_framework/netex_frames/netex_resourceFrame_version.xsd",
-      "sha256": "4cc75bc182f87868c7e6275d2ea014af623bf3f67f0ccca7dc7f659cf120adfe"
-    },
-    {
-      "bytes": 5105,
-      "path": "xsd/netex_framework/netex_frames/netex_serviceCalendarFrame_support.xsd",
-      "sha256": "5d7a11ca129d134c65a107afe198eed058b2eaa2570b7888f3bf61e6de56c222"
-    },
-    {
-      "bytes": 4514,
-      "path": "xsd/netex_framework/netex_frames/netex_serviceCalendarFrame_version.xsd",
-      "sha256": "f9749fc552e3ca3d01de433cd53d07ef5f67269dd3525c631e2315316a95fa63"
-    },
-    {
-      "bytes": 8318,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_accessibility.xsd",
-      "sha256": "fb8ac233d4ddc53b859030ca6496731f981462e08ab2ed600d16e44c21316e28"
-    },
-    {
-      "bytes": 1732,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_all.xsd",
-      "sha256": "7458e90c9ade5d2cbac5e71084cf91af29c660f6be28360c193c86dfd5f77007"
-    },
-    {
-      "bytes": 8780,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_limitations.xsd",
-      "sha256": "70d6ba3f8c51a0adc98f6ee102b62191c2e6109168acc8d7526c992b50a59442"
-    },
-    {
-      "bytes": 14272,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_passengerMobility.xsd",
-      "sha256": "cf4453452d11bf802d85732b13269bd25c17dd0af2fef1c6b1cdc900ea8adf3f"
-    },
-    {
-      "bytes": 7841,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_support.xsd",
-      "sha256": "4505896276c73833c335b75007d407bc8c10aa3e136ba51a09f22110a775348c"
-    },
-    {
-      "bytes": 5776,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_alternativeName_support.xsd",
-      "sha256": "53c561b3b202eac7dad4a854e372b15320344276004cc0a204ac034232061187"
-    },
-    {
-      "bytes": 9220,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_alternativeName_version.xsd",
-      "sha256": "e1c9c31421ea186bee3e6d26ea166eb189c8bcc1260d897d62d31a48e236b6f1"
-    },
-    {
-      "bytes": 4823,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_assignment_support.xsd",
-      "sha256": "476d72e8f03b72ec5a4fbb239a51bce6d312aa606d54e311ca1cd74f01e2829c"
-    },
-    {
-      "bytes": 6532,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_assignment_version.xsd",
-      "sha256": "2f6e87ea25f470e415d8c5236f62bcf2f59f7d942ceb0ef9a97d25645d8978d0"
-    },
-    {
-      "bytes": 12968,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_grouping_support.xsd",
-      "sha256": "d3d6eee473ed686f285b43262a01ce86b86957a74928c1b3fbfa9d8c06408bde"
-    },
-    {
-      "bytes": 14637,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_grouping_version.xsd",
-      "sha256": "d64a235369482e6b9de3e406d5f0e5cdda8985af1d02f377d80bf4ff7c67c415"
-    },
-    {
-      "bytes": 5375,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_layer_support.xsd",
-      "sha256": "f251be8aac8b8e259f30347c92dbda448b17acdd3f55622ab82ecdc7a7eaa752"
-    },
-    {
-      "bytes": 5866,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_layer_version.xsd",
-      "sha256": "ce1a29e93e10ee2cf6af26b5570040b21ed803e55c98487e919ee01778b4074c"
-    },
-    {
-      "bytes": 7110,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_loggable_support.xsd",
-      "sha256": "d1ac5d517c13e9ab6dd9cf18ba1acd1ccde06d517e921b8c1a92172ab5b8a937"
-    },
-    {
-      "bytes": 7122,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_loggable_version.xsd",
-      "sha256": "bebc82528013278e918fce9895ae1de20353b352acbde367507e1be48dc4b1b6"
-    },
-    {
-      "bytes": 33144,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_organisation_support.xsd",
-      "sha256": "b251a4a950374e71b8520d4d1e5be97f105529d55d88b9042bb1e1a716031f62"
-    },
-    {
-      "bytes": 45280,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_organisation_version.xsd",
-      "sha256": "396ee0e16bec8b96b31f13c642a49bbd67ce8d699c067282b2700ab2585bef38"
-    },
-    {
-      "bytes": 21434,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_path_support.xsd",
-      "sha256": "f9cad917a95f07a4c0d0516adb98cdbd2b9029b34e2779a9ae99f091a96ea0cd"
-    },
-    {
-      "bytes": 25339,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_path_version.xsd",
-      "sha256": "d5d24b50347230ccedf36c4b4ea3c5400b08e3d142c3d79513f0edd967b8aff3"
-    },
-    {
-      "bytes": 16811,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_place_support.xsd",
-      "sha256": "422800d5e1ac8cc9ce418bb6c9abb6f3707b18d4c4a34eb047412b38eb04c27b"
-    },
-    {
-      "bytes": 11804,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_place_version.xsd",
-      "sha256": "d5b10ed232377620c9a66791a105ac3a1fe4279e0e82b0bea79eb82fa5e50966"
-    },
-    {
-      "bytes": 21567,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLink_support.xsd",
-      "sha256": "b45e944bafc2d7f5b3371f14ac7863368a497bfa82128656be79d599b7ed3839"
-    },
-    {
-      "bytes": 22690,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLink_version.xsd",
-      "sha256": "93e6618639b43a8a1ff37faaa03d51d449f07d8cccd685f4779ddf2b450264ae"
-    },
-    {
-      "bytes": 15273,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLinkSequence_support.xsd",
-      "sha256": "b51261e9c89218065e895c104b0615f7bf954bb1b173ef58d5e838f2607b4440"
-    },
-    {
-      "bytes": 13420,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLinkSequence_version.xsd",
-      "sha256": "e6b056601173488ea6d8e8d7df27c39ee5594c05e78e9cf059924351534f9e0c"
-    },
-    {
-      "bytes": 19264,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_projection_support.xsd",
-      "sha256": "0e0787fc82cd50638f7a1d164bd5e4671fe301e3147edb98d5a95c049f9564b9"
-    },
-    {
-      "bytes": 23483,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_projection_version.xsd",
-      "sha256": "269e651226afd7a60219ae7ce58c91b88eeb0b2d2bc6dc8a712165084026b492"
-    },
-    {
-      "bytes": 8997,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_section_support.xsd",
-      "sha256": "eb65d343558dfd79452044cbc60750fd024f188a48d1ca34149d0dfe189415d2"
-    },
-    {
-      "bytes": 18352,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_section_version.xsd",
-      "sha256": "85ed28803f32a3c4a9de9978542bcf39cb8b1ef98c4e56c08e1d9457670868a1"
-    },
-    {
-      "bytes": 10877,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_spatialFeature_support.xsd",
-      "sha256": "4f7fe8ec02fc43aa245b4f9248328294fe964421f992fe9ef2d649be775f7039"
-    },
-    {
-      "bytes": 10948,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_spatialFeature_version.xsd",
-      "sha256": "bceb68bf90d53e801f0ce207e81cd6cc850f19f484df0864902c4bd4df7af4f4"
-    },
-    {
-      "bytes": 11720,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_zone_support.xsd",
-      "sha256": "273f9b4a20ce3563cc1de02e2895a35064c7b552f8ff7fa0b76d15fb609aec65"
-    },
-    {
-      "bytes": 17406,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_zone_version.xsd",
-      "sha256": "79a1e4dac1b9d905300d1e15fc3c25dd383fbddc866f90bdafea9b2b64eb6ffc"
-    },
-    {
-      "bytes": 6167,
-      "path": "xsd/netex_framework/netex_genericFramework/netex_zoneProjection_version.xsd",
-      "sha256": "934374b497677cb42a24e0d2d8565106bd61e6825ea70e1ab03478a133841d09"
-    },
-    {
-      "bytes": 1400,
-      "path": "xsd/netex_framework/netex_payload_framework.xsd",
-      "sha256": "47a95498e6783e72fc87e192e127d46ab321ca9bc1760cf9ae86c0bbb7316cbd"
-    },
-    {
-      "bytes": 4906,
-      "path": "xsd/netex_framework/netex_responsibility/netex_alternativeText_support.xsd",
-      "sha256": "6b438fb76fbc1aac31d14e57a2c7d7734ed64b049a72abfac93e33cd6cbaabb3"
-    },
-    {
-      "bytes": 6613,
-      "path": "xsd/netex_framework/netex_responsibility/netex_alternativeText_version.xsd",
-      "sha256": "c2b4b966e57d39703dce23048e2fdb03583b1b622159832ddc5935c617561a9d"
-    },
-    {
-      "bytes": 9100,
-      "path": "xsd/netex_framework/netex_responsibility/netex_dataSource_version.xsd",
-      "sha256": "152e3626b3996b4de9af9becfeeca5ec79a28d06bd0c95afb5efa0148832daef"
-    },
-    {
-      "bytes": 4089,
-      "path": "xsd/netex_framework/netex_responsibility/netex_entity_entity.xsd",
-      "sha256": "a4787cb952fb85bae1a96cec837b7ee24bdabb30fef566855daead14d4eebed0"
-    },
-    {
-      "bytes": 515868,
-      "path": "xsd/netex_framework/netex_responsibility/netex_entity_support.xsd",
-      "sha256": "b8669d89798e845f52764fd9192f9d83cccedcf1153e98b069673e943635909d"
-    },
-    {
-      "bytes": 6907,
-      "path": "xsd/netex_framework/netex_responsibility/netex_entity_version.xsd",
-      "sha256": "29b9f63cb61bb30de768fbbd8c6cd87d4b20de23abfb5e7b394c0629098983e6"
-    },
-    {
-      "bytes": 12449,
-      "path": "xsd/netex_framework/netex_responsibility/netex_relationship.xsd",
-      "sha256": "b24b626d9495d205cf67e7afacf1997279ba47df60abe65431a5fe38df64b176"
-    },
-    {
-      "bytes": 13448,
-      "path": "xsd/netex_framework/netex_responsibility/netex_relationship_support.xsd",
-      "sha256": "dc5f6aecd083692417e062cbcf1fca83d26e13cb3d821bbb1eb49b1c0eea16ea"
-    },
-    {
-      "bytes": 21178,
-      "path": "xsd/netex_framework/netex_responsibility/netex_responsibility_support.xsd",
-      "sha256": "6d1e2b83cb28047bf158b941f61d3fa0a67961f8156c2cc9fbe0b4e6d95fd36f"
-    },
-    {
-      "bytes": 11207,
-      "path": "xsd/netex_framework/netex_responsibility/netex_responsibility_version.xsd",
-      "sha256": "4f2811048370759e1d8fda07dc74182f4788c6e54a22482e7e64446446dd3862"
-    },
-    {
-      "bytes": 8452,
-      "path": "xsd/netex_framework/netex_responsibility/netex_responsibilitySet_support.xsd",
-      "sha256": "f6b06624794586d235beaf77de4151180be377e29ef7607fed2407d4c7e0c348"
-    },
-    {
-      "bytes": 21899,
-      "path": "xsd/netex_framework/netex_responsibility/netex_responsibilitySet_version.xsd",
-      "sha256": "04b1d62a75422b84abe9fd048cc0d9a627b3c9d1c266bf717b9dd9a8436523e1"
-    },
-    {
-      "bytes": 10179,
-      "path": "xsd/netex_framework/netex_responsibility/netex_typeOfValue_version.xsd",
-      "sha256": "e811b10e88415a8f8f79c25241a186c8aeb0c78e0300bd79714446af0cc0ecf1"
-    },
-    {
-      "bytes": 17806,
-      "path": "xsd/netex_framework/netex_responsibility/netex_validityCondition_support.xsd",
-      "sha256": "76dfe59f40a4a997be7bc4c6f12ea01fef0c2834e832102d875fa64c73e260a6"
-    },
-    {
-      "bytes": 19790,
-      "path": "xsd/netex_framework/netex_responsibility/netex_validityCondition_version.xsd",
-      "sha256": "2c9c583930d22ca05712e173486401775150044ac1e2ec4f8bcd5020d08cf20d"
-    },
-    {
-      "bytes": 12656,
-      "path": "xsd/netex_framework/netex_responsibility/netex_version_support.xsd",
-      "sha256": "1f0f590162467e652979b5af567b7c56db882c4b82635b1b0fea2a4105d5de2c"
-    },
-    {
-      "bytes": 12142,
-      "path": "xsd/netex_framework/netex_responsibility/netex_version_version.xsd",
-      "sha256": "6850736ff1b74b538071425baebe3891486e051f7cff66c20b3399073c86a377"
-    },
-    {
-      "bytes": 11899,
-      "path": "xsd/netex_framework/netex_responsibility/netex_versionDelta_version.xsd",
-      "sha256": "86d619105a7a37ddf18b8d3ce3f9a279062074e56fdde73fb0141b1ec2b1b354"
-    },
-    {
-      "bytes": 11759,
-      "path": "xsd/netex_framework/netex_responsibility/netex_versionFrame_support.xsd",
-      "sha256": "0a1b65adb2b4ad2a1c3f0b3c52e28def0b7a481345a2d0f5319ce875c372166b"
-    },
-    {
-      "bytes": 27829,
-      "path": "xsd/netex_framework/netex_responsibility/netex_versionFrame_version.xsd",
-      "sha256": "d78bc373f612e4f5fdb85adadd875732624ed23abf419ad5f4d13518436b781f"
-    },
-    {
-      "bytes": 7309,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_access_version.xsd",
-      "sha256": "3c9a562cf923b5b23a7528083ddaee5fce194d9ab574269ea279de2bdf91967e"
-    },
-    {
-      "bytes": 11921,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_address_support.xsd",
-      "sha256": "0a07399b0f014880130074ed6196f50ade7be19075cf5c56d5db03f7a36b90cb"
-    },
-    {
-      "bytes": 18685,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_address_version.xsd",
-      "sha256": "b502f95474bd8b991ce9d4e31775aca67164b86b19b3157afa7d1390fbeb7e6b"
-    },
-    {
-      "bytes": 5341,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_all_objects_reusableComponents.xsd",
-      "sha256": "ea217785f26f0041730cdad0c2ad57de97c0ba238237a6f81a37af03fff226ee"
-    },
-    {
-      "bytes": 5151,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_availabilityCondition_support.xsd",
-      "sha256": "d8a88376a738a38d2b365b7dfaee5b053b1517eb1e6c398875f9dcd4059b4449"
-    },
-    {
-      "bytes": 13151,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_availabilityCondition_version.xsd",
-      "sha256": "711fb5692d4c4ff44daae69de8d2784ce6ac3b1d8b1e27e2a4e41dd600a74e08"
-    },
-    {
-      "bytes": 46982,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_country_support.xsd",
-      "sha256": "e5919aa7f159da79c2ea4a96802660a6dce1e3ac87d3241b53ced7774aa990a4"
-    },
-    {
-      "bytes": 14034,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_propertiesOfDay.xsd",
-      "sha256": "652b91a092bb2e66240fad38caacfcf6eefa9ea7ba6c7cc5877d4c1f4437b040"
-    },
-    {
-      "bytes": 10255,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_support.xsd",
-      "sha256": "ab9191f70a4ffa6d60f83796d0cd2244fe5c90ac2d8f12b5ff810388179c46e8"
-    },
-    {
-      "bytes": 16239,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_version.xsd",
-      "sha256": "3804f27b0d643c84c33e1d24888be1011c21966f437b24fd4891568afea0cb04"
-    },
-    {
-      "bytes": 13126,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPath_support.xsd",
-      "sha256": "814f6ceac61eb4530f4f8208d3f1e988bd1febf520fdff358104943762709a29"
-    },
-    {
-      "bytes": 21875,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPath_version.xsd",
-      "sha256": "e0e3176db44889691aff31d7f3ee9e3ab1e22ce847105e058f849faa47e94c63"
-    },
-    {
-      "bytes": 51232,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPlan_support.xsd",
-      "sha256": "2eb3cf489604a837fed149f46b3438e32264b1db3479ee06e7e165bb751b8271"
-    },
-    {
-      "bytes": 60119,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPlan_version.xsd",
-      "sha256": "3d3a5163ad1483de75b6be8cffaec93bb3fc1b41e6dc465f04db1c55d7ee0fe2"
-    },
-    {
-      "bytes": 22556,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_environment_support.xsd",
-      "sha256": "00ef659a0d5ecbe75c781857566306a570e91f79586151bc13edc48628fdfdbd"
-    },
-    {
-      "bytes": 7248,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_environment_version.xsd",
-      "sha256": "503461610b5cf4cc7072dbab339226b6d9b4347a93711c77670145a38692cf6d"
-    },
-    {
-      "bytes": 19549,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipment_support.xsd",
-      "sha256": "4423787398d6a935d1337b90fcc3bc21ab39f52b799b88551c8980ad281edb81"
-    },
-    {
-      "bytes": 13808,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipment_version.xsd",
-      "sha256": "77ceceb0e66c83c34cf2fe4c5a69b3773bef1476958a0cb3012a7813dcc5ec90"
-    },
-    {
-      "bytes": 9676,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentPlace_version.xsd",
-      "sha256": "a904ef40e9fe0646add774a0996d44c07df991e36b5f991a5940038cf9d9abc8"
-    },
-    {
-      "bytes": 15898,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentVehiclePassenger_support.xsd",
-      "sha256": "dc0ab37e5dbc6c2eba05ebaee8bed72f9a04e3fad0037331d1bbe0cc9fc78154"
-    },
-    {
-      "bytes": 18964,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentVehiclePassenger_version.xsd",
-      "sha256": "e630fdd1360f9c39fe4a83eee4fac87decf7f2eac2881b63dd8a8f549684d53e"
-    },
-    {
-      "bytes": 51406,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_facility_support.xsd",
-      "sha256": "fad949394cd38cf85934bd05289d78204b363c703169fcf1a432712631693ed8"
-    },
-    {
-      "bytes": 63670,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_facility_version.xsd",
-      "sha256": "d1752160e413ba326d45c6f5917370e634c252dca55f3ec817fb364b80119fa2"
-    },
-    {
-      "bytes": 4009,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_facilityUic_support.xsd",
-      "sha256": "df51e881c31c85409b06021fe51780caf9bac7a925ecc3c022f474bf646b54d6"
-    },
-    {
-      "bytes": 4937,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_linkByValue_support.xsd",
-      "sha256": "f59a6c0f3d880f750a7fa914ddb9d20638149012404470d2820cf89e650909c1"
-    },
-    {
-      "bytes": 21402,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_mode_support.xsd",
-      "sha256": "0edafc9c21ae2734944f4e0a1df536042b6fcce4272dbe2b9ea286f9f0d5e1f4"
-    },
-    {
-      "bytes": 8094,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_mode_version.xsd",
-      "sha256": "9e6240a70e4d532217e9724cfd6f61979a569a145c317c33e685e714e22accea"
-    },
-    {
-      "bytes": 30019,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_modeOfOperation_support.xsd",
-      "sha256": "2c866fc4c5efdb23ca701257f8cc3c3028f6d4619874c00c42057b950af940f8"
-    },
-    {
-      "bytes": 26459,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_modeOfOperation_version.xsd",
-      "sha256": "374a4c2387c0bbaf2c8270ab5e7c9db3f836ec3d1c9630e7f51f2e647543e7d9"
-    },
-    {
-      "bytes": 5157,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_chargingEquipmentProfile_support.xsd",
-      "sha256": "8fb704bf9877e9ef4a62cd6676f0c14d6c244795fda06a8a78079a07ec37b470"
-    },
-    {
-      "bytes": 6649,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_chargingEquipmentProfile_version.xsd",
-      "sha256": "fe966caedcf837d45605dcb19369cc5626249fb0adaac63683e38562a8232a54"
-    },
-    {
-      "bytes": 18713,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_equipmentEnergy_support.xsd",
-      "sha256": "07250daf46427aafdb8b49bc3024d9d60fbf0d862ad1c702b247b5ce58f6d670"
-    },
-    {
-      "bytes": 15101,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_equipmentEnergy_version.xsd",
-      "sha256": "5adfbd3bc6a971296c7137436a9f8ebed19e80228617e1f5ba26129359a84591"
-    },
-    {
-      "bytes": 7855,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleet_support.xsd",
-      "sha256": "fa2f9856b44701e461f8ecfa2615e78d219df42da20414251b38d0fd0d934653"
-    },
-    {
-      "bytes": 7252,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleet_version.xsd",
-      "sha256": "3a4881b21da09a8f0db031651f577f05e6bb82c7329548f6bfbbb5c071d3c17b"
-    },
-    {
-      "bytes": 11004,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleetEquipment_support.xsd",
-      "sha256": "bb0bde4c16fdef83ad53309977e13dd0808ad7e99632ce022b1f2e9186380a54"
-    },
-    {
-      "bytes": 15378,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleetEquipment_version.xsd",
-      "sha256": "1e1d76a7e8f9b7caabf6cd73498dc1174a20d37235851ac1b08df216b4a630ff"
-    },
-    {
-      "bytes": 15737,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_notice_support.xsd",
-      "sha256": "a1b88ca5ae741cb7cad658d4b3b962327cd189aa18920b9374d0f67dcfc7073c"
-    },
-    {
-      "bytes": 13306,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_notice_version.xsd",
-      "sha256": "3cd10be8694503ef0f9ad3e395af8a059565d6e63d13e44938f6eb7af9af82bd"
-    },
-    {
-      "bytes": 12560,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_noticeAssignment_version.xsd",
-      "sha256": "7cf82a67350c673d72095ddd4a32ab1de5d896ba1a235293c7e57a239e748fa0"
-    },
-    {
-      "bytes": 14933,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_otherOrganisation_support.xsd",
-      "sha256": "559e19a8aa81de872e94b459e323608f0f3c923603f81ce0e039175e7562f42e"
-    },
-    {
-      "bytes": 13665,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_otherOrganisation_version.xsd",
-      "sha256": "00a5c971987870abf9c6775a4c39c2d7f51d5943893de694e2d2dc059d7325b4"
-    },
-    {
-      "bytes": 7549,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_schematicMap_support.xsd",
-      "sha256": "d89168b0543a2ade4efc69b4be3e1625507087752fc0a15b79ea8994a4d3ba07"
-    },
-    {
-      "bytes": 9517,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_schematicMap_version.xsd",
-      "sha256": "2d2105251ec7f1d04c96a417c8bd8af995ff746ba1d67969237c89c740e22e0a"
-    },
-    {
-      "bytes": 27220,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_seatingPlan_support.xsd",
-      "sha256": "71034a7d5b3cc92efdc0c9f3e96292953c970776b0a5ecf4d97a06318f564822"
-    },
-    {
-      "bytes": 28698,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_seatingPlan_version.xsd",
-      "sha256": "e070fe289b442d8a54ec21a353028cae0f609465ab28843bfeac31d0f0949848"
-    },
-    {
-      "bytes": 16419,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_securityList_support.xsd",
-      "sha256": "4ee5acdfbe4af4d391fe0709ebb8cdf246af607bc3011436cef3daf8cd7f818a"
-    },
-    {
-      "bytes": 16629,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_securityList_version.xsd",
-      "sha256": "e8c4002d63e78af152735f12ed6af05921196dacc03b3872ca985a044976c7b0"
-    },
-    {
-      "bytes": 14817,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_sensorEquipment_support.xsd",
-      "sha256": "93e5cf2dd26d8e71c4805441903c427bb1f231639c2b5deda6f5d9c4b881db96"
-    },
-    {
-      "bytes": 14009,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_sensorEquipment_version.xsd",
-      "sha256": "f90ad290ed1c88b509a86565cb5a6b24b2ea0fbc042f8d36636f7e6e3a4f5c59"
-    },
-    {
-      "bytes": 14201,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceCalendar_support.xsd",
-      "sha256": "ac092ddb65916c0dafc22776ca7557b4c5ec20f1c02dc7a437910ffe0390180f"
-    },
-    {
-      "bytes": 26327,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceCalendar_version.xsd",
-      "sha256": "6e723923050fed093432daf2b139f4a370d95cbd0b582c7fdc1b7f0683d247cf"
-    },
-    {
-      "bytes": 46962,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceRestrictions_support.xsd",
-      "sha256": "9fdba0a61bdc8d501dba667143172995ddddba439b1e6907052ec7c6d9c4f6d5"
-    },
-    {
-      "bytes": 26767,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceRestrictions_version.xsd",
-      "sha256": "df9a5c7a5ecc94ff9af3018d769ee3a203ce83dbc7dceb9b295036663a46ee63"
-    },
-    {
-      "bytes": 7487,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotAffinity_support.xsd",
-      "sha256": "f70c9441a1ec8eff9f1760e7c22330357321828b884db14724b21245982bca94"
-    },
-    {
-      "bytes": 6703,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotAffinity_version.xsd",
-      "sha256": "93df74637fd67b17249c2934902cdd2f7f81200188ac4a038595811ea8c5b0d1"
-    },
-    {
-      "bytes": 13229,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotEquipment_support.xsd",
-      "sha256": "cd7db28cf9c14cb6a01dce28585f19b9fc6194c48fde8dfaa24514f2dfa1447b"
-    },
-    {
-      "bytes": 15875,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotEquipment_version.xsd",
-      "sha256": "2662c57d607c0d51ef5abdd1d5b227e97e2cb68ba2c8d620e490cc509a17bd45"
-    },
-    {
-      "bytes": 27781,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_submode_version.xsd",
-      "sha256": "cc4f6e496d55cf3f346c7b0a2e7b0f1c0dc921ea37f5277ff43850620fb8f553"
-    },
-    {
-      "bytes": 14049,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_topographicPlace_support.xsd",
-      "sha256": "a27ffea911544e427f0248662b97cf2c284f3288a5c87fc32f19da98dbcc3493"
-    },
-    {
-      "bytes": 19387,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_topographicPlace_version.xsd",
-      "sha256": "53cee880827ca15318e7ba01720d77616890717f3682ade895f7ecdc01cca066"
-    },
-    {
-      "bytes": 17176,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElement_support.xsd",
-      "sha256": "bc3ac42b522cf474d0e88d7f2bf42356527f49c7ba275b73fe5ef20757598af7"
-    },
-    {
-      "bytes": 29335,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElement_version.xsd",
-      "sha256": "beb1838fef8a2a0e6291b0518a4eb8fffb070ef2e9a046cd1b3a3107bc499268"
-    },
-    {
-      "bytes": 12426,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElementType_support.xsd",
-      "sha256": "34adadc5b894a8de9cf4d10fb019f674d1b51081543140faab4699ba6fd781e8"
-    },
-    {
-      "bytes": 11729,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElementType_version.xsd",
-      "sha256": "350c54dc7253d0df952de0a15ceabc8a7466c5f873d719c1ffac4b01bce71e43"
-    },
-    {
-      "bytes": 30034,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_transportOrganisation_support.xsd",
-      "sha256": "48a7c37c4a9c61c1b6b3297a0ce39a88f3916bfafbc405af61dd467bf9eca9ad"
-    },
-    {
-      "bytes": 30140,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_transportOrganisation_version.xsd",
-      "sha256": "26f1160e970cf1ba696811a28fc2201b47599dbeaa46b1a28542baf49775b85f"
-    },
-    {
-      "bytes": 18452,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicle_support.xsd",
-      "sha256": "7473d0f27631e17a9eaa01e3db513fbbc1bafe60f7ec1dec58878507ac1d9e9f"
-    },
-    {
-      "bytes": 22159,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicle_version.xsd",
-      "sha256": "4e8f6efab3a5b92f038df22fddf2a393d9178a15254d45c08f31139cccb28160"
-    },
-    {
-      "bytes": 6620,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleSeating_support.xsd",
-      "sha256": "7e101747e57def96c885b2ce2066f293b2800ffe57f307f3b2db9e2116630749"
-    },
-    {
-      "bytes": 52409,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleType_support.xsd",
-      "sha256": "38d6a9b598c213f6e04acc8afa6ebb92abc921acdb602b4ae2f904e1115037ca"
-    },
-    {
-      "bytes": 59582,
-      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleType_version.xsd",
-      "sha256": "cbe5f2bd2caed45f082be1c8643950c507ecee8218c583c37bd5ae6f3ba35706"
-    },
-    {
-      "bytes": 9460,
-      "path": "xsd/netex_framework/netex_utility/netex_location_types.xsd",
-      "sha256": "8dd39b99183638a1931c3cc274f631e9ae366e1c65ced2533697c8ce8782e335"
-    },
-    {
-      "bytes": 6943,
-      "path": "xsd/netex_framework/netex_utility/netex_units.xsd",
-      "sha256": "4427b458ccef6504d3023dd475c384b64e5ede8095f397239d2c9930513d17ee"
-    },
-    {
-      "bytes": 6029,
-      "path": "xsd/netex_framework/netex_utility/netex_utility_contact.xsd",
-      "sha256": "bab167dc636b748197a8dfe2731e0d58eb8a0ac3b8f57bc3ff905798a48905a8"
-    },
-    {
-      "bytes": 7218,
-      "path": "xsd/netex_framework/netex_utility/netex_utility_time.xsd",
-      "sha256": "e9c0f8b18f6233a0358217e53da3341902193695fdcf44cd80be45f0107ab791"
-    },
-    {
-      "bytes": 21921,
-      "path": "xsd/netex_framework/netex_utility/netex_utility_types.xsd",
-      "sha256": "27a204e0761b2014b6483deb0df567ee4ab13316ff90ba1b758bc3cc13c22359"
-    },
-    {
-      "bytes": 4777,
-      "path": "xsd/netex_framework/netex_utility/netex_utility_xml.xsd",
-      "sha256": "ca8752d0deb87759ac1074e5be39c51d579c0a4088297770de5d9aee3dcc95a0"
-    },
-    {
-      "bytes": 826,
-      "path": "xsd/netex_part_1/netex_all_frames_part1.xsd",
-      "sha256": "7b50d37864e6c273053249ea48f983fe59cc353dddbcb15df15625812f569c8a"
-    },
-    {
-      "bytes": 1160,
-      "path": "xsd/netex_part_1/netex_all_objects_part1.xsd",
-      "sha256": "481a8d9f4d6129a9e7cdc0ce27859467388581c886267a921e38e0a42effdf43"
-    },
-    {
-      "bytes": 9020,
-      "path": "xsd/netex_part_1/part1_frames/netex_infrastructureFrame_version.xsd",
-      "sha256": "a1aabd0be0156bd0d6c913af01423bceb7bda4d85232b302431f76be4410d0b5"
-    },
-    {
-      "bytes": 12149,
-      "path": "xsd/netex_part_1/part1_frames/netex_siteFrame_version.xsd",
-      "sha256": "3654f320e49e6f565009466c281030769c52408fe1311588e6a4981f972363b1"
-    },
-    {
-      "bytes": 5390,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_assistanceBooking_support.xsd",
-      "sha256": "cee9e20c0f100a2c41bbe5203591e04a6b70609c306b37a374c072a3d024cab1"
-    },
-    {
-      "bytes": 8756,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_assistanceBooking_version.xsd",
-      "sha256": "b0c2be37fd7f946afddbeb3e4b0cfb5cdca7e30479f255033c878d175ac12cc7"
-    },
-    {
-      "bytes": 3330,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_all_objects.xsd",
-      "sha256": "4f9ee3953bd3a0c65d0d73768f4a424feb0abf6951c6a8e970fdfa5c8ff1d203"
-    },
-    {
-      "bytes": 15680,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_checkConstraint_support.xsd",
-      "sha256": "fce32cdb16fb7ecd59184798a0fbaa9e69751e166e7831fe163dfa70153c154a"
-    },
-    {
-      "bytes": 20502,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_checkConstraint_version.xsd",
-      "sha256": "ec7e645e586d72af16e89941087e8011ea47d5b466314ff00e88a20ad0b0b237"
-    },
-    {
-      "bytes": 47232,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAccess_support.xsd",
-      "sha256": "2326887ea36bed24b59686e6d1964ce0dba14c0ff3e2e999335f9f112669c5be"
-    },
-    {
-      "bytes": 71830,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAccess_version.xsd",
-      "sha256": "7cf36732c834153ab042130722ec57f666759c7b09ce9ce420bfe9e2244a1687"
-    },
-    {
-      "bytes": 7230,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAll.xsd",
-      "sha256": "8ff66eb1ed888524d25afcf3f2b95d73d75a50e5f27f252ebf414b407c8f65f5"
-    },
-    {
-      "bytes": 9461,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentParking_support.xsd",
-      "sha256": "5aa6a432ffb1d5527691e9ee7501a6713668dd8d0adbf12b4050ea3c43f227d6"
-    },
-    {
-      "bytes": 8501,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentParking_version.xsd",
-      "sha256": "0d91c5d49908438b842a61ceb905b9db0a1fe352bcf2186728a96f06cd3a5623"
-    },
-    {
-      "bytes": 19034,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentPassenger_support.xsd",
-      "sha256": "27e5b6d7fac084fbe00364e9b383ab7f20902c376e913b1b97775d72cd412932"
-    },
-    {
-      "bytes": 25547,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentPassenger_version.xsd",
-      "sha256": "0a16304043414926c66cd30c9614e720affa4b299ebbee0231966219f3d5c6cf"
-    },
-    {
-      "bytes": 11462,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentSigns_support.xsd",
-      "sha256": "4db93345592a87a49b5bc2cb27b75a91f2211f4ae35cfa3d8f32beb74d36f338"
-    },
-    {
-      "bytes": 16619,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentSigns_version.xsd",
-      "sha256": "e82cdaac868f3c84b2093b9f9393e8905b0becec902709c6e46b7975cb23c414"
-    },
-    {
-      "bytes": 8597,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentTicketing_support.xsd",
-      "sha256": "6e433cac0574ed18ed8728b500e06510ad0be9f378419e927798757ecc40b28c"
-    },
-    {
-      "bytes": 13410,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentTicketing_version.xsd",
-      "sha256": "be8992e8ca27c2232694cc0c0708a281d008c8ac6a627b3eb988732c36c77e80"
-    },
-    {
-      "bytes": 20987,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentWaiting_support.xsd",
-      "sha256": "69dc07c4483b3cddace55e562520309f6006c4092e85593603e1a92afba59ea1"
-    },
-    {
-      "bytes": 23556,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentWaiting_version.xsd",
-      "sha256": "c58c81adf883b2e26c3487daeb67b4de6b4e324d6b28e006b444c8386e5c2da0"
-    },
-    {
-      "bytes": 12431,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_flexibleStopPlace_support.xsd",
-      "sha256": "fd514114e9a53977cbe5ce8287f51fa3f61fe6dc9055041aa48d11da75cda3d5"
-    },
-    {
-      "bytes": 20837,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_flexibleStopPlace_version.xsd",
-      "sha256": "083543f4719f928f9aaadcf2711756689c83cec71ed5372563a9bb3a2011ef6c"
-    },
-    {
-      "bytes": 23609,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localService_support.xsd",
-      "sha256": "a920e7613cf3ef65cf593f1499ded9902e19a1a8c8051036eb35c7d1f39a6ddb"
-    },
-    {
-      "bytes": 28194,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localService_version.xsd",
-      "sha256": "49390db64a8c4941d2b0bcb8c2c641de08fc0c48b0680423f1e57470000fee6c"
-    },
-    {
-      "bytes": 16900,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localServiceCommercial_support.xsd",
-      "sha256": "c9005d2ff2243e2981d11794da6b24e43ff5e4928509bf6000ae5a79c0d25475"
-    },
-    {
-      "bytes": 13532,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localServiceCommercial_version.xsd",
-      "sha256": "63f76e80b99abdf73dfa15e7f2f7b7c7482a7310879cac5687265d9b4f84e747"
-    },
-    {
-      "bytes": 14307,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_navigationPath_version.xsd",
-      "sha256": "40b85d0d397dd15ccd8368f31f05474b5555b58bec2358cbd19d00b6c4d862fa"
-    },
-    {
-      "bytes": 39239,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_parking_support.xsd",
-      "sha256": "323eb5fd20aea80b858b4f5ae4acb8cf97d4d561cb42fe5e7a14df234a24603a"
-    },
-    {
-      "bytes": 45749,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_parking_version.xsd",
-      "sha256": "7b17788109de24fa44888023b0dd09dbe32a94c7788dfbf57b8c57978ee2bf0c"
-    },
-    {
-      "bytes": 15008,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_path_support.xsd",
-      "sha256": "02630d2824fefadbac924df2e7ffb6b36b9591d279cdd4fa439102c915e3a390"
-    },
-    {
-      "bytes": 17908,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_path_version.xsd",
-      "sha256": "ebab48fd88521cb66bbcb06af051fcdd158583b42b7825b842d9cb712714c910"
-    },
-    {
-      "bytes": 20360,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_pointOfInterest_support.xsd",
-      "sha256": "e997efecf77e9cd5b6c7106a5a5235923b7c280678561248976119abf69445d0"
-    },
-    {
-      "bytes": 31216,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_pointOfInterest_version.xsd",
-      "sha256": "e23fd4045f56bddc8aa37c6e93db99bb97246ef9e07cb857d2e9835bf4c9ce77"
-    },
-    {
-      "bytes": 5543,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_serviceFeature_support.xsd",
-      "sha256": "96078aa03ff1133949db4873129fd294f50f076c59b257a23fd3c35854c601bf"
-    },
-    {
-      "bytes": 4206,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_serviceFeature_version.xsd",
-      "sha256": "bf64315f4dd455929eda6d1509fa6dc47185a21ca8468d80e5e17232706d4837"
-    },
-    {
-      "bytes": 32375,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_site_support.xsd",
-      "sha256": "7118bad65b9c18a6ec4b29c946f963dfcc4d0b4d681ed4acf9a899e9d0b478ba"
-    },
-    {
-      "bytes": 41560,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_site_version.xsd",
-      "sha256": "e2d9efc57707b91319acd3ad087557e37711935f709c2698a13bfa66612dcb9d"
-    },
-    {
-      "bytes": 32128,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_stopPlace_support.xsd",
-      "sha256": "56904b4603bd546669933b1d3dd86911e59a937794cd7a3ef9557555a8a16a8f"
-    },
-    {
-      "bytes": 63573,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_stopPlace_version.xsd",
-      "sha256": "ce51637afb4a19b2e78ff3b72f8b14e9b3b88c5b444e20f672dd1792ea09943b"
-    },
-    {
-      "bytes": 12765,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_vehicleStopping_support.xsd",
-      "sha256": "649cbd1eb6c3e64e5d4c570b3946412de43b103aa2011c4a041fbd94ddadf8f1"
-    },
-    {
-      "bytes": 10133,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_rechargingPointAssignment_support.xsd",
-      "sha256": "c6058a1d705985bb6fb0241c8f5fd65f0f78044fac4a9b84e8b1cd739ac4d405"
-    },
-    {
-      "bytes": 12168,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_rechargingPointAssignment_version.xsd",
-      "sha256": "135c6149daad03f7d2511d395a4caba51336aefa480763f2001323b51a68703f"
-    },
-    {
-      "bytes": 10306,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_taxiPlace_support.xsd",
-      "sha256": "eda1380cf45b5919bc03e519a4d074b30f9cdac24c3336ae2fc36fd12ee5080c"
-    },
-    {
-      "bytes": 12883,
-      "path": "xsd/netex_part_1/part1_ifopt/netex_taxiPlace_version.xsd",
-      "sha256": "446faa82aaecfc8ee4b89afee7efb2c2e23822c335f7356753e878051d8e88f0"
-    },
-    {
-      "bytes": 21389,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_activation_support.xsd",
-      "sha256": "1e302fec4c474c34fcd5d2dd1a85253c6ec301a573f3ece4439f8e60a62bf38e"
-    },
-    {
-      "bytes": 21269,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_activation_version.xsd",
-      "sha256": "5cfff1ea82203afc37322d022a87978a1c921e91738f32eaa7c32a9079ad3b1b"
-    },
-    {
-      "bytes": 1263,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_infrastructureFrame_contents.xsd",
-      "sha256": "830add6aed62a5db0d5c34e698e74d728f1f056cdaa71c805377c45eb0380668"
-    },
-    {
-      "bytes": 1315,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_lineRoute.xsd",
-      "sha256": "4b15f847e2d57b9c2a936f6fd385c7735e330933b3fd9b31a140199a22a29369"
-    },
-    {
-      "bytes": 877,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_networkDescription.xsd",
-      "sha256": "5a9910811e9c51704d033e038770c7dbc46a8698458b77086c6c9a8cb35a952a"
-    },
-    {
-      "bytes": 12612,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_flexibleNetwork_support.xsd",
-      "sha256": "3d2c47195db30ec77c40b37db57aabbfbc4c912a81be5a6e5c1847478ad7c765"
-    },
-    {
-      "bytes": 16610,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_flexibleNetwork_version.xsd",
-      "sha256": "1b6d8264dac22a431413fa9f68cdf45a6fdc5a7b1ffdaf2f88219b29f38b894f"
-    },
-    {
-      "bytes": 24691,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_line_support.xsd",
-      "sha256": "59b22a4f1cb2cc12e566144a77d78f48775f320835fcdd32575b0ca065ce2916"
-    },
-    {
-      "bytes": 50491,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_line_version.xsd",
-      "sha256": "0f3889fbba7f6c593320fcbff115ef143ac3ae37bb2a61e3795de343ad4805ed"
-    },
-    {
-      "bytes": 12756,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_lineNetwork_support.xsd",
-      "sha256": "25b523dce8a4ee5d35dc51c577400b8ec39552e7e9419eebca80d9119a3cab19"
-    },
-    {
-      "bytes": 15252,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_lineNetwork_version.xsd",
-      "sha256": "52f4ae03a3c5326209ae27df58502181af6a219c77bc72f527c0648c699d5f7a"
-    },
-    {
-      "bytes": 25832,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkInfrastructure_support.xsd",
-      "sha256": "f873df2e6c09e888ae7243fc31dcdbe620285a85b550045d04008dd74deecfd7"
-    },
-    {
-      "bytes": 18008,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkInfrastructure_version.xsd",
-      "sha256": "9c311974911b650d3135913c43f96987e97afa5f85154f6fc465324c7d281244"
-    },
-    {
-      "bytes": 17502,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkRestriction_support.xsd",
-      "sha256": "87d860a2b8bb124c5f8943c798d757247b685aede55b647cdddaed35d0927810"
-    },
-    {
-      "bytes": 21532,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkRestriction_version.xsd",
-      "sha256": "6284ad90a03c15f3ebd068b5d47fe2519104096bcee07a95556e0767a70bbeed"
-    },
-    {
-      "bytes": 19236,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_route_support.xsd",
-      "sha256": "d7f3601a28fc3c9f5ca3ea83012ff3783dc8274e77e508b5fbd434fc25dcc749"
-    },
-    {
-      "bytes": 26601,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_route_version.xsd",
-      "sha256": "18a034ea204378fee94cade32a2e1857b001d71a08674e02164823663cd537d0"
-    },
-    {
-      "bytes": 5458,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_routeInstruction_support.xsd",
-      "sha256": "cf24c903c55612e129d3200e2f9a1eb0df681930dee772c6d633a9c6e7f5b550"
-    },
-    {
-      "bytes": 7824,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_routeInstruction_version.xsd",
-      "sha256": "86343f40dd07e0feecd456e632ff545c2a75dea7b4ccc0e724389db045372e4c"
-    },
-    {
-      "bytes": 14156,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_timingPattern_support.xsd",
-      "sha256": "4f29270c56a2e9a258dc5b1106f14a55f7488b7e15fd3d72f77654be0250abb4"
-    },
-    {
-      "bytes": 15489,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_vehicleAndCrewPoint_support.xsd",
-      "sha256": "b58330d949423ded8eae2892e67fc01ce8d64f18afc1fb36bdf453045f1c3800"
-    },
-    {
-      "bytes": 17027,
-      "path": "xsd/netex_part_1/part1_networkDescription/netex_vehicleAndCrewPoint_version.xsd",
-      "sha256": "ef06774787fa67ff7e00aa30f9588e1438c0681a711fbb7b2192a45065dcb199"
-    },
-    {
-      "bytes": 2491,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_all_objects_part1_tacticalPlanning.xsd",
-      "sha256": "ad0eac778f80ff5d19d3e6a4cc6c5146a1864cb20ec979f1bba761d32780ce8b"
-    },
-    {
-      "bytes": 5355,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_commonSection_support.xsd",
-      "sha256": "4d6fab09a34b01f8878cbda69ade48648e6bf23104cfd146df4b99cbb849d1a3"
-    },
-    {
-      "bytes": 7343,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_commonSection_version.xsd",
-      "sha256": "ed2b2a39dc34f508997eab394cfd67dfad1b7ca66084ca3f8bef43a1a52cc30d"
-    },
-    {
-      "bytes": 20155,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_fareZone_support.xsd",
-      "sha256": "c5f9d71e928c11cc583eafd2cf77a3a0928dbfcf40e54d25d4604582fa24344e"
-    },
-    {
-      "bytes": 26031,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_fareZone_version.xsd",
-      "sha256": "82cdcce2bf7f1b94afe5d775f5e7809af17fc71439e4be3e4bd9b14de190b921"
-    },
-    {
-      "bytes": 20972,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPattern_support.xsd",
-      "sha256": "0960a0d9c197dd30f232985afb7ebc817120435175fad8add872b2f287217b14"
-    },
-    {
-      "bytes": 20839,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPattern_version.xsd",
-      "sha256": "b4ddd68db68131d30da66700dfaea3895f2acdeec1e2f28fa18c3c87f37380bb"
-    },
-    {
-      "bytes": 12772,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPatternTimings_support.xsd",
-      "sha256": "23b52362b5727c8be990d3ae1e60d500621346d1ffed7bf1848cdb646c44d011"
-    },
-    {
-      "bytes": 15127,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPatternTimings_version.xsd",
-      "sha256": "55cd178ab7349e535bdd15ca1cf72a401eae80da76c66be354d4db1db75642a9"
-    },
-    {
-      "bytes": 15896,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyTiming_support.xsd",
-      "sha256": "5ae74ce4c80f0f576d0854c11e2184be935b4e907b21534f421e2c2e2c0efd4c"
-    },
-    {
-      "bytes": 18702,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyTiming_version.xsd",
-      "sha256": "946e6f508991f123104ca67f4af43a9c04e0bbe7e33451a3a444741a6cd25ab4"
-    },
-    {
-      "bytes": 13426,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_passengerInformationEquipment_support.xsd",
-      "sha256": "08a8653b905e56939cf234854d2522c8be3a4db5f44294d7769da26295692950"
-    },
-    {
-      "bytes": 21557,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_passengerInformationEquipment_version.xsd",
-      "sha256": "1ec2d6df017deeb759b5abcbf2b7c57ca4df0e09cfa8d02aa03dc45e400909b6"
-    },
-    {
-      "bytes": 4800,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_pathAssignment_version.xsd",
-      "sha256": "f214adc8fecb073d3c46da5477e9c267d8293775754186adfa55e5eb76c3df94"
-    },
-    {
-      "bytes": 12570,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_routingConstraint_support.xsd",
-      "sha256": "d6137228840cdea10195f035364afc7bc39ea9c1b178b50137d63b45b29d50fe"
-    },
-    {
-      "bytes": 18228,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_routingConstraint_version.xsd",
-      "sha256": "ff762f5cec9a765a26673468e67af4e625a7c79333051e6c47014fe255dcfa5c"
-    },
-    {
-      "bytes": 31937,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_servicePattern_support.xsd",
-      "sha256": "037285f4d6cca83f9cb73c3893f5ae316600f2b6910075c04de124f0eefc0e85"
-    },
-    {
-      "bytes": 51533,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_servicePattern_version.xsd",
-      "sha256": "5e017a6226bea51eda8d75476b4a9fb40184d2f7cee02fab8404a81b605e6f07"
-    },
-    {
-      "bytes": 7507,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_siteConnection_support.xsd",
-      "sha256": "6528a416a54f02a8cfb90e5bd884f2e4f96d55b81541e743a8aa7e64fbaebfe9"
-    },
-    {
-      "bytes": 12088,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_siteConnection_version.xsd",
-      "sha256": "10d9c76b0ef775821d2ceb42236a9a0d172598629464b77faaa9a06097f76045"
-    },
-    {
-      "bytes": 14894,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_stopAssignment_support.xsd",
-      "sha256": "71c6a8dff2aa078c67e579f812f86712b3b967c57bc29cef46402a0a4eceea15"
-    },
-    {
-      "bytes": 22829,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_stopAssignment_version.xsd",
-      "sha256": "cb03b808430fc8aa4fb4ee40247bef018e5d3237e7c82d53fb9324f50041c79d"
-    },
-    {
-      "bytes": 15997,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timeDemandType_support.xsd",
-      "sha256": "928dd9482c71fce00dd7015a1a42c34726e653d089299077958244ea3e048dfc"
-    },
-    {
-      "bytes": 15876,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timeDemandType_version.xsd",
-      "sha256": "59e94a975874875b439abf328eb99c0855fa9527d902ea496a0cfdf62f3cda29"
-    },
-    {
-      "bytes": 25212,
-      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timingPattern_version.xsd",
-      "sha256": "01060696d2a81fc619995f2c8728e4cf60d3d954de3e50005d8ddf4c5b4dc7fb"
-    },
-    {
-      "bytes": 3535,
-      "path": "xsd/netex_part_2/netex_all_frames_part2.xsd",
-      "sha256": "69bef603185497ea64db20ecc394467074e25e7d8a011373a367256029618767"
-    },
-    {
-      "bytes": 3627,
-      "path": "xsd/netex_part_2/netex_all_objects_part2.xsd",
-      "sha256": "124807dcf0c762fde17610d3e33b83b899d2b78254e32437286770f232eebed5"
-    },
-    {
-      "bytes": 2479,
-      "path": "xsd/netex_part_2/part2_frames/netex_driverScheduleFrame_version.xsd",
-      "sha256": "699c54c04b8df173a7641b62574da213457d0b56eeaf90e620f9943a12c5aaea"
-    },
-    {
-      "bytes": 7743,
-      "path": "xsd/netex_part_2/part2_frames/netex_serviceFrame_version.xsd",
-      "sha256": "9141dcfbfb34a069d3c48a3af52549e66dd04f290e3f5427428a98417da7a573"
-    },
-    {
-      "bytes": 9695,
-      "path": "xsd/netex_part_2/part2_frames/netex_timetableFrame_support.xsd",
-      "sha256": "d72bed49c81502b8f850b7cf1b88b2ba1d6bc5c93b2223ab56210bc8f00bd439"
-    },
-    {
-      "bytes": 11883,
-      "path": "xsd/netex_part_2/part2_frames/netex_timetableFrame_version.xsd",
-      "sha256": "f0ff4b05b55a1b0333801a6c31657f47711783e1039b28d424ccfd2efc50a917"
-    },
-    {
-      "bytes": 3652,
-      "path": "xsd/netex_part_2/part2_frames/netex_vehicleScheduleFrame_version.xsd",
-      "sha256": "a5aa3f88b59348b1f288cb367468ca8c99345636491322f8a7fce9119a332773"
-    },
-    {
-      "bytes": 906,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_all_objects_part2_journeyAssignments.xsd",
-      "sha256": "7d5d962033a856bfb5753f500031a111cb0ff143579ec55ef2fb23d03dac3432"
-    },
-    {
-      "bytes": 2507,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_all_objects_part2_journeyTimes.xsd",
-      "sha256": "88902267cda7f7ce0c20d868ad3c145260f9e0b7d70e3f02daa798895dbd30d9"
-    },
-    {
-      "bytes": 5553,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_call_support.xsd",
-      "sha256": "47bd2f50592cc9b2881f7051a09fb8d3b787efc0b71b923adadebc00b0d694da"
-    },
-    {
-      "bytes": 19862,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_call_version.xsd",
-      "sha256": "94db5f8122192b813d76df55f7e0e411d01c43d3d2f36d2ced288424a0a0c741"
-    },
-    {
-      "bytes": 23955,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_coupledJourney_support.xsd",
-      "sha256": "4f1fe7bc799072383d29bafe7197d545d483a5551525417426738c66e4d052fb"
-    },
-    {
-      "bytes": 23777,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_coupledJourney_version.xsd",
-      "sha256": "48277a448f22a9e44079ed0546f75e0417796e68cf10bffdbcc980b8a9a576c6"
-    },
-    {
-      "bytes": 13460,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedPassingTimes_version.xsd",
-      "sha256": "9b9839c89f8c819091775117510d08c91f14beb4d02dfb63472eb00a2ac12206"
-    },
-    {
-      "bytes": 11764,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedVehicleJourney_support.xsd",
-      "sha256": "8e08c650eee2a013b3dc9891a08fe7fe61da95bdd852deffa0e2e7f5006e7446"
-    },
-    {
-      "bytes": 17690,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedVehicleJourney_version.xsd",
-      "sha256": "4e29b7bae5feafe256f9aa66de227a6ec33cef127fc0987716212e80eae306d4"
-    },
-    {
-      "bytes": 9110,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckEntranceAssignment_support.xsd",
-      "sha256": "af2fbd275d3cddc60cd7c29ba3d2bebebe863485c264af898ebe64fa0ec99242"
-    },
-    {
-      "bytes": 9438,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckEntranceAssignment_version.xsd",
-      "sha256": "5145e99fc164b99df84c8972bca8ef8086a7e5f99b1ad6a7588ae5879b6eab98"
-    },
-    {
-      "bytes": 6015,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckPlanAssignment_support.xsd",
-      "sha256": "8f0fff09c46d0772a22169e6dd7acc2d161b95da0c2e0768157ea1c4f6464f65"
-    },
-    {
-      "bytes": 7339,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckPlanAssignment_version.xsd",
-      "sha256": "72caa7b353588c98cdc0c4194a5506f037ff1d72591e94f50cf08fa66eeaf73b"
-    },
-    {
-      "bytes": 10920,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_flexibleService_support.xsd",
-      "sha256": "524862c64471d61462394f25213859592731c1752d401a5667e70fa3834bd087"
-    },
-    {
-      "bytes": 12035,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_flexibleService_version.xsd",
-      "sha256": "a4f51ccc1f7b5db20a731cd21cce4496e7ce062f561b8b9eaebd94f66ec049e1"
-    },
-    {
-      "bytes": 21931,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchange_support.xsd",
-      "sha256": "5aa9f72c913fab4e76cdc068028d3e4ae19be44cfc2db87ae5647dc5c165d573"
-    },
-    {
-      "bytes": 40421,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchange_version.xsd",
-      "sha256": "5a7b38aa3749b7cf2b5e1697b3928f20cea4cf04a612a0eea78e9b0eb72ec9a0"
-    },
-    {
-      "bytes": 19497,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchangeRule_version.xsd",
-      "sha256": "0b0e342b4f35abed292ff890d59749a30dbc8c8e164fccbf1df1b0dc5cd9c245"
-    },
-    {
-      "bytes": 7653,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journey_facility_support.xsd",
-      "sha256": "74b875f15f0ad7c2b0e3edc1a763810824bc974ca12f93b05afd2dbf0b61333a"
-    },
-    {
-      "bytes": 7253,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journey_version.xsd",
-      "sha256": "3e62d5b8cfade9d463d3c6c38f46877e3518f0798b995c70be4b3c3b2569ff73"
-    },
-    {
-      "bytes": 9196,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyAccounting_support.xsd",
-      "sha256": "0313145e3b6d8d4ea7d4b59345dfc6ee3db91db008a5c44b46af4e94f9da0951"
-    },
-    {
-      "bytes": 8445,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyAccounting_version.xsd",
-      "sha256": "df771989df560844599e7324efd821da7f5cb91917c82f480de0deafb368ff1c"
-    },
-    {
-      "bytes": 9147,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyDesignator_support.xsd",
-      "sha256": "3603ff667b928bce3bc4b5815f3206693296be5935003e7765933ab94ae81eef"
-    },
-    {
-      "bytes": 5307,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passengerAtStopTime_support.xsd",
-      "sha256": "866fc26cebebeaa2d466f61f9dd156f495835898afe989839f4c1b3e555484c7"
-    },
-    {
-      "bytes": 6837,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passengerAtStopTime_version.xsd",
-      "sha256": "5c008d2c7119d21d29eac6a9473000dd1eb2d2df330f1d7f2ac6bbcfed6f6e7e"
-    },
-    {
-      "bytes": 14783,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passingTimes_support.xsd",
-      "sha256": "d60fbac99d84ea792d39805f7a961f5b4ade9a6ccf44e4c7560b4c39df3cff9f"
-    },
-    {
-      "bytes": 9721,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passingTimes_version.xsd",
-      "sha256": "5ae72be29d0515d37133e92e4d60af6fd0883c4bc3e7084942d82102e3aa1fc5"
-    },
-    {
-      "bytes": 13389,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceJourney_support.xsd",
-      "sha256": "d781648c573548e2a4d6b60407614019f2595b59060249f721b82db6e7e91e6c"
-    },
-    {
-      "bytes": 31459,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceJourney_version.xsd",
-      "sha256": "d620df47dfa0be66763f8be1e849123aff3ce9be448b45f6fbab7154c64dc429"
-    },
-    {
-      "bytes": 568,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceView_version.xsd",
-      "sha256": "7a33aeff4d245e9841971cd8cb089c5d77baa64d4b4cc5f5796c5973aabee2ed"
-    },
-    {
-      "bytes": 8701,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_timeDemandProfile_version.xsd",
-      "sha256": "badd99df022b05a58c1158fa68bf8b49e02913d48621e6edf7895a68e48ca1d2"
-    },
-    {
-      "bytes": 8761,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_timeDemandTimes_version.xsd",
-      "sha256": "bb5f34193e0e6d8a22df8f374f8190ebbba54733d930df99e346451daea43b2c"
-    },
-    {
-      "bytes": 16951,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourney_support.xsd",
-      "sha256": "3f5aeec71a339589c42e0246eabf0846afa28319d7eb5fa246f5663d7fb9a64c"
-    },
-    {
-      "bytes": 21058,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourney_version.xsd",
-      "sha256": "2d0d402180b8b2342bab1fd25d289befadda658169c5f475c809300aee31ef6c"
-    },
-    {
-      "bytes": 14258,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyFrequency_support.xsd",
-      "sha256": "406e7cc0106395566cc47adc7b4bf814e8c5b75dfed7b71ac08b3b5e4db73bcd"
-    },
-    {
-      "bytes": 17611,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyFrequency_version.xsd",
-      "sha256": "d5416043cc6e69a9afa58df3cd9974051265fdc7bf05986d8e603e909c74e58f"
-    },
-    {
-      "bytes": 13419,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyStopAssignment_support.xsd",
-      "sha256": "33714a66d3697c30fb51deeb93b2714b9bfdb401f335353cfba8199767d09121"
-    },
-    {
-      "bytes": 17759,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyStopAssignment_version.xsd",
-      "sha256": "7924bf2b8a295edc4b583cc0df1c4f13adf3997be54ff2b66b4233e0793e3c7a"
-    },
-    {
-      "bytes": 4207,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyTimes_support.xsd",
-      "sha256": "6001dffe919564da68e55e19ecf9fd39e5708c8a99047df9fae5d97481b37280"
-    },
-    {
-      "bytes": 11134,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyTimes_version.xsd",
-      "sha256": "6efdab5bb10ba587d217e92d49d94f1a2e2108a04dca5474ed1521fd27560ce3"
-    },
-    {
-      "bytes": 16709,
-      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleService_support.xsd",
-      "sha256": "1ea3e2fdf69d85f850224b498fbf702688f71806fea677d0b2509c57a7b408c6"
-    },
-    {
-      "bytes": 4155,
-      "path": "xsd/netex_part_2/part2_occupancy/netex_oc_occupancy_support.xsd",
-      "sha256": "83af449091f7e043d20ad9a8f76c5de4d3c9cf56d6a7c33483b1d82c8dffce51"
-    },
-    {
-      "bytes": 12771,
-      "path": "xsd/netex_part_2/part2_occupancy/netex_oc_occupancy_version.xsd",
-      "sha256": "03e220afa368ac73b5d3d6d59e63da1fdc115a0ded2d1948ef501f4ec51900a8"
-    },
-    {
-      "bytes": 3321,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_all_objects_part2_vehicleService.xsd",
-      "sha256": "6c9465ea87920dfb1a458be924af88bd10faf484d0c08064b6fe2ff8fab05fd3"
-    },
-    {
-      "bytes": 14245,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_duty_support.xsd",
-      "sha256": "2e0ba2b03b54236e140119c4469b4ac201595aa01e97617a131b2cb7fb6a7da0"
-    },
-    {
-      "bytes": 21360,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_duty_version.xsd",
-      "sha256": "82bd6e8e25fdc2e4498d373b30d28b839ea62dfdf6b5771fcff21742f6930ba7"
-    },
-    {
-      "bytes": 7928,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleRechargingPlan_support.xsd",
-      "sha256": "0d45518f932a5890967d43cf0b04d4cf27b2adc5285681392a25e507a598bf84"
-    },
-    {
-      "bytes": 15272,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleRechargingPlan_version.xsd",
-      "sha256": "fa968af3f56d64e786aae37f57bca5afacff235df261ba8e71cdfb18a66d14a0"
-    },
-    {
-      "bytes": 36627,
-      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleService_version.xsd",
-      "sha256": "8ef2a6fcedf78174db842657f0b2eae219474160fe9e4ab2d2aa008701dc44c3"
-    },
-    {
-      "bytes": 17961,
-      "path": "xsd/netex_part_3/part3_fares/netex_accessRightParameter_support.xsd",
-      "sha256": "94a06d57c01ebb0a7f87487b57f634490aeed1678055baf1984faded9e6250f5"
-    },
-    {
-      "bytes": 53668,
-      "path": "xsd/netex_part_3/part3_fares/netex_accessRightParameter_version.xsd",
-      "sha256": "ffd2676cc98f44e2a102fe6754cb164bec0e37707fc9174073c8ef08639b40f5"
-    },
-    {
-      "bytes": 751,
-      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares.xsd",
-      "sha256": "01e9abc24eb037e8664adbb9ffd339372cb05e0ebc6ea4c9924cea39191696ad"
-    },
-    {
-      "bytes": 2153,
-      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_AR.xsd",
-      "sha256": "77d5d47e6bbae27c6eff43515cb94bccb474d33a9aea1a1f75de94126ba85eed"
-    },
-    {
-      "bytes": 866,
-      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_FP.xsd",
-      "sha256": "de2c691c108b2801b5a36c8ad27037a8a44b5dfb27c8f97484b02670d20ab1f7"
-    },
-    {
-      "bytes": 1610,
-      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_FS.xsd",
-      "sha256": "4b70ea92b1dde8d8854cc4c87dbe74a1216362bbe1ec248c1164dfaea3c83502"
-    },
-    {
-      "bytes": 1058,
-      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_SD.xsd",
-      "sha256": "9c952fe2a697671b089bc2bad281bfbc5f13cddf4276d729e59816ab08c28dba"
-    },
-    {
-      "bytes": 30670,
-      "path": "xsd/netex_part_3/part3_fares/netex_calculationParameters_support.xsd",
-      "sha256": "35cf107723c1a2e6fdf0e2bf489470a6948eda006ff34a2bd23064695c0eb5fb"
-    },
-    {
-      "bytes": 36474,
-      "path": "xsd/netex_part_3/part3_fares/netex_calculationParameters_version.xsd",
-      "sha256": "362b23314e51b29c0943327d4c9da5e14802ae7cc0be5dd6068ac60c63cdb508"
-    },
-    {
-      "bytes": 13898,
-      "path": "xsd/netex_part_3/part3_fares/netex_distanceMatrixElement_support.xsd",
-      "sha256": "740e008e1d10aabf0a35171a951a971b81bb3ea296bb455b904c4bab5442ea06"
-    },
-    {
-      "bytes": 25785,
-      "path": "xsd/netex_part_3/part3_fares/netex_distanceMatrixElement_version.xsd",
-      "sha256": "6648edf81255ffe0348dbe8db000c454b2db7d8fb3c6526c7c4c2ece2b35bfb4"
-    },
-    {
-      "bytes": 5734,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareConditionSummary_support.xsd",
-      "sha256": "fe91535dd85970f52a8f804acfcaa720328f9d649f26c3882c4ec67a35d43bef"
-    },
-    {
-      "bytes": 16688,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareConditionSummary_version.xsd",
-      "sha256": "b4020fd4ae30b7e1334fe05f631b47720108c7c01ee481246161418e2d9bea0a"
-    },
-    {
-      "bytes": 10920,
-      "path": "xsd/netex_part_3/part3_fares/netex_farePrice_support.xsd",
-      "sha256": "5a59f094cd6938461be1d320ceaa49e801c49586b3c4f4738811fa8afd38a160"
-    },
-    {
-      "bytes": 24600,
-      "path": "xsd/netex_part_3/part3_fares/netex_farePrice_version.xsd",
-      "sha256": "78254df1bd6d6d14c445991c8d6832de5d45064a437b7504d37743a78efd0eec"
-    },
-    {
-      "bytes": 52362,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareProduct_support.xsd",
-      "sha256": "339c61b192a2f5b299b79331200f961da86adc9fd9f3e906343966dbd492222b"
-    },
-    {
-      "bytes": 49639,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareProduct_version.xsd",
-      "sha256": "8d01b3a42bd68be50d65718dcbf4c9b593d6d4176869db7538ebdc58b5394d8d"
-    },
-    {
-      "bytes": 12569,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareSeries_support.xsd",
-      "sha256": "770c00bad54dae1d498ccc9f1de948d4f9433508238f0ecb604abcb0da3cf00d"
-    },
-    {
-      "bytes": 17890,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareSeries_version.xsd",
-      "sha256": "420673b7783126f4c6588aa29514a45d91d3ddefa8e15d672a8800a70f534a7b"
-    },
-    {
-      "bytes": 15648,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareStructure_support.xsd",
-      "sha256": "dcc049f22d8134d4b25086e52190b392b6958ecc431feae6e7b865cb2dd5724b"
-    },
-    {
-      "bytes": 15329,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareStructure_version.xsd",
-      "sha256": "a08b9e64038eed640f8b49bd32b7ea72bd9d00bac05f62f792193f5301c0d15c"
-    },
-    {
-      "bytes": 21623,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareStructureElement_support.xsd",
-      "sha256": "1ec0b4691488c8b22a2e95503f65bf786183acfe0ed31ad8859dad43af07d35b"
-    },
-    {
-      "bytes": 29975,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareStructureElement_version.xsd",
-      "sha256": "51f699210747b025e7e443e8dd580f5926b58661d18c34469e3e01f10a346ae9"
-    },
-    {
-      "bytes": 18017,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareTable_support.xsd",
-      "sha256": "e1934080f636b33c4664c6dcbc7b7c263a23baef2d3f3878b6c58bd928679821"
-    },
-    {
-      "bytes": 43084,
-      "path": "xsd/netex_part_3/part3_fares/netex_fareTable_version.xsd",
-      "sha256": "b8e862f11da00e72389eedf5d8981959adf20c3da95f788b02896ca79ae94a65"
-    },
-    {
-      "bytes": 15436,
-      "path": "xsd/netex_part_3/part3_fares/netex_geographicStructureFactor_support.xsd",
-      "sha256": "3b19b8415f5e848abf235a71fe5247b54be81515547f367ac788ca0fdb3464d0"
-    },
-    {
-      "bytes": 20796,
-      "path": "xsd/netex_part_3/part3_fares/netex_geographicStructureFactor_version.xsd",
-      "sha256": "5426e2fcf5875c68344795228bda11138a43db9d286af85562dcdc22d12cb1bf"
-    },
-    {
-      "bytes": 15969,
-      "path": "xsd/netex_part_3/part3_fares/netex_qualityStructureFactor_support.xsd",
-      "sha256": "aa843fc3ac41cbb77ed184d4ad3d7c6beb27198d406c86b9f54d35e3c6b87674"
-    },
-    {
-      "bytes": 20363,
-      "path": "xsd/netex_part_3/part3_fares/netex_qualityStructureFactor_version.xsd",
-      "sha256": "c00b17cc894eaf6094893b6f9a11d1d8420dd0ad34b6d914734b86b05f36dd11"
-    },
-    {
-      "bytes": 19072,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesDistribution_support.xsd",
-      "sha256": "0a48d4337d164b02315d8b5d3787dfffa49e3684ddc8f734336ea7942355a427"
-    },
-    {
-      "bytes": 21002,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesDistribution_version.xsd",
-      "sha256": "f40d1c4eeea16f02c99d81512ae8c5b1f1c297d9503fe3a5c6019cc746acffd3"
-    },
-    {
-      "bytes": 23869,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackage_support.xsd",
-      "sha256": "c10977343df37fc46c8b1ae8e5afd9467a981d6173118e1f9e14f34ce0d792b6"
-    },
-    {
-      "bytes": 36242,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackage_version.xsd",
-      "sha256": "ad73dac8d4cecf662e6d73b9ce390212a67d3a5898659085b074d9c71433b4bf"
-    },
-    {
-      "bytes": 8307,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackageEntitlement_support.xsd",
-      "sha256": "96463f05e1c84f8ee427437daf36d44c3aaf183c54fd98acde0b155614767084"
-    },
-    {
-      "bytes": 7883,
-      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackageEntitlement_version.xsd",
-      "sha256": "429ab534562f2bf51a1e8ad6c05cfc662593876c8fb34722bd980481cd85dd31"
-    },
-    {
-      "bytes": 14883,
-      "path": "xsd/netex_part_3/part3_fares/netex_timeStructureFactor_support.xsd",
-      "sha256": "20b6c0e79b6042aed7c9fef35f8f643c6198ac8e3ae13e4f0b9da93c65c1b9da"
-    },
-    {
-      "bytes": 19777,
-      "path": "xsd/netex_part_3/part3_fares/netex_timeStructureFactor_version.xsd",
-      "sha256": "79563a81e437a517492fbe85779dcf0de40856c213325816ec42828fc7549002"
-    },
-    {
-      "bytes": 28732,
-      "path": "xsd/netex_part_3/part3_fares/netex_trip_support.xsd",
-      "sha256": "08a101acadea18c3a4cfd6d0b56ca523da9e34063f1f32326bfc60f14177eeb8"
-    },
-    {
-      "bytes": 10842,
-      "path": "xsd/netex_part_3/part3_fares/netex_typeOfTravelDocument_support.xsd",
-      "sha256": "92996ed3a45e9a05b709f0df1840d86469fabe0fb71ae870364b71d23f677c05"
-    },
-    {
-      "bytes": 12809,
-      "path": "xsd/netex_part_3/part3_fares/netex_typeOfTravelDocument_version.xsd",
-      "sha256": "78dc95312deec48cef8659069fe0267a94d2c6ff4e4a24b71ef1513fe9461d0e"
-    },
-    {
-      "bytes": 14566,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameter_support.xsd",
-      "sha256": "3ec32530a5c863099476c68ca63bda4c249811c6458aacf432b5c077d96b6480"
-    },
-    {
-      "bytes": 11010,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameter_version.xsd",
-      "sha256": "628f2ecdcf88fbf644f51eb88163b3e41baba15ea6b5bae890f0ffe30cf4fdfd"
-    },
-    {
-      "bytes": 23749,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterAfterSales_support.xsd",
-      "sha256": "c66e5dab8a5dfce4d8781f25cebadd39b425e07226ea004383e803eeab2704fd"
-    },
-    {
-      "bytes": 22536,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterAfterSales_version.xsd",
-      "sha256": "77b310522075f860586ae1d0af4696a0c9e02bc9196fb79c6eb965da5a818bae"
-    },
-    {
-      "bytes": 14427,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterBooking_support.xsd",
-      "sha256": "849f366c8af90b4966db2b7a42bfa80a850ce4e3a2ec142060c199cca1c1ba2b"
-    },
-    {
-      "bytes": 18560,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterBooking_version.xsd",
-      "sha256": "6718576fc8e2c6d57e87a46c1bd5d847b679f1a19006d48ae914f686b44249e6"
-    },
-    {
-      "bytes": 16872,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterCharging_support.xsd",
-      "sha256": "203a5b07256b09df70918fd59cdd039f8a9d4cf6deb4bdf1a1e9e240fd7e4dad"
-    },
-    {
-      "bytes": 13532,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterCharging_version.xsd",
-      "sha256": "acf503471af28a397361ad54ca1390a537662942a8251a5d88b28b1039339ea4"
-    },
-    {
-      "bytes": 32835,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEligibility_support.xsd",
-      "sha256": "5286a94cd3fe1e7d977012f32b93d53ed0ff35a5a0c3522f6c8c6e05981aba3c"
-    },
-    {
-      "bytes": 32510,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEligibility_version.xsd",
-      "sha256": "603cebeb04b8899af9419465aa6e7c0845fc87ab83edfb2dcc2556100cab77a8"
-    },
-    {
-      "bytes": 14658,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEntitlement_support.xsd",
-      "sha256": "eef6769a5ec6d7f88b4b928a3c5d78bce36c0c43b169ca23384f7af4f179771d"
-    },
-    {
-      "bytes": 13482,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEntitlement_version.xsd",
-      "sha256": "b75188576bcb1a1893b706d340aa09c6cf3b8fec408ad38483488c1926334040"
-    },
-    {
-      "bytes": 8141,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterLuggage_support.xsd",
-      "sha256": "209f498b0cc3f8f5c329b89b1218b4003ac1e86d89bb6f4493a8a67caa3006c4"
-    },
-    {
-      "bytes": 7488,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterLuggage_version.xsd",
-      "sha256": "3de41f73daeca1b31ed1a3f1397de04511271afaf9fb6c8cda9b15fdbe3c3928"
-    },
-    {
-      "bytes": 1058,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParametersAll_support.xsd",
-      "sha256": "d4911aed0f33d8e43f75dd6cf3b840bc35578fa716a71370591ab31e4d7ae59f"
-    },
-    {
-      "bytes": 38732,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterTravel_support.xsd",
-      "sha256": "73f824cb39daecfa4e59f199e88ede01655f9fe358ab63411f3e6b65cd90ae0d"
-    },
-    {
-      "bytes": 33555,
-      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterTravel_version.xsd",
-      "sha256": "3924482cc6b2646adf5dddc6444f2b563fbdb6011f30b3580e5e5147616ce9e9"
-    },
-    {
-      "bytes": 14997,
-      "path": "xsd/netex_part_3/part3_fares/netex_validableElement_support.xsd",
-      "sha256": "71397198319ac030d4184f63762b39aab6827946c05677729ca8c624de0947d0"
-    },
-    {
-      "bytes": 20550,
-      "path": "xsd/netex_part_3/part3_fares/netex_validableElement_version.xsd",
-      "sha256": "cc9b7ae4ce7d35a0545b80df414acfeadb35dd456d131d5c4cebdbe71e16dd7a"
-    },
-    {
-      "bytes": 740,
-      "path": "xsd/netex_part_3/part3_frames/netex_all_frames_part3.xsd",
-      "sha256": "07eb30ed5c4ea598906edaf8f7b60fdc4b9e4130abb243c3b79a1e584b7feea3"
-    },
-    {
-      "bytes": 13470,
-      "path": "xsd/netex_part_3/part3_frames/netex_fareFrame_version.xsd",
-      "sha256": "07aed062b9ff13124204eebcd348f011234b8c90a993da111d2b0de415318d0f"
-    },
-    {
-      "bytes": 8255,
-      "path": "xsd/netex_part_3/part3_frames/netex_salesTransactionFrame_version.xsd",
-      "sha256": "8219727cdb09752cf800c0b25bc3ca3ca6e41d8fa844c94bf853e4daef221344"
-    },
-    {
-      "bytes": 688,
-      "path": "xsd/netex_part_3/part3_monitoring/netex_all_objects_part3_monitoring.xsd",
-      "sha256": "06b5d31823558de18c6afe7116f9762be0c413eedae66b1786f0e4cf75322b0e"
-    },
-    {
-      "bytes": 11426,
-      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredCall_version.xsd",
-      "sha256": "0e83e34c22bfef376d685ae3141bfd5685020e0e546ae8d984e256cba1ba1600"
-    },
-    {
-      "bytes": 13335,
-      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredPassingTimes_version.xsd",
-      "sha256": "86821c4cfc928a8f50932a08e742f0149451dc2054be8e634b70f34c192726ab"
-    },
-    {
-      "bytes": 3814,
-      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredVehicleJourney_support.xsd",
-      "sha256": "1f56630e074892d9ac759259c0ee04290765eb159fb86ac8adf986628f6de658"
-    },
-    {
-      "bytes": 601,
-      "path": "xsd/netex_part_3/part3_parkingTariff/netex_all_objects_part3_parking.xsd",
-      "sha256": "2157d00484b6463cdf43fc62401522342c859d56945d73615500c937ac183f8c"
-    },
-    {
-      "bytes": 10067,
-      "path": "xsd/netex_part_3/part3_parkingTariff/netex_parkingTariff_support.xsd",
-      "sha256": "fa73b7baeba31915513f844030b70fc34b7f61925f6c0559f23f0996a4480cae"
-    },
-    {
-      "bytes": 15302,
-      "path": "xsd/netex_part_3/part3_parkingTariff/netex_parkingTariff_version.xsd",
-      "sha256": "805d2cf44ae3ca08ab78f4443091feae15b7a68877e2ff6e896bd8f699887dee"
-    },
-    {
-      "bytes": 22005,
-      "path": "xsd/netex_part_3/part3_PiQuery/netex_piRequest_support.xsd",
-      "sha256": "59ec110d6d5f54cd0ea8e6dca87ed20bb3ca8a2de93a630968431cab4abc2eb8"
-    },
-    {
-      "bytes": 1816,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_all_objects_part3_salesTransactions.xsd",
-      "sha256": "18606e778b7bf4ea1bf77d576a5893cccb19f04360b997ec3669e515ae594823"
-    },
-    {
-      "bytes": 13288,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerEligibility_support.xsd",
-      "sha256": "3d3ea199de3702be7f32d4fb6fbeabf3ec32769cd888ed72c7db7f0436cbbbe7"
-    },
-    {
-      "bytes": 13227,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerEligibility_version.xsd",
-      "sha256": "50990ef6dd57f937d5fd312c58d23bf1d091cf3038d9c8e698da624a65538871"
-    },
-    {
-      "bytes": 5953,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPaymentMeans_support.xsd",
-      "sha256": "c9cc596ccbf6c117474a490a2feb9ab631eed33fcd9f91d511b2da9287636d1e"
-    },
-    {
-      "bytes": 6639,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPaymentMeans_version.xsd",
-      "sha256": "ce070e9b4c310ced87ddd67ef379f0139e58ad7290f4d0b3fceac27cfe1afda8"
-    },
-    {
-      "bytes": 31494,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPurchasePackage_support.xsd",
-      "sha256": "c6a257ba57ba24b3eccc108a07924cdf14a1d3207a989e1c960f6ed4579f6831"
-    },
-    {
-      "bytes": 44657,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPurchasePackage_version.xsd",
-      "sha256": "81d3cf79b1214981c30a2a2f453f6cbbf466ac8b9f6a4a41b284ace8d0e4c721"
-    },
-    {
-      "bytes": 16920,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_fareDebit_support.xsd",
-      "sha256": "f7fb3fa4ef20bcd45cdf5d86927bb3f10c5a8398c40e66258695cfdcf86ccdfb"
-    },
-    {
-      "bytes": 13581,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_fareDebit_version.xsd",
-      "sha256": "e13ff36610fb6ff91930c3cec167df0de9bd5f64bd4fa3e69a56b602a0d213a0"
-    },
-    {
-      "bytes": 21122,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_mediumApplication_support.xsd",
-      "sha256": "b0cb3bd41554591c31ce5b5711d022971e7d754f5520ac904788bf9372467fc7"
-    },
-    {
-      "bytes": 19681,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_mediumApplication_version.xsd",
-      "sha256": "0911990fd86c450f0013c9f5dae648c10cebda465fd3c30e847de5dc3fd443ed"
-    },
-    {
-      "bytes": 14432,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_retailConsortium_support.xsd",
-      "sha256": "aed855b6faacc2682379fe9f0cb8dbe1e4478ab094f1823b754743cb0888aabf"
-    },
-    {
-      "bytes": 15400,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_retailConsortium_version.xsd",
-      "sha256": "40f547dc8d9b6911245d47f1cc25e203252a26887d2b629c1e0f5e34f6f28cdf"
-    },
-    {
-      "bytes": 35441,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesContract_support.xsd",
-      "sha256": "06c436553c48f2d140ea99544df5250c4fdc3dc1b5b0015c56f02f450fa15b18"
-    },
-    {
-      "bytes": 40249,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesContract_version.xsd",
-      "sha256": "b6e42393446a5ed8d4a0c76a68ee3e05864bf48b140800964eb702e35756cfc7"
-    },
-    {
-      "bytes": 6456,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesTransaction_support.xsd",
-      "sha256": "99a56c669e34014d352af30336c6ba7fa13776ecd1b626577c950a68a5764ab7"
-    },
-    {
-      "bytes": 10208,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesTransaction_version.xsd",
-      "sha256": "112dc9c1fccdce4eae0827fdac33e750e88ea3427c47430417504c3f96371636"
-    },
-    {
-      "bytes": 12598,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_spotAllocation_support.xsd",
-      "sha256": "c3fd2d487b815675d1dfbd9e0a4d035a752934c7a0e24d12493beb939a32d28c"
-    },
-    {
-      "bytes": 12618,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_spotAllocation_version.xsd",
-      "sha256": "88464a8222aa57ee6640ebb3eb1ecf80681028f1e4640634f2afb1e9f33a5d24"
-    },
-    {
-      "bytes": 8614,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelDocument_support.xsd",
-      "sha256": "116f04137dfa3248d89858974de23f7c38625f9482303433363976e358663f7b"
-    },
-    {
-      "bytes": 10299,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelDocument_version.xsd",
-      "sha256": "a8cadb2696c7cf1f8fb0afb7a326855c657cc7300e00d4e35d3a2a35ecbf2ebf"
-    },
-    {
-      "bytes": 14505,
-      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelSpecificationSummary_version.xsd",
-      "sha256": "3b6532ef584f9d67b49d6d775ff9599ba7c1600b43a197cb4c965d2eded25f44"
+      "sha256": "c45f72e56c7be590d1a1e31bebf96a553e6a839a1c8f7d0b29ae8ab8c391d693"
     },
     {
       "bytes": 677,
-      "path": "xsd/netex_part_5/netex_all_frames_part5.xsd",
-      "sha256": "ba6de212206c282eee97d6e35dddcfd4af04b3a501103fd29f306083382b3244"
+      "path": "xsd/netex_framework/netex_all_objects_framework.xsd",
+      "sha256": "439da381f49f9991a0d2d8dab6da484a91123261a6af59828c10172b578a08ed"
     },
     {
-      "bytes": 3396,
-      "path": "xsd/netex_part_5/netex_all_objects_part5_newModes.xsd",
-      "sha256": "28c4927799c2f1ede04f783e96d8aa7ed80356c9726d0e00fd93fc512ae37235"
+      "bytes": 6135,
+      "path": "xsd/netex_framework/netex_all_objects_generic.xsd",
+      "sha256": "6c7ad665918213facb0bde7153f97fcecf63a70aaefa7fce3f4d229513e57101"
     },
     {
-      "bytes": 9139,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_accessCredentialsAssignment_support.xsd",
-      "sha256": "709b019d8d2c25004413e520a6efb543b5c306e5d2d620749dbb6317563bfe9d"
+      "bytes": 825,
+      "path": "xsd/netex_framework/netex_frames/netex_all_frames_framework.xsd",
+      "sha256": "3398f0bda7b642da77fac70e59f750581f26de079cf828e5a24ac8cd32a40f32"
     },
     {
-      "bytes": 9170,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_accessCredentialsAssignment_version.xsd",
-      "sha256": "5bfa57006602436c55114c5311af8abdebfba3916bb47a1eef899ac4ff6d2a1b"
+      "bytes": 3360,
+      "path": "xsd/netex_framework/netex_frames/netex_commonFrame_version.xsd",
+      "sha256": "d37396fe6a1f27b01bb8fb886ca2fe2a81ddd1df9375a99334091a35b3a09732"
     },
     {
-      "bytes": 13214,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_individualTraveller_support.xsd",
-      "sha256": "449285dd8b5f794fe37fe4e927c937dd9087bebd96526220a2074fb077a82bfa"
+      "bytes": 7204,
+      "path": "xsd/netex_framework/netex_frames/netex_compositeFrame_version.xsd",
+      "sha256": "bbcdbe8c9e8ff1e6ba68eb7dc426c133e3955d4bd2ed4729edcdf5241e02a909"
     },
     {
-      "bytes": 17880,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_individualTraveller_version.xsd",
-      "sha256": "0d26ebc39d7e3e25cbe09b6862aa75f169c44b4e2febe115df1a9c3df315c594"
+      "bytes": 12573,
+      "path": "xsd/netex_framework/netex_frames/netex_generalFrame_version.xsd",
+      "sha256": "f0d95a276ee07d16e138f8a998c7fd738fde77440b5bafac891bdea65f1e5780"
     },
     {
-      "bytes": 5574,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterEligibility_support.xsd",
-      "sha256": "b1ec2a5433599e08313375a16d2c4b29705650397187b6962a238baaff30062a"
+      "bytes": 4966,
+      "path": "xsd/netex_framework/netex_frames/netex_resourceFrame_support.xsd",
+      "sha256": "5071f0043d530b0e72ddd252cc049e61cfd35357bc9d09e5bd4bd5467708d507"
     },
     {
-      "bytes": 6456,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterEligibility_version.xsd",
-      "sha256": "ee085526281b37fd7ac3c5038a1d9924aacfaeb520927401acf7d766f7177b09"
+      "bytes": 7538,
+      "path": "xsd/netex_framework/netex_frames/netex_resourceFrame_version.xsd",
+      "sha256": "55dd9f45ac102f24cb3cc256b23cbac522d6b4b15d56cb45236d4a020a983586"
     },
     {
-      "bytes": 12261,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterRental_support.xsd",
-      "sha256": "f55f16d7c7aa2b9c0a8fd70ada02e700debb62ba8c0cfd382e8a2880ce81af7d"
+      "bytes": 4996,
+      "path": "xsd/netex_framework/netex_frames/netex_serviceCalendarFrame_support.xsd",
+      "sha256": "6b591f04ccc21ec6f22de4c9cfce061768a613a80e2dcc1bd883d32fff56c177"
     },
     {
-      "bytes": 10510,
-      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterRental_version.xsd",
-      "sha256": "e92d9218d8ff1962ba075d7ce0b5cd82330b891981e15f7011754c2d05c6fc22"
+      "bytes": 4415,
+      "path": "xsd/netex_framework/netex_frames/netex_serviceCalendarFrame_version.xsd",
+      "sha256": "dcb2f558df44f866ee09681c0b49f6cbf577d1ead9e0892eae714e8203d856ff"
     },
     {
-      "bytes": 10073,
-      "path": "xsd/netex_part_5/part5_frames/netex_nm_mobilityJourneyFrame_version.xsd",
-      "sha256": "e289592673b399826ae7073114d50c15f999ad1fc321933ebfa390b3ed8d39eb"
+      "bytes": 8129,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_accessibility.xsd",
+      "sha256": "7342d5873401375f9aa3199cbc07bae64284be9c558ad34db8de0142cc2cf9d4"
     },
     {
-      "bytes": 11594,
-      "path": "xsd/netex_part_5/part5_frames/netex_nm_mobilityServiceFrame_version.xsd",
-      "sha256": "94c7af329e87b11bc32253ff062c4d6fc1be234c2f86b1c9d5129f241df56fe2"
+      "bytes": 1712,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_all.xsd",
+      "sha256": "5489a5bbc9aafb4e5290fd67a459901d4ff2b54ca32102f58d806a502a27cafa"
+    },
+    {
+      "bytes": 8596,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_limitations.xsd",
+      "sha256": "d2d41549fafaff22dff889de00361eb41962cb99f47c6f9d95c03d4a9ae8c52b"
+    },
+    {
+      "bytes": 13944,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_passengerMobility.xsd",
+      "sha256": "b5c39eaeeeae9e441b1cd928f88a0705e0c4b86cb10414a7e748f2a22e7aa854"
+    },
+    {
+      "bytes": 7680,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_accessibility/netex_acsb_support.xsd",
+      "sha256": "66f47bb6791a36db184a44a83e4e36edb841c47d36645d58b22711d22e625f6b"
+    },
+    {
+      "bytes": 5653,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_alternativeName_support.xsd",
+      "sha256": "f2230dec4c834592131061dc0ac96b0654e1ac6d429985c5ddff2fab7baf341b"
+    },
+    {
+      "bytes": 9015,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_alternativeName_version.xsd",
+      "sha256": "f2b8cf7e16e3d83860dfaab6f46d10aa43098b9a4c56e1d0474d90426748987e"
+    },
+    {
+      "bytes": 4721,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_assignment_support.xsd",
+      "sha256": "e1701b6e79fe6453b943606ace47a2a8e5cd62c74712315c9977a67265d970b4"
+    },
+    {
+      "bytes": 6383,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_assignment_version.xsd",
+      "sha256": "28b99275162b7534f37d349f022edbe183eccc24c2af6a1e94dad0bdbace9d46"
+    },
+    {
+      "bytes": 12702,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_grouping_support.xsd",
+      "sha256": "1d786091b0060a8340e9f4606b73737e53c90d789351df0ef8cb4d31dc1fd6ec"
+    },
+    {
+      "bytes": 14292,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_grouping_version.xsd",
+      "sha256": "0003a68152e64795bbdf3428569774fabb1263704ed1b267db417c716d75cf6c"
+    },
+    {
+      "bytes": 5257,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_layer_support.xsd",
+      "sha256": "f42fbc140f37cf0d65b88862a19aff7460ba5b6d112b41a44afcc68d24f586f8"
+    },
+    {
+      "bytes": 5733,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_layer_version.xsd",
+      "sha256": "81772bd2e373fdac8fd0679611d3c08fa7d60fce92000c4b121af6d7e9f489b2"
+    },
+    {
+      "bytes": 6962,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_loggable_support.xsd",
+      "sha256": "85e235171076993e259433d5c08c1bd8fc6b206b6487f9938f5f67c32d8ee1e1"
+    },
+    {
+      "bytes": 6957,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_loggable_version.xsd",
+      "sha256": "d0c03a9fdb02d0294c307e55a6f7ac9c279d68194df1fbd6afd466f96c674134"
+    },
+    {
+      "bytes": 32428,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_organisation_support.xsd",
+      "sha256": "4c47db2f841125f56ccf73de144d41b1c0a489f964451ddb2688ea99cb9f3e30"
+    },
+    {
+      "bytes": 44180,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_organisation_version.xsd",
+      "sha256": "fa3c0e449358a5fa9c41f1ba539869a657ac241c8e597e6bc9dd55260cbf096f"
+    },
+    {
+      "bytes": 20980,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_path_support.xsd",
+      "sha256": "0341879186434618787fbe110d64ad4bb46fb430fe094c733bbd869260d3bd6c"
+    },
+    {
+      "bytes": 24727,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_path_version.xsd",
+      "sha256": "281c7250e045e31338a0aab67177eaf47f29e582bcf981bb59c338efd6e84149"
+    },
+    {
+      "bytes": 16443,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_place_support.xsd",
+      "sha256": "532e576c1ec86aee5a61310f6e28beef533a3a4f45885cc537f1bfcea12cd7e3"
+    },
+    {
+      "bytes": 11536,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_place_version.xsd",
+      "sha256": "1cc503af71732b07d0df1ef75b0004296322ded428338a60426fbd49c77916fc"
+    },
+    {
+      "bytes": 21092,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLink_support.xsd",
+      "sha256": "0dc87cb7625516cc648a361432065e608ee416d3c5be5c2e777afa68d5a5239e"
+    },
+    {
+      "bytes": 22142,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLink_version.xsd",
+      "sha256": "bca61cff161bc4ea71cc68f128e2f270ef314eb5f84fb999b643b22e8beccedc"
+    },
+    {
+      "bytes": 14961,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLinkSequence_support.xsd",
+      "sha256": "80d391c2a62c23508f4daeedfa714d15f65c3cf08148935bc4f949b56c3222a6"
+    },
+    {
+      "bytes": 13107,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_pointAndLinkSequence_version.xsd",
+      "sha256": "1c576ab27df4d1808ea65967d8eda8455a8a59ba9a794e4c4dd5d1c884e25bf2"
+    },
+    {
+      "bytes": 18869,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_projection_support.xsd",
+      "sha256": "1adaa1453d34e375e364d6e92d3aba4fc65ad1ae6636630392bff0c893a7dec9"
+    },
+    {
+      "bytes": 22940,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_projection_version.xsd",
+      "sha256": "98bd42baa8be95cbf8d75839d74e374d640452aa1fac0763c434d0a4c55301f9"
+    },
+    {
+      "bytes": 8812,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_section_support.xsd",
+      "sha256": "15a48b10439451236bad5c83e221fe72edb8b0ee64b1e167ffe2f42bc9a32ca0"
+    },
+    {
+      "bytes": 17895,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_section_version.xsd",
+      "sha256": "84fa239e25f4ecd28e62b6f9f01fe834dbe2280adf5fe070eddcb73697f6c80b"
+    },
+    {
+      "bytes": 10644,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_spatialFeature_support.xsd",
+      "sha256": "5beb777f42fb6fdd21a04237440a94e4eeb659e1e83b3f5aaeda34316ed631fc"
+    },
+    {
+      "bytes": 10683,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_spatialFeature_version.xsd",
+      "sha256": "9bf3cc95e3d7f89c37401dbf5c2499c3209f215dfdc08165623f214ad53576ec"
+    },
+    {
+      "bytes": 11460,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_zone_support.xsd",
+      "sha256": "7aa60215ba0f1003045a2747e3d7bc3421e874d75b751333d220a0b65c6b03d9"
+    },
+    {
+      "bytes": 16993,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_zone_version.xsd",
+      "sha256": "eb5c500ecdfb67db246c99f343426c97aefea54a8c409bd1d293cc5ca768b6e7"
+    },
+    {
+      "bytes": 6028,
+      "path": "xsd/netex_framework/netex_genericFramework/netex_zoneProjection_version.xsd",
+      "sha256": "ff78b734bf0ffbe7693dc538eefa8e5c2627421471881e83e2335f18cb080b2c"
+    },
+    {
+      "bytes": 1369,
+      "path": "xsd/netex_framework/netex_payload_framework.xsd",
+      "sha256": "1d3548e5e7ab5b0a6c67d8bd654660b1e9977cbdc1c8a424f32ee03f7c9ff2ec"
+    },
+    {
+      "bytes": 4803,
+      "path": "xsd/netex_framework/netex_responsibility/netex_alternativeText_support.xsd",
+      "sha256": "ea7503ba7ae0d64c545a59740331953f4b4f992bc17a10ad90ff775a11a7b2a7"
+    },
+    {
+      "bytes": 6464,
+      "path": "xsd/netex_framework/netex_responsibility/netex_alternativeText_version.xsd",
+      "sha256": "695c543acd008e4e7016754cd0f5ec6ff6bfb7093f014222defa988d9909f7d3"
+    },
+    {
+      "bytes": 8881,
+      "path": "xsd/netex_framework/netex_responsibility/netex_dataSource_version.xsd",
+      "sha256": "389b837cba728bd6bd00f0289f1c126109d87885b2d8b8ae83326dcc89c582b8"
+    },
+    {
+      "bytes": 3998,
+      "path": "xsd/netex_framework/netex_responsibility/netex_entity_entity.xsd",
+      "sha256": "c4bf075966ebe6bb1972e445fcdcb6a42199c54778e3c07a73f71b5d60f0d6cc"
+    },
+    {
+      "bytes": 505289,
+      "path": "xsd/netex_framework/netex_responsibility/netex_entity_support.xsd",
+      "sha256": "bd2269ff80057172c024492449c8a0d2ac6f2a6d25ead21e240a049ee924c304"
+    },
+    {
+      "bytes": 6763,
+      "path": "xsd/netex_framework/netex_responsibility/netex_entity_version.xsd",
+      "sha256": "886a7af398371205e0fca61928758f86f2d99f4fa4cd2e9c74650b2ef86cf01f"
+    },
+    {
+      "bytes": 12176,
+      "path": "xsd/netex_framework/netex_responsibility/netex_relationship.xsd",
+      "sha256": "a3b7d7552b65f1ac83cec2990b0cbcc533719f7bdfcf2797cdea4862828ccd56"
+    },
+    {
+      "bytes": 13168,
+      "path": "xsd/netex_framework/netex_responsibility/netex_relationship_support.xsd",
+      "sha256": "21749c9d1cb6a2bf0c3cd265192386fa4d4033269346a522a9dacbbdf0b3f498"
+    },
+    {
+      "bytes": 20731,
+      "path": "xsd/netex_framework/netex_responsibility/netex_responsibility_support.xsd",
+      "sha256": "d00c0c4d0a77f3d1fcf85baadb9265decceabe70ac3f2b97370a601f98b0ffb8"
+    },
+    {
+      "bytes": 10954,
+      "path": "xsd/netex_framework/netex_responsibility/netex_responsibility_version.xsd",
+      "sha256": "a3ff217a39dc6e0866cfe93ea6d8b3a2caff8b8802023e301bd3268ff510b8cf"
+    },
+    {
+      "bytes": 8274,
+      "path": "xsd/netex_framework/netex_responsibility/netex_responsibilitySet_support.xsd",
+      "sha256": "52ee3e5072f686dc49d0c6dab03d96bd958ae59b589487e68a838b73f012d938"
+    },
+    {
+      "bytes": 21379,
+      "path": "xsd/netex_framework/netex_responsibility/netex_responsibilitySet_version.xsd",
+      "sha256": "2b15ac287f6dc108d04a30d666bba8e2a17ddd65eb9be1243e38d8ddb46299f9"
+    },
+    {
+      "bytes": 9937,
+      "path": "xsd/netex_framework/netex_responsibility/netex_typeOfValue_version.xsd",
+      "sha256": "ae37aaa3c2317ded5af558f6275cb5f92967f2d2da000d369c6a224908a7f3b5"
+    },
+    {
+      "bytes": 17453,
+      "path": "xsd/netex_framework/netex_responsibility/netex_validityCondition_support.xsd",
+      "sha256": "dd72a950bcd22d759e6f1f719f33913c1a2007f8acde956bb326868a6ff743a5"
+    },
+    {
+      "bytes": 19346,
+      "path": "xsd/netex_framework/netex_responsibility/netex_validityCondition_version.xsd",
+      "sha256": "7d0b7107966b531fb7239ba57f796b9dbf6c6a57ed442e8bd7d31f5bec3166c1"
+    },
+    {
+      "bytes": 12388,
+      "path": "xsd/netex_framework/netex_responsibility/netex_version_support.xsd",
+      "sha256": "1a51000391f3b81424553dbc6c6883b2e816c102d98de1a93332c18bdfe0e0e9"
+    },
+    {
+      "bytes": 11864,
+      "path": "xsd/netex_framework/netex_responsibility/netex_version_version.xsd",
+      "sha256": "e46740554f30ed9c460a67aa259cf66ba6f8263c343497e2fb51d6de4257950a"
+    },
+    {
+      "bytes": 11617,
+      "path": "xsd/netex_framework/netex_responsibility/netex_versionDelta_version.xsd",
+      "sha256": "151fab421819f8d4737d54c9d777bd46c7e87e6eee32e9d277213969496900aa"
+    },
+    {
+      "bytes": 11503,
+      "path": "xsd/netex_framework/netex_responsibility/netex_versionFrame_support.xsd",
+      "sha256": "bc268a5da9c4f3bde7dac3486c46e69ee76996f91a5166b320705b47d5d58cc7"
+    },
+    {
+      "bytes": 27233,
+      "path": "xsd/netex_framework/netex_responsibility/netex_versionFrame_version.xsd",
+      "sha256": "42727e027459a7c706f605486003f7b92bf94a5adb7f6609bcf794f152da64a8"
+    },
+    {
+      "bytes": 7140,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_access_version.xsd",
+      "sha256": "80a5a781bbd891686701f838fa8830830c104b101c5f90e3f79e3e11086f81a5"
+    },
+    {
+      "bytes": 11672,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_address_support.xsd",
+      "sha256": "80975c70e1ae9e09261d813f17aaeb64c2bc3ad4a71a02226975936d5d94876d"
+    },
+    {
+      "bytes": 18212,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_address_version.xsd",
+      "sha256": "940aa5431aad09e446a41f97aedf09cfbd3b985cf8c60c5c436f9b1e075802f6"
+    },
+    {
+      "bytes": 5265,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_all_objects_reusableComponents.xsd",
+      "sha256": "6ff354f72f69533033964b37e42b40cd41419205685d1888d61429da182fa1bb"
+    },
+    {
+      "bytes": 5048,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_availabilityCondition_support.xsd",
+      "sha256": "58396a9e20836d9897172f3413bbb3242986b294ec32535aaff3c4f2d37b0587"
+    },
+    {
+      "bytes": 12853,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_availabilityCondition_version.xsd",
+      "sha256": "d2e5c1b08858cf7cd195674f5540a06486f776f73ec15f9896d398e7946d6815"
+    },
+    {
+      "bytes": 45562,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_country_support.xsd",
+      "sha256": "dc31090cab09c300630fc216e2a6edca4f41cbd2c4c37d9df41612f1b3865c45"
+    },
+    {
+      "bytes": 13700,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_propertiesOfDay.xsd",
+      "sha256": "7d63fe8f8469e165d1eb6bb776d7a28df1803991a2d09a69b3782702bd87e9b2"
+    },
+    {
+      "bytes": 10031,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_support.xsd",
+      "sha256": "34986d8173af983c366411e3f91ef28b63243d9010693568b088158fa5998018"
+    },
+    {
+      "bytes": 15840,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_dayType_version.xsd",
+      "sha256": "d44f79609e7198db461b426de14fb6958aba6c95b3632dea7537529c6633e337"
+    },
+    {
+      "bytes": 12858,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPath_support.xsd",
+      "sha256": "00e1f96caa1beec05bb70eb65a793b7237a3513f9bb2e6ec7584982239a4e335"
+    },
+    {
+      "bytes": 21356,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPath_version.xsd",
+      "sha256": "f32076104b759e9b7c5b590b3c8f9d916502448ff0b6658d8cd973e29a3df5af"
+    },
+    {
+      "bytes": 50145,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPlan_support.xsd",
+      "sha256": "a19354948d04d1594c218fbdaccf14ca06ec89e514663f899a2f5bd686bd491f"
+    },
+    {
+      "bytes": 58601,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_deckPlan_version.xsd",
+      "sha256": "114be9154bdaeb0840115f7533e5fdd5a352e1cbb4b7aa67cd7e0dc8110c17ea"
+    },
+    {
+      "bytes": 22045,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_environment_support.xsd",
+      "sha256": "6a84a653aea42fa23fcb8b79dcd0f1c142741a1b28d06494dc55e60c4bf9f90c"
+    },
+    {
+      "bytes": 7091,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_environment_version.xsd",
+      "sha256": "c0759c6db865f88aa1bfa36d3e034614b928faaf4a76ebf9440e04e279b2d321"
+    },
+    {
+      "bytes": 19145,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipment_support.xsd",
+      "sha256": "4d4596b6b51bf1036e1e484b4a0cfad46c3ac22d9fdc88017827468c86665136"
+    },
+    {
+      "bytes": 13485,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipment_version.xsd",
+      "sha256": "e90ca40d152659c043761a0d923326f5b37638a91f4606ccad7cdaea5722554b"
+    },
+    {
+      "bytes": 9436,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentPlace_version.xsd",
+      "sha256": "bfe895a5af511622a8e32b980a3d1471ea7790876c45c62745dd9481ee12d10a"
+    },
+    {
+      "bytes": 15576,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentVehiclePassenger_support.xsd",
+      "sha256": "516789e48986c2241a2cfec1f5db233af60ca995df138d585762561bc646de5b"
+    },
+    {
+      "bytes": 18525,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_equipmentVehiclePassenger_version.xsd",
+      "sha256": "177c4ac561e65696f71a2890b70fec2448da2b478b5fd1ce878b9bc44a2014dd"
+    },
+    {
+      "bytes": 50205,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_facility_support.xsd",
+      "sha256": "ef0f2e6d876120583da55a976bba90782dfe04913c8b609f45e3703c36777383"
+    },
+    {
+      "bytes": 62242,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_facility_version.xsd",
+      "sha256": "cbf21ce0c7f0af5e13a7d93bc028b1feb75fe0a3d062b05412da251b53b8de75"
+    },
+    {
+      "bytes": 3922,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_facilityUic_support.xsd",
+      "sha256": "0833644266698b9d5653e5eb72348fae96ab4be9c3bd4b791991e1068647f7de"
+    },
+    {
+      "bytes": 4826,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_linkByValue_support.xsd",
+      "sha256": "7988dcc47d1329c84814a016ec8ad701e1bb1bfc40895f3919986733eb89a707"
+    },
+    {
+      "bytes": 20938,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_mode_support.xsd",
+      "sha256": "d7b1d09a45d1c70acf6382778f044f08a6e75d1745ea46786dc68aa51f83994a"
+    },
+    {
+      "bytes": 7929,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_mode_version.xsd",
+      "sha256": "1a9e5f8dd5fbbfcd757a9ed332ff6d7499113e7668fa90139c8d84f0f9eb4632"
+    },
+    {
+      "bytes": 29424,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_modeOfOperation_support.xsd",
+      "sha256": "8143c0522e08ca00c829a16f7d20e3196567d52313dfa9c5360ba9324f221a65"
+    },
+    {
+      "bytes": 25863,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_modeOfOperation_version.xsd",
+      "sha256": "125ca51d2a713a8265345320d21340e9652c7e80e9deaee9faf06f6b2b9bb387"
+    },
+    {
+      "bytes": 5055,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_chargingEquipmentProfile_support.xsd",
+      "sha256": "e1ba62d60b0d5d6dae4133136e01cb56f338f8970b0e9c1b9df7d8f084057051"
+    },
+    {
+      "bytes": 6502,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_chargingEquipmentProfile_version.xsd",
+      "sha256": "a92bd31936ca3123304df32a36bf176aa1cda6298aa6f2b83e161ce2d38459f0"
+    },
+    {
+      "bytes": 18319,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_equipmentEnergy_support.xsd",
+      "sha256": "47bac744d61fb4f39d37a3426ebffe633b47329155861d6447e6b82de2eb691f"
+    },
+    {
+      "bytes": 14732,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_equipmentEnergy_version.xsd",
+      "sha256": "32c9d1ffcaead9925225b33c86dc64e8a362ae11b35c00494ce5e82e34dada3b"
+    },
+    {
+      "bytes": 7689,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleet_support.xsd",
+      "sha256": "77e02faed5b991a1a7a61b570f84c89de8ab5e1fea0a62d6cda0ba61981a7de1"
+    },
+    {
+      "bytes": 7077,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleet_version.xsd",
+      "sha256": "3d7a864702e1a7893db49d950a158be0b97706a729494b418f27876a64a1add0"
+    },
+    {
+      "bytes": 10779,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleetEquipment_support.xsd",
+      "sha256": "f8184b1e44c86806d1b40514a62e0ad7618d66337a1a5b33a6adff55fa76a251"
+    },
+    {
+      "bytes": 15011,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_nm_fleetEquipment_version.xsd",
+      "sha256": "f76bf538d042d6cd0eaa3a15c4bff59c7665001c66a7358c9b738d4b2d96befb"
+    },
+    {
+      "bytes": 15411,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_notice_support.xsd",
+      "sha256": "2dbd79ad29057cfdb4f2a1c1963041392674b780a9fefb163e63b407beac1cee"
+    },
+    {
+      "bytes": 12980,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_notice_version.xsd",
+      "sha256": "ec1e083bb2acc1893aaaf0a6849be2a0078b24ed438d59e23d9a5ddb1b31435c"
+    },
+    {
+      "bytes": 12272,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_noticeAssignment_version.xsd",
+      "sha256": "975819130a4ed67850d595387a1f24a48ccbe5bb389970bf5730cfb481cee109"
+    },
+    {
+      "bytes": 14628,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_otherOrganisation_support.xsd",
+      "sha256": "2ca01ee44198ed1a7de479111b97e75ea898d298615dec76e2a0fc55be6b9cd7"
+    },
+    {
+      "bytes": 13321,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_otherOrganisation_version.xsd",
+      "sha256": "bedfd69a53631a100535c62673c3b6b548fd903f4067f2acaf2605a95335ace0"
+    },
+    {
+      "bytes": 7392,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_schematicMap_support.xsd",
+      "sha256": "45053fd37e4d52718c66faf6aed5fcc8e8111bf8a2a13a470e00e2b1d4739043"
+    },
+    {
+      "bytes": 9292,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_schematicMap_version.xsd",
+      "sha256": "dd2e85c7382f538d2038b34cce9d6220255141a0b0097f9bcac0fd4e0ff2005b"
+    },
+    {
+      "bytes": 26631,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_seatingPlan_support.xsd",
+      "sha256": "30109c28f6a05d2b86259f15b4cc37b7f17e09bbfe9129d61912002f14d8abff"
+    },
+    {
+      "bytes": 27982,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_seatingPlan_version.xsd",
+      "sha256": "fd29bca0ec12447e3ba1e1f127e88af2098609da11cc25fd11acb9acfd5e5151"
+    },
+    {
+      "bytes": 16063,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_securityList_support.xsd",
+      "sha256": "f7e5827f859883bf526ded43e3cd3b1dfb7adbce0e7de5c227a6741fc225fff2"
+    },
+    {
+      "bytes": 16204,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_securityList_version.xsd",
+      "sha256": "254e2e84caa888b403c071acc44a9d9e39fdebbe2a819bdc75e49a9d13b68568"
+    },
+    {
+      "bytes": 14509,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_sensorEquipment_support.xsd",
+      "sha256": "6fc1c75313395b0f065fbd192ad428262b333cedb65276362f05114f95f686c1"
+    },
+    {
+      "bytes": 13639,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_sensorEquipment_version.xsd",
+      "sha256": "b06a17b2d1baeadfcdc58a0c8a5ee7331f3c550c9e901235adc19f56bc68d2f1"
+    },
+    {
+      "bytes": 13910,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceCalendar_support.xsd",
+      "sha256": "c8b5368e0828993ff515bc4e7bd4754f1eb786a74ea573f1f3b87dbafcee981b"
+    },
+    {
+      "bytes": 25700,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceCalendar_version.xsd",
+      "sha256": "4524e368b0c988f06364dec02b4e1d561b466013fd20f1991965a75d6f4b0e8d"
+    },
+    {
+      "bytes": 45903,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceRestrictions_support.xsd",
+      "sha256": "3fb14cfdeacac0118ba66eeb69e779adddd60be60ebed8ddb072a1894ab11169"
+    },
+    {
+      "bytes": 26140,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_serviceRestrictions_version.xsd",
+      "sha256": "9475c2e3ac1a1c8a1f3736685a6b233de77952f095a85a92f94f342a2fa42873"
+    },
+    {
+      "bytes": 7325,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotAffinity_support.xsd",
+      "sha256": "888dc6eb8cdda7c0b337f60d96c35cbbb9bb39cb257afd9fa0297cdb1bf8665f"
+    },
+    {
+      "bytes": 6550,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotAffinity_version.xsd",
+      "sha256": "bb8613043759906e4c253fd702fc71a1d12858ff8aaaa9fc1018f136e8ead785"
+    },
+    {
+      "bytes": 12951,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotEquipment_support.xsd",
+      "sha256": "a1b65687c7b1f267de79d805174a38e5f162662f99c776dd386f18d3cc218f88"
+    },
+    {
+      "bytes": 15476,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_spotEquipment_version.xsd",
+      "sha256": "034f7ebe045e702733877aea59d3ab7555b613ee1e0af20316dca40f11bc0f11"
+    },
+    {
+      "bytes": 27173,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_submode_version.xsd",
+      "sha256": "8ab002f05b38a9492d06afcdce36259519111055ebca021afa1a7546582aee3c"
+    },
+    {
+      "bytes": 13737,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_topographicPlace_support.xsd",
+      "sha256": "99522444f0108ac71542b7043b59c4ab6f7c6f1d184276f1e7c9b8fd6e6298e0"
+    },
+    {
+      "bytes": 18940,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_topographicPlace_version.xsd",
+      "sha256": "e0f88deed70e107b1669e7fbaab1a81772b85cdac123d87306e18ea6cd46fd05"
+    },
+    {
+      "bytes": 16813,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElement_support.xsd",
+      "sha256": "4306c19a68764a18086289076e8b51d4b99519e01cb8a046402031d25282eb3b"
+    },
+    {
+      "bytes": 28642,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElement_version.xsd",
+      "sha256": "a7a261eaf1ac123ff153a20cbe1f72baf6fb76240479aa90bd8a08690d30d0ad"
+    },
+    {
+      "bytes": 12177,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElementType_support.xsd",
+      "sha256": "25dd3383f484722ec3d9277f5101463ce6e41c9f27ee3947e16697a5b074d9f4"
+    },
+    {
+      "bytes": 11436,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_trainElementType_version.xsd",
+      "sha256": "c7ec065fd560bd2b3b24284497270626455c1d270b5f63e66737c689d8860ec4"
+    },
+    {
+      "bytes": 29407,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_transportOrganisation_support.xsd",
+      "sha256": "ee9a68cccc0c40178d31f73482ff34ccc2276541c5deff2ed82986d664268de8"
+    },
+    {
+      "bytes": 29399,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_transportOrganisation_version.xsd",
+      "sha256": "abdf91dd942e40ac7ed3f5cdd7fb9f70b473c884c3a0a8d3547dc9b69c8ccd20"
+    },
+    {
+      "bytes": 18074,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicle_support.xsd",
+      "sha256": "9d1123dc2cc6e1199ba3dd18c635dd8cd926a911e69df441caa84cd79fe99fbd"
+    },
+    {
+      "bytes": 21637,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicle_version.xsd",
+      "sha256": "46b8ba0d0a45b898830fe8374106a79f37e90d5fc0efdc484d022d4c4e4ba052"
+    },
+    {
+      "bytes": 6485,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleSeating_support.xsd",
+      "sha256": "1689330d4dc4b812398b031db4a76d1d43700016f67d064c09eb53a12979c3b6"
+    },
+    {
+      "bytes": 51324,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleType_support.xsd",
+      "sha256": "cec934b41dc783e9669981489acb598e45853fb4a7ebc4ca4c822ff1c7e725fa"
+    },
+    {
+      "bytes": 58185,
+      "path": "xsd/netex_framework/netex_reusableComponents/netex_vehicleType_version.xsd",
+      "sha256": "8910fdecde9c1411c9c9df5b01a84f4bdf03191a5e221d343350f8bc5a41ef82"
+    },
+    {
+      "bytes": 9229,
+      "path": "xsd/netex_framework/netex_utility/netex_location_types.xsd",
+      "sha256": "f39ed3a26cfc400d8762fe5dc7072bcf986671f4458c959a1c60b2f620cf5a64"
+    },
+    {
+      "bytes": 6786,
+      "path": "xsd/netex_framework/netex_utility/netex_units.xsd",
+      "sha256": "ae77108a4e2825683d87557e0449afa772bac641011fed7828aa690aa71dd9cf"
+    },
+    {
+      "bytes": 5887,
+      "path": "xsd/netex_framework/netex_utility/netex_utility_contact.xsd",
+      "sha256": "de37eaa7e9d395f9eb4314e8daaac87345f60702e64530b3fc6ebbfc84589ce0"
+    },
+    {
+      "bytes": 7060,
+      "path": "xsd/netex_framework/netex_utility/netex_utility_time.xsd",
+      "sha256": "f8096836f19c5c5f0b84f6fce024e1bd3c928ddc62441b3900696d1c63ac2d82"
+    },
+    {
+      "bytes": 21430,
+      "path": "xsd/netex_framework/netex_utility/netex_utility_types.xsd",
+      "sha256": "9f072615094f131c1a443cb93bb3af2b30ab94caf3d1ab0826d5bb02bac85bce"
+    },
+    {
+      "bytes": 4675,
+      "path": "xsd/netex_framework/netex_utility/netex_utility_xml.xsd",
+      "sha256": "d2cf9ca90da126bff67d402cbd33a7a7f62b35060e0543476e0831a487d26a75"
+    },
+    {
+      "bytes": 817,
+      "path": "xsd/netex_part_1/netex_all_frames_part1.xsd",
+      "sha256": "d0107d6b535f0d8c736d423d70424c4b85c81e216d4cb11e0912d925fe5ab021"
+    },
+    {
+      "bytes": 1148,
+      "path": "xsd/netex_part_1/netex_all_objects_part1.xsd",
+      "sha256": "9b27c9fa5fe4bac44a615fd80c8f08a5cb6224080874a27826c6b2ac480fdce8"
+    },
+    {
+      "bytes": 8838,
+      "path": "xsd/netex_part_1/part1_frames/netex_infrastructureFrame_version.xsd",
+      "sha256": "e3fe8dffcdfa91d339044687b2ff46eb1ef00ddde155bd207d08af1a06a5b7c2"
+    },
+    {
+      "bytes": 11872,
+      "path": "xsd/netex_part_1/part1_frames/netex_siteFrame_version.xsd",
+      "sha256": "1fc7bfcf92db7487aed1a0d3bcded8228d3c936bd8ec1a849e9c55337a07af28"
+    },
+    {
+      "bytes": 5281,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_assistanceBooking_support.xsd",
+      "sha256": "77ea242a5956d82695617e131f14b75bf4b2f47de63e3edd2920b93d8331f251"
+    },
+    {
+      "bytes": 8571,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_assistanceBooking_version.xsd",
+      "sha256": "d8e1051ca9b9757963d5b6162565687ffd06bc22876dd5a584b9b0247b172235"
+    },
+    {
+      "bytes": 3290,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_all_objects.xsd",
+      "sha256": "6b15754ccd0e5a2996dd2093b5b4d08202244091032054caec2d286a82b554b6"
+    },
+    {
+      "bytes": 15352,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_checkConstraint_support.xsd",
+      "sha256": "8a7fc81ae7c6879e18c650f93b6315e008717b0b34a74f4cad69315e866fb8d4"
+    },
+    {
+      "bytes": 20026,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_checkConstraint_version.xsd",
+      "sha256": "518938e0c6332c1b81c341967d314e3df37dc0a87635fd7a918e7ffa1254a3e5"
+    },
+    {
+      "bytes": 46234,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAccess_support.xsd",
+      "sha256": "4f29228d633816c9a50c6f8df216b15e917e9798dfcc04b66d0786183570c4b6"
+    },
+    {
+      "bytes": 70163,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAccess_version.xsd",
+      "sha256": "5e1c6c8b621160c711afd033b77241a53c5e9f67cd05133ba495ae2d9c00824a"
+    },
+    {
+      "bytes": 7117,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentAll.xsd",
+      "sha256": "b94a0022def130e4774099228be0690b284077da935b83f2661bea399a04e0ab"
+    },
+    {
+      "bytes": 9259,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentParking_support.xsd",
+      "sha256": "47684d9d70f46bccb18bfeccfd461d87b431bdf5d05258bb4822a79fadf5a41e"
+    },
+    {
+      "bytes": 8298,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentParking_version.xsd",
+      "sha256": "ae38443569b7cb36d2d9a4187152a70440cc29b0b21e2b9ff09613b7dbcf9407"
+    },
+    {
+      "bytes": 18639,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentPassenger_support.xsd",
+      "sha256": "0e59bb4847d5ddabae703f85a92e64ecda43ac2d331dbc9c5637a62ae7c48d35"
+    },
+    {
+      "bytes": 24967,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentPassenger_version.xsd",
+      "sha256": "e90a73dbee5a1ec84ed8b20135b1958707a6e4dd50c4471d5c587fa1fc31fb33"
+    },
+    {
+      "bytes": 11230,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentSigns_support.xsd",
+      "sha256": "1674824e03090aa06dfe25ed9c41f41507eb48fdaf4f86d697c9e29f582d9a28"
+    },
+    {
+      "bytes": 16218,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentSigns_version.xsd",
+      "sha256": "51d611f9d94e63e3ac5a419f07847c012d762971dd720b4de3944487743db3ec"
+    },
+    {
+      "bytes": 8418,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentTicketing_support.xsd",
+      "sha256": "6645b2cbd082cb3d3fabffd71d1af898f20d0126ec4fd96693dde8fccd8c1f59"
+    },
+    {
+      "bytes": 13119,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentTicketing_version.xsd",
+      "sha256": "57e8bf31166c028abc10a026c55ad847e4a1a87a4b9f4e894b70153baf082d00"
+    },
+    {
+      "bytes": 20560,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentWaiting_support.xsd",
+      "sha256": "603b41c12a46d55622f5524d4892d5aede518d1d231e4ba0aaa1e2f1ea8fa62f"
+    },
+    {
+      "bytes": 22978,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_equipmentWaiting_version.xsd",
+      "sha256": "52fdf54a9be200b4e532c254aa3ec078575cb050c0a27e7dee21275247c5a9da"
+    },
+    {
+      "bytes": 12171,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_flexibleStopPlace_support.xsd",
+      "sha256": "1788833c60ddb24275cd301f6ced88356ba785f45069992b17119576bb558e8b"
+    },
+    {
+      "bytes": 20329,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_flexibleStopPlace_version.xsd",
+      "sha256": "83e4257ff6ec6d01615227964ec1d33dd74979929f72a563e60e1f2a10815f6e"
+    },
+    {
+      "bytes": 23130,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localService_support.xsd",
+      "sha256": "453fa25b52e933cb2e5615b5f31d13170c30f064d7ec5f04bd640f38bce85a5f"
+    },
+    {
+      "bytes": 27520,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localService_version.xsd",
+      "sha256": "97a3cfd72b1f470465d359d4657a1ed7e5b08837243e3983826db153f15e1a80"
+    },
+    {
+      "bytes": 16545,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localServiceCommercial_support.xsd",
+      "sha256": "303b540b7e1f5ce0ef57ba6f0282c462fb2b49c5ef0256626e3b516f615129bb"
+    },
+    {
+      "bytes": 13175,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_localServiceCommercial_version.xsd",
+      "sha256": "3ff8700946faaf8d2e1be4c1fa0d0e83a0a61e45cd4b3c0936b8e6c907eaa6a4"
+    },
+    {
+      "bytes": 13979,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_navigationPath_version.xsd",
+      "sha256": "7e59374d31735a544adc9601b8123df32339320a6512702d8cc31ea981b2e550"
+    },
+    {
+      "bytes": 38369,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_parking_support.xsd",
+      "sha256": "7df4c5ee6a87b24910100b16524a7af6611ea4ab3460626e6aa512529d807c6b"
+    },
+    {
+      "bytes": 44613,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_parking_version.xsd",
+      "sha256": "fa840c1035253b000d5cff8565d10560f786ad7045ea3c4bd549f21e894e91a0"
+    },
+    {
+      "bytes": 14702,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_path_support.xsd",
+      "sha256": "2ec07a617ec1fa54569e6f0083eea64086fcf8a3110fecafc977c7bccea2e687"
+    },
+    {
+      "bytes": 17468,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_path_version.xsd",
+      "sha256": "0dc91c944adeb53f48353b5cef7773657a470a24e68ede8566e5867dd6404dd8"
+    },
+    {
+      "bytes": 19946,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_pointOfInterest_support.xsd",
+      "sha256": "f5d9250cdb635b242b9e02ff41ca941ce77d6dd11d4a2f57d4e2efd413577d73"
+    },
+    {
+      "bytes": 30464,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_pointOfInterest_version.xsd",
+      "sha256": "338e0e935b8b95be83436692ddddd5052d5f58e1c7725a20f30ad116d0e274f5"
+    },
+    {
+      "bytes": 5423,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_serviceFeature_support.xsd",
+      "sha256": "c937d889c87541f65cbc2ccc3304c7d0e8ca07b52f7b0ebcfa59c77c8ec45528"
+    },
+    {
+      "bytes": 4107,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_serviceFeature_version.xsd",
+      "sha256": "43ee85aa7f8a5810ef274d633f6f598ba9d753812c35041c6879604108388de9"
+    },
+    {
+      "bytes": 31677,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_site_support.xsd",
+      "sha256": "b52bace96907e86b62aca787b3007b8823001a0fd237d1140dd4bc6417ca7313"
+    },
+    {
+      "bytes": 40588,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_site_version.xsd",
+      "sha256": "822929a6f413e91d8d9ec64abba46f6553080143d6a4a3ef4dbefe18dce28a13"
+    },
+    {
+      "bytes": 31458,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_stopPlace_support.xsd",
+      "sha256": "bfc24ad5e8ad78ae41dd3cc7a38604097e0c50d2d5ba0aef857d4a11e1452056"
+    },
+    {
+      "bytes": 62029,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_stopPlace_version.xsd",
+      "sha256": "835c2431d779626534e5ae8e86fffd932be310ba04c8617284ec6a02abe30ed8"
+    },
+    {
+      "bytes": 12506,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_ifopt_vehicleStopping_support.xsd",
+      "sha256": "9f667763b54d14c147efb96ce164273c0746ba3c68ff869e2d267859960fb88b"
+    },
+    {
+      "bytes": 9932,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_rechargingPointAssignment_support.xsd",
+      "sha256": "61e39a944cb5621cdbea03ddfc451e3c51f13d5105b4d92ec0ebb415b6e41930"
+    },
+    {
+      "bytes": 11878,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_rechargingPointAssignment_version.xsd",
+      "sha256": "45802eefd556bc55cb3237ea9c774b79a66fae637dae776c754445c545dd0c48"
+    },
+    {
+      "bytes": 10090,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_taxiPlace_support.xsd",
+      "sha256": "86dbbe1f823b514443a7cabdebac8da9998b79c05e691345998c01531a1c1ad0"
+    },
+    {
+      "bytes": 12548,
+      "path": "xsd/netex_part_1/part1_ifopt/netex_taxiPlace_version.xsd",
+      "sha256": "9d392433efa72bebe84053cf1bdfcd68e4c59e5aac45f88b8d7e4a92906ed66d"
+    },
+    {
+      "bytes": 20950,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_activation_support.xsd",
+      "sha256": "39481f705bac250edd6f1266129783975aa8616ed582950b3296413389347ae8"
+    },
+    {
+      "bytes": 20754,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_activation_version.xsd",
+      "sha256": "0c0b5757f7c41fb8ca274350045e0eb990a08ad8853e20261621bf1d6054704a"
+    },
+    {
+      "bytes": 1248,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_infrastructureFrame_contents.xsd",
+      "sha256": "ae2e7d97b462c0c0517c82f637c1162d76648c4f877b8d43a38aa52a07adbb80"
+    },
+    {
+      "bytes": 1298,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_lineRoute.xsd",
+      "sha256": "10895fed0df70f50a8af5a8887f4c45168d0e510cb4258d31601f88de3923197"
+    },
+    {
+      "bytes": 868,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_all_objects_part1_networkDescription.xsd",
+      "sha256": "4c35fbf66e219bd2160928d49151a60c50b83185062a24b4a116423eab1dce88"
+    },
+    {
+      "bytes": 12347,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_flexibleNetwork_support.xsd",
+      "sha256": "5281cd1afbe7e840fcdd93b9199a34202926f596e648f7c2d00a65c1ec29707c"
+    },
+    {
+      "bytes": 16259,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_flexibleNetwork_version.xsd",
+      "sha256": "f6693577bdc6cbd0d54e2f38a73602966366e0f6ebeb7fbb750e860836662ef1"
+    },
+    {
+      "bytes": 24193,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_line_support.xsd",
+      "sha256": "9c7c0a072738613ad13bc5a26520e1b195bf18364e565b54a324c9e03f0b29f6"
+    },
+    {
+      "bytes": 49329,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_line_version.xsd",
+      "sha256": "27efed50ace1f0873982fb46c024f88330ae60bac69335d20e629e00afc3b4de"
+    },
+    {
+      "bytes": 12487,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_lineNetwork_support.xsd",
+      "sha256": "2295decbc566a4e2a826a822b0b79fc8af2b842ab5b3b52758f56ad15422c37c"
+    },
+    {
+      "bytes": 14894,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_lineNetwork_version.xsd",
+      "sha256": "6505667fd9210733a01022635a88798d6ce527f32f63bef254791dfea40c1589"
+    },
+    {
+      "bytes": 25301,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkInfrastructure_support.xsd",
+      "sha256": "7ddcb4c841955c69b55b45a7f0c8116c945ac24b000754b511933ca91d48f2e0"
+    },
+    {
+      "bytes": 17559,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkInfrastructure_version.xsd",
+      "sha256": "ee6954c6d34903843da152f7e947d4dc42baceb38dd658227317b229fc1bb2f2"
+    },
+    {
+      "bytes": 17153,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkRestriction_support.xsd",
+      "sha256": "b62a62970fe91538c21e1d75315f9ace9691c7de0bc5c8e6ed01f650db3bd068"
+    },
+    {
+      "bytes": 21047,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_networkRestriction_version.xsd",
+      "sha256": "88fe45b1eb0c8ad196eaa84b5370d43f1131f6842f7ba98d488bcd107d8282c3"
+    },
+    {
+      "bytes": 18833,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_route_support.xsd",
+      "sha256": "e7f0e52c99b33ca38eb0ea3ba1f5a919b1aa4c6d224430400ab933d34e982c01"
+    },
+    {
+      "bytes": 25942,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_route_version.xsd",
+      "sha256": "2f5d29e9a772d97a0f2157dea4a348090e25a624772617f2399e271a330fe5b4"
+    },
+    {
+      "bytes": 5347,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_routeInstruction_support.xsd",
+      "sha256": "6687d8326331d4c7d699b6dfb669f89174b2a8540e19cc7657e9f029459d8c85"
+    },
+    {
+      "bytes": 7647,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_routeInstruction_version.xsd",
+      "sha256": "d660494cbf20ca62c8dfa42670ded8a007038191dbfdd7a7cead841c7ba77a56"
+    },
+    {
+      "bytes": 13861,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_timingPattern_support.xsd",
+      "sha256": "53dc101d5ebde47a418a04f24f91f484f0bd4d0b228bceab939b2fee6dab4a13"
+    },
+    {
+      "bytes": 15160,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_vehicleAndCrewPoint_support.xsd",
+      "sha256": "a08cd67fc45d141d840ce22b6bb0e76cf0526ed9cad7e1a66f2b78d1bc08e9f9"
     },
     {
       "bytes": 16606,
+      "path": "xsd/netex_part_1/part1_networkDescription/netex_vehicleAndCrewPoint_version.xsd",
+      "sha256": "2a7827211d62642aa5d741a13ffadee77f158a87a0e270b863f9d183fac4f2b1"
+    },
+    {
+      "bytes": 2459,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_all_objects_part1_tacticalPlanning.xsd",
+      "sha256": "9d6c6d53439b2e49ef13217ec8d0edae7d75f697b230dfcd3a33c3a7f1bb9953"
+    },
+    {
+      "bytes": 5248,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_commonSection_support.xsd",
+      "sha256": "79e7c727da1ae23c1bc2600b38ebd856a66af6ab1700cf311862e1a388a36240"
+    },
+    {
+      "bytes": 7188,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_commonSection_version.xsd",
+      "sha256": "076dd3148c11bdd732461ffb812dd9bbe46eceecea2e89fb265eb4d43bcf35e3"
+    },
+    {
+      "bytes": 19742,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_fareZone_support.xsd",
+      "sha256": "31bdcf454e4b74bfd1061bcf3c23e8aa8611819fba7a39ea9e6bfe1752068d3e"
+    },
+    {
+      "bytes": 25428,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_fareZone_version.xsd",
+      "sha256": "9d11e9e946eb836f01c050171c43840ecaf10758f1921016841d6f7b11ac250a"
+    },
+    {
+      "bytes": 20557,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPattern_support.xsd",
+      "sha256": "7902b9fda7d60e1f87e8af23fce7bd3350ebe0c4fa4f8b525243b9073197b282"
+    },
+    {
+      "bytes": 20348,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPattern_version.xsd",
+      "sha256": "15b4fda16c2332866ef69dc0a78bc71e501a09c9dc5a4c802f486e76b5803764"
+    },
+    {
+      "bytes": 12520,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPatternTimings_support.xsd",
+      "sha256": "cadb746f8e38436d1e018b463a1c8a1fd55c2f24ac6139bfa745eb642a109f49"
+    },
+    {
+      "bytes": 14777,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyPatternTimings_version.xsd",
+      "sha256": "dd8d1b95a1fdc6cb409ede9ad4a2795e1043af5a74aadcabba41f045cb8dcbe1"
+    },
+    {
+      "bytes": 15568,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyTiming_support.xsd",
+      "sha256": "043eed40cce39b0db8fa5c491609a9f7a0e52e2da766a0dc1b473d400d45b6f5"
+    },
+    {
+      "bytes": 18258,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_journeyTiming_version.xsd",
+      "sha256": "f9c3484696ab08c097fb23ae694eedba309c271298ab3c4ee77e97e926be7308"
+    },
+    {
+      "bytes": 13158,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_passengerInformationEquipment_support.xsd",
+      "sha256": "fd69ae1d913aa70444a030ace2563d2bfc918d70706e1d74e0549cb109b92f70"
+    },
+    {
+      "bytes": 21086,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_passengerInformationEquipment_version.xsd",
+      "sha256": "ecc4d42c4c496cdfc14b167a88d980dc6f97e510e660d8d9330873f2f24d021b"
+    },
+    {
+      "bytes": 4684,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_pathAssignment_version.xsd",
+      "sha256": "06ffb80096d3860743eabdc3dfa997a632643b51ab8171c15cf2f851751a7ed5"
+    },
+    {
+      "bytes": 12308,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_routingConstraint_support.xsd",
+      "sha256": "2e59cfb699f21d3828a8efc1a9ba50141129d1d9bdfdf09b3090f892787fe7a8"
+    },
+    {
+      "bytes": 17813,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_routingConstraint_version.xsd",
+      "sha256": "fddf7a148ee7faf67a34dd51f28a86733acf553d93914f4c3deba1fca575cc99"
+    },
+    {
+      "bytes": 31269,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_servicePattern_support.xsd",
+      "sha256": "bf71087cfd5e5d9700f98583c1b85c51071240152683b24060f82069e47aa36f"
+    },
+    {
+      "bytes": 50383,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_servicePattern_version.xsd",
+      "sha256": "58725ed6e13f8fb2bf516d5941f8ccac453f950110b9948ed4e4177727185e94"
+    },
+    {
+      "bytes": 7352,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_siteConnection_support.xsd",
+      "sha256": "a6ae3a3d73ed2a5bc445232ec4730ecfaba689466c964f02c14514bb250345e0"
+    },
+    {
+      "bytes": 11806,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_siteConnection_version.xsd",
+      "sha256": "316e4cd675e3bc5719384098561e77ee3f4f1b1f577cc9a62546dbb3c9d43979"
+    },
+    {
+      "bytes": 14598,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_stopAssignment_support.xsd",
+      "sha256": "888d505f3fdba445b22a1ac7e89455b05c2efe70a941ef5ab462f7e218965e98"
+    },
+    {
+      "bytes": 22336,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_stopAssignment_version.xsd",
+      "sha256": "63b31c27a951b5b5f434970d1e000d92b73f8aa93046088724324ca1061a80df"
+    },
+    {
+      "bytes": 15670,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timeDemandType_support.xsd",
+      "sha256": "148d8d533cf6e0be0b50f4a27b0393c2e6a11e56ef15a81e20c206a93b8c7d3c"
+    },
+    {
+      "bytes": 15503,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timeDemandType_version.xsd",
+      "sha256": "98b6788826a09fa56204ab581fd4f0bd058c005534f75bd4688322f6db526597"
+    },
+    {
+      "bytes": 24608,
+      "path": "xsd/netex_part_1/part1_tacticalPlanning/netex_timingPattern_version.xsd",
+      "sha256": "aaa23f5fd2a712965ed848c9021bcf071fe6c41f5e5f10aff3c4fcb18a9bb66e"
+    },
+    {
+      "bytes": 3475,
+      "path": "xsd/netex_part_2/netex_all_frames_part2.xsd",
+      "sha256": "4d51b1b7f8d94eac875e13496617bd03819379d2833b73fbd0e1fcccc6dbf70f"
+    },
+    {
+      "bytes": 3565,
+      "path": "xsd/netex_part_2/netex_all_objects_part2.xsd",
+      "sha256": "bb80fda157e3b81e2495c761f33d858912678e39e6f229a4d0b1fdaf9c31133a"
+    },
+    {
+      "bytes": 2425,
+      "path": "xsd/netex_part_2/part2_frames/netex_driverScheduleFrame_version.xsd",
+      "sha256": "5d3ff12b882ff0fa568440bbac2671a70b5642fc2d5f5ee83922dcf21c785dc4"
+    },
+    {
+      "bytes": 7568,
+      "path": "xsd/netex_part_2/part2_frames/netex_serviceFrame_version.xsd",
+      "sha256": "fa4ceb3c77c63722a48197e3357e4bf257aaed92f7a993d2bb879967ada4408a"
+    },
+    {
+      "bytes": 9500,
+      "path": "xsd/netex_part_2/part2_frames/netex_timetableFrame_support.xsd",
+      "sha256": "d1572806384c9ce11f5a3e2d059d4c922abfdd3a2709bbd6dae4013569dba285"
+    },
+    {
+      "bytes": 11635,
+      "path": "xsd/netex_part_2/part2_frames/netex_timetableFrame_version.xsd",
+      "sha256": "5dd846a082bdf6566ea22bd9eca1522216cf46e43d35b74f9ef1d72c5d037b9f"
+    },
+    {
+      "bytes": 3574,
+      "path": "xsd/netex_part_2/part2_frames/netex_vehicleScheduleFrame_version.xsd",
+      "sha256": "e8cf07cf5558782e3bc8119aa73987f3be5cd3e137d14ad63e6389ea164f6312"
+    },
+    {
+      "bytes": 896,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_all_objects_part2_journeyAssignments.xsd",
+      "sha256": "c2c93bf2dc55939691320b82a4c95125f00f99df4aaa837e3bdec425caf8255f"
+    },
+    {
+      "bytes": 2473,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_all_objects_part2_journeyTimes.xsd",
+      "sha256": "88134752a34339655d6d16a95dbb7a47795a967f050b5f04e109ad3abaea99d3"
+    },
+    {
+      "bytes": 5436,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_call_support.xsd",
+      "sha256": "9923476f195671266aa02ebaa8178ef010e53dc6b729a34d26f267adb06938ee"
+    },
+    {
+      "bytes": 19434,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_call_version.xsd",
+      "sha256": "35b913c248e2066796e372b73170e8b1304ea371d177237f03d7cb538bc78ba0"
+    },
+    {
+      "bytes": 23453,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_coupledJourney_support.xsd",
+      "sha256": "8dfefc601d5264777c8a5ac83b99fec0f06fc088a3fc73ab13d656d926fb21b4"
+    },
+    {
+      "bytes": 23222,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_coupledJourney_version.xsd",
+      "sha256": "1dd9bfaf13be909557fe8fa671fe3bc5e597f82768bb0beb99dd27c3f46fc752"
+    },
+    {
+      "bytes": 13134,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedPassingTimes_version.xsd",
+      "sha256": "d074c606d55b26fcb7febb300c5e5969d1f7ebd345116c1ec7b1c7773cf80c1d"
+    },
+    {
+      "bytes": 11525,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedVehicleJourney_support.xsd",
+      "sha256": "2af52257fe15297857706a7d318e8587b60b5f5cd6c8e6f750b50b1ff6dcbe54"
+    },
+    {
+      "bytes": 17284,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_datedVehicleJourney_version.xsd",
+      "sha256": "1847a03b50db840ed435d8b784cc425ef949ac17063e0916d94e95e7218de97b"
+    },
+    {
+      "bytes": 8929,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckEntranceAssignment_support.xsd",
+      "sha256": "f45f537daf16f012e61d26235efe10ad0218d8e15a2dff030a2c33d18c138e50"
+    },
+    {
+      "bytes": 9230,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckEntranceAssignment_version.xsd",
+      "sha256": "f293b5c1fc72aab2b11eaf287ebb762b32d2773e285fc241df484e0eccfde066"
+    },
+    {
+      "bytes": 5890,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckPlanAssignment_support.xsd",
+      "sha256": "9ac5ebd074456f9bffb71e7dcd5f4582c41e3288246c9a348a72c84f4475141c"
+    },
+    {
+      "bytes": 7176,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_deckPlanAssignment_version.xsd",
+      "sha256": "6ff617e13e82b38f6192535518ae1ea3476339d6e8b569ad1fbef95c692205a3"
+    },
+    {
+      "bytes": 10703,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_flexibleService_support.xsd",
+      "sha256": "a90959d3523af3810124738e85ab6f5795278f8e7fe42907d3bd15dc0fd912e6"
+    },
+    {
+      "bytes": 11773,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_flexibleService_version.xsd",
+      "sha256": "7cb07a98a02f1e39e2472571cc8dd47a6e5e4678a2987273a76ab2ade39d00d5"
+    },
+    {
+      "bytes": 21489,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchange_support.xsd",
+      "sha256": "31aa9bd65667d05206e5d373fdcb3a51b64b493afad86e58d5c088cf62ac5dcf"
+    },
+    {
+      "bytes": 39522,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchange_version.xsd",
+      "sha256": "7dd4a920ab39ee7a77a82a4f0fcaa6dbb6ee4474a714323c38c417b1749d4dd4"
+    },
+    {
+      "bytes": 19066,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_interchangeRule_version.xsd",
+      "sha256": "73e8476940a9fca3c487f8605f573f537832a4e4c7ce00f49f25cbc32426cf71"
+    },
+    {
+      "bytes": 7493,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journey_facility_support.xsd",
+      "sha256": "8a39360c5d4e9ba55b7aff3d5f2de438eeac04b4dd493c21bf5904e0c738a293"
+    },
+    {
+      "bytes": 7107,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journey_version.xsd",
+      "sha256": "e08ef4ef7f10aec7a297eef766ff466eff6ebb5c172e43664280b0b4b1dc3e7c"
+    },
+    {
+      "bytes": 9010,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyAccounting_support.xsd",
+      "sha256": "878d813cfae1ebcf46bf06e09badd1466fc6cd46eda3415a38c1f407728afbe0"
+    },
+    {
+      "bytes": 8257,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyAccounting_version.xsd",
+      "sha256": "25d89673233ee72036ad72e2b0f0499f865f711e862993c0fcf23714fd7b8910"
+    },
+    {
+      "bytes": 8952,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_journeyDesignator_support.xsd",
+      "sha256": "9a563c70512c9ddac456bb93a26e82ff16888af41df2f482c416ad168d30dfb4"
+    },
+    {
+      "bytes": 5200,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passengerAtStopTime_support.xsd",
+      "sha256": "b081cec99a98a7cca0857a96d151d59d406e284421ca307547217fe52c6b736d"
+    },
+    {
+      "bytes": 6685,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passengerAtStopTime_version.xsd",
+      "sha256": "bb218f05ad709016964cc246bce829f4017c8a35c3b5fb9c27307649282f24c8"
+    },
+    {
+      "bytes": 14485,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passingTimes_support.xsd",
+      "sha256": "653e6ce32a22216a843129412e20a59f724d6c2b66f4da3d9a82552e53e4aeea"
+    },
+    {
+      "bytes": 9506,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_passingTimes_version.xsd",
+      "sha256": "f49a5c851c7bf95bab518ce3c6424663baaf2f1491416129d21e011361fd4426"
+    },
+    {
+      "bytes": 13105,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceJourney_support.xsd",
+      "sha256": "3353bb48352203a26ac2e21b0530561413df9aab93c357f5d15816fc2dd3a02a"
+    },
+    {
+      "bytes": 30730,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceJourney_version.xsd",
+      "sha256": "a7c058cda24966ae00dbc239e4cae6434b1e165c02451fc05e9440bbfee29c42"
+    },
+    {
+      "bytes": 562,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_serviceView_version.xsd",
+      "sha256": "1c0766dc224181eec98aa775de170c73867cabc05de1e1296e0e8c016c14f35d"
+    },
+    {
+      "bytes": 8496,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_timeDemandProfile_version.xsd",
+      "sha256": "f5fa5de7ed206e1fdd5ba6436d035ef22220cc6ab77da77b862b93e6635ef82a"
+    },
+    {
+      "bytes": 8563,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_timeDemandTimes_version.xsd",
+      "sha256": "3726a51eac1e54c0c1c17fb2f9134c8a97692b90a6c8cacc6113ad8fca32274d"
+    },
+    {
+      "bytes": 16600,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourney_support.xsd",
+      "sha256": "93f7c2fd04a21feb0008456a02742e4524fd3e8492d9bd937f736942a78f6d66"
+    },
+    {
+      "bytes": 20603,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourney_version.xsd",
+      "sha256": "9e3cb4eee4e65daf6688b779567f39c3c65d3cda113ddc913d2a00e9310b4965"
+    },
+    {
+      "bytes": 13968,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyFrequency_support.xsd",
+      "sha256": "30a2ab3dd7ed0e6501d389fbc4c86afc893618a1b5d83a26ea11e594af3eba33"
+    },
+    {
+      "bytes": 17241,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyFrequency_version.xsd",
+      "sha256": "ababb5ea288a82d95b9f41aa11c58ca065247369fb67a0ff10436bd7b35a0f86"
+    },
+    {
+      "bytes": 13158,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyStopAssignment_support.xsd",
+      "sha256": "a2004069b8ee74c4f5b509bfaca6284febddb110af789387d22e913eb86de5af"
+    },
+    {
+      "bytes": 17345,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyStopAssignment_version.xsd",
+      "sha256": "f19d23628ddece42b2d9239b0118e886ca3d65f567a7a83ec08f9cc778645193"
+    },
+    {
+      "bytes": 4119,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyTimes_support.xsd",
+      "sha256": "4ba81f4ab26dae1b47fe311cb911aee7eff7822228186220747a185e3ae1edc9"
+    },
+    {
+      "bytes": 10877,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleJourneyTimes_version.xsd",
+      "sha256": "72549167fcfd16311841ae324de2f322845e8070f4f22eb82de1494d404501a8"
+    },
+    {
+      "bytes": 16365,
+      "path": "xsd/netex_part_2/part2_journeyTimes/netex_vehicleService_support.xsd",
+      "sha256": "ade7db8ba7a6c0f988295eb0eeb6dcd2a848b0a647841f592515ff2b1d35dede"
+    },
+    {
+      "bytes": 4087,
+      "path": "xsd/netex_part_2/part2_occupancy/netex_oc_occupancy_support.xsd",
+      "sha256": "3e83d88d24e894ed65a7de4e9758e47d03d1c693f57177dc3510c84551e17cc8"
+    },
+    {
+      "bytes": 12511,
+      "path": "xsd/netex_part_2/part2_occupancy/netex_oc_occupancy_version.xsd",
+      "sha256": "22dcf61dd269f9ef030b67d4e092f4aed4224e9d7385558f557cdc19c86ad5cf"
+    },
+    {
+      "bytes": 3261,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_all_objects_part2_vehicleService.xsd",
+      "sha256": "783ed10e228eaba66906c263c2a86e0b6c759330b44f058225b59a1d6b6feaab"
+    },
+    {
+      "bytes": 13947,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_duty_support.xsd",
+      "sha256": "7e60cc4e1dbf76f50a19950f29cd567f4a9494d01a2fb66e4b4817665b2a265c"
+    },
+    {
+      "bytes": 20843,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_duty_version.xsd",
+      "sha256": "fbd490a158ebeed905c59bb5af5a0de0f3387cdbdbadb6b5795e9e1c63af04ac"
+    },
+    {
+      "bytes": 7763,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleRechargingPlan_support.xsd",
+      "sha256": "e78d8e8840b78a1112f09463949801a3d76ce24e52506d6d89a2d5b3d058fa07"
+    },
+    {
+      "bytes": 14929,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleRechargingPlan_version.xsd",
+      "sha256": "4abbf0459c075f34665d910d52edfded7e770abc16b45fdb99b5cd436477cdf6"
+    },
+    {
+      "bytes": 35734,
+      "path": "xsd/netex_part_2/part2_vehicleService/netex_vehicleService_version.xsd",
+      "sha256": "69268ef4656255f25cff45fba23e9ae9d0d3c76e69467d9ae21d1a1d5e72277f"
+    },
+    {
+      "bytes": 17605,
+      "path": "xsd/netex_part_3/part3_fares/netex_accessRightParameter_support.xsd",
+      "sha256": "37473141f03a712b47a92a9310000cedc1db0894ec10421483b0c607c637574a"
+    },
+    {
+      "bytes": 52612,
+      "path": "xsd/netex_part_3/part3_fares/netex_accessRightParameter_version.xsd",
+      "sha256": "8c5b71fbfcaa5485a122d0915565a433f6fe1ef43e5f7ba38d579ee749634c62"
+    },
+    {
+      "bytes": 743,
+      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares.xsd",
+      "sha256": "6eab00f0d5fa63f2df4ab64386e763a92682bec9a31e5999d2706c8a578d25ff"
+    },
+    {
+      "bytes": 2126,
+      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_AR.xsd",
+      "sha256": "125339ca4195b6e31ed5568128e2f160f4392a2ef64c8580ad13e23f7db9809c"
+    },
+    {
+      "bytes": 856,
+      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_FP.xsd",
+      "sha256": "c3c9b3658559e1138397847d497d6d4275031357181bce0445c1881d0c6057ad"
+    },
+    {
+      "bytes": 1590,
+      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_FS.xsd",
+      "sha256": "9455335e8fb839b6e9a7fb01d1d43cc402edcc28de98533eb5f271bb4211cca5"
+    },
+    {
+      "bytes": 1046,
+      "path": "xsd/netex_part_3/part3_fares/netex_all_objects_part3_fares_SD.xsd",
+      "sha256": "81513b870daddc40cef3bff5171bd1efb870f85d60961bb8a37fc3400b3014b9"
+    },
+    {
+      "bytes": 30031,
+      "path": "xsd/netex_part_3/part3_fares/netex_calculationParameters_support.xsd",
+      "sha256": "709e6c5f418757392fbb701ec0fb22271ab37d3af677095cbedfe189c51e481f"
+    },
+    {
+      "bytes": 35559,
+      "path": "xsd/netex_part_3/part3_fares/netex_calculationParameters_version.xsd",
+      "sha256": "49e42e04b78d6969385375372f5bca276012def169279613605189b5c5077b7f"
+    },
+    {
+      "bytes": 13616,
+      "path": "xsd/netex_part_3/part3_fares/netex_distanceMatrixElement_support.xsd",
+      "sha256": "5be43759d100f445a344bca1af6bbb74dc3309d50f97cd00d69a06468b77b3da"
+    },
+    {
+      "bytes": 25202,
+      "path": "xsd/netex_part_3/part3_fares/netex_distanceMatrixElement_version.xsd",
+      "sha256": "2640c8b618f1bf2cb604ef20ec3bc9f372c242c6843dabd695f50165f9df79ab"
+    },
+    {
+      "bytes": 5611,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareConditionSummary_support.xsd",
+      "sha256": "f88ae304fc19a9128c2490a56a285559b05388e0c89bb55431bede2dad429eeb"
+    },
+    {
+      "bytes": 16344,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareConditionSummary_version.xsd",
+      "sha256": "9222916fe3109a0859703339636a5c9a5377fd55e12238c43446761c0afb5031"
+    },
+    {
+      "bytes": 10692,
+      "path": "xsd/netex_part_3/part3_fares/netex_farePrice_support.xsd",
+      "sha256": "7deb500bf6e3d207d162f22f6b2318dafbc7ee100e010446823901e5ad86b761"
+    },
+    {
+      "bytes": 24047,
+      "path": "xsd/netex_part_3/part3_fares/netex_farePrice_version.xsd",
+      "sha256": "566bb483779007315ed11c5c9dd89bfcc764861fd81106b515b3d28ceb0a9bfe"
+    },
+    {
+      "bytes": 51280,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareProduct_support.xsd",
+      "sha256": "119adf54cfbd457c3e4a90a51f8cb1d2922c68a63d18f582598ac252c865848f"
+    },
+    {
+      "bytes": 48422,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareProduct_version.xsd",
+      "sha256": "b8648c515391eb10f921888205f7f8ba6b51e173848a41a8aadf1184d0423826"
+    },
+    {
+      "bytes": 12301,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareSeries_support.xsd",
+      "sha256": "20d494f62e2d8d63714944828508699e226cda655a0d6e7002f8881895d1c129"
+    },
+    {
+      "bytes": 17479,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareSeries_version.xsd",
+      "sha256": "54f87a870582ee0febbe2693ab6f82297d5e4a76e1c54e587a62a5739a8c21ff"
+    },
+    {
+      "bytes": 15332,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareStructure_support.xsd",
+      "sha256": "23101c614b50bb939328b7c71b3c2dea80e9125a745c2fe8fc6460f308749455"
+    },
+    {
+      "bytes": 14970,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareStructure_version.xsd",
+      "sha256": "7be3ed9208bb674a3b38371cba4276d01b70882092e016cf078f8ba79a65ad5c"
+    },
+    {
+      "bytes": 21175,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareStructureElement_support.xsd",
+      "sha256": "1159211c021b9336ebcbcebdc5457af87138eeec48b62813ca4ae7c822191d61"
+    },
+    {
+      "bytes": 29271,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareStructureElement_version.xsd",
+      "sha256": "983e929984fe5001868daaa8811f495aa0c7646362f083b1888154cf6db404ec"
+    },
+    {
+      "bytes": 17637,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareTable_support.xsd",
+      "sha256": "04c2001a768c9ba45c6536711f8fc45dfda06fca598a9edab53e449a2e775f18"
+    },
+    {
+      "bytes": 42083,
+      "path": "xsd/netex_part_3/part3_fares/netex_fareTable_version.xsd",
+      "sha256": "f83aeab57892c7ceb4bc22dd56ee285bc2bc876c9ea4e2f6982f5846d7de4a94"
+    },
+    {
+      "bytes": 15127,
+      "path": "xsd/netex_part_3/part3_fares/netex_geographicStructureFactor_support.xsd",
+      "sha256": "c86380f6d8691e22fe610d3c2c9b86a35571ae29a5235c43844b3582dc462c2b"
+    },
+    {
+      "bytes": 20307,
+      "path": "xsd/netex_part_3/part3_fares/netex_geographicStructureFactor_version.xsd",
+      "sha256": "3e0f91f531032c752c862a2dfa534cb90a0bb1c2bb642a7fbf8d250a657ed9dc"
+    },
+    {
+      "bytes": 15648,
+      "path": "xsd/netex_part_3/part3_fares/netex_qualityStructureFactor_support.xsd",
+      "sha256": "e658bd97640f0839408edc6fb6264e7af39c782c8688256478f8f2f854d39638"
+    },
+    {
+      "bytes": 19884,
+      "path": "xsd/netex_part_3/part3_fares/netex_qualityStructureFactor_version.xsd",
+      "sha256": "e7dbe1cae28437e24865a905a8c0caaa825b70341d60a20389e5c6fa0d0c679b"
+    },
+    {
+      "bytes": 18675,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesDistribution_support.xsd",
+      "sha256": "ca028ed7dcecf224d2e7c89233a9a1f1d538ac42db934991c18f02f208e3c3ff"
+    },
+    {
+      "bytes": 20531,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesDistribution_version.xsd",
+      "sha256": "0443c250f3d3b90fdf40d6fdeff627b347db6fa8a3718e70e7024b2175bcc4eb"
+    },
+    {
+      "bytes": 23396,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackage_support.xsd",
+      "sha256": "0b61f9edc004d46aa6c8ddc5dd872ae21cd4a728be4160b9cf136b6aae1ecd86"
+    },
+    {
+      "bytes": 35418,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackage_version.xsd",
+      "sha256": "aeebc4bbe31b52cc529d21d4924caddc7e38e51a4f9edf6092ac2cf3c4020fe3"
+    },
+    {
+      "bytes": 8153,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackageEntitlement_support.xsd",
+      "sha256": "01caee20bd25b3c2828a54242cfad02f18d421d0cde4f41b8b060f6649c85ed9"
+    },
+    {
+      "bytes": 7712,
+      "path": "xsd/netex_part_3/part3_fares/netex_salesOfferPackageEntitlement_version.xsd",
+      "sha256": "11f57a0248dadd0a5518a255548aedd5b4af5fd092ac4e001b11a99d514a9188"
+    },
+    {
+      "bytes": 14575,
+      "path": "xsd/netex_part_3/part3_fares/netex_timeStructureFactor_support.xsd",
+      "sha256": "422afc2568b126d8eba8661490cf27ec29ae76ba70108b445626520a9125cde1"
+    },
+    {
+      "bytes": 19295,
+      "path": "xsd/netex_part_3/part3_fares/netex_timeStructureFactor_version.xsd",
+      "sha256": "41d5f2937e9d94af31cdb88ea24ca23c1ba81c544472a0a8c9eed2f04961d407"
+    },
+    {
+      "bytes": 28136,
+      "path": "xsd/netex_part_3/part3_fares/netex_trip_support.xsd",
+      "sha256": "ec8d70ea65ef7fa99d32011ecd1ed75a7afae959153af82df524f012e578183f"
+    },
+    {
+      "bytes": 10612,
+      "path": "xsd/netex_part_3/part3_fares/netex_typeOfTravelDocument_support.xsd",
+      "sha256": "a7dee4f632c5602f26e81df9ad3d591b6c0331015f10b18b8b15421ab15c08bb"
+    },
+    {
+      "bytes": 12542,
+      "path": "xsd/netex_part_3/part3_fares/netex_typeOfTravelDocument_version.xsd",
+      "sha256": "12e4b8f5bb2986d044f042acbd8abe9e7b1f6124d5ab21ab7aa349d8d579b514"
+    },
+    {
+      "bytes": 14260,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameter_support.xsd",
+      "sha256": "29f2107191b913edc02bdce809ada3d63c738cab7682ee06efb4cc1a00f1e497"
+    },
+    {
+      "bytes": 10753,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameter_version.xsd",
+      "sha256": "79b743719b26cc55be77d612b42384ec7405c6f115f1117a76b810a465b4b847"
+    },
+    {
+      "bytes": 23251,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterAfterSales_support.xsd",
+      "sha256": "0c881c7faeecfd91ff1e011954453cff181d597b1b7691b2ebb869a0839dff3c"
+    },
+    {
+      "bytes": 22017,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterAfterSales_version.xsd",
+      "sha256": "c34bf4ab1834ccdcad26bee5ea7ab2c71613917f365f1f955ceda71846bd943a"
+    },
+    {
+      "bytes": 14131,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterBooking_support.xsd",
+      "sha256": "812da21261e4f66e996f4875081c05ed69c84dbfe092f7717b3d52d6f9172be5"
+    },
+    {
+      "bytes": 18142,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterBooking_version.xsd",
+      "sha256": "dacab8b4c4d37b7992de04adb3903fae369c0741e47e391f11385d2499b7c1e6"
+    },
+    {
+      "bytes": 16505,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterCharging_support.xsd",
+      "sha256": "8a953ad51b018de90116b4d181f1cab28865ec54377e15ba45b110fbb4401076"
+    },
+    {
+      "bytes": 13219,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterCharging_version.xsd",
+      "sha256": "9ae7564d8a72aede32948fe403a85bf83b2375d220ddc0f5e2ab6e0b32fb256c"
+    },
+    {
+      "bytes": 32161,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEligibility_support.xsd",
+      "sha256": "f1f507e72e886b8fb9bdc2d431c6960ec8645b79b24b14c4188f5ce7eb1fb4ba"
+    },
+    {
+      "bytes": 31755,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEligibility_version.xsd",
+      "sha256": "fc458c1ec39fee8ccd5e0d27831bff0ff08d976e466d57febb8924cd3d57b147"
+    },
+    {
+      "bytes": 14336,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEntitlement_support.xsd",
+      "sha256": "e455c5d060e020eaf96c49a4d0f8f52cb9e486ce16096f4e73af695d8a7d410c"
+    },
+    {
+      "bytes": 13174,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterEntitlement_version.xsd",
+      "sha256": "c8624333b2fecc15075664001603c166c5335371e47774a90763fe97f6a937cd"
+    },
+    {
+      "bytes": 7964,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterLuggage_support.xsd",
+      "sha256": "dd4e7d138108fbc0c5efaa0be3667123b6ca2186d78c3f80b0b45765bc5406af"
+    },
+    {
+      "bytes": 7317,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterLuggage_version.xsd",
+      "sha256": "e05da564a464d5854461b278154fde00745067bf088c413d9f21da76421290b5"
+    },
+    {
+      "bytes": 1047,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParametersAll_support.xsd",
+      "sha256": "818f77dd49e92b0a33c26938b15a971655c114f77a57564c5f15bdf69706048b"
+    },
+    {
+      "bytes": 37901,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterTravel_support.xsd",
+      "sha256": "f752cb6a2f9b1eae66a795b68b77bba0c874eb87dde27cd9a364e83ecf3ab1b3"
+    },
+    {
+      "bytes": 32780,
+      "path": "xsd/netex_part_3/part3_fares/netex_usageParameterTravel_version.xsd",
+      "sha256": "6961c78986ec42cd0fe6f187579e233992b0a323885c1f79d03eed6ae75504a7"
+    },
+    {
+      "bytes": 14700,
+      "path": "xsd/netex_part_3/part3_fares/netex_validableElement_support.xsd",
+      "sha256": "4ce8c7367e6ed3a32e8f6d048ab4f8b6e4f9a66767ccdfaa1140a36d8cabf6f3"
+    },
+    {
+      "bytes": 20064,
+      "path": "xsd/netex_part_3/part3_fares/netex_validableElement_version.xsd",
+      "sha256": "97234f6461bbe8dd93d97c32590b40536232c0ebfaee959803335862a8fcd135"
+    },
+    {
+      "bytes": 732,
+      "path": "xsd/netex_part_3/part3_frames/netex_all_frames_part3.xsd",
+      "sha256": "b968a3d7c896b258401f673900e381c61b00584f41ceaea5176b4edf5a17e71f"
+    },
+    {
+      "bytes": 13156,
+      "path": "xsd/netex_part_3/part3_frames/netex_fareFrame_version.xsd",
+      "sha256": "4e147f1615f7a09946d4afe98219d5a944e0e89dbb6c04677530115d8943b647"
+    },
+    {
+      "bytes": 8075,
+      "path": "xsd/netex_part_3/part3_frames/netex_salesTransactionFrame_version.xsd",
+      "sha256": "3b80c03a7e1d82acd539685d8061b72b30c5b48a36c6351470329e4373abc79a"
+    },
+    {
+      "bytes": 681,
+      "path": "xsd/netex_part_3/part3_monitoring/netex_all_objects_part3_monitoring.xsd",
+      "sha256": "440494e442bbb54439298d806101de65ac10a3d580530c55dc0a054afd4ffce8"
+    },
+    {
+      "bytes": 11146,
+      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredCall_version.xsd",
+      "sha256": "75ac57afc0b596e569afb12a95802bacacfcd04f4d7cb8c058555381cda144fa"
+    },
+    {
+      "bytes": 13007,
+      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredPassingTimes_version.xsd",
+      "sha256": "d62db5c2f1ff1b5877dc6aae8fddec20ebaa9d78e50324475b325e29dd22022d"
+    },
+    {
+      "bytes": 3733,
+      "path": "xsd/netex_part_3/part3_monitoring/netex_monitoredVehicleJourney_support.xsd",
+      "sha256": "47676b1620be418f098d689b258b14aaef8897cf5b05a2dd7c0f4dce16b55123"
+    },
+    {
+      "bytes": 595,
+      "path": "xsd/netex_part_3/part3_parkingTariff/netex_all_objects_part3_parking.xsd",
+      "sha256": "399474a42af5f5c725117b5414f12ea43cbf0d74b4d76f484c907a4477749f33"
+    },
+    {
+      "bytes": 9861,
+      "path": "xsd/netex_part_3/part3_parkingTariff/netex_parkingTariff_support.xsd",
+      "sha256": "e459764ece7865799e63f10682bc19375dd3876f20644a0cc1945b4d963f09c5"
+    },
+    {
+      "bytes": 14936,
+      "path": "xsd/netex_part_3/part3_parkingTariff/netex_parkingTariff_version.xsd",
+      "sha256": "42c3605118cfde0569034238115c9cf5902f9cc68b06daad2d1aab2fca15b9de"
+    },
+    {
+      "bytes": 21564,
+      "path": "xsd/netex_part_3/part3_PiQuery/netex_piRequest_support.xsd",
+      "sha256": "dba8c9521a19865ee56ec76985ca8f7c5d7cf431c81728dfd9b34e18a4a86fb4"
+    },
+    {
+      "bytes": 1793,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_all_objects_part3_salesTransactions.xsd",
+      "sha256": "d77ff3e8e9d03ad650aa70d0dc2eb24b998f34523a44a2583feff27cf1600b4f"
+    },
+    {
+      "bytes": 13027,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerEligibility_support.xsd",
+      "sha256": "b24ec68b49df6e0954dd7ad689c5c8934161aaadbf4b93eed1ef5fa3d128e918"
+    },
+    {
+      "bytes": 12954,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerEligibility_version.xsd",
+      "sha256": "8b00f48bd0965699691ab37f30a35ae3f3e1a2584df9d5cd488fa7be91a169d5"
+    },
+    {
+      "bytes": 5833,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPaymentMeans_support.xsd",
+      "sha256": "419cd63a55ab173b1cca66bdfb034c83157fc4febcf03299411f3549285f7e23"
+    },
+    {
+      "bytes": 6493,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPaymentMeans_version.xsd",
+      "sha256": "87758e3b05fd6c6971b3ef91f112b83f63bbf642bd3a48a6a935dc2a815f72fb"
+    },
+    {
+      "bytes": 30869,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPurchasePackage_support.xsd",
+      "sha256": "68c5232389bcd35ee41f3a802402f1eb04857c2a836e88b1c0d18dde374e6071"
+    },
+    {
+      "bytes": 43677,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_customerPurchasePackage_version.xsd",
+      "sha256": "359953211eabfaa50ba4a78d056a851e743a5bd98465b90fcad0c6d4b9086932"
+    },
+    {
+      "bytes": 16565,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_fareDebit_support.xsd",
+      "sha256": "06bc6959d19f0a9761df91b5f86dfb927a133bc569cab36810b53a0b9185b407"
+    },
+    {
+      "bytes": 13231,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_fareDebit_version.xsd",
+      "sha256": "06629e2b2ea8794f319f0089ec3cb4664845b83636dcc740297aabe706cb0942"
+    },
+    {
+      "bytes": 20696,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_mediumApplication_support.xsd",
+      "sha256": "5bf46c2391c5ffec687c9b66c3f449f43dad98ecff4a398e6c91115e64641c50"
+    },
+    {
+      "bytes": 19207,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_mediumApplication_version.xsd",
+      "sha256": "d0c31d45c5da78a9cbe8301eb4357f5c65d7279132eff4c7d697a67ad9eeab31"
+    },
+    {
+      "bytes": 14134,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_retailConsortium_support.xsd",
+      "sha256": "533ecd6a09ef2bd17c2876b3e5738ca529ab38badbd80e2bf37b91da360e3d74"
+    },
+    {
+      "bytes": 15024,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_retailConsortium_version.xsd",
+      "sha256": "8c14d51593a73e08f83350ca82d740291fc9bf2f104c182862d1c1beca4c9b18"
+    },
+    {
+      "bytes": 34704,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesContract_support.xsd",
+      "sha256": "9f1271200d7657507bf785aece951c8ae12079ee41166663c3003eb9b92c44ab"
+    },
+    {
+      "bytes": 39272,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesContract_version.xsd",
+      "sha256": "512d1b799f3d35dfe12b05cc86a854165566e1715e8d5a9599a74ffcc84db7cd"
+    },
+    {
+      "bytes": 6325,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesTransaction_support.xsd",
+      "sha256": "abb4b1d6638be15b6d8834ffdd0719196c89a47c8f56d00c11349aba5a9f5829"
+    },
+    {
+      "bytes": 9988,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_salesTransaction_version.xsd",
+      "sha256": "d1d10560250b30513bb57c7a977942f0affa64c1d8e373ff2388dd8820bb2be2"
+    },
+    {
+      "bytes": 12333,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_spotAllocation_support.xsd",
+      "sha256": "b7ef61b3e462f01563ae4a78c2d1fd1b520ff1a89d63b10d6c4d5fc38a450261"
+    },
+    {
+      "bytes": 12343,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_spotAllocation_version.xsd",
+      "sha256": "86a4a0fb930f5c1520c2d46a0976c1c99bda74f47652d0d8f2d76fe32f79b84a"
+    },
+    {
+      "bytes": 8443,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelDocument_support.xsd",
+      "sha256": "4f40328ba666db93a81eb9483f48655f42d8fab0207e71729ab031df248c5eaf"
+    },
+    {
+      "bytes": 10072,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelDocument_version.xsd",
+      "sha256": "767dca425a2253f292dea37f61401936e015369624902a4283064e24c44ae6c3"
+    },
+    {
+      "bytes": 14239,
+      "path": "xsd/netex_part_3/part3_salesTransactions/netex_travelSpecificationSummary_version.xsd",
+      "sha256": "38694951e8c3981129e2df349a15272fc9f49580e0d0b5d1aa9b0a49b1ada717"
+    },
+    {
+      "bytes": 671,
+      "path": "xsd/netex_part_5/netex_all_frames_part5.xsd",
+      "sha256": "b54474aa6eb82f7e4383c4723b622c35aba44400041a52412dafe57f69e85688"
+    },
+    {
+      "bytes": 3358,
+      "path": "xsd/netex_part_5/netex_all_objects_part5_newModes.xsd",
+      "sha256": "71fbbb601a8b8742fbef8c507f13bbdd199445aadaf102e9fad89c554f429025"
+    },
+    {
+      "bytes": 8959,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_accessCredentialsAssignment_support.xsd",
+      "sha256": "fd87bb34bf8338f1c29e7472c568d470c714f6d4c26195c9703beeec4a662a90"
+    },
+    {
+      "bytes": 8971,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_accessCredentialsAssignment_version.xsd",
+      "sha256": "084e43fce895496d843f1246e9cf297f7eefd2a710071dc1c9e3eb5e8ab4565c"
+    },
+    {
+      "bytes": 12946,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_individualTraveller_support.xsd",
+      "sha256": "fd566ec413c0065a3533830b044f6a4e2dd7c446cb039f28cd985347ed1b7b3f"
+    },
+    {
+      "bytes": 17460,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_individualTraveller_version.xsd",
+      "sha256": "672d9467c058f01ddc60eb6752b87f1033e92bf12be9cbabb41ba82999e87f0c"
+    },
+    {
+      "bytes": 5466,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterEligibility_support.xsd",
+      "sha256": "058853f5e5f78879e8febd64a3e01469a516c533689151db6ce106d22a1bcae1"
+    },
+    {
+      "bytes": 6318,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterEligibility_version.xsd",
+      "sha256": "4ccff30d60e950614443f8e63fe293a2166579350e3332714c349749ab433b52"
+    },
+    {
+      "bytes": 12017,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterRental_support.xsd",
+      "sha256": "08063bb812c77df3eb7afa8a72bfd75006bd54ddddea318b6d361780e89fbc1c"
+    },
+    {
+      "bytes": 10259,
+      "path": "xsd/netex_part_5/part5_fm/netex_nm_usageParameterRental_version.xsd",
+      "sha256": "b64908c9914da72070b7333c72b26a7c3743120bf79aa03478b3aff07c5074f0"
+    },
+    {
+      "bytes": 9861,
+      "path": "xsd/netex_part_5/part5_frames/netex_nm_mobilityJourneyFrame_version.xsd",
+      "sha256": "ffef21ae73013f4bdd36c0fa5074a0e68537df13bba91dab4715e0ee09b5d2c2"
+    },
+    {
+      "bytes": 11355,
+      "path": "xsd/netex_part_5/part5_frames/netex_nm_mobilityServiceFrame_version.xsd",
+      "sha256": "022f3d3a6142d4dbe9f1f0beada770d80b562e3dac1fece4f26208f0e1f9f78e"
+    },
+    {
+      "bytes": 16264,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_mobilityServiceConstraintZone_support.xsd",
-      "sha256": "c3479434af4f7e82dc4114cc350528c71d3d26b3132d03296be9c9ed51c9fa72"
+      "sha256": "c74d3e8c807cffa9ad3cbed6bc334996f85096365468b7e943fd3256a4446013"
     },
     {
-      "bytes": 14998,
+      "bytes": 14692,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_mobilityServiceConstraintZone_version.xsd",
-      "sha256": "29feed406ec0269ff2b74f2aebe8b781793c6bf84cbd78c15e51e67fb16c949a"
+      "sha256": "5049eb3eecd6a151972ee307adcc153502432ca69871eafa16c458c162572d9f"
     },
     {
-      "bytes": 17904,
+      "bytes": 17559,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPlace_support.xsd",
-      "sha256": "19a2dce0783a42da5edef243f426b267d44f24a4c97096b1563f38ea050f73cf"
+      "sha256": "a09ff5efa897beb97b1fdd050661e5c7c7cfcb135b49cc0d4967cbce8ab9e980"
     },
     {
-      "bytes": 18720,
+      "bytes": 18248,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPlace_version.xsd",
-      "sha256": "5c703083a0f49bb4e43399f084214313a62d90e939c1ffe34db7c01939243eea"
+      "sha256": "b5568707afd6c9ec93bab73709713e3aefdb9c8c7d61702ee61f4ade4ae2579a"
     },
     {
-      "bytes": 8597,
+      "bytes": 8424,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPoint_support.xsd",
-      "sha256": "9232a383fdf08cc93a3db45fdfd70beb27696b4df8ec7a571350bbaad6f8be0c"
+      "sha256": "b387cb385ba1d0d05441942d0fe22721d109edb759d2f01bf4d194f5aec665a0"
     },
     {
-      "bytes": 8505,
+      "bytes": 8304,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPoint_version.xsd",
-      "sha256": "ab5f9285880ed57cf06e8f8b787db1c840d754ffea69749e9dafd19964d9be69"
+      "sha256": "20613e31d5516f0cc86a863ccd89f9b294bc7a57293717b5cdc6df3ac0f53023"
     },
     {
-      "bytes": 9718,
+      "bytes": 9528,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPointAssignment_support.xsd",
-      "sha256": "dd3dcc68bf4ede9c7054c76037d01be7cd048d276ccf0be909caec797d8bc0c9"
+      "sha256": "872e3da4e37e6e64ebfadc3a740772d709fcac03addad5efd2ad978480123c01"
     },
     {
-      "bytes": 10105,
+      "bytes": 9876,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleMeetingPointAssignment_version.xsd",
-      "sha256": "145a5484dd35bcf620c8a99aac57f166f9e9aa1810ed656c4a70bee3aa0cccb9"
+      "sha256": "382508ef68d77ac64b13c9e89c0cc3a07d66c534a3e88df0d88af0be8e19ea25"
     },
     {
-      "bytes": 13447,
+      "bytes": 13183,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleParkingAreaInformation_support.xsd",
-      "sha256": "ba141e69b45e6c11763804ac3e16b07402840b6a786e2ba78310c2819b549a42"
+      "sha256": "422a79c2e7b5c0008d32a1decd632a62f5869ac1a87d395ea74597f19da4d992"
     },
     {
-      "bytes": 15884,
+      "bytes": 15499,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleParkingAreaInformation_version.xsd",
-      "sha256": "a8ed554a94546f9e2b090735fe53799f987d8742663b4b652acdf5523735b770"
+      "sha256": "ed7007f01e9b183a8a9af27a8e1ac7598c15c6f0be7fa3deb693fa60dd873654"
     },
     {
-      "bytes": 15168,
+      "bytes": 14871,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleServicePlaceAssignment_support.xsd",
-      "sha256": "3a111a24415a520ad4f7616067fd2dd4bb0d8f088da8cbdc4d41963c081ef4ee"
+      "sha256": "11c559cf4e7d9da894de3199a235fd8b3cd303f6fa5279baabb28fe0d611e240"
     },
     {
-      "bytes": 14086,
+      "bytes": 13751,
       "path": "xsd/netex_part_5/part5_nd/netex_nm_vehicleServicePlaceAssignment_version.xsd",
-      "sha256": "051b4ed85a00da8d513cb11486e74609aa4741f67046476c5d24dfc1edd7ca05"
+      "sha256": "0ccbebcab8459608a793d4ebf2b542cf7bd916ac2e962fc4e3ef9f3461e4dc7e"
     },
     {
-      "bytes": 24963,
+      "bytes": 24460,
       "path": "xsd/netex_part_5/part5_rc/netex_nm_mobilityService_support.xsd",
-      "sha256": "0781b8bf6b7de08c371c012341d37a87dc2d0413c77002cb22257cf18a4b300b"
+      "sha256": "9aca5bedc670d534ed44d1be3bff5e6bb6412151d30e6b931b84b53833a8328c"
     },
     {
-      "bytes": 27175,
+      "bytes": 26522,
       "path": "xsd/netex_part_5/part5_rc/netex_nm_mobilityService_version.xsd",
-      "sha256": "b5c8d9c18f48761f677310e88e258e342f3b5d78dcc3772ab79c11e2fa448c85"
+      "sha256": "12f54e87ce2cdd5d1e509a0127bfb06275f61cb3b0d57d04135ff45a765aa3ed"
     },
     {
-      "bytes": 8407,
+      "bytes": 8230,
       "path": "xsd/netex_part_5/part5_rc/netex_nm_onlineService_support.xsd",
-      "sha256": "f3c017b1e8d0a1404fe55f269044a23b4b732e066273f20e39f20f0c40daa1ec"
+      "sha256": "1f658670738e2f99db1ef5a0769e8f2d6550b675a22298f19968663a8dff1d0e"
     },
     {
-      "bytes": 9127,
+      "bytes": 8905,
       "path": "xsd/netex_part_5/part5_rc/netex_nm_onlineService_version.xsd",
-      "sha256": "49c6a4e62648a0d534888f4b3ff291438376f766e8cfe15c621afa75f75a415b"
+      "sha256": "91ac03f2645e26c6bff480f88ffc5c95138ad6c773ef3bab946e2d206ad5c7bd"
     },
     {
-      "bytes": 8782,
+      "bytes": 8603,
       "path": "xsd/netex_part_5/part5_sj/netex_nm_singleJourneyPath_support.xsd",
-      "sha256": "e1bdaef6d4a6931eb6e691797c1b127a450cd1e4d16bcba7fac624e25582a6e4"
+      "sha256": "e9e955f25eeb5e03573369a8c174700c703f948aa165977cd0b8c3b4f1bea5b2"
     },
     {
-      "bytes": 8785,
+      "bytes": 8587,
       "path": "xsd/netex_part_5/part5_sj/netex_nm_singleJourneyPath_version.xsd",
-      "sha256": "34260ad90287a0d7ecf41ec6dacc9eb0e6a9a91d2fe574f7a3262fdf15cc2cfc"
+      "sha256": "2a1a4a0e4c24473bb275c04890b58ef04a05c53f4b0d08300c55e75cd6bec538"
     },
     {
-      "bytes": 8314,
+      "bytes": 8146,
       "path": "xsd/netex_part_5/part5_sj/netex_nm_singleJourneyService_support.xsd",
-      "sha256": "f175107b0e2df220fab49fc2bed6fa13750084c17c6bf9c8304c27d4c7203a63"
-    },
-    {
-      "bytes": 10476,
-      "path": "xsd/netex_part_5/part5_sj/netex_nm_singleJourneyService_version.xsd",
-      "sha256": "de017c7a21aa099a7f5821e2a76670d9313b8d947b44226ef5c88883cfe5328b"
-    },
-    {
-      "bytes": 8870,
-      "path": "xsd/NeTEx_publication-NoConstraint.xsd",
-      "sha256": "819c2d32c57893ca57cb45842201fcbb835847bec0f38cda2076f6bbf08e7243"
-    },
-    {
-      "bytes": 635742,
-      "path": "xsd/NeTEx_publication.xsd",
-      "sha256": "5e7be183674f35f49eaa326822f4228db63e9789ca13fd9470a01134f6eaa88f"
-    },
-    {
-      "bytes": 311899,
-      "path": "xsd/NeTEx_publication_timetable.xsd",
-      "sha256": "ecb2c4238d29b7d38f251fad3fb6a626ffc760ca2ea3c9f7790ef74bf7b4ac68"
-    },
-    {
-      "bytes": 1769,
-      "path": "xsd/netex_service/netex_all.xsd",
-      "sha256": "319ac94b06cd0482aa785e1a8c92667be5685156585f7a400ab0cc70cf5e46bf"
-    },
-    {
-      "bytes": 15225,
-      "path": "xsd/netex_service/netex_dataObjectRequest_service.xsd",
-      "sha256": "49a9e20130a0efa46ba0b06f6428e53da5199902467371ffeba42902d67d2ee5"
+      "sha256": "c4320389451422aa2a6babf2408877166ade2ea0e2177326a0b2eeaaecdab38b"
     },
     {
       "bytes": 10240,
+      "path": "xsd/netex_part_5/part5_sj/netex_nm_singleJourneyService_version.xsd",
+      "sha256": "0adb1a01ada75dda7d2c1682231e1ba2c8926a9f12219f07b668caef3a65fa0a"
+    },
+    {
+      "bytes": 8705,
+      "path": "xsd/NeTEx_publication-NoConstraint.xsd",
+      "sha256": "73c0cad17cb2f96a6d1c21f3d03692642a775411ba7f977ea7c2f2cc3d64922f"
+    },
+    {
+      "bytes": 622662,
+      "path": "xsd/NeTEx_publication.xsd",
+      "sha256": "965bc6d92efb49a8ce6fa8fac3f4ef6a172d57c3d54aa9d49799ffcc14a17175"
+    },
+    {
+      "bytes": 305397,
+      "path": "xsd/NeTEx_publication_timetable.xsd",
+      "sha256": "6098cd297f583df51d1c43fc4ac950a4292f387c05dafe334099d4cef4151f81"
+    },
+    {
+      "bytes": 1747,
+      "path": "xsd/netex_service/netex_all.xsd",
+      "sha256": "2208bf24c1e504527538551190d30994d1244f4d1c7f0762cdd480e5fdf02f3f"
+    },
+    {
+      "bytes": 14913,
+      "path": "xsd/netex_service/netex_dataObjectRequest_service.xsd",
+      "sha256": "56ee31a8081c40a303ccb146b226b8190fb5c79c1385098349aebba6c93076de"
+    },
+    {
+      "bytes": 10044,
       "path": "xsd/netex_service/netex_filter_frame.xsd",
-      "sha256": "e134637ad024cb45c51b4da7ea6174117ceccc47ee2262163dc0928441b2a142"
+      "sha256": "e2e9fce34bf62ee60edc0d3df5da77ff1b5bf91e71988037c17bc04ebddd25b4"
     },
     {
-      "bytes": 10045,
+      "bytes": 9852,
       "path": "xsd/netex_service/netex_filter_object.xsd",
-      "sha256": "e9f481c2d231c1e519dfd9b5870a9924bd5c6cbf11a7cef414425aba3d99afe8"
+      "sha256": "624c348af28fa4c8d7eeae945a7556008994e371a662d48d553b51049a7b4a67"
     },
     {
-      "bytes": 5895,
+      "bytes": 5782,
       "path": "xsd/NeTEx_siri.xsd",
-      "sha256": "2d335ba49a24049a0d6f6ea5b06af90fd2ba3c71ae720104f40ab299463491a6"
+      "sha256": "2e6f0aea91228dab2c447075b848cf91ee3f66fd46cb40f237c66a2104f7d5ea"
     },
     {
-      "bytes": 8378,
+      "bytes": 8234,
       "path": "xsd/NeTEx_siri_SG.xsd",
-      "sha256": "0141c9caf8b94bc82869e1cae1da82569bdff8e344f6e04f4f8e913ef3d2de5a"
+      "sha256": "1ccfafc4e67ebc1c80b2b51e65d7c8ced0b4a98ddfab9b723b4b3ca079bb2c10"
     },
     {
-      "bytes": 24956,
+      "bytes": 24348,
       "path": "xsd/NX.xsd",
-      "sha256": "0f9ea48f642af0e33331113b0dcffd380ece8b0dca17967f5dbbb27acdea5bcf"
+      "sha256": "15ffc2400db2357834ed88690cbabacc77b7f244748cac8e707a981a25657e23"
     },
     {
-      "bytes": 704,
+      "bytes": 692,
       "path": "xsd/siri/siri_all_framework-v2.0.xsd",
-      "sha256": "833a87396d2280dcffaf64e83f3538cb0cb208ed45980e6d3a6cdf9964916bd3"
+      "sha256": "edcea4a901da38086d7d8b46e389c4c4a1b3871a14fd711ac1861e536c6217e0"
     },
     {
-      "bytes": 14586,
+      "bytes": 14272,
       "path": "xsd/siri/siri_base-v2.0.xsd",
-      "sha256": "8dff510d32818a11c7b00960ac3e2e3f991ea3ff54464258653906f60aa0bf2b"
+      "sha256": "55fd03cfd6876f1f932a9c1d502e06dc9e034af59c496132473c0bdc783424cc"
     },
     {
-      "bytes": 40761,
+      "bytes": 39859,
       "path": "xsd/siri/siri_common_services-v2.0.xsd",
-      "sha256": "fc4b7b3452d25f69e915fdef3cf88a0c75e090e4520baa536acc0242ae724c14"
+      "sha256": "b102c994aff9b12a55bcdfabc44d99aa9781e74b8ff0d0e8c3394afa2cde6a72"
     },
     {
-      "bytes": 27355,
+      "bytes": 26767,
       "path": "xsd/siri/siri_request_errorConditions-v2.0.xsd",
-      "sha256": "7cbfac31bc72e331cd7baf646f88d53e1938ac51a348feb3ad9855343a855937"
+      "sha256": "48f84d4a416d892af5254855055671c15873669100a9a36dcd1c84c609568d18"
     },
     {
-      "bytes": 8106,
+      "bytes": 7917,
       "path": "xsd/siri/siri_request_support-v2.0.xsd",
-      "sha256": "14a74acc1ecc3b29f4d3760ac0a908eba118cfdedbbec14883a46b42b38d5436"
+      "sha256": "83ba2fe486a8fba58f88dc5ad70e3b23bf76549e63e932208ffebfdb19fee822"
     },
     {
-      "bytes": 50341,
+      "bytes": 49265,
       "path": "xsd/siri/siri_requests-v2.0.xsd",
-      "sha256": "b144a66efc7712febc0bc6c35fcf649577ab17f3fce61da7f2a1b2a1607fced2"
+      "sha256": "01d1898794804562408e452fad44f9990ffc5d470de98d4167f79a6f272c908c"
     },
     {
-      "bytes": 897,
+      "bytes": 883,
       "path": "xsd/siri_utility/siri_all_utility-v2.0.xsd",
-      "sha256": "cb8fb19f87fea2cf8dd102d0a5734e4b3c5148259f9c968c8afab4208f444db4"
+      "sha256": "60d9eeb6b0f467306dfd8c0367a3b02e511af86a398eb666df9bcd2d3d73d7d4"
     },
     {
-      "bytes": 9461,
+      "bytes": 9221,
       "path": "xsd/siri_utility/siri_location-v2.0.xsd",
-      "sha256": "6e1d2bc137fb3943efdb22d4892c4cbc6bde7985de1bf1003740ca0da01c5820"
+      "sha256": "6adeac3a2bbc79d5aa45c98c7c52c166cd63385772a20377ea4839f7cf9a95f7"
     },
     {
-      "bytes": 3311,
+      "bytes": 3232,
       "path": "xsd/siri_utility/siri_participant-v2.0.xsd",
-      "sha256": "a989dd51e9eddec5ada7079505553f26039d4d411f2b51dc220f4cc010ae1bb0"
+      "sha256": "45ac73f28a129d1819e9d6ac2e57d17ad4d431a71e044c5f23ca42b4d4803a1a"
     },
     {
-      "bytes": 6075,
+      "bytes": 5940,
       "path": "xsd/siri_utility/siri_permissions-v2.0.xsd",
-      "sha256": "2331235a2998fc016859e6404ad5fe6f9b32225354387f11556fc89d3966eeea"
+      "sha256": "8d2d483c9adaf4cb8031d104538e5dcb5171a7b4dd9c1aeed75743566045a2fb"
     },
     {
-      "bytes": 6009,
+      "bytes": 5872,
       "path": "xsd/siri_utility/siri_types-v2.0.xsd",
-      "sha256": "d3c78cabdac6da1c6c310a5598b9ac9f3f0c3b4e8555b008a2a5ba8f8ff25623"
+      "sha256": "d9fe1e6bf90d1a92982f9646d2507335b812b0c78baeec13ba7824933aab8f05"
     },
     {
-      "bytes": 3736,
+      "bytes": 3654,
       "path": "xsd/siri_utility/siri_utility-v1.1.xsd",
-      "sha256": "237dc2c7091415e5c41609b365a44a59cba27e5119518db02f15a69bf0b0f25f"
+      "sha256": "b149ee454c322714f17e5ecd03ff9770e115e339331178b0002962f4e422ad7a"
     },
     {
-      "bytes": 8889,
+      "bytes": 8724,
       "path": "xsd/wsdl/NeTEx_publication-NoConstraint.xsd",
-      "sha256": "e0dcae1777a203d2a4b8a0e047478913ae1325dcb0057ef55ae9cc2f0cf9e7e2"
+      "sha256": "c9613ab76ab8c36c67d4d5f2f6c0def827d02fbd134c57bec88fc8823741d2bc"
     },
     {
-      "bytes": 5774,
+      "bytes": 5689,
       "path": "xsd/wsdl/siri_all_functionalServices.xsd",
-      "sha256": "dc0a0b9ffcb98a9d87d380f8fe3f0494f033de70c1fd7839e1dd02b8b85b68b9"
+      "sha256": "a3112b2cd74df1bf920c6bb09f2c1e08bf11b4f139047de95bb9368d92fb949f"
     },
     {
-      "bytes": 7759,
+      "bytes": 7542,
       "path": "xsd/wsdl/xml/xml.xsd",
-      "sha256": "d3c11b15884d683163226e37034fff1ba17f6855736ceb2dd0a9eea3e776a9cb"
+      "sha256": "137f3f1423dfd1789060019c2103a4939ea9729d89f57328851434724f97207f"
     },
     {
-      "bytes": 5981,
+      "bytes": 5884,
       "path": "xsd/wsdl_model/siri_wsConsumer-Framework.xsd",
-      "sha256": "cb95c7cba79b5e81a5483513b11cf06328499f158f70b474725c330d03c1129a"
+      "sha256": "9daedbbbc2483697ba551a96357b8776c8d79e2a63d1ea22f03d2b13b2020016"
     },
     {
-      "bytes": 10295,
+      "bytes": 10141,
       "path": "xsd/wsdl_model/siri_wsConsumer-Services.xsd",
-      "sha256": "300fb5405240aa882c3f05b26fea7fdc3f861c92604f9e780d90a1771bd5cf9f"
+      "sha256": "40467bc432553856c7fc49c98d06f11441a4113086d1af60e9d9466c6c0baafb"
     },
     {
-      "bytes": 8194,
+      "bytes": 8069,
       "path": "xsd/wsdl_model/siri_wsProducer-DiscoveryCapability.xsd",
-      "sha256": "3a6d7c1921a03d9801d4fda31d55931b540cd505c39a4f94dde7dd1dd4d2eeaf"
+      "sha256": "393d48e2bff9eaf9c92ebf68009ce6d9607f42b4d4d5344d1f8948f3be52ff47"
     },
     {
-      "bytes": 9032,
+      "bytes": 8893,
       "path": "xsd/wsdl_model/siri_wsProducer-Framework.xsd",
-      "sha256": "435c57aea832c111ed0c9cf5188a05808a465575fbf880382d9cd037d1bf3f7d"
+      "sha256": "e5ccd6039aa05a67d641ca4fa85cf8e90b441d5514dcaabd4d6c2aec33b3f4d4"
     },
     {
-      "bytes": 16474,
+      "bytes": 16222,
       "path": "xsd/wsdl_model/siri_wsProducer-Services.xsd",
-      "sha256": "0aeb02f5f294dd83bf10f6a1281d4e9f80999b85455ed23e2e8f7ec712195192"
+      "sha256": "29234ec5f496587884c4188460350e252a10022c27f46095466beb7fd8337cac"
     },
     {
-      "bytes": 18222,
+      "bytes": 17842,
       "path": "xsd/ynotation/netex_subThing_support.xsd",
-      "sha256": "c1dbcff80b708d10458cd60f954f88d0c8fddcdb2a8fb861973d12aed8409f30"
+      "sha256": "9158728d086fad1b84bb7e2a0e74e83789d35dc92e2f58b2625ff0392e3d334f"
     },
     {
-      "bytes": 15592,
+      "bytes": 15141,
       "path": "xsd/ynotation/netex_subThing_version.xsd",
-      "sha256": "e3acce7f7054a046947146e39a4d0f9af4ecf1f738451ff4a1f5b903bec78ec9"
+      "sha256": "5ef5e26f1680b8f8288c86c2cf946b9bc121877bc995fa1daad21a5304f77712"
     },
     {
-      "bytes": 9112,
+      "bytes": 8920,
       "path": "xsd/ynotation/netex_thing_support.xsd",
-      "sha256": "0b3c03725c7fb0f421ea8e7301a9efebe4e3897543c6905f8b5f78b229be5e71"
+      "sha256": "b077fdea058be3342b6be7e4b010861cae01076c7dd822d96fdb768e45f47a43"
     },
     {
-      "bytes": 8883,
+      "bytes": 8648,
       "path": "xsd/ynotation/netex_thing_version.xsd",
-      "sha256": "af16c194ea7d8258c68179bfeac6e6dd668482bfdbfd86a5a5f9726da7ca0746"
+      "sha256": "b32424010a1946d27626bdcb83e165f139267064060b20105def94f8969726a9"
     }
   ],
   "dependency_count": 458,
@@ -2297,6 +2297,6 @@
   "manifest_version": "1.0.0",
   "release": "v2.0.0",
   "root_schema": "xsd/NeTEx_publication.xsd",
-  "root_schema_sha256": "5e7be183674f35f49eaa326822f4228db63e9789ca13fd9470a01134f6eaa88f",
+  "root_schema_sha256": "965bc6d92efb49a8ce6fa8fac3f4ef6a172d57c3d54aa9d49799ffcc14a17175",
   "source": "https://github.com/TransmodelEcosystem/NeTEx"
 }

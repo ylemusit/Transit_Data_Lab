@@ -11,12 +11,14 @@ PINNED_COMMIT = "a94e5e1752bcc13aabb8a1f3d018dc08e6978f42"
 EXPECTED_ROOT = "xsd/NeTEx_publication.xsd"
 
 
+def canonical_bytes(path: Path) -> bytes:
+    # Git's XSD blobs use LF; normalize checkout CRLF so Windows and Linux
+    # produce the same source identity without changing the parsed XML schema.
+    return path.read_bytes().replace(b"\r\n", b"\n")
+
+
 def sha256(path: Path) -> str:
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for block in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(block)
-    return digest.hexdigest()
+    return hashlib.sha256(canonical_bytes(path)).hexdigest()
 
 
 def build_manifest(schema_root: Path) -> dict:
@@ -29,7 +31,7 @@ def build_manifest(schema_root: Path) -> dict:
         raise ValueError(f"Schema source commit mismatch: {commit}")
     xsd_root = git_root / "xsd"
     files = [
-        {"path": path.relative_to(git_root).as_posix(), "sha256": sha256(path), "bytes": path.stat().st_size}
+        {"path": path.relative_to(git_root).as_posix(), "sha256": sha256(path), "bytes": len(canonical_bytes(path))}
         for path in sorted(xsd_root.rglob("*.xsd"))
     ]
     root = next(item for item in files if item["path"] == EXPECTED_ROOT)

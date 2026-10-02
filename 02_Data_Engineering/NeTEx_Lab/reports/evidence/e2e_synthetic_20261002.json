@@ -70,7 +70,7 @@
     "commit": "a94e5e1752bcc13aabb8a1f3d018dc08e6978f42",
     "release": "v2.0.0",
     "root_schema": "xsd/NeTEx_publication.xsd",
-    "root_schema_sha256": "5e7be183674f35f49eaa326822f4228db63e9789ca13fd9470a01134f6eaa88f"
+    "root_schema_sha256": "965bc6d92efb49a8ce6fa8fac3f4ef6a172d57c3d54aa9d49799ffcc14a17175"
   },
   "source_immutable": true,
   "zip_intake": "PASS",
