@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NeTEx Audit Rule Registry V1",
+  "type": "object",
+  "required": ["registry_version", "rules"],
+  "properties": {
+    "registry_version": {"const": "1.0.0"},
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "version", "authority", "requirement_id", "scope", "applicability", "evaluation_type", "family", "severity", "evidence_contract", "status_vocabulary"],
+        "properties": {
+          "rule_id": {"type": "string", "minLength": 1},
+          "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+          "authority": {"type": "string", "minLength": 1},
+          "requirement_id": {"type": ["string", "null"]},
+          "scope": {"type": "string", "minLength": 1},
+          "applicability": {"type": "string", "minLength": 1},
+          "evaluation_type": {"type": "string", "minLength": 1},
+          "family": {"enum": ["XSD", "PROFILE", "IDENTITY", "REFERENCES", "STRUCTURE", "TEMPORAL", "GEOGRAPHIC", "SEMANTIC", "QUALITY", "REGULATORY_ALIGNMENT"]},
+          "severity": {"type": "string", "minLength": 1},
+          "evidence_contract": {"type": "string", "minLength": 1},
+          "status_vocabulary": {"type": "array", "uniqueItems": true, "items": {"enum": ["PASS", "FAIL_TECHNICAL", "NOT_EVALUABLE", "NOT_APPLICABLE", "INSPECTION_ERROR", "HUMAN_REVIEW_REQUIRED"]}}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

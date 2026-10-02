@@ -1,0 +1,117 @@
+{
+  "catalog_version": "1.0.0",
+  "fabricated_requirements": 0,
+  "requirements": [
+    {
+      "applicability": "ALWAYS",
+      "authority_level": "L4",
+      "citation": "XML 1.0 well-formedness is an intake precondition for the V1 audit runtime",
+      "concepts": [
+        "PublicationDelivery"
+      ],
+      "condition": "The member parses as XML without DTD/entity declarations",
+      "machine_interpretation_status": "MACHINE_EVALUABLE",
+      "normative_strength": "INFORMATIVE",
+      "notes": "Runtime security/technical precondition, not EPIP or legal compliance.",
+      "requirement_id": "NETEX-REQ-XML-01",
+      "scope": "all input XML members",
+      "source_id": "TDL-TECH-01"
+    },
+    {
+      "applicability": "HUMAN_REVIEW_REQUIRED for regular scheduled bus; road/other-mode category mapping unresolved",
+      "authority_level": "L1",
+      "citation": "Reglamento Delegado (UE) 2017/1926, art. 4(1)(a), (b), texto consolidado 2024-03-04, modificado por 2024/490",
+      "concepts": [],
+      "condition": "Article 4(1)(a) assigns road transport to a format referenced through Delegated Regulation (EU) 2015/962; Article 4(1)(b) lists NeTEx for other modes. Regulation 2015/962 was repealed from 2025-01-01 by 2022/670.",
+      "machine_interpretation_status": "HUMAN_REVIEW_REQUIRED",
+      "normative_strength": "MUST",
+      "notes": "No NeTEx regulatory obligation is inferred for the bus scope. Resolve category applicability and the stale cross-reference through legal review; the runtime is a technical NeTEx evaluator only.",
+      "related_source_ids": [
+        "N02-34"
+      ],
+      "requirement_id": "NETEX-REQ-REG-01",
+      "scope": "format selection for Annex 1 data by transport mode",
+      "source_id": "N02-21"
+    },
+    {
+      "applicability": "CONDITIONAL; exact Annex 1 categories remain explicit",
+      "authority_level": "L1",
+      "citation": "Reglamento Delegado (UE) 2017/1926, art. 4(2), texto consolidado 2024-03-04",
+      "concepts": [],
+      "condition": "Applicable data is to be represented through EU minimum profiles or national profiles",
+      "machine_interpretation_status": "HUMAN_REVIEW_REQUIRED",
+      "normative_strength": "MUST",
+      "notes": "This provision does not itself identify EPIP 2026 by name. Whether the listed categories are NeTEx-applicable for the approved bus scope requires review.",
+      "requirement_id": "NETEX-REQ-REG-02",
+      "scope": "aplicable categories represented using NeTEx/DATEX II",
+      "source_id": "N02-21"
+    },
+    {
+      "applicability": "OUT_OF_SCOPE for this engine",
+      "authority_level": "L1",
+      "citation": "Reglamento Delegado (UE) 2017/1926, art. 4(1)(b), texto consolidado 2024-03-04",
+      "concepts": [],
+      "condition": "Other-mode data use one of the specified standards or a proven fully compatible/interoperable machine-readable format; NeTEx CEN/TS 16614 is listed",
+      "machine_interpretation_status": "OUT_OF_SCOPE",
+      "normative_strength": "MUST",
+      "notes": "This clause must not be applied to road transport by inference.",
+      "requirement_id": "NETEX-REQ-REG-03",
+      "scope": "other transport modes, excluding the approved regular scheduled bus scope",
+      "source_id": "N02-21"
+    },
+    {
+      "applicability": "when XSD validation is evaluated",
+      "authority_level": "L4",
+      "citation": "Pinned upstream v2.0.0 README, production root schema, verified at commit a94e5e1752bcc13aabb8a1f3d018dc08e6978f42",
+      "concepts": [
+        "PublicationDelivery",
+        "CompositeFrame",
+        "GeneralFrame"
+      ],
+      "condition": "Validate with xsd/NeTEx_publication.xsd from the pinned release",
+      "machine_interpretation_status": "MACHINE_EVALUABLE",
+      "normative_strength": "INFORMATIVE",
+      "notes": "Technical baseline choice, not legal or EPIP conformance.",
+      "requirement_id": "NETEX-REQ-XSD-01",
+      "scope": "technical audit contract for this V1 build",
+      "source_id": "N02-28"
+    },
+    {
+      "applicability": "UNKNOWN until the full profile is reviewed",
+      "authority_level": "L2",
+      "citation": "CEN/TS 16614-4:2026; full controlled text not present; public preview is incomplete",
+      "concepts": [
+        "StopPlace",
+        "Quay",
+        "Line",
+        "JourneyPattern",
+        "ServiceJourney",
+        "DayType",
+        "OperatingPeriod"
+      ],
+      "condition": "Requirement assertions and conditions are not inferred from examples or preview snippets",
+      "machine_interpretation_status": "UNKNOWN",
+      "normative_strength": "UNKNOWN",
+      "notes": "Do not convert this gap to PASS or FAIL.",
+      "requirement_id": "NETEX-REQ-EPIP-UNKNOWN",
+      "scope": "EPIP constraints for regular scheduled bus",
+      "source_id": "N02-26"
+    },
+    {
+      "applicability": "UNKNOWN; no public technical acceptance contract identified",
+      "authority_level": "L3",
+      "citation": "MITRAMS NAP public guidance reviewed on 2026-10-02",
+      "concepts": [
+        "PublicationDelivery"
+      ],
+      "condition": "No technical assertion defined",
+      "machine_interpretation_status": "UNKNOWN",
+      "normative_strength": "UNKNOWN",
+      "notes": "No contact or authenticated resource access performed.",
+      "requirement_id": "NETEX-REQ-NAP-UNKNOWN",
+      "scope": "NAP Spain technical acceptance",
+      "source_id": "N02-20"
+    }
+  ],
+  "scope": "Spain / regular scheduled bus / static scheduled passenger information"
+}

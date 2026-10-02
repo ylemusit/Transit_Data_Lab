@@ -1,0 +1,388 @@
+{
+  "matrix_version": "1.0.0",
+  "not_representable_count": 0,
+  "rows": [
+    {
+      "concept": "PublicationDelivery",
+      "concept_id": "NETEX-CONCEPT-01",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-XML-01",
+        "NETEX-REQ-XSD-01",
+        "NETEX-REQ-NAP-UNKNOWN"
+      ],
+      "schema_path": "netex_publication.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:PublicationDelivery",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:PublicationDelivery"
+    },
+    {
+      "concept": "CompositeFrame",
+      "concept_id": "NETEX-CONCEPT-02",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-XSD-01"
+      ],
+      "schema_path": "netex_framework/netex_frames/netex_compositeFrame_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:CompositeFrame",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:CompositeFrame"
+    },
+    {
+      "concept": "GeneralFrame",
+      "concept_id": "NETEX-CONCEPT-03",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-XSD-01"
+      ],
+      "schema_path": "netex_framework/netex_frames/netex_generalFrame_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:GeneralFrame",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:GeneralFrame"
+    },
+    {
+      "concept": "Authority",
+      "concept_id": "NETEX-CONCEPT-04",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_transportOrganisation_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:Authority",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:Authority"
+    },
+    {
+      "concept": "Operator",
+      "concept_id": "NETEX-CONCEPT-05",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_transportOrganisation_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:Operator",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:Operator"
+    },
+    {
+      "concept": "StopPlace",
+      "concept_id": "NETEX-CONCEPT-06",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_part_1/part1_ifopt/netex_ifopt_stopPlace_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:StopPlace",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:StopPlace"
+    },
+    {
+      "concept": "Quay",
+      "concept_id": "NETEX-CONCEPT-07",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_part_1/part1_ifopt/netex_ifopt_stopPlace_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:Quay",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:Quay"
+    },
+    {
+      "concept": "ScheduledStopPoint",
+      "concept_id": "NETEX-CONCEPT-08",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_1/part1_tacticalPlanning/netex_servicePattern_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:ScheduledStopPoint",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:ScheduledStopPoint"
+    },
+    {
+      "concept": "Line",
+      "concept_id": "NETEX-CONCEPT-09",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_part_1/part1_networkDescription/netex_line_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:Line",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:Line"
+    },
+    {
+      "concept": "Route",
+      "concept_id": "NETEX-CONCEPT-10",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_1/part1_networkDescription/netex_route_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:Route",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:Route"
+    },
+    {
+      "concept": "RoutePoint",
+      "concept_id": "NETEX-CONCEPT-11",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_1/part1_networkDescription/netex_route_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:RoutePoint",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:RoutePoint"
+    },
+    {
+      "concept": "JourneyPattern",
+      "concept_id": "NETEX-CONCEPT-12",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_part_1/part1_tacticalPlanning/netex_journeyPattern_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:JourneyPattern",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:JourneyPattern"
+    },
+    {
+      "concept": "ServiceJourney",
+      "concept_id": "NETEX-CONCEPT-13",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_part_2/part2_journeyTimes/netex_serviceJourney_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:ServiceJourney",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:ServiceJourney"
+    },
+    {
+      "concept": "PassingTime",
+      "concept_id": "NETEX-CONCEPT-14",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_2/part2_journeyTimes/netex_passingTimes_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:PassingTime",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:PassingTime"
+    },
+    {
+      "concept": "DayType",
+      "concept_id": "NETEX-CONCEPT-15",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_dayType_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:DayType",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:DayType"
+    },
+    {
+      "concept": "OperatingPeriod",
+      "concept_id": "NETEX-CONCEPT-16",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_serviceCalendar_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:OperatingPeriod",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:OperatingPeriod"
+    },
+    {
+      "concept": "DestinationDisplay",
+      "concept_id": "NETEX-CONCEPT-17",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_1/part1_networkDescription/netex_line_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:DestinationDisplay",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:DestinationDisplay"
+    },
+    {
+      "concept": "VehicleMode",
+      "concept_id": "NETEX-CONCEPT-18",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_mode_support.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:VehicleMode",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:VehicleMode"
+    },
+    {
+      "concept": "TransportSubmode",
+      "concept_id": "NETEX-CONCEPT-19",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_reusableComponents/netex_submode_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:TransportSubmode",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:TransportSubmode"
+    },
+    {
+      "concept": "PassengerStopAssignment",
+      "concept_id": "NETEX-CONCEPT-20",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_part_1/part1_tacticalPlanning/netex_stopAssignment_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:PassengerStopAssignment",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:PassengerStopAssignment"
+    },
+    {
+      "concept": "TariffZone",
+      "concept_id": "NETEX-CONCEPT-21",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_genericFramework/netex_zone_version.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:TariffZone",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:TariffZone"
+    },
+    {
+      "concept": "BasicGeometry",
+      "concept_id": "NETEX-CONCEPT-22",
+      "evaluation_class": "DIRECT_XSD",
+      "evaluation_status": "MACHINE_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "gml/geometryBasic0d1d-extract-v3_2_1.xsd",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:BasicGeometry",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:BasicGeometry"
+    },
+    {
+      "concept": "VersionFrameRelationships",
+      "concept_id": "NETEX-CONCEPT-23",
+      "evaluation_class": "CROSS_REFERENCE",
+      "evaluation_status": "NOT_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "netex_framework/netex_frames/",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:VersionFrameRelationships",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:VersionFrameRelationships"
+    },
+    {
+      "concept": "LocalReferences",
+      "concept_id": "NETEX-CONCEPT-24",
+      "evaluation_class": "CROSS_REFERENCE",
+      "evaluation_status": "NOT_EVALUABLE",
+      "evidence_required": "XSD validation result plus source hash",
+      "representability": "REPRESENTABLE_IN_PINNED_MODEL",
+      "requirement_ids": [],
+      "schema_path": "NeTEx object reference attributes",
+      "uncertainty": "Element presence does not assert EPIP applicability or semantic correctness.",
+      "xml_representation": "/netex:PublicationDelivery/netex:dataObjects//netex:LocalReferences",
+      "xpath_or_locator": "/netex:PublicationDelivery/netex:dataObjects//netex:LocalReferences"
+    },
+    {
+      "concept": "Profile-specific constraints",
+      "concept_id": "NETEX-EPIP-ASSERTIONS",
+      "evaluation_class": "PROFILE_CONSTRAINT",
+      "evaluation_status": "HUMAN_REVIEW_REQUIRED",
+      "evidence_required": "controlled normative text and reviewed requirement-to-schema mapping",
+      "representability": "UNKNOWN",
+      "requirement_ids": [
+        "NETEX-REQ-EPIP-UNKNOWN"
+      ],
+      "schema_path": "EPIP assertion set not mapped",
+      "uncertainty": "Full text not present; do not infer from examples.",
+      "xml_representation": "varies by requirement",
+      "xpath_or_locator": null
+    },
+    {
+      "concept": "NAP acceptance",
+      "concept_id": "NETEX-NAP-ACCEPTANCE",
+      "evaluation_class": "REGULATORY_ALIGNMENT",
+      "evaluation_status": "NOT_EVALUABLE",
+      "evidence_required": "published technical acceptance contract",
+      "representability": "UNKNOWN",
+      "requirement_ids": [
+        "NETEX-REQ-NAP-UNKNOWN"
+      ],
+      "schema_path": null,
+      "uncertainty": "No public contract identified; not a claim of nonexistence.",
+      "xml_representation": null,
+      "xpath_or_locator": null
+    },
+    {
+      "concept": "Road transport applicability and format alignment",
+      "concept_id": "NETEX-ROAD-REGULATORY-MAPPING",
+      "evaluation_class": "REGULATORY_ALIGNMENT",
+      "evaluation_status": "HUMAN_REVIEW_REQUIRED",
+      "evidence_required": "legal category mapping and current cross-reference analysis",
+      "representability": "UNKNOWN",
+      "requirement_ids": [
+        "NETEX-REQ-REG-01",
+        "NETEX-REQ-REG-02"
+      ],
+      "schema_path": null,
+      "uncertainty": "Article 4(1)(a) points to repealed Regulation 2015/962; do not infer NeTEx from Article 4(1)(b).",
+      "xml_representation": null,
+      "xpath_or_locator": null
+    }
+  ],
+  "scope": "Spain / regular scheduled bus / static scheduled passenger information",
+  "unknowns_explicit": true
+}

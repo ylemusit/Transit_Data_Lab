@@ -1,0 +1,797 @@
+{
+  "authority_hierarchy": {
+    "L1": "EU and Spanish law/regulation",
+    "L2": "CEN/NeTEx normative specifications",
+    "L3": "EPIP/profile/NAP guidance",
+    "L4": "implementation references/examples/TDL recommendation"
+  },
+  "cutoff_date": "2026-10-02",
+  "manifest_version": "1.0.0",
+  "notes": [
+    "No CEN controlled text is included.",
+    "URLs are discovery/provenance only; schema artifacts are pinned by commit and per-file SHA-256.",
+    "NAP technical acceptance and any additional Spanish profile remain not identified in reviewed public sources.",
+    "Legal status is not determined by this source register."
+  ],
+  "schema_artifact": "schemas/v2.0.0/schema_manifest.json",
+  "sources": [
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2024-03-04",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "Finding: Texto consolidado a 2024-03-04 incorpora modificación 2024/490; incluye NeTEx CEN/TS 16614 y versiones posteriores y referencia a perfiles mínimos UE o nacionales Limitation: Verificar el texto consolidado más reciente y cotejar cada categoría aplicable al scope. No inferir alcance de operadores ni dictamen jurídico",
+      "publisher": "EUR-Lex / UE",
+      "scope": "Normativa primaria. Determinar formato, perfiles, categorías y calendarios aplicables",
+      "source_id": "N02-01",
+      "source_register_row": [
+        "Normativa primaria. Determinar formato, perfiles, categorías y calendarios aplicables",
+        "Texto consolidado a 2024-03-04 incorpora modificación 2024/490; incluye NeTEx CEN/TS 16614 y versiones posteriores y referencia a perfiles mínimos UE o nacionales",
+        "Verificar el texto consolidado más reciente y cotejar cada categoría aplicable al scope. No inferir alcance de operadores ni dictamen jurídico"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Reglamento Delegado (UE) 2017/1926, texto consolidado",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2017/1926/2024-03-04/eng/pdf"
+      ],
+      "version": "CEN/TS 16614"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2017",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "Finding: Modifica el marco de información multimodal; la Comisión describe el acto y el ámbito NAP Limitation: Leer junto con el consolidado y revisar actos posteriores vigentes a la fecha del gate",
+      "publisher": "EUR-Lex / UE",
+      "scope": "Acto modificador primario; trazar cambios al Reglamento 2017/1926",
+      "source_id": "N02-02",
+      "source_register_row": [
+        "Acto modificador primario; trazar cambios al Reglamento 2017/1926",
+        "Modifica el marco de información multimodal; la Comisión describe el acto y el ámbito NAP",
+        "Leer junto con el consolidado y revisar actos posteriores vigentes a la fecha del gate"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Reglamento Delegado (UE) 2024/490",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2024/490/oj"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "2017",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Describe NAP y los Reglamentos 2017/1926 y 2024/490 Limitation: Orientación secundaria; no reemplaza el texto legal",
+      "publisher": "Comisión Europea",
+      "scope": "Orientación institucional y enlaces a actos",
+      "source_id": "N02-03",
+      "source_register_row": [
+        "Orientación institucional y enlaces a actos",
+        "Describe NAP y los Reglamentos 2017/1926 y 2024/490",
+        "Orientación secundaria; no reemplaza el texto legal"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Multimodal Travel Information",
+      "url": [
+        "https://transport.ec.europa.eu/transport-themes/smart-mobility/road/its-directive-and-action-plan/multimodal-travel-information_en"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: README distingue ramas `v1.3`, `v2.0`, releases y declara v2.0.0 (febrero 2026) como última versión de producción para partes 1, 2, 3 y 5 Limitation: Fijar tag/commit, revisar licencia/procedencia y cotejar qué documentos CEN publicados implementa. `master`/WIP no deben usarse como baseline",
+      "publisher": "repositorio asociado a CEN/NeTEx; README indica copyright CEN",
+      "scope": "Artefactos técnicos candidatos para schema/versionado, no autoridad legal autónoma",
+      "source_id": "N02-04",
+      "source_register_row": [
+        "Artefactos técnicos candidatos para schema/versionado, no autoridad legal autónoma",
+        "README distingue ramas `v1.3`, `v2.0`, releases y declara v2.0.0 (febrero 2026) como última versión de producción para partes 1, 2, 3 y 5",
+        "Fijar tag/commit, revisar licencia/procedencia y cotejar qué documentos CEN publicados implementa. `master`/WIP no deben usarse como baseline"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NeTEx schemas",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx"
+      ],
+      "version": "v1.3"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Recomienda referencias de versión mayor/menor para citas y versión de tres cifras para desarrollo Limitation: El release schema no resuelve perfil, Part 4/6 ni alcance regulatorio por sí mismo",
+      "publisher": "mismo repositorio",
+      "scope": "Referencia técnica de release",
+      "source_id": "N02-05",
+      "source_register_row": [
+        "Referencia técnica de release",
+        "Recomienda referencias de versión mayor/menor para citas y versión de tres cifras para desarrollo",
+        "El release schema no resuelve perfil, Part 4/6 ni alcance regulatorio por sí mismo"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NeTEx release v2.0 README",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx/blob/v2.0/README.md"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: GitHub lo marca archivado desde el 3 de mayo de 2026; README dice que es subconjunto EPIP basado en NeTEx 1.3.1, creado en 2021, y que el XSD ya no está mantenido por el subgrupo NeTEx Limitation: No adoptar como perfil actual sin decisión explícita de compatibilidad y autoridad para mantenerlo",
+      "publisher": "artefactos del perfil Data4PT",
+      "scope": "Perfil/XSD heredado para comparación y migración",
+      "source_id": "N02-06",
+      "source_register_row": [
+        "Perfil/XSD heredado para comparación y migración",
+        "GitHub lo marca archivado desde el 3 de mayo de 2026; README dice que es subconjunto EPIP basado en NeTEx 1.3.1, creado en 2021, y que el XSD ya no está mantenido por el subgrupo NeTEx",
+        "No adoptar como perfil actual sin decisión explícita de compatibilidad y autoridad para mantenerlo"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "EPIP XSD repository",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx-Profile-EPIP"
+      ],
+      "version": "1.3.1"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: NAPCORE indica ejemplos EPIP/EPIAP en el repositorio NeTEx-CEN Limitation: GitHub `master` es mutable; fijar release/commit y obtener especificación CEN controlada. Ejemplos no equivalen a reglas completas",
+      "publisher": "repositorio enlazado por NAPCORE; procedencia CEN a verificar",
+      "scope": "Perfil y ejemplos para localizar estructura y casos",
+      "source_id": "N02-07",
+      "source_register_row": [
+        "Perfil y ejemplos para localizar estructura y casos",
+        "NAPCORE indica ejemplos EPIP/EPIAP en el repositorio NeTEx-CEN",
+        "GitHub `master` es mutable; fijar release/commit y obtener especificación CEN controlada. Ejemplos no equivalen a reglas completas"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NeTEx Part 4 / EPIP y ejemplos de perfil",
+      "url": [
+        "https://github.com/NeTEx-CEN/NeTEx/tree/master/examples/standards"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Enlaza ejemplos EPIP/EPIAP y material para categorías de datos Limitation: Ayuda de armonización, no instrumento legislativo ni necesariamente perfil de conformidad versionado",
+      "publisher": "NAPCORE",
+      "scope": "Diccionario/guía de categorías y ejemplos",
+      "source_id": "N02-08",
+      "source_register_row": [
+        "Diccionario/guía de categorías y ejemplos",
+        "Enlaza ejemplos EPIP/EPIAP y material para categorías de datos",
+        "Ayuda de armonización, no instrumento legislativo ni necesariamente perfil de conformidad versionado"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAPCORE ITS Data Dictionary: Regulation 2024/490",
+      "url": [
+        "https://github.com/NAPCORE/its-data-dictionary/blob/main/release/DR_EU_2024-490.md"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "2017",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Prefiere datos digitalizados en GTFS o NeTEx, pide URL (y credenciales si las hay), recomienda mantener fichero actualizado; describe diferencias y cita Reglamento 2017/1926 Limitation: No especifica versión NeTEx, perfil español ni criterios detallados de validación/aceptación. Solicitar/ubicar guía técnica vigente antes de afirmar `NAP_ACCEPTANCE`",
+      "publisher": "FAQ](https://nap.transportes.gob.es/faqs) — MITRAMS",
+      "scope": "Política y operación pública del NAP; determinar requisitos visibles de proveedor",
+      "source_id": "N02-09",
+      "source_register_row": [
+        "Política y operación pública del NAP; determinar requisitos visibles de proveedor",
+        "Prefiere datos digitalizados en GTFS o NeTEx, pide URL (y credenciales si las hay), recomienda mantener fichero actualizado; describe diferencias y cita Reglamento 2017/1926",
+        "No especifica versión NeTEx, perfil español ni criterios detallados de validación/aceptación. Solicitar/ubicar guía técnica vigente antes de afirmar `NAP_ACCEPTANCE`"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAP multimodal español — FAQ",
+      "url": [
+        "https://nap.transportes.gob.es/faqs"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: El NAP declara cobertura carretera, ferrocarril, marítimo, fluvial y aéreo, y servicios programados, discrecionales y a demanda Limitation: Descripción institucional, no definición del scope de auditoría ni requisitos de cada modo",
+      "publisher": "quiénes somos](https://nap.transportes.gob.es/quienes-somos) — MITRAMS",
+      "scope": "Ámbito institucional y modal del NAP",
+      "source_id": "N02-10",
+      "source_register_row": [
+        "Ámbito institucional y modal del NAP",
+        "El NAP declara cobertura carretera, ferrocarril, marítimo, fluvial y aéreo, y servicios programados, discrecionales y a demanda",
+        "Descripción institucional, no definición del scope de auditoría ni requisitos de cada modo"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAP multimodal español — quiénes somos",
+      "url": [
+        "https://nap.transportes.gob.es/quienes-somos"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: La copia archivada lleva título «Política de contribución de datos» Limitation: La URL viva y vigencia de la copia no se confirmaron en esta consulta; no inferir validación de perfil desde una política general",
+      "publisher": "política de contribución (captura en `03_Compliance/NAP/01_Policies/NAP_Politica_Contribucion.html`) — MITRAMS",
+      "scope": "Condiciones de publicación/contribución",
+      "source_id": "N02-11",
+      "source_register_row": [
+        "Condiciones de publicación/contribución",
+        "La copia archivada lleva título «Política de contribución de datos»",
+        "La URL viva y vigencia de la copia no se confirmaron en esta consulta; no inferir validación de perfil desde una política general"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAP",
+      "url": [],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: La copia archivada lleva título «Licencia de uso datos» Limitation: La URL viva y vigencia de la copia no se confirmaron en esta consulta; relevante si se incorporan datasets reales. N01 no autoriza acceder, copiar o evaluar datos de terceros",
+      "publisher": "licencia de datos (captura en `03_Compliance/NAP/01_Policies/NAP_Licencia_Datos.html`) — MITRAMS",
+      "scope": "Uso/reutilización de datos NAP",
+      "source_id": "N02-12",
+      "source_register_row": [
+        "Uso/reutilización de datos NAP",
+        "La copia archivada lleva título «Licencia de uso datos»",
+        "La URL viva y vigencia de la copia no se confirmaron en esta consulta; relevante si se incorporan datasets reales. N01 no autoriza acceder, copiar o evaluar datos de terceros"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAP",
+      "url": [],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "Finding: Incluye principios de sistema multimodal, accesible e interoperable y referencias a NAP/normativa UE Limitation: Revisar artículos y desarrollo aplicables concretos; no asignar obligaciones técnicas NeTEx a partir del preámbulo",
+      "publisher": "BOE",
+      "scope": "Normativa estatal transversal a movilidad y datos",
+      "source_id": "N02-13",
+      "source_register_row": [
+        "Normativa estatal transversal a movilidad y datos",
+        "Incluye principios de sistema multimodal, accesible e interoperable y referencias a NAP/normativa UE",
+        "Revisar artículos y desarrollo aplicables concretos; no asignar obligaciones técnicas NeTEx a partir del preámbulo"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Ley 9/2025, de Movilidad Sostenible",
+      "url": [
+        "https://www.boe.es/eli/es/l/2025/12/03/9/con"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "Finding: Regula sistemas inteligentes por carretera e interfaces con otros modos; identifica NAP y disponibilidad de datos en su ámbito Limitation: Separar su ámbito de carretera del NAP multimodal y mapear anexos/artículos antes de incluir requisitos en un perfil",
+      "publisher": "BOE",
+      "scope": "Contexto estatal ITS/NAP y disponibilidad de datos",
+      "source_id": "N02-14",
+      "source_register_row": [
+        "Contexto estatal ITS/NAP y disponibilidad de datos",
+        "Regula sistemas inteligentes por carretera e interfaces con otros modos; identifica NAP y disponibilidad de datos en su ámbito",
+        "Separar su ámbito de carretera del NAP multimodal y mapear anexos/artículos antes de incluir requisitos en un perfil"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Real Decreto 450/2026, marco SIT",
+      "url": [
+        "https://www.boe.es/buscar/act.php?id=BOE-A-2026-12035"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "HISTORICAL",
+      "date": "2021",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Commit del perfil `e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a`; validación acotada a `Line`, atributos y `Name`; fuente descrita como Data4PT 2021/NeTEx 1.3.1, ya no mantenida Limitation: No reescribir evidencia histórica. Reutilizar solo como regresión comparativa tras decidir perfil/schema, nunca como aprobación de N01",
+      "publisher": "evidencia interna",
+      "scope": "Antecedente técnico trazable; evitar repetir y delimitar claims",
+      "source_id": "N02-15",
+      "source_register_row": [
+        "Antecedente técnico trazable; evitar repetir y delimitar claims",
+        "Commit del perfil `e5eaf83f15f7fd8db7991a4a8323b6ff7905c13a`; validación acotada a `Line`, atributos y `Name`; fuente descrita como Data4PT 2021/NeTEx 1.3.1, ya no mantenida",
+        "No reescribir evidencia histórica. Reutilizar solo como regresión comparativa tras decidir perfil/schema, nunca como aprobación de N01"
+      ],
+      "status": "HISTORICAL_REFERENCE",
+      "title": "COMPLIANCE_V1_FINAL_CLOSURE_REPORT.md + netex_tree.json + XSD congelados",
+      "url": [],
+      "version": "1.3.1"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2024-12-11",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: España no aparece en el inventario consultado, cuya página dice que se actualizó el 2024-12-11 Limitation: Inventario no exhaustivo; ausencia no demuestra que no haya documentación española fuera de él",
+      "publisher": "National Implementations](https://data4pt.org/wiki/National_Implementations)",
+      "scope": "Inventario de perfiles nacionales publicados; comprobar si España está documentada",
+      "source_id": "N02-16",
+      "source_register_row": [
+        "Inventario de perfiles nacionales publicados; comprobar si España está documentada",
+        "España no aparece en el inventario consultado, cuya página dice que se actualizó el 2024-12-11",
+        "Inventario no exhaustivo; ausencia no demuestra que no haya documentación española fuera de él"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "DATA4PT — National Implementations",
+      "url": [
+        "https://data4pt.org/wiki/National_Implementations"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Moveuskadi publica un índice NETEX multimodal; BizkaiBus ofrece recursos NeTEx de paradas, líneas y horarios Limitation: No se encontró en esas páginas una especificación regional o nacional versionada, ni declaran por sí solas versión/profile",
+      "publisher": "datos de la red de transporte público de Euskadi](https://www.euskadi.eus/contenidos/ds_movilidad/md_ideeu_moveuskadi/es_def/index.shtml) y [BizkaiBus — Open Data Euskadi](https://opendata.euskadi.eus/catalogo/-/bizkaibus/)",
+      "scope": "Evidencia institucional/regional de distribución de datos NeTEx y de las categorías/modos cubiertos",
+      "source_id": "N02-17",
+      "source_register_row": [
+        "Evidencia institucional/regional de distribución de datos NeTEx y de las categorías/modos cubiertos",
+        "Moveuskadi publica un índice NETEX multimodal; BizkaiBus ofrece recursos NeTEx de paradas, líneas y horarios",
+        "No se encontró en esas páginas una especificación regional o nacional versionada, ni declaran por sí solas versión/profile"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Moveuskadi — datos de la red de transporte público de Euskadi",
+      "url": [
+        "https://www.euskadi.eus/contenidos/ds_movilidad/md_ideeu_moveuskadi/es_def/index.shtml",
+        "https://opendata.euskadi.eus/catalogo/-/bizkaibus/"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2023",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Tres ZIP CC BY 4.0; XML bien formados, todos con `PublicationDelivery`; las muestras no declaran versión/profile Limitation: Catálogo indica metadatos de abril de 2023 aunque hay timestamps XML de 2024/2025; no se probó XSD/perfil ni identidad con el payload recibido por NAP",
+      "publisher": "LeioaBus](https://data.ctb.eus/dataset/horarios-lejoanbusa), [KBus](https://data.ctb.eus/dataset/kbus), [Bizkaibus](https://data.ctb.eus/dataset/horarios-lineas-bizkaibus) — muestras y hashes en [N01 follow-up](N01_FOLLOWUP_ES_PROFILE_AND_PUBLIC_FEEDS_20261002.md)",
+      "scope": "Capturas públicas de feeds reales para análisis estructural exploratorio",
+      "source_id": "N02-18",
+      "source_register_row": [
+        "Capturas públicas de feeds reales para análisis estructural exploratorio",
+        "Tres ZIP CC BY 4.0; XML bien formados, todos con `PublicationDelivery`; las muestras no declaran versión/profile",
+        "Catálogo indica metadatos de abril de 2023 aunque hay timestamps XML de 2024/2025; no se probó XSD/perfil ni identidad con el payload recibido por NAP"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "CTB — LeioaBus",
+      "url": [
+        "https://data.ctb.eus/dataset/horarios-lejoanbusa",
+        "https://data.ctb.eus/dataset/kbus",
+        "https://data.ctb.eus/dataset/horarios-lineas-bizkaibus"
+      ],
+      "version": "4.0"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: El detalle Metro Bilbao incluye una oferta NeTEx estática; la descarga requiere sesión y no expone versión/profile NeTEx. La FAQ prefiere GTFS o NeTEx, pero no detalla contrato técnico Limitation: El listado enlazado filtra por modo ferroviario (`filterTT=2`), no es una búsqueda exclusiva de NeTEx; no se obtuvo payload de NAP ni se eludió autenticación",
+      "publisher": "[Listado del NAP](https://nap.transportes.gob.es/Files/List?filterTT=2&orderby=Recientes&page=1&showFilterR=False&showFilterTF=False&showFilterTT=True&showfilterAU=False), [detalle Metro Bilbao](https://nap.transportes.gob.es/Files/Detail/1066) y [FAQ](https://nap.transportes.gob.es/faqs)",
+      "scope": "Contexto de catálogo NAP, formatos y metadatos públicos disponibles",
+      "source_id": "N02-19",
+      "source_register_row": [
+        "Contexto de catálogo NAP, formatos y metadatos públicos disponibles",
+        "El detalle Metro Bilbao incluye una oferta NeTEx estática; la descarga requiere sesión y no expone versión/profile NeTEx. La FAQ prefiere GTFS o NeTEx, pero no detalla contrato técnico",
+        "El listado enlazado filtra por modo ferroviario (`filterTT=2`), no es una búsqueda exclusiva de NeTEx; no se obtuvo payload de NAP ni se eludió autenticación"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Listado del NAP",
+      "url": [
+        "https://nap.transportes.gob.es/Files/List?filterTT=2&orderby=Recientes&page=1&showFilterR=False&showFilterTF=False&showFilterTT=True&showfilterAU=False",
+        "https://nap.transportes.gob.es/Files/Detail/1066",
+        "https://nap.transportes.gob.es/faqs"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: El NAP solicita datos digitalizados preferiblemente en GTFS o NeTEx y URL (con credenciales si hace falta); la página de participación exige titularidad/autorización y calidad suficiente, y dice que los pasos se concretarán al contactar. No especifica pruebas XML, XSD, perfil, reglas ni revisión de recepción Limitation: No iniciar contacto externo sin autorización expresa. Estado: requisitos técnicos de aceptación/profile `NOT_IDENTIFIED_IN_PUBLIC_SOURCES_REVIEWED`; no equivale a inexistencia",
+      "publisher": "FAQ](https://nap.transportes.gob.es/faqs), [Quiero participar](https://nap.transportes.gob.es/quiero-participar) y [alta/login de proveedor](https://nap.transportes.gob.es/Account/Login) — MITRAMS",
+      "scope": "Ronda final de autoridad operativa: alta, formato, publicación y aceptación",
+      "source_id": "N02-20",
+      "source_register_row": [
+        "Ronda final de autoridad operativa: alta, formato, publicación y aceptación",
+        "El NAP solicita datos digitalizados preferiblemente en GTFS o NeTEx y URL (con credenciales si hace falta); la página de participación exige titularidad/autorización y calidad suficiente, y dice que los pasos se concretarán al contactar. No especifica pruebas XML, XSD, perfil, reglas ni revisión de recepción",
+        "No iniciar contacto externo sin autorización expresa. Estado: requisitos técnicos de aceptación/profile `NOT_IDENTIFIED_IN_PUBLIC_SOURCES_REVIEWED`; no equivale a inexistencia"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAP — FAQ",
+      "url": [
+        "https://nap.transportes.gob.es/faqs",
+        "https://nap.transportes.gob.es/quiero-participar",
+        "https://nap.transportes.gob.es/Account/Login"
+      ],
+      "version": "NOT_IDENTIFIED_IN_REGISTER"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "Finding: Para datos estáticos del Anexo 1 aplicables, admite NeTEx CEN/TS 16614 y versiones posteriores; los datos aplicables a NeTEx/DATEX II deben representarse mediante perfiles mínimos UE o nacionales. No nombra EPIP directamente en ese apartado Limitation: Delimitar categorías del Anexo aplicables al scope antes de derivar requisitos; el texto consolidado es herramienta documental y remite a actos auténticos del DOUE",
+      "publisher": "EUR-Lex / UE",
+      "scope": "Autoridad normativa primaria para formato y perfil mínimo",
+      "source_id": "N02-21",
+      "source_register_row": [
+        "Autoridad normativa primaria para formato y perfil mínimo",
+        "Para datos estáticos del Anexo 1 aplicables, admite NeTEx CEN/TS 16614 y versiones posteriores; los datos aplicables a NeTEx/DATEX II deben representarse mediante perfiles mínimos UE o nacionales. No nombra EPIP directamente en ese apartado",
+        "Delimitar categorías del Anexo aplicables al scope antes de derivar requisitos; el texto consolidado es herramienta documental y remite a actos auténticos del DOUE"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Reglamento Delegado (UE) 2017/1926 consolidado a 2024-03-04",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2017/1926/2024-03-04/eng"
+      ],
+      "version": "CEN/TS 16614"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "PUBLICATION_DATE_NOT_IDENTIFIED; REVIEWED_2026-10-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Para horarios de transporte programado recomienda NeTEx Partes 1+2 y conformidad EPIP (Parte 4) y/o EPIAP (Parte 6) para interoperabilidad europea Limitation: Orientación de proyecto NAPCORE; no convierte por sí sola perfiles ni criterios de calidad en obligación legal, ni resuelve compatibilidad de artefactos 2.0.x",
+      "publisher": "[NAPCORE MMTIS Quality Framework v1](https://napcore.eu/wp-content/uploads/2025/06/NAPCORE-MMTIS-Quality-Framework_v1_250411.pdf), p. 49 (PDF p. 48)",
+      "scope": "Guía técnica europea de calidad/interoperabilidad, no norma primaria",
+      "source_id": "N02-22",
+      "source_register_row": [
+        "Guía técnica europea de calidad/interoperabilidad, no norma primaria",
+        "Para horarios de transporte programado recomienda NeTEx Partes 1+2 y conformidad EPIP (Parte 4) y/o EPIAP (Parte 6) para interoperabilidad europea",
+        "Orientación de proyecto NAPCORE; no convierte por sí sola perfiles ni criterios de calidad en obligación legal, ni resuelve compatibilidad de artefactos 2.0.x"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAPCORE MMTIS Quality Framework v1",
+      "url": [
+        "https://napcore.eu/wp-content/uploads/2025/06/NAPCORE-MMTIS-Quality-Framework_v1_250411.pdf"
+      ],
+      "version": "2.0"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "2020",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Describe EPIP como perfil de referencia derivado de CEN/TS 16614-4 y como mínimo acordado de conceptos/estructuras para intercambio europeo; lista partes y repositorios de schemas Limitation: Autoridad eslovena, no autoridad española ni sustituto del texto CEN. La página todavía lista ediciones 2020/2022 y no demuestra compatibilidad con release 2.0.x",
+      "publisher": "NCUP",
+      "scope": "Implementación institucional de referencia para identificar EPIP",
+      "source_id": "N02-23",
+      "source_register_row": [
+        "Implementación institucional de referencia para identificar EPIP",
+        "Describe EPIP como perfil de referencia derivado de CEN/TS 16614-4 y como mínimo acordado de conceptos/estructuras para intercambio europeo; lista partes y repositorios de schemas",
+        "Autoridad eslovena, no autoridad española ni sustituto del texto CEN. La página todavía lista ediciones 2020/2022 y no demuestra compatibilidad con release 2.0.x"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Página NeTEx del NAP esloveno",
+      "url": [
+        "https://nap.si/en/netex"
+      ],
+      "version": "CEN/TS 16614-4"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "SUPPORTING",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Al corte, `v2.0` figura como última rama estable (bug fixes only), y `v2.0.0` como producción para Partes 1, 2, 3 y 5 según documentación CEN publicada en febrero de 2026. La descripción del repositorio lista schemas de esas partes, no 4/6 Limitation: Fuente técnica del artefacto XSD, no norma autónoma. No acredita por sí sola compatibilidad del perfil EPIP (Parte 4) ni EPIAP (Parte 6) con 2.0.x; cotejar textos CEN exactos",
+      "publisher": "repositorio asociado al grupo NeTEx/CEN",
+      "scope": "Estado del baseline de schemas y alcance por partes",
+      "source_id": "N02-24",
+      "source_register_row": [
+        "Estado del baseline de schemas y alcance por partes",
+        "Al corte, `v2.0` figura como última rama estable (bug fixes only), y `v2.0.0` como producción para Partes 1, 2, 3 y 5 según documentación CEN publicada en febrero de 2026. La descripción del repositorio lista schemas de esas partes, no 4/6",
+        "Fuente técnica del artefacto XSD, no norma autónoma. No acredita por sí sola compatibilidad del perfil EPIP (Parte 4) ni EPIAP (Parte 6) con 2.0.x; cotejar textos CEN exactos"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "README rama v2.0 de schemas NeTEx",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx/blob/v2.0/README.md"
+      ],
+      "version": "v2.0"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Publica UNE-CEN/TS 16614-1/-2/-3/-4/-5:2026, ratificadas en abril, incluida Parte 4 Perfil europeo de información al viajero Limitation: Ratificación española de una especificación europea no crea por sí misma un perfil nacional español particular ni acredita requisitos de aceptación NAP",
+      "publisher": "relación de normas europeas ratificadas por España en abril de 2026",
+      "scope": "Autoridad oficial española para adopción de normas CEN",
+      "source_id": "N02-25",
+      "source_register_row": [
+        "Autoridad oficial española para adopción de normas CEN",
+        "Publica UNE-CEN/TS 16614-1/-2/-3/-4/-5:2026, ratificadas en abril, incluida Parte 4 Perfil europeo de información al viajero",
+        "Ratificación española de una especificación europea no crea por sí misma un perfil nacional español particular ni acredita requisitos de aceptación NAP"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "BOE-A-2026-10207",
+      "url": [
+        "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-10207"
+      ],
+      "version": "CEN/TS 16614-1"
+    },
+    {
+      "authority_level": "L2",
+      "classification": "AUTHORITATIVE",
+      "date": "2026-02-18",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Figura activa, publicada el 2026-02-18, reemplaza CEN/TS 16614-4:2020; el resumen relaciona la actualización de la serie con NeTEx v2 y señala que Parte 6 seguía en voto formal Limitation: Ficha y resumen bibliográfico, no el texto normativo íntegro. Acredita edición de referencia y alineación de serie a alto nivel, pero no cotejo de cada restricción EPIP con XSD release",
+      "publisher": "catálogo oficial del organismo nacional de normalización belga para estándar CEN/TC 278",
+      "scope": "Registro de estado/edición del perfil europeo EPIP",
+      "source_id": "N02-26",
+      "source_register_row": [
+        "Registro de estado/edición del perfil europeo EPIP",
+        "Figura activa, publicada el 2026-02-18, reemplaza CEN/TS 16614-4:2020; el resumen relaciona la actualización de la serie con NeTEx v2 y señala que Parte 6 seguía en voto formal",
+        "Ficha y resumen bibliográfico, no el texto normativo íntegro. Acredita edición de referencia y alineación de serie a alto nivel, pero no cotejo de cada restricción EPIP con XSD release"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "CEN/TS 16614-4:2026",
+      "url": [
+        "https://app.nbn.be/data/r/platform/frontend/detail?p40_id=3499334&p40_language_code=en"
+      ],
+      "version": "CEN/TS 16614-4:2020"
+    },
+    {
+      "authority_level": "L2",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: La vista previa de 15 páginas describe EPIP como perfil mínimo de red y horarios; incluye Stop Profile, Network and Timetables Profile, soporte multilingüe, accesibilidad informativa y reglas de calidad. En p. 13 conserva la frase de que EPIP se especifica para NeTEx 1.1 Limitation: Preview parcial, no texto íntegro ni copia licenciada completa. La referencia 1.1 contradice la alineación a serie v2 a nivel resumen; no demuestra por sí sola incompatibilidad. Resolver con documento completo/controlado",
+      "publisher": "SIST, adopción idéntica de CEN/TS; preview alojado por iTeh",
+      "scope": "Alcance/estructura visible de EPIP 2026 y comprobación de ambigüedad de versión",
+      "source_id": "N02-27",
+      "source_register_row": [
+        "Alcance/estructura visible de EPIP 2026 y comprobación de ambigüedad de versión",
+        "La vista previa de 15 páginas describe EPIP como perfil mínimo de red y horarios; incluye Stop Profile, Network and Timetables Profile, soporte multilingüe, accesibilidad informativa y reglas de calidad. En p. 13 conserva la frase de que EPIP se especifica para NeTEx 1.1",
+        "Preview parcial, no texto íntegro ni copia licenciada completa. La referencia 1.1 contradice la alineación a serie v2 a nivel resumen; no demuestra por sí sola incompatibilidad. Resolver con documento completo/controlado"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Muestra pública SIST-TS CEN/TS 16614-4:2026",
+      "url": [
+        "https://cdn.standards.iteh.ai/samples/sist/sist-ts-cen-ts-16614-4-2026/34a3da8da59e48e4831474ed903bc6bf/sist-ts-cen-ts-16614-4-2026.pdf"
+      ],
+      "version": "1.1"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: README define ramas, áreas de XSD y ejemplos; recomienda publicación XSD principal para validación, fija 2.0.0 (febrero 2026) como producción para partes 1/2/3/5 y usar release de tres componentes al desarrollar Limitation: Máquina-readable: XSD y XML examples. Rama mutable; el tag release es snapshot. No hay paquete EPIP 2026/Parte 4 identificado; no inferir conformidad del perfil desde schema v2",
+      "publisher": "TransmodelEcosystem, repositorio asociado al grupo NeTEx/CEN",
+      "scope": "Artefacto de implementación schema, ejemplos y recomendación de release",
+      "source_id": "N02-28",
+      "source_register_row": [
+        "Artefacto de implementación schema, ejemplos y recomendación de release",
+        "README define ramas, áreas de XSD y ejemplos; recomienda publicación XSD principal para validación, fija 2.0.0 (febrero 2026) como producción para partes 1/2/3/5 y usar release de tres componentes al desarrollar",
+        "Máquina-readable: XSD y XML examples. Rama mutable; el tag release es snapshot. No hay paquete EPIP 2026/Parte 4 identificado; no inferir conformidad del perfil desde schema v2"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Repositorio NeTEx, rama v2.0 y releases",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx/tree/v2.0"
+      ],
+      "version": "2.0.0"
+    },
+    {
+      "authority_level": "L2",
+      "classification": "SUPPORTING",
+      "date": "2026-02-18",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Estado ACTIVE, fecha 2026-02-18, sustituye edición 2020; resumen dice que serie revisada se publicará como NeTEx v2 Limitation: Fuente bibliográfica de autoridad, no texto completo. El alcance del resumen sobre actualizaciones de la serie no demuestra requisito-a-schema ni resuelve la mención de NeTEx 1.1 visible en la preview",
+      "publisher": "NBN, organismo nacional de normalización belga",
+      "scope": "Metadatos oficiales y resumen público de la publicación CEN",
+      "source_id": "N02-29",
+      "source_register_row": [
+        "Metadatos oficiales y resumen público de la publicación CEN",
+        "Estado ACTIVE, fecha 2026-02-18, sustituye edición 2020; resumen dice que serie revisada se publicará como NeTEx v2",
+        "Fuente bibliográfica de autoridad, no texto completo. El alcance del resumen sobre actualizaciones de la serie no demuestra requisito-a-schema ni resuelve la mención de NeTEx 1.1 visible en la preview"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Ficha del estándar CEN/TS 16614-4:2026",
+      "url": [
+        "https://app.nbn.be/data/r/platform/frontend/detail?p40_id=3499334&p40_language_code=en"
+      ],
+      "version": "1.1"
+    },
+    {
+      "authority_level": "L4",
+      "classification": "IMPLEMENTATION_REFERENCE",
+      "date": "2021",
+      "hash_if_local": null,
+      "machine_readable": true,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: XSD generado en 2021, basado en NeTEx 1.3.1; repositorio archivado 2026-05-03 y no mantenido por el subgrupo NeTEx Limitation: `LEGACY_IMPLEMENTATION_REFERENCE`: válido para comparación histórica y migración, no como autoridad de EPIP 2026 ni validador de v2",
+      "publisher": "Data4PT / TransmodelEcosystem",
+      "scope": "Clasificación de XSD EPIP archivado",
+      "source_id": "N02-30",
+      "source_register_row": [
+        "Clasificación de XSD EPIP archivado",
+        "XSD generado en 2021, basado en NeTEx 1.3.1; repositorio archivado 2026-05-03 y no mantenido por el subgrupo NeTEx",
+        "`LEGACY_IMPLEMENTATION_REFERENCE`: válido para comparación histórica y migración, no como autoridad de EPIP 2026 ni validador de v2"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Repositorio NeTEx-Profile-EPIP",
+      "url": [
+        "https://github.com/TransmodelEcosystem/NeTEx-Profile-EPIP"
+      ],
+      "version": "1.3.1"
+    },
+    {
+      "authority_level": "L3",
+      "classification": "SUPPORTING",
+      "date": "2026",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "INFORMATIVE_OR_IMPLEMENTATION",
+      "notes": "Finding: Recomienda NeTEx partes 1+2 para timetables y EPIP (parte 4) y/o EPIAP (parte 6) para interoperabilidad europea Limitation: Guía de proyecto informativa. No es norma primaria ni resuelve compatibilidad de artefactos EPIP 2026 con schema 2.0.0",
+      "publisher": "NAPCORE",
+      "scope": "Recomendación de perfil para horarios programados y contexto de calidad",
+      "source_id": "N02-31",
+      "source_register_row": [
+        "Recomendación de perfil para horarios programados y contexto de calidad",
+        "Recomienda NeTEx partes 1+2 para timetables y EPIP (parte 4) y/o EPIAP (parte 6) para interoperabilidad europea",
+        "Guía de proyecto informativa. No es norma primaria ni resuelve compatibilidad de artefactos EPIP 2026 con schema 2.0.0"
+      ],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "NAPCORE MMTIS Quality Framework v1",
+      "url": [
+        "https://napcore.eu/wp-content/uploads/2025/06/NAPCORE-MMTIS-Quality-Framework_v1_250411.pdf"
+      ],
+      "version": "2.0.0"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2025-02-13",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "French-language corrections to Annex 1.2 terminology; no Spanish edition identified in this record. Retained for legal provenance, not used to derive a bus requirement.",
+      "publisher": "European Union / EUR-Lex",
+      "scope": "corrigendum to Annex 1 categories, French language edition",
+      "source_id": "N02-32",
+      "source_register_row": [],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Corrigendum to Delegated Regulation (EU) 2024/490 (2025/90135)",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2024/490/corrigendum/2025-02-13/oj"
+      ],
+      "version": "2025/90135"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2026-03-12",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "EUR-Lex metadata states the correction does not concern the English version; the French corrections change Annex category wording. No Spanish-language correction was identified in this review. Applicability to the approved Spain/bus scope remains for human legal-language review.",
+      "publisher": "European Union / EUR-Lex",
+      "scope": "corrigendum to Annex 1.1(d)(v) and (vii), French language edition",
+      "source_id": "N02-33",
+      "source_register_row": [],
+      "status": "REVIEWED_AT_CUTOFF",
+      "title": "Corrigendum to Delegated Regulation (EU) 2024/490 (2026/90193)",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2024/490/corrigendum/2026-03-12/oj"
+      ],
+      "version": "2026/90193"
+    },
+    {
+      "authority_level": "L1",
+      "classification": "AUTHORITATIVE",
+      "date": "2022-02-02",
+      "hash_if_local": null,
+      "machine_readable": false,
+      "normative_or_informative": "NORMATIVE_SOURCE",
+      "notes": "EUR-Lex states 2015/962 was repealed from 2025-01-01. Included to flag the 2024/490 Article 4(1)(a) cross-reference for legal review; no NeTEx obligation for the approved bus scope is inferred.",
+      "publisher": "European Union / EUR-Lex",
+      "scope": "road transport data context and repeal of Delegated Regulation (EU) 2015/962",
+      "source_id": "N02-34",
+      "source_register_row": [],
+      "status": "IN_FORCE; REVIEWED_AT_CUTOFF",
+      "title": "Commission Delegated Regulation (EU) 2022/670 on real-time traffic information",
+      "url": [
+        "https://eur-lex.europa.eu/eli/reg_del/2022/670/oj/eng"
+      ],
+      "version": "2022/670"
+    }
+  ],
+  "unresolved_topics": [
+    "full controlled EPIP 2026 text and requirement mapping",
+    "Spanish additional profile",
+    "NAP Spain technical acceptance contract",
+    "current public location/status of captured NAP policies",
+    "redistribution terms for CEN/Crown Copyright XSD artifacts"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "absolute_paths_in_report": false,
+  "cases": [
+    {
+      "finding_status_counts": {
+        "HUMAN_REVIEW_REQUIRED": 1,
+        "PASS": 2
+      },
+      "replay": "PASS",
+      "source_file": "valid_minimal.xml",
+      "source_sha256": "8e50cc96dd4289e1ed79bc15e251e59165bbb7f1cc30d0e2cdaaa83a30c3b554",
+      "well_formedness": "WELL_FORMED",
+      "xsd_validation": "XSD_VALID"
+    },
+    {
+      "finding_status_counts": {
+        "FAIL_TECHNICAL": 1,
+        "NOT_EVALUABLE": 1
+      },
+      "replay": "PASS",
+      "source_file": "malformed.xml",
+      "source_sha256": "3d13af798cb3eaced89189ead209ca2a7e2f91f445ec60a36dac2deb52df2f55",
+      "well_formedness": "NOT_WELL_FORMED",
+      "xsd_validation": "XSD_NOT_EVALUABLE"
+    },
+    {
+      "finding_status_counts": {
+        "FAIL_TECHNICAL": 1,
+        "HUMAN_REVIEW_REQUIRED": 1,
+        "PASS": 1
+      },
+      "replay": "PASS",
+      "source_file": "xsd_invalid.xml",
+      "source_sha256": "6747228ce855197aab96b417cf00c767fa0668c1aa4112b1508e4a19104a1c43",
+      "well_formedness": "WELL_FORMED",
+      "xsd_validation": "XSD_INVALID"
+    },
+    {
+      "finding_status_counts": {
+        "FAIL_TECHNICAL": 1,
+        "HUMAN_REVIEW_REQUIRED": 1,
+        "PASS": 1
+      },
+      "replay": "PASS",
+      "source_file": "broken_reference_candidate.xml",
+      "source_sha256": "181da6301d2e70f90d8dc22a9a9d8c842b954e9f9e87d1ea7c5d7f6b08e73fdd",
+      "well_formedness": "WELL_FORMED",
+      "xsd_validation": "XSD_INVALID"
+    },
+    {
+      "finding_status_counts": {
+        "FAIL_TECHNICAL": 1,
+        "HUMAN_REVIEW_REQUIRED": 2,
+        "PASS": 1
+      },
+      "replay": "PASS",
+      "source_file": "duplicate_id_candidate.xml",
+      "source_sha256": "91e5419b8fb0b1460632f845b6a0f4222fc6128cce8c003e4b58c6b39d98c092",
+      "well_formedness": "WELL_FORMED",
+      "xsd_validation": "XSD_INVALID"
+    }
+  ],
+  "corpus_type": "SYNTHETIC_DEVELOPMENT",
+  "deterministic_replay": "PASS",
+  "e2e_version": "1.0.0",
+  "holdout_accessed": false,
+  "operator_specific_code": false,
+  "public_feed_accessed": false,
+  "schema_identity": {
+    "commit": "a94e5e1752bcc13aabb8a1f3d018dc08e6978f42",
+    "release": "v2.0.0",
+    "root_schema": "xsd/NeTEx_publication.xsd",
+    "root_schema_sha256": "965bc6d92efb49a8ce6fa8fac3f4ef6a172d57c3d54aa9d49799ffcc14a17175"
+  },
+  "source_immutable": true,
+  "zip_intake": "PASS",
+  "zip_replay": "PASS"
+}
