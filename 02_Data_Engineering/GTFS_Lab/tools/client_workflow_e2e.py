@@ -81,7 +81,8 @@ def main() -> int:
                     local_paths_absent = local_paths_absent and local_root not in content
             report = next((delivery / "engine_run").rglob("engine_report.json")).read_bytes()
             if first_engine_run is None:
-                first_engine_run = next((delivery / "engine_run").rglob("audit_manifest.json")).parent.parent
+                audit_run_manifest = next((delivery.parent / "audit" / "engine_runs").glob("*/audit/audit_manifest.json"))
+                first_engine_run = audit_run_manifest.parent.parent
             assert b"tdl-client-workflow-e2e-" not in report
             assert "\"artifacts_sha256_verified\": true" in (delivery / "audit_manifest.json").read_text(encoding="utf-8")
             runs.append({"audit_id": audit_id, "status": result["status"],

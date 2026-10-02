@@ -47,8 +47,13 @@ def _redact_local_paths(value: Any) -> Any:
     if isinstance(value, list):
         return [_redact_local_paths(item) for item in value]
     if isinstance(value, str):
-        return re.sub(r"(?i)\b[A-Z]:\\[^\s\"']*", "[LOCAL_PATH_REDACTED]", value)
+        return _redact_path_text(value)
     return value
+
+
+def _redact_path_text(value: str) -> str:
+    value = re.sub(r"(?i)\b[A-Z]:\\[^\s`\"']*", "[LOCAL_PATH_REDACTED]", value)
+    return re.sub(r"(?<![\w:/])/(?:[^/\s\"'`<>]+/)*[^/\s\"'`<>]+", "[LOCAL_PATH_REDACTED]", value)
 
 
 def _sanitize_delivery(directory: Path) -> None:
@@ -60,7 +65,7 @@ def _sanitize_delivery(directory: Path) -> None:
             if path.suffix.lower() == ".json":
                 text = json.dumps(_redact_local_paths(json.loads(text)), ensure_ascii=False, sort_keys=True, indent=2) + "\n"
             else:
-                text = re.sub(r"(?i)\b[A-Z]:\\[^\s`\"']*", "[LOCAL_PATH_REDACTED]", text)
+                text = _redact_path_text(text)
             path.write_text(text, encoding="utf-8")
         except (UnicodeError, json.JSONDecodeError):
             # Non-text engine outputs are not expected to contain path strings.
@@ -296,8 +301,10 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
         _sanitize_delivery(delivery)
-        if any(re.search(r"(?i)\b[A-Z]:\\", path.read_text(encoding="utf-8", errors="ignore"))
-               for path in delivery.rglob("*") if path.is_file() and path.suffix.lower() in {".json", ".md", ".txt", ".csv"}):
+        if any(_redact_path_text(path.read_text(encoding="utf-8", errors="ignore"))
+               != path.read_text(encoding="utf-8", errors="ignore")
+               for path in delivery.rglob("*")
+               if path.is_file() and path.suffix.lower() in {".json", ".md", ".txt", ".csv"}):
             raise RuntimeError("BLOCKED_TECHNICAL: ruta local detectada en DELIVERY")
         # Hash every client artifact; the manifest is sealed separately to avoid self-reference.
         for path in sorted(p for p in delivery.rglob("*") if p.is_file()):
