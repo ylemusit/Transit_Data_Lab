@@ -17,7 +17,7 @@ TRANSIT DATA LAB
 │   │   ├── P07 recurring                ✅ CLOSED_WITH_DOCUMENTED_LIMITATION
 │   │   ├── CI remoto + E2E sintético   ✅ PASS (PR34 + POST-MERGE)
 │   │   └── P09 cierre final             ✅ APPROVED; CIERRE TÉCNICO
-│   └── NeTEx                             ✅ N02–N09 técnico PASS; decisión humana pendiente
+│   └── NeTEx                             ✅ V1 PASS / CLOSED (alcance documentado)
 │
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
 │
@@ -28,6 +28,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx N02–N09 se fusionó en PR #36; CI PR y post-merge PASS (`36970572860`, `36970665306`). Está listo para decisión humana final, aún pendiente. No hay cierre formal de V1. EPIP completo y aplicabilidad jurídica de autobús siguen sin concluir. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
+El cierre técnico del workflow no acredita feeds reales probados, readiness comercial, demanda, certificación ni validación de mercado. P07 mantiene `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`. NeTEx V1 cierre humano aprobado; PR #36–#38 fusionadas y CI final post-merge PASS (`36971109479`). N01 CLOSED_WITH_LIMITATIONS; N02–N09 CLOSED. EPIP completo y aplicabilidad jurídica de autobús siguen sin concluir. Los estados y límites de los bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
