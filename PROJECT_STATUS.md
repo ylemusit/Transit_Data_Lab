@@ -61,7 +61,7 @@ La decisión humana final G11 está aprobada. El cierre no constituye certificac
 
 ## Remediation Engine V1 — cierre técnico aprobado
 
-**Estado vigente (2026-10-02):** decisión humana final aprobada; se cierra el alcance técnico documentado de Remediation Engine V1. PR de cierre y SHAs se incorporarán tras su publicación. El cierre cubre un caso DEVELOPMENT real acotado y no implica autocorrección general ni cobertura integral.
+**Estado vigente (2026-10-02):** decisión humana final aprobada; se cierra el alcance técnico documentado de Remediation Engine V1. PR #31 se fusionó mediante merge normal (`c7d3c820fab470b2796fe1384324052a53bad825` → `80d14e8d08250bcef617dfc95145d8e160a99fe4`); CI pre-merge PASS (run `36959598923`), CI post-merge PASS (run `36959638138`), y `origin/main` en el cierre `80d14e8d08250bcef617dfc95145d8e160a99fe4`. El cierre cubre un caso DEVELOPMENT real acotado y no implica autocorrección general ni cobertura integral.
 
 ```ini
 REMEDIATION_ENGINE_V1_HUMAN_CLOSURE_DECISION = APPROVED
