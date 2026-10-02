@@ -12,12 +12,11 @@ TRANSIT DATA LAB
 ├── REMEDIATION ENGINE V1               ✅ CLOSED (alcance técnico documentado)
 │
 ├── NÚCLEO DEL PRODUCTO — AÑO 1         🎯 ESPAÑA + GTFS + NeTEx
-│   ├── GTFS PRODUCTIZATION              🚧 IMPLEMENTACIÓN V1
-│   │   ├── contract / intake / freeze   ✅ SYNTHETIC
-│   │   ├── audit + Compliance + findings ✅ SYNTHETIC
-│   │   ├── delivery / report / hashes  ✅ SYNTHETIC
-│   │   ├── recurring comparison        ✅ SYNTHETIC
-│   │   └── cierre final                ⏳ DECISIÓN HUMANA
+│   ├── GTFS PRODUCTIZATION              ✅ PASS TÉCNICO; P09 PENDIENTE
+│   │   ├── P01–P06, P08                ✅ CLOSED
+│   │   ├── P07 recurring                ✅ CLOSED_WITH_LIMITATION
+│   │   ├── CI remoto + E2E sintético   ✅ PASS (PR34 + POST-MERGE)
+│   │   └── P09 cierre final             ⏳ DECISIÓN HUMANA
 │   └── NeTEx                             🎯 PRIORIDAD TÉCNICA AÑO 1
 │
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
@@ -29,6 +28,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-La prioridad de producto no acredita implementación completa del workflow, readiness comercial, demanda ni validación de mercado. Los estados de los cuatro bloques cerrados conservan sus alcances, gaps y deferrals documentados en [PROJECT_STATUS.md](PROJECT_STATUS.md).
+La aceptación técnica del workflow no acredita feeds reales probados, readiness comercial, demanda ni validación de mercado. NeTEx permanece sin iniciar. Los estados y límites de los cuatro bloques cerrados y del workflow constan en [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
