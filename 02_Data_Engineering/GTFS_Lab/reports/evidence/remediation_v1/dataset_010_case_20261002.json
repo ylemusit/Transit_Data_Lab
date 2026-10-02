@@ -1,0 +1,569 @@
+{
+  "acceptance": {
+    "CHANGE_ATTRIBUTION_COMPLETE": "YES",
+    "DERIVED_DATASET_CREATED": "YES",
+    "HOLDOUT_ACCESSED": "NO",
+    "NEW_UNRELATED_FINDINGS": "0",
+    "ONLY_AUTHORIZED_VALUE_CHANGED": "YES",
+    "ORIGINAL_DATASET_UNCHANGED": "YES",
+    "ORIGINAL_FINDING_RESOLVED": "YES",
+    "REAUDIT_REPRODUCIBLE": "YES",
+    "SOURCE_SHA256_VERIFIED": "YES"
+  },
+  "applied_at_utc": "2026-10-02T03:04:27.335955+00:00",
+  "archive_payload_diff": {
+    "after_cell": "https://empresarodil.es",
+    "all_other_member_payloads_identical": true,
+    "authoritative_corpus_sha256_after_all_runs": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+    "authorized_member": "agency.txt",
+    "before_cell": "empresarodil.es",
+    "changed_members": [
+      "agency.txt"
+    ],
+    "exactly_one_authorized_cell_change": true,
+    "member_names_and_order_identical": true,
+    "original_source_unchanged": true,
+    "source_sha256_after_all_runs": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf"
+  },
+  "audit_runs": {
+    "audit_A": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-remediation-engine-v1-010-20261002\\audit_A\\GTFSRUN-f20c07debd6e4c52",
+    "audit_A_source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+    "audit_A_summary": {
+      "analysis": "PASS",
+      "compliance_v1": "PASS",
+      "database": "PASS",
+      "findings": 0,
+      "g03": "FAIL_TECHNICAL",
+      "g03_file_catalog": "PASS",
+      "g04": "NOT_EVALUABLE",
+      "g05": "NOT_EVALUABLE",
+      "g06": "NOT_EVALUABLE",
+      "g07": "NOT_EVALUABLE",
+      "gis": "PASS",
+      "ingestion": "PASS",
+      "integrity": "PASS",
+      "validation": "PASS"
+    },
+    "audit_B": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-remediation-engine-v1-010-20261002\\audit_B\\GTFSRUN-1da22332a26a436d",
+    "audit_B_derived_sha256": "ce78c804770250165daeace125cd01c4649122c7cfc1843bb0b0fd8a1b2d2691",
+    "audit_B_summary": {
+      "analysis": "PASS",
+      "compliance_v1": "PASS",
+      "database": "PASS",
+      "findings": 0,
+      "g03": "NOT_EVALUABLE",
+      "g03_file_catalog": "PASS",
+      "g04": "NOT_EVALUABLE",
+      "g05": "NOT_EVALUABLE",
+      "g06": "NOT_EVALUABLE",
+      "g07": "NOT_EVALUABLE",
+      "gis": "PASS",
+      "ingestion": "PASS",
+      "integrity": "PASS",
+      "validation": "PASS"
+    },
+    "deterministic_replay": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-remediation-engine-v1-010-20261002\\deterministic_replay\\GTFSRUN-693fbcb73b304172"
+  },
+  "authorization": "HUMAN_APPROVED_CASE_SPECIFIC",
+  "before_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+  "contract": "TDL_REMEDIATION_ENGINE_V1",
+  "contract_version": "1.0.0",
+  "csv_row_number": 2,
+  "dataset_id": "010",
+  "derived_path": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-remediation-engine-v1-010-20261002\\derived\\010_rodil_remediated.zip",
+  "derived_sha256": "ce78c804770250165daeace125cd01c4649122c7cfc1843bb0b0fd8a1b2d2691",
+  "exact_diff": "--- original/agency.txt\n+++ derived/agency.txt\n@@ -1,2 +1,2 @@\n agency_id,agency_name,agency_url,agency_timezone,agency_phone,agency_lang,agency_fare_url\r\n-1,\"UTE Rodil\",empresarodil.es,Europe/Madrid,,ES,\r\n+1,\"UTE Rodil\",https://empresarodil.es,Europe/Madrid,,ES,\r\n",
+  "external_evidence": {
+    "claim": "The approved operator domain was observed serving HTTPS; see the case-specific captured source evidence in TDL_REMEDIATION_ENGINE_V1_FIRST_CASE_20261001.md.",
+    "observed_at_utc": "2026-10-01T04:02:00Z",
+    "url": "https://empresarodil.es"
+  },
+  "g03": {
+    "audit_A": {
+      "rule_versions": {
+        "GTFS-G03-CSV-STRUCTURE": "1.0.0",
+        "GTFS-G03-FIELD-TYPE": "1.0.0",
+        "GTFS-G03-FILE-CATALOG": "1.0.0",
+        "GTFS-G03-FILE-PRESENCE": "1.0.0",
+        "GTFS-G03-FILE-RESTRICTIONS": "1.0.0",
+        "GTFS-G03-HEADER-SCHEMA": "1.1.0"
+      },
+      "rules": [
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-CSV-STRUCTURE",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [
+            {
+              "expected": "URL",
+              "field": "agency_url",
+              "file": "agency.txt",
+              "observed": "empresarodil.es",
+              "reason": "Value does not satisfy the executable official lexical type",
+              "row_locator": "ROW:1",
+              "rule_id": "GTFS-G03-FIELD-TYPE",
+              "specification_reference": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 3)"
+            }
+          ],
+          "rule_id": "GTFS-G03-FIELD-TYPE",
+          "status": "FAIL_TECHNICAL"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-CATALOG",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-PRESENCE",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-HEADER-SCHEMA",
+          "status": "NOT_EVALUABLE"
+        }
+      ],
+      "status": "FAIL_TECHNICAL"
+    },
+    "audit_B": {
+      "rule_versions": {
+        "GTFS-G03-CSV-STRUCTURE": "1.0.0",
+        "GTFS-G03-FIELD-TYPE": "1.0.0",
+        "GTFS-G03-FILE-CATALOG": "1.0.0",
+        "GTFS-G03-FILE-PRESENCE": "1.0.0",
+        "GTFS-G03-FILE-RESTRICTIONS": "1.0.0",
+        "GTFS-G03-HEADER-SCHEMA": "1.1.0"
+      },
+      "rules": [
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-CSV-STRUCTURE",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FIELD-TYPE",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-CATALOG",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-PRESENCE",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-FILE-RESTRICTIONS",
+          "status": "PASS"
+        },
+        {
+          "coverage": null,
+          "finding_count": null,
+          "findings": [],
+          "rule_id": "GTFS-G03-HEADER-SCHEMA",
+          "status": "NOT_EVALUABLE"
+        }
+      ],
+      "status": "NOT_EVALUABLE"
+    },
+    "deterministic_replay_match": true
+  },
+  "g08_optional_isolated": {
+    "audit_A": {
+      "findings": [],
+      "limitations": [
+        "Checks header declaration only; does not judge values or whether a field is relevant to a feed.",
+        "G03 coverage and empty-value semantics remain authoritative for structural/value evaluation.",
+        "Recommendations do not alter normative results."
+      ],
+      "rule_versions": {
+        "GTFS-G08-FEED-END-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-START-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-VERSION-DECLARED": "1.0.0"
+      },
+      "rules": [
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        }
+      ],
+      "status": "NOT_EVALUABLE"
+    },
+    "audit_B": {
+      "findings": [],
+      "limitations": [
+        "Checks header declaration only; does not judge values or whether a field is relevant to a feed.",
+        "G03 coverage and empty-value semantics remain authoritative for structural/value evaluation.",
+        "Recommendations do not alter normative results."
+      ],
+      "rule_versions": {
+        "GTFS-G08-FEED-END-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-START-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-VERSION-DECLARED": "1.0.0"
+      },
+      "rules": [
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        }
+      ],
+      "status": "NOT_EVALUABLE"
+    },
+    "deterministic_replay": {
+      "findings": [],
+      "limitations": [
+        "Checks header declaration only; does not judge values or whether a field is relevant to a feed.",
+        "G03 coverage and empty-value semantics remain authoritative for structural/value evaluation.",
+        "Recommendations do not alter normative results."
+      ],
+      "rule_versions": {
+        "GTFS-G08-FEED-END-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-START-DATE-DECLARED": "1.0.0",
+        "GTFS-G08-FEED-VERSION-DECLARED": "1.0.0"
+      },
+      "rules": [
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        },
+        {
+          "authority": "GTFS_RECOMMENDED",
+          "category": "QUALITY",
+          "findings": [],
+          "reason": "G03 did not establish reliable feed_info.txt structure",
+          "requirement": "RECOMMENDED",
+          "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+          "semantic_version": "1.0.0",
+          "severity": "INFO",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+          "status": "NOT_EVALUABLE"
+        }
+      ],
+      "status": "NOT_EVALUABLE"
+    },
+    "scope_note": "Executed as isolated optional module; not integrated into pipeline or G09."
+  },
+  "locator": "ROW:1;data_row=1",
+  "origin_finding_outcome": {
+    "absent_after": true,
+    "classification": "RESOLVED",
+    "field_type": "URL",
+    "finding_id": "G03-2a6922f42f280fb0190c5bfccd519b98a50a4c7280ae798f7dd4f142a0d8ed2f",
+    "g03_field_type_evaluator_executed": true,
+    "proposed_value_validated_by_g03_type_predicate": true,
+    "rule_status_after": "NOT_EVALUABLE",
+    "rule_status_limitation": "G03_FIELD_TYPE remains NOT_EVALUABLE in aggregate because unrelated fields are unevaluable; agency_url itself was evaluated and passes.",
+    "specific_field": "agency.txt.agency_url"
+  },
+  "original_dataset_unchanged": true,
+  "original_value": "empresarodil.es",
+  "originating_finding_id": "G03-2a6922f42f280fb0190c5bfccd519b98a50a4c7280ae798f7dd4f142a0d8ed2f",
+  "originating_rule_id": "GTFS-G03-FIELD-TYPE",
+  "other_development_findings": [
+    {
+      "dataset_id": "011",
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "finding": "unresolved service_id references",
+      "reason": "No sufficient instance-level domain evidence to resolve references safely.",
+      "safety_classification": "NOT_SAFE_AUTOMATICALLY"
+    },
+    {
+      "dataset_id": "014",
+      "disposition": "HUMAN_REVIEW_REQUIRED",
+      "finding": "shape distance progression",
+      "reason": "No sufficient instance-level semantic evidence to transform shape distance values safely.",
+      "safety_classification": "NOT_SAFE_AUTOMATICALLY"
+    }
+  ],
+  "phase_findings_comparison": {
+    "classification_counts": {
+      "NEW": 0,
+      "NO_LONGER_EVALUABLE": 0,
+      "RESOLVED": 1,
+      "UNCHANGED": 0
+    },
+    "counts": {
+      "audit_A": {
+        "g03": 1,
+        "g04": 0,
+        "g05": 0,
+        "g06": 0,
+        "g07": 0,
+        "g08": 0
+      },
+      "audit_B": {
+        "g03": 0,
+        "g04": 0,
+        "g05": 0,
+        "g06": 0,
+        "g07": 0,
+        "g08": 0
+      },
+      "deterministic_replay": {
+        "g03": 0,
+        "g04": 0,
+        "g05": 0,
+        "g06": 0,
+        "g07": 0,
+        "g08": 0
+      }
+    },
+    "deterministic_replay_matches_all_phase_projections": true,
+    "finding_inventory": {
+      "Audit A": [
+        {
+          "expected": "URL",
+          "field": "agency_url",
+          "file": "agency.txt",
+          "observed": "empresarodil.es",
+          "reason": "Value does not satisfy the executable official lexical type",
+          "row_locator": "ROW:1",
+          "rule_id": "GTFS-G03-FIELD-TYPE",
+          "specification_reference": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 3)"
+        }
+      ],
+      "Audit B": []
+    },
+    "new_findings_total": 0,
+    "original_finding_resolved": true,
+    "scope": [
+      "G03",
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G08 optional isolated"
+    ]
+  },
+  "pipeline_comparison": {
+    "attribution": "DATASET_CHANGE",
+    "baseline_audit_id": "TDL-GTFSRUN-f20c07debd6e4c52",
+    "candidate_audit_id": "TDL-GTFSRUN-1da22332a26a436d",
+    "change_attribution_contract_version": "1.1.0",
+    "comparability": {
+      "missing_optional_identity": [
+        "compliance.package_sha256",
+        "configuration.sha256",
+        "dataset.lineage_id",
+        "engine.git_commit",
+        "rules.rule_version"
+      ],
+      "reasons": [],
+      "status": "PARTIALLY_COMPARABLE"
+    },
+    "comparison_id": "CA-fbadf22b58ac0151",
+    "evidence_refs": [
+      "identity.dataset.dataset_id",
+      "identity.dataset.source_sha256"
+    ],
+    "evidence_status": "SUPPORTED",
+    "finding_change": {
+      "changed": false,
+      "changes": []
+    },
+    "identity_differences": [
+      {
+        "baseline": "GTFS-3113b5b5e78bb8d9",
+        "candidate": "GTFS-ce78c80477025016",
+        "identity": "dataset.dataset_id"
+      },
+      {
+        "baseline": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+        "candidate": "ce78c804770250165daeace125cd01c4649122c7cfc1843bb0b0fd8a1b2d2691",
+        "identity": "dataset.source_sha256"
+      }
+    ],
+    "per_rule_changes": [],
+    "result_change": {
+      "changed": false,
+      "differences": [],
+      "status": "UNCHANGED_STATUS"
+    },
+    "snapshot_contract_version": "1.0.0",
+    "supported_causes": [
+      "DATASET_CHANGE"
+    ],
+    "unresolved_reasons": []
+  },
+  "proposed_value": "https://empresarodil.es",
+  "reaudit": {
+    "classification_counts": {
+      "NEW": 0,
+      "NO_LONGER_EVALUABLE": 0,
+      "RESOLVED": 1,
+      "UNCHANGED": 0
+    },
+    "completed_at_utc": "2026-10-02T03:04:28.284080+00:00",
+    "new_findings": [],
+    "reproducible": true,
+    "resolved_findings": [
+      {
+        "expected": "URL",
+        "field": "agency_url",
+        "file": "agency.txt",
+        "observed": "empresarodil.es",
+        "reason": "Value does not satisfy the executable official lexical type",
+        "row_locator": "ROW:1",
+        "rule_id": "GTFS-G03-FIELD-TYPE",
+        "specification_reference": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 3)"
+      }
+    ],
+    "result_comparison": "PASS",
+    "unchanged_findings": []
+  },
+  "reaudit_reproducible": true,
+  "safety_classification": "SAFE_DETERMINISTIC",
+  "source_file": "agency.txt",
+  "source_path": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-remediation-engine-v1-010-20261002\\input\\20260309_110029_BUS_RODIL.zip",
+  "source_recovery": {
+    "authoritative_corpus_copy": "C:\\Users\\yeiso\\Desktop\\Folder\\VSCode\\Proyectos\\Transit Data Lab\\02_Data_Engineering\\GTFS_Lab\\20_clientes_reales\\FAMILY_B_SME_OPERATIONAL\\010_rodil\\02_sources\\gtfs_schedule\\original\\20260309_110029_BUS_RODIL.zip",
+    "authoritative_corpus_copy_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+    "expected_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+    "expected_size_bytes": 13888,
+    "filesystem_search_roots": [
+      "all registered Transit Data Lab worktrees (20_clientes_reales and project work areas)",
+      "Transit Data Lab 20_clientes_reales/corpus/fixtures/historical evidence references",
+      "C:/Users/yeiso/AppData/Local/Temp",
+      "C:/Users/yeiso/Desktop",
+      "C:/Users/yeiso/Documents",
+      "C:/Users/yeiso/Downloads",
+      "C:/Users/yeiso/OneDrive (not present)"
+    ],
+    "historical_g10_source_root_copy": "C:\\Users\\yeiso\\AppData\\Local\\Temp\\tdl-g11-development-source-20261001\\FAMILY_B_SME_OPERATIONAL\\010_rodil\\02_sources\\gtfs_schedule\\original\\20260309_110029_BUS_RODIL.zip",
+    "historical_g10_source_root_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+    "holdout_accessed": false,
+    "other_name_candidates": [
+      {
+        "dataset": "011",
+        "matches_dataset_010": false,
+        "path": "C:/Users/yeiso/AppData/Local/Temp/tdl-g11-development-source-20261001/FAMILY_B_SME_OPERATIONAL/011_autocorb/02_sources/gtfs_schedule/original/20260907_160010_BUS_Autocorb.zip",
+        "sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      }
+    ],
+    "recovery_basis": [
+      "G11 candidate manifest referenced source_root C:/Users/yeiso/AppData/Local/Temp/tdl-g11-development-source-20261001.",
+      "The 010 corpus inventory entry and split record identify this exact SHA-256.",
+      "The original ZIP was recovered from the corpus and the historical G10 source root; both copies match exact SHA-256 and size."
+    ],
+    "status": "RECOVERED_SHA256_EXACT"
+  },
+  "status": "APPLIED"
+}

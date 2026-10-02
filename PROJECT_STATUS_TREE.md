@@ -1,6 +1,6 @@
 # Transit Data Lab — mapa de estado GTFS Audit Engine V1
 
-**Actualizado:** 2026-10-01
+**Actualizado:** 2026-10-02
 **Fuente vigente:** [PROJECT_STATUS.md](PROJECT_STATUS.md), sección «GTFS Audit Engine V1 — cierre técnico V1 publicado».
 
 ```text
@@ -28,5 +28,25 @@ GTFS AUDIT ENGINE V1 — CERRADO (ALCANCE TÉCNICO DOCUMENTADO)
 ## Límites
 
 Se conservan las 15 condiciones G03 sin resolver, la política de extensiones abierta, el inventario G04 `CREATED_LOCAL_UNPUBLISHED`, los archivos/funciones diferidos y los límites M02/legacy. El PASS técnico no acredita cobertura GTFS completa, cumplimiento jurídico ni validación comercial.
+
+Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+## Remediation Engine V1 — CERRADO (alcance técnico documentado)
+
+```text
+REMEDIATION ENGINE V1 — PASS / CLOSED
+│
+├── Decisión humana final                    ✅ APPROVED
+├── Dataset DEVELOPMENT 010                  ✅ PASS; source 3113…98faf inmutable
+├── Cambio agency_url                        ✅ Único valor autorizado; ChangeAttribution completa
+├── Re-audit core G03–G07                    ✅ PASS / REPRODUCIBLE; cero findings nuevos
+├── G08 en pipeline de re-audit               ⚠️ NOT_EVALUABLE / NOT_INTEGRATED (limitación V1)
+├── 011 unresolved references                🔒 HUMAN_REVIEW_REQUIRED / NOT_SAFE_AUTOMATICALLY
+├── 014 shape distance progression           🔒 HUMAN_REVIEW_REQUIRED / NOT_SAFE_AUTOMATICALLY
+├── GTFS Audit Engine V1 / M02               ✅ CLOSED / UNCHANGED
+└── HOLDOUT                                  🔒 NOT_ACCESSED
+```
+
+El cierre no inicia ningún track posterior. Véase el detalle y la evidencia en [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

@@ -59,6 +59,50 @@ Los 18 archivos diferidos por G01, sin auditoría completa, son `fare_attributes
 
 La decisión humana final G11 está aprobada. El cierre no constituye certificación, cumplimiento jurídico/completo ni aprobación comercial. El registro de decisión está en [g11_closure_candidate.json](02_Data_Engineering/GTFS_Lab/reports/evidence/g11_closure_candidate.json) y la evidencia detallada en el [review G11](02_Data_Engineering/GTFS_Lab/reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md).
 
+## Remediation Engine V1 — cierre técnico aprobado
+
+**Estado vigente (2026-10-02):** decisión humana final aprobada; se cierra el alcance técnico documentado de Remediation Engine V1. PR de cierre y SHAs se incorporarán tras su publicación. El cierre cubre un caso DEVELOPMENT real acotado y no implica autocorrección general ni cobertura integral.
+
+```ini
+REMEDIATION_ENGINE_V1_HUMAN_CLOSURE_DECISION = APPROVED
+REMEDIATION_ENGINE_V1 = PASS
+REMEDIATION_ENGINE_V1_CLOSED = YES
+FIRST_REAL_REMEDIATION_CASE = PASS
+REMEDIATION_SCOPE = TECHNICAL_CLOSURE_OF_DOCUMENTED_V1_SCOPE
+ORIGINAL_DATASET_UNCHANGED = YES
+SOURCE_SHA256_VERIFIED = YES
+DERIVED_DATASET_CREATED = YES
+ONLY_AUTHORIZED_VALUE_CHANGED = YES
+CHANGE_ATTRIBUTION_COMPLETE = YES
+ORIGINAL_FINDING_RESOLVED = YES
+NEW_UNRELATED_FINDINGS = 0
+REAUDIT_REPRODUCIBLE = YES
+HOLDOUT_ACCESSED = NO
+GTFS_AUDIT_ENGINE_V1 = CLOSED / UNCHANGED
+COMPLIANCE_V1 = CLOSED_WITH_DEFERRALS
+M02_CHANGED = NO
+OPERATOR_SPECIFIC_CODE = NO
+ORIGINAL_DATASETS = IMMUTABLE
+```
+
+Caso `010` (DEVELOPMENT), source SHA-256 `3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf`; derivado SHA-256 `ce78c804770250165daeace125cd01c4649122c7cfc1843bb0b0fd8a1b2d2691`. El único cambio fue `agency.txt / ROW:1 / agency_url`, `empresarodil.es` → `https://empresarodil.es`. La atribución vincula el finding `GTFS-G03-FIELD-TYPE` con `RESOLVED`; el replay produjo las mismas proyecciones y cero findings nuevos. El original permanece inmutable. Evidencia completa: [informe del caso](02_Data_Engineering/GTFS_Lab/reports/TDL_REMEDIATION_ENGINE_V1_FIRST_CASE_20261002.md), [registro machine-readable](02_Data_Engineering/GTFS_Lab/reports/evidence/remediation_v1/dataset_010_case_20261002.json) y [contrato/caso](02_Data_Engineering/GTFS_Lab/reports/TDL_REMEDIATION_ENGINE_V1_FIRST_CASE_20261001.md).
+
+```makefile
+REAUDIT_CORE_G03_G07 = PASS / REPRODUCIBLE
+G08_REMEDIATION_REAUDIT = NOT_EVALUABLE / NOT_INTEGRATED_IN_REMEDIATION_PIPELINE_V1
+G08_INTEGRATION = KNOWN_V1_LIMITATION
+```
+
+G08 se ejecutó como módulo opcional aislado y quedó `NOT_EVALUABLE` en A/B y replay porque G03 no estableció estructura fiable de `feed_info.txt`. No se declara PASS completo G03–G08 del pipeline de re-audit. G08 recomienda sobre campos de `feed_info.txt`; no es causal para el cambio probado en `agency_url`. Remediation Engine V1 no se amplía para integrarlo.
+
+```java
+010 agency_url = SAFE_DETERMINISTIC / HUMAN_APPROVED_CASE_SPECIFIC
+011 unresolved references = HUMAN_REVIEW_REQUIRED / NOT_SAFE_AUTOMATICALLY
+014 shape distance progression = HUMAN_REVIEW_REQUIRED / NOT_SAFE_AUTOMATICALLY
+```
+
+No automatizar `011` ni `014` por falta de evidencia suficiente es comportamiento esperado del safety model. Los gaps restantes son la cobertura de un único caso probado, la falta de re-audit G08 integrado y los casos ambiguos/no autorizados que requieren revisión humana; tampoco se afirma cobertura de todos los findings, enriquecimiento inventado, remediación jurídica, tuning por operador ni autocorrección universal GTFS. No se accedió a HOLDOUT ni se inició ningún track posterior.
+
 ## GTFS Audit Engine V1 — G02 y G03 cerrados
 
 `G02 = PASS`, `GTFS_AUDIT_ENGINE_V1_RULE_REGISTRY = CLOSED` y `G02_DOCUMENTATION = DURABLE`. PR #23 se fusionó mediante merge normal el 2026-09-30: base `8e2b1cac53e96f4000f8be0d9c03da4350edfbee`, head revisado `6b01198d089100e425d5e1bc165a7be34adda888` y merge commit `36259cdbbc42cc6d2958ce4bd21e5279e7c1657c`, que es el `main` remoto verificado. El check `synthetic` verde corresponde al head de PR, no se afirma CI post-merge para el merge documental. Véase el [informe de cierre G02](reports/repository_integrity/TDL_GTFS_AUDIT_ENGINE_G02_CLOSURE.md).
