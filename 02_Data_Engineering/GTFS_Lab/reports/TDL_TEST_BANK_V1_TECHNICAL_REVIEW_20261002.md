@@ -1,5 +1,9 @@
 # Real Dataset Test Bank V1 — revisión técnica
 
+**Estado vigente:** CLOSED; HUMAN_CLOSURE_DECISION = APPROVED, por decisión explícita de Yeison el 2026-10-02. [Registro del cierre humano](evidence/test_bank_v1/human_closure_20261002.json). El apartado siguiente conserva el checkpoint técnico previo a la aprobación.
+
+## Checkpoint técnico previo al cierre humano
+
 REAL_DATASET_TEST_BANK_V1_TECHNICAL_REVIEW = PASS.
 REAL_DATASET_TEST_BANK_V1 = READY_FOR_FINAL_HUMAN_CLOSURE_DECISION.
 
