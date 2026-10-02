@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import stat
 import tempfile
@@ -39,6 +40,11 @@ def main() -> int:
             rows = rebuild_register(bank)
             assert [row["case_id"] for row in rows] == ["00001", "00002"]
             assert [row["result"] for row in rows] == ["OK", "NOT_OK"]
+            persisted = json.loads((bank / "REGISTRY" / "TEST_BANK_REGISTER.json").read_text(encoding="utf-8"))
+            assert persisted["cases"] == rows
+            with (bank / "REGISTRY" / "TEST_BANK_REGISTER.csv").open(encoding="utf-8", newline="") as stream:
+                csv_rows = list(csv.DictReader(stream))
+            assert [(row["case_id"], row["case_result"]) for row in csv_rows] == [("00001", "OK"), ("00002", "NOT_OK")]
             delivery = bank / accepted["case_path"] / "DELIVERY"
             manifest_path = delivery / "bank_delivery_manifest.json"
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
