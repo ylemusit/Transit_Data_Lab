@@ -54,7 +54,7 @@ COMMERCIAL_READINESS = NOT_ESTABLISHED
 MARKET_VALIDATION = NOT_ESTABLISHED
 HOLDOUT = NOT_ACCESSED
 OPERATOR_SPECIFIC_CODE = NO
-NETEX_WORK = N02_N08_TECHNICAL_CANDIDATE; N09_WAITING_REMOTE_CI
+NETEX_WORK = CLOSED; DOCUMENTED_V1_SCOPE_ONLY
 ```
 
 La decisión humana final aprueba P09 y el cierre técnico formal de V1 dentro del alcance documentado. P07 conserva `PARTIALLY_COMPARABLE / RUNTIME_ONLY_CHANGE`; no se declara comparabilidad recurrente completa. La Remediation V1 existente solo permite una propuesta de caso exacto DEVELOPMENT 010; el workflow no inventa safe fixes genéricos. Findings con posibles acciones quedan `HUMAN_REVIEW` hasta que haya evidencia y autorización caso por caso. Este cierre no acredita feeds reales de operadores, readiness comercial, validación de mercado, demanda, certificación, cumplimiento jurídico total, remediación universal ni calidad de clientes. Código, contrato, pruebas y procedimiento están en `02_Data_Engineering/GTFS_Lab/gtfs_lab/client_workflow.py`, `spec/client_audit_contract_v1.schema.json`, `reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md`, `tests/test_client_workflow.py` y `tools/client_workflow_e2e.py`.
@@ -162,15 +162,17 @@ No automatizar `011` ni `014` por falta de evidencia suficiente es comportamient
 
 ## Dirección estratégica — primer año
 
-**Prioridad del núcleo del producto:** España + GTFS + NeTEx. GTFS Productization / Client Audit Workflow es el siguiente objetivo principal: convertir las capacidades técnicas cerradas en una operación de auditoría de cliente reproducible y en informes y evidencias entregables. El flujo objetivo es ZIP GTFS → freeze e identidad → Audit Engine → Compliance → findings → remediación segura → re-audit → evidencia GIS cuando proceda → informe para el cliente.
+**Prioridad del núcleo del producto:** España + GTFS + NeTEx. GTFS Productization / Client Audit Workflow fue el objetivo de la fase de productización ya completada y cerrada en V1; no es el siguiente objetivo futuro. El flujo entregable fue ZIP GTFS → freeze e identidad → Audit Engine → Compliance → findings → remediación segura → re-audit → evidencia GIS cuando proceda → informe para el cliente.
 
-El alcance de trabajo previsto incluye workflow de auditoría de cliente real, empaquetado de evidencias, informes entregables, comparación before/after, mantenimiento recurrente y operación reproducible. Es una prioridad estratégica, no una afirmación de que el flujo comercial esté implementado, desplegado o validado con clientes. Los cierres técnicos existentes no equivalen a readiness comercial.
+El alcance de la fase incluyó workflow de auditoría de cliente, empaquetado de evidencias, informes entregables, comparación before/after, mantenimiento recurrente y operación reproducible. El cierre técnico del workflow no equivale a readiness comercial ni a validación con clientes.
 
-NeTEx es la prioridad técnica del año 1 junto con la productización GTFS. SIRI, GTFS-RT y Colombia quedan deliberadamente en backlog posterior a la comercialización y a la experiencia operativa; no son la siguiente fase.
+NeTEx fue la prioridad técnica del año 1 junto con la productización GTFS; ambos alcances V1 están cerrados. SIRI, GTFS-RT y Colombia quedan deliberadamente en backlog posterior y no se inician como consecuencia de este cierre.
 
 ```ini
 YEAR_1_PRODUCT_CORE = SPAIN + GTFS + NeTEx
-NEXT_PROJECT_OBJECTIVE = GTFS_PRODUCTIZATION / CLIENT_AUDIT_WORKFLOW
+HISTORICAL_PHASE_OBJECTIVE = GTFS_PRODUCTIZATION / CLIENT_AUDIT_WORKFLOW
+HISTORICAL_PHASE_OBJECTIVE_STATUS = COMPLETED; GTFS_CLIENT_AUDIT_WORKFLOW_V1_CLOSED
+CURRENT_NEXT_PROJECT_OBJECTIVE = NOT_SET_BY_THIS_CLOSURE
 SIRI = POST_COMMERCIALIZATION_BACKLOG
 GTFS_RT = POST_COMMERCIALIZATION_BACKLOG
 COLOMBIA = POST_COMMERCIALIZATION_BACKLOG
@@ -246,30 +248,69 @@ Los informes `REMOTE_GITHUB_ALIGNMENT.md`, `REMOTE_HISTORY_REVIEW.md` y `LEGACY_
 
 El working tree de Desktop figura limpio en la comprobación del 2026-09-30, en HEAD `07e2c2a…`; esto no lo convierte en un checkout de la etiqueta `v0.2.2` ni valida funcionalmente los commits posteriores. Engineering, Artifacts y el restore requieren comprobación propia antes de afirmar su estado actual. Las 20 entradas locales de Desktop registradas en la revisión anterior son una observación histórica.
 
-## NeTEx Audit Engine V1 — candidato técnico N02–N08
+## NeTEx Audit Engine V1 — cierre técnico del alcance documentado
 
-**Estado vigente (2026-10-02):** N01 conserva el alcance aprobado para España, autobús regular programado e información estática; N02–N09 tienen revisión técnica `PASS / READY_FOR_FINAL_HUMAN_CLOSURE_DECISION`, fusionada mediante merge normal en PR #36 (`01689e8dd8b326c758f1df68433a03e87bc8c177`). CI de PR PASS (run `36970572860`, head `bc65e829c93cde7f08c9158290a1040dbba6a751`) y CI post-merge PASS (run `36970665306`). La decisión humana final sigue pendiente; no existe cierre formal de V1.
+**Estado vigente (2026-10-02):** decisión humana final aprobada. PR #36–#38 están fusionadas; PR #36 merge `01689e8dd8b326c758f1df68433a03e87bc8c177`, PR #37 merge `4601886b426b3295a5e726bbc25da9cd20c06263` y PR #38 merge `accb3834e95e65675ac6bb148073b3a69930f7ac`. `origin/main` verificado en `accb3834e95e65675ac6bb148073b3a69930f7ac`. CI PR #36 run `36970572860` PASS; post-merge run `36970665306` PASS; CI final post-merge run `36971109479` PASS. N01 queda `CLOSED_WITH_LIMITATIONS`; N02–N09 quedan `CLOSED`.
 
 El motor inspecciona XML/ZIP estáticos contra NeTEx v2.0.0 desde el root `NeTEx_publication.xsd`, fijado al commit upstream `a94e5e1752bcc13aabb8a1f3d018dc08e6978f42` y 458 hashes de XSD. El repositorio contiene el manifiesto, no redistribuye XSD ni avisos/licencias upstream; CI obtiene la fuente fijada temporalmente. El corpus es sintético. HOLDOUT y feeds públicos o de operadores no fueron accedidos; no hay código por operador.
 
 La evaluación EPIP/CEN completa permanece `HUMAN_REVIEW_REQUIRED` por falta del texto controlado completo y de perfil español/NAP verificable. La aplicabilidad normativa de autobús por carretera queda sin concluir: el mapeo distingue el artículo 4(1)(a) del Reglamento 2024/490, su referencia a 2015/962 y la derogación de este por 2022/670; no infiere obligación NeTEx desde 4(1)(b). No se acredita conformidad jurídica, certificación, aceptación NAP, cobertura completa, validación de mercado ni preparación comercial.
 
 ```ini
-NETEX_N01_SCOPE = APPROVED; SPAIN_REGULAR_SCHEDULED_BUS_STATIC_INFO
-NETEX_N02_N08 = LOCAL_TECHNICAL_CHECKS_PASS
-NETEX_N09_TECHNICAL_REVIEW = PASS; READY_FOR_FINAL_HUMAN_CLOSURE_DECISION
-NETEX_PR = 36; MERGE = 01689e8dd8b326c758f1df68433a03e87bc8c177
-NETEX_PR_CI = PASS; RUN 36970572860; HEAD = bc65e829c93cde7f08c9158290a1040dbba6a751
-NETEX_POST_MERGE_CI = PASS; RUN 36970665306
-NETEX_V1_FINAL_HUMAN_CLOSURE = NOT_REQUESTED / PENDING
+NETEX_AUDIT_ENGINE_V1_HUMAN_CLOSURE_DECISION = APPROVED
+N01 = CLOSED_WITH_LIMITATIONS
+N02 = CLOSED
+N03 = CLOSED
+N04 = CLOSED
+N05 = CLOSED
+N06 = CLOSED
+N07 = CLOSED
+N08 = CLOSED
+N09 = CLOSED
+NETEX_AUDIT_ENGINE_V1 = PASS
+NETEX_AUDIT_ENGINE_V1_CLOSED = YES
+TECHNICAL_CLOSURE_OF_DOCUMENTED_NETEX_V1_SCOPE = YES
+TARGET_MARKET = SPAIN
+TARGET_MODE = REGULAR_SCHEDULED_BUS
+DATA_DOMAIN = STATIC_SCHEDULED_PASSENGER_INFORMATION
+PR36 = MERGED; MERGE = 01689e8dd8b326c758f1df68433a03e87bc8c177
+PR36_CI = 36970572860; PASS
+PR36_POST_MERGE_CI = 36970665306; PASS
+PR37 = MERGED; MERGE = 4601886b426b3295a5e726bbc25da9cd20c06263
+PR38 = MERGED; MERGE = accb3834e95e65675ac6bb148073b3a69930f7ac
+FINAL_MAIN = accb3834e95e65675ac6bb148073b3a69930f7ac
+FINAL_POST_MERGE_CI = 36971109479; PASS
+NETEX_SCHEMA_BASELINE = v2.0.0
+NETEX_SCHEMA_BASELINE_STATUS = APPROVED_WITH_LIMITATIONS
+PROFILE_NORMATIVE_BASELINE = CEN/TS 16614-4:2026 / EPIP
+EPIP_NETEX_V2_COMPATIBILITY = PARTIAL
+FULL_EPIP_2026_CONFORMANCE = NOT_ESTABLISHED
+SPANISH_ADDITIONAL_NATIONAL_PROFILE = NOT_IDENTIFIED_IN_PUBLIC_SOURCES_REVIEWED
+NAP_PUBLIC_ACCEPTANCE_CONTRACT = NOT_IDENTIFIED
+LEGAL_APPLICABILITY_TO_REGULAR_BUS = UNRESOLVED
+LEGAL_CERTIFICATION = NO
+FULL_NETEX_COVERAGE = NO
+COMMERCIAL_READINESS = NOT_ESTABLISHED
+MARKET_VALIDATION = NOT_ESTABLISHED
+HOLDOUT = NOT_ACCESSED
+PUBLIC_FEEDS_TESTED = NO
+OPERATOR_FEEDS_TESTED = NO
+OPERATOR_SPECIFIC_CODE = NO
 NETEX_SCHEMA = V2.0.0; PINNED_COMMIT; 458_DEPENDENCY_HASHES
 NETEX_CORPUS = SYNTHETIC_ONLY
 NETEX_HOLDOUT_ACCESSED = NO
 NETEX_PUBLIC_OR_OPERATOR_FEEDS_ACCESSED = NO
-NETEX_OPERATOR_SPECIFIC_CODE = NO
-NETEX_EPIP_FULL_CONFORMANCE = NOT_ESTABLISHED
-NETEX_BUS_ROAD_LEGAL_APPLICABILITY = NOT_CONCLUDED
-NETEX_CI = PASS; PR_RUN 36970572860; POST_MERGE_RUN 36970665306
+NETEX_CI = PASS; PR_RUN 36970572860; POST_MERGE_RUN 36970665306; FINAL_POST_MERGE_RUN 36971109479
+```
+
+Baselines protegidas confirmadas sin cambios por este cierre:
+
+```ini
+TRUST_FOUNDATION = CLOSED / UNCHANGED
+GTFS_AUDIT_ENGINE_V1 = CLOSED / UNCHANGED
+COMPLIANCE_V1 = CLOSED_WITH_DEFERRALS / UNCHANGED
+REMEDIATION_ENGINE_V1 = CLOSED / UNCHANGED
+GTFS_CLIENT_AUDIT_WORKFLOW_V1 = CLOSED / UNCHANGED
 ```
 
 ## Estado por área
