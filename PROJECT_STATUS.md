@@ -61,7 +61,7 @@ La decisión humana final G11 está aprobada. El cierre no constituye certificac
 
 ## Remediation Engine V1 — cierre técnico aprobado
 
-**Estado vigente (2026-10-02):** decisión humana final aprobada; se cierra el alcance técnico documentado de Remediation Engine V1. PR #31 se fusionó mediante merge normal (`c7d3c820fab470b2796fe1384324052a53bad825` → `80d14e8d08250bcef617dfc95145d8e160a99fe4`); CI pre-merge PASS (run `36959598923`), CI post-merge PASS (run `36959638138`), y `origin/main` en el cierre `80d14e8d08250bcef617dfc95145d8e160a99fe4`. El cierre cubre un caso DEVELOPMENT real acotado y no implica autocorrección general ni cobertura integral.
+**Estado vigente (2026-10-02):** decisión humana final aprobada; se cierra el alcance técnico documentado de Remediation Engine V1. PR #31 se fusionó mediante merge normal (`c7d3c820fab470b2796fe1384324052a53bad825` → `80d14e8d08250bcef617dfc95145d8e160a99fe4`); CI pre-merge PASS (run `36959598923`) y post-merge PASS (run `36959638138`). PR #32 registró la evidencia de publicación y se fusionó (`297a4cb1b31754a055c04e881ba68b276303a6eb` → `9bb905647bdda95244e43756a9bacb19a09a7b6f`); su workflow post-merge terminó `success` (run `36959780975`). `origin/main` queda en `9bb905647bdda95244e43756a9bacb19a09a7b6f`. El cierre cubre un caso DEVELOPMENT real acotado y no implica autocorrección general ni cobertura integral.
 
 ```ini
 REMEDIATION_ENGINE_V1_HUMAN_CLOSURE_DECISION = APPROVED
@@ -102,6 +102,23 @@ G08 se ejecutó como módulo opcional aislado y quedó `NOT_EVALUABLE` en A/B y 
 ```
 
 No automatizar `011` ni `014` por falta de evidencia suficiente es comportamiento esperado del safety model. Los gaps restantes son la cobertura de un único caso probado, la falta de re-audit G08 integrado y los casos ambiguos/no autorizados que requieren revisión humana; tampoco se afirma cobertura de todos los findings, enriquecimiento inventado, remediación jurídica, tuning por operador ni autocorrección universal GTFS. No se accedió a HOLDOUT ni se inició ningún track posterior.
+
+## Dirección estratégica — primer año
+
+**Prioridad del núcleo del producto:** España + GTFS + NeTEx. GTFS Productization / Client Audit Workflow es el siguiente objetivo principal: convertir las capacidades técnicas cerradas en una operación de auditoría de cliente reproducible y en informes y evidencias entregables. El flujo objetivo es ZIP GTFS → freeze e identidad → Audit Engine → Compliance → findings → remediación segura → re-audit → evidencia GIS cuando proceda → informe para el cliente.
+
+El alcance de trabajo previsto incluye workflow de auditoría de cliente real, empaquetado de evidencias, informes entregables, comparación before/after, mantenimiento recurrente y operación reproducible. Es una prioridad estratégica, no una afirmación de que el flujo comercial esté implementado, desplegado o validado con clientes. Los cierres técnicos existentes no equivalen a readiness comercial.
+
+NeTEx es la prioridad técnica del año 1 junto con la productización GTFS. SIRI, GTFS-RT y Colombia quedan deliberadamente en backlog posterior a la comercialización y a la experiencia operativa; no son la siguiente fase.
+
+```ini
+YEAR_1_PRODUCT_CORE = SPAIN + GTFS + NeTEx
+NEXT_PROJECT_OBJECTIVE = GTFS_PRODUCTIZATION / CLIENT_AUDIT_WORKFLOW
+SIRI = POST_COMMERCIALIZATION_BACKLOG
+GTFS_RT = POST_COMMERCIALIZATION_BACKLOG
+COLOMBIA = POST_COMMERCIALIZATION_BACKLOG
+COMMERCIAL_VALIDATION = NOT_ESTABLISHED
+```
 
 ## GTFS Audit Engine V1 — G02 y G03 cerrados
 
