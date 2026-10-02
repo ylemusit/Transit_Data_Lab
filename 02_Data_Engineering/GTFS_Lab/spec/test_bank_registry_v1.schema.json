@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TDL Test Bank V1 master registry",
+  "type": "object",
+  "required": [
+    "version",
+    "cases"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "$defs": {
+    "case": {
+      "type": "object",
+      "required": [
+        "case_id",
+        "dataset_sha256",
+        "original_filename",
+        "original_metadata",
+        "started_at",
+        "finished_at",
+        "tdl_version",
+        "tdl_commit",
+        "case_result",
+        "audit_result",
+        "replay_result",
+        "finding_count",
+        "pipeline_failures",
+        "code_changes_required",
+        "operator_specific_code"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "pattern": "^[0-9]{5}$",
+          "not": {
+            "const": "00000"
+          }
+        },
+        "dataset_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "original_filename": {
+          "type": "string"
+        },
+        "original_metadata": {
+          "type": "object"
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "finished_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "tdl_version": {
+          "type": "string"
+        },
+        "tdl_commit": {
+          "type": "string"
+        },
+        "case_result": {
+          "type": "string",
+          "enum": [
+            "ACTIVE",
+            "OK",
+            "NOT_OK"
+          ]
+        },
+        "audit_result": {
+          "type": "string"
+        },
+        "replay_result": {
+          "type": "string"
+        },
+        "finding_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "pipeline_failures": {
+          "type": "integer"
+        },
+        "code_changes_required": {
+          "type": "string"
+        },
+        "operator_specific_code": {
+          "type": "string"
+        }
+      }
+    },
+    "failure": {
+      "type": "object",
+      "required": [
+        "failure_id",
+        "first_seen_case",
+        "last_seen_case",
+        "phase",
+        "category",
+        "observed",
+        "root_cause",
+        "resolution",
+        "general_fix_required",
+        "operator_specific",
+        "status",
+        "TDL_version"
+      ],
+      "properties": {
+        "failure_id": {
+          "type": "string"
+        },
+        "first_seen_case": {
+          "type": "string"
+        },
+        "last_seen_case": {
+          "type": "string"
+        },
+        "phase": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "INPUT",
+            "FILESYSTEM",
+            "WINDOWS",
+            "ZIP",
+            "CSV",
+            "ENCODING",
+            "DUCKDB",
+            "GTFS_ENGINE",
+            "COMPLIANCE",
+            "REPORTING",
+            "DELIVERY",
+            "REPLAY",
+            "PERFORMANCE",
+            "UX",
+            "UNKNOWN"
+          ]
+        },
+        "observed": {
+          "type": "string"
+        },
+        "root_cause": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "resolution": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "general_fix_required": {
+          "type": [
+            "string",
+            "boolean"
+          ]
+        },
+        "operator_specific": {
+          "type": "boolean"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "OPEN",
+            "UNDER_INVESTIGATION",
+            "RESOLVED",
+            "ACCEPTED_LIMITATION",
+            "NOT_REPRODUCIBLE"
+          ]
+        },
+        "TDL_version": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

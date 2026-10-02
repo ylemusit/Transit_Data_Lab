@@ -2,6 +2,20 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Real Dataset Test Bank V1 — candidato técnico para aceptación remota
+
+Capa genérica aditiva sobre Client Audit Workflow V1: captura de identidad, Case IDs no reutilizables, workspace corto configurable, SOURCE inmutable por hash, preflight, auditoría, replay, entrega y clasificación procedural. OK significa procedimiento completo, incluso con findings; NOT_OK significa contrato incompleto. El expediente real EMT Palma permanece LOCAL / CONTROLLED, intacto y fuera de Git. Solo se publica capacidad genérica y evidencia sintética.
+
+REAL_DATASET_VALIDATION_V1 = EMT PALMA LOCAL CASE COMPLETED.
+REAL_DATASET_TEST_BANK_V1 = TECHNICAL_CANDIDATE.
+SELF_SERVICE_READINESS = NOT_READY.
+COMMERCIAL_VALIDATION = NOT_ESTABLISHED.
+MARKET_VALIDATION = NOT_ESTABLISHED.
+HOLDOUT = NOT_ACCESSED.
+OPERATOR_SPECIFIC_CODE = NO.
+
+El cierre humano sigue pendiente. No se inicia Windows Self-Service Client V1 ni se amplía el banco con nuevos datasets en esta misión. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
+
 ## GTFS Productization / Client Audit Workflow V1 — CLOSED
 
 **Estado verificado (2026-10-02):** PR #34 se fusionó mediante merge normal. Head `20da5f0e45b597c58074eb444035dce22bd57e34`; merge commit y `origin/main` `b28959c52aca5c0aeb60c0483267dab12ba6a139`. CI de PR #34 pasó en el run `36962646709`; CI post-merge pasó en el run `36962713037`. Ambos ejecutaron `test_client_workflow.py` y el E2E sintético de Client Audit Workflow V1. No se modificaron contratos ni código de Trust Foundation, Audit Engine V1, Compliance V1 o Remediation Engine V1.
