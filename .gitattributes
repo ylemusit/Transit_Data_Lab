@@ -31,6 +31,7 @@
 /02_Data_Engineering/GTFS_Lab/exports/*.kml -text -eol
 /reports/repository_integrity/phase_1_5/** -text -eol
 /reports/evidence/audit_interpretation_v1/holdout_content_blind/** -text -eol
+/reports/evidence/audit_interpretation_v1/holdout_content_blind/** whitespace=-blank-at-eol
 
 # Explicit frozen document exceptions required by existing governance/hash records.
 /PROJECT_CURRENT_STATE.md -text -eol
