@@ -34,6 +34,11 @@ TRANSIT DATA LAB
 │   ├── I04–I06                          ✅ CLOSED; generic G07 + synthetic battery + JSON/Markdown
 │   ├── I07                              ✅ CLOSED; Client Workflow + Test Bank + semantic replay
 │   └── I08                              ✅ 279 PASS; 1 documented SKIP; human closure APPROVED
+├── AUDIT INTERPRETATION V1              ✅ FROZEN_WITH_DOCUMENTED_LIMITATIONS
+│   ├── DEVELOPMENT                       ✅ 14/14 OK; 14/14 replay; 92 findings / 7 families
+│   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
+│   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
+│   └── HOLDOUT                           ⚠ METADATA_ONLY deviation; content blind; 6 datasets protected
 ├── WINDOWS SELF-SERVICE CLIENT V1       ⏸ DEFERRED
 ├── COMMERCIAL VALIDATION                ⚪ NOT_ESTABLISHED
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
@@ -45,6 +50,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-El expediente real permanece local y controlado; esta fase usó únicamente fixtures sintéticas. Yeison aprobó el cierre humano I01–I08. I01 se conserva sin cambios (SHA-256: `9AE821BA963849D341F509A74956DEF76C5739BD8175150198EA6A5F99CA7BD4`). La regresión registró 279 PASS, 0 FAIL y 1 SKIP documentado de 280 pruebas. HOLDOUT no se accedió ni se ejecutó el corpus DEVELOPMENT de 14 datasets. No hay código específico de operador; la validación comercial y de mercado no está establecida, y no se reclama cumplimiento legal ni cobertura GTFS completa. Windows Self-Service Client V1 continúa diferido. Los límites constan en [PROJECT_STATUS.md](PROJECT_STATUS.md) y la [revisión I08](reports/TDL_AUDIT_INTERPRETATION_CONSOLIDATION_V1_I08_CLOSURE_REVIEW.md).
+El freeze posterior a I08 fija el motor en `9cafe0703abf47e80f67f80a6b423c938e1979aa`; el hash del commit documental de freeze será distinto. La desviación HOLDOUT expuso solo nombres de directorios: no hubo acceso al contenido ni uso para tuning, fixes o diseño de tests. `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Se preservan las limitaciones de interpretación y rendimiento, junto con 279 PASS, 0 FAIL y 1 SKIP documentado. No hay código específico de operador; validación comercial/mercado no establecida; no se reclama cumplimiento legal ni cobertura GTFS completa. Windows Self-Service Client V1 continúa diferido. Los detalles están en [PROJECT_STATUS.md](PROJECT_STATUS.md) y el [informe de campaña](reports/TDL_AUDIT_INTERPRETATION_V1_DEVELOPMENT_CORPUS_20261004.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

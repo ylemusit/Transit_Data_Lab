@@ -1,0 +1,127 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 1,
+    "raw_finding_count": 1,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-3113b5b5e78bb8d9",
+    "sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-2c4b6b0e1f20408e",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [
+    {
+      "affected_entity_count": 1,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "1 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-2c4b6b0e1f20408e",
+          "dataset_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+          "raw_finding_ids": [
+            "finding-v1:760eb36e4293a90ed7246718b1016c21dd06a66f2a0bde3304e4278064579366:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "ROW:1"
+            ]
+          },
+          "source_file": "agency.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDMtRklFTEQtVFlQRSIsInNvdXJjZV9maWxlIjoiYWdlbmN5LnR4dCIsInN0YWdlIjoiRzAzIiwidGVjaG5pY2FsX3N0YXR1cyI6IkZBSUxfVEVDSE5JQ0FMIn0",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "1 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 1,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 1,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 1,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G03-FIELD-TYPE",
+      "source_file": "agency.txt",
+      "stage": "G03",
+      "technical_status": "FAIL_TECHNICAL",
+      "unclassified_occurrences": 0
+    }
+  ],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=9cafe0703abf47e80f67f80a6b423c938e1979aa+WORKTREE_DIRTY.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": [
+    {
+      "authority": "GTFS_REQUIRED",
+      "entity_id": "ROW:1",
+      "entity_type": "feed",
+      "expected": "URL",
+      "field": "agency_url",
+      "file": "agency.txt",
+      "observed": "empresarodil.es",
+      "observed_evidence": "empresarodil.es",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-2c4b6b0e1f20408e",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf"
+      },
+      "raw_finding_id": "finding-v1:760eb36e4293a90ed7246718b1016c21dd06a66f2a0bde3304e4278064579366:0",
+      "reason": "Value does not satisfy the executable official lexical type",
+      "recommendation": null,
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": "REQUIRED",
+      "row_locator": "ROW:1",
+      "rule_id": "GTFS-G03-FIELD-TYPE",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": "ERROR",
+      "source_file": "agency.txt",
+      "source_sha256": "3113b5b5e78bb8d97e4895b41564a80799b087f2a86c4e28019d7db05be98faf",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#agencytxt (Field Definitions table, row 3)",
+      "stage": "G03",
+      "technical_status": "FAIL_TECHNICAL"
+    }
+  ]
+}
