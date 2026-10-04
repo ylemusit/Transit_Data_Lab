@@ -1,0 +1,30 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 0,
+    "raw_finding_count": 0,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-1c70a6ea458370fa",
+    "sha256": "1c70a6ea458370fa9a689f04a4f5300ffb0873d85dba4e8e5e8ec57de9964430"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-aedf22d06d56410e",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=9cafe0703abf47e80f67f80a6b423c938e1979aa.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": []
+}

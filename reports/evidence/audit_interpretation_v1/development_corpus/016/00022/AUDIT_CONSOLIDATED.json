@@ -1,0 +1,320 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 3,
+    "raw_finding_count": 3,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-cdae69f98c44d5e1",
+    "sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-ae0e76d932784020",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [
+    {
+      "affected_entity_count": 1,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "1 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-ae0e76d932784020",
+          "dataset_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+          "raw_finding_ids": [
+            "finding-v1:8a652f2dbe07c827ab3d5a18e85393f85d3428be4b962041e4f85bc9a30ae267:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "80116b0c1457dc8b"
+            ]
+          },
+          "source_file": "feed_info.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDgtRkVFRC1FTkQtREFURS1ERUNMQVJFRCIsInNvdXJjZV9maWxlIjoiZmVlZF9pbmZvLnR4dCIsInN0YWdlIjoiRzA4IiwidGVjaG5pY2FsX3N0YXR1cyI6IklORk8ifQ",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "1 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 1,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 1,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 1,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+      "source_file": "feed_info.txt",
+      "stage": "G08",
+      "technical_status": "INFO",
+      "unclassified_occurrences": 0
+    },
+    {
+      "affected_entity_count": 1,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "1 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-ae0e76d932784020",
+          "dataset_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+          "raw_finding_ids": [
+            "finding-v1:74f6dc290b19c25012ecea1a8472977652142d620dd671580cee3e816049d5f7:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "b396a97ca798f0a3"
+            ]
+          },
+          "source_file": "feed_info.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDgtRkVFRC1TVEFSVC1EQVRFLURFQ0xBUkVEIiwic291cmNlX2ZpbGUiOiJmZWVkX2luZm8udHh0Iiwic3RhZ2UiOiJHMDgiLCJ0ZWNobmljYWxfc3RhdHVzIjoiSU5GTyJ9",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "1 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 1,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 1,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 1,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+      "source_file": "feed_info.txt",
+      "stage": "G08",
+      "technical_status": "INFO",
+      "unclassified_occurrences": 0
+    },
+    {
+      "affected_entity_count": 1,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "1 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-ae0e76d932784020",
+          "dataset_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+          "raw_finding_ids": [
+            "finding-v1:e737d28b2e56a34994353a644e03cf3a505f0af11b7c41603465f8ea97d2a597:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "28979ee0bd4b11bd"
+            ]
+          },
+          "source_file": "feed_info.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDgtRkVFRC1WRVJTSU9OLURFQ0xBUkVEIiwic291cmNlX2ZpbGUiOiJmZWVkX2luZm8udHh0Iiwic3RhZ2UiOiJHMDgiLCJ0ZWNobmljYWxfc3RhdHVzIjoiSU5GTyJ9",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "1 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 1,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 1,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 1,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+      "source_file": "feed_info.txt",
+      "stage": "G08",
+      "technical_status": "INFO",
+      "unclassified_occurrences": 0
+    }
+  ],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=9cafe0703abf47e80f67f80a6b423c938e1979aa+WORKTREE_DIRTY.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": [
+    {
+      "authority": "GTFS_RECOMMENDED",
+      "entity_id": "8a652f2dbe07c827",
+      "entity_type": "feed",
+      "field": null,
+      "file": "feed_info.txt",
+      "observed": "HEADER_ABSENT",
+      "observed_evidence": "HEADER_ABSENT",
+      "origin": "AUDIT_ENGINE_RECOMMENDATION",
+      "provenance": {
+        "audit_id": "GTFSRUN-ae0e76d932784020",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE_RECOMMENDATION",
+        "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216"
+      },
+      "raw_finding_id": "finding-v1:8a652f2dbe07c827ab3d5a18e85393f85d3428be4b962041e4f85bc9a30ae267:0",
+      "recommendation": "Declare recommended field feed_end_date in feed_info.txt when relevant.",
+      "remediation_eligibility": "OUT_OF_SCOPE",
+      "requirement": "RECOMMENDED",
+      "row_locator": null,
+      "rule_id": "GTFS-G08-FEED-END-DATE-DECLARED",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": "INFO",
+      "source_fields": [
+        "feed_end_date"
+      ],
+      "source_file": "feed_info.txt",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+      "stage": "G08",
+      "technical_status": "INFO"
+    },
+    {
+      "authority": "GTFS_RECOMMENDED",
+      "entity_id": "74f6dc290b19c250",
+      "entity_type": "feed",
+      "field": null,
+      "file": "feed_info.txt",
+      "observed": "HEADER_ABSENT",
+      "observed_evidence": "HEADER_ABSENT",
+      "origin": "AUDIT_ENGINE_RECOMMENDATION",
+      "provenance": {
+        "audit_id": "GTFSRUN-ae0e76d932784020",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE_RECOMMENDATION",
+        "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216"
+      },
+      "raw_finding_id": "finding-v1:74f6dc290b19c25012ecea1a8472977652142d620dd671580cee3e816049d5f7:0",
+      "recommendation": "Declare recommended field feed_start_date in feed_info.txt when relevant.",
+      "remediation_eligibility": "OUT_OF_SCOPE",
+      "requirement": "RECOMMENDED",
+      "row_locator": null,
+      "rule_id": "GTFS-G08-FEED-START-DATE-DECLARED",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": "INFO",
+      "source_fields": [
+        "feed_start_date"
+      ],
+      "source_file": "feed_info.txt",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+      "stage": "G08",
+      "technical_status": "INFO"
+    },
+    {
+      "authority": "GTFS_RECOMMENDED",
+      "entity_id": "e737d28b2e56a349",
+      "entity_type": "feed",
+      "field": null,
+      "file": "feed_info.txt",
+      "observed": "HEADER_ABSENT",
+      "observed_evidence": "HEADER_ABSENT",
+      "origin": "AUDIT_ENGINE_RECOMMENDATION",
+      "provenance": {
+        "audit_id": "GTFSRUN-ae0e76d932784020",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE_RECOMMENDATION",
+        "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216"
+      },
+      "raw_finding_id": "finding-v1:e737d28b2e56a34994353a644e03cf3a505f0af11b7c41603465f8ea97d2a597:0",
+      "recommendation": "Declare recommended field feed_version in feed_info.txt when relevant.",
+      "remediation_eligibility": "OUT_OF_SCOPE",
+      "requirement": "RECOMMENDED",
+      "row_locator": null,
+      "rule_id": "GTFS-G08-FEED-VERSION-DECLARED",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": "INFO",
+      "source_fields": [
+        "feed_version"
+      ],
+      "source_file": "feed_info.txt",
+      "source_sha256": "cdae69f98c44d5e19bba3f5f87791740e2477515a03249568b275f8e4e509216",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#feed_infotxt",
+      "stage": "G08",
+      "technical_status": "INFO"
+    }
+  ]
+}

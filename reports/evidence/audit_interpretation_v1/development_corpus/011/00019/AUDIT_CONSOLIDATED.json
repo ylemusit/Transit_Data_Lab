@@ -1,0 +1,876 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 19,
+    "raw_finding_count": 19,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-5c139120f8424b69",
+    "sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-ac8fdb81a64349f2",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [
+    {
+      "affected_entity_count": 3,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "3 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-ac8fdb81a64349f2",
+          "dataset_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+          "raw_finding_ids": [
+            "finding-v1:c913b4237ea2844156c2bd210aae094c43e20bd2ae8070b0a11711679cb2fd0f:0",
+            "finding-v1:8fcf23eeca19dc4349e5bba486277b42658b448c2c71a956b1f84072dcc2dc7e:0",
+            "finding-v1:943f47d6d306f02c8734cd8cfc03afd7beb95c99a64f20596aaebeab7d1bc99c:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "data_row:67",
+              "data_row:68",
+              "data_row:69"
+            ]
+          },
+          "source_file": "calendar_dates.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDQtSURFTlRJVFktRE9NQUlOIiwic291cmNlX2ZpbGUiOiJjYWxlbmRhcl9kYXRlcy50eHQiLCJzdGFnZSI6IkcwNCIsInRlY2huaWNhbF9zdGF0dXMiOiJGQUlMX1RFQ0hOSUNBTCJ9",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "3 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 3,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 3,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 3,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "source_file": "calendar_dates.txt",
+      "stage": "G04",
+      "technical_status": "FAIL_TECHNICAL",
+      "unclassified_occurrences": 0
+    },
+    {
+      "affected_entity_count": 16,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "16 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-ac8fdb81a64349f2",
+          "dataset_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+          "raw_finding_ids": [
+            "finding-v1:fb9189d305a8e74e3f4b22d35721a5ad015dcbb10e5c393da96c9e512b00d18d:0",
+            "finding-v1:a3fd43c2a5cb683a17743d8c5879891c51df275e1de90b4fa59cc6a87d7613aa:0",
+            "finding-v1:28f7c5702dafa8230dad06e7df0200c5d3513485bdeb13c6f63940e6aee40592:0",
+            "finding-v1:37c1bc64eda227a3323d33e0316452a119e8f59367de03a4a643fdc006e18948:0",
+            "finding-v1:0b8938d676a30bfc17be239def709556e2298003bf31f3630850eb8aa0dc7abc:0",
+            "finding-v1:d844a1ce44a370662493af4c8a6f55d8bffa58ae6cfb666d99c0178d4d4ef0da:0",
+            "finding-v1:c70c5a7d986572d2ca99111aacf982444268bea93da89d5d03a7b3b704ec88b7:0",
+            "finding-v1:102150f2acd538c167eadb9f4d2d1904b8235e12f38de24c17df710fd6d23936:0",
+            "finding-v1:34a553ec8b4df2448e419e1984d05f3ff32d2175d9488451ee537b16a5bef571:0",
+            "finding-v1:d2875f9c81a9b7ed52f2cf32f0c8a575c272a720b5c52e584ab14996ae48c162:0",
+            "finding-v1:3836b1c10c2d860e0084875d7e234700535ea4e40d650e6276d6ba3723a09e74:0",
+            "finding-v1:9a85b85039577439e98ce24e1f798df426d894e782f77b04b24c7f946275e6fe:0",
+            "finding-v1:c57681c7ffc48ad748a0099df52375e50cdeaa6046a664c6d431a21f3b130764:0",
+            "finding-v1:d78a79951d5fd207effbbba2ce03213850f536c0272140b7664a5d92ceeead9a:0",
+            "finding-v1:fd79f223ffa1b03fa389dcca6252ba94cbdec1b8eb35fa92cc1787844e0118a0:0",
+            "finding-v1:ca2e577772ed6e60f74f6a1e71e1f9e272498022eff6a2c81baa9804220097d6:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "data_row:210",
+              "data_row:211",
+              "data_row:212",
+              "data_row:213",
+              "data_row:214",
+              "data_row:215",
+              "data_row:216",
+              "data_row:217",
+              "data_row:361",
+              "data_row:362",
+              "data_row:363",
+              "data_row:364",
+              "data_row:365",
+              "data_row:366",
+              "data_row:367",
+              "data_row:368"
+            ]
+          },
+          "source_file": "trips.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDQtSURFTlRJVFktRE9NQUlOIiwic291cmNlX2ZpbGUiOiJ0cmlwcy50eHQiLCJzdGFnZSI6IkcwNCIsInRlY2huaWNhbF9zdGF0dXMiOiJGQUlMX1RFQ0hOSUNBTCJ9",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "16 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 16,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 16,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 16,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "source_file": "trips.txt",
+      "stage": "G04",
+      "technical_status": "FAIL_TECHNICAL",
+      "unclassified_occurrences": 0
+    }
+  ],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=9cafe0703abf47e80f67f80a6b423c938e1979aa+WORKTREE_DIRTY.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": [
+    {
+      "authority": null,
+      "entity_id": "data_row:67",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "calendar.service_id",
+      "field": null,
+      "file": "calendar_dates.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:c913b4237ea2844156c2bd210aae094c43e20bd2ae8070b0a11711679cb2fd0f:0",
+      "recommendation": null,
+      "record_locator": "data_row:67",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:67",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "calendar_dates.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 1)",
+      "stage": "G04",
+      "technical_reason": "calendar_dates.service_id does not resolve to calendar.service_id while both calendar files are present.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:68",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "calendar.service_id",
+      "field": null,
+      "file": "calendar_dates.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:8fcf23eeca19dc4349e5bba486277b42658b448c2c71a956b1f84072dcc2dc7e:0",
+      "recommendation": null,
+      "record_locator": "data_row:68",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:68",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "calendar_dates.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 1)",
+      "stage": "G04",
+      "technical_reason": "calendar_dates.service_id does not resolve to calendar.service_id while both calendar files are present.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:69",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "calendar.service_id",
+      "field": null,
+      "file": "calendar_dates.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:943f47d6d306f02c8734cd8cfc03afd7beb95c99a64f20596aaebeab7d1bc99c:0",
+      "recommendation": null,
+      "record_locator": "data_row:69",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:69",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "calendar_dates.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#calendar_datestxt (Field Definitions table, row 1)",
+      "stage": "G04",
+      "technical_reason": "calendar_dates.service_id does not resolve to calendar.service_id while both calendar files are present.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:210",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:fb9189d305a8e74e3f4b22d35721a5ad015dcbb10e5c393da96c9e512b00d18d:0",
+      "recommendation": null,
+      "record_locator": "data_row:210",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:210",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:211",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:a3fd43c2a5cb683a17743d8c5879891c51df275e1de90b4fa59cc6a87d7613aa:0",
+      "recommendation": null,
+      "record_locator": "data_row:211",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:211",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:212",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:28f7c5702dafa8230dad06e7df0200c5d3513485bdeb13c6f63940e6aee40592:0",
+      "recommendation": null,
+      "record_locator": "data_row:212",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:212",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:213",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:37c1bc64eda227a3323d33e0316452a119e8f59367de03a4a643fdc006e18948:0",
+      "recommendation": null,
+      "record_locator": "data_row:213",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:213",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:214",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:0b8938d676a30bfc17be239def709556e2298003bf31f3630850eb8aa0dc7abc:0",
+      "recommendation": null,
+      "record_locator": "data_row:214",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:214",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:215",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:d844a1ce44a370662493af4c8a6f55d8bffa58ae6cfb666d99c0178d4d4ef0da:0",
+      "recommendation": null,
+      "record_locator": "data_row:215",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:215",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:216",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:c70c5a7d986572d2ca99111aacf982444268bea93da89d5d03a7b3b704ec88b7:0",
+      "recommendation": null,
+      "record_locator": "data_row:216",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:216",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:217",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:102150f2acd538c167eadb9f4d2d1904b8235e12f38de24c17df710fd6d23936:0",
+      "recommendation": null,
+      "record_locator": "data_row:217",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:217",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:361",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:34a553ec8b4df2448e419e1984d05f3ff32d2175d9488451ee537b16a5bef571:0",
+      "recommendation": null,
+      "record_locator": "data_row:361",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:361",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:362",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:d2875f9c81a9b7ed52f2cf32f0c8a575c272a720b5c52e584ab14996ae48c162:0",
+      "recommendation": null,
+      "record_locator": "data_row:362",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:362",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:363",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:3836b1c10c2d860e0084875d7e234700535ea4e40d650e6276d6ba3723a09e74:0",
+      "recommendation": null,
+      "record_locator": "data_row:363",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:363",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:364",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:9a85b85039577439e98ce24e1f798df426d894e782f77b04b24c7f946275e6fe:0",
+      "recommendation": null,
+      "record_locator": "data_row:364",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:364",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:365",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:c57681c7ffc48ad748a0099df52375e50cdeaa6046a664c6d431a21f3b130764:0",
+      "recommendation": null,
+      "record_locator": "data_row:365",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:365",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:366",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:d78a79951d5fd207effbbba2ce03213850f536c0272140b7664a5d92ceeead9a:0",
+      "recommendation": null,
+      "record_locator": "data_row:366",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:366",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:367",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:fd79f223ffa1b03fa389dcca6252ba94cbdec1b8eb35fa92cc1787844e0118a0:0",
+      "recommendation": null,
+      "record_locator": "data_row:367",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:367",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "data_row:368",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "SERVICE_ID",
+      "field": null,
+      "file": "trips.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": "Nadal",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-ac8fdb81a64349f2",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b"
+      },
+      "raw_finding_id": "finding-v1:ca2e577772ed6e60f74f6a1e71e1f9e272498022eff6a2c81baa9804220097d6:0",
+      "recommendation": null,
+      "record_locator": "data_row:368",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:368",
+      "rule_id": "GTFS-G04-IDENTITY-DOMAIN",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "service_id"
+      ],
+      "source_file": "trips.txt",
+      "source_sha256": "5c139120f8424b69dd98024cbeda9a2a3f0f694772e14cb795e20f154663c23b",
+      "specification_reference": "G01/G04 SERVICE_ID logical domain",
+      "stage": "G04",
+      "technical_reason": "Populated service_id does not resolve in the available domain.",
+      "technical_status": "FAIL_TECHNICAL"
+    }
+  ]
+}

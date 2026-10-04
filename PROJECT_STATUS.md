@@ -2,6 +2,18 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Audit Interpretation & Consolidation V1 — FROZEN WITH DOCUMENTED LIMITATIONS
+
+**Estado (2026-10-04):** Yeison aprobó el freeze después de la campaña DEVELOPMENT. `DEVELOPMENT_CORPUS_CAMPAIGN = PASS_WITH_PROTOCOL_DEVIATION`; `INTERPRETATION_V1_FREEZE_DECISION = APPROVED`; `AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1 = FROZEN_WITH_DOCUMENTED_LIMITATIONS`. La implementación queda fijada en `ENGINE_FREEZE_BASE = 9cafe0703abf47e80f67f80a6b423c938e1979aa`; este SHA no incluye la documentación de freeze.
+
+La campaña completó 14/14 datasets, 14/14 replays PASS, 92 findings raw, 7 familias, cero fallos de pipeline y cero gaps de accounting. 11 datasets quedaron interpretados y 3 parcialmente interpretados: 010 por un hallazgo G03 en consolidación genérica; 011 por dos familias G04 en consolidación genérica; 016 por tres recomendaciones informativas G08 en consolidación genérica. No se añadió interpretación ausente. No hubo fixes genéricos, tests nuevos requeridos por la campaña ni código específico de operador. No se autoriza tuning conductual antes de una validación HOLDOUT controlada.
+
+Durante el reconocimiento inicial se listaron por error directorios por familia, exponiendo nombres/IDs de carpetas asignadas a HOLDOUT. `HOLDOUT_ACCESSED = YES`; `HOLDOUT_ACCESS_LEVEL = METADATA_ONLY`; `HOLDOUT_DIRECTORY_NAMES_EXPOSED = YES`. No se leyó contenido, abrieron fuentes, calcularon hashes ni ejecutó el pipeline; HOLDOUT tampoco se usó para tuning, fixes o diseño de tests. `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Los seis datasets permanecen protegidos de acceso a contenido hasta autorización separada.
+
+Dataset 019 terminó `OK`, replay `PASS` y cero findings: runtime observado ≈12m43s y pico observado de memoria privada ≈18.89 GiB. `LARGE_DATASET_FUNCTIONALITY = PASS`; `LARGE_DATASET_PERFORMANCE_OPTIMIZATION = REQUIRED`; no se establece SLA ni se modifica runtime en este freeze. La regresión registrada sigue siendo 280 tests, 279 PASS, 0 FAIL y 1 SKIP documentado.
+
+Hallazgos y evidencia por caso: [informe de campaña](reports/TDL_AUDIT_INTERPRETATION_V1_DEVELOPMENT_CORPUS_20261004.md) y [resumen JSON](reports/evidence/audit_interpretation_v1/development_corpus_summary.json). No se inició Windows Self-Service Client V1.
+
 ## Audit Interpretation & Consolidation V1 — PASS; cierre humano aprobado
 
 **Estado vigente (2026-10-04):** Yeison aprobó el cierre técnico humano de I01–I08. La rama `feat/audit-interpretation-i02-i08` parte de `62224c13246bb0cda5cb4fc48b1409789abfcc1f`; esta aprobación no declara aceptación comercial, jurídica ni de mercado.

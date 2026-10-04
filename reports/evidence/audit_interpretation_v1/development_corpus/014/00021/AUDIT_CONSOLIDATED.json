@@ -1,0 +1,3318 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 69,
+    "raw_finding_count": 69,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-da9daa4f60d798fc",
+    "sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-7f9823e69e794fce",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [
+    {
+      "affected_entity_count": 27,
+      "affected_entity_type": "shape",
+      "affected_percentage": 10.97560976,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "27 entidades directas únicas."
+        },
+        {
+          "kind": "CALCULATED",
+          "statement": "G07 total_shapes=246; affected_shapes=27; total_transitions=4745; affected_transitions=69; affected_transition_percentage=1.45416228; increase=4676; equal=69; decrease=0; movimiento geográfico por bucket (m): 0=0; 0-0.25m=0; 0.25-0.50m=0; 0.50-0.75m=0; 0.75-1m=0; >1m=69; precisión shape_dist_traveled=INTEGER_ONLY."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-7f9823e69e794fce",
+          "dataset_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+          "raw_finding_ids": [
+            "finding-v1:34be5dea9d0ca29b771475bdfad0d52e51241b3c2dbd3964e726ee928f2cf11b:0",
+            "finding-v1:4cf53144d706b3a3275cbb75cbf0221dabd5935f44ce69b5e58b2467a16f61de:0",
+            "finding-v1:ede618db680f07a74dcd7cd580b936ed919102bc4fb3c52a56f7e68426a61e88:0",
+            "finding-v1:488f7de0e90271d63669ae21c5132a4579ece4aac8fd94840c20e46f24833687:0",
+            "finding-v1:4e3865eb212a2a343265f29e1e11b6f7889dd56c3b7d174a48b45c7f042dc289:0",
+            "finding-v1:a06bcaf89c2676960ecd2a921ed4c449dffcbfa6ea78ea775e85d9a940313a8b:0",
+            "finding-v1:2820561bc5cf75f3993d1b7df35b43d55cfad180c9fc85eb8c500ca14d13cebb:0",
+            "finding-v1:846eec5f0a08d78f50d02c6f770625ba145d73d52cb5cbbbc76f32c08f368ae6:0",
+            "finding-v1:95cb09c44a26444bea395131545410d5a4aad1d8b006ac45cb058f87bd468cc0:0",
+            "finding-v1:0653ff28d8defa8113be36f0e3e79c44286cd2c7a2e8d822cfbedfcf8c73327f:0",
+            "finding-v1:9bcc7e5306fa6a77f53292aaafaaaf046f6c0500e8eea7ef6acc2115db81852c:0",
+            "finding-v1:7de5b7399c54dee0f447ff4c75c7c5ef9b5001805135cb3ca88f8c1eca1355a9:0",
+            "finding-v1:ebd46c2f54fe40eb30e1c77a8afc01c17be5b99b4ef85b5a7c5ea019c38e4918:0",
+            "finding-v1:48c9ee3cae476526c1931b0fe1506c45ca434e4920c3ec3f4d7a3bd49c91e3ad:0",
+            "finding-v1:8efb363cfeff80c215fe109dbbd1b44430ef14bccb7a5947734e9d4b5fce4447:0",
+            "finding-v1:bf747ac0ebbd377526ead3865abdb04cf9318fcc173296e1f2f81135c6cf5d9a:0",
+            "finding-v1:046e2fe418222a9d6f0a165fbd2b26d43f8192e3cd0409a98eb4611ed7b90794:0",
+            "finding-v1:cf6a1b5df9334a7cb212da53484c5c5a31a0cb16cf8be22ac380fae41461c5c0:0",
+            "finding-v1:27a3b6eb4cbeb546af08131fd63c319195db17a9bc26c2127063eb9ac2c5572c:0",
+            "finding-v1:22d535b80502b9cec1d66d062bb0bb4b7f3171cd4b32ff89b559fb161a431f76:0",
+            "finding-v1:880dd73065d6de368bd9c65ff00fdbaf191cfcf7d1d90e9b066b8bb712f8f0f3:0",
+            "finding-v1:e87ea6bd11c6b3e457c353b1bf2f74e40bb0dfc7a978409face3f518a89d7e23:0",
+            "finding-v1:51a9e55dcea449880e22bb43b58c7e6d293da0e0811f8ea70133274441fe4736:0",
+            "finding-v1:e62fda5114458d509dfe9cae19cd4570b5bb1f367bf9560b015364025f196e6e:0",
+            "finding-v1:c7cd75fa9c25973e1480c23731945fd2cf329c351faa20ba5db981ed19422216:0",
+            "finding-v1:dc2e0799983150d71eeb1e2f6faa99e5d530a3b01ad4735566bd8bfd6378b202:0",
+            "finding-v1:7cdc0fc5955108e5a53a5a5ea5bcd90153f28f2c4159d5c78a14c44c2eeada4b:0",
+            "finding-v1:96494361318b8b22b31bd7662779c1ee070a83cd815c7d1a7050b04fec53e481:0",
+            "finding-v1:f51a79230a3400793ceb8613446ece30833c33e58e5d845997a7d42848d8d913:0",
+            "finding-v1:6f46bffd85f18db4ccfcae002ec11d9973fc3c5d8c9a33d03672ccc715af3a0a:0",
+            "finding-v1:3c476e7184527c67243c27bae17da9cd205d4c3df8ada97384a5ef761832e895:0",
+            "finding-v1:1193b9ec44d03820d2fd98fc67fa73093ae5e86522107eaaf2c6ba2cf9fa31bb:0",
+            "finding-v1:f742f1f6fbaabd8fabf64b7cdd2e8d79dd064759844274bfc25fbf3202dc98bc:0",
+            "finding-v1:ef13cc4cf20ba1234f6c69441014cb8141faf19db6f965d56524cb8b5f509466:0",
+            "finding-v1:44ab809c9ed3706e3369e0132258c3500d1022ad62df037c5046a0c1ebe48cd4:0",
+            "finding-v1:9d05902d4f57768b2ef16958dadb1e387178e72bed2001d30b57485a9a47981b:0",
+            "finding-v1:165b40e8279155b79f8d1690145727c381fa636c921d85b5c11ec9102c122018:0",
+            "finding-v1:0cfac7a1702714df24f3d001b244e84358c028d95db3e78617e2e92f82263bb7:0",
+            "finding-v1:91742c9bff9fb874adf86416219d544aee44c5ba943f0e1c24edf976dc62cfec:0",
+            "finding-v1:53d005a8199339572c020e6028c0cae6ccbf61008197ab7bd5d2caccc1253ee9:0",
+            "finding-v1:727be6e8b9c7a4225355ad6e0113c6ddee86210111b448902647a5acc47b185c:0",
+            "finding-v1:c5eb11bc976e6733fc08434f1fbe5cffce9fff8436e21cb3158859ace754e6b0:0",
+            "finding-v1:de7d9b03b13e560bc820fb0a23381da0542b435e1e60e0c14b6effe224f52aa2:0",
+            "finding-v1:1bb933353aaa079d34d415c4080a0b1cc357fdd3b48f4449a174503d14b0bd6c:0",
+            "finding-v1:baf9c2aa32491f880a8a5fe8152644fc00cc0333e38f3b55cee4b936d9c1603c:0",
+            "finding-v1:2e60ec9693d5289153063c8c1f34be8ec7e65b919d0930c22549cde54c9be7ea:0",
+            "finding-v1:01cb1015255d4a564c1afc02bfb8c0e526f806d954b03598493a38157a5c46a5:0",
+            "finding-v1:1cc0751366d1f003a75b42009fdbbbcc535b3adb7d61bf486a8d2f2e820f43ee:0",
+            "finding-v1:1cc13a831412d0127c6ab9434ad0527e57347994bccb0017cf60ae7778cd660f:0",
+            "finding-v1:c83ce76a3e5d5b74504a4eb54595058265410bc4bb47b179b1e4a2937a048daf:0",
+            "finding-v1:0fe7f232f300e7317e34bea7f8571e329c93f9043d9226cf7352df0cbd4d9d8b:0",
+            "finding-v1:59714db89f94d04afc3086cb80c079b651ad078e7782004bf37e3a6eaec5e460:0",
+            "finding-v1:d44a0fe36aca13a489edf16dfa995f2933e77afa6d00e7855d205bb3b7cce587:0",
+            "finding-v1:15ef720b8c0388365c9617a43e9049f0e9dde04c2953799b476b8019b1e77288:0",
+            "finding-v1:ba1edaade2d3b8b590997e9b8730c9731488201101348528dc576175f539fd94:0",
+            "finding-v1:69be6d226267fb86c88c12c5f860127c4dbd18eded26ccfc178d40753a767b2c:0",
+            "finding-v1:449aa6921c81feb00d5769d4a01cbe2e6470feb1431564b565f19f67d6334463:0",
+            "finding-v1:6378642113d8fc98291ce8ca7684751a813fa0131ca613f0f62f2e7c06bc9713:0",
+            "finding-v1:2e195fcd0b2f79bb8d34e697645437b22e4369cda925a670b3a1fc92cdd9de0c:0",
+            "finding-v1:61f06cc6d7f65d4dacc8fbd52e029a6dfb1a7e7ad98e992cdcc15438fee635a4:0",
+            "finding-v1:48b41a6ae73b426bc4fa8142f8e8ed1f9bef1243a6fdeef9258fd9ca278f1bad:0",
+            "finding-v1:7ad8c9be7048a3d9852bbf1af3d8cd4ab8be0df9ea856099a06d0c09cb3e4aa1:0",
+            "finding-v1:686278fff6ca214cc28318925560061b491be6db5ac57874b452dc90601061bf:0",
+            "finding-v1:6328b1cd4d593db35e5755fc72811fc1867dbeca6fa92ffcc0b6a4cbaad90f32:0",
+            "finding-v1:527be45714db3e13d469abca6de4aa2aca1c6e5125232fbf46eac006b31bb50b:0",
+            "finding-v1:344b266026e782681a79baa117729371c6899c53a7a0ce8f360ffb48eef39cc0:0",
+            "finding-v1:a81bfaabbbe8861adda84d0437bb5ca71de56143cd696b06c27995b3fda5c404:0",
+            "finding-v1:21de4b1378bb0e6247e482b794e24007c67dfd535d9b7c690957d04c535e29d8:0",
+            "finding-v1:baf697a8e39581b21a5f97f8a72b3c4131cf2b38d468a6ef8748e8dfaa8d1669:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "1079981",
+              "1080712",
+              "1132742",
+              "1133271",
+              "1133362",
+              "1133552",
+              "1134192",
+              "1134231",
+              "1134511",
+              "1134612",
+              "1135362",
+              "1135951",
+              "1136081",
+              "1166061",
+              "1206671",
+              "1206712",
+              "1206761",
+              "1206822",
+              "1206841",
+              "1207221",
+              "1208291",
+              "1209352",
+              "1209361",
+              "1209381",
+              "1209421",
+              "1209431",
+              "1221732"
+            ]
+          },
+          "source_file": "shapes.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6InNoYXBlIiwicGF0dGVybl9pZCI6IlFVQU5USVpBVElPTl9DT01QQVRJQkxFIiwicnVsZV9pZCI6IkdURlMtRzA3LURJU1RBTkNFLVBST0dSRVNTSU9OIiwic291cmNlX2ZpbGUiOiJzaGFwZXMudHh0Iiwic3RhZ2UiOiJHMDciLCJ0ZWNobmljYWxfc3RhdHVzIjoiRkFJTF9URUNITklDQUwifQ",
+      "inferences": [
+        {
+          "kind": "INFERRED",
+          "statement": "Distancia declarada igual con coordenadas distintas es compatible con cuantización; no demuestra su causa."
+        }
+      ],
+      "limitations": [
+        "Las métricas G07 se calculan sobre findings G07 y el shapes.txt del mismo SOURCE; el análisis no determina causalidad."
+      ],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "69 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 27,
+          "entity_type": "shape"
+        },
+        "propagated_usage": [
+          {
+            "entity_count": 18,
+            "entity_type": "route"
+          },
+          {
+            "entity_count": 17,
+            "entity_type": "service"
+          },
+          {
+            "entity_count": 72,
+            "entity_type": "trip"
+          }
+        ]
+      },
+      "patterns": [
+        {
+          "classification": "QUANTIZATION_COMPATIBLE",
+          "occurrence_count": 69,
+          "pattern_id": "QUANTIZATION_COMPATIBLE",
+          "status": "COMPATIBLE_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": 246,
+        "population_type": "shape"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 69,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "source_file": "shapes.txt",
+      "stage": "G07",
+      "technical_status": "FAIL_TECHNICAL",
+      "unclassified_occurrences": 0
+    }
+  ],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=9cafe0703abf47e80f67f80a6b423c938e1979aa+WORKTREE_DIRTY.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": [
+    {
+      "authority": null,
+      "entity_id": "1080712",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 32400.0,
+        "previous": 32400.0,
+        "shape_id": "1080712"
+      },
+      "observed_evidence": {
+        "current": 32400.0,
+        "previous": 32400.0,
+        "shape_id": "1080712"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:34be5dea9d0ca29b771475bdfad0d52e51241b3c2dbd3964e726ee928f2cf11b:0",
+      "recommendation": null,
+      "record_locator": "data_row:1114",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1114",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:4cf53144d706b3a3275cbb75cbf0221dabd5935f44ce69b5e58b2467a16f61de:0",
+      "recommendation": null,
+      "record_locator": "data_row:1536",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1536",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:ede618db680f07a74dcd7cd580b936ed919102bc4fb3c52a56f7e68426a61e88:0",
+      "recommendation": null,
+      "record_locator": "data_row:1537",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1537",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:488f7de0e90271d63669ae21c5132a4579ece4aac8fd94840c20e46f24833687:0",
+      "recommendation": null,
+      "record_locator": "data_row:1538",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1538",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:4e3865eb212a2a343265f29e1e11b6f7889dd56c3b7d174a48b45c7f042dc289:0",
+      "recommendation": null,
+      "record_locator": "data_row:1539",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1539",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:a06bcaf89c2676960ecd2a921ed4c449dffcbfa6ea78ea775e85d9a940313a8b:0",
+      "recommendation": null,
+      "record_locator": "data_row:1540",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1540",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:2820561bc5cf75f3993d1b7df35b43d55cfad180c9fc85eb8c500ca14d13cebb:0",
+      "recommendation": null,
+      "record_locator": "data_row:1541",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1541",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:846eec5f0a08d78f50d02c6f770625ba145d73d52cb5cbbbc76f32c08f368ae6:0",
+      "recommendation": null,
+      "record_locator": "data_row:1542",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1542",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:95cb09c44a26444bea395131545410d5a4aad1d8b006ac45cb058f87bd468cc0:0",
+      "recommendation": null,
+      "record_locator": "data_row:1543",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1543",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:0653ff28d8defa8113be36f0e3e79c44286cd2c7a2e8d822cfbedfcf8c73327f:0",
+      "recommendation": null,
+      "record_locator": "data_row:1544",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1544",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:9bcc7e5306fa6a77f53292aaafaaaf046f6c0500e8eea7ef6acc2115db81852c:0",
+      "recommendation": null,
+      "record_locator": "data_row:1545",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1545",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:7de5b7399c54dee0f447ff4c75c7c5ef9b5001805135cb3ca88f8c1eca1355a9:0",
+      "recommendation": null,
+      "record_locator": "data_row:1546",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1546",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:ebd46c2f54fe40eb30e1c77a8afc01c17be5b99b4ef85b5a7c5ea019c38e4918:0",
+      "recommendation": null,
+      "record_locator": "data_row:1547",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1547",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:48c9ee3cae476526c1931b0fe1506c45ca434e4920c3ec3f4d7a3bd49c91e3ad:0",
+      "recommendation": null,
+      "record_locator": "data_row:1548",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1548",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:8efb363cfeff80c215fe109dbbd1b44430ef14bccb7a5947734e9d4b5fce4447:0",
+      "recommendation": null,
+      "record_locator": "data_row:1549",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1549",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:bf747ac0ebbd377526ead3865abdb04cf9318fcc173296e1f2f81135c6cf5d9a:0",
+      "recommendation": null,
+      "record_locator": "data_row:1550",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1550",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:046e2fe418222a9d6f0a165fbd2b26d43f8192e3cd0409a98eb4611ed7b90794:0",
+      "recommendation": null,
+      "record_locator": "data_row:1551",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1551",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:cf6a1b5df9334a7cb212da53484c5c5a31a0cb16cf8be22ac380fae41461c5c0:0",
+      "recommendation": null,
+      "record_locator": "data_row:1552",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1552",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:27a3b6eb4cbeb546af08131fd63c319195db17a9bc26c2127063eb9ac2c5572c:0",
+      "recommendation": null,
+      "record_locator": "data_row:1553",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1553",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:22d535b80502b9cec1d66d062bb0bb4b7f3171cd4b32ff89b559fb161a431f76:0",
+      "recommendation": null,
+      "record_locator": "data_row:1554",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1554",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:880dd73065d6de368bd9c65ff00fdbaf191cfcf7d1d90e9b066b8bb712f8f0f3:0",
+      "recommendation": null,
+      "record_locator": "data_row:1555",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1555",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:e87ea6bd11c6b3e457c353b1bf2f74e40bb0dfc7a978409face3f518a89d7e23:0",
+      "recommendation": null,
+      "record_locator": "data_row:1556",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1556",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:51a9e55dcea449880e22bb43b58c7e6d293da0e0811f8ea70133274441fe4736:0",
+      "recommendation": null,
+      "record_locator": "data_row:1557",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1557",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:e62fda5114458d509dfe9cae19cd4570b5bb1f367bf9560b015364025f196e6e:0",
+      "recommendation": null,
+      "record_locator": "data_row:1558",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1558",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:c7cd75fa9c25973e1480c23731945fd2cf329c351faa20ba5db981ed19422216:0",
+      "recommendation": null,
+      "record_locator": "data_row:1559",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1559",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:dc2e0799983150d71eeb1e2f6faa99e5d530a3b01ad4735566bd8bfd6378b202:0",
+      "recommendation": null,
+      "record_locator": "data_row:1560",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1560",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:7cdc0fc5955108e5a53a5a5ea5bcd90153f28f2c4159d5c78a14c44c2eeada4b:0",
+      "recommendation": null,
+      "record_locator": "data_row:1561",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1561",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:96494361318b8b22b31bd7662779c1ee070a83cd815c7d1a7050b04fec53e481:0",
+      "recommendation": null,
+      "record_locator": "data_row:1562",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1562",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:f51a79230a3400793ceb8613446ece30833c33e58e5d845997a7d42848d8d913:0",
+      "recommendation": null,
+      "record_locator": "data_row:1563",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1563",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:6f46bffd85f18db4ccfcae002ec11d9973fc3c5d8c9a33d03672ccc715af3a0a:0",
+      "recommendation": null,
+      "record_locator": "data_row:1564",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1564",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:3c476e7184527c67243c27bae17da9cd205d4c3df8ada97384a5ef761832e895:0",
+      "recommendation": null,
+      "record_locator": "data_row:1565",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1565",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:1193b9ec44d03820d2fd98fc67fa73093ae5e86522107eaaf2c6ba2cf9fa31bb:0",
+      "recommendation": null,
+      "record_locator": "data_row:1566",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1566",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:f742f1f6fbaabd8fabf64b7cdd2e8d79dd064759844274bfc25fbf3202dc98bc:0",
+      "recommendation": null,
+      "record_locator": "data_row:1567",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1567",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:ef13cc4cf20ba1234f6c69441014cb8141faf19db6f965d56524cb8b5f509466:0",
+      "recommendation": null,
+      "record_locator": "data_row:1568",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1568",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:44ab809c9ed3706e3369e0132258c3500d1022ad62df037c5046a0c1ebe48cd4:0",
+      "recommendation": null,
+      "record_locator": "data_row:1569",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1569",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1132742",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1132742"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:9d05902d4f57768b2ef16958dadb1e387178e72bed2001d30b57485a9a47981b:0",
+      "recommendation": null,
+      "record_locator": "data_row:1570",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:1570",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1133271",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 19400.0,
+        "previous": 19400.0,
+        "shape_id": "1133271"
+      },
+      "observed_evidence": {
+        "current": 19400.0,
+        "previous": 19400.0,
+        "shape_id": "1133271"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:165b40e8279155b79f8d1690145727c381fa636c921d85b5c11ec9102c122018:0",
+      "recommendation": null,
+      "record_locator": "data_row:2206",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2206",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1133362",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1133362"
+      },
+      "observed_evidence": {
+        "current": 0.0,
+        "previous": 0.0,
+        "shape_id": "1133362"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:0cfac7a1702714df24f3d001b244e84358c028d95db3e78617e2e92f82263bb7:0",
+      "recommendation": null,
+      "record_locator": "data_row:2294",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2294",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1133552",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 7100.0,
+        "previous": 7100.0,
+        "shape_id": "1133552"
+      },
+      "observed_evidence": {
+        "current": 7100.0,
+        "previous": 7100.0,
+        "shape_id": "1133552"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:91742c9bff9fb874adf86416219d544aee44c5ba943f0e1c24edf976dc62cfec:0",
+      "recommendation": null,
+      "record_locator": "data_row:2464",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2464",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1133552",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 15900.0,
+        "previous": 15900.0,
+        "shape_id": "1133552"
+      },
+      "observed_evidence": {
+        "current": 15900.0,
+        "previous": 15900.0,
+        "shape_id": "1133552"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:53d005a8199339572c020e6028c0cae6ccbf61008197ab7bd5d2caccc1253ee9:0",
+      "recommendation": null,
+      "record_locator": "data_row:2475",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2475",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1134192",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 12100.0,
+        "previous": 12100.0,
+        "shape_id": "1134192"
+      },
+      "observed_evidence": {
+        "current": 12100.0,
+        "previous": 12100.0,
+        "shape_id": "1134192"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:727be6e8b9c7a4225355ad6e0113c6ddee86210111b448902647a5acc47b185c:0",
+      "recommendation": null,
+      "record_locator": "data_row:2729",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2729",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1134231",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 57700.0,
+        "previous": 57700.0,
+        "shape_id": "1134231"
+      },
+      "observed_evidence": {
+        "current": 57700.0,
+        "previous": 57700.0,
+        "shape_id": "1134231"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:c5eb11bc976e6733fc08434f1fbe5cffce9fff8436e21cb3158859ace754e6b0:0",
+      "recommendation": null,
+      "record_locator": "data_row:2868",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2868",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1134511",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 61600.0,
+        "previous": 61600.0,
+        "shape_id": "1134511"
+      },
+      "observed_evidence": {
+        "current": 61600.0,
+        "previous": 61600.0,
+        "shape_id": "1134511"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:de7d9b03b13e560bc820fb0a23381da0542b435e1e60e0c14b6effe224f52aa2:0",
+      "recommendation": null,
+      "record_locator": "data_row:2984",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:2984",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1134612",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 10600.0,
+        "previous": 10600.0,
+        "shape_id": "1134612"
+      },
+      "observed_evidence": {
+        "current": 10600.0,
+        "previous": 10600.0,
+        "shape_id": "1134612"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:1bb933353aaa079d34d415c4080a0b1cc357fdd3b48f4449a174503d14b0bd6c:0",
+      "recommendation": null,
+      "record_locator": "data_row:3016",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3016",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1135362",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 6700.0,
+        "previous": 6700.0,
+        "shape_id": "1135362"
+      },
+      "observed_evidence": {
+        "current": 6700.0,
+        "previous": 6700.0,
+        "shape_id": "1135362"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:baf9c2aa32491f880a8a5fe8152644fc00cc0333e38f3b55cee4b936d9c1603c:0",
+      "recommendation": null,
+      "record_locator": "data_row:3123",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3123",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1135951",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 9100.0,
+        "previous": 9100.0,
+        "shape_id": "1135951"
+      },
+      "observed_evidence": {
+        "current": 9100.0,
+        "previous": 9100.0,
+        "shape_id": "1135951"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:2e60ec9693d5289153063c8c1f34be8ec7e65b919d0930c22549cde54c9be7ea:0",
+      "recommendation": null,
+      "record_locator": "data_row:3244",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3244",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1136081",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 22000.0,
+        "previous": 22000.0,
+        "shape_id": "1136081"
+      },
+      "observed_evidence": {
+        "current": 22000.0,
+        "previous": 22000.0,
+        "shape_id": "1136081"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:01cb1015255d4a564c1afc02bfb8c0e526f806d954b03598493a38157a5c46a5:0",
+      "recommendation": null,
+      "record_locator": "data_row:3273",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3273",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1136081",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 30800.0,
+        "previous": 30800.0,
+        "shape_id": "1136081"
+      },
+      "observed_evidence": {
+        "current": 30800.0,
+        "previous": 30800.0,
+        "shape_id": "1136081"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:1cc0751366d1f003a75b42009fdbbbcc535b3adb7d61bf486a8d2f2e820f43ee:0",
+      "recommendation": null,
+      "record_locator": "data_row:3284",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3284",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1166061",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 6400.0,
+        "previous": 6400.0,
+        "shape_id": "1166061"
+      },
+      "observed_evidence": {
+        "current": 6400.0,
+        "previous": 6400.0,
+        "shape_id": "1166061"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:1cc13a831412d0127c6ab9434ad0527e57347994bccb0017cf60ae7778cd660f:0",
+      "recommendation": null,
+      "record_locator": "data_row:3557",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3557",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206671",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 6400.0,
+        "previous": 6400.0,
+        "shape_id": "1206671"
+      },
+      "observed_evidence": {
+        "current": 6400.0,
+        "previous": 6400.0,
+        "shape_id": "1206671"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:c83ce76a3e5d5b74504a4eb54595058265410bc4bb47b179b1e4a2937a048daf:0",
+      "recommendation": null,
+      "record_locator": "data_row:3703",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3703",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206712",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 9500.0,
+        "previous": 9500.0,
+        "shape_id": "1206712"
+      },
+      "observed_evidence": {
+        "current": 9500.0,
+        "previous": 9500.0,
+        "shape_id": "1206712"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:0fe7f232f300e7317e34bea7f8571e329c93f9043d9226cf7352df0cbd4d9d8b:0",
+      "recommendation": null,
+      "record_locator": "data_row:3824",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3824",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206712",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 12000.0,
+        "previous": 12000.0,
+        "shape_id": "1206712"
+      },
+      "observed_evidence": {
+        "current": 12000.0,
+        "previous": 12000.0,
+        "shape_id": "1206712"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:59714db89f94d04afc3086cb80c079b651ad078e7782004bf37e3a6eaec5e460:0",
+      "recommendation": null,
+      "record_locator": "data_row:3828",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3828",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206761",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 29400.0,
+        "previous": 29400.0,
+        "shape_id": "1206761"
+      },
+      "observed_evidence": {
+        "current": 29400.0,
+        "previous": 29400.0,
+        "shape_id": "1206761"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:d44a0fe36aca13a489edf16dfa995f2933e77afa6d00e7855d205bb3b7cce587:0",
+      "recommendation": null,
+      "record_locator": "data_row:3941",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3941",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206761",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 29400.0,
+        "previous": 29400.0,
+        "shape_id": "1206761"
+      },
+      "observed_evidence": {
+        "current": 29400.0,
+        "previous": 29400.0,
+        "shape_id": "1206761"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:15ef720b8c0388365c9617a43e9049f0e9dde04c2953799b476b8019b1e77288:0",
+      "recommendation": null,
+      "record_locator": "data_row:3942",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:3942",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206822",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 59600.0,
+        "previous": 59600.0,
+        "shape_id": "1206822"
+      },
+      "observed_evidence": {
+        "current": 59600.0,
+        "previous": 59600.0,
+        "shape_id": "1206822"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:ba1edaade2d3b8b590997e9b8730c9731488201101348528dc576175f539fd94:0",
+      "recommendation": null,
+      "record_locator": "data_row:4042",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4042",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206841",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 9600.0,
+        "previous": 9600.0,
+        "shape_id": "1206841"
+      },
+      "observed_evidence": {
+        "current": 9600.0,
+        "previous": 9600.0,
+        "shape_id": "1206841"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:69be6d226267fb86c88c12c5f860127c4dbd18eded26ccfc178d40753a767b2c:0",
+      "recommendation": null,
+      "record_locator": "data_row:4057",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4057",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1206841",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 12100.0,
+        "previous": 12100.0,
+        "shape_id": "1206841"
+      },
+      "observed_evidence": {
+        "current": 12100.0,
+        "previous": 12100.0,
+        "shape_id": "1206841"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:449aa6921c81feb00d5769d4a01cbe2e6470feb1431564b565f19f67d6334463:0",
+      "recommendation": null,
+      "record_locator": "data_row:4061",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4061",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1207221",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 31400.0,
+        "previous": 31400.0,
+        "shape_id": "1207221"
+      },
+      "observed_evidence": {
+        "current": 31400.0,
+        "previous": 31400.0,
+        "shape_id": "1207221"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:6378642113d8fc98291ce8ca7684751a813fa0131ca613f0f62f2e7c06bc9713:0",
+      "recommendation": null,
+      "record_locator": "data_row:4134",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4134",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1208291",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 8400.0,
+        "previous": 8400.0,
+        "shape_id": "1208291"
+      },
+      "observed_evidence": {
+        "current": 8400.0,
+        "previous": 8400.0,
+        "shape_id": "1208291"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:2e195fcd0b2f79bb8d34e697645437b22e4369cda925a670b3a1fc92cdd9de0c:0",
+      "recommendation": null,
+      "record_locator": "data_row:4320",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4320",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209352",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 6700.0,
+        "previous": 6700.0,
+        "shape_id": "1209352"
+      },
+      "observed_evidence": {
+        "current": 6700.0,
+        "previous": 6700.0,
+        "shape_id": "1209352"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:61f06cc6d7f65d4dacc8fbd52e029a6dfb1a7e7ad98e992cdcc15438fee635a4:0",
+      "recommendation": null,
+      "record_locator": "data_row:4435",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4435",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209352",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 36200.0,
+        "previous": 36200.0,
+        "shape_id": "1209352"
+      },
+      "observed_evidence": {
+        "current": 36200.0,
+        "previous": 36200.0,
+        "shape_id": "1209352"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:48b41a6ae73b426bc4fa8142f8e8ed1f9bef1243a6fdeef9258fd9ca278f1bad:0",
+      "recommendation": null,
+      "record_locator": "data_row:4455",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4455",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209361",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 17900.0,
+        "previous": 17900.0,
+        "shape_id": "1209361"
+      },
+      "observed_evidence": {
+        "current": 17900.0,
+        "previous": 17900.0,
+        "shape_id": "1209361"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:7ad8c9be7048a3d9852bbf1af3d8cd4ab8be0df9ea856099a06d0c09cb3e4aa1:0",
+      "recommendation": null,
+      "record_locator": "data_row:4482",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4482",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209361",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 42600.0,
+        "previous": 42600.0,
+        "shape_id": "1209361"
+      },
+      "observed_evidence": {
+        "current": 42600.0,
+        "previous": 42600.0,
+        "shape_id": "1209361"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:686278fff6ca214cc28318925560061b491be6db5ac57874b452dc90601061bf:0",
+      "recommendation": null,
+      "record_locator": "data_row:4511",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4511",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209381",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 28900.0,
+        "previous": 28900.0,
+        "shape_id": "1209381"
+      },
+      "observed_evidence": {
+        "current": 28900.0,
+        "previous": 28900.0,
+        "shape_id": "1209381"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:6328b1cd4d593db35e5755fc72811fc1867dbeca6fa92ffcc0b6a4cbaad90f32:0",
+      "recommendation": null,
+      "record_locator": "data_row:4626",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4626",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209421",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 14700.0,
+        "previous": 14700.0,
+        "shape_id": "1209421"
+      },
+      "observed_evidence": {
+        "current": 14700.0,
+        "previous": 14700.0,
+        "shape_id": "1209421"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:527be45714db3e13d469abca6de4aa2aca1c6e5125232fbf46eac006b31bb50b:0",
+      "recommendation": null,
+      "record_locator": "data_row:4791",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4791",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209421",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 32700.0,
+        "previous": 32700.0,
+        "shape_id": "1209421"
+      },
+      "observed_evidence": {
+        "current": 32700.0,
+        "previous": 32700.0,
+        "shape_id": "1209421"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:344b266026e782681a79baa117729371c6899c53a7a0ce8f360ffb48eef39cc0:0",
+      "recommendation": null,
+      "record_locator": "data_row:4811",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4811",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1209431",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 21700.0,
+        "previous": 21700.0,
+        "shape_id": "1209431"
+      },
+      "observed_evidence": {
+        "current": 21700.0,
+        "previous": 21700.0,
+        "shape_id": "1209431"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:a81bfaabbbe8861adda84d0437bb5ca71de56143cd696b06c27995b3fda5c404:0",
+      "recommendation": null,
+      "record_locator": "data_row:4854",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4854",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1221732",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 6800.0,
+        "previous": 6800.0,
+        "shape_id": "1221732"
+      },
+      "observed_evidence": {
+        "current": 6800.0,
+        "previous": 6800.0,
+        "shape_id": "1221732"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:21de4b1378bb0e6247e482b794e24007c67dfd535d9b7c690957d04c535e29d8:0",
+      "recommendation": null,
+      "record_locator": "data_row:4923",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:4923",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    },
+    {
+      "authority": null,
+      "entity_id": "1079981",
+      "entity_type": "shape",
+      "field": null,
+      "file": "shapes.txt",
+      "observed": {
+        "current": 700.0,
+        "previous": 700.0,
+        "shape_id": "1079981"
+      },
+      "observed_evidence": {
+        "current": 700.0,
+        "previous": 700.0,
+        "shape_id": "1079981"
+      },
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-7f9823e69e794fce",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9"
+      },
+      "raw_finding_id": "finding-v1:baf697a8e39581b21a5f97f8a72b3c4131cf2b38d468a6ef8748e8dfaa8d1669:0",
+      "recommendation": null,
+      "record_locator": "data_row:622",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:622",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "shape_id",
+        "shape_pt_sequence",
+        "shape_dist_traveled"
+      ],
+      "source_file": "shapes.txt",
+      "source_sha256": "da9daa4f60d798fc45b3a71ef81926e447a1eaa6c061cddf96c34ea3388272f9",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#shapestxt",
+      "stage": "G07",
+      "technical_reason": "declared distance must increase as shape sequence increases",
+      "technical_status": "FAIL_TECHNICAL"
+    }
+  ]
+}
