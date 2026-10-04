@@ -18,7 +18,7 @@
 | Candidatas a falsa consolidación | 0 |
 | Cambios del engine / código específico de operador | NO / 0 |
 
-El resultado de generalización se acepta con limitaciones. `G04 REFERENCE-EXISTENCE` permanece en `GENERIC_CONSOLIDATION_ONLY`; su interpretación especializada no se implementa y queda como `BACKLOG_CANDIDATE`. `G07 EXACT_DUPLICATE_GEOMETRY` fue observado en HOLDOUT. En el caso 00017 se registraron 529 transiciones G07 iguales: 6 `EXACT_DUPLICATE_GEOMETRY` y 523 `QUANTIZATION_COMPATIBLE`.
+El resultado de generalización se acepta con limitaciones. `G04 REFERENCE-EXISTENCE` permanece en `GENERIC_CONSOLIDATION_ONLY`; su interpretación especializada no se implementa y queda como `BACKLOG_CANDIDATE`. `G07 EXACT_DUPLICATE_GEOMETRY` fue observado en HOLDOUT. En el dataset 017 (caso 00029) se registraron 529 transiciones G07 iguales: 6 `EXACT_DUPLICATE_GEOMETRY` y 523 `QUANTIZATION_COMPATIBLE`.
 
 ```ini
 FINAL_HUMAN_GENERALIZATION_DECISION = APPROVED
