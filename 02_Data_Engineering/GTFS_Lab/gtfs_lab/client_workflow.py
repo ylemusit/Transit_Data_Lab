@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import shutil
+import subprocess
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -15,6 +16,8 @@ from . import VERSION
 from .audit_comparison import ComparisonError, compare_audit_directories
 from .core import sha256_file
 from .ingestion import IngestionError
+from .interpretation.consolidation import build_result as build_interpretation
+from .interpretation.reporting import write_reports as write_interpretation_reports
 from .pipeline import run
 
 WORKFLOW_VERSION = "1.0.0"
@@ -40,6 +43,19 @@ def _sha256(path: Path) -> str:
 def _mapping_sha256(value: dict[str, str]) -> str:
     encoded = json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()
+
+
+def _tdl_ref() -> str:
+    """Identify the executing checkout when Git metadata is available."""
+    try:
+        root = Path(__file__).resolve().parent
+        head = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=root,
+                                       text=True, stderr=subprocess.DEVNULL).strip()
+        dirty = subprocess.check_output(["git", "status", "--porcelain"], cwd=root,
+                                        text=True, stderr=subprocess.DEVNULL).strip()
+        return head + ("+WORKTREE_DIRTY" if dirty else "")
+    except (OSError, subprocess.CalledProcessError):
+        return "UNKNOWN"
 
 
 def _redact_local_paths(value: Any) -> Any:
@@ -271,6 +287,23 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         engine_report = json.loads(engine_json_path.read_text(encoding="utf-8"))
         run_json["engine_report"] = engine_report
         findings = _finding_rows(run_json, result["dataset"]["source_sha256"])
+        interpretation_status: dict[str, Any]
+        interpretation_result = None
+        try:
+            interpretation_result = build_interpretation(
+                dataset_identity={"dataset_id": result["dataset"]["dataset_id"],
+                                  "sha256": result["dataset"]["source_sha256"]},
+                audit_execution_id=str(result["run_id"]), engine_version=VERSION,
+                findings=findings, zip_path=str(working_input), tdl_ref=_tdl_ref())
+            write_interpretation_reports(zones["AUDIT"], interpretation_result)
+            interpretation_status = {"status": "INTERPRETATION_COMPLETED",
+                                     "interpretation_status": interpretation_result["interpretation_status"],
+                                     "accounting_gap": interpretation_result["coverage"]["accounting_gap"]}
+        except Exception as exc:
+            # Preserve completed audit evidence when the derived layer fails.
+            interpretation_status = {"status": "INTERPRETATION_FAILED",
+                                     "error_type": type(exc).__name__, "message": str(exc)}
+        _write_json(zones["AUDIT"] / "audit_interpretation_status.json", interpretation_status)
 
         remediation = ({"decision": "HUMAN_REVIEW", "reason": "La selección de cambios depende de evidencia y autorización humana caso por caso; no se ejecutó remediación automática genérica."}
                       if findings else {"decision": "NOT_REMEDIABLE", "reason": "No hay findings que evaluar para remediación."})
@@ -316,6 +349,9 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
                     "reference_sha256": compliance_identity.get("reference_sha256")}},
             "compliance_version": compliance_identity.get("evaluator_version"),
             "remediation_version": "TDL_REMEDIATION_ENGINE_V1/1.0.0",
+            "audit_interpretation": {"status": interpretation_status["status"],
+                "contract_version": "1.0.0", "accounting_gap": interpretation_status.get("accounting_gap"),
+                "raw_findings_preserved": True},
             "remediation_decision": remediation["decision"],
             "known_gaps": engine_report.get("known_gaps", []),
             "deferred_capabilities": engine_report.get("deferred_features", []),
@@ -325,12 +361,21 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         shutil.copytree(engine_run_dir, delivery / "engine_run")
         (delivery / "report").mkdir()
         report_text = _client_report(manifest, run_json, findings, remediation, comparison)
+        report_text = report_text.replace("## 12. Alcance diferido", (
+            "## Interpretación derivada\n\n"
+            f"Estado: `{interpretation_status['status']}`; contrato: `1.0.0`. "
+            "El resultado de auditoría y su interpretación permanecen identificados por separado.\n\n"
+            "## 12. Alcance diferido"))
         (delivery / "report" / "client_report.md").write_text(report_text, encoding="utf-8")
         for name, path in (("dataset_identity.json", zones["AUDIT"] / "dataset_identity.json"),
                            ("findings.json", zones["AUDIT"] / "findings.json"),
+                           ("audit_interpretation_status.json", zones["AUDIT"] / "audit_interpretation_status.json"),
                            ("compliance.json", zones["AUDIT"] / "compliance.json"),
                            ("remediation.json", zones["AUDIT"] / "remediation.json")):
             shutil.copyfile(path, delivery / name)
+        if interpretation_result is not None:
+            shutil.copyfile(zones["AUDIT"] / "AUDIT_CONSOLIDATED.json", delivery / "AUDIT_CONSOLIDATED.json")
+            shutil.copyfile(zones["AUDIT"] / "AUDIT_CONSOLIDATED.md", delivery / "AUDIT_CONSOLIDATED.md")
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
         streamed_json = _sanitize_delivery(delivery)

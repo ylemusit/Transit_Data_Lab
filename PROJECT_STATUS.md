@@ -2,6 +2,47 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Audit Interpretation & Consolidation V1 — PASS; cierre humano aprobado
+
+**Estado vigente (2026-10-04):** Yeison aprobó el cierre técnico humano de I01–I08. La rama `feat/audit-interpretation-i02-i08` parte de `62224c13246bb0cda5cb4fc48b1409789abfcc1f`; esta aprobación no declara aceptación comercial, jurídica ni de mercado.
+
+```ini
+WORKSPACE_RECONCILIATION_R0 = CLOSED
+FINAL_HUMAN_CLOSURE_DECISION = APPROVED
+I01 = CLOSED
+I02 = CLOSED
+I03 = CLOSED
+I04 = CLOSED
+I05 = CLOSED
+I06 = CLOSED
+I07 = CLOSED
+I08 = PASS / CLOSED
+AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1 = PASS
+AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1_CLOSED = YES
+I01_SCHEMA_SHA256 = 9AE821BA963849D341F509A74956DEF76C5739BD8175150198EA6A5F99CA7BD4
+GENERIC_CONSOLIDATION = PASS
+DETERMINISTIC_FAMILY_ID = PASS; INJECTIVE_CANONICAL_BASE64URL
+RAW_CARDINALITY_PRESERVED = PASS; ACCOUNTING_GAP = 0
+GENERIC_IMPACT_GRAPH = PASS; DIRECT_VS_PROPAGATED = PASS
+G07_GEOMETRY_INTERPRETER = PASS; SYNTHETIC_BUCKETS = 6_OF_6
+JSON_MARKDOWN_REPORTING = PASS; I01_SCHEMA_UNCHANGED = YES
+CLIENT_WORKFLOW_AND_TEST_BANK = PASS; INTERPRETATION_REPLAY = PASS
+TESTS = 280
+PASS = 279
+FAIL = 0
+SKIP = 1 DOCUMENTED
+WINDOWS_SELF_SERVICE_CLIENT_V1 = DEFERRED
+HOLDOUT_ACCESSED = NO
+DEVELOPMENT_CORPUS_EXECUTED = NO
+COMMERCIAL_VALIDATION = NOT_ESTABLISHED
+MARKET_VALIDATION = NOT_ESTABLISHED
+LEGAL_COMPLIANCE = NOT_CLAIMED
+FULL_GTFS_COVERAGE = NOT_CLAIMED
+OPERATOR_SPECIFIC_CODE = 0
+```
+
+Implementación, resultados, límites y registro de esta decisión: [revisión de cierre](reports/TDL_AUDIT_INTERPRETATION_CONSOLIDATION_V1_I08_CLOSURE_REVIEW.md). El contrato I01 y su fixture históricos se conservan sin cambios. El intérprete especializado es genérico para G07; el resto de reglas se agrupa sin inventar semántica específica. Se preservan los 279 PASS, 0 FAIL y el único SKIP documentado (prueba que requiere la base Compliance V1 protegida). No se accedió a HOLDOUT ni se ejecutó el corpus DEVELOPMENT de 14 datasets. La validación comercial y de mercado no está establecida; no se reclama cumplimiento legal ni cobertura GTFS completa.
+
 ## Real Dataset Test Bank V1 — CLOSED; cierre humano aprobado
 
 Capa genérica aditiva sobre Client Audit Workflow V1: captura de identidad, Case IDs no reutilizables, workspace corto configurable, SOURCE inmutable por hash, preflight, auditoría, replay, entrega y clasificación procedural. OK significa procedimiento completo, incluso con findings; NOT_OK significa contrato incompleto. El expediente real EMT Palma permanece LOCAL / CONTROLLED, intacto y fuera de Git. Solo se publica capacidad genérica y evidencia sintética.

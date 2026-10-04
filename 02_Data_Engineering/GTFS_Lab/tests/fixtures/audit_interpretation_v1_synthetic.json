@@ -1,0 +1,54 @@
+{
+  "contract_version": "1.0.0",
+  "interpretation_status": "COMPLETE",
+  "dataset_identity": {"dataset_id": "synthetic-shapes-small", "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"},
+  "execution_identity": {"audit_execution_id": "synthetic-run-001", "engine_version": "synthetic-engine-1", "interpretation_version": "1.0.0"},
+  "source_findings": [
+    {"raw_finding_id": "raw-001", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-A", "row_reference": 2, "observed_values": {"distance": 100.0, "next_distance": 100.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-002", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-A", "row_reference": 3, "observed_values": {"distance": 100.0, "next_distance": 100.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-003", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-B", "row_reference": 2, "observed_values": {"distance": 220.0, "next_distance": 220.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-004", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-B", "row_reference": 3, "observed_values": {"distance": 220.0, "next_distance": 220.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-005", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-C", "row_reference": 2, "observed_values": {"distance": 310.0, "next_distance": 310.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-006", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-C", "row_reference": 3, "observed_values": {"distance": 310.0, "next_distance": 310.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-007", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-D", "row_reference": 2, "observed_values": {"distance": 400.0, "next_distance": 400.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-008", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-D", "row_reference": 3, "observed_values": {"distance": 400.0, "next_distance": 400.0, "coordinates_changed": true}},
+    {"raw_finding_id": "raw-009", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-E", "row_reference": 2, "observed_values": {"distance": 500.0, "next_distance": 500.0, "coordinates_changed": false}},
+    {"raw_finding_id": "raw-010", "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING", "entity_type": "shape", "entity_id": "shape-E", "row_reference": 3, "observed_values": {"distance": 500.0, "next_distance": 500.0, "coordinates_changed": false}}
+  ],
+  "finding_families": [
+    {
+      "family_id": "GTFS-G07-DISTANCE-PROGRESSION|QUANTIZATION_COMPATIBLE|shape",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING",
+      "raw_occurrence_count": 8, "affected_entity_type": "shape", "affected_entity_count": 4,
+      "population": {"population_type": "shape", "population_count": 12}, "affected_percentage": 33.3333333333,
+      "observations": [{"kind": "OBSERVED", "statement": "Ocho findings contienen distancia consecutiva igual con coordenadas cambiadas."}],
+      "calculations": [{"kind": "CALCULATED", "statement": "4 shapes afectados de 12; 8 / 10 ocurrencias totales en ambas familias."}],
+      "inferences": [{"kind": "INFERRED", "statement": "El patrón es compatible con cuantización; no demuestra su causa."}],
+      "patterns": [{"pattern_id": "QUANTIZATION_COMPATIBLE", "status": "COMPATIBLE_PATTERN", "occurrence_count": 8, "classification": "QUANTIZATION_COMPATIBLE"}],
+      "unclassified_occurrences": 0,
+      "operational_impact": {"direct_affected": {"entity_type": "shape", "entity_count": 4}, "propagated_usage": [{"entity_type": "trip", "entity_count": 15}, {"entity_type": "route", "entity_count": 3}]},
+      "probable_explanations": [{"kind": "INFERRED", "statement": "Cuantización es una explicación probable, pendiente de evaluación especializada."}],
+      "confidence_basis": null, "remediation_assessment": "HUMAN_REVIEW",
+      "evidence_refs": [{"raw_finding_ids": ["raw-001", "raw-002", "raw-003", "raw-004", "raw-005", "raw-006", "raw-007", "raw-008"], "source_file": "shapes.txt", "row_entity_refs": {"shape_ids": ["shape-A", "shape-B", "shape-C", "shape-D"]}, "dataset_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "audit_execution_id": "synthetic-run-001"}],
+      "limitations": ["Propagación sintética; no representa un feed ni operador real."]
+    },
+    {
+      "family_id": "GTFS-G07-DISTANCE-PROGRESSION|EXACT_DUPLICATE_GEOMETRY|shape",
+      "rule_id": "GTFS-G07-DISTANCE-PROGRESSION", "stage": "G07", "source_file": "shapes.txt", "technical_status": "FINDING",
+      "raw_occurrence_count": 2, "affected_entity_type": "shape", "affected_entity_count": 1,
+      "population": {"population_type": "shape", "population_count": 12}, "affected_percentage": 8.3333333333,
+      "observations": [{"kind": "OBSERVED", "statement": "Dos findings tienen coordenadas y distancia iguales en puntos consecutivos."}],
+      "calculations": [{"kind": "CALCULATED", "statement": "1 shape afectado de 12 shapes sintéticos."}],
+      "inferences": [],
+      "patterns": [{"pattern_id": "EXACT_DUPLICATE_GEOMETRY", "status": "CONFIRMED_PATTERN", "occurrence_count": 2, "classification": "EXACT_DUPLICATE_GEOMETRY"}],
+      "unclassified_occurrences": 0,
+      "operational_impact": {"direct_affected": {"entity_type": "shape", "entity_count": 1}, "propagated_usage": [{"entity_type": "trip", "entity_count": 2}, {"entity_type": "route", "entity_count": 1}]},
+      "probable_explanations": [], "confidence_basis": null, "remediation_assessment": "HUMAN_REVIEW",
+      "evidence_refs": [{"raw_finding_ids": ["raw-009", "raw-010"], "source_file": "shapes.txt", "row_entity_refs": {"shape_ids": ["shape-E"]}, "dataset_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "audit_execution_id": "synthetic-run-001"}],
+      "limitations": ["Propagación sintética; no representa un feed ni operador real."]
+    }
+  ],
+  "coverage": {"raw_finding_count": 10, "consolidated_occurrence_count": 10, "unclassified_occurrence_count": 0, "accounting_gap": 0},
+  "limitations": ["Ejemplo sintético de contrato; no implementa analizador ni atribuye causa real."],
+  "provenance": {"schema_version": "1.0.0", "deterministic_family_id_basis": "rule_id|pattern_id|affected_entity_type", "raw_findings_immutable": true}
+}

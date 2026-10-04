@@ -47,6 +47,12 @@ class TestBankTests(unittest.TestCase):
         (delivery / "engine_run" / "run.json").write_text(json.dumps(run), encoding="utf-8")
         (delivery / "report" / "client_report.md").write_text("Informe", encoding="utf-8")
         (delivery / "findings.json").write_text('{"findings": ["finding"]}', encoding="utf-8")
+        (delivery / "audit_interpretation_status.json").write_text('{"status":"INTERPRETATION_COMPLETED"}', encoding="utf-8")
+        interpretation = {"contract_version": "1.0.0", "dataset_identity": {"dataset_id": "synthetic", "sha256": sha256_file(source)},
+                          "finding_families": [], "coverage": {"raw_finding_count": 0, "consolidated_occurrence_count": 0,
+                          "unclassified_occurrence_count": 0, "accounting_gap": 0}}
+        (delivery / "AUDIT_CONSOLIDATED.json").write_text(json.dumps(interpretation), encoding="utf-8")
+        (delivery / "AUDIT_CONSOLIDATED.md").write_text("# Audit Interpretation", encoding="utf-8")
         artifacts = {path.relative_to(delivery).as_posix(): {"sha256": sha256_file(path), "size_bytes": path.stat().st_size}
                      for path in delivery.rglob("*") if path.is_file()}
         manifest = {"status": "COMPLETED_WITH_FINDINGS", "artifacts_sha256_verified": True,
@@ -68,6 +74,8 @@ class TestBankTests(unittest.TestCase):
         original = self.source.read_bytes()
         record = self.execute(metadata={"dataset_title": "Autobús sintético", "retrieved_time": "2026-10-02T13:32:43Z"})
         self.assertEqual(record["result"], "OK")
+        self.assertTrue(record["gates"]["INTERPRETATION_COMPLETED"])
+        self.assertTrue(record["gates"]["INTERPRETATION_REPLAY"])
         self.assertEqual(record["findings"], 1)
         case = self.bank / "OK" / "00001_OK"
         identity = json.loads((case / "EVIDENCE" / "original_identity.json").read_text(encoding="utf-8"))

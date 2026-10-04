@@ -95,10 +95,44 @@ class ClientWorkflowTests(unittest.TestCase):
             delivery = Path(result["delivery_directory"])
             self.assertTrue((delivery / "audit_manifest.json").is_file())
             self.assertTrue((delivery / "report" / "client_report.md").is_file())
+            interpretation = json.loads((delivery / "AUDIT_CONSOLIDATED.json").read_text(encoding="utf-8"))
+            self.assertEqual(interpretation["coverage"]["accounting_gap"], 0)
+            self.assertIn("tdl_ref=", interpretation["provenance"]["deterministic_family_id_basis"])
+            self.assertEqual(json.loads((delivery / "audit_interpretation_status.json").read_text(encoding="utf-8"))["status"], "INTERPRETATION_COMPLETED")
+            self.assertIn("AUDIT_CONSOLIDATED.json", json.loads((delivery / "audit_manifest.json").read_text(encoding="utf-8"))["delivery_artifacts"])
+            self.assertIn("- TDL ref:", (delivery / "AUDIT_CONSOLIDATED.md").read_text(encoding="utf-8"))
             self.assertIn("[LOCAL_PATH_REDACTED]", (delivery / "engine_run" / "path.txt").read_text(encoding="utf-8"))
             contract = json.loads((Path(__file__).parents[1] / "spec" / "client_audit_contract_v1.schema.json").read_text(encoding="utf-8"))
             identity = json.loads((delivery / "dataset_identity.json").read_text(encoding="utf-8"))
             self.assertEqual(set(identity) - set(contract["properties"]), set())
+
+    def test_interpretation_failure_preserves_completed_audit(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "synthetic.zip"
+            with zipfile.ZipFile(source, "w") as archive:
+                archive.writestr("agency.txt", "agency_name\nSynthetic\n")
+
+            def fake_run(path, output, *_args):
+                run_dir = output / "RUN-SYNTHETIC"
+                run_dir.mkdir(parents=True)
+                digest = hashlib.sha256(path.read_bytes()).hexdigest()
+                run_value = {"run_id": "RUN-SYNTHETIC", "dataset": {"dataset_id": "synthetic", "source_sha256": digest},
+                    "summary": {"validation": "PASS", "compliance_v1": "PASS"},
+                    "validation": {"findings": [], "rules": []}, "compliance_v1": {"findings": []},
+                    "engine_report": {"technical_evaluation": {"findings": []}, "recommendation_findings": [], "known_gaps": [], "deferred_features": []}}
+                (run_dir / "engine_report.json").write_text(json.dumps(run_value["engine_report"]), encoding="utf-8")
+                return run_value
+
+            with patch("gtfs_lab.client_workflow.run", side_effect=fake_run), \
+                 patch("gtfs_lab.client_workflow.build_interpretation", side_effect=RuntimeError("synthetic interpreter error")):
+                result = run_client_audit(source, root / "workspace", client_project_id="client-a", audit_id="audit-fail",
+                                          source_provenance="SYNTHETIC")
+            delivery = Path(result["delivery_directory"])
+            self.assertTrue(result["status"].startswith("COMPLETED"))
+            self.assertEqual(json.loads((delivery / "audit_interpretation_status.json").read_text())["status"], "INTERPRETATION_FAILED")
+            self.assertTrue((delivery / "findings.json").is_file())
+            self.assertFalse((delivery / "AUDIT_CONSOLIDATED.json").exists())
 
     def test_rejects_path_navigation_in_client_identifier(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

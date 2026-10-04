@@ -22,6 +22,7 @@ from typing import Any
 
 from .client_workflow import _redact_local_paths, _redact_path_text, run_client_audit
 from .core import sha256_file
+from .interpretation.consolidation import semantic_fingerprint
 
 BANK_VERSION = "1.0.0"
 DEFAULT_TEST_BANK_ROOT = Path("C:/TDL/BANK")
@@ -36,8 +37,8 @@ def _tdl_revision() -> str:
 CATEGORIES = set("INPUT FILESYSTEM WINDOWS ZIP CSV ENCODING DUCKDB GTFS_ENGINE COMPLIANCE REPORTING DELIVERY REPLAY PERFORMANCE UX UNKNOWN".split())
 FAILURE_STATUSES = {"OPEN", "UNDER_INVESTIGATION", "RESOLVED", "ACCEPTED_LIMITATION", "NOT_REPRODUCIBLE"}
 GATES = ("SOURCE_CAPTURED", "SOURCE_HASHED", "SOURCE_IMMUTABLE", "PREFLIGHT_COMPLETED",
-         "AUDIT_COMPLETED", "FINDINGS_GENERATED", "REPORT_GENERATED", "DELIVERY_GENERATED",
-         "REPLAY_COMPLETED", "EVIDENCE_COMPLETE", "NO_UNRESOLVED_PIPELINE_FAILURE")
+         "AUDIT_COMPLETED", "FINDINGS_GENERATED", "INTERPRETATION_COMPLETED", "REPORT_GENERATED", "DELIVERY_GENERATED",
+         "REPLAY_COMPLETED", "INTERPRETATION_REPLAY", "EVIDENCE_COMPLETE", "NO_UNRESOLVED_PIPELINE_FAILURE")
 
 
 class PipelineFailure(ValueError):
@@ -170,6 +171,11 @@ def _verify_workflow(delivery: Path, digest: str) -> tuple[dict[str, Any], Path]
         raise ValueError("Entrega no verificada por el workflow")
     if not manifest.get("status", "").startswith("COMPLETED"):
         raise ValueError("Workflow incompleto")
+    interpretation_status = _read(delivery / "audit_interpretation_status.json")
+    if interpretation_status.get("status") != "INTERPRETATION_COMPLETED":
+        raise ValueError("Interpretación ausente o fallida")
+    if not (delivery / "AUDIT_CONSOLIDATED.json").is_file() or not (delivery / "AUDIT_CONSOLIDATED.md").is_file():
+        raise ValueError("Faltan informes de interpretación")
     if manifest["dataset_identity"]["source_sha256"] != digest:
         raise ValueError("Identidad de fuente incorrecta")
     artifacts = manifest["delivery_artifacts"]
@@ -312,19 +318,26 @@ def run_case(source: Path, bank: Path, *, metadata: dict[str, Any] | None = None
                 if attempt == "a":
                     gates["AUDIT_COMPLETED"] = True
                     gates["FINDINGS_GENERATED"] = (workflow / "findings.json").is_file()
+                    gates["INTERPRETATION_COMPLETED"] = (workflow / "audit_interpretation_status.json").is_file()
                     gates["REPORT_GENERATED"] = (workflow / "report" / "client_report.md").is_file()
                     record.update(audit_status=manifest["status"], findings=result["findings_count"])
                     initial_workflow = workflow
             phase, category = "REPLAY", "REPLAY"
             hashes = [sha256_file(path / "engine_report.json") for path in engine_dirs]
-            replay_pass = hashes[0] == hashes[1] and outcomes[0]["findings_count"] == outcomes[1]["findings_count"]
+            interpretation_paths = [Path(outcome["delivery_directory"]) / "AUDIT_CONSOLIDATED.json" for outcome in outcomes]
+            interpretation_results = [_read(path) for path in interpretation_paths]
+            interpretation_fingerprints = [semantic_fingerprint(item) for item in interpretation_results]
+            replay_pass = (hashes[0] == hashes[1] and outcomes[0]["findings_count"] == outcomes[1]["findings_count"]
+                           and interpretation_fingerprints[0] == interpretation_fingerprints[1])
             _write(case / "EVIDENCE" / "replay.json", {"status": "PASS" if replay_pass else "FAIL",
                    "source_sha256": identity["sha256"], "engine_report_sha256": hashes,
-                   "scope": "SAME_SOURCE_ENGINE_REPORT_BYTES_AND_FINDINGS_COUNT; NOT_RUNTIME_ARTIFACT_BYTE_EQUALITY"})
+                   "interpretation_semantic_fingerprint": interpretation_fingerprints,
+                   "scope": "SAME_SOURCE_ENGINE_REPORT_BYTES_FINDINGS_COUNT_AND_INTERPRETATION_SEMANTICS; EXECUTION_PROVENANCE_IDS_EXCLUDED"})
             record["replay"] = "PASS" if replay_pass else "FAIL"
             if not replay_pass:
                 raise ValueError("Replay no reproducible")
             gates["REPLAY_COMPLETED"] = True
+            gates["INTERPRETATION_REPLAY"] = interpretation_fingerprints[0] == interpretation_fingerprints[1]
             record["replay"] = "PASS"
             phase, category = "DELIVERY", "DELIVERY"
             _delivery(case, identity, initial_workflow, case_id)
