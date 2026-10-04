@@ -1,0 +1,13 @@
+{
+  "engine_report_sha256": [
+    "d5446488499e9ba6bf1538b3a71a0c5104edb26417a220d6df80a98c4d883102",
+    "d5446488499e9ba6bf1538b3a71a0c5104edb26417a220d6df80a98c4d883102"
+  ],
+  "interpretation_semantic_fingerprint": [
+    "3faf6daba86ebeacd0fcc4839e5639e392ff48498921aafa82b2fa46f6955546",
+    "3faf6daba86ebeacd0fcc4839e5639e392ff48498921aafa82b2fa46f6955546"
+  ],
+  "scope": "SAME_SOURCE_ENGINE_REPORT_BYTES_FINDINGS_COUNT_AND_INTERPRETATION_SEMANTICS; EXECUTION_PROVENANCE_IDS_EXCLUDED",
+  "source_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+  "status": "PASS"
+}

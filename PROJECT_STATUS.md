@@ -2,6 +2,18 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Audit Interpretation & Consolidation V1 — VALIDATED WITH DOCUMENTED LIMITATIONS
+
+**Estado (2026-10-04):** Yeison aprobó el resultado técnico de generalización de HOLDOUT. `FINAL_HUMAN_GENERALIZATION_DECISION = APPROVED`; `GENERALIZATION_RESULT = GENERALIZATION_PASS_WITH_LIMITATIONS`; `AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1 = VALIDATED_WITH_DOCUMENTED_LIMITATIONS`. `INTERPRETATION_HARDENING_V2 = NOT_REQUIRED_NOW`; G04 specialized interpretation queda como `BACKLOG_CANDIDATE`.
+
+La validación completó 6/6 datasets (casos 00025–00030): 5 interpretados, 1 parcialmente interpretado, 0 no soportados y 0 fallos de pipeline. Se registraron 530 findings raw y 3 familias consolidadas; accounting gaps = 0; replay = 6 PASS / 0 FAIL; falsas consolidaciones candidatas = 0. ENGINE_CHANGED = NO; código específico de operador = 0. G04 REFERENCE-EXISTENCE continúa en consolidación genérica. G07 EXACT_DUPLICATE_GEOMETRY se observó en HOLDOUT. En el dataset 017 (caso 00029), los 529 tránsitos G07 iguales se desglosaron en 6 geometrías duplicadas exactas y 523 compatibles con cuantización.
+
+El historial de protocolo se conserva sin reescribir la declaración anterior al freeze: `HOLDOUT_METADATA_PRE_FREEZE_EXPOSURE = YES`; `HOLDOUT_CONTENT_PRE_FREEZE_EXPOSURE = NO`; `HOLDOUT_CONTENT_ACCESSED_AFTER_FREEZE = YES`; `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Los ficheros funcionales versionados no cambiaron durante HOLDOUT: freeze merge `3fba5cbabee000267a511c65b9bc8d90a78b8880`; base funcional `9cafe0703abf47e80f67f80a6b423c938e1979aa`.
+
+La regresión final registró 280 tests, 279 PASS, 0 FAIL y 1 SKIP documentado; `git diff --check = PASS`. Se preservan estas limitaciones: G04 especializado no implementado; un dataset HOLDOUT parcialmente interpretado; tres datasets DEVELOPMENT parcialmente interpretados; optimización de memoria para feeds grandes pendiente; sin claims de preparación comercial, validación de mercado, cumplimiento legal o cobertura GTFS completa. No se inicia V2 ni Windows Self-Service Client V1.
+
+Resultados y protocolo: [informe HOLDOUT](reports/TDL_AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND_20261004.md), [resumen JSON](reports/evidence/audit_interpretation_v1/holdout_content_blind_summary.json) y [manifiesto de evidencia por caso](reports/evidence/audit_interpretation_v1/holdout_content_blind_manifest.json). Los seis paquetes publicables están preservados con artefactos de entrega generados y replay, sin registros que expongan `original_filename` ni fuentes raw. La reconciliación por caso reproduce 530 findings, 3 familias, 6/6 replay PASS y cero gaps; el caso 00026 es el único parcialmente interpretado por G04 en consolidación genérica.
+
 ## Audit Interpretation & Consolidation V1 — FROZEN WITH DOCUMENTED LIMITATIONS
 
 **Estado (2026-10-04):** Yeison aprobó el freeze después de la campaña DEVELOPMENT. `DEVELOPMENT_CORPUS_CAMPAIGN = PASS_WITH_PROTOCOL_DEVIATION`; `INTERPRETATION_V1_FREEZE_DECISION = APPROVED`; `AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1 = FROZEN_WITH_DOCUMENTED_LIMITATIONS`. La implementación queda fijada en `ENGINE_FREEZE_BASE = 9cafe0703abf47e80f67f80a6b423c938e1979aa`; este SHA no incluye la documentación de freeze.

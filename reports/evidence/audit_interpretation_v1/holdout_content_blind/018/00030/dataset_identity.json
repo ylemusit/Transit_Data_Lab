@@ -1,0 +1,13 @@
+{
+  "audit_id": "00030",
+  "audit_mode": "INITIAL",
+  "client_project_id": "T",
+  "dataset_id": "GTFS-70b770f7c5bb945d",
+  "ingestion_timestamp_utc": "2026-10-04T04:36:51Z",
+  "optional_client_metadata": {},
+  "source_filename": "00030.zip",
+  "source_provenance": "CLIENT_PROVIDED",
+  "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+  "source_size_bytes": 2959893,
+  "workflow_version": "1.0.0"
+}

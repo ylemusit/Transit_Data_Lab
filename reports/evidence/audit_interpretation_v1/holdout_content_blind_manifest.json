@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0.0",
+  "campaign": "AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND",
+  "campaign_date": "2026-10-04",
+  "engine_freeze_base": "9cafe0703abf47e80f67f80a6b423c938e1979aa",
+  "freeze_publication_merge": "3fba5cbabee000267a511c65b9bc8d90a78b8880",
+  "engine_changed_during_holdout": false,
+  "source_evidence": "Existing generated Test Bank delivery artifacts; original case records containing original_filename were excluded.",
+  "test_bank_record_equivalent": "dataset_identity.json + audit_interpretation_status.json + replay.json (copied unchanged); final OK status is established by the preserved OK case location.",
+  "mapping": {
+    "006": "00025",
+    "008": "00026",
+    "013": "00027",
+    "015": "00028",
+    "017": "00029",
+    "018": "00030"
+  },
+  "cases": [
+    {
+      "dataset_id": "006",
+      "case_id": "00025",
+      "test_bank_final_status": "OK",
+      "source_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "replay_result": "PASS",
+      "classification": "INTERPRETED",
+      "raw_finding_count": 0,
+      "consolidated_family_count": 0,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": null,
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "f32216bea7967622cecc1b0bb7f50e9e997b9e1298ba037ddbcf5c946aae0fee",
+          "publication_copy_sha256": "f32216bea7967622cecc1b0bb7f50e9e997b9e1298ba037ddbcf5c946aae0fee"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "34f9dcf5894a26b1f11a19da3bdbebf2819dd1ef3985e30fddedf418d32226ba",
+          "publication_copy_sha256": "34f9dcf5894a26b1f11a19da3bdbebf2819dd1ef3985e30fddedf418d32226ba"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "8b4a942a20b5daf4d805d11534679025eefb4101677a4255297413f740d14bd2",
+          "publication_copy_sha256": "8b4a942a20b5daf4d805d11534679025eefb4101677a4255297413f740d14bd2"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "e03e25327f0b2536597353af4ed289040dd2f7c4beaab4971dcc28e886c92041",
+          "publication_copy_sha256": "e03e25327f0b2536597353af4ed289040dd2f7c4beaab4971dcc28e886c92041"
+        }
+      ]
+    },
+    {
+      "dataset_id": "008",
+      "case_id": "00026",
+      "test_bank_final_status": "OK",
+      "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "audit_result": "COMPLETED_WITH_FINDINGS",
+      "replay_result": "PASS",
+      "classification": "PARTIALLY_INTERPRETED",
+      "raw_finding_count": 1,
+      "consolidated_family_count": 1,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": "GTFS-G04-REFERENCE-EXISTENCE remains GENERIC_ONLY; its specialized interpretation is not implemented.",
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "266fd2a11f7de1eed6a05f256f438f1166a71c4a8ccf7eefe1b5b553bd631e7e",
+          "publication_copy_sha256": "266fd2a11f7de1eed6a05f256f438f1166a71c4a8ccf7eefe1b5b553bd631e7e"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "1b7613ce0b9a3d5e36202a9a8d6bce6d58054d45ee3d974bee6d88f731214f12",
+          "publication_copy_sha256": "1b7613ce0b9a3d5e36202a9a8d6bce6d58054d45ee3d974bee6d88f731214f12"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "7b0ab737b410d09e3bacfd6f741f0fe635907850338c6c84848357feb881d18d",
+          "publication_copy_sha256": "7b0ab737b410d09e3bacfd6f741f0fe635907850338c6c84848357feb881d18d"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "03f3489b1295e7b1fa42a8fdafaba4d081873b93635a864d678a68eabd40c493",
+          "publication_copy_sha256": "03f3489b1295e7b1fa42a8fdafaba4d081873b93635a864d678a68eabd40c493"
+        }
+      ]
+    },
+    {
+      "dataset_id": "013",
+      "case_id": "00027",
+      "test_bank_final_status": "OK",
+      "source_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "replay_result": "PASS",
+      "classification": "INTERPRETED",
+      "raw_finding_count": 0,
+      "consolidated_family_count": 0,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": null,
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "d69ddf214dce0e92a6196779813f9d7fe93b6c0e5e23296cd7db4350bbdcf900",
+          "publication_copy_sha256": "d69ddf214dce0e92a6196779813f9d7fe93b6c0e5e23296cd7db4350bbdcf900"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "71a34f78be1e2236beca26b1d29c70d596a18f635f24ed3d1ccdf1989d18ec05",
+          "publication_copy_sha256": "71a34f78be1e2236beca26b1d29c70d596a18f635f24ed3d1ccdf1989d18ec05"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "eb9a877b6b1f629ca2b1544130e59ce972171f71d1a8596de6725ed4e2e7631d",
+          "publication_copy_sha256": "eb9a877b6b1f629ca2b1544130e59ce972171f71d1a8596de6725ed4e2e7631d"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "9a0db01bb10acf08e9f9b7fdfaa8f58d9bd40d4f06a0d7a4243d8ccf6ce345a3",
+          "publication_copy_sha256": "9a0db01bb10acf08e9f9b7fdfaa8f58d9bd40d4f06a0d7a4243d8ccf6ce345a3"
+        }
+      ]
+    },
+    {
+      "dataset_id": "015",
+      "case_id": "00028",
+      "test_bank_final_status": "OK",
+      "source_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "replay_result": "PASS",
+      "classification": "INTERPRETED",
+      "raw_finding_count": 0,
+      "consolidated_family_count": 0,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": null,
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "83e64ed2dc465224f1cea78dc728afb59b9d52cc748b96875f637c294a033f09",
+          "publication_copy_sha256": "83e64ed2dc465224f1cea78dc728afb59b9d52cc748b96875f637c294a033f09"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "48c0b31041c8590bf6263c542eb9e7615dc872a0be27bbbd05750df5a1698066",
+          "publication_copy_sha256": "48c0b31041c8590bf6263c542eb9e7615dc872a0be27bbbd05750df5a1698066"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "878e67ef83d0d7fbea06ff945e8e29b6648406b2af524a7d6613ef00ce24b4ba",
+          "publication_copy_sha256": "878e67ef83d0d7fbea06ff945e8e29b6648406b2af524a7d6613ef00ce24b4ba"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "a4d76718b8d64989b484660f49314dd53c169f5ca6d72cc39249078f4087569a",
+          "publication_copy_sha256": "a4d76718b8d64989b484660f49314dd53c169f5ca6d72cc39249078f4087569a"
+        }
+      ]
+    },
+    {
+      "dataset_id": "017",
+      "case_id": "00029",
+      "test_bank_final_status": "OK",
+      "source_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "audit_result": "COMPLETED_WITH_FINDINGS",
+      "replay_result": "PASS",
+      "classification": "INTERPRETED",
+      "raw_finding_count": 529,
+      "consolidated_family_count": 2,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": null,
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "6a2b578aa602a9b7d2e3d23b86932781db154fe223436a76fc33dfd2d2c553d2",
+          "publication_copy_sha256": "6a2b578aa602a9b7d2e3d23b86932781db154fe223436a76fc33dfd2d2c553d2"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "b5d72e639fd837d69481c59ec8eb078fdff6f4cecc5370a5954cf7d785870ebb",
+          "publication_copy_sha256": "b5d72e639fd837d69481c59ec8eb078fdff6f4cecc5370a5954cf7d785870ebb"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "6a8cba490d075848f2951864be9d9f15db586e5aa4b73450e4b1528bed080305",
+          "publication_copy_sha256": "6a8cba490d075848f2951864be9d9f15db586e5aa4b73450e4b1528bed080305"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "c17d43efb5ff458c8d17a172c23676cf9181eea11736e8163acb268bebf21b11",
+          "publication_copy_sha256": "c17d43efb5ff458c8d17a172c23676cf9181eea11736e8163acb268bebf21b11"
+        }
+      ]
+    },
+    {
+      "dataset_id": "018",
+      "case_id": "00030",
+      "test_bank_final_status": "OK",
+      "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "replay_result": "PASS",
+      "classification": "INTERPRETED",
+      "raw_finding_count": 0,
+      "consolidated_family_count": 0,
+      "accounting_gap": 0,
+      "interpretation_status": "COMPLETE",
+      "limitation_reason": null,
+      "evidence_files": [
+        {
+          "artifact": "AUDIT_CONSOLIDATED.json",
+          "source_artifact_sha256": "b82f1052894b069a114ef5165ec0eaf56cdd246e9ff3ef93f67cfc8f94b36e89",
+          "publication_copy_sha256": "b82f1052894b069a114ef5165ec0eaf56cdd246e9ff3ef93f67cfc8f94b36e89"
+        },
+        {
+          "artifact": "AUDIT_CONSOLIDATED.md",
+          "source_artifact_sha256": "c5e7c4ee67ace0166db173407b5965161fa061e8faf388d68c550b141774fece",
+          "publication_copy_sha256": "c5e7c4ee67ace0166db173407b5965161fa061e8faf388d68c550b141774fece"
+        },
+        {
+          "artifact": "dataset_identity.json",
+          "source_artifact_sha256": "96045f3ef466d1724ff33861cb4e8bee5c945abbad6285da12e76d18a97c7229",
+          "publication_copy_sha256": "96045f3ef466d1724ff33861cb4e8bee5c945abbad6285da12e76d18a97c7229"
+        },
+        {
+          "artifact": "audit_interpretation_status.json",
+          "source_artifact_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0",
+          "publication_copy_sha256": "43af45dc12063a677256fad4cfcede065a6642bc9ffd9be4c4a498f3af7404e0"
+        },
+        {
+          "artifact": "replay.json",
+          "source_artifact_sha256": "b2703af770b0dc242e464e3dcc1fd5e57507df7c7d8768eeab41052022c91c1a",
+          "publication_copy_sha256": "b2703af770b0dc242e464e3dcc1fd5e57507df7c7d8768eeab41052022c91c1a"
+        }
+      ]
+    }
+  ],
+  "aggregate_reconciliation": {
+    "datasets": 6,
+    "completed": 6,
+    "interpreted": 5,
+    "partially_interpreted": 1,
+    "unsupported": 0,
+    "pipeline_failure": 0,
+    "raw_findings": 530,
+    "consolidated_families": 3,
+    "accounting_gaps": 0,
+    "replay_pass": 6,
+    "replay_fail": 0
+  },
+  "case_00029_g07": {
+    "equal_transitions": 529,
+    "EXACT_DUPLICATE_GEOMETRY": 6,
+    "QUANTIZATION_COMPATIBLE": 523
+  },
+  "publication_safety": {
+    "raw_operator_sources_published": false,
+    "raw_operator_source_artifacts_examined": false,
+    "absolute_private_paths_in_published_artifacts": false,
+    "unsafe_original_filename_records_published": false
+  },
+  "byte_integrity": "PASS; each source SHA-256 equals publication copy SHA-256"
+}

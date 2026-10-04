@@ -1,0 +1,131 @@
+{
+  "contract_version": "1.0.0",
+  "coverage": {
+    "accounting_gap": 0,
+    "consolidated_occurrence_count": 1,
+    "raw_finding_count": 1,
+    "unclassified_occurrence_count": 0
+  },
+  "dataset_identity": {
+    "dataset_id": "GTFS-50d7dacbe5a384a5",
+    "sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049"
+  },
+  "execution_identity": {
+    "audit_execution_id": "GTFSRUN-aa3d82a280f2468a",
+    "engine_version": "1.0.0-dev",
+    "interpretation_version": "1.0.0"
+  },
+  "finding_families": [
+    {
+      "affected_entity_count": 1,
+      "affected_entity_type": "feed",
+      "affected_percentage": null,
+      "calculations": [
+        {
+          "kind": "CALCULATED",
+          "statement": "1 entidades directas únicas."
+        }
+      ],
+      "confidence_basis": null,
+      "evidence_refs": [
+        {
+          "audit_execution_id": "GTFSRUN-aa3d82a280f2468a",
+          "dataset_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+          "raw_finding_ids": [
+            "finding-v1:2b3697c700a9492cacaad07ddfae3e807eaed2741af3ade313243929da2002c9:0"
+          ],
+          "row_entity_refs": {
+            "entity_ids": [
+              "data_row:33"
+            ]
+          },
+          "source_file": "stops.txt"
+        }
+      ],
+      "family_id": "family-v1:eyJhZmZlY3RlZF9lbnRpdHlfdHlwZSI6ImZlZWQiLCJwYXR0ZXJuX2lkIjoiVEVDSE5JQ0FMX0ZJTkRJTkciLCJydWxlX2lkIjoiR1RGUy1HMDQtUkVGRVJFTkNFLUVYSVNURU5DRSIsInNvdXJjZV9maWxlIjoic3RvcHMudHh0Iiwic3RhZ2UiOiJHMDQiLCJ0ZWNobmljYWxfc3RhdHVzIjoiRkFJTF9URUNITklDQUwifQ",
+      "inferences": [],
+      "limitations": [],
+      "observations": [
+        {
+          "kind": "OBSERVED",
+          "statement": "1 findings de origen en el grupo técnico."
+        }
+      ],
+      "operational_impact": {
+        "direct_affected": {
+          "entity_count": 1,
+          "entity_type": "feed"
+        },
+        "propagated_usage": []
+      },
+      "patterns": [
+        {
+          "classification": "TECHNICAL_FINDING",
+          "occurrence_count": 1,
+          "pattern_id": "TECHNICAL_FINDING",
+          "status": "CONFIRMED_PATTERN"
+        }
+      ],
+      "population": {
+        "population_count": null,
+        "population_type": "feed"
+      },
+      "probable_explanations": [],
+      "raw_occurrence_count": 1,
+      "remediation_assessment": "NOT_EVALUABLE",
+      "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+      "source_file": "stops.txt",
+      "stage": "G04",
+      "technical_status": "FAIL_TECHNICAL",
+      "unclassified_occurrences": 0
+    }
+  ],
+  "interpretation_status": "COMPLETE",
+  "limitations": [
+    "Interpretación técnica; no determina cumplimiento jurídico.",
+    "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+  ],
+  "provenance": {
+    "deterministic_family_id_basis": "family-v1 + base64url(canonical UTF-8 JSON semantic dimensions); injective encoding, no timestamps or random IDs; tdl_ref=3fba5cbabee000267a511c65b9bc8d90a78b8880.",
+    "raw_findings_immutable": true,
+    "schema_version": "1.0.0"
+  },
+  "source_findings": [
+    {
+      "authority": null,
+      "entity_id": "data_row:33",
+      "entity_type": "feed",
+      "expected_identity_or_target_domain": "stops.txt.stop_id",
+      "field": null,
+      "file": "stops.txt",
+      "observed_evidence": {},
+      "observed_identifier_or_reference": " ",
+      "origin": "AUDIT_ENGINE",
+      "provenance": {
+        "audit_id": "GTFSRUN-aa3d82a280f2468a",
+        "native_evidence": {},
+        "origin": "AUDIT_ENGINE",
+        "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049"
+      },
+      "raw_finding_id": "finding-v1:2b3697c700a9492cacaad07ddfae3e807eaed2741af3ade313243929da2002c9:0",
+      "recommendation": null,
+      "record_locator": "data_row:33",
+      "remediation_eligibility": "HUMAN_REVIEW",
+      "requirement": null,
+      "row_locator": "data_row:33",
+      "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+      "rule_version": "1.0.0",
+      "semantic_version": "1.0.0",
+      "severity": null,
+      "source_fields": [
+        "parent_station"
+      ],
+      "source_file": "stops.txt",
+      "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "specification_reference": "https://gtfs.org/documentation/schedule/reference/#stopstxt (Field Definitions table, row 11)",
+      "stage": "G04",
+      "technical_reason": "Populated reference has no matching target identity.",
+      "technical_status": "FAIL_TECHNICAL"
+    }
+  ]
+}
