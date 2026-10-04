@@ -38,8 +38,9 @@ TRANSIT DATA LAB
 │   ├── DEVELOPMENT                       ✅ 14/14 OK; 14/14 replay; 92 findings / 7 families
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
-│   └── HOLDOUT                           ✅ 6/6; PASS_WITH_LIMITATIONS; content blind
-├── WINDOWS SELF-SERVICE CLIENT V1       ⏸ DEFERRED
+│   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
+├── WINDOWS SELF-SERVICE CLIENT V1       ➡ NEXT
+├── W00 RUNTIME / RESOURCE READINESS     ⚪ NOT_STARTED
 ├── COMMERCIAL VALIDATION                ⚪ NOT_ESTABLISHED
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
 │
@@ -50,6 +51,6 @@ TRANSIT DATA LAB
     └── otros mercados y modos
 ```
 
-El freeze funcional permanece en `9cafe0703abf47e80f67f80a6b423c938e1979aa`; la validación HOLDOUT no cambió ficheros funcionales versionados. Se preserva la historia del protocolo: `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Generalización aprobada con limitaciones: 6/6 replays PASS, 530 findings, 3 familias, y una interpretación parcial (caso 00026; G04 en consolidación genérica). Los seis paquetes de evidencia y sus hashes están registrados en el manifiesto de HOLDOUT. Regresión: 279 PASS, 0 FAIL y 1 SKIP documentado. No hay código específico de operador; validación comercial/mercado no establecida; no se reclama cumplimiento legal ni cobertura GTFS completa. Windows Self-Service Client V1 continúa diferido. Los detalles están en [PROJECT_STATUS.md](PROJECT_STATUS.md) y el [informe HOLDOUT](reports/TDL_AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND_20261004.md).
+El freeze funcional permanece en `9cafe0703abf47e80f67f80a6b423c938e1979aa`; la validación HOLDOUT no cambió ficheros funcionales versionados. La publicación de evidencia está publicada (PR #47, merge `69567c4a82d65e3017ee74ce64695a6a8334aa46`; CI post-merge `37230388650` PASS). Se preserva la historia del protocolo: `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Generalización aprobada con limitaciones: 6/6 replays PASS, 530 findings, 3 familias, y una interpretación parcial (caso 00026; G04 en consolidación genérica). Los seis paquetes de evidencia y sus hashes están registrados en el manifiesto de HOLDOUT. Regresión: 279 PASS, 0 FAIL y 1 SKIP documentado. No hay código específico de operador; validación comercial/mercado no establecida; no se reclama cumplimiento legal ni cobertura GTFS completa. Windows Self-Service Client V1 es NEXT; W00 Runtime / Resource Readiness permanece NOT_STARTED. Los detalles están en [PROJECT_STATUS.md](PROJECT_STATUS.md) y el [informe HOLDOUT](reports/TDL_AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND_20261004.md).
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
