@@ -1,0 +1,404 @@
+{
+  "campaign": "AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND",
+  "campaign_date": "2026-10-04",
+  "engine_commit": "3fba5cbabee000267a511c65b9bc8d90a78b8880",
+  "engine_freeze_base": "9cafe0703abf47e80f67f80a6b423c938e1979aa",
+  "holdout_metadata_pre_freeze_exposure": "YES",
+  "holdout_content_pre_freeze_exposure": "NO",
+  "holdout_content_accessed_after_freeze": "YES",
+  "pristine_blind_holdout": "NO",
+  "content_blind_holdout": "YES",
+  "datasets_authorized": 6,
+  "attempted": 6,
+  "completed": 6,
+  "classification_counts": {
+    "INTERPRETED": 5,
+    "PARTIALLY_INTERPRETED": 1,
+    "UNSUPPORTED": 0,
+    "PIPELINE_FAILURE": 0
+  },
+  "raw_findings": 530,
+  "consolidated_families": 3,
+  "consolidated_occurrences": 530,
+  "accounting_gap_total": 0,
+  "unclassified_occurrences": 0,
+  "replay_pass": 6,
+  "replay_fail": 0,
+  "families_interpreted": 2,
+  "families_generic_only": 1,
+  "families_unknown": 0,
+  "families_unsupported": 0,
+  "new_rule_families": [
+    "GTFS-G04-REFERENCE-EXISTENCE"
+  ],
+  "new_patterns": [
+    "GTFS-G07-DISTANCE-PROGRESSION / EXACT_DUPLICATE_GEOMETRY"
+  ],
+  "false_consolidation_candidates": 0,
+  "datasets": [
+    {
+      "dataset_id": "006",
+      "lineage": "DATASET-006",
+      "source_sha256": "f94d6f6a37ee802ba168e22ed33358d60d93022c183ee9a3307e13a2ef9f6e7a",
+      "case_id": "00025",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "classification": "INTERPRETED",
+      "runtime_seconds": 1.052,
+      "replay_result": "PASS",
+      "raw_findings": 0,
+      "consolidated_family_count": 0,
+      "consolidated_occurrences": 0,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 0,
+      "families_generic_only": 0,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": []
+    },
+    {
+      "dataset_id": "008",
+      "lineage": "DATASET-008",
+      "source_sha256": "50d7dacbe5a384a5122cde2563f884b7fb6d067f2581a3b726c529a0703f4049",
+      "case_id": "00026",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_FINDINGS",
+      "classification": "PARTIALLY_INTERPRETED",
+      "runtime_seconds": 5.003,
+      "replay_result": "PASS",
+      "raw_findings": 1,
+      "consolidated_family_count": 1,
+      "consolidated_occurrences": 1,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 0,
+      "families_generic_only": 1,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [
+        {
+          "rule_id": "GTFS-G04-REFERENCE-EXISTENCE",
+          "stage": "G04",
+          "raw_occurrence_count": 1,
+          "unclassified_occurrences": 0,
+          "patterns": [
+            {
+              "pattern_id": "TECHNICAL_FINDING",
+              "classification": "TECHNICAL_FINDING",
+              "occurrence_count": 1
+            }
+          ],
+          "affected_entity_type": "feed",
+          "affected_entity_count": 1,
+          "propagated_usage": [],
+          "family_classification": "GENERIC_ONLY",
+          "direct_impact": {
+            "entity_count": 1,
+            "entity_type": "feed"
+          },
+          "source_file": "stops.txt",
+          "technical_status": "FAIL_TECHNICAL"
+        }
+      ],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": []
+    },
+    {
+      "dataset_id": "013",
+      "lineage": "LINEAGE-013-015",
+      "source_sha256": "b8957128cad1c91eb8b3020514cdfa3b2eda0a6c56949b03544cb076d4b22790",
+      "case_id": "00027",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "classification": "INTERPRETED",
+      "runtime_seconds": 24.528,
+      "replay_result": "PASS",
+      "raw_findings": 0,
+      "consolidated_family_count": 0,
+      "consolidated_occurrences": 0,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 0,
+      "families_generic_only": 0,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": []
+    },
+    {
+      "dataset_id": "015",
+      "lineage": "LINEAGE-013-015",
+      "source_sha256": "d0fa0d4be2897cdcf43c1005f9d381fd41b3788a71d75e27b589409b68b1ea19",
+      "case_id": "00028",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "classification": "INTERPRETED",
+      "runtime_seconds": 58.139,
+      "replay_result": "PASS",
+      "raw_findings": 0,
+      "consolidated_family_count": 0,
+      "consolidated_occurrences": 0,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 0,
+      "families_generic_only": 0,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": []
+    },
+    {
+      "dataset_id": "017",
+      "lineage": "DATASET-017",
+      "source_sha256": "7b60390d8f3e3b7853eb3f8a873797cb8ffa36e371bc6086570fd687e805546a",
+      "case_id": "00029",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_FINDINGS",
+      "classification": "INTERPRETED",
+      "runtime_seconds": 108.137,
+      "replay_result": "PASS",
+      "raw_findings": 529,
+      "consolidated_family_count": 2,
+      "consolidated_occurrences": 529,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 2,
+      "families_generic_only": 0,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [
+        {
+          "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+          "stage": "G07",
+          "raw_occurrence_count": 6,
+          "unclassified_occurrences": 0,
+          "patterns": [
+            {
+              "pattern_id": "EXACT_DUPLICATE_GEOMETRY",
+              "classification": "EXACT_DUPLICATE_GEOMETRY",
+              "occurrence_count": 6
+            }
+          ],
+          "affected_entity_type": "shape",
+          "affected_entity_count": 6,
+          "propagated_usage": [
+            {
+              "entity_count": 4,
+              "entity_type": "route"
+            },
+            {
+              "entity_count": 9,
+              "entity_type": "service"
+            },
+            {
+              "entity_count": 567,
+              "entity_type": "trip"
+            }
+          ],
+          "family_classification": "SPECIALIZED_INTERPRETED",
+          "direct_impact": {
+            "entity_count": 6,
+            "entity_type": "shape"
+          },
+          "source_file": "shapes.txt",
+          "technical_status": "FAIL_TECHNICAL"
+        },
+        {
+          "rule_id": "GTFS-G07-DISTANCE-PROGRESSION",
+          "stage": "G07",
+          "raw_occurrence_count": 523,
+          "unclassified_occurrences": 0,
+          "patterns": [
+            {
+              "pattern_id": "QUANTIZATION_COMPATIBLE",
+              "classification": "QUANTIZATION_COMPATIBLE",
+              "occurrence_count": 523
+            }
+          ],
+          "affected_entity_type": "shape",
+          "affected_entity_count": 44,
+          "propagated_usage": [
+            {
+              "entity_count": 14,
+              "entity_type": "route"
+            },
+            {
+              "entity_count": 9,
+              "entity_type": "service"
+            },
+            {
+              "entity_count": 3439,
+              "entity_type": "trip"
+            }
+          ],
+          "family_classification": "SPECIALIZED_INTERPRETED",
+          "direct_impact": {
+            "entity_count": 44,
+            "entity_type": "shape"
+          },
+          "source_file": "shapes.txt",
+          "technical_status": "FAIL_TECHNICAL"
+        }
+      ],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": [],
+      "g07_analysis": {
+        "raw_findings": 529,
+        "patterns": {
+          "EXACT_DUPLICATE_GEOMETRY": 6,
+          "QUANTIZATION_COMPATIBLE": 523
+        },
+        "equal_transitions": 529,
+        "decrease_transitions": 0,
+        "increase_or_unknown_transitions": 0,
+        "affected_shapes": {
+          "EXACT_DUPLICATE_GEOMETRY": 6,
+          "QUANTIZATION_COMPATIBLE": 44
+        },
+        "affected_trips_by_family": [
+          567,
+          3439
+        ],
+        "affected_routes_by_family": [
+          4,
+          14
+        ],
+        "affected_services_by_family": [
+          9,
+          9
+        ]
+      }
+    },
+    {
+      "dataset_id": "018",
+      "lineage": "DATASET-018",
+      "source_sha256": "70b770f7c5bb945dd472c4ec6fbbe564aedd62c4a8ce96f717d8214a25bbdaef",
+      "case_id": "00030",
+      "test_bank_result": "OK",
+      "audit_result": "COMPLETED_WITH_LIMITATIONS",
+      "classification": "INTERPRETED",
+      "runtime_seconds": 341.507,
+      "replay_result": "PASS",
+      "raw_findings": 0,
+      "consolidated_family_count": 0,
+      "consolidated_occurrences": 0,
+      "accounting_gap": 0,
+      "unclassified_occurrences": 0,
+      "families_interpreted": 0,
+      "families_generic_only": 0,
+      "families_unknown": 0,
+      "families_unsupported": 0,
+      "families": [],
+      "interpretation_status": "COMPLETE",
+      "limitations": [
+        "Interpretación técnica; no determina cumplimiento jurídico.",
+        "Las poblaciones ausentes o no fiables no producen porcentaje evaluable."
+      ],
+      "errors": []
+    }
+  ],
+  "source_hash_verification": "PRE_AND_POST_MATCH_FOR_ALL_SIX",
+  "determinism_failures": 0,
+  "performance": {
+    "total_test_bank_runtime_seconds": 538.366,
+    "campaign_wall_window_seconds": 539.458,
+    "per_dataset_runtime_seconds": {
+      "006": 1.052,
+      "008": 5.003,
+      "013": 24.528,
+      "015": 58.139,
+      "017": 108.137,
+      "018": 341.507
+    },
+    "memory_observations": {
+      "006-017": "NOT_CAPTURED",
+      "018": {
+        "sampling_interval_seconds": 5,
+        "samples": 7,
+        "peak_observed_working_set_bytes": 6343553024,
+        "peak_observed_private_bytes": 6690889728,
+        "measurement": "Partial-window sampled maximum only; not whole-run peak or continuous high-water mark.",
+        "observation_window": "2026-10-04T04:41:59.2445419Z to 2026-10-04T04:42:29.3292117Z; final ~30 seconds of a 341.507-second run."
+      }
+    }
+  },
+  "g07_analysis": {
+    "raw_findings": 529,
+    "patterns": {
+      "EXACT_DUPLICATE_GEOMETRY": 6,
+      "QUANTIZATION_COMPATIBLE": 523
+    },
+    "equal_transitions": 529,
+    "decrease_transitions": 0,
+    "increase_or_unknown_transitions": 0,
+    "affected_shapes": {
+      "EXACT_DUPLICATE_GEOMETRY": 6,
+      "QUANTIZATION_COMPATIBLE": 44
+    },
+    "affected_trips_by_family": [
+      567,
+      3439
+    ],
+    "affected_routes_by_family": [
+      4,
+      14
+    ],
+    "affected_services_by_family": [
+      9,
+      9
+    ],
+    "affected_shapes_unique": 47,
+    "affected_routes_unique": "NOT_COMPUTABLE_FROM_FAMILY_AGGREGATES",
+    "affected_trips_unique": "NOT_COMPUTABLE_FROM_FAMILY_AGGREGATES",
+    "affected_services_unique": "NOT_COMPUTABLE_FROM_FAMILY_AGGREGATES"
+  },
+  "generalization_result": "GENERALIZATION_PASS_WITH_LIMITATIONS",
+  "false_consolidation_candidates_basis": "0 candidates identified by structural comparison of the three emitted families; human semantic review remains pending.",
+  "operator_specific_code": "NO",
+  "engine_changed": "NO",
+  "engine_before_holdout": "3fba5cbabee000267a511c65b9bc8d90a78b8880",
+  "engine_after_holdout": "3fba5cbabee000267a511c65b9bc8d90a78b8880",
+  "final_regression": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py'",
+    "test_total": 280,
+    "pass": 279,
+    "fail": 0,
+    "skip": 1,
+    "status": "PASS",
+    "skip_reason": "Compliance V1 transition test requires the separately backed-up Compliance V1 database, absent by design in the clean checkout."
+  },
+  "review_state": "READY_FOR_HUMAN_GENERALIZATION_REVIEW",
+  "per_case_execution_artifacts": "VERIFIED_IN_PUBLICATION_PACKAGE; sanitized generated delivery artifacts copied unchanged; see holdout_content_blind_manifest.json",
+  "publication_evidence_manifest": "holdout_content_blind_manifest.json",
+  "partially_interpreted_case": {
+    "case_id": "00026",
+    "dataset_id": "008",
+    "reason": "GTFS-G04-REFERENCE-EXISTENCE is GENERIC_ONLY; specialized interpretation is not implemented."
+  },
+  "per_case_evidence_verified": true
+}
