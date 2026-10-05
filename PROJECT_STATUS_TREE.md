@@ -39,7 +39,7 @@ TRANSIT DATA LAB
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
 │   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
-├── WINDOWS SELF-SERVICE CLIENT V1       🟡 W02–W08 PASS_WITH_LIMITATIONS; PR #51 abierta; CI encolada
+├── WINDOWS SELF-SERVICE CLIENT V1       🟡 W02–W08 PASS_WITH_LIMITATIONS; PR #51 abierta; CI PASS (d8ad712)
 │   ├── W00-R / W00-O / W00-M / W00-P       DIAGNOSTICS COMPLETE / ROOT CAUSE UNKNOWN / SYNTHETIC CAUSE PROBABLE / PASS_WITH_RESOURCE_LIMITATION
 │   ├── Streaming JSON S1/S4/S64            BYTE + SEMANTIC EQUIVALENCE PASS
 │   ├── Pico privado muestreado             −32,85 % / −72,95 % / −81,41 %
