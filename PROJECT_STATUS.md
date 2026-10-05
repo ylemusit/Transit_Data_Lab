@@ -2,9 +2,9 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## Windows Self-Service Client V1 — W00 cerrado con limitación de recursos; publicación en preparación
+## Windows Self-Service Client V1 — W00 cerrado con limitación de recursos
 
-**Estado (2026-10-05):** `W00 = PASS_WITH_RESOURCE_LIMITATION`. Decisión humana: `W00-P = W00P_PASS_WITH_RESOURCE_LIMITATION`; `W01 = UNBLOCKED_AFTER_W00_PUBLICATION`, pero no se inicia en este cambio. `W00-R = diagnostic infrastructure complete`; `W00-O = root cause initially unknown`; `W00-M = synthetic root cause probable`; `W00-P = PASS_WITH_RESOURCE_LIMITATION`.
+**Estado (2026-10-05):** `W00 = PASS_WITH_RESOURCE_LIMITATION`; `W00_PUBLICATION = PR_49_READY_FOR_MERGE`; `W01 = BLOCKED_UNTIL_PR49_MERGE_AND_POST_MERGE_CI`. `W00 CLOSURE CHANGESET = PR #49`. Decisión humana: `W00-P = W00P_PASS_WITH_RESOURCE_LIMITATION`. `W00-R = diagnostic infrastructure complete`; `W00-O = root cause initially unknown`; `W00-M = synthetic root cause probable`; `W00-P = PASS_WITH_RESOURCE_LIMITATION`.
 
 `gtfs_lab.core.write_json` usa el serializer W00-P validado: `JSONEncoder.iterencode`, lotes de 65.536 caracteres y salto final conservado. La comparación determinista S4 da igualdad byte a byte; la equivalencia semántica cubre identidad, referencias de evidencia, findings, accounting, interpretación, semántica de informes y versiones de contrato. El replay sintético pasa. La medición diagnóstica por escritura se retiró del camino normal; los marcadores opcionales de etapa permanecen disponibles para el harness de benchmark.
 
