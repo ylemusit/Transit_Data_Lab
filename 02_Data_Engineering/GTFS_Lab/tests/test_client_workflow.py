@@ -179,6 +179,22 @@ class ClientWorkflowTests(unittest.TestCase):
                 run_client_audit(source, root / "workspace", client_project_id="..", audit_id="audit")
             self.assertFalse((root / "workspace").exists())
 
+    def test_existing_workspace_collision_is_rejected_without_modification(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "feed.zip"
+            with zipfile.ZipFile(source, "w") as archive:
+                archive.writestr("agency.txt", "agency_name\nSynthetic\n")
+            workspace = root / "workspace"
+            workspace.mkdir()
+            marker = workspace / "preserve.txt"
+            marker.write_text("keep this output", encoding="utf-8")
+            with self.assertRaisesRegex(FileExistsError, "workspace ya existe"):
+                run_client_audit(source, workspace, client_project_id="client-a", audit_id="audit-collision",
+                                 source_provenance="SYNTHETIC")
+            self.assertEqual(marker.read_text(encoding="utf-8"), "keep this output")
+            self.assertEqual(list(workspace.iterdir()), [marker])
+
 
 if __name__ == "__main__":
     unittest.main()

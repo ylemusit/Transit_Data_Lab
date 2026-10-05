@@ -2,13 +2,13 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## Windows Self-Service Client V1 — W02–W06 cerrados con limitaciones documentadas
+## Windows Self-Service Client V1 — W02–W07 cerrados con limitaciones documentadas
 
 **Estado (2026-10-05):** `W02_INTAKE = PASS` en la campaña autorizada `feat/windows-client-v1-w02-w08`, desde base `cbba86480ce6743ab57bf32f094ba95b6778bead`. La GUI valida el ZIP y sus precondiciones estructurales antes de ejecutar, muestra filename, SHA-256, identidad de dataset, tamaño, tablas y hora UTC, e identifica el audit al iniciar. La validación es de solo lectura y el worker mantiene el source freeze y la identidad autoritativa. Tests intake 4/4 PASS; regresión client 16 tests OK con 2 skips documentados; `py_compile` y `git diff --check` PASS. Detalle: [W02 Intake](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W02_INTAKE.md).
 
-`W03_AUDIT_EXECUTION = PASS_WITH_LIMITATIONS`; `W04_RESULTS = PASS_WITH_LIMITATIONS`; `W05_GIS_QGIS = PASS_WITH_LIMITATIONS`; `W06_REPORTING_EXPORT = PASS_WITH_LIMITATIONS`. El test específico actualizado suma 24 tests, 22 PASS y 2 skips documentados. W07–W08 siguen pendientes. No se accedió a HOLDOUT y no hay cambios semánticos al motor ni a los contratos de interpretación/compliance.
+`W03_AUDIT_EXECUTION = PASS_WITH_LIMITATIONS`; `W04_RESULTS = PASS_WITH_LIMITATIONS`; `W05_GIS_QGIS = PASS_WITH_LIMITATIONS`; `W06_REPORTING_EXPORT = PASS_WITH_LIMITATIONS`; `W07_RELIABILITY = PASS_WITH_LIMITATIONS`. La suite client suma 25 tests, 23 PASS y 2 skips de worker empaquetado, que se reejecutarán en W08. W08 sigue pendiente. No se accedió a HOLDOUT y no hay cambios semánticos al motor ni a los contratos de interpretación/compliance.
 
-Informes: [W03 ejecución](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W03_AUDIT_EXECUTION.md), [W04 resultados](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W04_RESULTS.md), [W05 GIS/QGIS](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W05_GIS_QGIS_BRIDGE.md), [W06 informes/exportación](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W06_REPORTING_EXPORT.md).
+Informes: [W03 ejecución](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W03_AUDIT_EXECUTION.md), [W04 resultados](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W04_RESULTS.md), [W05 GIS/QGIS](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W05_GIS_QGIS_BRIDGE.md), [W06 informes/exportación](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W06_REPORTING_EXPORT.md), [W07 fiabilidad](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W07_RELIABILITY.md).
 
 ### W01 — Application Shell — CLOSED_WITH_NONBLOCKING_LIMITATIONS
 
