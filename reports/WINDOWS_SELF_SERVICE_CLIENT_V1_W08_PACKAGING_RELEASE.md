@@ -1,6 +1,6 @@
 # Windows Self-Service Client V1 — W08 Packaging / Release
 
-**Estado:** `IN_PROGRESS` (2026-10-05).
+**Estado:** `PASS_WITH_LIMITATIONS` (2026-10-05).
 
 ## SCOPE
 
@@ -19,11 +19,13 @@ Fijar versión del producto, build onedir Windows reproducible, mecanismo de ins
 - El build onedir de ensayo produjo GUI y worker desde entorno Python aislado.
 - La suite empaquetada de worker pasó 2/2 en PATH reducido; la suite client completa dio 25/25 PASS, incluidos esos casos.
 - Instalación y desinstalación de ensayo pasaron en una ruta temporal; el test no requiere admin.
-- Falta repetir build/test con el commit limpio final y cerrar verificación de paquetes/fontes.
+- Build final limpio y suite completa: `311 tests OK (3 skipped)`; suite client contra el worker del paquete final: `25/25 PASS`, sin skips.
+- `py_compile` y `git diff --check`: `PASS`.
+- Verificación final de instalación/desinstalación por usuario en ruta temporal: `PASS`; el acceso directo y la carpeta de prueba se retiraron.
 
 ## EVIDENCE
 
-El build de ensayo tiene metadata externa al repo en `C:\TDL\windows-client-v1-w08-build-rc1\build-metadata.json`. No es el artefacto final porque se generó durante cambios W08 sin commit. La campaña conserva esa evidencia local para diagnosticar y repetirá desde el commit limpio.
+El build final externo al repo se generó desde el commit limpio `d050f536c29fb58106d6924055015e75ab621eb7`. Metadata en `C:\TDL\windows-client-v1-w08-build-final-rc1\build-metadata.json`; SHA-256 `441259F22C34F82674C833E2D98032A13C932971D425E91B99FEF806D43BE805`. Versiones observadas: Python 3.12.10, PyInstaller 6.22.3, ReportLab 5.0.1 y DuckDB CLI 1.5.5. Los binarios quedan en esa ruta local externa; no se añaden al repositorio.
 
 ## LIMITATIONS
 
@@ -33,10 +35,10 @@ El build de ensayo tiene metadata externa al repo en `C:\TDL\windows-client-v1-w
 
 ## DECISION
 
-W08 sigue abierto hasta el build y regresión final desde worktree limpio, más clasificación honesta de entorno limpio y firma.
+W08 queda cerrado como `PASS_WITH_LIMITATIONS`. La build limpia y regresiones pasan; clean-machine sigue parcial/bloqueado por entorno y la GUI RC queda pendiente de aceptación visual/manual humana.
 
 ## NEXT PHASE
 
-Completar W08, actualizar `PROJECT_STATUS.md`/`PROJECT_STATUS_TREE.md`, publicar branch y preparar PR de revisión humana sin merge.
+W08 completado. Publicar branch y preparar PR para revisión humana sin merge ni publicación de release.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
