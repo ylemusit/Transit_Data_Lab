@@ -2,6 +2,21 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Reconciliación local del workspace R1 — cierre
+
+**Estado (2026-10-06):** `LOCAL_WORKSPACE_RECONCILIATION_R1 = CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS`. La limpieza segura recuperó aproximadamente 6,40 GB; la fuente versionada del proyecto y la integridad de Git se verificaron sin cambios. No se accedió a contenido protegido ni a HOLDOUT. Los residuos históricos restantes se conservan intencionadamente: una limpieza forense adicional no resulta coste-efectiva. La política controlada para el material externo permanente futuro está establecida; las raíces históricas retenidas no recibirán trabajo nuevo. El resumen sanitizado está en [informe R1](reports/LOCAL_WORKSPACE_RECONCILIATION_R1_SUMMARY.md). La evidencia operacional detallada permanece local y sin versionar.
+
+```ini
+LOCAL_WORKSPACE_RECONCILIATION_R1 = CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS
+SAFE_SPACE_RECOVERED = 6,395,371,423 bytes
+PROJECT_SOURCE_INTEGRITY = VERIFIED
+GIT_INTEGRITY = VERIFIED
+PROTECTED_CONTENT_ACCESSED = NO
+HOLDOUT_CONTENT_ACCESSED = NO
+CONTROLLED_EXTERNAL_DATA_POLICY = ESTABLISHED
+LEGACY_RESIDUALS = PRESERVED_IN_PLACE; NO_NEW_WORK
+```
+
 ## Windows Self-Service Client V1 — aceptación final PASS_WITH_LIMITATIONS; PR #51 abierta
 
 **Estado (2026-10-05):** `W02–W08 = PASS_WITH_LIMITATIONS`; `W08_HUMAN_ACCEPTANCE = PASS`; `FINAL_ACCEPTANCE = PASS_WITH_LIMITATIONS`; `APPLICATION_DEFECT_001 = CLOSED_FIXED_AND_VERIFIED`. Rama `feat/windows-client-v1-w02-w08`; HEAD funcional revisado `2905db19f447e5e794658ee51dee80ebbd10bfd2`. PR [#51](https://github.com/ylemusit/Transit_Data_Lab/pull/51) abierta; rama remota actualizada, CI del HEAD funcional revisado run `37358701035 = SUCCESS`; no está fusionada ni se ha publicado release. El fix funcional está en `a3a1ddef92df6e252d995405d62250ea0583a433`; el RC onedir instalado corresponde a ese source commit y el EXE observado coincide (SHA-256 `3030F518A68C86534B777CB7D56B973A3B11E329B4C09F6D8D2A45D11F715266`). Aceptación manual final: instalación, Start Menu, identidad/intake, auditoría, resultados, PDF, GIS/QGIS/Google Earth, segundo auditado secuencial, cancelación/rerun, ZIP malformado, instancia única, cierre/reinicio, desinstalación y preservación de salidas PASS. Límites: clean-machine `PARTIAL / BLOCKED_BY_ENVIRONMENT`; firma `NOT_USED`; SmartScreen `NOT_ESTABLISHED`; hardware mínimo/recomendado no establecido; feeds extremos no certificados; dataset 019 diferido. `HOLDOUT_ACCESSED = NO`; no hay código específico de operador ni cambios semánticos al motor/compliance/interpretación. Detalle W08: [informe](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W08_PACKAGING_RELEASE.md).
