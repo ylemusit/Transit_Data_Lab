@@ -110,8 +110,10 @@ def write_professional_pdf(path: Path, manifest: dict[str, Any],
     coverage = interpretation.get("coverage", {}) if interpretation else {}
     coverage = coverage if isinstance(coverage, dict) else {}
     audit_id = manifest.get("audit_id", "NOT_EVALUABLE")
+    versions = manifest.get("engine_versions", {})
+    client_version = versions.get("client_application", "NOT_EVALUABLE") if isinstance(versions, dict) else "NOT_EVALUABLE"
     story = [Paragraph("Informe de auditoría GTFS", styles["TDLTitle"]),
-             Paragraph("Resumen profesional derivado de artefactos técnicos; no es una certificación legal.", styles["TDLBody"]),
+             Paragraph(f"Cliente { _text(client_version) } | Resumen profesional derivado de artefactos técnicos; no es una certificación legal.", styles["TDLBody"]),
              Spacer(1, 5 * mm)]
     metadata = [
         ["Identidad dataset", identity.get("dataset_id", "NOT_EVALUABLE"), "Estado", manifest.get("status", "NOT_EVALUABLE")],

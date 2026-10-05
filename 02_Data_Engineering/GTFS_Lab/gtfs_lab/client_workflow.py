@@ -13,6 +13,7 @@ from pathlib import Path
 from typing import Any
 
 from . import VERSION
+from .client_version import CLIENT_VERSION
 from .audit_comparison import ComparisonError, compare_audit_directories
 from .core import sha256_file
 from .ingestion import IngestionError
@@ -197,7 +198,7 @@ def _client_report(manifest: dict[str, Any], run: dict[str, Any], findings: list
              "## 3. Alcance", "",
              "GTFS Schedule mediante GTFS Audit Engine V1, Compliance V1 y salidas legacy identificadas por separado.", "",
              "## 4. Metodología", "",
-             f"Workflow `{WORKFLOW_VERSION}`; GTFS_Lab `{VERSION}`. Se conservó una copia inmutable de entrada y se verificó SHA-256 antes y después.", "",
+             f"Cliente `{CLIENT_VERSION}`; workflow `{WORKFLOW_VERSION}`; GTFS_Lab `{VERSION}`. Se conservó una copia inmutable de entrada y se verificó SHA-256 antes y después.", "",
              "## 5. Hallazgos técnicos", "",
              f"Hallazgos Audit Engine: {sum(x['origin'] == 'AUDIT_ENGINE' for x in findings)}; legacy: {sum(x['origin'] == 'LEGACY' for x in findings)}.", "",
              "## 6. Calidad de datos", "",
@@ -343,7 +344,8 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         manifest: dict[str, Any] = {"contract": "TDLClientAuditManifest", "version": "1.0.0",
             "status": final_status, "audit_id": audit_id, "client_project_id": client_project_id,
             "created_at_utc": started, "completed_at_utc": _utc_now(), "audit_mode": audit_mode,
-            "dataset_identity": identity, "engine_versions": {"gtfs_lab": VERSION, "client_workflow": WORKFLOW_VERSION},
+            "dataset_identity": identity, "engine_versions": {"gtfs_lab": VERSION, "client_workflow": WORKFLOW_VERSION,
+                                                                 "client_application": CLIENT_VERSION},
             "rule_registry_identities": {
                 "legacy_validator": {"identity_type": "executed_rule_version_map",
                     "rule_versions": legacy_rule_versions, "sha256": _mapping_sha256(legacy_rule_versions)},

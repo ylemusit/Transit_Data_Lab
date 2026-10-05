@@ -14,10 +14,11 @@ from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 from typing import Callable
 from .client_intake import InputValidationError, IntakeSummary, validate_gtfs_zip
+from .client_version import CLIENT_VERSION
 
 
 LAB_ROOT = Path(__file__).resolve().parents[1]
-APP_NAME = "Transit Data Lab — Auditor GTFS"
+APP_NAME = "Transit Data Lab — Auditor GTFS V1"
 ERROR_ALREADY_EXISTS = 183
 
 
@@ -56,6 +57,7 @@ def result_summary_text(manifest: dict[str, object], interpretation: dict[str, o
     return (
         f"Dataset: {identity.get('dataset_id', '—')} · Archivo: {identity.get('source_filename', '—')}\n"
         f"SHA-256: {identity.get('source_sha256', '—')}\n"
+        f"Versión cliente: {manifest.get('engine_versions', {}).get('client_application', '—')} · "
         f"Estado: {manifest.get('status', '—')} · Interpretación: {interpretation.get('interpretation_status', '—')}\n"
         f"Hallazgos brutos: {coverage.get('raw_finding_count', '—')} · Consolidados: {coverage.get('consolidated_occurrence_count', '—')} · "
         f"Sin clasificar: {coverage.get('unclassified_occurrence_count', '—')} · Brecha contable: {coverage.get('accounting_gap', '—')}\n"
@@ -179,7 +181,7 @@ class ClientApp:
         ttk.Label(frame, text="Auditor GTFS", font=("Segoe UI", 20, "bold")).pack(anchor="w")
         ttk.Label(
             frame,
-            text="Analiza un archivo GTFS Schedule y guarda una entrega verificable en tu equipo.",
+            text=f"Versión {CLIENT_VERSION}. Analiza un archivo GTFS Schedule y guarda una entrega verificable en tu equipo.",
             wraplength=660,
         ).pack(anchor="w", pady=(4, 20))
 

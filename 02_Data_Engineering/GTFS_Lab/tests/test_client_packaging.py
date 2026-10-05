@@ -10,7 +10,10 @@ import zipfile
 from pathlib import Path
 
 LAB_ROOT = Path(__file__).resolve().parents[1]
-PACKAGED_WORKER = LAB_ROOT / "dist-w01p" / "tdl-client" / "tdl-worker.exe"
+PACKAGED_WORKER = Path(os.environ.get(
+    "TDL_PACKAGED_WORKER_PATH",
+    str(LAB_ROOT / "dist-w01p" / "tdl-client" / "tdl-worker.exe"),
+))
 
 
 def write_synthetic_zip(path: Path) -> None:
@@ -67,6 +70,11 @@ class PackagedWorkerTests(unittest.TestCase):
             seal = json.loads((delivery / "delivery_seal.json").read_text(encoding="utf-8"))
             self.assertTrue(seal["artifacts_verified"])
             self.assertEqual(result["audit_manifest_sha256"], seal["audit_manifest_sha256"])
+            self.assertEqual(manifest["engine_versions"]["client_application"], "1.0.0-rc.1")
+            pdf_status = json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
+            self.assertEqual(pdf_status["status"], "GENERATED")
+            self.assertTrue((delivery / "report" / "client_report.pdf").is_file())
+            self.assertTrue((delivery / "GIS_QGIS_GUIDE.md").is_file())
             for relative, artifact in manifest["delivery_artifacts"].items():
                 self.assertEqual(artifact["sha256"], hashlib.sha256((delivery / relative).read_bytes()).hexdigest())
 
