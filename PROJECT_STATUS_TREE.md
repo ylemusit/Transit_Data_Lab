@@ -1,11 +1,12 @@
 # Transit Data Lab — mapa de estado vigente
 
-**Actualizado:** 2026-10-05
+**Actualizado:** 2026-10-06
 **Fuente de detalle:** [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 ```text
 TRANSIT DATA LAB
 │
+├── LOCAL WORKSPACE RECONCILIATION R1  ✅ CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS (~6.40 GB recuperados; política de datos externos establecida)
 ├── TRUST FOUNDATION                    ✅ CLOSED (gate técnico)
 ├── GTFS AUDIT ENGINE V1                ✅ CLOSED (alcance técnico documentado)
 ├── COMPLIANCE V1                       ✅ CLOSED_WITH_DEFERRALS
@@ -69,6 +70,8 @@ TRANSIT DATA LAB
     ├── Colombia
     └── otros mercados y modos
 ```
+
+**R1 local:** `LOCAL_WORKSPACE_RECONCILIATION_R1 = CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS`; espacio recuperado ≈ 6.40 GB; `CONTROLLED_EXTERNAL_DATA_POLICY = ESTABLISHED`. No se incluyen rutas locales ni inventarios en el estado público. Detalle sanitizado: [resumen R1](reports/LOCAL_WORKSPACE_RECONCILIATION_R1_SUMMARY.md).
 
 **Antecedente de W00/W01 previo a la campaña W02–W08:** El freeze funcional permanece en `9cafe0703abf47e80f67f80a6b423c938e1979aa`; la validación HOLDOUT no cambió ficheros funcionales versionados. La publicación de evidencia está publicada (PR #47, merge `69567c4a82d65e3017ee74ce64695a6a8334aa46`; CI post-merge `37230388650` PASS). Se preserva la historia del protocolo: `PRISTINE_BLIND_HOLDOUT = NO`; `CONTENT_BLIND_HOLDOUT = YES`. Generalización aprobada con limitaciones: 6/6 replays PASS, 530 findings, 3 familias, y una interpretación parcial (caso 00026; G04 en consolidación genérica). Los seis paquetes de evidencia y sus hashes están registrados en el manifiesto de HOLDOUT. No hay código específico de operador; validación comercial/mercado no establecida; no se reclama cumplimiento legal ni cobertura GTFS completa. `W00 = CLOSED_WITH_RESOURCE_LIMITATION`; PR #49 y el CI post-merge `37256036471` sobre `6271a75399732dfafcaef06ec5fd63ff5835a86b` están completos. `W01_APPLICATION_SHELL = CLOSED_WITH_NONBLOCKING_LIMITATIONS`; aceptación humana PASS, 7/7 tests PASS, onedir PASS y DuckDB incluido. Los estados `CLEAN_MACHINE_VALIDATION = PENDING` y `W02 = NEXT / NOT_STARTED` describen el cierre anterior a packaging y quedaron supersedidos por el estado W02–W08 vigente de arriba. W01 no cambió semántica de motor y no accedió a HOLDOUT. Dataset 019 sigue diferido. Detalles: [PROJECT_STATUS.md](PROJECT_STATUS.md), [informe W01](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W01_APPLICATION_SHELL.md), [W01-P](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W01_P_PACKAGED_SHELL_INTEGRATION.md), [W01-F](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W01_F_FINAL_PACKAGED_GUI_ACCEPTANCE.md), [W00-P](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W00_P_JSON_SERIALIZATION_OPTIMIZATION_PROOF.md) e [informe HOLDOUT](reports/TDL_AUDIT_INTERPRETATION_V1_HOLDOUT_CONTENT_BLIND_20261004.md).
 
