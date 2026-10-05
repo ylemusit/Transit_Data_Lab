@@ -2,6 +2,20 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
+## Windows Self-Service Client V1 — W00 cerrado con limitación de recursos; publicación en preparación
+
+**Estado (2026-10-05):** `W00 = PASS_WITH_RESOURCE_LIMITATION`. Decisión humana: `W00-P = W00P_PASS_WITH_RESOURCE_LIMITATION`; `W01 = UNBLOCKED_AFTER_W00_PUBLICATION`, pero no se inicia en este cambio. `W00-R = diagnostic infrastructure complete`; `W00-O = root cause initially unknown`; `W00-M = synthetic root cause probable`; `W00-P = PASS_WITH_RESOURCE_LIMITATION`.
+
+`gtfs_lab.core.write_json` usa el serializer W00-P validado: `JSONEncoder.iterencode`, lotes de 65.536 caracteres y salto final conservado. La comparación determinista S4 da igualdad byte a byte; la equivalencia semántica cubre identidad, referencias de evidencia, findings, accounting, interpretación, semántica de informes y versiones de contrato. El replay sintético pasa. La medición diagnóstica por escritura se retiró del camino normal; los marcadores opcionales de etapa permanecen disponibles para el harness de benchmark.
+
+Con muestreo a 100 ms, el pico privado del proceso árbol baja de 67.112.960 a 45.068.288 B en S1 (−32,85 %), de 321.392.640 a 86.949.888 B en S4 (−72,95 %) y de 4.662.751.232 a 866.676.736 B en S64 (−81,41 %). La etapa del pico observado cambia de serialización/escritura a `AUDIT`. El tiempo total cambia entre −0,47 % y +15,03 % según escala; en S64 aumenta 4,14 %. Estos son picos muestreados, no high-water marks del sistema. La causa de memoria queda `CONFIRMED` para la reproducción sintética, sin extrapolar a dataset 019.
+
+Dataset 019 queda `DEFERRED_FOR_HIGH_MEMORY_ENVIRONMENT`; HOLDOUT no se accedió. El onedir reconstruido en la máquina de desarrollo arrancó, completó S1 y contiene DuckDB CLI 1.5.5; `CLEAN_MACHINE_VALIDATION = PENDING`. No se establece hardware mínimo ni recomendado, ni se certifica soporte extremo para feeds grandes. QGIS sigue siendo un banco externo de evidencia GIS; la integración no está implementada. No se afirma preparación de instalador de producción, compatibilidad en máquina limpia, preparación comercial, validación de mercado, soporte universal de feeds ni requisitos mínimos de RAM.
+
+Regresión completa del cambio consolidado: **291 tests, 290 PASS, 0 FAIL y 1 SKIP documentado** por la base de Compliance V1 respaldada fuera del checkout. Resultado: [resumen de regresión](reports/evidence/windows_client_v1/w00/regression_summary.json).
+
+Informes W00: [R — medición y subprocesos](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W00_RUNTIME_RESOURCE_READINESS.md), [M — aislamiento de causa raíz](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W00_M_MEMORY_ROOT_CAUSE_ISOLATION.md), [P — optimización JSON](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W00_P_JSON_SERIALIZATION_OPTIMIZATION_PROOF.md), [inventario y política de publicación](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W00_CONSOLIDATION_INVENTORY.md). Evidencia compacta: [manifiesto before/after](reports/evidence/windows_client_v1/w00/json_streaming_optimization/w00p_before_after_manifest.json), [comparación semántica](reports/evidence/windows_client_v1/w00/json_streaming_optimization/semantic_comparison_final.json), [inventario de runtime](reports/evidence/windows_client_v1/w00/runtime_inventory.json), [evaluación de empaquetado](reports/evidence/windows_client_v1/w00/packaging_pyinstaller_onedir.json) y [manifiesto de limpieza propuesto](reports/evidence/windows_client_v1/w00/proposed_cleanup_manifest.json). Las salidas completas permanecen locales y fuera de Git.
+
 ## Audit Interpretation & Consolidation V1 — VALIDATED WITH DOCUMENTED LIMITATIONS
 
 **Estado (2026-10-04):** Yeison aprobó el resultado técnico de generalización de HOLDOUT. `FINAL_HUMAN_GENERALIZATION_DECISION = APPROVED`; `GENERALIZATION_RESULT = GENERALIZATION_PASS_WITH_LIMITATIONS`; `AUDIT_INTERPRETATION_AND_CONSOLIDATION_V1 = VALIDATED_WITH_DOCUMENTED_LIMITATIONS`. `INTERPRETATION_HARDENING_V2 = NOT_REQUIRED_NOW`; G04 specialized interpretation queda como `BACKLOG_CANDIDATE`.
@@ -90,7 +104,7 @@ Cierre humano final aprobado explícitamente por Yeison el 2026-10-02, tras veri
 
 Límites preservados: SERIAL_EXECUTION = CURRENT_LIMITATION; CRASH_RECOVERY = MANUAL; FORMAT_SCOPE = GTFS_SCHEDULE. No se declara autoservicio listo ni validación comercial o de mercado.
 
-Siguiente bloque seleccionado por el usuario: WINDOWS SELF-SERVICE CLIENT V1 (`NEXT`; implementación `NOT_STARTED`). `W00_RUNTIME_RESOURCE_READINESS = NOT_STARTED`. Objetivo: doble clic → seleccionar GTFS.zip → introducir datos mínimos → analizar → ver progreso → recibir resultado comprensible → abrir informe o carpeta de entrega. El usuario final debe poder operar sin terminal, Python, Git, VS Code, rutas manuales, JSON, DuckDB ni comandos. Este bloque encapsulará el flujo cerrado; no abre nuevos datasets, formatos ni cambios de motor. No se abrirá otro dataset durante el desarrollo inicial del cliente Windows. Su implementación se trata como objetivo independiente en un chat nuevo. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
+Al cierre original del Test Bank, el siguiente bloque seleccionado fue WINDOWS SELF-SERVICE CLIENT V1 (`NEXT`; implementación `NOT_STARTED`). El estado vigente de W00 se registra al inicio de este documento. Objetivo del cliente: doble clic → seleccionar GTFS.zip → introducir datos mínimos → analizar → ver progreso → recibir resultado comprensible → abrir informe o carpeta de entrega. El usuario final debe poder operar sin terminal, Python, Git, VS Code, rutas manuales, JSON, DuckDB ni comandos. Este bloque encapsulará el flujo cerrado; no abre nuevos datasets, formatos ni cambios de motor. No se abrirá otro dataset durante el desarrollo inicial del cliente Windows. Contrato y operación: [TEST_BANK_V1.md](02_Data_Engineering/GTFS_Lab/TEST_BANK_V1.md). CI incluye tests específicos, E2E sintético OK/NOT_OK, hashes y sellos después de la clasificación. Trust Foundation, GTFS Audit Engine V1, Compliance V1, Remediation Engine V1, Client Audit Workflow V1 y NeTEx Audit Engine V1 se conservan.
 
 ## REAL DATA HARDENING CAMPAIGN V1 — PASS; CLOSED
 
@@ -282,7 +296,8 @@ NeTEx fue la prioridad técnica del año 1 junto con la productización GTFS; am
 YEAR_1_PRODUCT_CORE = SPAIN + GTFS + NeTEx
 HISTORICAL_PHASE_OBJECTIVE = GTFS_PRODUCTIZATION / CLIENT_AUDIT_WORKFLOW
 HISTORICAL_PHASE_OBJECTIVE_STATUS = COMPLETED; GTFS_CLIENT_AUDIT_WORKFLOW_V1_CLOSED
-CURRENT_NEXT_PROJECT_OBJECTIVE = NOT_SET_BY_THIS_CLOSURE
+CURRENT_NEXT_PROJECT_OBJECTIVE = WINDOWS_SELF_SERVICE_CLIENT_V1_W01_AFTER_W00_PUBLICATION
+WINDOWS_SELF_SERVICE_CLIENT_V1_W01 = NOT_STARTED
 SIRI = POST_COMMERCIALIZATION_BACKLOG
 GTFS_RT = POST_COMMERCIALIZATION_BACKLOG
 COLOMBIA = POST_COMMERCIALIZATION_BACKLOG

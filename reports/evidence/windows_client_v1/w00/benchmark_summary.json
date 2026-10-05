@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "evidence_base_commit": "f53335747562206936e5db7704dfb093844d768e",
+  "campaign_source": "Previously authorized DEVELOPMENT corpus campaign recorded at baseline 9cafe0703abf47e80f67f80a6b423c938e1979aa",
+  "campaign_scope": "14 authorized DEVELOPMENT datasets; HOLDOUT excluded",
+  "w00_real_feed_reruns": 0,
+  "w00_rerun_reason": "Dataset 019 had prior observed peak private memory about 18.89 GiB; workstation available RAM at capture was 16.88 GiB. A repeat large-feed run was not safe to start in this session, so the external controlled bank was not opened. The clean checkout itself contains no source archive bytes.",
+  "historical_case_count": 14,
+  "historical_case_outcome": "14/14 OK; 14/14 replay PASS; 0 pipeline failures; 0 accounting gaps",
+  "representative_cases_by_historical_runtime_proxy": [
+    {
+      "size_class": "small_proxy",
+      "dataset_id": "007",
+      "case_id": "00016",
+      "runtime_seconds": 1.17,
+      "result": "OK",
+      "replay": "PASS",
+      "measurement_class": "HISTORICAL_CAMPAIGN_OBSERVED",
+      "caveat": "Runtime proxy only; source archive size unavailable in selected public summary. Not re-run for W00."
+    },
+    {
+      "size_class": "medium_proxy",
+      "dataset_id": "016",
+      "case_id": "00022",
+      "runtime_seconds": 5.15,
+      "result": "OK",
+      "replay": "PASS",
+      "measurement_class": "HISTORICAL_CAMPAIGN_OBSERVED",
+      "caveat": "Runtime proxy only; source archive size unavailable in selected public summary. Not re-run for W00."
+    },
+    {
+      "size_class": "large_proxy",
+      "dataset_id": "014",
+      "case_id": "00021",
+      "runtime_seconds": 30.17,
+      "result": "OK",
+      "replay": "PASS",
+      "measurement_class": "HISTORICAL_CAMPAIGN_OBSERVED",
+      "caveat": "Runtime proxy only; source archive size unavailable in selected public summary. Not re-run for W00."
+    },
+    {
+      "size_class": "largest_known_existing_case",
+      "dataset_id": "019",
+      "case_id": "00023",
+      "runtime_seconds": 763.05,
+      "result": "OK",
+      "replay": "PASS",
+      "finding_count": 0,
+      "zip_bytes": 18245454,
+      "stop_times_uncompressed_bytes": 52049844,
+      "private_memory_peak_gib": 18.89,
+      "private_memory_peak_measurement_class": "HISTORICAL_MANUAL_SAMPLED_NOT_CONTINUOUS",
+      "measurement_class": "HISTORICAL_CAMPAIGN_OBSERVED",
+      "caveat": "Not re-run for W00; no stage-level resource attribution or true high-water mark exists."
+    }
+  ],
+  "w00_harness_smoke": {
+    "artifact": "resource_measurements.json",
+    "target": "Synthetic Python child only; no GTFS data or engine invoked",
+    "return_code": 0,
+    "wall_time_seconds": 1.609,
+    "cpu_time_seconds_sampled": 0.031,
+    "peak_sampled_working_set_bytes": 12779520,
+    "peak_sampled_private_bytes": 7692288,
+    "sample_count": 8,
+    "synthetic_output_tree_delta_bytes": 0,
+    "synthetic_temp_tree_delta_bytes": 0,
+    "whole_volume_free_space_delta_bytes": -12288,
+    "captured": [
+      "wall time",
+      "sampled root-process CPU/private bytes/working set",
+      "output tree before/after size",
+      "temp tree before/after size",
+      "stdout/stderr byte counts"
+    ],
+    "not_captured": [
+      "child process tree",
+      "continuous TEMP growth",
+      "true memory high-water mark"
+    ]
+  },
+  "decisions": {
+    "benchmark_status": "PARTIAL_HISTORICAL_BASELINE_ONLY",
+    "runtime_and_memory_thresholds": "NOT_ESTABLISHED",
+    "minimum_hardware": "NOT_YET_ESTABLISHED",
+    "recommended_hardware": "NOT_YET_ESTABLISHED",
+    "required_next_measurement": "Run the harness with descendant-process sampling and stage markers on approved small/medium/large DEVELOPMENT or Test Bank copies from an isolated machine with sufficient available RAM; do not include HOLDOUT."
+  },
+  "w00r": {
+    "status": "W00R_BLOCKED_REQUIRES_OPTIMIZATION",
+    "synthetic_control": {
+      "status": "PASS",
+      "return_code": 0,
+      "root_pid": 25392,
+      "descendant_processes_observed": 1,
+      "sample_count": 24,
+      "wall_time_seconds": 1.469,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "stages_with_samples": [
+        "AUDIT",
+        "CLEANUP",
+        "INGESTION",
+        "INTAKE",
+        "INTERPRETATION",
+        "REPLAY",
+        "REPORT_GENERATION",
+        "ZIP_EXTRACTION"
+      ],
+      "output_tree_delta_bytes": 2,
+      "temp_tree_delta_bytes": 7,
+      "stdout_bytes": 28,
+      "stderr_bytes": 26
+    },
+    "dataset_019_new_benchmark": "SKIPPED",
+    "skip_code": "BENCHMARK_BLOCKED_BY_RESOURCE_SAFETY",
+    "resource_policy": {
+      "historical_private_memory_peak_gib": 18.89,
+      "available_ram_factor": 1.25,
+      "minimum_available_ram_gib": 23.6125,
+      "minimum_free_disk_gib": 10.0,
+      "maximum_sampled_system_cpu_percent": 25.0
+    },
+    "large_preflight_checks": {
+      "physical_ram_available": {
+        "status": "FAIL",
+        "observed_bytes": 18440216576,
+        "required_bytes": 25353728819,
+        "classification": "OBSERVED"
+      },
+      "disk_free": {
+        "status": "PASS",
+        "observed_bytes": 729922490368,
+        "required_bytes": 10737418240,
+        "classification": "OBSERVED"
+      },
+      "expected_working_directory": {
+        "status": "PASS",
+        "expected_root": "LOCAL_PATH_REDACTED",
+        "work_dir": "LOCAL_PATH_REDACTED",
+        "classification": "OBSERVED"
+      },
+      "system_pressure": {
+        "status": "PASS",
+        "cpu_busy_percent_sampled": 6.5104166666666625,
+        "maximum_percent": 25.0,
+        "classification": "OBSERVED_SAMPLED"
+      }
+    },
+    "real_development_test_bank_benchmarks": "NOT_EXECUTED",
+    "memory_stage_attribution": "NOT_DETERMINED_WITHOUT_A_SAFE_REAL_FEED_RUN",
+    "minimum_hardware": "NOT_YET_ESTABLISHED",
+    "recommended_hardware": "NOT_YET_ESTABLISHED"
+  }
+}

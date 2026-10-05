@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "evidence_class": "SYNTHETIC_CONTROL_ONLY",
+  "sample_interval_seconds": 0.05,
+  "correlation": "sample timestamp -> active stage -> aggregate process-tree resources",
+  "stages": {
+    "INTAKE": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24305664,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.12106,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "ZIP_EXTRACTION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120638,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INGESTION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120835,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "AUDIT": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.122055,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INTERPRETATION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120822,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPORT_GENERATION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120415,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPLAY": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120595,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "CLEANUP": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120897,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    }
+  },
+  "instrumentation_coverage": {
+    "INTAKE": "INSTRUMENTED",
+    "ZIP_EXTRACTION": "INSTRUMENTED",
+    "INGESTION": "INSTRUMENTED",
+    "AUDIT": "INSTRUMENTED",
+    "INTERPRETATION": "INSTRUMENTED",
+    "REPORT_GENERATION": "INSTRUMENTED",
+    "REPLAY": "INSTRUMENTED",
+    "CLEANUP": "INSTRUMENTED"
+  },
+  "real_feed_stage_attribution": "NOT_EXECUTED; dataset 019 was blocked by resource safety",
+  "limitations": [
+    "Synthetic stages validate event/resource correlation only; no engine GTFS workload ran.",
+    "Sampled maxima are not OS high-water marks."
+  ]
+}

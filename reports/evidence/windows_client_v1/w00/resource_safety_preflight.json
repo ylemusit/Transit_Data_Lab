@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "checked_at_utc": "2026-10-04T20:42:57.785289+00:00",
+  "status": "BENCHMARK_BLOCKED_BY_RESOURCE_SAFETY",
+  "benchmark_class": "large",
+  "policy": {
+    "historical_dataset_019_peak_private_gib": 18.89,
+    "available_ram_headroom_factor": 1.25,
+    "minimum_available_ram_gib": 23.613,
+    "minimum_free_disk_gib": 10.0,
+    "maximum_sampled_system_cpu_busy_percent": 25.0,
+    "note": "Experimental development gate only; not a production hardware requirement."
+  },
+  "checks": {
+    "physical_ram_available": {
+      "status": "FAIL",
+      "observed_bytes": 18440216576,
+      "required_bytes": 25353728819,
+      "classification": "OBSERVED"
+    },
+    "disk_free": {
+      "status": "PASS",
+      "observed_bytes": 729922490368,
+      "required_bytes": 10737418240,
+      "classification": "OBSERVED"
+    },
+    "expected_working_directory": {
+      "status": "PASS",
+      "expected_root": "LOCAL_PATH_REDACTED",
+      "work_dir": "LOCAL_PATH_REDACTED",
+      "classification": "OBSERVED"
+    },
+    "system_pressure": {
+      "status": "PASS",
+      "cpu_busy_percent_sampled": 6.5104166666666625,
+      "maximum_percent": 25.0,
+      "classification": "OBSERVED_SAMPLED"
+    }
+  }
+}

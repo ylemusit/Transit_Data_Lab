@@ -52,5 +52,11 @@
 **/dist/
 **/*.dist/
 
+# W00 benchmark audit outputs are reproducible and may contain multi-gigabyte JSON.
+**/evidence/windows_client_v1/w00/**/output/
+**/evidence/windows_client_v1/w00/**/audit_output/
+**/evidence/windows_client_v1/w00/**/work/
+**/evidence/windows_client_v1/w00/**/synthetic_gtfs.zip
+
 # Sensitive Entur source retained locally; sanitized canonical HTML remains eligible.
 /07_Business/03_Market/evidence/.sensitive_local/

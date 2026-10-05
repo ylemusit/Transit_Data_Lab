@@ -1,0 +1,24 @@
+{
+  "start": "PASS",
+  "progress": "PASS",
+  "stdout_capture": "PASS",
+  "stderr_capture": "PASS",
+  "child_pid": 36100,
+  "exit_status": 1,
+  "cancellation": "PASS",
+  "resource_monitoring": "PASS_SEPARATE_PARENT_HARNESS",
+  "process_absent_after_exit": true,
+  "memory_reclamation": "PASS_PROCESS_ABSENCE_OBSERVED",
+  "captured_stdout_lines": 6,
+  "captured_stderr_lines": 6,
+  "sample_stdout": [
+    "progress 0",
+    "progress 1",
+    "progress 2"
+  ],
+  "sample_stderr": [
+    "diagnostic 0",
+    "diagnostic 1",
+    "diagnostic 2"
+  ]
+}

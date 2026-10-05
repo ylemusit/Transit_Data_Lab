@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "base_commit": "f53335747562206936e5db7704dfb093844d768e",
+  "state": "W00O_READY_FOR_HUMAN_REVIEW",
+  "classification": "W00O_BLOCKED_RESOURCE_ROOT_CAUSE_UNKNOWN",
+  "w01": "BLOCKED; do not start",
+  "synthetic_scale_ladder": "S1,S2,S4,S8,S16,S32,S64,S128",
+  "resource_growth": "INCONCLUSIVE",
+  "peak_stage": {
+    "scale": "synthetic-gtfs-s64",
+    "stage": "REPORT_GENERATION",
+    "private_bytes": 4662296576,
+    "working_set_bytes": 3001683968,
+    "sampled_at_utc": "2026-10-05T00:12:33.644358+00:00"
+  },
+  "memory_root_cause": "NOT_REPRODUCED_WITH_SYNTHETIC_WORKLOAD",
+  "optimization_implemented": false,
+  "before_after_improvement": "NOT_APPLICABLE",
+  "semantic_equivalence": "PASS",
+  "dataset_019": "DEFERRED_FOR_HIGH_MEMORY_ENVIRONMENT",
+  "pyinstaller_onedir": "PASS",
+  "duckdb_bundled": true,
+  "clean_machine_validation": "PENDING",
+  "subprocess_reclamation": "PASS",
+  "orphan_processes": 0,
+  "minimum_hardware": "NOT_YET_ESTABLISHED",
+  "recommended_hardware": "NOT_YET_ESTABLISHED",
+  "functional_engine_changed": true,
+  "engine_semantics_changed": "NO",
+  "holdout_accessed": "NO",
+  "qgis": "NO_IMPLEMENTATION; GIS evidence package boundary retained; GeoPackage primary candidate.",
+  "optimization_required_before_w01": true,
+  "clean_machine_validation_plan": [
+    "Fresh Windows environment with no Python or development environment installed.",
+    "Confirm bundled DuckDB executable and Python runtime load without system PATH dependencies.",
+    "Launch packaged worker, run a synthetic audit, and verify all artifacts and hashes.",
+    "Confirm subprocess descendants terminate cleanly and no processes remain."
+  ],
+  "evidence": {
+    "synthetic_scale_benchmark.json": "reports/evidence/windows_client_v1/w00/synthetic_scale_benchmark.json",
+    "resource_scaling_analysis.json": "reports/evidence/windows_client_v1/w00/resource_scaling_analysis.json",
+    "memory_root_cause.json": "reports/evidence/windows_client_v1/w00/memory_root_cause.json",
+    "optimization_before_after.json": "reports/evidence/windows_client_v1/w00/optimization_before_after.json",
+    "packaging_pyinstaller_onedir.json": "reports/evidence/windows_client_v1/w00/packaging_pyinstaller_onedir.json",
+    "subprocess_reclamation.json": "reports/evidence/windows_client_v1/w00/subprocess_reclamation.json",
+    "instrumentation_semantic_comparison.json": "reports/evidence/windows_client_v1/w00/instrumentation_semantic_comparison.json"
+  }
+}

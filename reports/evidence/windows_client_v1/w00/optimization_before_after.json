@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "problem": "Historical dataset 019 memory growth remains a concern; the authorized synthetic workload did not reproduce that problem.",
+  "measured_evidence": {
+    "synthetic_growth": "INCONCLUSIVE",
+    "peak_stage": {
+      "scale": "synthetic-gtfs-s64",
+      "stage": "REPORT_GENERATION",
+      "private_bytes": 4662296576,
+      "working_set_bytes": 3001683968,
+      "sampled_at_utc": "2026-10-05T00:12:33.644358+00:00"
+    },
+    "dataset_019_executed": false
+  },
+  "root_cause_hypothesis": "NOT_ESTABLISHED; no component attribution supported.",
+  "expected_effect": "No optimization proposed or implemented.",
+  "semantic_risk": "NOT_ASSESSED_FOR_OPTIMIZATION; optimization gate not entered because the resource problem was not reproduced.",
+  "optimization_implemented": false,
+  "before_after_improvement": "NOT_APPLICABLE",
+  "instrumentation_semantic_comparison": {
+    "schema_version": "1.0",
+    "baseline_commit": "f53335747562206936e5db7704dfb093844d768e",
+    "fixture_sha256": "d5453a40485dd7ddfa41e2cad133f3f44bf4c0f226bf1e4eb36c497a60b4086b",
+    "baseline_status": "COMPLETED_WITH_LIMITATIONS",
+    "instrumented_status": "COMPLETED_WITH_LIMITATIONS",
+    "checks": {
+      "source_identity": true,
+      "raw_findings": true,
+      "family_accounting": true,
+      "interpretation": true,
+      "report_semantics": true,
+      "contract_versions": true
+    },
+    "semantic_equivalence": "PASS",
+    "optimization_implemented": false,
+    "optimization_before_after_improvement": "NOT_APPLICABLE",
+    "replay_semantics": "NOT_APPLICABLE; both are initial audits, not replay",
+    "projection": "raw findings, family/rule accounting, interpretation contract/classifications, report summary, source identity and versions",
+    "baseline_delivery": "LOCAL_PATH_REDACTED",
+    "instrumented_delivery": "LOCAL_PATH_REDACTED"
+  },
+  "engine_semantics_changed": false,
+  "decision": "Do not optimize without reproducible resource evidence; retain optimization-required gate before W01."
+}

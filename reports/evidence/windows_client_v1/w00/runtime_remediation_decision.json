@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "decision": "OPTIMIZATION_REQUIRED_BEFORE_W01",
+  "decision_status": "PROVISIONAL_PENDING_SAFE_REAL_FEED_ATTRIBUTION",
+  "basis": [
+    "The frozen W00 evidence records dataset 019 at about 18.89 GiB sampled private memory and marks large-feed performance optimization required.",
+    "The new benchmark was safely skipped because available RAM was below the experimental gate; no claim is made about the dominant stage or cause."
+  ],
+  "memory_cause": "NOT_DETERMINED; ZIP/extraction, CSV ingestion, DuckDB, Python materialization, findings, interpretation, serialization, reports and replay remain candidates.",
+  "options_for_next_evidence_cycle": [
+    "Repeat dataset 019 only on an isolated machine meeting the documented safety gate and collect stage/process-tree telemetry.",
+    "Then compare stage samples against audit code allocation points; preserve semantics and replay identity.",
+    "Any streaming/chunking or representation changes require separate human review before implementation."
+  ],
+  "optimization_implemented": false,
+  "engine_semantics_changed": false,
+  "minimum_hardware": "NOT_YET_ESTABLISHED",
+  "recommended_hardware": "NOT_YET_ESTABLISHED"
+}

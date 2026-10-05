@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0",
+  "normal_completion": {
+    "worker_exit_status": 0,
+    "worker_pid": 26416,
+    "observed_tree_pids": [
+      23744,
+      26416
+    ],
+    "resource_monitor_samples": 24,
+    "tree_absent_after_completion": true,
+    "remaining_observed_pids": [],
+    "output_bytes_delta": 2,
+    "temp_bytes_delta": 0,
+    "stage_resource_profile": {
+      "INTAKE": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.242231,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "ZIP_EXTRACTION": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.241249,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "INGESTION": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.241148,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "AUDIT": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.242842,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "INTERPRETATION": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.241548,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "REPORT_GENERATION": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.241196,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "REPLAY": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.24133,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      },
+      "CLEANUP": {
+        "sample_count": 2,
+        "peak_aggregate_working_set_bytes_sampled": 24580096,
+        "peak_aggregate_private_bytes_sampled": 14004224,
+        "classification": "OBSERVED_SAMPLED",
+        "duration_seconds_observed": 0.2414,
+        "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+      }
+    },
+    "resource_reclamation": "PROCESS_ADDRESS_SPACE_RELEASE_INFERRED_FROM_TREE_EXIT; OS_FREE_RAM_DELTA_NOT_ATTRIBUTABLE"
+  },
+  "controlled_cancellation": {
+    "start": "PASS",
+    "progress": "PASS",
+    "stdout_capture": "PASS",
+    "stderr_capture": "PASS",
+    "child_pid": 19812,
+    "exit_status": 1,
+    "cancellation": "PASS",
+    "process_tree_kill_requested": true,
+    "child_process_absent_after_cancellation": true,
+    "orphan_processes": [],
+    "parent_process_alive_after_worker_exit": true,
+    "resource_monitoring": "PASS_SEPARATE_PARENT_HARNESS",
+    "process_absent_after_exit": true,
+    "memory_reclamation": "PASS_PROCESS_TREE_ABSENCE_OBSERVED",
+    "captured_stdout_lines": 7,
+    "captured_stderr_lines": 6,
+    "sample_stdout": [
+      "CHILD_PID=19812",
+      "progress 0",
+      "progress 1"
+    ],
+    "sample_stderr": [
+      "diagnostic 0",
+      "diagnostic 1",
+      "diagnostic 2"
+    ]
+  },
+  "orphan_processes": [],
+  "status": "PASS",
+  "limitations": [
+    "Process exit is observed; returned physical RAM bytes are not isolated from system activity.",
+    "The process-tree monitor samples Windows snapshots; very short-lived descendants can fall between samples."
+  ]
+}
