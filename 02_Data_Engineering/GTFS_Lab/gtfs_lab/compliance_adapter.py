@@ -3,10 +3,17 @@ from __future__ import annotations
 import hashlib
 import importlib.util
 import json
+import sys
 from pathlib import Path
 from .core import RunContext
 
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+if getattr(sys, "frozen", False):
+    # PyInstaller keeps immutable runtime resources under _MEIPASS in onedir builds.
+    _RUNTIME_ROOT = Path(sys._MEIPASS) / "runtime_assets"
+else:
+    _RUNTIME_ROOT = Path(__file__).resolve().parents[3]
+
+PROJECT_ROOT = _RUNTIME_ROOT
 ENGINE_PATH = PROJECT_ROOT / "tools" / "compliance_v1_engine.py"
 SOURCES_DIR = PROJECT_ROOT / "03_Compliance" / "reports" / "evidence" / "compliance_v1_20260928" / "sources"
 MANIFEST_PATH = SOURCES_DIR.parent / "source_manifest.json"

@@ -60,3 +60,6 @@
 
 # Sensitive Entur source retained locally; sanitized canonical HTML remains eligible.
 /07_Business/03_Market/evidence/.sensitive_local/
+# W01-P local onedir build output.
+/02_Data_Engineering/GTFS_Lab/build-w01p/
+/02_Data_Engineering/GTFS_Lab/dist-w01p/
