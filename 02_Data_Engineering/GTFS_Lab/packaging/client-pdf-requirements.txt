@@ -1,0 +1,2 @@
+# Runtime dependency used to create the optional, presentation-only PDF report.
+reportlab==5.0.1

@@ -4,6 +4,7 @@ import os
 import shutil
 
 from PyInstaller.utils.hooks import collect_dynamic_libs
+import reportlab
 
 LAB_ROOT = Path(SPECPATH).resolve().parent
 REPO_ROOT = LAB_ROOT.parents[1]
@@ -23,15 +24,18 @@ for source, _ in runtime_files:
     if not Path(source).is_file():
         raise SystemExit(f"Required packaged runtime file is missing: {source}")
 
-datas = runtime_files + [(str(LAB_ROOT / "spec"), "spec")]
-hiddenimports = ["gtfs_lab.client_workflow", "gtfs_lab.client_worker", "lxml.etree"]
+font_dir = Path(reportlab.__file__).resolve().parent / "fonts"
+pdf_fonts = [(str(font_dir / name), "reportlab/fonts")
+             for name in ("Vera.ttf", "VeraBd.ttf")]
+datas = runtime_files + [(str(LAB_ROOT / "spec"), "spec")] + pdf_fonts
+hiddenimports = ["gtfs_lab.client_workflow", "gtfs_lab.client_worker", "gtfs_lab.client_pdf", "lxml.etree"]
 binaries = collect_dynamic_libs("lxml")
 hookspath = []
 runtime_hooks = [str(LAB_ROOT / "packaging" / "runtime_path_hook.py")]
 excludes = []
 
 gui_analysis = Analysis(
-    [str(LAB_ROOT / "gtfs_lab" / "client_app.py")],
+    [str(LAB_ROOT / "packaging" / "client_gui_entry.py")],
     pathex=[str(LAB_ROOT)], binaries=binaries, datas=datas,
     hiddenimports=hiddenimports, hookspath=hookspath, hooksconfig={},
     runtime_hooks=runtime_hooks, excludes=excludes, noarchive=False,

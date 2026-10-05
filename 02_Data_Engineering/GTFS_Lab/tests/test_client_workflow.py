@@ -87,14 +87,31 @@ class ClientWorkflowTests(unittest.TestCase):
                 with patch.object(Path, "read_text", reject_pipeline_run_reload):
                     result = run_client_audit(source, root / "workspace", client_project_id="client-a",
                                               audit_id="audit-001", source_provenance="SYNTHETIC")
+                    rerun = run_client_audit(source, root / "workspace-rerun", client_project_id="client-a",
+                                             audit_id="audit-002", source_provenance="SYNTHETIC")
 
             self.assertEqual(result["status"], "COMPLETED")
             self.assertTrue(result["source_immutable"])
+            self.assertTrue(rerun["source_immutable"])
+            self.assertTrue(rerun["artifacts_sha256_verified"])
             self.assertTrue(result["artifacts_sha256_verified"])
             self.assertEqual(source.read_bytes(), before)
             delivery = Path(result["delivery_directory"])
             self.assertTrue((delivery / "audit_manifest.json").is_file())
             self.assertTrue((delivery / "report" / "client_report.md").is_file())
+            pdf_status = json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
+            pdf_path = delivery / "report" / "client_report.pdf"
+            manifest = json.loads((delivery / "audit_manifest.json").read_text(encoding="utf-8"))
+            if pdf_status["status"] == "GENERATED":
+                self.assertTrue(pdf_path.is_file())
+                self.assertIn("report/client_report.pdf", manifest["delivery_artifacts"])
+            else:
+                self.assertEqual(pdf_status["status"], "FAILED_NONBLOCKING")
+                self.assertFalse(pdf_path.exists())
+                self.assertNotIn("report/client_report.pdf", manifest["delivery_artifacts"])
+            self.assertTrue((delivery / "GIS_QGIS_GUIDE.md").is_file())
+            self.assertIn("GIS_QGIS_GUIDE.md", manifest["delivery_artifacts"])
+            self.assertIn("report/pdf_generation_status.json", manifest["delivery_artifacts"])
             interpretation = json.loads((delivery / "AUDIT_CONSOLIDATED.json").read_text(encoding="utf-8"))
             self.assertEqual(interpretation["coverage"]["accounting_gap"], 0)
             self.assertIn("tdl_ref=", interpretation["provenance"]["deterministic_family_id_basis"])
@@ -105,6 +122,15 @@ class ClientWorkflowTests(unittest.TestCase):
             contract = json.loads((Path(__file__).parents[1] / "spec" / "client_audit_contract_v1.schema.json").read_text(encoding="utf-8"))
             identity = json.loads((delivery / "dataset_identity.json").read_text(encoding="utf-8"))
             self.assertEqual(set(identity) - set(contract["properties"]), set())
+            with patch("gtfs_lab.client_workflow.run", side_effect=fake_run):
+                with patch("gtfs_lab.client_pdf.write_professional_pdf", side_effect=OSError("synthetic renderer unavailable")):
+                    failed_pdf = run_client_audit(source, root / "workspace-pdf-failure", client_project_id="client-a",
+                                                  audit_id="audit-pdf-failure", source_provenance="SYNTHETIC")
+            self.assertTrue(failed_pdf["status"].startswith("COMPLETED"))
+            failed_delivery = Path(failed_pdf["delivery_directory"])
+            pdf_status = json.loads((failed_delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
+            self.assertEqual(pdf_status["status"], "FAILED_NONBLOCKING")
+            self.assertTrue(failed_pdf["artifacts_sha256_verified"])
 
     def test_interpretation_failure_preserves_completed_audit(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
@@ -134,6 +160,21 @@ class ClientWorkflowTests(unittest.TestCase):
             self.assertTrue((delivery / "findings.json").is_file())
             self.assertFalse((delivery / "AUDIT_CONSOLIDATED.json").exists())
 
+    def test_engine_failure_is_blocked_and_does_not_expose_successful_delivery(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "synthetic.zip"
+            with zipfile.ZipFile(source, "w") as archive:
+                archive.writestr("agency.txt", "agency_name\nSynthetic\n")
+            with patch("gtfs_lab.client_workflow.run", side_effect=RuntimeError("synthetic engine failure")):
+                result = run_client_audit(source, root / "workspace", client_project_id="client-a",
+                                          audit_id="audit-engine-failure", source_provenance="SYNTHETIC")
+            self.assertEqual(result["status"], "BLOCKED_TECHNICAL")
+            self.assertTrue(result["source_immutable"])
+            root_path = root / "workspace" / "client-a" / "audit-engine-failure"
+            self.assertTrue((root_path / "audit" / "workflow_result.json").is_file())
+            self.assertFalse((root_path / "delivery" / "audit_manifest.json").exists())
+
     def test_rejects_path_navigation_in_client_identifier(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
@@ -143,6 +184,22 @@ class ClientWorkflowTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "identificador local"):
                 run_client_audit(source, root / "workspace", client_project_id="..", audit_id="audit")
             self.assertFalse((root / "workspace").exists())
+
+    def test_existing_workspace_collision_is_rejected_without_modification(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source = root / "feed.zip"
+            with zipfile.ZipFile(source, "w") as archive:
+                archive.writestr("agency.txt", "agency_name\nSynthetic\n")
+            workspace = root / "workspace"
+            workspace.mkdir()
+            marker = workspace / "preserve.txt"
+            marker.write_text("keep this output", encoding="utf-8")
+            with self.assertRaisesRegex(FileExistsError, "workspace ya existe"):
+                run_client_audit(source, workspace, client_project_id="client-a", audit_id="audit-collision",
+                                 source_provenance="SYNTHETIC")
+            self.assertEqual(marker.read_text(encoding="utf-8"), "keep this output")
+            self.assertEqual(list(workspace.iterdir()), [marker])
 
 
 if __name__ == "__main__":
