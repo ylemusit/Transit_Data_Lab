@@ -229,6 +229,7 @@ class ClientApp:
             filetypes=(("Archivo ZIP", "*.zip"), ("Todos los archivos", "*.*")),
         )
         if selected:
+            self._prepare_new_run()
             self.source.set(selected)
             self._intake = None
             try:
@@ -256,11 +257,38 @@ class ClientApp:
     def _choose_destination(self) -> None:
         selected = filedialog.askdirectory(title="Elige la carpeta donde guardar la entrega")
         if selected:
+            self._prepare_new_run()
             self.destination.set(selected)
             self._refresh_ready_state()
             self.status.set("Listo para iniciar la auditoría." if self._intake else "Valida primero un archivo GTFS ZIP.")
 
+    def _prepare_new_run(self) -> None:
+        """Detach the GUI from the previous run before accepting new inputs."""
+        if self._state in {"RUNNING", "CANCELLING"}:
+            return
+
+        self._state = "IDLE"
+        self._workspace = None
+        self._audit_id = None
+        self._stdout_path = None
+        self._stderr_path = None
+        self._technical_log_path = None
+        self._stage_path = None
+        self._stage_offset = 0
+        self._active_stage = None
+        if self._intake is not None:
+            self._show_intake(self._intake)
+        self.open_button.configure(state="disabled")
+        self.results_button.configure(state="disabled")
+        self.gis_button.configure(state="disabled")
+        self.run_button.configure(state="disabled")
+
     def _refresh_ready_state(self) -> None:
+        if self._state in {
+            "SUCCEEDED", "CANCELLED", "BLOCKED_INPUT_INVALID", "AUDIT_FAILED",
+            "APPLICATION_FAILED", "HUMAN_REVIEW_REQUIRED",
+        }:
+            self._prepare_new_run()
         ready = self._state in {"IDLE", "READY"} and self._intake is not None and Path(self.destination.get()).is_dir()
         self.run_button.configure(state="normal" if ready else "disabled")
         if ready:
@@ -272,6 +300,7 @@ class ClientApp:
         try:
             current_intake = validate_gtfs_zip(source)
         except InputValidationError as exc:
+            self._prepare_new_run()
             self._intake = None
             self.intake_summary.set(str(exc))
             self._state = "IDLE"

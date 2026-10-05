@@ -39,6 +39,44 @@ class ExecutionOutcomeClassificationTests(unittest.TestCase):
         self.assertEqual(classify_execution_result(True, 0, {"status": "COMPLETED"}), "CANCELLED")
 
 
+class NewRunPreparationTests(unittest.TestCase):
+    def test_terminal_states_rearm_valid_inputs_and_detach_previous_run(self) -> None:
+        class Button:
+            def __init__(self) -> None:
+                self.state = "normal"
+
+            def configure(self, *, state: str) -> None:
+                self.state = state
+
+        with tempfile.TemporaryDirectory() as folder:
+            old_delivery = Path(folder) / "previous-delivery"
+            old_delivery.mkdir()
+            (old_delivery / "preserved.txt").write_text("keep", encoding="utf-8")
+            for terminal in (
+                "SUCCEEDED", "CANCELLED", "BLOCKED_INPUT_INVALID", "AUDIT_FAILED",
+                "APPLICATION_FAILED", "HUMAN_REVIEW_REQUIRED",
+            ):
+                app = SimpleNamespace(
+                    _state=terminal, _workspace=old_delivery.parent, _audit_id="old-audit",
+                    _stdout_path=Path(folder) / "old.stdout", _stderr_path=Path(folder) / "old.stderr",
+                    _technical_log_path=Path(folder) / "old.technical", _stage_path=Path(folder) / "old.stages",
+                    _stage_offset=4, _active_stage="AUDIT", _intake=object(),
+                    destination=SimpleNamespace(get=lambda: folder),
+                    run_button=Button(), open_button=Button(), results_button=Button(), gis_button=Button(),
+                )
+                app._prepare_new_run = lambda: ClientApp._prepare_new_run(app)
+                app._show_intake = lambda _intake: None
+                ClientApp._refresh_ready_state(app)
+                self.assertEqual(app._state, "READY", terminal)
+                self.assertEqual(app.run_button.state, "normal", terminal)
+                self.assertIsNone(app._workspace, terminal)
+                self.assertIsNone(app._audit_id, terminal)
+                self.assertEqual(app.open_button.state, "disabled", terminal)
+                self.assertEqual(app.results_button.state, "disabled", terminal)
+                self.assertEqual(app.gis_button.state, "disabled", terminal)
+            self.assertEqual((old_delivery / "preserved.txt").read_text(encoding="utf-8"), "keep")
+
+
 class ExecutionStageTests(unittest.TestCase):
     def test_stage_markers_produce_truthful_stage_text_without_percentages(self) -> None:
         with tempfile.TemporaryDirectory() as temp:

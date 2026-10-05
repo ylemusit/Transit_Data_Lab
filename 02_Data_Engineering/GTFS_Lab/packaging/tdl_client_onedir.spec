@@ -35,7 +35,7 @@ runtime_hooks = [str(LAB_ROOT / "packaging" / "runtime_path_hook.py")]
 excludes = []
 
 gui_analysis = Analysis(
-    [str(LAB_ROOT / "gtfs_lab" / "client_app.py")],
+    [str(LAB_ROOT / "packaging" / "client_gui_entry.py")],
     pathex=[str(LAB_ROOT)], binaries=binaries, datas=datas,
     hiddenimports=hiddenimports, hookspath=hookspath, hooksconfig={},
     runtime_hooks=runtime_hooks, excludes=excludes, noarchive=False,
