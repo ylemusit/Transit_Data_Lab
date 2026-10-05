@@ -1,0 +1,811 @@
+{
+  "schema_version": "1.0",
+  "generator_version": "1.0.0",
+  "actual_pipeline": "gtfs_lab.pipeline.run",
+  "sequential": true,
+  "scale_ladder": [
+    "S1",
+    "S2",
+    "S4",
+    "S8",
+    "S16",
+    "S32",
+    "S64",
+    "S128"
+  ],
+  "completed_scales": [
+    "synthetic-gtfs-s1",
+    "synthetic-gtfs-s2",
+    "synthetic-gtfs-s4",
+    "synthetic-gtfs-s8",
+    "synthetic-gtfs-s16",
+    "synthetic-gtfs-s32",
+    "synthetic-gtfs-s64"
+  ],
+  "safe_stop_triggered": true,
+  "safe_stop_reason": "PREDICTED_S128_PRIVATE_MEMORY_9324593152_BYTES_EXCEEDS_50_PERCENT_AVAILABLE_RAM_9210972160_BYTES",
+  "safety_envelope": {
+    "synthetic_run_preflight_minimum_available_ram_gib": 1.0,
+    "synthetic_run_preflight_minimum_free_disk_gib": 1.0,
+    "maximum_predicted_private_memory_fraction_of_current_available_ram": 0.5,
+    "policy": "Before another synthetic scale, require the predicted private-memory peak to remain below half of current available RAM, leaving at least half unclaimed.",
+    "dataset_019_large_benchmark_gate_unchanged": {
+      "required_available_ram_gib": 23.613,
+      "required_free_disk_gib": 10.0,
+      "historical_peak_private_gib": 18.89,
+      "result": "SKIPPED_RESOURCE_SAFETY"
+    },
+    "production_hardware_requirement": false
+  },
+  "resource_growth_classification": "INCONCLUSIVE",
+  "measurement_classification": "OBSERVED_SAMPLED process tree at 100 ms; volume-wide free-space delta is calculated and not attributed to the child.",
+  "peak_stage_overall": {
+    "scale": "synthetic-gtfs-s64",
+    "stage": "REPORT_GENERATION",
+    "private_bytes": 4662296576,
+    "working_set_bytes": 3001683968,
+    "sampled_at_utc": "2026-10-05T00:12:33.644358+00:00"
+  },
+  "stage_analysis": {
+    "INTAKE": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "ZIP_EXTRACTION": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": 0.013809000000000002,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INGESTION": {
+      "peak_private_bytes_sampled": 784019456,
+      "peak_working_set_bytes_sampled": 789962752,
+      "sample_count": 2,
+      "duration_seconds_observed_sum": 0.227526,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "AUDIT": {
+      "peak_private_bytes_sampled": 781656064,
+      "peak_working_set_bytes_sampled": 787841024,
+      "sample_count": 286,
+      "duration_seconds_observed_sum": 35.613566999999996,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INTERPRETATION": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "REPORT_GENERATION": {
+      "peak_private_bytes_sampled": 4662296576,
+      "peak_working_set_bytes_sampled": 4071231488,
+      "sample_count": 186,
+      "duration_seconds_observed_sum": 20.717939,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPLAY": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "CLEANUP": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    }
+  },
+  "measurements": [
+    {
+      "fixture_id": "synthetic-gtfs-s1",
+      "scale_factor": 1,
+      "sha256": "d5453a40485dd7ddfa41e2cad133f3f44bf4c0f226bf1e4eb36c497a60b4086b",
+      "zip_bytes": 9787,
+      "uncompressed_bytes": 50037,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 11,
+        "stops.txt": 501,
+        "trips.txt": 101,
+        "stop_times.txt": 1001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 10,
+        "stops.txt": 500,
+        "trips.txt": 100,
+        "stop_times.txt": 1000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 0.779,
+      "cpu_time_s": 0.453,
+      "peak_process_tree_working_set_bytes_sampled": 90447872,
+      "peak_process_tree_private_bytes_sampled": 91340800,
+      "sample_interval_s": 0.1,
+      "sample_count": 6,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -12668928,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 12094205,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-f0929b0623934689",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:34.833354+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17767596032,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 728286568448,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 6.4690026954177915,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s2",
+      "scale_factor": 2,
+      "sha256": "cae5895ad945a640de2fe89eff55f61f0fc11f11fffdb4b88e3e265efe914393",
+      "zip_bytes": 18884,
+      "uncompressed_bytes": 101447,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 21,
+        "stops.txt": 1001,
+        "trips.txt": 201,
+        "stop_times.txt": 2001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 20,
+        "stops.txt": 1000,
+        "trips.txt": 200,
+        "stop_times.txt": 2000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 1.114,
+      "cpu_time_s": 0.781,
+      "peak_process_tree_working_set_bytes_sampled": 104296448,
+      "peak_process_tree_private_bytes_sampled": 117469184,
+      "sample_interval_s": 0.1,
+      "sample_count": 10,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -21118976,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 21070095,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-e7703b2f237b4d9f",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:35.882502+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17739948032,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 728273874944,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 5.974025974025976,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s4",
+      "scale_factor": 4,
+      "sha256": "96d34a5d922e5054491b587c67621eb94c821c77b8afec607de3884d139e01e7",
+      "zip_bytes": 42441,
+      "uncompressed_bytes": 208267,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 41,
+        "stops.txt": 2001,
+        "trips.txt": 401,
+        "stop_times.txt": 4001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 40,
+        "stops.txt": 2000,
+        "trips.txt": 400,
+        "stop_times.txt": 4000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 1.786,
+      "cpu_time_s": 1.516,
+      "peak_process_tree_working_set_bytes_sampled": 210227200,
+      "peak_process_tree_private_bytes_sampled": 204042240,
+      "sample_interval_s": 0.1,
+      "sample_count": 16,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -39092224,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 39035833,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-0c108e6710ef43bf",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:37.327680+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17736216576,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 728252702720,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 3.7735849056603765,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s8",
+      "scale_factor": 8,
+      "sha256": "c09e4137270dcea3d105dcdee832852bdc3c33051f6dff0c4bc8592056c5aacf",
+      "zip_bytes": 84236,
+      "uncompressed_bytes": 421907,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 81,
+        "stops.txt": 4001,
+        "trips.txt": 801,
+        "stop_times.txt": 8001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 80,
+        "stops.txt": 4000,
+        "trips.txt": 800,
+        "stop_times.txt": 8000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 3.551,
+      "cpu_time_s": 3.234,
+      "peak_process_tree_working_set_bytes_sampled": 474898432,
+      "peak_process_tree_private_bytes_sampled": 613462016,
+      "sample_interval_s": 0.1,
+      "sample_count": 32,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -75038720,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 74967311,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-6dd442aeb6404126",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:39.392810+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17821376512,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 728213520384,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 4.7887323943662015,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s16",
+      "scale_factor": 16,
+      "sha256": "32a040c26df65d1f7f12771e8ed3e35c3a6137ecedac4dc72f765fe83e8d1c2f",
+      "zip_bytes": 167370,
+      "uncompressed_bytes": 856508,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 161,
+        "stops.txt": 8001,
+        "trips.txt": 1601,
+        "stop_times.txt": 16001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 160,
+        "stops.txt": 8000,
+        "trips.txt": 1600,
+        "stop_times.txt": 16000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 7.071,
+      "cpu_time_s": 6.719,
+      "peak_process_tree_working_set_bytes_sampled": 925597696,
+      "peak_process_tree_private_bytes_sampled": 1193066496,
+      "sample_interval_s": 0.1,
+      "sample_count": 64,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -146894848,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 146856298,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-f2bf470737214a44",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:43.233973+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17786814464,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 728138305536,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 6.5274151436031325,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s32",
+      "scale_factor": 32,
+      "sha256": "23329959b21b4c6deee1bf0ee3cdd0a555007757f217e7addf2fbb36a7e516c5",
+      "zip_bytes": 333490,
+      "uncompressed_bytes": 1754588,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 321,
+        "stops.txt": 16001,
+        "trips.txt": 3201,
+        "stop_times.txt": 32001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 320,
+        "stops.txt": 16000,
+        "trips.txt": 3200,
+        "stop_times.txt": 32000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 14.617,
+      "cpu_time_s": 13.562,
+      "peak_process_tree_working_set_bytes_sampled": 2039586816,
+      "peak_process_tree_private_bytes_sampled": 2350170112,
+      "sample_interval_s": 0.1,
+      "sample_count": 132,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -291401728,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 290997631,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-331a759c48c840ff",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:11:50.624403+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 17784770560,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 727991062528,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 3.8659793814432963,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    },
+    {
+      "fixture_id": "synthetic-gtfs-s64",
+      "scale_factor": 64,
+      "sha256": "973db9fa3fa38736b01697ea47d500546b85ffb2e5e334f34e66268781d45332",
+      "zip_bytes": 656734,
+      "uncompressed_bytes": 3566748,
+      "row_counts_including_header": {
+        "agency.txt": 2,
+        "routes.txt": 641,
+        "stops.txt": 32001,
+        "trips.txt": 6401,
+        "stop_times.txt": 64001,
+        "calendar.txt": 2
+      },
+      "data_row_counts": {
+        "agency.txt": 1,
+        "routes.txt": 640,
+        "stops.txt": 32000,
+        "trips.txt": 6400,
+        "stop_times.txt": 64000,
+        "calendar.txt": 1
+      },
+      "wall_time_s": 29.056,
+      "cpu_time_s": 27.906,
+      "peak_process_tree_working_set_bytes_sampled": 4071231488,
+      "peak_process_tree_private_bytes_sampled": 4662296576,
+      "sample_interval_s": 0.1,
+      "sample_count": 262,
+      "stage_at_private_peak": "REPORT_GENERATION",
+      "disk_free_delta_bytes_calculated_volume_wide": -580587520,
+      "workspace_tree_growth_bytes": null,
+      "temp_tree_growth_bytes": 0,
+      "artifact_bytes": 579336262,
+      "exit_status": 0,
+      "pipeline_run_id": "GTFSRUN-0dad2e9800ba4dba",
+      "pipeline_summary": {
+        "ingestion": "PASS",
+        "integrity": "PASS",
+        "validation": "PASS",
+        "findings": 0,
+        "g03_file_catalog": "PASS",
+        "g03": "NOT_EVALUABLE",
+        "g04": "NOT_EVALUABLE",
+        "g05": "PASS",
+        "g06": "NOT_EVALUABLE",
+        "g07": "NOT_APPLICABLE",
+        "analysis": "PASS",
+        "gis": "PASS",
+        "database": "PASS",
+        "compliance_v1": "PASS"
+      },
+      "output_artifact_count": 22,
+      "preflight": {
+        "schema_version": "1.0",
+        "checked_at_utc": "2026-10-05T00:12:05.604949+00:00",
+        "status": "PASS",
+        "benchmark_class": "synthetic",
+        "policy": {
+          "historical_dataset_019_peak_private_gib": 18.89,
+          "available_ram_headroom_factor": 1.25,
+          "minimum_available_ram_gib": 1.0,
+          "minimum_free_disk_gib": 1.0,
+          "maximum_sampled_system_cpu_busy_percent": 25.0,
+          "note": "Experimental development gate only; not a production hardware requirement."
+        },
+        "checks": {
+          "physical_ram_available": {
+            "status": "PASS",
+            "observed_bytes": 18421944320,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "disk_free": {
+            "status": "PASS",
+            "observed_bytes": 727698989056,
+            "required_bytes": 1073741824,
+            "classification": "OBSERVED"
+          },
+          "expected_working_directory": {
+            "status": "PASS",
+            "expected_root": "LOCAL_PATH_REDACTED",
+            "work_dir": "LOCAL_PATH_REDACTED",
+            "classification": "OBSERVED"
+          },
+          "system_pressure": {
+            "status": "PASS",
+            "cpu_busy_percent_sampled": 5.1948051948051965,
+            "maximum_percent": 25.0,
+            "classification": "OBSERVED_SAMPLED"
+          }
+        }
+      }
+    }
+  ],
+  "replication_runs": [
+    {
+      "run": "synthetic_scale_runs_20261005",
+      "classification": "LINEAR",
+      "completed_scales": [
+        "synthetic-gtfs-s1",
+        "synthetic-gtfs-s2",
+        "synthetic-gtfs-s4",
+        "synthetic-gtfs-s8"
+      ],
+      "safe_stop_triggered": false
+    },
+    {
+      "run": "synthetic_scale_runs_20261005_extended",
+      "classification": "INCONCLUSIVE",
+      "completed_scales": [
+        "synthetic-gtfs-s1",
+        "synthetic-gtfs-s2",
+        "synthetic-gtfs-s4",
+        "synthetic-gtfs-s8",
+        "synthetic-gtfs-s16",
+        "synthetic-gtfs-s32",
+        "synthetic-gtfs-s64"
+      ],
+      "safe_stop_triggered": false
+    },
+    {
+      "run": "synthetic_scale_runs_20261005_final",
+      "classification": "INCONCLUSIVE",
+      "completed_scales": [
+        "synthetic-gtfs-s1",
+        "synthetic-gtfs-s2",
+        "synthetic-gtfs-s4",
+        "synthetic-gtfs-s8",
+        "synthetic-gtfs-s16",
+        "synthetic-gtfs-s32",
+        "synthetic-gtfs-s64"
+      ],
+      "safe_stop_triggered": true
+    }
+  ],
+  "interpretation": "INCONCLUSIVE overall: small synthetic scale sample and early-scale variability prevent a stable category; observed later doubling measurements are broadly proportional but are not a mathematical complexity claim.",
+  "historical_problem_reproduced": false
+}

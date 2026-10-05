@@ -1,0 +1,9 @@
+{
+  "packaged_run_json": "pyinstaller_streaming_final/audit_output/<run-id>/run.json",
+  "bytes": 9900599,
+  "sha256": "befc015093e73ed4bfec894f69f3dcf717a75b9690c8565753ecae6f7624954f",
+  "current_streamed_roundtrip_bytes": 9900599,
+  "current_streamed_roundtrip_sha256": "befc015093e73ed4bfec894f69f3dcf717a75b9690c8565753ecae6f7624954f",
+  "byte_equivalent": true,
+  "duckdb_bundled": true
+}

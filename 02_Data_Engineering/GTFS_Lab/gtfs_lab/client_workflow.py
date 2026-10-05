@@ -18,6 +18,7 @@ from .core import sha256_file
 from .ingestion import IngestionError
 from .interpretation.consolidation import build_result as build_interpretation
 from .interpretation.reporting import write_reports as write_interpretation_reports
+from .resource_stages import mark as _mark_stage
 from .pipeline import run
 
 WORKFLOW_VERSION = "1.0.0"
@@ -226,6 +227,7 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
                      audit_mode: str = "INITIAL", baseline_run: Path | None = None,
                      derived_zip: Path | None = None) -> dict[str, Any]:
     """Run a single local audit and produce a hash-verified delivery directory."""
+    _mark_stage("INTAKE", "START")
     source_zip = source_zip.resolve()
     workspace = workspace.resolve()
     if not source_zip.is_file() or source_zip.suffix.lower() != ".zip":
@@ -259,6 +261,7 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
     shutil.copyfile(source_zip, frozen_source)
     if _sha256(frozen_source) != source_sha or frozen_source.stat().st_size != source_size:
         raise RuntimeError("BLOCKED_TECHNICAL: SOURCE freeze no conserva hash/tamaño")
+    _mark_stage("INTAKE", "END")
 
     identity = {"client_project_id": client_project_id, "audit_id": audit_id,
                 "dataset_id": "GTFS-" + source_sha[:16], "source_filename": source_zip.name,
@@ -287,6 +290,7 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         engine_report = json.loads(engine_json_path.read_text(encoding="utf-8"))
         run_json["engine_report"] = engine_report
         findings = _finding_rows(run_json, result["dataset"]["source_sha256"])
+        _mark_stage("INTERPRETATION", "START")
         interpretation_status: dict[str, Any]
         interpretation_result = None
         try:
@@ -304,12 +308,15 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             interpretation_status = {"status": "INTERPRETATION_FAILED",
                                      "error_type": type(exc).__name__, "message": str(exc)}
         _write_json(zones["AUDIT"] / "audit_interpretation_status.json", interpretation_status)
+        _mark_stage("INTERPRETATION", "END")
 
         remediation = ({"decision": "HUMAN_REVIEW", "reason": "La selección de cambios depende de evidencia y autorización humana caso por caso; no se ejecutó remediación automática genérica."}
                       if findings else {"decision": "NOT_REMEDIABLE", "reason": "No hay findings que evaluar para remediación."})
         comparison = None
         if baseline_run is not None:
+            _mark_stage("REPLAY", "START")
             comparison = compare_audit_directories(baseline_run.resolve(), engine_run_dir)
+            _mark_stage("REPLAY", "END")
 
         _write_json(zones["AUDIT"] / "findings.json", {"contract": "TDLClientFindings", "version": "1.0.0", "source_sha256": result["dataset"]["source_sha256"], "findings": findings})
         _write_json(zones["AUDIT"] / "compliance.json", run_json.get("compliance_v1", {}))
@@ -378,6 +385,7 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             shutil.copyfile(zones["AUDIT"] / "AUDIT_CONSOLIDATED.md", delivery / "AUDIT_CONSOLIDATED.md")
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
+        _mark_stage("REPORT_GENERATION", "START")
         streamed_json = _sanitize_delivery(delivery)
         unredacted_path_found = False
         for path in delivery.rglob("*"):
@@ -402,6 +410,7 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         manifest_sha = _sha256(delivery / "audit_manifest.json")
         _write_json(delivery / "delivery_seal.json", {"audit_manifest_sha256": manifest_sha,
                     "artifacts_verified": manifest["artifacts_sha256_verified"], "sealed_at_utc": _utc_now()})
+        _mark_stage("REPORT_GENERATION", "END")
         if _sha256(frozen_source) != source_sha:
             raise RuntimeError("BLOCKED_TECHNICAL: SOURCE cambió durante la ejecución")
         return {"status": final_status, "audit_id": audit_id, "source_sha256": source_sha,

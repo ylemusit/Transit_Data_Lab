@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "evidence_base_commit": "f53335747562206936e5db7704dfb093844d768e",
+  "capture_date": "2026-10-04",
+  "scope": "Current Windows workstation observation and static GTFS client runtime inventory; not a packaged runtime",
+  "host_observed": {
+    "windows_caption": "Microsoft Windows 11 Home",
+    "windows_version": "10.0.26300",
+    "build": "26300",
+    "architecture": "64-bit",
+    "cpu": "AMD Ryzen 9 9900X 12-Core Processor",
+    "physical_cores": 12,
+    "logical_processors": 24,
+    "physical_ram_bytes": 33450287104,
+    "physical_ram_gib": 31.15,
+    "available_ram_gib_at_capture": 16.88,
+    "system_volume": "C: NTFS",
+    "system_volume_size_bytes": 1629431525376,
+    "system_volume_free_bytes": 729930420224,
+    "system_volume_free_gib": 679.83,
+    "qgis_command_on_path": false
+  },
+  "runtime_observed": {
+    "python_version": "3.12.10",
+    "python_executable": "LOCAL_PATH_REDACTED",
+    "python_environment": "Global interpreter; no project virtual environment identified in this checkout",
+    "duckdb_cli_version": "1.5.5 (Variegata) d8cdaa33fd",
+    "duckdb_cli_path": "Resolved from PATH; full user-profile path omitted",
+    "duckdb_python_binding": "NOT_INSTALLED_IN_OBSERVED_INTERPRETER; current engine invokes CLI, not binding",
+    "project_dependency_manifest": "No GTFS_Lab requirements.txt, requirements-dev.txt or pyproject.toml at lab root",
+    "engine_python_dependencies": [
+      "lxml 6.1.3 observed in host interpreter; Compliance V1 evaluator imports lxml.etree",
+      "Python standard library",
+      "internal gtfs_lab modules"
+    ],
+    "native_or_external_runtime": [
+      "DuckDB CLI executable, required on PATH",
+      "lxml native libxml2/libxslt components collected with its Windows wheel"
+    ],
+    "optional_integrations": [
+      "QGIS external workstation application; no QGIS executable observed on PATH"
+    ],
+    "test_only_or_packaging_tools_observed": [
+      "unittest in Python standard library",
+      "PyInstaller 6.22.3 installed on host, not declared as project runtime dependency"
+    ]
+  },
+  "filesystem_and_encoding": {
+    "controlled_test_bank_default": "LOCAL_PATH_REDACTED",
+    "test_bank_maximum_absolute_path_characters": 64,
+    "test_bank_source_policy": "SOURCE ZIP exact bytes, read-only attribute, source hashes checked before/after; operator bank and backups stay outside Git",
+    "working_state": "Per-run working directory and dataset.duckdb; Test Bank a/b run workspaces and delivery/evidence directories",
+    "temporary_path_environment_variable": "TEMP/TMP, observed dynamically by Windows; per-run tree growth not captured in current synthetic smoke run",
+    "text_output": "Workflow JSON/Markdown writes use UTF-8; DuckDB subprocess output is decoded as UTF-8 with replacement on errors",
+    "gtfs_input_encodings": [
+      "utf-8-sig",
+      "utf-8",
+      "cp1252 fallback"
+    ],
+    "windows_behavior": [
+      "DuckDB CLI discovered with PATH lookup",
+      "short workspace is recommended by documented Test Bank Windows operational history",
+      "crash recovery remains manual"
+    ]
+  },
+  "execution_boundaries": {
+    "python_engine": "client_workflow and pipeline execute in the caller's Python process",
+    "subprocesses": [
+      "DuckDB CLI invoked twice during database creation/verification",
+      "Git metadata probes are best-effort and are not engine execution"
+    ],
+    "shared_mutable_state": [
+      "workflow output root/run directory",
+      "Test Bank exclusive lock and case registry when using Test Bank"
+    ],
+    "parallel_runs": "Test Bank is serial and lock-protected; no supported queue or parallel case execution",
+    "crash_recovery": "Manual review/recovery; ACTIVE cases are not automatically promoted"
+  },
+  "limitations": [
+    "This is the developer workstation, not a representative minimum customer PC.",
+    "The globally installed package list is not evidence of a distributable dependency set.",
+    "No clean-machine runtime or packaged application has been built or tested.",
+    "QGIS is an external boundary and was not tested on this workstation."
+  ]
+}

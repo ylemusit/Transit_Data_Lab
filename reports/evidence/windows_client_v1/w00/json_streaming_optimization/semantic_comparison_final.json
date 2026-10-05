@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "baseline_commit": "f53335747562206936e5db7704dfb093844d768e",
+  "fixture_sha256": "d5453a40485dd7ddfa41e2cad133f3f44bf4c0f226bf1e4eb36c497a60b4086b",
+  "baseline_status": "COMPLETED_WITH_LIMITATIONS",
+  "instrumented_status": "COMPLETED_WITH_LIMITATIONS",
+  "checks": {
+    "source_identity": true,
+    "dataset_identity": true,
+    "evidence_references": true,
+    "raw_findings": true,
+    "family_accounting": true,
+    "interpretation": true,
+    "report_semantics": true,
+    "contract_versions": true
+  },
+  "semantic_equivalence": "PASS",
+  "optimization_implemented": true,
+  "optimization_before_after_improvement": "NOT_MEASURED_BY_THIS_COMPARATOR; SEE W00P BENCHMARK",
+  "replay_semantics": "NOT_APPLICABLE; both are initial audits, not replay",
+  "projection": "raw findings, family/rule accounting, interpretation, evidence references, dataset identity, report semantics and versions",
+  "baseline_delivery": "synthetic baseline delivery; local path omitted",
+  "instrumented_delivery": "synthetic instrumented delivery; local path omitted"
+}

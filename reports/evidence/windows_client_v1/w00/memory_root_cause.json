@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "memory_root_cause": "NOT_REPRODUCED_WITH_SYNTHETIC_WORKLOAD",
+  "dataset_019": "SKIPPED_RESOURCE_SAFETY; available RAM remained below 23.613 GiB during W00-R preflight; not rerun.",
+  "synthetic_observation": {
+    "scale": "synthetic-gtfs-s64",
+    "active_stage_at_peak": "REPORT_GENERATION",
+    "peak_private_bytes_sampled": 4662296576,
+    "interpretation": "Temporal stage correlation only; no measured component attribution."
+  },
+  "stage_memory_profile": {
+    "INTAKE": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "ZIP_EXTRACTION": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": 0.013809000000000002,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INGESTION": {
+      "peak_private_bytes_sampled": 784019456,
+      "peak_working_set_bytes_sampled": 789962752,
+      "sample_count": 2,
+      "duration_seconds_observed_sum": 0.227526,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "AUDIT": {
+      "peak_private_bytes_sampled": 781656064,
+      "peak_working_set_bytes_sampled": 787841024,
+      "sample_count": 286,
+      "duration_seconds_observed_sum": 35.613566999999996,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INTERPRETATION": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "REPORT_GENERATION": {
+      "peak_private_bytes_sampled": 4662296576,
+      "peak_working_set_bytes_sampled": 4071231488,
+      "sample_count": 186,
+      "duration_seconds_observed_sum": 20.717939,
+      "memory_classification": "OBSERVED_SAMPLED",
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPLAY": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    },
+    "CLEANUP": {
+      "peak_private_bytes_sampled": null,
+      "peak_working_set_bytes_sampled": null,
+      "sample_count": 0,
+      "duration_seconds_observed_sum": null,
+      "memory_classification": "NOT_CAPTURED",
+      "duration_classification": "NOT_CAPTURED"
+    }
+  },
+  "unmeasured_stages": [
+    "INTAKE",
+    "INTERPRETATION",
+    "REPLAY",
+    "CLEANUP"
+  ],
+  "candidate_components": [
+    "ZIP/CSV materialization",
+    "DuckDB process",
+    "Python validation and analysis structures",
+    "findings and interpretation",
+    "serialization/report construction",
+    "replay duplication"
+  ],
+  "cause_assigned": false,
+  "reason": "The synthetic pipeline did not reproduce the historical high-memory observation. Fast stages also had no sampled peak at the 100 ms interval. No component is blamed from code presence alone."
+}

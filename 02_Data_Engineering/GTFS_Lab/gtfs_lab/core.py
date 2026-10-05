@@ -52,7 +52,25 @@ def new_run_id() -> str:
 
 def write_json(path: Path, data: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    encoder = json.JSONEncoder(ensure_ascii=False, indent=2)
+    chunks = encoder.iterencode(data)
+    write_buffer: list[str] = []
+    buffered_characters = 0
+    with path.open("w", encoding="utf-8") as stream:
+        while True:
+            try:
+                chunk = next(chunks)
+            except StopIteration:
+                break
+            write_buffer.append(chunk)
+            buffered_characters += len(chunk)
+            if buffered_characters >= 64 * 1024:
+                stream.write("".join(write_buffer))
+                write_buffer.clear()
+                buffered_characters = 0
+        if write_buffer:
+            stream.write("".join(write_buffer))
+        stream.write("\n")
 
 def result_dict(result: RuleResult) -> dict[str, Any]:
     return asdict(result)

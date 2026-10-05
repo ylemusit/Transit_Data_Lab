@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "pyinstaller_version": "6.22.3",
+  "python_build_version": "3.12.10",
+  "mode": "onedir",
+  "tested_from_dist_directory": "LOCAL_PATH_REDACTED",
+  "developer_python_or_duckdb_path_available_to_worker": false,
+  "clean_machine_validation": "PENDING",
+  "bundled_python_runtime": "BUNDLED",
+  "duckdb_bundled": true,
+  "duckdb_version": "v1.5.5 (Variegata) d8cdaa33fd",
+  "duckdb_sha256": "fde737c7749075f6b54e14772a4e6b33a5fa0201075d03640aca358074ea4554",
+  "tdl_imports": "PASS",
+  "lxml_and_compliance_resource_hash_validation": "PASS",
+  "lxml_version": "6.1.3",
+  "libxml2_version": "2.11.9",
+  "resource_paths": {
+    "engine": "LOCAL_PATH_REDACTED",
+    "sources": "LOCAL_PATH_REDACTED",
+    "runtime_root": "LOCAL_PATH_REDACTED"
+  },
+  "worker_self_check_exit_status": 0,
+  "synthetic_audit": {
+    "exit_status": 0,
+    "summary": {
+      "ingestion": "PASS",
+      "integrity": "PASS",
+      "validation": "PASS",
+      "findings": 0,
+      "g03_file_catalog": "PASS",
+      "g03": "NOT_EVALUABLE",
+      "g04": "NOT_EVALUABLE",
+      "g05": "PASS",
+      "g06": "NOT_EVALUABLE",
+      "g07": "NOT_APPLICABLE",
+      "analysis": "PASS",
+      "gis": "PASS",
+      "database": "PASS",
+      "compliance_v1": "PASS"
+    },
+    "database": {
+      "status": "PASS",
+      "database": "LOCAL_PATH_REDACTED",
+      "tables": [
+        "agency",
+        "calendar",
+        "routes",
+        "stop_times",
+        "stops",
+        "trips"
+      ],
+      "cli_output": "┌──────────┐\n│ all_text │\n│ boolean  │\n├──────────┤\n│ true     │\n└──────────┘\n"
+    },
+    "wall_time_s": 0.668,
+    "cpu_time_s": 0.453,
+    "peak_working_set_bytes_sampled": 78225408,
+    "peak_private_bytes_sampled": 113192960,
+    "process_tree": [
+      {
+        "pid": 33448,
+        "first_seen_utc": "2026-10-05T00:30:17.057143+00:00",
+        "last_seen_utc": "2026-10-05T00:30:17.652872+00:00",
+        "samples": 11,
+        "parent_pid": 15652,
+        "process_name": "tdl-w00o-worker.exe",
+        "process_start_filetime": 134356338170548404,
+        "process_end_time": "2026-10-05T00:30:17.712347+00:00",
+        "working_set_bytes": 44294144,
+        "peak_sampled_working_set_bytes": 78225408,
+        "private_bytes": 34701312,
+        "peak_sampled_private_bytes": 69332992,
+        "cpu_time_us": 468750,
+        "peak_sampled_cpu_time_us": 468750,
+        "exit_status": 0
+      },
+      {
+        "pid": 24924,
+        "first_seen_utc": "2026-10-05T00:30:17.415606+00:00",
+        "last_seen_utc": "2026-10-05T00:30:17.415606+00:00",
+        "samples": 1,
+        "parent_pid": 33448,
+        "process_name": "duckdb.exe",
+        "process_start_filetime": 134356338173805929,
+        "process_end_time": "NOT_CAPTURED; process may have exited between samples",
+        "working_set_bytes": 26968064,
+        "peak_sampled_working_set_bytes": 26968064,
+        "private_bytes": 78819328,
+        "peak_sampled_private_bytes": 78819328,
+        "cpu_time_us": 46875,
+        "peak_sampled_cpu_time_us": 46875
+      }
+    ],
+    "artifact_bytes": 12094043,
+    "artifacts": [
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/analysis.json",
+        "bytes": 17334
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/dataset.duckdb",
+        "bytes": 1847296
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/engine_report.json",
+        "bytes": 23620
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/engine_report.md",
+        "bytes": 3656
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/g04.json",
+        "bytes": 3290
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/g05.json",
+        "bytes": 2798
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/g06.json",
+        "bytes": 1882
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/g07.json",
+        "bytes": 1577
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/g08.json",
+        "bytes": 2543
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/report.md",
+        "bytes": 6272
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/run.json",
+        "bytes": 9900368
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/validation.json",
+        "bytes": 3418
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/audit/audit_manifest.json",
+        "bytes": 2816
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/audit/findings.normalized.json",
+        "bytes": 497
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/exports/stops.geojson",
+        "bytes": 170227
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/exports/stops.kml",
+        "bytes": 56412
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/agency.txt",
+        "bytes": 104
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/calendar.txt",
+        "bytes": 123
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/routes.txt",
+        "bytes": 138
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/stops.txt",
+        "bytes": 19816
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/stop_times.txt",
+        "bytes": 28838
+      },
+      {
+        "path": "GTFSRUN-20986b75b28a4e9b/input/trips.txt",
+        "bytes": 1018
+      }
+    ]
+  },
+  "process_tree_absent_after_exit": true,
+  "orphan_processes": [],
+  "dist_package_bytes_excluding_generated_output": 67696340,
+  "dist_package_file_count": 94,
+  "dist_package_manifest_sha256": "2aae2718a077890347fdc060318758efb5d6e13ba85a2a0369cfeecaf40f983e",
+  "limitations": [
+    "Executed on the developer workstation with system PATH restricted to Windows System32.",
+    "A fresh Windows VM without Python/development tools remains untested.",
+    "The worker proof is local feasibility evidence, not an installer or signed release."
+  ]
+}

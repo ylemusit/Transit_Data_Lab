@@ -23,6 +23,7 @@ from typing import Any
 from .client_workflow import _redact_local_paths, _redact_path_text, run_client_audit
 from .core import sha256_file
 from .interpretation.consolidation import semantic_fingerprint
+from .resource_stages import mark as _mark_stage
 
 BANK_VERSION = "1.0.0"
 DEFAULT_TEST_BANK_ROOT = Path("C:/TDL/BANK")
@@ -323,6 +324,7 @@ def run_case(source: Path, bank: Path, *, metadata: dict[str, Any] | None = None
                     record.update(audit_status=manifest["status"], findings=result["findings_count"])
                     initial_workflow = workflow
             phase, category = "REPLAY", "REPLAY"
+            _mark_stage("REPLAY", "START")
             hashes = [sha256_file(path / "engine_report.json") for path in engine_dirs]
             interpretation_paths = [Path(outcome["delivery_directory"]) / "AUDIT_CONSOLIDATED.json" for outcome in outcomes]
             interpretation_results = [_read(path) for path in interpretation_paths]
@@ -339,6 +341,7 @@ def run_case(source: Path, bank: Path, *, metadata: dict[str, Any] | None = None
             gates["REPLAY_COMPLETED"] = True
             gates["INTERPRETATION_REPLAY"] = interpretation_fingerprints[0] == interpretation_fingerprints[1]
             record["replay"] = "PASS"
+            _mark_stage("REPLAY", "END")
             phase, category = "DELIVERY", "DELIVERY"
             _delivery(case, identity, initial_workflow, case_id)
             gates["DELIVERY_GENERATED"] = True
@@ -364,11 +367,13 @@ def run_case(source: Path, bank: Path, *, metadata: dict[str, Any] | None = None
                       replay_result=record["replay"], finding_count=record["findings"])
         destination = bank / record["result"] / f"{case_id}_{record['result']}"
         record["case_path"] = destination.relative_to(bank).as_posix()
+        _mark_stage("CLEANUP", "START")
         _write(case / "case.json", record)
         # Paths in runner results remain observed historical paths. Resolve current
         # files relative to case_path; never rewrite the sealed workflow manifests.
         case.rename(destination)
         _rebuild(bank)
+        _mark_stage("CLEANUP", "END")
         return record
 
 

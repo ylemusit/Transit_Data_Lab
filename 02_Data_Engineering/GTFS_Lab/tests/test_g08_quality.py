@@ -7,6 +7,7 @@ import zipfile
 
 from gtfs_lab.g08_quality import RULES, evaluate_g08, evaluate_g08_run, register_g08_rules
 from gtfs_lab.gate import create_fixtures
+from gtfs_lab.core import write_json
 from gtfs_lab.pipeline import run
 from gtfs_lab.rule_registry import RuleRegistry
 
@@ -105,6 +106,15 @@ class G08QualityTests(unittest.TestCase):
             self.assertTrue(legacy_ids.isdisjoint(RULES))
             report = (run_dir / "engine_report.md").read_text(encoding="utf-8")
             self.assertIn("GTFS Audit Engine V1", report)
+            serialization_value = {"unicode": "Bilbao — autobús 🚍",
+                                  "ordered": {"first": 1, "second": [True, None, "á"]},
+                                  "large": "x" * (64 * 1024 + 17)}
+            serialized_path = root / "streamed.json"
+            legacy_path = root / "legacy.json"
+            legacy_path.write_text(json.dumps(serialization_value, ensure_ascii=False, indent=2) + "\n",
+                                   encoding="utf-8")
+            write_json(serialized_path, serialization_value)
+            self.assertEqual(legacy_path.read_bytes(), serialized_path.read_bytes())
             second = run(fixture, root / "runs")
             second_dir = root / "runs" / second["run_id"]
             self.assertEqual((run_dir / "engine_report.json").read_bytes(),

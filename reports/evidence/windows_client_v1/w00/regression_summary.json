@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "command": "python -m unittest discover -s tests -v",
+  "result": "PASS",
+  "total": 291,
+  "passed": 290,
+  "failed": 0,
+  "skipped": 1,
+  "documented_skip": "Compliance V1 transition test requires the separately backed-up protected database, intentionally absent from the clean checkout.",
+  "full_console_log": "retained locally; omitted from publication because it contains a workstation path"
+}

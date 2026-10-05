@@ -7,6 +7,7 @@ from pathlib import Path, PurePosixPath
 import zipfile
 from . import VERSION
 from .core import DatasetIdentity, RunContext, new_run_id, sha256_file
+from .resource_stages import mark as _mark_stage
 
 KNOWN = ["agency", "stops", "routes", "trips", "stop_times", "calendar", "calendar_dates", "shapes", "frequencies", "transfers", "feed_info", "levels", "translations", "pathways", "attributions", "fare_attributes", "fare_rules", "fare_media", "fare_products", "fare_leg_rules", "fare_leg_join_rules", "fare_transfer_rules", "timeframes", "networks", "route_networks", "areas", "stop_areas", "locations", "location_groups", "booking_rules", "fare_parkings"]
 REQUIRED = {"agency", "stops", "routes", "trips", "stop_times"}
@@ -103,10 +104,14 @@ def inspect_zip(zip_path: Path) -> tuple[dict[str, zipfile.ZipInfo], list[str], 
         return selected, warnings, not_supported
 
 def _validate_member(zf: zipfile.ZipFile, info: zipfile.ZipInfo, table: str) -> tuple[bytes, list[str], str, int, list[str]]:
+    _mark_stage("ZIP_EXTRACTION", "START")
     try:
         raw = zf.read(info)
     except (OSError, zipfile.BadZipFile, RuntimeError) as exc:
         raise IngestionError(f"No se pudo descomprimir {info.filename}: {exc}") from exc
+    finally:
+        _mark_stage("ZIP_EXTRACTION", "END")
+    _mark_stage("INGESTION", "START")
     text, encoding = _decode(raw)
     if encoding == "cp1252":
         warning = [f"{info.filename}: se aplicó fallback cp1252"]
@@ -145,6 +150,7 @@ def _validate_member(zf: zipfile.ZipFile, info: zipfile.ZipInfo, table: str) -> 
         raise IngestionError(f"CSV malformado en {info.filename}: {exc}") from exc
     if empty_record_count:
         warning.append(f"EMPTY_CSV_RECORD_IGNORED table={table}.txt lines={','.join(map(str, empty_record_lines))} count={empty_record_count}")
+    _mark_stage("INGESTION", "END")
     return raw, header, encoding, rows, warning
 
 def load_dataset(zip_path: Path, output_dir: Path) -> RunContext:

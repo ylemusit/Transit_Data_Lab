@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "W00-M",
+  "date": "2026-10-05",
+  "status": "W00M_READY_FOR_HUMAN_REVIEW",
+  "classification": "W00M_ROOT_CAUSE_PROBABLE",
+  "reproduction_scale": "S4",
+  "peak_substage": "JSON_SERIALIZATION",
+  "peak_private_memory_bytes_sampled": 288591872,
+  "dataset_019": "DEFERRED",
+  "clean_machine_validation": "PENDING",
+  "holdout_accessed": "NO",
+  "w01": "BLOCKED",
+  "full_synthetic_outputs_versioned": "NO",
+  "deletion_performed": "NO",
+  "instrumented_substages": [
+    "REPORT_INPUT_PREPARATION",
+    "JSON_SERIALIZATION",
+    "JSON_FILE_WRITE",
+    "MARKDOWN_MODEL_BUILD",
+    "MARKDOWN_FILE_WRITE",
+    "ENGINE_JSON_MODEL_BUILD",
+    "ENGINE_JSON_SERIALIZATION_AND_FILE_WRITE",
+    "ENGINE_MARKDOWN_MODEL_BUILD",
+    "ENGINE_MARKDOWN_FILE_WRITE",
+    "EVIDENCE_REFERENCE_AND_PERSISTENCE_BUILD"
+  ],
+  "not_applicable": [
+    "POST_REPORT_CLEANUP: no cleanup operation exists in the observed pipeline; no artificial stage added",
+    "separate JSON_MODEL_BUILD for run.json: the existing result dictionary is built during AUDIT"
+  ],
+  "commands": [
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m tools.benchmark_safety --benchmark-class synthetic --json <S4-preflight.json>",
+      "result": "PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python tools/resource_measurement.py --interval 0.02 -- <python -m tools.synthetic_resource_benchmark --run-fixture <existing-S4-zip> --output <new-output>>",
+      "result": "exit 0; 61 samples; 288591872 peak private bytes"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m tools.benchmark_safety --benchmark-class synthetic --json <S1-semantic-preflight.json>",
+      "result": "PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m tools.synthetic_semantic_compare --baseline-lab <W00-O-base> --instrumented-lab <W00-worktree> --fixture <existing-S1-zip> --work <new-work> --json <semantic_comparison.json>",
+      "result": "PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m unittest discover -s tests -p test_resource_measurement.py -v",
+      "result": "7 PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m unittest discover -s tests -p test_synthetic_resource_benchmark.py -v",
+      "result": "4 PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m py_compile gtfs_lab/core.py gtfs_lab/pipeline.py gtfs_lab/resource_stages.py tools/resource_measurement.py tools/synthetic_resource_benchmark.py tests/test_resource_measurement.py tests/test_synthetic_resource_benchmark.py",
+      "result": "PASS"
+    },
+    {
+      "workdir": "02_Data_Engineering/GTFS_Lab",
+      "command": "python -m tools.build_w00m_evidence_manifest --evidence-root reports/evidence/windows_client_v1/w00",
+      "result": "inventory generated; deletion false"
+    }
+  ],
+  "semantic_comparison": "PASS",
+  "instrumentation_semantics_changed": "NO",
+  "optimization_implemented": "NO",
+  "functional_engine_changed": "YES; low-overhead diagnostic stage hooks only in core/pipeline",
+  "evidence_files": [
+    "memory_root_cause_w00m.json",
+    "memory_diag_s4_split/resource_measurement.json",
+    "memory_diag_s4_split/stages.jsonl",
+    "semantic_compare_w00m_s1/semantic_comparison.json",
+    "w00_generated_evidence_policy.json",
+    "proposed_cleanup_manifest.json"
+  ],
+  "limitation": "No W00-R full regression run; only instrumentation/tooling changed this turn. No dataset 019, HOLDOUT, S64 or S128 workload executed in this phase.",
+  "manifest_generator_version": "1.0.0"
+}

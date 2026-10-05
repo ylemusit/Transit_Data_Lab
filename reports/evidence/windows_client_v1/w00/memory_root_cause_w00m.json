@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "phase": "W00-M",
+  "classification": "MEMORY_ROOT_CAUSE_PROBABLE",
+  "cause": "G03 header_schema.not_evaluable row evidence is retained in the run result and JSON serialization materializes a large string while that object tree remains alive.",
+  "scope_limit": "Demonstrated on deterministic synthetic S4 only. Dataset 019 was not accessed or rerun; attribution to its historical peak remains unconfirmed.",
+  "component": "G03 header_schema.not_evaluable + JSON serialization of run.json",
+  "mechanism": [
+    "The G03 evaluator retains per-row CONDITION_UNKNOWN entries with trace details in a list during AUDIT.",
+    "The assembled result retains this G03 structure through REPORT_GENERATION.",
+    "write_json uses json.dumps to build the full serialized string before writing it, so the source object tree and serialized representation overlap."
+  ],
+  "evidence": {
+    "fixture": {
+      "scale": "S4",
+      "generator_version": "1.0.0",
+      "sha256": "96d34a5d922e5054491b587c67621eb94c821c77b8afec607de3884d139e01e7",
+      "zip_bytes": 42441,
+      "data_rows": {
+        "stop_times.txt": 4000
+      }
+    },
+    "safety_preflight": "PASS",
+    "audit_return_code": 0,
+    "sample_interval_seconds": 0.02,
+    "sample_count": 61,
+    "process_tree_process_count_at_peak": 1,
+    "peak_substage": "JSON_SERIALIZATION",
+    "peak_root_private_bytes_sampled": 288591872,
+    "peak_process_tree_private_bytes_sampled": 288591872,
+    "peak_root_working_set_bytes_sampled": 245243904,
+    "run_json": {
+      "bytes": 35967578,
+      "sha256": "8488473b75f364e202a81ed5dc652e9d575f23a17336ff6a41988aa508b1c0c3",
+      "g03_serialized_bytes": 35881402,
+      "g03_percent_of_run_json": 99.76,
+      "header_schema_not_evaluable_serialized_bytes": 34722909,
+      "not_evaluable_entries_with_reason_condition_unknown": 22040,
+      "raw_findings": 0,
+      "serialization_seconds": 0.562621,
+      "file_write_seconds": 0.054801,
+      "serialized_characters": 34778183
+    },
+    "report_memory_peak_bytes_by_substage": {
+      "JSON_SERIALIZATION": 288591872,
+      "JSON_FILE_WRITE": 177221632
+    },
+    "synthetic_semantic_comparison": {
+      "result": "PASS",
+      "checks": {
+        "source_identity": true,
+        "raw_findings": true,
+        "family_accounting": true,
+        "interpretation": true,
+        "report_semantics": true,
+        "contract_versions": true
+      },
+      "fixture_sha256": "d5453a40485dd7ddfa41e2cad133f3f44bf4c0f226bf1e4eb36c497a60b4086b"
+    }
+  },
+  "evidence_strength": "PROBABLE",
+  "reason": "Direct stage sampling, byte-level top-level size attribution, row-entry count, serialization/write timings, source lifecycle inspection, and semantic comparison align. Memory sampling is sampled, the reproduction is S4, and the historical DEVELOPMENT dataset 019 was not rerun.",
+  "object_lifetime": {
+    "large_upstream_structure_retained_during_serialization": true,
+    "structure": "result.g03.header_schema.not_evaluable",
+    "observed_entry_count": 22040,
+    "duplicate_python_model_copy_proven": false,
+    "markdown_models_simultaneously_resident": false,
+    "filesystem_buffering_cause_supported": false
+  },
+  "optimization": {
+    "implemented": false,
+    "proposal": "Diagnostic proposal only: evaluate chunked JSON encoding/writing for large JSON artifacts so a full serialized string need not coexist with the retained run object. Preserve the exact JSON bytes and rerun semantic/resource comparisons.",
+    "expected_memory_reduction": "Not measured; at least the 34.8 million-character serialized run.json string is an avoidable allocation target, while actual private-memory reduction must be measured.",
+    "runtime_tradeoff": "Unknown; incremental writes may add overhead.",
+    "disk_tradeoff": "Expected unchanged artifact bytes and disk size; verify byte-for-byte.",
+    "semantic_risk": "LOW_BUT_NOT_ZERO_UNTIL_BYTE_AND_SEMANTIC_REPLAY; no optimization applied.",
+    "scope": "gtfs_lab.core.write_json only, contingent on human review."
+  },
+  "state": {
+    "dataset_019": "DEFERRED",
+    "clean_machine_validation": "PENDING",
+    "holdout_accessed": "NO",
+    "engine_semantics_changed": "NO",
+    "w01": "BLOCKED"
+  }
+}

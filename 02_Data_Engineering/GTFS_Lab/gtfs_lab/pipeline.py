@@ -18,8 +18,10 @@ from .g08_quality import evaluate_g08_run
 from .g09_reporting import build_engine_report, render_engine_report
 from .ingestion import IngestionError, load_dataset
 from .validation import validate
+from .resource_stages import mark as _mark_stage
 
 def run(zip_path: Path, output_root: Path, route_id: str | None = None, direction_id: str | None = None) -> dict:
+    _mark_stage("AUDIT", "START")
     g03_result = inspect_g03_archive(zip_path)
     ctx = load_dataset(zip_path, output_root)
     try:
@@ -55,6 +57,20 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         result.update({"integrity": integrity, "validation": validation, "g03_file_catalog": g03_catalog, "g03": g03_result, "g04": g04_result, "g05": g05_result, "g06": g06_result, "g07": g07_result, "g08": g08_result, "analysis": analysis_result, "gis": gis_result, "database": db_result, "compliance_v1": compliance, "ended_at_utc": datetime.now(timezone.utc).isoformat(), "errors": []})
         integrity_status = next((integrity[k] for k in ("file_integrity", "schema_integrity", "referential_integrity") if integrity[k] != "PASS"), "PASS")
         result["summary"] = {"ingestion": "PASS", "integrity": integrity_status, "validation": validation["status"], "findings": validation["finding_count"], "g03_file_catalog": g03_catalog["status"], "g03": g03_result["status"], "g04": g04_result["status"], "g05": g05_result["status"], "g06": g06_result["status"], "g07": g07_result["status"], "analysis": "PASS", "gis": "PASS" if gis_result["stops"]["status"] == "PASS" or gis_result["routes"]["status"] == "PASS" else "NOT_EVALUABLE", "database": db_result["status"], "compliance_v1": compliance["result"]}
+        _mark_stage("AUDIT", "END")
+        _mark_stage("REPORT_GENERATION", "START")
+        _mark_stage("REPORT_INPUT_PREPARATION", "START", lambda: {
+            "validation_findings": validation.get("finding_count", len(validation.get("findings", []))),
+            "g03_findings": len(g03_result.get("findings", [])),
+            "g04_findings": len(g04_result.get("findings", [])),
+            "g05_findings": len(g05_result.get("findings", [])),
+            "g06_findings": len(g06_result.get("findings", [])),
+            "g07_findings": len(g07_result.get("findings", [])),
+            "g08_findings": len(g08_result.get("findings", [])),
+            "run_top_level_keys": len(result),
+        })
+        _mark_stage("REPORT_INPUT_PREPARATION", "END")
+        _mark_stage("JSON_SERIALIZATION_AND_FILE_WRITE", "START")
         write_json(ctx.work_dir / "run.json", result)
         write_json(ctx.work_dir / "analysis.json", analysis_result)
         write_json(ctx.work_dir / "validation.json", validation)
@@ -63,16 +79,39 @@ def run(zip_path: Path, output_root: Path, route_id: str | None = None, directio
         write_json(ctx.work_dir / "g06.json", g06_result)
         write_json(ctx.work_dir / "g07.json", g07_result)
         write_json(ctx.work_dir / "g08.json", g08_result)
+        _mark_stage("JSON_SERIALIZATION_AND_FILE_WRITE", "END")
+        _mark_stage("MARKDOWN_MODEL_BUILD", "START")
         report = render_report(result)
+        _mark_stage("MARKDOWN_MODEL_BUILD", "END", lambda: {"report_characters": len(report)})
+        _mark_stage("MARKDOWN_FILE_WRITE", "START")
         (ctx.work_dir / "report.md").write_text(report, encoding="utf-8")
+        _mark_stage("MARKDOWN_FILE_WRITE", "END")
+        _mark_stage("ENGINE_JSON_MODEL_BUILD", "START")
         engine_report = build_engine_report(result)
+        _mark_stage("ENGINE_JSON_MODEL_BUILD", "END", lambda: {
+            "finding_rows": len(engine_report.get("technical_evaluation", {}).get("findings", [])),
+            "recommendation_findings": len(engine_report.get("recommendation_findings", [])),
+            "top_level_keys": len(engine_report),
+        })
+        _mark_stage("ENGINE_JSON_SERIALIZATION_AND_FILE_WRITE", "START")
         write_json(ctx.work_dir / "engine_report.json", engine_report)
-        (ctx.work_dir / "engine_report.md").write_text(render_engine_report(engine_report), encoding="utf-8")
+        _mark_stage("ENGINE_JSON_SERIALIZATION_AND_FILE_WRITE", "END")
+        _mark_stage("ENGINE_MARKDOWN_MODEL_BUILD", "START")
+        engine_markdown = render_engine_report(engine_report)
+        _mark_stage("ENGINE_MARKDOWN_MODEL_BUILD", "END", lambda: {"report_characters": len(engine_markdown)})
+        _mark_stage("ENGINE_MARKDOWN_FILE_WRITE", "START")
+        (ctx.work_dir / "engine_report.md").write_text(engine_markdown, encoding="utf-8")
+        _mark_stage("ENGINE_MARKDOWN_FILE_WRITE", "END")
+        _mark_stage("EVIDENCE_REFERENCE_AND_PERSISTENCE_BUILD", "START")
         persistence = persist_audit(ctx, result)
         if persistence.get("manifest_status") != "ACCEPTED":
             raise RuntimeError(
                 f"Trust audit persistence was not accepted: {persistence}"
             )
+        _mark_stage("EVIDENCE_REFERENCE_AND_PERSISTENCE_BUILD", "END", lambda: {
+            "manifest_status": persistence.get("manifest_status")
+        })
+        _mark_stage("REPORT_GENERATION", "END")
         return result
     except Exception:
         # Do not erase partial evidence; mark run error with context for diagnosis.

@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "date": "2026-10-05",
+  "manifest_generator_version": "1.0.0",
+  "scope": "reports/evidence/windows_client_v1/w00/**",
+  "full_synthetic_outputs_versioned": "NO",
+  "deletion_performed": "NO",
+  "recursive_deletion_authorized": "NO",
+  "classes": {
+    "MUST_VERSION": "Diagnostic source, compact W00-M decision/policy, and review manifests.",
+    "REPRODUCIBLE_DO_NOT_VERSION": "Generated fixtures/output reproducible from the recorded generator and parameters.",
+    "LOCAL_EVIDENCE_PRESERVE": "Compact measurements, safety checks, semantic evidence, or selected raw diagnostic output.",
+    "SAFE_TO_REMOVE_AFTER_MANIFEST": "Exact generated scratch/output candidates; human review is required before deletion."
+  },
+  "retention_requirements": [
+    "generator version",
+    "parameters and scale factors",
+    "fixture SHA-256",
+    "row counts",
+    "runtime/resource measurements and sampling interval",
+    "semantic comparison",
+    "manifest",
+    "commands"
+  ],
+  "human_gate": "Proposal only. Review exact paths before any cleanup; no deletion is performed.",
+  "cleanup_manifest": "reports/evidence/windows_client_v1/w00/proposed_cleanup_manifest.json"
+}

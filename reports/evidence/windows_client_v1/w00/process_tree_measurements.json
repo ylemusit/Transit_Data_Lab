@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0",
+  "started_at_utc": "2026-10-04T20:51:45.776847+00:00",
+  "command_executable": "python",
+  "command_arguments": "REDACTED",
+  "return_code": 0,
+  "root_pid": 25392,
+  "processes": [
+    {
+      "pid": 25392,
+      "first_seen_utc": "2026-10-04T20:51:45.782846+00:00",
+      "last_seen_utc": "2026-10-04T20:51:47.178160+00:00",
+      "samples": 24,
+      "parent_pid": 12672,
+      "process_name": "python.exe",
+      "process_start_filetime": 134356207057794957,
+      "process_end_time": "2026-10-04T20:51:47.245474+00:00",
+      "working_set_bytes": 13701120,
+      "peak_sampled_working_set_bytes": 13701120,
+      "private_bytes": 7847936,
+      "peak_sampled_private_bytes": 7847936,
+      "cpu_time_us": 31250,
+      "peak_sampled_cpu_time_us": 31250,
+      "exit_status": 0
+    },
+    {
+      "pid": 34360,
+      "first_seen_utc": "2026-10-04T20:51:45.842373+00:00",
+      "last_seen_utc": "2026-10-04T20:51:47.178160+00:00",
+      "samples": 23,
+      "parent_pid": 25392,
+      "process_name": "python.exe",
+      "process_start_filetime": 134356207058133892,
+      "process_end_time": "NOT_CAPTURED; process may have exited between samples",
+      "working_set_bytes": 10608640,
+      "peak_sampled_working_set_bytes": 10608640,
+      "private_bytes": 5861376,
+      "peak_sampled_private_bytes": 5861376,
+      "cpu_time_us": 15625,
+      "peak_sampled_cpu_time_us": 15625
+    }
+  ],
+  "samples": [
+    {
+      "sampled_at_utc": "2026-10-04T20:51:45.782846+00:00",
+      "elapsed_s": 0.015,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392
+      ],
+      "aggregate_working_set_bytes": 9777152,
+      "aggregate_private_bytes": 4575232,
+      "aggregate_cpu_time_us": 0,
+      "captured_process_count": 1,
+      "active_stage": "NOT_CAPTURED"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:45.842373+00:00",
+      "elapsed_s": 0.073,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24305664,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INTAKE"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:45.905378+00:00",
+      "elapsed_s": 0.136,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24305664,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INTAKE"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:45.964039+00:00",
+      "elapsed_s": 0.195,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "ZIP_EXTRACTION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.026613+00:00",
+      "elapsed_s": 0.258,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "ZIP_EXTRACTION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.086505+00:00",
+      "elapsed_s": 0.318,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INGESTION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.150647+00:00",
+      "elapsed_s": 0.384,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INGESTION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.211974+00:00",
+      "elapsed_s": 0.444,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "AUDIT"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.276258+00:00",
+      "elapsed_s": 0.507,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "AUDIT"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.335380+00:00",
+      "elapsed_s": 0.566,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INTERPRETATION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.397890+00:00",
+      "elapsed_s": 0.629,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "INTERPRETATION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.457381+00:00",
+      "elapsed_s": 0.688,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "REPORT_GENERATION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.519260+00:00",
+      "elapsed_s": 0.75,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "REPORT_GENERATION"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.578027+00:00",
+      "elapsed_s": 0.809,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "REPLAY"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.640705+00:00",
+      "elapsed_s": 0.872,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "REPLAY"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.699914+00:00",
+      "elapsed_s": 0.93,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "CLEANUP"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.762820+00:00",
+      "elapsed_s": 0.994,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "CLEANUP"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.821895+00:00",
+      "elapsed_s": 1.053,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.884305+00:00",
+      "elapsed_s": 1.115,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:46.942900+00:00",
+      "elapsed_s": 1.173,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:47.001886+00:00",
+      "elapsed_s": 1.232,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:47.060192+00:00",
+      "elapsed_s": 1.291,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:47.118894+00:00",
+      "elapsed_s": 1.35,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    },
+    {
+      "sampled_at_utc": "2026-10-04T20:51:47.178160+00:00",
+      "elapsed_s": 1.409,
+      "root_pid": 25392,
+      "descendant_pids": [
+        25392,
+        34360
+      ],
+      "aggregate_working_set_bytes": 24309760,
+      "aggregate_private_bytes": 13709312,
+      "aggregate_cpu_time_us": 46875,
+      "captured_process_count": 2,
+      "active_stage": "BETWEEN_STAGES"
+    }
+  ],
+  "stage_resource_profile": {
+    "INTAKE": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24305664,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.12106,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "ZIP_EXTRACTION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120638,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INGESTION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120835,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "AUDIT": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.122055,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "INTERPRETATION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120822,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPORT_GENERATION": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120415,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "REPLAY": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120595,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    },
+    "CLEANUP": {
+      "sample_count": 2,
+      "peak_aggregate_working_set_bytes_sampled": 24309760,
+      "peak_aggregate_private_bytes_sampled": 13709312,
+      "classification": "OBSERVED_SAMPLED",
+      "duration_seconds_observed": 0.120897,
+      "duration_classification": "OBSERVED_FROM_STAGE_MARKERS"
+    }
+  },
+  "stage_events": [
+    {
+      "timestamp_utc": "2026-10-04T20:51:45.816971+00:00",
+      "stage": "INTAKE",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:45.938031+00:00",
+      "stage": "INTAKE",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:45.938031+00:00",
+      "stage": "ZIP_EXTRACTION",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.058669+00:00",
+      "stage": "ZIP_EXTRACTION",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.058669+00:00",
+      "stage": "INGESTION",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.179504+00:00",
+      "stage": "INGESTION",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.179504+00:00",
+      "stage": "AUDIT",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.301559+00:00",
+      "stage": "AUDIT",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.301559+00:00",
+      "stage": "INTERPRETATION",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.422381+00:00",
+      "stage": "INTERPRETATION",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.422885+00:00",
+      "stage": "REPORT_GENERATION",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.543300+00:00",
+      "stage": "REPORT_GENERATION",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.543300+00:00",
+      "stage": "REPLAY",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.663895+00:00",
+      "stage": "REPLAY",
+      "state": "END"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.663895+00:00",
+      "stage": "CLEANUP",
+      "state": "START"
+    },
+    {
+      "timestamp_utc": "2026-10-04T20:51:46.784792+00:00",
+      "stage": "CLEANUP",
+      "state": "END"
+    }
+  ],
+  "wall_time_s": 1.469,
+  "cpu_time_s": 0.047,
+  "working_set_bytes_peak_sampled": 24309760,
+  "private_bytes_peak_sampled": 13709312,
+  "sample_interval_s": 0.05,
+  "sample_count": 24,
+  "stdout_bytes": 28,
+  "stderr_bytes": 26,
+  "output_tree_bytes_before": 0,
+  "output_tree_bytes_after": 2,
+  "output_tree_bytes_delta": 2,
+  "temp_tree_bytes_before": 0,
+  "temp_tree_bytes_after": 7,
+  "temp_tree_bytes_delta": 7,
+  "disk_usage_path_scope": "C:",
+  "disk_total_bytes_before": 1629431525376,
+  "disk_total_bytes_after": 1629431525376,
+  "disk_free_bytes_before": 729896202240,
+  "disk_free_bytes_after": 729896103936,
+  "disk_free_bytes_delta_calculated": -98304,
+  "measurements": {
+    "wall_time": "OBSERVED",
+    "cpu_time": "OBSERVED_SAMPLED",
+    "working_set_peak": "OBSERVED_SAMPLED",
+    "private_bytes_peak": "OBSERVED_SAMPLED",
+    "output_tree_delta": "OBSERVED",
+    "temp_tree_delta": "OBSERVED",
+    "disk_usage_before_after": "OBSERVED",
+    "disk_free_delta": "CALCULATED; volume-wide and not attributed to child process",
+    "descendant_processes": "OBSERVED_SAMPLED",
+    "aggregate_process_tree_working_set": "OBSERVED_SAMPLED",
+    "aggregate_process_tree_private_memory": "OBSERVED_SAMPLED",
+    "process_tree_peak": "OBSERVED_SAMPLED; not an exact OS high-water mark",
+    "per_process_working_set_and_private_memory": "OBSERVED_SAMPLED",
+    "process_start_time": "OBSERVED_FILETIME_AND_FIRST_SAMPLE",
+    "root_process_end_time": "OBSERVED_AFTER_EXIT; timestamp resolution bounded by sampling",
+    "descendant_process_end_time": "NOT_CAPTURED_IF_EXITED_BETWEEN_SAMPLES",
+    "root_process_exit_status": "OBSERVED"
+  }
+}
