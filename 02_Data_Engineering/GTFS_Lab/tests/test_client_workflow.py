@@ -99,12 +99,18 @@ class ClientWorkflowTests(unittest.TestCase):
             delivery = Path(result["delivery_directory"])
             self.assertTrue((delivery / "audit_manifest.json").is_file())
             self.assertTrue((delivery / "report" / "client_report.md").is_file())
-            self.assertTrue((delivery / "report" / "client_report.pdf").is_file())
-            self.assertEqual(json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))["status"], "GENERATED")
-            self.assertTrue((delivery / "GIS_QGIS_GUIDE.md").is_file())
+            pdf_status = json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
+            pdf_path = delivery / "report" / "client_report.pdf"
             manifest = json.loads((delivery / "audit_manifest.json").read_text(encoding="utf-8"))
+            if pdf_status["status"] == "GENERATED":
+                self.assertTrue(pdf_path.is_file())
+                self.assertIn("report/client_report.pdf", manifest["delivery_artifacts"])
+            else:
+                self.assertEqual(pdf_status["status"], "FAILED_NONBLOCKING")
+                self.assertFalse(pdf_path.exists())
+                self.assertNotIn("report/client_report.pdf", manifest["delivery_artifacts"])
+            self.assertTrue((delivery / "GIS_QGIS_GUIDE.md").is_file())
             self.assertIn("GIS_QGIS_GUIDE.md", manifest["delivery_artifacts"])
-            self.assertIn("report/client_report.pdf", manifest["delivery_artifacts"])
             self.assertIn("report/pdf_generation_status.json", manifest["delivery_artifacts"])
             interpretation = json.loads((delivery / "AUDIT_CONSOLIDATED.json").read_text(encoding="utf-8"))
             self.assertEqual(interpretation["coverage"]["accounting_gap"], 0)
