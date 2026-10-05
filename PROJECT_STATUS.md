@@ -2,7 +2,15 @@
 
 **Mapa visual resumido:** [PROJECT_STATUS_TREE.md](PROJECT_STATUS_TREE.md). Actualizar ambos documentos en la misma tarea cuando un paso cambie el estado del proyecto; `PROJECT_STATUS.md` conserva el detalle y la evidencia.
 
-## Windows Self-Service Client V1 — W01 cerrado con limitaciones no bloqueantes
+## Windows Self-Service Client V1 — W02–W06 cerrados con limitaciones documentadas
+
+**Estado (2026-10-05):** `W02_INTAKE = PASS` en la campaña autorizada `feat/windows-client-v1-w02-w08`, desde base `cbba86480ce6743ab57bf32f094ba95b6778bead`. La GUI valida el ZIP y sus precondiciones estructurales antes de ejecutar, muestra filename, SHA-256, identidad de dataset, tamaño, tablas y hora UTC, e identifica el audit al iniciar. La validación es de solo lectura y el worker mantiene el source freeze y la identidad autoritativa. Tests intake 4/4 PASS; regresión client 16 tests OK con 2 skips documentados; `py_compile` y `git diff --check` PASS. Detalle: [W02 Intake](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W02_INTAKE.md).
+
+`W03_AUDIT_EXECUTION = PASS_WITH_LIMITATIONS`; `W04_RESULTS = PASS_WITH_LIMITATIONS`; `W05_GIS_QGIS = PASS_WITH_LIMITATIONS`; `W06_REPORTING_EXPORT = PASS_WITH_LIMITATIONS`. El test específico actualizado suma 24 tests, 22 PASS y 2 skips documentados. W07–W08 siguen pendientes. No se accedió a HOLDOUT y no hay cambios semánticos al motor ni a los contratos de interpretación/compliance.
+
+Informes: [W03 ejecución](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W03_AUDIT_EXECUTION.md), [W04 resultados](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W04_RESULTS.md), [W05 GIS/QGIS](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W05_GIS_QGIS_BRIDGE.md), [W06 informes/exportación](reports/WINDOWS_SELF_SERVICE_CLIENT_V1_W06_REPORTING_EXPORT.md).
+
+### W01 — Application Shell — CLOSED_WITH_NONBLOCKING_LIMITATIONS
 
 **Estado (2026-10-05):** `W00 = CLOSED_WITH_RESOURCE_LIMITATION`; `W00_PUBLICATION = COMPLETE`; PR #49 fusionada en `6271a75399732dfafcaef06ec5fd63ff5835a86b`; post-merge CI run `37256036471 = SUCCESS` sobre ese SHA. `W01_APPLICATION_SHELL = CLOSED_WITH_NONBLOCKING_LIMITATIONS`; `W01 acceptance = PASS`; aceptación humana `W01-F = W01F_PASS_READY_FOR_W01_CLOSURE`. La GUI compilada superó interacción real, éxito, cancelación, apertura de entrega, exclusión de segunda instancia, salida y reinicio; tests automatizados 7/7 PASS. `PACKAGED_ONEDIR = PASS`; `DUCKDB_BUNDLED = YES`. `CLEAN_MACHINE_VALIDATION = PENDING` para fase posterior de packaging/release. `W02 = NEXT / NOT_STARTED`. Decisión humana W00: `W00-P = W00P_PASS_WITH_RESOURCE_LIMITATION`. `W00-R = diagnostic infrastructure complete`; `W00-O = root cause initially unknown`; `W00-M = synthetic root cause probable`; `W00-P = PASS_WITH_RESOURCE_LIMITATION`.
 

@@ -366,6 +366,15 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             "security": {"external_upload": False, "source_immutable": True, "local_paths_in_delivery": False}}
         delivery = zones["DELIVERY"]
         shutil.copytree(engine_run_dir, delivery / "engine_run")
+        gis_guide = delivery / "GIS_QGIS_GUIDE.md"
+        gis_guide.write_text(
+            "# Evidencia GIS para QGIS\n\n"
+            "Las capas, cuando existen, están en `engine_run/exports/`. Abra los archivos GeoJSON o KML desde QGIS con **Capa → Añadir capa**.\n\n"
+            "Los datos espaciales proceden del GTFS de entrada y de las exportaciones del motor. GeoJSON usa coordenadas geográficas longitud/latitud. La ausencia de una capa significa que no se produjo evidencia exportable para esa capa; no implica resultado PASS.\n\n"
+            "QGIS es una herramienta externa y opcional. Este workflow no instala ni configura QGIS, no modifica las capas y no crea una conclusión legal. Para trazabilidad, conserve esta carpeta de entrega completa y consulte `audit_manifest.json` y `delivery_seal.json`.\n\n"
+            "GeoPackage no se genera en esta versión: el motor produce GeoJSON/KML y no se añade una dependencia GIS adicional.\n",
+            encoding="utf-8",
+        )
         (delivery / "report").mkdir()
         report_text = _client_report(manifest, run_json, findings, remediation, comparison)
         report_text = report_text.replace("## 12. Alcance diferido", (
@@ -374,6 +383,22 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             "El resultado de auditoría y su interpretación permanecen identificados por separado.\n\n"
             "## 12. Alcance diferido"))
         (delivery / "report" / "client_report.md").write_text(report_text, encoding="utf-8")
+        _mark_stage("REPORT_GENERATION", "START")
+        pdf_status_path = delivery / "report" / "pdf_generation_status.json"
+        pdf_path = delivery / "report" / "client_report.pdf"
+        pdf_temporary = delivery / "report" / "client_report.partial.pdf"
+        try:
+            from .client_pdf import write_professional_pdf
+            write_professional_pdf(pdf_temporary, manifest, interpretation_result, run_json, findings)
+            pdf_temporary.replace(pdf_path)
+            pdf_status = {"status": "GENERATED", "presentation_layer_only": True,
+                          "source_artifacts": ["audit_manifest.json", "AUDIT_CONSOLIDATED.json", "findings.json"]}
+        except Exception as exc:
+            pdf_temporary.unlink(missing_ok=True)
+            pdf_status = {"status": "FAILED_NONBLOCKING", "error_type": type(exc).__name__,
+                          "presentation_layer_only": True,
+                          "authoritative_machine_evidence_preserved": True}
+        _write_json(pdf_status_path, pdf_status)
         for name, path in (("dataset_identity.json", zones["AUDIT"] / "dataset_identity.json"),
                            ("findings.json", zones["AUDIT"] / "findings.json"),
                            ("audit_interpretation_status.json", zones["AUDIT"] / "audit_interpretation_status.json"),
@@ -385,7 +410,6 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             shutil.copyfile(zones["AUDIT"] / "AUDIT_CONSOLIDATED.md", delivery / "AUDIT_CONSOLIDATED.md")
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
-        _mark_stage("REPORT_GENERATION", "START")
         streamed_json = _sanitize_delivery(delivery)
         unredacted_path_found = False
         for path in delivery.rglob("*"):

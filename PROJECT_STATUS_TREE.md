@@ -39,7 +39,7 @@ TRANSIT DATA LAB
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
 │   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
-├── WINDOWS SELF-SERVICE CLIENT V1       ✅ W01 CLOSED_WITH_NONBLOCKING_LIMITATIONS; acceptance PASS
+├── WINDOWS SELF-SERVICE CLIENT V1       🟡 W02 PASS; W03–W06 PASS_WITH_LIMITATIONS; W07–W08 PENDING
 │   ├── W00-R / W00-O / W00-M / W00-P       DIAGNOSTICS COMPLETE / ROOT CAUSE UNKNOWN / SYNTHETIC CAUSE PROBABLE / PASS_WITH_RESOURCE_LIMITATION
 │   ├── Streaming JSON S1/S4/S64            BYTE + SEMANTIC EQUIVALENCE PASS
 │   ├── Pico privado muestreado             −32,85 % / −72,95 % / −81,41 %
@@ -53,8 +53,13 @@ TRANSIT DATA LAB
 │   ├── PR #49 + post-merge CI              ✅ MERGED / SUCCESS (6271a75; run 37256036471)
 │   ├── W01 Application Shell                ✅ HUMAN ACCEPTANCE PASS; 7/7 tests
 │   ├── PyInstaller onedir + DuckDB           ✅ PASS; DuckDB bundled
-│   ├── W02                                  ⚪ NEXT / NOT_STARTED
-│   └── Clean machine / release engineering  🟡 PENDING / LATER SCOPE
+│   ├── W02 Intake                            ✅ PASS; 4 synthetic tests + client regression
+│   ├── W03 Audit execution                   ✅ isolated worker, truthful stages, failure/cancel/rerun tests
+│   ├── W04 Results                           ✅ read-only result/family viewer; visual acceptance pending
+│   ├── W05 GIS/QGIS                           ✅ GeoJSON/KML bridge + sealed guide; QGIS/GeoPackage limits
+│   ├── W06 Reporting/export                   ✅ ReportLab PDF + markdown + sealed hash; renderer failure nonblocking
+│   ├── W07 Reliability                        ⚪ PENDING
+│   └── W08 Packaging/release                 ⚪ PENDING
 ├── COMMERCIAL VALIDATION                ⚪ NOT_ESTABLISHED
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
 │
