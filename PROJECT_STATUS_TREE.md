@@ -39,7 +39,7 @@ TRANSIT DATA LAB
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
 │   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
-├── WINDOWS SELF-SERVICE CLIENT V1       🟡 W02–W08 PASS_WITH_LIMITATIONS; PR #51 abierta; CI PASS (d8ad712)
+├── WINDOWS SELF-SERVICE CLIENT V1       🟡 W08 HUMAN ACCEPTANCE = BLOCKED_PENDING_DEFECT_RETEST; PR #51 sin merge
 │   ├── W00-R / W00-O / W00-M / W00-P       DIAGNOSTICS COMPLETE / ROOT CAUSE UNKNOWN / SYNTHETIC CAUSE PROBABLE / PASS_WITH_RESOURCE_LIMITATION
 │   ├── Streaming JSON S1/S4/S64            BYTE + SEMANTIC EQUIVALENCE PASS
 │   ├── Pico privado muestreado             −32,85 % / −72,95 % / −81,41 %
@@ -59,7 +59,7 @@ TRANSIT DATA LAB
 │   ├── W05 GIS/QGIS                           ✅ GeoJSON/KML bridge + sealed guide; QGIS/GeoPackage limits
 │   ├── W06 Reporting/export                   ✅ ReportLab PDF + markdown + sealed hash; renderer failure nonblocking
 │   ├── W07 Reliability                        ✅ synthetic failure/cancel/collision/restart matrix
-│   └── W08 Packaging/release                 ✅ clean onedir + per-user installer; 311 tests OK (3 skips); clean-machine/GUI limits
+│   └── W08 Packaging/release                 ✅ RC 1.0.0-rc.1 reconstruido e instalado; código a3a1dde; E2E PASS; retest GUI pendiente
 ├── COMMERCIAL VALIDATION                ⚪ NOT_ESTABLISHED
 ├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
 │

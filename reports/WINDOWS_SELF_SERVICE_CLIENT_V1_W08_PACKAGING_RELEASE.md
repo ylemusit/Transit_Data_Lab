@@ -1,6 +1,6 @@
 # Windows Self-Service Client V1 — W08 Packaging / Release
 
-**Estado:** `PASS_WITH_LIMITATIONS` (2026-10-05).
+**Estado:** `PASS_WITH_LIMITATIONS / W08_HUMAN_ACCEPTANCE = BLOCKED_PENDING_DEFECT_RETEST` (2026-10-05).
 
 ## SCOPE
 
@@ -35,10 +35,20 @@ El build final externo al repo se generó desde el commit limpio `d050f536c29fb5
 
 ## DECISION
 
-W08 queda cerrado como `PASS_WITH_LIMITATIONS`. La build limpia y regresiones pasan; clean-machine sigue parcial/bloqueado por entorno y la GUI RC queda pendiente de aceptación visual/manual humana.
+La evaluación técnica de packaging conserva `PASS_WITH_LIMITATIONS`: la build limpia y las regresiones pasan; clean-machine sigue parcial/bloqueado por entorno. La aceptación humana que estaba pendiente reprodujo ahora un defecto funcional y permanece bloqueada hasta el retest del RC corregido.
 
 ## NEXT PHASE
 
-W08 completado. Publicar branch y preparar PR para revisión humana sin merge ni publicación de release.
+### APPLICATION_DEFECT_001 — TERMINAL_STATE_DOES_NOT_REARM_NEW_RUN
+
+- `ROOT_CAUSE`: `_refresh_ready_state()` solo consideraba `IDLE` y `READY`; tras una ejecución el estado terminal impedía volver a preparar una auditoría.
+- `FIX`: transición explícita de preparación de run que desconecta referencias anteriores, desactiva acciones de resultados/entrega/GIS y conserva sus ficheros. El `audit_id` se genera al pulsar Start.
+- `AUTOMATED_REGRESSION`: cliente empaquetado 26/26 PASS; GUI/worker del onedir completa éxito → nueva entrada/destino → éxito, cancelación y rerun; GTFS_Lab 303 PASS / 3 SKIP, excluida la prueba histórica que lee evidencia HOLDOUT; `py_compile` y `git diff --check` PASS.
+- `NEW_RC_BUILD`: `1.0.0-rc.1`, onedir, source commit `a3a1ddef92df6e252d995405d62250ea0583a433`; metadata externa `C:\TDL\windows-client-v1-w08-terminal-rearm-rc1\build-metadata.json`, SHA-256 `D207EEB67503029B9048A7321C759B7C5AFEE683A4EE71E42A593037C497DCA6`.
+- `INSTALLED_EXE_SHA256`: `3030F518A68C86534B777CB7D56B973A3B11E329B4C09F6D8D2A45D11F715266` (igual al EXE construido).
+- `W08_HUMAN_ACCEPTANCE`: `BLOCKED_PENDING_DEFECT_RETEST`.
+- HOLDOUT no se accedió. PR #51 sigue sin merge; no se publicó release.
+
+Siguiente paso: repetir únicamente la secuencia humana afectada documentada en `C:\TDL\W08_RC_HUMAN_ACCEPTANCE\06_notes\W08_RC_HUMAN_ACCEPTANCE_LOG.md`.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
