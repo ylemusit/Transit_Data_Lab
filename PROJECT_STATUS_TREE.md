@@ -49,19 +49,19 @@ TRANSIT DATA LAB
 │   ├── PyInstaller + DuckDB               ONEDIR PASS; DuckDB 1.5.5; clean machine PENDING
 │   ├── Hardware mínimo/recomendado        NOT_YET_ESTABLISHED
 │   ├── Dataset 019 / soporte feeds extremos DEFERRED / NOT CERTIFIED
-│   ├── QGIS                                EXTERNAL GIS EVIDENCE WORKBENCH; INTEGRATION NOT IMPLEMENTED
+│   ├── QGIS                                EXTERNAL AND OPTIONAL; NOT BUNDLED OR REQUIRED
 │   ├── PR #49 + post-merge CI              ✅ MERGED / SUCCESS (6271a75; run 37256036471)
 │   ├── W01 Application Shell                ✅ HUMAN ACCEPTANCE PASS; 7/7 tests
 │   ├── PyInstaller onedir + DuckDB           ✅ PASS; DuckDB bundled
 │   ├── W02 Intake                            ✅ PASS; 4 synthetic tests + client regression
 │   ├── W03 Audit execution                   ✅ isolated worker, truthful stages, failure/cancel/rerun tests
-│   ├── W04 Results                           ✅ read-only result/family viewer; visual acceptance pending
-│   ├── W05 GIS/QGIS                           ✅ GeoJSON/KML bridge + sealed guide; QGIS/GeoPackage limits
-│   ├── W06 Reporting/export                   ✅ ReportLab PDF + markdown + sealed hash; renderer failure nonblocking
+│   ├── W04 Results                           ✅ read-only result/family viewer; manual visual acceptance PASS
+│   ├── W05 GIS export                         ✅ GeoJSON/KML bridge + guide; manually validated; QGIS remains external/optional
+│   ├── W06 Reporting/export                   ✅ PDF/Markdown export; PDF visual acceptance PASS
 │   ├── W07 Reliability                        ✅ synthetic failure/cancel/collision/restart matrix
-│   └── W08 Packaging/release                 ✅ RC 1.0.0-rc.1 instalado; código a3a1dde; aceptación manual PASS; APPLICATION_DEFECT_001 CLOSED_FIXED_AND_VERIFIED; clean-machine parcial; firma/SmartScreen/hardware pendientes
+│   └── W08 Packaging/release                 ✅ RC 1.0.0-rc.1; manual acceptance, GIS/QGIS, KML/Google Earth PASS; APPLICATION_DEFECT_001 CLOSED_FIXED_AND_VERIFIED; clean-machine parcial; firma/SmartScreen/hardware pendientes
 ├── COMMERCIAL VALIDATION                ⚪ NOT_ESTABLISHED
-├── GIS / QGIS                           🟡 SOPORTE Y EVIDENCIA CUANDO PROCEDA
+├── GIS / QGIS                           ✅ W05 export bridge validated; QGIS external, optional, not bundled or required
 │
 └── BACKLOG POST-COMERCIALIZACIÓN        💤 FUERA DE LA SIGUIENTE FASE
     ├── SIRI
