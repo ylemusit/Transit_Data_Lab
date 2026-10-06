@@ -62,6 +62,23 @@ def main() -> int:
             assert seal_path.is_file(), "delivery seal missing"
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             seal = json.loads(seal_path.read_text(encoding="utf-8"))
+            client_report_path = delivery / "report" / "client_report.json"
+            client_report = json.loads(client_report_path.read_text(encoding="utf-8"))
+            client_findings = json.loads((delivery / "findings.json").read_text(encoding="utf-8"))["findings"]
+            assert client_report["contract"] == "TDL_CLIENT_REPORT_V1"
+            assert len(client_report["sections"]) == 29
+            assert client_report["interpretation"]["accounting_gap"] == 0
+            assert client_report["validation_matrix"], "complete validation matrix missing"
+            for rule in client_report["validation_matrix"]:
+                for reference in rule["evidence_refs"]:
+                    prefix, separator, index_text = reference.partition("#/findings/")
+                    assert prefix == "findings.json" and separator and index_text.isdigit()
+                    assert int(index_text) < len(client_findings)
+            pdf_status = json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
+            assert pdf_status["status"] == "GENERATED", pdf_status
+            assert (delivery / "report" / "client_report.pdf").is_file()
+            assert "report/client_report.pdf" in manifest["delivery_artifacts"]
+            assert "report/client_report.json" in manifest["delivery_artifacts"]
             assert manifest["artifacts_sha256_verified"] is True
             assert seal["artifacts_verified"] is True
             assert seal["audit_manifest_sha256"] == result["audit_manifest_sha256"]
@@ -90,7 +107,16 @@ def main() -> int:
                          "delivery_artifact_count": result["artifact_count"],
                          "findings_count": result["findings_count"],
                          "source_immutable": result["source_immutable"],
-                         "artifacts_sha256_verified": result["artifacts_sha256_verified"]})
+                         "artifacts_sha256_verified": result["artifacts_sha256_verified"],
+                         "client_report": {"contract": client_report["contract"],
+                             "section_count": len(client_report["sections"]),
+                             "matrix_rule_count": len(client_report["validation_matrix"]),
+                             "publication_readiness": client_report["summary"]["publication_readiness"],
+                             "accounting_gap": client_report["interpretation"]["accounting_gap"],
+                             "pdf_status": pdf_status["status"],
+                             "json_sha256": manifest["delivery_artifacts"]["report/client_report.json"]["sha256"],
+                             "markdown_sha256": manifest["delivery_artifacts"]["report/client_report.md"]["sha256"],
+                             "pdf_sha256": manifest["delivery_artifacts"]["report/client_report.pdf"]["sha256"]}})
             engine_reports.append(report)
         stable_engine_report = engine_reports[0] == engine_reports[1]
         assert stable_engine_report, "engine report changed across same-input replay"

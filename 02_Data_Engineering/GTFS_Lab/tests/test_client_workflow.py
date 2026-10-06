@@ -99,6 +99,10 @@ class ClientWorkflowTests(unittest.TestCase):
             delivery = Path(result["delivery_directory"])
             self.assertTrue((delivery / "audit_manifest.json").is_file())
             self.assertTrue((delivery / "report" / "client_report.md").is_file())
+            report_model = json.loads((delivery / "report" / "client_report.json").read_text(encoding="utf-8"))
+            self.assertEqual("TDL_CLIENT_REPORT_V1", report_model["contract"])
+            self.assertEqual(29, len(report_model["sections"]))
+            self.assertIn("report/client_report.json", json.loads((delivery / "audit_manifest.json").read_text(encoding="utf-8"))["delivery_artifacts"])
             pdf_status = json.loads((delivery / "report" / "pdf_generation_status.json").read_text(encoding="utf-8"))
             pdf_path = delivery / "report" / "client_report.pdf"
             manifest = json.loads((delivery / "audit_manifest.json").read_text(encoding="utf-8"))

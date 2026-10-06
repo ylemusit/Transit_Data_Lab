@@ -1,0 +1,55 @@
+{
+  "contract": "TDL_CLIENT_REPORT_V1",
+  "version": "1.0.0",
+  "language_priority": "es",
+  "authoritative_inputs": [
+    "audit_manifest.json",
+    "engine_run/engine_report.json",
+    "findings.json",
+    "AUDIT_CONSOLIDATED.json",
+    "compliance.json"
+  ],
+  "required_sections": [
+    "Portada", "Identificación de la auditoría", "Resumen ejecutivo", "Alcance",
+    "Jurisdicción", "Fecha de corte", "Exclusiones", "Metodología", "Perfil del dataset",
+    "Validación técnica GTFS", "Matriz completa de validaciones",
+    "Evaluación regulatoria / Compliance", "Fuentes normativas aplicables", "No aplicable",
+    "No evaluable", "Fuentes superseded / repealed / version unknown", "Hallazgos técnicos",
+    "Familias consolidadas", "Evidencia", "Impacto", "Interpretación", "Recomendaciones",
+    "Remediación", "GIS / revisión geográfica", "Publication readiness", "Limitaciones",
+    "Trazabilidad / reproducibilidad", "Disclaimer", "Anexos técnicos"
+  ],
+  "vocabularies": {
+    "source_status": ["CURRENT", "SUPERSEDED", "REPEALED", "VERSION_UNKNOWN"],
+    "applicability": ["APPLICABLE", "NOT_APPLICABLE", "CONDITIONAL"],
+    "evaluability": ["EVALUABLE", "NOT_EVALUABLE"],
+    "conformity": ["CONFORME", "NO_CONFORME", "CONFORME_CON_OBSERVACIONES"],
+    "epistemic_state": ["OBSERVED", "CALCULATED", "INFERRED", "NOT_EVALUABLE"],
+    "publication_readiness": [
+      "APTO PARA PUBLICACIÓN SEGÚN ALCANCE EVALUADO",
+      "APTO CON OBSERVACIONES",
+      "REQUIERE CORRECCIÓN ANTES DE PUBLICACIÓN",
+      "NO ES POSIBLE EMITIR CONCLUSIÓN"
+    ],
+    "validation_result": [
+      "PASS", "FAIL", "FAIL_TECHNICAL", "NOT_APPLICABLE", "NOT_EVALUABLE",
+      "INSPECTION_ERROR", "DEFERRED", "OUT_OF_SCOPE", "SKIPPED_BY_DEPENDENCY"
+    ]
+  },
+  "missing_source_values": {
+    "applicability": null,
+    "meaning": "The authoritative artifact did not provide an applicability disposition; null is not a new vocabulary state."
+  },
+  "validation_matrix_fields": [
+    "rule_id", "domain", "description", "requirement", "applicability",
+    "applicability_basis", "evaluability", "result", "severity", "finding_count",
+    "evidence_refs", "source_ref", "semantic_version"
+  ],
+  "rules": {
+    "no_invented_severity_or_confidence": true,
+    "no_legal_conclusion_from_technical_finding": true,
+    "publication_readiness_requires_accounting_gap_zero": true,
+    "unknown_source_version_must_remain_unknown": true,
+    "engine_artifacts_remain_authoritative": true
+  }
+}
