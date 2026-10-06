@@ -63,6 +63,6 @@ No se afirma certificación oficial, evaluación por autoridad competente, garan
 
 ## Referencias Git
 
-Base revisada: `origin/main` en `9734d800f3f2efeba8d910d23f565133ec7da402`. La PR y los SHA/resultados de CI asociados a esta implementación se añadirán a los metadatos finales al cerrar la revisión remota.
+Base revisada: `origin/main` en `9734d800f3f2efeba8d910d23f565133ec7da402`. Implementación: [PR #53](https://github.com/ylemusit/Transit_Data_Lab/pull/53), head `3cc13f1135a8101b915dc7572566be2d60ef21c7`, CI de PR `37405776727 = SUCCESS`. Merge commit: `ac91293cb58f0ef0dc51da2bf0566a6c5f2ab55a`. CI post-merge sobre `main`: run `37405891549 = SUCCESS`.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
