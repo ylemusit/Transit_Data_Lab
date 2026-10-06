@@ -11,6 +11,12 @@ TRANSIT DATA LAB
 ├── GTFS AUDIT ENGINE V1                ✅ CLOSED (alcance técnico documentado)
 ├── COMPLIANCE V1                       ✅ CLOSED_WITH_DEFERRALS
 ├── REMEDIATION ENGINE V1               ✅ CLOSED (alcance técnico documentado)
+├── PRODUCT READINESS V1                ✅ READY_FOR_CONTROLLED_PILOT_WITH_LIMITATIONS
+│   ├── Distribution model               INTERNAL_USE_ONLY; customer/public distribution deferred
+│   ├── Client report V1                 ✅ Complete rule matrix + bounded Compliance bridge
+│   ├── E2E / Trust / GTFS / Compliance  ✅ Synthetic E2E + current gates PASS
+│   ├── Clean-machine validation         ⚠ PARTIAL / BLOCKED_BY_ENVIRONMENT; not rerun
+│   └── Market / demand / WTP            ⚪ NOT_VALIDATED
 │
 ├── NÚCLEO DEL PRODUCTO — AÑO 1         🎯 ESPAÑA + GTFS + NeTEx
 │   ├── GTFS PRODUCTIZATION              ✅ V1 CLOSED (P01–P09)
@@ -40,7 +46,7 @@ TRANSIT DATA LAB
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
 │   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
-├── WINDOWS SELF-SERVICE CLIENT V1       ✅ W02–W08 PASS_WITH_LIMITATIONS; W08_HUMAN_ACCEPTANCE PASS; PR #51 lista para decisión humana, sin merge ni release
+├── WINDOWS SELF-SERVICE CLIENT V1       ✅ W02–W08 PASS_WITH_LIMITATIONS; W08_HUMAN_ACCEPTANCE PASS; PR #51 MERGED (37bd5c5; post-merge CI SUCCESS); sin release
 │   ├── W00-R / W00-O / W00-M / W00-P       DIAGNOSTICS COMPLETE / ROOT CAUSE UNKNOWN / SYNTHETIC CAUSE PROBABLE / PASS_WITH_RESOURCE_LIMITATION
 │   ├── Streaming JSON S1/S4/S64            BYTE + SEMANTIC EQUIVALENCE PASS
 │   ├── Pico privado muestreado             −32,85 % / −72,95 % / −81,41 %

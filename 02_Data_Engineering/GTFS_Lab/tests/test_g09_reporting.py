@@ -12,6 +12,8 @@ class G09ReportingTests(unittest.TestCase):
             "dataset": {"dataset_id": "synthetic-1", "source_sha256": "a" * 64},
             "g03": {"status": "PASS", "rules": [
                 {"rule_id": "GTFS-G03-CSV-STRUCTURE", "semantic_version": "1.0.0",
+                 "applicability": "APPLICABLE", "description": "CSV row width",
+                 "specification_reference": "GTFS Schedule Reference 2026-04-27",
                  "status": "NOT_EVALUABLE", "coverage": {"state": "FEATURE_PRESENT_PARTIALLY_AUDITED"},
                  "findings": [{"file": "stops.txt", "row_locator": "ROW:1", "technical_reason": "bad width"}]},
             ]},
@@ -37,6 +39,10 @@ class G09ReportingTests(unittest.TestCase):
         encoded = json.dumps(report, sort_keys=True, ensure_ascii=False)
         self.assertEqual(encoded, json.dumps(build_engine_report(source), sort_keys=True, ensure_ascii=False))
         self.assertIn("GTFS-G03-CSV-STRUCTURE", encoded)
+        matrix_rule = report["technical_evaluation"]["stages"][0]["rules"][0]
+        self.assertEqual("APPLICABLE", matrix_rule["applicability"])
+        self.assertEqual("CSV row width", matrix_rule["description"])
+        self.assertEqual("GTFS Schedule Reference 2026-04-27", matrix_rule["specification_reference"])
         self.assertEqual(False, report["recommendation_outcomes"][0]["recommendation_met"])
         self.assertEqual("GTFS_RECOMMENDED", report["recommendation_findings"][0]["authority"])
         self.assertIn("fare_attributes.txt", report["deferred_features"])

@@ -34,8 +34,15 @@ def build_engine_report(run_result: Mapping[str, Any]) -> dict[str, Any]:
                 "authority": rule.get("authority"),
                 "severity": rule.get("severity"),
                 "requirement": rule.get("requirement"),
+                "category": rule.get("category"),
+                "description": rule.get("description"),
+                "applicability": rule.get("applicability"),
+                "evaluability": rule.get("evaluability"),
+                "specification_reference": rule.get("specification_reference"),
                 "status": status,
                 "coverage": rule.get("coverage"),
+                "finding_count": len(rule.get("findings", [])),
+                "evidence_refs": rule.get("evidence_refs", []),
                 "recommendation_met": rule.get("recommendation_met"),
             })
             if status in {"NOT_EVALUABLE", "INSPECTION_ERROR"}:

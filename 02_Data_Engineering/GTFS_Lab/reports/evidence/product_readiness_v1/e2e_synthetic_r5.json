@@ -1,0 +1,65 @@
+{
+  "client_data_accessed": false,
+  "contract_version": "1.0.0",
+  "corpus": "SYNTHETIC_UNKNOWN_GTFS",
+  "delivery_manifest_generated": true,
+  "delivery_seal_generated": true,
+  "evidence_contract": "TDL_CLIENT_AUDIT_WORKFLOW_E2E",
+  "external_upload": false,
+  "holdout_accessed": false,
+  "local_paths_in_delivery": false,
+  "runs": [
+    {
+      "artifacts_sha256_verified": true,
+      "audit_id": "e2e-a",
+      "client_report": {
+        "accounting_gap": 0,
+        "contract": "TDL_CLIENT_REPORT_V1",
+        "json_sha256": "b31e0b347274ce4f7a6e9e07901523f17f60c53d8e31157568fb64655dd71e8e",
+        "markdown_sha256": "41d2fbcdbc95184a8fde3d511c197b90ce850040572735c338d4d070ee5a22f6",
+        "matrix_rule_count": 33,
+        "pdf_sha256": "a8ca24e531fe6a659a3675923a63a646ba78424f370313bd52ed71fd855dcbe3",
+        "pdf_status": "GENERATED",
+        "publication_readiness": "NO ES POSIBLE EMITIR CONCLUSIÓN",
+        "section_count": 29
+      },
+      "delivery_artifact_count": 34,
+      "findings_count": 0,
+      "manifest_sha256": "f483e4b4eca06d45401c57de7a8539513a1cf71fe069dbbff6b67495bb4b6fde",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    },
+    {
+      "artifacts_sha256_verified": true,
+      "audit_id": "e2e-b",
+      "client_report": {
+        "accounting_gap": 0,
+        "contract": "TDL_CLIENT_REPORT_V1",
+        "json_sha256": "53d60dec79cd6bec30a0118a5c83e6b73c222513852233d18d0a680bc759ea3c",
+        "markdown_sha256": "d3600533f0e6e33357206b60473b89c44540685b74249b2af9f0f236a559c3de",
+        "matrix_rule_count": 33,
+        "pdf_sha256": "7d750c822c4f103ae74ebd5584e230252d9a6856f61cf5c15abab47d9eee80cf",
+        "pdf_status": "GENERATED",
+        "publication_readiness": "NO ES POSIBLE EMITIR CONCLUSIÓN",
+        "section_count": 29
+      },
+      "delivery_artifact_count": 34,
+      "findings_count": 0,
+      "manifest_sha256": "454fd7caa1167feff2aa7db5e62b0f206a64dadfa03fa381332dca5e301e7f29",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    },
+    {
+      "artifacts_sha256_verified": true,
+      "attribution": "RUNTIME_ONLY_CHANGE",
+      "audit_id": "e2e-next",
+      "comparison_status": "PARTIALLY_COMPARABLE",
+      "source_immutable": true,
+      "status": "COMPLETED_WITH_LIMITATIONS"
+    }
+  ],
+  "same_input_engine_report_identical": true,
+  "source_filename": "unknown_gtfs.zip",
+  "source_sha256": "db0303034934ed94e558ea79de8670cd0066f99b11ecf284ad9cb849cb066aad",
+  "source_size_bytes": 971
+}

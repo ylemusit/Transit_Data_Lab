@@ -1,0 +1,45 @@
+{
+  "contract": "TDL_PRODUCT_READINESS_VALIDATION_SUMMARY_V1",
+  "generated_on": "2026-10-06",
+  "scope": "synthetic/current technical gates; no HOLDOUT content",
+  "test_groups": 15,
+  "tests_passed": 232,
+  "tests_failed": 0,
+  "e2e": {
+    "status": "PASS",
+    "corpus": "SYNTHETIC_UNKNOWN_GTFS",
+    "runs": 3,
+    "sections": 29,
+    "matrix_rules": 33,
+    "pdf_generated": true,
+    "accounting_gap": 0,
+    "same_engine_report_replayed": true,
+    "seal_generated": true,
+    "local_paths_in_delivery": false,
+    "holdout_accessed": false,
+    "client_data_accessed": false,
+    "external_upload": false
+  },
+  "gates": {
+    "trust_contract": "PASS",
+    "trust_persistence": "PASS",
+    "gtfs_lab": "PASS",
+    "gtfs_fixture_count": 14,
+    "directional_gis": "PASS",
+    "golden_regression": "PASS",
+    "golden_cases": 2,
+    "test_bank": "PASS",
+    "compliance": "PASS",
+    "compliance_phase1_pass": 22,
+    "compliance_phase2_pass": 376,
+    "compliance_phase2_preserved_historical_exception": [
+      {
+        "test": "UNCHANGED_COUNT_audit.rules",
+        "status": "FAIL",
+        "expected": 0,
+        "actual": 2
+      }
+    ],
+    "compliance_db_unchanged": true
+  }
+}

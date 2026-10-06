@@ -21,6 +21,7 @@ from .interpretation.consolidation import build_result as build_interpretation
 from .interpretation.reporting import write_reports as write_interpretation_reports
 from .resource_stages import mark as _mark_stage
 from .pipeline import run
+from .client_report import build_client_report, render_client_report
 
 WORKFLOW_VERSION = "1.0.0"
 _LARGE_JSON_STREAM_THRESHOLD = 8 * 1024 * 1024
@@ -160,7 +161,7 @@ def _finding_rows(run: dict[str, Any], source_sha: str) -> list[dict[str, Any]]:
     for finding in compliance.get("findings", []):
         rows.append(envelope("COMPLIANCE", {"rule_id": compliance.get("rule_id"),
                      "rule_version": compliance.get("rule_version"), "authority": "COMPLIANCE_V1",
-                     "severity": "ERROR", **finding}, compliance.get("result")))
+                     **finding}, compliance.get("result")))
     compliance_fingerprints = {
         json.dumps(item, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
         for item in compliance.get("findings", [])
@@ -175,51 +176,10 @@ def _finding_rows(run: dict[str, Any], source_sha: str) -> list[dict[str, Any]]:
 
 
 def _client_report(manifest: dict[str, Any], run: dict[str, Any], findings: list[dict[str, Any]],
-                   remediation: dict[str, Any], comparison: dict[str, Any] | None) -> str:
-    identity = manifest["dataset_identity"]
-    summary = run.get("summary", {})
-    limitations = ["La evaluación es técnica; no acredita certificación ni cumplimiento jurídico definitivo.",
-                   "NOT_EVALUABLE, NOT_APPLICABLE, errores de inspección y alcance diferido conservan sus estados.",
-                   "El validador legacy, Audit Engine y Compliance se presentan como orígenes separados.",
-                   "GIS se genera por el runner técnico; su presencia no es necesaria para aceptar cada finding."]
-    lines = ["# Informe de auditoría GTFS para cliente", "",
-             f"- Estado del workflow: `{manifest['status']}`",
-             f"- Identificador de auditoría: `{manifest['audit_id']}`",
-             f"- Identificador cliente/proyecto: `{manifest['client_project_id']}`",
-             f"- Dataset: `{identity['dataset_id']}`",
-             f"- Archivo fuente: `{identity['source_filename']}`",
-             f"- SHA-256 de SOURCE: `{identity['source_sha256']}`",
-             f"- Recibido UTC: `{identity['ingestion_timestamp_utc']}`", "",
-             "## 1. Resumen ejecutivo", "",
-             f"Resultado técnico: `{summary.get('validation', 'NOT_EVALUABLE')}`; hallazgos consolidados: {len(findings)}.",
-             "No se calcula una puntuación global.", "",
-             "## 2. Identidad del dataset", "",
-             f"Tamaño: {identity['source_size_bytes']} bytes. Procedencia declarada: {identity['source_provenance']}.", "",
-             "## 3. Alcance", "",
-             "GTFS Schedule mediante GTFS Audit Engine V1, Compliance V1 y salidas legacy identificadas por separado.", "",
-             "## 4. Metodología", "",
-             f"Cliente `{CLIENT_VERSION}`; workflow `{WORKFLOW_VERSION}`; GTFS_Lab `{VERSION}`. Se conservó una copia inmutable de entrada y se verificó SHA-256 antes y después.", "",
-             "## 5. Hallazgos técnicos", "",
-             f"Hallazgos Audit Engine: {sum(x['origin'] == 'AUDIT_ENGINE' for x in findings)}; legacy: {sum(x['origin'] == 'LEGACY' for x in findings)}.", "",
-             "## 6. Calidad de datos", "",
-             f"Validación legacy: `{summary.get('validation', 'NOT_EVALUABLE')}`.", "",
-             "## 7. Alineación Compliance", "",
-             f"Compliance V1: `{run.get('compliance_v1', {}).get('result', 'NOT_EVALUABLE')}`; el resultado no es una conclusión jurídica.", "",
-             "## 8. Evaluación de remediación", "",
-             f"Decisión: `{remediation['decision']}`. {remediation['reason']}", "",
-             "## 9. Before / After", "",
-             (f"Comparación: `{comparison.get('status', 'UNKNOWN')}`." if comparison else "No hubo remediación derivada; no aplica comparación before/after."), "",
-             "## 10. Evidencia geográfica", "",
-             "Las exportaciones GIS se incluyen cuando las produjo el motor; QGIS no es requisito del workflow.", "",
-             "## 11. Limitaciones conocidas", "", *[f"- {item}" for item in limitations], "",
-             "## 12. Alcance diferido", "",
-             "NeTEx, SIRI, GTFS-RT, certificación y resolución jurídica quedan fuera de esta auditoría GTFS V1.", "",
-             "## 13. Recomendaciones", "",
-             "Revisar findings y estados no evaluables con evidencia contextual del titular del feed.", "",
-             "## 14. Evidencia y reproducibilidad", "",
-             "El paquete incluye identidad, salidas del motor, findings por origen, manifests y SHA-256 de artefactos.", "",
-             "Yeison Arbey Carrillo Lemus. Todos los derechos reservados.", ""]
-    return "\n".join(lines)
+                   remediation: dict[str, Any], comparison: dict[str, Any] | None,
+                   interpretation: dict[str, Any] | None = None) -> str:
+    model = build_client_report(manifest, run, findings, interpretation, remediation, comparison)
+    return render_client_report(model)
 
 
 def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: str,
@@ -378,20 +338,19 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             encoding="utf-8",
         )
         (delivery / "report").mkdir()
-        report_text = _client_report(manifest, run_json, findings, remediation, comparison)
-        report_text = report_text.replace("## 12. Alcance diferido", (
-            "## Interpretación derivada\n\n"
-            f"Estado: `{interpretation_status['status']}`; contrato: `1.0.0`. "
-            "El resultado de auditoría y su interpretación permanecen identificados por separado.\n\n"
-            "## 12. Alcance diferido"))
+        report_model = build_client_report(manifest, run_json, findings, interpretation_result,
+                                           remediation, comparison)
+        report_text = render_client_report(report_model)
         (delivery / "report" / "client_report.md").write_text(report_text, encoding="utf-8")
+        _write_json(delivery / "report" / "client_report.json", report_model)
         _mark_stage("REPORT_GENERATION", "START")
         pdf_status_path = delivery / "report" / "pdf_generation_status.json"
         pdf_path = delivery / "report" / "client_report.pdf"
         pdf_temporary = delivery / "report" / "client_report.partial.pdf"
         try:
             from .client_pdf import write_professional_pdf
-            write_professional_pdf(pdf_temporary, manifest, interpretation_result, run_json, findings)
+            write_professional_pdf(pdf_temporary, manifest, interpretation_result, run_json, findings,
+                                   report_model=report_model)
             pdf_temporary.replace(pdf_path)
             pdf_status = {"status": "GENERATED", "presentation_layer_only": True,
                           "source_artifacts": ["audit_manifest.json", "AUDIT_CONSOLIDATED.json", "findings.json"]}
