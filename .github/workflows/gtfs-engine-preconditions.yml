@@ -26,6 +26,8 @@ jobs:
           python-version: '3.12'
       - name: Install NeTEx runtime dependency
         run: python -m pip install -r 02_Data_Engineering/NeTEx_Lab/requirements.txt
+      - name: Install pinned client PDF dependency
+        run: python -m pip install -r 02_Data_Engineering/GTFS_Lab/packaging/client-pdf-requirements.txt
       - name: Verify pinned NeTEx schema and corpus contracts
         run: |
           python tools/netex_verify_schema.py netex-schema
