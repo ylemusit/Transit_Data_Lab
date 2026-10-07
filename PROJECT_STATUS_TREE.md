@@ -3,6 +3,8 @@
 **Actualizado:** 2026-10-07
 **Fuente de detalle:** [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
+**Revisión canónica 2026-10-07:** entorno P: `PASS_WITH_LIMITATIONS`; 34 junctions presentes; 0 rutas C: activas encontradas; suites actuales y prueba sintética con limitaciones. HOLDOUT no accedido. Piloto real externo: NO hasta probar backup/restore separado y autorizar operación externa. [Revisión](reports/PROJECT_INTEGRITY_AND_HEALTH_REVIEW_V1.md) · [Matriz](reports/PROJECT_VALIDATION_MATRIX_V1.md) · [Gaps](reports/PROJECT_GAP_ANALYSIS_V1.md).
+
 ```text
 TRANSIT DATA LAB
 │

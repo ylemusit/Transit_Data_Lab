@@ -2,6 +2,12 @@
 
 Actualizado: 2026-10-07. [Mapa resumido](PROJECT_STATUS_TREE.md) · [Arquitectura](ARCHITECTURE.md) · [Conocimiento](knowledge/README.md).
 
+## Revisión de integridad del entorno canónico — 2026-10-07
+
+`P_CANONICAL_ENVIRONMENT = PASS_WITH_LIMITATIONS`; `PROJECT_INTEGRITY_GATE = PASS_WITH_LIMITATIONS`; `PROJECT_TECHNICAL_VALIDATION_GATE = PASS_WITH_LIMITATIONS`; prueba controlada sintética `PASS_WITH_LIMITATIONS`; ejecución del flujo desde P: `PASS`. La revisión encontró nueve raíces presentes, 34/34 junctions con destino existente y registrado, cero errores de acceso en el inventario metadata-only, cero dependencias activas encontradas de las antiguas raíces C: y cinco `git fsck` sin diagnósticos. GTFS Lab: 318/320 PASS, 0 FAIL, 2 SKIP; NeTEx 10/10 PASS; gates y E2E sintéticos PASS. No se abrió ni hasheó HOLDOUT.
+
+La limitación de HOLDOUT sigue siendo `NOT_REPROVEN_CONTENT_LEVEL`. No hay backup externo integral ni restore independiente probado; autorización de contacto/tratamiento externo no concedida. En consecuencia, `READY_FOR_CONTROLLED_REAL_CLIENT_PILOT = NO`, sin cambiar el readiness técnico interno aprobado. MapLibre 6.3.0 tiene una alerta crítica en el repo Desktop independiente; baseline 0.2.2 intacta, sin actualización en esta revisión. Python base y Node/npm del equipo residen en C: como dependencias de Windows; no son datos ni checkout TDL. Detalle: [revisión](reports/PROJECT_INTEGRITY_AND_HEALTH_REVIEW_V1.md), [matriz](reports/PROJECT_VALIDATION_MATRIX_V1.md), [gaps](reports/PROJECT_GAP_ANALYSIS_V1.md).
+
 ## Migración a P: — cierre operacional
 
 `DEDICATED_PARTITION_MIGRATION_V1 = CLOSED_WITH_TEMPORARY_COMPATIBILITY_LINKS`. Raíz canónica `P:\TransitDataLab\01_Project\Transit Data Lab`; datos, evidencia, runtime y cliente en áreas externas separadas de P:. REVIEW_REQUIRED = 0; 11 raíces antiguas retiradas; C: CLEAN en el alcance auditado. Se retiraron 227.943.369.017 bytes regenerables y 12.503.583.020 bytes duplicados de P:; 87.175 archivos se copiaron con SHA-256 antes de retirar C:. 34 junctions documentadas, todas dentro de P:. Fuente, ramas/worktrees, checkpoints, Test Bank, HOLDOUT, firma y EXE aceptado preservados.
