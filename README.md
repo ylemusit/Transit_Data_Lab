@@ -11,7 +11,7 @@ La entrada vigente es [PROJECT_STATUS.md](PROJECT_STATUS.md). Describe el estado
 | [PROJECT_STATUS.md](PROJECT_STATUS.md) | Estado vigente, baselines, Git y pendientes. |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Componentes, flujo y límites. |
 | [Conocimiento de ingeniería](knowledge/README.md) | Lecciones curadas con fuentes. |
-| [Reconciliación local V2](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md) | Limpieza comprobada y ambigüedades pendientes. |
+| [Reconciliación local V2](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md) | Cierre comprobado y residuos protegidos. |
 | [REPOSITORY_POLICY.md](REPOSITORY_POLICY.md) | Separación de repositorios y preservación de evidencia. |
 | [BACKUP_AND_RECOVERY.md](BACKUP_AND_RECOVERY.md) | Cobertura Git y recuperación de datos excluidos. |
 | [GTFS_Lab](02_Data_Engineering/GTFS_Lab/README.md) | Operación y límites del laboratorio GTFS. |

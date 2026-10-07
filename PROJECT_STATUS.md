@@ -4,7 +4,7 @@ Actualizado: 2026-10-07. [Mapa resumido](PROJECT_STATUS_TREE.md) · [Arquitectur
 
 ## Reconciliación del entorno local V2
 
-`LOCAL_ENVIRONMENT_RECONCILIATION_V2 = BLOCKED_BY_AMBIGUOUS_ITEMS`. Se han eliminado 245,632,167 bytes en 145 carpetas de caché/build con fuente y receta comprobadas. El hash del ejecutable aceptado y la conectividad Git pasan. La raíz local tiene cambios preexistentes y siguen pendientes checkouts, outputs/datasets ambiguos y límites del descubrimiento. No se movieron datos ni se eliminó trabajo único/HOLDOUT. [Resultado y límites](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md).
+`LOCAL_ENVIRONMENT_RECONCILIATION_V2 = CLOSED_WITH_PROTECTED_RESIDUALS`. La raíz canónica está reconciliada con main; 58 worktrees y 7 copias independientes retirados. Esta resolución elimina 13.032.566.151 bytes lógicos, descontando las copias originales conservadas; total V2 13.278.198.318 bytes. Los 14 originales DEVELOPMENT y el schema NeTEx están en la raíz externa aprobada, con aliases contractuales verificados; se conserva una copia operacional del EXE aceptado. Tests focalizados 44/44 PASS; integridad Git, hashes y rutas operativas PASS. Test Bank, fuentes físicas HOLDOUT, checkpoints/capturas congelados y material privado permanecen protegidos; no quedan grupos de decisión humana pendientes. [Resultado, retención y límites](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md).
 
 El cierre R1 sigue siendo histórico `CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS`: sus 6.395.371.423 bytes no se vuelven a contar en V2. [Resumen R1](reports/LOCAL_WORKSPACE_RECONCILIATION_R1_SUMMARY.md).
 

@@ -1,48 +1,50 @@
 # Local Environment Reconciliation V2
 
-Fecha: 2026-10-07. Resultado: **BLOCKED_BY_AMBIGUOUS_ITEMS**.
+Fecha: 2026-10-07. Resultado final local: **CLOSED_WITH_PROTECTED_RESIDUALS**.
 
-## Resultado comprobado
+## Resolución comprobada
 
-Descubrimiento amplio por nombres y metadatos desde C:\: 35 ubicaciones base y 497 unidades relevantes disjuntas (archivo o subárbol). Se usaron además las raíces del inventario anterior, verificando su existencia actual. Las coincidencias ajenas al proyecto se descartaron del inventario de TDL. No se leyó contenido HOLDOUT ni se modificaron sus rutas.
+Se reutilizó el inventario V2 de 484 unidades y se resolvieron familias, sin repetir el descubrimiento global. La raíz canónica se reconcilió contra `origin/main` posterior a PR #55 (`04cb988944c6979e483835cb19ece7b76aa67401`). Las versiones iniciales locales de G08/G11, estados antiguos y diferencias de presentación quedaron sustituidas por sus versiones publicadas. La regla útil de actualizar conjuntamente los dos documentos de estado se conserva en `AGENTS.md`. Los inventarios privados y diseños manuales se trasladaron fuera del repositorio con verificación SHA-256. No quedan modificaciones locales sin explicación.
 
-| Medida | Bytes lógicos observados |
+| Resultado | Valor |
 | --- | ---: |
-| Clasificados | 19,199,555,647 |
-| Eliminados | 245,632,167 |
-| Retenidos de esas unidades | 18,953,923,480 |
-| Movidos | 0 |
+| Bytes lógicos retirados en esta resolución | 13.113.888.114 |
+| Copias únicas conservadas antes de retirar sus ubicaciones anteriores | 81.321.963 bytes |
+| Material eliminado en esta pasada, descontando esas copias | **13.032.566.151 bytes** |
+| Total V2, incluida la primera pasada | **13.278.198.318 bytes** |
+| Worktrees históricos / copias independientes retirados | 58 / 7 |
+| Otras unidades de temporales/outputs/builds resueltas | 383 |
+| Copias ZIP DEVELOPMENT / extracciones idénticas eliminadas | 20 / 14 |
+| Archivos de outputs/cachés reproducibles retirados | 18.019 |
+| Raíces adicionales de build obsoleto retiradas | 6 |
+| Runtime exclusivo TDL retirado | 1 entorno virtual obsoleto |
+| Nuevas lecciones / grupos de decisión humana pendientes | 0 / 0 |
 
-Estas cifras excluyen almacenes Git, datos protegidos, repositorios independientes, enlaces/reparse points y rutas inaccesibles. No son espacio físico asignado ni una medición exhaustiva del disco. Los archivos añadidos por esta tarea tampoco forman parte del tamaño inicial. El descubrimiento por nombres tiene profundidades acotadas; no acredita ausencia de material en todo C:\.
+Son longitudes lógicas de archivos, con manifiesto previo y comprobación posterior; no son espacio físico asignado ni una diferencia exhaustiva antes/después del disco. La cuenta descuenta las copias conservadas y no atribuye recuperación adicional a movimientos dentro del mismo volumen. Los nuevos manifests y cambios del checkout tampoco constituyen bytes eliminados. Los 6.395.371.423 bytes de R1 no se vuelven a contar.
 
-Se eliminaron 145 directorios: 5 de trabajo/entorno de build y 140 cachés. Cada borrado tiene un manifiesto de hojas/tamaños previo y verificación de ausencia posterior. Las cachés no estaban versionadas; sus fuentes coinciden con blobs de commits alcanzables desde `main` descargado de GitHub. Los builds tienen source commit preservado y receta de dependencias publicada. Se conservaron los directorios `dist`, metadatos y evidencia de aceptación. No se quitaron checkouts enteros, datasets, informes históricos congelados ni software.
+Los commits laterales de Product Readiness están representados por las PR #53/#54 mediante squash. Los candidatos M04-B2 de triage/transición/aprobación están sustituidos por el evaluator, parser, tests, manifiestos de aprobación e informes publicados; no se reintrodujeron implementaciones antiguas. Cada retirada verificó cobertura Git y separó cambios locales, evidencia original, schemas y salidas generadas. Los originales seleccionados se verificaron por SHA-256 en su destino antes del borrado. Las recetas históricas conservadas requieren reconstruir su contexto por Git; no se presentan como herramientas vigentes.
 
-## Fuente y validación
+## Estructura y residuos protegidos
 
-Base remota comprobada: `cf4e0a30f6837b077e6994305f51fbf2cca8282c`. `git fsck --connectivity-only --no-dangling`: PASS. Ejecutable aceptado: SHA-256 `3030F518A68C86534B777CB7D56B973A3B11E329B4C09F6D8D2A45D11F715266`, comprobado después de limpiar. No se reconstruyó el RC ni se repitió aceptación humana/clean-machine. Tests post-cleanup: 15/15 PASS (shell y worker empaquetado con éxito, ZIP inválido, PDF/manifests y rutas Unicode); el primer intento tuvo un error en cancelación al leer vacío el fichero child.pid. La repetición específica pasó 3/3 y la repetición completa 15/15. El patrón es compatible con una carrera del test entre creación y escritura; causa inferida, no defecto de cleanup demostrado. CI remoto se verifica sobre los SHAs de publicación; el alcance es sintético, no validación comercial o jurídica.
+La raíz Git canónica sigue siendo `Transit Data Lab`; `C:\TDL_DATA` es la única raíz externa general para datos, evidencia, material privado y la copia operacional aceptada. Los 14 ZIP DEVELOPMENT coinciden con el inventario aprobado y viven allí; junctions conservan las rutas contractuales originales. Las extracciones eliminadas se compararon con los miembros del ZIP. El snapshot XSD NeTEx y su licencia conservan la estructura de imports; una junction mantiene el default del runtime sin cambiar código ni manifiesto fijado.
 
-La raíz local sigue en una rama histórica con modificaciones preexistentes. Se preservaron esas modificaciones y los archivos no rastreados; no se incorporan automáticamente a la publicación. La edición documental se prepara contra `main` usando un índice temporal, sin crear otro checkout y sin tocar el índice del usuario. El objetivo de una única raíz limpia **no está conseguido**.
+Se conservan estos grupos justificados:
 
-## Documentación y conocimiento
+1. **Datos/evidencia contractual:** Test Bank en su ruta corta vigente, fuentes físicas HOLDOUT y evidencia de aceptación/congelación. Tres worktrees identificados como HOLDOUT, un cuarto con checkpoint local congelado y una raíz de ejecución HOLDOUT conservan sus ubicaciones. No reciben trabajo nuevo.
+2. **Prerrequisitos y capturas canónicas:** bases locales, fuentes normativas capturadas y evidencia congelada que no puede sustituirse con seguridad por un output sintético. Permanecen ignorados por Git; los datos externos nuevos siguen la política de `C:\TDL_DATA`.
+3. **Material privado/manual:** sistema visual, código, plantillas y referencia TUVISA conservados privadamente por decisión expresa de Yeison; diseños e informes manuales originales, capturas NeTEx y diagnósticos compactos. No se publicaron ni se infieren derechos de distribución.
+4. **Configuración necesaria:** ajustes privados del editor y junctions verificadas. Aplicaciones compartidas y productos/repositorios independientes quedan fuera del cleanup TDL; no se desinstalaron Python, Git, QGIS ni DuckDB compartidos.
 
-Se consolidan el estado vigente y la navegación arquitectónica: `PROJECT_STRUCTURE.md` remite a `ARCHITECTURE.md`; `PROJECT_STATUS.md` remite a informes autoritativos en vez de repetir cronologías, y elimina el párrafo duplicado de aceptación. Los estados anteriores siguen recuperables en Git. Se conservan las instantáneas y evidencias congeladas.
+Ningún checkout se conserva únicamente por representar un hito. Los límites de descubrimiento por nombres se registran como límites de cobertura, sin convertirlos en decisiones pendientes ni afirmar ausencia de material en todo el disco. Rutas completas e inventarios de máquina permanecen externos y sin publicar.
 
-No se encontró un repositorio de experiencias específico de TDL utilizable: las coincidencias personales/sistema y la carpeta vacía de knowledge de otra herramienta no son el destino del proyecto. Se crea `knowledge/` con cinco lecciones concisas y enlaces a fuentes Git. No se copian informes completos ni se modifican memorias de Codex. No se contabiliza como ruido eliminado material que no se ha borrado.
+## Validación y límites
 
-## Software y ubicación
+- Git: `fsck --connectivity-only --no-dangling` PASS; raíz preparada desde `origin/main`; ningún worktree registrado apunta a una ruta eliminada.
+- Tests focalizados: **34/34 PASS** para cliente, worker empaquetado, informes, G08 y remediación; **10/10 PASS** para intake, audit y schema NeTEx, incluidos imports e identidad fijada.
+- Fuentes DEVELOPMENT y aliases: **14/14 SHA-256 PASS**. Copias únicas retenidas: SHA-256 PASS. Test Bank y schemas siguen accesibles; las rutas históricas de outputs retirados quedan explicadas en el manifiesto de resolución.
+- Ejecutable aceptado: SHA-256 **3030F518A68C86534B777CB7D56B973A3B11E329B4C09F6D8D2A45D11F715266**, comprobado tras el traslado; una sola copia operacional onedir, con dependencias incluidas. Rol: **INTERNAL_OPERATIONAL_TOOL**.
+- Fuentes físicas HOLDOUT: metadatos/rutas presentes; no se abrieron, inspeccionaron ni hashearon sus contenidos y quedaron fuera de todos los targets de escritura. Se retiraron copias de informes versionados en checkouts redundantes; no se modificó su evidencia canónica ni las fuentes físicas protegidas.
 
-Python 3.12/3.14, Git/GitHub tooling, DuckDB y QGIS permanecen: su exclusividad para TDL no está probada; Python 3.12.10 sigue siendo la versión de la receta de build. Ninguna instalación se clasifica SAFE_TO_REMOVE. `C:\TDL_DATA` permanece como raíz aprobada para nuevo material externo persistente. No se trasladan datasets/evidencia mientras no estén resueltas identidad, retención y dependencias.
-
-## Revisión requerida
-
-Cinco grupos, con miembros y metadatos en evidencia local no publicada:
-
-1. Raíz canónica: reconciliar cambios locales con `main` conservando trabajo único.
-2. Checkouts históricos: hay contenido protegido/ignorado/no rastreado; una referencia Git no permite borrar el árbol completo.
-3. Ejecuciones y evidencia externa: falta procedencia completa por claim para retirar outputs grandes.
-4. Datasets/exports descargados e independientes: falta prueba de duplicación y dependencia antes de mover o borrar.
-5. Límites del descubrimiento: accesos denegados/profundidad acotada; no hay prueba exhaustiva de ausencia.
-
-No se solicita aprobación genérica de borrado: primero hay que resolver la prueba de conservación. HOLDOUT queda retenido fuera de la limpieza. El detalle operacional permanece local en `reports/evidence/local_environment_reconciliation_v2/` (inventario, plan, ejecución, reviews, validación y resumen); no se publica información específica de máquina.
+La publicación GitHub se verifica sobre los SHAs efectivos de PR y merge, con evidencia operacional local. No se reconstruyó el ejecutable ni se repitió aceptación humana o clean-machine; no cambia readiness interno, cobertura del motor, gates comerciales ni afirmaciones jurídicas.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.

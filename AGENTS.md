@@ -5,6 +5,7 @@ Responder en español de España. Aplicar las instrucciones del usuario y usar e
 ## Fuentes y alcance
 
 - Leer primero `README.md` y `PROJECT_STATUS.md`; consultar después las instrucciones y archivos del área afectada.
+- Usar `PROJECT_STATUS_TREE.md` como mapa visual vigente. Cuando un paso cambie el estado del proyecto, actualizar en la misma tarea tanto ese mapa como `PROJECT_STATUS.md`, basándose en evidencia verificada y preservando los límites de cada gate. Si no cambia el estado, no modificar el mapa.
 - Transit Data Lab es el proyecto global. GTFS Explorer Desktop es un producto independiente con baseline protegida 0.2.2; no renombrar el producto ni cambiar su versión para adoptar el nombre del contenedor.
 - `PROJECT_CURRENT_STATE.md` y `project_baseline.json` son instantáneas congeladas. Los informes anteriores y `PROJECT_SNAPSHOT_V0.1.md` documentan su momento histórico; el estado vigente se mantiene en `PROJECT_STATUS.md`.
 - No absorber repositorios de `06_Products`, crear gitlinks ni modificar sus árboles/configuraciones como parte de tareas del padre. Una tarea específica del producto requiere sus propias instrucciones.
