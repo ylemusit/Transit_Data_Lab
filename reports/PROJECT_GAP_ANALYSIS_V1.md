@@ -1,0 +1,20 @@
+# Transit Data Lab — análisis de gaps V1
+
+**Fecha:** 2026-10-07 · Evaluación posterior a la prueba sintética controlada. Las prioridades distinguen bloqueo de un piloto externo, distribución independiente y trabajo futuro.
+
+| ID | Prioridad / área | Descripción y evidencia | Impacto | Acción recomendada | Esfuerzo | Dependencia | ¿Antes de piloto externo? |
+|---|---|---|---|---|---|---|---:|
+| G-01 | P1 · Backup/recuperación | No hay backup externo integral acreditado ni restore probado; Git local/remoto no cubre bases, ZIP originales, evidencia excluida ni material privado. | Pérdida de fuentes/datos/evidencia únicos y recuperación no demostrada. | Definir destino independiente y restringido; respaldar snapshot consistente de bases, fuentes/evidencia no regenerable y repos independientes; restaurar en workspace separado y validar hashes/manifests. | M | Capacidad de almacenamiento y política ACL. | Sí |
+| G-02 | P1 · Operación externa | Estado Business registra autorización de contacto externo no concedida; esta revisión no autoriza manejo de datos de clientes. | No se puede iniciar un piloto real con operador/cliente. | Obtener autorización explícita, alcance, roles, retención y procedimiento de transferencia antes de recibir datos. | S–M | Decisión humana y límites de privacidad/comerciales. | Sí |
+| G-03 | P1 distribución · Seguridad Desktop | MapLibre `6.3.0` afectado por GHSA-jrc7-96c5-q579; el advisory marca hasta 6.4.0 afectado y parche desde 6.4.1. | Riesgo crítico en producto GTFS Explorer Desktop independiente; no es fallo de motor TDL. | Abrir tarea/revisión específica en repo Desktop, actualizar a versión corregida y ejecutar regresión funcional y de dependencias antes de distribuir. | S–M | Cambio de baseline/aceptación de producto y pruebas Desktop. | No para uso interno TDL; sí antes de distribuir Desktop |
+| G-04 | P2 · Portabilidad | El venv está en P:, pero `sys.base_prefix` y Node/npm provienen de instalaciones Windows en C:. | La ejecución P-only funciona en la estación auditada; reconstrucción autónoma/clean-machine desde P no está demostrada. | Documentar versiones/recetas y validar reconstrucción en máquina limpia controlada; mantener datos/cache/output en P:. | M | Imagen o máquina de prueba disponible. | No, si se limita a estación actual |
+| G-05 | P2 · Higiene Git de producto | Engineering conserva 5 cambios locales; Desktop tiene worktree prunable que apunta a ruta histórica ausente; restore repo histórico referencia bundle C: ya ausente. | Ambigüedad de backup/continuidad, sin defectos detectados en el checkout TDL. | Identificar propietario y decisión por cada unidad; respaldar/registrar antes de limpiar o podar. Esta revisión no inspeccionó diffs ni altera repos. | M | Contexto y autorización de los repos independientes. | No |
+| G-06 | P3 · Envelope de datos | `dataset019` y feeds extremos tienen coste alto/diferido; estándares/formatos fuera de alcance V1 permanecen pendientes. | No hay afirmación de soporte o rendimiento para ese envelope. | Planificar campaña separada con límites de recursos, aceptación y autorización de acceso a cada corpus. | L | Recursos y definición de alcance. | No para piloto dentro del envelope actual |
+| G-07 | P3 · Certificación/mercado | No se acreditan cumplimiento jurídico, aceptación NAP, validación de demanda ni disposición a pagar. | No permite claims de certificación ni decisión de lanzamiento comercial. | Mantener claims acotados; investigar mercado y revisión jurídica como líneas separadas. | M–L | Evidencia externa y revisión especializada. | No para el piloto técnico controlado; sí para claims comerciales/regulatorios |
+
+## Bloqueadores y readiness
+
+- **P0:** ninguno identificado dentro del alcance probado.
+- **P1 antes de piloto real externo:** G-01 y G-02. Estado recomendado: `READY_FOR_CONTROLLED_REAL_CLIENT_PILOT = NO`.
+- **P1 antes de distribución Desktop:** G-03; la decisión permanece separada del repositorio raíz y no se modifica aquí.
+- La prueba sintética produjo `NO ES POSIBLE EMITIR CONCLUSIÓN` y gap contable cero, pero no prueba autorización, demanda, validez legal ni recuperación ante desastre.

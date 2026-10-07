@@ -12,6 +12,9 @@ La entrada vigente es [PROJECT_STATUS.md](PROJECT_STATUS.md). Describe el estado
 | [ARCHITECTURE.md](ARCHITECTURE.md) | Componentes, flujo y límites. |
 | [Conocimiento de ingeniería](knowledge/README.md) | Lecciones curadas con fuentes. |
 | [Reconciliación local V2](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md) | Cierre comprobado y residuos protegidos. |
+| [Revisión de integridad y salud V1](reports/PROJECT_INTEGRITY_AND_HEALTH_REVIEW_V1.md) | Estado canónico, integridad, repos, datos, junctions y límites. |
+| [Matriz de validación V1](reports/PROJECT_VALIDATION_MATRIX_V1.md) | Suites/gates ejecutados, resultados y cobertura no ejecutada. |
+| [Análisis de gaps V1](reports/PROJECT_GAP_ANALYSIS_V1.md) | Prioridades antes de piloto externo y distribución. |
 | [REPOSITORY_POLICY.md](REPOSITORY_POLICY.md) | Separación de repositorios y preservación de evidencia. |
 | [BACKUP_AND_RECOVERY.md](BACKUP_AND_RECOVERY.md) | Cobertura Git y recuperación de datos excluidos. |
 | [GTFS_Lab](02_Data_Engineering/GTFS_Lab/README.md) | Operación y límites del laboratorio GTFS. |
