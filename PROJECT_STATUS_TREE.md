@@ -6,7 +6,7 @@
 ```text
 TRANSIT DATA LAB
 │
-├── LOCAL ENVIRONMENT RECONCILIATION V2  ⚠ BLOCKED_BY_AMBIGUOUS_ITEMS (245,632,167 bytes eliminados; raíz local con cambios y residuales pendientes)
+├── LOCAL ENVIRONMENT RECONCILIATION V2  ✅ CLOSED_WITH_PROTECTED_RESIDUALS (13.278.198.318 bytes V2; 58 worktrees + 7 copias retirados; datos/evidencia privados protegidos)
 ├── LOCAL WORKSPACE RECONCILIATION R1  ✅ CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS (~6.40 GB recuperados; política de datos externos establecida)
 ├── TRUST FOUNDATION                    ✅ CLOSED (gate técnico)
 ├── GTFS AUDIT ENGINE V1                ✅ CLOSED (alcance técnico documentado)
