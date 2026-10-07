@@ -1,6 +1,6 @@
 # GTFS_Lab — Transit Data Lab
 
-Banco de pruebas con entrada controlada: [TEST_BANK_V1.md](TEST_BANK_V1.md). `python -m gtfs_lab.test_bank <zip> --bank C:/TDL/BANK --metadata <json>` captura identidad, usa nombres internos numéricos, ejecuta auditoría/replay y clasifica el procedimiento como OK/NOT_OK; un OK puede contener findings. Banco operativo fuera de Git; CLI técnico, autoservicio pendiente.
+Banco de pruebas con entrada controlada: [TEST_BANK_V1.md](TEST_BANK_V1.md). `python -m gtfs_lab.test_bank <zip> --bank P:/TransitDataLab/02_Data/TestBank --metadata <json>` captura identidad, usa nombres internos numéricos, ejecuta auditoría/replay y clasifica el procedimiento como OK/NOT_OK; un OK puede contener findings. Banco operativo fuera de Git; CLI técnico, autoservicio pendiente.
 
 Para un gate de CI sobre un ZIP, ejecutar `python -m gtfs_lab.ci_gate <zip> --output <directorio-nuevo>` desde este directorio. Devuelve JSON y salidas 0 (política satisfecha), 2 (fallo técnico/de inspección/recurso) o 3 (configuración inválida); el CLI V1 de ejecución conserva su contrato. Las nuevas auditorías persistidas marcan ChangeAttribution 1.1.0 y versiones semánticas por regla. Véase el [pack de precondiciones](../../reports/repository_integrity/TDL_GTFS_ENGINE_PRECONDITIONS_PACK_CLOSURE.md).
 

@@ -7,7 +7,7 @@ Estado: **CLOSED / HUMAN_CLOSURE_APPROVED**, 2026-10-02. El banco antecede al cl
 **El nombre del cliente no es el nombre de trabajo. La ruta del cliente no es la ruta de trabajo.** Se captura identidad antes de asignar el código y copiar bytes. SHA-256 identifica contenido; `case_id` identifica una ejecución, sin equivalencia con identidad del dataset. Una repetición del mismo SHA recibe otro código. Rango `00001`–`99999`, sin reciclado; agotarlo bloquea nuevas altas y requiere versionar el contrato.
 
 ```text
-C:/TDL/BANK/
+P:/TransitDataLab/02_Data/TestBank/
 ├── ACTIVE/00001/             # permanece aquí durante ambos runs
 ├── OK/00001_OK/              # clasificación solo al finalizar
 ├── NOT_OK/00002_NOT_OK/
@@ -30,7 +30,7 @@ EVIDENCE/original_identity.json, preflight.json, replay.json
 case.json                    # registro autoritativo del caso
 ```
 
-La ruta absoluta del banco se limita a 64 caracteres; el default es DEFAULT_TEST_BANK_ROOT = C:/TDL/BANK, con override explícito mediante --bank. No se emplean nombres de operadores en rutas internas. Los run IDs y nombres de artefactos del motor cerrado se conservan. La entrada debe estar fuera del banco. Un banco operativo y sus backups se mantienen fuera del repositorio; Git conserva código y evidencia seleccionada, no ZIP/DB/registro privado. El ejemplo de estructura no exige mover los datasets históricos.
+La ruta absoluta del banco se limita a 64 caracteres; el default es DEFAULT_TEST_BANK_ROOT = P:/TransitDataLab/02_Data/TestBank, con override explícito mediante --bank. No se emplean nombres de operadores en rutas internas. Los run IDs y nombres de artefactos del motor cerrado se conservan. La entrada debe estar fuera del banco. Un banco operativo y sus backups se mantienen fuera del repositorio; Git conserva código y evidencia seleccionada, no ZIP/DB/registro privado. El ejemplo de estructura no exige mover los datasets históricos.
 
 `original_identity.json` conserva filename, extension, path local recibido, tamaño, SHA-256 y fecha de captura. `ORIGINAL_METADATA` mantiene datos declarados de título, publicador, operador, URL, fecha de recuperación y licencia; no se inventan valores ausentes. `FILESYSTEM_METADATA` contiene timestamps observados y su fiabilidad limitada: no se consideran fechas del publicador. Cuando la entrada es una captura anterior, se registra ese papel y se conserva la evidencia previa; no se presenta su ruta como la ruta original de descarga.
 
@@ -64,10 +64,10 @@ Desde `02_Data_Engineering/GTFS_Lab`, usando el entorno Python del proyecto:
 La ejecución completa requiere **DuckDB CLI en PATH**, no basta con el paquete Python. La comprobación local usó CLI `v1.5.5`. CI instala el [release oficial v1.5.5](https://github.com/duckdb/duckdb/releases/tag/v1.5.5), con SHA-256 del asset Linux verificado frente a metadatos oficiales: `08c0ca117111fcede14239d0093792352befdc174218c344d232c13279643d05`. No se modifica la instalación DuckDB del usuario.
 
 ```powershell
-python -m gtfs_lab.test_bank 'C:/Descargas/fichero original.zip' --bank C:/TDL/BANK --metadata metadatos.json --provenance CLIENT_PROVIDED
-python -m gtfs_lab.test_bank --bank C:/TDL/BANK --rebuild
+python -m gtfs_lab.test_bank 'C:/Descargas/fichero original.zip' --bank P:/TransitDataLab/02_Data/TestBank --metadata metadatos.json --provenance CLIENT_PROVIDED
+python -m gtfs_lab.test_bank --bank P:/TransitDataLab/02_Data/TestBank --rebuild
 python -m unittest discover -s tests -p test_test_bank.py
-python -m tools.test_bank_e2e --evidence C:/TDL/evidencia-sintetica-nueva.json
+python -m tools.test_bank_e2e --evidence P:/TransitDataLab/04_Runtime/Outputs/evidencia-sintetica-nueva.json
 ```
 
 Campos admitidos en `metadatos.json` (texto o null): `dataset_title`, `publisher`, `operator`, `source_url`, `retrieved_time`, `license_status`, `known_friction`, `prior_case_id`, `metadata_evidence`. Los campos desconocidos se rechazan. `--historical-failures` recibe una lista JSON de incidencias con `phase`, `category`, `observed` y opcionalmente estado, resolución, referencia de evidencia y causa con nivel de confirmación. No se infiere causalidad desde un mensaje de error.

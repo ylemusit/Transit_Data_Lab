@@ -215,7 +215,7 @@ class TestBankTests(unittest.TestCase):
         self.assertEqual(rebuild_register(self.bank), [])
 
     def test_default_and_controlled_override(self):
-        self.assertEqual(DEFAULT_TEST_BANK_ROOT.as_posix(), "C:/TDL/BANK")
+        self.assertEqual(DEFAULT_TEST_BANK_ROOT.as_posix(), "P:/TransitDataLab/02_Data/TestBank")
         self.assertEqual(self.execute()["controlled_short_workspace"], True)
 
 

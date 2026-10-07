@@ -22,6 +22,18 @@ La entrada vigente es [PROJECT_STATUS.md](PROJECT_STATUS.md). Describe el estado
 
 `PROJECT_CURRENT_STATE.md`, `project_baseline.json`, `PROJECT_SNAPSHOT_V0.1.md` y los informes de ejecuciones anteriores son registros históricos. Sus afirmaciones sobre commits, remotos o fases se interpretan en el momento de su creación. Se conservan sus bytes y no deben utilizarse aisladamente como estado vigente.
 
+## Operación en la partición dedicada
+
+Raíz Git canónica: `P:\TransitDataLab\01_Project\Transit Data Lab`. Datos, evidencia física, runtime y cliente se conservan en áreas separadas de `P:\TransitDataLab`; los binarios y entornos antiguos no forman parte del checkout. [Cierre y límites de la migración](reports/DEDICATED_PARTITION_MIGRATION_V1.md).
+
+```powershell
+. .\tools\activate_tdl.ps1
+Set-Location (Join-Path $env:TDL_PROJECT_ROOT '02_Data_Engineering\GTFS_Lab')
+& "$env:TDL_RUNTIME_ROOT\Current\TDL\Scripts\python.exe" -m gtfs_lab.test_bank --help
+```
+
+La activación usa [config/tdl_paths.json](config/tdl_paths.json) y admite `-Root` o `TDL_ROOT` para otra ubicación. Solo configura el proceso actual. El banco predeterminado es `TDL_DATA_ROOT/TestBank`; `--bank` conserva su override. Los resultados nuevos van a `04_Runtime`, y los datos originales/evidencia congelada se preservan.
+
 ## Identidad
 
 El nombre del proyecto global es Transit Data Lab. Los nombres GTFS Explorer Desktop, GTFS_Lab y las versiones históricas de sus resultados se mantienen para conservar la identidad y procedencia de cada componente. El nombre empresarial sigue siendo provisional según el gobierno Business; no implica disponibilidad jurídica de marca.
