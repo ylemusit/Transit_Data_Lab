@@ -164,7 +164,14 @@ def main():
         # Fresh deterministic regeneration in a separate environment directory.
         with tempfile.TemporaryDirectory(prefix='tdl-v1-fixtures-') as td:
             regenerated=Path(td)/'fixtures';build(regenerated,gv,nv)
-            require((regenerated/'manifest.json').read_bytes()==(FIXTURES/'manifest.json').read_bytes(),'FIXTURE_MANIFEST_REPLAY')
+            regenerated_manifest=(regenerated/'manifest.json').read_bytes()
+            frozen_manifest=(FIXTURES/'manifest.json').read_bytes()
+            if a.portable:
+                # Git text checkout may use CRLF on Windows. Normalize only this
+                # JSON metadata in memory; fixture bytes/hashes stay exact below.
+                regenerated_manifest=regenerated_manifest.replace(b'\r\n',b'\n')
+                frozen_manifest=frozen_manifest.replace(b'\r\n',b'\n')
+            require(regenerated_manifest==frozen_manifest,'FIXTURE_MANIFEST_REPLAY')
             for c in cases:
                 for name in c['files']:
                     b=(FIXTURES/c['id']/name).read_bytes()

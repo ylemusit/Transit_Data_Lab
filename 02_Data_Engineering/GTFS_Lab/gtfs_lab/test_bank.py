@@ -24,9 +24,10 @@ from .client_workflow import _redact_local_paths, _redact_path_text, run_client_
 from .core import sha256_file
 from .interpretation.consolidation import semantic_fingerprint
 from .resource_stages import mark as _mark_stage
+from .storage_paths import data_root
 
 BANK_VERSION = "1.0.0"
-DEFAULT_TEST_BANK_ROOT = Path("C:/TDL/BANK")
+DEFAULT_TEST_BANK_ROOT = data_root() / "TestBank"
 
 
 def _tdl_revision() -> str:
@@ -72,7 +73,7 @@ def _write(path: Path, value: Any) -> None:
 @contextmanager
 def _locked(bank: Path):
     if len(str(bank)) > 64:
-        raise ValueError("El banco requiere una ruta corta (máximo 64 caracteres); por ejemplo C:/TDL/BANK")
+        raise ValueError("El banco requiere una ruta corta (máximo 64 caracteres); por ejemplo P:/TransitDataLab/02_Data/TestBank")
     for name in ("ACTIVE", "OK", "NOT_OK", "REGISTRY"):
         (bank / name).mkdir(parents=True, exist_ok=True)
     lock = bank / "REGISTRY" / "bank.lock"

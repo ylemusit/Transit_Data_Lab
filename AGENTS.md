@@ -2,6 +2,13 @@
 
 Responder en español de España. Aplicar las instrucciones del usuario y usar el contexto mínimo suficiente para cada tarea.
 
+## Raíces operativas
+
+- Raíz canónica: `P:\TransitDataLab\01_Project\Transit Data Lab`; configuración en `config/tdl_paths.json` y activación por proceso en `tools/activate_tdl.ps1`.
+- Datos/DB/TestBank/Development/Holdout/External en `02_Data`; evidencia física en `03_Evidence`; entornos y outputs regenerables en `04_Runtime`; paquetes del cliente en `05_Client`; firma en `Private/Signing`, con ACL restringida.
+- Los tres repositorios de GTFS Explorer conservan Git e independencia. No copiar paquetes, bases o entornos dentro de la fuente ni mover virtualenvs como portables.
+- Preservar evidencia histórica y manifests sin reescribir sus rutas. Los aliases de contratos relativos están documentados en `reports/DEDICATED_PARTITION_MIGRATION_V1.md`; no seguir reparse points al inventariar o borrar.
+
 ## Fuentes y alcance
 
 - Leer primero `README.md` y `PROJECT_STATUS.md`; consultar después las instrucciones y archivos del área afectada.

@@ -1,0 +1,8 @@
+{
+  "TDL_ROOT": "P:/TransitDataLab",
+  "TDL_PROJECT_ROOT": "P:/TransitDataLab/01_Project/Transit Data Lab",
+  "TDL_DATA_ROOT": "P:/TransitDataLab/02_Data",
+  "TDL_EVIDENCE_ROOT": "P:/TransitDataLab/03_Evidence",
+  "TDL_RUNTIME_ROOT": "P:/TransitDataLab/04_Runtime",
+  "TDL_CLIENT_ROOT": "P:/TransitDataLab/05_Client"
+}

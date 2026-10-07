@@ -2,6 +2,12 @@
 
 Actualizado: 2026-10-07. [Mapa resumido](PROJECT_STATUS_TREE.md) · [Arquitectura](ARCHITECTURE.md) · [Conocimiento](knowledge/README.md).
 
+## Migración a P: — cierre operacional
+
+`DEDICATED_PARTITION_MIGRATION_V1 = CLOSED_WITH_TEMPORARY_COMPATIBILITY_LINKS`. Raíz canónica `P:\TransitDataLab\01_Project\Transit Data Lab`; datos, evidencia, runtime y cliente en áreas externas separadas de P:. REVIEW_REQUIRED = 0; 11 raíces antiguas retiradas; C: CLEAN en el alcance auditado. Se retiraron 227.943.369.017 bytes regenerables y 12.503.583.020 bytes duplicados de P:; 87.175 archivos se copiaron con SHA-256 antes de retirar C:. 34 junctions documentadas, todas dentro de P:. Fuente, ramas/worktrees, checkpoints, Test Bank, HOLDOUT, firma y EXE aceptado preservados.
+
+50 tests focales, E2E sintético de banco, Compliance portátil, lint, typecheck, Git y hashes PASS. Entornos reconstruidos desde recetas. Pendiente independiente: advisory crítico de MapLibre 6.3.0; no se ha actualizado la baseline de Desktop ni declarado seguridad integral. [Cierre, evidencia, links y límites](reports/DEDICATED_PARTITION_MIGRATION_V1.md).
+
 ## Reconciliación del entorno local V2
 
 `LOCAL_ENVIRONMENT_RECONCILIATION_V2 = CLOSED_WITH_PROTECTED_RESIDUALS`. La raíz canónica está reconciliada con main; 58 worktrees y 7 copias independientes retirados. Esta resolución elimina 13.032.566.151 bytes lógicos, descontando las copias originales conservadas; total V2 13.278.198.318 bytes. Los 14 originales DEVELOPMENT y el schema NeTEx están en la raíz externa aprobada, con aliases contractuales verificados; se conserva una copia operacional del EXE aceptado. Tests focalizados 44/44 PASS; integridad Git, hashes y rutas operativas PASS. Test Bank, fuentes físicas HOLDOUT, checkpoints/capturas congelados y material privado permanecen protegidos; no quedan grupos de decisión humana pendientes. [Resultado, retención y límites](reports/LOCAL_ENVIRONMENT_RECONCILIATION_V2.md).
@@ -92,3 +98,16 @@ Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 ## Antecedentes
 
 Las cronologías, SHAs y gates anteriores están en [el estado previo preservado en Git](https://github.com/ylemusit/Transit_Data_Lab/blob/cf4e0a30f6837b077e6994305f51fbf2cca8282c/PROJECT_STATUS.md) y sus informes enlazados. Las instantáneas congeladas permanecen intactas. Las fechas históricas no sustituyen el estado vigente; un PASS documental/sintético no valida mercado ni cumplimiento jurídico.
+
+## Antecedente de migración V1 — sustituido por el cierre
+
+2026-10-07: nueva pasada completada sobre los 81 temporales antes inaccesibles: 489 archivos, 226 directorios y 635.338.932 bytes lógicos eliminados; MIGRATE_TO_P = NO. DEDICATED_PARTITION_MIGRATION_V1 = REVIEW_REQUIRED_PROTECTED_MATERIAL: la ACL del material privado de firma y la herencia más amplia de P: requieren resolver su política de acceso antes del traslado. Sin cutover ni retiro de raíces; HOLDOUT intacto. Expediente vigente: P:\TransitDataLab\03_Evidence\Historical\migration_v1\resume_report_20261007.md y final_footprint.json. Este estado no cambia los gates de producto.
+## Antecedente de descomposición V1 — sustituido por el cierre
+
+2026-10-07: `CANONICAL_WHOLESALE_MIGRATION = PROHIBITED`; `CANONICAL_CUTOVER = NO`. Descomposición completa: 28 hijos directos y 34.742 filas recursivas, sin seguir 15 reparse points y sin errores de acceso. La raíz medida tras retirar el PFX tiene 290.967 archivos, 150.733 directorios y 283.567.279.349 bytes lógicos. 06_Products explica 261,771 GiB. Distribución propuesta: 0,515 GiB para fuentes y metadata de cuatro repositorios independientes; 207,787 GiB de candidatos regenerables; 9,584 GiB de workspaces mixtos por revisar. No se ha efectuado limpieza adicional ni se ha declarado duplicidad por nombre. Checkpoints congelados, paquetes y evidencia se preservan fuera de la fuente.
+
+Proyección conservadora de ingress a P: 105,308 GiB, conservando todas las unidades dudosas y otras raíces legacy y excluyendo regenerables; cabe con presupuesto de reconstrucción de runtime y reserva, pero no acredita transferencia, eliminación ni funcionamiento. Pendientes: reconciliar unidades mixtas y contratos de rutas, sanity checks por unidad, transferencia verificada y validación operacional antes del cutover.
+
+La decisión privada de firma está resuelta: PFX trasladado a P:\TransitDataLab\Private\Signing, SHA-256 de origen/destino coincidentes y ACL de origen capturada; carpeta y PFX sin herencia, con acceso exclusivo para Yeison, SYSTEM y Administradores. Origen retirado tras verificar. El registro permanece restringido y no se publica en Git. HOLDOUT intacto; no se abrió, hasheó ni modificó su contenido. Este estado sustituye el bloqueo anterior por política de acceso al PFX y no cambia los gates de producto.
+
+Expediente completo y columnas solicitadas: P:\TransitDataLab\03_Evidence\Historical\migration_v1\storage_decomposition\STORAGE_DECOMPOSITION.md, direct_children.json/csv, recursive_decomposition.json/csv, category_allocation.json y capacity_projection.json. Los informes y cambios locales previos se conservan. Sin commit, push ni publicación.
