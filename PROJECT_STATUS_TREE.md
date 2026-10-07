@@ -1,11 +1,12 @@
 # Transit Data Lab — mapa de estado vigente
 
-**Actualizado:** 2026-10-06
+**Actualizado:** 2026-10-07
 **Fuente de detalle:** [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 ```text
 TRANSIT DATA LAB
 │
+├── LOCAL ENVIRONMENT RECONCILIATION V2  ⚠ BLOCKED_BY_AMBIGUOUS_ITEMS (245,632,167 bytes eliminados; raíz local con cambios y residuales pendientes)
 ├── LOCAL WORKSPACE RECONCILIATION R1  ✅ CLOSED_WITH_PROTECTED_LEGACY_RESIDUALS (~6.40 GB recuperados; política de datos externos establecida)
 ├── TRUST FOUNDATION                    ✅ CLOSED (gate técnico)
 ├── GTFS AUDIT ENGINE V1                ✅ CLOSED (alcance técnico documentado)
