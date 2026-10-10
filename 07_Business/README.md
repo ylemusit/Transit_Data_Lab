@@ -24,6 +24,8 @@ Cualquier futura presentación comercial de una capacidad como existente exigir�
 | [STAGE_1_CLOSURE.md](03_Market/STAGE_1_CLOSURE.md) | Cierre documental Stage 1 y alcance de la decisión humana. |
 | [STAGE_1_EVIDENCE_GAP_PLAN.md](03_Market/STAGE_1_EVIDENCE_GAP_PLAN.md) | Carencia pendiente y siguiente decisión humana. |
 | [Diseño Stage 2A](03_Market/customer_discovery/README.md) | Investigación primaria diseñada; sin contactos ni entrevistas. |
+| [Registro de afirmaciones GTFS/NeTEx](03_Market/TDL_GTFS_NETEX_CLAIMS_REGISTER_20261009.md) | Frases internas respaldadas, madurez, evidencia y límites; sin permiso de publicación ni cambio de fase. |
+| [Validación de valor GTFS/NeTEx](03_Market/AUDIT_VALUE_VALIDATION_V1.md) | Protocolo y registro vacío de necesidad, compra y beneficio; tarea 23 parcial, sin evidencia primaria ni apertura de fases. |
 | [Contact Gate V2](03_Market/customer_discovery/STAGE_2B_CONTACT_GATE.md) | Estado de la rework de privacidad y gate previo; contacto no autorizado. |
 | [Privacy Notice V2](03_Market/customer_discovery/PRIVACY_NOTICE_V2.md) | Aviso propuesto en dos capas, pendiente de completar canal y revisión. |
 | [Registro mínimo de tratamiento](03_Market/customer_discovery/RESEARCH_DATA_PROCESSING_RECORD.md) | Borrador de responsabilidad proactiva para la investigación personal. |

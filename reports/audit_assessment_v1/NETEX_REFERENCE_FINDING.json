@@ -1,0 +1,54 @@
+{
+  "contract": "TDL_ASSESSED_FINDING/1",
+  "case_id": "NETEX-SYNTHETIC-MALFORMED-REFERENCE",
+  "format": "NETEX",
+  "example_state": "HISTORICAL_SYNTHETIC_REFERENCE_NOT_OPERATOR_AUDIT",
+  "condition": "La evidencia sintetica historica registra XML no bien formado; validacion XSD no evaluable.",
+  "criterion": {
+    "text": "XML interpretable con el parser seguro del alcance NeTEx_Lab; se excluyen declaraciones DTD/entidades.",
+    "reference": "02_Data_Engineering/NeTEx_Lab/netex_lab/audit.py:NETEX-XML-001",
+    "field_presence": "NOT_APPLICABLE_XML_CRITERION"
+  },
+  "exposure": {
+    "affected_count": 1,
+    "eligible_count": 1,
+    "unit": "XML_FILE",
+    "basis": "Un fixture identificado, contrastado con evidencia historica; no poblacion de operadores.",
+    "source_sha256": "3d13af798cb3eaced89189ead209ca2a7e2f91f445ec60a36dac2deb52df2f55"
+  },
+  "evidence": [
+    {
+      "source_ref": "02_Data_Engineering/NeTEx_Lab/reports/evidence/e2e_synthetic_20261002.json",
+      "source_sha256": "a07db5436af798edffc2a62b96a672d39b80c9c952041accded4e33e73c5d65d",
+      "fixture": "02_Data_Engineering/NeTEx_Lab/tests/fixtures/malformed.xml",
+      "locator": "/"
+    }
+  ],
+  "observed_impact": {
+    "state": "NOT_VERIFIED",
+    "text": "No se midio funcionamiento de consumidores.",
+    "evidence_ref": null
+  },
+  "potential_impact": {
+    "state": "POTENTIAL_ONLY",
+    "text": "Un consumidor podria no interpretar el XML; el efecto no esta demostrado para un destino real."
+  },
+  "cause": {
+    "state": "UNKNOWN",
+    "text": "Sin atribucion del proceso que genero el defecto.",
+    "evidence_ref": null
+  },
+  "action": "Corregir el XML y volver a comprobarlo con el parser seguro.",
+  "closure": "Nueva fuente identificada que supera XML; evaluar XSD y perfil por separado, sin convertir XML valido en conformidad completa.",
+  "priority": {
+    "value": "UNASSESSED",
+    "basis": "No hay destino ni consecuencias comprobadas."
+  },
+  "destination_blocking": {
+    "state": "NOT_DETERMINED",
+    "evidence_ref": null
+  },
+  "reaudit": {
+    "status": "NOT_REAUDITED"
+  }
+}

@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+ORIG-CALENDAR-001,SYN-CS-01-CALENDAR,elaboración sintética documentada,Vigencia creada para la muestra y compartida por los viajes.,SV-ALL,1,1,1,1,1,1,1,20261009,20261231

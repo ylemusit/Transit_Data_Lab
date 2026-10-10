@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,feed_publisher_name,feed_publisher_url,feed_lang,default_lang,feed_start_date,feed_end_date,feed_version,feed_contact_url
+ORIG-FEED_INFO-001,SYN-CS-01-FEED_INFO,elaboración sintética documentada,"Editor, periodo y versión identifican la edición de demostración.",CS Autobuses (datos sintéticos),https://example.com/cs-autobuses,es,es,20261009,20261231,CS-01-SYN-001,https://example.com/cs-autobuses/datos

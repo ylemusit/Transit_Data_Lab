@@ -28,6 +28,8 @@ jobs:
         run: python -m pip install -r 02_Data_Engineering/NeTEx_Lab/requirements.txt
       - name: Install pinned client PDF dependency
         run: python -m pip install -r 02_Data_Engineering/GTFS_Lab/packaging/client-pdf-requirements.txt
+      - name: Install pinned professional presentation dependencies
+        run: python -m pip install -r 02_Data_Engineering/GTFS_Lab/packaging/professional-audit-requirements.txt
       - name: Verify pinned NeTEx schema and corpus contracts
         run: |
           python tools/netex_verify_schema.py netex-schema
@@ -38,7 +40,16 @@ jobs:
           python tools/netex_gate.py
       - name: NeTEx audit tests
         working-directory: 02_Data_Engineering/NeTEx_Lab
-        run: python -m unittest discover -s tests -p 'test_netex_*.py'
+        run: |
+          python -m unittest discover -s tests -p 'test_netex_*.py'
+          python -m unittest discover -s tests -p test_reference_context_v1.py
+      - name: Portable audit contracts and lifecycle tests
+        run: python -m unittest tools.test_audit_foundation_v1 tools.test_audit_assessment_v1 tools.test_audit_delivery_v1 tools.test_audit_external_review_v1 tools.test_audit_precision_v1 tools.test_audit_lifecycle_v1 tools.test_audit_replay_v1 tools.test_audit_service_v1 -v
+      - name: Professional presentation regression tests
+        working-directory: 02_Data_Engineering/GTFS_Lab
+        run: |
+          python -m unittest tests.test_audit_case_contract tests.test_professional_audit tests.test_commercial_audit tests.test_condition_rules_v1 tests.test_delivery_revision tests.test_factory_client_e2e tests.test_portable_professional_workbook tests.test_client_report -v
+          python -m tools.verify_factory_source examples/cs_autobuses_factory
       - name: NeTEx synthetic E2E and replay
         run: python tools/netex_e2e.py --evidence "$RUNNER_TEMP/netex-e2e.json"
       - name: Upload NeTEx E2E evidence

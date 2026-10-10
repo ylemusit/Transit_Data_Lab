@@ -1,0 +1,52 @@
+{
+  "contract": "TDL_AUDIT_ENGAGEMENT/1",
+  "destination": {
+    "name": null,
+    "use": null,
+    "acceptance_criteria_evidence": null
+  },
+  "service_reference": {
+    "independent_evidence": null
+  },
+  "engagement_id": "TDL-ENG-NETEX-SYNTHETIC-20261008",
+  "purpose": "Ejemplo de encargo acotado a fixture XML; no auditoria de operador.",
+  "format": "NETEX",
+  "source": {
+    "identity": "02_Data_Engineering/NeTEx_Lab/tests/fixtures/valid_minimal.xml",
+    "sha256": "8e50cc96dd4289e1ed79bc15e251e59165bbb7f1cc30d0e2cdaaa83a30c3b554",
+    "producer_revision": null
+  },
+  "reference": {
+    "specification": "NeTEx publication schema",
+    "version": "2.0.0",
+    "profile": null,
+    "schema_sha256": null,
+    "profile_criteria_evidence": null,
+    "schema_snapshot_commit": "a94e5e1752bcc13aabb8a1f3d018dc08e6978f42",
+    "schema_state": "TO_BE_VERIFIED_AT_EXECUTION"
+  },
+  "period": {
+    "start": null,
+    "end": null,
+    "basis": "No periodo operativo acordado; fixture sintetico"
+  },
+  "included_controls": [
+    "NETEX-XML-001",
+    "NETEX-XSD-001",
+    "NETEX-PROFILE-001",
+    "NETEX-IDENTITY-001"
+  ],
+  "exclusions": [
+    "Servicio real",
+    "Perfil nacional",
+    "Aceptacion NAP",
+    "Cumplimiento legal integral",
+    "SIRI"
+  ],
+  "requested_claims": [
+    "TECHNICAL_RESULTS",
+    "SCHEMA_RESULTS",
+    "PROFILE_RESULTS",
+    "DESTINATION_SUITABILITY"
+  ]
+}

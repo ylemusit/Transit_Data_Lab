@@ -12,6 +12,10 @@ BUSINESS_PHASE_3_MARKET_EVIDENCE = PASS (evaluación documental A–G, no valida
 
 Fecha de actualización: 2026-09-27.
 
+**Actualización 2026-10-09 — TDL-AUD-22:** registro aditivo de afirmaciones internas específicas para auditorías GTFS Schedule/NeTEx en [03_Market](03_Market/TDL_GTFS_NETEX_CLAIMS_REGISTER_20261009.md). Enlaza texto permitido, audiencia, estado de capacidad, alcance, evidencia/fecha y límites; prohíbe liderazgo, cobertura/certificación total y beneficios no probados. BUSINESS_CAPABILITY_BASELINE_V1 sigue FROZEN; Phase 3 sigue IN_PROGRESS, Phase 4 NOT_STARTED y EXTERNAL_CONTACT NOT_AUTHORIZED. No modifica hipótesis, capacidades, gobierno o puertas.
+
+**Actualización 2026-10-09 — TDL-AUD-23:** [protocolo de validación de valor](03_Market/AUDIT_VALUE_VALIDATION_V1.md) diseñado, registro primario vacío y métricas comerciales NO MEDIDAS. Tarea PARCIAL hasta obtención autorizada y revisión de evidencia. No cambia hipótesis, baseline, fases ni contacto externo. El [cuadro de calidad](../reports/audit_quality_management_v1/README.md) conserva esta ausencia de medición.
+
 ## Completed
 
 - Business Phase 1 completada según autorización del usuario; decisiones iniciales conservadas.
@@ -29,6 +33,7 @@ Fecha de actualización: 2026-09-27.
 
 - Commercial validation readiness revisada: [gate](03_Market/BUSINESS_PHASE_3_VALIDATION_GATE.md), dos CSV, plan, guía y modelo de evidencia. BUSINESS_PHASE_3_VALIDATION_READINESS = PASS según resultado completo persistido en readiness_review.
 - Candidato PROB-001 estático; seis HOLD, tres NO. Niveles 0/1/2/3/4: 0/1/2/7/0. Cuatro gaps: uno listo para entrevista, uno HOLD, dos fuera V1. Once EXISTING y ocho ASM sin cambios; diferenciación UNPROVEN, customer validation/WTP ausentes.
+- TDL-AUD-22 completada en documentación interna: matriz de afirmaciones y límites para GTFS Schedule y NeTEx; sin actualización de la baseline congelada ni autorización externa.
 
 ## In progress
 

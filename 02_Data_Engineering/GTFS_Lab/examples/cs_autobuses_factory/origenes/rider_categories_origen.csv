@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,rider_category_id,rider_category_name,is_default_fare_category,eligibility_url
+ORIG-RIDER_CATEGORIES-001,SYN-CS-01-RIDER_CATEGORIES,elaboración sintética documentada,Categoría general creada para ejemplificar productos tarifarios.,RC-GENERAL,Tarifa general,1,

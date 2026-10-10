@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "ZG-CS-01",
+      "properties": {
+        "stop_name": "Zona flexible CS-01",
+        "stop_desc": "Polígono de demostración; no representa un área de servicio autorizada.",
+        "source_record_id": "ORIG-ZONE-001",
+        "source_reference": "SYN-GIS-CS-01",
+        "source_method": "digitalización sintética",
+        "source_note": "Coordenadas de ejemplo en WGS84; requieren sustitución/validación para uso real."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -4.006,
+              38.998
+            ],
+            [
+              -3.995,
+              38.998
+            ],
+            [
+              -3.995,
+              39.007
+            ],
+            [
+              -4.006,
+              39.007
+            ],
+            [
+              -4.006,
+              38.998
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

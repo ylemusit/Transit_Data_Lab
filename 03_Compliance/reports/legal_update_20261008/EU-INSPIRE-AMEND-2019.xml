@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20241021221735">
+  <metadatos>
+    <identificador>DOUE-L-2019-81082</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="1220">Reglamento</rango>
+    <fecha_disposicion>20190605</fecha_disposicion>
+    <numero_oficial>1010/2019</numero_oficial>
+    <titulo>Reglamento (UE) 2019/1010 del Parlamento Europeo y del Consejo, de 5 de junio de 2019, relativo a la adaptación de las obligaciones de información en el ámbito de la legislación relativa al medio ambiente y por el que se modifican los Reglamentos (CE) nº 166/2006 y (UE) nº 995/2010 del Parlamento Europeo y del Consejo, las Directivas 2002/49/CE, 2004/35/CE, 2007/2/CE, 2009/147/CE y 2010/63/UE del Parlamento Europeo y del Consejo, los Reglamentos (CE) nº 338/97 y (CE) nº 2173/2005 del Consejo, y la Directiva 86/278/CEE del Consejo.</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20190625</fecha_publicacion>
+    <diario_numero>170</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>115</pagina_inicial>
+    <pagina_final>127</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2019/170/L00115-00127.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia>20190626</fecha_vigencia>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+    <url_eli>https://data.europa.eu/eli/reg/2019/1010/spa</url_eli>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="35" orden="">Acceso a la información</materia>
+      <materia codigo="998" orden="">Comercialización</materia>
+      <materia codigo="1628" orden="">Contaminación</materia>
+      <materia codigo="2254" orden="">Cultivos</materia>
+      <materia codigo="3430" orden="">Espacios naturales protegidos</materia>
+      <materia codigo="3497" orden="">Evaluación de impacto ambiental</materia>
+      <materia codigo="3512" orden="">Experimentación animal</materia>
+      <materia codigo="3608" orden="">Fauna</materia>
+      <materia codigo="3726" orden="">Flora</materia>
+      <materia codigo="3924" orden="">Gestión de residuos</materia>
+      <materia codigo="8101" orden="">Incineración</materia>
+      <materia codigo="4157" orden="">Industrias</materia>
+      <materia codigo="4165" orden="">Información</materia>
+      <materia codigo="4830" orden="">Madera</materia>
+      <materia codigo="5651" orden="">Políticas de medio ambiente</materia>
+      <materia codigo="5923" orden="">Redes de telecomunicación</materia>
+      <materia codigo="6250" orden="">Ruidos</materia>
+      <materia codigo="6284" orden="">Sanidad veterinaria</materia>
+    </materias>
+    <notas>
+      <nota codigo="37" orden="215">Aplicable desde el 26 de junio de 2019, el 1 de enero de 2020 o el 1 de enero de 2022, según lo indicado.</nota>
+    </notas>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2010-82058" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Art. 20 del Reglamento 995/2010, de 20 de octubre</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2010-81868" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 43 y 54 y SUPRIME el art. 57 de la Directiva 2010/63, de 22 de septiembre</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2010-80052" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Art. 12 y AÑADE art. 16bis a la Directiva 2009/147, de 30 de noviembre de 2009</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2007-80587" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 21 y 23 de la Directiva 2007/2, de 14 de marzo</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2006-80221" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 5, 7 y 11 y SUPRIME los arts. 16, 17 y anexo III del Reglamento 166/2006, de 18 de enero</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2004-81009" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 14, 18 y el anexo VI de la Directiva 2004/35, de 21 de abril</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2002-81289" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 3, 8, 9, 10 y el anexo VI de la Directiva 2002/49, de 25 de junio</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-1997-80321" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Art. 15 del Reglamento 338/97, de 9 de diciembre de 1996</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-1986-81012" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>Arts. 2, 10 y 17 de la Directiva 86/278, de 12 de junio</texto>
+        </anterior>
+        <anterior referencia="DOUE-L-2005-82629" orden="2050">
+          <palabra codigo="245">SUSTITUYE</palabra>
+          <texto>los arts. 8 y 9 del Reglamento 2173/2005, de 20 de diciembre</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="101" orden="">Agricultura</alerta>
+      <alerta codigo="105" orden="">Comercio</alerta>
+      <alerta codigo="117" orden="">Ganadería y animales</alerta>
+      <alerta codigo="118" orden="">Industria</alerta>
+      <alerta codigo="119" orden="">Medio ambiente</alerta>
+      <alerta codigo="130" orden="">Telecomunicaciones</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <p class="parrafo">EL PARLAMENTO EUROPEO Y EL CONSEJO DE LA UNIÓN EUROPEA,</p>
+    <p class="parrafo">Visto el Tratado de Funcionamiento de la Unión Europea, y en particular su artículo 114, su artículo 192, apartado 1, y su artículo 207,</p>
+    <p class="parrafo">Vista la propuesta de la Comisión Europea,</p>
+    <p class="parrafo">Previa transmisión del proyecto de acto legislativo a los Parlamentos nacionales,</p>
+    <p class="parrafo">Visto el dictamen del Comité Económico y Social Europeo (1),</p>
+    <p class="parrafo">Previa consulta al Comité de las Regiones,</p>
+    <p class="parrafo">De conformidad con el procedimiento legislativo ordinario (2),</p>
+    <p class="parrafo">Considerando lo siguiente:</p>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(1)</p>
+          </td>
+          <td>
+            <p class="parrafo">A fin de abordar la necesidad de información sobre la aplicación y el cumplimiento, conviene introducir modificaciones en varios actos legislativos de la Unión en materia de medio ambiente teniendo en cuenta los resultados del informe de la Comisión de 9 de junio de 2017 titulado «Acciones para racionalizar la comunicación de la información en materia de medio ambiente» y el documento que lo acompaña sobre el control de adecuación de la comunicación de la información y el seguimiento de la política medioambiental de la UE de 9 de junio de 2017 (en lo sucesivo, mencionados conjuntamente como «control de adecuación de la comunicación de la información»).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(2)</p>
+          </td>
+          <td>
+            <p class="parrafo">El presente Reglamento tiene como objetivo modernizar la gestión de la información y garantizar un enfoque más coherente de los actos legislativos que entran en su ámbito de aplicación mediante la simplificación de la comunicación de la información de forma que se reduzca la carga administrativa, mejorando la base de datos para futuras evaluaciones y aumentando la transparencia en beneficio público, en cada caso en función de las circunstancias.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(3)</p>
+          </td>
+          <td>
+            <p class="parrafo">Es necesario que la accesibilidad de los datos garantice que la carga administrativa para todas las entidades se limite en la medida de lo posible, especialmente para las entidades no gubernamentales, como las pequeñas y medianas empresas (pymes). Dicha accesibilidad requiere una difusión activa a nivel nacional con arreglo a las Directivas 2003/4/CE (3) y 2007/2/CE (4) del Parlamento Europeo y del Consejo y sus normas de aplicación, a fin de garantizar la infraestructura apropiada para el acceso del público, la comunicación de la información y el intercambio de datos entre las autoridades públicas.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(4)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los datos y el proceso de comunicación de la información completa y en tiempo oportuno de los Estados miembros son esenciales para que la Comisión realice el seguimiento, examine y evalúe el funcionamiento de la legislación en relación con los objetivos que persigue como base para cualquier futura evaluación de la legislación, de conformidad con el apartado 22 del Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación (5). Procede añadir disposiciones a varios actos legislativos en el sector medioambiental a efectos de su futura evaluación, sobre la base de los datos recabados durante la aplicación, posiblemente completados con datos científicos y analíticos adicionales. En ese contexto, son necesarios datos pertinentes que permitan evaluar mejor la eficiencia, la eficacia, la pertinencia, la coherencia y el valor añadido de la legislación de la Unión, y de ahí la necesidad de contar con mecanismos de comunicación de la información adecuados que puedan servir también como indicadores a tal fin tanto para los responsables de la toma de decisiones como para el público en general.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(5)</p>
+          </td>
+          <td>
+            <p class="parrafo">Es preciso modificar las obligaciones de comunicación de la información establecidas en los artículos 10 y 17 de la Directiva 86/278/CEE del Consejo (6). La obligación de comunicar la información a la Comisión debe simplificarse y, al mismo tiempo, los Estados miembros deben estar obligados a garantizar un nivel más elevado de transparencia, de tal forma que la información requerida se ponga a disposición de manera fácilmente accesible, por medios electrónicos, y de acuerdo con las Directivas 2003/4/CE y 2007/2/CE, en particular sobre acceso público, sobre puesta en común de los datos y sobre servicios. Dado lo sumamente importante que es permitir a la ciudadanía de la Unión acceder rápidamente a la información relativa al medio ambiente, es esencial que los Estados miembros pongan los datos a disposición del público tan rápidamente como sea técnicamente posible con el fin de que pueda disponerse de la información durante el primer trimestre del año siguiente al año de referencia.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(6)</p>
+          </td>
+          <td>
+            <p class="parrafo">De conformidad con la evaluación de 13 de diciembre de 2016 de la Directiva 2002/49/CE del Parlamento Europeo y del Consejo (7), es necesario racionalizar los plazos de comunicación de la información aplicables a los mapas de ruido y los planes de acción, a fin de disponer de tiempo suficiente para la consulta pública de los planes de acción. A tal fin, el plazo para la reconsideración o la revisión de los planes de acción debe prorrogarse, una sola vez, por un año, por lo que el plazo para la cuarta ronda de planes de acción no debe ser el 18 de julio de 2023, sino el 18 de julio de 2024. Así pues, a partir de la cuarta ronda, los Estados miembros van a disponer de aproximadamente dos años entre la realización de los mapas de ruido y la finalización de la reconsideración o la revisión de los planes de acción, y no de un año como en la actualidad. En las siguientes rondas de planificación de las acciones, se va a reanudar el ciclo de cinco años para la reconsideración o la revisión. Por otra parte, con el fin de cumplir mejor los objetivos de la Directiva 2002/49/CE y de proporcionar una base para el desarrollo de medidas a escala de la Unión, los informes de los Estados miembros deben realizarse por medios electrónicos. También es necesario aumentar la participación pública exigiendo que se ponga a disposición del público información comprensible, precisa y comparable, al tiempo que esta obligación se armoniza con otros actos legislativos de la Unión, como la Directiva 2007/2/CE, sin que exista duplicidad de los requisitos prácticos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(7)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Unión está comprometida a reforzar la base empírica de la Directiva 2004/35/CE del Parlamento Europeo y del Consejo (8) de forma transparente, conforme a lo emprendido por el Grupo de Expertos de la Comisión sobre dicha Directiva. Para facilitar datos empíricos comparables, la Comisión debe desarrollar unas directrices que proporcionen un concepto común de daño medioambiental tal como se define en el artículo 2 de la Directiva 2004/35/CE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(8)</p>
+          </td>
+          <td>
+            <p class="parrafo">A partir del informe de la Comisión de 20 de julio de 2016 sobre la aplicación de la Directiva 2007/2/CE y la evaluación que la acompaña, de 10 de agosto de 2016, es conveniente, con vistas a simplificar la aplicación de dicha Directiva y a reducir las cargas administrativas relacionadas con el seguimiento por parte de los Estados miembros, dejar de obligar a los Estados miembros a enviar a la Comisión informes trienales, y dejar de obligar a la Comisión a presentar al Parlamento Europeo y al Consejo un informe de síntesis, ya que el control de adecuación de la comunicación de la información confirmó el uso limitado de tales informes. No obstante, la Comisión debe seguir efectuando, cada cinco años, una evaluación de la Directiva 2007/2/CE y debe poner dicha evaluación a disposición del público.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(9)</p>
+          </td>
+          <td>
+            <p class="parrafo">En el control de la adecuación de la Comisión de 16 de diciembre de 2016 sobre la legislación de la UE sobre protección de la naturaleza (Directivas de aves y de hábitats), esto es, la Directiva 2009/147/CE del Parlamento Europeo y del Consejo (9) y la Directiva 92/43/CEE del Consejo (10), se llegó a la conclusión de que la Directiva 2009/147/CE exige un ciclo de comunicación de la información de tres años. No obstante, un ciclo de comunicación de la información de seis años, como en la Directiva 92/43/CEE, ya se ha aplicado en la práctica para la Directiva 2009/147/CE, prestando una atención especial similar a proporcionar información actualizada sobre el estado y las tendencias de las especies. La necesidad de racionalizar la aplicación de las Directivas 92/43/CEE y 2009/147/CE justifica la necesidad de adaptar la legislación a la práctica común, garantizando una evaluación del estado cada seis años y admitiendo, al mismo tiempo, que los Estados miembros todavía necesiten llevar a cabo las actividades de seguimiento necesarias de algunas especies vulnerables. Dicha práctica común debe facilitar asimismo la elaboración cada seis años de los informes sobre la aplicación de las Directivas que los Estados miembros deben presentar a la Comisión. A fin de garantizar que se evalúa el avance de la política, los Estados miembros deben estar obligados a proporcionar información, en particular sobre el estado y las tendencias de las especies de aves silvestres, las amenazas y presiones sobre ellas, las medidas de conservación adoptadas y la contribución de la red de zonas de especial protección a los objetivos de la Directiva 2009/147/CE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(10)</p>
+          </td>
+          <td>
+            <p class="parrafo">Con el fin de mejorar la transparencia y reducir la carga administrativa, es necesario modificar las obligaciones de comunicación de la información establecidas en los artículos 43, 54 y 57 de la Directiva 2010/63/UE del Parlamento Europeo y del Consejo (11). Es necesario establecer una base de datos central, de libre acceso y con función de búsqueda, de resúmenes no técnicos de proyectos y de sus correspondientes evaluaciones retrospectivas, y conferir a la Comisión competencias de ejecución. Dichas competencias de ejecución incluyen el establecimiento de un formato y un contenido de la información comunes para la presentación de los resúmenes no técnicos de los proyectos y las correspondientes evaluaciones retrospectivas, así como un formato y contenido de la información comunes para la presentación de la información sobre la ejecución También es necesario sustituir el requisito de comunicación de la información estadística cada tres años por la Comisión, por el de crear y mantener por la Comisión una base de datos central dinámica y publicar información estadística con periodicidad anual.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(11)</p>
+          </td>
+          <td>
+            <p class="parrafo">De acuerdo con las conclusiones de la evaluación REFIT de la Comisión de 13 de diciembre de 2017 del Reglamento (CE) n.o 166/2006 del Parlamento Europeo y del Consejo (12), es necesario modificar o suprimir las obligaciones de comunicación de la información establecidas en dicho Reglamento. A fin de mejorar la coherencia con los procedimientos de comunicación de la información contemplados en la Directiva 2010/75/UE del Parlamento Europeo y del Consejo (13), se deben conferir a la Comisión competencias de ejecución para establecer el tipo, el formato y la frecuencia de la información que debe ponerse a disposición en virtud del Reglamento (CE) n.o 166/2006, y suprimir el formato de comunicación de la información actualmente establecido en dicho Reglamento. Dichas competencias deben ejercerse de conformidad con el Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo (14). Dado lo sumamente importante que es permitir a la ciudadanía de la Unión acceder rápidamente a la información relativa al medio ambiente, es esencial que los Estados miembros y la Comisión pongan los datos a disposición del público tan rápidamente como sea técnicamente posible con el fin de que pueda disponerse de la información durante el primer trimestre del año siguiente al año de referencia, en particular avanzando hacia dicho objetivo mediante un acto de ejecución en virtud del Reglamento (CE) n.o 166/2006. También es preciso modificar el artículo 11 del Reglamento (CE) n.o 166/2006 sobre confidencialidad para garantizar una mayor transparencia de la comunicación de la información a la Comisión. A fin de reducir al mínimo la carga administrativa para los Estados miembros y la Comisión, es asimismo necesario suprimir las obligaciones de comunicación de la información establecidas en los artículos 16 y 17 del dicho Reglamento, ya que la información obtenida gracias a dichas obligaciones tiene un valor limitado o no se ajusta a las necesidades de las políticas.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(12)</p>
+          </td>
+          <td>
+            <p class="parrafo">Con el fin de mejorar y facilitar el acceso del público a la información sobre la aplicación del Reglamento (UE) n.o 995/2010 del Parlamento Europeo y del Consejo (15), los datos facilitados por los Estados miembros sobre la aplicación de dicho Reglamento deben ser puestos a disposición del público por la Comisión mediante una visión general de dichos datos a escala de la Unión. Con el fin de aumentar la coherencia de la información y de facilitar el seguimiento del funcionamiento de dicho Reglamento, deben conferirse a la Comisión competencias de ejecución para establecer el formato y el procedimiento que deben seguir los Estados miembros para poner a disposición la información, y la frecuencia y el periodo de comunicación de la información deben armonizarse con los del Reglamento (CE) n.o 2173/2005 del Consejo (16). Dichas competencias deben ejercerse de conformidad con el Reglamento (UE) n.o 182/2011.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(13)</p>
+          </td>
+          <td>
+            <p class="parrafo">Con el fin de mejorar y facilitar el acceso del público a la información sobre la aplicación del Reglamento (CE) n.o 2173/2005, los datos facilitados por los Estados miembros sobre la aplicación de dicho Reglamento deben ponerse a disposición del público por la Comisión a través de una visión general de la Unión. A partir de la experiencia que la Comisión y los Estados miembros han acumulado durante el primer año del sistema de licencias de aplicación de las leyes, gobernanza y comercio forestales, deben actualizarse las disposiciones del Reglamento (CE) n.o 2173/2005 relativas a la comunicación de la información. La Comisión, en el ejercicio de sus competencias de ejecución para establecer el formato y el procedimiento que deben seguir los Estados miembros para poner a disposición la información, debe estar asistida por el Comité establecido en el artículo 11 de dicho Reglamento. Además, las disposiciones relativas a la evaluación del dicho Reglamento deben actualizarse.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(14)</p>
+          </td>
+          <td>
+            <p class="parrafo">La comunicación de la información contemplada en el Reglamento (CE) n.o 338/97 del Consejo (17) debe racionalizarse y armonizarse con las obligaciones de comunicación de la información en virtud del Convenio sobre el comercio internacional de especies amenazadas de fauna y flora silvestres (CITES), de 3 de marzo de 1973, en la que la Unión y los Estados miembros son partes. Los requisitos de comunicación de la información en virtud de la CITES se modificaron en la 17.a Conferencia de las Partes en la CITES, que se celebró en 2016, para ajustar la frecuencia de la comunicación de la información sobre las medidas de aplicación de la CITES y crear un nuevo mecanismo de información sobre el comercio ilícito de especies incluidas en la CITES. Estos cambios deben reflejarse en el Reglamento (CE) n.o 338/97.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(15)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Agencia Europea de Medio Ambiente ya está desempeñando tareas importantes en cuanto a seguimiento de la legislación medioambiental de la Unión y a información sobre esta, y dichas tareas deben incorporarse de manera expresa a la legislación pertinente. Por lo que respecta a otros actos legislativos, la función y los recursos de la Agencia Europea de Medio Ambiente al apoyar a la Comisión en comunicar información en materia de medio ambiente se van a abordar tras la finalización de la evaluación en curso.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(16)</p>
+          </td>
+          <td>
+            <p class="parrafo">Deben modificarse en consecuencia los Reglamentos (CE) n.o 166/2006, (UE) n.o 995/2010, (CE) n.o 338/97 y (CE) n.o 2173/2005 y las Directivas 2002/49/CE, 2004/35/CE, 2007/2/CE, 2009/147/CE, 2010/63/UE y 86/278/CEE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="parrafo">HAN ADOPTADO EL PRESENTE REGLAMENTO:</p>
+    <p class="articulo">Artículo 1</p>
+    <p class="parrafo">Modificaciones de la Directiva 86/278/CEE del Consejo</p>
+    <p class="parrafo">La Directiva 86/278/CEE se modifica como sigue:</p>
+    <p class="parrafo_2">1) En el artículo 2 se añaden las letras siguientes:</p>
+    <p class="parrafo"> «e)   “servicios de datos espaciales”: los servicios de datos espaciales tal como se definen en el artículo 3, punto 4, de la Directiva 2007/2/CE del Parlamento Europeo y del Consejo (*1);</p>
+    <p class="parrafo"> «f)   “conjunto de datos espaciales”: un conjunto de datos espaciales tal como se define en el artículo 3, punto 3, de la Directiva 2007/2/CE.»</p>
+    <p class="cita_con_pleca">   (*1)  Directiva 2007/2/CE del Parlamento Europeo y del Consejo, de 14 de marzo de 2007, por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire) (DO L 108 de 25.4.2007, p. 1).»."</p>
+    <p class="parrafo_2">2) El artículo 10 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «Artículo 10</p>
+    <p class="parrafo"> 1.   Los Estados miembros velarán para que se lleven al día unos registros, y que en dichos registros se anoten:</p>
+    <p class="parrafo">   a) las cantidades de lodo producidas y las que se dedican a la agricultura;</p>
+    <p class="parrafo">   b) la composición y las características de los lodos en relación con los parámetros contemplados en el Anexo II A;</p>
+    <p class="parrafo">   c) el tipo de tratamiento realizado tal como se define en el artículo 2, letra b);</p>
+    <p class="parrafo">   d) los nombres y direcciones de los destinatarios de los lodos y los lugares de utilización de los lodos;</p>
+    <p class="parrafo">   e) cualquier otra información sobre la transposición y aplicación de la presente Directiva que haya sido facilitada por los Estados miembros a la Comisión de conformidad con el artículo 17.</p>
+    <p class="parrafo"> Los servicios de datos espaciales se utilizarán para presentar los conjuntos de datos espaciales incluidos en la información contenida en dichos registros.</p>
+    <p class="parrafo"> 2.   Los registros a que se refiere el apartado 1 del presente artículo se pondrán a disposición del público, en forma fácilmente accesible, para cada año civil, en un plazo de ocho meses a partir del final del año civil correspondiente, en un formato consolidado tal como se establece en el anexo de la Decisión 94/741/CE de la Comisión (*2) o en otro formato consolidado conforme a lo dispuesto en el artículo 17 de la presente Directiva.</p>
+    <p class="parrafo"> Los Estados miembros presentarán a la Comisión, por medios electrónicos, la información a que se refiere el párrafo primero del presente apartado.</p>
+    <p class="parrafo"> 3.   La información sobre los métodos de tratamiento y los resultados de análisis se comunicará a las autoridades competentes.</p>
+    <p class="cita_con_pleca">     (*2)  Decisión 94/741/CE de la Comisión, de 24 de octubre de 1994, relativa a los cuestionarios para los informes de los Estados miembros sobre la aplicación de determinadas directivas referentes a los residuos (aplicación de la Directiva 91/692/CEE del Consejo) (DO L 296 de 17.11.1994, p. 42).»."</p>
+    <p class="parrafo_2">3) El artículo 17 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «Artículo 17</p>
+    <p class="parrafo">La Comisión estará facultada para establecer, mediante actos de ejecución, un formato con arreglo al cual los Estados miembros hayan de proporcionar la información sobre la aplicación de la presente Directiva de conformidad con el artículo 10. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 15, apartado 2.</p>
+    <p class="parrafo">Los servicios de la Comisión publicarán una visión general de la Unión que incluya mapas basados en los datos facilitados por los Estados miembros con arreglo al artículo 10 y al presente artículo.».</p>
+    <p class="articulo">Artículo 2</p>
+    <p class="parrafo">Modificaciones de la Directiva 2002/49/CE</p>
+    <p class="parrafo">La Directiva 2002/49//CE se modifica como sigue:</p>
+    <p class="parrafo_2">1) En el artículo 3 se añade la letra siguiente:</p>
+    <p class="parrafo"> «w) “archivo de datos”: un sistema de información, gestionado por la Agencia Europea de Medio Ambiente, que contiene información sobre el ruido ambiental y los datos facilitados por medio de los nodos nacionales de comunicación e intercambio de datos controlados por los Estados miembros.».</p>
+    <p class="parrafo_2">2) En el artículo 8, el apartado 5 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «5.   Los planes de acción se reconsiderarán, y en caso necesario se revisarán, cuando se produzca un cambio importante de la situación existente del ruido, y al menos cada cinco años a partir de la fecha de la aprobación de dichos planes.</p>
+    <p class="parrafo">Las reconsideraciones y revisiones, que de conformidad con el párrafo primero deberían llevarse a cabo en 2023, se aplazarán para efectuarse a más tardar el 18 de julio de 2024.».</p>
+    <p class="parrafo_2">3) En el artículo 9, el apartado 1 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «1.   Los Estados miembros velarán por que los mapas estratégicos de ruido que hayan realizado, y en su caso aprobado, y los planes de acción que hayan elaborado se pongan a disposición entre el público y se difundan de acuerdo con la legislación de la Unión pertinente, en particular las Directivas 2003/4/CE (*3) y 2007/2/CE (*4) del Parlamento Europeo y del Consejo, y de conformidad con los anexos IV y V de la presente Directiva, en particular mediante las tecnologías de la información disponibles.</p>
+    <p class="cita_con_pleca">  (*3)  Directiva 2003/4/CE del Parlamento Europeo y del Consejo, de 28 de enero de 2003, relativa al acceso del público a la información medioambiental y por la que se deroga la Directiva 90/313/CEE del Consejo (DO L 41 de 14.2.2003, p. 26)."</p>
+    <p class="cita">  (*4)  Directiva 2007/2/CE del Parlamento Europeo y del Consejo, de 14 de marzo de 2007, por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire) (DO L 108 de 25.4.2007, p. 1).»."</p>
+    <p class="parrafo_2">4) En el artículo 10, el apartado 2 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «2.   Los Estados miembros velarán por que la información resultante de los mapas estratégicos de ruido y de los resúmenes de los planes de acción contemplados en el anexo VI se remita a la Comisión a más tardar seis meses después de las fechas mencionadas respectivamente en los artículos 7 y 8. A tal fin, los Estados miembros solo comunicarán la información por vía electrónica a un archivo de datos obligatorio que creará la Comisión mediante actos de ejecución. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 13, apartado 2. En caso de que un Estado miembro desee actualizar información, describirá las diferencias existentes entre la información actualizada y la original, así como las razones de la actualización, cuando facilite la información actualizada al archivo de datos.».</p>
+    <p class="parrafo_2">5) En el anexo VI, el punto 3 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «3. Mecanismo de intercambio de información</p>
+    <p class="parrafo">La Comisión, asistida por la Agencia Europea de Medio Ambiente, desarrollará mediante actos de ejecución un mecanismo obligatorio de intercambio de información digital para compartir la información procedente de los mapas estratégicos de ruido y los resúmenes de los planes de acción a que se refiere el artículo 10, apartado 2. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 13, apartado 2.».</p>
+    <p class="articulo">Artículo 3</p>
+    <p class="parrafo">Modificaciones de la Directiva 2004/35/CE</p>
+    <p class="parrafo">La Directiva 2004/35//CE se modifica como sigue:</p>
+    <p class="parrafo_2">1) En el artículo 14, se suprime el apartado 2.</p>
+    <p class="parrafo_2">2) El artículo 18 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «Artículo 18</p>
+    <p class="parrafo">Información sobre la aplicación y base empírica</p>
+    <p class="parrafo"> 1.   La Comisión recopilará información de los Estados miembros, que se haya difundido conforme a lo dispuesto en la Directiva 2003/4/CE del Parlamento Europeo y del Consejo (*5), y en la medida en que esté disponible, sobre la experiencia adquirida en la aplicación de la presente Directiva. Dicha información abarcará los datos establecidos en el anexo VI de la presente Directiva y será recopilada antes del 30 de abril de 2022, y a continuación cada cinco años.</p>
+    <p class="parrafo"> 2.   Sobre la base de la información a que se refiere el apartado 1, la Comisión efectuará una evaluación de la presente Directiva y la publicará antes del 30 de abril de 2023, y a continuación cada cinco años.</p>
+    <p class="parrafo"> 3.   A más tardar el 31 de diciembre de 2020, la Comisión desarrollará unas directrices que proporcionen un concepto común del término «daño medioambiental» tal como se define en el artículo 2.</p>
+    <p class="cita_con_pleca">  (*5)  Directiva 2003/4/CE del Parlamento Europeo y del Consejo, de 28 de enero de 2003, relativa al acceso del público a la información medioambiental y por la que se deroga la Directiva 90/313/CEE del Consejo (DO L 41 de 14.2.2003, p. 26).»."</p>
+    <p class="parrafo_2">3) El anexo VI se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «ANEXO VI</p>
+    <p class="parrafo">INFORMACIÓN Y DATOS A QUE SE REFIERE EL ARTÍCULO 18, APARTADO 1</p>
+    <p class="parrafo">La información mencionada en el artículo 18, apartado 1, comprenderá los casos de daño medioambiental conforme a la presente Directiva, con la información y los datos siguientes en cada caso:</p>
+    <p class="parrafo"> 1. Tipo de daño medioambiental y fecha en que se produjo o descubrió el daño. El tipo de daño medioambiental se clasificará como daño a las especies y hábitats naturales protegidos, el agua y el suelo, según se menciona en el artículo 2, punto 1;</p>
+    <p class="parrafo"> 2. Descripción de la actividad conforme al anexo III.</p>
+    <p class="parrafo">Los Estados miembros incluirán cualquier información pertinente sobre la experiencia adquirida de la aplicación de la presente Directiva.».</p>
+    <p class="articulo">Artículo 4</p>
+    <p class="parrafo">Modificaciones de la Directiva 2007/2/CE</p>
+    <p class="parrafo">La Directiva 2007/2//CE se modifica como sigue:</p>
+    <p class="parrafo_2">1) El artículo 21 se modifica como sigue:</p>
+    <p class="parrafo"> a) en el apartado 2, la frase introductoria se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «2.   A más tardar el 31 de marzo de cada año, los Estados miembros actualizarán, en caso necesario, y publicarán un informe de síntesis. Dichos informes, que harán públicos los servicios de la Comisión, asistidos por la Agencia Europea de Medio Ambiente, incluirán descripciones resumidas de:»;</p>
+    <p class="parrafo"> b) se suprime el apartado 3.</p>
+    <p class="parrafo_2">2) El artículo 23 se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«Artículo 23</p>
+    <p class="parrafo">La Agencia Europea de Medio Ambiente publicará y actualizará anualmente la visión general de la Unión sobre la base de los metadatos y datos facilitados por los Estados miembros a través de sus servicios de red de conformidad con el artículo 21. La visión general de la Unión incluirá, según proceda, indicadores de realizaciones, resultados y repercusiones de la presente Directiva, mapas de la visión general de la Unión e informes resumidos de los Estados miembros.</p>
+    <p class="parrafo">La Comisión, a más tardar el 1 de enero de 2022, y a continuación cada cinco años como mínimo, efectuará una evaluación de la presente Directiva y de su aplicación, y la pondrá a disposición del público. Dicha evaluación se basará, entre otros, en los siguientes elementos:</p>
+    <p class="parrafo"> a) la experiencia adquirida de la aplicación de la presente Directiva;</p>
+    <p class="parrafo"> b) la información recogida por los Estados miembros de conformidad con el artículo 21 y las visiones generales de la Unión recopiladas por la Agencia Europea de Medio Ambiente;</p>
+    <p class="parrafo"> c) los datos analíticos científicos pertinentes;</p>
+    <p class="parrafo"> d) otra información, incluidos los datos analíticos científicos pertinentes, necesarios con arreglo a las directrices para la mejora de la legislación, en particular utilizando procesos de gestión eficiente y eficaz de la información.».</p>
+    <p class="articulo">Artículo 5</p>
+    <p class="parrafo">Modificaciones de la Directiva 2009/147/CE</p>
+    <p class="parrafo">La Directiva 2009/147/CE se modifica como sigue:</p>
+    <p class="parrafo_2">1) El artículo 12 se modifica como sigue:</p>
+    <p class="parrafo">a) el apartado 1 se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«1.   Los Estados miembros remitirán a la Comisión cada seis años, el mismo año que el informe elaborado con arreglo al artículo 17, apartado 1, de la Directiva 92/43/CEE del Consejo (*6), un informe sobre la aplicación de las medidas adoptadas en virtud de la presente Directiva y los principales efectos de estas medidas. Dicho informe se hará público e incluirá, en particular, información sobre el estado y las tendencias de las especies de aves silvestres protegidas por la presente Directiva, las amenazas y presiones sobre ellas, las medidas de conservación adoptadas para ellas y la contribución de la red de zonas de especial protección a los objetivos establecidos en el artículo 2 de la presente Directiva.</p>
+    <p class="parrafo">La Comisión fijará, mediante actos de ejecución, el formato del informe a que se refiere el párrafo primero del presente apartado. El formato de dicho informe se equiparará al formato del informe a que se refiere el artículo 17, apartado 1, de la Directiva 92/43/CEE. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 16 bis, apartado 2, de la presente Directiva.</p>
+    <p class="cita_con_pleca"> (*6)  Directiva 92/43/CEE del Consejo, de 21 de mayo de 1992, relativa a la conservación de los hábitats naturales y de la fauna y flora silvestres (DO L 206 de 22.7.1992, p. 7).»;"</p>
+    <p class="parrafo">b) en el apartado 2, la primera frase se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«2.   La Comisión, asistida por la Agencia Europea de Medio Ambiente, elaborará y publicará cada seis años un informe de síntesis basado en la información contemplada en el apartado 1.».</p>
+    <p class="parrafo_2">2) Se inserta el artículo siguiente:</p>
+    <p class="parrafo">«Artículo 16 bis</p>
+    <p class="parrafo">Procedimiento de comité</p>
+    <p class="parrafo"> 1.   La Comisión estará asistida por un comité. Dicho comité será un comité en el sentido del Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo (*7).</p>
+    <p class="parrafo"> 2.   En los casos en que se haga referencia al presente apartado, se aplicará el artículo 5 del Reglamento (UE) n.o 182/2011.</p>
+    <p class="parrafo">Si el comité no emite un dictamen, la Comisión no adoptará el proyecto de acto de ejecución y se aplicará el artículo 5, apartado 4, párrafo tercero, del Reglamento (UE) n.o 182/2011.</p>
+    <p class="cita_con_pleca"> (*7)  Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo, de 16 de febrero de 2011, por el que se establecen las normas y los principios generales relativos a las modalidades de control por parte de los Estados miembros del ejercicio de las competencias de ejecución por la Comisión (DO L 55 de 28.2.2011, p. 13).»."</p>
+    <p class="articulo">Artículo 6</p>
+    <p class="parrafo">Modificaciones de la Directiva 2010/63/UE</p>
+    <p class="parrafo">La Directiva 2010/63/UE se modifica como sigue:</p>
+    <p class="parrafo_2">1) el artículo 43 se modifica como sigue:</p>
+    <p class="parrafo"> a) los apartados 2 y 3 se sustituyen por el texto siguiente:</p>
+    <p class="parrafo">«2.   Los Estados miembros podrán exigir que el resumen no técnico del proyecto especifique si este debe someterse a una evaluación retrospectiva y, en tal caso, establecer el plazo. En tal caso, a partir del 1 de enero de 2021, los Estados miembros velarán por que el resumen no técnico del proyecto se actualice en un plazo de seis meses a partir de la finalización de la evaluación retrospectiva con los resultados de esta.</p>
+    <p class="parrafo"> 3.   Hasta el 31 de diciembre de 2020, los Estados miembros publicarán los resúmenes no técnicos de los proyectos autorizados y sus eventuales actualizaciones. A partir del 1 de enero de 2021, los Estados miembros presentarán para su publicación los resúmenes no técnicos de los proyectos, a más tardar en el plazo de seis meses a partir de la autorización, así como las actualizaciones de estos, por medios electrónicos a la Comisión.»;</p>
+    <p class="parrafo"> b) se añade el apartado siguiente:</p>
+    <p class="parrafo"> «4.   La Comisión, mediante actos de ejecución, establecerá un formato común para la presentación de la información a que se refieren los apartados 1 y 2 del presente artículo. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen contemplado en el artículo 56, apartado 3. Los servicios de la Comisión crearán y mantendrán una base de datos, de libre acceso y con función de búsqueda, de los resúmenes no técnicos de los proyectos y sus actualizaciones.».</p>
+    <p class="parrafo_2">2) El artículo 54 se modifica como sigue:</p>
+    <p class="parrafo"> a) el título y los apartados 1 y 2 se sustituyen por el texto siguiente:</p>
+    <p class="parrafo">«INFORMACIÓN SOBRE LA APLICACIÓN Y LA COMUNICACIÓN DE DATOS ESTADÍSTICOS</p>
+    <p class="parrafo"> 1.   A más tardar el 10 de noviembre de 2023 y, a continuación, cada cinco años, los Estados miembros remitirán a la Comisión información sobre la aplicación de la presente Directiva y, en particular, de su artículo 10, apartado 1, y de sus artículos 26, 28, 34, 38, 39, 43 y 46.</p>
+    <p class="parrafo">Los Estados miembros presentarán y publicarán dichos datos por medios electrónicos en un formato establecido por la Comisión de conformidad con el apartado 4.</p>
+    <p class="parrafo">A más tardar seis meses después de la presentación por los Estados miembros de los datos mencionados en el párrafo segundo, los servicios de la Comisión publicarán una visión general de la Unión y la actualizarán con regularidad sobre la base de dichos datos.</p>
+    <p class="parrafo"> 2.   Los Estados miembros recopilarán y publicarán cada año información estadística sobre la utilización de animales en procedimientos, incluida información sobre la severidad real de los procedimientos y sobre el origen y especie de los primates no humanos utilizados en procedimientos.</p>
+    <p class="parrafo">Los Estados miembros remitirán dicha información estadística a la Comisión, a más tardar el 10 de noviembre del año siguiente, por medios electrónicos, en un formato no resumido establecido por la Comisión de conformidad con el apartado 4.</p>
+    <p class="parrafo">La Comisión establecerá y mantendrá una base de datos, de libre acceso y con función de búsqueda, que contenga dicha información estadística. Cada año, los servicios de la Comisión pondrán a disposición del público la información estadística comunicada por los Estados miembros con arreglo al presente apartado y un informe resumido de esta.»;</p>
+    <p class="parrafo">b) el apartado 4 se sustituye por el texto siguiente:</p>
+    <p class="parrafo"> «4.   La Comisión fijará, mediante actos de ejecución, un formato y contenido de la información comunes para presentar la información a que se refieren los apartados 1, 2 y 3 del presente artículo. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 56, apartado 3.».</p>
+    <p class="parrafo_2">3) Se suprime el artículo 57.</p>
+    <p class="articulo">Artículo 7</p>
+    <p class="parrafo">Modificaciones del Reglamento (CE) n.o 166/2006</p>
+    <p class="parrafo">El Reglamento (CE) n.o 166/2006 se modifica como sigue:</p>
+    <p class="parrafo_2">1) En el artículo 5, apartado 1, el párrafo segundo se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«El titular de cada complejo que realice una o varias actividades de las incluidas en el anexo I por encima de los umbrales de capacidad recogidos en él comunicará por medios electrónicos a la autoridad competente la información para la identificación del complejo con arreglo al formato a que se refiere el artículo 7, apartado 2, a menos que las autoridades competentes ya dispongan de esa información.».</p>
+    <p class="parrafo_2">2) En el artículo 7, los apartados 2 y 3 se sustituyen por el texto siguiente:</p>
+    <p class="parrafo">«2.   Los Estados miembros proporcionarán cada año a la Comisión por medios electrónicos un informe que contenga todos los datos a que se refiere el artículo 5, apartados 1 y 2, en el formato y el plazo que establezca la Comisión mediante actos de ejecución. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 19, apartado 2. En cualquier caso, la fecha de comunicación de la información no será posterior a los once meses después de que finalice el año de referencia.</p>
+    <p class="parrafo"> 3.   Los servicios de la Comisión, asistidos por la Agencia Europea de Medio Ambiente, incorporarán la información comunicada por los Estados miembros al PRTR europeo en un plazo de un mes a partir de la fecha en que se complete la comunicación de información por los Estados miembros de conformidad con el apartado 2.».</p>
+    <p class="parrafo_2">3) El artículo 11 se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«Artículo 11</p>
+    <p class="parrafo">Confidencialidad</p>
+    <p class="parrafo">Cuando un Estado miembro considere confidencial la información de conformidad con el artículo 4 de la Directiva 2003/4/CE del Parlamento Europeo y del Consejo (*8), el informe a que se refiere el artículo 7, apartado 2, del presente Reglamento para el año de referencia de que se trate indicará, de forma separada para cada complejo, la información que no puede hacerse pública y las razones de ello.</p>
+    <p class="parrafo_2">4) Se suprimen los artículos 16 y 17.</p>
+    <p class="parrafo_2">5) Se suprime el anexo III.</p>
+    <p class="articulo">Artículo 8</p>
+    <p class="parrafo">Modificaciones del Reglamento (UE) n.o 995/2010</p>
+    <p class="parrafo">En el artículo 20 del Reglamento (UE) n.o 995/2010, el título y los apartados 1, 2 y 3 se sustituyen por el texto siguiente:</p>
+    <p class="parrafo">«Seguimiento de la aplicación y acceso a la información</p>
+    <p class="parrafo">1.   Los Estados miembros pondrán a disposición del público y de la Comisión, a más tardar el 30 de abril de cada año, información sobre la aplicación del presente Reglamento durante el año civil anterior. La Comisión, mediante actos de ejecución, establecerá el formato y el procedimiento según los cuales los Estados miembros han de poner a disposición dicha información. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 18, apartado 2.</p>
+    <p class="parrafo">2.   Basándose en la información a que se refiere el apartado 1, los servicios de la Comisión pondrán a disposición del público, cada año, una visión general de la Unión basada en los datos presentados por los Estados miembros. Al preparar dicha visión general, los servicios de la Comisión tendrán en cuenta los progresos realizados en relación con la celebración y aplicación de los acuerdos de asociación voluntarios FLEGT en virtud del Reglamento (CE) n.o 2173/2005, y su contribución para reducir al mínimo la presencia en el mercado interior de madera aprovechada ilegalmente y de productos derivados de esa madera.</p>
+    <p class="parrafo">3.   A más tardar el 3 de diciembre de 2021, y a continuación cada cinco años, la Comisión procederá a la revisión del funcionamiento y la eficacia del presente Reglamento sobre la base de la información –en particular, de la información mencionada en el apartado 1– y de la experiencia resultantes de la aplicación del mismo, en particular en lo que se refiere a la prevención de la comercialización de madera aprovechada ilegalmente o de productos derivados de esa madera. Examinará en particular las consecuencias administrativas para las pequeñas y medianas empresas y la cobertura de los productos. La Comisión informará al Parlamento Europeo y al Consejo de los resultados de la revisión y acompañará dichos informes, si fuera necesario, con las propuestas legislativas adecuadas.».</p>
+    <p class="articulo">Artículo 9</p>
+    <p class="parrafo">Modificaciones del Reglamento (CE) n.o 2173/2005</p>
+    <p class="parrafo">El Reglamento (CE) n.o 2173/2005 queda modificado como sigue:</p>
+    <p class="parrafo_2">1) El artículo 8 se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«Artículo 8</p>
+    <p class="parrafo"> 1.   Los Estados miembros pondrán a disposición del público y de la Comisión, a más tardar el 30 de abril de cada año, información sobre la aplicación del presente Reglamento durante el año civil anterior.</p>
+    <p class="parrafo"> 2.   La Comisión, mediante actos de ejecución, establecerá el formato y el procedimiento según los cuales los Estados miembros han de poner a disposición la información contemplada en el apartado 1 del presente artículo. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 11, apartado 3.</p>
+    <p class="parrafo"> 3.   Basándose en la información a que se refiere el apartado 1, los servicios de la Comisión pondrán a disposición del público, cada año, una visión general de la Unión sobre la base de los datos presentados por los Estados miembros.».</p>
+    <p class="parrafo_2">2) El artículo 9 se sustituye por el texto siguiente:</p>
+    <p class="parrafo">«Artículo 9</p>
+    <p class="parrafo">A más tardar en diciembre de 2021, y a continuación cada cinco años, la Comisión, sobre la base de la información —en particular, la información mencionada en el artículo 8, apartado 1— y de la experiencia resultantes de la aplicación del presente Reglamento, revisará el funcionamiento y la eficacia del mismo. Al hacerlo tendrá en cuenta los progresos alcanzados en la aplicación de los acuerdos de asociación voluntarios. La Comisión informará al Parlamento Europeo y al Consejo de los resultados de la revisión cada cinco años, y acompañará dichos informes, en su caso, con propuestas para la mejora del sistema de licencias FLEGT.».</p>
+    <p class="articulo">Artículo 10</p>
+    <p class="parrafo">Modificaciones del Reglamento (CE) n.o 338/97</p>
+    <p class="parrafo">En el artículo 15 del Reglamento (CE) n.o 338/97, el apartado 4 se modifica como sigue:</p>
+    <p class="parrafo_2">1) Las letras b), c) y d) se sustituyen por el texto siguiente:</p>
+    <p class="parrafo">«b) Sobre la base de la información presentada por los Estados miembros a que se refiere la letra a), los servicios de la Comisión pondrán a disposición del público cada año, antes del 31 de octubre, una visión general de la Unión sobre la introducción en la Unión y la exportación o reexportación desde ella de los especímenes de las especies a las que se aplica el presente Reglamento, y remitirá a la Secretaría del Convenio las informaciones relativas a las especies a las que se aplica el Convenio.</p>
+    <p class="parrafo"> c) Sin perjuicio de lo dispuesto en el artículo 20 del presente Reglamento, las autoridades de gestión de los Estados miembros comunicarán a la Comisión, un año antes de cada reunión de la Conferencia de las Partes en la Convención, toda la información referente al período precedente pertinente que se requiera para elaborar los informes a que se refiere el artículo VIII, apartado 7, letra b), de la Convención, así como la información equivalente sobre las disposiciones del presente Reglamento que no entran en el ámbito de la Convención. La Comisión, mediante actos de ejecución, especificará el formato de la presentación de dicha información. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 18, apartado 2, del presente Reglamento.</p>
+    <p class="parrafo"> d) Sobre la base de la información presentada por los Estados miembros a la que se refiere la letra c), la Comisión pondrá a disposición del público una visión general de la Unión sobre la aplicación y el cumplimiento del presente Reglamento.».</p>
+    <p class="parrafo_2">2) Se añade el punto siguiente:</p>
+    <p class="parrafo"> «e) Las autoridades de gestión de los Estados miembros comunicarán a la Comisión, antes del 15 de junio de cada año, toda la información relativa al año precedente para elaborar el informe anual sobre comercio ilícito a que se refiere la Resolución Conf. de la CITES (rev. CoP17).».</p>
+    <p class="articulo">Artículo 11</p>
+    <p class="parrafo">El presente Reglamento entrará en vigor el día siguiente al de su publicación en el Diario Oficial de la Unión Europea.</p>
+    <p class="parrafo">El presente Reglamento será aplicable a partir de la fecha de su entrada en vigor. No obstante, el artículo 7, apartados 2 y 5, y los artículos 8, 9 y 10 se aplicarán a partir del 1 de enero de 2020, y el artículo 1 se aplicará a partir del 1 de enero de 2022.</p>
+    <p class="parrafo">El presente Reglamento será obligatorio en todos sus elementos y directamente aplicable en cada Estado miembro.</p>
+    <p class="parrafo">Hecho en Bruselas, el 5 de junio de 2019.</p>
+    <p class="firma_ministro">Por el Parlamento Europeo</p>
+    <p class="firma_ministro">El Presidente</p>
+    <p class="firma_ministro">A. TAJANI</p>
+    <p class="firma_ministro">Por el Consejo</p>
+    <p class="firma_ministro">El Presidente</p>
+    <p class="firma_ministro">G. CIAMBA</p>
+    <p class="cita_con_pleca">(1)  DO C 110 de 22.3.2019, p. 99.</p>
+    <p class="cita">(2)  Posición del Parlamento Europeo de 26 de marzo de 2019 (pendiente de publicación en el Diario Oficial) y Decisión del Consejo de 21 de mayo de 2019.</p>
+    <p class="cita">(3)  Directiva 2003/4/CE del Parlamento Europeo y del Consejo, de 28 de enero de 2003, relativa al acceso del público a la información medioambiental y por la que se deroga la Directiva 90/313/CEE del Consejo (DO L 41 de 14.2.2003, p. 26).</p>
+    <p class="cita">(4)  Directiva 2007/2/CE del Parlamento Europeo y del Consejo, de 14 de marzo de 2007, por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire) (DO L 108 de 25.4.2007, p. 1).</p>
+    <p class="cita">(5)  DO L 123 de 12.5.2016, p. 1.</p>
+    <p class="cita">(6)  Directiva 86/278/CEE del Consejo, de 12 de junio de 1986, relativa a la protección del medio ambiente y, en particular, de los suelos, en la utilización de los lodos de depuradora en agricultura (DO L 181 de 4.7.1986, p. 6).</p>
+    <p class="cita">(7)  Directiva 2002/49/CE del Parlamento Europeo y del Consejo, de 25 de junio de 2002, sobre evaluación y gestión del ruido ambiental (DO L 189 de 18.7.2002, p. 12).</p>
+    <p class="cita">(8)  Directiva 2004/35/CE del Parlamento Europeo y del Consejo, de 21 de abril de 2004, sobre responsabilidad medioambiental en relación con la prevención y reparación de daños medioambientales (DO L 143 de 30.4.2004, p. 56).</p>
+    <p class="cita">(9)  Directiva 2009/147/CE del Parlamento Europeo y del Consejo, de 30 de noviembre de 2009, relativa a la conservación de las aves silvestres (DO L 20 de 26.1.2010, p. 7).</p>
+    <p class="cita">(10)  Directiva 92/43/CEE del Consejo, de 21 de mayo de 1992, relativa a la conservación de los hábitats naturales y de la fauna y flora silvestres (DO L 206 de 22.7.1992, p. 7).</p>
+    <p class="cita">(11)  Directiva 2010/63/UE del Parlamento Europeo y del Consejo, de 22 de septiembre de 2010, relativa a la protección de los animales utilizados para fines científicos (DO L 276 de 20.10.2010, p. 33).</p>
+    <p class="cita">(12)  Reglamento (CE) n.o 166/2006 del Parlamento Europeo y del Consejo, de 18 de enero de 2006, relativo al establecimiento de un registro europeo de emisiones y transferencias de contaminantes y por el que se modifican las Directivas 91/689/CEE y 96/61/CE del Consejo (DO L 33 de 4.2.2006, p. 1).</p>
+    <p class="cita">(13)  Directiva 2010/75/UE del Parlamento Europeo y del Consejo, de 24 de noviembre de 2010, sobre las emisiones industriales (prevención y control integrados de la contaminación) (DO L 334 de 17.12.2010, p. 17).</p>
+    <p class="cita">(14)  Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo, de 16 de febrero de 2011, por el que se establecen las normas y los principios generales relativos a las modalidades de control por parte de los Estados miembros del ejercicio de las competencias de ejecución por la Comisión (DO L 55 de 28.2.2011, p. 13).</p>
+    <p class="cita">(15)  Reglamento (UE) n.o 995/2010 del Parlamento Europeo y del Consejo, de 20 de octubre de 2010, por el que se establecen las obligaciones de los agentes que comercializan madera y productos de la madera (DO L 295 de 12.11.2010, p. 23).</p>
+    <p class="cita">(16)  Reglamento (CE) n.o 2173/2005 del Consejo, de 20 de diciembre de 2005, relativo al establecimiento de un sistema de licencias FLEGT aplicable a las importaciones de madera en la Comunidad Europea (DO L 347 de 30.12.2005, p. 1).</p>
+    <p class="cita">(17)  Reglamento (CE) n.o 338/97 del Consejo, de 9 de diciembre de 1996, relativo a la protección de especies de la fauna y flora silvestres mediante el control de su comercio (DO L 61 de 3.3.1997, p. 1).</p>
+    <p class="cita">(*8)  Directiva 2003/4/CE del Parlamento Europeo y del Consejo, de 28 de enero de 2003, relativa al acceso del público a la información medioambiental y por la que se deroga la Directiva 90/313/CEE del Consejo (DO L 41 de 14.2.2003, p. 26).».</p>
+  </texto>
+</documento>

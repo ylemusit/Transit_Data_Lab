@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,booking_rule_id,booking_type,prior_notice_last_day,prior_notice_last_time,prior_notice_start_day,prior_notice_start_time,prior_notice_service_id,message,info_url,booking_url
+ORIG-BOOKING_RULES-001,SYN-CS-01-BOOKING_RULES,elaboración sintética documentada,"Antelación y URLs de ejemplo, no servicio activo.",BR-DAY-AHEAD,2,1,17:00:00,14,00:00:00,SV-ALL,Servicio ficticio: reserva hasta las 17:00 del día anterior.,https://example.com/cs-autobuses/reservas,https://example.com/cs-autobuses/reservar

@@ -1,0 +1,76 @@
+{
+  "contract": "TDL_AUDIT_ENGAGEMENT/1",
+  "destination": {
+    "name": null,
+    "use": null,
+    "acceptance_criteria_evidence": null
+  },
+  "service_reference": {
+    "independent_evidence": null
+  },
+  "engagement_id": "TDL-ENG-GTFS-SYNTHETIC-EXAMPLE",
+  "purpose": "Ejemplo sintético de alcance; no es un encargo ni una auditoría ejecutada.",
+  "format": "GTFS_SCHEDULE",
+  "source": {
+    "identity": "synthetic-example.zip",
+    "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "producer_revision": null
+  },
+  "reference": {
+    "specification": "GTFS Schedule Reference",
+    "version": "2026-04-27",
+    "profile": null,
+    "schema_sha256": null,
+    "profile_criteria_evidence": null
+  },
+  "period": {
+    "start": null,
+    "end": null,
+    "basis": "Ejemplo sintético; periodo no acordado"
+  },
+  "included_controls": [
+    "GTFS-G03-CSV-STRUCTURE",
+    "GTFS-G03-FIELD-TYPE",
+    "GTFS-G03-FILE-CATALOG",
+    "GTFS-G03-FILE-PRESENCE",
+    "GTFS-G03-FILE-RESTRICTIONS",
+    "GTFS-G03-HEADER-SCHEMA",
+    "GTFS-G04-CONTEXTUAL-REFERENCE",
+    "GTFS-G04-IDENTITY-DOMAIN",
+    "GTFS-G04-PRIMARY-KEY-UNIQUENESS",
+    "GTFS-G04-REFERENCE-EXISTENCE",
+    "GTFS-G05-CALENDAR-RANGE",
+    "GTFS-G05-FEED-RANGE",
+    "GTFS-G05-FREQUENCY-TIME-RANGE",
+    "GTFS-G05-SERVICE-DATE-SET",
+    "TDL-G05-PICKUP-WINDOW-ORDER-REVIEW",
+    "GTFS-G06-FREQUENCY-OPERATIONS",
+    "GTFS-G06-STOP-SEQUENCE",
+    "TDL-G06-TRIP-TIME-ORDER-REVIEW",
+    "GTFS-G07-COORDINATE-BOUNDS",
+    "GTFS-G07-DISTANCE-PROGRESSION",
+    "GTFS-G07-SHAPE-SEQUENCE",
+    "GTFS-G08-FEED-END-DATE-DECLARED",
+    "GTFS-G08-FEED-START-DATE-DECLARED",
+    "GTFS-G08-FEED-VERSION-DECLARED",
+    "V1-RULE-GTFS",
+    "GTFS-COORDINATE-RANGE",
+    "GTFS-REF-SERVICE",
+    "GTFS-REF-SHAPE",
+    "GTFS-REF-TRIP-ROUTE",
+    "GTFS-STRUCT-REQUIRED",
+    "GTFS-STRUCT-SERVICE-CALENDAR",
+    "GTFS-UNIQUE-PRIMARY-ID"
+  ],
+  "exclusions": [
+    "Exactitud del servicio real",
+    "Aceptacion de destinatario o NAP",
+    "Cumplimiento legal integral",
+    "GTFS-RT"
+  ],
+  "requested_claims": [
+    "TECHNICAL_RESULTS",
+    "DESTINATION_SUITABILITY",
+    "SERVICE_TRUTH"
+  ]
+}

@@ -1,0 +1,4 @@
+source_record_id,source_reference,source_method,source_note,fare_id,route_id,origin_id,destination_id,contains_id
+ORIG-FARE_RULES-001,SYN-CS-01-FARE_RULES,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.,FARE-URBANA,R-01,,,
+ORIG-FARE_RULES-002,SYN-CS-01-FARE_RULES,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.,FARE-URBANA,R-02,,,
+ORIG-FARE_RULES-003,SYN-CS-01-FARE_RULES,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.,FARE-URBANA,R-FLEX,,,

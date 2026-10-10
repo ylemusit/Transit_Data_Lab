@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,network_id,network_name
+ORIG-NETWORKS-001,SYN-CS-01-NETWORKS,elaboración sintética documentada,Red creada para la demostración; se usa con route_networks.txt.,NET-CS-01,Red urbana CS-01

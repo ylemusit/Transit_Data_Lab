@@ -1,0 +1,7 @@
+source_record_id,source_reference,source_method,source_note,area_id,stop_id
+ORIG-STOP_AREAS-001,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CENTRO,CS-PLAT
+ORIG-STOP_AREAS-002,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CENTRO,CS-PLAZA
+ORIG-STOP_AREAS-003,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CENTRO,CS-HOSP
+ORIG-STOP_AREAS-004,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CENTRO,CS-MERC
+ORIG-STOP_AREAS-005,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CENTRO,CS-PARQ
+ORIG-STOP_AREAS-006,SYN-CS-01-STOP_AREAS,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.,AREA-CS-CAMPUS,CS-UNI

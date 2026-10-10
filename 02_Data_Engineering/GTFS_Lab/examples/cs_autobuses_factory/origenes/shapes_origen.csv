@@ -1,0 +1,7 @@
+source_record_id,source_reference,source_method,source_note,shape_id,shape_pt_lat,shape_pt_lon,shape_pt_sequence,shape_dist_traveled
+ORIG-SHAPES-001,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-01,39.000100,-4.000100,1,0
+ORIG-SHAPES-002,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-01,39.002000,-4.002000,2,300
+ORIG-SHAPES-003,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-01,39.006000,-4.001000,3,800
+ORIG-SHAPES-004,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-02,39.000100,-4.000100,1,0
+ORIG-SHAPES-005,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-02,39.001000,-3.997000,2,350
+ORIG-SHAPES-006,SYN-CS-01-SHAPES,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.,SH-02,39.003000,-3.998000,3,600

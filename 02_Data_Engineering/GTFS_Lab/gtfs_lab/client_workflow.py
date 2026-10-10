@@ -7,6 +7,7 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -23,7 +24,9 @@ from .resource_stages import mark as _mark_stage
 from .pipeline import run
 from .client_report import build_client_report, render_client_report
 
-WORKFLOW_VERSION = "1.0.0"
+WORKFLOW_VERSION = "1.1.0"
+_PATH_METADATA_KEYS = {"artifact", "artifacts", "database", "directory", "delivery_directory", "work_dir", "output_dir",
+                       "output_root", "source_zip", "zip_path", "path", "file_path"}
 _LARGE_JSON_STREAM_THRESHOLD = 8 * 1024 * 1024
 _JSON_STRING_TOKEN = re.compile(r'"(?:[^"\\]|\\.)*"')
 STATUSES = {"COMPLETED", "COMPLETED_WITH_FINDINGS", "COMPLETED_WITH_LIMITATIONS",
@@ -61,20 +64,24 @@ def _tdl_ref() -> str:
         return "UNKNOWN"
 
 
-def _redact_local_paths(value: Any) -> Any:
+def _redact_local_paths(value: Any, metadata_path: bool = False) -> Any:
     """Keep local execution paths out of customer artifacts."""
     if isinstance(value, dict):
-        return {key: _redact_local_paths(item) for key, item in value.items()}
+        return {key: _redact_local_paths(item, key in _PATH_METADATA_KEYS) for key, item in value.items()}
     if isinstance(value, list):
-        return [_redact_local_paths(item) for item in value]
-    if isinstance(value, str):
+        return [_redact_local_paths(item, metadata_path) for item in value]
+    if isinstance(value, str) and metadata_path:
         return _redact_path_text(value)
     return value
 
 
 def _redact_path_text(value: str) -> str:
-    value = re.sub(r"(?i)\b[A-Z]:\\[^\s`\"']*", "[LOCAL_PATH_REDACTED]", value)
-    return re.sub(r"(?<![\w:/])/(?:[^/\s\"'`<>]+/)*[^/\s\"'`<>]+", "[LOCAL_PATH_REDACTED]", value)
+    # URLs are data. In particular, a query may legitimately contain /path.
+    parts = re.split(r"(https?://[^\s`\"'<>]+)", value, flags=re.IGNORECASE)
+    for index in range(0, len(parts), 2):
+        text = re.sub(r"(?i)(?<![\w])(?:[A-Z]:[\\/]|\\\\)[^\s`\"'<>]*", "[LOCAL_PATH_REDACTED]", parts[index])
+        parts[index] = re.sub(r"(?<![\w:/])/(?:Users|home|tmp|var|mnt|private|opt|workspace)(?:/[^\s\"'`<>]*)?", "[LOCAL_PATH_REDACTED]", text)
+    return "".join(parts)
 
 
 def _sanitize_large_json(path: Path) -> None:
@@ -83,12 +90,17 @@ def _sanitize_large_json(path: Path) -> None:
     try:
         with path.open("r", encoding="utf-8", newline="") as source, temporary.open(
                 "w", encoding="utf-8", newline="") as target:
+            metadata_key = False
             for line in source:
                 def redact(match: re.Match[str]) -> str:
+                    nonlocal metadata_key
                     token = match.group(0)
                     value = json.loads(token)
                     # _redact_local_paths leaves object keys unchanged.
-                    if line[match.end():].lstrip().startswith(":") or not isinstance(value, str):
+                    if line[match.end():].lstrip().startswith(":"):
+                        metadata_key = value in _PATH_METADATA_KEYS
+                        return token
+                    if not metadata_key or not isinstance(value, str):
                         return token
                     sanitized = _redact_path_text(value)
                     return json.dumps(sanitized, ensure_ascii=False) if sanitized != value else token
@@ -105,6 +117,8 @@ def _sanitize_delivery(directory: Path) -> set[Path]:
     for path in directory.rglob("*"):
         if not path.is_file() or path.suffix.lower() not in {".json", ".md", ".txt", ".csv"}:
             continue
+        if "input" in path.relative_to(directory).parts or path.suffix.lower() == ".csv":
+            continue  # exact producer evidence; never rewrite source fields
         try:
             if path.suffix.lower() == ".json" and path.stat().st_size > _LARGE_JSON_STREAM_THRESHOLD:
                 _sanitize_large_json(path)
@@ -327,7 +341,16 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             "delivery_artifacts": {},
             "security": {"external_upload": False, "source_immutable": True, "local_paths_in_delivery": False}}
         delivery = zones["DELIVERY"]
-        shutil.copytree(engine_run_dir, delivery / "engine_run")
+        manifest["original_engine_artifacts_sha256"] = {
+            p.relative_to(engine_run_dir).as_posix(): _sha256(p)
+            for p in sorted(engine_run_dir.rglob("*")) if p.is_file()}
+        shutil.copytree(engine_run_dir, delivery / "engine_run", ignore=shutil.ignore_patterns("dataset.duckdb"))
+        manifest["delivery_projection"] = {"version": "1.1.0", "producer_input_bytes_preserved": True,
+            "private_artifacts_omitted": ["engine_run/dataset.duckdb"],
+            "path_redaction_scope": "EXECUTION_METADATA_AND_REPORT_PROSE"}
+        manifest["generator_sources_sha256"] = {name: _sha256(Path(__file__).parents[1] / name) for name in (
+            "gtfs_lab/client_workflow.py", "gtfs_lab/g03_structure.py", "gtfs_lab/g03_field_contract.py",
+            "spec/gtfs_schedule_fields_2026_04_27_revision_1_1.json")}
         gis_guide = delivery / "GIS_QGIS_GUIDE.md"
         gis_guide.write_text(
             "# Evidencia GIS para QGIS\n\n"
@@ -372,6 +395,9 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
         if comparison is not None:
             shutil.copyfile(zones["AUDIT"] / "reaudit_comparison.json", delivery / "reaudit_comparison.json")
         streamed_json = _sanitize_delivery(delivery)
+        for name, original_sha in manifest["original_engine_artifacts_sha256"].items():
+            if name.startswith("input/") and _sha256(delivery / "engine_run" / name) != original_sha:
+                raise RuntimeError("BLOCKED_TECHNICAL: producer evidence changed in delivery")
         unredacted_path_found = False
         for path in delivery.rglob("*"):
             if not path.is_file() or path.suffix.lower() not in {".json", ".md", ".txt", ".csv"}:
@@ -379,22 +405,52 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
             if path.resolve() in streamed_json:
                 # Every JSON string in this file was checked and redacted in the streaming pass.
                 continue
+            if "input" in path.relative_to(delivery).parts or path.suffix.lower() == ".csv":
+                continue  # independently scanned for issuance, not modified here
             text = path.read_text(encoding="utf-8", errors="ignore")
             if _redact_path_text(text) != text:
                 unredacted_path_found = True
                 break
         if unredacted_path_found:
             raise RuntimeError("BLOCKED_TECHNICAL: ruta local detectada en DELIVERY")
+        from .delivery_privacy import inspect_delivery_content
+        content_scan = inspect_delivery_content(delivery)
+        manifest["delivery_content_scan"] = content_scan
+        manifest["security"]["local_paths_in_delivery"] = False if content_scan["status"] == "PASS" else True if content_scan["status"] == "FAIL_PATH_FOUND" else None
+        if content_scan["status"] == "FAIL_PATH_FOUND":
+            raise RuntimeError("BLOCKED_TECHNICAL: local path found in client artifact content")
         # Hash every client artifact; the manifest is sealed separately to avoid self-reference.
         for path in sorted(p for p in delivery.rglob("*") if p.is_file()):
             rel = path.relative_to(delivery).as_posix()
             manifest["delivery_artifacts"][rel] = {"sha256": _sha256(path), "size_bytes": path.stat().st_size}
         manifest["artifacts_sha256_verified"] = all(_sha256(delivery / name) == row["sha256"] for name, row in manifest["delivery_artifacts"].items())
+        from .delivery_integrity import verify_delivery
+        # Capture after PDF and privacy imports, including late-loaded generators.
+        # A dirty Git ref alone cannot reconstruct the executed implementation.
+        code_root = Path(__file__).resolve().parents[1]
+        snapshot_root = zones["AUDIT"] / "execution_code"
+        snapshot_root.mkdir(exist_ok=False)
+        executed_sources = {}
+        for name, module in sorted(sys.modules.items()):
+            filename = getattr(module, "__file__", None)
+            if not name.startswith("gtfs_lab") or not filename:
+                continue
+            code_path = Path(filename).resolve()
+            if code_path.suffix != ".py" or not code_path.is_relative_to(code_root):
+                continue
+            relative = code_path.relative_to(code_root).as_posix()
+            target = snapshot_root / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(code_path, target)
+            executed_sources[relative] = _sha256(target)
+        manifest["execution_code_sha256"] = executed_sources
+        manifest["execution_environment"] = {"python_version": sys.version.split()[0], "source_snapshot": "PRIVATE_AUDIT_EXECUTION_CODE"}
         _write_json(delivery / "audit_manifest.json", manifest)
         # Include the root manifest's digest in an adjacent seal, since a file cannot hash itself.
         manifest_sha = _sha256(delivery / "audit_manifest.json")
         _write_json(delivery / "delivery_seal.json", {"audit_manifest_sha256": manifest_sha,
                     "artifacts_verified": manifest["artifacts_sha256_verified"], "sealed_at_utc": _utc_now()})
+        verify_delivery(delivery)
         _mark_stage("REPORT_GENERATION", "END")
         if _sha256(frozen_source) != source_sha:
             raise RuntimeError("BLOCKED_TECHNICAL: SOURCE cambió durante la ejecución")
@@ -420,6 +476,13 @@ def run_client_audit(source_zip: Path, workspace: Path, *, client_project_id: st
 
 
 def main() -> int:
+    # Presentation reuses a sealed completed delivery; it never reruns the engine.
+    import sys
+    if len(sys.argv) > 1 and sys.argv[1] == "present":
+        from .professional_audit import main as presentation_main
+        del sys.argv[1]
+        presentation_main()
+        return 0
     parser = argparse.ArgumentParser(description="Local GTFS client audit workflow V1")
     parser.add_argument("zip", type=Path, help="GTFS ZIP input")
     parser.add_argument("--workspace", type=Path, required=True)

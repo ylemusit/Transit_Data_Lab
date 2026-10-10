@@ -63,3 +63,54 @@
 # W01-P local onedir build output.
 /02_Data_Engineering/GTFS_Lab/build-w01p/
 /02_Data_Engineering/GTFS_Lab/dist-w01p/
+
+# Private audit evidence stays on P:; publish only reviewed method documentation.
+/reports/audit_assessment_v1/*
+!/reports/audit_assessment_v1/*.md
+!/reports/audit_assessment_v1/NETEX_REFERENCE_FINDING.json
+/reports/audit_battery_v1/*
+!/reports/audit_battery_v1/*.md
+/reports/audit_corpus_v1/*
+!/reports/audit_corpus_v1/*.md
+/reports/audit_delivery_v1/*
+!/reports/audit_delivery_v1/*.md
+/reports/audit_foundation_v1/*
+!/reports/audit_foundation_v1/*.md
+!/reports/audit_foundation_v1/engagement_netex_synthetic.json
+/reports/audit_lifecycle_v1/*
+!/reports/audit_lifecycle_v1/*.md
+/reports/audit_precision_v1/*
+!/reports/audit_precision_v1/*.md
+/reports/audit_quality_gate_v1/*
+!/reports/audit_quality_gate_v1/*.md
+/reports/audit_quality_management_v1/*
+!/reports/audit_quality_management_v1/*.md
+/reports/audit_reference_bank_v1/*
+!/reports/audit_reference_bank_v1/*.md
+/reports/audit_replay_v1/*
+!/reports/audit_replay_v1/*.md
+/reports/audit_service_v1/*
+!/reports/audit_service_v1/*.md
+/reports/TUVISA_STATIC_AUDIT_20261009.md
+/03_Compliance/reports/legal_update_20261008/verification.json
+
+# The versioned factory keeps only synthetic editable inputs and source recipes.
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/gtfs_generado/
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/entregas/
+
+# Private historical presentations and their source-specific executable reference.
+/02_Data_Engineering/GTFS_Lab/docs/AUDIT_CLOSURE_C01_C06_20261008.md
+/02_Data_Engineering/GTFS_Lab/docs/COMMERCIAL_REPORT_R4.md
+/02_Data_Engineering/GTFS_Lab/tools/executive_palma_reference.py
+/reports/audit_precision_v1/DISCREPANCY_REVIEW.md
+/reports/audit_precision_v1/EXTERNAL_REVIEW.md
+/reports/audit_precision_v1/METRICS_BY_CRITERION.md
+/reports/audit_reference_bank_v1/BANK_REVIEW.md
+/reports/audit_lifecycle_v1/TRACKING.md
+/reports/audit_quality_gate_v1/RECEIPT.md
+/reports/audit_service_v1/WALKTHROUGH.md
+
+/reports/audit_foundation_v1/engagement_gtfs_palma.json
+!/reports/audit_foundation_v1/engagement_gtfs_synthetic.json
+
+/reports/audit_foundation_v1/CONTROL_SUMMARY.md

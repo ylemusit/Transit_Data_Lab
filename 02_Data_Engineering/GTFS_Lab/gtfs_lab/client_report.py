@@ -62,6 +62,33 @@ def _rule_row(rule: Mapping[str, Any], *, domain: str, stage: str,
     }
 
 
+def _aggregate_engine_result(stages: list[Mapping[str, Any]]) -> str:
+    """Summarize mandatory GTFS engine stages without using the legacy summary."""
+    statuses: list[str] = []
+    for stage in stages:
+        if str(stage.get("stage", "")).upper() == "G08":
+            # G08 contains recommendations, not technical conformance failures.
+            continue
+        status = stage.get("status")
+        if isinstance(status, str) and status:
+            statuses.append(status)
+        rules = _as_rows(stage.get("rules"))
+        statuses.extend(str(rule.get("status") or "NOT_EVALUABLE") for rule in rules)
+        if not isinstance(status, str) and not rules:
+            statuses.append("NOT_EVALUABLE")
+    if not statuses:
+        return "NOT_EVALUABLE"
+    if any(status in {"FAIL", "FAIL_TECHNICAL"} for status in statuses):
+        return "FAIL_TECHNICAL"
+    if "INSPECTION_ERROR" in statuses:
+        return "INSPECTION_ERROR"
+    if any(status in {"NOT_EVALUABLE", "SKIPPED_BY_DEPENDENCY"} for status in statuses):
+        return "NOT_EVALUABLE"
+    if any(status not in {"PASS", "NOT_APPLICABLE"} for status in statuses):
+        return "NOT_EVALUABLE"
+    return "PASS"
+
+
 def build_client_report(manifest: Mapping[str, Any], run: Mapping[str, Any],
                         findings: list[Mapping[str, Any]], interpretation: Mapping[str, Any] | None,
                         remediation: Mapping[str, Any], comparison: Mapping[str, Any] | None) -> dict[str, Any]:
@@ -74,11 +101,17 @@ def build_client_report(manifest: Mapping[str, Any], run: Mapping[str, Any],
             f"findings.json#/findings/{index}")
     matrix: list[dict[str, Any]] = []
     tech = engine.get("technical_evaluation") if isinstance(engine.get("technical_evaluation"), Mapping) else {}
-    for stage_row in _as_rows(tech.get("stages")):
+    stage_rows = _as_rows(tech.get("stages"))
+    for stage_row in stage_rows:
         stage = str(stage_row.get("stage") or "UNKNOWN")
         for rule in _as_rows(stage_row.get("rules")):
             matrix.append(_rule_row(rule, domain=stage, stage=stage, finding_refs=findings_by_rule))
     validation = run.get("validation") if isinstance(run.get("validation"), Mapping) else {}
+    legacy_result = validation.get("status") or (run.get("summary") or {}).get("validation", "NOT_EVALUABLE")
+    legacy_summary_result = (run.get("summary") or {}).get("validation", "NOT_EVALUABLE")
+    legacy_summary_consistency = ("CONSISTENT" if legacy_result == legacy_summary_result
+                                  else "CONFLICT" if legacy_result != "NOT_EVALUABLE" and legacy_summary_result != "NOT_EVALUABLE"
+                                  else "NOT_COMPARABLE")
     for rule in _as_rows(validation.get("rules")):
         matrix.append(_rule_row(rule, domain=str(rule.get("scope") or "GTFS"), stage="LEGACY",
                                 finding_refs=findings_by_rule))
@@ -102,10 +135,12 @@ def build_client_report(manifest: Mapping[str, Any], run: Mapping[str, Any],
                           "INSPECTION_ERROR", "DEFERRED", "OUT_OF_SCOPE", "SKIPPED_BY_DEPENDENCY"}
     engine_gaps = _as_rows(engine.get("known_gaps"))
     missing_applicability = any(row["applicability"] is None for row in matrix)
-    if (results & {"INSPECTION_ERROR", "NOT_EVALUABLE"} or results - recognized_results
+    audit_engine_result = _aggregate_engine_result(stage_rows)
+    if (audit_engine_result in {"INSPECTION_ERROR", "NOT_EVALUABLE"}
+            or results & {"INSPECTION_ERROR", "NOT_EVALUABLE"} or results - recognized_results
             or engine_gaps or missing_applicability or not matrix or accounting_gap != 0):
         readiness = "NO ES POSIBLE EMITIR CONCLUSIÓN"
-    elif results & {"FAIL", "FAIL_TECHNICAL"}:
+    elif audit_engine_result == "FAIL_TECHNICAL" or results & {"FAIL", "FAIL_TECHNICAL"}:
         readiness = "REQUIERE CORRECCIÓN ANTES DE PUBLICACIÓN"
     elif results & {"NOT_APPLICABLE", "DEFERRED", "OUT_OF_SCOPE"} or findings:
         readiness = "APTO CON OBSERVACIONES"
@@ -131,7 +166,11 @@ def build_client_report(manifest: Mapping[str, Any], run: Mapping[str, Any],
         "scope": {"protocol": "GTFS Schedule", "stages": ["G03", "G04", "G05", "G06", "G07", "G08"],
                   "excluded": ["GTFS-RT", "SIRI", "NeTEx", "certificación administrativa o legal"],
                   "legal_conclusion_allowed": False},
-        "summary": {"technical_result": (run.get("summary") or {}).get("validation", "NOT_EVALUABLE"),
+        "summary": {"technical_result": audit_engine_result,
+                    "legacy_result": legacy_result,
+                    "legacy_summary_result": legacy_summary_result,
+                    "legacy_summary_consistency": legacy_summary_consistency,
+                    "audit_engine_result": audit_engine_result,
                     "compliance_result": compliance.get("result", "NOT_EVALUABLE"),
                     "finding_count": len(findings), "publication_readiness": readiness,
                     "accounting": {key: coverage.get(key) for key in (
@@ -181,7 +220,7 @@ def render_client_report(report: Mapping[str, Any]) -> str:
              f"- SHA-256: `{audit.get('source_sha256')}` · Inicio UTC: `{audit.get('ingestion_timestamp_utc')}`",
              f"- Estado workflow: `{audit.get('workflow_status')}`", "",
              "## 3. Resumen ejecutivo", "",
-             f"Resultado técnico: **{summary['technical_result']}**. Compliance V1: **{summary['compliance_result']}**. Hallazgos: **{summary['finding_count']}**.",
+             f"Motor técnico GTFS G03–G07: **{summary['audit_engine_result']}**. Validación legacy: **{summary['legacy_result']}** (resumen legacy: {summary['legacy_summary_result']}; coherencia interna: {summary['legacy_summary_consistency']}). Compliance V1: **{summary['compliance_result']}**. Hallazgos: **{summary['finding_count']}**.",
              f"Conclusión de publicación según alcance evaluado: **{summary['publication_readiness']}**.",
              "No se calcula puntuación global de calidad ni de cumplimiento legal.", "",
              "## 4. Alcance", "", "GTFS Schedule; resultados legacy, G03–G08 y Compliance V1 se identifican por separado.", "",
@@ -190,7 +229,7 @@ def render_client_report(report: Mapping[str, Any]) -> str:
              "## 7. Exclusiones", "", *[f"- {item}" for item in report["scope"]["excluded"]], "",
              "## 8. Metodología", "", "Ingesta con identidad SHA-256, ejecución de reglas registradas, interpretación y consolidación derivadas, artefactos sellados. La interpretación no modifica los findings brutos.", "",
              "## 9. Perfil del dataset", "", f"Identidad `{audit.get('dataset_id')}`; tamaño {audit.get('source_size_bytes')} bytes; procedencia declarada por intake.", "",
-             "## 10. Validación técnica GTFS", "", f"Estado legacy: `{summary['technical_result']}`. Véase la matriz completa y los artefactos del motor.", "",
+             "## 10. Validación técnica GTFS", "", f"Motor G03–G07: `{summary['audit_engine_result']}`. Validación legacy: `{summary['legacy_result']}`; resumen legacy: `{summary['legacy_summary_result']}` (coherencia interna: {summary['legacy_summary_consistency']}). Véase la matriz completa y los artefactos de ambos orígenes.", "",
              "## 11. Matriz completa de validaciones", "",
              "| Dominio / etapa | Regla | Descripción | Requisito | Aplicabilidad | Evaluabilidad | Resultado | Severidad* | Hallazgos | Evidencia | Fuente |",
              "|---|---|---|---|---|---|---|---|---:|---|---|"]

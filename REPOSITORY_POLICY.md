@@ -50,3 +50,7 @@ Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
 ## Compatibilidad de Git en Windows
 
 Este repositorio requiere `core.longpaths=true` en Windows porque las rutas de archivos candidatos a versionarse pueden superar los límites de longitud heredados. Configurar únicamente este repositorio con `git config --local core.longpaths true`; no es necesario cambiar configuración global, de sistema ni políticas de Windows. El fallo y la corrección se demostraron con índices temporales y las nueve rutas largas conocidas; véase `reports/repository_integrity/GIT_LONG_PATH_DIAGNOSIS.md`.
+
+## Publicación sanitizada — 2026-10-10
+
+La integración autorizada publica fuentes, contratos, tests, método y el ejemplo sintético CS Autobuses. Los informes aplicados a operadores, entregas, capturas privadas y recibos completos de `reports/audit_*` permanecen fuera de Git mediante exclusiones específicas. Los ejemplos de encargo publicados son sintéticos y no acreditan auditorías reales. No se alteran manifests ni sellos históricos. Las fuentes de la fábrica llevan manifest de SHA-256 y atributos que conservan sus bytes al cambiar de SO. Git sigue sin sustituir el backup separado.

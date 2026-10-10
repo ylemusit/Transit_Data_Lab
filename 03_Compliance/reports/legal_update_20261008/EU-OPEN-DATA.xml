@@ -1,0 +1,2260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20250114125601">
+  <metadatos>
+    <identificador>DOUE-L-2019-81091</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="25">Directiva</rango>
+    <fecha_disposicion>20190620</fecha_disposicion>
+    <numero_oficial>1024/2019</numero_oficial>
+    <titulo>Directiva (UE) 2019/1024 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, relativa a los datos abiertos y la reutilización de la información del sector público.</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20190626</fecha_publicacion>
+    <diario_numero>172</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>56</pagina_inicial>
+    <pagina_final>83</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2019/172/L00056-00083.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia>20190716</fecha_vigencia>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+    <url_eli>https://data.europa.eu/eli/dir/2019/1024/spa</url_eli>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="93" orden="">Administraciones Públicas</materia>
+      <materia codigo="473" orden="">Bases de datos</materia>
+      <materia codigo="998" orden="">Comercialización</materia>
+      <materia codigo="2436" orden="">Derecho a la información</materia>
+      <materia codigo="3085" orden="">Documentos</materia>
+      <materia codigo="3180" orden="">Empresas públicas</materia>
+      <materia codigo="4165" orden="">Información</materia>
+    </materias>
+    <notas>
+      <nota codigo="26" orden="300">Cumplimiento a más tardar el 17 de julio de 2021.</nota>
+    </notas>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2003-82244" orden="1010">
+          <palabra codigo="210">DEROGA</palabra>
+          <texto>con efectos desde el 17 de julio de 2021 la Directiva 2003/98, de 17 de noviembre</texto>
+        </anterior>
+      </anteriores>
+      <posteriores>
+        <posterior referencia="BOE-A-2021-17910" orden="">
+          <palabra codigo="426">SE TRANSPONE</palabra>
+          <texto>, por Real Decreto-ley 24/2021, de 2 de noviembre</texto>
+        </posterior>
+      </posteriores>
+    </referencias>
+    <alertas>
+      <alerta codigo="105" orden="">Comercio</alerta>
+      <alerta codigo="109" orden="">Derecho Administrativo</alerta>
+      <alerta codigo="112" orden="">Derecho Mercantil</alerta>
+      <alerta codigo="130" orden="">Telecomunicaciones</alerta>
+      <alerta codigo="134" orden="">Unión Europea</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <p class="parrafo">EL PARLAMENTO EUROPEO Y EL CONSEJO DE LA UNIÓN EUROPEA,</p>
+    <p class="parrafo">Visto el Tratado de Funcionamiento de la Unión Europea, y en particular su artículo 114,</p>
+    <p class="parrafo">Vista la propuesta de la Comisión Europea,</p>
+    <p class="parrafo">Previa transmisión del proyecto de acto legislativo a los parlamentos nacionales,</p>
+    <p class="parrafo">Visto el dictamen del Comité Económico y Social Europeo (1),</p>
+    <p class="parrafo">Previa consulta al Comité de las Regiones,</p>
+    <p class="parrafo">De conformidad con el procedimiento legislativo ordinario (2),</p>
+    <p class="parrafo">Considerando lo siguiente:</p>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(1)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Directiva 2003/98/CE del Parlamento Europeo y del Consejo (3) ha sido modificada de forma sustancial. Dado que deben hacerse nuevas modificaciones y en aras de la claridad, conviene proceder a la refundición de dicha Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(2)</p>
+          </td>
+          <td>
+            <p class="parrafo">Con arreglo al artículo 13 de la Directiva 2003/98/CE y cinco años después de la adopción de la Directiva 2013/37/UE del Parlamento Europeo y del Consejo (4), que modificó la Directiva 2003/98/CE, la Comisión, tras consultar a las partes interesadas pertinentes, ha evaluado y revisado el funcionamiento de la Directiva 2003/98/CE en el marco del programa de adecuación y eficacia de la reglamentación.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(3)</p>
+          </td>
+          <td>
+            <p class="parrafo">Tras la consulta a las partes interesadas y en vista de los resultados de la evaluación de impacto, la Comisión consideró que era necesario actuar a escala de la Unión para afrontar los obstáculos restantes y emergentes a una amplia reutilización de la información del sector público y financiada con fondos públicos en toda la Unión y actualizar el marco legislativo con los avances en las tecnologías digitales, y estimular aún más la innovación digital, en especial en lo que respecta a inteligencia artificial.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(4)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los cambios de fondo introducidos en el texto legislativo con el fin de explotar plenamente el potencial de la información del sector público para la economía y la sociedad europeas se centran en los siguientes aspectos: la prestación de acceso en tiempo real a los datos dinámicos a través de medios técnicos adecuados, aumentando el suministro de datos públicos valiosos para la reutilización, incluidos los de las empresas públicas, organizaciones que financian la investigación y organizaciones que realizan actividades de investigación, haciendo frente a la aparición de nuevas formas de acuerdos exclusivos, el uso de excepciones al principio de tarificación del coste marginal y la relación entre la presente Directiva y determinados instrumentos jurídicos conexos, en particular el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (5) y las Directivas 96/9/CE (6), 2003/4/CE (7) y 2007/2/CE (8) del Parlamento Europeo y del Consejo.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(5)</p>
+          </td>
+          <td>
+            <p class="parrafo">El acceso a la información es un derecho fundamental. La Carta de los Derechos Fundamentales de la Unión Europea (en lo sucesivo, «Carta») establece que toda persona tiene derecho a la libertad de expresión, que comprende la libertad de opinión y la libertad de recibir o comunicar informaciones o ideas sin que pueda haber injerencia de autoridades públicas y sin consideración de fronteras.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(6)</p>
+          </td>
+          <td>
+            <p class="parrafo">El artículo 8 de la Carta garantiza el derecho a la protección de los datos de carácter personal y establece que dichos datos se tratarán de modo leal, para fines concretos y sobre la base del consentimiento de la persona afectada o en virtud de otro fundamento legítimo previsto por la ley y sometido al control de una autoridad independiente.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(7)</p>
+          </td>
+          <td>
+            <p class="parrafo">El Tratado de Funcionamiento de la Unión Europea (TFUE) prevé la creación de un mercado interior y de un sistema que impida el falseamiento de la competencia en dicho mercado. La armonización de las normas y prácticas de los Estados miembros en relación con la explotación de la información del sector público contribuye a la consecución de estos objetivos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(8)</p>
+          </td>
+          <td>
+            <p class="parrafo">El sector público de los Estados miembros recoge, produce, reproduce y difunde una amplia gama de información en numerosos ámbitos de actividad, como el social, político, económico, jurídico, geográfico, medioambiental, meteorológico, sísmico, turístico, empresarial, educativo y de las patentes. Los documentos elaborados por los organismos del sector público de carácter ejecutivo, legislativo o judicial constituyen un conjunto amplio, diverso y valioso de recursos que pueden beneficiar a la sociedad. Ofrecer esta información, que incluye los datos dinámicos, en un formato electrónico de uso habitual permite que los ciudadanos y las personas jurídicas hallen nuevas formas de utilizarla y creen productos y servicios nuevos e innovadores. Los Estados miembros y los organismos del sector público pueden beneficiarse y recibir un apoyo financiero adecuado de los fondos y programas de la Unión pertinentes, garantizando un uso generalizado de las tecnologías digitales o la transformación digital de las administraciones públicas y los servicios públicos en su empeño por facilitar la reutilización de los datos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(9)</p>
+          </td>
+          <td>
+            <p class="parrafo">La información del sector público representa una fuente extraordinaria de datos que pueden contribuir a mejorar el mercado único y al desarrollo de nuevas aplicaciones para los consumidores y las personas jurídicas. El empleo inteligente de los datos, incluido su tratamiento a través de aplicaciones de inteligencia artificial, puede tener un efecto transformador en todos los sectores de la economía.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(10)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Directiva 2003/98/CE estableció un conjunto de normas mínimas que regula la reutilización y los dispositivos prácticos para facilitar la reutilización de los documentos existentes que obran en poder de los organismos del sector público de los Estados miembros, incluidos los órganos ejecutivo, legislativo y judicial. Desde la adopción del primer conjunto de normas sobre reutilización de la información del sector público, el volumen de datos, incluidos los públicos, ha aumentado exponencialmente en todo el mundo, al tiempo que se están generando y recopilando nuevos tipos de datos. Paralelamente, se está produciendo una constante evolución de las tecnologías para el análisis, la explotación y el tratamiento de datos, como el aprendizaje automático, la inteligencia artificial y el internet de las cosas. Esa rápida evolución tecnológica permite la creación de nuevos servicios y aplicaciones basados en el uso, la agregación o la combinación de datos. Las normas originales de 2003, y modificadas en 2013 están desfasadas con respecto a estos rápidos cambios y, como consecuencia de ello, pueden perderse las oportunidades económicas y sociales que ofrece la reutilización de los datos públicos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(11)</p>
+          </td>
+          <td>
+            <p class="parrafo">La evolución hacia una sociedad basada en datos, que utiliza datos de distintos ámbitos y actividades, afecta a la vida de todos los ciudadanos de la Unión, entre otras cosas al permitirles contar con nuevos medios para acceder y adquirir el conocimiento.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(12)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los contenidos digitales desempeñan un papel importante en esta evolución. La producción de contenidos ha dado lugar durante los últimos años, y sigue haciéndolo actualmente, a un fenómeno de rápida creación de empleo. La mayor parte de estos puestos de trabajo los crean empresas emergentes y pequeñas y medianas empresas (pymes) innovadoras.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(13)</p>
+          </td>
+          <td>
+            <p class="parrafo">Uno de los principales objetivos del establecimiento de un mercado interior es la creación de unas condiciones que favorezcan el desarrollo de algunos servicios y productos que abarquen toda la Unión y los Estados miembros. La información del sector público o la información recogida, producida, reproducida y difundida en el ejercicio de una misión de servicio público o un servicio de interés general constituye una materia prima importante para diversos productos y servicios de contenidos digitales y se convertirá en un recurso cada vez más importante con el desarrollo de tecnologías digitales avanzadas como la inteligencia artificial, las tecnologías de registro descentralizado y el internet de las cosas. En este contexto, será asimismo esencial una amplia cobertura geográfica transfronteriza. Cabe esperar que una amplia posibilidad de reutilización de esos documentos del sector público permita, entre otras cosas, a todas las compañías europeas, incluidas las microempresas y las pymes, así como la sociedad civil, aprovechar su potencial y contribuir al desarrollo económico y a la creación y protección de empleo de calidad, en particular en beneficio de las comunidades locales, así como a la materialización de importantes objetivos sociales como la rendición de cuentas y la transparencia.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(14)</p>
+          </td>
+          <td>
+            <p class="parrafo">Autorizar la reutilización de los documentos que obran en poder de un organismo del sector público les confiere valor añadido para los reutilizadores, para los usuarios finales y para la sociedad en general y, en muchos casos, para el propio organismo público, ya que el fomento de la transparencia y la responsabilidad y las aportaciones de reutilizadores y usuarios finales permiten al organismo del sector público de que se trate mejorar la calidad de la información recopilada y la realización de sus misiones de servicio público.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(15)</p>
+          </td>
+          <td>
+            <p class="parrafo">Existen considerables diferencias de un Estado miembro a otro en relación con las normas y prácticas de explotación de los recursos de información del sector público. Estas diferencias constituyen barreras que obstaculizan el aprovechamiento pleno de las posibilidades económicas de este recurso esencial. La explotación por organismos del sector público de información de dicho sector sigue variando de un Estado miembro a otro, lo que se ha de tener en cuenta. Debe perseguirse, por tanto, una armonización mínima de las normas y prácticas nacionales en materia de reutilización de los documentos del sector público en los casos en que las diferencias entre las normas y las prácticas nacionales o la ausencia de claridad obstaculizan el buen funcionamiento del mercado interior y el adecuado desarrollo de la sociedad de la información en la Unión.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(16)</p>
+          </td>
+          <td>
+            <p class="parrafo">Por datos abiertos como concepto se entiende en general los datos en formatos abiertos que puede utilizar, reutilizar y compartir libremente cualquier persona con cualquier fin. Las políticas de apertura de la información, que propician la disponibilidad y la reutilización generalizadas de la información del sector público con fines privados o comerciales, con restricciones mínimas o nulas de carácter jurídico, técnico o económico, y que favorecen la circulación de la información no solo para los agentes económicos, sino principalmente para el público, pueden desempeñar una función importante a la hora de fomentar el compromiso social e impulsar y promover el desarrollo de nuevos servicios basados en formas novedosas de combinar y utilizar esa información. Por tanto, se anima a los Estados miembros a promover la creación de datos basados en el principio «abiertos desde el diseño y por defecto», con respecto a todos los documentos que entren en el ámbito de aplicación de la presente Directiva. Al hacerlo, deberán garantizar un nivel constante de protección de los objetivos de interés público, como la seguridad pública, inclusive cuando afecte a información sensible sobre infraestructuras críticas, y se garantiza la protección de los datos personales, también cuando la información de un conjunto de datos específico pueda no suponer un riesgo de identificación o individualización de una persona física, pero sí suponerlo si se combina con otra información disponible.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(17)</p>
+          </td>
+          <td>
+            <p class="parrafo">Además, en ausencia de una armonización mínima a nivel de la Unión, las actividades legislativas a nivel nacional, iniciadas ya en algunos Estados miembros ante la necesidad de dar respuesta a los retos tecnológicos, podrían dar lugar a discrepancias todavía más importantes. Las consecuencias de estas discrepancias legislativas y de esta incertidumbre irán acentuándose con el futuro desarrollo de la sociedad de la información, que ha ocasionado ya una fuerte intensificación de la explotación transfronteriza de la información.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(18)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los Estados miembros han establecido políticas de reutilización en el marco de la Directiva 2003/98/CE y algunos de ellos han adoptado ambiciosos planteamientos en materia de apertura de la información que superan el nivel mínimo fijado en dicha Directiva con el fin de facilitar la reutilización de los datos accesibles del sector público a ciudadanos y personas jurídicas. La divergencia de normas en diversos Estados miembros puede suponer un obstáculo para la oferta transfronteriza de productos y servicios e impedir que conjuntos de datos públicos comparables puedan reutilizarse en aplicaciones paneuropeas basadas en ellos. Así pues, es preciso un nivel mínimo de armonización para determinar los tipos de datos públicos que están disponibles para su reutilización en el mercado interior de la información, de acuerdo con los regímenes de acceso pertinentes, tanto generales como sectoriales, como el que se define en la Directiva 2003/4/CE, y sin afectarles. Las disposiciones del Derecho nacional y de la Unión que superen estos requisitos mínimos, en particular en casos de legislación sectorial, deben seguir aplicándose. Entre los ejemplos de disposiciones que superan el nivel mínimo de armonización de la presente Directiva se incluyen umbrales en la presente Directiva más bajos en el caso de los gastos admisibles para la reutilización que los umbrales previstos en el artículo 6 o condiciones de licencias menos restrictivas que las contempladas en el artículo 8. En particular, la presente Directiva debe entenderse sin perjuicio de las disposiciones que superen el nivel mínimo de armonización de esta establecidas en los Reglamentos Delegados de la Comisión adoptados en virtud de la Directiva 2010/40/UE del Parlamento Europeo y del Consejo (9).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(19)</p>
+          </td>
+          <td>
+            <p class="parrafo">Además, se anima a los Estados miembros a ir más allá de los requisitos mínimos establecidos por la presente Directiva aplicando los requisitos de esta a los documentos que obran en poder de empresas públicas relacionados con actividades que, en virtud del artículo 34 de la Directiva 2014/25/UE del Parlamento Europeo y del Consejo (10), estén sometidas directamente a la competencia. Los Estados miembros también pueden decidir aplicar los requisitos de la presente Directiva a las empresas privadas, en particular las que presten servicios de interés general.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(20)</p>
+          </td>
+          <td>
+            <p class="parrafo">Se necesita disponer de un marco general para las condiciones de reutilización de los documentos del sector público con el fin de garantizar que dichas condiciones sean equitativas, proporcionadas y no discriminatorias. Los organismos del sector público recogen, producen, reproducen y difunden documentos para llevar a cabo su labor de servicio público. Las empresas públicas recogen, producen, reproducen y difunden documentos para prestar servicios de interés general. La utilización de dichos documentos por otros motivos constituye una reutilización. Las políticas de los Estados miembros pueden ir más allá de las normas mínimas establecidas en la presente Directiva, permitiendo así una reutilización más amplia. Al transponer la presente Directiva, los Estados miembros pueden utilizar términos distintos de «documentos», siempre que se mantenga todo el alcance de la definición del término «documento» tal que establecido en la presente Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(21)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva debe aplicarse a los documentos cuyo suministro sea una actividad que incida en el ámbito de la misión de servicio público de los organismos del sector público implicados, definida con arreglo a la legislación o a otras normas de obligado cumplimiento del Estado miembro. En ausencia de tales normas, la misión de servicio público debe definirse de conformidad con la práctica administrativa común del Estado miembro, siempre y cuando el ámbito de las misiones de servicio público sea transparente y se someta a revisión. La misión de servicio público puede definirse con carácter general o caso por caso para los diferentes organismos del sector público.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(22)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva debe ser aplicable a los documentos que se hagan accesibles con fines de reutilización cuando los organismos del sector público suministren con licencia, vendan, difundan, intercambien o proporcionen información. Para evitar las subvenciones cruzadas, la reutilización incluye la utilización posterior de los documentos dentro del propio organismo para actividades distintas de la misión de servicio público. Entre las actividades ajenas a la misión de servicio público, un ejemplo típico es el suministro de documentos producidos y por los que se haya pagado un precio en un marco exclusivamente comercial y en competencia con otros actores del mercado.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(23)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva no debe restringir ni afectar en modo alguno el desempeño de las funciones legales de las autoridades públicas y otros organismos del sector público. La presente Directiva debe imponer a los Estados miembros la obligación de permitir la reutilización de todos los documentos existentes, salvo si el acceso está restringido o excluido en virtud de normas nacionales sobre el acceso a los documentos o sometido a las demás excepciones establecidas en la presente Directiva. La presente Directiva se basa en los actuales regímenes de acceso de los Estados miembros y no modifica las normas nacionales de acceso a documentos. No es aplicable a aquellos casos en que, con arreglo al régimen pertinente de acceso, los ciudadanos o personas jurídicas puedan obtener un documento solo si pueden demostrar un interés particular. A nivel de la Unión, el artículo 41 sobre el derecho a una buena administración y el artículo 42 sobre el derecho de acceso a los documentos en la Carta reconocen el derecho de todo ciudadano de la Unión y de toda persona física o jurídica que resida o tenga su domicilio social en un Estado miembro a tener acceso a los documentos que obren en poder del Parlamento Europeo, del Consejo y de la Comisión. Se debe instar a los organismos del sector público a poner a disposición, con vistas a su reutilización, todos los documentos que conserven. Los organismos del sector público deben promover y alentar la reutilización de documentos, inclusive los textos oficiales de carácter legislativo y administrativo, en los casos en los que el organismo del sector público tiene el derecho a autorizar su reutilización.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(24)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los Estados miembros a menudo confían la prestación de servicios de interés general a entidades ajenas al sector público, aunque mantienen un grado elevado de control sobre estas. Al mismo tiempo, la Directiva 2003/98/CE solo se aplica a los documentos conservados por organismos del sector público, mientras que excluyen de su ámbito de aplicación a las empresas públicas. Esto origina una escasez de documentos disponibles para su reutilización elaborados durante la prestación de servicios de interés general en una serie de ámbitos, en particular en el sector de los servicios. También reduce considerablemente el potencial de creación de servicios transfronterizos basados en documentos conservados por empresas públicas que prestan servicios de interés general.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(25)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Directiva 2003/98/CE debe, por lo tanto, modificarse para garantizar que pueda aplicarse a la reutilización de documentos existentes elaborados durante la prestación de servicios de interés general por parte de las empresas públicas que realizan alguna de las actividades contempladas en los artículos 8 a 14 de la Directiva 2014/25/UE, así como por las empresas públicas que actúan como operadores de servicio público con arreglo al artículo 2 del Reglamento (CE) n.o 1370/2007 del Parlamento Europeo y del Consejo (11), las empresas públicas que actúan como compañías aéreas que cumplen obligaciones de servicio público con arreglo al artículo 16 del Reglamento (CE) n.o 1008/2008 del Parlamento Europeo y del Consejo (12), y las empresas públicas que actúan como armadores comunitarios que cumplen obligaciones de servicio público con arreglo al artículo 4 del Reglamento (CEE) n.o 3577/92 del Consejo (13).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(26)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva no debe contener una obligación general para permitir la reutilización de documentos elaborados por empresas públicas. La decisión de autorizar o no la reutilización debe corresponder a la empresa pública de que se trate, salvo si se exige otra cosa en la presente Directiva, el Derecho de la Unión o el Derecho nacional. Solo una vez que la empresa pública haya puesto a disposición un documento para su reutilización, debe respetar las obligaciones pertinentes establecidas en los capítulos III y IV de la presente Directiva, en particular en materia de formatos, tarificación, transparencia, licencias, no discriminación y prohibición de acuerdos exclusivos. Por otra parte, las empresas públicas no están obligadas a cumplir los requisitos establecidos en el capítulo II, como las normas aplicables a la tramitación de solicitudes. Al permitir la reutilización de documentos, debe prestarse especial atención a la protección de información sensible sobre infraestructuras críticas definidas en la Directiva 2008/114/CE del Consejo (14) y de servicios esenciales en el sentido de la Directiva (UE) 2016/1148 del Parlamento Europeo y del Consejo (15).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(27)</p>
+          </td>
+          <td>
+            <p class="parrafo">El volumen de datos de investigación generados está creciendo exponencialmente y pueden ser reutilizados por otros usuarios ajenos a la comunidad científica. Para poder afrontar con eficacia y de manera global los crecientes desafíos sociales, la posibilidad de acceder a datos de diferentes fuentes y de todo tipo de sectores y disciplinas, de combinarlos y reutilizarlos ha pasado a ser algo crucial y urgente. Los datos de investigación incluyen estadísticas, resultados de experimentos, mediciones, observaciones derivadas del trabajo de campo, resultados de encuestas, grabaciones e imágenes de entrevistas. También incluyen metadatos, especificaciones y otros objetos digitales. Los datos de investigación son diferentes de los artículos científicos que divulgan y comentan las conclusiones resultantes de sus investigaciones científicas. Durante muchos años, la libre disponibilidad y la posibilidad de reutilizar los datos de investigaciones científicas propiciadas por la financiación pública han sido objeto de iniciativas políticas específicas. Por acceso abierto se entiende la práctica de ofrecer a los usuarios finales el acceso en línea y gratuito a los resultados de investigaciones, sin más restricciones de la utilización y reutilización que la posibilidad de exigir que se reconozca la autoría. Las políticas de acceso abierto se proponen, en particular, proporcionar a los investigadores y al público en general, tan pronto como sea posible en el proceso de divulgación, el acceso a datos de investigación y facilitar su uso y reutilización. El acceso abierto mejora la calidad, reduce la necesidad de duplicaciones innecesarias en la investigación, acelera el progreso científico, combate el fraude científico y puede favorecer de manera general el crecimiento económico y la innovación. Además del acceso abierto, es encomiable que se esté procurando garantizar que la planificación de la gestión de datos se convierta en una práctica científica estándar y apoyar la divulgación de datos de investigación que sean fáciles de encontrar, accesibles, interoperables y reutilizables (principios FAIR).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(28)</p>
+          </td>
+          <td>
+            <p class="parrafo">Por las razones antes expuestas, procede imponer a los Estados miembros la obligación de adoptar políticas de acceso abierto con respecto a los datos de la investigación financiada públicamente y garantizar que dichas políticas son ejecutadas por todas las organizaciones que realizan actividades de investigación y las organizaciones que financian la investigación. Las organizaciones que realizan actividades de investigación y las organizaciones que financian la investigación también se pueden organizar como organismos del sector público y como empresas públicas. La presente Directiva se aplica a dichas organizaciones híbridas únicamente en su condición de organizaciones que realizan actividades de investigación y a sus datos de investigación. Las políticas de acceso abierto permiten normalmente una serie de excepciones a la hora de poner a disposición del público los resultados de la investigación científica. La Recomendación de la Comisión de 25 de abril de 2018 relativa al acceso a la información científica y a su preservación describe, entre otras cosas, elementos pertinentes de las políticas de acceso abierto. Además, deben mejorarse las condiciones en las cuales pueden reutilizarse determinados datos de la investigación. Por este motivo, algunas obligaciones derivadas de la presente Directiva deben ampliarse a los datos de investigación resultantes de actividades de investigación científica subvencionadas mediante financiación pública o cofinanciadas por entidades de los sectores público y privado. Con arreglo a las políticas nacionales de acceso abierto, los datos de la investigación financiada públicamente serán abiertos por defecto. Sin embargo, en este contexto, deben tenerse debidamente en cuenta las inquietudes relacionadas con la privacidad, la protección de datos personales, la confidencialidad, la seguridad nacional, los intereses comerciales legítimos, como los secretos comerciales, y los derechos de propiedad intelectual de terceros, conforme al principio «tan abiertos como sea posible, tan cerrados como sea necesario». Por otra parte, los datos de investigación a los que no puede accederse por motivos de seguridad nacional, defensa o seguridad pública no deben estar cubiertos por la presente Directiva. Para evitar cualquier carga administrativa, las obligaciones derivadas de la presente Directiva solo deben aplicarse a aquellos datos de investigación que ya hayan sido puestos a disposición del público por investigadores, organizaciones que realizan actividades de investigación u organizaciones que financian la investigación a través de un registro institucional o temático, y no deben imponer costes adicionales para la obtención de los conjuntos de datos ni requerir una selección adicional de los datos. Los Estados miembros pueden hacer extensiva la aplicación de la presente Directiva a los datos de investigación puestos a disposición del público a través de infraestructuras de datos distintas de los registros, a través de publicaciones de acceso abierto o en forma de fichero adjunto a un artículo, a un artículo de datos o a un artículo en una revista especializada en datos. Los documentos distintos de los datos de investigación deben seguir estando excluidos del ámbito de la presente Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(29)</p>
+          </td>
+          <td>
+            <p class="parrafo">La definición de «organismo del sector público» se basa en la definición del punto 1 del artículo 2, apartado 1, de la Directiva 2014/24/UE del Parlamento Europeo y del Consejo (16). La definición de organismo de Derecho público y la de empresa pública establecidas en la Directiva 2014/25/UE deben aplicarse a la presente Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(30)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva establece una definición del término documento y esa definición debe incluir cualquiera de sus partes. El término documento debe abarcar todas las formas de representación de actos, hechos o información, y cualquier recopilación de los mismos, independientemente del soporte (escrito en papel, almacenado en forma electrónica o como grabación sonora, visual o audiovisual). La definición de documento no pretende incluir los programas informáticos. Los Estados miembros pueden hacer extensiva la aplicación de la presente Directiva a los programas informáticos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(31)</p>
+          </td>
+          <td>
+            <p class="parrafo">Cada vez es más frecuente que los organismos del sector público pongan a disposición sus documentos para su reutilización de una manera proactiva, garantizando la detectabilidad en línea y la disponibilidad real de los documentos y los metadatos conexos en formatos abiertos, legibles por máquina y que garantizan la interoperabilidad, la reutilización y la accesibilidad. Los documentos también deben estar disponibles para su reutilización a raíz de una solicitud presentada por un reutilizador. En tales casos, los plazos de respuesta a las solicitudes de reutilización de los documentos deben ser razonables y adecuarse a los plazos de respuesta a las solicitudes de acceso al documento en virtud del régimen correspondiente de acceso. Las empresas públicas, los centros educativos, las organizaciones que realizan actividades de investigación y las organizaciones que financian la investigación deben, no obstante, quedar exentas de este requisito. La fijación de plazos razonables a escala de la Unión estimulará la creación de nuevos productos y servicios de información agregada a escala paneuropea. Esto es particularmente importante para los datos dinámicos (incluidos los datos medioambientales, la información sobre el tráfico, los datos obtenidos vía satélite, los datos meteorológicos y los datos generados por sensores), cuyo valor económico depende de su puesta a disposición inmediata y de una actualización regular. Por lo tanto, los datos dinámicos deben ponerse a disposición inmediatamente después de su recopilación o, cuando se trate de una actualización manual, inmediatamente después de la modificación del conjunto de datos, a través de una interfaz de programación de aplicaciones (API) con el fin de facilitar el desarrollo de aplicaciones de internet, de telefonía móvil y en la nube basadas en dichos datos. Cuando ello no sea posible debido a limitaciones técnicas o financieras, los organismos del sector público deben poner a disposición los documentos en un plazo que permita aprovechar plenamente el potencial económico de dichos documentos. Se deben tomar medidas específicas para eliminar las limitaciones técnicas y financieras pertinentes. Cuando se utilice una licencia, el plazo en que los documentos se ponen a disposición puede ser parte integrante de las condiciones de la licencia. Cuando la verificación de los datos sea esencial por razones justificadas de interés público, en particular por motivos de salud y seguridad públicas, los datos dinámicos deben ponerse a disposición inmediatamente después de su verificación. Dicha verificación esencial no debe afectar a la frecuencia de las actualizaciones.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(32)</p>
+          </td>
+          <td>
+            <p class="parrafo">Para obtener acceso a los datos abiertos para su reutilización por la presente Directiva, resulta útil garantizar el acceso a los datos dinámicos a través de API bien diseñadas. Una API es un conjunto de funciones, procedimientos, definiciones y protocolos para la comunicación de máquina a máquina y el intercambio fluido de datos. Las API deben estar respaldadas por documentación técnica clara, completa y disponible en línea. Cuando sea posible, deben utilizarse API abiertas. Cuando proceda, deben aplicarse protocolos estándar reconocidos a escala de la Unión o internacional y emplearse normas internacionales para los conjuntos de datos. Las API pueden tener diferentes niveles de complejidad y pueden adoptar la forma de un simple enlace a una base de datos para obtener conjuntos de datos específicos, de una interfaz web o de estructuras más complejas. La reutilización y el intercambio de datos a través de un uso adecuado de API crean valor general, dado que ayudarán a los desarrolladores y a las empresas emergentes a crear nuevos servicios y productos. También es un elemento decisivo a la hora de crear ecosistemas valiosos alrededor de activos de datos que están a menudo sin utilizar. La creación y la utilización de API ha de basarse en varios principios: disponibilidad, estabilidad, mantenimiento durante la vida útil, uniformidad de uso y normas, facilidad de uso y seguridad. En el caso de los datos dinámicos, a saber, los datos que se actualizan con frecuencia, a menudo en tiempo real, los organismos del sector público y las empresas públicas deben ponerlos a disposición para su reutilización inmediatamente después de su recopilación por medio de API adecuadas y, cuando proceda, en forma de descarga masiva, excepto en los casos en los que esto supondría un esfuerzo desproporcionado. Al evaluar la proporcionalidad del esfuerzo debe tenerse en cuenta el tamaño y el presupuesto de funcionamiento del organismo del sector público o de la empresa pública de que se trate.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(33)</p>
+          </td>
+          <td>
+            <p class="parrafo">Las posibilidades de reutilización pueden mejorarse si se limita la necesidad de digitalizar documentos existentes en papel o de procesar los archivos digitales para hacerlos mutuamente compatibles. Así pues, los organismos del sector público deben ofrecer los documentos en todos los formatos o lenguas preexistentes, por medios electrónicos cuando resulte posible y oportuno. También deben contemplar favorablemente las solicitudes de expedición de extractos de un documento existente, siempre que no conlleven más que una operación simple. Sin embargo, los organismos del sector público no deben estar obligados a proporcionar extractos de documentos o a modificar el formato de la información solicitada cuando ello suponga un esfuerzo desproporcionado. Con el fin de facilitar la reutilización, los organismos del sector público deben poner a disposición sus propios documentos en un formato que, en la medida de lo posible y si es adecuado, no dependa de la utilización de programas específicos. Siempre que sea posible y adecuado, los organismos del sector público deben tener en cuenta las posibilidades de reutilización de los documentos por personas con discapacidad y a ellas destinados ofreciendo la información en formatos accesibles de conformidad con los requisitos de la Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo (17).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(34)</p>
+          </td>
+          <td>
+            <p class="parrafo">Para facilitar la reutilización, los organismos del sector público deben poner, siempre que sea posible y apropiado, los documentos, incluidos los publicados en páginas web, a disposición del público mediante formatos abiertos y legibles por máquina junto con sus metadatos, con los niveles más elevados de precisión y granularidad, en un formato que garantice su interoperabilidad; por ejemplo, procesándolos de forma coherente con los principios que rigen los requisitos de facilidad de utilización y compatibilidad de la información espacial en virtud de la Directiva 2007/2/CE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(35)</p>
+          </td>
+          <td>
+            <p class="parrafo">Debe considerarse que un documento se presenta en formato legible por máquina si tiene un formato de archivo estructurado de tal forma que permite a las aplicaciones informáticas identificar, reconocer y extraer con facilidad los datos específicos que contiene. Los datos codificados en archivos estructurados en un formato legible por máquina deben considerarse datos legibles por máquina. Los formatos legibles por máquina pueden ser abiertos o propietarios; pueden ser normas formales o no serlo. Los documentos codificados en un formato de archivo que limita este procesamiento automático, por el hecho de que los datos no pueden extraerse o no pueden extraerse fácilmente de ellos, no deben considerarse documentos en un formato legible por máquina. Cuando sea posible y proceda, los Estados miembros deben fomentar el uso de formatos abiertos y legibles por máquina reconocidos a escala de la Unión o internacional. Al elaborar soluciones técnicas para la reutilización de documentos, debe tenerse en cuenta, cuando proceda, el Marco Europeo de Interoperabilidad.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(36)</p>
+          </td>
+          <td>
+            <p class="parrafo">Las tarifas por la reutilización de documentos constituyen una importante barrera de entrada al mercado para las empresas emergentes y las pymes. Los documentos deben, por consiguiente, ponerse a disposición para su reutilización gratuitamente y, cuando sea necesario aplicar una tarifa, esta debe limitarse en principio a los costes marginales. En los casos en que los organismos del sector público busquen la información solicitada de manera especialmente exhaustiva o realicen modificaciones extremadamente costosas del formato de la información solicitada, ya sea voluntariamente o con arreglo a lo dispuesto en la legislación nacional, los costes marginales pueden abarcar los costes relacionados con dichas actividades. En casos excepcionales debe tomarse en consideración muy especialmente la necesidad de no entorpecer el funcionamiento normal de los organismos del sector público a los que se exige generar ingresos para cubrir una parte considerable de sus gastos derivados de la realización de sus misiones de servicio público. Lo anterior también es aplicable en los casos en que un organismo del sector público haya puesto a disposición datos en forma de datos abiertos, pero se le exija generar ingresos para sufragar una parte considerable de sus gastos derivados de la realización de otras misiones de servicio público. También debe reconocerse la función de las empresas públicas en un entorno económico competitivo. En tales casos, los organismos del sector público y las empresas públicas deben, por lo tanto, poder cobrar tarifas superiores a los costes marginales. Dichas tarifas superiores a los costes marginales deben establecerse de acuerdo con criterios objetivos, transparentes y verificables, y los ingresos totales obtenidos por el suministro y por autorizar la reutilización de documentos no deben superar el coste de recogida y producción, incluida la compra a terceros, reproducción, mantenimiento, almacenamiento y difusión, incrementado por un margen de beneficio razonable de la inversión. En su caso, los costes de anonimización de datos personales y los costes de las medidas tomadas para proteger la confidencialidad de los datos también deben poder incluirse en los costes elegibles. Los Estados miembros pueden exigir a los organismos del sector público y a las empresas públicas que den a conocer dichos costes. El requisito de generar ingresos para cubrir una parte considerable de los gastos de los organismos del sector público derivados de la realización de sus misiones de servicio público o del ámbito de aplicación de los servicios de interés general confiados a empresas públicas no ha de estar incluido en la legislación y puede derivarse, por ejemplo, de las prácticas administrativas de los Estados miembros. Los Estados miembros deben revisar periódicamente dicho requisito.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(37)</p>
+          </td>
+          <td>
+            <p class="parrafo">El margen de beneficio de la inversión puede entenderse como un porcentaje, aparte de los costes marginales, que permite recuperar el coste del capital e incluir una tasa de rentabilidad real. Puesto que el coste del capital está estrechamente vinculado a los tipos de interés de las entidades de crédito, basados en el interés fijo del Banco Central Europeo (BCE) sobre las operaciones principales de financiación, el margen de beneficio razonable de la inversión no debería ser superior al 5 % del tipo de interés fijo del BCE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(38)</p>
+          </td>
+          <td>
+            <p class="parrafo">Las bibliotecas, incluidas las universitarias, los museos y los archivos deben poder cobrar tarifas superiores a los costes marginales con objeto de no entorpecer su funcionamiento normal. En el caso de esos organismos del sector público, los ingresos totales obtenidos por el suministro y por autorizar la reutilización de documentos durante el ejercicio contable apropiado no han de superar el coste de recogida, producción, reproducción, difusión, conservación y compensación de derechos, incrementado por un margen de beneficio razonable de la inversión. En su caso, los costes de anonimización de datos personales o de información comercial sensible también deben incluirse en los costes elegibles. Por lo que respecta a las bibliotecas, incluidas las universitarias, los museos y los archivos, y atendiendo a sus particularidades, los precios aplicados por el sector privado para la reutilización de documentos idénticos o similares pueden tenerse en cuenta al calcular el beneficio razonable de la inversión.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(39)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los límites superiores para las tarifas establecidos en la presente Directiva se entienden sin perjuicio del derecho de los Estados miembros de aplicar tarifas inferiores o no aplicarlas en absoluto.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(40)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los Estados miembros deben establecer los criterios para el cobro de tarifas superiores a los costes marginales. Deben poder, por ejemplo, establecer tales criterios en normas nacionales o designar al organismo u organismos apropiados, distintos del propio organismo del sector público de que se trate, con competencia para establecer dichos criterios. La organización de ese organismo debe estar en consonancia con los sistemas constitucionales y jurídicos de los Estados miembros. Puede tratarse de un organismo existente con competencias de ejecución presupuestaria y bajo una responsabilidad política.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(41)</p>
+          </td>
+          <td>
+            <p class="parrafo">Garantizar que las condiciones de reutilización de los documentos del sector público sean claras y estén a disposición del público constituye una condición previa para el desarrollo de un mercado de la información que abarque la totalidad de la Unión. Por consiguiente, debe informarse claramente a los reutilizadores potenciales de todas las condiciones aplicables a la reutilización de documentos. Los Estados miembros deben alentar la creación de índices accesibles en línea, cuando sea oportuno, de los documentos disponibles para fomentar y facilitar las solicitudes de reutilización. Los solicitantes de la reutilización de documentos que obran en poder de entidades distintas de las empresas públicas, centros de enseñanza, organizaciones que realizan actividades de investigación y organizaciones que financian la investigación deben estar informados de las vías de recurso de las que disponen para impugnar las decisiones y las prácticas que les afecten. Ello es particularmente importante para las empresas emergentes y pymes, que pueden no estar acostumbradas a relacionarse con organismos del sector público de otros Estados miembros y desconocen las vías de recurso de las que disponen.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(42)</p>
+          </td>
+          <td>
+            <p class="parrafo">Las vías de recurso deben incluir la posibilidad de revisión por un órgano de revisión imparcial. Dicho órgano puede ser una autoridad nacional ya existente, como la autoridad nacional de competencia, la autoridad de control establecida de conformidad con el Reglamento (UE) 2016/679, la autoridad nacional reguladora del acceso a los documentos o una autoridad judicial nacional. La organización de ese organismo debe estar en consonancia con los sistemas constitucionales y jurídicos de los Estados miembros. El recurso a dicho organismo no debe prejuzgar ninguna vía de recurso disponible de otra forma para los solicitantes de reutilización. Sin embargo, debe ser distinto del mecanismo del Estado miembro encargado de establecer los criterios para el cobro de tarifas superiores a los costes marginales. Las vías de recurso deben incluir la posibilidad de revisión de las decisiones negativas, pero también de aquellas decisiones que, aunque permitan la reutilización, puedan también afectar a los solicitantes por otros motivos, en particular por lo que se refiere a las normas de tarifación aplicadas. El proceso de revisión debe ser rápido, de conformidad con las necesidades de un mercado en rápida evolución.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(43)</p>
+          </td>
+          <td>
+            <p class="parrafo">La publicidad de todos los documentos de libre disposición que obran en poder del sector público -referentes no solo a los procedimientos políticos, sino también a los judiciales y administrativos- es un instrumento esencial para el desarrollo del derecho al conocimiento, que constituye un principio básico de la democracia. Este objetivo es aplicable a las instituciones tanto a nivel local como nacional o internacional.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(44)</p>
+          </td>
+          <td>
+            <p class="parrafo">En determinados casos, la reutilización de documentos se hará sin que se haya concedido una licencia. En otros casos, se puede expedir una licencia que imponga a su titular una serie de condiciones de reutilización referidas a cuestiones como la responsabilidad, la protección de los datos personales, el uso correcto de los documentos, la garantía de que los documentos no serán modificados y la indicación de la fuente. Si los organismos del sector público conceden licencias para la reutilización de documentos, las condiciones de la licencia deben ser justas y transparentes. Las licencias tipo disponibles en línea pueden desempeñar asimismo un papel importante al respecto. Por consiguiente, los Estados miembros deben procurar que estén a disposición licencias tipo. En cualquier caso, las licencias para la reutilización de información del sector público deben plantear las mínimas restricciones posibles sobre la reutilización, limitándolas, por ejemplo, a una indicación de la fuente. Las licencias abiertas en forma de licencias tipo públicas disponibles en línea, que permiten a cualquier persona y para cualquier fin acceder a datos y contenido, así como utilizarlos, modificarlos y compartirlos de manera gratuita, y que se basan en formatos de datos abiertos, deben desempeñar una importante función en este aspecto. Por consiguiente, los Estados miembros deben fomentar el uso de licencias abiertas, que, en su momento, debe pasar a ser práctica común en toda la Unión. Sin perjuicio de los requisitos en materia de responsabilidad impuestos por el Derecho de la Unión o el Derecho nacional, cuando un organismo del sector público o una empresa pública ponga a disposición documentos para su reutilización sin condiciones ni restricciones, dicho organismo del sector público o empresa pública puede eximirse de toda responsabilidad con respecto a los documentos puestos a disposición para su reutilización.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(45)</p>
+          </td>
+          <td>
+            <p class="parrafo">Cuando la autoridad competente decida no seguir permitiendo la reutilización de determinados documentos, o dejar de actualizarlos, debe hacer públicas estas decisiones en el plazo más breve y, si ello es posible, por vía electrónica.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(46)</p>
+          </td>
+          <td>
+            <p class="parrafo">Las condiciones de reutilización no deben ser discriminatorias para tipos comparables de reutilización. A este respecto la prohibición de discriminación no debe impedir, por ejemplo, el intercambio gratuito de información entre organismos del sector público cuando estos organismos desempeñen sus misiones de servicio público, mientras que otras partes deban abonar una tarifa por la reutilización de los mismos documentos. Tampoco debe impedir la adopción de una política de tarifas diferenciada para la reutilización comercial y no comercial.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(47)</p>
+          </td>
+          <td>
+            <p class="parrafo">En particular, los Estados miembros deberán asegurarse de que la reutilización de documentos de empresas públicas no dé lugar a la distorsión del mercado y de que no se menoscabe la competencia leal.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(48)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los organismos del sector público deben tomar en consideración las normas de competencia al establecer los principios para la reutilización de documentos, evitando en la medida de lo posible acuerdos exclusivos entre ellos mismos y socios particulares. No obstante, con vistas a la prestación de un servicio de interés económico general, puede resultar a veces necesario conceder un derecho exclusivo a la reutilización de determinados documentos del sector público. Tal puede ser el caso si ningún editor comercial está dispuesto a publicar la información de no concedérsele derechos exclusivos. A este respecto procede tener en cuenta los contratos de servicios públicos excluidos del ámbito de aplicación de la Directiva 2014/24/UE en virtud de su artículo 11, y las asociaciones para la innovación a que se refiere el artículo 31 de la Directiva 2014/24/UE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(49)</p>
+          </td>
+          <td>
+            <p class="parrafo">Existen numerosos acuerdos de cooperación entre bibliotecas, incluidas las universitarias, museos, archivos y socios privados que implican la digitalización de recursos culturales y por los que se otorgan derechos exclusivos a socios privados. La experiencia ha demostrado que tales asociaciones público-privadas pueden facilitar una utilización adecuada de los fondos culturales y aceleran al mismo tiempo el acceso de los ciudadanos al patrimonio cultural. Conviene, por lo tanto, atender a las actuales divergencias de los Estados miembros en cuanto a la digitalización de los recursos culturales, mediante un conjunto de normas específico relativo a los acuerdos sobre la digitalización de tales recursos. Cuando exista un derecho exclusivo relacionado con la digitalización de los recursos culturales, es posible que se requiera un período de exclusividad para dar al socio privado la posibilidad de amortizar su inversión. Dicho período debe tener un límite temporal lo más corto posible con el fin de respetar el principio según el cual el material de dominio público debe permanecer en el dominio público tras su digitalización. El período de vigencia de un derecho exclusivo para la digitalización de recursos culturales no debe ser superior, por regla general, a diez años. Los períodos de vigencia del derecho exclusivo superiores a diez años deben estar sometidos a revisión, teniendo en cuenta los cambios tecnológicos, económicos y administrativos que se produzcan en el entorno desde la celebración del acuerdo. Además, toda asociación público-privada para la digitalización de recursos culturales debe otorgar a la institución cultural socia plenos derechos respecto de la utilización de recursos culturales digitalizados posterior a la terminación del acuerdo.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(50)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los acuerdos entre titulares de datos y reutilizadores de datos que no concedan expresamente derechos exclusivos pero de los que pueda esperarse razonablemente que restringen la disponibilidad de documentos para su reutilización deben someterse a un control público suplementario. Por lo tanto, los aspectos esenciales de dichos acuerdos deben publicarse en línea al menos dos meses antes de su entrada en vigor, es decir, dos meses antes de la fecha acordada para que se inicie la prestación de las obligaciones de las partes. La publicación debe ofrecer a las partes interesadas la posibilidad de solicitar la reutilización de los documentos cubiertos por los acuerdos y prevenir el riesgo de restringir el número de reutilizadores potenciales. En cualquier caso, los aspectos esenciales de dichos acuerdos en su forma definitiva acordada por las partes también deben hacerse públicos en línea y sin demora indebida tras su celebración.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(51)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva tiene por objeto reducir al mínimo el riesgo de ventaja excesiva del pionero que podría limitar el número de reutilizadores potenciales de los datos. Cuando los acuerdos contractuales puedan implicar, además de las obligaciones de los Estados miembros en virtud de la presente Directiva para conceder documentos, una transferencia de recursos del Estado en el sentido del artículo 107, apartado 1, del TFUE, la presente Directiva debe entenderse sin perjuicio de la aplicación de las ayudas estatales y otras normas de competencia establecidas en los artículos 101 a 109 del TFUE. De las normas sobre ayudas estatales establecidas en los artículos 107, 108 y 109 del TFUE se desprende que el Estado miembro debe comprobar previamente si una ayuda estatal puede estar incluida en el correspondiente acuerdo contractual y garantizar que cumple las normas en materia de ayudas estatales.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(52)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva no afecta a la protección de las personas en lo que respecta al tratamiento de datos personales de conformidad con el Derecho nacional y de la Unión, en particular de conformidad con el Reglamento (UE) 2016/679 y la Directiva 2002/58/CE del Parlamento Europeo y del Consejo (18), e incluida toda disposición de Derecho nacional adicional. Ello significa, entre otras cosas, que la reutilización de datos personales solo es admisible si se cumple el principio de limitación de la finalidad previsto en el artículo 5, apartado 1, letra b), y en el artículo 6 del Reglamento (UE) 2016/679. Información anónima es información que no se refiere a una persona física identificada o identificable ni a datos personales que se hayan anonimizado de forma que el interesado no sea identificable o haya dejado de serlo. Anonimizar la información constituye un medio para conciliar los intereses a la hora de hacer la información del sector público tan reutilizable como sea posible con las obligaciones contraídas en virtud de la normativa sobre la protección de datos, pero tiene un coste. Procede considerar este coste como un elemento del coste que debe tenerse en cuenta como parte de los costes marginales de difusión a que se refiere la presente Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(53)</p>
+          </td>
+          <td>
+            <p class="parrafo">A la hora de tomar decisiones sobre el alcance y las condiciones de la reutilización de documentos del sector público que contengan datos personales, por ejemplo en el sector de la salud, podrá ser necesario efectuar evaluaciones de impacto en materia de protección de datos de conformidad con el artículo 35 del Reglamento (UE) 2016/679.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(54)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva no afecta a los derechos de propiedad intelectual de terceros. Para evitar confusiones, se entenderá por derechos de propiedad intelectual únicamente los derechos de autor y derechos afines (incluidas las formas de protección sui generis). La presente Directiva no se aplica a los documentos sometidos a derechos de propiedad industrial como las patentes y marcas registradas, y los diseños o dibujos y modelos. La presente Directiva tampoco afecta a la existencia de derechos de propiedad intelectual de los organismos del sector público ni a su posesión por estos, ni restringe en modo alguno el ejercicio de esos derechos fuera de los límites establecidos por la presente Directiva. Las obligaciones impuestas de conformidad con la presente Directiva solo deben aplicarse en la medida en que sean compatibles con los acuerdos internacionales sobre protección de los derechos de propiedad intelectual, en particular el Convenio de Berna para la protección de las obras literarias y artísticas (Convenio de Berna), el Acuerdo sobre aspectos de los derechos de propiedad intelectual relacionados con el comercio (Acuerdo ADPIC) y el Tratado de la OMPI sobre Derecho de Autor. No obstante, los organismos del sector público deben ejercer sus derechos de autor de una manera que facilite la reutilización.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(55)</p>
+          </td>
+          <td>
+            <p class="parrafo">Habida cuenta del Derecho de la Unión y de las obligaciones internacionales de los Estados miembros y de la Unión, en particular con arreglo al Convenio de Berna y al Acuerdo sobre los ADPIC, los documentos sobre los que existan derechos de propiedad intelectual por parte de terceros deben quedar excluidos del ámbito de aplicación de la presente Directiva. En caso de que un tercero fuese el titular inicial de los derechos de propiedad intelectual de un documento que obra en poder de una biblioteca (incluidas las universitarias), museo o archivo, y el período de protección esté aún vigente, a los efectos de la presente Directiva debe considerarse que sobre dicho documento existen derechos de propiedad intelectual por parte de terceros.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(56)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva debe entenderse sin perjuicio de los derechos, incluidos los derechos económicos y morales, que puedan asistir a los empleados de los organismos del sector público en virtud de la normativa nacional.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(57)</p>
+          </td>
+          <td>
+            <p class="parrafo">Además, cuando un documento se ponga a disposición del público para su reutilización, el organismo del sector público interesado ha de conservar el derecho a explotar dicho documento.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(58)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva se entiende sin perjuicio de la Directiva 2014/24/UE.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(59)</p>
+          </td>
+          <td>
+            <p class="parrafo">Los instrumentos auxiliares de búsqueda por los reutilizadores potenciales de los documentos disponibles para su reutilización, así como las condiciones de reutilización, pueden facilitar considerablemente la utilización transfronteriza de los documentos del sector público. Por ello, los Estados miembros deben asegurar la existencia de dispositivos prácticos que ayuden a los reutilizadores en su búsqueda de documentos para su reutilización. Listados, de acceso en línea preferentemente, de los principales documentos (documentos que se reutilizan ampliamente, o que pueden ser reutilizados ampliamente) y portales conectados a listados descentralizados constituyen ejemplos de los dispositivos prácticos mencionados. Los Estados miembros también deben facilitar la disponibilidad a largo plazo para la reutilización de información del sector público, de conformidad con las políticas de conservación aplicables.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(60)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Comisión debe facilitar la cooperación entre los Estados miembros y apoyar la concepción, el ensayo, la ejecución y el despliegue de interfaces electrónicas interoperables que permitan la prestación de servicios públicos más eficientes y seguros.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(61)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva se entiende sin perjuicio de la Directiva 2001/29/CE del Parlamento Europeo y del Consejo (19). Dispone las condiciones en las que los organismos del sector público pueden ejercer sus derechos de propiedad intelectual en el mercado interior de la información cuando permitan la reutilización de documentos. Cuando los organismos del sector público sean titulares del derecho previsto en el artículo 7, apartado 1, de la Directiva 96/9/CE, no deben ejercer dicho derecho para impedir la reutilización o restringir la reutilización de los documentos existentes más allá de los límites previstos en la presente Directiva.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(62)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Comisión ha respaldado la elaboración de un informe sobre el desarrollo de los datos abiertos en línea con indicadores de resultados pertinentes para la reutilización de la información del sector público en todos los Estados miembros. La actualización periódica de dicho informe contribuirá al intercambio de información entre Estados miembros y a la disponibilidad de información sobre políticas y prácticas en toda la Unión.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(63)</p>
+          </td>
+          <td>
+            <p class="parrafo">Es necesario velar por que los Estados miembros controlen la reutilización de la información del sector público, las condiciones que rigen su disponibilidad y las prácticas en materia de recurso.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(64)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Comisión puede ayudar a los Estados miembros a aplicar la presente Directiva de forma coherente formulando y actualizando las directrices vigentes, especialmente en lo que respecta a las licencias normalizadas recomendadas, los conjuntos de datos y el cobro por la reutilización de los documentos, previa consulta de las partes interesadas.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(65)</p>
+          </td>
+          <td>
+            <p class="parrafo">Uno de los principales objetivos del establecimiento del mercado interior es la creación de unas condiciones que favorezcan el desarrollo de servicios que abarquen toda la Unión. Las bibliotecas, incluidas las universitarias, los museos y los archivos contienen una considerable cantidad de valiosos recursos de información del sector público, dado en particular que los proyectos de digitalización han multiplicado la cantidad de material digital de dominio público. Estos fondos de patrimonio cultural y metadatos conexos constituyen una base potencial para productos y servicios de contenidos digitales y tienen un enorme potencial de reutilización innovadora en sectores tales como el aprendizaje y el turismo. Otros tipos de instituciones culturales (como orquestas, óperas, ballets y teatros), incluidos los archivos que forman parte de las mismas, deben permanecer excluidas del ámbito de aplicación de la presente Directiva debido a su especificidad respecto de las artes escénicas y dado que la práctica totalidad de su material está sujeto a derechos de propiedad intelectual de terceros.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(66)</p>
+          </td>
+          <td>
+            <p class="parrafo">Con el fin de proporcionar condiciones favorables a la reutilización de documentos, que conlleva importantes beneficios socioeconómicos pues tiene un valor especialmente elevado para la economía y la sociedad, se debe establecer en un anexo una lista de categorías temáticas de conjuntos de datos de alto valor. A modo ilustrativo y sin perjuicio de los actos de ejecución que determinen conjuntos de datos de alto valor a los cuales son de aplicación los requisitos específicos establecidos en la presente Directiva, tomando en consideración las directrices de la Comisión sobre las licencias normalizadas recomendadas, los conjuntos de datos y el cobro por la reutilización de los documentos, las categorías temáticas podrían abarcar, entre otras cosas, códigos postales, mapas nacionales y locales («Geoespacial»), consumo de energía e imágenes de satélite («Observación de la Tierra y medio ambiente»), datos in situ procedentes de instrumentos y previsiones meteorológicas («Meteorología»), indicadores demográficos y económicos («Estadística»), registros mercantiles e identificadores de registro («Sociedades y propiedad de sociedades»), señalización vial y vías de navegación interior («Movilidad»).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(67)</p>
+          </td>
+          <td>
+            <p class="parrafo">Deben delegarse en la Comisión los poderes para adoptar actos, con arreglo al artículo 290 del TFUE, a fin de modificar la lista de categorías temáticas de conjuntos de datos de alto valor añadiendo nuevas categorías temáticas. Reviste especial importancia que la Comisión lleve a cabo las consultas oportunas durante la fase preparatoria, en particular con expertos, y que esas consultas se realicen de conformidad con los principios establecidos en el Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación (20). En particular, a fin de garantizar una participación equitativa en la preparación de los actos delegados, el Parlamento Europeo y el Consejo reciben toda la documentación al mismo tiempo que los expertos de los Estados miembros, y sus expertos tienen acceso sistemáticamente a las reuniones de los grupos de expertos de la Comisión que se ocupen de la preparación de actos delegados.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(68)</p>
+          </td>
+          <td>
+            <p class="parrafo">Una lista a escala de la Unión de conjuntos de datos con un potencial particular para generar beneficios socioeconómicos, junto con condiciones de reutilización armonizadas, constituye un importante factor de aplicaciones y servicios de datos transfronterizos. A fin de garantizar condiciones uniformes de ejecución de la presente Directiva, deben conferirse a la Comisión competencias de ejecución para apoyar la reutilización de documentos asociados a importantes beneficios socioeconómicos adoptando una lista de conjuntos específicos de datos de alto valor a los que se apliquen los requisitos específicos de la presente Directiva, así como las modalidades de su publicación y reutilización. Por tanto, no serán de aplicación tales requisitos específicos antes de que la Comisión adopte los actos de ejecución. La lista debe tener en cuenta los actos jurídicos de la Unión sobre el sector, que ya regula la publicación de conjuntos de datos, como las Directivas 2007/2/CE y 2010/40/UE, para garantizar que los conjuntos de datos se ponen a disposición de conformidad con las normas y conjuntos de metadatos correspondientes. La lista se basará en las categorías conforme a la presente Directiva. Al elaborar la lista, la Comisión debe efectuar las consultas pertinentes, también a nivel de expertos. Además, al decidir sobre la inclusión en la lista de datos que obran en poder de empresas públicas o sobre su disponibilidad gratuita, se deben tener en cuenta los efectos sobre la competencia en los mercados correspondientes. Dichas competencias deben ejercerse de conformidad con el Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo (21).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(69)</p>
+          </td>
+          <td>
+            <p class="parrafo">A fin de garantizar su máxima repercusión y facilitar la reutilización, los conjuntos de datos de alto valor deben ponerse a disposición para su reutilización con muy pocas restricciones legales y sin coste alguno. También deben ser publicados a través de API. Sin embargo, ello no impide que los organismos del sector público cobren por servicios que proporcionan en relación con los conjuntos de datos de alto valor en el ejercicio de su autoridad pública, concretamente al certificar la autenticidad o la veracidad de los documentos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(70)</p>
+          </td>
+          <td>
+            <p class="parrafo">Dado que los objetivos de la presente Directiva, a saber, facilitar la creación de productos y servicios de información basados en documentos del sector público que cubran la totalidad de la Unión, garantizar la eficacia del uso transfronterizo de documentos del sector público por las compañías privadas, de una parte, en particular por las pequeñas y medianas empresas, para que ofrezcan productos y servicios de información de valor añadido y por los ciudadanos, de otra parte, para facilitar la libre circulación de la información y la comunicación, no pueden ser alcanzados de manera suficiente por los Estados miembros pero, debido a la dimensión paneuropea de la acción propuesta, pueden lograrse mejor a escala de la Unión, esta puede adoptar medidas, de acuerdo con el principio de subsidiariedad consagrado en el artículo 5 del Tratado de la Unión Europea. De conformidad con el principio de proporcionalidad establecido en el mismo artículo, la presente Directiva no excede de lo necesario para alcanzar dichos objetivos.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(71)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva respeta los derechos fundamentales y observa los principios reconocidos, en particular, por la Carta, incluidos el derecho a la privacidad, la protección de los datos de carácter personal, el derecho a la propiedad y la integración de personas con discapacidad. Nada de lo contenido en la presente Directiva debe interpretarse o aplicarse en un sentido que no sea acorde con el Convenio Europeo para la Protección de los Derechos Humanos y de las Libertades Fundamentales del Consejo Europeo.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(72)</p>
+          </td>
+          <td>
+            <p class="parrafo">El Supervisor Europeo de Protección de Datos fue consultado de conformidad con el artículo 28, apartado 2 del Reglamento (CE) n.o 45/2001 del Parlamento Europeo y del Consejo (22) y emitió un dictamen el 10 de julio de 2018 (23).</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(73)</p>
+          </td>
+          <td>
+            <p class="parrafo">La Comisión debe realizar una evaluación de la presente Directiva. De conformidad con el Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación esta evaluación debe basarse en los cinco criterios siguientes: la eficiencia, la eficacia, la pertinencia, la coherencia y el valor añadido, y deben servir de base para las evaluaciones de impacto de otras posibles medidas.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="4%"/>
+        <col width="96%"/>
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>
+            <p class="parrafo">(74)</p>
+          </td>
+          <td>
+            <p class="parrafo">La presente Directiva no debe afectar a las obligaciones de los Estados miembros relativas a los plazos de transposición al Derecho interno de las Directivas que se indica en el anexo II, parte B.</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="parrafo">HAN ADOPTADO LA PRESENTE DIRECTIVA:</p>
+    <p class="capitulo_num">CAPÍTULO I</p>
+    <p class="capitulo_tit">DISPOSICIONES GENERALES</p>
+    <p class="articulo">Artículo 1</p>
+    <p class="parrafo">Objeto y ámbito de aplicación</p>
+    <p class="parrafo">1.   Con el fin de fomentar el uso de datos abiertos y estimular la innovación de los productos y servicios, la presente Directiva establece un conjunto de normas mínimas que regula la reutilización y los dispositivos prácticos destinados a facilitar la reutilización de:</p>
+    <p class="parrafo"> a) los documentos existentes conservados por organismos del sector público de los Estados miembros;</p>
+    <p class="parrafo"> b) los documentos existentes conservados por empresas públicas que:</p>
+    <p class="parrafo">  i) lleven a cabo su actividad en los ámbitos definidos en la Directiva 2014/25/UE,</p>
+    <p class="parrafo">  ii) que actúen como operadores de servicio público con arreglo al artículo 2 del Reglamento (CE) n.o 1370/2007,</p>
+    <p class="parrafo">  iii) que actúen como compañías aéreas que cumplen obligaciones de servicio público con arreglo al artículo 16 del Reglamento (CE) n.o 1008/2008, o</p>
+    <p class="parrafo">  iv) que actúen como armadores comunitarios que cumplen obligaciones de servicio público con arreglo al artículo 4 del Reglamento (CEE) n.o 3577/92;</p>
+    <p class="parrafo"> c) los datos de investigación, con arreglo a las condiciones establecidas en el artículo 10.</p>
+    <p class="parrafo">2.   La presente Directiva no se aplicará a:</p>
+    <p class="parrafo"> a) los documentos cuyo suministro sea una actividad que se salga del ámbito de la misión de servicio público de los organismos del sector público afectados, definida con arreglo a la legislación o a otras normas de obligado cumplimiento del Estado miembro, o en ausencia de tales normas, definida con arreglo a la práctica administrativa común del Estado miembro en cuestión, siempre y cuando el ámbito de las misiones de servicio público sea transparente y se someta a revisión;</p>
+    <p class="parrafo"> b) los documentos conservados por las empresas públicas:</p>
+    <p class="parrafo">  i) producidos fuera del ámbito de la prestación de servicios de interés general, según se defina en la legislación o en otras normas de obligado cumplimiento del Estado miembro,</p>
+    <p class="parrafo">  ii) relativos a actividades sometidas directamente a la competencia y, por tanto, conforme al artículo 34 de la Directiva 2014/25/UE, no sujetas a las normas de contratación;</p>
+    <p class="parrafo"> c) los documentos sobre los que existan derechos de propiedad intelectual por parte de terceros;</p>
+    <p class="parrafo"> d) los documentos, por ejemplo los datos sensibles, a los que no pueda accederse en virtud de regímenes de acceso de los Estados miembros por motivos, entre otros, de:</p>
+    <p class="parrafo">  i) protección de la seguridad nacional (a saber, seguridad del Estado), defensa o seguridad pública,</p>
+    <p class="parrafo">  ii) confidencialidad estadística,</p>
+    <p class="parrafo">  iii) confidencialidad comercial (incluidos secretos comerciales, profesionales o empresariales);</p>
+    <p class="parrafo"> e) documentos cuyo acceso esté excluido o limitado por motivos de protección de información sensible sobre infraestructuras críticas, tal como se define en el artículo 2, letra d), de la Directiva 2008/114/CE;</p>
+    <p class="parrafo"> f) documentos cuyo acceso esté limitado en virtud de regímenes de acceso de los Estados miembros, incluidos, entre otros, aquellos casos en los que los ciudadanos o personas jurídicas tengan que demostrar un interés particular en obtener acceso a los documentos;</p>
+    <p class="parrafo"> g) logotipos, divisas e insignias;</p>
+    <p class="parrafo"> h) los documentos cuyo acceso esté excluido o limitado en virtud de regímenes de acceso por motivos de protección de los datos personales, y las partes de documentos accesibles en virtud de dichos regímenes que contengan datos personales cuya reutilización se haya definido por ley como incompatible con la legislación relativa a la protección de las personas físicas con respecto al tratamiento de los datos personales o como un menoscabo de la protección de la intimidad y la integridad de las personas, en particular de conformidad con la legislación nacional o de la Unión sobre protección de datos personales;</p>
+    <p class="parrafo"> i) los documentos conservados por las entidades de radiodifusión de servicio público y sus filiales, y por otras entidades o sus filiales para el cumplimiento de una misión de radiodifusión de servicio público;</p>
+    <p class="parrafo"> j) los documentos conservados por instituciones culturales que no sean bibliotecas, incluidas las universitarias, museos y archivos;</p>
+    <p class="parrafo"> k) los documentos conservados por instituciones educativas de nivel secundario e inferior y, en el caso de todas las demás instituciones educativas, documentos distintos de los contemplados en el apartado 1, letra c);</p>
+    <p class="parrafo"> l) los documentos distintos de los mencionados en el apartado 1, letra c), conservados por organizaciones que realizan actividades de investigación y organizaciones que financian la investigación, incluidas las organizaciones creadas para la transferencia de los resultados de la investigación.</p>
+    <p class="parrafo">3.   La presente Directiva se basa en los regímenes de acceso nacionales y de la Unión y no les afecta de forma alguna.</p>
+    <p class="parrafo">4.   La presente Directiva se entiende sin perjuicio del Derecho nacional y de la Unión relativas a la protección de datos personales, en particular del Reglamento (UE) 2016/679 y la Directiva 2002/58/CE, así como de las disposiciones correspondientes de Derecho nacional.</p>
+    <p class="parrafo">5.   Las obligaciones impuestas de conformidad con la presente Directiva se aplicarán únicamente en la medida en que sean compatibles con las disposiciones de los acuerdos internacionales sobre protección de los derechos de propiedad intelectual, en particular el Convenio de Berna, el Acuerdo ADPIC y el Tratado de la OMPI sobre Derecho de Autor.</p>
+    <p class="parrafo">6.   Los organismos del sector público no ejercerán el derecho del fabricante de una base de datos, previsto en el artículo 7, apartado 1, de la Directiva 96/9/CE, para evitar la reutilización de documentos o restringir la reutilización más allá de los límites establecidos por la presente Directiva.</p>
+    <p class="parrafo">7.   La presente Directiva regula la reutilización de los documentos existentes conservados por los organismos del sector público y las empresas públicas de los Estados miembros, incluidos los documentos a los que se aplica la Directiva 2007/2/CE.</p>
+    <p class="articulo">Artículo 2</p>
+    <p class="parrafo">Definiciones</p>
+    <p class="parrafo">A efectos de la presente Directiva, se entenderá por:</p>
+    <p class="parrafo">1)   «organismo del sector público»: el Estado, los entes territoriales, los organismos de derecho público y las asociaciones constituidas por uno o más de dichos entes o por uno o más de dichos organismos de Derecho público;</p>
+    <p class="parrafo">2)   «organismo de Derecho público»: cualquier organismo que ostente todas las condiciones siguientes:</p>
+    <p class="parrafo"> a) que haya sido creado específicamente para satisfacer necesidades de interés general, que no tenga carácter industrial o mercantil;</p>
+    <p class="parrafo"> b) que esté dotado de personalidad jurídica, y</p>
+    <p class="parrafo"> c) cuya actividad esté mayoritariamente financiada por el Estado, los entes territoriales u otros organismos de Derecho público; o cuya gestión esté sujeta a la supervisión de dichas autoridades u organismos; o que tenga un órgano de administración, de dirección o de vigilancia compuesto por miembros de los cuales más de la mitad sean nombrados por las autoridades estatales, regionales o locales u otros organismos de Derecho público;</p>
+    <p class="parrafo">3)   «empresa pública»: aquella empresa que opera en los ámbitos establecidos en el artículo 1, apartado 1, letra b), sobre la cual los organismos del sector público puedan ejercer, directa o indirectamente, una influencia dominante por el hecho de tener la propiedad de la misma, una participación financiera en la misma, o en virtud de las normas que la rigen. Se considerará que los organismos del sector público ejercen una influencia dominante, directa o indirectamente, en cualquiera de los casos siguientes en que dichos organismos, directa o indirectamente:</p>
+    <p class="parrafo"> a) posean la mayoría del capital suscrito de la empresa;</p>
+    <p class="parrafo"> b) dispongan de la mayoría de los votos correspondientes a las participaciones emitidas por la empresa;</p>
+    <p class="parrafo"> c) puedan designar a más de la mitad de los miembros del órgano de administración, de dirección o de vigilancia de la empresa;</p>
+    <p class="parrafo">4)   «universidad»: todo organismo del sector público que imparta enseñanza superior postsecundaria conducente a la obtención de títulos académicos;</p>
+    <p class="parrafo">5)   «licencia tipo»: conjunto de condiciones de reutilización predefinidas en formato digital, preferiblemente compatibles con licencias modelo públicas disponibles en línea;</p>
+    <p class="parrafo">6)   «documento»:</p>
+    <p class="parrafo"> a) cualquier contenido sea cual sea el soporte (escrito en papel o almacenado en forma electrónica o como grabación sonora, visual o audiovisual);</p>
+    <p class="parrafo"> b) cualquier parte de tal contenido;</p>
+    <p class="parrafo">7)   «anonimización»: proceso por el que se transforman documentos en documentos anónimos que no se refiere a una persona física identificada o identificable o al proceso de convertir datos personales que se hayan anonimizado, de forma que el interesado no sea identificable o haya dejado de serlo;</p>
+    <p class="parrafo">8)   «datos dinámicos»: documentos en formato digital, sujetos a actualizaciones frecuentes o en tiempo real, debido, en particular, a su volatilidad o rápida obsolescencia; los datos generados por los sensores suelen considerarse datos dinámicos;</p>
+    <p class="parrafo">9)   «datos de investigación»: documentos en formato digital, distintos de las publicaciones científicas, recopilados o elaborados en el transcurso de actividades de investigación científica y utilizados como prueba en el proceso de investigación, o comúnmente aceptados en la comunidad investigadora como necesarios para validar las conclusiones y los resultados de la investigación;</p>
+    <p class="parrafo">10)   «conjuntos de datos de alto valor»: documentos cuya reutilización está asociada a considerables beneficios para la sociedad, el medio ambiente y la economía, en particular debido a su idoneidad para la creación de servicios de valor añadido, aplicaciones y puestos de trabajo nuevos, dignos y de calidad, y del número de beneficiarios potenciales de los servicios de valor añadido y aplicaciones basados en tales conjuntos de datos;</p>
+    <p class="parrafo">11)   «reutilización»: el uso por personas físicas o jurídicas de documentos que obran en poder de:</p>
+    <p class="parrafo"> a) organismos del sector público, con fines comerciales o no comerciales distintos del propósito inicial que tenían esos documentos en la misión de servicio público para la que se produjeron, excepto para el intercambio de documentos entre organismos del sector público en el marco de sus actividades de servicio público, o</p>
+    <p class="parrafo"> b) empresas públicas, con fines comerciales o no comerciales distintos del propósito inicial que tenían esos documentos de prestar servicios de interés general para el que se produjeron, excepto para el intercambio de documentos entre empresas públicas y organismos del sector público que se realice exclusivamente en el desarrollo de las actividades de servicio público de los organismos del sector público;</p>
+    <p class="parrafo">12)   «datos personales»: datos personales tal como se definen en el artículo 4, punto 1, del Reglamento (UE) 2016/679;</p>
+    <p class="parrafo">13)   «formato legible por máquina»: formato de archivo estructurado que permita a las aplicaciones informáticas identificar, reconocer y extraer con facilidad datos específicos, incluidas las declaraciones fácticas y su estructura interna;</p>
+    <p class="parrafo">14)   «formato abierto»: formato de archivo independiente de plataformas y puesto a disposición del público sin restricciones que impidan la reutilización de los documentos;</p>
+    <p class="parrafo">15)   «norma formal abierta»: norma establecida por escrito que especifica los criterios de interoperabilidad de la aplicación informática;</p>
+    <p class="parrafo">16)   «margen de beneficio razonable de la inversión»: porcentaje de la tarifa total, además de la cantidad necesaria para recuperar los costes elegibles, no superior a cinco puntos porcentuales por encima del tipo de interés fijo del BCE;</p>
+    <p class="parrafo">17)   «tercero»: toda persona física o jurídica distinta de un organismo del sector público o de una empresa pública que esté en posesión de los datos.</p>
+    <p class="articulo">Artículo 3</p>
+    <p class="parrafo">Principio general</p>
+    <p class="parrafo">1.   Sin perjuicio del apartado 2 del presente artículo, los Estados miembros velarán por que los documentos a los que se aplica la presente Directiva, de conformidad con el artículo 1, puedan ser reutilizados para fines comerciales o no comerciales de conformidad con los capítulos III y IV.</p>
+    <p class="parrafo">2.   En el caso de los documentos respecto de los que las bibliotecas, incluidas las universitarias, los museos y los archivos posean derechos de propiedad intelectual y en el caso de los documentos que obren en poder de empresas públicas, los Estados miembros velarán por que, cuando esté autorizada la reutilización de dichos documentos, estos puedan ser reutilizados para fines comerciales o no comerciales de conformidad con los capítulos III y IV.</p>
+    <p class="capitulo_num">CAPÍTULO II</p>
+    <p class="capitulo_tit">SOLICITUDES DE REUTILIZACIÓN</p>
+    <p class="articulo">Artículo 4</p>
+    <p class="parrafo">Tratamiento de solicitudes de reutilización</p>
+    <p class="parrafo">1.   Los organismos del sector público tramitarán, por medios electrónicos cuando resulte posible y oportuno, las solicitudes de reutilización y pondrán el documento a disposición del solicitante con vistas a su reutilización o, si es necesaria una licencia, ultimarán la oferta de licencia al solicitante en un plazo razonable coherente con los plazos establecidos para el tratamiento de solicitudes de acceso a los documentos.</p>
+    <p class="parrafo">2.   Cuando no se haya establecido ningún plazo ni otras normas que regulen la entrega oportuna de los documentos, los organismos del sector público tramitarán la solicitud y entregarán los documentos al solicitante con vistas a su reutilización o, si es necesaria una licencia, ultimarán la oferta de licencia al solicitante lo antes posible o, en cualquier caso, en un plazo de 20 días hábiles, a partir del momento de su recepción. Dicho plazo podrá ampliarse en otros 20 días hábiles para solicitudes extensas o complejas. En tales casos, se notificará al solicitante lo antes posible y, en cualquier caso, en el curso de las tres semanas siguientes a la solicitud inicial que se necesita más tiempo para tramitarla y las razones que lo justifican.</p>
+    <p class="parrafo">3.   En caso de adoptarse una Decisión negativa, los organismos del sector público comunicarán al solicitante los motivos de la denegación con arreglo a las disposiciones aplicables del régimen de acceso del Estado miembro correspondiente o de las disposiciones nacionales de transposición de la presente Directiva, en particular el artículo 1, apartado 2, letras a) a h), o el artículo 3. Si la Decisión negativa se basa en el artículo 1, apartado 2, letra c), el organismo del sector público incluirá una referencia a la persona física o jurídica titular de los derechos, cuando esta sea conocida, o, alternativamente, al cedente del que el organismo del sector público haya obtenido el material en cuestión. Las bibliotecas, incluidas las universitarias, los museos y los archivos no estarán obligados a incluir tal referencia.</p>
+    <p class="parrafo">4.   Toda decisión de reutilización contendrá una referencia a las vías de recurso a que pueda acogerse en su caso el solicitante. Las vías de recurso incluirán la posibilidad de revisión por un órgano de revisión imparcial con la experiencia técnica adecuada, como la autoridad nacional de competencia, la autoridad reguladora del acceso a los documentos correspondiente, una autoridad nacional de supervisión establecida de conformidad con el Reglamento (UE) 2016/679 o una autoridad judicial nacional, cuyas decisiones sean vinculantes para el organismo del sector público afectado.</p>
+    <p class="parrafo">5.   A efectos del presente artículo, los Estados miembros definirán dispositivos prácticos para facilitar la reutilización eficaz de los documentos. Dichos dispositivos podrán incluir, en particular, modalidades para proporcionar información adecuada sobre los derechos previstos en la presente Directiva y ofrecer ayuda y orientación pertinentes.</p>
+    <p class="parrafo">6.   Las siguientes entidades no estarán obligadas a cumplir con el presente artículo:</p>
+    <p class="parrafo"> a) empresas públicas;</p>
+    <p class="parrafo"> b) centros de enseñanza, organizaciones que realizan actividades de investigación y organizaciones que financian la investigación.</p>
+    <p class="capitulo_num">CAPÍTULO III</p>
+    <p class="capitulo_tit">CONDICIONES DE REUTILIZACIÓN</p>
+    <p class="articulo">Artículo 5</p>
+    <p class="parrafo">Formatos disponibles</p>
+    <p class="parrafo">1.   Sin perjuicio del capítulo V, los organismos del sector público y las empresas públicas facilitarán sus documentos en cualquier formato o lengua en que existan previamente y, siempre que sea posible y apropiado, por medios electrónicos, en formas o formatos que sean abiertos, legibles por máquina, accesibles, fáciles de localizar y reutilizables, conjuntamente con sus metadatos. Tanto el formato como los metadatos cumplirán, cuando sea posible, normas formales abiertas.</p>
+    <p class="parrafo">2.   Los Estados miembros animarán a los organismos del sector público y a las empresas públicas a elaborar y facilitar documentos incluidos en el ámbito de aplicación de la presente Directiva con arreglo al principio de «documentos abiertos desde el diseño y por defecto».</p>
+    <p class="parrafo">3.   El apartado 1 no supone que los organismos del sector público estén obligados, para cumplir dicho apartado, a crear documentos, adaptarlos o facilitar extractos de documentos, cuando ello suponga un esfuerzo desproporcionado que conlleve algo más que una operación simple.</p>
+    <p class="parrafo">4.   Con arreglo a la presente Directiva, no podrá exigirse a los organismos del sector público que mantengan la producción y el almacenamiento de determinados tipos de documentos con vistas a su reutilización por una entidad del sector privado o público.</p>
+    <p class="parrafo">5.   Los organismos del sector público pondrán a disposición datos dinámicos para su reutilización inmediatamente después de su recopilación, a través de las API adecuadas y, cuando proceda, en forma de descarga masiva.</p>
+    <p class="parrafo">6.   Cuando la puesta a disposición de datos dinámicos para su reutilización inmediatamente después de su recopilación, con arreglo al apartado 5, pueda superar las capacidades financieras y técnicas del organismo del sector público, suponiendo así un esfuerzo desproporcionado, esos datos dinámicos se pondrán a disposición para su reutilización en un plazo o con restricciones técnicas temporales que no perjudiquen indebidamente la explotación de su potencial económico y social.</p>
+    <p class="parrafo">7.   Los apartados 1 a 6 se aplicarán a los documentos que obren en poder de las empresas públicas y que estén disponibles para su reutilización.</p>
+    <p class="parrafo">8.   Los conjuntos de datos de alto valor, tal que relacionados conforme al artículo 14, apartado 1, se pondrán a disposición para su reutilización en un formato legible por máquina, a través de las API adecuadas y, cuando proceda, en forma de descarga masiva.</p>
+    <p class="articulo">Artículo 6</p>
+    <p class="parrafo">Principios de tarifación</p>
+    <p class="parrafo">1.   La reutilización de documentos será gratuita.</p>
+    <p class="parrafo">No obstante, podrá permitirse la recuperación de los costes marginales en que se incurra para la reproducción, puesta a disposición y difusión de los documentos, así como para la anonimización de datos personales y las medidas adoptadas para proteger información comercial confidencial.</p>
+    <p class="parrafo">2.   A título de excepción, el apartado 1 no se aplicará a:</p>
+    <p class="parrafo"> a) los organismos del sector público a los que se exija generar ingresos para cubrir una parte sustancial de sus costes relativos a la realización de sus misiones de servicio público;</p>
+    <p class="parrafo"> b) las bibliotecas, incluidas las universitarias, los museos y los archivos;</p>
+    <p class="parrafo"> c) las empresas públicas.</p>
+    <p class="parrafo">3.   Los Estados miembros publicarán en línea una lista de organismos del sector público a que se refiere el apartado 2, letra a).</p>
+    <p class="parrafo">4.   En los casos a los que se hace referencia en el apartado 2, letras a) y c), el precio total se calculará conforme a criterios objetivos, transparentes y comprobables. Los Estados miembros establecerán dichos criterios.</p>
+    <p class="parrafo">Los ingresos totales obtenidos por suministrar documentos y autorizar su reutilización durante el ejercicio contable apropiado no superarán el coste de su recogida, producción, reproducción, difusión y almacenamiento de datos, incrementado por un margen de beneficio razonable de la inversión y, en su caso, anonimización de datos personales y medidas adoptadas para proteger información comercial confidencial.</p>
+    <p class="parrafo">Las tarifas se calcularán conforme a los principios contables aplicables.</p>
+    <p class="parrafo">5.   Cuando sean los organismos del sector público mencionados en el apartado 2, letra b), los que apliquen tarifas, los ingresos totales obtenidos por suministrar y autorizar la reutilización de documentos durante el ejercicio contable apropiado no superarán el coste de recogida, producción, reproducción, difusión, almacenamiento de datos, conservación y compensación de derechos y, en su caso, anonimización de datos personales y medidas adoptadas para proteger información comercial confidencial, incrementado por un margen de beneficio razonable de la inversión.</p>
+    <p class="parrafo">Las tarifas se calcularán conforme a los principios contables aplicables a los organismos del sector público correspondientes.</p>
+    <p class="parrafo">6.   Los usuarios podrán reutilizar gratuitamente:</p>
+    <p class="parrafo"> a) a reserva del artículo 14, apartados 3, 4 y 5, los conjuntos de datos de alto valor, tal que relacionados de conformidad con el apartado 1 de dicho artículo;</p>
+    <p class="parrafo"> b) los datos de investigación contemplados en el artículo 1, apartado 1, letra c).</p>
+    <p class="articulo">Artículo 7</p>
+    <p class="parrafo">Transparencia</p>
+    <p class="parrafo">1.   En el caso de tarifas estándar para la reutilización de documentos, las condiciones aplicables, así como el importe de dichas tarifas, incluida su base de cálculo, se fijarán de antemano y se publicarán, mediante medios electrónicos cuando resulte posible y oportuno.</p>
+    <p class="parrafo">2.   Cuando se trate de tarifas para la reutilización distintas de las mencionadas en el apartado 1, los factores que se tendrán en cuenta para el cálculo de dichas tarifas se indicarán por adelantado. Cuando se solicite, el titular de los documentos de que se trate también indicará cómo se han calculado dichas tarifas en relación con una solicitud de reutilización concreta.</p>
+    <p class="parrafo">3.   Los organismos del sector público se asegurarán de que los solicitantes de reutilización de documentos estén informados de las vías de recurso de que disponen para impugnar las decisiones y las prácticas que les afecten.</p>
+    <p class="articulo">Artículo 8</p>
+    <p class="parrafo">Licencias tipo</p>
+    <p class="parrafo">1.   La reutilización de documentos no estará sujeta a condiciones, a menos que dichas condiciones sean objetivas, proporcionadas, no discriminatorias y estén justificadas por un objetivo de interés público.</p>
+    <p class="parrafo">Cuando la reutilización esté sujeta a condiciones, tales condiciones no restringirán sin necesidad las posibilidades de reutilización y no se usarán para restringir la competencia.</p>
+    <p class="parrafo">2.   En los Estados miembros en que se utilicen licencias, los Estados miembros velarán por que las licencias tipo para la reutilización de documentos del sector público, que podrán adaptarse para responder a aplicaciones concretas de la licencia, estén disponibles en formato digital y puedan ser procesadas electrónicamente. Los Estados miembros alentarán el uso de dichas licencias tipo.</p>
+    <p class="articulo">Artículo 9</p>
+    <p class="parrafo">Dispositivos prácticos</p>
+    <p class="parrafo">1.   Los Estados miembros crearán dispositivos prácticos que faciliten la búsqueda de los documentos disponibles para su reutilización, tales como listados de documentos principales con los metadatos pertinentes, accesibles, siempre que sea posible y apropiado, en línea y en formato legible por máquina, y portales conectados a los listados descentralizados. En la medida de lo posible, los Estados miembros facilitarán la búsqueda lingüística de los documentos en varios idiomas, en particular permitiendo la agregación de metadatos a escala de la Unión.</p>
+    <p class="parrafo">Los Estados miembros también promoverán la creación por los organismos del sector público de dispositivos prácticos que faciliten la conservación de los documentos disponibles para su reutilización.</p>
+    <p class="parrafo">2.   Los Estados miembros en cooperación con la Comisión, continuarán los esfuerzos de simplificación del acceso a conjuntos de datos, en particular proporcionando un único punto de acceso y poniendo progresivamente a disposición conjuntos de datos adecuados que obren en poder de organismos del sector público en relación con todos los documentos a los que aplica la presente Directiva, así como con datos que obren en poder de las instituciones de la Unión, en formatos que sean accesibles, fáciles de localizar y reutilizables por medios electrónicos.</p>
+    <p class="articulo">Artículo 10</p>
+    <p class="parrafo">Datos de investigación</p>
+    <p class="parrafo">1.   Los Estados miembros apoyarán la disponibilidad de los datos de investigación mediante la adopción de políticas nacionales y actuaciones pertinentes destinadas a hacer que los datos de la investigación financiada públicamente sean plenamente accesibles («políticas de acceso abierto») en aplicación del principio de apertura por defecto y de compatibilidad con los principios FAIR. En este contexto, deberán tenerse en cuenta las inquietudes relacionadas con los derechos de propiedad intelectual e industrial, la protección de datos personales y la confidencialidad, la seguridad y los intereses comerciales legítimos de conformidad con el principio «tan abiertos como sea posible, tan cerrados como sea necesario». Estas políticas de acceso abierto se dirigirán a las organizaciones que realizan actividades de investigación y a las organizaciones que financian la investigación.</p>
+    <p class="parrafo">2.   Sin perjuicio del artículo 1, apartado 2, letra c), los datos de investigación serán reutilizables para fines comerciales o no comerciales de conformidad con los capítulos III y IV, en la medida en que sean financiados con fondos públicos y en que investigadores, organizaciones que realizan actividades de investigación u organizaciones que financian la investigación ya los hayan puesto a disposición del público a través de un repositorio institucional o temático. En este contexto, deberán tenerse en cuenta los intereses comerciales legítimos, las actividades de transferencia de conocimientos y los derechos de propiedad intelectual preexistentes.</p>
+    <p class="capitulo_num">CAPÍTULO IV</p>
+    <p class="capitulo_tit">NO DISCRIMINACIÓN Y PRÁCTICAS COMERCIALES JUSTAS</p>
+    <p class="articulo">Artículo 11</p>
+    <p class="parrafo">No discriminación</p>
+    <p class="parrafo">1.   Las condiciones que se apliquen para la reutilización de un documento no deberán ser discriminatorias para categorías comparables de reutilización, incluida la reutilización transfronteriza.</p>
+    <p class="parrafo">2.   Si un organismo del sector público reutiliza los documentos como parte de sus actividades comerciales ajenas a su misión de servicio público, deberán aplicarse a la entrega de documentos para dichas actividades las mismas tarifas y condiciones que se apliquen a los demás usuarios.</p>
+    <p class="articulo">Artículo 12</p>
+    <p class="parrafo">Acuerdos exclusivos</p>
+    <p class="parrafo">1.   La reutilización de documentos estará abierta a todos los agentes potenciales del mercado, incluso en caso de que uno o más de los agentes exploten ya productos con valor añadido basados en estos documentos. Los contratos o acuerdos de otro tipo entre los organismos del sector público o empresas públicas que estén en posesión de los documentos y los terceros no otorgarán derechos exclusivos.</p>
+    <p class="parrafo">2.   No obstante, cuando sea necesario un derecho exclusivo para la prestación de un servicio de interés público, deberá reconsiderarse periódicamente, y en todo caso cada tres años, la validez del motivo que justificó la concesión del derecho exclusivo. Los acuerdos exclusivos establecidos a partir del 16 de julio de 2019 se pondrán a disposición del público en línea al menos dos meses antes de su entrada en vigor. Las condiciones finales de tales acuerdos serán transparentes y se pondrán a disposición del público en línea.</p>
+    <p class="parrafo">El presente apartado no se aplicará a la digitalización de los recursos culturales.</p>
+    <p class="parrafo">3.   No obstante el apartado 1, cuando exista un derecho exclusivo relacionado con la digitalización de los recursos culturales, el período de exclusividad no será superior, por regla general, a diez años. En el caso de que dicho período sea superior a diez años, su duración se revisará durante el undécimo año y, si procede, cada siete años a partir de entonces.</p>
+    <p class="parrafo">Los acuerdos que concedan derechos exclusivos en el sentido del párrafo primero serán transparentes y se pondrán en conocimiento del público.</p>
+    <p class="parrafo">Cuando exista un derecho exclusivo en el sentido del párrafo primero deberá facilitarse gratuitamente al organismo del sector público en cuestión, como parte de dichos acuerdos, una copia de los recursos culturales digitalizados. Esa copia estará disponible para su reutilización una vez finalizado el período de exclusividad.</p>
+    <p class="parrafo">4.   Los acuerdos jurídicos o prácticos que, sin conceder expresamente un derecho exclusivo, tengan como objetivo, o quepa esperar razonablemente que implican, una disponibilidad limitada para la reutilización de documentos por entidades distintas de los terceros que participen en el acuerdo, se pondrán a disposición del público en línea al menos dos meses antes de su entrada en vigor. El efecto de estos acuerdos jurídicos o prácticos sobre la disponibilidad de datos para su reutilización estará sujeto a revisiones periódicas y, en cualquier caso, se someterá a revisión cada tres años. Las condiciones finales de tales acuerdos serán transparentes y se pondrán a disposición del público en línea.</p>
+    <p class="parrafo">5.   Los acuerdos exclusivos existentes a 17 de julio de 2013 a los que no se apliquen las excepciones contempladas en los apartados 2 y 3 y que fuesen celebrados por organismos del sector público concluirán cuando expire el contrato y, en cualquier caso, a más tardar el 18 de julio de 2043.</p>
+    <p class="parrafo">Los acuerdos exclusivos existentes el 16 de julio de 2019 a los que no se apliquen las excepciones contempladas en los apartados 2 y 3 y que fuesen celebrados por empresas públicas concluirán cuando expire el contrato o, en cualquier caso, a más tardar el 17 de julio de 2049.</p>
+    <p class="capitulo_num">CAPÍTULO V</p>
+    <p class="capitulo_tit">CONJUNTOS DE DATOS DE ALTO VALOR</p>
+    <p class="articulo">Artículo 13</p>
+    <p class="parrafo">Lista de categorías temáticas de conjuntos de datos de alto valor</p>
+    <p class="parrafo">1.   Al objeto de fijar las condiciones para su reutilización, figura en el anexo I una lista de categorías temáticas de datos de alto valor.</p>
+    <p class="parrafo">2.   La Comisión estará facultada para adoptar actos delegados de conformidad con el artículo 15 para modificar el anexo I mediante la inclusión de nuevas categorías temáticas de conjuntos de datos de alto valor con el fin de reflejar los avances tecnológicos y de mercado.</p>
+    <p class="articulo">Artículo 14</p>
+    <p class="parrafo">Conjuntos de datos de alto valor y modalidades de publicación y reutilización</p>
+    <p class="parrafo">1.   La Comisión adoptará actos de ejecución que establezcan una lista de conjuntos de datos específicos de alto valor que se engloben dentro de las categorías que figuran en el anexo I y que obren en poder de organismos del sector público y de empresas públicas entre los documentos a los que se aplica la presente Directiva.</p>
+    <p class="parrafo">Dichos datos de alto valor:</p>
+    <p class="parrafo"> a) estarán disponibles gratuitamente, a reserva de los apartados 3, 4 y 5;</p>
+    <p class="parrafo"> b) serán legibles por máquina;</p>
+    <p class="parrafo"> c) se suministrarán a través de API, y</p>
+    <p class="parrafo"> d) se proporcionarán en forma de descarga masiva, cuando proceda.</p>
+    <p class="parrafo">Dichos actos de ejecución podrán especificar los acuerdos organizativos relativos a la publicación y de reutilización de los tipos de conjuntos de datos de alto valor. Esos acuerdos serán compatibles con las licencias tipo abiertas.</p>
+    <p class="parrafo">Los acuerdos podrán incluir condiciones aplicables a la reutilización, el formato de los datos y los metadatos, así como acuerdos técnicos para la difusión. Las inversiones que hagan los Estados miembros en iniciativas en materia de datos abiertos, como las inversiones en el desarrollo y el despliegue de determinadas normas, se tendrán en cuenta y se ponderarán frente a los potenciales beneficios derivados de la inclusión en la lista.</p>
+    <p class="parrafo">Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 16, apartado 2.</p>
+    <p class="parrafo">2.   La definición de conjuntos de datos específicos de alto valor contemplados en el apartado 1 se basará en la valoración de su potencial para:</p>
+    <p class="parrafo"> a) generar beneficios socioeconómicos o medioambientales importantes y servicios innovadores;</p>
+    <p class="parrafo"> b) beneficiar a un gran número de usuarios, en concreto pymes;</p>
+    <p class="parrafo"> c) contribuir a generar ingresos, y</p>
+    <p class="parrafo"> d) ser combinados con otros conjuntos de datos.</p>
+    <p class="parrafo">Al objeto de definir tales tipos específicos de conjuntos de datos de alto valor, la Comisión llevará a cabo consultas adecuadas, también a nivel de expertos, elaborará una evaluación de impacto y garantizará la complementariedad con los actos jurídicos vigentes, como la Directiva 2010/40/UE, con respecto a la reutilización de documentos. La evaluación de dicho impacto incluirá un análisis coste-beneficio y un análisis sobre si el hecho de que organismos del sector público, a los que se exige generar ingresos para sufragar una parte importante de sus costes relativos a la realización de sus misiones de servicio público, proporcionen de manera gratuita conjuntos de datos de alto valor podría tener un impacto sustancial en el presupuesto de dichos organismos. Cuando se vean afectados los conjuntos de datos de alto valor en posesión de empresas públicas, la evaluación de impacto prestará especial consideración a la función de las empresas públicas en un entorno económico competitivo.</p>
+    <p class="parrafo">3.   Como excepción a lo dispuesto en el apartado 1, párrafo segundo, letra a), los actos de ejecución a los que se refiere el apartado 1 establecerán que la disponibilidad gratuita de conjuntos de datos de alto valor no se aplicará a conjuntos de datos específicos que obren en poder empresas públicas, cuando el hecho de poner a disposición dichos conjuntos de datos de manera gratuita pudiera provocar una distorsión de la competencia en los mercados correspondientes.</p>
+    <p class="parrafo">4.   El requisito de poner a disposición de forma gratuita conjuntos de datos de alto valor en virtud del apartado 1, párrafo segundo, letra a), no se aplicará a las bibliotecas, incluidas las universitarias, los museos y los archivos.</p>
+    <p class="parrafo">5.   Cuando el hecho de que organismos del sector público a los que se exige generar ingresos para sufragar una parte importante de sus costes relativos a la realización de sus misiones de servicio público pongan a disposición de forma gratuita conjuntos de datos de alto valor pueda tener un impacto sustancial en el presupuesto de los organismos implicados, los Estados miembros podrán eximir a dichos organismos del requisito de poner a disposición de forma gratuita esos conjuntos de datos de alto valor por un período que no superará los dos años a partir de la entrada en vigor del acto de ejecución correspondiente adoptado de conformidad con el apartado 1.</p>
+    <p class="capitulo_num">CAPÍTULO VI</p>
+    <p class="capitulo_tit">DISPOSICIONES FINALES</p>
+    <p class="articulo">Artículo 15</p>
+    <p class="parrafo">Ejercicio de la delegación</p>
+    <p class="parrafo">1.   Se otorgan a la Comisión los poderes para adoptar actos delegados en las condiciones establecidas en el presente artículo.</p>
+    <p class="parrafo">2.   Los poderes para adoptar actos delegados mencionados en el artículo 13, apartado 2, se otorgan a la Comisión por un período de cinco años a partir del 16 de julio de 2019. La Comisión elaborará un informe sobre la delegación de poderes a más tardar nueve meses antes de que finalice el período de cinco años. La delegación de poderes se prorrogará tácitamente por períodos de idéntica duración, excepto si el Parlamento Europeo o el Consejo se oponen a dicha prórroga a más tardar tres meses antes del final de cada período.</p>
+    <p class="parrafo">3.   La delegación de poderes mencionada en el artículo 13, apartado 2, podrá ser revocada en cualquier momento por el Parlamento Europeo o por el Consejo. La decisión de revocación pondrá término a la delegación de los poderes que en ella se especifiquen. La decisión surtirá efecto al día siguiente de su publicación en el Diario Oficial de la Unión Europea o en una fecha posterior indicada en la misma. No afectará a la validez de los actos delegados que ya estén en vigor.</p>
+    <p class="parrafo">4.   Antes de la adopción de un acto delegado, la Comisión consultará a los expertos designados por cada Estado miembro de conformidad con los principios establecidos en el Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación.</p>
+    <p class="parrafo">5.   Tan pronto como la Comisión adopte un acto delegado lo notificará simultáneamente al Parlamento Europeo y al Consejo.</p>
+    <p class="parrafo">6.   Los actos delegados adoptados en virtud del artículo 13, apartado 2 entrarán en vigor únicamente si, en un plazo de tres meses desde su notificación al Parlamento Europeo y al Consejo, ninguna de estas instituciones formula objeciones o si, antes del vencimiento de dicho plazo, ambas informan a la Comisión de que no las formularán. El plazo se prorrogará tres meses a iniciativa del Parlamento Europeo o del Consejo.</p>
+    <p class="articulo">Artículo 16</p>
+    <p class="parrafo">Procedimiento de comité</p>
+    <p class="parrafo">1.   La Comisión estará asistida por el Comité para los datos abiertos y la reutilización de la información del sector público. Dicho comité será un comité en el sentido del Reglamento (UE) n.o 182/2011.</p>
+    <p class="parrafo">2.   En los casos en que se haga referencia al presente apartado será de aplicación el artículo 5 del Reglamento (UE) n.o 182/2011.</p>
+    <p class="articulo">Artículo 17</p>
+    <p class="parrafo">Transposición</p>
+    <p class="parrafo">1.   Los Estados miembros adoptarán las disposiciones legales, reglamentarias y administrativas necesarias para dar cumplimiento a la presente Directiva a más tardar el 17 de julio de 2021. Comunicarán inmediatamente a la Comisión el texto de dichas disposiciones.</p>
+    <p class="parrafo">Cuando los Estados miembros adopten dichas disposiciones, estas incluirán una referencia a la presente Directiva o irán acompañadas de dicha referencia en su publicación oficial. Incluirán asimismo una mención que precise que las referencias hechas en las disposiciones legales, reglamentarias y administrativas en vigor a las Directivas derogadas por la presente Directiva se entenderán hechas a la presente Directiva. Los Estados miembros establecerán las modalidades de la mencionada referencia y la formulación de dicha mención.</p>
+    <p class="parrafo">2.   Los Estados miembros comunicarán a la Comisión el texto de las principales disposiciones de Derecho interno que adopten en el ámbito regulado por la presente Directiva.</p>
+    <p class="articulo">Artículo 18</p>
+    <p class="parrafo">Evaluación de la Comisión</p>
+    <p class="parrafo">1.   No antes del 17 de julio de 2025, la Comisión llevará a cabo una evaluación de la presente Directiva y presentará un informe sobre las principales conclusiones al Parlamento Europeo y al Consejo, así como al Comité Económico y Social Europeo.</p>
+    <p class="parrafo">Los Estados miembros suministrarán a la Comisión la información necesaria para la elaboración del informe.</p>
+    <p class="parrafo">2.   En dicha evaluación se abordará en particular el ámbito de aplicación y las repercusiones sociales y económicas de la presente Directiva, señalando:</p>
+    <p class="parrafo"> a) la medida en que haya aumentado la reutilización de documentos del sector público a los cuales se aplica la presente Directiva, especialmente por parte de pymes;</p>
+    <p class="parrafo"> b) la repercusión de los conjuntos de datos de alto valor;</p>
+    <p class="parrafo"> c) los efectos de los principios de tarifación aplicados y de la reutilización de textos oficiales de carácter legislativo y administrativo;</p>
+    <p class="parrafo"> d) la reutilización de documentos conservados por otras entidades distintas de los organismos del sector público;</p>
+    <p class="parrafo"> e) la disponibilidad y utilización de API;</p>
+    <p class="parrafo"> f) la interacción entre las normas sobre protección de datos y las posibilidades de reutilización, y</p>
+    <p class="parrafo"> g) otras formas de mejorar el correcto funcionamiento del mercado interior, apoyando el desarrollo económico y del mercado laboral.</p>
+    <p class="articulo">Artículo 19</p>
+    <p class="parrafo">Derogación</p>
+    <p class="parrafo">La Directiva 2003/98/CE, modificada por la Directiva indicada en el anexo II, parte A, queda derogada con efectos a partir del 17 de julio de 2021, sin perjuicio de las obligaciones de los Estados miembros relativas a los plazos de transposición al Derecho nacional y las fechas de aplicación de las Directivas enumeradas en el anexo II, parte B.</p>
+    <p class="parrafo">Las referencias a la Directiva derogada se entenderán hechas a la presente Directiva con arreglo a la tabla de correspondencias que figura en el anexo III.</p>
+    <p class="articulo">Artículo 20</p>
+    <p class="parrafo">Entrada en vigor</p>
+    <p class="parrafo">La presente Directiva entrará en vigor a los veinte días de su publicación en el Diario Oficial de la Unión Europea.</p>
+    <p class="articulo">Artículo 21</p>
+    <p class="parrafo">Destinatarios</p>
+    <p class="parrafo">Los destinatarios de la presente Directiva son los Estados miembros.</p>
+    <p class="parrafo">Hecho en Bruselas, el 20 de junio de 2019.</p>
+    <p class="firma_ministro">Por el Parlamento Europeo</p>
+    <p class="firma_ministro">El Presidente</p>
+    <p class="firma_ministro">A. TAJANI</p>
+    <p class="firma_ministro">Por el Consejo</p>
+    <p class="firma_ministro">El Presidente</p>
+    <p class="firma_ministro">G. CIAMBA</p>
+    <p class="cita_con_pleca">(1)  DO C 62 de 15.2.2019, p. 238.</p>
+    <p class="cita">(2)  Posición del Parlamento Europeo de 4 de abril de 2019 (pendiente de publicación en el Diario Oficial) y Decisión del Consejo de 6 de junio de 2019.</p>
+    <p class="cita">(3)  Directiva 2003/98/CE del Parlamento Europeo y del Consejo, de 17 de noviembre de 2003, relativa a la reutilización de la información del sector público (DO L 345 de 31.12.2003, p. 90).</p>
+    <p class="cita">(4)  Directiva 2013/37/UE del Parlamento Europeo y del Consejo, de 26 de junio de 2013, por la que se modifica la Directiva 2003/98/CE relativa a la reutilización de la información del sector público (DO L 175 de 27.6.2013, p. 1).</p>
+    <p class="cita">(5)  Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos) (DO L 119 de 4.5.2016, p. 1).</p>
+    <p class="cita">(6)  Directiva 96/9/CE del Parlamento Europeo y del Consejo, de 11 de marzo de 1996, sobre la protección jurídica de las bases de datos (DO L 77 de 27.3.1996, p. 20).</p>
+    <p class="cita">(7)  Directiva 2003/4/CE del Parlamento Europeo y del Consejo, de 28 de enero de 2003, relativa al acceso del público a la información medioambiental y por la que se deroga la Directiva 90/313/CEE del Consejo (DO L 41 de 14.2.2003, p. 26).</p>
+    <p class="cita">(8)  Directiva 2007/2/CE del Parlamento Europeo y del Consejo, de 14 de marzo de 2007, por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire) (DO L 108 de 25.4.2007, p. 1).</p>
+    <p class="cita">(9)  Directiva 2010/40/UE del Parlamento Europeo y del Consejo, de 7 de julio de 2010, por la que se establece el marco para la implantación de los sistemas de transporte inteligentes en el sector del transporte por carretera y para las interfaces con otros modos de transporte (DO L 207 de 6.8.2010, p. 1).</p>
+    <p class="cita">(10)  Directiva 2014/25/UE del Parlamento Europeo y del Consejo, de 26 de febrero de 2014, relativa a la contratación por entidades que operan en los sectores del agua, la energía, los transportes y los servicios postales y por la que se deroga la Directiva 2004/17/CE (DO L 94 de 28.3.2014, p. 243).</p>
+    <p class="cita">(11)  Reglamento (CE) n.o 1370/2007 del Parlamento Europeo y del Consejo, de 23 de octubre de 2007, sobre los servicios públicos de transporte de viajeros por ferrocarril y carretera y por el que se derogan los Reglamentos (CEE) n.o 1191/69 y (CEE) n.o 1107/70 del Consejo (DO L 315 de 3.12.2007, p. 1).</p>
+    <p class="cita">(12)  Reglamento (CE) n.o 1008/2008 del Parlamento Europeo y del Consejo, de 24 de septiembre de 2008, sobre normas comunes para la explotación de servicios aéreos en la Comunidad (DO L 293 de 31.10.2008, p. 3).</p>
+    <p class="cita">(13)  Reglamento (CEE) n.o 3577/92 del Consejo, de 7 de diciembre de 1992, por el se aplica el principio de libre prestación de servicios a los transportes marítimos dentro de los Estados miembros (cabotaje marítimo) (DO L 364 de 12.12.1992, p. 7).</p>
+    <p class="cita">(14)  Directiva 2008/114/CE del Consejo, de 8 de diciembre de 2008, sobre la identificación y designación de infraestructuras críticas europeas y la evaluación de la necesidad de mejorar su protección (DO L 345 de 23.12.2008, p. 75).</p>
+    <p class="cita">(15)  Directiva (UE) 2016/1148 del Parlamento Europeo y del Consejo, de 6 de julio de 2016, relativa a las medidas destinadas a garantizar un elevado nivel común de seguridad de las redes y sistemas de información en la Unión (DO L 194 de 19.7.2016, p. 1).</p>
+    <p class="cita">(16)  Directiva 2014/24/UE del Parlamento Europeo y del Consejo, de 26 de febrero de 2014, sobre contratación pública y por la que se deroga la Directiva 2004/18/CE (DO L 94 de 28.3.2014, p. 65).</p>
+    <p class="cita">(17)  Directiva (UE) 2016/2102 del Parlamento Europeo y del Consejo, de 26 de octubre de 2016, sobre la accesibilidad de los sitios web y aplicaciones para dispositivos móviles de los organismos del sector público (DO L 327 de 2.12.2016, p. 1).</p>
+    <p class="cita">(18)  Directiva 2002/58/CE del Parlamento Europeo y del Consejo, de 12 de julio de 2002, relativa al tratamiento de los datos personales y a la protección de la intimidad en el sector de las comunicaciones electrónicas (Directiva sobre la privacidad y las comunicaciones electrónicas) (DO L 201 de 31.7.2002, p. 37).</p>
+    <p class="cita">(19)  Directiva 2001/29/CE del Parlamento Europeo y del Consejo, de 22 de mayo de 2001, relativa a la armonización de determinados aspectos de los derechos de autor y derechos afines a los derechos de autor en la sociedad de la información (DO L 167 de 22.6.2001, p. 10).</p>
+    <p class="cita">(20)  DO L 123 de 12.5.2016, p. 1.</p>
+    <p class="cita">(21)  Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo, de 16 de febrero de 2011, por el que se establecen las normas y los principios generales relativos a las modalidades de control por parte de los Estados miembros del ejercicio de las competencias de ejecución por la Comisión (DO L 55 de 28.2.2011, p. 13).</p>
+    <p class="cita">(22)  Reglamento (CE) n.o 45/2001 del Parlamento Europeo y del Consejo, de 18 de diciembre de 2000, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones y los organismos comunitarios y a la libre circulación de estos datos (DO L 8 de 12.1.2001, p. 1).</p>
+    <p class="cita">(23)  DO C 305 de 30.8.2018, p. 7.</p>
+    <p class="anexo_num">ANEXO I</p>
+    <p class="anexo_tit">Lista de categorías temáticas de conjuntos de datos de alto valor contemplado en el artículo 13, apartado 1</p>
+    <p class="parrafo">1. Geoespacial</p>
+    <p class="parrafo">2. Observación de la Tierra y medio ambiente</p>
+    <p class="parrafo">3. Meteorología</p>
+    <p class="parrafo">4. Estadística</p>
+    <p class="parrafo">5. Sociedades y propiedad de sociedades</p>
+    <p class="parrafo">6. Movilidad</p>
+    <p class="anexo_num">ANEXO II</p>
+    <p class="anexo_tit">Parte A</p>
+    <p class="parrafo">Directiva derogada con sus modificaciones sucesivas</p>
+    <p class="parrafo">(a que se refiere el artículo 19)</p>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="69%"/>
+        <col width="31%"/>
+      </colgroup>
+      <tbody>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Directiva 2003/98/CE del Parlamento Europeo y del Consejo</p>
+            <p class="parrafo">(DO L 345 de 31.12.2003, p. 90).</p>
+          </td>
+          <td class="table">
+            <p class="parrafo"> </p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Directiva 2013/37/UE del Parlamento Europeo y del Consejo</p>
+            <p class="parrafo">(DO L 175 de 27.6.2013, p. 1).</p>
+          </td>
+          <td class="table">
+            <p class="parrafo"> </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="parrafo">Parte B</p>
+    <p class="parrafo">Plazos de transposición al Derecho nacional y fecha de aplicación</p>
+    <p class="parrafo">(a que se refiere el artículo 19)</p>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="29%"/>
+        <col width="40%"/>
+        <col width="31%"/>
+      </colgroup>
+      <tbody>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Directiva</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Fecha límite de transposición</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Fecha de aplicación</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">2003/98/CE</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">1 de julio de 2005</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">1 de julio de 2005</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">2013/37/UE</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">18 de julio de 2015</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">18 de julio de 2015</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="anexo_num">ANEXO III</p>
+    <p class="anexo_tit">TABLA DE CORRESPONDENCIAS</p>
+    <table class="sinbordes" width="100%">
+      <colgroup>
+        <col width="48%"/>
+        <col width="52%"/>
+      </colgroup>
+      <tbody>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Directiva 2003/98/CE</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">La presente Directiva</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 1, frase introductoria, y artículo 1, apartado 1, letras a), b) y c)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, frase introductoria</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, frase introductoria</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra a)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra a)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra b)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra b)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra c)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra c)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra d)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra e)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra c bis)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra f)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra c ter)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra g)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra c quater)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra h)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra d)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra i)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra e)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra l)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra f)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra j)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 2, letra k)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 5</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartado 5</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 1, apartados 6 y 7</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, frase introductoria</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, frase introductoria</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, puntos 3 y 5</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 6</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, puntos 7 a 10</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 11</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 5</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 12</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 6</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 13</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 7</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 14</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 8</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 15</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 9</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, punto 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 2, puntos 16 y 17</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 3, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 5</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 5</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 6, frase introductoria</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 4, apartado 6, letras a) y b)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartado 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 5, apartados 5 a 8</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 1, párrafo primero</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 1, párrafo segundo</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, frase introductoria</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, frase introductoria</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra a)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra a)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra b)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra c)</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra b)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 2, letra c)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 5</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 6, apartado 6</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 7, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 8</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 8</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 9</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 9, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 9, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 10, apartados 1 y 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 10</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 11</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 11, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 12, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 11, apartado 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 12, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 11, apartado 2 bis</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 12, apartado 3</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 12, apartado 4</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 11, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 11, apartado 4</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 12, apartado 5</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículos 13 a 16</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 12</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 17, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 17, apartado 2</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 13, apartado 1</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 18, apartado 1</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 13, apartado 2</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 13, apartado 3</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 18, apartado 2, frase introductoria</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 18, apartado 2, letras a) a g)</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 19</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 14</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 20</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">Artículo 15</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Artículo 21</p>
+          </td>
+        </tr>
+        <tr class="table">
+          <td class="table">
+            <p class="parrafo">—</p>
+          </td>
+          <td class="table">
+            <p class="parrafo">Anexos I, II y III</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </texto>
+</documento>

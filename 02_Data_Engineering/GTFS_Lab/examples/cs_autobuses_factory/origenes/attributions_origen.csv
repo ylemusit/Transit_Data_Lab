@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,attribution_id,organization_name,is_producer,is_operator,is_authority,attribution_url
+ORIG-ATTRIBUTIONS-001,SYN-CS-01-ATTRIBUTIONS,elaboración sintética documentada,Roles atribuidos a una organización ficticia.,ATTR-CS-01,CS Autobuses (operador ficticio),1,1,0,https://example.com/cs-autobuses

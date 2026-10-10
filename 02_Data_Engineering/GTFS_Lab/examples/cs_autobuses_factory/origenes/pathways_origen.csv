@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,pathway_id,from_stop_id,to_stop_id,pathway_mode,is_bidirectional,traversal_time,from_level_id,to_level_id
+ORIG-PATHWAYS-001,SYN-CS-01-PATHWAYS,elaboración sintética documentada,Conexión de ascensor inventada para ilustrar niveles; no acredita accesibilidad.,PW-ELEV-01,CS-ENT,CS-PLAT,5,1,35,LV-0,LV-1

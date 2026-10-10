@@ -39,3 +39,5 @@ No se creó backup en esta auditoría. G-01 de [análisis de gaps](reports/PROJE
 El acceso externo a datos/clientes requiere autorización explícita por separado. Mantener el cliente interno como herramienta operacional; ningún backup, gate técnico ni prueba sintética constituye aprobación comercial o jurídica.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+Los expedientes completos excluidos por la publicación sanitizada de 2026-10-10 deben incluirse en el backup separado de P:. La copia preintegración conserva los originales de los documentos sanitizados; el repositorio público contiene método y ejemplos sintéticos, no esos expedientes.

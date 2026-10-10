@@ -1,0 +1,3 @@
+source_record_id,source_reference,source_method,source_note,level_id,level_index,level_name
+ORIG-LEVELS-001,SYN-CS-01-LEVELS,elaboración sintética documentada,Niveles creados para el ejemplo del intercambiador.,LV-0,0,Acceso
+ORIG-LEVELS-002,SYN-CS-01-LEVELS,elaboración sintética documentada,Niveles creados para el ejemplo del intercambiador.,LV-1,1,Andén

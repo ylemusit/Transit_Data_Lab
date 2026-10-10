@@ -59,6 +59,27 @@ class ClientReportTests(unittest.TestCase):
         report = build_client_report(manifest, run, [], interpretation, {"decision": "NONE"}, None)
         self.assertEqual("NO ES POSIBLE EMITIR CONCLUSIÓN", report["summary"]["publication_readiness"])
 
+    def test_engine_failure_is_not_hidden_by_legacy_pass_summary(self):
+        manifest, run, interpretation = self.fixture()
+        run["validation"] = {"status": "PASS", "rules": []}
+        run["engine_report"]["technical_evaluation"]["stages"] = [
+            {"stage": "G03", "status": "PASS", "rules": [
+                {"rule_id": "R-PASS", "status": "PASS", "applicability": "APPLICABLE", "findings": []}]},
+            {"stage": "G07", "status": "PASS", "rules": [
+                {"rule_id": "G07-R1", "status": "FAIL_TECHNICAL", "applicability": "APPLICABLE", "findings": []}]},
+        ]
+        report = build_client_report(manifest, run, [], interpretation,
+                                     {"decision": "HUMAN_REVIEW"}, None)
+        self.assertEqual("FAIL_TECHNICAL", report["summary"]["technical_result"])
+        self.assertEqual("PASS", report["summary"]["legacy_result"])
+        self.assertEqual("CONSISTENT", report["summary"]["legacy_summary_consistency"])
+        self.assertEqual("FAIL_TECHNICAL", report["summary"]["audit_engine_result"])
+        self.assertEqual("REQUIERE CORRECCIÓN ANTES DE PUBLICACIÓN",
+                         report["summary"]["publication_readiness"])
+        markdown = render_client_report(report)
+        self.assertIn("Motor G03–G07: `FAIL_TECHNICAL`", markdown)
+        self.assertIn("Validación legacy: `PASS`", markdown)
+
     def test_contract_spec_matches_required_report_sections(self):
         spec = Path(__file__).parents[1] / "spec" / "client_report_contract_v1.json"
         payload = json.loads(spec.read_text(encoding="utf-8"))

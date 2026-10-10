@@ -1,0 +1,3 @@
+source_record_id,source_reference,source_method,source_note,area_id,area_name
+ORIG-AREAS-001,SYN-CS-01-AREAS,elaboración sintética documentada,Zonas creadas para cubrir la estructura Fares V2.,AREA-CS-CENTRO,Zona central sintética
+ORIG-AREAS-002,SYN-CS-01-AREAS,elaboración sintética documentada,Zonas creadas para cubrir la estructura Fares V2.,AREA-CS-CAMPUS,Zona campus sintética

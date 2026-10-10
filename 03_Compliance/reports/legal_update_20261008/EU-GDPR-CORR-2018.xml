@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20241021220827">
+  <metadatos>
+    <identificador>DOUE-L-2018-80845</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="1590">Corrección (errores o erratas)</rango>
+    <fecha_disposicion/>
+    <numero_oficial/>
+    <titulo>Corrección de errores del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos).</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20180523</fecha_publicacion>
+    <diario_numero>127</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>3</pagina_inicial>
+    <pagina_final>7</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2018/127/L00003-00007.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia/>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="35" orden="">Acceso a la información</materia>
+      <materia codigo="473" orden="">Bases de datos</materia>
+      <materia codigo="817" orden="">Certificaciones</materia>
+      <materia codigo="1262" orden="">Comités consultivos</materia>
+      <materia codigo="2463" orden="">Derechos de los ciudadanos</materia>
+      <materia codigo="2467" orden="">Derechos fundamentales</materia>
+      <materia codigo="3232" orden="">Entidades de certificación</materia>
+      <materia codigo="7854" orden="">Protección de datos personales</materia>
+    </materias>
+    <notas/>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2016-80807" orden="2120">
+          <palabra codigo="201">CORRECCIÓN de errores</palabra>
+          <texto>del Reglamento 2016/679, de 27 de abril</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="109" orden="">Derecho Administrativo</alerta>
+      <alerta codigo="110" orden="">Derecho Civil</alerta>
+      <alerta codigo="134" orden="">Unión Europea</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <p class="parrafo">1)</p>
+    <p class="parrafo">En la página 5, considerando 23:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«(23)</p>
+    <p class="parrafo">Con el fin de garantizar que las personas físicas no se vean privadas de la protección a la que tienen derecho en virtud del presente Reglamento, el tratamiento de datos personales de interesados que residen en la Unión por un responsable o un encargado no establecido en la Unión debe regirse por el presente Reglamento si las actividades de tratamiento se refieren a la oferta de bienes o servicios a dichos interesados, independientemente de que medie pago. Para determinar si dicho responsable o encargado ofrece bienes o servicios a interesados que residan en la Unión, debe […]»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«(23)</p>
+    <p class="parrafo">Con el fin de garantizar que las personas físicas no se vean privadas de la protección a la que tienen derecho en virtud del presente Reglamento, el tratamiento de datos personales de interesados que se encuentran en la Unión por un responsable o un encargado no establecido en la Unión debe regirse por el presente Reglamento si las actividades de tratamiento se refieren a la oferta de bienes o servicios a dichos interesados, independientemente de que medie pago. Para determinar si dicho responsable o encargado ofrece bienes o servicios a interesados que se encuentran en la Unión, debe […]».</p>
+    <p class="parrafo">2)</p>
+    <p class="parrafo">En la página 5, considerando 24:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«(24)</p>
+    <p class="parrafo">El tratamiento de datos personales de los interesados que residen en la Unión por un responsable o encargado […]»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«(24)</p>
+    <p class="parrafo">El tratamiento de datos personales de los interesados que se encuentran en la Unión por un responsable o encargado […]».</p>
+    <p class="parrafo">3)</p>
+    <p class="parrafo">En la página 14, considerando 71, quinta y sexta frases:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«(71)</p>
+    <p class="parrafo">[…] Tal medida no debe afectar a un menor.</p>
+    <p class="parrafo">A fin de garantizar un tratamiento leal y transparente respecto del interesado, teniendo en cuenta las circunstancias y contexto específicos en los que se tratan los datos personales, el responsable del tratamiento debe utilizar procedimientos matemáticos o estadísticos adecuados para la elaboración de perfiles, aplicar medidas técnicas y organizativas apropiadas para garantizar, en particular, que se corrigen los factores que introducen inexactitudes en los datos personales y se reduce al máximo el riesgo de error, asegurar los datos personales de forma que se tengan en cuenta los posibles riesgos para los intereses y derechos del interesado y se impidan, entre otras cosas, efectos discriminatorios en las personas físicas por motivos de raza u origen étnico, opiniones políticas, religión o creencias, afiliación sindical, condición genética o estado de salud u orientación sexual, o que den lugar a medidas que produzcan tal efecto.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«(71)</p>
+    <p class="parrafo">[…] Tal medida no debe afectar a un menor.</p>
+    <p class="parrafo">A fin de garantizar un tratamiento leal y transparente respecto del interesado, teniendo en cuenta las circunstancias y contexto específicos en los que se tratan los datos personales, el responsable del tratamiento debe utilizar procedimientos matemáticos o estadísticos adecuados para la elaboración de perfiles, aplicar medidas técnicas y organizativas apropiadas para garantizar, en particular, que se corrigen los factores que introducen inexactitudes en los datos personales y se reduce al máximo el riesgo de error, asegurar los datos personales de forma que se tengan en cuenta los posibles riesgos para los intereses y derechos del interesado e impedir, entre otras cosas, efectos discriminatorios en las personas físicas por motivos de raza u origen étnico, opiniones políticas, religión o creencias, afiliación sindical, condición genética o estado de salud u orientación sexual, o tratamiento que dé lugar a medidas que produzcan tal efecto.».</p>
+    <p class="parrafo">4)</p>
+    <p class="parrafo">En la página 15, considerando 80:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«(80)</p>
+    <p class="parrafo">El responsable o el encargado del tratamiento no establecido en la Unión que esté tratando datos personales de interesados que residan en la Unión y cuyas actividades de tratamiento […]»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«(80)</p>
+    <p class="parrafo">El responsable o el encargado del tratamiento no establecido en la Unión que esté tratando datos personales de interesados que se encuentran en la Unión y cuyas actividades de tratamiento …».</p>
+    <p class="parrafo">5)</p>
+    <p class="parrafo">En la página 33, artículo 3, apartado 2:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«2.   El presente Reglamento se aplica al tratamiento de datos personales de interesados que residan en la Unión por parte de un responsable o encargado no establecido en la Unión, cuando las actividades de tratamiento estén relacionadas con:»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«2.   El presente Reglamento se aplica al tratamiento de datos personales de interesados que se encuentren en la Unión por parte de un responsable o encargado no establecido en la Unión, cuando las actividades de tratamiento estén relacionadas con:».</p>
+    <p class="parrafo">6)</p>
+    <p class="parrafo">En la página 38, artículo 9, apartado 1:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«1.   Quedan prohibidos el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, o la afiliación sindical, y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o las orientación sexuales de una persona física.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«1.   Quedan prohibidos el tratamiento de datos personales que revelen el origen étnico o racial, las opiniones políticas, las convicciones religiosas o filosóficas, o la afiliación sindical, y el tratamiento de datos genéticos, datos biométricos dirigidos a identificar de manera unívoca a una persona física, datos relativos a la salud o datos relativos a la vida sexual o la orientación sexual de una persona física.».</p>
+    <p class="parrafo">7)</p>
+    <p class="parrafo">En la página 55, artículo 37, apartado 1, letra c):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«c)</p>
+    <p class="parrafo">las actividades principales del responsable o del encargado consistan en el tratamiento a gran escala de categorías especiales de datos personales con arreglo al artículo 9 y de datos relativos a condenas e infracciones penales a que se refiere el artículo 10.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«c)</p>
+    <p class="parrafo">las actividades principales del responsable o del encargado consistan en el tratamiento a gran escala de categorías especiales de datos con arreglo al artículo 9 o de datos personales relativos a condenas e infracciones penales a que se refiere el artículo 10.».</p>
+    <p class="parrafo">8)</p>
+    <p class="parrafo">En la página 58, artículo 41, apartado 3:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«3.   La autoridad de control competente someterá al Comité, con arreglo al mecanismo de coherencia a que se refiere el artículo 63, el proyecto que fije los criterios de acreditación de un organismo a que se refiere el apartado 1 del presente artículo.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«3.   La autoridad de control competente someterá al Comité, con arreglo al mecanismo de coherencia a que se refiere el artículo 63, el proyecto que fije los requisitos de acreditación de un organismo a que se refiere el apartado 1 del presente artículo.».</p>
+    <p class="parrafo">9)</p>
+    <p class="parrafo">En la página 58, artículo 41, apartado 5:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«5.   La autoridad de control competente revocará la acreditación de un organismo a tenor del apartado 1 si las condiciones de la acreditación no se cumplen o han dejado de cumplirse, o si la actuación de dicho organismo infringe el presente Reglamento.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«5.   La autoridad de control competente revocará la acreditación de un organismo a tenor del apartado 1 si los requisitos de acreditación no se cumplen o han dejado de cumplirse, o si la actuación de dicho organismo infringe el presente Reglamento.».</p>
+    <p class="parrafo">10)</p>
+    <p class="parrafo">En la página 59, artículo 42, apartado 7:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«7.   La certificación se expedirá a un responsable o encargado de tratamiento por un período máximo de tres años y podrá ser renovada en las mismas condiciones, siempre y cuando se sigan cumpliendo los requisitos pertinentes. La certificación será retirada, cuando proceda, por los organismos de certificación a que se refiere el artículo 43, o en su caso por la autoridad de control competente, cuando no se cumplan o se hayan dejado de cumplir los requisitos para la certificación.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«7.   La certificación se expedirá a un responsable o encargado de tratamiento por un período máximo de tres años y podrá ser renovada en las mismas condiciones, siempre y cuando se sigan cumpliendo los criterios pertinentes. La certificación será retirada, cuando proceda, por los organismos de certificación a que se refiere el artículo 43, o en su caso por la autoridad de control competente, cuando no se cumplan o se hayan dejado de cumplir los criterios para la certificación.».</p>
+    <p class="parrafo">11)</p>
+    <p class="parrafo">En la página 60, artículo 43, apartado 3, primera frase:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«3.   La acreditación de los organismos de certificación a que se refieren los apartados 1 y 2 del presente artículo se realizará sobre la base de los criterios aprobados por la autoridad de control que sea competente en virtud del artículo 55 o 56, o por el Comité de conformidad con el artículo 63.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«3.   La acreditación de los organismos de certificación a que se refieren los apartados 1 y 2 del presente artículo se realizará sobre la base de los requisitos aprobados por la autoridad de control que sea competente en virtud del artículo 55 o 56 o por el Comité en virtud del artículo 63.».</p>
+    <p class="parrafo">12)</p>
+    <p class="parrafo">En la página 60, artículo 43, apartado 6:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«6.   La autoridad de control hará públicos los requisitos a que se refiere el apartado 3 del presente artículo y los criterios a que se a refiere el artículo 42, apartado 5, en una forma fácilmente accesible. Las autoridades de control comunicarán también dichos requisitos y criterios al Comité. El Comité archivará en un registro todos los mecanismos de certificación y sellos de protección de datos y los pondrá a disposición pública por cualquier medio apropiado.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«6.   La autoridad de control hará públicos los requisitos a que se refiere el apartado 3 del presente artículo y los criterios a que se a refiere el artículo 42, apartado 5, en una forma fácilmente accesible. Las autoridades de control comunicarán también dichos requisitos y criterios al Comité.».</p>
+    <p class="parrafo">13)</p>
+    <p class="parrafo">En la página 69, artículo 57, apartado 1, letra p):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«p)</p>
+    <p class="parrafo">elaborar y publicar los criterios para la acreditación de organismos de supervisión de los códigos de conducta con arreglo al artículo 41 y de organismos de certificación con arreglo al artículo 43;»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«p)</p>
+    <p class="parrafo">elaborar y publicar los requisitos para la acreditación de organismos de supervisión de los códigos de conducta con arreglo al artículo 41 y de organismos de certificación con arreglo al artículo 43;».</p>
+    <p class="parrafo">14)</p>
+    <p class="parrafo">En la página 74, artículo 64, apartado 1, letra c):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«c)</p>
+    <p class="parrafo">tenga por objeto aprobar los criterios aplicables a la acreditación de un organismo con arreglo al artículo 41, apartado 3, o un organismo de certificación conforme al artículo 43, apartado 3;»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«c)</p>
+    <p class="parrafo">tenga por objeto aprobar los requisitos para la acreditación de un organismo con arreglo al artículo 41, apartado 3, de un organismo de certificación conforme al artículo 43, apartado 3, o los criterios aplicables a la certificación a que se refiere el artículo 42, apartado 5;».</p>
+    <p class="parrafo">15)</p>
+    <p class="parrafo">En la página 74, artículo 64, apartados 6, 7 y 8:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«6.   La autoridad de control competente no adoptará su proyecto de decisión a tenor del apartado 1 en el plazo mencionado en el apartado 3.</p>
+    <p class="parrafo">7.   La autoridad de control contemplada en el artículo 1 tendrá en cuenta en la mayor medida posible el dictamen del Comité y, en el plazo de dos semanas desde la recepción del dictamen, comunicará por medios electrónicos al presidente del Comité si va a mantener o modificar su proyecto de decisión y, si lo hubiera, el proyecto de decisión modificado, utilizando un formato normalizado.</p>
+    <p class="parrafo">8.   Cuando la autoridad de control interesada informe al presidente del Comité, en el plazo mencionado en el apartado 7 del presente artículo, de que no prevé seguir el dictamen del Comité, en todo o en parte, alegando los motivos correspondientes, se aplicará el artículo 65, apartado 1.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«6.   La autoridad de control competente a que se refiere el apartado 1 no adoptará su proyecto de decisión a tenor del apartado 1 en el plazo mencionado en el apartado 3.</p>
+    <p class="parrafo">7.   La autoridad de control competente a que se refiere el apartado 1 tendrá en cuenta en la mayor medida posible el dictamen del Comité y, en el plazo de dos semanas desde la recepción del dictamen, comunicará por medios electrónicos al presidente del Comité si va a mantener o modificar su proyecto de decisión y, si lo hubiera, el proyecto de decisión modificado, utilizando un formato normalizado.</p>
+    <p class="parrafo">8.   Cuando la autoridad de control competente a que se refiere el apartado 1 informe al presidente del Comité, en el plazo mencionado en el apartado 7 del presente artículo, de que no prevé seguir el dictamen del Comité, en todo o en parte, alegando los motivos correspondientes, se aplicará el artículo 65, apartado 1.».</p>
+    <p class="parrafo">16)</p>
+    <p class="parrafo">En la página 74, artículo 65, apartado 1, letra a):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«a)</p>
+    <p class="parrafo">cuando, en un caso mencionado en el artículo 60, apartado 4, una autoridad de control interesada haya manifestado una objeción pertinente y motivada a un proyecto de decisión de la autoridad principal, o esta haya rechazado dicha objeción por no ser pertinente o no estar motivada. […]»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«a)</p>
+    <p class="parrafo">cuando, en un caso mencionado en el artículo 60, apartado 4, una autoridad de control interesada haya manifestado una objeción pertinente y motivada a un proyecto de decisión de la autoridad de control principal y esta no haya seguido la objeción o haya rechazado dicha objeción por no ser pertinente o no estar motivada. […]».</p>
+    <p class="parrafo">17)</p>
+    <p class="parrafo">En la página 76, artículo 69, apartado 2:</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«2.   Sin perjuicio de las solicitudes de la Comisión contempladas en el artículo 70, apartado 1, letra b), y apartado 2, el Comité no solicitará ni admitirá instrucciones de nadie en el desempeño de sus funciones o el ejercicio de sus competencias.»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«2.   Sin perjuicio de las solicitudes de la Comisión contempladas en el artículo 70, apartados 1 y 2, el Comité no solicitará ni admitirá instrucciones de nadie en el desempeño de sus funciones o el ejercicio de sus competencias.».</p>
+    <p class="parrafo">18)</p>
+    <p class="parrafo">En la página 77, artículo 70, apartado 1, letra l):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«l)</p>
+    <p class="parrafo">examinará la aplicación práctica de las directrices, recomendaciones y buenas prácticas a que se refieren las letras e) y f);»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«l)</p>
+    <p class="parrafo">examinará la aplicación práctica de las directrices, recomendaciones y buenas prácticas;».</p>
+    <p class="parrafo">19)</p>
+    <p class="parrafo">En la página 77, artículo 70, apartado 1, letra o):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«o)</p>
+    <p class="parrafo">realizará la acreditación de los organismos de certificación y su revisión periódica en virtud del artículo 43, y llevará un registro público de los organismos acreditados en virtud del artículo 43, apartado 6, y de los responsables o los encargados del tratamiento acreditados establecidos en terceros países en virtud del artículo 42, apartado 7;»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«o)</p>
+    <p class="parrafo">aprobará los criterios de certificación en virtud del artículo 42, apartado 5, y llevará un registro público de los mecanismos de certificación y sellos y marcas de protección de datos en virtud del artículo 42, apartado 8, y de los responsables o los encargados del tratamiento certificados establecidos en terceros países en virtud del artículo 42, apartado 7;».</p>
+    <p class="parrafo">20)</p>
+    <p class="parrafo">En la página 77, artículo 70, apartado 1, letra p):</p>
+    <p class="parrafo">donde dice:</p>
+    <p class="parrafo">«p)</p>
+    <p class="parrafo">especificará los requisitos contemplados en el artículo 43, apartado 3, con miras a la acreditación de los organismos de certificación en virtud del artículo 42;»,</p>
+    <p class="parrafo">debe decir:</p>
+    <p class="parrafo">«p)</p>
+    <p class="parrafo">aprobará los requisitos contemplados en el artículo 43, apartado 3, con miras a la acreditación de los organismos de certificación a los que se refiere el artículo 43;».</p>
+  </texto>
+</documento>

@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,service_id,date,exception_type
+ORIG-CALENDAR_DATES-001,SYN-CS-01-CALENDAR_DATES,elaboración sintética documentada,Excepción ficticia para demostrar la relación con el calendario base.,SV-ALL,20261225,2

@@ -1,0 +1,4 @@
+source_record_id,source_reference,source_method,source_note,network_id,route_id
+ORIG-ROUTE_NETWORKS-001,SYN-CS-01-ROUTE_NETWORKS,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.,NET-CS-01,R-01
+ORIG-ROUTE_NETWORKS-002,SYN-CS-01-ROUTE_NETWORKS,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.,NET-CS-01,R-02
+ORIG-ROUTE_NETWORKS-003,SYN-CS-01-ROUTE_NETWORKS,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.,NET-CS-01,R-FLEX

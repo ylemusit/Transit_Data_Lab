@@ -305,6 +305,10 @@ def validate_field_contract(
                             _fail(f"malformed enum option for {name}.{field_name}")
                         if option["value"] in values:
                             _fail(f"duplicate enum option for {name}.{field_name}: {option['value']}")
+                        if payload.get("normalization_revision") == "1.1.0":
+                            pattern = r"[a-z][a-z0-9_]*" if (name, field_name) == ("translations.txt", "table_name") else r"[0-9]+"
+                            if not re.fullmatch(pattern, option["value"]):
+                                _fail(f"invalid normalized enum token for {name}.{field_name}")
                         values.add(option["value"])
                 if allowed_status == "DEFINED_BY_FIELD_REFERENCE":
                     reference = field.get("allowed_values_reference")

@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,from_leg_group_id,to_leg_group_id,transfer_count,duration_limit,duration_limit_type,fare_transfer_type,fare_product_id
+ORIG-FARE_TRANSFER_RULES-001,SYN-CS-01-FARE_TRANSFER_RULES,elaboración sintética documentada,Ventana y tratamiento de transferencia de demostración.,LG-FLAT,LG-FLAT,1,3600,0,0,

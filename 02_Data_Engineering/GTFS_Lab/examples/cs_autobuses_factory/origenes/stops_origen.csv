@@ -1,0 +1,9 @@
+source_record_id,source_reference,source_method,source_note,stop_id,stop_name,stop_lat,stop_lon,location_type,parent_station,level_id,platform_code
+ORIG-STOPS-001,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-TERM,CS-01 · Intercambiador,39.000000,-4.000000,1,,,
+ORIG-STOPS-002,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-ENT,CS-01 · Entrada intercambiador,39.000050,-4.000050,2,CS-TERM,LV-0,
+ORIG-STOPS-003,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-PLAT,CS-01 · Andén A,39.000100,-4.000100,0,CS-TERM,LV-1,A
+ORIG-STOPS-004,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-PLAZA,CS-01 · Plaza Cívica,39.002000,-4.002000,0,,,
+ORIG-STOPS-005,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-HOSP,CS-01 · Centro Sanitario,39.004000,-4.003000,0,,,
+ORIG-STOPS-006,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-UNI,CS-01 · Campus,39.006000,-4.001000,0,,,
+ORIG-STOPS-007,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-MERC,CS-01 · Mercado,39.003000,-3.998000,0,,,
+ORIG-STOPS-008,SYN-CS-01-STOPS,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.,CS-PARQ,CS-01 · Parque,39.001000,-3.997000,0,,,

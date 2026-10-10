@@ -1,0 +1,2 @@
+# Local PDF visual QA only; not a production renderer dependency.
+PyMuPDF==1.28.2
