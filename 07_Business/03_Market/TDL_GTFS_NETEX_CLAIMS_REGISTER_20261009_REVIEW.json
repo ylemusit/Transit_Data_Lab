@@ -1,0 +1,44 @@
+{
+  "result": "PASS_WITH_LIMITATIONS",
+  "date": "2026-10-09",
+  "task": "TDL-AUD-22",
+  "claims": 10,
+  "claim_ids": [
+    "TDL-CLAIM-01",
+    "TDL-CLAIM-02",
+    "TDL-CLAIM-03",
+    "TDL-CLAIM-04",
+    "TDL-CLAIM-05",
+    "TDL-CLAIM-06",
+    "TDL-CLAIM-07",
+    "TDL-CLAIM-08",
+    "TDL-CLAIM-09",
+    "TDL-CLAIM-10"
+  ],
+  "states": {
+    "DISPONIBLE COMO MEDICIÓN INTERNA DEL BANCO": 1,
+    "DISPONIBLE COMO REPLAY DELIMITADO": 1,
+    "DISPONIBLE COMO SEGUIMIENTO INTERNO SINTÉTICO": 1,
+    "DISPONIBLE INTERNAMENTE, CASOS ACOTADOS": 1,
+    "DISPONIBLE INTERNAMENTE, PORTABILIDAD DOCUMENTAL ACOTADA": 1,
+    "EN DESARROLLO": 4,
+    "PREVISTA, SIN CAPACIDAD ACREDITADA": 1
+  },
+  "local_links_checked": 11,
+  "evidence_references": 11,
+  "all_claims_external_use": "NO",
+  "business_phase_3": "IN_PROGRESS",
+  "phase_4": "NOT_STARTED",
+  "external_contact": "NOT_AUTHORIZED",
+  "capability_baseline_v1": "FROZEN",
+  "sha256_of_modified_documents": {
+    "07_Business/03_Market/TDL_GTFS_NETEX_CLAIMS_REGISTER_20261009.md": "aa176b5ac3ad4641d57f5076ec130e175811a947ffccfa0c7fc6e3e2c70ce3fa",
+    "07_Business/README.md": "07cfd867c41f94ce1113ffce1fdb3694f1ccf7342f01642c04fc8e21b79f76de",
+    "07_Business/BUSINESS_STATUS.md": "b89f538a47b29fe2bddc56c20067e92400efdb538425cbd532612a82a045be08"
+  },
+  "limitations": [
+    "Audience and market claims remain hypotheses where noted.",
+    "No demand, price, savings, certification, leadership, complete coverage or customer acceptance proven.",
+    "No external use or contact authorized."
+  ]
+}

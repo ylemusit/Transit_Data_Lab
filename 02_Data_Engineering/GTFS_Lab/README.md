@@ -8,6 +8,10 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 
 ## Estado implementado
 
+- E2E sintético de extremo a extremo desde Frabica_GTFS hasta auditoría y entrega PDF/XLSX/KMZ: `python -m tools.factory_client_e2e --professional` (más rutas de fábrica/salida). Runner 1.7.0: evidencia final R14 con `E2E_PASS`, 20/20 controles, G03 FIELD-TYPE 1.1.0, inventario exacto, input preservado y escaneo de texto/PDF/XLSX/KMZ. El renderer portátil usa dependencias Python fijadas. Demo preparada con límites; emisión real requiere fuente autorizada y revisión humana. [Cierre y reproducción](docs/CS_AUTOBUSES_REMEDIATION_20261010.md) · [Alcance](docs/CS_AUTOBUSES_FACTORY_E2E_V1.md) · [Riesgos](docs/CS_AUTOBUSES_E2E_RISK_REGISTER_V1.md). Frabica_GTFS conserva su independencia; aceptación NAP y readiness comercial se evalúan por separado.
+
+- Entrega profesional aditiva desde ejecución sellada: `python -m gtfs_lab.client_workflow present --help`. Modelo común, decisiones explícitas, PDF/libro/KMZ, cobertura pendiente e integridad de revisión. [Reproducción](docs/PROFESSIONAL_AUDIT_V1.md). Aceptación visual GIS y emisión humana separadas.
+
 - GTFS Productization / Client Audit Workflow V1 está en implementación aislada. Contrato, design review, entrypoint local `python -m gtfs_lab.client_workflow` y gates/evidencia sintética se describen en el [diseño y contrato](reports/TDL_GTFS_CLIENT_AUDIT_WORKFLOW_V1_DESIGN_AND_CONTRACT.md); el estado vigente y límites están en [PROJECT_STATUS](../../PROJECT_STATUS.md). No declara readiness comercial.
 
 - GTFS Audit Engine V1 está `PASS / CLOSED` desde el 2026-10-01 para el alcance técnico documentado. G08–G11 están cerrados; PR #29 y CI post-merge PASS constan en [PROJECT_STATUS.md](../../PROJECT_STATUS.md). La decisión humana final y sus límites se detallan en el [cierre G11](reports/TDL_GTFS_AUDIT_ENGINE_V1_G11_CLOSURE_REVIEW_20261001.md) y el [registro machine-readable](reports/evidence/g11_closure_candidate.json). HOLDOUT no se accedió, M02 no cambió y no se inició ningún track posterior.
@@ -25,6 +29,10 @@ Laboratorio de datos GTFS del proyecto global Transit Data Lab. Es distinto del 
 En M02, `findings.normalized.json` describe solo la normalización: `NORMALIZED` no significa que la auditoría esté aceptada. Solo la existencia de `audit_manifest.json` validado contra M01 1.1.2 representa aceptación Trust. Cada `finding.evidence.source_sha256` debe coincidir con el SHA-256 del dataset; los hashes extranjeros se rechazan como `REJECTED_FINDING_SOURCE_MISMATCH` y el pipeline falla cerrado. Si falta ese campo, se completa con el hash del dataset actual.
 
 GTFS-RT y SIRI quedan fuera de GTFS_Lab V1; NeTEx pertenece al laboratorio Compliance separado. El resultado técnico V1 no acredita cumplimiento jurídico ni auditoría de operadores.
+
+## Complemento comercial R4
+
+El procedimiento R4, documentado en el expediente privado, genera un informe de transporte y atlas PyQGIS local desde los seis casos revisados R3, preservando el informe técnico. Presenta la matriz completa y las brechas normativas con evidencia y soluciones; no declara cumplimiento legal ni incorpora nuevas reglas al motor congelado. CLI aditivo `python -m gtfs_lab.commercial_audit`; revisión y emisión humana pendientes.
 
 ## Inspección segura
 

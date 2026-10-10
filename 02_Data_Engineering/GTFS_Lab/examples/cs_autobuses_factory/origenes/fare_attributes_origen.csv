@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,fare_id,price,currency_type,payment_method,transfers,agency_id,transfer_duration
+ORIG-FARE_ATTRIBUTES-001,SYN-CS-01-FARE_ATTRIBUTES,elaboración sintética documentada,Importe ficticio de demostración; no representa una tarifa aprobada.,FARE-URBANA,1.50,EUR,0,1,CSA-001,3600

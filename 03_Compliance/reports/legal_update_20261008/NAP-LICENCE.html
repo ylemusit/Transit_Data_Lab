@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5PP6ZP7');</script>
+	<!-- End Google Tag Manager -->
+	<script type="text/javascript">
+		var baseUrlMapa = 'https://nap-map.transportes.gob.es/map';
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/ico" href="/images/favicon.ico" />
+	
+    <title>Licencia de uso datos | NAP</title>
+    <meta name="description" content="Muestras Licencia de datos abiertos del Transportes y Movilidad Sostenible" />
+    <meta name="keywords" content="NAP, PAN, transporte, portal de datos, MITMA, Fomento, datos, licencia, movilidad, agenda urbana, " />
+    <meta name="author" content="MITRAMS" />
+    <meta name="copyright" content="MITRAMS 2020" />
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/main.css?v=cJHoxI2QIozgcmWASs2_lyxyUqCId2oyjrRXcsDrF5M">
+	<link rel="stylesheet" href="/css/backend.css?v=iKt2i245l8cmprsXHJqS1-GvBuXeAkRcjm0MuUlMrkc">
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+	<script src="/js/main.js?v=k7js8EhZGnaqxuzVD8O-dqYf06zTP8s5XXz_ltdWAAQ"></script>
+	
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript)
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PP6ZP7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="page-container">
+		<header role="banner">
+			<nav class="navbar navbar-expand-lg navbar-light d-md-none flex-column" style="background-color: #f2f3f3; ">
+				<div class="d-flex flex-column w-100">
+
+						<div class="d-flex justify-content-between align-items-center">
+							<button class="navbar-toggler btn-cabecera-responsive" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+								<div class="icono-animado"><span></span><span></span><span></span></div>
+							</button>
+
+							<div>
+								<img class="logo" src="/images/Logotipo_del_Ministerio_de_Transportes_y_Movilidad_Sostenible.svg" alt="Gobieno de España / Ministerio de Transportes y Movilidad Sostenible">
+								<img class="icono-Nap" src="/images/logonap.svg" alt="NAP Tranporte Multimodal">
+							</div>
+
+							<div class="content-menu d-flex">
+								<a class="nav-link item-nav-login d-flex flex-column" href="/Account/Login">
+									<span class="fa fa-sign-in fa-3x"></span>
+									<span class="d-none d-sm-block">Identificarse</span>
+								</a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse text-left" id="navbarNavAltMarkup">
+							<div class="navbar-nav">
+								<a class="nav-item nav-link active" href="/"><span class="fa fa-home fa-lg" aria-hidden="true" style="margin-right: 5px;"></span> Home <span class="sr-only">(current)</span></a>
+								<a class="nav-item nav-link" href="/Account/Login"><span class="fa fa-sign-in fa-lg mr-1" aria-hidden="true"></span> Identificarse</a>
+								<a class="nav-item nav-link" href="/Account/SignIn"><span class="fa fa-pencil-square-o fa-lg" aria-hidden="true" style="margin-right: 5px;"></span> Registrarse</a>
+							</div>
+						</div>
+				</div>
+			</nav>
+			<div class="container d-none d-md-block">
+				<div class="row">
+					<!-- Header con el logo junto -->
+					<!-- <div class="col-sm-7 container-logo">
+					  <a href="">
+						<img class="logo" src="images/mitma-v1.png" alt="logotipo del ministerio y  NAP">
+					  </a>
+					</div> -->
+					<!-- header con el logo separado -->
+					<div class="col-sm-7 container-logo">
+						<a href="https://www.transportes.gob.es/">
+							<img class="logo" src="/images/Logotipo_del_Ministerio_de_Transportes_y_Movilidad_Sostenible.svg" alt="Gobieno de España / Ministerio de Transportes y Movilidad Sostenible">
+						</a>
+						<a href="/">
+							<img class="icono-Nap" src="/images/logonap.svg" alt="NAP Tranporte Multimodal">
+						</a>
+					</div>
+
+						<!-- cuando estas sin registrar -->
+						<div class="col-sm-5 list-nav">
+							<ul class="nav justify-content-center nav-pills" role="menubar">
+								<li class="nav-item " role="menuitem">
+									<a class="nav-link item-nav identificate" href="/Account/Login">
+										<i class="fa fa-sign-in" aria-hidden="true"></i>
+										Identificarse
+									</a>
+								</li>
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div class="banda-color"></div>
+		</header>
+		<main role="main">
+			<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb container-breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Licencia de uso de datos</li>
+        </ol>
+    </nav>
+
+    <div class="main-text">
+        <div class="row texto-pags-footer">
+            <div class="col-sm-12">
+                <h2 class="h2-pags-footer">Licencia de datos abiertos del Ministerio de Transportes y Movilidad Sostenible</h2>
+            </div>
+            <div class="col-sm-12">
+                <p>
+                    La presente Licencia de datos abiertos del Ministerio de Transportes y Movilidad Sostenible (en adelante, LDA) regula
+                    la reutilización de los datos abiertos del Ministerio de Transportes y Movilidad Sostenible (en adelante, MITRAMS) en las
+                    condiciones fijadas en este documento. Por la misma queda vinculada la persona, empresa, organización o entidad (en adelante,
+                    agente reutilizador) que va a hacer uso de los documentos contenidos o descritos en la presente licencia o de cualquier dato derivado
+                    del mismo y que sean definidos como datos de carácter abierto del MITRAMS.
+                </p>
+                <p>
+                    Las presentes condiciones generales definidas en esta licencia permiten la reutilización de los documentos sometidos a ellas
+                    para fines comerciales y no comerciales
+                </p>
+                <p>
+                    El concepto de documento es el recogido en el Anexo de la Ley 37/2007, añadido por el art. único.13 de la Ley 18/2015, de 9 de julio de 16 de noviembre,
+                    sobre reutilización de la información del sector público, por lo que comprende toda información o parte de ella, cualquiera que sea su soporte o forma
+                    de expresión, sea esta textual, gráfica, sonora, visual o audiovisual, incluyendo los metadatos asociados y los datos contenidos con los niveles más
+                    elevados de precisión y desagregación. No se considerarán documentos los programas informáticos que estén protegidos por la legislación específica aplicable a los mismos.
+                </p>
+                <p>
+                    Se entiende por reutilización el uso de documentos que obran en poder de las Administraciones y organismos del sector público (referido en el
+                    artículo 2 de la modificación por la disposición final 13.1 de la Ley 9/2017, de 8 de noviembre a la precitada Ley 37/2007) por personas físicas
+                    o jurídicas, con fines comerciales o no comerciales, siempre que dicho uso no constituya una actividad administrativa pública. Queda excluido de
+                    este concepto el intercambio de documentos entre Administraciones y organismos del sector público en el ejercicio de las funciones públicas que
+                    tengan atribuidas. La reutilización autorizada incluye, a modo ilustrativo, actividades como la copia, difusión, modificación, adaptación,
+                    extracción, reordenación y combinación de la información.
+                </p>
+                <p>
+                    Esta autorización conlleva, asimismo, la cesión gratuita y no exclusiva de los derechos de propiedad intelectual, en su caso, correspondientes a
+                    tales documentos, autorizándose la realización de actividades de reproducción, distribución, comunicación pública o transformación, necesarias
+                    para desarrollar la actividad de reutilización autorizada, en cualquier modalidad y bajo cualquier formato, para todo el mundo y por el plazo
+                    máximo permitido por la Ley.
+                </p>
+                <p>
+                    La presente licencia debe ser entendida pues como una licencia-tipo de las previstas en la letra b) del apartado 2 del artículo 4 de la precitada
+                    Ley 37/2007, modificada por el art. único.2 de la Ley 18/2015, de 9 de julio.
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <h3 class="h3-pags-footer">Ámbito</h3>
+                <p>
+                    La LDA autoriza a:
+                </p>
+                <ol role="menubar" class="numbered-list only-1-colum">
+                    <li class="li-decoration" role="menuitem">
+                        Descargar datos del MITRAMS.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        Compartir (copiar, distribuir) los datos anteriores y obtenidos del MITRAMS ofreciendo los datos bajo el mismo tipo de licencia.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        Los datos generados por el sector público pueden utilizarse como materia prima para servicios
+                        de valor añadido y productos innovadores que impulsan la economía. En consecuencia, las obras derivadas añadiendo valor pueden ofrecerse
+                        bajo licencias diferentes.
+                    </li>
+                </ol>
+            </div>
+            <div class="col-sm-12">
+                <h3 class="h3-pags-footer">Restricciones</h3>
+                <p>
+                    Son de aplicación las siguientes restricciones a las condiciones generales para la reutilización de los documentos sometidos a ellas:
+                </p>
+                <ol role="menubar" class="numbered-list">
+                    <li class="li-decoration" role="menuitem">
+                        El agente reutilizador tiene expresamente prohibido desnaturalizar el sentido de la información, estando obligado a:
+                        <ol type="a" class="colum1 numbered-list2" role="menubar">
+                            <li class="li-decoration2" role="menuitem">No manipular con mala fe ni falsear la información.</li>
+                            <li class="li-decoration2" role="menuitem">
+                                Garantizar que la información mostrada en su sistema esté siempre
+                                actualizada.
+                            </li>
+                            <li class="li-decoration2" role="menuitem">
+                                No utilizar la información para menoscabar o dañar la imagen pública del MITRAMS.
+                            </li>
+                            <li class="li-decoration2" role="menuitem">
+                                No utilizar la información en sitios en los que la información del MITRAMS pueda
+                                relacionarse con actos ilegales o intenciones de sabotaje hacia el MITRAMS o hacia otras entidades, organizaciones o personas.
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        Debe citarse al MITRAMS como fuente de datos, especificando si son datos en bruto o explotados. En plataformas digitales;
+                        webs, foros, blogs, apps, etc…debe quedar claramente la indicación “Powered by MITRAMS" incluyendo enlace a la página
+                        oficial del MITRAMS (https://www.transportes.gob.es//)
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        Deben conservarse, no alterarse ni suprimirse, los metadatos sobre la fecha de actualización y las condiciones de
+                        reutilización aplicables incluidos, en su caso, como atributos complementarios a la información puesta a disposición para su reutilización.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        No se podrá indicar, insinuar o sugerir que el MITRAMS, como titular de la información reutilizada, participa, patrocina o apoya
+                        expresamente el producto final del agente reutilizador, salvo que el MITRAMS así lo autorice.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        MITRAMS monitorizará el acceso realizado por parte de los sistemas del agente reutilizador. Si se detectara un acceso indebido o abusivo
+                        de modo que pudiera penalizar los recursos de los sistemas de MITRAMS y comprometer la disponibilidad de los mismos por colapso o retardo, MITRAMS
+                        podrá bloquear el acceso al identificador del agente reutilizador.
+                    </li>
+                </ol>
+            </div>
+            <div class="col-sm-12">
+                <h3 class="h3-pags-footer">Garantías y responsabilidades</h3>
+                <ol role="menubar" class="numbered-list">
+                    <li class="li-decoration" role="menuitem">
+                        Cada parte manifiesta y garantiza que tiene pleno poder para suscribir el presente Acuerdo.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        MITRAMS se reserva el derecho de poder incluir cualquier modificación en sus sistemas de Datos Abiertos,
+                        tanto en su interfaz de acceso y uso, como en su contenido y diseño. El agente reutilizador deberá realizar la
+                        actualización y adaptación de su sistema para una correcta integración con la información de MITRAMS.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        MITRAMS garantiza que posee plenos derechos sobre la titularidad y veracidad de los datos susceptibles de cesión a los que permite el acceso.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        La utilización de los conjuntos de datos se realizará por parte del agente de reutilización bajo su propia cuenta
+                        y riesgo, correspondiéndoles en exclusiva a ellos responder frente a terceros por los daños que pudieran derivarse de ella.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        MITRAMS no será responsable del uso que de su información hagan los agentes reutilizadores ni tampoco de los daños sufridos o
+                        pérdidas económicas que, de forma directa o indirecta, produzcan o puedan producir perjuicios económicos, materiales o sobre datos,
+                        provocados por el uso de la información reutilizada.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        MITRAMS no garantiza la continuidad en la puesta a disposición de la información reutilizable, ni en contenido ni en forma,
+                        ni asume responsabilidades por cualquier error u omisión contenido en ellos.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        Los datos se proporcionan tal y cómo están. No se puede garantizar que todos los datos sean estrictamente correctos. Cualquier perjuicio
+                        que pudiera producir a un tercero por el uso de datos que no sean estrictamente correctos no podrá ser imputado al MITRAMS. La aceptación de
+                        las condiciones de esta LDA exime de esta responsabilidad al MITRAMS.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        El agente reutilizador se halla sometido a la normativa aplicable en materia de reutilización de la información del sector
+                        público, incluyendo el régimen sancionador previsto en el artículo 11 de la Ley 37/2007, de 16 de noviembre, sobre reutilización
+                        de la información del sector público. El incumplimiento de esta licencia podría dar lugar a acciones restrictivas por parte del MITRAMS.
+                    </li>
+                    <li class="li-decoration" role="menuitem">
+                        La ley aplicable en caso de disputa o conflicto de interpretación de los términos que configuran este aviso legal, será la ley
+                        española. Para la resolución de cualquier conflicto que pudiera surgir, el MITRAMS y el usuario de los servicios de puesta a disposición
+                        de los documentos reutilizables acuerdan someterse a los Jueces y Tribunales de Madrid.
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="row texto-pags-footer">
+            <div class="col-sm-12">
+                <h2 class="h2-pags-footer"></h2>
+            </div>
+            <div class="col-sm-12">
+                <p>
+                    La presente licencia se entenderá sin perjuicio de las restricciones, garantías y responsabilidades que, en su caso, pudieran haber sido establecidas
+                    por la licencia de uso de datos de la fuente original de la que proviene cada conjunto de datos recogido en el Punto de Acceso Nacional de Transporte
+                    Multimodal, que también serán de aplicación, prevaleciendo en caso de discrepancia la más restrictiva de ambas licencias.
+                </p>
+
+            </div>
+        </div>
+    </div>
+		</main>
+		<div class="space"></div>
+		<div id="footer-container">
+			<div class="banda-color"></div>
+			<footer class="footer">
+				<div class="box-icon-footer align-self-end">
+					<img class="icono-footer" src="/images/logoplanonap.svg" alt="Logotipo ministerio de transporte">
+				</div>
+				<div class="container">
+					<div class="row containerFooter">
+						<div class="col-6 col-sm-5 footer-nav">
+							<ul role="menubar">
+								<li role="menuitem">
+									<a class="" href='/quienes-somos'>Quiénes somos</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/quiero-participar'>Quiero Participar</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/contacto'>Contacto</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/documentos-interes'>Documentos de interés</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-6 col-sm-7 footer-nav">
+							<ul role="menubar">
+								<li role="menuitem">
+									<a class="" href='/faqs'>FAQs</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/licencia-datos'>Licencia de datos</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/condiciones-uso'>Condiciones de uso</a>
+								</li>
+								<li role="menuitem">
+									<a class="" href='/entidades-colaboradoras'>Entidades colaboradoras</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="reFooter d-flex flex-nowrap">
+					<p class="d-flex flex-nowrap">Gobierno de España - Ministerio de Transportes y Movilidad Sostenible - NAP</p>
+				</div>
+			</footer>
+			<a href="" class="up">
+				<span class="sr-only">Subir al encabezado de la página </span>
+				<span class="fa fa-arrow-up" aria-hidden="true"></span>
+			</a>
+		</div>
+	</div>
+	
+	<div id="antiforgery-token" hidden><input name="__RequestVerificationToken" type="hidden" value="CfDJ8AT2MWC5te5PjToUy01HMLCqVYsP87bBaJ2k_NSJ-MiuzyAyed670b6OI1MOWOn5j_HmTpsPEp5r-igvb9CCkY9iSiFLbLkzGVxDWi_ZVXFIji20gKdIaexmDd6nkmVSi_4gmHy7pdcBxlI_NWxLMLk" /></div>
+	<script src="/js/antiforgery.js?v=3I__LP0dUH6uBvo09ZWe3VA9_HD9h_cNSAtx__ePrkE"></script>
+
+	<div class="lds-dual-ring">
+	</div>
+	<div class="modal fade" id="savingDialog" tabindex="-1" role="dialog" aria-labelledby="savingDialogLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center py-4">
+                <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem;">
+                    <span class="sr-only">Guardando...</span>
+                </div>
+                <p class="mb-0 font-weight-bold">Guardando...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script>
+	$(document).ready(function () {
+		$('.btn-cabecera-responsive').on('click', function () {
+			$('.icono-animado').toggleClass('open');
+		});
+	});
+</script>
+
+</html>

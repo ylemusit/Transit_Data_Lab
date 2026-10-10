@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,leg_group_id,network_id,from_area_id,to_area_id,from_timeframe_group_id,to_timeframe_group_id,fare_product_id,rule_priority
+ORIG-FARE_LEG_RULES-001,SYN-CS-01-FARE_LEG_RULES,elaboración sintética documentada,Reglas de red y franja asociadas al producto sintético.,LG-FLAT,NET-CS-01,,,TF-DIARIO,,FP-URBANO,1

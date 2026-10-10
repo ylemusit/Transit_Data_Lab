@@ -1,0 +1,190 @@
+{
+  "scope": "CS Autobuses synthetic demonstration source; not operator data or external acceptance.",
+  "files": [
+    {
+      "path": "generar_cs_autobuses.py",
+      "bytes": 27983,
+      "sha256": "404014198169f926f30235b6b259c3f27f358e1bdbfd92d9d311e397dd464c87"
+    },
+    {
+      "path": "GUIA_ARCHIVOS_GTFS.md",
+      "bytes": 39949,
+      "sha256": "04499450e3e36b69de50a3fc1149cadf3ff0b2483e06f9420eeeefeef4c4506e"
+    },
+    {
+      "path": "ORIGENES_CS_AUTOBUSES.md",
+      "bytes": 5731,
+      "sha256": "c4e82bec4dbc8d520c5336feb986fc093d83cded1a017a81535c88684adedf58"
+    },
+    {
+      "path": "origenes/agency_origen.csv",
+      "bytes": 345,
+      "sha256": "1a3233ddc59aee5627b8b6c1f6b9a9f07bedcaf1f0ceeca5ca4cb67c1bd54025"
+    },
+    {
+      "path": "origenes/areas_origen.csv",
+      "bytes": 389,
+      "sha256": "e4f5307c4b0861caf4d8feadaa3592d30c29307a5e4b784f0a23d37a3aa834e0"
+    },
+    {
+      "path": "origenes/attributions_origen.csv",
+      "bytes": 357,
+      "sha256": "19309c54cedcefdeb072477fdb44a2d7ee8c50c413b870962ce0852017110ed5"
+    },
+    {
+      "path": "origenes/booking_rules_origen.csv",
+      "bytes": 561,
+      "sha256": "068f3897049f69f1b7bbcffb6a4c6d5e38361b619891fdebba373e5bf266338d"
+    },
+    {
+      "path": "origenes/calendar_dates_origen.csv",
+      "bytes": 266,
+      "sha256": "0e15ba02d636e0afef722378c769e36971d8e17dd25cc8aafcfc5be07799baaa"
+    },
+    {
+      "path": "origenes/calendar_origen.csv",
+      "bytes": 321,
+      "sha256": "06d637e5bddf44642351cce72981544bb94978bda7b864a8c7963bc936867593"
+    },
+    {
+      "path": "origenes/catalogo_fuentes.csv",
+      "bytes": 8150,
+      "sha256": "1eb7ab31509bc3ead9611319e41bb1b89626adaf97d94bb83df814a85fb482a3"
+    },
+    {
+      "path": "origenes/fare_attributes_origen.csv",
+      "bytes": 336,
+      "sha256": "8e564d51433beee0b3afc39b3f45df9648fd3f4c9acf1a8793e6eea1116ea943"
+    },
+    {
+      "path": "origenes/fare_leg_join_rules_origen.csv",
+      "bytes": 276,
+      "sha256": "e7daa712e66598b70f42410f6d1fc5a7105476e645bbf23c3728647123a1cab3"
+    },
+    {
+      "path": "origenes/fare_leg_rules_origen.csv",
+      "bytes": 369,
+      "sha256": "65f527f946fcc95beb3e4798030403a1e313531f0d1d8e06ef591b7dc3909e8b"
+    },
+    {
+      "path": "origenes/fare_media_origen.csv",
+      "bytes": 475,
+      "sha256": "d3ccae9a72932a397349949ed33fbfe1ffcc1dea0195c3958188edd9d3b1999e"
+    },
+    {
+      "path": "origenes/fare_products_origen.csv",
+      "bytes": 528,
+      "sha256": "fe30d428f4bb9c092dd723f478c6d0c4d4fb77593e9fd5b251c164a91cde55a1"
+    },
+    {
+      "path": "origenes/fare_rules_origen.csv",
+      "bytes": 554,
+      "sha256": "7cafb390166aad6b6382e72d743d1db2d7eb90c77c1ec126d04ac2c7c4b781bc"
+    },
+    {
+      "path": "origenes/fare_transfer_rules_origen.csv",
+      "bytes": 359,
+      "sha256": "7a99fa5adb55f28ee152d1a25d1e1285c0a969568b928fcc5bd30157c07202d4"
+    },
+    {
+      "path": "origenes/feed_info_origen.csv",
+      "bytes": 471,
+      "sha256": "edd098424d382ece39bc585561a7251a7e7f6d8624b51670b7398a769905ec76"
+    },
+    {
+      "path": "origenes/frequencies_origen.csv",
+      "bytes": 268,
+      "sha256": "e5a1dd9fce9e9a0a922a8f9d4e4713449fc78b9c25770e0059609bfd6708f4fc"
+    },
+    {
+      "path": "origenes/levels_origen.csv",
+      "bytes": 362,
+      "sha256": "1c1a0ab41cd081869645059b21cb8dbfb143f610256f57f72b922a8392bc4d03"
+    },
+    {
+      "path": "origenes/locations_origen.geojson",
+      "bytes": 1060,
+      "sha256": "00f064d69bdd5a4d586239f02817c21005a4fc4e411915790729ba746a858043"
+    },
+    {
+      "path": "origenes/location_groups_origen.csv",
+      "bytes": 275,
+      "sha256": "9278a61b697386717be3901fc502298dfeb4b5496037a517d5775099df2ab99e"
+    },
+    {
+      "path": "origenes/location_group_stops_origen.csv",
+      "bytes": 419,
+      "sha256": "70d04eef0cae072c92b3ddacce9cb02383fd6e765c992afd390daae06b76e574"
+    },
+    {
+      "path": "origenes/networks_origen.csv",
+      "bytes": 249,
+      "sha256": "d455532d452e9d4beaa4fd95d429df649f6bd938d94950caa1adc7e74f214655"
+    },
+    {
+      "path": "origenes/pathways_origen.csv",
+      "bytes": 364,
+      "sha256": "7ed92d2af3351839da48fb20fee6f8c0f3e52f8bfbe1a1bcc20dace8f29c63f7"
+    },
+    {
+      "path": "origenes/procedencia.csv",
+      "bytes": 14507,
+      "sha256": "353a35d60c179e9b7f1f5bcfb7bfb39d915d3f9293cf0ccdfbc116356463b977"
+    },
+    {
+      "path": "origenes/rider_categories_origen.csv",
+      "bytes": 323,
+      "sha256": "fce091e46f650ef8552abf6f9ccd1547bc1a7632fa774375d7aca357984a50e2"
+    },
+    {
+      "path": "origenes/routes_origen.csv",
+      "bytes": 743,
+      "sha256": "7d0b99589c95d96660323ca7b3d25b61a4030c6dacacfe80299e9bec6fb3ddf4"
+    },
+    {
+      "path": "origenes/route_networks_origen.csv",
+      "bytes": 547,
+      "sha256": "8bf9a052447dd4604eb6d0e123720a9638064d97997c47c062719d69caae8f10"
+    },
+    {
+      "path": "origenes/shapes_origen.csv",
+      "bytes": 1233,
+      "sha256": "875331030e5bb93505fde3e01132d863e89cb1b315c9643e7938da9271420062"
+    },
+    {
+      "path": "origenes/stops_origen.csv",
+      "bytes": 1950,
+      "sha256": "61c27f0ed495b60d69adf03d40d2e1afaa47d71221fc3b3af61963ef0c4756d9"
+    },
+    {
+      "path": "origenes/stop_areas_origen.csv",
+      "bytes": 1024,
+      "sha256": "fa21c071222d06ec1e2e6ccc3a6e22598cde0cabedb00293b633eaeebdd38502"
+    },
+    {
+      "path": "origenes/stop_times_origen.csv",
+      "bytes": 2980,
+      "sha256": "d95019bc6485776ea0063c0bd63d680ee148633f6520e8a0d9fe8b3ab4aca5a7"
+    },
+    {
+      "path": "origenes/timeframes_origen.csv",
+      "bytes": 272,
+      "sha256": "89f7a9dcd8983a3f407dde10c5fe049a59f6894672aa6b4f5a87a429d7130339"
+    },
+    {
+      "path": "origenes/transfers_origen.csv",
+      "bytes": 304,
+      "sha256": "9e3fceaf1d8982cbf711cd12c9a40781f5d08fc9d1c4479119e4c46cd9346e4d"
+    },
+    {
+      "path": "origenes/translations_origen.csv",
+      "bytes": 294,
+      "sha256": "927fc4255c40cd683753383a0c88dd270fc6833f7c9da082f4c2341cbbeab145"
+    },
+    {
+      "path": "origenes/trips_origen.csv",
+      "bytes": 1065,
+      "sha256": "6723e6d725f41af85ac31de1607829ec9ba032b90f0af128e44bada7e53e273d"
+    }
+  ]
+}

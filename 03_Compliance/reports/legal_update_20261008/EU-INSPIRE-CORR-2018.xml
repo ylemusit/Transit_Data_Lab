@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20241021221201">
+  <metadatos>
+    <identificador>DOUE-L-2018-81875</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="1590">Corrección (errores o erratas)</rango>
+    <fecha_disposicion/>
+    <numero_oficial/>
+    <titulo>Corrección de errores de la Directiva 2007/2/CE del Parlamento Europeo y del Consejo de 14 de marzo de 2007 por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire).</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20181127</fecha_publicacion>
+    <diario_numero>300</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>13</pagina_inicial>
+    <pagina_final>13</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2018/300/L00013-00013.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia/>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="35" orden="">Acceso a la información</materia>
+      <materia codigo="473" orden="">Bases de datos</materia>
+      <materia codigo="5258" orden="">Ordenación del territorio</materia>
+      <materia codigo="5651" orden="">Políticas de medio ambiente</materia>
+      <materia codigo="5923" orden="">Redes de telecomunicación</materia>
+      <materia codigo="6207" orden="">Unidad Militar de Emergencias</materia>
+    </materias>
+    <notas/>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2007-80587" orden="2120">
+          <palabra codigo="201">CORRECCIÓN de errores</palabra>
+          <texto>de la Directiva 2007/2, de 14 de marzo</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="119" orden="">Medio ambiente</alerta>
+      <alerta codigo="130" orden="">Telecomunicaciones</alerta>
+      <alerta codigo="134" orden="">Unión Europea</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <p>En la página 8, en el artículo 13, apartado 2:</p>
+    <p>donde dice:</p>
+    <p>«Los Estados miembros no podrán limitar, en virtud del apartado 1, letras a), d), f), g) y k), …»,</p>
+    <p> </p>
+    <p>debe decir:</p>
+    <p>«Los Estados miembros no podrán limitar, en virtud del apartado 1, letras a), d), f), g) y h), …».</p>
+  </texto>
+</documento>

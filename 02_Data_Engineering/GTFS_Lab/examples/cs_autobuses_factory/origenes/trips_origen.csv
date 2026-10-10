@@ -1,0 +1,6 @@
+source_record_id,source_reference,source_method,source_note,route_id,service_id,trip_id,trip_headsign,direction_id,shape_id,wheelchair_accessible,bikes_allowed
+ORIG-TRIPS-001,SYN-CS-01-TRIPS,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.,R-01,SV-ALL,T-01-AM,Campus,0,SH-01,,
+ORIG-TRIPS-002,SYN-CS-01-TRIPS,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.,R-01,SV-ALL,T-01-PM,Intercambiador,1,SH-01,,
+ORIG-TRIPS-003,SYN-CS-01-TRIPS,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.,R-02,SV-ALL,T-02-AM,Mercado,0,SH-02,,
+ORIG-TRIPS-004,SYN-CS-01-TRIPS,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.,R-FLEX,SV-ALL,T-FLEX-GROUP,Zona de puntos CS-01,0,,,
+ORIG-TRIPS-005,SYN-CS-01-TRIPS,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.,R-FLEX,SV-ALL,T-FLEX-ZONE,Área flexible CS-01,0,,,

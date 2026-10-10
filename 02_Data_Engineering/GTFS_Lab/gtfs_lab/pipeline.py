@@ -20,9 +20,10 @@ from .ingestion import IngestionError, load_dataset
 from .validation import validate
 from .resource_stages import mark as _mark_stage
 
-def run(zip_path: Path, output_root: Path, route_id: str | None = None, direction_id: str | None = None) -> dict:
+def run(zip_path: Path, output_root: Path, route_id: str | None = None, direction_id: str | None = None,
+        *, g03_type_revision: str = "1.1.0") -> dict:
     _mark_stage("AUDIT", "START")
-    g03_result = inspect_g03_archive(zip_path)
+    g03_result = inspect_g03_archive(zip_path, type_revision=g03_type_revision)
     ctx = load_dataset(zip_path, output_root)
     try:
         result = {

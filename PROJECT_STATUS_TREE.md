@@ -1,6 +1,37 @@
 # Transit Data Lab — mapa de estado vigente
 
-**Actualizado:** 2026-10-07
+**Integración pública — 2026-10-10:** código, tests, fábrica sintética CS Autobuses y documentación sanitizada en integración. Resultados de operadores, entregas y recibos completos conservados fuera de Git. Pruebas portables y CI ampliadas; publicación e integración finales se registrarán tras comprobar su SHA. Los repositorios de GTFS Explorer mantienen su independencia.
+
+**Actualizado:** 2026-10-10
+
+**Limpieza verificada — 2026-10-10:** retirados los diez snapshots sustituidos y las cachés inventariadas: 1.623 archivos (74.152.440 bytes). Hashes contrastados antes de cada borrado; 21 JSON históricos archivados y tres marcadores de mypy conservados. 40 pruebas PASS con candidatos inaccesibles; estado Git y trabajo local preservados.
+
+**E2E de fábrica a auditoría — CS Autobuses, cierre 2026-10-10:** runner 1.7.0, ZIP sintético de 32 archivos, R14 `E2E_PASS` y 20/20 controles. G03 FIELD-TYPE 1.1.0 corregido y reproducción 1.0.0 conservada; auditoría `COMPLETED_WITH_LIMITATIONS`, cero hallazgos en el alcance ejecutado. PDF/XLSX/KMZ completos con renderer portátil; inventario exacto y escaneo de contenido PASS. 121 tests, dos libros abiertos en Excel 16.0 y 40 páginas de QA visual. Demo disponible con límites; emisión real requiere fuente autorizada y revisión humana, GIS sigue pendiente. NAP se evalúa aparte de la auditoría previa a publicación; baseline/readiness comercial sin promoción. [Cierre](02_Data_Engineering/GTFS_Lab/docs/CS_AUTOBUSES_REMEDIATION_20261010.md) · [Riesgos](02_Data_Engineering/GTFS_Lab/docs/CS_AUTOBUSES_E2E_RISK_REGISTER_V1.md).
+
+**Contexto jurídico 2026-10-08:** CLOSED_WITH_EVIDENCE_LIMITS. Capturas completas: 17 fuentes + 6 consolidaciones + 10 congeladas; 33/33 hashes y 38/38 tests PASS. PDF privado corregido de 67 páginas, QA y revisión visual completos, paquete de 95 archivos sellado/verificado. Sin tareas técnicas pendientes; aplicabilidad externa y emisión humana no determinadas. Baselines/readiness/C06 preservados. [Detalle](03_Compliance/LEGAL_CONTEXT_UPDATE_20261008.md).
+
+**Doble entrega y calidad 2026-10-08:** estándar V1 documentado; referencia ejecutiva inicial preservada y nueva entrega conjunta portable comprobada en 07/08. Comprensión con clientes, replay independiente y ampliación GTFS/NeTEx aún no demostrados. Readiness y fases Business sin cambios. [Estándar](reports/TDL_AUDIT_QUALITY_STANDARD_V1.md).
+
+**Backlog GTFS/NeTEx 2026-10-09:** 21/24 tareas completadas en sus alcances; 12/13 implementan reglas opt-in estáticas con tests, sin modificar motores V1. 19/20/23 parciales; sigue pendiente validación externa real y perfil/destino NeTEx. No hay generador, conversor ni publicador de feeds reales integrados como capacidad de producto; el puente sintético Frabica_GTFS→TDL no eleva readiness. Dependencias detalladas en la [brecha de capacidad](reports/TDL_STATIC_GTFS_NETEX_CAPABILITY_GAP_20261009.md). No se cambia la fase Business ni el readiness. [Registro](07_Business/03_Market/TDL_GTFS_NETEX_CLAIMS_REGISTER_20261009.md) · [Lista y evidencia técnica](reports/TDL_AUDIT_IMPROVEMENT_BACKLOG_V1.md) · [Cierre 12/13](reports/audit_battery_v1/TDL_AUD_12_13_IMPLEMENTATION_20261009.md).
+
+**Preparación de producción GTFS↔NeTEx — 2026-10-09:** revisión del inventario 0.2.1: 5 runs/43 artefactos, 14 entradas `gtfs-export-*` acotadas por ruta/servicio y un ZIP; payloads no disponibles en el run inspeccionado. `FULL_FEED_PRODUCER = NOT_VERIFIED`, incluida la baseline 0.2.2. Registro de mappings creado como borrador interno; perfil/destino y decisiones del operador pendientes. No se añade generador, conversor o publicación sin esas entradas. [Evidencia](reports/TDL_STATIC_GTFS_NETEX_CAPABILITY_GAP_20261009.md) · [Registro](reports/GTFS_NETEX_MAPPING_REGISTER_V1.md).
+
+**Segundo bloque 2026-10-08:** TDL-AUD-04/05/06 COMPLETADAS en alcance interno: contrato común, seis casos GTFS con poblaciones verificadas, ejemplo NeTEx histórico, dos no evaluables explicados y método de conclusión/prioridad. 20 pruebas focalizadas PASS; prioridad UNASSESSED cuando falta contexto. Sin nueva ejecución del motor. Integrado en nuevas vistas 07/08. [Valoración](reports/audit_assessment_v1/README.md).
+
+**Cuarto bloque 2026-10-09:** TDL-AUD-09/14 COMPLETADAS en alcance interno: 45 fuentes (44 archivos y EPIP ausente), gestión de autoridad/derechos/versiones/cambios, captura GTFS idéntica a referencia fijada. 114 escenarios y 36 controles representados; 114/114 hechos y 458 dependencias XSD PASS; 75/75 pruebas. Referencia sellada, sin motores/HOLDOUT/promoción. Expectativas del agente autor, no revisión humana independiente; no mide precisión ni cobertura exhaustiva. Continuado con 10/11 y 15 en bloque quinto. [Corpus](reports/audit_corpus_v1/README.md) · [Banco](reports/audit_reference_bank_v1/README.md).
+
+**Quinto bloque 2026-10-09:** 10/11 diseño completado (19 propuestas, 36 controles/108 fixtures, 132 campos/32 archivos, sin implementar nuevas reglas); 15 medición delimitada completada (114 escenarios internos + 96 GTFS externos MobilityData 8.0.1/hash verificado). Once abstenciones, tres detecciones cruzadas y diferencias de normalización/contexto/autoridad conservadas; un caso externo con dos errores secundarios. 88/88 pruebas; 114 RAW, 96 informes y 20 entradas protegidas verificados. Sin HOLDOUT, perfil PASS, precisión universal o elevación de readiness. Siguiente: 12/13 y 16/17. [Baterías](reports/audit_battery_v1/README.md) · [Medición](reports/audit_precision_v1/README.md).
+
+**Sexto bloque 2026-10-09:** 16/17 completadas internamente. Replay FINAL_V3 aislado y offline, 108 escenarios ejecutados + seis candidatos preservados = 114/114 equivalentes; 621 entradas/620 originales y 29 módulos verificados; cero intentos de red/lectura original. Misma máquina/base Python, sin clean-machine ni pipeline completo. Seguimiento lateral: seis casos, ocho eventos, dos resueltos/dos persistentes/dos nuevos; REPORTED_CORRECTED separado de resolución, responsables/fechas propuestos y aceptados distintos. Comunicaciones/aceptaciones simuladas, sin productor real o idoneidad del destino. 103/103 pruebas y CLI PASS; fuentes/motores/contratos/RAW/HOLDOUT intactos. [Replay](reports/audit_replay_v1/README.md) · [Seguimiento](reports/audit_lifecycle_v1/README.md).
+
+**Séptimo bloque 2026-10-09:** TDL-AUD-18 cerrada en aplicación documental; lista previa a emisión aplicada a dos paquetes, sin revisión independiente o autorización humana. TDL-AUD-19 parcial: especificación multi-soporte y prototipo listos; navegador bloqueó `file://`, interacción real pendiente. TDL-AUD-20 parcial: protocolo de usuarios preparado, sin sesiones ni participantes; umbral 4/5 por perfil aún no medido. [Revisión, UX y protocolo](reports/audit_quality_gate_v1/README.md).
+
+**Octavo bloque 2026-10-09:** 21 completada como recorrido interno: ocho etapas, responsables propuestos, entradas/salidas/excepciones/mensajes; dos recorridos GTFS/NeTEx con V1/V2 y decisiones de 17 preservadas. API/CLI aditiva, ocho pruebas PASS; un resuelto/un persistente/un nuevo por formato. Acuerdos/respuestas/aceptaciones simulados; sin nueva auditoría, integración de intake/pantallas o cliente real. [Servicio operativo interno](reports/audit_service_v1/README.md).
+
+**TDL-AUD-23/24 2026-10-09:** validación de valor diseñada, sin evidencia primaria; cuadro documental reproducible y pauta periódica preparados. 23 PARCIAL; 24 COMPLETADA en preparación, sin revisiones humanas recurrentes ni medición comercial. [Gestión de calidad](reports/audit_quality_management_v1/README.md).
+
+**TDL-AUD-22 2026-10-09:** diez afirmaciones auditables, con audiencias, madurez, frase permitida, evidencia/fecha, límites y veto de uso externo; evidencia y capacidades conservadoras, sin tocar la baseline Business V1 congelada. [Registro Market interno](07_Business/03_Market/TDL_GTFS_NETEX_CLAIMS_REGISTER_20261009.md).
+
 **Fuente de detalle:** [PROJECT_STATUS.md](PROJECT_STATUS.md).
 
 **Revisión canónica 2026-10-07:** entorno P: `PASS_WITH_LIMITATIONS`; 34 junctions presentes; 0 rutas C: activas encontradas; suites actuales y prueba sintética con limitaciones. HOLDOUT no accedido. Piloto real externo: NO hasta probar backup/restore separado y autorizar operación externa. [Revisión](reports/PROJECT_INTEGRITY_AND_HEALTH_REVIEW_V1.md) · [Matriz](reports/PROJECT_VALIDATION_MATRIX_V1.md) · [Gaps](reports/PROJECT_GAP_ANALYSIS_V1.md).
@@ -51,6 +82,10 @@ TRANSIT DATA LAB
 │   ├── Interpretation                    ✅ 11 interpreted; 3 partial; 0 unknown / unsupported
 │   ├── Dataset 019                       ⚠ 12m43s; ~18.89 GiB; optimization required
 │   └── HOLDOUT                           ✅ GENERALIZATION_PASS_WITH_LIMITATIONS; PUBLICATION COMPLETE (PR #47; post-merge CI PASS)
+├── AUDIT CASES AND DECISIONS V1          ⚠ IMPLEMENTED LOCALLY; R1 AND R2 CONFORME CON LIMITACIONES
+│   ├── Additive contract                  ✅ V1 schema unchanged; source records / reconciled events separated
+│   ├── Focused verification               ✅ 32/32 focused tests; RUN02 E2E completed
+│   └── Reference package                 ⚠ PRIVATE LOCAL OUTPUT; HUMAN EMISSION REVIEW PENDING
 ├── WINDOWS SELF-SERVICE CLIENT V1       ✅ W02–W08 PASS_WITH_LIMITATIONS; W08_HUMAN_ACCEPTANCE PASS; PR #51 MERGED (37bd5c5; post-merge CI SUCCESS); sin release
 │   ├── W00-R / W00-O / W00-M / W00-P       DIAGNOSTICS COMPLETE / ROOT CAUSE UNKNOWN / SYNTHETIC CAUSE PROBABLE / PASS_WITH_RESOURCE_LIMITATION
 │   ├── Streaming JSON S1/S4/S64            BYTE + SEMANTIC EQUIVALENCE PASS

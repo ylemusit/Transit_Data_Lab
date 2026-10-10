@@ -1,0 +1,3 @@
+source_record_id,source_reference,source_method,source_note,location_group_id,stop_id
+ORIG-LOCATION_GROUP_STOPS-001,SYN-CS-01-LOCATION_GROUP_STOPS,elaboración sintética documentada,Paradas asociadas al grupo flexible de ejemplo.,LG-CS-CENTRO,CS-PLAZA
+ORIG-LOCATION_GROUP_STOPS-002,SYN-CS-01-LOCATION_GROUP_STOPS,elaboración sintética documentada,Paradas asociadas al grupo flexible de ejemplo.,LG-CS-CENTRO,CS-MERC

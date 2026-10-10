@@ -1,0 +1,18 @@
+{
+  "contract": "TDL_AUDIT_VALUE_EVIDENCE_REGISTER/1",
+  "date": "2026-10-09",
+  "task": "TDL-AUD-23",
+  "state": "DESIGN_READY_VALIDATION_NOT_EXECUTED",
+  "external_contact": "NOT_AUTHORIZED",
+  "records": [],
+  "results": {
+    "need": null,
+    "buyer": null,
+    "willingness_to_pay": null,
+    "time_saved": null,
+    "cost_saved": null,
+    "roi": null
+  },
+  "measurement_state": "NOT_MEASURED",
+  "hypothesis_status_changes": "NONE"
+}

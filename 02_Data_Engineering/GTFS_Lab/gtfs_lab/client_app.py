@@ -58,9 +58,10 @@ def result_summary_text(manifest: dict[str, object], interpretation: dict[str, o
         f"Dataset: {identity.get('dataset_id', '—')} · Archivo: {identity.get('source_filename', '—')}\n"
         f"SHA-256: {identity.get('source_sha256', '—')}\n"
         f"Versión cliente: {manifest.get('engine_versions', {}).get('client_application', '—')} · "
-        f"Estado: {manifest.get('status', '—')} · Interpretación: {interpretation.get('interpretation_status', '—')}\n"
+        f"Estado: { {'COMPLETED_WITH_FINDINGS': 'Análisis completado con resultados para revisar', 'COMPLETED': 'Análisis completado', 'COMPLETED_WITH_LIMITATIONS': 'Análisis completado con limitaciones', 'HUMAN_REVIEW_REQUIRED': 'Revisión humana pendiente'}.get(manifest.get('status'), 'Consultar detalle de ejecución')}\n"
         f"Hallazgos brutos: {coverage.get('raw_finding_count', '—')} · Consolidados: {coverage.get('consolidated_occurrence_count', '—')} · "
         f"Sin clasificar: {coverage.get('unclassified_occurrence_count', '—')} · Brecha contable: {coverage.get('accounting_gap', '—')}\n"
+        "Aptitud para el destino: no evaluada; falta definir el uso previsto. "
         "Los hallazgos son evidencia técnica; no constituyen por sí solos una conclusión de incumplimiento legal."
     )
 
@@ -488,7 +489,33 @@ class ClientApp:
         pdf_button = ttk.Button(actions, text="Abrir informe PDF", command=self._open_pdf,
                                 state="normal" if pdf_status.get("status") == "GENERATED" else "disabled")
         pdf_button.pack(side="left")
+        ttk.Button(actions, text="Abrir revisión profesional", command=self._show_professional_revision).pack(side="left", padx=6)
         ttk.Button(actions, text="Abrir entrega completa", command=self._open_delivery).pack(side="right")
+
+    def _show_professional_revision(self) -> None:
+        """Select a separately sealed presentation without modifying an old run."""
+        directory = filedialog.askdirectory(title="Seleccionar carpeta de revisión profesional")
+        if not directory:
+            return
+        root = Path(directory)
+        try:
+            from .professional_audit import verify_package
+            verify_package(root)
+            model = json.loads((root / "02_EVIDENCIAS" / "PRESENTATION_MODEL.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError, KeyError) as exc:
+            messagebox.showerror("Revisión no verificable", f"No se pudo verificar el paquete: {type(exc).__name__}")
+            return
+        window = tk.Toplevel(self.root)
+        window.title("Revisión profesional")
+        identity, view = model["identity"], model["presentation"]
+        content = (f"Ejecución fuente: {identity['client_audit_id']}\nRevisión: {identity['revision']}\n"
+                   f"{view['technical_text']}\n{view['use_text']}\n"
+                   f"Siguiente paso: {view['steps'][0]['action']}\n"
+                   "Paquete generado e integridad verificada. Emisión humana y aceptación visual del mapa pendientes.")
+        ttk.Label(window, text=content, wraplength=760, justify="left").pack(padx=18, pady=18)
+        for filename, label in (("Informe_auditoria.pdf", "Abrir informe"), ("Plan_de_accion_y_hallazgos.xlsx", "Abrir libro"), ("Mapa_auditoria.kmz", "Abrir mapa local")):
+            path = root / "01_RESULTADOS" / filename
+            ttk.Button(window, text=label, command=lambda selected=path: os.startfile(str(selected))).pack(pady=4)
 
     def _refresh_execution_stage(self) -> None:
         """Read worker stage markers without inventing percentage completion."""

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<documento fecha_actualizacion="20241106105602">
+  <metadatos>
+    <identificador>DOUE-L-2024-81650</identificador>
+    <origen_legislativo codigo="3">Europeo</origen_legislativo>
+    <departamento codigo="9010">Unión Europea</departamento>
+    <rango codigo="1600">Decisión</rango>
+    <fecha_disposicion>20241023</fecha_disposicion>
+    <numero_oficial>2829/2024</numero_oficial>
+    <titulo>Decisión (UE) 2024/2829 del Parlamento Europeo y del Consejo, de 23 de octubre de 2024, por el que se modifica la Directiva 2007/2/CE en lo que respecta a determinadas obligaciones de presentación de información aplicables a las infraestructuras de información espacial.</titulo>
+    <diario codigo="DOUE">Diario Oficial de la Unión Europea</diario>
+    <fecha_publicacion>20241106</fecha_publicacion>
+    <diario_numero>2829</diario_numero>
+    <seccion>L</seccion>
+    <subseccion/>
+    <pagina_inicial>1</pagina_inicial>
+    <pagina_final>2</pagina_final>
+    <suplemento_pagina_inicial/>
+    <suplemento_pagina_final/>
+    <url_pdf>https://www.boe.es/doue/2024/2829/L00001-00002.pdf</url_pdf>
+    <url_epub/>
+    <url_pdf_catalan/>
+    <url_pdf_euskera/>
+    <url_pdf_gallego/>
+    <url_pdf_valenciano/>
+    <estatus_legislativo>L</estatus_legislativo>
+    <fecha_vigencia>20241126</fecha_vigencia>
+    <estatus_derogacion>N</estatus_derogacion>
+    <fecha_derogacion/>
+    <judicialmente_anulada>N</judicialmente_anulada>
+    <fecha_anulacion/>
+    <vigencia_agotada>N</vigencia_agotada>
+    <estado_consolidacion codigo="0"/>
+    <letra_imagen>L</letra_imagen>
+    <suplemento_letra_imagen/>
+    <url_eli>https://data.europa.eu/eli/dec/2024/2829/spa</url_eli>
+  </metadatos>
+  <analisis>
+    <materias>
+      <materia codigo="473" orden="1">Bases de datos</materia>
+      <materia codigo="3455" orden="1">Estadística</materia>
+      <materia codigo="4165" orden="1">Información</materia>
+      <materia codigo="5258" orden="1">Ordenación del territorio</materia>
+      <materia codigo="5651" orden="1">Políticas de medio ambiente</materia>
+      <materia codigo="5923" orden="1">Redes de telecomunicación</materia>
+    </materias>
+    <notas/>
+    <referencias>
+      <anteriores>
+        <anterior referencia="DOUE-L-2007-80587" orden="2015">
+          <palabra codigo="270">MODIFICA</palabra>
+          <texto>lo indicado en el art. 21.2 de la Directiva 2007/2, de 14 de marzo</texto>
+        </anterior>
+      </anteriores>
+      <posteriores/>
+    </referencias>
+    <alertas>
+      <alerta codigo="119" orden="1">Medio ambiente</alerta>
+      <alerta codigo="130" orden="1">Telecomunicaciones</alerta>
+      <alerta codigo="134" orden="1">Unión Europea</alerta>
+    </alertas>
+  </analisis>
+  <texto>
+    <div>
+      <p class="parrafo">EL PARLAMENTO EUROPEO Y EL CONSEJO DE LA UNIÓN EUROPEA,</p>
+    </div>
+    <div>
+      <div>
+        <p class="parrafo">Visto el Tratado de Funcionamiento de la Unión Europea, y en particular su artículo 192, apartado 1,</p>
+      </div>
+      <div>
+        <p class="parrafo">Vista la propuesta de la Comisión Europea,</p>
+      </div>
+      <div>
+        <p class="parrafo">Previa transmisión del proyecto de acto legislativo a los Parlamentos nacionales,</p>
+      </div>
+      <div>
+        <p class="parrafo">Visto el dictamen del Comité Económico y Social Europeo <a>(<span>1</span>)</a>,</p>
+      </div>
+      <div>
+        <p class="parrafo">Previa consulta al Comité de las Regiones,</p>
+      </div>
+      <div>
+        <p class="parrafo">De conformidad con el procedimiento legislativo ordinario <a>(<span>2</span>)</a>,</p>
+      </div>
+      <p class="parrafo">Considerando lo siguiente:</p>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(1)</p>
+              </td>
+              <td>
+                <p class="parrafo">Las obligaciones de presentación de información desempeñan un papel clave a la hora de garantizar el seguimiento adecuado y la aplicación correcta de los actos jurídicos de la Unión. Sin embargo, es importante racionalizar dichas obligaciones a fin de garantizar que cumplen el objetivo para el que fueron previstos y limitar la carga administrativa.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(2)</p>
+              </td>
+              <td>
+                <p class="parrafo">La Directiva 2007/2/CE del Parlamento Europeo y del Consejo <a>(<span>3</span>)</a> establece normas generales con vistas al establecimiento de una infraestructura de información espacial en la Comunidad Europea (Inspire) para la aplicación de las políticas en materia de medio ambiente de la Unión y de políticas o actuaciones que puedan incidir en el medio ambiente. Dicha Directiva exige a los Estados miembros que actualicen, en caso necesario, y publiquen un informe que incluya, entre otras cosas, una descripción resumida de los costes y beneficios derivados de la aplicación de dicha Directiva a más tardar el 31 de marzo de cada año.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(3)</p>
+              </td>
+              <td>
+                <p class="parrafo">Teniendo en cuenta los resultados del informe de la Comisión de 9 de junio de 2017 sobre las medidas para racionalizar la notificación medioambiental y el correspondiente control de adecuación de la notificación y el seguimiento de la política medioambiental de la UE, la Directiva 2007/2/CE fue modificada por el Reglamento (UE) 2019/1010 del Parlamento Europeo y del Consejo <a>(<span>4</span>)</a> para reducir el alcance de la notificación a la gobernanza para su aplicación y la reutilización de datos espaciales públicos. En su evaluación de la Directiva 2007/2/CE, concluida en 2022, la Comisión puso de manifiesto que el marco jurídico podría ser más eficiente mediante una mayor reducción de la carga administrativa.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(4)</p>
+              </td>
+              <td>
+                <p class="parrafo">A fin de reducir la carga administrativa de las obligaciones de presentación de información en el marco de la Directiva 2007/2/CE, es necesario adaptar la frecuencia y el calendario de las obligaciones de presentación de información sobre la aplicación y el uso de las infraestructuras de información espacial de los Estados miembros con los actos jurídicos horizontales más recientes en materia de datos digitales. Por tanto, conviene reducir la frecuencia de presentación de informes en el marco de la Directiva 2007/2/CE a una vez cada dos años.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(5)</p>
+              </td>
+              <td>
+                <p class="parrafo">Dado que la modificación que debe introducirse en la Directiva 2007/2/CE se refiere al suministro de información a la Comisión por parte de los Estados miembros, los Estados miembros no están obligados a transponerla. En esta situación particular, procede, por tanto, utilizar una decisión para tal modificación.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(6)</p>
+              </td>
+              <td>
+                <p class="parrafo">Dado que el objetivo de la presente Decisión, a saber, racionalizar las obligaciones de presentación de información establecidas en la Directiva 2007/2/CE, no puede ser alcanzado de manera suficiente por los Estados miembros, sino que, debido a las dimensiones y los efectos de la acción, puede lograrse mejor a escala de la Unión, esta puede adoptar medidas, de acuerdo con el principio de subsidiariedad establecido en el artículo 5 del Tratado de la Unión Europea. De conformidad con el principio de proporcionalidad establecido en el mismo artículo, la presente Decisión no excede de lo necesario para alcanzar dicho objetivo.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table class="sinbordes" width="100%">
+          <colgroup>
+            <col width="4%"/>
+            <col width="96%"/>
+          </colgroup>
+          <tbody>
+            <tr>
+              <td>
+                <p class="parrafo">(7)</p>
+              </td>
+              <td>
+                <p class="parrafo">Por lo tanto, procede modificar la Directiva 2007/2/CE en consecuencia.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="parrafo">HAN ADOPTADO LA PRESENTE DECISIÓN:</p>
+    </div>
+    <div>
+      <div>
+        <p class="articulo">Artículo 1</p>
+        <div>
+          <p class="parrafo">Modificación de la Directiva 2007/2/CE</p>
+        </div>
+        <p class="parrafo">En el artículo 21, apartado 2, de la Directiva 2007/2/CE, la parte introductoria se sustituye por el texto siguiente:</p>
+        <p class="parrafo">«A más tardar el 31 de marzo cada dos años, a partir del 31 de marzo de 2025, los Estados miembros actualizarán, en caso necesario, un informe de síntesis. Dichos informes, que harán públicos los servicios de la Comisión, incluirán descripciones resumidas de:».</p>
+      </div>
+      <div>
+        <p class="articulo">Artículo 2</p>
+        <div>
+          <p class="parrafo">Entrada en vigor</p>
+        </div>
+        <p class="parrafo">La presente Decisión entrará en vigor a los veinte días siguientes al de su publicación en el <span>Diario Oficial de la Unión Europea</span>.</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <p class="parrafo">Hecho en Estrasburgo, el 23 de octubre de 2024.</p>
+        <div>
+          <p class="firma_ministro">
+            <span>Por el Parlamento Europeo</span>
+          </p>
+          <p class="firma_ministro">
+            <span>La Presidenta</span>
+          </p>
+          <p class="firma_ministro">R. METSOLA</p>
+        </div>
+        <div>
+          <p class="firma_rey">
+            <span>Por el Consejo</span>
+          </p>
+          <p class="firma_rey">
+            <span>El Presidente</span>
+          </p>
+          <p class="firma_rey">ZSIGMOND B. P.</p>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <p class="cita"><a>(<span>1</span>)</a>   <a>DO C, C/2024/1586, 5.3.2024, ELI: http://data.europa.eu/eli/C/2024/1586/oj</a>.</p>
+    <p class="cita"><a>(<span>2</span>)</a>  Posición del Parlamento Europeo de 14 de marzo de 2024 (pendiente de publicación en el Diario Oficial) y Decisión del Consejo de 14 de octubre de 2024.</p>
+    <p class="cita"><a>(<span>3</span>)</a>  Directiva 2007/2/CE del Parlamento Europeo y del Consejo, de 14 de marzo de 2007, por la que se establece una infraestructura de información espacial en la Comunidad Europea (Inspire) (<a>DO L 108 de 25.4.2007, p. 1</a>).</p>
+    <p class="cita"><a>(<span>4</span>)</a>  Reglamento (UE) 2019/1010 del Parlamento Europeo y del Consejo, de 5 de junio de 2019, relativo a la adaptación de las obligaciones de información en el ámbito de la legislación relativa al medio ambiente y por el que se modifican los Reglamentos (CE) n.<span>o</span> 166/2006 y (UE) n.<span>o</span> 995/2010 del Parlamento Europeo y del Consejo, las Directivas 2002/49/CE, 2004/35/CE, 2007/2/CE, 2009/147/CE y 2010/63/UE del Parlamento Europeo y del Consejo, los Reglamentos (CE) n.<span>o</span> 338/97 y (CE) n.<span>o</span> 2173/2005 del Consejo, y la Directiva 86/278/CEE del Consejo (<a>DO L 170 de 25.6.2019, p. 115</a>).</p>
+  </texto>
+</documento>

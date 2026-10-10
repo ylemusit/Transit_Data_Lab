@@ -1,0 +1,77 @@
+gtfs_file,source_file,source_record_id,source_reference,source_type,creation_method,limitation
+agency.txt,agency_origen.csv,ORIG-AGENCY-001,SYN-CS-01-AGENCY,SINTETICO,elaboración sintética documentada,"Razón social/nombre público, portal y zona horaria definidos para el ejercicio."
+stops.txt,stops_origen.csv,ORIG-STOPS-001,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-002,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-003,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-004,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-005,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-006,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-007,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+stops.txt,stops_origen.csv,ORIG-STOPS-008,SYN-CS-01-STOPS,SINTETICO,elaboración sintética documentada,Ubicaciones y jerarquía creadas para el municipio demostrativo; no proceden de una concesión real.
+routes.txt,routes_origen.csv,ORIG-ROUTES-001,SYN-CS-01-ROUTES,SINTETICO,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio."
+routes.txt,routes_origen.csv,ORIG-ROUTES-002,SYN-CS-01-ROUTES,SINTETICO,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio."
+routes.txt,routes_origen.csv,ORIG-ROUTES-003,SYN-CS-01-ROUTES,SINTETICO,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio."
+trips.txt,trips_origen.csv,ORIG-TRIPS-001,SYN-CS-01-TRIPS,SINTETICO,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.
+trips.txt,trips_origen.csv,ORIG-TRIPS-002,SYN-CS-01-TRIPS,SINTETICO,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.
+trips.txt,trips_origen.csv,ORIG-TRIPS-003,SYN-CS-01-TRIPS,SINTETICO,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.
+trips.txt,trips_origen.csv,ORIG-TRIPS-004,SYN-CS-01-TRIPS,SINTETICO,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.
+trips.txt,trips_origen.csv,ORIG-TRIPS-005,SYN-CS-01-TRIPS,SINTETICO,elaboración sintética documentada,Viajes regulares y flexibles definidos para el periodo demostrativo.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-001,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-002,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-003,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-004,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-005,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-006,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-007,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-008,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-009,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-010,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-011,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-012,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+stop_times.txt,stop_times_origen.csv,ORIG-STOP_TIMES-013,SYN-CS-01-STOP_TIMES,SINTETICO,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.
+calendar.txt,calendar_origen.csv,ORIG-CALENDAR-001,SYN-CS-01-CALENDAR,SINTETICO,elaboración sintética documentada,Vigencia creada para la muestra y compartida por los viajes.
+calendar_dates.txt,calendar_dates_origen.csv,ORIG-CALENDAR_DATES-001,SYN-CS-01-CALENDAR_DATES,SINTETICO,elaboración sintética documentada,Excepción ficticia para demostrar la relación con el calendario base.
+fare_attributes.txt,fare_attributes_origen.csv,ORIG-FARE_ATTRIBUTES-001,SYN-CS-01-FARE_ATTRIBUTES,SINTETICO,elaboración sintética documentada,Importe ficticio de demostración; no representa una tarifa aprobada.
+fare_rules.txt,fare_rules_origen.csv,ORIG-FARE_RULES-001,SYN-CS-01-FARE_RULES,SINTETICO,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.
+fare_rules.txt,fare_rules_origen.csv,ORIG-FARE_RULES-002,SYN-CS-01-FARE_RULES,SINTETICO,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.
+fare_rules.txt,fare_rules_origen.csv,ORIG-FARE_RULES-003,SYN-CS-01-FARE_RULES,SINTETICO,elaboración sintética documentada,Regla de aplicación enlazada a rutas ficticias.
+timeframes.txt,timeframes_origen.csv,ORIG-TIMEFRAMES-001,SYN-CS-01-TIMEFRAMES,SINTETICO,elaboración sintética documentada,Ventana diaria ficticia para las reglas Fares V2.
+rider_categories.txt,rider_categories_origen.csv,ORIG-RIDER_CATEGORIES-001,SYN-CS-01-RIDER_CATEGORIES,SINTETICO,elaboración sintética documentada,Categoría general creada para ejemplificar productos tarifarios.
+fare_media.txt,fare_media_origen.csv,ORIG-FARE_MEDIA-001,SYN-CS-01-FARE_MEDIA,SINTETICO,elaboración sintética documentada,Billete y aplicación simulados; no afirman aceptación comercial real.
+fare_media.txt,fare_media_origen.csv,ORIG-FARE_MEDIA-002,SYN-CS-01-FARE_MEDIA,SINTETICO,elaboración sintética documentada,Billete y aplicación simulados; no afirman aceptación comercial real.
+fare_products.txt,fare_products_origen.csv,ORIG-FARE_PRODUCTS-001,SYN-CS-01-FARE_PRODUCTS,SINTETICO,elaboración sintética documentada,Productos y precios inventados para el ejemplo.
+fare_products.txt,fare_products_origen.csv,ORIG-FARE_PRODUCTS-002,SYN-CS-01-FARE_PRODUCTS,SINTETICO,elaboración sintética documentada,Productos y precios inventados para el ejemplo.
+fare_leg_rules.txt,fare_leg_rules_origen.csv,ORIG-FARE_LEG_RULES-001,SYN-CS-01-FARE_LEG_RULES,SINTETICO,elaboración sintética documentada,Reglas de red y franja asociadas al producto sintético.
+fare_leg_join_rules.txt,fare_leg_join_rules_origen.csv,ORIG-FARE_LEG_JOIN_RULES-001,SYN-CS-01-FARE_LEG_JOIN_RULES,SINTETICO,elaboración sintética documentada,Unión de tramos dentro de una red ficticia.
+fare_transfer_rules.txt,fare_transfer_rules_origen.csv,ORIG-FARE_TRANSFER_RULES-001,SYN-CS-01-FARE_TRANSFER_RULES,SINTETICO,elaboración sintética documentada,Ventana y tratamiento de transferencia de demostración.
+areas.txt,areas_origen.csv,ORIG-AREAS-001,SYN-CS-01-AREAS,SINTETICO,elaboración sintética documentada,Zonas creadas para cubrir la estructura Fares V2.
+areas.txt,areas_origen.csv,ORIG-AREAS-002,SYN-CS-01-AREAS,SINTETICO,elaboración sintética documentada,Zonas creadas para cubrir la estructura Fares V2.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-001,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-002,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-003,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-004,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-005,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+stop_areas.txt,stop_areas_origen.csv,ORIG-STOP_AREAS-006,SYN-CS-01-STOP_AREAS,SINTETICO,elaboración sintética documentada,Correspondencia inventada de paradas y áreas tarifarias.
+networks.txt,networks_origen.csv,ORIG-NETWORKS-001,SYN-CS-01-NETWORKS,SINTETICO,elaboración sintética documentada,Red creada para la demostración; se usa con route_networks.txt.
+route_networks.txt,route_networks_origen.csv,ORIG-ROUTE_NETWORKS-001,SYN-CS-01-ROUTE_NETWORKS,SINTETICO,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.
+route_networks.txt,route_networks_origen.csv,ORIG-ROUTE_NETWORKS-002,SYN-CS-01-ROUTE_NETWORKS,SINTETICO,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.
+route_networks.txt,route_networks_origen.csv,ORIG-ROUTE_NETWORKS-003,SYN-CS-01-ROUTE_NETWORKS,SINTETICO,elaboración sintética documentada,Asociación inventada de las rutas a la red tarifaria.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-001,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-002,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-003,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-004,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-005,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+shapes.txt,shapes_origen.csv,ORIG-SHAPES-006,SYN-CS-01-SHAPES,SINTETICO,elaboración sintética documentada,Geometrías inventadas para ilustración; no se han contrastado con calles reales.
+frequencies.txt,frequencies_origen.csv,ORIG-FREQUENCIES-001,SYN-CS-01-FREQUENCIES,SINTETICO,elaboración sintética documentada,Intervalo creado para un viaje de ejemplo.
+transfers.txt,transfers_origen.csv,ORIG-TRANSFERS-001,SYN-CS-01-TRANSFERS,SINTETICO,elaboración sintética documentada,"Tiempo mínimo ilustrativo, sin levantamiento de estación."
+pathways.txt,pathways_origen.csv,ORIG-PATHWAYS-001,SYN-CS-01-PATHWAYS,SINTETICO,elaboración sintética documentada,Conexión de ascensor inventada para ilustrar niveles; no acredita accesibilidad.
+levels.txt,levels_origen.csv,ORIG-LEVELS-001,SYN-CS-01-LEVELS,SINTETICO,elaboración sintética documentada,Niveles creados para el ejemplo del intercambiador.
+levels.txt,levels_origen.csv,ORIG-LEVELS-002,SYN-CS-01-LEVELS,SINTETICO,elaboración sintética documentada,Niveles creados para el ejemplo del intercambiador.
+location_groups.txt,location_groups_origen.csv,ORIG-LOCATION_GROUPS-001,SYN-CS-01-LOCATION_GROUPS,SINTETICO,elaboración sintética documentada,Grupo ficticio de puntos de recogida y bajada.
+location_group_stops.txt,location_group_stops_origen.csv,ORIG-LOCATION_GROUP_STOPS-001,SYN-CS-01-LOCATION_GROUP_STOPS,SINTETICO,elaboración sintética documentada,Paradas asociadas al grupo flexible de ejemplo.
+location_group_stops.txt,location_group_stops_origen.csv,ORIG-LOCATION_GROUP_STOPS-002,SYN-CS-01-LOCATION_GROUP_STOPS,SINTETICO,elaboración sintética documentada,Paradas asociadas al grupo flexible de ejemplo.
+booking_rules.txt,booking_rules_origen.csv,ORIG-BOOKING_RULES-001,SYN-CS-01-BOOKING_RULES,SINTETICO,elaboración sintética documentada,"Antelación y URLs de ejemplo, no servicio activo."
+translations.txt,translations_origen.csv,ORIG-TRANSLATIONS-001,SYN-CS-01-TRANSLATIONS,SINTETICO,elaboración sintética documentada,Nombre traducido para ilustrar el mecanismo de traducciones.
+feed_info.txt,feed_info_origen.csv,ORIG-FEED_INFO-001,SYN-CS-01-FEED_INFO,SINTETICO,elaboración sintética documentada,"Editor, periodo y versión identifican la edición de demostración."
+attributions.txt,attributions_origen.csv,ORIG-ATTRIBUTIONS-001,SYN-CS-01-ATTRIBUTIONS,SINTETICO,elaboración sintética documentada,Roles atribuidos a una organización ficticia.
+locations.geojson,locations_origen.geojson,ORIG-ZONE-001,SYN-GIS-CS-01,SINTETICO,digitalización sintética,Coordenadas de ejemplo en WGS84; requieren sustitución/validación para uso real.

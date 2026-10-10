@@ -84,6 +84,22 @@ class AuditTests(unittest.TestCase):
         self.assertEqual(result["records"][0]["well_formedness"], "WELL_FORMED")
         self.assertEqual(result["records"][0]["xsd_validation"], "XSD_INVALID")
 
+    def test_batch_xsd_diagnostics_are_isolated_per_member(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            source = Path(tmp) / "batch.zip"
+            with zipfile.ZipFile(source, "w") as archive:
+                archive.writestr("01-invalid-a.xml", b'<wrong-a xmlns="http://www.netex.org.uk/netex"/>')
+                archive.writestr("02-invalid-b.xml", b'<wrong-b xmlns="http://www.netex.org.uk/netex"/>')
+                archive.writestr("03-valid.xml", VALID_XML)
+            result = audit(source, SCHEMA_PATH)
+        by_name = {record["source_file"]: record for record in result["records"]}
+        self.assertEqual("XSD_INVALID", by_name["01-invalid-a.xml"]["xsd_validation"])
+        self.assertEqual("XSD_INVALID", by_name["02-invalid-b.xml"]["xsd_validation"])
+        self.assertTrue(all("wrong-a" in message for message in by_name["01-invalid-a.xml"]["xsd_errors"]))
+        self.assertTrue(all("wrong-b" in message for message in by_name["02-invalid-b.xml"]["xsd_errors"]))
+        self.assertEqual([], by_name["03-valid.xml"]["xsd_errors"])
+        self.assertEqual("XSD_VALID", by_name["03-valid.xml"]["xsd_validation"])
+
     def test_replay_and_reports_are_deterministic_and_redact_absolute_paths(self):
         with tempfile.TemporaryDirectory() as tmp:
             source = Path(tmp) / "repeat.xml"

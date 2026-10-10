@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,agency_id,agency_name,agency_url,agency_timezone,agency_lang
+ORIG-AGENCY-001,SYN-CS-01-AGENCY,elaboración sintética documentada,"Razón social/nombre público, portal y zona horaria definidos para el ejercicio.",CSA-001,CS Autobuses,https://example.com/cs-autobuses,Europe/Madrid,es

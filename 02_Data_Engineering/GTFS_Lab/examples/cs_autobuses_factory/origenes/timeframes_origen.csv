@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,timeframe_group_id,start_time,end_time,service_id
+ORIG-TIMEFRAMES-001,SYN-CS-01-TIMEFRAMES,elaboración sintética documentada,Ventana diaria ficticia para las reglas Fares V2.,TF-DIARIO,00:00:00,24:00:00,SV-ALL

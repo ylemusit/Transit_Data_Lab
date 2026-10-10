@@ -188,6 +188,10 @@ def inspect_xml_stream(data: bytes, schema: etree.XMLSchema | None) -> StreamIns
         if schema is None:
             return StreamInspection(inventory, (), None)
 
+        # lxml/libxml2 can retain schema-validation messages in its thread-local
+        # error log across successive iterparse validators. Clear it so each
+        # NeTEx member receives only diagnostics produced for its own bytes.
+        etree.clear_error_log()
         validator = None
         try:
             validator = etree.iterparse(

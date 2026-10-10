@@ -1,0 +1,4 @@
+source_record_id,source_reference,source_method,source_note,route_id,agency_id,route_short_name,route_long_name,route_type,route_color,route_text_color
+ORIG-ROUTES-001,SYN-CS-01-ROUTES,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio.",R-01,CSA-001,01,Intercambiador - Campus,3,145A8D,FFFFFF
+ORIG-ROUTES-002,SYN-CS-01-ROUTES,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio.",R-02,CSA-001,02,Intercambiador - Mercado,3,27844A,FFFFFF
+ORIG-ROUTES-003,SYN-CS-01-ROUTES,elaboración sintética documentada,"Nombres, modo y presentación de rutas diseñados para el ejercicio.",R-FLEX,CSA-001,D1,Servicio flexible CS-01,3,8A4E9B,FFFFFF

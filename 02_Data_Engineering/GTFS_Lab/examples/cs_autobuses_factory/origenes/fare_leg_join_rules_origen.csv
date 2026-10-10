@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,from_network_id,to_network_id,from_stop_id,to_stop_id
+ORIG-FARE_LEG_JOIN_RULES-001,SYN-CS-01-FARE_LEG_JOIN_RULES,elaboración sintética documentada,Unión de tramos dentro de una red ficticia.,NET-CS-01,NET-CS-01,,

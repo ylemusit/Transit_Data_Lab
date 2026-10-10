@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import csv
 import io
 from pathlib import Path, PurePosixPath
@@ -154,14 +155,16 @@ def inspect_archive_catalog(ctx, catalog_path: Path | None = None) -> dict:
         }
 
 
-def _rule_registry() -> RuleRegistry:
+def _rule_registry(type_revision: str = "1.1.0") -> RuleRegistry:
+    if type_revision not in {"1.0.0", "1.1.0"}:
+        raise ValueError("Unsupported G03 type revision")
     rules = list(_catalog_registry())
     evaluators = {
         "GTFS-G03-CSV-STRUCTURE": _evaluate_csv,
         "GTFS-G03-HEADER-SCHEMA": _evaluate_schema,
         "GTFS-G03-FILE-PRESENCE": _evaluate_presence,
         "GTFS-G03-FILE-RESTRICTIONS": _evaluate_restrictions,
-        "GTFS-G03-FIELD-TYPE": _evaluate_types,
+        "GTFS-G03-FIELD-TYPE": _evaluate_types if type_revision == "1.1.0" else _evaluate_types_v1,
     }
     definitions = (
         ("GTFS-G03-CSV-STRUCTURE", RuleCategory.STRUCTURE, RuleAuthority.GTFS_REQUIRED,
@@ -182,7 +185,8 @@ def _rule_registry() -> RuleRegistry:
     )
     for rule_id, category, authority, requirement, section, identity, coverage in definitions:
         rules.append(RuleDefinition(
-            rule_id=rule_id, semantic_version="1.1.0" if rule_id == "GTFS-G03-HEADER-SCHEMA" else "1.0.0",
+            rule_id=rule_id, semantic_version=(type_revision if rule_id == "GTFS-G03-FIELD-TYPE"
+                                              else "1.1.0" if rule_id == "GTFS-G03-HEADER-SCHEMA" else "1.0.0"),
             category=category, authority=authority,
             severity=Severity.ERROR, requirement=requirement,
             applicable_files=("applicable GTFS Schedule files",),
@@ -317,9 +321,36 @@ def _evaluate_restrictions(source_zip: Path, files: dict[str, zipfile.ZipInfo], 
 
 
 def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], official: dict, members: list[str]) -> dict:
+    return _evaluate_types_contract(source_zip, files, official, members, revised=True)
+
+
+def _evaluate_types_v1(source_zip: Path, files: dict[str, zipfile.ZipInfo], official: dict, members: list[str]) -> dict:
+    """Explicit replay of the original domains and enum-reference behaviour."""
+    return _evaluate_types_contract(source_zip, files, official, members, revised=False)
+
+
+def _enum_domain(contract: dict, file_name: str, field: dict, seen=None) -> set[str]:
+    seen = set() if seen is None else set(seen)
+    identity = (file_name, field["field_name"])
+    if identity in seen:
+        raise RuntimeError("Cyclic enum domain reference")
+    seen.add(identity)
+    if field.get("allowed_values"):
+        return {option["value"] for option in field["allowed_values"]}
+    if field.get("allowed_values_status") == "DEFINED_BY_FIELD_REFERENCE":
+        reference = field["allowed_values_reference"]
+        target_file = next(f for f in contract["files"] if f["file_name"] == reference["file_name"])
+        target = next(f for f in target_file["fields"] if f["field_name"] == reference["field_name"])
+        return _enum_domain(contract, target_file["file_name"], target, seen)
+    return set()
+
+
+def _evaluate_types_contract(source_zip, files, official, members, *, revised):
     from .g03_field_contract import load_field_contract
     from .g03_capability_map import EXECUTABLE_TYPE_VALIDATORS
-    contract, _ = load_field_contract(catalog_path=Path(__file__).resolve().parents[1] / CATALOG_RELATIVE_PATH)
+    root = Path(__file__).resolve().parents[1]
+    contract_path = root / "spec" / "gtfs_schedule_fields_2026_04_27_revision_1_1.json" if revised else None
+    contract, _ = load_field_contract(contract_path=contract_path, catalog_path=root / CATALOG_RELATIVE_PATH)
     capabilities = _load_capability_map()
     rows = {(row["file_name"].casefold(), row["field_name"]): row for row in capabilities["fields"]}
     findings, checked, not_evaluable = [], 0, []
@@ -352,7 +383,11 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
                 not_evaluable.append({"file": entry["file_name"], "field": name,
                                       "reason": "UNSUPPORTED_LEXICAL_VALIDATOR"})
                 continue
-            allowed = {x["value"] for x in field.get("allowed_values") or []}
+            allowed = (_enum_domain(contract, file_contract["file_name"], field) if revised and field["type"] == "ENUM"
+                       else {x["value"] for x in field.get("allowed_values") or []})
+            if revised and field["type"] == "ENUM" and not allowed:
+                not_evaluable.append({"file": entry["file_name"], "field": name, "reason": "UNRESOLVED_ENUM_DOMAIN"})
+                continue
             executable_fields.append((field, positions[name], allowed))
         # Validate each CSV row as it streams. Retaining every value from large files
         # (notably stop_times.txt) multiplies memory use without adding evidence.
@@ -394,6 +429,7 @@ def _evaluate_types(source_zip: Path, files: dict[str, zipfile.ZipInfo], officia
     return {"status": "FAIL_TECHNICAL" if findings else "NOT_EVALUABLE" if not checked or not_evaluable else "PASS",
             "findings": findings, "checked_values": checked, "not_evaluable": not_evaluable,
             "evaluator_executed": True, "capability_map_revision": capabilities["specification_revision"],
+            **({"field_contract_revision": "1.1.0", "field_contract_sha256": hashlib.sha256(contract_path.read_bytes()).hexdigest()} if revised else {}),
             "coverage_limitation": "Only values with executable G03 capability and explicit normalized format constraints are checked; empty-value semantics and G04/G05/G07 ownership are not inferred."}
 
 
@@ -712,9 +748,9 @@ def _presence(files: dict[str, zipfile.ZipInfo], official: dict[str, dict], arch
             "coverage_limitation": "Flex qualification and calendar all-service-date semantics remain unevaluated where required evidence crosses the G03 boundary."}
 
 
-def inspect_g03_archive(source_zip: Path, catalog_path: Path | None = None) -> dict:
+def inspect_g03_archive(source_zip: Path, catalog_path: Path | None = None, *, type_revision: str = "1.1.0") -> dict:
     """Run G03's independent archive preflight without producing legacy findings."""
-    registry = _rule_registry()
+    registry = _rule_registry(type_revision)
     identities = registry.identity_map()
     try:
         official = load_official_catalog(catalog_path)

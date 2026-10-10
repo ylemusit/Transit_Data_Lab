@@ -1,0 +1,14 @@
+source_record_id,source_reference,source_method,source_note,trip_id,arrival_time,departure_time,stop_id,location_group_id,location_id,stop_sequence,stop_headsign,pickup_type,drop_off_type,timepoint,start_pickup_drop_off_window,end_pickup_drop_off_window,pickup_booking_rule_id,drop_off_booking_rule_id
+ORIG-STOP_TIMES-001,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-AM,07:00:00,07:00:00,CS-PLAT,,,1,,,,1,,,,
+ORIG-STOP_TIMES-002,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-AM,07:12:00,07:12:00,CS-PLAZA,,,2,,,,1,,,,
+ORIG-STOP_TIMES-003,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-AM,07:25:00,07:25:00,CS-UNI,,,3,,,,1,,,,
+ORIG-STOP_TIMES-004,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-PM,17:00:00,17:00:00,CS-UNI,,,1,,,,1,,,,
+ORIG-STOP_TIMES-005,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-PM,17:13:00,17:13:00,CS-PLAZA,,,2,,,,1,,,,
+ORIG-STOP_TIMES-006,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-01-PM,17:25:00,17:25:00,CS-PLAT,,,3,,,,1,,,,
+ORIG-STOP_TIMES-007,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-02-AM,08:00:00,08:00:00,CS-PLAT,,,1,,,,1,,,,
+ORIG-STOP_TIMES-008,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-02-AM,08:10:00,08:10:00,CS-PARQ,,,2,,,,1,,,,
+ORIG-STOP_TIMES-009,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-02-AM,08:20:00,08:20:00,CS-MERC,,,3,,,,1,,,,
+ORIG-STOP_TIMES-010,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-FLEX-GROUP,,,,LG-CS-CENTRO,,1,,2,2,,09:00:00,09:30:00,BR-DAY-AHEAD,BR-DAY-AHEAD
+ORIG-STOP_TIMES-011,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-FLEX-GROUP,,,,LG-CS-CENTRO,,2,,2,2,,09:31:00,10:00:00,BR-DAY-AHEAD,BR-DAY-AHEAD
+ORIG-STOP_TIMES-012,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-FLEX-ZONE,,,,,ZG-CS-01,1,,2,2,,10:00:00,10:30:00,BR-DAY-AHEAD,BR-DAY-AHEAD
+ORIG-STOP_TIMES-013,SYN-CS-01-STOP_TIMES,elaboración sintética documentada,Tiempos y ventanas de servicio inventados; no son horarios autorizados.,T-FLEX-ZONE,,,,,ZG-CS-01,2,,2,2,,10:31:00,11:00:00,BR-DAY-AHEAD,BR-DAY-AHEAD

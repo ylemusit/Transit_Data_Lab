@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,table_name,field_name,language,translation,record_id
+ORIG-TRANSLATIONS-001,SYN-CS-01-TRANSLATIONS,elaboración sintética documentada,Nombre traducido para ilustrar el mecanismo de traducciones.,agency,agency_name,en,CS Buses,CSA-001

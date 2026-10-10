@@ -1,0 +1,411 @@
+{
+  "contract": "TDL_LEGAL_CONTEXT_UPDATE/1",
+  "date": "2026-10-08",
+  "role": "ADDITIVE_CONTEXT_NOT_FROZEN_BASELINE",
+  "legal_conclusion_allowed": false,
+  "sources": [
+    {
+      "source_id": "ES-RD-450-2026",
+      "title": "Real Decreto 450/2026",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "status": "IN_FORCE",
+      "checked_on": "2026-10-08",
+      "official_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-12035",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2026-12035",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-RD-450-2026.xml",
+      "sha256": "a7656c067bc25ac67e3a7a8f846003c68d237ba695bae859b4ddd9cf3356c421",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "effective_from": "2026-06-06",
+      "repeals": "ES-RD-662-2012",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2026-12035/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-RD-450-2026_CONSOLIDATED.xml",
+        "sha256": "ebd334e5849abafee496e890c4635667d2f79bb4f250dfff22a425b9494fc2f3",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "ES-RD-662-2012",
+      "title": "Real Decreto 662/2012",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "status": "REPEALED",
+      "checked_on": "2026-10-08",
+      "official_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-5043",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2012-5043",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-RD-662-2012.xml",
+      "sha256": "c85882a7fc30b8a932a0a9823a6b598929f2aade72cf2fc0e6ceb585d110ea7a",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "effective_to": "2026-06-05",
+      "repealed_by": "ES-RD-450-2026",
+      "use": "HISTORICAL_ONLY",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2012-5043/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-RD-662-2012_CONSOLIDATED.xml",
+        "sha256": "7d06984127cd2c8ab082883ca883a680ee17a24aa5970b5261da1bf702bf98ec",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "ES-LAW-37-2007",
+      "title": "Ley 37/2007",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "status": "IN_FORCE",
+      "checked_on": "2026-10-08",
+      "official_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-19814",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2007-19814",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-37-2007.xml",
+      "sha256": "9e1b68bcd258f6c7ce8d5f749ade804449eb1516a83104eed291dcd0e7a48236",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2007-19814/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-37-2007_CONSOLIDATED.xml",
+        "sha256": "d710731313a5ab338e3bc8a7d3b2a9145a673a81b1aad0250e8b7954e73da95e",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "EU-GDPR",
+      "title": "Reglamento (UE) 2016/679",
+      "official_url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "authority_type": "EU_REGULATION",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "status": "CAPTURED_CONTEXT",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2016-80807",
+      "boe_id": "DOUE-L-2016-80807",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2016-80807",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-GDPR.xml",
+      "sha256": "8293e649529ae5f35cbfae90e0710e11f0aca7cb593721026b07905d03ad0249",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "EU-INSPIRE",
+      "title": "Directiva 2007/2/CE",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2007/2/oj",
+      "authority_type": "EU_DIRECTIVE",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "status": "CAPTURED_CONTEXT",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2007-80587",
+      "boe_id": "DOUE-L-2007-80587",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2007-80587",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-INSPIRE.xml",
+      "sha256": "660ba865b31aca0e490e4c0876f246207b79503b64ce79ce84e99a1540f9ec2a",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "EU-OPEN-DATA",
+      "title": "Directiva (UE) 2019/1024",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
+      "authority_type": "EU_DIRECTIVE",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "status": "CAPTURED_CONTEXT",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2019-81091",
+      "boe_id": "DOUE-L-2019-81091",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2019-81091",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-OPEN-DATA.xml",
+      "sha256": "c095a5030c1b73afaed5fd1b0a4bc41d9b15131135ff5542422c5ce9b1e21f89",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "ES-LAW-18-2015",
+      "title": "Ley 18/2015",
+      "official_url": "https://www.boe.es/eli/es/l/2015/07/09/18",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "applicability": "UNDETERMINED",
+      "status": "CAPTURED_CONTEXT",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2015-7731",
+      "boe_id": "BOE-A-2015-7731",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2015-7731",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-18-2015.xml",
+      "sha256": "f9c8e65509ce2fcaeaf942269a72e03b002c12902d6a5a6bf9a7940e4d4ed92c",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2015-7731/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-18-2015_CONSOLIDATED.xml",
+        "sha256": "7c6b1a3c134e8c57a3c7d633dd7387052c8e25ef96a1fc31ba0e5d73974ee759",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "EU-GDPR-CORR-2018",
+      "title": "2016/679",
+      "authority_type": "CORRIGENDUM",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2018-80845",
+      "boe_id": "DOUE-L-2018-80845",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2018-80845",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-GDPR-CORR-2018.xml",
+      "sha256": "9d0ceeb3b2af8fde50b015ccfa188fc9894333c57d45ce9f9fa85df6dad85f5f",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "EU-GDPR-CORR-2021",
+      "title": "2016/679",
+      "authority_type": "CORRIGENDUM",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2021-80264",
+      "boe_id": "DOUE-L-2021-80264",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2021-80264",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-GDPR-CORR-2021.xml",
+      "sha256": "0dd2c3c457078363d6c5cde204a7874ff7ad138664d7eaa149cf9f7e8d17c187",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "EU-INSPIRE-CORR-2018",
+      "title": "2007/2/CE",
+      "authority_type": "CORRIGENDUM",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2018-81875",
+      "boe_id": "DOUE-L-2018-81875",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2018-81875",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-INSPIRE-CORR-2018.xml",
+      "sha256": "bbf185f647ee966a603adb13186579af5d6f4fb96c7e9a79ef5916f5215568aa",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "EU-INSPIRE-AMEND-2024",
+      "title": "2024/2829",
+      "authority_type": "EU_DECISION",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2024-81650",
+      "boe_id": "DOUE-L-2024-81650",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-81650",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-INSPIRE-AMEND-2024.xml",
+      "sha256": "474c716c51f6d9bf4e001ae67d28884fae0bf924e2e4901cd09dd9a0da247e55",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS"
+    },
+    {
+      "source_id": "ES-RDL-24-2021",
+      "title": "24/2021",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2021-17910",
+      "boe_id": "BOE-A-2021-17910",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-17910",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-RDL-24-2021.xml",
+      "sha256": "ae51d28f0d269b262eb9e92272011c444da4ae84d56e6ec0aed508f7711fc9b7",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2021-17910/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-RDL-24-2021_CONSOLIDATED.xml",
+        "sha256": "7c9fa573c3a17ce32a89d0beb580ae2f2b90499cb99657a4dff990cfe6fcaf22",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "ES-LAW-14-2010",
+      "title": "Ley 14/2010",
+      "authority_type": "NATIONAL_LEGISLATION",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=BOE-A-2010-10707",
+      "boe_id": "BOE-A-2010-10707",
+      "official_publication_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2010-10707",
+      "checked_on": "2026-10-08",
+      "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-14-2010.xml",
+      "sha256": "63d084031210833cc8200250880ce7138c919866877891d10f857d1d9be76e27",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "applicability": "UNDETERMINED",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "consolidated_capture": {
+        "url": "https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2010-10707/texto",
+        "local_path": "03_Compliance/reports/legal_update_20261008/ES-LAW-14-2010_CONSOLIDATED.xml",
+        "sha256": "1711d6b3f86c28a02300255d26488ab6cc69922bc2358a21e483697ce5248ed3",
+        "status": "CAPTURED_INFORMATIONAL",
+        "selection": "LATEST_VERSION_PER_BLOCK_AS_OF_2026-10-08"
+      }
+    },
+    {
+      "source_id": "NAP-PROVIDER",
+      "title": "NAP-PROVIDER",
+      "authority_type": "NAP_PROVIDER_CONTRACT",
+      "official_url": "https://nap.transportes.gob.es/Provider/PoliticaContribucion",
+      "capture_url": "https://nap.transportes.gob.es/Provider/PoliticaContribucion",
+      "local_path": "03_Compliance/reports/legal_update_20261008/NAP-PROVIDER.html",
+      "sha256": "cf35d3dcf08e24201fe7ef7101eccebfffe00d444791e50d0c1c15756ad5abd7",
+      "capture_status": "CAPTURED_OPERATIONAL_DOCUMENT",
+      "status": "CAPTURED_CURRENT_OPERATIONAL_DOCUMENT",
+      "checked_on": "2026-10-08",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "applicability": "UNDETERMINED"
+    },
+    {
+      "source_id": "NAP-FAQ",
+      "title": "NAP-FAQ",
+      "authority_type": "ADMINISTRATIVE_GUIDANCE",
+      "official_url": "https://nap.transportes.gob.es/faqs",
+      "capture_url": "https://nap.transportes.gob.es/faqs",
+      "local_path": "03_Compliance/reports/legal_update_20261008/NAP-FAQ.html",
+      "sha256": "c0d1e11da4522aeb786c7b084b9f2aaaa796f6728069953aecdde9765f776e5c",
+      "capture_status": "CAPTURED_OPERATIONAL_DOCUMENT",
+      "status": "CAPTURED_CURRENT_OPERATIONAL_DOCUMENT",
+      "checked_on": "2026-10-08",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "applicability": "UNDETERMINED"
+    },
+    {
+      "source_id": "NAP-LICENCE",
+      "title": "Licencia de datos abiertos MITRAMS/NAP",
+      "authority_type": "NAP_LICENCE",
+      "official_url": "https://nap.transportes.gob.es/licencia-datos",
+      "capture_url": "https://nap.transportes.gob.es/licencia-datos",
+      "local_path": "03_Compliance/reports/legal_update_20261008/NAP-LICENCE.html",
+      "sha256": "7db8ab1dcdac2e6d571b12df798622b5fc5fa1034c447638e83c345afd6d54a2",
+      "capture_status": "CAPTURED_OPERATIONAL_DOCUMENT",
+      "status": "CAPTURED_CURRENT_OPERATIONAL_DOCUMENT",
+      "checked_on": "2026-10-08",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "applicability": "UNDETERMINED"
+    },
+    {
+      "source_id": "EU-INSPIRE-AMEND-2019",
+      "title": "Reglamento (UE) 2019/1010",
+      "authority_type": "EU_REGULATION",
+      "official_url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2019-81082",
+      "capture_url": "https://www.boe.es/buscar/xml.php?id=DOUE-L-2019-81082",
+      "local_path": "03_Compliance/reports/legal_update_20261008/EU-INSPIRE-AMEND-2019.xml",
+      "sha256": "72b2f7655338264cdae9c7b4af5dda9326b4de0ea69c5431e402d4a0302ddcb1",
+      "capture_status": "CAPTURED_BOE_ORIGINAL_AND_ANALYSIS",
+      "status": "CAPTURED_CONTEXT",
+      "checked_on": "2026-10-08",
+      "context_review": "REVIEWED_WITH_LIMITS",
+      "applicability": "UNDETERMINED"
+    }
+  ],
+  "frozen_sources": [
+    {
+      "identity": "EU-DIR-2010-40",
+      "path": "03_Compliance/EU/01_Primary_Law/Directive_2010_40_EU/Directive_2010_40_EU_CONSOLIDATED_2023-12-20_ES.pdf",
+      "sha256": "832deb51ce828b65c6e1b951bdae57194769838d47a0cd3013cc28f1bd420e58",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-DIR-2023-2661",
+      "path": "03_Compliance/EU/01_Primary_Law/Directive_2023_2661/Directive_EU_2023_2661_ES.pdf",
+      "sha256": "d9a1a3fb35ae1db13861f8f9c32085bd2f9375d55eb74f979f0c912f86e133ab",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-2017-1926",
+      "path": "03_Compliance/EU/01_Primary_Law/Regulation_2017_1926/Regulation_2017_1926_CONSOLIDATED_2024-03-04_ES.pdf",
+      "sha256": "0a91ab5ffcf0466d588da8a8db7f7e7ed6d97b4d64576c31e083610fcd5b08d5",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-2024-490",
+      "path": "03_Compliance/EU/01_Primary_Law/Regulation_2024_490/Regulation_2024_490_ES.pdf",
+      "sha256": "853f3cacdb5c5d4751c36b3938cdd20929a33c83cfe195679c3309fdbbd31eaf",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "ES-LAW-9-2025",
+      "path": "03_Compliance/Spain/01_Primary_Law/Ley_9_2025/Ley_9_2025_CONSOLIDATED_2026-03-21.pdf",
+      "sha256": "ba40df196ab7bf2ad74b840784b268cd8e75d213533d6aafdcd8c72c0386048c",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-2024-1679",
+      "path": "03_Compliance/EU/01_Primary_Law/Regulation_2024_1679/Regulation_EU_2024_1679_ES.pdf",
+      "sha256": "73b34f389d4493b62f553d28c740ee499b8feb1d7534dd1356efd9502d669c15",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-IMPL-2026-1554",
+      "path": "03_Compliance/EU/01_Primary_Law/Regulation_2026_1554/Implementing_Regulation_EU_2026_1554_ES.pdf",
+      "sha256": "873bd419ebc3769f1d93e466767e971fd25c40caff2c768f98093654f70334e0",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-IMPL-2026-253",
+      "path": "03_Compliance/EU/01_Primary_Law/Regulation_2026_253/Implementing_Regulation_EU_2026_253_ES.pdf",
+      "sha256": "eb6bfd69199d226758f6940896e0dd5c68ca15b1bf1f18f069827fa1d73de42f",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-2011-454",
+      "path": "03_Compliance/EU/01_Primary_Law/Historical/Regulation_454_2011/Regulation_454_2011_CONSOLIDATED_2019-06-16_ES.pdf",
+      "sha256": "8daa0f6f9aa6adc52f3b335d551ee2bf5d3c4572b51a9eb69bbad245f8847f14",
+      "integrity": "PASS"
+    },
+    {
+      "identity": "EU-REG-2014-1305",
+      "path": "03_Compliance/EU/01_Primary_Law/Historical/Regulation_1305_2014/Regulation_1305_2014_CONSOLIDATED_2021-04-18_ES.pdf",
+      "sha256": "0ab0d946f518cc486a3dc2740865eedd5e616048f5ca674fe1b5de18f6137264",
+      "integrity": "PASS"
+    }
+  ],
+  "relationships": [
+    {
+      "source": "ES-LAW-18-2015",
+      "relation": "AMENDS",
+      "target": "ES-LAW-37-2007"
+    },
+    {
+      "source": "ES-RDL-24-2021",
+      "relation": "AMENDS",
+      "target": "ES-LAW-37-2007",
+      "provision": "artículo 64"
+    },
+    {
+      "source": "ES-RDL-24-2021",
+      "relation": "TRANSPOSES",
+      "target": "EU-OPEN-DATA",
+      "scope": "Libro tercero"
+    },
+    {
+      "source": "ES-LAW-14-2010",
+      "relation": "TRANSPOSES",
+      "target": "EU-INSPIRE"
+    },
+    {
+      "source": "EU-INSPIRE-AMEND-2024",
+      "relation": "AMENDS",
+      "target": "EU-INSPIRE"
+    },
+    {
+      "source": "EU-INSPIRE-AMEND-2019",
+      "relation": "AMENDS",
+      "target": "EU-INSPIRE",
+      "scope": "artículos 21 y 23"
+    }
+  ],
+  "task_status": "CAPTURES_AND_BOUNDED_CONTEXT_REVIEW_COMPLETE",
+  "closure": {
+    "documentary_work": "COMPLETE",
+    "uncaptured_sources": 0,
+    "external_applicability": "UNDETERMINED",
+    "legal_conclusion_allowed": false
+  }
+}

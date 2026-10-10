@@ -38,3 +38,5 @@ Solapamiento semántico: estructuras de la oferta programada y red de transporte
 Phase 1/2 congeladas e íntegras; persistencia aditiva exacta; GTFS y NeTEx reproducibles en estos scopes; controles de falsos positivos; 48 requisitos y nueve familias dispuestos; coverage conciliada; gate vigente PASS. No exige todos los estándares, todos los requisitos, UI ni conclusiones jurídicas.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+Contexto jurídico complementario vigente: [actualización 08/10/2026](LEGAL_CONTEXT_UPDATE_20261008.md). No modifica este alcance ni la baseline congelada.

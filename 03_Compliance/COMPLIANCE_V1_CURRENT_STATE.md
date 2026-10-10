@@ -33,3 +33,5 @@ Pendientes/reapertura: realtime SIRI/GTFS-RT al abrir su futuro track; otros per
 DB final: `4DB39FA5494C525F339F68BF0B96087B5FF2E1E0CB830EEA882336174BC8048B`. Una transacción, +44 filas; cero migraciones. Checkpoint lógico y límites en [el informe maestro](reports/COMPLIANCE_V1_FINAL_CLOSURE_REPORT.md). La aprobación M04-B2D está en [el informe de transición](../reports/GTFS_LAB_M04B2A_COMPLIANCE_PACKAGE_TRANSITION.md); HOLDOUT V2 requiere identidad post-merge y autorización específica.
 
 Yeison Arbey Carrillo Lemus. Todos los derechos reservados.
+
+Contexto jurídico complementario vigente: [actualización 08/10/2026](LEGAL_CONTEXT_UPDATE_20261008.md). No modifica este alcance ni la baseline congelada.

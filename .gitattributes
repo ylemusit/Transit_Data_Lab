@@ -33,6 +33,17 @@
 /reports/evidence/audit_interpretation_v1/holdout_content_blind/** -text -eol
 /reports/evidence/audit_interpretation_v1/holdout_content_blind/** whitespace=-blank-at-eol
 
+# Locally retained audit receipts/references: preserve bytes even in temporary indexes.
+# These files remain excluded from the public source publication by .gitignore.
+/reports/audit_*/*.json -text -eol whitespace=-blank-at-eol
+/reports/audit_*/*.txt -text -eol whitespace=-blank-at-eol
+/reports/audit_*/**/*.json -text -eol whitespace=-blank-at-eol
+/reports/audit_*/**/*.txt -text -eol whitespace=-blank-at-eol
+/reports/audit_reference_bank_v1/**/authoring_sources/** -text -eol whitespace=-blank-at-eol
+
+# Synthetic factory inputs are captured source material, not normalized output.
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/origenes/** -text -eol
+
 # Explicit frozen document exceptions required by existing governance/hash records.
 /PROJECT_CURRENT_STATE.md -text -eol
 /project_baseline.json -text -eol
@@ -61,3 +72,10 @@
 03_Compliance/reports/evidence/compliance_v1_20260928/sources/gtfs_reference.md whitespace=-blank-at-eol
 03_Compliance/reports/phase_3/evidence/phase3_operational_closure_20260928/datex_road_closures.html whitespace=-blank-at-eol
 03_Compliance/reports/phase_3/evidence/phase3_operational_closure_20260928/siri_repository.html whitespace=-blank-at-eol,-blank-at-eof
+
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/generar_cs_autobuses.py -text -eol
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/*.md -text -eol
+# Captured NAP HTML has original tab-only lines; retain its registered hash.
+/03_Compliance/reports/legal_update_20261008/NAP-FAQ.html whitespace=-blank-at-eol
+/03_Compliance/reports/legal_update_20261008/NAP-LICENCE.html whitespace=-blank-at-eol
+/03_Compliance/reports/legal_update_20261008/NAP-PROVIDER.html whitespace=-blank-at-eol

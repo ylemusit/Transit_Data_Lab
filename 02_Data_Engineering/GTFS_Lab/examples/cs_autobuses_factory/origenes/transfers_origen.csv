@@ -1,0 +1,2 @@
+source_record_id,source_reference,source_method,source_note,from_stop_id,to_stop_id,from_route_id,to_route_id,transfer_type,min_transfer_time
+ORIG-TRANSFERS-001,SYN-CS-01-TRANSFERS,elaboración sintética documentada,"Tiempo mínimo ilustrativo, sin levantamiento de estación.",CS-PLAT,CS-PLAZA,,,2,240
