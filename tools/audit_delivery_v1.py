@@ -65,7 +65,7 @@ def contained(root, name):
 def files(root):
     """Bounded named root walk; reject reparse points before descending."""
     root = Path(root)
-    if root.is_symlink() or root.stat().st_file_attributes & stat.FILE_ATTRIBUTE_REPARSE_POINT:
+    if root.is_symlink() or getattr(root.stat(), 'st_file_attributes', 0) & getattr(stat, 'FILE_ATTRIBUTE_REPARSE_POINT', 0x400):
         raise ValueError("Reparse source root")
     stack = [root]
     while stack:
@@ -73,7 +73,7 @@ def files(root):
         with os.scandir(current) as entries:
             for entry in entries:
                 info = entry.stat(follow_symlinks=False)
-                if entry.is_symlink() or info.st_file_attributes & stat.FILE_ATTRIBUTE_REPARSE_POINT:
+                if entry.is_symlink() or getattr(info, 'st_file_attributes', 0) & getattr(stat, 'FILE_ATTRIBUTE_REPARSE_POINT', 0x400):
                     raise ValueError("Reparse point in delivery tree")
                 path = Path(entry.path)
                 if entry.is_dir(follow_symlinks=False): stack.append(path)

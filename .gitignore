@@ -67,6 +67,7 @@
 # Private audit evidence stays on P:; publish only reviewed method documentation.
 /reports/audit_assessment_v1/*
 !/reports/audit_assessment_v1/*.md
+!/reports/audit_assessment_v1/NETEX_REFERENCE_FINDING.json
 /reports/audit_battery_v1/*
 !/reports/audit_battery_v1/*.md
 /reports/audit_corpus_v1/*

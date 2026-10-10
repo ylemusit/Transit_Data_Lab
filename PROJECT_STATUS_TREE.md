@@ -1,6 +1,6 @@
 # Transit Data Lab — mapa de estado vigente
 
-**Integración pública — 2026-10-10:** código, tests, fábrica sintética CS Autobuses y documentación sanitizada en integración. Resultados de operadores, entregas y recibos completos conservados fuera de Git. Pruebas portables y CI ampliadas; publicación e integración finales se registrarán tras comprobar su SHA. Los repositorios de GTFS Explorer mantienen su independencia.
+**Integración pública — 2026-10-10:** fuentes y documentación sanitizada versionadas en el [PR #59](https://github.com/ylemusit/Transit_Data_Lab/pull/59); CI ampliada con fixtures sintéticos portables. Resultados de operadores y entregas completos conservados fuera de Git. El resultado vigente corresponde al SHA final del PR/main; GTFS Explorer conserva sus repositorios independientes.
 
 **Actualizado:** 2026-10-10
 
