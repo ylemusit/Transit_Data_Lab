@@ -81,3 +81,4 @@
 /03_Compliance/reports/legal_update_20261008/NAP-PROVIDER.html whitespace=-blank-at-eol
 # The legal source registry is captured CRLF data with hash-bound identity.
 /03_Compliance/reports/legal_update_20261008/source_registry.json whitespace=cr-at-eol
+/02_Data_Engineering/GTFS_Lab/examples/cs_autobuses_factory/origenes/locations_origen.geojson whitespace=cr-at-eol
