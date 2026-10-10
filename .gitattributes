@@ -79,3 +79,5 @@
 /03_Compliance/reports/legal_update_20261008/NAP-FAQ.html whitespace=-blank-at-eol
 /03_Compliance/reports/legal_update_20261008/NAP-LICENCE.html whitespace=-blank-at-eol
 /03_Compliance/reports/legal_update_20261008/NAP-PROVIDER.html whitespace=-blank-at-eol
+# The legal source registry is captured CRLF data with hash-bound identity.
+/03_Compliance/reports/legal_update_20261008/source_registry.json whitespace=cr-at-eol
